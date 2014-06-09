@@ -2,9 +2,9 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: Blender 2.70 (sub 5) (b'3a41797')\n"
+"Project-Id-Version: Blender 2.70 (sub 5) (b'131d388')\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-05-26 20:12:46\n"
+"POT-Creation-Date: 2014-06-09 21:53:24\n"
 "PO-Revision-Date: \n"
 "Last-Translator: Gabriel Gazzan <gabcorreo@gmail.com>\n"
 "Language-Team: Español <gabcorreo@gmail.com>\n"
@@ -942,7 +942,7 @@ msgstr "Activo"
 
 #. :src: bpy.types.Actuator.active
 msgid "Set the active state of the actuator"
-msgstr ""
+msgstr "Define si el actuador se encuentra activo o no"
 
 #. :src: bpy.types.ActionActuator
 msgid "Action Actuator"
@@ -2105,7 +2105,7 @@ msgstr "Longitud máxima del rayo"
 #: scripts/startup/bl_ui/properties_physics_field.py:169
 #: scripts/startup/bl_ui/properties_physics_field.py:173
 #: scripts/startup/bl_ui/properties_texture.py:585
-#: scripts/startup/bl_ui/space_view3d_toolbar.py:1637
+#: scripts/startup/bl_ui/space_view3d_toolbar.py:1648
 #: scripts/startup/bl_ui/space_view3d_toolbar.py:916
 #: source/blender/nodes/shader/nodes/node_shader_bump.c:39
 #: source/blender/nodes/shader/nodes/node_shader_lamp.c:38
@@ -2465,6 +2465,7 @@ msgstr "Rastrea a este objeto"
 #. :src: bpy.types.INFO_MT_mesh_add
 #. :src: bpy.types.VIEW3D_MT_edit_mesh
 #. :src: bpy.types.EXPORT_SCENE_OT_fbx.object_types:'MESH'
+#. :src: bpy.types.IMPORT_SCENE_OT_hgt.import_types:'MESH'
 #. :src: bpy.types.OBJECT_OT_add.type:'MESH'
 #. :src: bpy.types.OBJECT_OT_select_by_type.type:'MESH'
 #. :src: bpy.types.RIGIDBODY_OT_shape_change.type:'MESH'
@@ -3052,6 +3053,7 @@ msgstr "Pos"
 #. :src: bpy.types.CURVE_OT_vertex_add.location
 #. :src: bpy.types.IMAGE_OT_view_zoom_in.location
 #. :src: bpy.types.IMAGE_OT_view_zoom_out.location
+#. :src: bpy.types.IMPORT_SCENE_OT_hgt.location
 #. :src: bpy.types.MASK_OT_add_feather_vertex.location
 #. :src: bpy.types.MASK_OT_add_vertex.location
 #. :src: bpy.types.MASK_OT_primitive_circle_add.location
@@ -3143,6 +3145,7 @@ msgstr "Rot"
 #. :src: bpy.types.EXPORT_ANIM_OT_bvh.rotate_mode
 #. :src: bpy.types.GRAPH_OT_duplicate.mode:'ROTATION'
 #. :src: bpy.types.IMPORT_ANIM_OT_bvh.rotate_mode
+#. :src: bpy.types.IMPORT_SCENE_OT_hgt.rotation
 #. :src: bpy.types.MBALL_OT_select_similar.type:'ROTATION'
 #. :src: bpy.types.MESH_OT_primitive_circle_add.rotation
 #. :src: bpy.types.MESH_OT_primitive_cone_add.rotation
@@ -3198,9 +3201,9 @@ msgstr "Rot"
 #: scripts/startup/bl_ui/properties_physics_rigidbody.py:135
 #: scripts/startup/bl_ui/space_sequencer.py:569
 #: scripts/startup/bl_ui/space_view3d.py:1261
-#: source/blender/editors/space_view3d/view3d_buttons.c:949
-#: source/blender/editors/space_view3d/view3d_buttons.c:960
-#: source/blender/editors/space_view3d/view3d_buttons.c:971
+#: source/blender/editors/space_view3d/view3d_buttons.c:948
+#: source/blender/editors/space_view3d/view3d_buttons.c:959
+#: source/blender/editors/space_view3d/view3d_buttons.c:970
 #: source/blender/nodes/shader/nodes/node_shader_bsdf_anisotropic.c:35
 msgid "Rotation"
 msgstr "Rotación"
@@ -4037,7 +4040,7 @@ msgstr "Seguir trayectoria"
 #. :src: bpy.types.ParticleKey.velocity
 #. :src: bpy.types.VoxelData.smoke_data_type:'SMOKEVEL'
 #: scripts/startup/bl_ui/properties_physics_cloth.py:85
-#: scripts/startup/bl_ui/space_view3d_toolbar.py:1646
+#: scripts/startup/bl_ui/space_view3d_toolbar.py:1657
 msgid "Velocity"
 msgstr "Velocidad"
 
@@ -4212,7 +4215,7 @@ msgstr "Define que el objeto ocluya a objetos detrás de él (inicializado desde
 #. :src: bpy.types.ParticleInstanceModifier.use_children
 #. :src: bpy.types.OBJECT_OT_select_grouped.type:'CHILDREN_RECURSIVE'
 #. :src: bpy.types.PARTICLE_PT_children
-#: scripts/startup/bl_ui/space_view3d_toolbar.py:1654
+#: scripts/startup/bl_ui/space_view3d_toolbar.py:1665
 msgid "Children"
 msgstr "Subordinados"
 
@@ -4242,38 +4245,6 @@ msgstr "Nombre del módulo"
 msgid "Addon Preferences"
 msgstr "Opciones de agregados"
 
-#. :src: bpy.types.UI_AP_i18n_settings.WARN_MSGID_NOT_CAPITALIZED
-msgid "Warn Msgid Not Capitalized"
-msgstr "Advertencia mensajes sin mayúsculas"
-
-#. :src: bpy.types.UI_AP_i18n_settings.WARN_MSGID_NOT_CAPITALIZED
-msgid "Warn about messages not starting by a capitalized letter (with a few allowed exceptions!)"
-msgstr "Advertencia sobre mensajes que no comienzan con mayúsculas (¡con algunas excepciones permitidas!)"
-
-#. :src: bpy.types.UI_AP_i18n_settings.PY_SYS_PATHS
-msgid "Import Paths"
-msgstr "Rutas de importación"
-
-#. :src: bpy.types.UI_AP_i18n_settings.PY_SYS_PATHS
-msgid "Additional paths to add to sys.path (';' separated)"
-msgstr "Rutas adicionales a agregar al sys.path (separadas por ';')"
-
-#. :src: bpy.types.UI_AP_i18n_settings.persistent_data_path
-msgid "Persistent Data Path"
-msgstr "Rura de datos persistentes"
-
-#. :src: bpy.types.UI_AP_i18n_settings.persistent_data_path
-msgid "The name of a json file storing those settings (unfortunately, Blender's system does not work here)"
-msgstr "El nombre de un archivo json que almacena estas opciones (desafortunadamente, el sistema de Blender no funciona aquí)"
-
-#. :src: bpy.types.UI_AP_i18n_settings.SPELL_CACHE
-msgid "Spell Cache"
-msgstr "Caché de ortografía"
-
-#. :src: bpy.types.UI_AP_i18n_settings.SPELL_CACHE
-msgid "A cache storing validated msgids, to avoid re-spellchecking them"
-msgstr "Un caché que almacena los mensajes validados, para evitar tener que volver a comprobar su ortografía"
-
 #. :src: bpy.types.UI_AP_i18n_settings.I18N_DIR
 msgid "Translation Root"
 msgstr "Raíz de la traducción"
@@ -4281,14 +4252,6 @@ msgstr "Raíz de la traducción"
 #. :src: bpy.types.UI_AP_i18n_settings.I18N_DIR
 msgid "The bf-translation repository"
 msgstr "El repositorio de la traducción de Blender"
-
-#. :src: bpy.types.UI_AP_i18n_settings.SOURCE_DIR
-msgid "Source Root"
-msgstr "Raíz del cód. fuente"
-
-#. :src: bpy.types.UI_AP_i18n_settings.SOURCE_DIR
-msgid "The Blender source root path"
-msgstr "La ruta raíz del código fuente de Blender"
 
 #. :src: bpy.types.UI_AP_i18n_settings.GETTEXT_MSGFMT_EXECUTABLE
 msgid "Gettext 'msgfmt' executable"
@@ -4298,6 +4261,14 @@ msgstr "Ejecutable 'msgfmt' de Gettext"
 msgid "The gettext msgfmt 'compiler'. You’ll likely have to edit it if you’re under Windows"
 msgstr "El 'compilador' de msgfmt de gettext. Es posible que haya que editarlo en Windows"
 
+#. :src: bpy.types.UI_AP_i18n_settings.WARN_MSGID_NOT_CAPITALIZED
+msgid "Warn Msgid Not Capitalized"
+msgstr "Advertencia mensajes sin mayúsculas"
+
+#. :src: bpy.types.UI_AP_i18n_settings.WARN_MSGID_NOT_CAPITALIZED
+msgid "Warn about messages not starting by a capitalized letter (with a few allowed exceptions!)"
+msgstr "Advertencia sobre mensajes que no comienzan con mayúsculas (¡con algunas excepciones permitidas!)"
+
 #. :src: bpy.types.UI_AP_i18n_settings.FRIBIDI_LIB
 msgid "Fribidi Library"
 msgstr "Biblioteca Fribidi"
@@ -4305,6 +4276,38 @@ msgstr "Biblioteca Fribidi"
 #. :src: bpy.types.UI_AP_i18n_settings.FRIBIDI_LIB
 msgid "The FriBidi C compiled library (.so under Linux, .dll under windows...), you’ll likely have to edit it if you’re under Windows, e.g. using the one included in svn's libraries repository"
 msgstr "La biblioteca escrita en C y compilada FriBidi (.so en Linux, .dll en windows...), es probable que se deba editar bajo Windows, p.ej: usando la que se incluye en el repositorio de bibliotecas del SVN"
+
+#. :src: bpy.types.UI_AP_i18n_settings.SPELL_CACHE
+msgid "Spell Cache"
+msgstr "Caché de ortografía"
+
+#. :src: bpy.types.UI_AP_i18n_settings.SPELL_CACHE
+msgid "A cache storing validated msgids, to avoid re-spellchecking them"
+msgstr "Un caché que almacena los mensajes validados, para evitar tener que volver a comprobar su ortografía"
+
+#. :src: bpy.types.UI_AP_i18n_settings.PY_SYS_PATHS
+msgid "Import Paths"
+msgstr "Rutas de importación"
+
+#. :src: bpy.types.UI_AP_i18n_settings.PY_SYS_PATHS
+msgid "Additional paths to add to sys.path (';' separated)"
+msgstr "Rutas adicionales a agregar al sys.path (separadas por ';')"
+
+#. :src: bpy.types.UI_AP_i18n_settings.SOURCE_DIR
+msgid "Source Root"
+msgstr "Raíz del cód. fuente"
+
+#. :src: bpy.types.UI_AP_i18n_settings.SOURCE_DIR
+msgid "The Blender source root path"
+msgstr "La ruta raíz del código fuente de Blender"
+
+#. :src: bpy.types.UI_AP_i18n_settings.persistent_data_path
+msgid "Persistent Data Path"
+msgstr "Rura de datos persistentes"
+
+#. :src: bpy.types.UI_AP_i18n_settings.persistent_data_path
+msgid "The name of a json file storing those settings (unfortunately, Blender's system does not work here)"
+msgstr "El nombre de un archivo json que almacena estas opciones (desafortunadamente, el sistema de Blender no funciona aquí)"
 
 #. :src: bpy.types.AnimData
 #. :src: bpy.types.Armature.animation_data
@@ -4623,7 +4626,7 @@ msgstr "Capturar posición"
 
 #. :src: bpy.types.AnimVizMotionPaths.bake_location
 msgid "When calculating Bone Paths, use Head or Tips"
-msgstr "Al calcular trayectorias de huesos, usar cabeza o colas"
+msgstr "Al calcular trayectorias de huesos, usar las cabezas o las colas"
 
 #. :src: bpy.types.AnimVizMotionPaths.bake_location:'HEADS'
 #. :src: bpy.types.POSE_OT_paths_calculate.bake_location:'HEADS'
@@ -5192,6 +5195,7 @@ msgstr "Fuente de datos usada para la imagen de fondo"
 #. :src: bpy.types.ShaderNodeTexImage.image
 #. :src: bpy.types.TextureNodeImage
 #. :src: bpy.types.TextureNodeImage.image
+#. :src: bpy.types.IMPORT_SCENE_OT_hgt.import_types:'IMAGE'
 #. :src: bpy.types.MESH_OT_select_similar.type:'IMAGE'
 #. :src: bpy.types.OBJECT_OT_empty_add.type:'IMAGE'
 #. :src: bpy.types.PAINT_OT_project_image.image
@@ -5714,7 +5718,7 @@ msgstr "Recortar"
 
 #. :src: bpy.types.BakePixel
 msgid "Bake Pixel"
-msgstr ""
+msgstr "Capturar pixel"
 
 # ##########################################################
 # ##
@@ -5726,21 +5730,18 @@ msgid "Bake Data"
 msgstr "Datos a capturar"
 
 #. :src: bpy.types.BakeSettings
-#, fuzzy
 msgid "Bake data for a Scene datablock"
-msgstr "Datos de juego para un bloque de datos de la escena"
+msgstr "Datos de captura del bloque de datos de la escena"
 
 #. :src: bpy.types.BakeSettings.cage
 #. :src: bpy.types.OBJECT_OT_bake.cage
-#, fuzzy
 msgid "Cage"
-msgstr "Cambiar"
+msgstr "Caja"
 
 #. :src: bpy.types.BakeSettings.cage
 #. :src: bpy.types.OBJECT_OT_bake.cage
-#, fuzzy
 msgid "Object to use as cage"
-msgstr "Objeto a usar como espejo"
+msgstr "Objeto a usar como caja"
 
 # ##########################################################
 # ##
@@ -5814,15 +5815,15 @@ msgstr "Ruta del archivo"
 #. :src: bpy.types.BakeSettings.filepath
 #. :src: bpy.types.OBJECT_OT_bake.filepath
 msgid "Image filepath to use when saving externally"
-msgstr ""
+msgstr "Ruta a usar al guardar externamente la imagen"
 
 #. :src: bpy.types.BakeSettings.width
 msgid "Horizontal dimension of the baking map"
-msgstr ""
+msgstr "Dimensión horizontal del mapa capturado"
 
 #. :src: bpy.types.BakeSettings.height
 msgid "Vertical dimension of the baking map"
-msgstr ""
+msgstr "Dimensión vertical del mapa capturado"
 
 #. :src: bpy.types.BakeSettings.margin
 #. :src: bpy.types.GameSoftBodySettings.collision_margin
@@ -5850,12 +5851,12 @@ msgstr "Extiende el resultado de la captura por medio de un filtro de pos proces
 #. :src: bpy.types.BakeSettings.cage_extrusion
 #. :src: bpy.types.OBJECT_OT_bake.cage_extrusion
 msgid "Cage Extrusion"
-msgstr ""
+msgstr "Extrusión de la caja"
 
 #. :src: bpy.types.BakeSettings.cage_extrusion
 #. :src: bpy.types.OBJECT_OT_bake.cage_extrusion
 msgid "Distance to use for the inward ray cast when using selected to active"
-msgstr ""
+msgstr "Distancia a usar para la proyección de rayos hacia el interior, al usar Seleccionado a activo"
 
 #. :src: bpy.types.BakeSettings.normal_space
 #. :src: bpy.types.BakeSettings.normal_r
@@ -5906,7 +5907,7 @@ msgstr "Capturar las normales en espacio tangencial"
 #. :src: bpy.types.BakeSettings.normal_r
 #. :src: bpy.types.OBJECT_OT_bake.normal_r
 msgid "Axis to bake in red channel"
-msgstr ""
+msgstr "Eje que capturar en el canal rojo"
 
 #. :src: bpy.types.BakeSettings.normal_r:'POS_Z'
 #. :src: bpy.types.BakeSettings.normal_g:'POS_Z'
@@ -5926,12 +5927,12 @@ msgstr "+Z"
 #. :src: bpy.types.BakeSettings.normal_g
 #. :src: bpy.types.OBJECT_OT_bake.normal_g
 msgid "Axis to bake in green channel"
-msgstr ""
+msgstr "Eje que capturar en el canal verde"
 
 #. :src: bpy.types.BakeSettings.normal_b
 #. :src: bpy.types.OBJECT_OT_bake.normal_b
 msgid "Axis to bake in blue channel"
-msgstr ""
+msgstr "Eje que capturar en el canal azul"
 
 #. :src: bpy.types.BakeSettings.image_settings
 #. :src: bpy.types.ImageFormatSettings
@@ -5941,14 +5942,13 @@ msgstr "Formato de imagen"
 
 #. :src: bpy.types.BakeSettings.save_mode
 #. :src: bpy.types.OBJECT_OT_bake.save_mode
-#, fuzzy
 msgid "Save Mode"
-msgstr "Modo de captura"
+msgstr "Modo de guardado"
 
 #. :src: bpy.types.BakeSettings.save_mode
 #. :src: bpy.types.OBJECT_OT_bake.save_mode
 msgid "Choose how to save the baking map"
-msgstr ""
+msgstr "Escoger cómo guardar el mapa capturado"
 
 #. :src: bpy.types.BakeSettings.save_mode:'INTERNAL'
 #. :src: bpy.types.ShaderNodeScript.mode:'INTERNAL'
@@ -5960,12 +5960,13 @@ msgstr "Interno"
 #. :src: bpy.types.BakeSettings.save_mode:'INTERNAL'
 #. :src: bpy.types.OBJECT_OT_bake.save_mode:'INTERNAL'
 msgid "Save the baking map in an internal image datablock"
-msgstr ""
+msgstr "Guardar el mapa capturado en un bloque de datos interno de imagen"
 
 #. :src: bpy.types.BakeSettings.save_mode:'EXTERNAL'
 #. :src: bpy.types.MultiresModifier.is_external
 #. :src: bpy.types.ShaderNodeScript.mode:'EXTERNAL'
 #. :src: bpy.types.OBJECT_OT_bake.save_mode:'EXTERNAL'
+#. :src: bpy.types.VIEW3D_PT_tools_imagepaint_external
 #. :src: bpy.types.PointCache.use_external
 msgid "External"
 msgstr "Externo"
@@ -5973,14 +5974,14 @@ msgstr "Externo"
 #. :src: bpy.types.BakeSettings.save_mode:'EXTERNAL'
 #. :src: bpy.types.OBJECT_OT_bake.save_mode:'EXTERNAL'
 msgid "Save the baking map in an external file"
-msgstr ""
+msgstr "Guardar el mapa capturado en un archivo externo de imagen"
 
 #. :src: bpy.types.BakeSettings.use_selected_to_active
 #. :src: bpy.types.OBJECT_OT_bake.use_selected_to_active
 #. :src: bpy.types.RIGIDBODY_OT_connect.connection_pattern:'SELECTED_TO_ACTIVE'
 #. :src: bpy.types.RenderSettings.use_bake_selected_to_active
 msgid "Selected to Active"
-msgstr "Seleccionado a activo"
+msgstr "Seleccionados a activo"
 
 # ##########################################################
 # ##
@@ -6009,32 +6010,29 @@ msgid "Clear"
 msgstr "Restablecer"
 
 #. :src: bpy.types.BakeSettings.use_clear
-#, fuzzy
 msgid "Clear Images before baking (internal only)"
-msgstr "Eliminar imágenes antes de capturar"
+msgstr "Eliminar imágenes antes de capturar (solo motor Interno)"
 
 # ##########################################################
 # ##
 # ##  ToolBox &gt;&gt; OBJECT (2)
 #. :src: bpy.types.BakeSettings.use_split_materials
 #. :src: bpy.types.OBJECT_OT_bake.use_split_materials
-#, fuzzy
 msgid "Split Materials"
-msgstr "Grabar materiales"
+msgstr "Dividir materiales"
 
 #. :src: bpy.types.BakeSettings.use_split_materials
 msgid "Split external images per material (external only)"
-msgstr ""
+msgstr "Dividir imágenes externas por material (solo modo externo)"
 
 #. :src: bpy.types.BakeSettings.use_automatic_name
 #. :src: bpy.types.OBJECT_OT_bake.use_automatic_name
-#, fuzzy
 msgid "Automatic Name"
-msgstr "Subfotogramas automáticos"
+msgstr "Nombre automático"
 
 #. :src: bpy.types.BakeSettings.use_automatic_name
 msgid "Automatically name the output file with the pass type (external only)"
-msgstr ""
+msgstr "Nombrar automáticamente el archivo de salida con el tipo de pasada (solo modo externo)"
 
 #. :src: bpy.types.BezierSplinePoint
 msgid "Bezier Curve Point"
@@ -6604,7 +6602,7 @@ msgstr "Bloques de datos de acción"
 #. :src: bpy.types.ParticleSystem.particles
 #. :src: bpy.types.SpaceProperties.context:'PARTICLES'
 #. :src: bpy.types.SpaceTimeline.cache_particles
-#: scripts/startup/bl_ui/space_view3d_toolbar.py:1657
+#: scripts/startup/bl_ui/space_view3d_toolbar.py:1668
 msgid "Particles"
 msgstr "Partículas"
 
@@ -6629,7 +6627,7 @@ msgstr "Bloques de datos de partícula"
 #: source/blender/editors/space_image/image_buttons.c:947
 #: source/blender/editors/space_node/node_buttons.c:202
 #: source/blender/editors/space_sequencer/sequencer_buttons.c:68
-#: source/blender/editors/space_view3d/view3d_buttons.c:1182
+#: source/blender/editors/space_view3d/view3d_buttons.c:1181
 msgid "Grease Pencil"
 msgstr "Lápiz de cera"
 
@@ -7520,15 +7518,15 @@ msgstr "Matriz del hueso"
 
 #. :src: bpy.types.Bone.matrix
 msgid "3x3 bone matrix"
-msgstr "Matriz del hueso de 3x3"
+msgstr "Matriz de 3x3 del hueso"
 
 #. :src: bpy.types.Bone.matrix_local
 msgid "Bone Armature-Relative Matrix"
-msgstr "Matriz del hueso relativa al esqueleto"
+msgstr "Matriz del hueso en relación al esqueleto"
 
 #. :src: bpy.types.Bone.matrix_local
 msgid "4x4 bone matrix relative to armature"
-msgstr "Matriz del hueso de 4x4 relativa al esqueleto"
+msgstr "Matriz de 4x4 del hueso en relación al esqueleto"
 
 # ##########################################################
 # ##
@@ -7548,11 +7546,11 @@ msgstr "Posición de la cola del hueso"
 
 #. :src: bpy.types.Bone.tail_local
 msgid "Armature-Relative Tail"
-msgstr "Cola relativa de esqueleto"
+msgstr "Cola en relación al esqueleto"
 
 #. :src: bpy.types.Bone.tail_local
 msgid "Location of tail end of the bone relative to armature"
-msgstr "Posición del extremo final del hueso (cola) relativo al esqueleto"
+msgstr "Posición de la cola del hueso en relación al esqueleto"
 
 #. :src: bpy.types.Bone.head
 #. :src: bpy.types.EditBone.head
@@ -7564,15 +7562,15 @@ msgstr "Cabeza"
 
 #. :src: bpy.types.Bone.head
 msgid "Location of head end of the bone relative to its parent"
-msgstr "Posición de la cabeza del hueso relativo a su superior"
+msgstr "Posición de la cabeza del hueso en relación a su superior"
 
 #. :src: bpy.types.Bone.head_local
 msgid "Armature-Relative Head"
-msgstr "Cabeza relativa de esqueleto"
+msgstr "Cabeza en relación al esqueleto"
 
 #. :src: bpy.types.Bone.head_local
 msgid "Location of head end of the bone relative to armature"
-msgstr "Posición del extremo inicial del hueso (cabeza) relativo al esqueleto"
+msgstr "Posición de la cabeza del hueso en relación al esqueleto"
 
 #. :src: bpy.types.Bone.foot
 msgid "Foot"
@@ -7966,7 +7964,7 @@ msgstr "Grupo vértices rigidez estructural"
 
 #. :src: bpy.types.ClothSettings.vertex_group_structural_stiffness
 msgid "Vertex group for fine control over structural stiffness"
-msgstr "Grupo de vértices para un control más fino sobre la rigidez estructural"
+msgstr "Grupo de vértices para un control fino sobre la rigidez estructural"
 
 #. :src: bpy.types.ClothSettings.bending_stiffness
 #. :src: bpy.types.SoftBodySettings.bend
@@ -11784,7 +11782,7 @@ msgstr "Expande el controlador en la interfaz"
 
 #. :src: bpy.types.Controller.active
 msgid "Set the active state of the controller"
-msgstr ""
+msgstr "Define si el controlador se encuentra activo o no"
 
 #. :src: bpy.types.Controller.use_priority
 msgid "Mark controller for execution before all non-marked controllers (good for startup scripts)"
@@ -12714,7 +12712,7 @@ msgstr "Textura"
 #. :src: bpy.types.MaterialTextureSlot.normal_map_space:'WORLD'
 #. :src: bpy.types.UserPreferencesEdit.object_align:'WORLD'
 #: source/blender/editors/interface/interface_templates.c:1401
-#: source/blender/editors/render/render_shading.c:490
+#: source/blender/editors/render/render_shading.c:498
 msgid "World"
 msgstr "Entorno"
 
@@ -13919,7 +13917,7 @@ msgstr "Rotación del hueso alrededor del eje cabeza-cola"
 
 #. :src: bpy.types.EditBone.head
 msgid "Location of head end of the bone"
-msgstr "Posición del la cabeza del hueso"
+msgstr "Posición de la cabeza del hueso"
 
 #. :src: bpy.types.EditBone.hide
 msgid "Bone is not visible when in Edit Mode"
@@ -13927,7 +13925,7 @@ msgstr "El hueso no es visible mientras está en modo edición"
 
 #. :src: bpy.types.EditBone.lock
 msgid "Bone is not able to be transformed when in Edit Mode"
-msgstr "El hueso no se puede transformar cuando se está en Modo Edición"
+msgstr "El hueso no se puede transformar cuando está en Modo Edición"
 
 #. :src: bpy.types.EditBone.select_head
 msgid "Head Select"
@@ -13943,7 +13941,7 @@ msgstr "Matriz de edición del hueso"
 
 #. :src: bpy.types.EditBone.matrix
 msgid "Matrix combining loc/rot of the bone (head position, direction and roll), in armature space (WARNING: does not include/support bone's length/size)"
-msgstr ""
+msgstr "Matriz que combina la pos/rot del hueso (posición, dirección y giro de la cabeza) en espacio del esqueleto (ADVERTENCIA: no incluye/soporta la longitud o tamaño del hueso)"
 
 #. :src: bpy.types.EffectorWeights
 msgid "Effector weights for physics simulation"
@@ -14877,7 +14875,7 @@ msgstr "Genera una curva usando funciones matemáticas estándar, tales como sen
 #. :src: bpy.types.GRAPH_OT_fmodifier_add.type:'ENVELOPE'
 #. :src: bpy.types.NLA_OT_fmodifier_add.type:'ENVELOPE'
 #: source/blender/blenkernel/intern/fmodifier.c:476
-#: source/blender/editors/space_view3d/view3d_buttons.c:1049
+#: source/blender/editors/space_view3d/view3d_buttons.c:1048
 msgid "Envelope"
 msgstr "Envolvente"
 
@@ -16971,7 +16969,7 @@ msgstr "Directorio (y/o prefijo del nombre de archivo) desde donde cargar y guar
 #. :src: bpy.types.FreestyleLineSet
 #. :src: bpy.types.RENDERLAYER_PT_freestyle_lineset
 msgid "Freestyle Line Set"
-msgstr "Conjunto de líneas de Freestyle"
+msgstr "Freestyle - Conjunto de líneas"
 
 #. :src: bpy.types.FreestyleLineSet
 msgid "Line set for associating lines and style parameters"
@@ -17059,7 +17057,7 @@ msgstr "Inversión de tipo de borde"
 
 #. :src: bpy.types.FreestyleLineSet.edge_type_negation
 msgid "Specify either inclusion or exclusion of feature edges selected by edge types"
-msgstr ""
+msgstr "Especifica la inclusión o exclusión de rasgos tomados por tipo de borde"
 
 #. :src: bpy.types.FreestyleLineSet.edge_type_negation:'INCLUSIVE'
 #. :src: bpy.types.FreestyleLineSet.group_negation:'INCLUSIVE'
@@ -17088,27 +17086,24 @@ msgid "Edge Type Combination"
 msgstr "Combinación de tipo de borde"
 
 #. :src: bpy.types.FreestyleLineSet.edge_type_combination
-#, fuzzy
 msgid "Specify a logical combination of selection conditions on feature edge types"
-msgstr "Define la operación de combinación para las condiciones de tipos de rasgos"
+msgstr "Especifica una combinación lógica de condiciones de selección de tipos de rasgos"
 
 #. :src: bpy.types.FreestyleLineSet.edge_type_combination:'OR'
 msgid "Logical OR"
 msgstr "O lógico"
 
 #. :src: bpy.types.FreestyleLineSet.edge_type_combination:'OR'
-#, fuzzy
 msgid "Select feature edges satisfying at least one of edge type conditions"
-msgstr "Seleccionar rasgos que satisfagan las condiciones indicadas de tipo de borde"
+msgstr "Selecciona los rasgos que satisfagan al menos una de las condiciones de tipo de borde"
 
 #. :src: bpy.types.FreestyleLineSet.edge_type_combination:'AND'
 msgid "Logical AND"
 msgstr "Y lógico"
 
 #. :src: bpy.types.FreestyleLineSet.edge_type_combination:'AND'
-#, fuzzy
 msgid "Select feature edges satisfying all edge type conditions"
-msgstr "Seleccionar rasgos que satisfagan las condiciones indicadas de tipo de borde"
+msgstr "Selecciona los rasgos que satisfagan todas las condiciones de tipo de borde"
 
 #. :src: bpy.types.FreestyleLineSet.group
 msgid "A group of objects based on which feature edges are selected"
@@ -17120,7 +17115,7 @@ msgstr "Inversión del grupo"
 
 #. :src: bpy.types.FreestyleLineSet.group_negation
 msgid "Specify either inclusion or exclusion of feature edges belonging to a group of objects"
-msgstr ""
+msgstr "Especifica la inclusión o exclusión de rasgos pertenecientes a un grupo de objetos"
 
 #. :src: bpy.types.FreestyleLineSet.group_negation:'INCLUSIVE'
 msgid "Select feature edges belonging to some object in the group"
@@ -17136,7 +17131,7 @@ msgstr "Invertir caras marcadas"
 
 #. :src: bpy.types.FreestyleLineSet.face_mark_negation
 msgid "Specify either inclusion or exclusion of feature edges selected by face marks"
-msgstr ""
+msgstr "Especifica la inclusión o exclusión de rasgos tomados por marcas de caras"
 
 #. :src: bpy.types.FreestyleLineSet.face_mark_negation:'INCLUSIVE'
 msgid "Select feature edges satisfying the given face mark conditions"
@@ -17151,9 +17146,8 @@ msgid "Face Mark Condition"
 msgstr "Condición de marcado de caras"
 
 #. :src: bpy.types.FreestyleLineSet.face_mark_condition
-#, fuzzy
 msgid "Specify a feature edge selection condition based on face marks"
-msgstr "Define una condición para la selección de rasgos basada en caras marcadas"
+msgstr "Especifica una condición para la selección de rasgos basada en caras marcadas"
 
 #. :src: bpy.types.FreestyleLineSet.face_mark_condition:'ONE'
 msgid "One Face"
@@ -17161,7 +17155,7 @@ msgstr "Una cara"
 
 #. :src: bpy.types.FreestyleLineSet.face_mark_condition:'ONE'
 msgid "Select a feature edge if either of its adjacent faces is marked"
-msgstr ""
+msgstr "Selecciona un borde como rasgo si alguna de sus caras adyacentes se encuentra marcada"
 
 #. :src: bpy.types.FreestyleLineSet.face_mark_condition:'BOTH'
 msgid "Both Faces"
@@ -17169,7 +17163,7 @@ msgstr "Ambas caras"
 
 #. :src: bpy.types.FreestyleLineSet.face_mark_condition:'BOTH'
 msgid "Select a feature edge if both of its adjacent faces are marked"
-msgstr ""
+msgstr "Selecciona un borde como rasgo si sus dos caras adyacentes se encuentra marcada"
 
 #. :src: bpy.types.FreestyleLineSet.select_silhouette
 #. :src: bpy.types.FreestyleLineSet.exclude_silhouette
@@ -17178,7 +17172,7 @@ msgstr "Silueta"
 
 #. :src: bpy.types.FreestyleLineSet.select_silhouette
 msgid "Select silhouettes (edges at the boundary of visible and hidden faces)"
-msgstr ""
+msgstr "Seleccionar siluetas (bordes en el límite entre las caras visibles y las ocultas)"
 
 #. :src: bpy.types.FreestyleLineSet.select_border
 #. :src: bpy.types.FreestyleLineSet.exclude_border
@@ -17190,7 +17184,7 @@ msgstr "Marco"
 
 #. :src: bpy.types.FreestyleLineSet.select_border
 msgid "Select border edges (open mesh edges)"
-msgstr ""
+msgstr "Seleccionar bordes limítrofes (bordes de mallas abiertas)"
 
 #. :src: bpy.types.FreestyleLineSet.select_crease
 #. :src: bpy.types.FreestyleLineSet.exclude_crease
@@ -17210,7 +17204,7 @@ msgstr "Plegar"
 
 #. :src: bpy.types.FreestyleLineSet.select_crease
 msgid "Select crease edges (those between two faces making an angle smaller than the Crease Angle)"
-msgstr ""
+msgstr "Seleccionar bordes plegados (aquellos entre dos caras que formen un ángulo menor que el Ángulo de plegado)"
 
 #. :src: bpy.types.FreestyleLineSet.select_ridge_valley
 #. :src: bpy.types.FreestyleLineSet.exclude_ridge_valley
@@ -17219,7 +17213,7 @@ msgstr "Picos y valles"
 
 #. :src: bpy.types.FreestyleLineSet.select_ridge_valley
 msgid "Select ridges and valleys (boundary lines between convex and concave areas of surface)"
-msgstr ""
+msgstr "Seleccionar picos y valles (líneas limítrofes entre las áreas convexas y cóncavas de la superficie)"
 
 #. :src: bpy.types.FreestyleLineSet.select_suggestive_contour
 #. :src: bpy.types.FreestyleLineSet.exclude_suggestive_contour
@@ -17228,7 +17222,7 @@ msgstr "Contornos insinuados"
 
 #. :src: bpy.types.FreestyleLineSet.select_suggestive_contour
 msgid "Select suggestive contours (almost silhouette/contour edges)"
-msgstr ""
+msgstr "Seleccionar contornos sugestivos (bordes casi de silueta/contorno)"
 
 #. :src: bpy.types.FreestyleLineSet.select_material_boundary
 #. :src: bpy.types.FreestyleLineSet.exclude_material_boundary
@@ -17247,7 +17241,7 @@ msgstr "Contornos"
 
 #. :src: bpy.types.FreestyleLineSet.select_contour
 msgid "Select contours (outer silhouettes of each object)"
-msgstr ""
+msgstr "Seleccionar contornos (las siluetas exteriores de cada objeto)"
 
 #. :src: bpy.types.FreestyleLineSet.select_external_contour
 #. :src: bpy.types.FreestyleLineSet.exclude_external_contour
@@ -17256,7 +17250,7 @@ msgstr "Contornos exteriores"
 
 #. :src: bpy.types.FreestyleLineSet.select_external_contour
 msgid "Select external contours (outer silhouettes of occluding and occluded objects)"
-msgstr ""
+msgstr "Seleccionar contornos externos (siluetas exteriores de objetos ocluyentes y ocluidos)"
 
 #. :src: bpy.types.FreestyleLineSet.select_edge_mark
 #. :src: bpy.types.FreestyleLineSet.exclude_edge_mark
@@ -17265,7 +17259,7 @@ msgstr "Bordes marcados"
 
 #. :src: bpy.types.FreestyleLineSet.select_edge_mark
 msgid "Select edge marks (edges annotated by Freestyle edge marks)"
-msgstr ""
+msgstr "Seleccionar marcas de borde (bordes con marcas de borde por Freestyle)"
 
 #. :src: bpy.types.FreestyleLineSet.exclude_silhouette
 msgid "Exclude silhouette edges"
@@ -17472,7 +17466,6 @@ msgid "Freestyle settings for a SceneRenderLayer datablock"
 msgstr "Opciones de Freestyle para el bloque de datos de una capa de procesamiento de la escena"
 
 #. :src: bpy.types.FreestyleSettings.modules
-#, fuzzy
 msgid "Style Modules"
 msgstr "Módulo de estilo"
 
@@ -17493,7 +17486,6 @@ msgid "Python Scripting Mode"
 msgstr "Scripts Python"
 
 #. :src: bpy.types.FreestyleSettings.mode:'SCRIPT'
-#, fuzzy
 msgid "Advanced mode for using style modules written in Python"
 msgstr "Modo avanzado para usar módulos de estilo escritos en Python"
 
@@ -18029,8 +18021,8 @@ msgstr "Masa del objeto"
 #: scripts/startup/bl_ui/space_image.py:851
 #: scripts/startup/bl_ui/space_view3d_toolbar.py:1217
 #: scripts/startup/bl_ui/space_view3d_toolbar.py:1197
-#: source/blender/editors/space_view3d/view3d_buttons.c:1042
-#: source/blender/editors/space_view3d/view3d_buttons.c:1046
+#: source/blender/editors/space_view3d/view3d_buttons.c:1041
+#: source/blender/editors/space_view3d/view3d_buttons.c:1045
 #: source/blender/nodes/shader/nodes/node_shader_subsurface_scattering.c:34
 msgid "Radius"
 msgstr "Radio"
@@ -20461,18 +20453,16 @@ msgid "Render Resolution U"
 msgstr "Resolución procesamiento U"
 
 #. :src: bpy.types.Curve.render_resolution_u
-#, fuzzy
 msgid "Surface resolution in U direction used while rendering (zero uses preview resolution)"
-msgstr "Resolución de procesamiento de la superficie en la dirección U (0 para omitir esta propiedad)"
+msgstr "Resolución de procesamiento de la superficie en la dirección U (0 utiliza la resolución de previsualización)"
 
 #. :src: bpy.types.Curve.render_resolution_v
 msgid "Render Resolution V"
 msgstr "Resolución procesamiento V"
 
 #. :src: bpy.types.Curve.render_resolution_v
-#, fuzzy
 msgid "Surface resolution in V direction used while rendering (zero uses preview resolution)"
-msgstr "Resolución de la superficie usado en el procesamiento para la dirección V  (cero ignora esta propiedad)"
+msgstr "Resolución de procesamiento de la superficie en la dirección V (0 utiliza la resolución de previsualización)"
 
 #. :src: bpy.types.Curve.eval_time
 #. :src: bpy.types.Key.eval_time
@@ -20919,7 +20909,7 @@ msgstr "No rellenar los polígonos durante la edición"
 #. :src: bpy.types.FreestyleLineStyle
 #. :src: bpy.types.RENDERLAYER_PT_freestyle_linestyle
 msgid "Freestyle Line Style"
-msgstr "Estilo de línea de Freestyle"
+msgstr "Freestyle - Estilo de línea"
 
 #. :src: bpy.types.FreestyleLineStyle
 msgid "Freestyle line style, reusable by multiple line sets"
@@ -20969,7 +20959,7 @@ msgstr "Índice del contenedor de textura activo"
 # ##
 # ##  Menu bar &gt;&gt; Add &gt;&gt; Mesh
 #. :src: bpy.types.FreestyleLineStyle.panel
-#: source/blender/editors/interface/interface_handlers.c:5596
+#: source/blender/editors/interface/interface_handlers.c:5608
 msgid "Panel"
 msgstr "Panel"
 
@@ -20998,18 +20988,16 @@ msgid "Show the panel for stroke geometry options"
 msgstr "Muestra el panel de opciones de geometría del trazo"
 
 #. :src: bpy.types.FreestyleLineStyle.panel:'TEXTURE'
-#, fuzzy
 msgid "Show the panel for stroke texture options"
-msgstr "Muestra el panel de opciones de geometría del trazo"
+msgstr "Muestra el panel de opciones de texturizado del trazo"
 
 #. :src: bpy.types.FreestyleLineStyle.color
 msgid "Base line color, possibly modified by line color modifiers"
 msgstr "Color base de la línea, posiblemente modificado por modificadores de color de línea"
 
 #. :src: bpy.types.FreestyleLineStyle.alpha
-#, fuzzy
 msgid "Alpha Transparency"
-msgstr "Transparencia Z"
+msgstr "Transparencia alfa"
 
 #. :src: bpy.types.FreestyleLineStyle.alpha
 msgid "Base alpha transparency, possibly modified by alpha transparency modifiers"
@@ -21025,19 +21013,19 @@ msgstr "Posición del grosor"
 
 #. :src: bpy.types.FreestyleLineStyle.thickness_position
 msgid "Thickness position of silhouettes and border edges (applicable when plain chaining is used with the Same Object option)"
-msgstr ""
+msgstr "Posicionamiento del grosor de las siluetas y los bordes limítrofes (aplicable al usar encadenamiento Simple junto con la opción Mismo objeto)"
 
 #. :src: bpy.types.FreestyleLineStyle.thickness_position:'CENTER'
 msgid "Silhouettes and border edges are centered along stroke geometry"
-msgstr ""
+msgstr "Las siluetas y los bordes limítrofes se encuentran centrados en la geometría del trazo"
 
 #. :src: bpy.types.FreestyleLineStyle.thickness_position:'INSIDE'
 msgid "Silhouettes and border edges are drawn inside of stroke geometry"
-msgstr ""
+msgstr "Las siluetas y los bordes limítrofes se encuentran del lado interno de la geometría del trazo"
 
 #. :src: bpy.types.FreestyleLineStyle.thickness_position:'OUTSIDE'
 msgid "Silhouettes and border edges are drawn outside of stroke geometry"
-msgstr ""
+msgstr "Las siluetas y los bordes limítrofes se encuentran del lado externo de la geometría del trazo"
 
 #. :src: bpy.types.FreestyleLineStyle.thickness_position:'RELATIVE'
 #. :src: bpy.types.Key.use_relative
@@ -21059,7 +21047,7 @@ msgstr "Relativo"
 
 #. :src: bpy.types.FreestyleLineStyle.thickness_position:'RELATIVE'
 msgid "Silhouettes and border edges are shifted by a user-defined ratio"
-msgstr ""
+msgstr "Las siluetas y los bordes limítrofes se encuentran desplazados en una proporción definida por el usuario"
 
 #. :src: bpy.types.FreestyleLineStyle.thickness_ratio
 msgid "Thickness Ratio"
@@ -21111,7 +21099,7 @@ msgstr "Habilita el encadenamiento de rasgos"
 
 #. :src: bpy.types.FreestyleLineStyle.chaining
 msgid "Chaining Method"
-msgstr ""
+msgstr "Método de encadenamiento"
 
 #. :src: bpy.types.FreestyleLineStyle.chaining
 msgid "Select the way how feature edges are jointed to form chains"
@@ -21291,21 +21279,20 @@ msgid "If true, chains of feature edges are split at material boundaries"
 msgstr "Si está activo, las cadenas de rasgos se dividirán en los límites de los materiales"
 
 #. :src: bpy.types.FreestyleLineStyle.use_sorting
-#, fuzzy
 msgid "Sorting"
-msgstr "Comenzando"
+msgstr "Ordenamiento"
 
 #. :src: bpy.types.FreestyleLineStyle.use_sorting
 msgid "Arrange the stacking order of strokes"
-msgstr ""
+msgstr "Organiza el orden de apilamiento de los trazos"
 
 #. :src: bpy.types.FreestyleLineStyle.sort_key
 msgid "Sort Key"
-msgstr ""
+msgstr "Ordenar por"
 
 #. :src: bpy.types.FreestyleLineStyle.sort_key
 msgid "Select the sort key to determine the stacking order of chains"
-msgstr ""
+msgstr "Selecciona la clave de ordenamiento usada al apilar las cadenas"
 
 #. :src: bpy.types.FreestyleLineStyle.sort_key:'DISTANCE_FROM_CAMERA'
 #. :src: bpy.types.LineStyleAlphaModifier_AlongStroke.type:'DISTANCE_FROM_CAMERA'
@@ -21332,7 +21319,7 @@ msgstr "Distancia desde la cámara"
 
 #. :src: bpy.types.FreestyleLineStyle.sort_key:'DISTANCE_FROM_CAMERA'
 msgid "Sort by distance from camera (closer lines lie on top of further lines)"
-msgstr ""
+msgstr "Ordenar según la distancia desde la cámara (las líneas cercanas quedarán más arriba que las lejanas)"
 
 #. :src: bpy.types.FreestyleLineStyle.sort_key:'2D_LENGTH'
 #: scripts/startup/bl_ui/properties_freestyle.py:571
@@ -21341,19 +21328,19 @@ msgstr "Longitud 2D"
 
 #. :src: bpy.types.FreestyleLineStyle.sort_key:'2D_LENGTH'
 msgid "Sort by curvilinear 2D length (longer lines lie on top of shorter lines)"
-msgstr ""
+msgstr "Ordenar según la longitud curvilínea 2D (las líneas largas quedarán más arriba que las cortas)"
 
 #. :src: bpy.types.FreestyleLineStyle.sort_order
 msgid "Sort Order"
-msgstr ""
+msgstr "Orden de clasificación"
 
 #. :src: bpy.types.FreestyleLineStyle.sort_order
 msgid "Select the sort order"
-msgstr ""
+msgstr "Selecciona el orden de clasificación"
 
 #. :src: bpy.types.FreestyleLineStyle.sort_order:'DEFAULT'
 msgid "Default order of the sort key"
-msgstr ""
+msgstr "El orden predefinido de la clave de ordenamiento"
 
 #. :src: bpy.types.FreestyleLineStyle.sort_order:'REVERSE'
 #. :src: bpy.types.CONSOLE_OT_history_cycle.reverse
@@ -21366,48 +21353,44 @@ msgid "Reverse"
 msgstr "Invertir"
 
 #. :src: bpy.types.FreestyleLineStyle.sort_order:'REVERSE'
-#, fuzzy
 msgid "Reverse order"
-msgstr "Invierte el orden de los fotogramas"
+msgstr "Invierte el orden"
 
 #. :src: bpy.types.FreestyleLineStyle.integration_type
-#, fuzzy
 msgid "Integration Type"
-msgstr "Tipo de interpolación W"
+msgstr "Tipo de integración"
 
 #. :src: bpy.types.FreestyleLineStyle.integration_type
 msgid "Select the way how the sort key is computed for each chain"
-msgstr ""
+msgstr "Selecciona la forma en que es calculada la clave de ordenamiento para cada cadena"
 
 #. :src: bpy.types.FreestyleLineStyle.integration_type:'MEAN'
 msgid "The value computed for the chain is the mean of the values obtained for chain vertices"
-msgstr ""
+msgstr "El valor calculado para la cadena es el promedio de los valores obtenidos de los vértices de la cadena"
 
 #. :src: bpy.types.FreestyleLineStyle.integration_type:'MIN'
 msgid "The value computed for the chain is the minimum of the values obtained for chain vertices"
-msgstr ""
+msgstr "El valor calculado para la cadena es el mínimo de los valores obtenidos de los vértices de la cadena"
 
 #. :src: bpy.types.FreestyleLineStyle.integration_type:'MAX'
 msgid "The value computed for the chain is the maximum of the values obtained for chain vertices"
-msgstr ""
+msgstr "El valor calculado para la cadena es el máximo de los valores obtenidos de los vértices de la cadena"
 
 #. :src: bpy.types.FreestyleLineStyle.integration_type:'FIRST'
-#, fuzzy
 msgid "First"
-msgstr "En el principio"
+msgstr "Primero"
 
 #. :src: bpy.types.FreestyleLineStyle.integration_type:'FIRST'
 msgid "The value computed for the chain is the value obtained for the first chain vertex"
-msgstr ""
+msgstr "El valor calculado para la cadena es el valor obtenido del primer vértice de la cadena"
 
 #. :src: bpy.types.FreestyleLineStyle.integration_type:'LAST'
-#, fuzzy
 msgid "Last"
-msgstr "Este"
+msgstr "Último"
 
 #. :src: bpy.types.FreestyleLineStyle.integration_type:'LAST'
 msgid "The value computed for the chain is the value obtained for the last chain vertex"
-msgstr ""
+msgstr "El valor calculado para la cadena es el valor obtenido del último vértice de la cadena"
 
 #. :src: bpy.types.FreestyleLineStyle.use_dashed_line
 msgid "Dashed Line"
@@ -21418,9 +21401,8 @@ msgid "Enable or disable dashed line"
 msgstr "Habilita o deshabilita la línea discontinua"
 
 #. :src: bpy.types.FreestyleLineStyle.caps
-#, fuzzy
 msgid "Caps"
-msgstr "Extremos:"
+msgstr "Extremos"
 
 #. :src: bpy.types.FreestyleLineStyle.caps
 msgid "Select the shape of both ends of strokes"
@@ -21512,16 +21494,15 @@ msgstr "Usar texturas"
 
 #. :src: bpy.types.FreestyleLineStyle.use_texture
 msgid "Enable or disable textured strokes"
-msgstr ""
+msgstr "Habilita o deshabilita los trazos texturizados"
 
 #. :src: bpy.types.FreestyleLineStyle.texture_spacing
-#, fuzzy
 msgid "Texture spacing"
-msgstr "Mapeo de textura"
+msgstr "Espaciado de textura"
 
 #. :src: bpy.types.FreestyleLineStyle.texture_spacing
 msgid "Spacing for textures along stroke length"
-msgstr ""
+msgstr "Espaciado de la textura a lo largo del trazo"
 
 #. :src: bpy.types.FreestyleLineStyle.node_tree
 #. :src: bpy.types.Lamp.node_tree
@@ -21541,7 +21522,6 @@ msgid "Node Tree"
 msgstr "Árbol de nodos"
 
 #. :src: bpy.types.FreestyleLineStyle.node_tree
-#, fuzzy
 msgid "Node tree for node based textures"
 msgstr "Árbol de nodos para texturas basadas en nodos"
 
@@ -21556,7 +21536,7 @@ msgstr "Usar nodos"
 
 #. :src: bpy.types.FreestyleLineStyle.use_nodes
 msgid "Use texture nodes for the line style"
-msgstr ""
+msgstr "Usar nodos de texturizado para el estilo de línea"
 
 #. :src: bpy.types.GreasePencil
 msgid "Freehand annotation sketchbook"
@@ -23807,14 +23787,12 @@ msgid "Replace the object's base alpha value with alpha from UV map image textur
 msgstr "Reemplaza el valor alfa base del objeto por el alfa de las texturas de imagen mapeadas con UVs"
 
 #. :src: bpy.types.Material.use_cast_shadows
-#, fuzzy
 msgid "Cast Shadows"
-msgstr "Proyectar sombra"
+msgstr "Proyectar sombras"
 
 #. :src: bpy.types.Material.use_cast_shadows
-#, fuzzy
 msgid "Allow this material to cast shadows"
-msgstr "Permitir a este material recibir sombras"
+msgstr "Permitir a este material proyectar sombras"
 
 #. :src: bpy.types.Material.use_cast_shadows_only
 msgid "Cast Shadows Only"
@@ -23867,11 +23845,11 @@ msgstr "Permitir a este material proyectar sombras desde lámparas que usen buff
 
 #. :src: bpy.types.Material.use_cast_approximate
 msgid "Cast Approximate"
-msgstr "Proyectar aproximado"
+msgstr "Proyectar al usar Aproximado"
 
 #. :src: bpy.types.Material.use_cast_approximate
 msgid "Allow this material to cast shadows when using approximate ambient occlusion"
-msgstr "Permitir a este material proyectar sombras al utilizar oclusión ambiental aproximada"
+msgstr "Permitir a este material proyectar sombras al utilizar el método Aproximado de oclusión ambiental"
 
 #. :src: bpy.types.Material.use_tangent_shading
 #. :src: bpy.types.MaterialStrand.use_tangent_shading
@@ -27022,9 +27000,9 @@ msgstr "Edad"
 #. :src: bpy.types.TRANSFORM_OT_tilt.value
 #. :src: bpy.types.TRANSFORM_OT_trackball.value
 #. :src: bpy.types.ImagePaint.normal_angle
-#. :src: bpy.types.Print3DSettings.angle_overhang
-#. :src: bpy.types.Print3DSettings.angle_distort
 #. :src: bpy.types.Print3DSettings.angle_sharp
+#. :src: bpy.types.Print3DSettings.angle_distort
+#. :src: bpy.types.Print3DSettings.angle_overhang
 #. :src: bpy.types.SceneGameData.dome_angle
 #. :src: bpy.types.RadarSensor.angle
 #. :src: bpy.types.WipeSequence.angle
@@ -27815,11 +27793,11 @@ msgstr "Fotograma final alternativo para la reproducción en la IU"
 
 #. :src: bpy.types.Scene.show_keys_from_selected_only
 msgid "Only Keyframes from Selected Channels"
-msgstr ""
+msgstr "Solo claves de canales seleccionados"
 
 #. :src: bpy.types.Scene.show_keys_from_selected_only
 msgid "Consider keyframes for active Object and/or its selected bones only (in timeline and when jumping between keyframes)"
-msgstr ""
+msgstr "Considera solo los fotogramas clave del objeto activo y/o sus huesos seleccionados (en la línea de tiempo y al saltar entre fotogramas clave)"
 
 #. :src: bpy.types.Scene.use_stamp_note
 #. :src: bpy.types.RenderSettings.use_stamp_note
@@ -28224,11 +28202,11 @@ msgstr "Silenciar"
 # ##  Menu bar &gt;&gt; Render
 #. :src: bpy.types.Speaker.muted
 msgid "Mute the speaker"
-msgstr "Silenciar el altavoz"
+msgstr "Silencia el altavoz"
 
 #. :src: bpy.types.Speaker.relative
 msgid "Whether the source is relative to the camera or not"
-msgstr ""
+msgstr "Define si la fuente es relativa a la cámara o no"
 
 #. :src: bpy.types.Speaker.sound
 msgid "Sound datablock used by this speaker"
@@ -29600,7 +29578,7 @@ msgstr "Estuco"
 
 #. :src: bpy.types.StucciTexture.stucci_type:'PLASTIC'
 #. :src: bpy.types.SoftBodySettings.plastic
-#: source/blender/editors/physics/rigidbody_object.c:442
+#: source/blender/editors/physics/rigidbody_object.c:438
 msgid "Plastic"
 msgstr "Plástico"
 
@@ -30500,7 +30478,7 @@ msgstr "Ventana"
 #. :src: bpy.types.ThemePanelColors.header
 #. :src: bpy.types.ThemeSpaceGeneric.header
 #. :src: bpy.types.ThemeSpaceGradient.header
-#: source/blender/editors/interface/interface_handlers.c:5848
+#: source/blender/editors/interface/interface_handlers.c:5860
 #: source/blender/editors/screen/screen_ops.c:3145
 msgid "Header"
 msgstr "Encabezado"
@@ -30531,6 +30509,7 @@ msgstr "Temporal"
 #. :src: bpy.types.VIEW3D_PT_tools_brush_stroke
 #. :src: bpy.types.VIEW3D_PT_tools_brush_texture
 #. :src: bpy.types.VIEW3D_PT_tools_curveedit
+#. :src: bpy.types.VIEW3D_PT_tools_imagepaint_external
 #. :src: bpy.types.VIEW3D_PT_tools_latticeedit
 #. :src: bpy.types.VIEW3D_PT_tools_mask_texture
 #. :src: bpy.types.VIEW3D_PT_tools_mballedit
@@ -31857,15 +31836,14 @@ msgstr "Sinusoidal"
 #. :src: bpy.types.GRAPH_OT_interpolation_type.type:'SINE'
 #. :src: bpy.types.UserPreferencesEdit.keyframe_new_interpolation_type:'SINE'
 msgid "Sinusoidal easing (weakest, almost linear but with a slight curvature)"
-msgstr ""
+msgstr "Relajación sinusoidal (la más débil, casi lineal, pero con una ligera curvatura)"
 
 #. :src: bpy.types.Keyframe.interpolation:'QUAD'
 #. :src: bpy.types.ACTION_OT_interpolation_type.type:'QUAD'
 #. :src: bpy.types.GRAPH_OT_interpolation_type.type:'QUAD'
 #. :src: bpy.types.UserPreferencesEdit.keyframe_new_interpolation_type:'QUAD'
-#, fuzzy
 msgid "Quadratic easing"
-msgstr "Relajación de cuarto grado"
+msgstr "Relajación cuadrática"
 
 #. :src: bpy.types.Keyframe.interpolation:'CUBIC'
 #. :src: bpy.types.CompositorNodeBlur.filter_type:'CUBIC'
@@ -31924,7 +31902,7 @@ msgstr "Exponencial"
 #. :src: bpy.types.GRAPH_OT_interpolation_type.type:'EXPO'
 #. :src: bpy.types.UserPreferencesEdit.keyframe_new_interpolation_type:'EXPO'
 msgid "Exponential easing (dramatic)"
-msgstr ""
+msgstr "Relajación exponencial (drástica)"
 
 #. :src: bpy.types.Keyframe.interpolation:'CIRC'
 #. :src: bpy.types.CompositorNodeDefocus.bokeh:'CIRCLE'
@@ -31939,7 +31917,7 @@ msgstr "Circular"
 #. :src: bpy.types.GRAPH_OT_interpolation_type.type:'CIRC'
 #. :src: bpy.types.UserPreferencesEdit.keyframe_new_interpolation_type:'CIRC'
 msgid "Circular easing (strongest and most dynamic)"
-msgstr ""
+msgstr "Relajación circular (la más intensa y dinámica)"
 
 #. :src: bpy.types.Keyframe.interpolation:'BACK'
 #. :src: bpy.types.ACTION_OT_interpolation_type.type:'BACK'
@@ -32032,12 +32010,12 @@ msgstr "A qué extremo del segmento entre este fotograma clave y el siguiente se
 #. :src: bpy.types.Keyframe.easing:'AUTO'
 #. :src: bpy.types.GRAPH_OT_easing_type.type:'AUTO'
 msgid "Automatic Easing"
-msgstr ""
+msgstr "Relajación automática"
 
 #. :src: bpy.types.Keyframe.easing:'AUTO'
 #. :src: bpy.types.GRAPH_OT_easing_type.type:'AUTO'
 msgid "Easing type is chosen automatically based on what the type of interpolation used (e.g. 'Ease In' for transitional types, and 'Ease Out' for dynamic effects)"
-msgstr ""
+msgstr "El método de relajación será escogido automáticamente, basándose en el tipo de interpolación usado (p.ej: 'Relajación de entrada' para tipos de transición y 'Relajación de salida' para efectos dinámicos)"
 
 #. :src: bpy.types.Keyframe.easing:'EASE_IN'
 #. :src: bpy.types.GRAPH_OT_easing_type.type:'EASE_IN'
@@ -32111,8 +32089,8 @@ msgstr "Coordenadas del asa derecha (posterior al punto de control)"
 #. :src: bpy.types.OBJECT_OT_select_grouped.type:'KEYINGSET'
 #. :src: bpy.types.PAINT_OT_weight_sample_group.group
 #. :src: bpy.types.POSE_OT_select_grouped.type:'KEYINGSET'
-#: source/blender/blenkernel/intern/anim_sys.c:1108
-#: source/blender/blenkernel/intern/anim_sys.c:1120
+#: source/blender/blenkernel/intern/anim_sys.c:1110
+#: source/blender/blenkernel/intern/anim_sys.c:1122
 msgid "Keying Set"
 msgstr "Conjunto_claves"
 
@@ -35077,7 +35055,7 @@ msgstr "Ajustes de color"
 #: scripts/startup/bl_ui/space_dopesheet.py:366
 #: scripts/startup/bl_ui/space_graph.py:211
 #: scripts/startup/bl_ui/space_nla.py:132
-#: source/blender/editors/space_view3d/view3d_buttons.c:1174
+#: source/blender/editors/space_view3d/view3d_buttons.c:1173
 #: source/blender/makesrna/intern/rna_constraint.c:53
 msgid "Transform"
 msgstr "Transformación"
@@ -35706,7 +35684,7 @@ msgstr "Borde marcado de Freestyle"
 
 #. :src: bpy.types.MeshEdge.use_freestyle_mark
 msgid "Edge mark for Freestyle line rendering"
-msgstr ""
+msgstr "Marca de borde para el procesamiento de líneas de Freestyle"
 
 #. :src: bpy.types.MeshEdge.index
 msgid "Index of this edge"
@@ -35841,7 +35819,7 @@ msgstr "Cara marcada de Freestyle"
 
 #. :src: bpy.types.MeshPolygon.use_freestyle_mark
 msgid "Face mark for Freestyle line rendering"
-msgstr ""
+msgstr "Marca de cara para el procesamiento de líneas de Freestyle"
 
 #. :src: bpy.types.MeshPolygon.normal
 msgid "Polygon Normal"
@@ -35889,7 +35867,7 @@ msgstr "Radio del forro"
 #. :src: bpy.types.ToolSettings.proportional_edit_falloff:'ROOT'
 #: scripts/addons/cycles/ui.py:1302
 #: scripts/startup/bl_ui/properties_material.py:722
-#: scripts/startup/bl_ui/space_view3d_toolbar.py:1643
+#: scripts/startup/bl_ui/space_view3d_toolbar.py:1654
 msgid "Root"
 msgstr "Base"
 
@@ -35914,8 +35892,8 @@ msgid "Mesh Visualize Statistics"
 msgstr "Visualizar estadísticas de malla"
 
 #. :src: bpy.types.MeshStatVis.type
-msgid "XXX"
-msgstr "XXX"
+msgid "Type of data to visualize/check"
+msgstr ""
 
 #. :src: bpy.types.MeshStatVis.type:'OVERHANG'
 msgid "Overhang"
@@ -37519,8 +37497,9 @@ msgstr "Usar el tiempo de la escena"
 #. :src: bpy.types.NodeInternalSocketTemplate.type:'CUSTOM'
 #. :src: bpy.types.NodeSocket.type:'CUSTOM'
 #. :src: bpy.types.NodeSocketInterfaceStandard.type:'CUSTOM'
+#. :src: bpy.types.IMPORT_SCENE_OT_hgt.hgt_type:'CUSTOM'
 #. :src: bpy.types.UserPreferencesFilePaths.animation_player_preset:'CUSTOM'
-#: source/blender/editors/physics/rigidbody_object.c:478
+#: source/blender/editors/physics/rigidbody_object.c:474
 msgid "Custom"
 msgstr "Personalizado"
 
@@ -39796,32 +39775,30 @@ msgid "Match-moving camera data for tracking"
 msgstr "Datos de cámara a ser rastreada"
 
 #. :src: bpy.types.MovieTrackingCamera.distortion_model
-#, fuzzy
 msgid "Distortion Model"
-msgstr "Nodo distorsionar"
+msgstr "Modelo de distorsión"
 
 #. :src: bpy.types.MovieTrackingCamera.distortion_model
 msgid "Distortion model used for camera lenses"
-msgstr ""
+msgstr "Modelo de distorsión usado para lentes de cámara"
 
 #. :src: bpy.types.MovieTrackingCamera.distortion_model:'POLYNOMIAL'
-#, fuzzy
 msgid "Polynomial"
-msgstr "Orden polinómico"
+msgstr "Polinómico"
 
 #. :src: bpy.types.MovieTrackingCamera.distortion_model:'POLYNOMIAL'
 msgid "Radial distortion model which fits common cameras"
-msgstr ""
+msgstr "Modelo de distorsión radial, se ajusta a cámaras comunes"
 
 #. :src: bpy.types.MovieTrackingCamera.distortion_model:'DIVISION'
 #: scripts/startup/bl_ui/properties_physics_smoke.py:252
 #: scripts/startup/bl_ui/properties_physics_smoke.py:59
 msgid "Divisions"
-msgstr "Divisiones"
+msgstr "División"
 
 #. :src: bpy.types.MovieTrackingCamera.distortion_model:'DIVISION'
 msgid "Division distortion model which better represents wide-angle cameras"
-msgstr ""
+msgstr "Modelo de distorsión por división, representa mejor a cámaras de ángulo abierto"
 
 #. :src: bpy.types.MovieTrackingCamera.sensor_width
 msgid "Width of CCD sensor in millimeters"
@@ -39897,7 +39874,7 @@ msgstr "Tercer coeficiente de la distorsión radial polinómica de tercer orden"
 #. :src: bpy.types.MovieTrackingCamera.division_k1
 #. :src: bpy.types.MovieTrackingCamera.division_k2
 msgid "First coefficient of second order division distortion"
-msgstr ""
+msgstr "Primer coeficiente de la distorsión de división de segundo orden"
 
 #. :src: bpy.types.MovieTrackingCamera.pixel_aspect
 msgid "Pixel Aspect Ratio"
@@ -44390,7 +44367,7 @@ msgstr "Copia los fotogramas clave seleccionados al portapapeles"
 
 #. :src: bpy.types.ACTION_OT_delete
 #. :src: bpy.types.GRAPH_OT_delete
-#: source/blender/editors/interface/interface_handlers.c:5665
+#: source/blender/editors/interface/interface_handlers.c:5677
 msgctxt "Operator"
 msgid "Delete Keyframes"
 msgstr "Borrar fotogramas clave"
@@ -44534,7 +44511,7 @@ msgstr "Define el modo de interpolación para los segmentos de curvas-f que comi
 
 #. :src: bpy.types.ACTION_OT_keyframe_insert
 #. :src: bpy.types.GRAPH_OT_keyframe_insert
-#: source/blender/editors/interface/interface_handlers.c:5687
+#: source/blender/editors/interface/interface_handlers.c:5699
 msgctxt "Operator"
 msgid "Insert Keyframes"
 msgstr "Insertar fotograma clave"
@@ -45427,7 +45404,7 @@ msgid "Only unused (Fake User only) actions get considered"
 msgstr "Solo se consideran las acciones no usadas (Usuario ficticio)"
 
 #. :src: bpy.types.ANIM_OT_copy_driver_button
-#: source/blender/editors/interface/interface_handlers.c:5726
+#: source/blender/editors/interface/interface_handlers.c:5738
 msgctxt "Operator"
 msgid "Copy Driver"
 msgstr "Copiar controlador"
@@ -45437,7 +45414,7 @@ msgid "Copy the driver for the highlighted button"
 msgstr "Copia el controlador al botón resaltado"
 
 #. :src: bpy.types.ANIM_OT_driver_button_add
-#: source/blender/editors/interface/interface_handlers.c:5746
+#: source/blender/editors/interface/interface_handlers.c:5758
 msgctxt "Operator"
 msgid "Add Driver"
 msgstr "Agregar controlador"
@@ -45524,7 +45501,7 @@ msgid "Delete keyframes from all elements of the array"
 msgstr "Borra fotogramas clave de todos los elementos de la matriz"
 
 #. :src: bpy.types.ANIM_OT_keyframe_delete_v3d
-#: source/blender/editors/interface/interface_handlers.c:5673
+#: source/blender/editors/interface/interface_handlers.c:5685
 msgctxt "Operator"
 msgid "Delete Keyframe"
 msgstr "Borrar fotograma clave"
@@ -45534,7 +45511,7 @@ msgid "Remove keyframes on current frame for selected objects"
 msgstr "Remueve los fotogramas clave de los objetos seleccionados en el fotograma actual"
 
 #. :src: bpy.types.ANIM_OT_keyframe_insert
-#: source/blender/editors/interface/interface_handlers.c:5693
+#: source/blender/editors/interface/interface_handlers.c:5705
 msgctxt "Operator"
 msgid "Insert Keyframe"
 msgstr "Insertar fotograma clave"
@@ -45687,7 +45664,7 @@ msgid "Remove the active Keying Set"
 msgstr "Remover el conjunto de claves activo"
 
 #. :src: bpy.types.ANIM_OT_keyingset_button_add
-#: source/blender/editors/interface/interface_handlers.c:5770
+#: source/blender/editors/interface/interface_handlers.c:5782
 msgctxt "Operator"
 msgid "Add to Keying Set"
 msgstr "Agregar a conjunto de claves"
@@ -45701,8 +45678,8 @@ msgid "Add all elements of the array to a Keying Set"
 msgstr "Agrega todos los elementos de la matriz a un conjunto de claves"
 
 #. :src: bpy.types.ANIM_OT_keyingset_button_remove
-#: source/blender/editors/interface/interface_handlers.c:5766
-#: source/blender/editors/interface/interface_handlers.c:5772
+#: source/blender/editors/interface/interface_handlers.c:5778
+#: source/blender/editors/interface/interface_handlers.c:5784
 msgctxt "Operator"
 msgid "Remove from Keying Set"
 msgstr "Remover del conjunto de claves"
@@ -45712,8 +45689,8 @@ msgid "Remove current UI-active property from current keying set"
 msgstr "Remueve la propiedad activa en la IU del conjunto de claves actual"
 
 #. :src: bpy.types.ANIM_OT_paste_driver_button
-#: source/blender/editors/interface/interface_handlers.c:5729
-#: source/blender/editors/interface/interface_handlers.c:5751
+#: source/blender/editors/interface/interface_handlers.c:5741
+#: source/blender/editors/interface/interface_handlers.c:5763
 msgctxt "Operator"
 msgid "Paste Driver"
 msgstr "Pegar controlador"
@@ -45743,19 +45720,19 @@ msgstr "Define interactivamente el rango de fotogramas usado para la reproducci�
 #. :src: bpy.types.ANIM_OT_update_animated_transform_constraints
 msgctxt "Operator"
 msgid "Update Animated Transform Constraints"
-msgstr ""
+msgstr "Actualizar restricciones de transformación animadas"
 
 #. :src: bpy.types.ANIM_OT_update_animated_transform_constraints
 msgid "Update fcurves/drivers affecting Transform constraints (use it with files from 2.70 and earlier)"
-msgstr ""
+msgstr "Actualiza las curvas-f y controladores de restricciones de transformación (usar con archivos de 2.70 y anteriores versiones)"
 
 #. :src: bpy.types.ANIM_OT_update_animated_transform_constraints.use_convert_to_radians
 msgid "Convert To Radians"
-msgstr ""
+msgstr "Convertir a radianes"
 
 #. :src: bpy.types.ANIM_OT_update_animated_transform_constraints.use_convert_to_radians
 msgid "Convert fcurves/drivers affecting rotations to radians (Warning: use this only once!)"
-msgstr ""
+msgstr "Convierte las curvas-f y controladores de rotación a radianes (Advertencia: usar esto solo una vez!)"
 
 #. :src: bpy.types.ARMATURE_OT_align
 msgctxt "Operator"
@@ -49433,7 +49410,7 @@ msgstr "InfluenciaB"
 #. :src: bpy.types.SpaceProperties.align
 #. :src: bpy.types.SpaceView3D.use_pivot_point_align
 #: source/blender/editors/space_buttons/buttons_ops.c:74
-#: source/blender/editors/transform/transform.c:7033
+#: source/blender/editors/transform/transform.c:7063
 msgid "Align"
 msgstr "Alinear"
 
@@ -49553,6 +49530,7 @@ msgstr "Crea un círculo Bézier"
 #. :src: bpy.types.CURVE_OT_primitive_nurbs_circle_add.view_align
 #. :src: bpy.types.CURVE_OT_primitive_nurbs_curve_add.view_align
 #. :src: bpy.types.CURVE_OT_primitive_nurbs_path_add.view_align
+#. :src: bpy.types.IMPORT_SCENE_OT_hgt.view_align
 #. :src: bpy.types.MESH_OT_primitive_circle_add.view_align
 #. :src: bpy.types.MESH_OT_primitive_cone_add.view_align
 #. :src: bpy.types.MESH_OT_primitive_cube_add.view_align
@@ -50375,14 +50353,12 @@ msgid "Convert rotations to euler ZYX"
 msgstr "Convetir rotaciones a Euler ZYX"
 
 #. :src: bpy.types.EXPORT_ANIM_OT_bvh.root_transform_only
-#, fuzzy
 msgid "Root Translation Only"
-msgstr "Solo transformación de base"
+msgstr "Solo traslación de superior"
 
 #. :src: bpy.types.EXPORT_ANIM_OT_bvh.root_transform_only
-#, fuzzy
 msgid "Only write out translation channels for the root bone"
-msgstr "Solo grabar los canales de transformación para el hueso superior"
+msgstr "Solo grabar los canales de traslación del hueso superior"
 
 #. :src: bpy.types.EXPORT_MESH_OT_ply
 msgctxt "Operator"
@@ -50656,8 +50632,9 @@ msgid "Selection to an ASCII Autodesk FBX"
 msgstr "Exportar al formato de archivos FBX de Autodesk"
 
 #. :src: bpy.types.EXPORT_SCENE_OT_fbx.version
-msgid "Exporter Version"
-msgstr "Versión"
+#, fuzzy
+msgid "Version"
+msgstr "Versión:"
 
 #. :src: bpy.types.EXPORT_SCENE_OT_fbx.version
 msgid "Choose which version of the exporter to use"
@@ -50697,8 +50674,9 @@ msgid "Scale all data (Some importers do not support scaled armatures!)"
 msgstr "Escalar todos los datos (¡algunos importadores no soportan esqueletos escalados!)"
 
 #. :src: bpy.types.EXPORT_SCENE_OT_fbx.bake_space_transform
-msgid "Bake Space Transform"
-msgstr "Capturar transformaciones espaciales"
+#. :src: bpy.types.IMPORT_SCENE_OT_autodesk_3ds.use_apply_transform
+msgid "Apply Transform"
+msgstr "Aplicar transformación"
 
 #. :src: bpy.types.EXPORT_SCENE_OT_fbx.bake_space_transform
 msgid "Bake space transform into object data, avoids getting unwanted rotations to objects when target space is not aligned with Blender's space (WARNING! experimental option, might give odd/wrong results)"
@@ -50787,8 +50765,8 @@ msgid "Only Deform Bones"
 msgstr "Solo huesos deformantes"
 
 #. :src: bpy.types.EXPORT_SCENE_OT_fbx.use_armature_deform_only
-msgid "Only write deforming bones"
-msgstr "Guardar solo los huesos que causan deformaciones"
+msgid "Only write deforming bones (and non-deforming ones when they have deforming children)"
+msgstr ""
 
 #. :src: bpy.types.EXPORT_SCENE_OT_fbx.bake_anim
 msgid "Baked Animation"
@@ -50808,9 +50786,8 @@ msgid "All Actions"
 msgstr "Todas las acciones"
 
 #. :src: bpy.types.EXPORT_SCENE_OT_fbx.bake_anim_use_all_actions
-#, fuzzy
 msgid "Export each action as a separated FBX's AnimStack, instead of global scene animation"
-msgstr "Exportar cada clip no silenciado de ANL como un AnimStack individual de FBX, en vez de como animación global de la escena"
+msgstr "Exportar cada acción como un AnimStack individual de FBX, en vez de como animación global de la escena"
 
 #. :src: bpy.types.EXPORT_SCENE_OT_fbx.bake_anim_step
 msgid "Sampling Rate"
@@ -52174,7 +52151,7 @@ msgstr "Definir interactivamente el fotograma actual y el cursor de valor"
 #. :src: bpy.types.GRAPH_OT_easing_type
 msgctxt "Operator"
 msgid "Set Keyframe Easing Type"
-msgstr "Definir tipo relajación fotogramas clave"
+msgstr "Definir tipo de relajación de fotogramas clave"
 
 #. :src: bpy.types.GRAPH_OT_easing_type
 msgid "Set easing type for the F-Curve segments starting from the selected keyframes"
@@ -53030,10 +53007,6 @@ msgid "Search subdirectories for any associated images (Warning, may be slow)"
 msgstr "Buscar imágenes asociadas en subdirectorios (Advertencia, puede ser lento)"
 
 #. :src: bpy.types.IMPORT_SCENE_OT_autodesk_3ds.use_apply_transform
-msgid "Apply Transform"
-msgstr "Aplicar transformación"
-
-#. :src: bpy.types.IMPORT_SCENE_OT_autodesk_3ds.use_apply_transform
 msgid "Workaround for object transformations importing incorrectly"
 msgstr "Corrección para importación incorrecta de transformaciones de objetos"
 
@@ -53047,13 +53020,12 @@ msgid "Load a FBX geometry file"
 msgstr "Carga un archivo de geometría FBX"
 
 #. :src: bpy.types.IMPORT_SCENE_OT_fbx.use_manual_orientation
-#, fuzzy
 msgid "Manual Orientation"
-msgstr "Orientación inicial:"
+msgstr "Orientación manual"
 
 #. :src: bpy.types.IMPORT_SCENE_OT_fbx.use_manual_orientation
 msgid "Specify orientation and scale, instead of using embedded data in FBX file"
-msgstr ""
+msgstr "Especificar la orientación y escala, en vez de utilizar los datos incorporados en el archivo FBX"
 
 #. :src: bpy.types.IMPORT_SCENE_OT_fbx.use_image_search
 #. :src: bpy.types.IMPORT_SCENE_OT_obj.use_image_search
@@ -53075,6 +53047,163 @@ msgstr "Desplazar calcomanía"
 #. :src: bpy.types.IMPORT_SCENE_OT_fbx.decal_offset
 msgid "Displace geometry of alpha meshes"
 msgstr "Desplaza la geometría de las mallas con alfa"
+
+#. :src: bpy.types.IMPORT_SCENE_OT_hgt
+msgctxt "Operator"
+msgid "Import DEM hgt"
+msgstr ""
+
+#. :src: bpy.types.IMPORT_SCENE_OT_hgt
+msgid "Import digital elevation data from .hgt file(s), as a piece of displaced sphere mesh and/or image"
+msgstr ""
+
+#. :src: bpy.types.IMPORT_SCENE_OT_hgt.directory
+msgid "HGT Dir"
+msgstr ""
+
+#. :src: bpy.types.IMPORT_SCENE_OT_hgt.directory
+msgid "Path of the directory containing .hgt files"
+msgstr ""
+
+#. :src: bpy.types.IMPORT_SCENE_OT_hgt.hgt_type
+msgid "HGT Type"
+msgstr ""
+
+#. :src: bpy.types.IMPORT_SCENE_OT_hgt.hgt_type
+msgid "Type (definition) of .hgt DEM data"
+msgstr ""
+
+#. :src: bpy.types.IMPORT_SCENE_OT_hgt.hgt_type:'AUTO'
+#, fuzzy
+msgid "Auto Detect"
+msgstr "Autodetectar"
+
+#. :src: bpy.types.IMPORT_SCENE_OT_hgt.hgt_type:'AUTO'
+msgid "Only detects DEM3 and DEM1 currently"
+msgstr ""
+
+#. :src: bpy.types.IMPORT_SCENE_OT_hgt.hgt_type:'DEM3'
+msgid "DEM3 (resolution of 3 seconds of arc, 1200 values per degree)"
+msgstr ""
+
+#. :src: bpy.types.IMPORT_SCENE_OT_hgt.hgt_type:'DEM1'
+msgid "DEM1 (resolution of 1 second of arc, 3600 values per degree)"
+msgstr ""
+
+#. :src: bpy.types.IMPORT_SCENE_OT_hgt.hgt_type:'CUSTOM'
+msgid "Use custom resolution"
+msgstr ""
+
+#. :src: bpy.types.IMPORT_SCENE_OT_hgt.hgt_resolution
+#, fuzzy
+msgid "HGT Resolution"
+msgstr "Resolución"
+
+#. :src: bpy.types.IMPORT_SCENE_OT_hgt.hgt_resolution
+msgid "Resolution of hgt data, in values per degree"
+msgstr ""
+
+#. :src: bpy.types.IMPORT_SCENE_OT_hgt.import_types
+msgid "Import Types"
+msgstr ""
+
+#. :src: bpy.types.IMPORT_SCENE_OT_hgt.import_types
+msgid "How to import DEM data"
+msgstr ""
+
+#. :src: bpy.types.IMPORT_SCENE_OT_hgt.import_types:'MESH'
+msgid "Import as a piece of displaced sphere mesh"
+msgstr ""
+
+#. :src: bpy.types.IMPORT_SCENE_OT_hgt.import_types:'IMAGE'
+msgid "Import as an image"
+msgstr ""
+
+#. :src: bpy.types.IMPORT_SCENE_OT_hgt.import_types:'MODIFIER'
+#. :src: bpy.types.OBJECT_OT_explode_refresh.modifier
+#. :src: bpy.types.OBJECT_OT_hook_assign.modifier
+#. :src: bpy.types.OBJECT_OT_hook_recenter.modifier
+#. :src: bpy.types.OBJECT_OT_hook_remove.modifier
+#. :src: bpy.types.OBJECT_OT_hook_reset.modifier
+#. :src: bpy.types.OBJECT_OT_hook_select.modifier
+#. :src: bpy.types.OBJECT_OT_laplaciandeform_bind.modifier
+#. :src: bpy.types.OBJECT_OT_meshdeform_bind.modifier
+#. :src: bpy.types.OBJECT_OT_modifier_apply.modifier
+#. :src: bpy.types.OBJECT_OT_modifier_convert.modifier
+#. :src: bpy.types.OBJECT_OT_modifier_copy.modifier
+#. :src: bpy.types.OBJECT_OT_modifier_move_down.modifier
+#. :src: bpy.types.OBJECT_OT_modifier_move_up.modifier
+#. :src: bpy.types.OBJECT_OT_modifier_remove.modifier
+#. :src: bpy.types.OBJECT_OT_multires_base_apply.modifier
+#. :src: bpy.types.OBJECT_OT_multires_external_save.modifier
+#. :src: bpy.types.OBJECT_OT_multires_higher_levels_delete.modifier
+#. :src: bpy.types.OBJECT_OT_multires_reshape.modifier
+#. :src: bpy.types.OBJECT_OT_multires_subdivide.modifier
+#. :src: bpy.types.OBJECT_OT_ocean_bake.modifier
+#. :src: bpy.types.OBJECT_OT_skin_armature_create.modifier
+#. :src: bpy.types.SCREEN_OT_actionzone.modifier
+msgid "Modifier"
+msgstr "Modificador"
+
+#. :src: bpy.types.IMPORT_SCENE_OT_hgt.import_types:'MODIFIER'
+msgid "Import as an image and use it in a Displace modifier"
+msgstr ""
+
+#. :src: bpy.types.IMPORT_SCENE_OT_hgt.p_north_lat
+msgid "North Latitude"
+msgstr ""
+
+#. :src: bpy.types.IMPORT_SCENE_OT_hgt.p_north_lat
+msgid "Northern latitude of the imported area"
+msgstr ""
+
+#. :src: bpy.types.IMPORT_SCENE_OT_hgt.p_south_lat
+msgid "South Latitude"
+msgstr ""
+
+#. :src: bpy.types.IMPORT_SCENE_OT_hgt.p_south_lat
+msgid "Southern latitude of the imported area"
+msgstr ""
+
+#. :src: bpy.types.IMPORT_SCENE_OT_hgt.p_west_lon
+msgid "West Longitude"
+msgstr ""
+
+#. :src: bpy.types.IMPORT_SCENE_OT_hgt.p_west_lon
+msgid "Western longitude of the imported area"
+msgstr ""
+
+#. :src: bpy.types.IMPORT_SCENE_OT_hgt.p_east_lon
+msgid "East Longitude"
+msgstr ""
+
+#. :src: bpy.types.IMPORT_SCENE_OT_hgt.p_east_lon
+msgid "Eastern longitude of the imported area"
+msgstr ""
+
+#. :src: bpy.types.IMPORT_SCENE_OT_hgt.definition_mesh
+msgid "Mesh Definition"
+msgstr ""
+
+#. :src: bpy.types.IMPORT_SCENE_OT_hgt.definition_mesh
+msgid "Number of vertices per degree (e.g. DEM3 is 1200)"
+msgstr ""
+
+#. :src: bpy.types.IMPORT_SCENE_OT_hgt.definition_img
+msgid "Image Definition"
+msgstr ""
+
+#. :src: bpy.types.IMPORT_SCENE_OT_hgt.definition_img
+msgid "Number of pixels per degree (e.g. DEM3 is 1200)"
+msgstr ""
+
+#. :src: bpy.types.IMPORT_SCENE_OT_hgt.use_current_mesh
+msgid "Use Current Mesh"
+msgstr ""
+
+#. :src: bpy.types.IMPORT_SCENE_OT_hgt.use_current_mesh
+msgid "Replace active mesh object instead of creating a new one"
+msgstr ""
 
 #. :src: bpy.types.IMPORT_SCENE_OT_obj
 msgctxt "Operator"
@@ -55100,7 +55229,7 @@ msgstr "Marca o desmarca los bordes seleccionados como definidos"
 
 #. :src: bpy.types.MESH_OT_mark_sharp.use_verts
 msgid "Consider vertices instead of edges to select which edges to (un)tag as sharp"
-msgstr ""
+msgstr "Considerar vértices en vez de bordes al seleccionar qué bordes (des)marcar como definidos"
 
 #. :src: bpy.types.MESH_OT_merge
 msgctxt "Operator"
@@ -56880,20 +57009,19 @@ msgstr "Actualiza todas las correcciones pos reasignación (necesario para tomar
 #. :src: bpy.types.NLA_OT_action_pushdown
 msgctxt "Operator"
 msgid "Push Down Action"
-msgstr ""
+msgstr "Empujar acción abajo"
 
 #. :src: bpy.types.NLA_OT_action_pushdown
 msgid "Push action down onto the top of the NLA stack as a new strip"
-msgstr ""
+msgstr "Empuja la acción hacia abajo, al comienzo de la lista de ANL, como un nuevo clip"
 
 #. :src: bpy.types.NLA_OT_action_pushdown.channel_index
-#, fuzzy
 msgid "Channel Index"
-msgstr "Recortar por canal"
+msgstr "Índice de canal"
 
 #. :src: bpy.types.NLA_OT_action_pushdown.channel_index
 msgid "Index of NLA action channel to perform pushdown operation on"
-msgstr ""
+msgstr "Índice del canal de la acción de ANL sobre el cual realizar la operación Empujar abajo"
 
 #. :src: bpy.types.NLA_OT_action_sync_length
 msgctxt "Operator"
@@ -57039,7 +57167,7 @@ msgstr "Duplica los clips de ANL seleccionados , agregando los nuevos clips en n
 
 #. :src: bpy.types.NLA_OT_duplicate.linked
 msgid "When duplicating strips, assign new copies of the actions they use"
-msgstr ""
+msgstr "Al duplicar clips, asignar nuevas copias de las acciones que utilizan"
 
 #. :src: bpy.types.NLA_OT_fmodifier_add
 msgctxt "Operator"
@@ -57070,7 +57198,7 @@ msgstr "Hacer único usuario"
 
 #. :src: bpy.types.NLA_OT_make_single_user
 msgid "Ensure that each action is only used once in the set of strips selected"
-msgstr ""
+msgstr "Asegurarse de que cada acción es utilizada solamente una vez en el conjunto de clips seleccionados"
 
 # ##########################################################
 # ##
@@ -57237,9 +57365,8 @@ msgid "Enter Tweak Mode"
 msgstr "Ingresar en modo de retoque"
 
 #. :src: bpy.types.NLA_OT_tweakmode_enter
-#, fuzzy
 msgid "Enter tweaking mode for the action referenced by the active strip to edit its keyframes"
-msgstr "Ingresa en modo retoque para la acción referenciada por el clip activo"
+msgstr "Ingresar en el modo retoque de la acción referenciada por el clip activo, para editar sus fotogramas clave"
 
 #. :src: bpy.types.NLA_OT_tweakmode_exit
 msgctxt "Operator"
@@ -57270,11 +57397,17 @@ msgstr "Agregar y vincular nodo"
 msgid "Add a node to the active tree and link to an existing socket"
 msgstr "Agrega un nodo al árbol activo y lo vincula a un conector existente"
 
-#. :src: bpy.types.NODE_OT_add_and_link_node.settings
-#. :src: bpy.types.NODE_OT_add_node.settings
-#. :src: bpy.types.NODE_OT_add_search.settings
-msgid "Settings to be applied on the newly created node"
-msgstr "Opciones a ser aplicadas al nuevo nodo"
+#. :src: bpy.types.NODE_OT_add_and_link_node.use_transform
+#. :src: bpy.types.NODE_OT_add_node.use_transform
+#. :src: bpy.types.NODE_OT_add_search.use_transform
+msgid "Use Transform"
+msgstr "Usar transformación"
+
+#. :src: bpy.types.NODE_OT_add_and_link_node.use_transform
+#. :src: bpy.types.NODE_OT_add_node.use_transform
+#. :src: bpy.types.NODE_OT_add_search.use_transform
+msgid "Start transform operator after inserting the node"
+msgstr "Inicia el operador de transformación luego de insertar el nodo"
 
 # ##########################################################
 # ##
@@ -57293,17 +57426,11 @@ msgstr "Tipo de nodo"
 msgid "Node type"
 msgstr "Tipo de nodo"
 
-#. :src: bpy.types.NODE_OT_add_and_link_node.use_transform
-#. :src: bpy.types.NODE_OT_add_node.use_transform
-#. :src: bpy.types.NODE_OT_add_search.use_transform
-msgid "Use Transform"
-msgstr "Usar transformación"
-
-#. :src: bpy.types.NODE_OT_add_and_link_node.use_transform
-#. :src: bpy.types.NODE_OT_add_node.use_transform
-#. :src: bpy.types.NODE_OT_add_search.use_transform
-msgid "Start transform operator after inserting the node"
-msgstr "Inicia el operador de transformación luego de insertar el nodo"
+#. :src: bpy.types.NODE_OT_add_and_link_node.settings
+#. :src: bpy.types.NODE_OT_add_node.settings
+#. :src: bpy.types.NODE_OT_add_search.settings
+msgid "Settings to be applied on the newly created node"
+msgstr "Opciones a ser aplicadas al nuevo nodo"
 
 #. :src: bpy.types.NODE_OT_add_and_link_node.link_socket_index
 msgid "Link Socket Index"
@@ -58097,7 +58224,7 @@ msgstr "Captura las texturas de los objetos seleccionados"
 
 #. :src: bpy.types.OBJECT_OT_bake.type
 msgid "Type of pass to bake, some of them may not be supported by the current render engine"
-msgstr ""
+msgstr "Tipo de pasada a capturar, es posible que algunos tipos no sean soportados por el motor de procesamiento actual"
 
 #. :src: bpy.types.OBJECT_OT_bake.type:'COMBINED'
 #. :src: bpy.types.CyclesRenderSettings.bake_type:'COMBINED'
@@ -58229,23 +58356,23 @@ msgstr "Color transluminiscencia"
 
 #. :src: bpy.types.OBJECT_OT_bake.width
 msgid "Horizontal dimension of the baking map (external only)"
-msgstr ""
+msgstr "Dimensión horizontal del mapa capturado (solo externo)"
 
 #. :src: bpy.types.OBJECT_OT_bake.height
 msgid "Vertical dimension of the baking map (external only)"
-msgstr ""
+msgstr "Dimensión vertical del mapa capturado (solo externo)"
 
 #. :src: bpy.types.OBJECT_OT_bake.use_clear
 msgid "Clear Images before baking (only for internal saving)"
-msgstr ""
+msgstr "Limpiar las imágenes antes de la captura (solo al guardar internamente)"
 
 #. :src: bpy.types.OBJECT_OT_bake.use_split_materials
 msgid "Split baked maps per material, using material name in output file (external only)"
-msgstr ""
+msgstr "Dividir los mapas capturados por material, usando el nombre del material en el archivo producido (solo externo)"
 
 #. :src: bpy.types.OBJECT_OT_bake.use_automatic_name
 msgid "Automatically name the output file with the pass type"
-msgstr ""
+msgstr "Nombrar automáticamente el archivo de salida con el tipo de pasada que contiene"
 
 #. :src: bpy.types.OBJECT_OT_camera_add
 msgctxt "Operator"
@@ -58459,31 +58586,6 @@ msgstr "Refrescar Explotar"
 #. :src: bpy.types.OBJECT_OT_explode_refresh
 msgid "Refresh data in the Explode modifier"
 msgstr "Refresca los datos en el modificador Explotar"
-
-#. :src: bpy.types.OBJECT_OT_explode_refresh.modifier
-#. :src: bpy.types.OBJECT_OT_hook_assign.modifier
-#. :src: bpy.types.OBJECT_OT_hook_recenter.modifier
-#. :src: bpy.types.OBJECT_OT_hook_remove.modifier
-#. :src: bpy.types.OBJECT_OT_hook_reset.modifier
-#. :src: bpy.types.OBJECT_OT_hook_select.modifier
-#. :src: bpy.types.OBJECT_OT_laplaciandeform_bind.modifier
-#. :src: bpy.types.OBJECT_OT_meshdeform_bind.modifier
-#. :src: bpy.types.OBJECT_OT_modifier_apply.modifier
-#. :src: bpy.types.OBJECT_OT_modifier_convert.modifier
-#. :src: bpy.types.OBJECT_OT_modifier_copy.modifier
-#. :src: bpy.types.OBJECT_OT_modifier_move_down.modifier
-#. :src: bpy.types.OBJECT_OT_modifier_move_up.modifier
-#. :src: bpy.types.OBJECT_OT_modifier_remove.modifier
-#. :src: bpy.types.OBJECT_OT_multires_base_apply.modifier
-#. :src: bpy.types.OBJECT_OT_multires_external_save.modifier
-#. :src: bpy.types.OBJECT_OT_multires_higher_levels_delete.modifier
-#. :src: bpy.types.OBJECT_OT_multires_reshape.modifier
-#. :src: bpy.types.OBJECT_OT_multires_subdivide.modifier
-#. :src: bpy.types.OBJECT_OT_ocean_bake.modifier
-#. :src: bpy.types.OBJECT_OT_skin_armature_create.modifier
-#. :src: bpy.types.SCREEN_OT_actionzone.modifier
-msgid "Modifier"
-msgstr "Modificador"
 
 #. :src: bpy.types.OBJECT_OT_explode_refresh.modifier
 #. :src: bpy.types.OBJECT_OT_laplaciandeform_bind.modifier
@@ -65802,7 +65904,7 @@ msgid "Slide a vertex along a mesh"
 msgstr "Desliza un vértice a lo largo de la malla"
 
 #. :src: bpy.types.UI_OT_copy_data_path_button
-#: source/blender/editors/interface/interface_handlers.c:5799
+#: source/blender/editors/interface/interface_handlers.c:5811
 msgctxt "Operator"
 msgid "Copy Data Path"
 msgstr "Copiar ruta de datos de la propiedad"
@@ -65812,7 +65914,7 @@ msgid "Copy the RNA data path for this property to the clipboard"
 msgstr "Copia la ruta de datos RNA de esta propiedad al portapapeles"
 
 #. :src: bpy.types.UI_OT_copy_to_selected_button
-#: source/blender/editors/interface/interface_handlers.c:5801
+#: source/blender/editors/interface/interface_handlers.c:5813
 msgctxt "Operator"
 msgid "Copy To Selected"
 msgstr "Copiar a seleccionado"
@@ -66204,7 +66306,7 @@ msgid "Write the reports "
 msgstr "Escribir los reportes"
 
 #. :src: bpy.types.UI_OT_reset_default_button
-#: source/blender/editors/interface/interface_handlers.c:5791
+#: source/blender/editors/interface/interface_handlers.c:5803
 msgctxt "Operator"
 msgid "Reset to Default Value"
 msgstr "Restablecer a valor predefinido"
@@ -69216,11 +69318,11 @@ msgstr "Archivo externo empacado en el archivo .blend"
 
 #. :src: bpy.types.PackedFile.size
 msgid "Size of packed file in bytes"
-msgstr "Tamaño de los archivos empacados en bytes"
+msgstr "Tamaño de los archivos empacados, en bytes"
 
 #. :src: bpy.types.PackedFile.data
 msgid "Raw data (bytes, exact content of the embedded file)"
-msgstr ""
+msgstr "Datos en crudo (bytes, el contenido exacto del archivo incorporado)"
 
 #. :src: bpy.types.Paint.brush
 msgid "Active Brush"
@@ -69898,7 +70000,7 @@ msgstr "Ropa - Tensores de costura"
 
 #. :src: bpy.types.PHYSICS_PT_cloth_stiffness
 msgid "Cloth Stiffness Scaling"
-msgstr "Ropa - Escala rigidez"
+msgstr "Ropa - Control de rigidez"
 
 #. :src: bpy.types.PHYSICS_PT_domain_boundary
 msgid "Fluid Boundary"
@@ -71620,29 +71722,13 @@ msgstr "Grupo de propiedades ID"
 msgid "Group of ID properties"
 msgstr "Grupo de propiedades ID"
 
-#. :src: bpy.types.AnimationStitchSettings.second_offset
-msgid "Second offset"
-msgstr "Segundo desplazamiento"
+#. :src: bpy.types.AnimationStitchSettings.first_action
+msgid "Action 1"
+msgstr "Acción 1"
 
-#. :src: bpy.types.AnimationStitchSettings.second_offset
-msgid "Frame offset for 2nd animation, where it should start"
-msgstr "Desplazamiento de fotogramas para la 2da animación, donde debería comenzar"
-
-#. :src: bpy.types.AnimationStitchSettings.stick_bone
-msgid "Stick Bone"
-msgstr "Hueso tipo bastón"
-
-#. :src: bpy.types.AnimationStitchSettings.stick_bone
-msgid "Bone to freeze during transition"
-msgstr "Hueso a congelar durante la transición"
-
-#. :src: bpy.types.AnimationStitchSettings.second_action
-msgid "Action 2"
-msgstr "Acción 2"
-
-#. :src: bpy.types.AnimationStitchSettings.second_action
-msgid "Second action in stitch"
-msgstr "Segunda acción al unir"
+#. :src: bpy.types.AnimationStitchSettings.first_action
+msgid "First action in stitch"
+msgstr "Primera acción al unir"
 
 #. :src: bpy.types.AnimationStitchSettings.blend_amount
 msgid "Blend amount"
@@ -71652,14 +71738,6 @@ msgstr "Cantidad de fundido"
 msgid "Size of blending transition, on both sides of the stitch"
 msgstr "Tamaño de la transición de fundido, a ambos lados de la unión"
 
-#. :src: bpy.types.AnimationStitchSettings.first_action
-msgid "Action 1"
-msgstr "Acción 1"
-
-#. :src: bpy.types.AnimationStitchSettings.first_action
-msgid "First action in stitch"
-msgstr "Primera acción al unir"
-
 #. :src: bpy.types.AnimationStitchSettings.blend_frame
 msgid "Stitch frame"
 msgstr "Marco de unión"
@@ -71667,6 +71745,30 @@ msgstr "Marco de unión"
 #. :src: bpy.types.AnimationStitchSettings.blend_frame
 msgid "Frame to locate stitch on"
 msgstr "Marco donde ubicar la unión"
+
+#. :src: bpy.types.AnimationStitchSettings.stick_bone
+msgid "Stick Bone"
+msgstr "Hueso tipo bastón"
+
+#. :src: bpy.types.AnimationStitchSettings.stick_bone
+msgid "Bone to freeze during transition"
+msgstr "Hueso a congelar durante la transición"
+
+#. :src: bpy.types.AnimationStitchSettings.second_offset
+msgid "Second offset"
+msgstr "Segundo desplazamiento"
+
+#. :src: bpy.types.AnimationStitchSettings.second_offset
+msgid "Frame offset for 2nd animation, where it should start"
+msgstr "Desplazamiento de fotogramas para la 2da animación, donde debería comenzar"
+
+#. :src: bpy.types.AnimationStitchSettings.second_action
+msgid "Action 2"
+msgstr "Acción 2"
+
+#. :src: bpy.types.AnimationStitchSettings.second_action
+msgid "Second action in stitch"
+msgstr "Segunda acción al unir"
 
 #. :src: bpy.types.CyclesCameraSettings.aperture_type
 msgid "Aperture Type"
@@ -72538,14 +72640,12 @@ msgstr "En vez de procesar cada celda hasta que esté completa, refina progresiv
 # ##
 # ##  Menu bar
 #. :src: bpy.types.CyclesRenderSettings.bake_type
-#, fuzzy
 msgid "Bake Type"
-msgstr "Tipo de bokeh"
+msgstr "Tipo de captura"
 
 #. :src: bpy.types.CyclesRenderSettings.bake_type
-#, fuzzy
 msgid "Type of pass to bake"
-msgstr "Tipo de comparación a realizar"
+msgstr "Tipo de pasada a capturar"
 
 #. :src: bpy.types.CyclesVisibilitySettings.camera
 msgid "Object visibility for camera rays"
@@ -72602,18 +72702,6 @@ msgstr "Idioma"
 msgid "ISO code, like fr_FR"
 msgstr "Código ISO, del estilo es_AR"
 
-#. :src: bpy.types.I18nUpdateTranslationLanguage.use
-msgid "Use this language in current operator"
-msgstr "Usar este idioma en el operador actual"
-
-#. :src: bpy.types.I18nUpdateTranslationLanguage.num_id
-msgid "Numeric ID"
-msgstr "ID numérico"
-
-#. :src: bpy.types.I18nUpdateTranslationLanguage.num_id
-msgid "Numeric ID (readonly!)"
-msgstr "ID numérico (¡solo lectura!)"
-
 # ##########################################################
 # ##
 # ##  Menu bar
@@ -72625,14 +72713,6 @@ msgstr "Ruta del archivo"
 msgid "Path to the relevant mo file"
 msgstr "Ruta al archivo .MO relevante"
 
-#. :src: bpy.types.I18nUpdateTranslationLanguage.po_path_trunk
-msgid "PO Trunk File Path"
-msgstr "Ruta archivo PO en tronco"
-
-#. :src: bpy.types.I18nUpdateTranslationLanguage.po_path_trunk
-msgid "Path to the relevant po file in trunk"
-msgstr "Ruta al archivo .PO relevante en el tronco principal"
-
 #. :src: bpy.types.I18nUpdateTranslationLanguage.name
 msgid "Language Name"
 msgstr "Idioma"
@@ -72640,6 +72720,18 @@ msgstr "Idioma"
 #. :src: bpy.types.I18nUpdateTranslationLanguage.name
 msgid "English language name/label (like \"French (Français)\")"
 msgstr "Etiqueta del nombre en inglés (como \"Spanish (Español)\")"
+
+#. :src: bpy.types.I18nUpdateTranslationLanguage.num_id
+msgid "Numeric ID"
+msgstr "ID numérico"
+
+#. :src: bpy.types.I18nUpdateTranslationLanguage.num_id
+msgid "Numeric ID (readonly!)"
+msgstr "ID numérico (¡solo lectura!)"
+
+#. :src: bpy.types.I18nUpdateTranslationLanguage.use
+msgid "Use this language in current operator"
+msgstr "Usar este idioma en el operador actual"
 
 # ##########################################################
 # ##
@@ -72652,6 +72744,14 @@ msgstr "Ruta del archivo"
 msgid "Path to the relevant po file in branches"
 msgstr "Ruta al archivo .PO relevante en las ramas"
 
+#. :src: bpy.types.I18nUpdateTranslationLanguage.po_path_trunk
+msgid "PO Trunk File Path"
+msgstr "Ruta archivo PO en tronco"
+
+#. :src: bpy.types.I18nUpdateTranslationLanguage.po_path_trunk
+msgid "Path to the relevant po file in trunk"
+msgstr "Ruta al archivo .PO relevante en el tronco principal"
+
 #. :src: bpy.types.I18nUpdateTranslationSettings.active_lang
 msgid "Active Language"
 msgstr "Idioma activo"
@@ -72659,18 +72759,6 @@ msgstr "Idioma activo"
 #. :src: bpy.types.I18nUpdateTranslationSettings.active_lang
 msgid "Index of active language in langs collection"
 msgstr "Índice del idioma activo en la colección de idiomas"
-
-#. :src: bpy.types.I18nUpdateTranslationSettings.is_init
-msgid "Whether these settings have already been auto-set or not"
-msgstr "Si estas opciones ya han sido definidas automáticamente o no"
-
-#. :src: bpy.types.I18nUpdateTranslationSettings.langs
-msgid "Languages"
-msgstr "Idioma"
-
-#. :src: bpy.types.I18nUpdateTranslationSettings.langs
-msgid "Languages to update in branches"
-msgstr "Idiomas a actualizar en las ramas"
 
 # ##########################################################
 # ##
@@ -72683,43 +72771,17 @@ msgstr "Ruta del archivo"
 msgid "Path to the pot template file"
 msgstr "Ruta al archivo de plantilla .POT"
 
-#. :src: bpy.types.MocapConstraint.e_frame
-msgid "E"
-msgstr "E"
+#. :src: bpy.types.I18nUpdateTranslationSettings.langs
+msgid "Languages"
+msgstr "Idioma"
 
-#. :src: bpy.types.MocapConstraint.e_frame
-msgid "End frame of Fix"
-msgstr "Fotoframa final de la corrección"
+#. :src: bpy.types.I18nUpdateTranslationSettings.langs
+msgid "Languages to update in branches"
+msgstr "Idiomas a actualizar en las ramas"
 
-#. :src: bpy.types.MocapConstraint.targetMesh
-msgid "Target of Fix - Mesh (optional, depends on type)"
-msgstr "Objetivo de corrección - Malla (opcional, depende del tipo)"
-
-#. :src: bpy.types.MocapConstraint.smooth_out
-#. :src: bpy.types.WipeSequence.direction:'OUT'
-#: source/blender/editors/animation/fmodifier_ui.c:671
-msgid "Out"
-msgstr "Salida"
-
-#. :src: bpy.types.MocapConstraint.smooth_out
-msgid "Number of frames to smooth out"
-msgstr "Cantidad de fotogramas a suavizar"
-
-#. :src: bpy.types.MocapConstraint.constrained_bone
-msgid "Constrained Bone"
-msgstr "Hueso restringido"
-
-#. :src: bpy.types.MocapConstraint.active
-msgid "Fix is active"
-msgstr "La corrección está activa"
-
-#. :src: bpy.types.MocapConstraint.constrained_boneB
-msgid "Bone (2)"
-msgstr "Hueso (2)"
-
-#. :src: bpy.types.MocapConstraint.constrained_boneB
-msgid "Other Constrained Bone (optional, depends on type)"
-msgstr "El otro hueso restringido (opcional, depende del tipo)"
+#. :src: bpy.types.I18nUpdateTranslationSettings.is_init
+msgid "Whether these settings have already been auto-set or not"
+msgstr "Si estas opciones ya han sido definidas automáticamente o no"
 
 #. :src: bpy.types.MocapConstraint.targetSpace
 msgid "In which space should Point type target be evaluated"
@@ -72745,21 +72807,70 @@ msgstr "Espacio otro hueso"
 msgid "Evaluate target in specified other bone space"
 msgstr "Evalúa el objetivo en el espacio de huesos del otro especificado"
 
-#. :src: bpy.types.MocapConstraint.s_frame
-msgid "Start frame of Fix"
-msgstr "Fotograma inicial de la corrección"
+#. :src: bpy.types.MocapConstraint.e_frame
+msgid "E"
+msgstr "E"
+
+#. :src: bpy.types.MocapConstraint.e_frame
+msgid "End frame of Fix"
+msgstr "Fotoframa final de la corrección"
+
+#. :src: bpy.types.MocapConstraint.active
+msgid "Fix is active"
+msgstr "La corrección está activa"
 
 #. :src: bpy.types.MocapConstraint.targetDist
 msgid "Distance and Floor Fixes - Desired offset"
 msgstr "Correcciones de distancia y piso - Desplazamiento deseado"
 
+#. :src: bpy.types.MocapConstraint.targetPoint
+msgid "Target of Fix - Point"
+msgstr "Objetivo de corrección - Punto"
+
 #. :src: bpy.types.MocapConstraint.show_expanded
 msgid "Fix is fully shown"
 msgstr "La corrección se muestra completamente"
 
-#. :src: bpy.types.MocapConstraint.targetPoint
-msgid "Target of Fix - Point"
-msgstr "Objetivo de corrección - Punto"
+#. :src: bpy.types.MocapConstraint.smooth_out
+#. :src: bpy.types.WipeSequence.direction:'OUT'
+#: source/blender/editors/animation/fmodifier_ui.c:671
+msgid "Out"
+msgstr "Salida"
+
+#. :src: bpy.types.MocapConstraint.smooth_out
+msgid "Number of frames to smooth out"
+msgstr "Cantidad de fotogramas a suavizar"
+
+#. :src: bpy.types.MocapConstraint.constrained_boneB
+msgid "Bone (2)"
+msgstr "Hueso (2)"
+
+#. :src: bpy.types.MocapConstraint.constrained_boneB
+msgid "Other Constrained Bone (optional, depends on type)"
+msgstr "El otro hueso restringido (opcional, depende del tipo)"
+
+#. :src: bpy.types.MocapConstraint.targetMesh
+msgid "Target of Fix - Mesh (optional, depends on type)"
+msgstr "Objetivo de corrección - Malla (opcional, depende del tipo)"
+
+# ##########################################################
+# ##
+# ##  ToolBox &gt;&gt; OBJECT (2)
+#. :src: bpy.types.MocapConstraint.name
+msgid "Name of Mocap Fix"
+msgstr "Nombre de la corrección de CaptMov"
+
+#. :src: bpy.types.MocapConstraint.s_frame
+msgid "Start frame of Fix"
+msgstr "Fotograma inicial de la corrección"
+
+#. :src: bpy.types.MocapConstraint.type
+msgid "Type of constraint"
+msgstr "Tipo de restricción"
+
+#. :src: bpy.types.MocapConstraint.constrained_bone
+msgid "Constrained Bone"
+msgstr "Hueso restringido"
 
 #. :src: bpy.types.MocapConstraint.smooth_in
 #. :src: bpy.types.WipeSequence.direction:'IN'
@@ -72770,17 +72881,6 @@ msgstr "Entrada"
 #. :src: bpy.types.MocapConstraint.smooth_in
 msgid "Number of frames to smooth in"
 msgstr "Cantidad de fotogramas para suavizar"
-
-# ##########################################################
-# ##
-# ##  ToolBox &gt;&gt; OBJECT (2)
-#. :src: bpy.types.MocapConstraint.name
-msgid "Name of Mocap Fix"
-msgstr "Nombre de la corrección de CaptMov"
-
-#. :src: bpy.types.MocapConstraint.type
-msgid "Type of constraint"
-msgstr "Tipo de restricción"
 
 #. :src: bpy.types.NodeSetting.value
 msgid "Python expression to be evaluated as the initial node setting"
@@ -72821,6 +72921,14 @@ msgstr "Presión en la tableta"
 msgid "Is Stroke Start"
 msgstr "Es comienzo de trazo"
 
+#. :src: bpy.types.Print3DSettings.export_path
+msgid "Export Directory"
+msgstr "Directorio de exportación"
+
+#. :src: bpy.types.Print3DSettings.export_path
+msgid "Path to directory where the files are created"
+msgstr "Ruta al directorio donde se crearán los archivos"
+
 #. :src: bpy.types.Print3DSettings.use_apply_scale
 msgid "Apply Scale"
 msgstr "Aplicar escala"
@@ -72829,17 +72937,21 @@ msgstr "Aplicar escala"
 msgid "Apply scene scale setting on export"
 msgstr "Aplica la escala de la escena al exportar"
 
+#. :src: bpy.types.Print3DSettings.threshold_zero
+msgid "Limit for checking zero area/length"
+msgstr "Límite para comprobar área/longitud nulas"
+
 #. :src: bpy.types.Print3DSettings.thickness_min
 msgid "Minimum thickness"
 msgstr "Grosor mínimo"
 
-#. :src: bpy.types.Print3DSettings.export_path
-msgid "Export Directory"
-msgstr "Directorio de exportación"
+#. :src: bpy.types.Print3DSettings.export_format
+msgid "Format type to export to"
+msgstr "Tipo de formato al cual exportar"
 
-#. :src: bpy.types.Print3DSettings.export_path
-msgid "Path to directory where the files are created"
-msgstr "Ruta al directorio donde se crearán los archivos"
+#. :src: bpy.types.Print3DSettings.export_format:'WRL'
+msgid "VRML2"
+msgstr "VRML2"
 
 #. :src: bpy.types.Print3DSettings.angle_distort
 msgid "Limit for checking distorted faces"
@@ -72852,18 +72964,6 @@ msgstr "Copiar texturas"
 #. :src: bpy.types.Print3DSettings.use_export_texture
 msgid "Copy textures on export to the output path"
 msgstr "Al exportar copia las texturas a la ruta de destino"
-
-#. :src: bpy.types.Print3DSettings.threshold_zero
-msgid "Limit for checking zero area/length"
-msgstr "Límite para comprobar área/longitud nulas"
-
-#. :src: bpy.types.Print3DSettings.export_format
-msgid "Format type to export to"
-msgstr "Tipo de formato al cual exportar"
-
-#. :src: bpy.types.Print3DSettings.export_format:'WRL'
-msgid "VRML2"
-msgstr "VRML2"
 
 #. :src: bpy.types.SelectedUvElement
 msgid "Selected UV Element"
@@ -75999,7 +76099,7 @@ msgstr "Rayo"
 
 #. :src: bpy.types.Sensor.active
 msgid "Set active state of the sensor"
-msgstr ""
+msgstr "Define si el sensor se encuentra activo o no"
 
 #. :src: bpy.types.Sensor.show_expanded
 msgid "Set sensor expanded in the user interface"
@@ -78087,16 +78187,15 @@ msgstr "Datos de edición de la secuencia para un bloque de datos de la secuenci
 
 #. :src: bpy.types.SequenceEditor.sequences
 msgid "Top-level strips only"
-msgstr ""
+msgstr "Solo los clips de nivel superior"
 
 #. :src: bpy.types.SequenceEditor.sequences_all
-#, fuzzy
 msgid "All Sequences"
-msgstr "Secuencias"
+msgstr "Todas las secuencias"
 
 #. :src: bpy.types.SequenceEditor.sequences_all
 msgid "All strips, recursively including those inside metastrips"
-msgstr ""
+msgstr "Todos los clips, incluyendo de forma recursiva a aquellos dentro de meta clips"
 
 # ##########################################################
 # ##
@@ -79135,7 +79234,7 @@ msgstr "Tipo de datos espaciales"
 
 #. :src: bpy.types.Space.show_locked_time
 msgid "Lock Time to Other Windows"
-msgstr ""
+msgstr "Bloquear el tiempo al de otras ventanas"
 
 #. :src: bpy.types.SpaceClipEditor
 msgid "Space Clip Editor"
@@ -79771,36 +79870,32 @@ msgstr "Sin adherencia automática"
 #. :src: bpy.types.SpaceDopeSheetEditor.auto_snap:'STEP'
 #. :src: bpy.types.SpaceGraphEditor.auto_snap:'STEP'
 #. :src: bpy.types.SpaceNLA.auto_snap:'STEP'
-#, fuzzy
 msgid "Snap to 1.0 frame intervals"
-msgstr "Adherir a intervalos de 1.0 fotograma/segundo"
+msgstr "Adherir a intervalos de 1.0 fotogramas"
 
 #. :src: bpy.types.SpaceDopeSheetEditor.auto_snap:'TIME_STEP'
 #. :src: bpy.types.SpaceGraphEditor.auto_snap:'TIME_STEP'
 #. :src: bpy.types.SpaceNLA.auto_snap:'TIME_STEP'
 msgid "Second Step"
-msgstr ""
+msgstr "Segundos"
 
 #. :src: bpy.types.SpaceDopeSheetEditor.auto_snap:'TIME_STEP'
 #. :src: bpy.types.SpaceGraphEditor.auto_snap:'TIME_STEP'
 #. :src: bpy.types.SpaceNLA.auto_snap:'TIME_STEP'
-#, fuzzy
 msgid "Snap to 1.0 second intervals"
-msgstr "Adherir a intervalos de 1.0 fotograma/segundo"
+msgstr "Adherir a intervalos de 1.0 segundos"
 
 #. :src: bpy.types.SpaceDopeSheetEditor.auto_snap:'FRAME'
 #. :src: bpy.types.SpaceGraphEditor.auto_snap:'FRAME'
 #. :src: bpy.types.SpaceNLA.auto_snap:'FRAME'
-#, fuzzy
 msgid "Snap to actual frames (nla-action time)"
-msgstr "Adherir a los fotogramas/segundo reales (tiempo de la acción de ANL)"
+msgstr "Adherir a los fotogramas reales (tiempo de la acción de ANL)"
 
 #. :src: bpy.types.SpaceDopeSheetEditor.auto_snap:'SECOND'
 #. :src: bpy.types.SpaceGraphEditor.auto_snap:'SECOND'
 #. :src: bpy.types.SpaceNLA.auto_snap:'SECOND'
-#, fuzzy
 msgid "Snap to actual seconds (nla-action time)"
-msgstr "Adherir a los fotogramas/segundo reales (tiempo de la acción de ANL)"
+msgstr "Adherir a los segundos reales (tiempo de la acción de ANL)"
 
 # ##########################################################
 # ##
@@ -80277,9 +80372,8 @@ msgid "Edit texture nodes from Brush"
 msgstr "Editar los nodos de texturizado del pincel"
 
 #. :src: bpy.types.SpaceNodeEditor.texture_type:'LINESTYLE'
-#, fuzzy
 msgid "Edit texture nodes from Line Style"
-msgstr "Editar los nodos de texturizado del objeto"
+msgstr "Editar los nodos de texturizado del estilo de línea"
 
 #. :src: bpy.types.SpaceNodeEditor.shader_type
 msgid "Shader Type"
@@ -80519,7 +80613,7 @@ msgstr "Restricciones de huesos"
 
 #. :src: bpy.types.SpaceProperties.align
 msgid "Arrangement of the panels"
-msgstr "Disposición de los paneles"
+msgstr "Organización de los paneles"
 
 #. :src: bpy.types.SpaceProperties.texture_context
 msgid "Texture Context"
@@ -80547,7 +80641,7 @@ msgstr "Muestra texturas de partículas"
 
 #. :src: bpy.types.SpaceProperties.texture_context:'LINESTYLE'
 msgid "Show linestyle textures"
-msgstr ""
+msgstr "Muestra texturas de estilo de línea"
 
 #. :src: bpy.types.SpaceProperties.texture_context:'OTHER'
 msgid "Show other data textures"
@@ -81704,7 +81798,7 @@ msgstr "Modo usado para aplicar la textura"
 #. :src: bpy.types.BrushTextureSlot.map_mode:'STENCIL'
 #. :src: bpy.types.BrushTextureSlot.tex_paint_map_mode:'STENCIL'
 #. :src: bpy.types.BrushTextureSlot.mask_map_mode:'STENCIL'
-#: scripts/startup/bl_ui/space_view3d_toolbar.py:1528
+#: scripts/startup/bl_ui/space_view3d_toolbar.py:1551
 msgid "Stencil"
 msgstr "Estencil"
 
@@ -81818,17 +81912,15 @@ msgstr "Cuánto afecta la textura a la sombra"
 
 #. :src: bpy.types.LineStyleTextureSlot
 msgid "LineStyle Texture Slot"
-msgstr ""
+msgstr "Contenedor textura estilo de línea"
 
 #. :src: bpy.types.LineStyleTextureSlot
-#, fuzzy
 msgid "Texture slot for textures in a LineStyle datablock"
-msgstr "Contenedor de textura del bloque de datos de una lámpara"
+msgstr "Contenedor de textura del bloque de datos de estilo de línea"
 
 #. :src: bpy.types.LineStyleTextureSlot.use_map_color_diffuse
-#, fuzzy
 msgid "The texture affects basic color of the stroke"
-msgstr "La textura afecta al color base del material"
+msgstr "La textura afecta al color base del trazo"
 
 #. :src: bpy.types.LineStyleTextureSlot.use_map_alpha
 #. :src: bpy.types.MaterialTextureSlot.use_map_alpha
@@ -81836,13 +81928,12 @@ msgid "The texture affects the alpha value"
 msgstr "La textura afecta al valor de alfa"
 
 #. :src: bpy.types.LineStyleTextureSlot.use_tips
-#, fuzzy
 msgid "Use tips"
-msgstr "Usar niebla"
+msgstr "Usar puntas"
 
 #. :src: bpy.types.LineStyleTextureSlot.use_tips
 msgid "Lower half of the texture is for tips of the stroke"
-msgstr ""
+msgstr "La mitad inferior de la textura se usará para las puntas del trazo"
 
 #. :src: bpy.types.LineStyleTextureSlot.texture_coords
 #. :src: bpy.types.ParticleSettingsTextureSlot.texture_coords
@@ -81856,14 +81947,12 @@ msgid "Use screen coordinates as texture coordinates"
 msgstr "Usar las coordenadas de la vista como coordenadas de texturizado"
 
 #. :src: bpy.types.LineStyleTextureSlot.texture_coords:'ALONG_STROKE'
-#, fuzzy
 msgid "Along stroke"
 msgstr "A lo largo del trazo"
 
 #. :src: bpy.types.LineStyleTextureSlot.texture_coords:'ALONG_STROKE'
-#, fuzzy
 msgid "Use stroke length for texture coordinates"
-msgstr "Usar capa de UVs como coordenadas de texturizado"
+msgstr "Usar la longitud del trazo como coordenadas de texturizado"
 
 # ##########################################################
 # ##
@@ -86915,15 +87004,15 @@ msgstr "Método de recolección"
 
 #. :src: bpy.types.WorldLighting.gather_method:'RAYTRACE'
 msgid "Accurate, but slow when noise-free results are required"
-msgstr "Preciso, pero lento cuando se requieren resultados libres de ruido"
+msgstr "Preciso, aunque lento si se requieren resultados libres de ruido"
 
 #. :src: bpy.types.WorldLighting.gather_method:'APPROXIMATE'
 msgid "Approximate"
-msgstr "Aproximar"
+msgstr "Aproximado"
 
 #. :src: bpy.types.WorldLighting.gather_method:'APPROXIMATE'
 msgid "Inaccurate, but faster and without noise"
-msgstr "Impreciso, pero rápido y sin ruido"
+msgstr "Impreciso, aunque rápido y sin ruido"
 
 #. :src: bpy.types.WorldLighting.passes
 msgid "Number of preprocessing passes to reduce over-occlusion"
@@ -87432,6 +87521,10 @@ msgctxt "WindowManager"
 msgid "Transform Modal Map"
 msgstr "Transformación de mapa modal"
 
+#. :src: scripts/addons/io_import_hgt.py:372
+msgid "DEM data (.hgt) as Mesh and/or Image"
+msgstr ""
+
 #: scripts/addons/cycles/osl.py:33
 msgid "OSL shader compilation succeeded"
 msgstr "Compilación exitosa del sombreador OSL"
@@ -87658,14 +87751,12 @@ msgid "Not supported, interpreted as sun lamp"
 msgstr "No soportado, interpretado como una lámpara de tipo Sol"
 
 #: scripts/addons/cycles/ui.py:1268
-#, fuzzy
 msgid "Normal Settings:"
-msgstr "Opciones objetivo:"
+msgstr "Opciones de normales:"
 
 #: scripts/addons/cycles/ui.py:1272
-#, fuzzy
 msgid "Swizzle:"
-msgstr "Tamaño:"
+msgstr "Reordenar:"
 
 #: scripts/addons/cycles/ui.py:508
 #: scripts/startup/bl_ui/properties_data_armature.py:155
@@ -87715,7 +87806,7 @@ msgid "Object %r can't be written into a 3DS file"
 msgstr "El objeto %r no puede ser guardado como un archivo 3DS"
 
 #: scripts/addons/io_scene_fbx/export_fbx.py:443
-#: scripts/addons/io_scene_fbx/import_fbx.py:924
+#: scripts/addons/io_scene_fbx/import_fbx.py:940
 msgid "Couldn't open file %r"
 msgstr "No se pudo abrir el archivo %r"
 
@@ -87723,24 +87814,23 @@ msgstr "No se pudo abrir el archivo %r"
 msgid "Object '%s' has a scale of (%.3f, %.3f, %.3f), Armature deformation will not work as expected (apply Scale to fix)"
 msgstr "El objeto '%s' tiene una escala de (%.3f, %.3f, %.3f), la deformación del esqueleto no funcionará como se espera (Aplicar escala para corregir)"
 
-#: scripts/addons/io_scene_fbx/import_fbx.py:915
+#: scripts/addons/io_scene_fbx/import_fbx.py:931
 msgid "ASCII FBX files are not supported %r"
 msgstr "Los arcivos FBX de tipo ASCII no están soportados %r"
 
-#: scripts/addons/io_scene_fbx/import_fbx.py:928
+#: scripts/addons/io_scene_fbx/import_fbx.py:944
 msgid "Version %r unsupported, must be %r or later"
 msgstr "No se soporta la versión %r, debe ser %r o posterior"
 
-#: scripts/addons/io_scene_fbx/import_fbx.py:961
-#, fuzzy
+#: scripts/addons/io_scene_fbx/import_fbx.py:977
 msgid "No 'GlobalSettings' found in file %r"
-msgstr "No se encontraron 'Conexiones' en el archivo %r"
+msgstr "No se encontraron 'Opciones globales' en el archivo %r"
 
-#: scripts/addons/io_scene_fbx/import_fbx.py:996
+#: scripts/addons/io_scene_fbx/import_fbx.py:1012
 msgid "No 'Objects' found in file %r"
 msgstr "No se encontraron 'Objetos' en el archivo %r"
 
-#: scripts/addons/io_scene_fbx/import_fbx.py:999
+#: scripts/addons/io_scene_fbx/import_fbx.py:1015
 msgid "No 'Connections' found in file %r"
 msgstr "No se encontraron 'Conexiones' en el archivo %r"
 
@@ -88045,7 +88135,7 @@ msgstr "Invertir selección"
 msgid "[{}]: \"{}\" ({})"
 msgstr "[{}]: \"{}\" ({})"
 
-#: scripts/modules/rna_prop_ui.py:107
+#: scripts/modules/rna_prop_ui.py:110
 #: scripts/startup/bl_ui/properties_freestyle.py:157
 #: scripts/startup/bl_ui/properties_game.py:798
 #: scripts/startup/bl_ui/space_clip.py:268
@@ -88055,12 +88145,12 @@ msgctxt "Operator"
 msgid "Add"
 msgstr "Agregar"
 
-#: scripts/modules/rna_prop_ui.py:156
+#: scripts/modules/rna_prop_ui.py:159
 msgctxt "Operator"
 msgid "Edit"
 msgstr "Editar"
 
-#: scripts/modules/rna_prop_ui.py:159
+#: scripts/modules/rna_prop_ui.py:162
 msgid "API Defined"
 msgstr "API definida"
 
@@ -88271,7 +88361,7 @@ msgstr "Origen:"
 #: source/blender/editors/space_clip/clip_buttons.c:469
 #: source/blender/editors/space_clip/clip_buttons.c:481
 #: source/blender/editors/space_view3d/view3d_buttons.c:369
-#: source/blender/editors/uvedit/uvedit_buttons.c:160
+#: source/blender/editors/uvedit/uvedit_buttons.c:161
 msgid "X:"
 msgstr "X:"
 
@@ -88283,7 +88373,7 @@ msgstr "X:"
 #: source/blender/editors/space_clip/clip_buttons.c:471
 #: source/blender/editors/space_clip/clip_buttons.c:483
 #: source/blender/editors/space_view3d/view3d_buttons.c:372
-#: source/blender/editors/uvedit/uvedit_buttons.c:162
+#: source/blender/editors/uvedit/uvedit_buttons.c:163
 msgid "Y:"
 msgstr "Y:"
 
@@ -88845,10 +88935,10 @@ msgstr "Actualización:"
 #: scripts/startup/bl_ui/properties_data_metaball.py:124
 #: scripts/startup/bl_ui/properties_data_metaball.py:128
 #: scripts/startup/bl_ui/properties_material.py:721
-#: source/blender/editors/space_view3d/view3d_buttons.c:1078
-#: source/blender/editors/space_view3d/view3d_buttons.c:1084
-#: source/blender/editors/space_view3d/view3d_buttons.c:1088
-#: source/blender/editors/space_view3d/view3d_buttons.c:1093
+#: source/blender/editors/space_view3d/view3d_buttons.c:1077
+#: source/blender/editors/space_view3d/view3d_buttons.c:1083
+#: source/blender/editors/space_view3d/view3d_buttons.c:1087
+#: source/blender/editors/space_view3d/view3d_buttons.c:1092
 msgid "Size:"
 msgstr "Tamaño:"
 
@@ -89431,9 +89521,8 @@ msgid "Selection:"
 msgstr "Selección:"
 
 #: scripts/startup/bl_ui/properties_freestyle.py:605
-#, fuzzy
 msgid "Sorting:"
-msgstr "Comenzando"
+msgstr "Ordenamiento:"
 
 #: scripts/startup/bl_ui/properties_freestyle.py:617
 msgid "Caps:"
@@ -89480,14 +89569,13 @@ msgid "Base Thickness:"
 msgstr "Grosor base:"
 
 #: scripts/startup/bl_ui/properties_freestyle.py:682
-#, fuzzy
 msgid "Spacing Along Stroke"
-msgstr "A lo largo del trazo"
+msgstr "Espaciado a lo largo del trazo"
 
 #: scripts/startup/bl_ui/properties_freestyle.py:686
 msgctxt "Operator"
 msgid "Go to Linestyle Textures Properties"
-msgstr ""
+msgstr "Ir a las propiedades de texturas de estilo de línea"
 
 #: scripts/startup/bl_ui/properties_game.py:280
 #: scripts/startup/bl_ui/properties_game.py:301
@@ -89958,9 +90046,8 @@ msgid "Tracking Axes:"
 msgstr "Ejes de dirección:"
 
 #: scripts/startup/bl_ui/properties_object.py:244
-#, fuzzy
 msgid "Maximum Dupli Draw Type:"
-msgstr "Tipo máximo de visualización"
+msgstr "Tipo máx. visualización duplicados:"
 
 #: scripts/startup/bl_ui/properties_object.py:246
 msgid "Maximum Draw Type:"
@@ -90005,7 +90092,7 @@ msgstr "Emitir desde:"
 
 #: scripts/startup/bl_ui/properties_particle.py:300
 #: scripts/startup/bl_ui/properties_physics_cloth.py:84
-#: source/blender/editors/physics/rigidbody_object.c:402
+#: source/blender/editors/physics/rigidbody_object.c:398
 msgid "Air"
 msgstr "Aire"
 
@@ -91040,7 +91127,7 @@ msgstr "Pelo:"
 
 #: scripts/startup/bl_ui/properties_texture.py:963
 msgid "Use Tips:"
-msgstr ""
+msgstr "Usar puntas:"
 
 #: scripts/startup/bl_ui/properties_world.py:184
 msgid "Attenuation:"
@@ -91757,10 +91844,9 @@ msgid "Track Ordering..."
 msgstr "Orden de pistas..."
 
 #: scripts/startup/bl_ui/space_nla.py:138
-#, fuzzy
 msgctxt "Operator"
 msgid "Linked Duplicate"
-msgstr "Crear duplicados"
+msgstr "Duplicado vinculado"
 
 #: scripts/startup/bl_ui/space_nla.py:165
 msgctxt "Operator"
@@ -93375,8 +93461,9 @@ msgstr "Conectar"
 #: scripts/startup/bl_ui/space_view3d.py:2349
 #: scripts/startup/bl_ui/space_view3d.py:665
 #: scripts/startup/bl_ui/space_view3d.py:2242
+#, fuzzy
 msgctxt "Operator"
-msgid "Edge Loop"
+msgid "Edge Loops"
 msgstr "Bucle de bordes"
 
 #: scripts/startup/bl_ui/space_view3d.py:2661
@@ -93552,8 +93639,9 @@ msgstr "No desplegables"
 
 #: scripts/startup/bl_ui/space_view3d.py:666
 #: scripts/startup/bl_ui/space_view3d.py:2243
+#, fuzzy
 msgctxt "Operator"
-msgid "Edge Ring"
+msgid "Edge Rings"
 msgstr "Anillo de bordes"
 
 #: scripts/startup/bl_ui/space_view3d.py:991
@@ -93715,10 +93803,9 @@ msgid "Region (Vertex Normals)"
 msgstr "Región (nomales de vértices)"
 
 #: scripts/startup/bl_ui/space_view3d.py:2173
-#, fuzzy
 msgctxt "Operator"
 msgid "Shade Sharp"
-msgstr "Definición de bordes"
+msgstr "Sombreado definido"
 
 #: scripts/startup/bl_ui/space_view3d.py:2216
 #: scripts/startup/bl_ui/space_view3d_toolbar.py:422
@@ -93773,28 +93860,24 @@ msgid "Toggle Small Caps"
 msgstr "Alternar versalitas"
 
 #: scripts/startup/bl_ui/space_view3d.py:2484
-#, fuzzy
 msgctxt "Operator"
 msgid "Copyright"
-msgstr "Copyright|Alt C"
+msgstr "Copyright"
 
 #: scripts/startup/bl_ui/space_view3d.py:2485
-#, fuzzy
 msgctxt "Operator"
 msgid "Registered Trademark"
-msgstr "Marca Registrada|Alt R"
+msgstr "Marca Registrada"
 
 #: scripts/startup/bl_ui/space_view3d.py:2489
-#, fuzzy
 msgctxt "Operator"
 msgid "Degree Sign"
-msgstr "Grados|Alt G"
+msgstr "Grados"
 
 #: scripts/startup/bl_ui/space_view3d.py:2490
-#, fuzzy
 msgctxt "Operator"
 msgid "Multiplication Sign"
-msgstr "Multiplicación|Alt x"
+msgstr "Multiplicación"
 
 #: scripts/startup/bl_ui/space_view3d.py:2491
 #: scripts/startup/bl_ui/space_view3d_toolbar.py:137
@@ -93804,75 +93887,64 @@ msgid "Circle"
 msgstr "Círculo"
 
 #: scripts/startup/bl_ui/space_view3d.py:2492
-#, fuzzy
 msgctxt "Operator"
 msgid "Superscript 1"
-msgstr "Superíndice 1|Alt 1"
+msgstr "Superíndice 1"
 
 #: scripts/startup/bl_ui/space_view3d.py:2493
-#, fuzzy
 msgctxt "Operator"
 msgid "Superscript 2"
-msgstr "Superíndice 2|Alt 2"
+msgstr "Superíndice 2"
 
 #: scripts/startup/bl_ui/space_view3d.py:2494
-#, fuzzy
 msgctxt "Operator"
 msgid "Superscript 3"
-msgstr "Superíndice 3|Alt 3"
+msgstr "Superíndice 3"
 
 #: scripts/startup/bl_ui/space_view3d.py:2495
-#, fuzzy
 msgctxt "Operator"
 msgid "Double >>"
-msgstr "El doble"
+msgstr "Doble >>"
 
 #: scripts/startup/bl_ui/space_view3d.py:2496
-#, fuzzy
 msgctxt "Operator"
 msgid "Double <<"
-msgstr "El doble"
+msgstr "Doble <<"
 
 #: scripts/startup/bl_ui/space_view3d.py:2497
-#, fuzzy
 msgctxt "Operator"
 msgid "Promillage"
 msgstr "Por mil"
 
 #: scripts/startup/bl_ui/space_view3d.py:2501
-#, fuzzy
 msgctxt "Operator"
 msgid "Dutch Florin"
-msgstr "Florín holandés|Alt F"
+msgstr "Florín holandés"
 
 #: scripts/startup/bl_ui/space_view3d.py:2502
-#, fuzzy
 msgctxt "Operator"
 msgid "British Pound"
-msgstr "Libra Esterlina|Alt L"
+msgstr "Libra Esterlina"
 
 #: scripts/startup/bl_ui/space_view3d.py:2503
-#, fuzzy
 msgctxt "Operator"
 msgid "Japanese Yen"
-msgstr "Yen|Alt Y"
+msgstr "Yen"
 
 #: scripts/startup/bl_ui/space_view3d.py:2507
 msgctxt "Operator"
 msgid "German S"
-msgstr ""
+msgstr "S alemana"
 
 #: scripts/startup/bl_ui/space_view3d.py:2508
-#, fuzzy
 msgctxt "Operator"
 msgid "Spanish Question Mark"
-msgstr "Interrogación apertura|Alt ?"
+msgstr "Interrogación apertura"
 
 #: scripts/startup/bl_ui/space_view3d.py:2509
-#, fuzzy
 msgctxt "Operator"
 msgid "Spanish Exclamation Mark"
-msgstr "Admiración apertura|Alt !"
+msgstr "Admiración apertura"
 
 #: scripts/startup/bl_ui/space_view3d.py:2675
 msgctxt "Operator"
@@ -94218,9 +94290,8 @@ msgid "Remove:"
 msgstr "Remover:"
 
 #: scripts/startup/bl_ui/space_view3d_toolbar.py:389
-#, fuzzy
 msgid "Faces:"
-msgstr "Caras"
+msgstr "Caras:"
 
 #: scripts/startup/bl_ui/space_view3d_toolbar.py:392
 #: scripts/startup/bl_ui/space_view3d_toolbar.py:105
@@ -94229,21 +94300,18 @@ msgid "Flat"
 msgstr "Plano"
 
 #: scripts/startup/bl_ui/space_view3d_toolbar.py:393
-#, fuzzy
 msgid "Edges:"
-msgstr "Bordes"
+msgstr "Bordes:"
 
 #: scripts/startup/bl_ui/space_view3d_toolbar.py:396
 #: scripts/startup/bl_ui/space_view3d_toolbar.py:402
-#, fuzzy
 msgctxt "Operator"
 msgid "Sharp"
-msgstr "Definido"
+msgstr "Definidos"
 
 #: scripts/startup/bl_ui/space_view3d_toolbar.py:397
-#, fuzzy
 msgid "Vertices:"
-msgstr "Vértices"
+msgstr "Vértices:"
 
 #: scripts/startup/bl_ui/space_view3d_toolbar.py:406
 msgctxt "Operator"
@@ -94326,48 +94394,44 @@ msgstr "Agregar a biblioteca"
 msgid "Show Zero Weights:"
 msgstr "Mostrar influencias nulas:"
 
-#: scripts/startup/bl_ui/space_view3d_toolbar.py:1538
-msgid "Clone from UV map"
-msgstr "Clonar a partir de mapa UV"
-
-#: scripts/startup/bl_ui/space_view3d_toolbar.py:1545
-msgid "External Editing:"
-msgstr "Edición externa:"
-
-#: scripts/startup/bl_ui/space_view3d_toolbar.py:1548
+#: scripts/startup/bl_ui/space_view3d_toolbar.py:1510
 msgctxt "Operator"
 msgid "Quick Edit"
 msgstr "Edición rápida"
 
-#: scripts/startup/bl_ui/space_view3d_toolbar.py:1549
+#: scripts/startup/bl_ui/space_view3d_toolbar.py:1511
 #: source/blender/editors/interface/interface_templates.c:974
 msgctxt "Operator"
 msgid "Apply"
 msgstr "Aplicar"
 
-#: scripts/startup/bl_ui/space_view3d_toolbar.py:1553
+#: scripts/startup/bl_ui/space_view3d_toolbar.py:1515
 msgctxt "Operator"
 msgid "Apply Camera Image"
 msgstr "Aplicar imagen desde cámara"
 
-#: scripts/startup/bl_ui/space_view3d_toolbar.py:1554
+#: scripts/startup/bl_ui/space_view3d_toolbar.py:1516
 msgctxt "Operator"
 msgid "Save All Edited"
 msgstr "Guardar todo lo editado"
 
-#: scripts/startup/bl_ui/space_view3d_toolbar.py:1641
+#: scripts/startup/bl_ui/space_view3d_toolbar.py:1561
+msgid "Clone from UV map"
+msgstr "Clonar a partir de mapa UV"
+
+#: scripts/startup/bl_ui/space_view3d_toolbar.py:1652
 msgid "Keep:"
 msgstr "Mantener:"
 
-#: scripts/startup/bl_ui/space_view3d_toolbar.py:1642
+#: scripts/startup/bl_ui/space_view3d_toolbar.py:1653
 msgid "Lengths"
 msgstr "Longitudes"
 
-#: scripts/startup/bl_ui/space_view3d_toolbar.py:1651
+#: scripts/startup/bl_ui/space_view3d_toolbar.py:1662
 msgid "Draw:"
 msgstr "Dibujar:"
 
-#: scripts/startup/bl_ui/space_view3d_toolbar.py:1652
+#: scripts/startup/bl_ui/space_view3d_toolbar.py:1663
 msgid "Path Steps"
 msgstr "Intervalos trayectoria:"
 
@@ -94443,19 +94507,19 @@ msgctxt "Operator"
 msgid "Enable Dyntopo"
 msgstr "Habilitar"
 
-#: scripts/startup/bl_ui/space_view3d_toolbar.py:1628
+#: scripts/startup/bl_ui/space_view3d_toolbar.py:1639
 msgid "Point cache must be baked"
 msgstr "El caché de puntos debe ser capturado"
 
-#: scripts/startup/bl_ui/space_view3d_toolbar.py:1629
+#: scripts/startup/bl_ui/space_view3d_toolbar.py:1640
 msgid "in memory to enable editing!"
 msgstr "en memoria para habilitar su edición!"
 
-#: scripts/startup/bl_ui/space_view3d_toolbar.py:1634
+#: scripts/startup/bl_ui/space_view3d_toolbar.py:1645
 msgid "Deflect emitter"
 msgstr "Deflectar emisor"
 
-#: scripts/startup/bl_ui/space_view3d_toolbar.py:1645
+#: scripts/startup/bl_ui/space_view3d_toolbar.py:1656
 msgid "Correct:"
 msgstr "Corregir:"
 
@@ -94487,7 +94551,7 @@ msgstr "El modificador requiere datos originales, mala posición en la lista"
 
 #: source/blender/blenkernel/intern/DerivedMesh.c:1615
 msgid "Not supported in dyntopo"
-msgstr ""
+msgstr "No soportado con topología dinámica"
 
 #: source/blender/blenkernel/intern/DerivedMesh.c:1617
 msgid "Not supported in sculpt mode"
@@ -94495,18 +94559,18 @@ msgstr "No soportado en modo escultura"
 
 #: source/blender/blenkernel/intern/DerivedMesh.c:1621
 msgid "Hide, Mask and optimized display disabled"
-msgstr ""
+msgstr "Ocultar, Máscara y la visualización optimizada, deshabilitados"
 
-#: source/blender/blenkernel/intern/anim.c:161
+#: source/blender/blenkernel/intern/anim.c:162
 msgid ", cannot have single-frame paths"
 msgstr ", no se pueden tener trayectorias de un solo fotograma"
 
-#: source/blender/blenkernel/intern/anim.c:157
+#: source/blender/blenkernel/intern/anim.c:158
 msgid "Motion path frame extents invalid for %s (%d to %d)%s"
 msgstr "Extensión inválida de fotogramas de trayectoria de movimiento para %s (%d a %d)%s"
 
-#: source/blender/blenkernel/intern/anim_sys.c:1107
-#: source/blender/blenkernel/intern/anim_sys.c:1117
+#: source/blender/blenkernel/intern/anim_sys.c:1109
+#: source/blender/blenkernel/intern/anim_sys.c:1119
 msgid "KeyingSet"
 msgstr "Conjunto_de_claves"
 
@@ -94716,30 +94780,30 @@ msgstr "Clave %d"
 msgid "MaskLayer"
 msgstr "Capa de máscara"
 
-#: source/blender/blenkernel/intern/mesh_evaluate.c:659
+#: source/blender/blenkernel/intern/mesh_evaluate.c:673
 msgid "Tangent space can only be computed for tris/quads, aborting"
 msgstr "El espacio tangencial solo puede ser calculado en triángulos o cuadriláteros, abortando"
 
-#: source/blender/blenkernel/intern/mesh_evaluate.c:684
+#: source/blender/blenkernel/intern/mesh_evaluate.c:698
 msgid "Mikktspace failed to generate tangents for this mesh!"
 msgstr "Mikktspace no pudo generar tangentes para esta malla!"
 
-#: source/blender/blenkernel/intern/mesh_evaluate.c:712
+#: source/blender/blenkernel/intern/mesh_evaluate.c:726
 msgid "Tangent space computation needs loop normals, none found, aborting"
 msgstr "El cálculo del espacio tangencial necesita normales de bucle, que no fue posible encontrar, abortando"
 
-#: source/blender/blenkernel/intern/mesh_evaluate.c:706
+#: source/blender/blenkernel/intern/mesh_evaluate.c:720
 msgid "Tangent space computation needs an UVMap, \"%s\" not found, aborting"
 msgstr "El cálculo del espacio tangencial necesita un mapa UV, \"%s\" no encontrado, abortando"
 
-#: source/blender/blenkernel/intern/nla.c:279
+#: source/blender/blenkernel/intern/nla.c:281
 msgid "NlaTrack"
 msgstr "Pista ANL"
 
 # ##########################################################
 # ##
 # ##  ToolBox &gt;&gt; SEQUENCE
-#: source/blender/blenkernel/intern/nla.c:1382
+#: source/blender/blenkernel/intern/nla.c:1384
 msgid "NlaStrip"
 msgstr "Clip ANL"
 
@@ -94885,7 +94949,7 @@ msgstr "Tipo no definido"
 
 #: source/blender/blenkernel/intern/scene.c:1716
 #: source/blender/blenkernel/intern/scene.c:1720
-#: source/blender/makesrna/intern/rna_scene.c:1183
+#: source/blender/makesrna/intern/rna_scene.c:1190
 msgid "RenderLayer"
 msgstr "Capa_proc"
 
@@ -94909,21 +94973,21 @@ msgctxt "Sequence"
 msgid "Bright/Contrast"
 msgstr "Brillo / Contraste"
 
-#: source/blender/blenkernel/intern/sequencer.c:3988
+#: source/blender/blenkernel/intern/sequencer.c:3994
 msgid "Strips must be the same length"
 msgstr "Los clips deben ser de la misma longitud"
 
-#: source/blender/blenkernel/intern/sequencer.c:3995
 #: source/blender/blenkernel/intern/sequencer.c:4001
+#: source/blender/blenkernel/intern/sequencer.c:4007
 msgid "Strips were not compatible"
 msgstr "Los clips no son compatibles"
 
-#: source/blender/blenkernel/intern/sequencer.c:4007
+#: source/blender/blenkernel/intern/sequencer.c:4013
 msgid "Strips must have the same number of inputs"
 msgstr "Los clips deben tener la misma cantidad de entradas"
 
-#: source/blender/blenkernel/intern/sequencer.c:4360
-#: source/blender/blenkernel/intern/sequencer.c:4372
+#: source/blender/blenkernel/intern/sequencer.c:4382
+#: source/blender/blenkernel/intern/sequencer.c:4394
 #: source/blender/editors/sound/sound_ops.c:110
 #: source/blender/editors/sound/sound_ops.c:119
 #: source/blender/editors/space_graph/graph_edit.c:1169
@@ -94947,52 +95011,52 @@ msgstr "Este Blender fue compilado sin la biblioteca de rastreo de movimiento"
 msgid "Cannot open or start AVI movie file"
 msgstr "No es posible abrir o iniciar el archivo de película AVI"
 
-#: source/blender/blenkernel/intern/writeffmpeg.c:352
+#: source/blender/blenkernel/intern/writeffmpeg.c:353
 msgid "Error writing frame"
 msgstr "Error al guardar fotograma"
 
-#: source/blender/blenkernel/intern/writeffmpeg.c:370
+#: source/blender/blenkernel/intern/writeffmpeg.c:371
 msgid "Could not allocate temporary frame"
 msgstr "No fue posible asignar fotograma temporal"
 
-#: source/blender/blenkernel/intern/writeffmpeg.c:818
-#: source/blender/blenkernel/intern/writeffmpeg.c:823
+#: source/blender/blenkernel/intern/writeffmpeg.c:832
+#: source/blender/blenkernel/intern/writeffmpeg.c:837
 msgid "No valid formats found"
 msgstr "No se encontraron formatos válidos"
 
-#: source/blender/blenkernel/intern/writeffmpeg.c:829
+#: source/blender/blenkernel/intern/writeffmpeg.c:843
 msgid "Error opening output file"
 msgstr "Error abriendo archivo de salida"
 
-#: source/blender/blenkernel/intern/writeffmpeg.c:884
+#: source/blender/blenkernel/intern/writeffmpeg.c:898
 msgid "Render width has to be 720 pixels for DV!"
 msgstr "El ancho de la imagen procesada debe ser de 720 píxeles para DV!"
 
-#: source/blender/blenkernel/intern/writeffmpeg.c:888
+#: source/blender/blenkernel/intern/writeffmpeg.c:902
 msgid "Render height has to be 480 pixels for DV-NTSC!"
 msgstr "La altura de la imagen procesada debe ser de 480 píxeles para DV-NTSC!"
 
-#: source/blender/blenkernel/intern/writeffmpeg.c:892
+#: source/blender/blenkernel/intern/writeffmpeg.c:906
 msgid "Render height has to be 576 pixels for DV-PAL!"
 msgstr "La altura de la imagen procesada debe ser de 576 píxeles para DV-PAL!"
 
-#: source/blender/blenkernel/intern/writeffmpeg.c:900
+#: source/blender/blenkernel/intern/writeffmpeg.c:914
 msgid "FFMPEG only supports 48khz / stereo audio for DV!"
 msgstr "FFMPEG solo soporta audio estéreo de 48khz para DV!"
 
-#: source/blender/blenkernel/intern/writeffmpeg.c:913
+#: source/blender/blenkernel/intern/writeffmpeg.c:927
 msgid "Error initializing video stream"
 msgstr "Error inicializando flujo de video"
 
-#: source/blender/blenkernel/intern/writeffmpeg.c:926
+#: source/blender/blenkernel/intern/writeffmpeg.c:940
 msgid "Error initializing audio stream"
 msgstr "Error inicializando flujo de audio"
 
-#: source/blender/blenkernel/intern/writeffmpeg.c:933
+#: source/blender/blenkernel/intern/writeffmpeg.c:947
 msgid "Could not open file for writing"
 msgstr "No fue posible abrir el archivo para escritura"
 
-#: source/blender/blenkernel/intern/writeffmpeg.c:939
+#: source/blender/blenkernel/intern/writeffmpeg.c:953
 msgid "Could not initialize streams, probably unsupported codec combination"
 msgstr "No fue posible inicializar los flujos, probablemente debido a una combinación no soportada de compresores"
 
@@ -95127,11 +95191,11 @@ msgstr "Falla al abrir el archivo .blend para comprimirlo"
 msgid "Cannot open file %s for writing: %s"
 msgstr "No es posible abrir el archivo %s para escritura: %s"
 
-#: source/blender/bmesh/intern/bmesh_core.c:1094
+#: source/blender/bmesh/intern/bmesh_core.c:1097
 msgid "Input faces do not form a contiguous manifold region"
 msgstr "Las caras suministradas no conforman una región contínua desplegable"
 
-#: source/blender/bmesh/intern/bmesh_core.c:1157
+#: source/blender/bmesh/intern/bmesh_core.c:1160
 msgid "Invalid boundary region to join faces"
 msgstr "Región limítrofe inválida para unir caras"
 
@@ -95289,15 +95353,15 @@ msgstr "Si la curva-f contribuye al resultado o no"
 
 #: source/blender/editors/animation/anim_channels_defines.c:3762
 msgid "Temporarily disable NLA stack evaluation (i.e. only the active action is evaluated)"
-msgstr ""
+msgstr "Deshabilita temporalmente la evaluación de la lista de ANL (solo se evaluará la acción activa)"
 
 #: source/blender/editors/animation/anim_channels_defines.c:3765
 msgid "Do channels contribute to result (toggle channel muting)"
-msgstr ""
+msgstr "Permite definir el silenciamiento de los canales, contribuyendo o no al resultado final"
 
 #: source/blender/editors/animation/anim_channels_defines.c:3774
 msgid "Display action without any time remapping (when unpinned)"
-msgstr ""
+msgstr "Mostrar la acción sin ningún remapeo de tiempo (si está libre)"
 
 #: source/blender/editors/animation/anim_ipo_utils.c:67
 msgid "<invalid>"
@@ -95307,16 +95371,16 @@ msgstr "<inválido>"
 msgid "<no path>"
 msgstr "<sin ruta>"
 
-#: source/blender/editors/animation/anim_markers.c:496
+#: source/blender/editors/animation/anim_markers.c:500
 msgid "Programming error: operator does not actually have code to do anything!"
 msgstr "Error de programación: el operador realmente no contiene un código que haga algo!"
 
-#: source/blender/editors/animation/anim_markers.c:1373
-#: source/blender/editors/space_sequencer/sequencer_add.c:247
+#: source/blender/editors/animation/anim_markers.c:1377
+#: source/blender/editors/space_sequencer/sequencer_add.c:273
 msgid "Scene not found"
 msgstr "Escena no encontrada"
 
-#: source/blender/editors/animation/anim_markers.c:1378
+#: source/blender/editors/animation/anim_markers.c:1382
 msgid "Cannot re-link markers into the same scene"
 msgstr "No es posible re vincular marcadores dentro de la misma escena"
 
@@ -95422,11 +95486,11 @@ msgstr "Borra el punto de control de la envolvente"
 msgid "Delete F-Curve Modifier"
 msgstr "Borrar modificador de curvas-f"
 
-#: source/blender/editors/animation/keyframes_general.c:783
+#: source/blender/editors/animation/keyframes_general.c:785
 msgid "No animation data in buffer to paste"
 msgstr "No hay datos de animación en el buffer para pegar"
 
-#: source/blender/editors/animation/keyframes_general.c:788
+#: source/blender/editors/animation/keyframes_general.c:790
 msgid "No selected F-Curves to paste into"
 msgstr "No hay curvas-f seleccionadas donde pegar"
 
@@ -95659,7 +95723,7 @@ msgstr "No es posible posar los datos de la biblioteca"
 
 #: source/blender/editors/armature/pose_edit.c:1037
 msgid "Undo of hiding can only be done with Reveal Selected"
-msgstr ""
+msgstr "Solo es posible deshacer el ocultamiento usando Revelar seleccionados"
 
 #: source/blender/editors/armature/pose_lib.c:409
 msgid "Add New"
@@ -95734,15 +95798,15 @@ msgstr "No es posible aplicar la pose a un esqueleto vinculado desde una bibliot
 msgid "Actions on this armature will be destroyed by this new rest pose as the transforms stored are relative to the old rest pose"
 msgstr "Las acciones de este esqueleto serán destruidas por esta nueva pose de reposo, porque las transformaciones almacenadas eran relativas a la pose de reposo anterior"
 
-#: source/blender/editors/armature/pose_transform.c:424
+#: source/blender/editors/armature/pose_transform.c:425
 msgid "No pose to copy"
 msgstr "Ninguna pose que copiar"
 
-#: source/blender/editors/armature/pose_transform.c:472
+#: source/blender/editors/armature/pose_transform.c:473
 msgid "Copy buffer is empty"
 msgstr "El buffer de copia está vacío"
 
-#: source/blender/editors/armature/pose_transform.c:673
+#: source/blender/editors/armature/pose_transform.c:674
 #: source/blender/editors/object/object_transform.c:222
 msgid "Programming error: missing clear transform function or keying set name"
 msgstr "Error de programación: falta función de eliminación de tranformación o nombre de conjunto de claves"
@@ -96011,111 +96075,111 @@ msgstr "Región activa no definida"
 msgid "Failed to set value"
 msgstr "No se pudo definir el valor"
 
-#: source/blender/editors/interface/interface_handlers.c:5600
+#: source/blender/editors/interface/interface_handlers.c:5612
 msgid "Pin"
 msgstr "Fijar"
 
-#: source/blender/editors/interface/interface_handlers.c:5600
+#: source/blender/editors/interface/interface_handlers.c:5612
 msgid "Shift+Left Mouse"
 msgstr "Mayúsculas + botón izq."
 
-#: source/blender/editors/interface/interface_handlers.c:5661
+#: source/blender/editors/interface/interface_handlers.c:5673
 msgctxt "Operator"
 msgid "Replace Keyframes"
 msgstr "Reemplazar fotogramas clave"
 
-#: source/blender/editors/interface/interface_handlers.c:5663
+#: source/blender/editors/interface/interface_handlers.c:5675
 msgctxt "Operator"
 msgid "Replace Single Keyframe"
 msgstr "Reemplazar fotograma clave individual"
 
-#: source/blender/editors/interface/interface_handlers.c:5667
+#: source/blender/editors/interface/interface_handlers.c:5679
 msgctxt "Operator"
 msgid "Delete Single Keyframe"
 msgstr "Borrar fotograma clave individual"
 
-#: source/blender/editors/interface/interface_handlers.c:5671
+#: source/blender/editors/interface/interface_handlers.c:5683
 msgctxt "Operator"
 msgid "Replace Keyframe"
 msgstr "Reemplazar fotograma clave"
 
-#: source/blender/editors/interface/interface_handlers.c:5689
+#: source/blender/editors/interface/interface_handlers.c:5701
 msgctxt "Operator"
 msgid "Insert Single Keyframe"
 msgstr "Insertar fotograma clave individual"
 
-#: source/blender/editors/interface/interface_handlers.c:5700
-#: source/blender/editors/interface/interface_handlers.c:5706
+#: source/blender/editors/interface/interface_handlers.c:5712
+#: source/blender/editors/interface/interface_handlers.c:5718
 msgctxt "Operator"
 msgid "Clear Keyframes"
 msgstr "Eliminar fotogramas clave"
 
-#: source/blender/editors/interface/interface_handlers.c:5702
+#: source/blender/editors/interface/interface_handlers.c:5714
 msgctxt "Operator"
 msgid "Clear Single Keyframes"
 msgstr "Eliminar fotograma clave individual"
 
-#: source/blender/editors/interface/interface_handlers.c:5716
+#: source/blender/editors/interface/interface_handlers.c:5728
 msgctxt "Operator"
 msgid "Delete Drivers"
 msgstr "Borrar controladores"
 
-#: source/blender/editors/interface/interface_handlers.c:5718
+#: source/blender/editors/interface/interface_handlers.c:5730
 msgctxt "Operator"
 msgid "Delete Single Driver"
 msgstr "Borrar controlador individual"
 
-#: source/blender/editors/interface/interface_handlers.c:5722
+#: source/blender/editors/interface/interface_handlers.c:5734
 msgctxt "Operator"
 msgid "Delete Driver"
 msgstr "Borrar controlador"
 
-#: source/blender/editors/interface/interface_handlers.c:5740
+#: source/blender/editors/interface/interface_handlers.c:5752
 msgctxt "Operator"
 msgid "Add Drivers"
 msgstr "Agregar controladores"
 
-#: source/blender/editors/interface/interface_handlers.c:5742
+#: source/blender/editors/interface/interface_handlers.c:5754
 msgctxt "Operator"
 msgid "Add Single Driver"
 msgstr "Agregar controlador individual"
 
-#: source/blender/editors/interface/interface_handlers.c:5762
+#: source/blender/editors/interface/interface_handlers.c:5774
 msgctxt "Operator"
 msgid "Add All to Keying Set"
 msgstr "Agregar todo al conjunto de claves"
 
-#: source/blender/editors/interface/interface_handlers.c:5764
+#: source/blender/editors/interface/interface_handlers.c:5776
 msgctxt "Operator"
 msgid "Add Single to Keying Set"
 msgstr "Agregar individual a conjunto de claves"
 
-#: source/blender/editors/interface/interface_handlers.c:5785
+#: source/blender/editors/interface/interface_handlers.c:5797
 msgctxt "Operator"
 msgid "Reset All to Default Values"
 msgstr "Restablecer todo a los valores predefinidos"
 
-#: source/blender/editors/interface/interface_handlers.c:5787
+#: source/blender/editors/interface/interface_handlers.c:5799
 msgctxt "Operator"
 msgid "Reset Single to Default Value"
 msgstr "Restablecer individual a valor predefinido"
 
-#: source/blender/editors/interface/interface_handlers.c:5795
+#: source/blender/editors/interface/interface_handlers.c:5807
 msgctxt "Operator"
 msgid "Unset"
 msgstr "Volver a definir"
 
-#: source/blender/editors/interface/interface_handlers.c:5826
+#: source/blender/editors/interface/interface_handlers.c:5838
 msgctxt "Operator"
 msgid "Change Shortcut"
 msgstr "Cambiar atajo"
 
-#: source/blender/editors/interface/interface_handlers.c:5830
+#: source/blender/editors/interface/interface_handlers.c:5842
 msgctxt "Operator"
 msgid "Remove Shortcut"
 msgstr "Remover atajo"
 
-#: source/blender/editors/interface/interface_handlers.c:5836
+#: source/blender/editors/interface/interface_handlers.c:5848
 msgctxt "Operator"
 msgid "Add Shortcut"
 msgstr "Agregar atajo"
@@ -96123,24 +96187,24 @@ msgstr "Agregar atajo"
 # ##########################################################
 # ##
 # ##  Menu bar
-#: source/blender/editors/interface/interface_handlers.c:5863
-#: source/blender/editors/interface/interface_handlers.c:5886
+#: source/blender/editors/interface/interface_handlers.c:5875
+#: source/blender/editors/interface/interface_handlers.c:5898
 msgctxt "Operator"
 msgid "Online Manual"
 msgstr "Manual en línea"
 
-#: source/blender/editors/interface/interface_handlers.c:5868
-#: source/blender/editors/interface/interface_handlers.c:5891
+#: source/blender/editors/interface/interface_handlers.c:5880
+#: source/blender/editors/interface/interface_handlers.c:5903
 msgctxt "Operator"
 msgid "Online Python Reference"
 msgstr "Referencia en línea de Python"
 
-#: source/blender/editors/interface/interface_handlers.c:5900
+#: source/blender/editors/interface/interface_handlers.c:5912
 msgctxt "Operator"
 msgid "Submit Description"
 msgstr "Enviar descripción"
 
-#: source/blender/editors/interface/interface_handlers.c:6039
+#: source/blender/editors/interface/interface_handlers.c:6051
 msgid "DoButton pointer error: %s"
 msgstr "Error de puntero de DoButton: %s"
 
@@ -97018,7 +97082,7 @@ msgstr "Recorrido del ratón demasiado corto"
 # ##  ToolBox &gt;&gt; Curve
 #: source/blender/editors/mesh/editmesh_tools.c:2828
 #: source/blender/editors/space_view3d/view3d_buttons.c:316
-#: source/blender/editors/space_view3d/view3d_buttons.c:1029
+#: source/blender/editors/space_view3d/view3d_buttons.c:1028
 msgid "Nothing selected"
 msgstr "Nada seleccionado"
 
@@ -97311,63 +97375,74 @@ msgstr "Referencia circular en la lista de texturas"
 msgid "No valid images found to bake to"
 msgstr "No se encontraron imágenes válidas hacia donde capturar"
 
-#. :src: source/blender/editors/object/object_bake_api.c:454
-msgid "No active UV layer found in the active object"
-msgstr ""
-
-#: source/blender/editors/object/object_bake_api.c:460
-msgid "No active image found, add a material or bake to an external file"
-msgstr ""
-
-#: source/blender/editors/object/object_bake_api.c:466
-msgid "No active image found, add a material or bake without the Split Materials option"
-msgstr ""
-
-#: source/blender/editors/object/object_bake_api.c:533
-#, fuzzy
+#: source/blender/editors/object/object_bake_api.c:386
+#: source/blender/editors/object/object_bake_api.c:392
 msgid "No valid selected objects"
-msgstr "Borra los objetos seleccionados"
+msgstr "Ningún objeto válido seleccionado"
 
-#: source/blender/editors/object/object_bake_api.c:546
+#: source/blender/editors/object/object_bake_api.c:558
+msgid "No active image found, add a material or bake to an external file"
+msgstr "No se encontró ninguna imagen activa, agregar un material o capturar a una imagen externa"
+
+#: source/blender/editors/object/object_bake_api.c:564
+msgid "No active image found, add a material or bake without the Split Materials option"
+msgstr "No se encontró ninguna imagen activa, agregar un material o capturar sin usar la opción Dividir materiales"
+
+#: source/blender/editors/object/object_bake_api.c:625
 msgid "No valid cage object"
+msgstr "Ningún objeto caja válido"
+
+#. :src: source/blender/editors/object/object_bake_api.c:746
+#. :src: source/blender/editors/object/object_bake_api.c:780
+msgid "Current render engine does not support baking"
 msgstr ""
 
-#: source/blender/editors/object/object_bake_api.c:755
-msgid "Problem baking object map"
-msgstr ""
-
-#: source/blender/editors/object/object_bake_api.c:775
-msgid "Problem saving the bake map internally, make sure there is a Texture Image node in the current object material"
-msgstr ""
-
-#: source/blender/editors/object/object_bake_api.c:781
+#: source/blender/editors/object/object_bake_api.c:868
 msgid "Baking map saved to internal image, save it externally or pack it"
+msgstr "Mapa capturado guardado a una imagen interna, guardarla de forma externa o empacarla en la escena"
+
+#. :src: source/blender/editors/object/object_bake_api.c:298
+#. :src: source/blender/editors/object/object_bake_api.c:379
+msgid "Object \"%s\" is not a mesh"
 msgstr ""
 
-#: source/blender/editors/object/object_bake_api.c:305
 #: source/blender/editors/object/object_bake_api.c:309
-msgid "No active image found in material %d (%s)"
+msgid "No active UV layer found in the object \"%s\""
 msgstr ""
 
-#: source/blender/editors/object/object_bake_api.c:313
-msgid "No active image found in material %d"
+#. :src: source/blender/editors/object/object_bake_api.c:325
+msgid "Uninitialized image \"%s\" from object \"%s\""
 msgstr ""
 
-#: source/blender/editors/object/object_bake_api.c:363
+#: source/blender/editors/object/object_bake_api.c:335
+#: source/blender/editors/object/object_bake_api.c:340
+msgid "No active image found in material \"%s\" (%d) for object \"%s\""
+msgstr ""
+
+#: source/blender/editors/object/object_bake_api.c:345
+#, fuzzy
+msgid "No active image found in material (%d) for object \"%s\""
+msgstr "No se encontró una imagen activa en el material %d (%s)"
+
+#: source/blender/editors/object/object_bake_api.c:471
 msgid "Uninitialized image %s"
+msgstr "Imagen %s no inicializada"
+
+#: source/blender/editors/object/object_bake_api.c:843
+msgid "Problem baking object \"%s\""
 msgstr ""
 
-#. :src: source/blender/editors/object/object_bake_api.c:525
-msgid "Selected objects must have uniform scale (apply scale to object \"%s\" for correct results)"
+#. :src: source/blender/editors/object/object_bake_api.c:863
+msgid "Problem saving the bake map internally for object \"%s\""
 msgstr ""
 
-#: source/blender/editors/object/object_bake_api.c:827
+#: source/blender/editors/object/object_bake_api.c:914
 msgid "Problem saving baked map in \"%s\""
-msgstr ""
+msgstr "Problema al guardar el mapa capturado en \"%s\""
 
-#: source/blender/editors/object/object_bake_api.c:831
+#: source/blender/editors/object/object_bake_api.c:918
 msgid "Baking map written to \"%s\""
-msgstr ""
+msgstr "Mapa capturado grabado en \"%s\""
 
 #: source/blender/editors/object/object_constraint.c:1891
 msgid "Add IK"
@@ -97442,15 +97517,15 @@ msgstr "El hueso ya tiene una restricción de CI"
 
 #: source/blender/editors/object/object_constraint.c:544
 msgid "Context missing 'constraint'"
-msgstr ""
+msgstr "Contexto 'restricción' faltante"
 
 #: source/blender/editors/object/object_constraint.c:549
 msgid "Context missing active object"
-msgstr ""
+msgstr "Contexto objeto activo faltante"
 
 #: source/blender/editors/object/object_constraint.c:554
 msgid "Cannot edit library data"
-msgstr ""
+msgstr "No es posible editar datos de una biblioteca"
 
 #: source/blender/editors/object/object_edit.c:1379
 msgid "Can't edit linked mesh or curve data"
@@ -97826,187 +97901,187 @@ msgstr "El objeto no tiene ninguna restricción de cuerpo rígido que remover"
 msgid "Object '%s' already has a Rigid Body Constraint"
 msgstr "El objeto '%s' ya tiene una restricción de cuerpo rígido"
 
-#: source/blender/editors/physics/rigidbody_object.c:403
+#: source/blender/editors/physics/rigidbody_object.c:399
 msgid "Acrylic"
 msgstr "Acrílico"
 
-#: source/blender/editors/physics/rigidbody_object.c:404
+#: source/blender/editors/physics/rigidbody_object.c:400
 msgid "Asphalt (Crushed)"
 msgstr "Asfalto (apisonado)"
 
-#: source/blender/editors/physics/rigidbody_object.c:405
+#: source/blender/editors/physics/rigidbody_object.c:401
 msgid "Bark"
 msgstr "Corteza"
 
-#: source/blender/editors/physics/rigidbody_object.c:406
+#: source/blender/editors/physics/rigidbody_object.c:402
 msgid "Beans (Cocoa)"
 msgstr "Granos (cacao)"
 
-#: source/blender/editors/physics/rigidbody_object.c:407
+#: source/blender/editors/physics/rigidbody_object.c:403
 msgid "Beans (Soy)"
 msgstr "Granos (soja)"
 
-#: source/blender/editors/physics/rigidbody_object.c:408
+#: source/blender/editors/physics/rigidbody_object.c:404
 msgid "Brick (Pressed)"
 msgstr "Ladrillo (prensado)"
 
-#: source/blender/editors/physics/rigidbody_object.c:409
+#: source/blender/editors/physics/rigidbody_object.c:405
 msgid "Brick (Common)"
 msgstr "Ladrillo (común)"
 
-#: source/blender/editors/physics/rigidbody_object.c:410
+#: source/blender/editors/physics/rigidbody_object.c:406
 msgid "Brick (Soft)"
 msgstr "Ladrillo (blando)"
 
-#: source/blender/editors/physics/rigidbody_object.c:411
+#: source/blender/editors/physics/rigidbody_object.c:407
 msgid "Brass"
 msgstr "Latón"
 
-#: source/blender/editors/physics/rigidbody_object.c:412
+#: source/blender/editors/physics/rigidbody_object.c:408
 msgid "Bronze"
 msgstr "Bronce"
 
-#: source/blender/editors/physics/rigidbody_object.c:413
+#: source/blender/editors/physics/rigidbody_object.c:409
 msgid "Carbon (Solid)"
 msgstr "Carbón (sólido)"
 
-#: source/blender/editors/physics/rigidbody_object.c:414
+#: source/blender/editors/physics/rigidbody_object.c:410
 msgid "Cardboard"
 msgstr "Cartón"
 
-#: source/blender/editors/physics/rigidbody_object.c:415
+#: source/blender/editors/physics/rigidbody_object.c:411
 msgid "Cast Iron"
 msgstr "Hierro fundido"
 
-#: source/blender/editors/physics/rigidbody_object.c:416
+#: source/blender/editors/physics/rigidbody_object.c:412
 msgid "Cement"
 msgstr "Cemento"
 
-#: source/blender/editors/physics/rigidbody_object.c:417
+#: source/blender/editors/physics/rigidbody_object.c:413
 msgid "Chalk (Solid)"
 msgstr "Tiza (sólida)"
 
-#: source/blender/editors/physics/rigidbody_object.c:418
+#: source/blender/editors/physics/rigidbody_object.c:414
 msgid "Coffee (Fresh/Roast)"
 msgstr "Café (fresco/tostado)"
 
-#: source/blender/editors/physics/rigidbody_object.c:419
+#: source/blender/editors/physics/rigidbody_object.c:415
 msgid "Concrete"
 msgstr "Concreto"
 
-#: source/blender/editors/physics/rigidbody_object.c:420
+#: source/blender/editors/physics/rigidbody_object.c:416
 msgid "Charcoal"
 msgstr "Carbonilla"
 
-#: source/blender/editors/physics/rigidbody_object.c:421
+#: source/blender/editors/physics/rigidbody_object.c:417
 msgid "Cork"
 msgstr "Corcho"
 
-#: source/blender/editors/physics/rigidbody_object.c:422
+#: source/blender/editors/physics/rigidbody_object.c:418
 msgid "Copper"
 msgstr "Cobre"
 
-#: source/blender/editors/physics/rigidbody_object.c:423
+#: source/blender/editors/physics/rigidbody_object.c:419
 msgid "Garbage"
 msgstr "Basura"
 
-#: source/blender/editors/physics/rigidbody_object.c:424
+#: source/blender/editors/physics/rigidbody_object.c:420
 msgid "Glass (Broken)"
 msgstr "Vidrio (roto)"
 
-#: source/blender/editors/physics/rigidbody_object.c:425
+#: source/blender/editors/physics/rigidbody_object.c:421
 msgid "Glass (Solid)"
 msgstr "Vidrio (sólido)"
 
-#: source/blender/editors/physics/rigidbody_object.c:426
+#: source/blender/editors/physics/rigidbody_object.c:422
 msgid "Gold"
 msgstr "Oro"
 
-#: source/blender/editors/physics/rigidbody_object.c:427
+#: source/blender/editors/physics/rigidbody_object.c:423
 msgid "Granite (Broken)"
 msgstr "Granito (roto)"
 
-#: source/blender/editors/physics/rigidbody_object.c:428
+#: source/blender/editors/physics/rigidbody_object.c:424
 msgid "Granite (Solid)"
 msgstr "Granito (sólido)"
 
-#: source/blender/editors/physics/rigidbody_object.c:429
+#: source/blender/editors/physics/rigidbody_object.c:425
 msgid "Gravel"
 msgstr "Grava"
 
-#: source/blender/editors/physics/rigidbody_object.c:430
+#: source/blender/editors/physics/rigidbody_object.c:426
 msgid "Ice (Crushed)"
 msgstr "Hielo (prensado)"
 
-#: source/blender/editors/physics/rigidbody_object.c:431
+#: source/blender/editors/physics/rigidbody_object.c:427
 msgid "Ice (Solid)"
 msgstr "Hielo (sólido)"
 
-#: source/blender/editors/physics/rigidbody_object.c:432
+#: source/blender/editors/physics/rigidbody_object.c:428
 msgid "Iron"
 msgstr "Hierro"
 
-#: source/blender/editors/physics/rigidbody_object.c:433
+#: source/blender/editors/physics/rigidbody_object.c:429
 msgid "Lead"
 msgstr "Plomo"
 
-#: source/blender/editors/physics/rigidbody_object.c:434
+#: source/blender/editors/physics/rigidbody_object.c:430
 msgid "Limestone (Broken)"
 msgstr "Caliza (rota)"
 
-#: source/blender/editors/physics/rigidbody_object.c:435
+#: source/blender/editors/physics/rigidbody_object.c:431
 msgid "Limestone (Solid)"
 msgstr "Caliza (sólida)"
 
-#: source/blender/editors/physics/rigidbody_object.c:436
+#: source/blender/editors/physics/rigidbody_object.c:432
 msgid "Marble (Broken)"
 msgstr "Mármol (roto)"
 
-#: source/blender/editors/physics/rigidbody_object.c:437
+#: source/blender/editors/physics/rigidbody_object.c:433
 msgid "Marble (Solid)"
 msgstr "Mármol (sólido)"
 
-#: source/blender/editors/physics/rigidbody_object.c:438
+#: source/blender/editors/physics/rigidbody_object.c:434
 msgid "Paper"
 msgstr "Papel"
 
-#: source/blender/editors/physics/rigidbody_object.c:439
+#: source/blender/editors/physics/rigidbody_object.c:435
 msgid "Peanuts (Shelled)"
 msgstr "Maní (con cáscara)"
 
-#: source/blender/editors/physics/rigidbody_object.c:440
+#: source/blender/editors/physics/rigidbody_object.c:436
 msgid "Peanuts (Not Shelled)"
 msgstr "Maní (sin cáscara)"
 
-#: source/blender/editors/physics/rigidbody_object.c:441
+#: source/blender/editors/physics/rigidbody_object.c:437
 msgid "Plaster"
 msgstr "Yeso"
 
-#: source/blender/editors/physics/rigidbody_object.c:443
+#: source/blender/editors/physics/rigidbody_object.c:439
 msgid "Polystyrene"
 msgstr "Poliestireno"
 
-#: source/blender/editors/physics/rigidbody_object.c:444
+#: source/blender/editors/physics/rigidbody_object.c:440
 msgid "Rubber"
 msgstr "Goma"
 
-#: source/blender/editors/physics/rigidbody_object.c:445
+#: source/blender/editors/physics/rigidbody_object.c:441
 msgid "Silver"
 msgstr "Plata"
 
-#: source/blender/editors/physics/rigidbody_object.c:446
+#: source/blender/editors/physics/rigidbody_object.c:442
 msgid "Steel"
 msgstr "Acero"
 
-#: source/blender/editors/physics/rigidbody_object.c:447
+#: source/blender/editors/physics/rigidbody_object.c:443
 msgid "Stone"
 msgstr "Piedra"
 
-#: source/blender/editors/physics/rigidbody_object.c:448
+#: source/blender/editors/physics/rigidbody_object.c:444
 msgid "Stone (Crushed)"
 msgstr "Piedra (prensada)"
 
-#: source/blender/editors/physics/rigidbody_object.c:449
+#: source/blender/editors/physics/rigidbody_object.c:445
 msgid "Timber"
 msgstr "Madera"
 
@@ -98014,15 +98089,11 @@ msgstr "Madera"
 msgid "Can't add Rigid Body to non mesh object"
 msgstr "No es posible agregar un cuerpo rígido a un objeto no poligonal"
 
-#: source/blender/editors/physics/rigidbody_object.c:103
-msgid "Can't create Rigid Body from mesh with no polygons"
-msgstr "No es posible crear un cuerpo rígido a partir de una malla sin polígonos"
-
-#: source/blender/editors/physics/rigidbody_object.c:111
+#: source/blender/editors/physics/rigidbody_object.c:107
 msgid "Can't create Rigid Body world"
 msgstr "No se puede crear entorno de cuerpos rígidos"
 
-#: source/blender/editors/physics/rigidbody_object.c:216
+#: source/blender/editors/physics/rigidbody_object.c:212
 msgid "Object has no Rigid Body settings to remove"
 msgstr "El objeto no tiene opciones de cuerpo rígido que remover"
 
@@ -98140,37 +98211,38 @@ msgstr "Archivo guardado: %s"
 msgid "Unable to remove material slot in edit mode"
 msgstr "No es posible remover un contenedor de material en modo edición"
 
-#: source/blender/editors/render/render_shading.c:592
-msgid "No active lineset and associated line style to add the modifier to"
+#: source/blender/editors/render/render_shading.c:600
+#, fuzzy
+msgid "No active lineset and associated line style to manipulate the modifier"
 msgstr "No hay un conjunto de líneas (y su estilo de línea asociado) activo al cual agregar el modificador"
 
-#: source/blender/editors/render/render_shading.c:596
+#: source/blender/editors/render/render_shading.c:604
 msgid "The active lineset does not have a line style (indicating data corruption)"
 msgstr "El conjunto de líneas activo no contiene un estilo de línea (lo que indica corrupción en los datos)"
 
-#: source/blender/editors/render/render_shading.c:876
+#: source/blender/editors/render/render_shading.c:888
 msgid "No active lineset to add a new line style to"
 msgstr "No hay un conjunto de líneas activo al cual agregar el nuevo estilo de línea"
 
-#: source/blender/editors/render/render_shading.c:919
+#: source/blender/editors/render/render_shading.c:931
 msgid "Unknown line color modifier type"
 msgstr "Tipo de modificador de color de línea desconocido"
 
-#: source/blender/editors/render/render_shading.c:958
+#: source/blender/editors/render/render_shading.c:971
 msgid "Unknown alpha transparency modifier type"
 msgstr "Tipo de modificador de transparencia alfa desconocido"
 
-#: source/blender/editors/render/render_shading.c:997
+#: source/blender/editors/render/render_shading.c:1011
 msgid "Unknown line thickness modifier type"
 msgstr "Tipo de modificador de grosor de línea desconocido"
 
-#: source/blender/editors/render/render_shading.c:1036
+#: source/blender/editors/render/render_shading.c:1051
 msgid "Unknown stroke geometry modifier type"
 msgstr "Tipo de modificador de geometría del trazo desconocido"
 
-#: source/blender/editors/render/render_shading.c:1102
-#: source/blender/editors/render/render_shading.c:1151
-#: source/blender/editors/render/render_shading.c:1201
+#: source/blender/editors/render/render_shading.c:1118
+#: source/blender/editors/render/render_shading.c:1168
+#: source/blender/editors/render/render_shading.c:1219
 msgid "The object the data pointer refers to is not a valid modifier"
 msgstr "El objeto al que se refiere el puntero de datos no es un modificador válido"
 
@@ -98297,17 +98369,17 @@ msgstr "Ningún grupo de vértices activo donde pintar, abortando"
 msgid "Active group is locked, aborting"
 msgstr "El grupo activo está bloqueado, abortando"
 
-#: source/blender/editors/sculpt_paint/sculpt.c:4827
+#: source/blender/editors/sculpt_paint/sculpt.c:4828
 msgid "Dynamic-topology sculpting will not preserve vertex colors, UVs, or other customdata"
 msgstr "La escultura con topología dinámica no preservará los colores de vértices, UVs u otros datos personalizados"
 
-#: source/blender/editors/sculpt_paint/sculpt.c:5045
+#: source/blender/editors/sculpt_paint/sculpt.c:5046
 msgid "Object has non-uniform scale, sculpting may be unpredictable"
-msgstr ""
+msgstr "El objeto tiene una escala no uniforme, esculpir sobre él puede ser impredecible"
 
-#: source/blender/editors/sculpt_paint/sculpt.c:5049
+#: source/blender/editors/sculpt_paint/sculpt.c:5050
 msgid "Object has negative scale, sculpting may be unpredictable"
-msgstr ""
+msgstr "El objeto tiene una escala negativa, esculpir sobre él puede ser impredecible"
 
 #: source/blender/editors/sound/sound_ops.c:153
 #: source/blender/editors/space_graph/graph_edit.c:1208
@@ -98321,20 +98393,20 @@ msgstr "Compilado sin soporte para audio"
 msgid "AutoPack is enabled, so image will be packed again on file save"
 msgstr "Empaque automático habilitado, por lo tanto la imagen será empacada otra vez al guardarse el archivo"
 
-#: source/blender/editors/space_action/action_edit.c:583
+#: source/blender/editors/space_action/action_edit.c:585
 msgid "Keyframe pasting is not available for grease pencil mode"
 msgstr "Pegar fotogramas claves no está disponible en el modo lápiz de cera"
 
-#: source/blender/editors/space_action/action_edit.c:588
+#: source/blender/editors/space_action/action_edit.c:590
 msgid "Keyframe pasting is not available for mask mode"
 msgstr "Pegar fotogramas claves no está disponible en el modo máscara"
 
-#: source/blender/editors/space_action/action_edit.c:593
+#: source/blender/editors/space_action/action_edit.c:595
 #: source/blender/editors/space_graph/graph_edit.c:738
 msgid "No keyframes copied to keyframes copy/paste buffer"
 msgstr "Ningún fotograma clave copiado al buffer de fotogramas clave"
 
-#: source/blender/editors/space_action/action_edit.c:633
+#: source/blender/editors/space_action/action_edit.c:635
 msgid "Keyframe pasting is not available for grease pencil or mask mode"
 msgstr "Pegar fotogramas claves no está disponible en los modos lápiz de cera o máscara"
 
@@ -98776,7 +98848,7 @@ msgstr "Curva-f activa"
 msgid "Active Keyframe"
 msgstr "Fotograma activo"
 
-#: source/blender/editors/space_graph/graph_edit.c:1709
+#: source/blender/editors/space_graph/graph_edit.c:1711
 msgid "<No ID>"
 msgstr "<Sin ID>"
 
@@ -98792,37 +98864,37 @@ msgstr "La curva-f activa no es editable"
 msgid "Remove F-Modifiers from F-Curve to add keyframes"
 msgstr "Remover modificadores-f de la curva-f para agregar fotogramas clave"
 
-#: source/blender/editors/space_graph/graph_edit.c:1737
+#: source/blender/editors/space_graph/graph_edit.c:1739
 msgid "No Euler Rotation F-Curves to fix up"
 msgstr "Ninguna curva-f de rotación Euler que corregir"
 
-#: source/blender/editors/space_graph/graph_edit.c:1800
+#: source/blender/editors/space_graph/graph_edit.c:1802
 msgid "No Euler Rotations could be corrected, ensure each rotation has keys for all components, and that F-Curves for these are in consecutive XYZ order and selected"
 msgstr "No se pudo corregir ninguna rotación Euler, asegurarse de que cada rotación tenga claves para todos los componentes y que las curvas-f de los mismos estén seleccionadas en orden consecutivo XYZ"
 
-#: source/blender/editors/space_graph/graph_edit.c:1807
+#: source/blender/editors/space_graph/graph_edit.c:1809
 msgid "Some Euler Rotations could not be corrected due to missing/unselected/out-of-order F-Curves, ensure each rotation has keys for all components, and that F-Curves for these are in consecutive XYZ order and selected"
 msgstr "Algunas rotaciones Euler no pudieron ser corregidas debido a curvas-f faltantes, no seleccionadas o en desorden, asegurarse de que cada rotación tenga claves para todos los componentes y que las curvas-f de los mismos estén seleccionadas en orden consecutivo XYZ"
 
-#: source/blender/editors/space_graph/graph_edit.c:2290
+#: source/blender/editors/space_graph/graph_edit.c:2292
 msgid "Modifier could not be added (see console for details)"
 msgstr "El modificador no pudo ser agregado (ver consola por más detalles)"
 
-#: source/blender/editors/space_graph/graph_edit.c:2363
-#: source/blender/editors/space_nla/nla_edit.c:2321
+#: source/blender/editors/space_graph/graph_edit.c:2365
+#: source/blender/editors/space_nla/nla_edit.c:2323
 msgid "No F-Modifiers available to be copied"
 msgstr "No hay modificadores-f disponibles para ser copiados"
 
-#: source/blender/editors/space_graph/graph_edit.c:2434
-#: source/blender/editors/space_nla/nla_edit.c:2385
+#: source/blender/editors/space_graph/graph_edit.c:2436
+#: source/blender/editors/space_nla/nla_edit.c:2387
 msgid "No F-Modifiers to paste"
 msgstr "No hay modificadores-f para pegar"
 
-#: source/blender/editors/space_graph/graph_edit.c:1707
+#: source/blender/editors/space_graph/graph_edit.c:1709
 msgid "Euler Rotation F-Curve has invalid index (ID='%s', Path='%s', Index=%d)"
 msgstr "La curva-f de rotación Euler tiene un índice inválido (ID='%s', Ruta='%s', Índice=%d)"
 
-#: source/blender/editors/space_graph/graph_edit.c:1751
+#: source/blender/editors/space_graph/graph_edit.c:1753
 msgid "Missing %s%s%s component(s) of euler rotation for ID='%s' and RNA-Path='%s'"
 msgstr "Faltan los componentes %s%s%s de rotación Euler del ID='%s' y Ruta-RNA='%s'"
 
@@ -98957,13 +99029,13 @@ msgid "Packing movies or image sequences not supported"
 msgstr "No se permite empacar películas o secuencias de imágenes"
 
 #: source/blender/editors/space_image/image_ops.c:2148
-#: source/blender/makesrna/intern/rna_image_api.c:150
+#: source/blender/makesrna/intern/rna_image_api.c:151
 msgid "Cannot pack edited image from disk, only as internal PNG"
 msgstr "No es posible empacar la imagen editada desde el disco, solo como PNG interna"
 
 #: source/blender/editors/space_image/image_ops.c:2231
 #: source/blender/editors/space_image/image_ops.c:2259
-#: source/blender/makesrna/intern/rna_image_api.c:170
+#: source/blender/makesrna/intern/rna_image_api.c:172
 msgid "Unpacking movies or image sequences not supported"
 msgstr "No se permite desempacar películas o secuencias de imágenes"
 
@@ -98974,7 +99046,7 @@ msgstr "No se pudo guardar la imagen %s"
 
 #: source/blender/editors/space_image/image_ops.c:1735
 msgid "Saved Image '%s'"
-msgstr ""
+msgstr "Se guardó la imagen '%s'"
 
 #: source/blender/editors/space_image/image_ops.c:1739
 msgid "Cannot save image, path '%s' is not writable"
@@ -99220,19 +99292,19 @@ msgstr "Evaluación"
 
 #: source/blender/editors/space_nla/nla_channels.c:418
 msgid "No active AnimData block to use (select a datablock expander first or set the appropriate flags on an AnimData block)"
-msgstr ""
+msgstr "Ningún bloque de datos de animación que usar (seleccionar antes un expansor de bloque de datos o definir los indicadores apropiados en un bloque de datos de animación)"
 
 #: source/blender/editors/space_nla/nla_channels.c:458
 msgid "Internal Error - AnimData block is not valid"
-msgstr ""
+msgstr "Error interno - el bloque de datos de animación no es válido"
 
 #: source/blender/editors/space_nla/nla_channels.c:462
 msgid "Cannot push down actions while tweaking a strip's action, exit tweak mode first"
-msgstr ""
+msgstr "No es posible empujar una acción hacia abajo mientras se está retocando, salir del modo retoque antes"
 
 #: source/blender/editors/space_nla/nla_channels.c:467
 msgid "No active action to push down"
-msgstr ""
+msgstr "Ninguna acción activa que "
 
 #: source/blender/editors/space_nla/nla_channels.c:605
 msgid "Select an existing NLA Track or an empty action line first"
@@ -99240,13 +99312,13 @@ msgstr "Seleccionar primero una pista de ANL existente o una línea de acción v
 
 #: source/blender/editors/space_nla/nla_channels.c:439
 msgid "No animation channel found at index %d"
-msgstr ""
+msgstr "No se encontró un canal de animación con índice %d"
 
 #: source/blender/editors/space_nla/nla_channels.c:444
 msgid "Animation channel at index %d is not a NLA 'Active Action' channel"
-msgstr ""
+msgstr "El canal de animación de índice %d no es un canal de 'Acción activa' de ANL"
 
-#: source/blender/editors/space_nla/nla_edit.c:2174
+#: source/blender/editors/space_nla/nla_edit.c:2176
 msgid "Add F-Modifier"
 msgstr "Agregar modificador-f"
 
@@ -99262,45 +99334,45 @@ msgstr "Ningún clip activo que colocar en modo de retoque"
 msgid "No AnimData blocks in tweak mode to exit from"
 msgstr "Ningún bloque de datos de animación en modo de retoque, del cual salir"
 
-#: source/blender/editors/space_nla/nla_edit.c:538
+#: source/blender/editors/space_nla/nla_edit.c:540
 #: source/blender/editors/space_outliner/outliner_tools.c:1020
 msgid "No valid action to add"
 msgstr "Ninguna acción válida que agregar"
 
-#: source/blender/editors/space_nla/nla_edit.c:563
+#: source/blender/editors/space_nla/nla_edit.c:565
 msgid "No active track(s) to add strip to, select an existing track or add one before trying again"
 msgstr "Ninguna pista activa a la que agregar el clip, seleccionar una pista o agregar una antes de intentar nuevamente"
 
-#: source/blender/editors/space_nla/nla_edit.c:739
+#: source/blender/editors/space_nla/nla_edit.c:741
 msgid "Needs at least a pair of adjacent selected strips with a gap between them"
 msgstr "Se necesita tener seleccionado al menos un par de clips adyacentes con un vacío entre ellos"
 
-#: source/blender/editors/space_nla/nla_edit.c:1511
+#: source/blender/editors/space_nla/nla_edit.c:1513
 msgid "Cannot swap selected strips as they will not be able to fit in their new places"
 msgstr "No es posible intercambiar los clips seleccionados porque no entrarán en sus nuevos lugares"
 
-#: source/blender/editors/space_nla/nla_edit.c:544
+#: source/blender/editors/space_nla/nla_edit.c:546
 #: source/blender/editors/space_outliner/outliner_tools.c:1025
 msgid "Action '%s' does not specify what datablocks it can be used on (try setting the 'ID Root Type' setting from the Datablocks Editor for this action to avoid future problems)"
 msgstr "La acción '%s' no especifica en qué bloques de datos puede ser usada (intentar especificar la opción 'ID Root Type' del bloque de datos en el editor de bloques de datos, para evitar futuros problemas con la acción)"
 
-#: source/blender/editors/space_nla/nla_edit.c:578
+#: source/blender/editors/space_nla/nla_edit.c:580
 msgid "Could not add action '%s' as it cannot be used relative to ID-blocks of type '%s'"
 msgstr "No se pudo agregar la acción '%s' porque no puede ser usada en relación con bloques ID de tipo '%s'"
 
-#: source/blender/editors/space_nla/nla_edit.c:1467
+#: source/blender/editors/space_nla/nla_edit.c:1469
 msgid "Too many clusters of strips selected in NLA Track (%s): needs exactly 2 to be selected"
 msgstr "Demasiados grupos de clips seleccionados en la pista de ANL (%s): se necesita tener exactamente 2 seleccionados"
 
-#: source/blender/editors/space_nla/nla_edit.c:1476
+#: source/blender/editors/space_nla/nla_edit.c:1478
 msgid "Too few clusters of strips selected in NLA Track (%s): needs exactly 2 to be selected"
 msgstr "Muy pocos grupos de clips seleccionados en la pista de ANL (%s): se necesita tener exactamente 2 seleccionados"
 
-#: source/blender/editors/space_nla/nla_edit.c:1515
+#: source/blender/editors/space_nla/nla_edit.c:1517
 msgid "Cannot swap '%s' and '%s' as one or both will not be able to fit in their new places"
 msgstr "No es posible intercambiar '%s' y '%s' porque uno o ambos no entrarán en sus nuevos lugares"
 
-#: source/blender/editors/space_nla/nla_edit.c:2246
+#: source/blender/editors/space_nla/nla_edit.c:2248
 msgid "Modifier could not be added to (%s : %s) (see console for details)"
 msgstr "El modificador no pudo ser agregado a (%s : %s) (ver la consola por más detalles)"
 
@@ -99495,7 +99567,7 @@ msgstr "No es posible agregar el nodo '%s' a un grupo"
 
 #: source/blender/editors/space_node/node_relationships.c:404
 msgid "LMB: drag node link, RMB: cancel"
-msgstr ""
+msgstr "Botón Izq: arrastrar conexión de nodo, botón Der: cancelar"
 
 #: source/blender/editors/space_node/node_templates.c:531
 msgid "Remove"
@@ -99635,19 +99707,19 @@ msgstr "Archivo actual"
 msgid "Can't reload with running modal operators"
 msgstr "No es posible la recarga con operadores modales en ejecución"
 
-#: source/blender/editors/space_sequencer/sequencer_add.c:342
+#: source/blender/editors/space_sequencer/sequencer_add.c:361
 msgid "Movie clip not found"
 msgstr "Clip de película no encontrado"
 
-#: source/blender/editors/space_sequencer/sequencer_add.c:434
+#: source/blender/editors/space_sequencer/sequencer_add.c:446
 msgid "Mask not found"
 msgstr "Máscara no encontrada"
 
-#: source/blender/editors/space_sequencer/sequencer_add.c:808
+#: source/blender/editors/space_sequencer/sequencer_add.c:812
 msgid "Start and end frame are not set"
 msgstr "Fotogramas inicial y final no definidos"
 
-#: source/blender/editors/space_sequencer/sequencer_add.c:566
+#: source/blender/editors/space_sequencer/sequencer_add.c:573
 msgid "File '%s' could not be loaded"
 msgstr "No fue posible cargar el archivo '%s'"
 
@@ -99680,19 +99752,19 @@ msgid "No valid inputs to swap"
 msgstr "No hay entradas válidas para intercambiar"
 
 #: source/blender/editors/space_sequencer/sequencer_edit.c:2058
-#: source/blender/editors/space_sequencer/sequencer_edit.c:2761
+#: source/blender/editors/space_sequencer/sequencer_edit.c:2766
 msgid "Please select all related strips"
 msgstr "Por favor seleccionar todos los clips relacionados"
 
-#: source/blender/editors/space_sequencer/sequencer_edit.c:2897
+#: source/blender/editors/space_sequencer/sequencer_edit.c:2902
 msgid "Please select two strips"
 msgstr "Por favor seleccionar dos clips"
 
-#: source/blender/editors/space_sequencer/sequencer_edit.c:3056
+#: source/blender/editors/space_sequencer/sequencer_edit.c:3061
 msgid "One of the effect inputs is unset, cannot swap"
 msgstr "Una de las entradas del efecto no está definida, no es posible intercambiarlas"
 
-#: source/blender/editors/space_sequencer/sequencer_edit.c:3109
+#: source/blender/editors/space_sequencer/sequencer_edit.c:3114
 msgid "New effect needs more input strips"
 msgstr "El nuevo efecto necesita más clips de entrada"
 
@@ -99773,7 +99845,7 @@ msgstr "No es posible guardar '%s': %s"
 
 #: source/blender/editors/space_text/text_ops.c:484
 msgid "Saved Text '%s'"
-msgstr ""
+msgstr "Texto '%s' guardado"
 
 #: source/blender/editors/space_text/text_ops.c:488
 msgid "Unable to stat '%s': %s"
@@ -99843,16 +99915,16 @@ msgstr "Radio medio:"
 msgid "Mean Tilt:"
 msgstr "Inclinación media:"
 
-#: source/blender/editors/space_view3d/view3d_buttons.c:951
-#: source/blender/editors/space_view3d/view3d_buttons.c:962
+#: source/blender/editors/space_view3d/view3d_buttons.c:950
+#: source/blender/editors/space_view3d/view3d_buttons.c:961
 msgid "4L"
 msgstr "4L"
 
-#: source/blender/editors/space_view3d/view3d_buttons.c:1005
+#: source/blender/editors/space_view3d/view3d_buttons.c:1004
 msgid "No Bone Active"
 msgstr "No hay hueso activo"
 
-#: source/blender/editors/space_view3d/view3d_buttons.c:1039
+#: source/blender/editors/space_view3d/view3d_buttons.c:1038
 msgid "Radius (Parent)"
 msgstr "Radio (superior)"
 
@@ -99893,15 +99965,15 @@ msgstr "Radio de los puntos de control de la curva"
 msgid "Tilt of curve control points"
 msgstr "Inclinación de los puntos de control de la curva"
 
-#: source/blender/editors/space_view3d/view3d_buttons.c:908
+#: source/blender/editors/space_view3d/view3d_buttons.c:907
 msgid "Normalize weights of active vertex (if affected groups are unlocked)"
 msgstr "Normaliza las influencias del vértice activo (si los grupos afectados se encontraran desbloqueados)"
 
-#: source/blender/editors/space_view3d/view3d_buttons.c:916
+#: source/blender/editors/space_view3d/view3d_buttons.c:915
 msgid "Copy active vertex to other selected vertices (if affected groups are unlocked)"
 msgstr "Copia el vértice activo a los otros vértices seleccionados (si los grupos afectados se encontraran desbloqueados)"
 
-#: source/blender/editors/space_view3d/view3d_buttons.c:1190
+#: source/blender/editors/space_view3d/view3d_buttons.c:1189
 msgid "Vertex Weights"
 msgstr "Influencias de vértices"
 
@@ -99980,11 +100052,11 @@ msgstr "Usuario (persp)"
 msgid "%s (Local)"
 msgstr "%s (Local)"
 
-#: source/blender/editors/space_view3d/view3d_draw.c:3001
+#: source/blender/editors/space_view3d/view3d_draw.c:3018
 msgid "fps: %.2f"
 msgstr "fps: %.2f"
 
-#: source/blender/editors/space_view3d/view3d_draw.c:3005
+#: source/blender/editors/space_view3d/view3d_draw.c:3022
 msgid "fps: %i"
 msgstr "fps: %i"
 
@@ -100013,14 +100085,12 @@ msgid "Cannot fly an object with constraints"
 msgstr "No es posible volar un objeto con restricciones"
 
 #: source/blender/editors/space_view3d/view3d_header.c:272
-#, fuzzy
 msgid "Vertex select - Shift-Click for multiple modes, Ctrl-Click contracts selection"
-msgstr "Selección de bordes - Mayúsculas-clic para modo múltiple, Ctrl-clic expande la selección"
+msgstr "Selección de vértices - Mayúsculas-clic para modo múltiple, Ctrl-clic contrae la selección"
 
 #: source/blender/editors/space_view3d/view3d_header.c:275
-#, fuzzy
 msgid "Edge select - Shift-Click for multiple modes, Ctrl-Click expands/contracts selection"
-msgstr "Selección de bordes - Mayúsculas-clic para modo múltiple, Ctrl-clic expande la selección"
+msgstr "Selección de bordes - Mayúsculas-clic para modo múltiple, Ctrl-clic expande/contrae la selección"
 
 #: source/blender/editors/space_view3d/view3d_header.c:278
 msgid "Face select - Shift-Click for multiple modes, Ctrl-Click expands selection"
@@ -100078,306 +100148,306 @@ msgstr "No es posible navegar cuando el desplazamiento de la vista se encuentra 
 msgid "Cannot navigate an object with constraints"
 msgstr "No es posible navegar un objeto con restricciones"
 
-#: source/blender/editors/transform/transform.c:874
-#: source/blender/editors/transform/transform.c:1108
+#: source/blender/editors/transform/transform.c:866
+#: source/blender/editors/transform/transform.c:1100
 msgid "along X"
 msgstr "en X"
 
-#: source/blender/editors/transform/transform.c:875
-#: source/blender/editors/transform/transform.c:1111
+#: source/blender/editors/transform/transform.c:867
+#: source/blender/editors/transform/transform.c:1103
 msgid "along %s X"
 msgstr "en X %s"
 
-#: source/blender/editors/transform/transform.c:876
-#: source/blender/editors/transform/transform.c:1153
+#: source/blender/editors/transform/transform.c:868
+#: source/blender/editors/transform/transform.c:1145
 msgid "locking %s X"
 msgstr "bloqueando X %s"
 
-#: source/blender/editors/transform/transform.c:881
-#: source/blender/editors/transform/transform.c:1125
+#: source/blender/editors/transform/transform.c:873
+#: source/blender/editors/transform/transform.c:1117
 msgid "along Y"
 msgstr "en Y"
 
-#: source/blender/editors/transform/transform.c:882
-#: source/blender/editors/transform/transform.c:1128
+#: source/blender/editors/transform/transform.c:874
+#: source/blender/editors/transform/transform.c:1120
 msgid "along %s Y"
 msgstr "en Y %s"
 
-#: source/blender/editors/transform/transform.c:883
-#: source/blender/editors/transform/transform.c:1165
+#: source/blender/editors/transform/transform.c:875
+#: source/blender/editors/transform/transform.c:1157
 msgid "locking %s Y"
 msgstr "bloqueando Y %s"
 
-#: source/blender/editors/transform/transform.c:888
+#: source/blender/editors/transform/transform.c:880
 msgid "along Z"
 msgstr "en Z"
 
-#: source/blender/editors/transform/transform.c:889
-#: source/blender/editors/transform/transform.c:1141
+#: source/blender/editors/transform/transform.c:881
+#: source/blender/editors/transform/transform.c:1133
 msgid "along %s Z"
 msgstr "en Z %s"
 
-#: source/blender/editors/transform/transform.c:890
-#: source/blender/editors/transform/transform.c:1177
+#: source/blender/editors/transform/transform.c:882
+#: source/blender/editors/transform/transform.c:1169
 msgid "locking %s Z"
 msgstr "bloqueando Z %s"
 
-#: source/blender/editors/transform/transform.c:1278
+#: source/blender/editors/transform/transform.c:1270
 msgid "along local Z"
 msgstr "en Z local"
 
-#: source/blender/editors/transform/transform.c:1809
+#: source/blender/editors/transform/transform.c:1801
 msgid "Auto Keying On"
 msgstr "Claves automáticos activado"
 
-#: source/blender/editors/transform/transform.c:2853
+#: source/blender/editors/transform/transform.c:2845
 msgid "Bend Angle: %s Radius: %s Alt, Clamp %s"
 msgstr "Ángulo de flexión: %s  Radio: %s  Alt, Limitar %s"
 
-#: source/blender/editors/transform/transform.c:2859
+#: source/blender/editors/transform/transform.c:2851
 msgid "Bend Angle: %.3f Radius: %.4f, Alt, Clamp %s"
 msgstr "Ángulo de flexión: %.3f  Radio: %.4f  Alt, Limitar %s"
 
-#: source/blender/editors/transform/transform.c:3021
+#: source/blender/editors/transform/transform.c:3013
 msgid "Shear: %s %s"
 msgstr "Inclinar: %s %s"
 
-#: source/blender/editors/transform/transform.c:3025
+#: source/blender/editors/transform/transform.c:3017
 msgid "Shear: %.3f %s (Press X or Y to set shear axis)"
 msgstr "Inclinar: %.3f %s (Presionar X o Y para definir eje)"
 
-#: source/blender/editors/transform/transform.c:3129
+#: source/blender/editors/transform/transform.c:3121
 msgid "Scale: %s%s %s"
 msgstr "Escalar: %s%s %s"
 
-#: source/blender/editors/transform/transform.c:3133
+#: source/blender/editors/transform/transform.c:3125
 msgid "Scale: %s : %s%s %s"
 msgstr "Escalar: %s : %s%s %s"
 
-#: source/blender/editors/transform/transform.c:3137
+#: source/blender/editors/transform/transform.c:3129
 msgid "Scale: %s : %s : %s%s %s"
 msgstr "Escalar: %s : %s : %s%s %s"
 
-#: source/blender/editors/transform/transform.c:3144
+#: source/blender/editors/transform/transform.c:3136
 msgid "Scale X: %s   Y: %s%s %s"
 msgstr "Escalar X: %s   Y: %s%s %s"
 
-#: source/blender/editors/transform/transform.c:3148
+#: source/blender/editors/transform/transform.c:3140
 msgid "Scale X: %s   Y: %s  Z: %s%s %s"
 msgstr "Escalar X: %s   Y: %s  Z: %s%s %s"
 
-#: source/blender/editors/transform/transform.c:3154
-#: source/blender/editors/transform/transform.c:3897
-#: source/blender/editors/transform/transform.c:4002
-#: source/blender/editors/transform/transform.c:4173
+#: source/blender/editors/transform/transform.c:3146
+#: source/blender/editors/transform/transform.c:3889
+#: source/blender/editors/transform/transform.c:3994
+#: source/blender/editors/transform/transform.c:4165
 msgid " Proportional size: %.2f"
 msgstr "Tamaño proporcional: %.2f"
 
-#: source/blender/editors/transform/transform.c:3532
+#: source/blender/editors/transform/transform.c:3524
 msgid "To Sphere: %s %s"
 msgstr "Esferizar: %s %s"
 
-#: source/blender/editors/transform/transform.c:3536
+#: source/blender/editors/transform/transform.c:3528
 msgid "To Sphere: %.4f %s"
 msgstr "Esferizar: %.4f %s"
 
-#: source/blender/editors/transform/transform.c:3889
+#: source/blender/editors/transform/transform.c:3881
 msgid "Rot: %s %s %s"
 msgstr "Rot: %s %s %s"
 
-#: source/blender/editors/transform/transform.c:3892
+#: source/blender/editors/transform/transform.c:3884
 msgid "Rot: %.2f%s %s"
 msgstr "Rot: %.2f%s %s"
 
-#: source/blender/editors/transform/transform.c:3993
+#: source/blender/editors/transform/transform.c:3985
 msgid "Trackball: %s %s %s"
 msgstr "Rot. esférica: %s %s %s"
 
-#: source/blender/editors/transform/transform.c:3997
+#: source/blender/editors/transform/transform.c:3989
 msgid "Trackball: %.2f %.2f %s"
 msgstr "Rot. esférica: %.2f %.2f %s"
 
-#: source/blender/editors/transform/transform.c:4136
+#: source/blender/editors/transform/transform.c:4128
 msgid "AutoIK-Len: %d"
 msgstr "Long-CI autom: %d"
 
-#: source/blender/editors/transform/transform.c:4338
+#: source/blender/editors/transform/transform.c:4330
 msgid "Shrink/Fatten:"
 msgstr "Contraer / Expandir:"
 
-#: source/blender/editors/transform/transform.c:4360
+#: source/blender/editors/transform/transform.c:4352
 msgid " or Alt) Even Thickness %s"
 msgstr " o Alt) Grosor uniforme %s"
 
-#: source/blender/editors/transform/transform.c:4438
+#: source/blender/editors/transform/transform.c:4430
 msgid "Tilt: %s° %s"
 msgstr "Inclinar: %s° %s"
 
-#: source/blender/editors/transform/transform.c:4444
+#: source/blender/editors/transform/transform.c:4436
 msgid "Tilt: %.2f° %s"
 msgstr "Inclinar: %.2f° %s"
 
-#: source/blender/editors/transform/transform.c:4513
+#: source/blender/editors/transform/transform.c:4505
 msgid "Shrink/Fatten: %s"
 msgstr "Contraer / Expandir: %s"
 
-#: source/blender/editors/transform/transform.c:4516
+#: source/blender/editors/transform/transform.c:4508
 msgid "Shrink/Fatten: %3f"
 msgstr "Contraer / Expandir: %3f"
 
-#: source/blender/editors/transform/transform.c:4589
+#: source/blender/editors/transform/transform.c:4581
 msgid "Feather Shrink/Fatten: %s"
 msgstr "Contraer / Expandir suavizado: %s"
 
-#: source/blender/editors/transform/transform.c:4592
+#: source/blender/editors/transform/transform.c:4584
 msgid "Feather Shrink/Fatten: %3f"
 msgstr "Contraer / Expandir suavizado: %3f"
 
-#: source/blender/editors/transform/transform.c:4683
+#: source/blender/editors/transform/transform.c:4675
 msgid "Push/Pull: %s%s %s"
 msgstr "Empujar / Tirar: %s%s %s"
 
-#: source/blender/editors/transform/transform.c:4687
+#: source/blender/editors/transform/transform.c:4679
 msgid "Push/Pull: %.4f%s %s"
 msgstr "Empujar / Tirar: %.4f%s %s"
 
-#: source/blender/editors/transform/transform.c:4778
+#: source/blender/editors/transform/transform.c:4769
 msgid "Bevel Weight: +%s %s"
 msgstr "Influencia bisel: +%s %s"
 
-#: source/blender/editors/transform/transform.c:4780
+#: source/blender/editors/transform/transform.c:4771
 msgid "Bevel Weight: %s %s"
 msgstr "Influencia bisel: %s %s"
 
-#: source/blender/editors/transform/transform.c:4785
+#: source/blender/editors/transform/transform.c:4776
 msgid "Bevel Weight: +%.3f %s"
 msgstr "Influencia bisel: +%.3f %s"
 
-#: source/blender/editors/transform/transform.c:4787
+#: source/blender/editors/transform/transform.c:4778
 msgid "Bevel Weight: %.3f %s"
 msgstr "Influencia bisel: %.3f %s"
 
-#: source/blender/editors/transform/transform.c:4857
+#: source/blender/editors/transform/transform.c:4847
 msgid "Crease: +%s %s"
 msgstr "Plegar: +%s %s"
 
-#: source/blender/editors/transform/transform.c:4859
+#: source/blender/editors/transform/transform.c:4849
 msgid "Crease: %s %s"
 msgstr "Plegar: %s %s"
 
-#: source/blender/editors/transform/transform.c:4864
+#: source/blender/editors/transform/transform.c:4854
 msgid "Crease: +%.3f %s"
 msgstr "Plegar: +%.3f %s"
 
-#: source/blender/editors/transform/transform.c:4866
+#: source/blender/editors/transform/transform.c:4856
 msgid "Crease: %.3f %s"
 msgstr "Plegar: %.3f %s"
 
-#: source/blender/editors/transform/transform.c:4935
+#: source/blender/editors/transform/transform.c:4925
 msgid "ScaleB: %s%s %s"
 msgstr "EscalarH: %s%s %s"
 
-#: source/blender/editors/transform/transform.c:4937
+#: source/blender/editors/transform/transform.c:4927
 msgid "ScaleB: %s : %s : %s%s %s"
 msgstr "EscalarH: %s : %s : %s%s %s"
 
-#: source/blender/editors/transform/transform.c:4941
+#: source/blender/editors/transform/transform.c:4931
 msgid "ScaleB X: %s  Y: %s  Z: %s%s %s"
 msgstr "EscalarH X: %s  Y: %s  Z: %s%s %s"
 
-#: source/blender/editors/transform/transform.c:5062
+#: source/blender/editors/transform/transform.c:5052
 msgid "Envelope: %s"
 msgstr "Envolvente: %s"
 
-#: source/blender/editors/transform/transform.c:5065
+#: source/blender/editors/transform/transform.c:5055
 msgid "Envelope: %3f"
 msgstr "Envolvente: %3f"
 
-#: source/blender/editors/transform/transform.c:6199
+#: source/blender/editors/transform/transform.c:6229
 msgid "Edge Slide: %s (E)ven: %s"
 msgstr "Deslizar borde: %s  (E) Uniforme: %s"
 
-#: source/blender/editors/transform/transform.c:6203
+#: source/blender/editors/transform/transform.c:6233
 msgid "Edge Slide: %s (E)ven: %s, (F)lipped: %s"
 msgstr "Deslizar borde: %s (E) Uniforme: %s, (F) Invertido: %s"
 
-#: source/blender/editors/transform/transform.c:6208
+#: source/blender/editors/transform/transform.c:6238
 msgid "Edge Slide: %.4f (E)ven: %s"
 msgstr "Deslizar borde: %.4f  (E) Uniforme: %s"
 
-#: source/blender/editors/transform/transform.c:6212
+#: source/blender/editors/transform/transform.c:6242
 msgid "Edge Slide: %.4f (E)ven: %s, (F)lipped: %s"
 msgstr "Deslizar borde: %.4f (E) Uniforme: %s, (F) Invertido: %s"
 
-#: source/blender/editors/transform/transform.c:6716
+#: source/blender/editors/transform/transform.c:6746
 msgid "Vert Slide: "
 msgstr "Deslizar vértices:"
 
-#: source/blender/editors/transform/transform.c:6725
+#: source/blender/editors/transform/transform.c:6755
 msgid "(E)ven: %s, "
 msgstr "(E) Uniforme: %s, "
 
-#: source/blender/editors/transform/transform.c:6727
+#: source/blender/editors/transform/transform.c:6757
 msgid "(F)lipped: %s, "
 msgstr "(F) Invertido: %s, "
 
-#: source/blender/editors/transform/transform.c:6729
+#: source/blender/editors/transform/transform.c:6759
 msgid "Alt or (C)lamp: %s"
 msgstr "Alt o (C) Limitar: %s"
 
-#: source/blender/editors/transform/transform.c:6788
+#: source/blender/editors/transform/transform.c:6818
 msgid "Roll: %s"
 msgstr "Giro: %s"
 
-#: source/blender/editors/transform/transform.c:6791
+#: source/blender/editors/transform/transform.c:6821
 msgid "Roll: %.2f"
 msgstr "Giro: %.2f"
 
-#: source/blender/editors/transform/transform.c:6863
+#: source/blender/editors/transform/transform.c:6893
 msgid "Time: +%s %s"
 msgstr "Tiempo: +%s %s"
 
-#: source/blender/editors/transform/transform.c:6865
+#: source/blender/editors/transform/transform.c:6895
 msgid "Time: %s %s"
 msgstr "Tiempo: %s %s"
 
-#: source/blender/editors/transform/transform.c:6870
+#: source/blender/editors/transform/transform.c:6900
 msgid "Time: +%.3f %s"
 msgstr "Tiempo: +%.3f %s"
 
-#: source/blender/editors/transform/transform.c:6872
+#: source/blender/editors/transform/transform.c:6902
 msgid "Time: %.3f %s"
 msgstr "Tiempo: %.3f %s"
 
-#: source/blender/editors/transform/transform.c:6936
+#: source/blender/editors/transform/transform.c:6966
 msgid "Mirror%s"
 msgstr "Simetría%s"
 
-#: source/blender/editors/transform/transform.c:6970
+#: source/blender/editors/transform/transform.c:7000
 msgid "Select a mirror axis (X, Y)"
 msgstr "Seleccionar un eje de simetría (X, Y)"
 
-#: source/blender/editors/transform/transform.c:6972
+#: source/blender/editors/transform/transform.c:7002
 msgid "Select a mirror axis (X, Y, Z)"
 msgstr "Seleccionar un eje de simetría (X, Y, Z)"
 
-#: source/blender/editors/transform/transform.c:7077
+#: source/blender/editors/transform/transform.c:7107
 msgid "Sequence Slide: %s%s, ("
 msgstr "Deslizar secuencia: %s%s, ("
 
-#: source/blender/editors/transform/transform.c:7085
+#: source/blender/editors/transform/transform.c:7115
 msgid " or Alt) Expand to fit %s"
 msgstr " o Alt) Expandir para ajustar %s"
 
-#: source/blender/editors/transform/transform.c:7325
+#: source/blender/editors/transform/transform.c:7355
 msgid "DeltaX: %s"
 msgstr "DeltaX: %s"
 
-#: source/blender/editors/transform/transform.c:7471
+#: source/blender/editors/transform/transform.c:7501
 msgid "TimeSlide: %s"
 msgstr "Deslizar tiempo: %s"
 
-#: source/blender/editors/transform/transform.c:7609
+#: source/blender/editors/transform/transform.c:7639
 msgid "ScaleX: %s"
 msgstr "EscalaX: %s"
 
@@ -100454,31 +100524,31 @@ msgstr "No es posible cambiar la pose cuando la 'Posición de reposo' está habi
 msgid "Bone selection count error"
 msgstr "Error de cantidad de selección de huesos"
 
-#: source/blender/editors/transform/transform_generics.c:1909
+#: source/blender/editors/transform/transform_generics.c:1904
 msgid "(Sharp)"
 msgstr "(Agudo)"
 
-#: source/blender/editors/transform/transform_generics.c:1912
+#: source/blender/editors/transform/transform_generics.c:1907
 msgid "(Smooth)"
 msgstr "(Suave)"
 
-#: source/blender/editors/transform/transform_generics.c:1915
+#: source/blender/editors/transform/transform_generics.c:1910
 msgid "(Root)"
 msgstr "(Base)"
 
-#: source/blender/editors/transform/transform_generics.c:1918
+#: source/blender/editors/transform/transform_generics.c:1913
 msgid "(Linear)"
 msgstr "(Lineal)"
 
-#: source/blender/editors/transform/transform_generics.c:1921
+#: source/blender/editors/transform/transform_generics.c:1916
 msgid "(Constant)"
 msgstr "(Constante)"
 
-#: source/blender/editors/transform/transform_generics.c:1924
+#: source/blender/editors/transform/transform_generics.c:1919
 msgid "(Sphere)"
 msgstr "(Esfera)"
 
-#: source/blender/editors/transform/transform_generics.c:1927
+#: source/blender/editors/transform/transform_generics.c:1922
 msgid "(Random)"
 msgstr "(Aleatorio)"
 
@@ -100539,7 +100609,7 @@ msgstr "Usar %s (cambiado)"
 msgid "Overwrite %s"
 msgstr "Sobrescribir %s"
 
-#: source/blender/editors/uvedit/uvedit_buttons.c:224
+#: source/blender/editors/uvedit/uvedit_buttons.c:225
 msgid "UV Vertex"
 msgstr "Vértice UV"
 
@@ -100772,7 +100842,7 @@ msgstr "No fue posible obtener buffer desde imagen"
 msgid "Scene not in context, could not get save parameters"
 msgstr "Escena fuera de contexto, no se pudo obtener parámetros de guardado"
 
-#: source/blender/makesrna/intern/rna_image_api.c:167
+#: source/blender/makesrna/intern/rna_image_api.c:169
 msgid "Image not packed"
 msgstr "Imagen no empacada"
 
@@ -100789,9 +100859,9 @@ msgid "Image '%s' could not be saved to '%s'"
 msgstr "La imagen '%s' no pudo ser guardada en '%s'"
 
 #: source/blender/makesrna/intern/rna_image_api.c:139
-#: source/blender/makesrna/intern/rna_image_api.c:189
-#: source/blender/makesrna/intern/rna_image_api.c:204
-#: source/blender/makesrna/intern/rna_image_api.c:224
+#: source/blender/makesrna/intern/rna_image_api.c:191
+#: source/blender/makesrna/intern/rna_image_api.c:206
+#: source/blender/makesrna/intern/rna_image_api.c:226
 msgid "Image '%s' does not have any image data"
 msgstr "La imagen '%s' no contiene datos de imagen"
 
@@ -100802,35 +100872,35 @@ msgstr "Tecla"
 
 #: source/blender/makesrna/intern/rna_linestyle.c:291
 msgid "Failed to add the color modifier"
-msgstr ""
+msgstr "Falla al agregar el modificador de color"
 
 #: source/blender/makesrna/intern/rna_linestyle.c:323
 msgid "Failed to add the alpha modifier"
-msgstr ""
+msgstr "Falla al agregar el modificador de alfa"
 
 #: source/blender/makesrna/intern/rna_linestyle.c:355
 msgid "Failed to add the thickness modifier"
-msgstr ""
+msgstr "Falla al agregar el modificador de grosor"
 
 #: source/blender/makesrna/intern/rna_linestyle.c:387
 msgid "Failed to add the geometry modifier"
-msgstr ""
+msgstr "Falla al agregar el modificador de geometría"
 
 #: source/blender/makesrna/intern/rna_linestyle.c:307
 msgid "Color modifier '%s' could not be removed"
-msgstr ""
+msgstr "El modificador de color '%s' no pudo ser removido"
 
 #: source/blender/makesrna/intern/rna_linestyle.c:339
 msgid "Alpha modifier '%s' could not be removed"
-msgstr ""
+msgstr "El modificador de alfa '%s' no pudo ser removido"
 
 #: source/blender/makesrna/intern/rna_linestyle.c:371
 msgid "Thickness modifier '%s' could not be removed"
-msgstr ""
+msgstr "El modificador de grosor '%s' no pudo ser removido"
 
 #: source/blender/makesrna/intern/rna_linestyle.c:403
 msgid "Geometry modifier '%s' could not be removed"
-msgstr ""
+msgstr "El modificador de geometría '%s' no pudo ser removido"
 
 #: source/blender/makesrna/intern/rna_main_api.c:442
 msgid "unsupported font format"
@@ -101063,23 +101133,23 @@ msgstr "Registrando clase conector de nodo: '%s' es demasiado largo, la longitud
 msgid "Cannot set dupli-group as object belongs in group being instanced, thus causing a cycle"
 msgstr "No es posible definir el duplicado de grupo porque el objeto pertenece al grupo que está siendo instanciado, causando así un bucle"
 
-#: source/blender/makesrna/intern/rna_object.c:1403
+#: source/blender/makesrna/intern/rna_object.c:1419
 msgid "VertexGroup.add(): cannot be called while object is in edit mode"
 msgstr "VertexGroup.add(): no puede ser invocada mientras el objeto está en modo edición"
 
-#: source/blender/makesrna/intern/rna_object.c:1418
+#: source/blender/makesrna/intern/rna_object.c:1434
 msgid "VertexGroup.remove(): cannot be called while object is in edit mode"
 msgstr "VertexGroup.remove(): no puede ser invocada mientras el objeto está en modo edición"
 
-#: source/blender/makesrna/intern/rna_object.c:1433
+#: source/blender/makesrna/intern/rna_object.c:1449
 msgid "Vertex not in group"
 msgstr "El vértice no está en el grupo"
 
-#: source/blender/makesrna/intern/rna_object.c:1306
+#: source/blender/makesrna/intern/rna_object.c:1322
 msgid "Constraint '%s' not found in object '%s'"
 msgstr "Restricción '%s' no encontrada en el objeto '%s'"
 
-#: source/blender/makesrna/intern/rna_object.c:1380
+#: source/blender/makesrna/intern/rna_object.c:1396
 msgid "DeformGroup '%s' not in object '%s'"
 msgstr "El grupo de deformación '%s' no está en el objeto '%s'"
 
@@ -101157,7 +101227,7 @@ msgstr "Se proporcionó una forma de colisión no convexa a la función, usar so
 msgid "Rigidbody world was not properly initialized, need to step the simulation first"
 msgstr "El entorno de cuerpos rígidos no fue correctamente inicializado,  se necesita correr la simulación primero"
 
-#: source/blender/makesrna/intern/rna_scene.c:1473
+#: source/blender/makesrna/intern/rna_scene.c:1480
 msgid "Keying set could not be added"
 msgstr "No fue posible agregar un conjunto de claves"
 
@@ -101177,21 +101247,21 @@ msgstr "El objeto '%s' debe estar en modo objeto para poder ser desvinculado"
 msgid "Render layer '%s' could not be removed from scene '%s'"
 msgstr "La capa de procesamiento '%s' no pudo ser removida de la escena '%s'"
 
-#: source/blender/makesrna/intern/rna_scene.c:1441
+#: source/blender/makesrna/intern/rna_scene.c:1448
 msgid "Timeline marker '%s' not found in scene '%s'"
 msgstr "No se encontró el marcador de tiempo '%s' en la escena '%s'"
 
-#: source/blender/makesrna/intern/rna_scene.c:1606
+#: source/blender/makesrna/intern/rna_scene.c:1613
 msgid "Line set '%s' could not be removed"
-msgstr ""
+msgstr "No fue posible remover el estilo de línea '%s'"
 
-#: source/blender/makesrna/intern/rna_scene.c:1663
+#: source/blender/makesrna/intern/rna_scene.c:1670
 msgid "Style module '%s' could not be removed"
-msgstr ""
+msgstr "El módulo de estilo '%s' no pudo ser removido"
 
-#: source/blender/makesrna/intern/rna_scene.c:1665
+#: source/blender/makesrna/intern/rna_scene.c:1672
 msgid "Style module could not be removed"
-msgstr ""
+msgstr "El módulo de estilo no pudo ser removido"
 
 #: source/blender/makesrna/intern/rna_sequencer.c:1010
 msgid "Sequence type does not support modifiers"
@@ -101690,9 +101760,8 @@ msgid "Ray Depth"
 msgstr "Produndidad del rayo"
 
 #: source/blender/nodes/shader/nodes/node_shader_light_path.c:41
-#, fuzzy
 msgid "Transparent Depth"
-msgstr "BSDF Transparente"
+msgstr "Profundidad de transparencia"
 
 #: source/blender/nodes/shader/nodes/node_shader_material.c:37
 #: source/blender/nodes/shader/nodes/node_shader_material.c:54
@@ -101829,15 +101898,15 @@ msgstr ""
 msgid "Unknown py-exception, could not convert"
 msgstr "Excepción-py desconocida, imposible convertirla"
 
-#: source/blender/render/intern/source/convertblender.c:5229
+#: source/blender/render/intern/source/convertblender.c:5214
 msgid "Creating Shadowbuffers"
 msgstr "Creando buffers de sombra"
 
-#: source/blender/render/intern/source/convertblender.c:5714
+#: source/blender/render/intern/source/convertblender.c:5699
 msgid "Calculating previous frame vectors"
 msgstr "Calculando vectores del fotograma anterior"
 
-#: source/blender/render/intern/source/convertblender.c:5734
+#: source/blender/render/intern/source/convertblender.c:5719
 msgid "Calculating next frame vectors"
 msgstr "Calculando vectores del fotograma siguiente"
 
@@ -102144,19 +102213,19 @@ msgstr "Nada indicado"
 msgid "Cannot use current file as library"
 msgstr "No es posible usar el archivo actual como biblioteca"
 
-#: source/blender/windowmanager/intern/wm_operators.c:3868
+#: source/blender/windowmanager/intern/wm_operators.c:3871
 msgid "Property cannot be both boolean and float"
 msgstr "La propiedad no puede ser a la vez booleana y decimal"
 
-#: source/blender/windowmanager/intern/wm_operators.c:3980
+#: source/blender/windowmanager/intern/wm_operators.c:3983
 msgid "Pointer from path image_id is not an ID"
 msgstr "El puntero de la ruta image_id no es una ID"
 
-#: source/blender/windowmanager/intern/wm_operators.c:4020
+#: source/blender/windowmanager/intern/wm_operators.c:4023
 msgid "Property must be an integer or a float"
 msgstr "La propiedad debe ser un entero o un decimal"
 
-#: source/blender/windowmanager/intern/wm_operators.c:4028
+#: source/blender/windowmanager/intern/wm_operators.c:4031
 msgid "Property must be a none, distance, a factor, or an angle"
 msgstr "La propiedad debe ser nula, una distancia, un factor o un ángulo"
 
@@ -102165,9 +102234,8 @@ msgid "Operator '%s' does not have register enabled, incorrect invoke function"
 msgstr "El operador '%s' no tiene el registro habilitado, función de invocación incorrecta"
 
 #: source/blender/windowmanager/intern/wm_operators.c:1592
-#, fuzzy
 msgid "Operator '%s' does not have undo enabled, incorrect invoke function"
-msgstr "El operador '%s' no tiene el registro habilitado, función de invocación incorrecta"
+msgstr "El operador '%s' no tiene la función deshacer habilitada, función de invocación incorrecta"
 
 #: source/blender/windowmanager/intern/wm_operators.c:1652
 msgid "Operator redo '%s' does not have register enabled, incorrect invoke function"
@@ -102181,19 +102249,19 @@ msgstr "El operador rehacer '%s': contexto erróneo"
 msgid "Scene '%s' is linked, group instance disabled"
 msgstr "La escena '%s' se encuentra vinculada, instancias de grupo deshabilitadas"
 
-#: source/blender/windowmanager/intern/wm_operators.c:3891
+#: source/blender/windowmanager/intern/wm_operators.c:3894
 msgid "Could not resolve path '%s'"
 msgstr "No fue posible resolver la ruta '%s'"
 
-#: source/blender/windowmanager/intern/wm_operators.c:3904
+#: source/blender/windowmanager/intern/wm_operators.c:3907
 msgid "Property from path '%s' is not a float"
 msgstr "La propiedad de la ruta '%s' no es decimal"
 
-#: source/blender/windowmanager/intern/wm_operators.c:3912
+#: source/blender/windowmanager/intern/wm_operators.c:3915
 msgid "Property from path '%s' has length %d instead of %d"
 msgstr "La propiedad de la ruta '%s' tiene longitud %d en vez de %d"
 
-#: source/blender/windowmanager/intern/wm_operators.c:4317
+#: source/blender/windowmanager/intern/wm_operators.c:4320
 msgid "%d x %s: %.2f ms,  average: %.4f"
 msgstr "%d x %s: %.2f ms,  promedio: %.4f"
 

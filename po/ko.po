@@ -9,9 +9,9 @@
 # rlj1202 <rlj1202@gmail.com>, 2014
 msgid ""
 msgstr ""
-"Project-Id-Version: Blender 2.70 (sub 5) (b'3a41797')\n"
+"Project-Id-Version: Blender 2.70 (sub 5) (b'131d388')\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-05-26 20:12:46\n"
+"POT-Creation-Date: 2014-06-09 21:53:24\n"
 "PO-Revision-Date: 2014-02-16 19:39+0900\n"
 "Last-Translator: \n"
 "Language-Team: Korean (http://www.transifex.com/projects/p/blender-27-ko/language/ko/)\n"
@@ -2112,7 +2112,7 @@ msgstr "광선의 최대 길이"
 #: scripts/startup/bl_ui/properties_physics_field.py:169
 #: scripts/startup/bl_ui/properties_physics_field.py:173
 #: scripts/startup/bl_ui/properties_texture.py:585
-#: scripts/startup/bl_ui/space_view3d_toolbar.py:1637
+#: scripts/startup/bl_ui/space_view3d_toolbar.py:1648
 #: scripts/startup/bl_ui/space_view3d_toolbar.py:916
 #: source/blender/nodes/shader/nodes/node_shader_bump.c:39
 #: source/blender/nodes/shader/nodes/node_shader_lamp.c:38
@@ -2472,6 +2472,7 @@ msgstr "이 오브젝트에 트랙 "
 #. :src: bpy.types.INFO_MT_mesh_add
 #. :src: bpy.types.VIEW3D_MT_edit_mesh
 #. :src: bpy.types.EXPORT_SCENE_OT_fbx.object_types:'MESH'
+#. :src: bpy.types.IMPORT_SCENE_OT_hgt.import_types:'MESH'
 #. :src: bpy.types.OBJECT_OT_add.type:'MESH'
 #. :src: bpy.types.OBJECT_OT_select_by_type.type:'MESH'
 #. :src: bpy.types.RIGIDBODY_OT_shape_change.type:'MESH'
@@ -3047,6 +3048,7 @@ msgstr "위치"
 #. :src: bpy.types.CURVE_OT_vertex_add.location
 #. :src: bpy.types.IMAGE_OT_view_zoom_in.location
 #. :src: bpy.types.IMAGE_OT_view_zoom_out.location
+#. :src: bpy.types.IMPORT_SCENE_OT_hgt.location
 #. :src: bpy.types.MASK_OT_add_feather_vertex.location
 #. :src: bpy.types.MASK_OT_add_vertex.location
 #. :src: bpy.types.MASK_OT_primitive_circle_add.location
@@ -3138,6 +3140,7 @@ msgstr "회전"
 #. :src: bpy.types.EXPORT_ANIM_OT_bvh.rotate_mode
 #. :src: bpy.types.GRAPH_OT_duplicate.mode:'ROTATION'
 #. :src: bpy.types.IMPORT_ANIM_OT_bvh.rotate_mode
+#. :src: bpy.types.IMPORT_SCENE_OT_hgt.rotation
 #. :src: bpy.types.MBALL_OT_select_similar.type:'ROTATION'
 #. :src: bpy.types.MESH_OT_primitive_circle_add.rotation
 #. :src: bpy.types.MESH_OT_primitive_cone_add.rotation
@@ -3193,9 +3196,9 @@ msgstr "회전"
 #: scripts/startup/bl_ui/properties_physics_rigidbody.py:135
 #: scripts/startup/bl_ui/space_sequencer.py:569
 #: scripts/startup/bl_ui/space_view3d.py:1261
-#: source/blender/editors/space_view3d/view3d_buttons.c:949
-#: source/blender/editors/space_view3d/view3d_buttons.c:960
-#: source/blender/editors/space_view3d/view3d_buttons.c:971
+#: source/blender/editors/space_view3d/view3d_buttons.c:948
+#: source/blender/editors/space_view3d/view3d_buttons.c:959
+#: source/blender/editors/space_view3d/view3d_buttons.c:970
 #: source/blender/nodes/shader/nodes/node_shader_bsdf_anisotropic.c:35
 msgid "Rotation"
 msgstr "회전"
@@ -4026,7 +4029,7 @@ msgstr "경로 따라가기"
 #. :src: bpy.types.ParticleKey.velocity
 #. :src: bpy.types.VoxelData.smoke_data_type:'SMOKEVEL'
 #: scripts/startup/bl_ui/properties_physics_cloth.py:85
-#: scripts/startup/bl_ui/space_view3d_toolbar.py:1646
+#: scripts/startup/bl_ui/space_view3d_toolbar.py:1657
 msgid "Velocity"
 msgstr "속도"
 
@@ -4195,7 +4198,7 @@ msgstr ""
 #. :src: bpy.types.ParticleInstanceModifier.use_children
 #. :src: bpy.types.OBJECT_OT_select_grouped.type:'CHILDREN_RECURSIVE'
 #. :src: bpy.types.PARTICLE_PT_children
-#: scripts/startup/bl_ui/space_view3d_toolbar.py:1654
+#: scripts/startup/bl_ui/space_view3d_toolbar.py:1665
 msgid "Children"
 msgstr "자식"
 
@@ -4225,12 +4228,44 @@ msgstr "모듈 이름"
 msgid "Addon Preferences"
 msgstr "애드온 환경 설정"
 
+#. :src: bpy.types.UI_AP_i18n_settings.I18N_DIR
+msgid "Translation Root"
+msgstr "번역 루트"
+
+#. :src: bpy.types.UI_AP_i18n_settings.I18N_DIR
+msgid "The bf-translation repository"
+msgstr "BF-번역 저장소"
+
+#. :src: bpy.types.UI_AP_i18n_settings.GETTEXT_MSGFMT_EXECUTABLE
+msgid "Gettext 'msgfmt' executable"
+msgstr "Gettext 'msgfmt' 실행 가능"
+
+#. :src: bpy.types.UI_AP_i18n_settings.GETTEXT_MSGFMT_EXECUTABLE
+msgid "The gettext msgfmt 'compiler'. You’ll likely have to edit it if you’re under Windows"
+msgstr "The gettext msgfmt 'compiler'. 윈도우즈 환경이라면 아마도 수정해야 할것입니다."
+
 #. :src: bpy.types.UI_AP_i18n_settings.WARN_MSGID_NOT_CAPITALIZED
 msgid "Warn Msgid Not Capitalized"
 msgstr "경고 Msgid 대문자 하지 않음"
 
 #. :src: bpy.types.UI_AP_i18n_settings.WARN_MSGID_NOT_CAPITALIZED
 msgid "Warn about messages not starting by a capitalized letter (with a few allowed exceptions!)"
+msgstr ""
+
+#. :src: bpy.types.UI_AP_i18n_settings.FRIBIDI_LIB
+msgid "Fribidi Library"
+msgstr "Fribidi 라이브러리"
+
+#. :src: bpy.types.UI_AP_i18n_settings.FRIBIDI_LIB
+msgid "The FriBidi C compiled library (.so under Linux, .dll under windows...), you’ll likely have to edit it if you’re under Windows, e.g. using the one included in svn's libraries repository"
+msgstr "FriBidi는 C로 컴파일된 라이브러리로서(.so 리눅스용, .dll 윈도우즈용), 윈도우즈 환경이라면 수정을 해야할것입니다. (예를들어 svn의 라이브러리 저장소에 있는 것중 하나를 사용)"
+
+#. :src: bpy.types.UI_AP_i18n_settings.SPELL_CACHE
+msgid "Spell Cache"
+msgstr "맞춤법 캐시"
+
+#. :src: bpy.types.UI_AP_i18n_settings.SPELL_CACHE
+msgid "A cache storing validated msgids, to avoid re-spellchecking them"
 msgstr ""
 
 #. :src: bpy.types.UI_AP_i18n_settings.PY_SYS_PATHS
@@ -4241,30 +4276,6 @@ msgstr "가져오기 경로"
 msgid "Additional paths to add to sys.path (';' separated)"
 msgstr ""
 
-#. :src: bpy.types.UI_AP_i18n_settings.persistent_data_path
-msgid "Persistent Data Path"
-msgstr "지속적인 데이터 경로"
-
-#. :src: bpy.types.UI_AP_i18n_settings.persistent_data_path
-msgid "The name of a json file storing those settings (unfortunately, Blender's system does not work here)"
-msgstr ""
-
-#. :src: bpy.types.UI_AP_i18n_settings.SPELL_CACHE
-msgid "Spell Cache"
-msgstr "맞춤법 캐시"
-
-#. :src: bpy.types.UI_AP_i18n_settings.SPELL_CACHE
-msgid "A cache storing validated msgids, to avoid re-spellchecking them"
-msgstr ""
-
-#. :src: bpy.types.UI_AP_i18n_settings.I18N_DIR
-msgid "Translation Root"
-msgstr "번역 루트"
-
-#. :src: bpy.types.UI_AP_i18n_settings.I18N_DIR
-msgid "The bf-translation repository"
-msgstr "BF-번역 저장소"
-
 #. :src: bpy.types.UI_AP_i18n_settings.SOURCE_DIR
 msgid "Source Root"
 msgstr "소스 루트"
@@ -4273,21 +4284,13 @@ msgstr "소스 루트"
 msgid "The Blender source root path"
 msgstr "블렌더 소스 루트 경로"
 
-#. :src: bpy.types.UI_AP_i18n_settings.GETTEXT_MSGFMT_EXECUTABLE
-msgid "Gettext 'msgfmt' executable"
-msgstr "Gettext 'msgfmt' 실행 가능"
+#. :src: bpy.types.UI_AP_i18n_settings.persistent_data_path
+msgid "Persistent Data Path"
+msgstr "지속적인 데이터 경로"
 
-#. :src: bpy.types.UI_AP_i18n_settings.GETTEXT_MSGFMT_EXECUTABLE
-msgid "The gettext msgfmt 'compiler'. You’ll likely have to edit it if you’re under Windows"
-msgstr "The gettext msgfmt 'compiler'. 윈도우즈 환경이라면 아마도 수정해야 할것입니다."
-
-#. :src: bpy.types.UI_AP_i18n_settings.FRIBIDI_LIB
-msgid "Fribidi Library"
-msgstr "Fribidi 라이브러리"
-
-#. :src: bpy.types.UI_AP_i18n_settings.FRIBIDI_LIB
-msgid "The FriBidi C compiled library (.so under Linux, .dll under windows...), you’ll likely have to edit it if you’re under Windows, e.g. using the one included in svn's libraries repository"
-msgstr "FriBidi는 C로 컴파일된 라이브러리로서(.so 리눅스용, .dll 윈도우즈용), 윈도우즈 환경이라면 수정을 해야할것입니다. (예를들어 svn의 라이브러리 저장소에 있는 것중 하나를 사용)"
+#. :src: bpy.types.UI_AP_i18n_settings.persistent_data_path
+msgid "The name of a json file storing those settings (unfortunately, Blender's system does not work here)"
+msgstr ""
 
 #. :src: bpy.types.AnimData
 #. :src: bpy.types.Armature.animation_data
@@ -5184,6 +5187,7 @@ msgstr "배경에 사용되는 데이터 소스"
 #. :src: bpy.types.ShaderNodeTexImage.image
 #. :src: bpy.types.TextureNodeImage
 #. :src: bpy.types.TextureNodeImage.image
+#. :src: bpy.types.IMPORT_SCENE_OT_hgt.import_types:'IMAGE'
 #. :src: bpy.types.MESH_OT_select_similar.type:'IMAGE'
 #. :src: bpy.types.OBJECT_OT_empty_add.type:'IMAGE'
 #. :src: bpy.types.PAINT_OT_project_image.image
@@ -5943,6 +5947,7 @@ msgstr ""
 #. :src: bpy.types.MultiresModifier.is_external
 #. :src: bpy.types.ShaderNodeScript.mode:'EXTERNAL'
 #. :src: bpy.types.OBJECT_OT_bake.save_mode:'EXTERNAL'
+#. :src: bpy.types.VIEW3D_PT_tools_imagepaint_external
 #. :src: bpy.types.PointCache.use_external
 msgid "External"
 msgstr "외부"
@@ -6559,7 +6564,7 @@ msgstr "액션 데이터 블록"
 #. :src: bpy.types.ParticleSystem.particles
 #. :src: bpy.types.SpaceProperties.context:'PARTICLES'
 #. :src: bpy.types.SpaceTimeline.cache_particles
-#: scripts/startup/bl_ui/space_view3d_toolbar.py:1657
+#: scripts/startup/bl_ui/space_view3d_toolbar.py:1668
 msgid "Particles"
 msgstr "파티클"
 
@@ -6584,7 +6589,7 @@ msgstr "파티클 데이터 블록"
 #: source/blender/editors/space_image/image_buttons.c:947
 #: source/blender/editors/space_node/node_buttons.c:202
 #: source/blender/editors/space_sequencer/sequencer_buttons.c:68
-#: source/blender/editors/space_view3d/view3d_buttons.c:1182
+#: source/blender/editors/space_view3d/view3d_buttons.c:1181
 msgid "Grease Pencil"
 msgstr "그리스 펜슬"
 
@@ -12660,7 +12665,7 @@ msgstr "텍스처"
 #. :src: bpy.types.MaterialTextureSlot.normal_map_space:'WORLD'
 #. :src: bpy.types.UserPreferencesEdit.object_align:'WORLD'
 #: source/blender/editors/interface/interface_templates.c:1401
-#: source/blender/editors/render/render_shading.c:490
+#: source/blender/editors/render/render_shading.c:498
 msgid "World"
 msgstr "월드 "
 
@@ -14777,7 +14782,7 @@ msgstr ""
 #. :src: bpy.types.GRAPH_OT_fmodifier_add.type:'ENVELOPE'
 #. :src: bpy.types.NLA_OT_fmodifier_add.type:'ENVELOPE'
 #: source/blender/blenkernel/intern/fmodifier.c:476
-#: source/blender/editors/space_view3d/view3d_buttons.c:1049
+#: source/blender/editors/space_view3d/view3d_buttons.c:1048
 msgid "Envelope"
 msgstr "엔벨로프"
 
@@ -17940,8 +17945,8 @@ msgstr "오브젝트의 질량"
 #: scripts/startup/bl_ui/space_image.py:851
 #: scripts/startup/bl_ui/space_view3d_toolbar.py:1217
 #: scripts/startup/bl_ui/space_view3d_toolbar.py:1197
-#: source/blender/editors/space_view3d/view3d_buttons.c:1042
-#: source/blender/editors/space_view3d/view3d_buttons.c:1046
+#: source/blender/editors/space_view3d/view3d_buttons.c:1041
+#: source/blender/editors/space_view3d/view3d_buttons.c:1045
 #: source/blender/nodes/shader/nodes/node_shader_subsurface_scattering.c:34
 msgid "Radius"
 msgstr "반경"
@@ -20805,7 +20810,7 @@ msgid "Index of active texture slot"
 msgstr "활성 텍스처 슬롯의 인덱스"
 
 #. :src: bpy.types.FreestyleLineStyle.panel
-#: source/blender/editors/interface/interface_handlers.c:5596
+#: source/blender/editors/interface/interface_handlers.c:5608
 msgid "Panel"
 msgstr "패널"
 
@@ -26754,9 +26759,9 @@ msgstr "나이"
 #. :src: bpy.types.TRANSFORM_OT_tilt.value
 #. :src: bpy.types.TRANSFORM_OT_trackball.value
 #. :src: bpy.types.ImagePaint.normal_angle
-#. :src: bpy.types.Print3DSettings.angle_overhang
-#. :src: bpy.types.Print3DSettings.angle_distort
 #. :src: bpy.types.Print3DSettings.angle_sharp
+#. :src: bpy.types.Print3DSettings.angle_distort
+#. :src: bpy.types.Print3DSettings.angle_overhang
 #. :src: bpy.types.SceneGameData.dome_angle
 #. :src: bpy.types.RadarSensor.angle
 #. :src: bpy.types.WipeSequence.angle
@@ -29287,7 +29292,7 @@ msgstr "스투치 텍스처"
 
 #. :src: bpy.types.StucciTexture.stucci_type:'PLASTIC'
 #. :src: bpy.types.SoftBodySettings.plastic
-#: source/blender/editors/physics/rigidbody_object.c:442
+#: source/blender/editors/physics/rigidbody_object.c:438
 msgid "Plastic"
 msgstr "플라스틱"
 
@@ -30181,7 +30186,7 @@ msgstr "창"
 #. :src: bpy.types.ThemePanelColors.header
 #. :src: bpy.types.ThemeSpaceGeneric.header
 #. :src: bpy.types.ThemeSpaceGradient.header
-#: source/blender/editors/interface/interface_handlers.c:5848
+#: source/blender/editors/interface/interface_handlers.c:5860
 #: source/blender/editors/screen/screen_ops.c:3145
 msgid "Header"
 msgstr "헤더"
@@ -30212,6 +30217,7 @@ msgstr "임시"
 #. :src: bpy.types.VIEW3D_PT_tools_brush_stroke
 #. :src: bpy.types.VIEW3D_PT_tools_brush_texture
 #. :src: bpy.types.VIEW3D_PT_tools_curveedit
+#. :src: bpy.types.VIEW3D_PT_tools_imagepaint_external
 #. :src: bpy.types.VIEW3D_PT_tools_latticeedit
 #. :src: bpy.types.VIEW3D_PT_tools_mask_texture
 #. :src: bpy.types.VIEW3D_PT_tools_mballedit
@@ -31786,8 +31792,8 @@ msgstr "오른쪽 핸들의 좌표 (컨트롤 포인트 이후)"
 #. :src: bpy.types.OBJECT_OT_select_grouped.type:'KEYINGSET'
 #. :src: bpy.types.PAINT_OT_weight_sample_group.group
 #. :src: bpy.types.POSE_OT_select_grouped.type:'KEYINGSET'
-#: source/blender/blenkernel/intern/anim_sys.c:1108
-#: source/blender/blenkernel/intern/anim_sys.c:1120
+#: source/blender/blenkernel/intern/anim_sys.c:1110
+#: source/blender/blenkernel/intern/anim_sys.c:1122
 msgid "Keying Set"
 msgstr "키잉 설정"
 
@@ -34875,7 +34881,7 @@ msgstr "색상 사전 설정"
 #: scripts/startup/bl_ui/space_dopesheet.py:366
 #: scripts/startup/bl_ui/space_graph.py:211
 #: scripts/startup/bl_ui/space_nla.py:132
-#: source/blender/editors/space_view3d/view3d_buttons.c:1174
+#: source/blender/editors/space_view3d/view3d_buttons.c:1173
 #: source/blender/makesrna/intern/rna_constraint.c:53
 msgid "Transform"
 msgstr "변환"
@@ -35660,7 +35666,7 @@ msgstr "스킨의 반지름"
 #. :src: bpy.types.ToolSettings.proportional_edit_falloff:'ROOT'
 #: scripts/addons/cycles/ui.py:1302
 #: scripts/startup/bl_ui/properties_material.py:722
-#: scripts/startup/bl_ui/space_view3d_toolbar.py:1643
+#: scripts/startup/bl_ui/space_view3d_toolbar.py:1654
 msgid "Root"
 msgstr "루트"
 
@@ -35685,8 +35691,8 @@ msgid "Mesh Visualize Statistics"
 msgstr "메쉬 시각화 통계"
 
 #. :src: bpy.types.MeshStatVis.type
-msgid "XXX"
-msgstr "XXX"
+msgid "Type of data to visualize/check"
+msgstr ""
 
 #. :src: bpy.types.MeshStatVis.type:'OVERHANG'
 msgid "Overhang"
@@ -37269,8 +37275,9 @@ msgstr "이 장면에서 시간을 사용"
 #. :src: bpy.types.NodeInternalSocketTemplate.type:'CUSTOM'
 #. :src: bpy.types.NodeSocket.type:'CUSTOM'
 #. :src: bpy.types.NodeSocketInterfaceStandard.type:'CUSTOM'
+#. :src: bpy.types.IMPORT_SCENE_OT_hgt.hgt_type:'CUSTOM'
 #. :src: bpy.types.UserPreferencesFilePaths.animation_player_preset:'CUSTOM'
-#: source/blender/editors/physics/rigidbody_object.c:478
+#: source/blender/editors/physics/rigidbody_object.c:474
 msgid "Custom"
 msgstr "사용자 정의"
 
@@ -44049,7 +44056,7 @@ msgstr "복사/붙여 넣기 버퍼에 선택된 키 프레임을 복사"
 
 #. :src: bpy.types.ACTION_OT_delete
 #. :src: bpy.types.GRAPH_OT_delete
-#: source/blender/editors/interface/interface_handlers.c:5665
+#: source/blender/editors/interface/interface_handlers.c:5677
 msgctxt "Operator"
 msgid "Delete Keyframes"
 msgstr "키 프레임 삭제"
@@ -44190,7 +44197,7 @@ msgstr ""
 
 #. :src: bpy.types.ACTION_OT_keyframe_insert
 #. :src: bpy.types.GRAPH_OT_keyframe_insert
-#: source/blender/editors/interface/interface_handlers.c:5687
+#: source/blender/editors/interface/interface_handlers.c:5699
 msgctxt "Operator"
 msgid "Insert Keyframes"
 msgstr "키 프레임 삽입"
@@ -45044,7 +45051,7 @@ msgid "Only unused (Fake User only) actions get considered"
 msgstr ""
 
 #. :src: bpy.types.ANIM_OT_copy_driver_button
-#: source/blender/editors/interface/interface_handlers.c:5726
+#: source/blender/editors/interface/interface_handlers.c:5738
 msgctxt "Operator"
 msgid "Copy Driver"
 msgstr "드라이버 복사"
@@ -45054,7 +45061,7 @@ msgid "Copy the driver for the highlighted button"
 msgstr "강조된 버튼에 대한 드라이버를 복사"
 
 #. :src: bpy.types.ANIM_OT_driver_button_add
-#: source/blender/editors/interface/interface_handlers.c:5746
+#: source/blender/editors/interface/interface_handlers.c:5758
 msgctxt "Operator"
 msgid "Add Driver"
 msgstr "드라이버 추가"
@@ -45141,7 +45148,7 @@ msgid "Delete keyframes from all elements of the array"
 msgstr "배열의 모든 요소에서 키 프레임을 삭제"
 
 #. :src: bpy.types.ANIM_OT_keyframe_delete_v3d
-#: source/blender/editors/interface/interface_handlers.c:5673
+#: source/blender/editors/interface/interface_handlers.c:5685
 msgctxt "Operator"
 msgid "Delete Keyframe"
 msgstr "키 프레임 삭제"
@@ -45151,7 +45158,7 @@ msgid "Remove keyframes on current frame for selected objects"
 msgstr "선택된 오브젝트에 대한 현재의 프레임에서 키 프레임을 제거"
 
 #. :src: bpy.types.ANIM_OT_keyframe_insert
-#: source/blender/editors/interface/interface_handlers.c:5693
+#: source/blender/editors/interface/interface_handlers.c:5705
 msgctxt "Operator"
 msgid "Insert Keyframe"
 msgstr "키 프레임 삽입"
@@ -45304,7 +45311,7 @@ msgid "Remove the active Keying Set"
 msgstr "활성 키잉 설정 제거"
 
 #. :src: bpy.types.ANIM_OT_keyingset_button_add
-#: source/blender/editors/interface/interface_handlers.c:5770
+#: source/blender/editors/interface/interface_handlers.c:5782
 msgctxt "Operator"
 msgid "Add to Keying Set"
 msgstr "키잉 설정에 추가"
@@ -45318,8 +45325,8 @@ msgid "Add all elements of the array to a Keying Set"
 msgstr "키잉 설정에 배열의 모든 요소를 추가"
 
 #. :src: bpy.types.ANIM_OT_keyingset_button_remove
-#: source/blender/editors/interface/interface_handlers.c:5766
-#: source/blender/editors/interface/interface_handlers.c:5772
+#: source/blender/editors/interface/interface_handlers.c:5778
+#: source/blender/editors/interface/interface_handlers.c:5784
 msgctxt "Operator"
 msgid "Remove from Keying Set"
 msgstr "키잉 (FSK) 설정에서 제거"
@@ -45329,8 +45336,8 @@ msgid "Remove current UI-active property from current keying set"
 msgstr "현재 키잉 설정에서 현재의 UI 활성 속성을 제거"
 
 #. :src: bpy.types.ANIM_OT_paste_driver_button
-#: source/blender/editors/interface/interface_handlers.c:5729
-#: source/blender/editors/interface/interface_handlers.c:5751
+#: source/blender/editors/interface/interface_handlers.c:5741
+#: source/blender/editors/interface/interface_handlers.c:5763
 msgctxt "Operator"
 msgid "Paste Driver"
 msgstr "드라이버 붙여 넣기"
@@ -48938,7 +48945,7 @@ msgstr "B웨이트"
 #. :src: bpy.types.SpaceProperties.align
 #. :src: bpy.types.SpaceView3D.use_pivot_point_align
 #: source/blender/editors/space_buttons/buttons_ops.c:74
-#: source/blender/editors/transform/transform.c:7033
+#: source/blender/editors/transform/transform.c:7063
 msgid "Align"
 msgstr "정렬"
 
@@ -49055,6 +49062,7 @@ msgstr "베지어 원형 구축"
 #. :src: bpy.types.CURVE_OT_primitive_nurbs_circle_add.view_align
 #. :src: bpy.types.CURVE_OT_primitive_nurbs_curve_add.view_align
 #. :src: bpy.types.CURVE_OT_primitive_nurbs_path_add.view_align
+#. :src: bpy.types.IMPORT_SCENE_OT_hgt.view_align
 #. :src: bpy.types.MESH_OT_primitive_circle_add.view_align
 #. :src: bpy.types.MESH_OT_primitive_cone_add.view_align
 #. :src: bpy.types.MESH_OT_primitive_cube_add.view_align
@@ -50155,8 +50163,9 @@ msgid "Selection to an ASCII Autodesk FBX"
 msgstr "ASCII 오토데스크 FBX로 선택"
 
 #. :src: bpy.types.EXPORT_SCENE_OT_fbx.version
-msgid "Exporter Version"
-msgstr ""
+#, fuzzy
+msgid "Version"
+msgstr "버젼:"
 
 #. :src: bpy.types.EXPORT_SCENE_OT_fbx.version
 msgid "Choose which version of the exporter to use"
@@ -50193,8 +50202,9 @@ msgid "Scale all data (Some importers do not support scaled armatures!)"
 msgstr "모든 데이터를 규모 (일부 가져오기 도구는 규모 변경된 아마츄어를 지원하지 않음!)"
 
 #. :src: bpy.types.EXPORT_SCENE_OT_fbx.bake_space_transform
-msgid "Bake Space Transform"
-msgstr ""
+#. :src: bpy.types.IMPORT_SCENE_OT_autodesk_3ds.use_apply_transform
+msgid "Apply Transform"
+msgstr "변환 적용"
 
 #. :src: bpy.types.EXPORT_SCENE_OT_fbx.bake_space_transform
 msgid "Bake space transform into object data, avoids getting unwanted rotations to objects when target space is not aligned with Blender's space (WARNING! experimental option, might give odd/wrong results)"
@@ -50284,8 +50294,8 @@ msgid "Only Deform Bones"
 msgstr "변형 본 만"
 
 #. :src: bpy.types.EXPORT_SCENE_OT_fbx.use_armature_deform_only
-msgid "Only write deforming bones"
-msgstr "변형 본 쓰기 전용"
+msgid "Only write deforming bones (and non-deforming ones when they have deforming children)"
+msgstr ""
 
 #. :src: bpy.types.EXPORT_SCENE_OT_fbx.bake_anim
 #, fuzzy
@@ -52485,10 +52495,6 @@ msgid "Search subdirectories for any associated images (Warning, may be slow)"
 msgstr ""
 
 #. :src: bpy.types.IMPORT_SCENE_OT_autodesk_3ds.use_apply_transform
-msgid "Apply Transform"
-msgstr "변환 적용"
-
-#. :src: bpy.types.IMPORT_SCENE_OT_autodesk_3ds.use_apply_transform
 msgid "Workaround for object transformations importing incorrectly"
 msgstr "잘못 가져오는 오브젝트 변환에 대한 해결 방법"
 
@@ -52530,6 +52536,163 @@ msgstr "전사 오프셋"
 #. :src: bpy.types.IMPORT_SCENE_OT_fbx.decal_offset
 msgid "Displace geometry of alpha meshes"
 msgstr "알파 메쉬의 지오메트리를 치환"
+
+#. :src: bpy.types.IMPORT_SCENE_OT_hgt
+msgctxt "Operator"
+msgid "Import DEM hgt"
+msgstr ""
+
+#. :src: bpy.types.IMPORT_SCENE_OT_hgt
+msgid "Import digital elevation data from .hgt file(s), as a piece of displaced sphere mesh and/or image"
+msgstr ""
+
+#. :src: bpy.types.IMPORT_SCENE_OT_hgt.directory
+msgid "HGT Dir"
+msgstr ""
+
+#. :src: bpy.types.IMPORT_SCENE_OT_hgt.directory
+msgid "Path of the directory containing .hgt files"
+msgstr ""
+
+#. :src: bpy.types.IMPORT_SCENE_OT_hgt.hgt_type
+msgid "HGT Type"
+msgstr ""
+
+#. :src: bpy.types.IMPORT_SCENE_OT_hgt.hgt_type
+msgid "Type (definition) of .hgt DEM data"
+msgstr ""
+
+#. :src: bpy.types.IMPORT_SCENE_OT_hgt.hgt_type:'AUTO'
+#, fuzzy
+msgid "Auto Detect"
+msgstr "자동-감지"
+
+#. :src: bpy.types.IMPORT_SCENE_OT_hgt.hgt_type:'AUTO'
+msgid "Only detects DEM3 and DEM1 currently"
+msgstr ""
+
+#. :src: bpy.types.IMPORT_SCENE_OT_hgt.hgt_type:'DEM3'
+msgid "DEM3 (resolution of 3 seconds of arc, 1200 values per degree)"
+msgstr ""
+
+#. :src: bpy.types.IMPORT_SCENE_OT_hgt.hgt_type:'DEM1'
+msgid "DEM1 (resolution of 1 second of arc, 3600 values per degree)"
+msgstr ""
+
+#. :src: bpy.types.IMPORT_SCENE_OT_hgt.hgt_type:'CUSTOM'
+msgid "Use custom resolution"
+msgstr ""
+
+#. :src: bpy.types.IMPORT_SCENE_OT_hgt.hgt_resolution
+#, fuzzy
+msgid "HGT Resolution"
+msgstr "해상도"
+
+#. :src: bpy.types.IMPORT_SCENE_OT_hgt.hgt_resolution
+msgid "Resolution of hgt data, in values per degree"
+msgstr ""
+
+#. :src: bpy.types.IMPORT_SCENE_OT_hgt.import_types
+msgid "Import Types"
+msgstr ""
+
+#. :src: bpy.types.IMPORT_SCENE_OT_hgt.import_types
+msgid "How to import DEM data"
+msgstr ""
+
+#. :src: bpy.types.IMPORT_SCENE_OT_hgt.import_types:'MESH'
+msgid "Import as a piece of displaced sphere mesh"
+msgstr ""
+
+#. :src: bpy.types.IMPORT_SCENE_OT_hgt.import_types:'IMAGE'
+msgid "Import as an image"
+msgstr ""
+
+#. :src: bpy.types.IMPORT_SCENE_OT_hgt.import_types:'MODIFIER'
+#. :src: bpy.types.OBJECT_OT_explode_refresh.modifier
+#. :src: bpy.types.OBJECT_OT_hook_assign.modifier
+#. :src: bpy.types.OBJECT_OT_hook_recenter.modifier
+#. :src: bpy.types.OBJECT_OT_hook_remove.modifier
+#. :src: bpy.types.OBJECT_OT_hook_reset.modifier
+#. :src: bpy.types.OBJECT_OT_hook_select.modifier
+#. :src: bpy.types.OBJECT_OT_laplaciandeform_bind.modifier
+#. :src: bpy.types.OBJECT_OT_meshdeform_bind.modifier
+#. :src: bpy.types.OBJECT_OT_modifier_apply.modifier
+#. :src: bpy.types.OBJECT_OT_modifier_convert.modifier
+#. :src: bpy.types.OBJECT_OT_modifier_copy.modifier
+#. :src: bpy.types.OBJECT_OT_modifier_move_down.modifier
+#. :src: bpy.types.OBJECT_OT_modifier_move_up.modifier
+#. :src: bpy.types.OBJECT_OT_modifier_remove.modifier
+#. :src: bpy.types.OBJECT_OT_multires_base_apply.modifier
+#. :src: bpy.types.OBJECT_OT_multires_external_save.modifier
+#. :src: bpy.types.OBJECT_OT_multires_higher_levels_delete.modifier
+#. :src: bpy.types.OBJECT_OT_multires_reshape.modifier
+#. :src: bpy.types.OBJECT_OT_multires_subdivide.modifier
+#. :src: bpy.types.OBJECT_OT_ocean_bake.modifier
+#. :src: bpy.types.OBJECT_OT_skin_armature_create.modifier
+#. :src: bpy.types.SCREEN_OT_actionzone.modifier
+msgid "Modifier"
+msgstr "모디파이어"
+
+#. :src: bpy.types.IMPORT_SCENE_OT_hgt.import_types:'MODIFIER'
+msgid "Import as an image and use it in a Displace modifier"
+msgstr ""
+
+#. :src: bpy.types.IMPORT_SCENE_OT_hgt.p_north_lat
+msgid "North Latitude"
+msgstr ""
+
+#. :src: bpy.types.IMPORT_SCENE_OT_hgt.p_north_lat
+msgid "Northern latitude of the imported area"
+msgstr ""
+
+#. :src: bpy.types.IMPORT_SCENE_OT_hgt.p_south_lat
+msgid "South Latitude"
+msgstr ""
+
+#. :src: bpy.types.IMPORT_SCENE_OT_hgt.p_south_lat
+msgid "Southern latitude of the imported area"
+msgstr ""
+
+#. :src: bpy.types.IMPORT_SCENE_OT_hgt.p_west_lon
+msgid "West Longitude"
+msgstr ""
+
+#. :src: bpy.types.IMPORT_SCENE_OT_hgt.p_west_lon
+msgid "Western longitude of the imported area"
+msgstr ""
+
+#. :src: bpy.types.IMPORT_SCENE_OT_hgt.p_east_lon
+msgid "East Longitude"
+msgstr ""
+
+#. :src: bpy.types.IMPORT_SCENE_OT_hgt.p_east_lon
+msgid "Eastern longitude of the imported area"
+msgstr ""
+
+#. :src: bpy.types.IMPORT_SCENE_OT_hgt.definition_mesh
+msgid "Mesh Definition"
+msgstr ""
+
+#. :src: bpy.types.IMPORT_SCENE_OT_hgt.definition_mesh
+msgid "Number of vertices per degree (e.g. DEM3 is 1200)"
+msgstr ""
+
+#. :src: bpy.types.IMPORT_SCENE_OT_hgt.definition_img
+msgid "Image Definition"
+msgstr ""
+
+#. :src: bpy.types.IMPORT_SCENE_OT_hgt.definition_img
+msgid "Number of pixels per degree (e.g. DEM3 is 1200)"
+msgstr ""
+
+#. :src: bpy.types.IMPORT_SCENE_OT_hgt.use_current_mesh
+msgid "Use Current Mesh"
+msgstr ""
+
+#. :src: bpy.types.IMPORT_SCENE_OT_hgt.use_current_mesh
+msgid "Replace active mesh object instead of creating a new one"
+msgstr ""
 
 #. :src: bpy.types.IMPORT_SCENE_OT_obj
 msgctxt "Operator"
@@ -56559,11 +56722,17 @@ msgstr "노드 연결 및 추가"
 msgid "Add a node to the active tree and link to an existing socket"
 msgstr "기존의 소켓으로 활성 트리 및 연결에 노드를 추가"
 
-#. :src: bpy.types.NODE_OT_add_and_link_node.settings
-#. :src: bpy.types.NODE_OT_add_node.settings
-#. :src: bpy.types.NODE_OT_add_search.settings
-msgid "Settings to be applied on the newly created node"
-msgstr "새로 작성된 노드에 적용 할 설정"
+#. :src: bpy.types.NODE_OT_add_and_link_node.use_transform
+#. :src: bpy.types.NODE_OT_add_node.use_transform
+#. :src: bpy.types.NODE_OT_add_search.use_transform
+msgid "Use Transform"
+msgstr "변환 사용"
+
+#. :src: bpy.types.NODE_OT_add_and_link_node.use_transform
+#. :src: bpy.types.NODE_OT_add_node.use_transform
+#. :src: bpy.types.NODE_OT_add_search.use_transform
+msgid "Start transform operator after inserting the node"
+msgstr "노드를 삽입 한 후 연산자를 변환 시작"
 
 #. :src: bpy.types.NODE_OT_add_and_link_node.type
 #. :src: bpy.types.NODE_OT_add_node.type
@@ -56579,17 +56748,11 @@ msgstr "노드 유형"
 msgid "Node type"
 msgstr "노드 유형"
 
-#. :src: bpy.types.NODE_OT_add_and_link_node.use_transform
-#. :src: bpy.types.NODE_OT_add_node.use_transform
-#. :src: bpy.types.NODE_OT_add_search.use_transform
-msgid "Use Transform"
-msgstr "변환 사용"
-
-#. :src: bpy.types.NODE_OT_add_and_link_node.use_transform
-#. :src: bpy.types.NODE_OT_add_node.use_transform
-#. :src: bpy.types.NODE_OT_add_search.use_transform
-msgid "Start transform operator after inserting the node"
-msgstr "노드를 삽입 한 후 연산자를 변환 시작"
+#. :src: bpy.types.NODE_OT_add_and_link_node.settings
+#. :src: bpy.types.NODE_OT_add_node.settings
+#. :src: bpy.types.NODE_OT_add_search.settings
+msgid "Settings to be applied on the newly created node"
+msgstr "새로 작성된 노드에 적용 할 설정"
 
 #. :src: bpy.types.NODE_OT_add_and_link_node.link_socket_index
 msgid "Link Socket Index"
@@ -57712,31 +57875,6 @@ msgstr "폭발 새로 고침"
 #. :src: bpy.types.OBJECT_OT_explode_refresh
 msgid "Refresh data in the Explode modifier"
 msgstr "강하게 수정의 새로 고침 데이터"
-
-#. :src: bpy.types.OBJECT_OT_explode_refresh.modifier
-#. :src: bpy.types.OBJECT_OT_hook_assign.modifier
-#. :src: bpy.types.OBJECT_OT_hook_recenter.modifier
-#. :src: bpy.types.OBJECT_OT_hook_remove.modifier
-#. :src: bpy.types.OBJECT_OT_hook_reset.modifier
-#. :src: bpy.types.OBJECT_OT_hook_select.modifier
-#. :src: bpy.types.OBJECT_OT_laplaciandeform_bind.modifier
-#. :src: bpy.types.OBJECT_OT_meshdeform_bind.modifier
-#. :src: bpy.types.OBJECT_OT_modifier_apply.modifier
-#. :src: bpy.types.OBJECT_OT_modifier_convert.modifier
-#. :src: bpy.types.OBJECT_OT_modifier_copy.modifier
-#. :src: bpy.types.OBJECT_OT_modifier_move_down.modifier
-#. :src: bpy.types.OBJECT_OT_modifier_move_up.modifier
-#. :src: bpy.types.OBJECT_OT_modifier_remove.modifier
-#. :src: bpy.types.OBJECT_OT_multires_base_apply.modifier
-#. :src: bpy.types.OBJECT_OT_multires_external_save.modifier
-#. :src: bpy.types.OBJECT_OT_multires_higher_levels_delete.modifier
-#. :src: bpy.types.OBJECT_OT_multires_reshape.modifier
-#. :src: bpy.types.OBJECT_OT_multires_subdivide.modifier
-#. :src: bpy.types.OBJECT_OT_ocean_bake.modifier
-#. :src: bpy.types.OBJECT_OT_skin_armature_create.modifier
-#. :src: bpy.types.SCREEN_OT_actionzone.modifier
-msgid "Modifier"
-msgstr "모디파이어"
 
 #. :src: bpy.types.OBJECT_OT_explode_refresh.modifier
 #. :src: bpy.types.OBJECT_OT_laplaciandeform_bind.modifier
@@ -64824,7 +64962,7 @@ msgid "Slide a vertex along a mesh"
 msgstr "메쉬를 따라 버텍스 슬라이드"
 
 #. :src: bpy.types.UI_OT_copy_data_path_button
-#: source/blender/editors/interface/interface_handlers.c:5799
+#: source/blender/editors/interface/interface_handlers.c:5811
 msgctxt "Operator"
 msgid "Copy Data Path"
 msgstr "데이터 경로 복사"
@@ -64834,7 +64972,7 @@ msgid "Copy the RNA data path for this property to the clipboard"
 msgstr ""
 
 #. :src: bpy.types.UI_OT_copy_to_selected_button
-#: source/blender/editors/interface/interface_handlers.c:5801
+#: source/blender/editors/interface/interface_handlers.c:5813
 msgctxt "Operator"
 msgid "Copy To Selected"
 msgstr "선택에 복사"
@@ -65223,7 +65361,7 @@ msgid "Write the reports "
 msgstr "보고서를 작성"
 
 #. :src: bpy.types.UI_OT_reset_default_button
-#: source/blender/editors/interface/interface_handlers.c:5791
+#: source/blender/editors/interface/interface_handlers.c:5803
 msgctxt "Operator"
 msgid "Reset to Default Value"
 msgstr "기본 값으로 초기화"
@@ -70521,29 +70659,13 @@ msgstr "ID 속성 그룹"
 msgid "Group of ID properties"
 msgstr "ID 속성의 그룹"
 
-#. :src: bpy.types.AnimationStitchSettings.second_offset
-msgid "Second offset"
-msgstr "두 번째 오프셋"
+#. :src: bpy.types.AnimationStitchSettings.first_action
+msgid "Action 1"
+msgstr "액션 1"
 
-#. :src: bpy.types.AnimationStitchSettings.second_offset
-msgid "Frame offset for 2nd animation, where it should start"
-msgstr ""
-
-#. :src: bpy.types.AnimationStitchSettings.stick_bone
-msgid "Stick Bone"
-msgstr "스틱 본"
-
-#. :src: bpy.types.AnimationStitchSettings.stick_bone
-msgid "Bone to freeze during transition"
-msgstr ""
-
-#. :src: bpy.types.AnimationStitchSettings.second_action
-msgid "Action 2"
-msgstr "액션 2"
-
-#. :src: bpy.types.AnimationStitchSettings.second_action
-msgid "Second action in stitch"
-msgstr "봉합에서 두 번째 액션"
+#. :src: bpy.types.AnimationStitchSettings.first_action
+msgid "First action in stitch"
+msgstr "봉합에서 첫 번째 액션"
 
 #. :src: bpy.types.AnimationStitchSettings.blend_amount
 msgid "Blend amount"
@@ -70553,14 +70675,6 @@ msgstr "혼합 총계"
 msgid "Size of blending transition, on both sides of the stitch"
 msgstr "전환을 혼합하기의 크기, 봉합의 양측에"
 
-#. :src: bpy.types.AnimationStitchSettings.first_action
-msgid "Action 1"
-msgstr "액션 1"
-
-#. :src: bpy.types.AnimationStitchSettings.first_action
-msgid "First action in stitch"
-msgstr "봉합에서 첫 번째 액션"
-
 #. :src: bpy.types.AnimationStitchSettings.blend_frame
 msgid "Stitch frame"
 msgstr "프레임을 봉합"
@@ -70568,6 +70682,30 @@ msgstr "프레임을 봉합"
 #. :src: bpy.types.AnimationStitchSettings.blend_frame
 msgid "Frame to locate stitch on"
 msgstr "에서 스티치를 찾을 프레임"
+
+#. :src: bpy.types.AnimationStitchSettings.stick_bone
+msgid "Stick Bone"
+msgstr "스틱 본"
+
+#. :src: bpy.types.AnimationStitchSettings.stick_bone
+msgid "Bone to freeze during transition"
+msgstr ""
+
+#. :src: bpy.types.AnimationStitchSettings.second_offset
+msgid "Second offset"
+msgstr "두 번째 오프셋"
+
+#. :src: bpy.types.AnimationStitchSettings.second_offset
+msgid "Frame offset for 2nd animation, where it should start"
+msgstr ""
+
+#. :src: bpy.types.AnimationStitchSettings.second_action
+msgid "Action 2"
+msgstr "액션 2"
+
+#. :src: bpy.types.AnimationStitchSettings.second_action
+msgid "Second action in stitch"
+msgstr "봉합에서 두 번째 액션"
 
 #. :src: bpy.types.CyclesCameraSettings.aperture_type
 msgid "Aperture Type"
@@ -71492,18 +71630,6 @@ msgstr "언어 ID"
 msgid "ISO code, like fr_FR"
 msgstr ""
 
-#. :src: bpy.types.I18nUpdateTranslationLanguage.use
-msgid "Use this language in current operator"
-msgstr "현재 연산자에서 이 언어를 사용"
-
-#. :src: bpy.types.I18nUpdateTranslationLanguage.num_id
-msgid "Numeric ID"
-msgstr "숫자 ID"
-
-#. :src: bpy.types.I18nUpdateTranslationLanguage.num_id
-msgid "Numeric ID (readonly!)"
-msgstr "숫자 ID (읽기 전용!)"
-
 #. :src: bpy.types.I18nUpdateTranslationLanguage.mo_path_trunk
 msgid "MO File Path"
 msgstr "MO 파일 경로"
@@ -71511,14 +71637,6 @@ msgstr "MO 파일 경로"
 #. :src: bpy.types.I18nUpdateTranslationLanguage.mo_path_trunk
 msgid "Path to the relevant mo file"
 msgstr "관련된 MO 파일에 대한 경로"
-
-#. :src: bpy.types.I18nUpdateTranslationLanguage.po_path_trunk
-msgid "PO Trunk File Path"
-msgstr "PO 트렁크 파일 경로"
-
-#. :src: bpy.types.I18nUpdateTranslationLanguage.po_path_trunk
-msgid "Path to the relevant po file in trunk"
-msgstr "트렁크에서 해당 PO 파일에 대한 경로"
 
 #. :src: bpy.types.I18nUpdateTranslationLanguage.name
 msgid "Language Name"
@@ -71528,6 +71646,18 @@ msgstr "언어 이름"
 msgid "English language name/label (like \"French (Français)\")"
 msgstr ""
 
+#. :src: bpy.types.I18nUpdateTranslationLanguage.num_id
+msgid "Numeric ID"
+msgstr "숫자 ID"
+
+#. :src: bpy.types.I18nUpdateTranslationLanguage.num_id
+msgid "Numeric ID (readonly!)"
+msgstr "숫자 ID (읽기 전용!)"
+
+#. :src: bpy.types.I18nUpdateTranslationLanguage.use
+msgid "Use this language in current operator"
+msgstr "현재 연산자에서 이 언어를 사용"
+
 #. :src: bpy.types.I18nUpdateTranslationLanguage.po_path
 msgid "PO File Path"
 msgstr "PO 파일 경로"
@@ -71535,6 +71665,14 @@ msgstr "PO 파일 경로"
 #. :src: bpy.types.I18nUpdateTranslationLanguage.po_path
 msgid "Path to the relevant po file in branches"
 msgstr "분기에서 해당 PO 파일에 대한 경로"
+
+#. :src: bpy.types.I18nUpdateTranslationLanguage.po_path_trunk
+msgid "PO Trunk File Path"
+msgstr "PO 트렁크 파일 경로"
+
+#. :src: bpy.types.I18nUpdateTranslationLanguage.po_path_trunk
+msgid "Path to the relevant po file in trunk"
+msgstr "트렁크에서 해당 PO 파일에 대한 경로"
 
 #. :src: bpy.types.I18nUpdateTranslationSettings.active_lang
 msgid "Active Language"
@@ -71544,9 +71682,13 @@ msgstr "활성 언어"
 msgid "Index of active language in langs collection"
 msgstr "랭스 컬렉션에서 활성 언어의 인덱스"
 
-#. :src: bpy.types.I18nUpdateTranslationSettings.is_init
-msgid "Whether these settings have already been auto-set or not"
-msgstr ""
+#. :src: bpy.types.I18nUpdateTranslationSettings.pot_path
+msgid "POT File Path"
+msgstr "POT 파일 경로"
+
+#. :src: bpy.types.I18nUpdateTranslationSettings.pot_path
+msgid "Path to the pot template file"
+msgstr "POT 서식 파일에 대한 경로"
 
 #. :src: bpy.types.I18nUpdateTranslationSettings.langs
 msgid "Languages"
@@ -71556,51 +71698,9 @@ msgstr "언어"
 msgid "Languages to update in branches"
 msgstr "분기에서 업데이트 할 언어"
 
-#. :src: bpy.types.I18nUpdateTranslationSettings.pot_path
-msgid "POT File Path"
-msgstr "POT 파일 경로"
-
-#. :src: bpy.types.I18nUpdateTranslationSettings.pot_path
-msgid "Path to the pot template file"
-msgstr "POT 서식 파일에 대한 경로"
-
-#. :src: bpy.types.MocapConstraint.e_frame
-msgid "E"
-msgstr "E"
-
-#. :src: bpy.types.MocapConstraint.e_frame
-msgid "End frame of Fix"
-msgstr "고정의 종료 프레임"
-
-#. :src: bpy.types.MocapConstraint.targetMesh
-msgid "Target of Fix - Mesh (optional, depends on type)"
-msgstr "고정의 대상 - 메쉬 (선택 사항, 유형에 따라 다름)"
-
-#. :src: bpy.types.MocapConstraint.smooth_out
-#. :src: bpy.types.WipeSequence.direction:'OUT'
-#: source/blender/editors/animation/fmodifier_ui.c:671
-msgid "Out"
+#. :src: bpy.types.I18nUpdateTranslationSettings.is_init
+msgid "Whether these settings have already been auto-set or not"
 msgstr ""
-
-#. :src: bpy.types.MocapConstraint.smooth_out
-msgid "Number of frames to smooth out"
-msgstr "메끄럽게 out 하는 프레임의 수"
-
-#. :src: bpy.types.MocapConstraint.constrained_bone
-msgid "Constrained Bone"
-msgstr "제약된 본"
-
-#. :src: bpy.types.MocapConstraint.active
-msgid "Fix is active"
-msgstr "고정이 활성"
-
-#. :src: bpy.types.MocapConstraint.constrained_boneB
-msgid "Bone (2)"
-msgstr "본 (2)"
-
-#. :src: bpy.types.MocapConstraint.constrained_boneB
-msgid "Other Constrained Bone (optional, depends on type)"
-msgstr "다른 제약된 본 (선택 사항, 유형에 따라 다름)"
 
 #. :src: bpy.types.MocapConstraint.targetSpace
 msgid "In which space should Point type target be evaluated"
@@ -71626,21 +71726,67 @@ msgstr "다른 본 공간"
 msgid "Evaluate target in specified other bone space"
 msgstr "지정된 다른 본 공간에서 대상을 평가"
 
-#. :src: bpy.types.MocapConstraint.s_frame
-msgid "Start frame of Fix"
-msgstr "고정의 시작 프레임"
+#. :src: bpy.types.MocapConstraint.e_frame
+msgid "E"
+msgstr "E"
+
+#. :src: bpy.types.MocapConstraint.e_frame
+msgid "End frame of Fix"
+msgstr "고정의 종료 프레임"
+
+#. :src: bpy.types.MocapConstraint.active
+msgid "Fix is active"
+msgstr "고정이 활성"
 
 #. :src: bpy.types.MocapConstraint.targetDist
 msgid "Distance and Floor Fixes - Desired offset"
 msgstr ""
 
+#. :src: bpy.types.MocapConstraint.targetPoint
+msgid "Target of Fix - Point"
+msgstr "고정의 대상 - 포인트"
+
 #. :src: bpy.types.MocapConstraint.show_expanded
 msgid "Fix is fully shown"
 msgstr "고정이 완전히 표시됨"
 
-#. :src: bpy.types.MocapConstraint.targetPoint
-msgid "Target of Fix - Point"
-msgstr "고정의 대상 - 포인트"
+#. :src: bpy.types.MocapConstraint.smooth_out
+#. :src: bpy.types.WipeSequence.direction:'OUT'
+#: source/blender/editors/animation/fmodifier_ui.c:671
+msgid "Out"
+msgstr ""
+
+#. :src: bpy.types.MocapConstraint.smooth_out
+msgid "Number of frames to smooth out"
+msgstr "메끄럽게 out 하는 프레임의 수"
+
+#. :src: bpy.types.MocapConstraint.constrained_boneB
+msgid "Bone (2)"
+msgstr "본 (2)"
+
+#. :src: bpy.types.MocapConstraint.constrained_boneB
+msgid "Other Constrained Bone (optional, depends on type)"
+msgstr "다른 제약된 본 (선택 사항, 유형에 따라 다름)"
+
+#. :src: bpy.types.MocapConstraint.targetMesh
+msgid "Target of Fix - Mesh (optional, depends on type)"
+msgstr "고정의 대상 - 메쉬 (선택 사항, 유형에 따라 다름)"
+
+#. :src: bpy.types.MocapConstraint.name
+msgid "Name of Mocap Fix"
+msgstr "모캡 고정의 이름"
+
+#. :src: bpy.types.MocapConstraint.s_frame
+msgid "Start frame of Fix"
+msgstr "고정의 시작 프레임"
+
+#. :src: bpy.types.MocapConstraint.type
+msgid "Type of constraint"
+msgstr "제약의 유형"
+
+#. :src: bpy.types.MocapConstraint.constrained_bone
+msgid "Constrained Bone"
+msgstr "제약된 본"
 
 #. :src: bpy.types.MocapConstraint.smooth_in
 #. :src: bpy.types.WipeSequence.direction:'IN'
@@ -71651,14 +71797,6 @@ msgstr ""
 #. :src: bpy.types.MocapConstraint.smooth_in
 msgid "Number of frames to smooth in"
 msgstr "메끄럽게 in 하는 프레임의 수"
-
-#. :src: bpy.types.MocapConstraint.name
-msgid "Name of Mocap Fix"
-msgstr "모캡 고정의 이름"
-
-#. :src: bpy.types.MocapConstraint.type
-msgid "Type of constraint"
-msgstr "제약의 유형"
 
 #. :src: bpy.types.NodeSetting.value
 msgid "Python expression to be evaluated as the initial node setting"
@@ -71696,6 +71834,14 @@ msgstr "태블릿 압력"
 msgid "Is Stroke Start"
 msgstr "Is 선획 시작"
 
+#. :src: bpy.types.Print3DSettings.export_path
+msgid "Export Directory"
+msgstr "내보내기 디렉토리"
+
+#. :src: bpy.types.Print3DSettings.export_path
+msgid "Path to directory where the files are created"
+msgstr ""
+
 #. :src: bpy.types.Print3DSettings.use_apply_scale
 msgid "Apply Scale"
 msgstr "규모 적용"
@@ -71704,17 +71850,21 @@ msgstr "규모 적용"
 msgid "Apply scene scale setting on export"
 msgstr "내보내기에서 장면 규모 설정 적용"
 
+#. :src: bpy.types.Print3DSettings.threshold_zero
+msgid "Limit for checking zero area/length"
+msgstr "제로 영역/길이를 확인하기 위한 제한"
+
 #. :src: bpy.types.Print3DSettings.thickness_min
 msgid "Minimum thickness"
 msgstr "최소 두께"
 
-#. :src: bpy.types.Print3DSettings.export_path
-msgid "Export Directory"
-msgstr "내보내기 디렉토리"
-
-#. :src: bpy.types.Print3DSettings.export_path
-msgid "Path to directory where the files are created"
+#. :src: bpy.types.Print3DSettings.export_format
+msgid "Format type to export to"
 msgstr ""
+
+#. :src: bpy.types.Print3DSettings.export_format:'WRL'
+msgid "VRML2"
+msgstr "VRML2"
 
 #. :src: bpy.types.Print3DSettings.angle_distort
 msgid "Limit for checking distorted faces"
@@ -71727,18 +71877,6 @@ msgstr "텍스처 복사"
 #. :src: bpy.types.Print3DSettings.use_export_texture
 msgid "Copy textures on export to the output path"
 msgstr ""
-
-#. :src: bpy.types.Print3DSettings.threshold_zero
-msgid "Limit for checking zero area/length"
-msgstr "제로 영역/길이를 확인하기 위한 제한"
-
-#. :src: bpy.types.Print3DSettings.export_format
-msgid "Format type to export to"
-msgstr ""
-
-#. :src: bpy.types.Print3DSettings.export_format:'WRL'
-msgid "VRML2"
-msgstr "VRML2"
 
 #. :src: bpy.types.SelectedUvElement
 msgid "Selected UV Element"
@@ -80391,7 +80529,7 @@ msgstr "텍스처를 적용하는 데 사용되는 모드"
 #. :src: bpy.types.BrushTextureSlot.map_mode:'STENCIL'
 #. :src: bpy.types.BrushTextureSlot.tex_paint_map_mode:'STENCIL'
 #. :src: bpy.types.BrushTextureSlot.mask_map_mode:'STENCIL'
-#: scripts/startup/bl_ui/space_view3d_toolbar.py:1528
+#: scripts/startup/bl_ui/space_view3d_toolbar.py:1551
 msgid "Stencil"
 msgstr "스텐실 "
 
@@ -86003,6 +86141,10 @@ msgctxt "WindowManager"
 msgid "Transform Modal Map"
 msgstr "변환 모달 맵"
 
+#. :src: scripts/addons/io_import_hgt.py:372
+msgid "DEM data (.hgt) as Mesh and/or Image"
+msgstr ""
+
 #: scripts/addons/cycles/osl.py:33
 msgid "OSL shader compilation succeeded"
 msgstr "OSL 쉐이더 컴파일에 성공"
@@ -86285,7 +86427,7 @@ msgid "Object %r can't be written into a 3DS file"
 msgstr ""
 
 #: scripts/addons/io_scene_fbx/export_fbx.py:443
-#: scripts/addons/io_scene_fbx/import_fbx.py:924
+#: scripts/addons/io_scene_fbx/import_fbx.py:940
 msgid "Couldn't open file %r"
 msgstr "파일 열 수 없음 %r"
 
@@ -86293,23 +86435,23 @@ msgstr "파일 열 수 없음 %r"
 msgid "Object '%s' has a scale of (%.3f, %.3f, %.3f), Armature deformation will not work as expected (apply Scale to fix)"
 msgstr ""
 
-#: scripts/addons/io_scene_fbx/import_fbx.py:915
+#: scripts/addons/io_scene_fbx/import_fbx.py:931
 msgid "ASCII FBX files are not supported %r"
 msgstr "아스키 FBX 파일은 지원되지 않음 %r"
 
-#: scripts/addons/io_scene_fbx/import_fbx.py:928
+#: scripts/addons/io_scene_fbx/import_fbx.py:944
 msgid "Version %r unsupported, must be %r or later"
 msgstr ""
 
-#: scripts/addons/io_scene_fbx/import_fbx.py:961
+#: scripts/addons/io_scene_fbx/import_fbx.py:977
 msgid "No 'GlobalSettings' found in file %r"
 msgstr ""
 
-#: scripts/addons/io_scene_fbx/import_fbx.py:996
+#: scripts/addons/io_scene_fbx/import_fbx.py:1012
 msgid "No 'Objects' found in file %r"
 msgstr ""
 
-#: scripts/addons/io_scene_fbx/import_fbx.py:999
+#: scripts/addons/io_scene_fbx/import_fbx.py:1015
 msgid "No 'Connections' found in file %r"
 msgstr ""
 
@@ -86605,7 +86747,7 @@ msgstr "선택 반전"
 msgid "[{}]: \"{}\" ({})"
 msgstr "[{}]: \"{}\" ({})"
 
-#: scripts/modules/rna_prop_ui.py:107
+#: scripts/modules/rna_prop_ui.py:110
 #: scripts/startup/bl_ui/properties_freestyle.py:157
 #: scripts/startup/bl_ui/properties_game.py:798
 #: scripts/startup/bl_ui/space_clip.py:268
@@ -86615,12 +86757,12 @@ msgctxt "Operator"
 msgid "Add"
 msgstr "추가"
 
-#: scripts/modules/rna_prop_ui.py:156
+#: scripts/modules/rna_prop_ui.py:159
 msgctxt "Operator"
 msgid "Edit"
 msgstr "편집"
 
-#: scripts/modules/rna_prop_ui.py:159
+#: scripts/modules/rna_prop_ui.py:162
 msgid "API Defined"
 msgstr ""
 
@@ -86825,7 +86967,7 @@ msgstr "소스:"
 #: source/blender/editors/space_clip/clip_buttons.c:469
 #: source/blender/editors/space_clip/clip_buttons.c:481
 #: source/blender/editors/space_view3d/view3d_buttons.c:369
-#: source/blender/editors/uvedit/uvedit_buttons.c:160
+#: source/blender/editors/uvedit/uvedit_buttons.c:161
 msgid "X:"
 msgstr "X:"
 
@@ -86837,7 +86979,7 @@ msgstr "X:"
 #: source/blender/editors/space_clip/clip_buttons.c:471
 #: source/blender/editors/space_clip/clip_buttons.c:483
 #: source/blender/editors/space_view3d/view3d_buttons.c:372
-#: source/blender/editors/uvedit/uvedit_buttons.c:162
+#: source/blender/editors/uvedit/uvedit_buttons.c:163
 msgid "Y:"
 msgstr "Y:"
 
@@ -87382,10 +87524,10 @@ msgstr "업데이트:"
 #: scripts/startup/bl_ui/properties_data_metaball.py:124
 #: scripts/startup/bl_ui/properties_data_metaball.py:128
 #: scripts/startup/bl_ui/properties_material.py:721
-#: source/blender/editors/space_view3d/view3d_buttons.c:1078
-#: source/blender/editors/space_view3d/view3d_buttons.c:1084
-#: source/blender/editors/space_view3d/view3d_buttons.c:1088
-#: source/blender/editors/space_view3d/view3d_buttons.c:1093
+#: source/blender/editors/space_view3d/view3d_buttons.c:1077
+#: source/blender/editors/space_view3d/view3d_buttons.c:1083
+#: source/blender/editors/space_view3d/view3d_buttons.c:1087
+#: source/blender/editors/space_view3d/view3d_buttons.c:1092
 msgid "Size:"
 msgstr "크기:"
 
@@ -88513,7 +88655,7 @@ msgstr "부터 방출:"
 
 #: scripts/startup/bl_ui/properties_particle.py:300
 #: scripts/startup/bl_ui/properties_physics_cloth.py:84
-#: source/blender/editors/physics/rigidbody_object.c:402
+#: source/blender/editors/physics/rigidbody_object.c:398
 msgid "Air"
 msgstr "공기"
 
@@ -91809,8 +91951,9 @@ msgstr "연결"
 #: scripts/startup/bl_ui/space_view3d.py:2349
 #: scripts/startup/bl_ui/space_view3d.py:665
 #: scripts/startup/bl_ui/space_view3d.py:2242
+#, fuzzy
 msgctxt "Operator"
-msgid "Edge Loop"
+msgid "Edge Loops"
 msgstr "에지 루프"
 
 #: scripts/startup/bl_ui/space_view3d.py:2661
@@ -91984,8 +92127,9 @@ msgstr "비 다양체"
 
 #: scripts/startup/bl_ui/space_view3d.py:666
 #: scripts/startup/bl_ui/space_view3d.py:2243
+#, fuzzy
 msgctxt "Operator"
-msgid "Edge Ring"
+msgid "Edge Rings"
 msgstr "에지 링"
 
 #: scripts/startup/bl_ui/space_view3d.py:991
@@ -92749,48 +92893,44 @@ msgstr "라이브러리에 추가"
 msgid "Show Zero Weights:"
 msgstr "제로 웨이트를 표시"
 
-#: scripts/startup/bl_ui/space_view3d_toolbar.py:1538
-msgid "Clone from UV map"
-msgstr "UV맵에서 클론"
-
-#: scripts/startup/bl_ui/space_view3d_toolbar.py:1545
-msgid "External Editing:"
-msgstr "외부 편집하기:"
-
-#: scripts/startup/bl_ui/space_view3d_toolbar.py:1548
+#: scripts/startup/bl_ui/space_view3d_toolbar.py:1510
 msgctxt "Operator"
 msgid "Quick Edit"
 msgstr "빠르게 편집"
 
-#: scripts/startup/bl_ui/space_view3d_toolbar.py:1549
+#: scripts/startup/bl_ui/space_view3d_toolbar.py:1511
 #: source/blender/editors/interface/interface_templates.c:974
 msgctxt "Operator"
 msgid "Apply"
 msgstr "적용"
 
-#: scripts/startup/bl_ui/space_view3d_toolbar.py:1553
+#: scripts/startup/bl_ui/space_view3d_toolbar.py:1515
 msgctxt "Operator"
 msgid "Apply Camera Image"
 msgstr "카메라 이미지 적용"
 
-#: scripts/startup/bl_ui/space_view3d_toolbar.py:1554
+#: scripts/startup/bl_ui/space_view3d_toolbar.py:1516
 msgctxt "Operator"
 msgid "Save All Edited"
 msgstr "모든 편집된 저장"
 
-#: scripts/startup/bl_ui/space_view3d_toolbar.py:1641
+#: scripts/startup/bl_ui/space_view3d_toolbar.py:1561
+msgid "Clone from UV map"
+msgstr "UV맵에서 클론"
+
+#: scripts/startup/bl_ui/space_view3d_toolbar.py:1652
 msgid "Keep:"
 msgstr "유지:"
 
-#: scripts/startup/bl_ui/space_view3d_toolbar.py:1642
+#: scripts/startup/bl_ui/space_view3d_toolbar.py:1653
 msgid "Lengths"
 msgstr "길이"
 
-#: scripts/startup/bl_ui/space_view3d_toolbar.py:1651
+#: scripts/startup/bl_ui/space_view3d_toolbar.py:1662
 msgid "Draw:"
 msgstr "그리기:"
 
-#: scripts/startup/bl_ui/space_view3d_toolbar.py:1652
+#: scripts/startup/bl_ui/space_view3d_toolbar.py:1663
 msgid "Path Steps"
 msgstr "경로 단계"
 
@@ -92866,19 +93006,19 @@ msgctxt "Operator"
 msgid "Enable Dyntopo"
 msgstr ""
 
-#: scripts/startup/bl_ui/space_view3d_toolbar.py:1628
+#: scripts/startup/bl_ui/space_view3d_toolbar.py:1639
 msgid "Point cache must be baked"
 msgstr "포인트 캐시는 굽기해야함"
 
-#: scripts/startup/bl_ui/space_view3d_toolbar.py:1629
+#: scripts/startup/bl_ui/space_view3d_toolbar.py:1640
 msgid "in memory to enable editing!"
 msgstr "메모리 편집하기 사용한 메모리에서!"
 
-#: scripts/startup/bl_ui/space_view3d_toolbar.py:1634
+#: scripts/startup/bl_ui/space_view3d_toolbar.py:1645
 msgid "Deflect emitter"
 msgstr "편향 방출기"
 
-#: scripts/startup/bl_ui/space_view3d_toolbar.py:1645
+#: scripts/startup/bl_ui/space_view3d_toolbar.py:1656
 msgid "Correct:"
 msgstr "정확한:"
 
@@ -92920,16 +93060,16 @@ msgstr "조각 모드에서 지원되지 않음"
 msgid "Hide, Mask and optimized display disabled"
 msgstr ""
 
-#: source/blender/blenkernel/intern/anim.c:161
+#: source/blender/blenkernel/intern/anim.c:162
 msgid ", cannot have single-frame paths"
 msgstr ", 단일 프레임 경로를 사용할 수 없음"
 
-#: source/blender/blenkernel/intern/anim.c:157
+#: source/blender/blenkernel/intern/anim.c:158
 msgid "Motion path frame extents invalid for %s (%d to %d)%s"
 msgstr ""
 
-#: source/blender/blenkernel/intern/anim_sys.c:1107
-#: source/blender/blenkernel/intern/anim_sys.c:1117
+#: source/blender/blenkernel/intern/anim_sys.c:1109
+#: source/blender/blenkernel/intern/anim_sys.c:1119
 msgid "KeyingSet"
 msgstr "키잉 설정"
 
@@ -93136,27 +93276,27 @@ msgstr "키 %d"
 msgid "MaskLayer"
 msgstr "마스크레이어"
 
-#: source/blender/blenkernel/intern/mesh_evaluate.c:659
+#: source/blender/blenkernel/intern/mesh_evaluate.c:673
 msgid "Tangent space can only be computed for tris/quads, aborting"
 msgstr ""
 
-#: source/blender/blenkernel/intern/mesh_evaluate.c:684
+#: source/blender/blenkernel/intern/mesh_evaluate.c:698
 msgid "Mikktspace failed to generate tangents for this mesh!"
 msgstr ""
 
-#: source/blender/blenkernel/intern/mesh_evaluate.c:712
+#: source/blender/blenkernel/intern/mesh_evaluate.c:726
 msgid "Tangent space computation needs loop normals, none found, aborting"
 msgstr ""
 
-#: source/blender/blenkernel/intern/mesh_evaluate.c:706
+#: source/blender/blenkernel/intern/mesh_evaluate.c:720
 msgid "Tangent space computation needs an UVMap, \"%s\" not found, aborting"
 msgstr ""
 
-#: source/blender/blenkernel/intern/nla.c:279
+#: source/blender/blenkernel/intern/nla.c:281
 msgid "NlaTrack"
 msgstr "Nla트랙"
 
-#: source/blender/blenkernel/intern/nla.c:1382
+#: source/blender/blenkernel/intern/nla.c:1384
 msgid "NlaStrip"
 msgstr "Nla스트립"
 
@@ -93296,7 +93436,7 @@ msgstr "정의되지 않은 유형"
 
 #: source/blender/blenkernel/intern/scene.c:1716
 #: source/blender/blenkernel/intern/scene.c:1720
-#: source/blender/makesrna/intern/rna_scene.c:1183
+#: source/blender/makesrna/intern/rna_scene.c:1190
 msgid "RenderLayer"
 msgstr "렌더 레이어"
 
@@ -93320,21 +93460,21 @@ msgctxt "Sequence"
 msgid "Bright/Contrast"
 msgstr "밝기/대비"
 
-#: source/blender/blenkernel/intern/sequencer.c:3988
+#: source/blender/blenkernel/intern/sequencer.c:3994
 msgid "Strips must be the same length"
 msgstr "스트립은 길이가 같아야함"
 
-#: source/blender/blenkernel/intern/sequencer.c:3995
 #: source/blender/blenkernel/intern/sequencer.c:4001
+#: source/blender/blenkernel/intern/sequencer.c:4007
 msgid "Strips were not compatible"
 msgstr "스트립 호환성이 없음"
 
-#: source/blender/blenkernel/intern/sequencer.c:4007
+#: source/blender/blenkernel/intern/sequencer.c:4013
 msgid "Strips must have the same number of inputs"
 msgstr "스트립은 입력의 같은 수가 있어야함"
 
-#: source/blender/blenkernel/intern/sequencer.c:4360
-#: source/blender/blenkernel/intern/sequencer.c:4372
+#: source/blender/blenkernel/intern/sequencer.c:4382
+#: source/blender/blenkernel/intern/sequencer.c:4394
 #: source/blender/editors/sound/sound_ops.c:110
 #: source/blender/editors/sound/sound_ops.c:119
 #: source/blender/editors/space_graph/graph_edit.c:1169
@@ -93358,52 +93498,52 @@ msgstr ""
 msgid "Cannot open or start AVI movie file"
 msgstr "AVI 동영상 파일을 열거 나 시작할 수 없음"
 
-#: source/blender/blenkernel/intern/writeffmpeg.c:352
+#: source/blender/blenkernel/intern/writeffmpeg.c:353
 msgid "Error writing frame"
 msgstr "프레임 쓰는 중 오류가 발생했음"
 
-#: source/blender/blenkernel/intern/writeffmpeg.c:370
+#: source/blender/blenkernel/intern/writeffmpeg.c:371
 msgid "Could not allocate temporary frame"
 msgstr "임시 프레임을 할당 할 수 없음"
 
-#: source/blender/blenkernel/intern/writeffmpeg.c:818
-#: source/blender/blenkernel/intern/writeffmpeg.c:823
+#: source/blender/blenkernel/intern/writeffmpeg.c:832
+#: source/blender/blenkernel/intern/writeffmpeg.c:837
 msgid "No valid formats found"
 msgstr "올바른 형식을 찾을 수 없음"
 
-#: source/blender/blenkernel/intern/writeffmpeg.c:829
+#: source/blender/blenkernel/intern/writeffmpeg.c:843
 msgid "Error opening output file"
 msgstr "출력 파일 여는 중 오류가 발생했음"
 
-#: source/blender/blenkernel/intern/writeffmpeg.c:884
+#: source/blender/blenkernel/intern/writeffmpeg.c:898
 msgid "Render width has to be 720 pixels for DV!"
 msgstr ""
 
-#: source/blender/blenkernel/intern/writeffmpeg.c:888
+#: source/blender/blenkernel/intern/writeffmpeg.c:902
 msgid "Render height has to be 480 pixels for DV-NTSC!"
 msgstr ""
 
-#: source/blender/blenkernel/intern/writeffmpeg.c:892
+#: source/blender/blenkernel/intern/writeffmpeg.c:906
 msgid "Render height has to be 576 pixels for DV-PAL!"
 msgstr ""
 
-#: source/blender/blenkernel/intern/writeffmpeg.c:900
+#: source/blender/blenkernel/intern/writeffmpeg.c:914
 msgid "FFMPEG only supports 48khz / stereo audio for DV!"
 msgstr ""
 
-#: source/blender/blenkernel/intern/writeffmpeg.c:913
+#: source/blender/blenkernel/intern/writeffmpeg.c:927
 msgid "Error initializing video stream"
 msgstr "비디오 스트림 초기화 오류가 발생했음"
 
-#: source/blender/blenkernel/intern/writeffmpeg.c:926
+#: source/blender/blenkernel/intern/writeffmpeg.c:940
 msgid "Error initializing audio stream"
 msgstr "오디오 스트림 초기화 오류가 발생했음"
 
-#: source/blender/blenkernel/intern/writeffmpeg.c:933
+#: source/blender/blenkernel/intern/writeffmpeg.c:947
 msgid "Could not open file for writing"
 msgstr "작성하기에 대한 파일을 열 수 없음"
 
-#: source/blender/blenkernel/intern/writeffmpeg.c:939
+#: source/blender/blenkernel/intern/writeffmpeg.c:953
 msgid "Could not initialize streams, probably unsupported codec combination"
 msgstr ""
 
@@ -93538,11 +93678,11 @@ msgstr ""
 msgid "Cannot open file %s for writing: %s"
 msgstr ""
 
-#: source/blender/bmesh/intern/bmesh_core.c:1094
+#: source/blender/bmesh/intern/bmesh_core.c:1097
 msgid "Input faces do not form a contiguous manifold region"
 msgstr ""
 
-#: source/blender/bmesh/intern/bmesh_core.c:1157
+#: source/blender/bmesh/intern/bmesh_core.c:1160
 msgid "Invalid boundary region to join faces"
 msgstr "페이스 합치기로 잘못된 경계 지역"
 
@@ -93718,16 +93858,16 @@ msgstr "<잘못된>"
 msgid "<no path>"
 msgstr "<경로 없음>"
 
-#: source/blender/editors/animation/anim_markers.c:496
+#: source/blender/editors/animation/anim_markers.c:500
 msgid "Programming error: operator does not actually have code to do anything!"
 msgstr ""
 
-#: source/blender/editors/animation/anim_markers.c:1373
-#: source/blender/editors/space_sequencer/sequencer_add.c:247
+#: source/blender/editors/animation/anim_markers.c:1377
+#: source/blender/editors/space_sequencer/sequencer_add.c:273
 msgid "Scene not found"
 msgstr "장면을 찾을 수 없음"
 
-#: source/blender/editors/animation/anim_markers.c:1378
+#: source/blender/editors/animation/anim_markers.c:1382
 msgid "Cannot re-link markers into the same scene"
 msgstr "같은 장면으로 마커 재연결 할 수없음"
 
@@ -93833,11 +93973,11 @@ msgstr "엔벨로프 컨트롤 포인트를 삭제"
 msgid "Delete F-Curve Modifier"
 msgstr "F-곡선 모디파이어 삭제"
 
-#: source/blender/editors/animation/keyframes_general.c:783
+#: source/blender/editors/animation/keyframes_general.c:785
 msgid "No animation data in buffer to paste"
 msgstr "버퍼에서 붙여 넣기할 애니메이션 데이터 없음"
 
-#: source/blender/editors/animation/keyframes_general.c:788
+#: source/blender/editors/animation/keyframes_general.c:790
 msgid "No selected F-Curves to paste into"
 msgstr "붙여 넣기 할 선택된 F-커브 없음"
 
@@ -94136,15 +94276,15 @@ msgstr ""
 msgid "Actions on this armature will be destroyed by this new rest pose as the transforms stored are relative to the old rest pose"
 msgstr ""
 
-#: source/blender/editors/armature/pose_transform.c:424
+#: source/blender/editors/armature/pose_transform.c:425
 msgid "No pose to copy"
 msgstr "복사 할 포즈 없음"
 
-#: source/blender/editors/armature/pose_transform.c:472
+#: source/blender/editors/armature/pose_transform.c:473
 msgid "Copy buffer is empty"
 msgstr "복사 버퍼가 비어 있음"
 
-#: source/blender/editors/armature/pose_transform.c:673
+#: source/blender/editors/armature/pose_transform.c:674
 #: source/blender/editors/object/object_transform.c:222
 msgid "Programming error: missing clear transform function or keying set name"
 msgstr ""
@@ -94401,135 +94541,135 @@ msgstr "활성 지역이 설정되지 않았음"
 msgid "Failed to set value"
 msgstr "값을 설정하지 못함"
 
-#: source/blender/editors/interface/interface_handlers.c:5600
+#: source/blender/editors/interface/interface_handlers.c:5612
 #, fuzzy
 msgid "Pin"
 msgstr "고정"
 
-#: source/blender/editors/interface/interface_handlers.c:5600
+#: source/blender/editors/interface/interface_handlers.c:5612
 #, fuzzy
 msgid "Shift+Left Mouse"
 msgstr "왼쪽 마우스"
 
-#: source/blender/editors/interface/interface_handlers.c:5661
+#: source/blender/editors/interface/interface_handlers.c:5673
 msgctxt "Operator"
 msgid "Replace Keyframes"
 msgstr "키 프레임 교체"
 
-#: source/blender/editors/interface/interface_handlers.c:5663
+#: source/blender/editors/interface/interface_handlers.c:5675
 msgctxt "Operator"
 msgid "Replace Single Keyframe"
 msgstr "단일 키 프레임 교체"
 
-#: source/blender/editors/interface/interface_handlers.c:5667
+#: source/blender/editors/interface/interface_handlers.c:5679
 msgctxt "Operator"
 msgid "Delete Single Keyframe"
 msgstr "단일 키 프레임 삭제"
 
-#: source/blender/editors/interface/interface_handlers.c:5671
+#: source/blender/editors/interface/interface_handlers.c:5683
 msgctxt "Operator"
 msgid "Replace Keyframe"
 msgstr "키 프레임 교체"
 
-#: source/blender/editors/interface/interface_handlers.c:5689
+#: source/blender/editors/interface/interface_handlers.c:5701
 msgctxt "Operator"
 msgid "Insert Single Keyframe"
 msgstr "단일 키 프레임 삽입"
 
-#: source/blender/editors/interface/interface_handlers.c:5700
-#: source/blender/editors/interface/interface_handlers.c:5706
+#: source/blender/editors/interface/interface_handlers.c:5712
+#: source/blender/editors/interface/interface_handlers.c:5718
 msgctxt "Operator"
 msgid "Clear Keyframes"
 msgstr "키 프레임 지우기"
 
-#: source/blender/editors/interface/interface_handlers.c:5702
+#: source/blender/editors/interface/interface_handlers.c:5714
 msgctxt "Operator"
 msgid "Clear Single Keyframes"
 msgstr "단일 키 프레임 지우기"
 
-#: source/blender/editors/interface/interface_handlers.c:5716
+#: source/blender/editors/interface/interface_handlers.c:5728
 msgctxt "Operator"
 msgid "Delete Drivers"
 msgstr "드라이버를 삭제"
 
-#: source/blender/editors/interface/interface_handlers.c:5718
+#: source/blender/editors/interface/interface_handlers.c:5730
 msgctxt "Operator"
 msgid "Delete Single Driver"
 msgstr "단일 드라이버 삭제"
 
-#: source/blender/editors/interface/interface_handlers.c:5722
+#: source/blender/editors/interface/interface_handlers.c:5734
 msgctxt "Operator"
 msgid "Delete Driver"
 msgstr "드라이버를 삭제"
 
-#: source/blender/editors/interface/interface_handlers.c:5740
+#: source/blender/editors/interface/interface_handlers.c:5752
 msgctxt "Operator"
 msgid "Add Drivers"
 msgstr "드라이버 추가"
 
-#: source/blender/editors/interface/interface_handlers.c:5742
+#: source/blender/editors/interface/interface_handlers.c:5754
 msgctxt "Operator"
 msgid "Add Single Driver"
 msgstr "단일 드라이버 추가"
 
-#: source/blender/editors/interface/interface_handlers.c:5762
+#: source/blender/editors/interface/interface_handlers.c:5774
 msgctxt "Operator"
 msgid "Add All to Keying Set"
 msgstr "키잉 설정에 모두 추가"
 
-#: source/blender/editors/interface/interface_handlers.c:5764
+#: source/blender/editors/interface/interface_handlers.c:5776
 msgctxt "Operator"
 msgid "Add Single to Keying Set"
 msgstr "키잉 설정에 단일 추가"
 
-#: source/blender/editors/interface/interface_handlers.c:5785
+#: source/blender/editors/interface/interface_handlers.c:5797
 msgctxt "Operator"
 msgid "Reset All to Default Values"
 msgstr "기본 값으로 모두 재설정"
 
-#: source/blender/editors/interface/interface_handlers.c:5787
+#: source/blender/editors/interface/interface_handlers.c:5799
 msgctxt "Operator"
 msgid "Reset Single to Default Value"
 msgstr "기본 값으로 단일 재설정"
 
-#: source/blender/editors/interface/interface_handlers.c:5795
+#: source/blender/editors/interface/interface_handlers.c:5807
 msgctxt "Operator"
 msgid "Unset"
 msgstr "설정 해제"
 
-#: source/blender/editors/interface/interface_handlers.c:5826
+#: source/blender/editors/interface/interface_handlers.c:5838
 msgctxt "Operator"
 msgid "Change Shortcut"
 msgstr "단축 키 변경"
 
-#: source/blender/editors/interface/interface_handlers.c:5830
+#: source/blender/editors/interface/interface_handlers.c:5842
 msgctxt "Operator"
 msgid "Remove Shortcut"
 msgstr "단축 키 제거"
 
-#: source/blender/editors/interface/interface_handlers.c:5836
+#: source/blender/editors/interface/interface_handlers.c:5848
 msgctxt "Operator"
 msgid "Add Shortcut"
 msgstr "단축 키 추가"
 
-#: source/blender/editors/interface/interface_handlers.c:5863
-#: source/blender/editors/interface/interface_handlers.c:5886
+#: source/blender/editors/interface/interface_handlers.c:5875
+#: source/blender/editors/interface/interface_handlers.c:5898
 msgctxt "Operator"
 msgid "Online Manual"
 msgstr "온라인 설명서"
 
-#: source/blender/editors/interface/interface_handlers.c:5868
-#: source/blender/editors/interface/interface_handlers.c:5891
+#: source/blender/editors/interface/interface_handlers.c:5880
+#: source/blender/editors/interface/interface_handlers.c:5903
 msgctxt "Operator"
 msgid "Online Python Reference"
 msgstr "온라인 파이썬 참조"
 
-#: source/blender/editors/interface/interface_handlers.c:5900
+#: source/blender/editors/interface/interface_handlers.c:5912
 msgctxt "Operator"
 msgid "Submit Description"
 msgstr "설명 제출"
 
-#: source/blender/editors/interface/interface_handlers.c:6039
+#: source/blender/editors/interface/interface_handlers.c:6051
 msgid "DoButton pointer error: %s"
 msgstr "DoButton 포인터 오류: %s"
 
@@ -95324,7 +95464,7 @@ msgstr "너무 짧 마우스 경로"
 
 #: source/blender/editors/mesh/editmesh_tools.c:2828
 #: source/blender/editors/space_view3d/view3d_buttons.c:316
-#: source/blender/editors/space_view3d/view3d_buttons.c:1029
+#: source/blender/editors/space_view3d/view3d_buttons.c:1028
 msgid "Nothing selected"
 msgstr "아무 것도 선택하지 않음"
 
@@ -95609,61 +95749,72 @@ msgstr "질감 스택에서 순환 참조"
 msgid "No valid images found to bake to"
 msgstr ""
 
-#. :src: source/blender/editors/object/object_bake_api.c:454
-msgid "No active UV layer found in the active object"
-msgstr ""
-
-#: source/blender/editors/object/object_bake_api.c:460
-msgid "No active image found, add a material or bake to an external file"
-msgstr ""
-
-#: source/blender/editors/object/object_bake_api.c:466
-msgid "No active image found, add a material or bake without the Split Materials option"
-msgstr ""
-
-#: source/blender/editors/object/object_bake_api.c:533
+#: source/blender/editors/object/object_bake_api.c:386
+#: source/blender/editors/object/object_bake_api.c:392
 #, fuzzy
 msgid "No valid selected objects"
 msgstr "선택된 오브젝트 삭제"
 
-#: source/blender/editors/object/object_bake_api.c:546
+#: source/blender/editors/object/object_bake_api.c:558
+msgid "No active image found, add a material or bake to an external file"
+msgstr ""
+
+#: source/blender/editors/object/object_bake_api.c:564
+msgid "No active image found, add a material or bake without the Split Materials option"
+msgstr ""
+
+#: source/blender/editors/object/object_bake_api.c:625
 msgid "No valid cage object"
 msgstr ""
 
-#: source/blender/editors/object/object_bake_api.c:755
-msgid "Problem baking object map"
+#. :src: source/blender/editors/object/object_bake_api.c:746
+#. :src: source/blender/editors/object/object_bake_api.c:780
+msgid "Current render engine does not support baking"
 msgstr ""
 
-#: source/blender/editors/object/object_bake_api.c:775
-msgid "Problem saving the bake map internally, make sure there is a Texture Image node in the current object material"
-msgstr ""
-
-#: source/blender/editors/object/object_bake_api.c:781
+#: source/blender/editors/object/object_bake_api.c:868
 msgid "Baking map saved to internal image, save it externally or pack it"
 msgstr ""
 
-#: source/blender/editors/object/object_bake_api.c:305
-#: source/blender/editors/object/object_bake_api.c:309
-msgid "No active image found in material %d (%s)"
+#. :src: source/blender/editors/object/object_bake_api.c:298
+#. :src: source/blender/editors/object/object_bake_api.c:379
+msgid "Object \"%s\" is not a mesh"
 msgstr ""
 
-#: source/blender/editors/object/object_bake_api.c:313
-msgid "No active image found in material %d"
+#. :src: source/blender/editors/object/object_bake_api.c:309
+msgid "No active UV layer found in the object \"%s\""
 msgstr ""
 
-#: source/blender/editors/object/object_bake_api.c:363
+#. :src: source/blender/editors/object/object_bake_api.c:325
+msgid "Uninitialized image \"%s\" from object \"%s\""
+msgstr ""
+
+#. :src: source/blender/editors/object/object_bake_api.c:335
+#. :src: source/blender/editors/object/object_bake_api.c:340
+msgid "No active image found in material \"%s\" (%d) for object \"%s\""
+msgstr ""
+
+#. :src: source/blender/editors/object/object_bake_api.c:345
+msgid "No active image found in material (%d) for object \"%s\""
+msgstr ""
+
+#: source/blender/editors/object/object_bake_api.c:471
 msgid "Uninitialized image %s"
 msgstr ""
 
-#. :src: source/blender/editors/object/object_bake_api.c:525
-msgid "Selected objects must have uniform scale (apply scale to object \"%s\" for correct results)"
+#. :src: source/blender/editors/object/object_bake_api.c:843
+msgid "Problem baking object \"%s\""
 msgstr ""
 
-#: source/blender/editors/object/object_bake_api.c:827
+#. :src: source/blender/editors/object/object_bake_api.c:863
+msgid "Problem saving the bake map internally for object \"%s\""
+msgstr ""
+
+#: source/blender/editors/object/object_bake_api.c:914
 msgid "Problem saving baked map in \"%s\""
 msgstr ""
 
-#: source/blender/editors/object/object_bake_api.c:831
+#: source/blender/editors/object/object_bake_api.c:918
 msgid "Baking map written to \"%s\""
 msgstr ""
 
@@ -96115,187 +96266,187 @@ msgstr ""
 msgid "Object '%s' already has a Rigid Body Constraint"
 msgstr ""
 
-#: source/blender/editors/physics/rigidbody_object.c:403
+#: source/blender/editors/physics/rigidbody_object.c:399
 msgid "Acrylic"
 msgstr "아크릴"
 
-#: source/blender/editors/physics/rigidbody_object.c:404
+#: source/blender/editors/physics/rigidbody_object.c:400
 msgid "Asphalt (Crushed)"
 msgstr "아스팔트 (가루)"
 
-#: source/blender/editors/physics/rigidbody_object.c:405
+#: source/blender/editors/physics/rigidbody_object.c:401
 msgid "Bark"
 msgstr "나무껍질"
 
-#: source/blender/editors/physics/rigidbody_object.c:406
+#: source/blender/editors/physics/rigidbody_object.c:402
 msgid "Beans (Cocoa)"
 msgstr "원두 (코코아)"
 
-#: source/blender/editors/physics/rigidbody_object.c:407
+#: source/blender/editors/physics/rigidbody_object.c:403
 msgid "Beans (Soy)"
 msgstr "원두 (대두)"
 
-#: source/blender/editors/physics/rigidbody_object.c:408
+#: source/blender/editors/physics/rigidbody_object.c:404
 msgid "Brick (Pressed)"
 msgstr "브릭 (누름)"
 
-#: source/blender/editors/physics/rigidbody_object.c:409
+#: source/blender/editors/physics/rigidbody_object.c:405
 msgid "Brick (Common)"
 msgstr "브릭 (공통)"
 
-#: source/blender/editors/physics/rigidbody_object.c:410
+#: source/blender/editors/physics/rigidbody_object.c:406
 msgid "Brick (Soft)"
 msgstr "브릭 (소프트)"
 
-#: source/blender/editors/physics/rigidbody_object.c:411
+#: source/blender/editors/physics/rigidbody_object.c:407
 msgid "Brass"
 msgstr "황동"
 
-#: source/blender/editors/physics/rigidbody_object.c:412
+#: source/blender/editors/physics/rigidbody_object.c:408
 msgid "Bronze"
 msgstr "청동"
 
-#: source/blender/editors/physics/rigidbody_object.c:413
+#: source/blender/editors/physics/rigidbody_object.c:409
 msgid "Carbon (Solid)"
 msgstr "탄소 (고체)"
 
-#: source/blender/editors/physics/rigidbody_object.c:414
+#: source/blender/editors/physics/rigidbody_object.c:410
 msgid "Cardboard"
 msgstr "골판지"
 
-#: source/blender/editors/physics/rigidbody_object.c:415
+#: source/blender/editors/physics/rigidbody_object.c:411
 msgid "Cast Iron"
 msgstr "주철"
 
-#: source/blender/editors/physics/rigidbody_object.c:416
+#: source/blender/editors/physics/rigidbody_object.c:412
 msgid "Cement"
 msgstr "부분"
 
-#: source/blender/editors/physics/rigidbody_object.c:417
+#: source/blender/editors/physics/rigidbody_object.c:413
 msgid "Chalk (Solid)"
 msgstr "분필 (고체)"
 
-#: source/blender/editors/physics/rigidbody_object.c:418
+#: source/blender/editors/physics/rigidbody_object.c:414
 msgid "Coffee (Fresh/Roast)"
 msgstr "커피 (신선/구운)"
 
-#: source/blender/editors/physics/rigidbody_object.c:419
+#: source/blender/editors/physics/rigidbody_object.c:415
 msgid "Concrete"
 msgstr "콘크리트"
 
-#: source/blender/editors/physics/rigidbody_object.c:420
+#: source/blender/editors/physics/rigidbody_object.c:416
 msgid "Charcoal"
 msgstr "목탄"
 
-#: source/blender/editors/physics/rigidbody_object.c:421
+#: source/blender/editors/physics/rigidbody_object.c:417
 msgid "Cork"
 msgstr "코르크"
 
-#: source/blender/editors/physics/rigidbody_object.c:422
+#: source/blender/editors/physics/rigidbody_object.c:418
 msgid "Copper"
 msgstr "구리"
 
-#: source/blender/editors/physics/rigidbody_object.c:423
+#: source/blender/editors/physics/rigidbody_object.c:419
 msgid "Garbage"
 msgstr "쓰레기"
 
-#: source/blender/editors/physics/rigidbody_object.c:424
+#: source/blender/editors/physics/rigidbody_object.c:420
 msgid "Glass (Broken)"
 msgstr "유리 (깨진)"
 
-#: source/blender/editors/physics/rigidbody_object.c:425
+#: source/blender/editors/physics/rigidbody_object.c:421
 msgid "Glass (Solid)"
 msgstr "유리 (고체)"
 
-#: source/blender/editors/physics/rigidbody_object.c:426
+#: source/blender/editors/physics/rigidbody_object.c:422
 msgid "Gold"
 msgstr "금"
 
-#: source/blender/editors/physics/rigidbody_object.c:427
+#: source/blender/editors/physics/rigidbody_object.c:423
 msgid "Granite (Broken)"
 msgstr "화강암 (깨진)"
 
-#: source/blender/editors/physics/rigidbody_object.c:428
+#: source/blender/editors/physics/rigidbody_object.c:424
 msgid "Granite (Solid)"
 msgstr "화강암 (고체)"
 
-#: source/blender/editors/physics/rigidbody_object.c:429
+#: source/blender/editors/physics/rigidbody_object.c:425
 msgid "Gravel"
 msgstr "자갈"
 
-#: source/blender/editors/physics/rigidbody_object.c:430
+#: source/blender/editors/physics/rigidbody_object.c:426
 msgid "Ice (Crushed)"
 msgstr "얼음 (가루)"
 
-#: source/blender/editors/physics/rigidbody_object.c:431
+#: source/blender/editors/physics/rigidbody_object.c:427
 msgid "Ice (Solid)"
 msgstr "얼음 (고체)"
 
-#: source/blender/editors/physics/rigidbody_object.c:432
+#: source/blender/editors/physics/rigidbody_object.c:428
 msgid "Iron"
 msgstr "철"
 
-#: source/blender/editors/physics/rigidbody_object.c:433
+#: source/blender/editors/physics/rigidbody_object.c:429
 msgid "Lead"
 msgstr "납"
 
-#: source/blender/editors/physics/rigidbody_object.c:434
+#: source/blender/editors/physics/rigidbody_object.c:430
 msgid "Limestone (Broken)"
 msgstr "석회암 (깨진)"
 
-#: source/blender/editors/physics/rigidbody_object.c:435
+#: source/blender/editors/physics/rigidbody_object.c:431
 msgid "Limestone (Solid)"
 msgstr "석회암 (고체)"
 
-#: source/blender/editors/physics/rigidbody_object.c:436
+#: source/blender/editors/physics/rigidbody_object.c:432
 msgid "Marble (Broken)"
 msgstr "대리석 (깨진)"
 
-#: source/blender/editors/physics/rigidbody_object.c:437
+#: source/blender/editors/physics/rigidbody_object.c:433
 msgid "Marble (Solid)"
 msgstr "대리석 (고체)"
 
-#: source/blender/editors/physics/rigidbody_object.c:438
+#: source/blender/editors/physics/rigidbody_object.c:434
 msgid "Paper"
 msgstr "종이"
 
-#: source/blender/editors/physics/rigidbody_object.c:439
+#: source/blender/editors/physics/rigidbody_object.c:435
 msgid "Peanuts (Shelled)"
 msgstr "땅콩 (벗겨진)"
 
-#: source/blender/editors/physics/rigidbody_object.c:440
+#: source/blender/editors/physics/rigidbody_object.c:436
 msgid "Peanuts (Not Shelled)"
 msgstr "땅콩 (벗겨지지 않음)"
 
-#: source/blender/editors/physics/rigidbody_object.c:441
+#: source/blender/editors/physics/rigidbody_object.c:437
 msgid "Plaster"
 msgstr "석고"
 
-#: source/blender/editors/physics/rigidbody_object.c:443
+#: source/blender/editors/physics/rigidbody_object.c:439
 msgid "Polystyrene"
 msgstr "폴리스티렌"
 
-#: source/blender/editors/physics/rigidbody_object.c:444
+#: source/blender/editors/physics/rigidbody_object.c:440
 msgid "Rubber"
 msgstr "고무"
 
-#: source/blender/editors/physics/rigidbody_object.c:445
+#: source/blender/editors/physics/rigidbody_object.c:441
 msgid "Silver"
 msgstr "은"
 
-#: source/blender/editors/physics/rigidbody_object.c:446
+#: source/blender/editors/physics/rigidbody_object.c:442
 msgid "Steel"
 msgstr "강철"
 
-#: source/blender/editors/physics/rigidbody_object.c:447
+#: source/blender/editors/physics/rigidbody_object.c:443
 msgid "Stone"
 msgstr "석재"
 
-#: source/blender/editors/physics/rigidbody_object.c:448
+#: source/blender/editors/physics/rigidbody_object.c:444
 msgid "Stone (Crushed)"
 msgstr "석재 (가루)"
 
-#: source/blender/editors/physics/rigidbody_object.c:449
+#: source/blender/editors/physics/rigidbody_object.c:445
 msgid "Timber"
 msgstr "목재"
 
@@ -96303,15 +96454,11 @@ msgstr "목재"
 msgid "Can't add Rigid Body to non mesh object"
 msgstr "메쉬가 아닌 오브젝트에 리지드 바디를 추가 할 수 없음"
 
-#: source/blender/editors/physics/rigidbody_object.c:103
-msgid "Can't create Rigid Body from mesh with no polygons"
-msgstr "폴리곤 없는 메쉬에서 리지드 바디를 만들 수 없음"
-
-#: source/blender/editors/physics/rigidbody_object.c:111
+#: source/blender/editors/physics/rigidbody_object.c:107
 msgid "Can't create Rigid Body world"
 msgstr "리지드 바디 월드를 만들 수 없음"
 
-#: source/blender/editors/physics/rigidbody_object.c:216
+#: source/blender/editors/physics/rigidbody_object.c:212
 msgid "Object has no Rigid Body settings to remove"
 msgstr "오브젝트는 제거 할 리지드 바디 설정이 없음"
 
@@ -96426,37 +96573,37 @@ msgstr "저장된 파일: %s"
 msgid "Unable to remove material slot in edit mode"
 msgstr "편집 모드에서 매테리얼 슬롯을 제거 할 수 없음"
 
-#: source/blender/editors/render/render_shading.c:592
-msgid "No active lineset and associated line style to add the modifier to"
+#. :src: source/blender/editors/render/render_shading.c:600
+msgid "No active lineset and associated line style to manipulate the modifier"
 msgstr ""
 
-#: source/blender/editors/render/render_shading.c:596
+#: source/blender/editors/render/render_shading.c:604
 msgid "The active lineset does not have a line style (indicating data corruption)"
 msgstr ""
 
-#: source/blender/editors/render/render_shading.c:876
+#: source/blender/editors/render/render_shading.c:888
 msgid "No active lineset to add a new line style to"
 msgstr ""
 
-#: source/blender/editors/render/render_shading.c:919
+#: source/blender/editors/render/render_shading.c:931
 msgid "Unknown line color modifier type"
 msgstr "알 수없는 라인 색상 모디파이어 유형"
 
-#: source/blender/editors/render/render_shading.c:958
+#: source/blender/editors/render/render_shading.c:971
 msgid "Unknown alpha transparency modifier type"
 msgstr "알 수없는 알파 투명도 모디파이어 유형매테리얼의 알파 투명도"
 
-#: source/blender/editors/render/render_shading.c:997
+#: source/blender/editors/render/render_shading.c:1011
 msgid "Unknown line thickness modifier type"
 msgstr "알 수없는 라인 두께 모디파이어 유형"
 
-#: source/blender/editors/render/render_shading.c:1036
+#: source/blender/editors/render/render_shading.c:1051
 msgid "Unknown stroke geometry modifier type"
 msgstr "알 수없는 선획 지오메트리 모디파이어 유형"
 
-#: source/blender/editors/render/render_shading.c:1102
-#: source/blender/editors/render/render_shading.c:1151
-#: source/blender/editors/render/render_shading.c:1201
+#: source/blender/editors/render/render_shading.c:1118
+#: source/blender/editors/render/render_shading.c:1168
+#: source/blender/editors/render/render_shading.c:1219
 msgid "The object the data pointer refers to is not a valid modifier"
 msgstr ""
 
@@ -96580,15 +96727,15 @@ msgstr ""
 msgid "Active group is locked, aborting"
 msgstr "활성 그룹은 잠김, 중단"
 
-#: source/blender/editors/sculpt_paint/sculpt.c:4827
+#: source/blender/editors/sculpt_paint/sculpt.c:4828
 msgid "Dynamic-topology sculpting will not preserve vertex colors, UVs, or other customdata"
 msgstr "다이나믹 토폴로지 조각하기는 버텍스 컬러, UV, 또는 다른 사용자 정의 데이터를 보존하지 않음"
 
-#: source/blender/editors/sculpt_paint/sculpt.c:5045
+#: source/blender/editors/sculpt_paint/sculpt.c:5046
 msgid "Object has non-uniform scale, sculpting may be unpredictable"
 msgstr ""
 
-#: source/blender/editors/sculpt_paint/sculpt.c:5049
+#: source/blender/editors/sculpt_paint/sculpt.c:5050
 msgid "Object has negative scale, sculpting may be unpredictable"
 msgstr ""
 
@@ -96604,20 +96751,20 @@ msgstr "소리 지원없이 컴파일"
 msgid "AutoPack is enabled, so image will be packed again on file save"
 msgstr ""
 
-#: source/blender/editors/space_action/action_edit.c:583
+#: source/blender/editors/space_action/action_edit.c:585
 msgid "Keyframe pasting is not available for grease pencil mode"
 msgstr ""
 
-#: source/blender/editors/space_action/action_edit.c:588
+#: source/blender/editors/space_action/action_edit.c:590
 msgid "Keyframe pasting is not available for mask mode"
 msgstr ""
 
-#: source/blender/editors/space_action/action_edit.c:593
+#: source/blender/editors/space_action/action_edit.c:595
 #: source/blender/editors/space_graph/graph_edit.c:738
 msgid "No keyframes copied to keyframes copy/paste buffer"
 msgstr ""
 
-#: source/blender/editors/space_action/action_edit.c:633
+#: source/blender/editors/space_action/action_edit.c:635
 msgid "Keyframe pasting is not available for grease pencil or mask mode"
 msgstr ""
 
@@ -97041,7 +97188,7 @@ msgstr "활성 F-곡선"
 msgid "Active Keyframe"
 msgstr "활성 키 프레임"
 
-#: source/blender/editors/space_graph/graph_edit.c:1709
+#: source/blender/editors/space_graph/graph_edit.c:1711
 msgid "<No ID>"
 msgstr "<ID 없음>"
 
@@ -97057,37 +97204,37 @@ msgstr "활성 F-곡선은 편집 가능 없음"
 msgid "Remove F-Modifiers from F-Curve to add keyframes"
 msgstr "키 프레임을 추가하는 F-곡선에서 F-모디파이어를 제거"
 
-#: source/blender/editors/space_graph/graph_edit.c:1737
+#: source/blender/editors/space_graph/graph_edit.c:1739
 msgid "No Euler Rotation F-Curves to fix up"
 msgstr ""
 
-#: source/blender/editors/space_graph/graph_edit.c:1800
+#: source/blender/editors/space_graph/graph_edit.c:1802
 msgid "No Euler Rotations could be corrected, ensure each rotation has keys for all components, and that F-Curves for these are in consecutive XYZ order and selected"
 msgstr ""
 
-#: source/blender/editors/space_graph/graph_edit.c:1807
+#: source/blender/editors/space_graph/graph_edit.c:1809
 msgid "Some Euler Rotations could not be corrected due to missing/unselected/out-of-order F-Curves, ensure each rotation has keys for all components, and that F-Curves for these are in consecutive XYZ order and selected"
 msgstr ""
 
-#: source/blender/editors/space_graph/graph_edit.c:2290
+#: source/blender/editors/space_graph/graph_edit.c:2292
 msgid "Modifier could not be added (see console for details)"
 msgstr "모디파이어를 추가 할 수 없음 (자세한 내용은 콘솔을 참조)"
 
-#: source/blender/editors/space_graph/graph_edit.c:2363
-#: source/blender/editors/space_nla/nla_edit.c:2321
+#: source/blender/editors/space_graph/graph_edit.c:2365
+#: source/blender/editors/space_nla/nla_edit.c:2323
 msgid "No F-Modifiers available to be copied"
 msgstr ""
 
-#: source/blender/editors/space_graph/graph_edit.c:2434
-#: source/blender/editors/space_nla/nla_edit.c:2385
+#: source/blender/editors/space_graph/graph_edit.c:2436
+#: source/blender/editors/space_nla/nla_edit.c:2387
 msgid "No F-Modifiers to paste"
 msgstr "붙여 넣기 할 F-모디파이어 없음"
 
-#: source/blender/editors/space_graph/graph_edit.c:1707
+#: source/blender/editors/space_graph/graph_edit.c:1709
 msgid "Euler Rotation F-Curve has invalid index (ID='%s', Path='%s', Index=%d)"
 msgstr ""
 
-#: source/blender/editors/space_graph/graph_edit.c:1751
+#: source/blender/editors/space_graph/graph_edit.c:1753
 msgid "Missing %s%s%s component(s) of euler rotation for ID='%s' and RNA-Path='%s'"
 msgstr ""
 
@@ -97219,13 +97366,13 @@ msgid "Packing movies or image sequences not supported"
 msgstr "포장하는 동영상 또는 이미지 시퀀스가 지원되지 않음"
 
 #: source/blender/editors/space_image/image_ops.c:2148
-#: source/blender/makesrna/intern/rna_image_api.c:150
+#: source/blender/makesrna/intern/rna_image_api.c:151
 msgid "Cannot pack edited image from disk, only as internal PNG"
 msgstr "디스크에서 편집된 이미지를 포장 할 수 없음, 내부 PNG로 만"
 
 #: source/blender/editors/space_image/image_ops.c:2231
 #: source/blender/editors/space_image/image_ops.c:2259
-#: source/blender/makesrna/intern/rna_image_api.c:170
+#: source/blender/makesrna/intern/rna_image_api.c:172
 msgid "Unpacking movies or image sequences not supported"
 msgstr "지원되지 않는 동영상이나 이미지 시퀀스 포장 해제하기"
 
@@ -97506,7 +97653,7 @@ msgstr ""
 msgid "Animation channel at index %d is not a NLA 'Active Action' channel"
 msgstr ""
 
-#: source/blender/editors/space_nla/nla_edit.c:2174
+#: source/blender/editors/space_nla/nla_edit.c:2176
 msgid "Add F-Modifier"
 msgstr "F-모디파이어 추가"
 
@@ -97522,45 +97669,45 @@ msgstr ""
 msgid "No AnimData blocks in tweak mode to exit from"
 msgstr ""
 
-#: source/blender/editors/space_nla/nla_edit.c:538
+#: source/blender/editors/space_nla/nla_edit.c:540
 #: source/blender/editors/space_outliner/outliner_tools.c:1020
 msgid "No valid action to add"
 msgstr "추가 할 올바른 액션이 없음"
 
-#: source/blender/editors/space_nla/nla_edit.c:563
+#: source/blender/editors/space_nla/nla_edit.c:565
 msgid "No active track(s) to add strip to, select an existing track or add one before trying again"
 msgstr ""
 
-#: source/blender/editors/space_nla/nla_edit.c:739
+#: source/blender/editors/space_nla/nla_edit.c:741
 msgid "Needs at least a pair of adjacent selected strips with a gap between them"
 msgstr ""
 
-#: source/blender/editors/space_nla/nla_edit.c:1511
+#: source/blender/editors/space_nla/nla_edit.c:1513
 msgid "Cannot swap selected strips as they will not be able to fit in their new places"
 msgstr ""
 
-#: source/blender/editors/space_nla/nla_edit.c:544
+#: source/blender/editors/space_nla/nla_edit.c:546
 #: source/blender/editors/space_outliner/outliner_tools.c:1025
 msgid "Action '%s' does not specify what datablocks it can be used on (try setting the 'ID Root Type' setting from the Datablocks Editor for this action to avoid future problems)"
 msgstr ""
 
-#: source/blender/editors/space_nla/nla_edit.c:578
+#: source/blender/editors/space_nla/nla_edit.c:580
 msgid "Could not add action '%s' as it cannot be used relative to ID-blocks of type '%s'"
 msgstr ""
 
-#: source/blender/editors/space_nla/nla_edit.c:1467
+#: source/blender/editors/space_nla/nla_edit.c:1469
 msgid "Too many clusters of strips selected in NLA Track (%s): needs exactly 2 to be selected"
 msgstr ""
 
-#: source/blender/editors/space_nla/nla_edit.c:1476
+#: source/blender/editors/space_nla/nla_edit.c:1478
 msgid "Too few clusters of strips selected in NLA Track (%s): needs exactly 2 to be selected"
 msgstr ""
 
-#: source/blender/editors/space_nla/nla_edit.c:1515
+#: source/blender/editors/space_nla/nla_edit.c:1517
 msgid "Cannot swap '%s' and '%s' as one or both will not be able to fit in their new places"
 msgstr ""
 
-#: source/blender/editors/space_nla/nla_edit.c:2246
+#: source/blender/editors/space_nla/nla_edit.c:2248
 msgid "Modifier could not be added to (%s : %s) (see console for details)"
 msgstr ""
 
@@ -97869,19 +98016,19 @@ msgstr "현재 파일"
 msgid "Can't reload with running modal operators"
 msgstr "실행할 모달 연산자를 새로 고침 할 수 없음"
 
-#: source/blender/editors/space_sequencer/sequencer_add.c:342
+#: source/blender/editors/space_sequencer/sequencer_add.c:361
 msgid "Movie clip not found"
 msgstr "동영상 클립을 찾을 수 없음"
 
-#: source/blender/editors/space_sequencer/sequencer_add.c:434
+#: source/blender/editors/space_sequencer/sequencer_add.c:446
 msgid "Mask not found"
 msgstr "마스크를 찾을 수 없음"
 
-#: source/blender/editors/space_sequencer/sequencer_add.c:808
+#: source/blender/editors/space_sequencer/sequencer_add.c:812
 msgid "Start and end frame are not set"
 msgstr "프레임 시작과 종료가 설정되어 있지 않음"
 
-#: source/blender/editors/space_sequencer/sequencer_add.c:566
+#: source/blender/editors/space_sequencer/sequencer_add.c:573
 msgid "File '%s' could not be loaded"
 msgstr "파일 '%s' 는 읽을 수 없음"
 
@@ -97914,19 +98061,19 @@ msgid "No valid inputs to swap"
 msgstr "교체에 유효한 입력 없음"
 
 #: source/blender/editors/space_sequencer/sequencer_edit.c:2058
-#: source/blender/editors/space_sequencer/sequencer_edit.c:2761
+#: source/blender/editors/space_sequencer/sequencer_edit.c:2766
 msgid "Please select all related strips"
 msgstr "관련 스트립을 선택하십시오"
 
-#: source/blender/editors/space_sequencer/sequencer_edit.c:2897
+#: source/blender/editors/space_sequencer/sequencer_edit.c:2902
 msgid "Please select two strips"
 msgstr "두 스트립을 선택하십시오"
 
-#: source/blender/editors/space_sequencer/sequencer_edit.c:3056
+#: source/blender/editors/space_sequencer/sequencer_edit.c:3061
 msgid "One of the effect inputs is unset, cannot swap"
 msgstr "이펙트 입력 중 하나가 설정되지 않음, 교체 할 수 없음"
 
-#: source/blender/editors/space_sequencer/sequencer_edit.c:3109
+#: source/blender/editors/space_sequencer/sequencer_edit.c:3114
 msgid "New effect needs more input strips"
 msgstr "새로운 이펙트는 더 많은 입력 스트립이 필요함"
 
@@ -98074,16 +98221,16 @@ msgstr "반경 평균:"
 msgid "Mean Tilt:"
 msgstr "평균 기울기:"
 
-#: source/blender/editors/space_view3d/view3d_buttons.c:951
-#: source/blender/editors/space_view3d/view3d_buttons.c:962
+#: source/blender/editors/space_view3d/view3d_buttons.c:950
+#: source/blender/editors/space_view3d/view3d_buttons.c:961
 msgid "4L"
 msgstr "4L"
 
-#: source/blender/editors/space_view3d/view3d_buttons.c:1005
+#: source/blender/editors/space_view3d/view3d_buttons.c:1004
 msgid "No Bone Active"
 msgstr "활성 본 없음"
 
-#: source/blender/editors/space_view3d/view3d_buttons.c:1039
+#: source/blender/editors/space_view3d/view3d_buttons.c:1038
 msgid "Radius (Parent)"
 msgstr "반경 (부모)"
 
@@ -98124,15 +98271,15 @@ msgstr "곡선 조절 점의 반경"
 msgid "Tilt of curve control points"
 msgstr "곡선 컨트롤 포인트의 기울기"
 
-#: source/blender/editors/space_view3d/view3d_buttons.c:908
+#: source/blender/editors/space_view3d/view3d_buttons.c:907
 msgid "Normalize weights of active vertex (if affected groups are unlocked)"
 msgstr ""
 
-#: source/blender/editors/space_view3d/view3d_buttons.c:916
+#: source/blender/editors/space_view3d/view3d_buttons.c:915
 msgid "Copy active vertex to other selected vertices (if affected groups are unlocked)"
 msgstr ""
 
-#: source/blender/editors/space_view3d/view3d_buttons.c:1190
+#: source/blender/editors/space_view3d/view3d_buttons.c:1189
 msgid "Vertex Weights"
 msgstr "버텍스 웨이트"
 
@@ -98208,11 +98355,11 @@ msgstr "사용자 원근"
 msgid "%s (Local)"
 msgstr "%s (로컬)"
 
-#: source/blender/editors/space_view3d/view3d_draw.c:3001
+#: source/blender/editors/space_view3d/view3d_draw.c:3018
 msgid "fps: %.2f"
 msgstr "fps: %.2f"
 
-#: source/blender/editors/space_view3d/view3d_draw.c:3005
+#: source/blender/editors/space_view3d/view3d_draw.c:3022
 msgid "fps: %i"
 msgstr "fps: %i"
 
@@ -98306,306 +98453,306 @@ msgstr "보기 오프셋이 잠겨 있을 때 네비게이션 할 수 없음"
 msgid "Cannot navigate an object with constraints"
 msgstr "제약있는 오브젝트를 네비게이션 할 수 없음"
 
-#: source/blender/editors/transform/transform.c:874
-#: source/blender/editors/transform/transform.c:1108
+#: source/blender/editors/transform/transform.c:866
+#: source/blender/editors/transform/transform.c:1100
 msgid "along X"
 msgstr "X 따라"
 
-#: source/blender/editors/transform/transform.c:875
-#: source/blender/editors/transform/transform.c:1111
+#: source/blender/editors/transform/transform.c:867
+#: source/blender/editors/transform/transform.c:1103
 msgid "along %s X"
 msgstr "%s X 따라 "
 
-#: source/blender/editors/transform/transform.c:876
-#: source/blender/editors/transform/transform.c:1153
+#: source/blender/editors/transform/transform.c:868
+#: source/blender/editors/transform/transform.c:1145
 msgid "locking %s X"
 msgstr "잠그기 %s X"
 
-#: source/blender/editors/transform/transform.c:881
-#: source/blender/editors/transform/transform.c:1125
+#: source/blender/editors/transform/transform.c:873
+#: source/blender/editors/transform/transform.c:1117
 msgid "along Y"
 msgstr "Y 따라"
 
-#: source/blender/editors/transform/transform.c:882
-#: source/blender/editors/transform/transform.c:1128
+#: source/blender/editors/transform/transform.c:874
+#: source/blender/editors/transform/transform.c:1120
 msgid "along %s Y"
 msgstr "%s Y 따라 "
 
-#: source/blender/editors/transform/transform.c:883
-#: source/blender/editors/transform/transform.c:1165
+#: source/blender/editors/transform/transform.c:875
+#: source/blender/editors/transform/transform.c:1157
 msgid "locking %s Y"
 msgstr "잠그기 %s Y"
 
-#: source/blender/editors/transform/transform.c:888
+#: source/blender/editors/transform/transform.c:880
 msgid "along Z"
 msgstr "Z 따라"
 
-#: source/blender/editors/transform/transform.c:889
-#: source/blender/editors/transform/transform.c:1141
+#: source/blender/editors/transform/transform.c:881
+#: source/blender/editors/transform/transform.c:1133
 msgid "along %s Z"
 msgstr "%s Z 따라 "
 
-#: source/blender/editors/transform/transform.c:890
-#: source/blender/editors/transform/transform.c:1177
+#: source/blender/editors/transform/transform.c:882
+#: source/blender/editors/transform/transform.c:1169
 msgid "locking %s Z"
 msgstr "잠그기 %s Z"
 
-#: source/blender/editors/transform/transform.c:1278
+#: source/blender/editors/transform/transform.c:1270
 msgid "along local Z"
 msgstr "로컬 Z 따라"
 
-#: source/blender/editors/transform/transform.c:1809
+#: source/blender/editors/transform/transform.c:1801
 msgid "Auto Keying On"
 msgstr "자동 키잉 켜기"
 
-#: source/blender/editors/transform/transform.c:2853
+#: source/blender/editors/transform/transform.c:2845
 msgid "Bend Angle: %s Radius: %s Alt, Clamp %s"
 msgstr "굽힘 각도: %s 반경: %s Alt, 클램프 %s"
 
-#: source/blender/editors/transform/transform.c:2859
+#: source/blender/editors/transform/transform.c:2851
 msgid "Bend Angle: %.3f Radius: %.4f, Alt, Clamp %s"
 msgstr "굽힘 각도: %.3f 반경: %.4f, Alt, 클램프 %s"
 
-#: source/blender/editors/transform/transform.c:3021
+#: source/blender/editors/transform/transform.c:3013
 msgid "Shear: %s %s"
 msgstr "전단: %s %s"
 
-#: source/blender/editors/transform/transform.c:3025
+#: source/blender/editors/transform/transform.c:3017
 msgid "Shear: %.3f %s (Press X or Y to set shear axis)"
 msgstr "전단: %.3f %s (전단 축을 설정하는 X 또는 Y를 누르기)"
 
-#: source/blender/editors/transform/transform.c:3129
+#: source/blender/editors/transform/transform.c:3121
 msgid "Scale: %s%s %s"
 msgstr "규모: %s%s %s"
 
-#: source/blender/editors/transform/transform.c:3133
+#: source/blender/editors/transform/transform.c:3125
 msgid "Scale: %s : %s%s %s"
 msgstr "규모: %s : %s%s %s"
 
-#: source/blender/editors/transform/transform.c:3137
+#: source/blender/editors/transform/transform.c:3129
 msgid "Scale: %s : %s : %s%s %s"
 msgstr "규모: %s : %s : %s%s %s"
 
-#: source/blender/editors/transform/transform.c:3144
+#: source/blender/editors/transform/transform.c:3136
 msgid "Scale X: %s   Y: %s%s %s"
 msgstr "규모  X: %s   Y: %s%s %s"
 
-#: source/blender/editors/transform/transform.c:3148
+#: source/blender/editors/transform/transform.c:3140
 msgid "Scale X: %s   Y: %s  Z: %s%s %s"
 msgstr "규모 X: %s   Y: %s  Z: %s%s %s"
 
-#: source/blender/editors/transform/transform.c:3154
-#: source/blender/editors/transform/transform.c:3897
-#: source/blender/editors/transform/transform.c:4002
-#: source/blender/editors/transform/transform.c:4173
+#: source/blender/editors/transform/transform.c:3146
+#: source/blender/editors/transform/transform.c:3889
+#: source/blender/editors/transform/transform.c:3994
+#: source/blender/editors/transform/transform.c:4165
 msgid " Proportional size: %.2f"
 msgstr "비례 크기: %.2f"
 
-#: source/blender/editors/transform/transform.c:3532
+#: source/blender/editors/transform/transform.c:3524
 msgid "To Sphere: %s %s"
 msgstr "구체로: %s %s"
 
-#: source/blender/editors/transform/transform.c:3536
+#: source/blender/editors/transform/transform.c:3528
 msgid "To Sphere: %.4f %s"
 msgstr "구체로: %.4f %s"
 
-#: source/blender/editors/transform/transform.c:3889
+#: source/blender/editors/transform/transform.c:3881
 msgid "Rot: %s %s %s"
 msgstr "회전: %s %s %s"
 
-#: source/blender/editors/transform/transform.c:3892
+#: source/blender/editors/transform/transform.c:3884
 msgid "Rot: %.2f%s %s"
 msgstr "회전: %.2f%s %s"
 
-#: source/blender/editors/transform/transform.c:3993
+#: source/blender/editors/transform/transform.c:3985
 msgid "Trackball: %s %s %s"
 msgstr "트랙볼: %s %s %s"
 
-#: source/blender/editors/transform/transform.c:3997
+#: source/blender/editors/transform/transform.c:3989
 msgid "Trackball: %.2f %.2f %s"
 msgstr "트랙볼: %.2f %.2f %s"
 
-#: source/blender/editors/transform/transform.c:4136
+#: source/blender/editors/transform/transform.c:4128
 msgid "AutoIK-Len: %d"
 msgstr "자동IK-Len: %d"
 
-#: source/blender/editors/transform/transform.c:4338
+#: source/blender/editors/transform/transform.c:4330
 msgid "Shrink/Fatten:"
 msgstr "수축/팽창:"
 
-#: source/blender/editors/transform/transform.c:4360
+#: source/blender/editors/transform/transform.c:4352
 msgid " or Alt) Even Thickness %s"
 msgstr ""
 
-#: source/blender/editors/transform/transform.c:4438
+#: source/blender/editors/transform/transform.c:4430
 msgid "Tilt: %s° %s"
 msgstr "기울기: %s° %s"
 
-#: source/blender/editors/transform/transform.c:4444
+#: source/blender/editors/transform/transform.c:4436
 msgid "Tilt: %.2f° %s"
 msgstr "기울기: %.2f° %s"
 
-#: source/blender/editors/transform/transform.c:4513
+#: source/blender/editors/transform/transform.c:4505
 msgid "Shrink/Fatten: %s"
 msgstr "수축/팽창: %s"
 
-#: source/blender/editors/transform/transform.c:4516
+#: source/blender/editors/transform/transform.c:4508
 msgid "Shrink/Fatten: %3f"
 msgstr "수축/팽창: %3f"
 
-#: source/blender/editors/transform/transform.c:4589
+#: source/blender/editors/transform/transform.c:4581
 msgid "Feather Shrink/Fatten: %s"
 msgstr "패더 수축/팽창: %s"
 
-#: source/blender/editors/transform/transform.c:4592
+#: source/blender/editors/transform/transform.c:4584
 msgid "Feather Shrink/Fatten: %3f"
 msgstr "패더 수축/팽창: %3f"
 
-#: source/blender/editors/transform/transform.c:4683
+#: source/blender/editors/transform/transform.c:4675
 msgid "Push/Pull: %s%s %s"
 msgstr "밀기/당기기: %s%s %s"
 
-#: source/blender/editors/transform/transform.c:4687
+#: source/blender/editors/transform/transform.c:4679
 msgid "Push/Pull: %.4f%s %s"
 msgstr "밀기/당기기: %.4f%s %s"
 
-#: source/blender/editors/transform/transform.c:4778
+#: source/blender/editors/transform/transform.c:4769
 msgid "Bevel Weight: +%s %s"
 msgstr "베벨 웨이트: +%s %s"
 
-#: source/blender/editors/transform/transform.c:4780
+#: source/blender/editors/transform/transform.c:4771
 msgid "Bevel Weight: %s %s"
 msgstr "베벨 웨이트: %s %s"
 
-#: source/blender/editors/transform/transform.c:4785
+#: source/blender/editors/transform/transform.c:4776
 msgid "Bevel Weight: +%.3f %s"
 msgstr "베벨 웨이트: +%.3f %s"
 
-#: source/blender/editors/transform/transform.c:4787
+#: source/blender/editors/transform/transform.c:4778
 msgid "Bevel Weight: %.3f %s"
 msgstr "베벨 웨이트: %.3f %s"
 
-#: source/blender/editors/transform/transform.c:4857
+#: source/blender/editors/transform/transform.c:4847
 msgid "Crease: +%s %s"
 msgstr "주름: +%s %s"
 
-#: source/blender/editors/transform/transform.c:4859
+#: source/blender/editors/transform/transform.c:4849
 msgid "Crease: %s %s"
 msgstr "주름: %s %s"
 
-#: source/blender/editors/transform/transform.c:4864
+#: source/blender/editors/transform/transform.c:4854
 msgid "Crease: +%.3f %s"
 msgstr "주름: +%.3f %s"
 
-#: source/blender/editors/transform/transform.c:4866
+#: source/blender/editors/transform/transform.c:4856
 msgid "Crease: %.3f %s"
 msgstr "주름: %.3f %s"
 
-#: source/blender/editors/transform/transform.c:4935
+#: source/blender/editors/transform/transform.c:4925
 msgid "ScaleB: %s%s %s"
 msgstr "규모B: %s%s %s"
 
-#: source/blender/editors/transform/transform.c:4937
+#: source/blender/editors/transform/transform.c:4927
 msgid "ScaleB: %s : %s : %s%s %s"
 msgstr "규모B: %s : %s : %s%s %s"
 
-#: source/blender/editors/transform/transform.c:4941
+#: source/blender/editors/transform/transform.c:4931
 msgid "ScaleB X: %s  Y: %s  Z: %s%s %s"
 msgstr "규모B X: %s  Y: %s  Z: %s%s %s"
 
-#: source/blender/editors/transform/transform.c:5062
+#: source/blender/editors/transform/transform.c:5052
 msgid "Envelope: %s"
 msgstr "엔벨로프: %s"
 
-#: source/blender/editors/transform/transform.c:5065
+#: source/blender/editors/transform/transform.c:5055
 msgid "Envelope: %3f"
 msgstr "엔벨로프: %3f"
 
-#: source/blender/editors/transform/transform.c:6199
+#: source/blender/editors/transform/transform.c:6229
 msgid "Edge Slide: %s (E)ven: %s"
 msgstr "에지 슬라이드: %s (E)ven: %s"
 
-#: source/blender/editors/transform/transform.c:6203
+#: source/blender/editors/transform/transform.c:6233
 msgid "Edge Slide: %s (E)ven: %s, (F)lipped: %s"
 msgstr "에지 슬라이드: %s (E)ven: %s, (F)lipped: %s"
 
-#: source/blender/editors/transform/transform.c:6208
+#: source/blender/editors/transform/transform.c:6238
 msgid "Edge Slide: %.4f (E)ven: %s"
 msgstr "에지 슬라이드: %.4f (E)ven: %s"
 
-#: source/blender/editors/transform/transform.c:6212
+#: source/blender/editors/transform/transform.c:6242
 msgid "Edge Slide: %.4f (E)ven: %s, (F)lipped: %s"
 msgstr "에지 슬라이드: %.4f (E)ven: %s, (F)lipped: %s"
 
-#: source/blender/editors/transform/transform.c:6716
+#: source/blender/editors/transform/transform.c:6746
 msgid "Vert Slide: "
 msgstr "버텍스 슬라이드:"
 
-#: source/blender/editors/transform/transform.c:6725
+#: source/blender/editors/transform/transform.c:6755
 msgid "(E)ven: %s, "
 msgstr ""
 
-#: source/blender/editors/transform/transform.c:6727
+#: source/blender/editors/transform/transform.c:6757
 msgid "(F)lipped: %s, "
 msgstr ""
 
-#: source/blender/editors/transform/transform.c:6729
+#: source/blender/editors/transform/transform.c:6759
 msgid "Alt or (C)lamp: %s"
 msgstr ""
 
-#: source/blender/editors/transform/transform.c:6788
+#: source/blender/editors/transform/transform.c:6818
 msgid "Roll: %s"
 msgstr "롤: %s"
 
-#: source/blender/editors/transform/transform.c:6791
+#: source/blender/editors/transform/transform.c:6821
 msgid "Roll: %.2f"
 msgstr "롤: %.2f"
 
-#: source/blender/editors/transform/transform.c:6863
+#: source/blender/editors/transform/transform.c:6893
 msgid "Time: +%s %s"
 msgstr "타임: +%s %s"
 
-#: source/blender/editors/transform/transform.c:6865
+#: source/blender/editors/transform/transform.c:6895
 msgid "Time: %s %s"
 msgstr "타임: %s %s"
 
-#: source/blender/editors/transform/transform.c:6870
+#: source/blender/editors/transform/transform.c:6900
 msgid "Time: +%.3f %s"
 msgstr "타임: +%.3f %s"
 
-#: source/blender/editors/transform/transform.c:6872
+#: source/blender/editors/transform/transform.c:6902
 msgid "Time: %.3f %s"
 msgstr "타임: %.3f %s"
 
-#: source/blender/editors/transform/transform.c:6936
+#: source/blender/editors/transform/transform.c:6966
 msgid "Mirror%s"
 msgstr "미러 %s"
 
-#: source/blender/editors/transform/transform.c:6970
+#: source/blender/editors/transform/transform.c:7000
 msgid "Select a mirror axis (X, Y)"
 msgstr "미러 축을 선택 (X, Y)"
 
-#: source/blender/editors/transform/transform.c:6972
+#: source/blender/editors/transform/transform.c:7002
 msgid "Select a mirror axis (X, Y, Z)"
 msgstr "미러 축을 선택 (X, Y, Z)"
 
-#: source/blender/editors/transform/transform.c:7077
+#: source/blender/editors/transform/transform.c:7107
 msgid "Sequence Slide: %s%s, ("
 msgstr "시퀀스 슬라이드: %s%s, ("
 
-#: source/blender/editors/transform/transform.c:7085
+#: source/blender/editors/transform/transform.c:7115
 msgid " or Alt) Expand to fit %s"
 msgstr ""
 
-#: source/blender/editors/transform/transform.c:7325
+#: source/blender/editors/transform/transform.c:7355
 msgid "DeltaX: %s"
 msgstr "델타X: %s"
 
-#: source/blender/editors/transform/transform.c:7471
+#: source/blender/editors/transform/transform.c:7501
 msgid "TimeSlide: %s"
 msgstr "타임슬라이드: %s"
 
-#: source/blender/editors/transform/transform.c:7609
+#: source/blender/editors/transform/transform.c:7639
 msgid "ScaleX: %s"
 msgstr "규모X: %s"
 
@@ -98682,31 +98829,31 @@ msgstr ""
 msgid "Bone selection count error"
 msgstr "본 선택 개수 오류"
 
-#: source/blender/editors/transform/transform_generics.c:1909
+#: source/blender/editors/transform/transform_generics.c:1904
 msgid "(Sharp)"
 msgstr "(샤프)"
 
-#: source/blender/editors/transform/transform_generics.c:1912
+#: source/blender/editors/transform/transform_generics.c:1907
 msgid "(Smooth)"
 msgstr "(매끄럽게)"
 
-#: source/blender/editors/transform/transform_generics.c:1915
+#: source/blender/editors/transform/transform_generics.c:1910
 msgid "(Root)"
 msgstr "(루트)"
 
-#: source/blender/editors/transform/transform_generics.c:1918
+#: source/blender/editors/transform/transform_generics.c:1913
 msgid "(Linear)"
 msgstr "(선형)"
 
-#: source/blender/editors/transform/transform_generics.c:1921
+#: source/blender/editors/transform/transform_generics.c:1916
 msgid "(Constant)"
 msgstr "(상수)"
 
-#: source/blender/editors/transform/transform_generics.c:1924
+#: source/blender/editors/transform/transform_generics.c:1919
 msgid "(Sphere)"
 msgstr "(구체)"
 
-#: source/blender/editors/transform/transform_generics.c:1927
+#: source/blender/editors/transform/transform_generics.c:1922
 msgid "(Random)"
 msgstr "(무작위)"
 
@@ -98767,7 +98914,7 @@ msgstr "사용 %s (차이)"
 msgid "Overwrite %s"
 msgstr "덮어쓰기 %s"
 
-#: source/blender/editors/uvedit/uvedit_buttons.c:224
+#: source/blender/editors/uvedit/uvedit_buttons.c:225
 msgid "UV Vertex"
 msgstr "UV 버텍스"
 
@@ -99001,7 +99148,7 @@ msgstr "이미지에서 버퍼를 얻을 수 없음"
 msgid "Scene not in context, could not get save parameters"
 msgstr ""
 
-#: source/blender/makesrna/intern/rna_image_api.c:167
+#: source/blender/makesrna/intern/rna_image_api.c:169
 msgid "Image not packed"
 msgstr "이미지 포장 되지 않음"
 
@@ -99018,9 +99165,9 @@ msgid "Image '%s' could not be saved to '%s'"
 msgstr ""
 
 #: source/blender/makesrna/intern/rna_image_api.c:139
-#: source/blender/makesrna/intern/rna_image_api.c:189
-#: source/blender/makesrna/intern/rna_image_api.c:204
-#: source/blender/makesrna/intern/rna_image_api.c:224
+#: source/blender/makesrna/intern/rna_image_api.c:191
+#: source/blender/makesrna/intern/rna_image_api.c:206
+#: source/blender/makesrna/intern/rna_image_api.c:226
 msgid "Image '%s' does not have any image data"
 msgstr ""
 
@@ -99292,23 +99439,23 @@ msgstr ""
 msgid "Cannot set dupli-group as object belongs in group being instanced, thus causing a cycle"
 msgstr ""
 
-#: source/blender/makesrna/intern/rna_object.c:1403
+#: source/blender/makesrna/intern/rna_object.c:1419
 msgid "VertexGroup.add(): cannot be called while object is in edit mode"
 msgstr ""
 
-#: source/blender/makesrna/intern/rna_object.c:1418
+#: source/blender/makesrna/intern/rna_object.c:1434
 msgid "VertexGroup.remove(): cannot be called while object is in edit mode"
 msgstr ""
 
-#: source/blender/makesrna/intern/rna_object.c:1433
+#: source/blender/makesrna/intern/rna_object.c:1449
 msgid "Vertex not in group"
 msgstr "그룹에 버텍스 없음"
 
-#: source/blender/makesrna/intern/rna_object.c:1306
+#: source/blender/makesrna/intern/rna_object.c:1322
 msgid "Constraint '%s' not found in object '%s'"
 msgstr ""
 
-#: source/blender/makesrna/intern/rna_object.c:1380
+#: source/blender/makesrna/intern/rna_object.c:1396
 msgid "DeformGroup '%s' not in object '%s'"
 msgstr ""
 
@@ -99386,7 +99533,7 @@ msgstr ""
 msgid "Rigidbody world was not properly initialized, need to step the simulation first"
 msgstr ""
 
-#: source/blender/makesrna/intern/rna_scene.c:1473
+#: source/blender/makesrna/intern/rna_scene.c:1480
 msgid "Keying set could not be added"
 msgstr "키잉 설정 추가 할 수 없음"
 
@@ -99406,19 +99553,19 @@ msgstr ""
 msgid "Render layer '%s' could not be removed from scene '%s'"
 msgstr ""
 
-#: source/blender/makesrna/intern/rna_scene.c:1441
+#: source/blender/makesrna/intern/rna_scene.c:1448
 msgid "Timeline marker '%s' not found in scene '%s'"
 msgstr ""
 
-#: source/blender/makesrna/intern/rna_scene.c:1606
+#: source/blender/makesrna/intern/rna_scene.c:1613
 msgid "Line set '%s' could not be removed"
 msgstr ""
 
-#: source/blender/makesrna/intern/rna_scene.c:1663
+#: source/blender/makesrna/intern/rna_scene.c:1670
 msgid "Style module '%s' could not be removed"
 msgstr ""
 
-#: source/blender/makesrna/intern/rna_scene.c:1665
+#: source/blender/makesrna/intern/rna_scene.c:1672
 msgid "Style module could not be removed"
 msgstr ""
 
@@ -100050,15 +100197,15 @@ msgstr ""
 msgid "Unknown py-exception, could not convert"
 msgstr "알 수없는 py-exception, 변환 할 수 없음"
 
-#: source/blender/render/intern/source/convertblender.c:5229
+#: source/blender/render/intern/source/convertblender.c:5214
 msgid "Creating Shadowbuffers"
 msgstr "섀도우버퍼를 만들기"
 
-#: source/blender/render/intern/source/convertblender.c:5714
+#: source/blender/render/intern/source/convertblender.c:5699
 msgid "Calculating previous frame vectors"
 msgstr "이전 프레임 벡터를 계산"
 
-#: source/blender/render/intern/source/convertblender.c:5734
+#: source/blender/render/intern/source/convertblender.c:5719
 msgid "Calculating next frame vectors"
 msgstr "다음 프레임 벡터를 계산"
 
@@ -100355,19 +100502,19 @@ msgstr "아무것도 표시 안됨"
 msgid "Cannot use current file as library"
 msgstr "현재 파일 라이브러리로 사용할 수 없음"
 
-#: source/blender/windowmanager/intern/wm_operators.c:3868
+#: source/blender/windowmanager/intern/wm_operators.c:3871
 msgid "Property cannot be both boolean and float"
 msgstr ""
 
-#: source/blender/windowmanager/intern/wm_operators.c:3980
+#: source/blender/windowmanager/intern/wm_operators.c:3983
 msgid "Pointer from path image_id is not an ID"
 msgstr ""
 
-#: source/blender/windowmanager/intern/wm_operators.c:4020
+#: source/blender/windowmanager/intern/wm_operators.c:4023
 msgid "Property must be an integer or a float"
 msgstr ""
 
-#: source/blender/windowmanager/intern/wm_operators.c:4028
+#: source/blender/windowmanager/intern/wm_operators.c:4031
 msgid "Property must be a none, distance, a factor, or an angle"
 msgstr ""
 
@@ -100391,19 +100538,19 @@ msgstr ""
 msgid "Scene '%s' is linked, group instance disabled"
 msgstr "장면 '%s' 이 연결됨, 그룹 인스턴스 비활성화"
 
-#: source/blender/windowmanager/intern/wm_operators.c:3891
+#: source/blender/windowmanager/intern/wm_operators.c:3894
 msgid "Could not resolve path '%s'"
 msgstr "경로 '%s' 확인 할 수 없음"
 
-#: source/blender/windowmanager/intern/wm_operators.c:3904
+#: source/blender/windowmanager/intern/wm_operators.c:3907
 msgid "Property from path '%s' is not a float"
 msgstr ""
 
-#: source/blender/windowmanager/intern/wm_operators.c:3912
+#: source/blender/windowmanager/intern/wm_operators.c:3915
 msgid "Property from path '%s' has length %d instead of %d"
 msgstr ""
 
-#: source/blender/windowmanager/intern/wm_operators.c:4317
+#: source/blender/windowmanager/intern/wm_operators.c:4320
 msgid "%d x %s: %.2f ms,  average: %.4f"
 msgstr "%d x %s: %.2f ms,  평균: %.4f"
 
