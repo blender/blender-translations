@@ -1262,7 +1262,7 @@ msgstr "力"
 
 #. :src: bpy.types.ActionActuator.use_force
 msgid "Apply Action as a global or local force depending on the local option (dynamic objects only)"
-msgstr "アクションをグローバル/ローカルの力として適用(動的オブジェクトのみ)"
+msgstr "アクションをグローバル/ローカルの力として適用(ダイナミックオブジェクトのみ)"
 
 #. :src: bpy.types.ActionActuator.use_local
 #. :src: bpy.types.ConstraintActuator.use_local
@@ -18073,11 +18073,11 @@ msgstr "Bullet ソフトボディシミュレーションの設定"
 
 #. :src: bpy.types.GameObjectSettings.use_obstacle_create
 msgid "Create obstacle"
-msgstr "障害物作成"
+msgstr "障害物の作成"
 
 #. :src: bpy.types.GameObjectSettings.use_obstacle_create
 msgid "Create representation for obstacle simulation"
-msgstr "障害シミュレーションのために表現を作成します"
+msgstr "障害シミュレーション用の障害物を作成します"
 
 #. :src: bpy.types.GameObjectSettings.obstacle_radius
 msgid "Obstacle Radius"
@@ -18085,7 +18085,7 @@ msgstr "障害物の半径"
 
 #. :src: bpy.types.GameObjectSettings.obstacle_radius
 msgid "Radius of object representation in obstacle simulation"
-msgstr "障害シミュレーションでのオブジェクト表現の半径"
+msgstr "障害シミュレーションでの障害物の半径"
 
 #. :src: bpy.types.GameObjectSettings.states_visible
 msgid "State determining which controllers are displayed"
@@ -21066,7 +21066,7 @@ msgstr "順序を反転します"
 
 #. :src: bpy.types.FreestyleLineStyle.integration_type
 msgid "Integration Type"
-msgstr "統合タイプ"
+msgstr "計算タイプ"
 
 #. :src: bpy.types.FreestyleLineStyle.integration_type
 msgid "Select the way how the sort key is computed for each chain"
@@ -33157,7 +33157,7 @@ msgstr "メッシュを使用"
 
 #. :src: bpy.types.LodLevel.use_mesh
 msgid "Use the mesh from this object at this level of detail"
-msgstr "このレベルオブディテール(LOD)で使用する、このオブジェクトのメッシュ"
+msgstr "このレベルオブディテール(LOD)で、このオブジェクトのメッシュを使用します"
 
 #. :src: bpy.types.LodLevel.use_material
 msgid "Use Material"
@@ -33165,7 +33165,7 @@ msgstr "マテリアルを使用"
 
 #. :src: bpy.types.LodLevel.use_material
 msgid "Use the material from this object at this level of detail"
-msgstr "このレベルオブディテール(LOD)で使用する、このオブジェクトのマテリアル"
+msgstr "このレベルオブディテール(LOD)で、このオブジェクトのマテリアルを使用します"
 
 #. :src: bpy.types.MaskLayer
 #. :src: bpy.types.VIEW3D_MT_tools_projectpaint_stencil
@@ -35328,11 +35328,11 @@ msgstr "メッシュ統計視覚化"
 
 #. :src: bpy.types.MeshStatVis.type
 msgid "Type of data to visualize/check"
-msgstr ""
+msgstr "視覚化/チェックするデータタイプ"
 
 #. :src: bpy.types.MeshStatVis.type:'OVERHANG'
 msgid "Overhang"
-msgstr "突出"
+msgstr "オーバーハング"
 
 #. :src: bpy.types.MeshStatVis.type:'INTERSECT'
 #. :src: bpy.types.BooleanModifier.operation:'INTERSECT'
@@ -49739,9 +49739,8 @@ msgid "Selection to an ASCII Autodesk FBX"
 msgstr "ASCIIのAutodesk FBXへの選択"
 
 #. :src: bpy.types.EXPORT_SCENE_OT_fbx.version
-#, fuzzy
 msgid "Version"
-msgstr "バージョン:"
+msgstr "バージョン"
 
 #. :src: bpy.types.EXPORT_SCENE_OT_fbx.version
 msgid "Choose which version of the exporter to use"
@@ -49784,7 +49783,7 @@ msgstr "トランスフォームを適用"
 
 #. :src: bpy.types.EXPORT_SCENE_OT_fbx.bake_space_transform
 msgid "Bake space transform into object data, avoids getting unwanted rotations to objects when target space is not aligned with Blender's space (WARNING! experimental option, might give odd/wrong results)"
-msgstr "空間トランスフォームをオブジェクトデータにベイクし、ターゲットの空間が Blender の空間と整列しない時の、オブジェクトへの望まれない回転を回避します（注意！　実験的オプションであり、異常な結果になる恐れがあります）"
+msgstr "空間の変換をオブジェクトデータにベイクし、ターゲットの空間が Blender の空間と整列しない時の、オブジェクトへの望まれない回転を回避します（注意！　実験的オプションであり、異常な結果になる恐れがあります）"
 
 #. :src: bpy.types.EXPORT_SCENE_OT_fbx.object_types
 msgid "Object Types"
@@ -49870,7 +49869,7 @@ msgstr "デフォームボーンのみ"
 
 #. :src: bpy.types.EXPORT_SCENE_OT_fbx.use_armature_deform_only
 msgid "Only write deforming bones (and non-deforming ones when they have deforming children)"
-msgstr ""
+msgstr "デフォームするボーンのみ（と、デフォームする子を持つ非デフォームボーンを）書き出します"
 
 #. :src: bpy.types.EXPORT_SCENE_OT_fbx.bake_anim
 msgid "Baked Animation"
@@ -52107,73 +52106,71 @@ msgstr "アルファメッシュのジオメトリを移動します"
 #. :src: bpy.types.IMPORT_SCENE_OT_hgt
 msgctxt "Operator"
 msgid "Import DEM hgt"
-msgstr ""
+msgstr "DEM hgtをインポート"
 
 #. :src: bpy.types.IMPORT_SCENE_OT_hgt
 msgid "Import digital elevation data from .hgt file(s), as a piece of displaced sphere mesh and/or image"
-msgstr ""
+msgstr ".hgtファイルからデジタル標高データを、ディスプレイス済球メッシュまたは画像としてインポートします"
 
 #. :src: bpy.types.IMPORT_SCENE_OT_hgt.directory
 msgid "HGT Dir"
-msgstr ""
+msgstr "HGTフォルダ"
 
 #. :src: bpy.types.IMPORT_SCENE_OT_hgt.directory
 msgid "Path of the directory containing .hgt files"
-msgstr ""
+msgstr ".hgtファイルを含むディレクトリのパス"
 
 #. :src: bpy.types.IMPORT_SCENE_OT_hgt.hgt_type
 msgid "HGT Type"
-msgstr ""
+msgstr "HGTタイプ"
 
 #. :src: bpy.types.IMPORT_SCENE_OT_hgt.hgt_type
 msgid "Type (definition) of .hgt DEM data"
-msgstr ""
+msgstr ".hgt DEMデータのタイプ（定義）"
 
 #. :src: bpy.types.IMPORT_SCENE_OT_hgt.hgt_type:'AUTO'
-#, fuzzy
 msgid "Auto Detect"
 msgstr "自動検知"
 
 #. :src: bpy.types.IMPORT_SCENE_OT_hgt.hgt_type:'AUTO'
 msgid "Only detects DEM3 and DEM1 currently"
-msgstr ""
+msgstr "現在DEM3とDEM1のみ検知します"
 
 #. :src: bpy.types.IMPORT_SCENE_OT_hgt.hgt_type:'DEM3'
 msgid "DEM3 (resolution of 3 seconds of arc, 1200 values per degree)"
-msgstr ""
+msgstr "DEM3（3秒角の解像度、1/1200度）"
 
 #. :src: bpy.types.IMPORT_SCENE_OT_hgt.hgt_type:'DEM1'
 msgid "DEM1 (resolution of 1 second of arc, 3600 values per degree)"
-msgstr ""
+msgstr "DEM1（1秒角の解像度、1/3600度）"
 
 #. :src: bpy.types.IMPORT_SCENE_OT_hgt.hgt_type:'CUSTOM'
 msgid "Use custom resolution"
-msgstr ""
+msgstr "カスタムの解像度を使用します"
 
 #. :src: bpy.types.IMPORT_SCENE_OT_hgt.hgt_resolution
-#, fuzzy
 msgid "HGT Resolution"
-msgstr "解像度"
+msgstr "HGTの解像度"
 
 #. :src: bpy.types.IMPORT_SCENE_OT_hgt.hgt_resolution
 msgid "Resolution of hgt data, in values per degree"
-msgstr ""
+msgstr "HGTデータの解像度。度毎の値"
 
 #. :src: bpy.types.IMPORT_SCENE_OT_hgt.import_types
 msgid "Import Types"
-msgstr ""
+msgstr "インポートタイプ"
 
 #. :src: bpy.types.IMPORT_SCENE_OT_hgt.import_types
 msgid "How to import DEM data"
-msgstr ""
+msgstr "DEMデータをインポートする方法"
 
 #. :src: bpy.types.IMPORT_SCENE_OT_hgt.import_types:'MESH'
 msgid "Import as a piece of displaced sphere mesh"
-msgstr ""
+msgstr "ディスプレイスされた球メッシュの一部としてインポート"
 
 #. :src: bpy.types.IMPORT_SCENE_OT_hgt.import_types:'IMAGE'
 msgid "Import as an image"
-msgstr ""
+msgstr "画像としてインポート"
 
 #. :src: bpy.types.IMPORT_SCENE_OT_hgt.import_types:'MODIFIER'
 #. :src: bpy.types.OBJECT_OT_explode_refresh.modifier
@@ -52203,63 +52200,63 @@ msgstr "モディファイアー"
 
 #. :src: bpy.types.IMPORT_SCENE_OT_hgt.import_types:'MODIFIER'
 msgid "Import as an image and use it in a Displace modifier"
-msgstr ""
+msgstr "画像としてインポートし、ディスプレイスモディファイアー内で使用します"
 
 #. :src: bpy.types.IMPORT_SCENE_OT_hgt.p_north_lat
 msgid "North Latitude"
-msgstr ""
+msgstr "北の緯度"
 
 #. :src: bpy.types.IMPORT_SCENE_OT_hgt.p_north_lat
 msgid "Northern latitude of the imported area"
-msgstr ""
+msgstr "インポート領域の北の緯度"
 
 #. :src: bpy.types.IMPORT_SCENE_OT_hgt.p_south_lat
 msgid "South Latitude"
-msgstr ""
+msgstr "南の緯度"
 
 #. :src: bpy.types.IMPORT_SCENE_OT_hgt.p_south_lat
 msgid "Southern latitude of the imported area"
-msgstr ""
+msgstr "インポート領域の南の緯度"
 
 #. :src: bpy.types.IMPORT_SCENE_OT_hgt.p_west_lon
 msgid "West Longitude"
-msgstr ""
+msgstr "西の経度"
 
 #. :src: bpy.types.IMPORT_SCENE_OT_hgt.p_west_lon
 msgid "Western longitude of the imported area"
-msgstr ""
+msgstr "インポート領域の西の経度"
 
 #. :src: bpy.types.IMPORT_SCENE_OT_hgt.p_east_lon
 msgid "East Longitude"
-msgstr ""
+msgstr "東の経度"
 
 #. :src: bpy.types.IMPORT_SCENE_OT_hgt.p_east_lon
 msgid "Eastern longitude of the imported area"
-msgstr ""
+msgstr "インポート領域の東の経度"
 
 #. :src: bpy.types.IMPORT_SCENE_OT_hgt.definition_mesh
 msgid "Mesh Definition"
-msgstr ""
+msgstr "メッシュの解像度"
 
 #. :src: bpy.types.IMPORT_SCENE_OT_hgt.definition_mesh
 msgid "Number of vertices per degree (e.g. DEM3 is 1200)"
-msgstr ""
+msgstr "度毎の頂点数（例：DEM3では1200）"
 
 #. :src: bpy.types.IMPORT_SCENE_OT_hgt.definition_img
 msgid "Image Definition"
-msgstr ""
+msgstr "画像の解像度"
 
 #. :src: bpy.types.IMPORT_SCENE_OT_hgt.definition_img
 msgid "Number of pixels per degree (e.g. DEM3 is 1200)"
-msgstr ""
+msgstr "度毎のピクセル数（例：DEM3では1200）"
 
 #. :src: bpy.types.IMPORT_SCENE_OT_hgt.use_current_mesh
 msgid "Use Current Mesh"
-msgstr ""
+msgstr "現在のメッシュを使用"
 
 #. :src: bpy.types.IMPORT_SCENE_OT_hgt.use_current_mesh
 msgid "Replace active mesh object instead of creating a new one"
-msgstr ""
+msgstr "新規メッシュオブジェクトを作成せず、アクティブメッシュオブジェクトを置き換えます"
 
 #. :src: bpy.types.IMPORT_SCENE_OT_obj
 msgctxt "Operator"
@@ -67470,7 +67467,7 @@ msgstr "Blenderを終了"
 #. :src: bpy.types.WM_OT_radial_control
 msgctxt "Operator"
 msgid "Radial Control"
-msgstr "回転制御"
+msgstr "ラジアルコントロール"
 
 #. :src: bpy.types.WM_OT_radial_control
 msgid "Set some size property (like e.g. brush size) with mouse wheel"
@@ -67482,7 +67479,7 @@ msgstr "プライマリデータパス"
 
 #. :src: bpy.types.WM_OT_radial_control.data_path_primary
 msgid "Primary path of property to be set by the radial control"
-msgstr "回転制御で設定するプロパティのプライマリパス"
+msgstr "ラジアルコントロールで設定するプロパティのプライマリパス"
 
 #. :src: bpy.types.WM_OT_radial_control.data_path_secondary
 msgid "Secondary Data Path"
@@ -67490,7 +67487,7 @@ msgstr "セカンダリデータパス"
 
 #. :src: bpy.types.WM_OT_radial_control.data_path_secondary
 msgid "Secondary path of property to be set by the radial control"
-msgstr "回転制御で設定されるプロパティのセカンダリパス"
+msgstr "ラジアルコントロールで設定されるプロパティのセカンダリパス"
 
 #. :src: bpy.types.WM_OT_radial_control.use_secondary
 msgid "Use Secondary"
@@ -68087,15 +68084,15 @@ msgstr "相対細部サイズ"
 
 #. :src: bpy.types.Sculpt.detail_type_method:'RELATIVE'
 msgid "Mesh detail is relative to the brush size and detail size"
-msgstr "メッシュの細部サイズはブラシサイズと細部サイズに相対します"
+msgstr "メッシュの細部が、ブラシサイズと細部サイズに相対的なサイズになります"
 
 #. :src: bpy.types.Sculpt.detail_type_method:'CONSTANT'
 msgid "Constant Detail"
-msgstr "定値細部サイズ"
+msgstr "固定細部サイズ"
 
 #. :src: bpy.types.Sculpt.detail_type_method:'CONSTANT'
 msgid "Mesh detail is constant in object space according to detail size"
-msgstr "メッシュの細部サイズは細部サイズに従ったオブジェクト空間の定値になります"
+msgstr "メッシュの細部が、オブジェクト空間で細部サイズに設定した一定のサイズになります"
 
 #. :src: bpy.types.Sculpt.gravity
 msgid "Amount of gravity after each dab"
@@ -85620,7 +85617,7 @@ msgstr "トランスフォームモーダルマップ"
 
 #. :src: scripts/addons/io_import_hgt.py:372
 msgid "DEM data (.hgt) as Mesh and/or Image"
-msgstr ""
+msgstr "DEMデータ(.hgt)をメッシュや画像として"
 
 #: scripts/addons/cycles/osl.py:33
 msgid "OSL shader compilation succeeded"
@@ -91406,7 +91403,6 @@ msgstr "接続"
 #: scripts/startup/bl_ui/space_view3d.py:2349
 #: scripts/startup/bl_ui/space_view3d.py:665
 #: scripts/startup/bl_ui/space_view3d.py:2242
-#, fuzzy
 msgctxt "Operator"
 msgid "Edge Loops"
 msgstr "ループ辺"
@@ -91581,7 +91577,6 @@ msgstr "非多様体"
 
 #: scripts/startup/bl_ui/space_view3d.py:666
 #: scripts/startup/bl_ui/space_view3d.py:2243
-#, fuzzy
 msgctxt "Operator"
 msgid "Edge Rings"
 msgstr "リング辺"
@@ -95198,7 +95193,7 @@ msgstr "有効なケージオブジェクトがありません"
 #. :src: source/blender/editors/object/object_bake_api.c:746
 #. :src: source/blender/editors/object/object_bake_api.c:780
 msgid "Current render engine does not support baking"
-msgstr ""
+msgstr "選択中のレンダーエンジンはベイキングに対応していません"
 
 #: source/blender/editors/object/object_bake_api.c:868
 msgid "Baking map saved to internal image, save it externally or pack it"
@@ -95207,7 +95202,7 @@ msgstr "内部画像にベイクマップを保存しました。外部ファイ
 #. :src: source/blender/editors/object/object_bake_api.c:298
 #. :src: source/blender/editors/object/object_bake_api.c:379
 msgid "Object \"%s\" is not a mesh"
-msgstr ""
+msgstr "オブジェクト「%s」はメッシュではありません"
 
 #: source/blender/editors/object/object_bake_api.c:309
 msgid "No active UV layer found in the object \"%s\""
@@ -95215,15 +95210,14 @@ msgstr ""
 
 #. :src: source/blender/editors/object/object_bake_api.c:325
 msgid "Uninitialized image \"%s\" from object \"%s\""
-msgstr ""
+msgstr "画像「%s」が初期化されていません（オブジェクト「%s」）"
 
 #: source/blender/editors/object/object_bake_api.c:335
 #: source/blender/editors/object/object_bake_api.c:340
 msgid "No active image found in material \"%s\" (%d) for object \"%s\""
-msgstr ""
+msgstr "マテリアル「%s」(%d番、オブジェクト「%s」内)にアクティブ画像がありません"
 
 #: source/blender/editors/object/object_bake_api.c:345
-#, fuzzy
 msgid "No active image found in material (%d) for object \"%s\""
 msgstr "マテリアル「%d(%s)」中にアクティブ画像がありません"
 
@@ -95233,11 +95227,11 @@ msgstr "画像「%s」は初期化されていません"
 
 #: source/blender/editors/object/object_bake_api.c:843
 msgid "Problem baking object \"%s\""
-msgstr ""
+msgstr "オブジェクト「%s」のベイクに問題が発生しました"
 
 #. :src: source/blender/editors/object/object_bake_api.c:863
 msgid "Problem saving the bake map internally for object \"%s\""
-msgstr ""
+msgstr "オブジェクト「%s」用のベイクマップの内部保存に問題が発生しました"
 
 #: source/blender/editors/object/object_bake_api.c:914
 msgid "Problem saving baked map in \"%s\""
@@ -96003,9 +95997,8 @@ msgid "Unable to remove material slot in edit mode"
 msgstr "編集モードではマテリアルスロットは削除できません"
 
 #: source/blender/editors/render/render_shading.c:600
-#, fuzzy
 msgid "No active lineset and associated line style to manipulate the modifier"
-msgstr "モディファイアーを追加するアクティブラインセットと対応するラインスタイルがありません"
+msgstr "モディファイアーを操作するアクティブラインセットと、対応するラインスタイルがありません"
 
 #: source/blender/editors/render/render_shading.c:604
 msgid "The active lineset does not have a line style (indicating data corruption)"
