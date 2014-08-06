@@ -18,9 +18,9 @@
 # yamyam
 msgid ""
 msgstr ""
-"Project-Id-Version: Blender 2.71 (sub 3) (b'ffea67c')\n"
+"Project-Id-Version: Blender 2.71 (sub 3) (b'1923a5c')\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-07-23 21:04:54\n"
+"POT-Creation-Date: 2014-08-06 21:01:11\n"
 "PO-Revision-Date: 2014-01-09 12:04+0900\n"
 "Last-Translator: \n"
 "Language-Team: Japanese Translation Team (https://sites.google.com/site/blugjp/blender-translators)\n"
@@ -108,6 +108,7 @@ msgstr "Fカーブのグループ"
 #. :src: bpy.types.OBJECT_OT_game_property_new.name
 #. :src: bpy.types.OBJECT_OT_group_instance_add.name
 #. :src: bpy.types.OBJECT_OT_vertex_group_sort.sort_type:'NAME'
+#. :src: bpy.types.PAINT_OT_add_texture_paint_slot.name
 #. :src: bpy.types.RENDER_OT_cycles_integrator_preset_add.name
 #. :src: bpy.types.RENDER_OT_cycles_sampling_preset_add.name
 #. :src: bpy.types.RENDER_OT_preset_add.name
@@ -142,7 +143,7 @@ msgstr "Fカーブのグループ"
 #. :src: bpy.types.TransformOrientation.name
 #. :src: bpy.types.VertexGroup.name
 #: scripts/startup/bl_ui/properties_data_camera.py:192
-#: scripts/startup/bl_ui/properties_object.py:216
+#: scripts/startup/bl_ui/properties_object.py:221
 #: source/blender/editors/space_node/drawnode.c:767
 msgid "Name"
 msgstr "名前"
@@ -873,7 +874,7 @@ msgstr "ランダム"
 #: scripts/addons/cycles/ui.py:338
 #: scripts/startup/bl_ui/properties_render.py:366
 #: scripts/startup/bl_ui/properties_render_layer.py:84
-#: source/blender/editors/screen/screen_ops.c:3693
+#: source/blender/editors/screen/screen_ops.c:3703
 #: source/blender/editors/space_logic/logic_window.c:500
 msgid "Scene"
 msgstr "シーン"
@@ -1256,7 +1257,7 @@ msgstr "このプロパティにアクションの現在フレーム番号を割
 #: scripts/startup/bl_ui/space_view3d.py:139
 #: scripts/startup/bl_ui/space_view3d.py:141
 #: scripts/startup/bl_ui/space_view3d.py:143
-#: scripts/startup/bl_ui/space_view3d_toolbar.py:1474
+#: scripts/startup/bl_ui/space_view3d_toolbar.py:1511
 #: source/blender/editors/space_file/file_panels.c:161
 msgid "Add"
 msgstr "追加"
@@ -1629,6 +1630,7 @@ msgstr "このオブジェクトを見る"
 #. :src: bpy.types.CompositorNodeEllipseMask.height
 #. :src: bpy.types.IMAGE_OT_new.height
 #. :src: bpy.types.OBJECT_OT_bake.height
+#. :src: bpy.types.PAINT_OT_add_texture_paint_slot.height
 #. :src: bpy.types.Region.height
 #. :src: bpy.types.WorldMistSettings.height
 #: scripts/startup/bl_ui/properties_data_camera.py:150
@@ -1677,9 +1679,9 @@ msgstr "高さ"
 #: source/blender/editors/animation/fmodifier_ui.c:432
 #: source/blender/editors/space_node/drawnode.c:717
 #: source/blender/editors/space_node/drawnode.c:1368
-#: source/blender/editors/space_node/drawnode.c:2952
 #: source/blender/editors/space_node/drawnode.c:2961
-#: source/blender/editors/space_node/drawnode.c:2975
+#: source/blender/editors/space_node/drawnode.c:2970
+#: source/blender/editors/space_node/drawnode.c:2984
 msgid "Min"
 msgstr "最小"
 
@@ -1728,9 +1730,9 @@ msgstr "最小"
 #: source/blender/editors/animation/fmodifier_ui.c:433
 #: source/blender/editors/space_node/drawnode.c:723
 #: source/blender/editors/space_node/drawnode.c:1369
-#: source/blender/editors/space_node/drawnode.c:2953
 #: source/blender/editors/space_node/drawnode.c:2962
-#: source/blender/editors/space_node/drawnode.c:2976
+#: source/blender/editors/space_node/drawnode.c:2971
+#: source/blender/editors/space_node/drawnode.c:2985
 msgid "Max"
 msgstr "最大"
 
@@ -1777,8 +1779,8 @@ msgstr "ターゲットの背後にカメラを駆動させるコンストレイ
 #. :src: bpy.types.JoystickSensor.event_type:'AXIS'
 #. :src: bpy.types.RadarSensor.axis
 #. :src: bpy.types.RaySensor.axis
-#: scripts/startup/bl_ui/properties_object.py:217
-#: scripts/startup/bl_ui/properties_object.py:307
+#: scripts/startup/bl_ui/properties_object.py:222
+#: scripts/startup/bl_ui/properties_object.py:312
 #: scripts/startup/bl_ui/space_view3d.py:3075
 #: source/blender/nodes/texture/nodes/node_texture_rotate.c:40
 msgid "Axis"
@@ -2152,7 +2154,7 @@ msgstr "レイの最大長"
 #: scripts/startup/bl_ui/properties_physics_field.py:169
 #: scripts/startup/bl_ui/properties_physics_field.py:173
 #: scripts/startup/bl_ui/properties_texture.py:585
-#: scripts/startup/bl_ui/space_view3d_toolbar.py:1724
+#: scripts/startup/bl_ui/space_view3d_toolbar.py:1744
 #: scripts/startup/bl_ui/space_view3d_toolbar.py:943
 #: source/blender/nodes/shader/nodes/node_shader_bump.c:39
 #: source/blender/nodes/shader/nodes/node_shader_lamp.c:38
@@ -2408,7 +2410,7 @@ msgstr "質量を設定"
 #. :src: bpy.types.TrackToConstraint.up_axis
 #. :src: bpy.types.Object.up_axis
 #. :src: bpy.types.JoystickSensor.axis_direction:'UPAXIS'
-#: scripts/startup/bl_ui/properties_object.py:308
+#: scripts/startup/bl_ui/properties_object.py:313
 msgid "Up Axis"
 msgstr "上方の軸"
 
@@ -3512,7 +3514,7 @@ msgstr "回転"
 #: scripts/startup/bl_ui/properties_object.py:85
 #: scripts/startup/bl_ui/properties_object.py:63
 #: scripts/startup/bl_ui/properties_object.py:65
-#: scripts/startup/bl_ui/properties_object.py:280
+#: scripts/startup/bl_ui/properties_object.py:285
 #: scripts/startup/bl_ui/properties_physics_rigidbody.py:135
 #: scripts/startup/bl_ui/space_sequencer.py:570
 #: scripts/startup/bl_ui/space_view3d.py:1261
@@ -3643,8 +3645,8 @@ msgstr "キャラクター位置の加算と設定を切り替えます"
 #: scripts/startup/bl_ui/space_userpref.py:609
 #: scripts/startup/bl_ui/space_view3d.py:2805
 #: scripts/startup/bl_ui/space_view3d.py:3116
-#: scripts/startup/bl_ui/space_view3d_toolbar.py:1429
-#: scripts/startup/bl_ui/space_view3d_toolbar.py:1439
+#: scripts/startup/bl_ui/space_view3d_toolbar.py:1466
+#: scripts/startup/bl_ui/space_view3d_toolbar.py:1476
 msgid "X"
 msgstr "X"
 
@@ -3725,8 +3727,8 @@ msgstr "X軸に沿って力に制限を設定します"
 #: scripts/startup/bl_ui/space_userpref.py:610
 #: scripts/startup/bl_ui/space_view3d.py:2806
 #: scripts/startup/bl_ui/space_view3d.py:3117
-#: scripts/startup/bl_ui/space_view3d_toolbar.py:1430
-#: scripts/startup/bl_ui/space_view3d_toolbar.py:1440
+#: scripts/startup/bl_ui/space_view3d_toolbar.py:1467
+#: scripts/startup/bl_ui/space_view3d_toolbar.py:1477
 msgid "Y"
 msgstr "Y"
 
@@ -3774,8 +3776,8 @@ msgstr "Y軸に沿って力に制限を設定します"
 #: scripts/startup/bl_ui/properties_game.py:117
 #: scripts/startup/bl_ui/properties_physics_rigidbody_constraint.py:226
 #: scripts/startup/bl_ui/space_view3d.py:2807
-#: scripts/startup/bl_ui/space_view3d_toolbar.py:1431
-#: scripts/startup/bl_ui/space_view3d_toolbar.py:1441
+#: scripts/startup/bl_ui/space_view3d_toolbar.py:1468
+#: scripts/startup/bl_ui/space_view3d_toolbar.py:1478
 msgid "Z"
 msgstr "Z"
 
@@ -4309,7 +4311,7 @@ msgstr "パスに追従"
 #. :src: bpy.types.ParticleKey.velocity
 #. :src: bpy.types.VoxelData.smoke_data_type:'SMOKEVEL'
 #: scripts/startup/bl_ui/properties_physics_cloth.py:85
-#: scripts/startup/bl_ui/space_view3d_toolbar.py:1733
+#: scripts/startup/bl_ui/space_view3d_toolbar.py:1753
 msgid "Velocity"
 msgstr "速度"
 
@@ -4471,7 +4473,7 @@ msgstr "背後のオブジェクトを遮蔽するようオブジェクトを設
 #. :src: bpy.types.ParticleInstanceModifier.use_children
 #. :src: bpy.types.OBJECT_OT_select_grouped.type:'CHILDREN_RECURSIVE'
 #. :src: bpy.types.PARTICLE_PT_children
-#: scripts/startup/bl_ui/space_view3d_toolbar.py:1741
+#: scripts/startup/bl_ui/space_view3d_toolbar.py:1761
 msgid "Children"
 msgstr "子"
 
@@ -4501,30 +4503,6 @@ msgstr "モジュール名"
 msgid "Addon Preferences"
 msgstr "アドオン設定"
 
-#. :src: bpy.types.UI_AP_i18n_settings.PY_SYS_PATHS
-msgid "Import Paths"
-msgstr "パスのインポート"
-
-#. :src: bpy.types.UI_AP_i18n_settings.PY_SYS_PATHS
-msgid "Additional paths to add to sys.path (';' separated)"
-msgstr "sys.pathに追加するパス(「;」で区切り)"
-
-#. :src: bpy.types.UI_AP_i18n_settings.WARN_MSGID_NOT_CAPITALIZED
-msgid "Warn Msgid Not Capitalized"
-msgstr "msgidの先頭文字の警告"
-
-#. :src: bpy.types.UI_AP_i18n_settings.WARN_MSGID_NOT_CAPITALIZED
-msgid "Warn about messages not starting by a capitalized letter (with a few allowed exceptions!)"
-msgstr "開始文字が大文字ではないメッセージを警告します(少しの例外を可能にするため！)"
-
-#. :src: bpy.types.UI_AP_i18n_settings.I18N_DIR
-msgid "Translation Root"
-msgstr "ルートの移動"
-
-#. :src: bpy.types.UI_AP_i18n_settings.I18N_DIR
-msgid "The bf-translation repository"
-msgstr "bf-translationリポジトリ"
-
 #. :src: bpy.types.UI_AP_i18n_settings.SPELL_CACHE
 msgid "Spell Cache"
 msgstr "スペルキャッシュ"
@@ -4541,13 +4519,21 @@ msgstr "実行可能なGettext 'msgfmt'"
 msgid "The gettext msgfmt 'compiler'. You’ll likely have to edit it if you’re under Windows"
 msgstr "Gettext msgfmtコンパイラ。Windows環境では編集しないといけないかもしれません"
 
-#. :src: bpy.types.UI_AP_i18n_settings.persistent_data_path
-msgid "Persistent Data Path"
-msgstr "Persistenデータパス"
+#. :src: bpy.types.UI_AP_i18n_settings.I18N_DIR
+msgid "Translation Root"
+msgstr "ルートの移動"
 
-#. :src: bpy.types.UI_AP_i18n_settings.persistent_data_path
-msgid "The name of a json file storing those settings (unfortunately, Blender's system does not work here)"
-msgstr "これらの設定が含まれるJSONファイル名(残念ながらBlenderのシステムはここでは動作しません)"
+#. :src: bpy.types.UI_AP_i18n_settings.I18N_DIR
+msgid "The bf-translation repository"
+msgstr "bf-translationリポジトリ"
+
+#. :src: bpy.types.UI_AP_i18n_settings.SOURCE_DIR
+msgid "Source Root"
+msgstr "ソースルート"
+
+#. :src: bpy.types.UI_AP_i18n_settings.SOURCE_DIR
+msgid "The Blender source root path"
+msgstr "Blenderソースルートパス"
 
 #. :src: bpy.types.UI_AP_i18n_settings.FRIBIDI_LIB
 msgid "Fribidi Library"
@@ -4557,13 +4543,29 @@ msgstr "Fribidiライブラリ"
 msgid "The FriBidi C compiled library (.so under Linux, .dll under windows...), you’ll likely have to edit it if you’re under Windows, e.g. using the one included in svn's libraries repository"
 msgstr "FriBidi Cコンパイル済ライブラリ(Linuxでは .so、Windowsでは .dll)。Windows環境の場合、編集しないといけないでしょう。例：SVNのライブラリリポジトリ内でインクルードされたこれを使用するなど"
 
-#. :src: bpy.types.UI_AP_i18n_settings.SOURCE_DIR
-msgid "Source Root"
-msgstr "ソースルート"
+#. :src: bpy.types.UI_AP_i18n_settings.WARN_MSGID_NOT_CAPITALIZED
+msgid "Warn Msgid Not Capitalized"
+msgstr "msgidの先頭文字の警告"
 
-#. :src: bpy.types.UI_AP_i18n_settings.SOURCE_DIR
-msgid "The Blender source root path"
-msgstr "Blenderソースルートパス"
+#. :src: bpy.types.UI_AP_i18n_settings.WARN_MSGID_NOT_CAPITALIZED
+msgid "Warn about messages not starting by a capitalized letter (with a few allowed exceptions!)"
+msgstr "開始文字が大文字ではないメッセージを警告します(少しの例外を可能にするため！)"
+
+#. :src: bpy.types.UI_AP_i18n_settings.persistent_data_path
+msgid "Persistent Data Path"
+msgstr "Persistenデータパス"
+
+#. :src: bpy.types.UI_AP_i18n_settings.persistent_data_path
+msgid "The name of a json file storing those settings (unfortunately, Blender's system does not work here)"
+msgstr "これらの設定が含まれるJSONファイル名(残念ながらBlenderのシステムはここでは動作しません)"
+
+#. :src: bpy.types.UI_AP_i18n_settings.PY_SYS_PATHS
+msgid "Import Paths"
+msgstr "パスのインポート"
+
+#. :src: bpy.types.UI_AP_i18n_settings.PY_SYS_PATHS
+msgid "Additional paths to add to sys.path (';' separated)"
+msgstr "sys.pathに追加するパス(「;」で区切り)"
 
 #. :src: bpy.types.AnimData
 #. :src: bpy.types.Armature.animation_data
@@ -4724,7 +4726,7 @@ msgstr "ストリップのウェイト結果は累積された結果に追加さ
 #. :src: bpy.types.SEQUENCER_OT_effect_strip_add.type:'SUBTRACT'
 #. :src: bpy.types.Sequence.blend_type:'SUBTRACT'
 #. :src: bpy.types.TextureSlot.blend_type:'SUBTRACT'
-#: scripts/startup/bl_ui/space_view3d_toolbar.py:1475
+#: scripts/startup/bl_ui/space_view3d_toolbar.py:1512
 msgid "Subtract"
 msgstr "減算"
 
@@ -5385,6 +5387,7 @@ msgstr "このエリアのウィンドウ相対水平位置"
 #. :src: bpy.types.IMAGE_OT_new.width
 #. :src: bpy.types.MESH_OT_bevel.offset_type:'WIDTH'
 #. :src: bpy.types.OBJECT_OT_bake.width
+#. :src: bpy.types.PAINT_OT_add_texture_paint_slot.width
 #. :src: bpy.types.Region.width
 #: scripts/addons/cycles/ui.py:268
 #: scripts/startup/bl_ui/properties_data_camera.py:147
@@ -5448,6 +5451,7 @@ msgstr "背景に使用されるデータソース"
 #. :src: bpy.types.SpaceImageEditor.image
 #: scripts/startup/bl_ui/properties_paint_common.py:161
 #: scripts/startup/bl_ui/space_image.py:497
+#: scripts/startup/bl_ui/space_view3d_toolbar.py:1122
 #: source/blender/editors/space_image/image_buttons.c:88
 #: source/blender/makesrna/intern/rna_scene.c:260
 #: source/blender/nodes/composite/nodes/node_composite_alphaOver.c:36
@@ -5542,6 +5546,8 @@ msgstr "背景に使用されるデータソース"
 #: source/blender/nodes/composite/nodes/node_composite_splitViewer.c:39
 #: source/blender/nodes/composite/nodes/node_composite_stabilize2d.c:42
 #: source/blender/nodes/composite/nodes/node_composite_stabilize2d.c:47
+#: source/blender/nodes/composite/nodes/node_composite_sunbeams.c:34
+#: source/blender/nodes/composite/nodes/node_composite_sunbeams.c:38
 #: source/blender/nodes/composite/nodes/node_composite_switch.c:41
 #: source/blender/nodes/composite/nodes/node_composite_tonemap.c:35
 #: source/blender/nodes/composite/nodes/node_composite_tonemap.c:39
@@ -5901,7 +5907,7 @@ msgstr "ビューポートでこの画像をオブジェクトの前に表示し
 #: scripts/startup/bl_ui/properties_texture.py:327
 #: scripts/startup/bl_ui/properties_texture.py:381
 #: scripts/startup/bl_ui/properties_texture.py:399
-#: source/blender/editors/space_node/drawnode.c:2609
+#: source/blender/editors/space_node/drawnode.c:2618
 msgid "Depth"
 msgstr "深度"
 
@@ -6822,7 +6828,7 @@ msgstr "アクションデータブロック"
 #. :src: bpy.types.ParticleSystem.particles
 #. :src: bpy.types.SpaceProperties.context:'PARTICLES'
 #. :src: bpy.types.SpaceTimeline.cache_particles
-#: scripts/startup/bl_ui/space_view3d_toolbar.py:1744
+#: scripts/startup/bl_ui/space_view3d_toolbar.py:1764
 msgid "Particles"
 msgstr "パーティクル"
 
@@ -7023,7 +7029,7 @@ msgstr "どれだけ速度のZ要素を一定に保つか"
 #. :src: bpy.types.SmokeDomainSettings.burning_rate
 #. :src: bpy.types.SoftBodySettings.speed
 #: scripts/startup/bl_ui/properties_game.py:534
-#: scripts/startup/bl_ui/properties_object.py:277
+#: scripts/startup/bl_ui/properties_object.py:282
 #: scripts/startup/bl_ui/properties_physics_fluid.py:95
 #: scripts/startup/bl_ui/properties_scene.py:221
 #: scripts/startup/bl_ui/properties_scene.py:285
@@ -7482,7 +7488,6 @@ msgstr "このボーンの子となるボーン"
 #. :src: bpy.types.Object.layers
 #. :src: bpy.types.Scene.layers
 #. :src: bpy.types.ObjectBase.layers
-#. :src: bpy.types.VIEW3D_PT_slots_projectpaint
 msgid "Layers"
 msgstr "レイヤー"
 
@@ -7554,7 +7559,7 @@ msgstr "ボーンの形状の変形を有効にします"
 
 #. :src: bpy.types.Bone.use_inherit_scale
 #. :src: bpy.types.EditBone.use_inherit_scale
-#: scripts/startup/bl_ui/properties_object.py:287
+#: scripts/startup/bl_ui/properties_object.py:292
 msgid "Inherit Scale"
 msgstr "スケールを継承"
 
@@ -8936,6 +8941,7 @@ msgstr "色相"
 #. :src: bpy.types.NODE_OT_select_grouped.type:'COLOR'
 #. :src: bpy.types.OBJECT_OT_bake.type:'COLOR'
 #. :src: bpy.types.OBJECT_OT_select_grouped.type:'COLOR'
+#. :src: bpy.types.PAINT_OT_add_texture_paint_slot.color
 #. :src: bpy.types.SCENE_OT_freestyle_fill_range_by_selection.type:'COLOR'
 #. :src: bpy.types.SEQUENCER_OT_change_effect_type.type:'COLOR'
 #. :src: bpy.types.SEQUENCER_OT_effect_strip_add.type:'COLOR'
@@ -10329,10 +10335,10 @@ msgstr "Z位置を反転します"
 #. :src: bpy.types.TextureSlot.offset
 #: scripts/startup/bl_ui/properties_constraint.py:233
 #: scripts/startup/bl_ui/properties_data_modifier.py:941
-#: scripts/startup/bl_ui/properties_object.py:314
+#: scripts/startup/bl_ui/properties_object.py:319
 #: scripts/startup/bl_ui/properties_physics_fluid.py:102
 #: source/blender/editors/space_node/drawnode.c:840
-#: source/blender/editors/space_node/drawnode.c:2543
+#: source/blender/editors/space_node/drawnode.c:2552
 #: source/blender/nodes/composite/nodes/node_composite_texture.c:36
 #: source/blender/nodes/shader/nodes/node_shader_bsdf_hair.c:33
 #: source/blender/nodes/shader/nodes/node_shader_tex_musgrave.c:37
@@ -10573,6 +10579,15 @@ msgstr "このオブジェクトの表面上に投影することで、カメラ
 #. :src: bpy.types.FollowTrackConstraint.frame_method
 msgid "How the footage fits in the camera frame"
 msgstr "映像をカメラフレームにフィットさせる方法"
+
+#. :src: bpy.types.FollowTrackConstraint.use_undistorted_position
+#. :src: bpy.types.CompositorNodeMovieDistortion.distortion_type:'UNDISTORT'
+msgid "Undistort"
+msgstr "歪みを除去"
+
+#. :src: bpy.types.FollowTrackConstraint.use_undistorted_position
+msgid "Parent to undistorted position of 2D track"
+msgstr ""
 
 #. :src: bpy.types.KinematicConstraint
 msgid "Kinematic Constraint"
@@ -11633,7 +11648,7 @@ msgstr "ターゲットから使用するトランスフォームタイプ"
 #: scripts/startup/bl_ui/properties_data_bone.py:138
 #: scripts/startup/bl_ui/properties_data_modifier.py:579
 #: scripts/startup/bl_ui/properties_object.py:117
-#: scripts/startup/bl_ui/properties_object.py:284
+#: scripts/startup/bl_ui/properties_object.py:289
 #: scripts/startup/bl_ui/properties_particle.py:935
 #: scripts/startup/bl_ui/properties_physics_smoke.py:61
 #: scripts/startup/bl_ui/properties_scene.py:83
@@ -12250,6 +12265,7 @@ msgstr "アニメーションエディター内に表示されるチャンネル
 #. :src: bpy.types.EnvironmentMap.source
 #. :src: bpy.types.Image.source
 #. :src: bpy.types.MovieClip.source
+#. :src: bpy.types.CompositorNodeSunBeams.source
 #. :src: bpy.types.SmokeFlowSettings.smoke_flow_source
 #. :src: bpy.types.SmokeFlowSettings.velocity_factor
 #. :src: bpy.types.VoxelData.smoke_data_type
@@ -12679,7 +12695,6 @@ msgstr "フォント"
 #. :src: bpy.types.GROUP_OT_objects_remove.group
 #. :src: bpy.types.GROUP_OT_objects_remove_active.group
 #. :src: bpy.types.IMPORT_SCENE_OT_obj.use_split_groups
-#. :src: bpy.types.OBJECT_OT_dupli_offset_from_cursor.group
 #. :src: bpy.types.OBJECT_OT_group_instance_add.group
 #. :src: bpy.types.OBJECT_OT_group_link.group
 #. :src: bpy.types.OBJECT_OT_make_links_data.type:'GROUPS'
@@ -12695,7 +12710,7 @@ msgstr "フォント"
 #. :src: bpy.types.NODE_PT_category_TEX_GROUP
 #. :src: bpy.types.RigidBodyWorld.group
 #: scripts/startup/bl_ui/properties_freestyle.py:211
-#: scripts/startup/bl_ui/properties_object.py:290
+#: scripts/startup/bl_ui/properties_object.py:295
 #: source/blender/blenkernel/intern/action.c:300
 #: source/blender/blenkernel/intern/action.c:304
 #: source/blender/blenkernel/intern/action.c:960
@@ -13236,9 +13251,9 @@ msgstr "反射のみ"
 #: scripts/startup/bl_ui/properties_world.py:121
 #: scripts/startup/bl_ui/properties_world.py:161
 #: scripts/startup/bl_ui/space_image.py:867
-#: scripts/startup/bl_ui/space_view3d_toolbar.py:1400
-#: scripts/startup/bl_ui/space_view3d_toolbar.py:1281
-#: scripts/startup/bl_ui/space_view3d_toolbar.py:1302
+#: scripts/startup/bl_ui/space_view3d_toolbar.py:1437
+#: scripts/startup/bl_ui/space_view3d_toolbar.py:1318
+#: scripts/startup/bl_ui/space_view3d_toolbar.py:1339
 #: source/blender/nodes/texture/nodes/node_texture_hueSatVal.c:40
 #: source/blender/nodes/texture/nodes/node_texture_mixRgb.c:37
 msgid "Factor"
@@ -13655,6 +13670,8 @@ msgstr "出力画像の解像度"
 #. :src: bpy.types.ParticleSettingsTextureSlot.uv_layer
 #: scripts/startup/bl_ui/properties_physics_dynamicpaint.py:275
 #: scripts/startup/bl_ui/properties_physics_dynamicpaint.py:335
+#: scripts/startup/bl_ui/space_view3d_toolbar.py:1119
+#: scripts/startup/bl_ui/space_view3d_toolbar.py:1087
 msgid "UV Map"
 msgstr "UVマップ"
 
@@ -15979,7 +15996,7 @@ msgstr "周期オフセットのタイプ"
 #. :src: bpy.types.ShaderNodeTangent.direction_type:'RADIAL'
 #. :src: bpy.types.ShaderNodeTexGradient.gradient_type:'RADIAL'
 #. :src: bpy.types.PAINT_OT_weight_gradient.type:'RADIAL'
-#: scripts/startup/bl_ui/space_view3d_toolbar.py:1433
+#: scripts/startup/bl_ui/space_view3d_toolbar.py:1470
 msgid "Radial"
 msgstr "放射"
 
@@ -16007,8 +16024,8 @@ msgstr "オフセットにどの軸を使用するか"
 #. :src: bpy.types.Sensor.frequency
 #: source/blender/editors/space_node/drawnode.c:841
 #: source/blender/editors/space_node/drawnode.c:845
-#: source/blender/editors/space_node/drawnode.c:2544
-#: source/blender/editors/space_node/drawnode.c:2548
+#: source/blender/editors/space_node/drawnode.c:2553
+#: source/blender/editors/space_node/drawnode.c:2557
 msgid "Frequency"
 msgstr "頻度"
 
@@ -17422,7 +17439,7 @@ msgstr "定量的不可視(QI)値の範囲内の特徴エッジを選択しま�
 #: scripts/startup/bl_ui/properties_data_camera.py:118
 #: scripts/startup/bl_ui/properties_data_curve.py:194
 #: scripts/startup/bl_ui/properties_data_modifier.py:618
-#: scripts/startup/bl_ui/properties_object.py:270
+#: scripts/startup/bl_ui/properties_object.py:275
 #: scripts/startup/bl_ui/properties_particle.py:849
 #: scripts/startup/bl_ui/properties_physics_dynamicpaint.py:103
 #: scripts/startup/bl_ui/properties_physics_fluid.py:93
@@ -17463,7 +17480,7 @@ msgstr "QI範囲の最初のQI値"
 #: scripts/startup/bl_ui/properties_data_camera.py:119
 #: scripts/startup/bl_ui/properties_data_curve.py:197
 #: scripts/startup/bl_ui/properties_data_modifier.py:619
-#: scripts/startup/bl_ui/properties_object.py:271
+#: scripts/startup/bl_ui/properties_object.py:276
 #: scripts/startup/bl_ui/properties_particle.py:853
 #: scripts/startup/bl_ui/properties_physics_dynamicpaint.py:104
 #: scripts/startup/bl_ui/properties_physics_fluid.py:94
@@ -18097,8 +18114,8 @@ msgstr "オブジェクトの質量"
 #: scripts/startup/bl_ui/properties_physics_fluid.py:196
 #: scripts/startup/bl_ui/properties_physics_fluid.py:202
 #: scripts/startup/bl_ui/space_image.py:866
-#: scripts/startup/bl_ui/space_view3d_toolbar.py:1280
-#: scripts/startup/bl_ui/space_view3d_toolbar.py:1301
+#: scripts/startup/bl_ui/space_view3d_toolbar.py:1317
+#: scripts/startup/bl_ui/space_view3d_toolbar.py:1338
 #: source/blender/editors/space_view3d/view3d_buttons.c:1041
 #: source/blender/editors/space_view3d/view3d_buttons.c:1045
 #: source/blender/nodes/shader/nodes/node_shader_subsurface_scattering.c:34
@@ -18713,6 +18730,7 @@ msgstr "青"
 #. :src: bpy.types.IMAGE_OT_invert.invert_a
 #. :src: bpy.types.IMAGE_OT_new.alpha
 #. :src: bpy.types.PAINT_OT_add_texture_paint_slot.type:'ALPHA'
+#. :src: bpy.types.PAINT_OT_add_texture_paint_slot.alpha
 #. :src: bpy.types.SCENE_OT_freestyle_fill_range_by_selection.type:'ALPHA'
 #. :src: bpy.types.RenderSettings.bake_type:'ALPHA'
 #. :src: bpy.types.SpaceImageEditor.draw_channels:'ALPHA'
@@ -18727,9 +18745,9 @@ msgstr "青"
 #: scripts/startup/bl_ui/space_image.py:723
 #: scripts/startup/bl_ui/space_image.py:736
 #: scripts/startup/bl_ui/space_image.py:749
-#: scripts/startup/bl_ui/space_view3d_toolbar.py:1129
-#: scripts/startup/bl_ui/space_view3d_toolbar.py:1144
-#: scripts/startup/bl_ui/space_view3d_toolbar.py:1158
+#: scripts/startup/bl_ui/space_view3d_toolbar.py:1166
+#: scripts/startup/bl_ui/space_view3d_toolbar.py:1181
+#: scripts/startup/bl_ui/space_view3d_toolbar.py:1195
 #: source/blender/editors/interface/interface_regions.c:2154
 #: source/blender/editors/space_image/image_buttons.c:758
 #: source/blender/nodes/composite/nodes/node_composite_composite.c:40
@@ -18952,7 +18970,7 @@ msgstr "ボーンを引き延ばした球体で表示します。変形の影響
 #. :src: bpy.types.Object.draw_type:'WIRE'
 #. :src: bpy.types.MESH_OT_select_non_manifold.use_wire
 #. :src: bpy.types.ThemeView3D.wire
-#: scripts/startup/bl_ui/properties_object.py:221
+#: scripts/startup/bl_ui/properties_object.py:226
 msgid "Wire"
 msgstr "ワイヤーフレーム"
 
@@ -19670,8 +19688,8 @@ msgstr "ペイント中、ブラシ位置をピクセル単位でランダムに
 #. :src: bpy.types.Brush.spacing
 #: scripts/startup/bl_ui/space_image.py:834
 #: scripts/startup/bl_ui/space_image.py:840
-#: scripts/startup/bl_ui/space_view3d_toolbar.py:1247
-#: scripts/startup/bl_ui/space_view3d_toolbar.py:1253
+#: scripts/startup/bl_ui/space_view3d_toolbar.py:1284
+#: scripts/startup/bl_ui/space_view3d_toolbar.py:1290
 msgid "Spacing"
 msgstr "間隔"
 
@@ -19709,7 +19727,7 @@ msgstr "高い値でより滑らかなストロークになります"
 #: scripts/startup/bl_ui/properties_render.py:482
 #: scripts/startup/bl_ui/properties_scene.py:227
 #: scripts/startup/bl_ui/space_image.py:829
-#: scripts/startup/bl_ui/space_view3d_toolbar.py:1242
+#: scripts/startup/bl_ui/space_view3d_toolbar.py:1279
 msgid "Rate"
 msgstr "レート"
 
@@ -19946,7 +19964,7 @@ msgstr ""
 #. :src: bpy.types.SceneGameData.samples:'SAMPLES_0'
 #. :src: bpy.types.UserPreferencesSystem.anisotropic_filter:'FILTER_0'
 #. :src: bpy.types.UserPreferencesSystem.gl_texture_limit:'CLAMP_OFF'
-#: scripts/startup/bl_ui/properties_object.py:275
+#: scripts/startup/bl_ui/properties_object.py:280
 #: source/blender/nodes/composite/nodes/node_composite_switch.c:35
 msgid "Off"
 msgstr "オフ"
@@ -22166,6 +22184,7 @@ msgid "Compositing"
 msgstr "コンポジティング"
 
 #. :src: bpy.types.Image.packed_file
+#. :src: bpy.types.Library.packed_file
 #. :src: bpy.types.Sound.packed_file
 #. :src: bpy.types.VectorFont.packed_file
 #. :src: bpy.types.PackedFile
@@ -22243,6 +22262,7 @@ msgstr "画像が変更され、保存されていません"
 
 #. :src: bpy.types.Image.generated_type
 #. :src: bpy.types.IMAGE_OT_new.generated_type
+#. :src: bpy.types.PAINT_OT_add_texture_paint_slot.generated_type
 msgid "Generated Type"
 msgstr "生成された種類"
 
@@ -22252,32 +22272,38 @@ msgstr "生成した画像タイプ"
 
 #. :src: bpy.types.Image.generated_type:'BLANK'
 #. :src: bpy.types.IMAGE_OT_new.generated_type:'BLANK'
+#. :src: bpy.types.PAINT_OT_add_texture_paint_slot.generated_type:'BLANK'
 msgid "Blank"
 msgstr "ブランク"
 
 #. :src: bpy.types.Image.generated_type:'BLANK'
 #. :src: bpy.types.IMAGE_OT_new.generated_type:'BLANK'
+#. :src: bpy.types.PAINT_OT_add_texture_paint_slot.generated_type:'BLANK'
 msgid "Generate a blank image"
 msgstr "空の画像を生成します"
 
 #. :src: bpy.types.Image.generated_type:'UV_GRID'
 #. :src: bpy.types.IMAGE_OT_new.generated_type:'UV_GRID'
+#. :src: bpy.types.PAINT_OT_add_texture_paint_slot.generated_type:'UV_GRID'
 msgid "UV Grid"
 msgstr "UVグリッド"
 
 #. :src: bpy.types.Image.generated_type:'UV_GRID'
 #. :src: bpy.types.IMAGE_OT_new.generated_type:'UV_GRID'
+#. :src: bpy.types.PAINT_OT_add_texture_paint_slot.generated_type:'UV_GRID'
 msgid "Generated grid to test UV mappings"
 msgstr "UVマッピングをテストする生成グリッド"
 
 #. :src: bpy.types.Image.generated_type:'COLOR_GRID'
 #. :src: bpy.types.IMAGE_OT_new.generated_type:'COLOR_GRID'
+#. :src: bpy.types.PAINT_OT_add_texture_paint_slot.generated_type:'COLOR_GRID'
 #. :src: bpy.types.SmokeDomainSettings.color_grid
 msgid "Color Grid"
 msgstr "カラーグリッド"
 
 #. :src: bpy.types.Image.generated_type:'COLOR_GRID'
 #. :src: bpy.types.IMAGE_OT_new.generated_type:'COLOR_GRID'
+#. :src: bpy.types.PAINT_OT_add_texture_paint_slot.generated_type:'COLOR_GRID'
 msgid "Generated improved UV grid to test UV mappings"
 msgstr "UVマッピングをテストするのに生成された改良UVグリッド"
 
@@ -23689,7 +23715,7 @@ msgstr "オブジェクトをハローパーティクルとしてレンダリン
 #. :src: bpy.types.MATERIAL_PT_transp_game
 #. :src: bpy.types.MATERIAL_PT_volume_transp
 #: scripts/startup/bl_ui/properties_data_empty.py:51
-#: scripts/startup/bl_ui/properties_object.py:236
+#: scripts/startup/bl_ui/properties_object.py:241
 msgid "Transparency"
 msgstr "透過"
 
@@ -26329,7 +26355,7 @@ msgstr "オブジェクトをビューに表示する最高の描画タイプ"
 #. :src: bpy.types.Object.draw_type:'BOUNDS'
 #. :src: bpy.types.MESH_OT_poke.center_mode:'BOUNDS'
 #: scripts/startup/bl_ui/properties_game.py:225
-#: scripts/startup/bl_ui/properties_object.py:227
+#: scripts/startup/bl_ui/properties_object.py:232
 msgid "Bounds"
 msgstr "バウンド"
 
@@ -26441,7 +26467,7 @@ msgstr "オブジェクトのマテリアル透過を表示(インスタンス�
 #. :src: bpy.types.Object.show_x_ray
 #. :src: bpy.types.MouseSensor.use_x_ray
 #: scripts/startup/bl_ui/properties_data_armature.py:95
-#: scripts/startup/bl_ui/properties_object.py:234
+#: scripts/startup/bl_ui/properties_object.py:239
 msgid "X-Ray"
 msgstr "レントゲン"
 
@@ -27206,8 +27232,8 @@ msgstr "経過時間"
 #. :src: bpy.types.TRANSFORM_OT_tilt.value
 #. :src: bpy.types.TRANSFORM_OT_trackball.value
 #. :src: bpy.types.ImagePaint.normal_angle
-#. :src: bpy.types.Print3DSettings.angle_overhang
 #. :src: bpy.types.Print3DSettings.angle_distort
+#. :src: bpy.types.Print3DSettings.angle_overhang
 #. :src: bpy.types.Print3DSettings.angle_sharp
 #. :src: bpy.types.SceneGameData.dome_angle
 #. :src: bpy.types.RadarSensor.angle
@@ -35263,6 +35289,11 @@ msgstr "マーカー"
 msgid "Fluid Presets"
 msgstr "流体のプリセット"
 
+#. :src: bpy.types.GROUP_MT_specials
+#, fuzzy
+msgid "Group Specials"
+msgstr "ボーングループスペシャルメニュー"
+
 #. :src: bpy.types.IMAGE_MT_uvs
 #. :src: bpy.types.EXPORT_MESH_OT_ply.use_uv_coords
 #. :src: bpy.types.MESH_OT_merge.uvs
@@ -35951,7 +35982,7 @@ msgstr "スキンの半径"
 #. :src: bpy.types.ToolSettings.proportional_edit_falloff:'ROOT'
 #: scripts/addons/cycles/ui.py:1307
 #: scripts/startup/bl_ui/properties_material.py:722
-#: scripts/startup/bl_ui/space_view3d_toolbar.py:1730
+#: scripts/startup/bl_ui/space_view3d_toolbar.py:1750
 msgid "Root"
 msgstr "ルート"
 
@@ -38817,7 +38848,6 @@ msgstr "ボーン設定オフセット"
 
 #. :src: bpy.types.UVWarpModifier.uv_layer
 #. :src: bpy.types.OBJECT_OT_bake.uv_layer
-#: scripts/startup/bl_ui/space_view3d_toolbar.py:1092
 msgid "UV Layer"
 msgstr "UVレイヤー"
 
@@ -41935,7 +41965,7 @@ msgstr "ステップ"
 #. :src: bpy.types.CompositorNodeDilateErode.mode:'FEATHER'
 #. :src: bpy.types.CompositorNodeMask.use_feather
 #. :src: bpy.types.MASK_OT_shape_key_rekey.feather
-#: scripts/startup/bl_ui/space_view3d_toolbar.py:1434
+#: scripts/startup/bl_ui/space_view3d_toolbar.py:1471
 msgid "Feather"
 msgstr "フェザー"
 
@@ -42499,10 +42529,6 @@ msgstr "動画の歪み"
 msgid "Distortion to use to filter image"
 msgstr "フィルター画像に使用する歪み"
 
-#. :src: bpy.types.CompositorNodeMovieDistortion.distortion_type:'UNDISTORT'
-msgid "Undistort"
-msgstr "歪みを除去"
-
 #. :src: bpy.types.CompositorNodeOutputFile
 msgid "File Output"
 msgstr "ファイル出力"
@@ -42611,6 +42637,23 @@ msgstr "分割ビューアー"
 #. :src: bpy.types.CompositorNodeStabilize
 msgid "Stabilize 2D"
 msgstr "2Dスタビライゼーション"
+
+#. :src: bpy.types.CompositorNodeSunBeams
+msgid "Sun Beams"
+msgstr ""
+
+#. :src: bpy.types.CompositorNodeSunBeams.source
+msgid "Source point of rays as a factor of the image width & height"
+msgstr ""
+
+#. :src: bpy.types.CompositorNodeSunBeams.ray_length
+#: source/blender/nodes/shader/nodes/node_shader_light_path.c:39
+msgid "Ray Length"
+msgstr "レイの長さ"
+
+#. :src: bpy.types.CompositorNodeSunBeams.ray_length
+msgid "Length of rays as a factor of the image size"
+msgstr ""
 
 #. :src: bpy.types.CompositorNodeSwitch
 #. :src: bpy.types.CompositorNodeSwitch.check
@@ -47945,6 +47988,7 @@ msgstr "円形選択を用いてマーカーを選択します"
 
 #. :src: bpy.types.CLIP_OT_select_grouped
 #. :src: bpy.types.NODE_OT_select_grouped
+#. :src: bpy.types.OBJECT_OT_grouped_select
 #. :src: bpy.types.OBJECT_OT_select_grouped
 #. :src: bpy.types.POSE_OT_select_grouped
 #. :src: bpy.types.SEQUENCER_OT_select_grouped
@@ -50489,7 +50533,7 @@ msgstr "孤立する辺を二頂点のポリゴンとしてエクスポートし
 msgid "Add binormal and tangent vectors, together with normal they form the tangent space (will only work correctly with tris/quads only meshes!)"
 msgstr "従法線とタンジェントベクトルを追加し、法線とともにタンジェント空間を形成します（三角/四角形のみのメッシュでのみ正しく動作します！）"
 
-#. :src: bpy.types.EXPORT_SCENE_OT_fbx.use_custom_properties
+#. :src: bpy.types.EXPORT_SCENE_OT_fbx.use_custom_props
 #. :src: bpy.types.BONE_PT_custom_props
 #. :src: bpy.types.DATA_PT_custom_props_arm
 #. :src: bpy.types.DATA_PT_custom_props_camera
@@ -50508,7 +50552,7 @@ msgstr "従法線とタンジェントベクトルを追加し、法線ととも
 msgid "Custom Properties"
 msgstr "カスタムプロパティ"
 
-#. :src: bpy.types.EXPORT_SCENE_OT_fbx.use_custom_properties
+#. :src: bpy.types.EXPORT_SCENE_OT_fbx.use_custom_props
 msgid "Export custom properties"
 msgstr "カスタムプロパティをエクスポートします"
 
@@ -52249,43 +52293,51 @@ msgid "Create a new image"
 msgstr "新しい画像を作成します"
 
 #. :src: bpy.types.IMAGE_OT_new.name
+#. :src: bpy.types.PAINT_OT_add_texture_paint_slot.name
 msgid "Image datablock name"
 msgstr "画像データブロック名"
 
 #. :src: bpy.types.IMAGE_OT_new.width
+#. :src: bpy.types.PAINT_OT_add_texture_paint_slot.width
 msgid "Image width"
 msgstr "画像の幅"
 
 #. :src: bpy.types.IMAGE_OT_new.height
+#. :src: bpy.types.PAINT_OT_add_texture_paint_slot.height
 msgid "Image height"
 msgstr "画像の高さ"
 
 #. :src: bpy.types.IMAGE_OT_new.color
+#. :src: bpy.types.PAINT_OT_add_texture_paint_slot.color
 msgid "Default fill color"
 msgstr "デフォルトの塗りつぶし色"
 
 #. :src: bpy.types.IMAGE_OT_new.alpha
+#. :src: bpy.types.PAINT_OT_add_texture_paint_slot.alpha
 msgid "Create an image with an alpha channel"
 msgstr "アルファチャンネル付きで画像を作成します"
 
 #. :src: bpy.types.IMAGE_OT_new.generated_type
+#. :src: bpy.types.PAINT_OT_add_texture_paint_slot.generated_type
 msgid "Fill the image with a grid for UV map testing"
 msgstr "UVマップのテストのために画像を塗りつぶしてグリッドを付けます"
 
 #. :src: bpy.types.IMAGE_OT_new.float
+#. :src: bpy.types.PAINT_OT_add_texture_paint_slot.float
 msgid "32 bit Float"
 msgstr "32ビットFloat"
 
 #. :src: bpy.types.IMAGE_OT_new.float
+#. :src: bpy.types.PAINT_OT_add_texture_paint_slot.float
 msgid "Create image with 32 bit floating point bit depth"
 msgstr "32bit floatのビット深度で画像を作成します"
 
 #. :src: bpy.types.IMAGE_OT_new.texstencil
+#. :src: bpy.types.VIEW3D_PT_stencil_projectpaint
 #. :src: bpy.types.TextureSlot.use_stencil
 #. :src: bpy.types.BrushTextureSlot.map_mode:'STENCIL'
 #. :src: bpy.types.BrushTextureSlot.tex_paint_map_mode:'STENCIL'
 #. :src: bpy.types.BrushTextureSlot.mask_map_mode:'STENCIL'
-#: scripts/startup/bl_ui/space_view3d_toolbar.py:1628
 msgid "Stencil"
 msgstr "マスク"
 
@@ -52776,6 +52828,23 @@ msgstr "デカールオフセット"
 msgid "Displace geometry of alpha meshes"
 msgstr "アルファメッシュのジオメトリを移動します"
 
+#. :src: bpy.types.IMPORT_SCENE_OT_fbx.use_custom_props
+#, fuzzy
+msgid "Import user properties"
+msgstr "カスタムプロパティをエクスポートします"
+
+#. :src: bpy.types.IMPORT_SCENE_OT_fbx.use_custom_props
+msgid "Import user properties as custom properties"
+msgstr ""
+
+#. :src: bpy.types.IMPORT_SCENE_OT_fbx.use_custom_props_enum_as_string
+msgid "Import enum properties as string"
+msgstr ""
+
+#. :src: bpy.types.IMPORT_SCENE_OT_fbx.use_custom_props_enum_as_string
+msgid "Store enumeration values as string"
+msgstr ""
+
 #. :src: bpy.types.IMPORT_SCENE_OT_hgt
 msgctxt "Operator"
 msgid "Import DEM hgt"
@@ -53074,7 +53143,7 @@ msgid "Select reports by index"
 msgstr "インデックスでレポートを選択します"
 
 #. :src: bpy.types.INFO_OT_select_pick.report_index
-#: source/blender/editors/interface/interface_regions.c:2604
+#: source/blender/editors/interface/interface_regions.c:2623
 msgid "Report"
 msgstr "リポート"
 
@@ -57038,6 +57107,18 @@ msgstr "ノードの追加とリンク"
 msgid "Add a node to the active tree and link to an existing socket"
 msgstr "アクティブツリーにノードを追加し、現存のソケットにリンクします"
 
+#. :src: bpy.types.NODE_OT_add_and_link_node.use_transform
+#. :src: bpy.types.NODE_OT_add_node.use_transform
+#. :src: bpy.types.NODE_OT_add_search.use_transform
+msgid "Use Transform"
+msgstr "トランスフォーム使用"
+
+#. :src: bpy.types.NODE_OT_add_and_link_node.use_transform
+#. :src: bpy.types.NODE_OT_add_node.use_transform
+#. :src: bpy.types.NODE_OT_add_search.use_transform
+msgid "Start transform operator after inserting the node"
+msgstr "ノード挿入後にトランスフォーム演算を開始します"
+
 #. :src: bpy.types.NODE_OT_add_and_link_node.settings
 #. :src: bpy.types.NODE_OT_add_node.settings
 #. :src: bpy.types.NODE_OT_add_search.settings
@@ -57057,18 +57138,6 @@ msgstr "ノードタイプ"
 #. :src: bpy.types.NODE_OT_add_search.node_item
 msgid "Node type"
 msgstr "ノードタイプ"
-
-#. :src: bpy.types.NODE_OT_add_and_link_node.use_transform
-#. :src: bpy.types.NODE_OT_add_node.use_transform
-#. :src: bpy.types.NODE_OT_add_search.use_transform
-msgid "Use Transform"
-msgstr "トランスフォーム使用"
-
-#. :src: bpy.types.NODE_OT_add_and_link_node.use_transform
-#. :src: bpy.types.NODE_OT_add_node.use_transform
-#. :src: bpy.types.NODE_OT_add_search.use_transform
-msgid "Start transform operator after inserting the node"
-msgstr "ノード挿入後にトランスフォーム演算を開始します"
 
 #. :src: bpy.types.NODE_OT_add_and_link_node.link_socket_index
 msgid "Link Socket Index"
@@ -58112,10 +58181,6 @@ msgstr "カーソルからオフセットを設定"
 msgid "Set offset used for DupliGroup based on cursor position"
 msgstr "カーソル位置を元にグループ複製に使われるオフセットを設定します"
 
-#. :src: bpy.types.OBJECT_OT_dupli_offset_from_cursor.group
-msgid "Group index to set offset for"
-msgstr "オフセットを設定するグループのインデックス"
-
 #. :src: bpy.types.OBJECT_OT_duplicate
 #. :src: bpy.types.OBJECT_OT_duplicate_move
 msgctxt "Operator"
@@ -58303,8 +58368,8 @@ msgid "Property index to remove "
 msgstr "削除するプロパティのインデックス"
 
 #. :src: bpy.types.OBJECT_OT_group_add
-#: scripts/startup/bl_ui/properties_object.py:165
-#: scripts/startup/bl_ui/properties_object.py:167
+#: scripts/startup/bl_ui/properties_object.py:175
+#: scripts/startup/bl_ui/properties_object.py:177
 msgctxt "Operator"
 msgid "Add to Group"
 msgstr "グループに追加"
@@ -58343,6 +58408,21 @@ msgstr "グループを削除"
 #. :src: bpy.types.OBJECT_OT_group_remove
 msgid "Remove the active object from this group"
 msgstr "このグループからアクティブオブジェクトを削除"
+
+#. :src: bpy.types.OBJECT_OT_group_unlink
+#, fuzzy
+msgctxt "Operator"
+msgid "Unlink Group"
+msgstr "グループリンク解除"
+
+#. :src: bpy.types.OBJECT_OT_group_unlink
+msgid "Unlink the group from all objects"
+msgstr ""
+
+#. :src: bpy.types.OBJECT_OT_grouped_select
+#, fuzzy
+msgid "Select all objects in group"
+msgstr "同じグループ内のオブジェクトを選択します"
 
 #. :src: bpy.types.OBJECT_OT_hide_render_clear
 msgctxt "Operator"
@@ -60173,7 +60253,7 @@ msgstr "階層表示"
 
 #. :src: bpy.types.OBJECT_OT_vertex_group_transfer_weight
 #: scripts/startup/bl_ui/space_view3d.py:1571
-#: scripts/startup/bl_ui/space_view3d_toolbar.py:1503
+#: scripts/startup/bl_ui/space_view3d_toolbar.py:1540
 msgctxt "Operator"
 msgid "Transfer Weights"
 msgstr "ウェイト転送"
@@ -68966,15 +69046,6 @@ msgstr ""
 msgid "Stencil color in the viewport"
 msgstr ""
 
-#. :src: bpy.types.ImagePaint.slot_color_default
-#, fuzzy
-msgid "New Layer Color"
-msgstr "新規レイヤー"
-
-#. :src: bpy.types.ImagePaint.slot_color_default
-msgid "Color/Alpha used for new"
-msgstr ""
-
 #. :src: bpy.types.ImagePaint.use_clone_layer
 msgid "Clone Map"
 msgstr "クローンマップ"
@@ -68998,24 +69069,6 @@ msgstr "面の向きとビューの角度がこの角度内の面をペイント
 #. :src: bpy.types.ImagePaint.screen_grab_size
 msgid "Size to capture the image for re-projecting"
 msgstr "再投影用の画像キャプチャサイズ"
-
-#. :src: bpy.types.ImagePaint.slot_xresolution_default
-#, fuzzy
-msgid "X resolution"
-msgstr "解像度"
-
-#. :src: bpy.types.ImagePaint.slot_xresolution_default
-msgid "X Resolution of new image"
-msgstr ""
-
-#. :src: bpy.types.ImagePaint.slot_yresolution_default
-#, fuzzy
-msgid "Y resolution"
-msgstr "解像度"
-
-#. :src: bpy.types.ImagePaint.slot_yresolution_default
-msgid "Y Resolution of new image"
-msgstr ""
 
 #. :src: bpy.types.Sculpt.radial_symmetry
 msgid "Radial Symmetry Count X Axis"
@@ -69360,7 +69413,7 @@ msgstr "エリア形状"
 #. :src: bpy.types.DATA_PT_curve_texture_space
 #. :src: bpy.types.DATA_PT_mball_texture_space
 #. :src: bpy.types.DATA_PT_texture_space
-#: scripts/startup/bl_ui/properties_object.py:233
+#: scripts/startup/bl_ui/properties_object.py:238
 msgid "Texture Space"
 msgstr "テクスチャ スペース"
 
@@ -69796,6 +69849,7 @@ msgid "Symmetry / Lock"
 msgstr "対称 / ロック"
 
 #. :src: bpy.types.VIEW3D_PT_slots_projectpaint
+#. :src: bpy.types.VIEW3D_PT_stencil_projectpaint
 #, fuzzy
 msgid "Slots"
 msgstr "スロット"
@@ -71245,6 +71299,30 @@ msgstr "第2オフセット"
 msgid "Frame offset for 2nd animation, where it should start"
 msgstr "二つめのアニメーションが開始するフレームオフセットです"
 
+#. :src: bpy.types.AnimationStitchSettings.second_action
+msgid "Action 2"
+msgstr "アクション2"
+
+#. :src: bpy.types.AnimationStitchSettings.second_action
+msgid "Second action in stitch"
+msgstr "スティッチ内の二つめのアクション"
+
+#. :src: bpy.types.AnimationStitchSettings.blend_amount
+msgid "Blend amount"
+msgstr "ブレンド量"
+
+#. :src: bpy.types.AnimationStitchSettings.blend_amount
+msgid "Size of blending transition, on both sides of the stitch"
+msgstr "スティッチ両側の移行部分のブレンドサイズ"
+
+#. :src: bpy.types.AnimationStitchSettings.stick_bone
+msgid "Stick Bone"
+msgstr "スティックボーン"
+
+#. :src: bpy.types.AnimationStitchSettings.stick_bone
+msgid "Bone to freeze during transition"
+msgstr "推移中にボーンをフリーズ"
+
 #. :src: bpy.types.AnimationStitchSettings.first_action
 msgid "Action 1"
 msgstr "アクション1"
@@ -71260,30 +71338,6 @@ msgstr "フレームにスティッチ"
 #. :src: bpy.types.AnimationStitchSettings.blend_frame
 msgid "Frame to locate stitch on"
 msgstr "スティッチを行うフレーム位置"
-
-#. :src: bpy.types.AnimationStitchSettings.second_action
-msgid "Action 2"
-msgstr "アクション2"
-
-#. :src: bpy.types.AnimationStitchSettings.second_action
-msgid "Second action in stitch"
-msgstr "スティッチ内の二つめのアクション"
-
-#. :src: bpy.types.AnimationStitchSettings.stick_bone
-msgid "Stick Bone"
-msgstr "スティックボーン"
-
-#. :src: bpy.types.AnimationStitchSettings.stick_bone
-msgid "Bone to freeze during transition"
-msgstr "推移中にボーンをフリーズ"
-
-#. :src: bpy.types.AnimationStitchSettings.blend_amount
-msgid "Blend amount"
-msgstr "ブレンド量"
-
-#. :src: bpy.types.AnimationStitchSettings.blend_amount
-msgid "Size of blending transition, on both sides of the stitch"
-msgstr "スティッチ両側の移行部分のブレンドサイズ"
 
 #. :src: bpy.types.CyclesCameraSettings.aperture_type
 msgid "Aperture Type"
@@ -72205,14 +72259,6 @@ msgstr "ボリュームレンダリング使用時、ボリューム内のすべ
 msgid "Settings/info about a language"
 msgstr "言語の設定/情報"
 
-#. :src: bpy.types.I18nUpdateTranslationLanguage.uid
-msgid "Language ID"
-msgstr "言語ID"
-
-#. :src: bpy.types.I18nUpdateTranslationLanguage.uid
-msgid "ISO code, like fr_FR"
-msgstr "ja_JPなどのISOコード"
-
 #. :src: bpy.types.I18nUpdateTranslationLanguage.name
 msgid "Language Name"
 msgstr "言語名"
@@ -72229,10 +72275,6 @@ msgstr "POファイルパス"
 msgid "Path to the relevant po file in branches"
 msgstr "branch内の適合するpoファイルへのパス"
 
-#. :src: bpy.types.I18nUpdateTranslationLanguage.use
-msgid "Use this language in current operator"
-msgstr "現在のオペレーターで現在の言語を使用します"
-
 #. :src: bpy.types.I18nUpdateTranslationLanguage.num_id
 msgid "Numeric ID"
 msgstr "数値ID"
@@ -72240,14 +72282,6 @@ msgstr "数値ID"
 #. :src: bpy.types.I18nUpdateTranslationLanguage.num_id
 msgid "Numeric ID (readonly!)"
 msgstr "数値ID(読み込みのみ！)"
-
-#. :src: bpy.types.I18nUpdateTranslationLanguage.mo_path_trunk
-msgid "MO File Path"
-msgstr "MOファイルパス"
-
-#. :src: bpy.types.I18nUpdateTranslationLanguage.mo_path_trunk
-msgid "Path to the relevant mo file"
-msgstr "適合するmoファイルへのパス"
 
 #. :src: bpy.types.I18nUpdateTranslationLanguage.po_path_trunk
 msgid "PO Trunk File Path"
@@ -72257,6 +72291,26 @@ msgstr "PO Trunkファイルパス"
 msgid "Path to the relevant po file in trunk"
 msgstr "trunk内の適合するpoファイルへのパス"
 
+#. :src: bpy.types.I18nUpdateTranslationLanguage.mo_path_trunk
+msgid "MO File Path"
+msgstr "MOファイルパス"
+
+#. :src: bpy.types.I18nUpdateTranslationLanguage.mo_path_trunk
+msgid "Path to the relevant mo file"
+msgstr "適合するmoファイルへのパス"
+
+#. :src: bpy.types.I18nUpdateTranslationLanguage.uid
+msgid "Language ID"
+msgstr "言語ID"
+
+#. :src: bpy.types.I18nUpdateTranslationLanguage.uid
+msgid "ISO code, like fr_FR"
+msgstr "ja_JPなどのISOコード"
+
+#. :src: bpy.types.I18nUpdateTranslationLanguage.use
+msgid "Use this language in current operator"
+msgstr "現在のオペレーターで現在の言語を使用します"
+
 #. :src: bpy.types.I18nUpdateTranslationSettings.pot_path
 msgid "POT File Path"
 msgstr "POTファイルパス"
@@ -72264,18 +72318,6 @@ msgstr "POTファイルパス"
 #. :src: bpy.types.I18nUpdateTranslationSettings.pot_path
 msgid "Path to the pot template file"
 msgstr "適合するpotテンプレートファイルへのパス"
-
-#. :src: bpy.types.I18nUpdateTranslationSettings.is_init
-msgid "Whether these settings have already been auto-set or not"
-msgstr "すでにこれらの設定が自動設定されているかどうか"
-
-#. :src: bpy.types.I18nUpdateTranslationSettings.langs
-msgid "Languages"
-msgstr "言語"
-
-#. :src: bpy.types.I18nUpdateTranslationSettings.langs
-msgid "Languages to update in branches"
-msgstr "branch内の言語の更新"
 
 #. :src: bpy.types.I18nUpdateTranslationSettings.active_lang
 msgid "Active Language"
@@ -72285,9 +72327,17 @@ msgstr "アクティブ言語"
 msgid "Index of active language in langs collection"
 msgstr "言語群中のアクティブ言語のインデックス"
 
-#. :src: bpy.types.MocapConstraint.constrained_bone
-msgid "Constrained Bone"
-msgstr "コンストレイントの掛けられたボーン"
+#. :src: bpy.types.I18nUpdateTranslationSettings.langs
+msgid "Languages"
+msgstr "言語"
+
+#. :src: bpy.types.I18nUpdateTranslationSettings.langs
+msgid "Languages to update in branches"
+msgstr "branch内の言語の更新"
+
+#. :src: bpy.types.I18nUpdateTranslationSettings.is_init
+msgid "Whether these settings have already been auto-set or not"
+msgstr "すでにこれらの設定が自動設定されているかどうか"
 
 #. :src: bpy.types.MocapConstraint.constrained_boneB
 msgid "Bone (2)"
@@ -72296,6 +72346,42 @@ msgstr "ボーン (2)"
 #. :src: bpy.types.MocapConstraint.constrained_boneB
 msgid "Other Constrained Bone (optional, depends on type)"
 msgstr "他のコンストレイントされたボーン（オプション、タイプに依存）"
+
+#. :src: bpy.types.MocapConstraint.name
+msgid "Name of Mocap Fix"
+msgstr "モーキャプ補正の名前"
+
+#. :src: bpy.types.MocapConstraint.e_frame
+msgid "E"
+msgstr "E"
+
+#. :src: bpy.types.MocapConstraint.e_frame
+msgid "End frame of Fix"
+msgstr "補正の終了フレーム"
+
+#. :src: bpy.types.MocapConstraint.smooth_out
+#. :src: bpy.types.WipeSequence.direction:'OUT'
+#: source/blender/editors/animation/fmodifier_ui.c:671
+msgid "Out"
+msgstr "出力"
+
+#. :src: bpy.types.MocapConstraint.smooth_out
+msgid "Number of frames to smooth out"
+msgstr "スムーズアウトする為のフレーム数"
+
+#. :src: bpy.types.MocapConstraint.targetMesh
+msgid "Target of Fix - Mesh (optional, depends on type)"
+msgstr "補正ターゲット - メッシュ（オプション、タイプに依存）"
+
+#. :src: bpy.types.MocapConstraint.smooth_in
+#. :src: bpy.types.WipeSequence.direction:'IN'
+#: source/blender/editors/animation/fmodifier_ui.c:670
+msgid "In"
+msgstr "入力"
+
+#. :src: bpy.types.MocapConstraint.smooth_in
+msgid "Number of frames to smooth in"
+msgstr "スムーズインするフレーム数"
 
 #. :src: bpy.types.MocapConstraint.targetSpace
 msgid "In which space should Point type target be evaluated"
@@ -72325,61 +72411,29 @@ msgstr "ターゲットを指定の他のボーン空間で評価します"
 msgid "Distance and Floor Fixes - Desired offset"
 msgstr "距離と床の補正 - 希望のオフセット"
 
-#. :src: bpy.types.MocapConstraint.targetMesh
-msgid "Target of Fix - Mesh (optional, depends on type)"
-msgstr "補正ターゲット - メッシュ（オプション、タイプに依存）"
-
-#. :src: bpy.types.MocapConstraint.targetPoint
-msgid "Target of Fix - Point"
-msgstr "補正ターゲット - ポイント"
-
-#. :src: bpy.types.MocapConstraint.show_expanded
-msgid "Fix is fully shown"
-msgstr "補正を完全に表示"
-
-#. :src: bpy.types.MocapConstraint.name
-msgid "Name of Mocap Fix"
-msgstr "モーキャプ補正の名前"
-
 #. :src: bpy.types.MocapConstraint.active
 msgid "Fix is active"
 msgstr "補正がアクティブである"
+
+#. :src: bpy.types.MocapConstraint.constrained_bone
+msgid "Constrained Bone"
+msgstr "コンストレイントの掛けられたボーン"
 
 #. :src: bpy.types.MocapConstraint.type
 msgid "Type of constraint"
 msgstr "コンストレイントの種類"
 
+#. :src: bpy.types.MocapConstraint.targetPoint
+msgid "Target of Fix - Point"
+msgstr "補正ターゲット - ポイント"
+
 #. :src: bpy.types.MocapConstraint.s_frame
 msgid "Start frame of Fix"
 msgstr "補正の開始フレーム"
 
-#. :src: bpy.types.MocapConstraint.smooth_out
-#. :src: bpy.types.WipeSequence.direction:'OUT'
-#: source/blender/editors/animation/fmodifier_ui.c:671
-msgid "Out"
-msgstr "出力"
-
-#. :src: bpy.types.MocapConstraint.smooth_out
-msgid "Number of frames to smooth out"
-msgstr "スムーズアウトする為のフレーム数"
-
-#. :src: bpy.types.MocapConstraint.smooth_in
-#. :src: bpy.types.WipeSequence.direction:'IN'
-#: source/blender/editors/animation/fmodifier_ui.c:670
-msgid "In"
-msgstr "入力"
-
-#. :src: bpy.types.MocapConstraint.smooth_in
-msgid "Number of frames to smooth in"
-msgstr "スムーズインするフレーム数"
-
-#. :src: bpy.types.MocapConstraint.e_frame
-msgid "E"
-msgstr "E"
-
-#. :src: bpy.types.MocapConstraint.e_frame
-msgid "End frame of Fix"
-msgstr "補正の終了フレーム"
+#. :src: bpy.types.MocapConstraint.show_expanded
+msgid "Fix is fully shown"
+msgstr "補正を完全に表示"
 
 #. :src: bpy.types.NodeSetting.value
 msgid "Python expression to be evaluated as the initial node setting"
@@ -72425,9 +72479,21 @@ msgstr ""
 msgid "Is Stroke Start"
 msgstr "ストロークが開始したか"
 
-#. :src: bpy.types.Print3DSettings.thickness_min
-msgid "Minimum thickness"
-msgstr "最小厚み"
+#. :src: bpy.types.Print3DSettings.export_path
+msgid "Export Directory"
+msgstr "エクスポートディレクトリ"
+
+#. :src: bpy.types.Print3DSettings.export_path
+msgid "Path to directory where the files are created"
+msgstr "ファイルを作成するディレクトリへのパス"
+
+#. :src: bpy.types.Print3DSettings.use_export_texture
+msgid "Copy Textures"
+msgstr "テクスチャをコピー"
+
+#. :src: bpy.types.Print3DSettings.use_export_texture
+msgid "Copy textures on export to the output path"
+msgstr "エクスポート時、テクスチャを出力パスにコピーします"
 
 #. :src: bpy.types.Print3DSettings.use_apply_scale
 msgid "Apply Scale"
@@ -72441,21 +72507,9 @@ msgstr "エクスポート時にシーンスケール設定を適用します"
 msgid "Limit for checking distorted faces"
 msgstr "面の歪みをチェックする限界"
 
-#. :src: bpy.types.Print3DSettings.use_export_texture
-msgid "Copy Textures"
-msgstr "テクスチャをコピー"
-
-#. :src: bpy.types.Print3DSettings.use_export_texture
-msgid "Copy textures on export to the output path"
-msgstr "エクスポート時、テクスチャを出力パスにコピーします"
-
-#. :src: bpy.types.Print3DSettings.export_path
-msgid "Export Directory"
-msgstr "エクスポートディレクトリ"
-
-#. :src: bpy.types.Print3DSettings.export_path
-msgid "Path to directory where the files are created"
-msgstr "ファイルを作成するディレクトリへのパス"
+#. :src: bpy.types.Print3DSettings.thickness_min
+msgid "Minimum thickness"
+msgstr "最小厚み"
 
 #. :src: bpy.types.Print3DSettings.export_format
 msgid "Format type to export to"
@@ -74728,7 +74782,7 @@ msgid "Disable vsync"
 msgstr "垂直同期を無効にします"
 
 #. :src: bpy.types.SceneGameData.vsync:'ON'
-#: scripts/startup/bl_ui/properties_object.py:274
+#: scripts/startup/bl_ui/properties_object.py:279
 #: source/blender/nodes/composite/nodes/node_composite_switch.c:36
 msgid "On"
 msgstr "オン"
@@ -75291,6 +75345,7 @@ msgid "Max difference in heights of obstacles to enable their interaction"
 msgstr "交差できる障害物の最大段差の高さ"
 
 #. :src: bpy.types.SceneGameData.show_obstacle_simulation
+#: scripts/startup/bl_ui/space_view3d_toolbar.py:1127
 msgid "Visualization"
 msgstr "表示"
 
@@ -87097,7 +87152,7 @@ msgid "Object %r can't be written into a 3DS file"
 msgstr "オブジェクト %r が3DSファイルに保存できません"
 
 #: scripts/addons/io_scene_fbx/export_fbx.py:443
-#: scripts/addons/io_scene_fbx/import_fbx.py:1381
+#: scripts/addons/io_scene_fbx/import_fbx.py:1461
 msgid "Couldn't open file %r"
 msgstr "ファイル%rが開けませんでした"
 
@@ -87105,23 +87160,23 @@ msgstr "ファイル%rが開けませんでした"
 msgid "Object '%s' has a scale of (%.3f, %.3f, %.3f), Armature deformation will not work as expected (apply Scale to fix)"
 msgstr "オブジェクト'%s'のスケールが(%.3f, %.3f, %.3f)なため、アーマチュア変形が期待通りにならないでしょう（拡大縮小を適用して解決）"
 
-#: scripts/addons/io_scene_fbx/import_fbx.py:1372
+#: scripts/addons/io_scene_fbx/import_fbx.py:1452
 msgid "ASCII FBX files are not supported %r"
 msgstr "ASCII FBX ファイルは %r に未対応です"
 
-#: scripts/addons/io_scene_fbx/import_fbx.py:1385
+#: scripts/addons/io_scene_fbx/import_fbx.py:1465
 msgid "Version %r unsupported, must be %r or later"
 msgstr "Ver. %r は未対応です。%r 以降にしてください"
 
-#: scripts/addons/io_scene_fbx/import_fbx.py:1418
+#: scripts/addons/io_scene_fbx/import_fbx.py:1498
 msgid "No 'GlobalSettings' found in file %r"
 msgstr "ファイル「%r」内に 'GlobalSettings' がありません"
 
-#: scripts/addons/io_scene_fbx/import_fbx.py:1453
+#: scripts/addons/io_scene_fbx/import_fbx.py:1541
 msgid "No 'Objects' found in file %r"
 msgstr "ファイル「%r」内に 'Objects' がありません"
 
-#: scripts/addons/io_scene_fbx/import_fbx.py:1456
+#: scripts/addons/io_scene_fbx/import_fbx.py:1544
 msgid "No 'Connections' found in file %r"
 msgstr "ファイル「%r」内に 'Connections' がありません"
 
@@ -87538,7 +87593,7 @@ msgstr "参照軸:"
 #: scripts/startup/bl_ui/properties_constraint.py:203
 #: scripts/startup/bl_ui/properties_constraint.py:477
 #: scripts/startup/bl_ui/properties_data_modifier.py:756
-#: scripts/startup/bl_ui/space_view3d_toolbar.py:1436
+#: scripts/startup/bl_ui/space_view3d_toolbar.py:1473
 msgid "Lock:"
 msgstr "固定:"
 
@@ -87686,11 +87741,11 @@ msgstr "チェーンの拡縮:"
 msgid "Pivot When"
 msgstr "動作対象"
 
-#: scripts/startup/bl_ui/properties_constraint.py:844
+#: scripts/startup/bl_ui/properties_constraint.py:848
 msgid "Blender 2.6 doesn't support python constraints yet"
 msgstr "Blender 2.6はまだpythonコンストレイントに対応していません"
 
-#: scripts/startup/bl_ui/properties_constraint.py:886
+#: scripts/startup/bl_ui/properties_constraint.py:890
 msgctxt "Operator"
 msgid "Add Bone Constraint"
 msgstr "ボーンコンストレイント追加"
@@ -87739,11 +87794,11 @@ msgstr "軸空間:"
 msgid "Pivot Offset"
 msgstr "ピボットオフセット"
 
-#: scripts/startup/bl_ui/properties_constraint.py:864
+#: scripts/startup/bl_ui/properties_constraint.py:868
 msgid "Constraints for active bone do not live here"
 msgstr "アクティブボーン用コンストレイントが有効ではありません"
 
-#: scripts/startup/bl_ui/properties_constraint.py:868
+#: scripts/startup/bl_ui/properties_constraint.py:872
 msgctxt "Operator"
 msgid "Add Object Constraint"
 msgstr "オブジェクトコンストレイント追加"
@@ -87756,7 +87811,7 @@ msgstr "相対的なピボットポイント"
 msgid "Absolute Pivot Point"
 msgstr "絶対的なピボットポイント"
 
-#: scripts/startup/bl_ui/properties_constraint.py:866
+#: scripts/startup/bl_ui/properties_constraint.py:870
 msgctxt "Operator"
 msgid "Go to Bone Constraints tab..."
 msgstr "ボーンコンストレイントタブへ..."
@@ -88123,7 +88178,7 @@ msgstr "フィルターの種類:"
 msgid "Sample Buffers:"
 msgstr "サンプルバッファー:"
 
-#. :src: scripts/startup/bl_ui/properties_data_mesh.py:33
+#: scripts/startup/bl_ui/properties_data_mesh.py:33
 msgctxt "Operator"
 msgid "Sort by Bone Hierarchy"
 msgstr ""
@@ -88306,7 +88361,7 @@ msgstr "面数: %d"
 #: scripts/startup/bl_ui/properties_data_modifier.py:907
 #: scripts/startup/bl_ui/properties_physics_field.py:65
 #: scripts/startup/bl_ui/space_image.py:727
-#: scripts/startup/bl_ui/space_view3d_toolbar.py:1135
+#: scripts/startup/bl_ui/space_view3d_toolbar.py:1172
 msgid "Texture:"
 msgstr "テクスチャ:"
 
@@ -89254,19 +89309,19 @@ msgstr "マテリアルノードが選択されていません"
 msgid "Node <none>"
 msgstr "ノード <なし>"
 
-#: scripts/startup/bl_ui/properties_object.py:244
+#: scripts/startup/bl_ui/properties_object.py:249
 msgid "Maximum Dupli Draw Type:"
 msgstr "複製の最高描画タイプ:"
 
-#: scripts/startup/bl_ui/properties_object.py:246
+#: scripts/startup/bl_ui/properties_object.py:251
 msgid "Maximum Draw Type:"
 msgstr "最高描画タイプ:"
 
-#: scripts/startup/bl_ui/properties_object.py:252
+#: scripts/startup/bl_ui/properties_object.py:257
 msgid "Object Color:"
 msgstr "オブジェクトカラー:"
 
-#: scripts/startup/bl_ui/properties_object.py:306
+#: scripts/startup/bl_ui/properties_object.py:311
 msgid "Tracking Axes:"
 msgstr "トラッキング軸:"
 
@@ -89274,14 +89329,9 @@ msgstr "トラッキング軸:"
 msgid "Not for Axis-Angle"
 msgstr "軸アングルではない"
 
-#: scripts/startup/bl_ui/properties_object.py:190
+#: scripts/startup/bl_ui/properties_object.py:199
 msgid "Dupli Visibility"
 msgstr "複製のレイヤー"
-
-#: scripts/startup/bl_ui/properties_object.py:195
-msgctxt "Operator"
-msgid "From Cursor"
-msgstr "カーソルから"
 
 #: scripts/startup/bl_ui/properties_paint_common.py:203
 msgid "Brush Mapping:"
@@ -89310,11 +89360,11 @@ msgstr "値マッピング"
 msgid "Background Color"
 msgstr "背景色のテーマ"
 
-#. :src: scripts/startup/bl_ui/properties_paint_common.py:141
+#: scripts/startup/bl_ui/properties_paint_common.py:141
 msgid "Clone from paint slot"
 msgstr ""
 
-#. :src: scripts/startup/bl_ui/properties_paint_common.py:155
+#: scripts/startup/bl_ui/properties_paint_common.py:155
 msgid "Clone Slot"
 msgstr ""
 
@@ -89823,7 +89873,7 @@ msgid "Use Scene Gravity"
 msgstr "シーンの重力を使用"
 
 #: scripts/startup/bl_ui/properties_physics_fluid.py:230
-#: scripts/startup/bl_ui/space_view3d_toolbar.py:1399
+#: scripts/startup/bl_ui/space_view3d_toolbar.py:1436
 msgid "Gravity:"
 msgstr "重力:"
 
@@ -90241,7 +90291,7 @@ msgid "Repeat:"
 msgstr "リピート:"
 
 #: scripts/startup/bl_ui/properties_texture.py:569
-#: scripts/startup/bl_ui/space_view3d_toolbar.py:1427
+#: scripts/startup/bl_ui/space_view3d_toolbar.py:1464
 msgid "Mirror:"
 msgstr "ミラー:"
 
@@ -90687,17 +90737,17 @@ msgstr "固定:"
 #: scripts/startup/bl_ui/space_view3d_toolbar.py:201
 #: scripts/startup/bl_ui/space_view3d_toolbar.py:517
 #: scripts/startup/bl_ui/space_view3d_toolbar.py:585
-#: scripts/startup/bl_ui/space_view3d_toolbar.py:1120
+#: scripts/startup/bl_ui/space_view3d_toolbar.py:1157
 msgid "Curve:"
 msgstr "カーブ:"
 
 #: scripts/startup/bl_ui/space_image.py:739
-#: scripts/startup/bl_ui/space_view3d_toolbar.py:1148
+#: scripts/startup/bl_ui/space_view3d_toolbar.py:1185
 msgid "Mask Texture:"
 msgstr "マスクテクスチャ:"
 
 #: scripts/startup/bl_ui/space_image.py:819
-#: scripts/startup/bl_ui/space_view3d_toolbar.py:1232
+#: scripts/startup/bl_ui/space_view3d_toolbar.py:1269
 msgid "Stroke Method:"
 msgstr "ストローク方法:"
 
@@ -90816,12 +90866,12 @@ msgid "UVs:"
 msgstr "UV:"
 
 #: scripts/startup/bl_ui/space_image.py:825
-#: scripts/startup/bl_ui/space_view3d_toolbar.py:1238
+#: scripts/startup/bl_ui/space_view3d_toolbar.py:1275
 msgid "Edge To Edge"
 msgstr "辺から辺へ"
 
 #: scripts/startup/bl_ui/space_image.py:909
-#: scripts/startup/bl_ui/space_view3d_toolbar.py:1463
+#: scripts/startup/bl_ui/space_view3d_toolbar.py:1500
 msgid "Brush Unset"
 msgstr "ブラシを解除"
 
@@ -92490,7 +92540,7 @@ msgid "Fix Deforms"
 msgstr "変形を修正"
 
 #: scripts/startup/bl_ui/space_view3d.py:1605
-#: scripts/startup/bl_ui/space_view3d_toolbar.py:1404
+#: scripts/startup/bl_ui/space_view3d_toolbar.py:1441
 msgid "Threaded Sculpt"
 msgstr "スレッドスカルプト"
 
@@ -93538,45 +93588,45 @@ msgctxt "Operator"
 msgid "Add To Library"
 msgstr "ライブラリに追加"
 
-#: scripts/startup/bl_ui/space_view3d_toolbar.py:1534
+#: scripts/startup/bl_ui/space_view3d_toolbar.py:1571
 #: scripts/startup/bl_ui/space_view3d_toolbar.py:484
 msgid "Show Zero Weights:"
 msgstr "ウェイト0を表示:"
 
-#: scripts/startup/bl_ui/space_view3d_toolbar.py:1586
+#: scripts/startup/bl_ui/space_view3d_toolbar.py:1623
 msgctxt "Operator"
 msgid "Quick Edit"
 msgstr "クイック編集"
 
-#: scripts/startup/bl_ui/space_view3d_toolbar.py:1587
+#: scripts/startup/bl_ui/space_view3d_toolbar.py:1624
 #: source/blender/editors/interface/interface_templates.c:972
 msgctxt "Operator"
 msgid "Apply"
 msgstr "適用"
 
-#: scripts/startup/bl_ui/space_view3d_toolbar.py:1591
+#: scripts/startup/bl_ui/space_view3d_toolbar.py:1628
 msgctxt "Operator"
 msgid "Apply Camera Image"
 msgstr "カメラ画像を適用"
 
-#: scripts/startup/bl_ui/space_view3d_toolbar.py:1592
+#: scripts/startup/bl_ui/space_view3d_toolbar.py:1629
 msgctxt "Operator"
 msgid "Save All Edited"
 msgstr "すべての編集を保存"
 
-#: scripts/startup/bl_ui/space_view3d_toolbar.py:1728
+#: scripts/startup/bl_ui/space_view3d_toolbar.py:1748
 msgid "Keep:"
 msgstr "保持:"
 
-#: scripts/startup/bl_ui/space_view3d_toolbar.py:1729
+#: scripts/startup/bl_ui/space_view3d_toolbar.py:1749
 msgid "Lengths"
 msgstr "長さ"
 
-#: scripts/startup/bl_ui/space_view3d_toolbar.py:1738
+#: scripts/startup/bl_ui/space_view3d_toolbar.py:1758
 msgid "Draw:"
 msgstr "描画:"
 
-#: scripts/startup/bl_ui/space_view3d_toolbar.py:1739
+#: scripts/startup/bl_ui/space_view3d_toolbar.py:1759
 msgid "Path Steps"
 msgstr "パスステップ"
 
@@ -93642,33 +93692,39 @@ msgctxt "Operator"
 msgid "Underline"
 msgstr "下線"
 
-#. :src: scripts/startup/bl_ui/space_view3d_toolbar.py:1077
+#: scripts/startup/bl_ui/space_view3d_toolbar.py:1077
 msgid "Available Paint Slots"
 msgstr ""
 
-#: scripts/startup/bl_ui/space_view3d_toolbar.py:1354
+#: scripts/startup/bl_ui/space_view3d_toolbar.py:1124
+#, fuzzy
+msgctxt "Operator"
+msgid "Add New"
+msgstr "新規作成"
+
+#: scripts/startup/bl_ui/space_view3d_toolbar.py:1391
 msgctxt "Operator"
 msgid "Disable Dyntopo"
 msgstr "Dyntopo無効"
 
-#: scripts/startup/bl_ui/space_view3d_toolbar.py:1356
+#: scripts/startup/bl_ui/space_view3d_toolbar.py:1393
 msgctxt "Operator"
 msgid "Enable Dyntopo"
 msgstr "Dyntopo有効"
 
-#: scripts/startup/bl_ui/space_view3d_toolbar.py:1715
+#: scripts/startup/bl_ui/space_view3d_toolbar.py:1735
 msgid "Point cache must be baked"
 msgstr "メモリ内で編集できるよう、"
 
-#: scripts/startup/bl_ui/space_view3d_toolbar.py:1716
+#: scripts/startup/bl_ui/space_view3d_toolbar.py:1736
 msgid "in memory to enable editing!"
 msgstr "ポイントキャッシュをベイクしてください！"
 
-#: scripts/startup/bl_ui/space_view3d_toolbar.py:1721
+#: scripts/startup/bl_ui/space_view3d_toolbar.py:1741
 msgid "Deflect emitter"
 msgstr "エミッターと衝突"
 
-#: scripts/startup/bl_ui/space_view3d_toolbar.py:1732
+#: scripts/startup/bl_ui/space_view3d_toolbar.py:1752
 msgid "Correct:"
 msgstr "補正:"
 
@@ -93689,6 +93745,7 @@ msgid "Multi-Paint"
 msgstr "マルチペイント"
 
 #: source/blender/blenkernel/BKE_library.h:113
+#: source/blender/editors/sculpt_paint/paint_image_proj.c:4922
 #: source/blender/editors/space_image/image_ops.c:1891
 msgid "Untitled"
 msgstr "無題"
@@ -93756,20 +93813,20 @@ msgstr "パス '%s' が見つかりません"
 msgid "Path '%s' cannot be made relative"
 msgstr "パス '%s' が相対パスにできません"
 
-#: source/blender/blenkernel/intern/bpath.c:146
-#: source/blender/blenkernel/intern/bpath.c:189
+#: source/blender/blenkernel/intern/bpath.c:147
+#: source/blender/blenkernel/intern/bpath.c:191
 msgid "Total files %d | Changed %d | Failed %d"
 msgstr "総ファイル数 %d | 変更 %d | 失敗 %d"
 
-#: source/blender/blenkernel/intern/bpath.c:167
+#: source/blender/blenkernel/intern/bpath.c:168
 msgid "Path '%s' cannot be made absolute"
 msgstr "パス '%s' が絶対パスにできません"
 
-#: source/blender/blenkernel/intern/bpath.c:288
+#: source/blender/blenkernel/intern/bpath.c:290
 msgid "Could not open directory '%s'"
 msgstr "'%s' ディレクトリが開けませんでした"
 
-#: source/blender/blenkernel/intern/bpath.c:294
+#: source/blender/blenkernel/intern/bpath.c:296
 msgid "Could not find '%s' in '%s'"
 msgstr "'%s' が '%s'内にありませんでした"
 
@@ -93798,7 +93855,7 @@ msgid "Out of memory on allocating clmd->clothObject->mfaces"
 msgstr "次の割り当てでメモリが不足。clmd->clothObject->mfaces"
 
 #: source/blender/blenkernel/intern/constraint.c:107
-#: source/blender/blenkernel/intern/constraint.c:4382
+#: source/blender/blenkernel/intern/constraint.c:4394
 msgid "Const"
 msgstr "コンストレイント"
 
@@ -94084,8 +94141,8 @@ msgstr "メモリ不足エラー"
 msgid "Undefined Type"
 msgstr "未定義タイプ"
 
-#: source/blender/blenkernel/intern/scene.c:1727
-#: source/blender/blenkernel/intern/scene.c:1731
+#: source/blender/blenkernel/intern/scene.c:1785
+#: source/blender/blenkernel/intern/scene.c:1789
 #: source/blender/makesrna/intern/rna_scene.c:1190
 msgid "RenderLayer"
 msgstr "レンダーレイヤー"
@@ -94213,71 +94270,71 @@ msgstr "ソケットにバインドできません"
 msgid "Cannot establish listen backlog"
 msgstr "リッスンバックログの確立ができません"
 
-#: source/blender/blenloader/intern/readfile.c:983
+#: source/blender/blenloader/intern/readfile.c:982
 msgid "unknown error reading file"
 msgstr "ファイル読み込み時に未知のエラーが発生しました"
 
-#: source/blender/blenloader/intern/readfile.c:1041
+#: source/blender/blenloader/intern/readfile.c:1040
 msgid "Unable to read"
 msgstr "読み込みできません"
 
-#: source/blender/blenloader/intern/readfile.c:1041
+#: source/blender/blenloader/intern/readfile.c:1040
 msgid "Unable to open"
 msgstr "開くことができません"
 
-#: source/blender/blenloader/intern/readfile.c:5164
+#: source/blender/blenloader/intern/readfile.c:5163
 msgid "LIB ERROR: object lost from scene: '%s'"
 msgstr "ライブラリエラー：シーン '%s' からオブジェクトが失われました"
 
-#: source/blender/blenloader/intern/readfile.c:6580
+#: source/blender/blenloader/intern/readfile.c:6579
 msgid "Library '%s', '%s' had multiple instances, save and reload!"
 msgstr "ライブラリ '%s'、'%s' に複数のインスタンスあり。保存と再読込してください！"
 
-#: source/blender/blenloader/intern/readfile.c:7851
+#: source/blender/blenloader/intern/readfile.c:7850
 msgid "LIB ERROR: Data refers to main .blend file: '%s' from %s"
 msgstr "ライブラリエラー：データ '%s' がメイン.blend ファイル(%s)を参照しています"
 
-#: source/blender/blenloader/intern/readfile.c:9204
+#: source/blender/blenloader/intern/readfile.c:9203
 msgid "Read packed library:  '%s'"
 msgstr "パックされたライブラリ読み込み：'%s'"
 
-#: source/blender/blenloader/intern/readfile.c:9213
+#: source/blender/blenloader/intern/readfile.c:9212
 msgid "Read library:  '%s', '%s'"
 msgstr "ライブラリ読み込み：'%s'、'%s'"
 
-#: source/blender/blenloader/intern/readfile.c:9267
+#: source/blender/blenloader/intern/readfile.c:9266
 msgid "Cannot find lib '%s'"
 msgstr "ライブラリ '%s' がありません"
 
-#: source/blender/blenloader/intern/readfile.c:9286
+#: source/blender/blenloader/intern/readfile.c:9285
 msgid "LIB ERROR: %s: '%s' missing from '%s'"
 msgstr "ライブラリエラー：%s: '%s' が '%s' から欠けています"
 
-#: source/blender/blenloader/intern/readfile.c:9318
+#: source/blender/blenloader/intern/readfile.c:9317
 msgid "LIB ERROR: %s: '%s' unread lib block missing from '%s'"
 msgstr "ライブラリエラー：%s: 未読込ライブラリブロック '%s' が '%s' から欠けています"
 
-#: source/blender/blenloader/intern/readfile.c:1070
+#: source/blender/blenloader/intern/readfile.c:1069
 msgid "Unable to open blend <memory>"
 msgstr "(メモリ上の)blendファイルを開くことができません"
 
-#: source/blender/blenloader/intern/readfile.c:4541
+#: source/blender/blenloader/intern/readfile.c:4540
 msgid "Warning in console"
 msgstr "コンソールに警告"
 
-#: source/blender/blenloader/intern/readfile.c:7458
+#: source/blender/blenloader/intern/readfile.c:7457
 msgid "Texface conversion problem (see error in console)"
 msgstr "テクスチャ面の変換に問題（コンソールにエラー表示）"
 
-#: source/blender/blenloader/intern/readfile.c:959
+#: source/blender/blenloader/intern/readfile.c:958
 msgid "Failed to read blend file '%s', incomplete"
 msgstr "blendファイル '%s' の読み込み失敗。不完全です"
 
-#: source/blender/blenloader/intern/readfile.c:965
+#: source/blender/blenloader/intern/readfile.c:964
 msgid "Failed to read blend file '%s', not a blend file"
 msgstr "blendファイル '%s' の読み込み失敗。blendファイルではありません"
 
-#: source/blender/blenloader/intern/readfile.c:982
+#: source/blender/blenloader/intern/readfile.c:981
 #: source/blender/blenloader/intern/runtime.c:107
 msgid "Unable to open '%s': %s"
 msgstr "'%s' を開くことができません：%s"
@@ -94841,11 +94898,11 @@ msgstr "チェーン内で選択不可能なボーンです"
 msgid "Template %t|None %x0|"
 msgstr "テンプレート %t|なし %x0|"
 
-#: source/blender/editors/armature/meshlaplacian.c:772
+#: source/blender/editors/armature/meshlaplacian.c:771
 msgid "Bone Heat Weighting: failed to find solution for one or more bones"
 msgstr "ボーンヒートウェイト：一つ以上のボーンで解決に失敗しました"
 
-#: source/blender/editors/armature/meshlaplacian.c:1709
+#: source/blender/editors/armature/meshlaplacian.c:1708
 msgid "Failed to find bind solution (increase precision?)"
 msgstr "バインドの解を得るのに失敗しました。(精度を上げてみてください)"
 
@@ -94904,16 +94961,16 @@ msgstr "ポーズライブラリにプレビュー/適用するポーズがあ�
 msgid "Invalid pose specified %d"
 msgstr "無効なポーズが%d個指定されました"
 
-#: source/blender/editors/armature/pose_select.c:746
+#: source/blender/editors/armature/pose_select.c:740
 #: source/blender/editors/object/object_select.c:786
 msgid "No active Keying Set to use"
 msgstr "使用するアクティブキーイングセットがありません"
 
-#: source/blender/editors/armature/pose_select.c:752
+#: source/blender/editors/armature/pose_select.c:746
 msgid "Use another Keying Set, as the active one depends on the currently selected items or cannot find any targets due to unsuitable context"
 msgstr "別のキーイングセットを使用してください。アクティブのセットは現在選択中のアイテムに依存するため、またはコンテクストが適合せずターゲットが見つからないためです"
 
-#: source/blender/editors/armature/pose_select.c:757
+#: source/blender/editors/armature/pose_select.c:751
 #: source/blender/editors/object/object_select.c:797
 msgid "Keying Set does not contain any paths"
 msgstr "キーイングセットにパスが含まれていません"
@@ -95345,36 +95402,36 @@ msgstr "プロパティなし"
 msgid "Reset operator defaults"
 msgstr "オペレーターをデフォルトに戻します"
 
-#: source/blender/editors/interface/interface_ops.c:614
+#: source/blender/editors/interface/interface_ops.c:636
 msgid "Active button is not from a script, cannot edit source"
 msgstr "アクティブボタンはスクリプトではなく、ソースが編集できません"
 
-#: source/blender/editors/interface/interface_ops.c:619
+#: source/blender/editors/interface/interface_ops.c:641
 msgid "Active button match cannot be found"
 msgstr "アクティブボタンに対応する物がありません"
 
-#: source/blender/editors/interface/interface_ops.c:631
-#: source/blender/editors/interface/interface_ops.c:778
+#: source/blender/editors/interface/interface_ops.c:653
+#: source/blender/editors/interface/interface_ops.c:800
 msgid "Active button not found"
 msgstr "アクティブボタンがありません"
 
-#: source/blender/editors/interface/interface_ops.c:717
+#: source/blender/editors/interface/interface_ops.c:739
 msgid "Please set your User Preferences' 'Translation Branches Directory' path to a valid directory"
 msgstr "ユーザー設定の「翻訳ブランチディレクトリ」パスに有効なディレクトリを設定してください"
 
-#: source/blender/editors/interface/interface_ops.c:551
+#: source/blender/editors/interface/interface_ops.c:573
 msgid "File '%s' cannot be opened"
 msgstr "ファイル '%s' が開けません"
 
-#: source/blender/editors/interface/interface_ops.c:563
+#: source/blender/editors/interface/interface_ops.c:585
 msgid "See '%s' in the text editor"
 msgstr "テキストエディターで '%s' を見てください"
 
-#: source/blender/editors/interface/interface_ops.c:723
+#: source/blender/editors/interface/interface_ops.c:745
 msgid "Could not find operator '%s'! Please enable ui_translate addon in the User Preferences"
 msgstr "'%s'オペレーターがありません！　ユーザー設定にある、ui_translateアドインをONにしてください"
 
-#: source/blender/editors/interface/interface_ops.c:731
+#: source/blender/editors/interface/interface_ops.c:753
 msgid "No valid po found for language '%s' under %s"
 msgstr "'%s'用の有効なpoファイルがありません：%s"
 
@@ -95484,7 +95541,7 @@ msgstr "表示色空間での値"
 msgid "Value in Linear RGB Color Space"
 msgstr "線形RGB色空間での値"
 
-#: source/blender/editors/interface/interface_regions.c:2641
+#: source/blender/editors/interface/interface_regions.c:2660
 msgid "Menu \"%s\" not found"
 msgstr "メニュー「%s」がありません"
 
@@ -95602,7 +95659,7 @@ msgstr "データブロックのリンク解除([Shift]＋クリックでユー�
 msgid "Convert virtual modifier to a real modifier"
 msgstr "仮想モディファイアーを実体に変換します"
 
-#. :src: source/blender/editors/interface/interface_templates.c:896
+#: source/blender/editors/interface/interface_templates.c:896
 msgid "Adjust edit cage to modifier result"
 msgstr ""
 
@@ -96136,11 +96193,11 @@ msgstr "何も選択していません"
 msgid "Selection not supported in object mode"
 msgstr "オブジェクトモードでは未対応の選択です"
 
-#: source/blender/editors/mesh/editmesh_tools.c:4328
+#: source/blender/editors/mesh/editmesh_tools.c:4330
 msgid "View not found, cannot sort by view axis"
 msgstr "ビューが見つからないためビュー軸でソートできません"
 
-#: source/blender/editors/mesh/editmesh_tools.c:4456
+#: source/blender/editors/mesh/editmesh_tools.c:4458
 msgid "Mesh has no material or texture assigned"
 msgstr "メッシュに適用されたマテリアルまたはテクスチャがありません"
 
@@ -96152,11 +96209,11 @@ msgstr "頂点：%d個、辺：%d個、面：%d個を削除しました"
 msgid "Removed %d vertices"
 msgstr "%d個の頂点を削除しました"
 
-#: source/blender/editors/mesh/editmesh_tools.c:4985
+#: source/blender/editors/mesh/editmesh_tools.c:4987
 msgid "%d already symmetrical, %d pairs mirrored, %d failed"
 msgstr "%d個がすでに対称、%d個のペアをミラー化、%d個が失敗"
 
-#: source/blender/editors/mesh/editmesh_tools.c:4989
+#: source/blender/editors/mesh/editmesh_tools.c:4991
 msgid "%d already symmetrical, %d pairs mirrored"
 msgstr "%d個がすでに対称、%d個のペアをミラー化"
 
@@ -96454,7 +96511,7 @@ msgstr "オブジェクト「%s」はメッシュではありません"
 msgid "No active UV layer found in the object \"%s\""
 msgstr ""
 
-#. :src: source/blender/editors/object/object_bake_api.c:379
+#: source/blender/editors/object/object_bake_api.c:379
 msgid "Circular dependency for image \"%s\" from object \"%s\""
 msgstr ""
 
@@ -96586,11 +96643,11 @@ msgstr "コンテクストにアクティブオブジェクトがありません
 msgid "Cannot edit library data"
 msgstr "ライブラリデータは編集できません"
 
-#: source/blender/editors/object/object_edit.c:1379
+#: source/blender/editors/object/object_edit.c:1386
 msgid "Can't edit linked mesh or curve data"
 msgstr "リンクされているメッシュやカーブデータは編集できません"
 
-#: source/blender/editors/object/object_edit.c:1594
+#: source/blender/editors/object/object_edit.c:1601
 msgid "Unable to execute '%s', error changing modes"
 msgstr "'%s' を実行できません。モード変更にエラー"
 
@@ -97336,7 +97393,7 @@ msgstr "ウィンドウ領域のみ4分割できます"
 msgid "Only last region can be 4-splitted"
 msgstr "最後の領域のみが4分割できます"
 
-#: source/blender/editors/screen/screen_ops.c:3579
+#: source/blender/editors/screen/screen_ops.c:3589
 msgid "No fullscreen areas were found"
 msgstr "フルスクリーン領域がありません"
 
@@ -97372,7 +97429,7 @@ msgstr "画像のペイントには4つのカラーチャンネルが必要で�
 msgid "Packed MultiLayer files cannot be painted: %s"
 msgstr "パックされたマルチレイヤーファイルはペイントできません: %s"
 
-#. :src: source/blender/editors/sculpt_paint/paint_image.c:1394
+#: source/blender/editors/sculpt_paint/paint_image.c:1394
 msgid "Object did not have UV map, manual unwrap recommended"
 msgstr ""
 
@@ -97384,27 +97441,27 @@ msgstr "画像のペイントには4つのカラーチャンネルが必要で�
 msgid "Packed MultiLayer files cannot be painted"
 msgstr "パックされたマルチレイヤーファイルはペイントできません"
 
-#: source/blender/editors/sculpt_paint/paint_image_proj.c:4610
+#: source/blender/editors/sculpt_paint/paint_image_proj.c:4613
 msgid "No active mesh object"
 msgstr "アクティブメッシュオブジェクトがありません"
 
-#: source/blender/editors/sculpt_paint/paint_image_proj.c:4615
+#: source/blender/editors/sculpt_paint/paint_image_proj.c:4618
 msgid "Image could not be found"
 msgstr "画像が見つかりません"
 
-#: source/blender/editors/sculpt_paint/paint_image_proj.c:4623
+#: source/blender/editors/sculpt_paint/paint_image_proj.c:4626
 msgid "Image data could not be found"
 msgstr "画像データが見つかりません"
 
-#: source/blender/editors/sculpt_paint/paint_image_proj.c:4634
+#: source/blender/editors/sculpt_paint/paint_image_proj.c:4637
 msgid "Image project data invalid"
 msgstr "画像投影データが無効です"
 
-#: source/blender/editors/sculpt_paint/paint_image_proj.c:4647
+#: source/blender/editors/sculpt_paint/paint_image_proj.c:4650
 msgid "No active camera set"
 msgstr "アクティブカメラセットがありません"
 
-#: source/blender/editors/sculpt_paint/paint_image_proj.c:4745
+#: source/blender/editors/sculpt_paint/paint_image_proj.c:4748
 msgid "Failed to create OpenGL off-screen buffer: %s"
 msgstr "OpenGLオフスクリーンバッファ作成失敗: %s"
 
@@ -98439,7 +98496,7 @@ msgid "VCol"
 msgstr "頂点色"
 
 #: source/blender/editors/space_node/drawnode.c:844
-#: source/blender/editors/space_node/drawnode.c:2547
+#: source/blender/editors/space_node/drawnode.c:2556
 msgid "Squash"
 msgstr "別のレンガ"
 
@@ -98512,8 +98569,8 @@ msgstr "ハイライト"
 msgid "Midtones"
 msgstr "中間色"
 
-#: source/blender/editors/space_node/drawnode.c:2733
-#: source/blender/editors/space_node/drawnode.c:2746
+#: source/blender/editors/space_node/drawnode.c:2742
+#: source/blender/editors/space_node/drawnode.c:2755
 msgid "Undefined Socket Type"
 msgstr "未定義ソケットタイプ"
 
@@ -99077,7 +99134,7 @@ msgstr "FPS: %i"
 msgid "View offset is locked"
 msgstr "ビューオフセットがロック中です"
 
-#: source/blender/editors/space_view3d/view3d_edit.c:3373
+#: source/blender/editors/space_view3d/view3d_edit.c:3378
 msgid "Depth too large"
 msgstr "深度が大きすぎます"
 
@@ -100345,7 +100402,7 @@ msgstr "シーケンス '%s' がシーン '%s' にありません"
 msgid "Background image cannot be removed"
 msgstr "背景画像が削除できません"
 
-#: source/blender/makesrna/intern/rna_tracking.c:613
+#: source/blender/makesrna/intern/rna_tracking.c:614
 msgid "MovieTracking '%s' cannot be removed"
 msgstr "動画トラッキング '%s' が削除できません"
 
@@ -100761,10 +100818,6 @@ msgstr "反射レイか？"
 msgid "Is Transmission Ray"
 msgstr "透過レイか？"
 
-#: source/blender/nodes/shader/nodes/node_shader_light_path.c:39
-msgid "Ray Length"
-msgstr "レイの長さ"
-
 #: source/blender/nodes/shader/nodes/node_shader_light_path.c:40
 msgid "Ray Depth"
 msgstr "レイの深度"
@@ -100946,59 +100999,59 @@ msgstr "画像が小さすぎます"
 msgid "Cannot render, no camera"
 msgstr "カメラがないとレンダリングできません"
 
-#: source/blender/render/intern/source/pipeline.c:2528
+#: source/blender/render/intern/source/pipeline.c:2532
 msgid "No camera found in scene"
 msgstr "シーン内にカメラがありません"
 
-#: source/blender/render/intern/source/pipeline.c:2568
+#: source/blender/render/intern/source/pipeline.c:2572
 msgid "No border area selected"
 msgstr "範囲が選択されていません"
 
-#: source/blender/render/intern/source/pipeline.c:2579
+#: source/blender/render/intern/source/pipeline.c:2583
 msgid "Cannot save render buffers, check the temp default path"
 msgstr "レンダーバッファが保存できません。デフォルトテンポラリパスをチェックしてください"
 
-#: source/blender/render/intern/source/pipeline.c:2585
+#: source/blender/render/intern/source/pipeline.c:2589
 msgid "Full sample does not support edge enhance"
 msgstr "フルサンプルはエッジレンダリングに未対応です"
 
-#: source/blender/render/intern/source/pipeline.c:2594
+#: source/blender/render/intern/source/pipeline.c:2598
 msgid "No node tree in scene"
 msgstr "シーンにノードツリーがありません"
 
-#: source/blender/render/intern/source/pipeline.c:2599
+#: source/blender/render/intern/source/pipeline.c:2603
 msgid "No render output node in scene"
 msgstr "シーンにレンダー出力ノードがありません"
 
-#: source/blender/render/intern/source/pipeline.c:2605
+#: source/blender/render/intern/source/pipeline.c:2609
 msgid "Full sample AA not supported without 3D rendering"
 msgstr "3Dレンダリングがない場合フルサンプルAAは使用できません"
 
-#: source/blender/render/intern/source/pipeline.c:2623
+#: source/blender/render/intern/source/pipeline.c:2627
 msgid "No ortho render possible for panorama"
 msgstr "パノラマ時に平行投影はレンダリングできません"
 
-#: source/blender/render/intern/source/pipeline.c:2629
+#: source/blender/render/intern/source/pipeline.c:2633
 msgid "Panoramic camera not supported in Freestyle"
 msgstr "Freestyle はパノラマカメラに未対応です"
 
-#: source/blender/render/intern/source/pipeline.c:2637
+#: source/blender/render/intern/source/pipeline.c:2641
 msgid "All render layers are disabled"
 msgstr "レンダーレイヤーがすべて無効です"
 
-#: source/blender/render/intern/source/pipeline.c:3066
+#: source/blender/render/intern/source/pipeline.c:3070
 msgid "No frames rendered, skipped to not overwrite"
 msgstr "レンダリングしたフレームがありません。上書きせずスキップします"
 
-#: source/blender/render/intern/source/pipeline.c:3219
+#: source/blender/render/intern/source/pipeline.c:3223
 msgid "There is no generated environment map available to save"
 msgstr "保存できる生成した環境マップがありません"
 
-#: source/blender/render/intern/source/pipeline.c:3245
+#: source/blender/render/intern/source/pipeline.c:3249
 msgid "Invalid environment map type"
 msgstr "無効な環境マップタイプです"
 
-#: source/blender/render/intern/source/pipeline.c:3263
+#: source/blender/render/intern/source/pipeline.c:3267
 msgid "Error writing environment map"
 msgstr "環境マップの保存エラー"
 
@@ -101006,20 +101059,20 @@ msgstr "環境マップの保存エラー"
 msgid "Setting scene %s alpha mode to Premul"
 msgstr "シーン %s のアルファモードをプリマルチプライに設定"
 
-#: source/blender/render/intern/source/pipeline.c:2516
+#: source/blender/render/intern/source/pipeline.c:2520
 msgid "No camera found in scene \"%s\""
 msgstr "シーン「%s」にカメラがありません"
 
-#: source/blender/render/intern/source/pipeline.c:3184
+#: source/blender/render/intern/source/pipeline.c:3188
 msgid "RE_result_rect_from_file: failed to allocate clip buffer '%s'"
 msgstr "RE_result_rect_from_file: クリップバッファー '%s' の確保に失敗しました"
 
-#: source/blender/render/intern/source/pipeline.c:3188
+#: source/blender/render/intern/source/pipeline.c:3192
 msgid "RE_result_rect_from_file: incorrect dimensions for partial copy '%s'"
 msgstr "RE_result_rect_from_file: 部分コピー '%s' の大きさが異常です"
 
-#: source/blender/render/intern/source/pipeline.c:3195
-#: source/blender/render/intern/source/pipeline.c:3202
+#: source/blender/render/intern/source/pipeline.c:3199
+#: source/blender/render/intern/source/pipeline.c:3206
 msgid "RE_result_rect_from_file: failed to load '%s'"
 msgstr "RE_result_rect_from_file: '%s' の読み込みに失敗しました"
 
