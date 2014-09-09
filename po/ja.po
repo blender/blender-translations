@@ -18,9 +18,9 @@
 # yamyam
 msgid ""
 msgstr ""
-"Project-Id-Version: Blender 2.71 (sub 6) (b'4f7caab')\n"
+"Project-Id-Version: Blender 2.71 (sub 6) (b'17f120e')\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-09-01 23:16:58\n"
+"POT-Creation-Date: 2014-09-09 19:56:18\n"
 "PO-Revision-Date: 2014-01-09 12:04+0900\n"
 "Last-Translator: \n"
 "Language-Team: Japanese Translation Team (https://sites.google.com/site/blugjp/blender-translators)\n"
@@ -237,7 +237,8 @@ msgstr "このグループのFカーブ"
 #. :src: bpy.types.SEQUENCER_OT_select_all.action:'SELECT'
 #. :src: bpy.types.TEXT_OT_selection_set.select
 #. :src: bpy.types.UV_OT_select_all.action:'SELECT'
-#. :src: bpy.types.WM_OT_link_append.autoselect
+#. :src: bpy.types.WM_OT_append.autoselect
+#. :src: bpy.types.WM_OT_link.autoselect
 #. :src: bpy.types.Sequence.select
 #. :src: bpy.types.SplinePoint.select
 #. :src: bpy.types.ThemeBoneColorSet.select
@@ -764,6 +765,7 @@ msgstr "メッセージ"
 
 #. :src: bpy.types.Actuator.type:'MOUSE'
 #. :src: bpy.types.KeyMapItem.map_type:'MOUSE'
+#. :src: bpy.types.SEQUENCER_OT_select.left_right:'MOUSE'
 #. :src: bpy.types.OperatorStrokeElement.mouse
 #. :src: bpy.types.Sensor.type:'MOUSE'
 #: source/blender/editors/space_logic/logic_window.c:434
@@ -873,7 +875,7 @@ msgstr "ランダム"
 #. :src: bpy.types.SceneSequence.scene
 #. :src: bpy.types.SpaceProperties.context:'SCENE'
 #. :src: Addons' categories
-#: scripts/addons/cycles/ui.py:338
+#: scripts/addons/cycles/ui.py:339
 #: scripts/startup/bl_ui/properties_render.py:366
 #: scripts/startup/bl_ui/properties_render_layer.py:84
 #: source/blender/editors/screen/screen_ops.c:3703
@@ -1167,7 +1169,7 @@ msgstr "実行優先度 - 低い数のアクションは高い数のアクショ
 #. :src: bpy.types.SURFACE_OT_primitive_nurbs_surface_torus_add.layers
 #. :src: bpy.types.CyclesRender_PT_layer_options
 #. :src: bpy.types.RENDERLAYER_PT_layer_options
-#: scripts/addons/cycles/ui.py:342
+#: scripts/addons/cycles/ui.py:343
 #: scripts/startup/bl_ui/properties_render_layer.py:90
 #: source/blender/editors/space_image/image_buttons.c:332
 msgid "Layer"
@@ -1350,7 +1352,7 @@ msgstr "このレイヤーを前のレイヤーとブレンドする方法"
 #. :src: bpy.types.TEXTURE_PT_blend
 #. :src: bpy.types.WorldTextureSlot.use_map_blend
 #. :src: bpy.types.ThemeWidgetStateColors.blend
-#: scripts/addons/cycles/ui.py:775
+#: scripts/addons/cycles/ui.py:777
 #: scripts/startup/bl_ui/properties_data_lamp.py:352
 #: scripts/startup/bl_ui/properties_material.py:419
 #: scripts/startup/bl_ui/properties_material.py:476
@@ -1657,7 +1659,7 @@ msgstr "高さ"
 #. :src: bpy.types.OBJECT_OT_vertex_warp.min
 #. :src: bpy.types.WM_OT_properties_edit.min
 #: scripts/addons/cycles/ui.py:208
-#: scripts/addons/cycles/ui.py:221
+#: scripts/addons/cycles/ui.py:222
 #: scripts/startup/bl_ui/properties_constraint.py:252
 #: scripts/startup/bl_ui/properties_constraint.py:259
 #: scripts/startup/bl_ui/properties_constraint.py:266
@@ -1702,7 +1704,7 @@ msgstr "最小"
 #. :src: bpy.types.OBJECT_OT_vertex_warp.max
 #. :src: bpy.types.WM_OT_properties_edit.max
 #: scripts/addons/cycles/ui.py:207
-#: scripts/addons/cycles/ui.py:220
+#: scripts/addons/cycles/ui.py:221
 #: scripts/startup/bl_ui/properties_constraint.py:253
 #: scripts/startup/bl_ui/properties_constraint.py:260
 #: scripts/startup/bl_ui/properties_constraint.py:267
@@ -1959,6 +1961,7 @@ msgstr "制限"
 #. :src: bpy.types.SmokeModifier.smoke_type:'NONE'
 #. :src: bpy.types.CompositorNodeBlur.aspect_correction:'NONE'
 #. :src: bpy.types.CompositorNodeTranslate.wrap_axis:'NONE'
+#. :src: bpy.types.SEQUENCER_OT_select.left_right:'NONE'
 #. :src: bpy.types.ParticleEdit.tool:'NONE'
 #. :src: bpy.types.SceneGameData.stereo:'NONE'
 #. :src: bpy.types.SceneGameData.physics_engine:'NONE'
@@ -2143,8 +2146,8 @@ msgstr "レイの最大長"
 #. :src: bpy.types.NearSensor.distance
 #. :src: bpy.types.RadarSensor.distance
 #. :src: bpy.types.WorldLighting.distance
-#: scripts/addons/cycles/ui.py:456
-#: scripts/addons/cycles/ui.py:849
+#: scripts/addons/cycles/ui.py:457
+#: scripts/addons/cycles/ui.py:851
 #: scripts/startup/bl_ui/properties_constraint.py:218
 #: scripts/startup/bl_ui/properties_data_bone.py:355
 #: scripts/startup/bl_ui/properties_data_camera.py:173
@@ -2227,11 +2230,11 @@ msgstr "マテリアル"
 
 #. :src: bpy.types.ConstraintActuator.material
 msgid "Ray detects only Objects with this material"
-msgstr "現在のマテリアルを持つオブジェクトを検出する光線"
+msgstr "レイがこのマテリアルを持つオブジェクトのみ検出します"
 
 #. :src: bpy.types.ConstraintActuator.property
 msgid "Ray detects only Objects with this property"
-msgstr "現在のプロパティを持つオブジェクトを検出する光線"
+msgstr "レイがこのプロパティを持つオブジェクトのみ検出します"
 
 #. :src: bpy.types.ConstraintActuator.time
 #. :src: bpy.types.EditObjectActuator.time
@@ -2753,6 +2756,8 @@ msgstr "セピア"
 #. :src: bpy.types.PAINT_OT_mask_flood_fill.mode:'INVERT'
 #. :src: bpy.types.PAINT_OT_mask_lasso_gesture.mode:'INVERT'
 #. :src: bpy.types.PAINT_OT_vert_select_all.action:'INVERT'
+#. :src: bpy.types.PAINT_OT_vertex_paint.mode:'INVERT'
+#. :src: bpy.types.PAINT_OT_weight_paint.mode:'INVERT'
 #. :src: bpy.types.PARTICLE_OT_select_all.action:'INVERT'
 #. :src: bpy.types.PARTICLE_OT_select_roots.action:'INVERT'
 #. :src: bpy.types.PARTICLE_OT_select_tips.action:'INVERT'
@@ -3066,7 +3071,7 @@ msgstr "モード"
 
 #. :src: bpy.types.MouseActuator.mode:'LOOK'
 #. :src: bpy.types.ColorManagedViewSettings.look
-#: source/blender/editors/interface/interface_templates.c:3603
+#: source/blender/editors/interface/interface_templates.c:3599
 msgid "Look"
 msgstr "ルック"
 
@@ -3506,7 +3511,7 @@ msgstr "回転"
 #. :src: bpy.types.ParticleKey.rotation
 #. :src: bpy.types.TransformSequence.rotation_start
 #. :src: bpy.types.TexMapping.rotation
-#: scripts/addons/cycles/ui.py:470
+#: scripts/addons/cycles/ui.py:471
 #: scripts/startup/bl_ui/properties_constraint.py:173
 #: scripts/startup/bl_ui/properties_data_bone.py:135
 #: scripts/startup/bl_ui/properties_data_bone.py:79
@@ -3520,7 +3525,7 @@ msgstr "回転"
 #: scripts/startup/bl_ui/properties_object.py:65
 #: scripts/startup/bl_ui/properties_object.py:285
 #: scripts/startup/bl_ui/properties_physics_rigidbody.py:135
-#: scripts/startup/bl_ui/space_sequencer.py:585
+#: scripts/startup/bl_ui/space_sequencer.py:592
 #: scripts/startup/bl_ui/space_view3d.py:1261
 #: source/blender/editors/space_view3d/view3d_buttons.c:948
 #: source/blender/editors/space_view3d/view3d_buttons.c:959
@@ -3606,7 +3611,7 @@ msgstr "キャラクター位置の加算と設定を切り替えます"
 #. :src: bpy.types.TEXT_OT_cursor_set.x
 #. :src: bpy.types.UV_OT_circle_select.x
 #. :src: bpy.types.VIEW3D_OT_select_circle.x
-#: scripts/addons/cycles/ui.py:296
+#: scripts/addons/cycles/ui.py:297
 #: scripts/startup/bl_ui/properties_constraint.py:99
 #: scripts/startup/bl_ui/properties_constraint.py:105
 #: scripts/startup/bl_ui/properties_constraint.py:111
@@ -3642,10 +3647,10 @@ msgstr "キャラクター位置の加算と設定を切り替えます"
 #: scripts/startup/bl_ui/space_image.py:593
 #: scripts/startup/bl_ui/space_image.py:598
 #: scripts/startup/bl_ui/space_node.py:382
-#: scripts/startup/bl_ui/space_sequencer.py:849
-#: scripts/startup/bl_ui/space_sequencer.py:669
-#: scripts/startup/bl_ui/space_sequencer.py:565
-#: scripts/startup/bl_ui/space_sequencer.py:578
+#: scripts/startup/bl_ui/space_sequencer.py:856
+#: scripts/startup/bl_ui/space_sequencer.py:676
+#: scripts/startup/bl_ui/space_sequencer.py:572
+#: scripts/startup/bl_ui/space_sequencer.py:585
 #: scripts/startup/bl_ui/space_userpref.py:616
 #: scripts/startup/bl_ui/space_view3d.py:2806
 #: scripts/startup/bl_ui/space_view3d.py:3117
@@ -3689,7 +3694,7 @@ msgstr "X軸に沿って力に制限を設定します"
 #. :src: bpy.types.TEXT_OT_cursor_set.y
 #. :src: bpy.types.UV_OT_circle_select.y
 #. :src: bpy.types.VIEW3D_OT_select_circle.y
-#: scripts/addons/cycles/ui.py:297
+#: scripts/addons/cycles/ui.py:298
 #: scripts/startup/bl_ui/properties_constraint.py:100
 #: scripts/startup/bl_ui/properties_constraint.py:106
 #: scripts/startup/bl_ui/properties_constraint.py:112
@@ -3724,10 +3729,10 @@ msgstr "X軸に沿って力に制限を設定します"
 #: scripts/startup/bl_ui/space_image.py:594
 #: scripts/startup/bl_ui/space_image.py:599
 #: scripts/startup/bl_ui/space_node.py:383
-#: scripts/startup/bl_ui/space_sequencer.py:850
-#: scripts/startup/bl_ui/space_sequencer.py:670
-#: scripts/startup/bl_ui/space_sequencer.py:566
-#: scripts/startup/bl_ui/space_sequencer.py:579
+#: scripts/startup/bl_ui/space_sequencer.py:857
+#: scripts/startup/bl_ui/space_sequencer.py:677
+#: scripts/startup/bl_ui/space_sequencer.py:573
+#: scripts/startup/bl_ui/space_sequencer.py:586
 #: scripts/startup/bl_ui/space_userpref.py:617
 #: scripts/startup/bl_ui/space_view3d.py:2807
 #: scripts/startup/bl_ui/space_view3d.py:3118
@@ -4507,13 +4512,21 @@ msgstr "モジュール名"
 msgid "Addon Preferences"
 msgstr "アドオン設定"
 
-#. :src: bpy.types.UI_AP_i18n_settings.SOURCE_DIR
-msgid "Source Root"
-msgstr "ソースルート"
+#. :src: bpy.types.UI_AP_i18n_settings.I18N_DIR
+msgid "Translation Root"
+msgstr "ルートの移動"
 
-#. :src: bpy.types.UI_AP_i18n_settings.SOURCE_DIR
-msgid "The Blender source root path"
-msgstr "Blenderソースルートパス"
+#. :src: bpy.types.UI_AP_i18n_settings.I18N_DIR
+msgid "The bf-translation repository"
+msgstr "bf-translationリポジトリ"
+
+#. :src: bpy.types.UI_AP_i18n_settings.WARN_MSGID_NOT_CAPITALIZED
+msgid "Warn Msgid Not Capitalized"
+msgstr "msgidの先頭文字の警告"
+
+#. :src: bpy.types.UI_AP_i18n_settings.WARN_MSGID_NOT_CAPITALIZED
+msgid "Warn about messages not starting by a capitalized letter (with a few allowed exceptions!)"
+msgstr "開始文字が大文字ではないメッセージを警告します(少しの例外を可能にするため！)"
 
 #. :src: bpy.types.UI_AP_i18n_settings.SPELL_CACHE
 msgid "Spell Cache"
@@ -4522,6 +4535,22 @@ msgstr "スペルキャッシュ"
 #. :src: bpy.types.UI_AP_i18n_settings.SPELL_CACHE
 msgid "A cache storing validated msgids, to avoid re-spellchecking them"
 msgstr "有効な msgid を格納するキャッシュ。再スペルチェックを防ぎます"
+
+#. :src: bpy.types.UI_AP_i18n_settings.SOURCE_DIR
+msgid "Source Root"
+msgstr "ソースルート"
+
+#. :src: bpy.types.UI_AP_i18n_settings.SOURCE_DIR
+msgid "The Blender source root path"
+msgstr "Blenderソースルートパス"
+
+#. :src: bpy.types.UI_AP_i18n_settings.FRIBIDI_LIB
+msgid "Fribidi Library"
+msgstr "Fribidiライブラリ"
+
+#. :src: bpy.types.UI_AP_i18n_settings.FRIBIDI_LIB
+msgid "The FriBidi C compiled library (.so under Linux, .dll under windows...), you’ll likely have to edit it if you’re under Windows, e.g. using the one included in svn's libraries repository"
+msgstr "FriBidi Cコンパイル済ライブラリ(Linuxでは .so、Windowsでは .dll)。Windows環境の場合、編集しないといけないでしょう。例：SVNのライブラリリポジトリ内でインクルードされたこれを使用するなど"
 
 #. :src: bpy.types.UI_AP_i18n_settings.GETTEXT_MSGFMT_EXECUTABLE
 msgid "Gettext 'msgfmt' executable"
@@ -4539,22 +4568,6 @@ msgstr "パスのインポート"
 msgid "Additional paths to add to sys.path (';' separated)"
 msgstr "sys.pathに追加するパス(「;」で区切り)"
 
-#. :src: bpy.types.UI_AP_i18n_settings.I18N_DIR
-msgid "Translation Root"
-msgstr "ルートの移動"
-
-#. :src: bpy.types.UI_AP_i18n_settings.I18N_DIR
-msgid "The bf-translation repository"
-msgstr "bf-translationリポジトリ"
-
-#. :src: bpy.types.UI_AP_i18n_settings.WARN_MSGID_NOT_CAPITALIZED
-msgid "Warn Msgid Not Capitalized"
-msgstr "msgidの先頭文字の警告"
-
-#. :src: bpy.types.UI_AP_i18n_settings.WARN_MSGID_NOT_CAPITALIZED
-msgid "Warn about messages not starting by a capitalized letter (with a few allowed exceptions!)"
-msgstr "開始文字が大文字ではないメッセージを警告します(少しの例外を可能にするため！)"
-
 #. :src: bpy.types.UI_AP_i18n_settings.persistent_data_path
 msgid "Persistent Data Path"
 msgstr "Persistenデータパス"
@@ -4562,14 +4575,6 @@ msgstr "Persistenデータパス"
 #. :src: bpy.types.UI_AP_i18n_settings.persistent_data_path
 msgid "The name of a json file storing those settings (unfortunately, Blender's system does not work here)"
 msgstr "これらの設定が含まれるJSONファイル名(残念ながらBlenderのシステムはここでは動作しません)"
-
-#. :src: bpy.types.UI_AP_i18n_settings.FRIBIDI_LIB
-msgid "Fribidi Library"
-msgstr "Fribidiライブラリ"
-
-#. :src: bpy.types.UI_AP_i18n_settings.FRIBIDI_LIB
-msgid "The FriBidi C compiled library (.so under Linux, .dll under windows...), you’ll likely have to edit it if you’re under Windows, e.g. using the one included in svn's libraries repository"
-msgstr "FriBidi Cコンパイル済ライブラリ(Linuxでは .so、Windowsでは .dll)。Windows環境の場合、編集しないといけないでしょう。例：SVNのライブラリリポジトリ内でインクルードされたこれを使用するなど"
 
 #. :src: bpy.types.AnimData
 #. :src: bpy.types.Armature.animation_data
@@ -4781,7 +4786,7 @@ msgstr "ストリップの重みづけした結果が累積された結果から
 #. :src: bpy.types.TextureSlot.blend_type:'MULTIPLY'
 #. :src: bpy.types.WorldLighting.ao_blend_type:'MULTIPLY'
 #: scripts/startup/bl_ui/properties_data_bone.py:357
-#: scripts/startup/bl_ui/space_sequencer.py:855
+#: scripts/startup/bl_ui/space_sequencer.py:862
 msgid "Multiply"
 msgstr "乗算"
 
@@ -5395,7 +5400,7 @@ msgstr "このエリアのウィンドウ相対水平位置"
 #. :src: bpy.types.OBJECT_OT_bake.width
 #. :src: bpy.types.PAINT_OT_add_texture_paint_slot.width
 #. :src: bpy.types.Region.width
-#: scripts/addons/cycles/ui.py:268
+#: scripts/addons/cycles/ui.py:269
 #: scripts/startup/bl_ui/properties_data_camera.py:147
 #: scripts/startup/bl_ui/properties_data_curve.py:411
 #: scripts/startup/bl_ui/space_clip.py:731
@@ -5685,9 +5690,9 @@ msgstr "ワールドの原点からの垂直方向の画像のオフセット"
 #. :src: bpy.types.SmokeFlowSettings.texture_size
 #. :src: bpy.types.TextureSlot.scale
 #. :src: bpy.types.ParticleSettingsTextureSlot.use_map_size
-#: scripts/addons/cycles/ui.py:774
-#: scripts/addons/cycles/ui.py:464
-#: scripts/addons/cycles/ui.py:717
+#: scripts/addons/cycles/ui.py:776
+#: scripts/addons/cycles/ui.py:465
+#: scripts/addons/cycles/ui.py:719
 #: scripts/startup/bl_ui/properties_data_camera.py:197
 #: scripts/startup/bl_ui/properties_data_camera.py:143
 #: scripts/startup/bl_ui/properties_data_curve.py:152
@@ -5743,7 +5748,7 @@ msgstr "下絵の拡大率"
 #. :src: bpy.types.GPencilLayer.alpha
 #. :src: bpy.types.MaskLayer.alpha
 #: scripts/startup/bl_ui/space_clip.py:657
-#: scripts/startup/bl_ui/space_sequencer.py:454
+#: scripts/startup/bl_ui/space_sequencer.py:461
 msgid "Opacity"
 msgstr "不透明度"
 
@@ -5762,6 +5767,7 @@ msgstr "画像を表示する視点方向"
 #. :src: bpy.types.BackgroundImage.view_axis:'LEFT'
 #. :src: bpy.types.TextCurve.align:'LEFT'
 #. :src: bpy.types.SEQUENCER_OT_cut.side:'LEFT'
+#. :src: bpy.types.SEQUENCER_OT_select.left_right:'LEFT'
 #. :src: bpy.types.SEQUENCER_OT_select_active_side.side:'LEFT'
 #. :src: bpy.types.SEQUENCER_OT_select_handles.side:'LEFT'
 #. :src: bpy.types.SEQUENCER_OT_swap.side:'LEFT'
@@ -5781,6 +5787,7 @@ msgstr "下絵を左視点で表示します"
 #. :src: bpy.types.BackgroundImage.view_axis:'RIGHT'
 #. :src: bpy.types.TextCurve.align:'RIGHT'
 #. :src: bpy.types.SEQUENCER_OT_cut.side:'RIGHT'
+#. :src: bpy.types.SEQUENCER_OT_select.left_right:'RIGHT'
 #. :src: bpy.types.SEQUENCER_OT_select_active_side.side:'RIGHT'
 #. :src: bpy.types.SEQUENCER_OT_select_handles.side:'RIGHT'
 #. :src: bpy.types.SEQUENCER_OT_swap.side:'RIGHT'
@@ -6043,9 +6050,10 @@ msgstr "ケージとして使用するオブジェクト。アクティブオブ
 #. :src: bpy.types.TEXTURE_OT_envmap_save.filepath
 #. :src: bpy.types.TEXT_OT_open.filepath
 #. :src: bpy.types.TEXT_OT_save_as.filepath
+#. :src: bpy.types.WM_OT_append.filepath
 #. :src: bpy.types.WM_OT_collada_export.filepath
 #. :src: bpy.types.WM_OT_collada_import.filepath
-#. :src: bpy.types.WM_OT_link_append.filepath
+#. :src: bpy.types.WM_OT_link.filepath
 #. :src: bpy.types.WM_OT_open_mainfile.filepath
 #. :src: bpy.types.WM_OT_read_homefile.filepath
 #. :src: bpy.types.WM_OT_recover_auto_save.filepath
@@ -6270,7 +6278,7 @@ msgstr "自動的に出力ファイルの名前をパスの種類で付けます
 
 #. :src: bpy.types.BakeSettings.use_cage
 #. :src: bpy.types.OBJECT_OT_bake.use_cage
-#: scripts/addons/cycles/ui.py:1270
+#: scripts/addons/cycles/ui.py:1273
 msgid "Cage"
 msgstr "ケージ"
 
@@ -7463,7 +7471,7 @@ msgstr "ルールの不確実性"
 #. :src: bpy.types.CyclesWorld_PT_volume
 #. :src: bpy.types.SmokeFlowSettings.volume_density
 #. :src: bpy.types.ToolSettings.snap_element:'VOLUME'
-#: scripts/addons/cycles/ui.py:227
+#: scripts/addons/cycles/ui.py:228
 #: scripts/addons/cycles/ui.py:155
 #: source/blender/nodes/shader/nodes/node_shader_output_material.c:33
 #: source/blender/nodes/shader/nodes/node_shader_output_world.c:33
@@ -8420,9 +8428,10 @@ msgstr "表示デバイス名"
 #. :src: bpy.types.TEXT_OT_open.display_type:'FILE_DEFAULTDISPLAY'
 #. :src: bpy.types.TEXT_OT_save_as.display_type:'FILE_DEFAULTDISPLAY'
 #. :src: bpy.types.WM_OT_addon_install.target:'DEFAULT'
+#. :src: bpy.types.WM_OT_append.display_type:'FILE_DEFAULTDISPLAY'
 #. :src: bpy.types.WM_OT_collada_export.display_type:'FILE_DEFAULTDISPLAY'
 #. :src: bpy.types.WM_OT_collada_import.display_type:'FILE_DEFAULTDISPLAY'
-#. :src: bpy.types.WM_OT_link_append.display_type:'FILE_DEFAULTDISPLAY'
+#. :src: bpy.types.WM_OT_link.display_type:'FILE_DEFAULTDISPLAY'
 #. :src: bpy.types.WM_OT_open_mainfile.display_type:'FILE_DEFAULTDISPLAY'
 #. :src: bpy.types.WM_OT_recover_auto_save.display_type:'FILE_DEFAULTDISPLAY'
 #. :src: bpy.types.WM_OT_save_as_mainfile.display_type:'FILE_DEFAULTDISPLAY'
@@ -8703,7 +8712,7 @@ msgstr "テクスチャのコントラストを調整します"
 #. :src: bpy.types.MovieSequence.color_saturation
 #. :src: bpy.types.SceneSequence.color_saturation
 #. :src: bpy.types.TextureSlot.blend_type:'SATURATION'
-#: scripts/startup/bl_ui/space_sequencer.py:854
+#: scripts/startup/bl_ui/space_sequencer.py:861
 #: source/blender/editors/interface/interface_regions.c:2195
 #: source/blender/editors/space_node/drawnode.c:1925
 #: source/blender/editors/space_node/drawnode.c:1977
@@ -8994,11 +9003,11 @@ msgstr "色相"
 #. :src: bpy.types.TextureSlot.blend_type:'COLOR'
 #. :src: bpy.types.LampTextureSlot.use_map_color
 #. :src: bpy.types.UnifiedPaintSettings.color
-#: scripts/addons/cycles/ui.py:393
-#: scripts/addons/cycles/ui.py:398
-#: scripts/addons/cycles/ui.py:403
-#: scripts/addons/cycles/ui.py:408
-#: scripts/addons/cycles/ui.py:808
+#: scripts/addons/cycles/ui.py:394
+#: scripts/addons/cycles/ui.py:399
+#: scripts/addons/cycles/ui.py:404
+#: scripts/addons/cycles/ui.py:409
+#: scripts/addons/cycles/ui.py:810
 #: scripts/startup/bl_ui/properties_material.py:543
 #: scripts/startup/bl_ui/properties_paint_common.py:55
 #: scripts/startup/bl_ui/properties_paint_common.py:57
@@ -11783,7 +11792,7 @@ msgstr "ターゲットから使用するトランスフォームタイプ"
 #: scripts/startup/bl_ui/properties_particle.py:935
 #: scripts/startup/bl_ui/properties_physics_smoke.py:61
 #: scripts/startup/bl_ui/properties_scene.py:83
-#: scripts/startup/bl_ui/space_sequencer.py:574
+#: scripts/startup/bl_ui/space_sequencer.py:581
 #: scripts/startup/bl_ui/space_view3d.py:1264
 #: scripts/startup/bl_ui/space_view3d.py:2813
 #: source/blender/nodes/composite/nodes/node_composite_movieclip.c:44
@@ -13368,8 +13377,8 @@ msgstr "反射のみ"
 #. :src: bpy.types.TRANSFORM_OT_tosphere.value
 #. :src: bpy.types.TRANSFORM_OT_vert_slide.value
 #. :src: bpy.types.WorldLighting.ao_factor
-#: scripts/addons/cycles/ui.py:848
-#: scripts/addons/cycles/ui.py:1156
+#: scripts/addons/cycles/ui.py:850
+#: scripts/addons/cycles/ui.py:1159
 #: scripts/startup/bl_ui/properties_data_lamp.py:151
 #: scripts/startup/bl_ui/properties_data_modifier.py:417
 #: scripts/startup/bl_ui/properties_data_modifier.py:806
@@ -13506,6 +13515,9 @@ msgstr "面境界タイプの減衰曲線"
 #. :src: bpy.types.RemeshModifier.mode:'SMOOTH'
 #. :src: bpy.types.OBJECT_OT_modifier_add.type:'SMOOTH'
 #. :src: bpy.types.PAINT_OT_brush_select.sculpt_tool:'SMOOTH'
+#. :src: bpy.types.PAINT_OT_image_paint.mode:'SMOOTH'
+#. :src: bpy.types.PAINT_OT_vertex_paint.mode:'SMOOTH'
+#. :src: bpy.types.PAINT_OT_weight_paint.mode:'SMOOTH'
 #. :src: bpy.types.SCULPT_OT_brush_stroke.mode:'SMOOTH'
 #. :src: bpy.types.ParticleEdit.tool:'SMOOTH'
 #. :src: bpy.types.PointDensity.falloff:'SMOOTH'
@@ -13769,7 +13781,7 @@ msgstr "乾燥するおおよそのフレーム数"
 #. :src: bpy.types.WM_OT_collada_export.export_mesh_type_selection
 #. :src: bpy.types.CyclesCurveRenderSettings.resolution
 #. :src: bpy.types.VoxelData.resolution
-#: scripts/addons/cycles/ui.py:1232
+#: scripts/addons/cycles/ui.py:1235
 #: scripts/startup/bl_ui/properties_data_curve.py:181
 #: scripts/startup/bl_ui/properties_game.py:660
 #: scripts/startup/bl_ui/properties_game.py:355
@@ -15730,8 +15742,8 @@ msgstr "煙シミュレーションの空気の流れを元にした力を作成
 #. :src: bpy.types.MESH_OT_blend_from_shape.shape
 #. :src: bpy.types.DATA_PT_shape_curve
 #. :src: bpy.types.CyclesCurveRenderSettings.shape
-#: scripts/addons/cycles/ui.py:1226
-#: scripts/addons/cycles/ui.py:1309
+#: scripts/addons/cycles/ui.py:1229
+#: scripts/addons/cycles/ui.py:1312
 #: scripts/startup/bl_ui/properties_physics_rigidbody.py:71
 msgid "Shape"
 msgstr "シェイプ"
@@ -16197,7 +16209,8 @@ msgstr "ファイルブラウザのタイトル"
 #. :src: bpy.types.IMAGE_OT_open.directory
 #. :src: bpy.types.SEQUENCER_OT_change_path.directory
 #. :src: bpy.types.SEQUENCER_OT_image_strip_add.directory
-#. :src: bpy.types.WM_OT_link_append.directory
+#. :src: bpy.types.WM_OT_append.directory
+#. :src: bpy.types.WM_OT_link.directory
 #. :src: bpy.types.ImageSequence.directory
 #. :src: bpy.types.SequenceProxy.directory
 msgid "Directory"
@@ -16210,7 +16223,8 @@ msgstr "ファイルブラウザー内に表示されるディレクトリ"
 #. :src: bpy.types.FileSelectParams.filename
 #. :src: bpy.types.Image.filepath
 #. :src: bpy.types.Image.filepath_raw
-#. :src: bpy.types.WM_OT_link_append.filename
+#. :src: bpy.types.WM_OT_append.filename
+#. :src: bpy.types.WM_OT_link.filename
 msgid "File Name"
 msgstr "ファイル名"
 
@@ -16254,9 +16268,10 @@ msgstr "ファイルリストの表示モード"
 #. :src: bpy.types.TEXTURE_OT_envmap_save.display_type:'FILE_SHORTDISPLAY'
 #. :src: bpy.types.TEXT_OT_open.display_type:'FILE_SHORTDISPLAY'
 #. :src: bpy.types.TEXT_OT_save_as.display_type:'FILE_SHORTDISPLAY'
+#. :src: bpy.types.WM_OT_append.display_type:'FILE_SHORTDISPLAY'
 #. :src: bpy.types.WM_OT_collada_export.display_type:'FILE_SHORTDISPLAY'
 #. :src: bpy.types.WM_OT_collada_import.display_type:'FILE_SHORTDISPLAY'
-#. :src: bpy.types.WM_OT_link_append.display_type:'FILE_SHORTDISPLAY'
+#. :src: bpy.types.WM_OT_link.display_type:'FILE_SHORTDISPLAY'
 #. :src: bpy.types.WM_OT_open_mainfile.display_type:'FILE_SHORTDISPLAY'
 #. :src: bpy.types.WM_OT_recover_auto_save.display_type:'FILE_SHORTDISPLAY'
 #. :src: bpy.types.WM_OT_save_as_mainfile.display_type:'FILE_SHORTDISPLAY'
@@ -16290,9 +16305,10 @@ msgstr "ショートリスト"
 #. :src: bpy.types.TEXTURE_OT_envmap_save.display_type:'FILE_SHORTDISPLAY'
 #. :src: bpy.types.TEXT_OT_open.display_type:'FILE_SHORTDISPLAY'
 #. :src: bpy.types.TEXT_OT_save_as.display_type:'FILE_SHORTDISPLAY'
+#. :src: bpy.types.WM_OT_append.display_type:'FILE_SHORTDISPLAY'
 #. :src: bpy.types.WM_OT_collada_export.display_type:'FILE_SHORTDISPLAY'
 #. :src: bpy.types.WM_OT_collada_import.display_type:'FILE_SHORTDISPLAY'
-#. :src: bpy.types.WM_OT_link_append.display_type:'FILE_SHORTDISPLAY'
+#. :src: bpy.types.WM_OT_link.display_type:'FILE_SHORTDISPLAY'
 #. :src: bpy.types.WM_OT_open_mainfile.display_type:'FILE_SHORTDISPLAY'
 #. :src: bpy.types.WM_OT_recover_auto_save.display_type:'FILE_SHORTDISPLAY'
 #. :src: bpy.types.WM_OT_save_as_mainfile.display_type:'FILE_SHORTDISPLAY'
@@ -16326,9 +16342,10 @@ msgstr "ファイルを短いリストで表示します"
 #. :src: bpy.types.TEXTURE_OT_envmap_save.display_type:'FILE_LONGDISPLAY'
 #. :src: bpy.types.TEXT_OT_open.display_type:'FILE_LONGDISPLAY'
 #. :src: bpy.types.TEXT_OT_save_as.display_type:'FILE_LONGDISPLAY'
+#. :src: bpy.types.WM_OT_append.display_type:'FILE_LONGDISPLAY'
 #. :src: bpy.types.WM_OT_collada_export.display_type:'FILE_LONGDISPLAY'
 #. :src: bpy.types.WM_OT_collada_import.display_type:'FILE_LONGDISPLAY'
-#. :src: bpy.types.WM_OT_link_append.display_type:'FILE_LONGDISPLAY'
+#. :src: bpy.types.WM_OT_link.display_type:'FILE_LONGDISPLAY'
 #. :src: bpy.types.WM_OT_open_mainfile.display_type:'FILE_LONGDISPLAY'
 #. :src: bpy.types.WM_OT_recover_auto_save.display_type:'FILE_LONGDISPLAY'
 #. :src: bpy.types.WM_OT_save_as_mainfile.display_type:'FILE_LONGDISPLAY'
@@ -16362,9 +16379,10 @@ msgstr "ロングリスト"
 #. :src: bpy.types.TEXTURE_OT_envmap_save.display_type:'FILE_LONGDISPLAY'
 #. :src: bpy.types.TEXT_OT_open.display_type:'FILE_LONGDISPLAY'
 #. :src: bpy.types.TEXT_OT_save_as.display_type:'FILE_LONGDISPLAY'
+#. :src: bpy.types.WM_OT_append.display_type:'FILE_LONGDISPLAY'
 #. :src: bpy.types.WM_OT_collada_export.display_type:'FILE_LONGDISPLAY'
 #. :src: bpy.types.WM_OT_collada_import.display_type:'FILE_LONGDISPLAY'
-#. :src: bpy.types.WM_OT_link_append.display_type:'FILE_LONGDISPLAY'
+#. :src: bpy.types.WM_OT_link.display_type:'FILE_LONGDISPLAY'
 #. :src: bpy.types.WM_OT_open_mainfile.display_type:'FILE_LONGDISPLAY'
 #. :src: bpy.types.WM_OT_recover_auto_save.display_type:'FILE_LONGDISPLAY'
 #. :src: bpy.types.WM_OT_save_as_mainfile.display_type:'FILE_LONGDISPLAY'
@@ -16398,9 +16416,10 @@ msgstr "ファイルを詳細リストで表示します"
 #. :src: bpy.types.TEXTURE_OT_envmap_save.display_type:'FILE_IMGDISPLAY'
 #. :src: bpy.types.TEXT_OT_open.display_type:'FILE_IMGDISPLAY'
 #. :src: bpy.types.TEXT_OT_save_as.display_type:'FILE_IMGDISPLAY'
+#. :src: bpy.types.WM_OT_append.display_type:'FILE_IMGDISPLAY'
 #. :src: bpy.types.WM_OT_collada_export.display_type:'FILE_IMGDISPLAY'
 #. :src: bpy.types.WM_OT_collada_import.display_type:'FILE_IMGDISPLAY'
-#. :src: bpy.types.WM_OT_link_append.display_type:'FILE_IMGDISPLAY'
+#. :src: bpy.types.WM_OT_link.display_type:'FILE_IMGDISPLAY'
 #. :src: bpy.types.WM_OT_open_mainfile.display_type:'FILE_IMGDISPLAY'
 #. :src: bpy.types.WM_OT_recover_auto_save.display_type:'FILE_IMGDISPLAY'
 #. :src: bpy.types.WM_OT_save_as_mainfile.display_type:'FILE_IMGDISPLAY'
@@ -16434,9 +16453,10 @@ msgstr "サムネイル"
 #. :src: bpy.types.TEXTURE_OT_envmap_save.display_type:'FILE_IMGDISPLAY'
 #. :src: bpy.types.TEXT_OT_open.display_type:'FILE_IMGDISPLAY'
 #. :src: bpy.types.TEXT_OT_save_as.display_type:'FILE_IMGDISPLAY'
+#. :src: bpy.types.WM_OT_append.display_type:'FILE_IMGDISPLAY'
 #. :src: bpy.types.WM_OT_collada_export.display_type:'FILE_IMGDISPLAY'
 #. :src: bpy.types.WM_OT_collada_import.display_type:'FILE_IMGDISPLAY'
-#. :src: bpy.types.WM_OT_link_append.display_type:'FILE_IMGDISPLAY'
+#. :src: bpy.types.WM_OT_link.display_type:'FILE_IMGDISPLAY'
 #. :src: bpy.types.WM_OT_open_mainfile.display_type:'FILE_IMGDISPLAY'
 #. :src: bpy.types.WM_OT_recover_auto_save.display_type:'FILE_IMGDISPLAY'
 #. :src: bpy.types.WM_OT_save_as_mainfile.display_type:'FILE_IMGDISPLAY'
@@ -17576,10 +17596,10 @@ msgstr "定量的不可視(QI)値の範囲内の特徴エッジを選択しま�
 #: scripts/startup/bl_ui/properties_physics_fluid.py:187
 #: scripts/startup/bl_ui/properties_texture.py:637
 #: scripts/startup/bl_ui/space_image.py:586
-#: scripts/startup/bl_ui/space_sequencer.py:688
-#: scripts/startup/bl_ui/space_sequencer.py:733
-#: scripts/startup/bl_ui/space_sequencer.py:738
-#: scripts/startup/bl_ui/space_sequencer.py:683
+#: scripts/startup/bl_ui/space_sequencer.py:695
+#: scripts/startup/bl_ui/space_sequencer.py:740
+#: scripts/startup/bl_ui/space_sequencer.py:745
+#: scripts/startup/bl_ui/space_sequencer.py:690
 #: scripts/startup/bl_ui/space_time.py:45
 #: scripts/startup/bl_ui/space_time.py:48
 #: scripts/startup/bl_ui/space_view3d.py:2718
@@ -17617,10 +17637,10 @@ msgstr "QI範囲の最初のQI値"
 #: scripts/startup/bl_ui/properties_physics_fluid.py:188
 #: scripts/startup/bl_ui/properties_texture.py:638
 #: scripts/startup/bl_ui/space_image.py:587
-#: scripts/startup/bl_ui/space_sequencer.py:689
-#: scripts/startup/bl_ui/space_sequencer.py:734
-#: scripts/startup/bl_ui/space_sequencer.py:739
-#: scripts/startup/bl_ui/space_sequencer.py:684
+#: scripts/startup/bl_ui/space_sequencer.py:696
+#: scripts/startup/bl_ui/space_sequencer.py:741
+#: scripts/startup/bl_ui/space_sequencer.py:746
+#: scripts/startup/bl_ui/space_sequencer.py:691
 #: scripts/startup/bl_ui/space_time.py:46
 #: scripts/startup/bl_ui/space_time.py:49
 #: scripts/startup/bl_ui/space_view3d.py:2719
@@ -18613,7 +18633,7 @@ msgstr "Integer型プロパティ"
 
 #. :src: bpy.types.GameProperty.type:'FLOAT'
 #. :src: bpy.types.OBJECT_OT_game_property_new.type:'FLOAT'
-#: source/blender/blenkernel/intern/customdata.c:1101
+#: source/blender/blenkernel/intern/customdata.c:1109
 msgid "Float"
 msgstr "浮動小数点数"
 
@@ -18627,7 +18647,7 @@ msgstr "Float型プロパティ"
 #. :src: bpy.types.NodeSocket.type:'STRING'
 #. :src: bpy.types.NodeSocketInterfaceStandard.type:'STRING'
 #. :src: bpy.types.OBJECT_OT_game_property_new.type:'STRING'
-#: source/blender/blenkernel/intern/customdata.c:1105
+#: source/blender/blenkernel/intern/customdata.c:1113
 msgid "String"
 msgstr "文字列"
 
@@ -19493,7 +19513,7 @@ msgstr "膨らます"
 #. :src: bpy.types.SpaceDopeSheetEditor.mode:'MASK'
 #. :src: bpy.types.SpaceImageEditor.mode:'MASK'
 #. :src: bpy.types.SpaceImageEditor.mask
-#: scripts/startup/bl_ui/space_sequencer.py:987
+#: scripts/startup/bl_ui/space_sequencer.py:994
 #: source/blender/nodes/composite/nodes/node_composite_boxmask.c:36
 #: source/blender/nodes/composite/nodes/node_composite_boxmask.c:42
 #: source/blender/nodes/composite/nodes/node_composite_colorcorrection.c:38
@@ -19609,7 +19629,7 @@ msgstr "単一のドットを細かく配置できるようにします"
 #. :src: bpy.types.CompositorNodeScale.space
 #. :src: bpy.types.ShaderNodeNormalMap.space
 #. :src: bpy.types.MocapConstraint.targetSpace
-#: scripts/addons/cycles/ui.py:1281
+#: scripts/addons/cycles/ui.py:1284
 #: scripts/startup/bl_ui/properties_texture.py:1206
 #: source/blender/editors/space_graph/graph_buttons.c:650
 msgid "Space"
@@ -20029,7 +20049,7 @@ msgstr "オフ"
 
 #. :src: bpy.types.Brush.use_pressure_masking:'RAMP'
 #. :src: bpy.types.LineStyleColorModifier_Material.use_ramp
-#: scripts/addons/cycles/ui.py:1167
+#: scripts/addons/cycles/ui.py:1170
 #: scripts/startup/bl_ui/properties_material.py:259
 #: scripts/startup/bl_ui/properties_material.py:315
 #: scripts/startup/bl_ui/properties_texture.py:259
@@ -21299,7 +21319,7 @@ msgid "Index of active texture slot"
 msgstr "アクティブテクスチャスロットのインデックス"
 
 #. :src: bpy.types.FreestyleLineStyle.panel
-#: source/blender/editors/interface/interface_handlers.c:5763
+#: source/blender/editors/interface/interface_handlers.c:5766
 msgid "Panel"
 msgstr "パネル"
 
@@ -21929,7 +21949,7 @@ msgstr "3Dカーソルの位置にストロークを描画します"
 #. :src: bpy.types.UserPreferencesEdit.object_align:'VIEW'
 #: scripts/startup/bl_ui/properties_data_metaball.py:65
 #: scripts/startup/bl_ui/properties_data_modifier.py:842
-#: source/blender/editors/interface/interface_templates.c:3597
+#: source/blender/editors/interface/interface_templates.c:3593
 #: source/blender/nodes/shader/nodes/node_shader_geom.c:42
 msgid "View"
 msgstr "ビュー"
@@ -22675,7 +22695,7 @@ msgstr "ランプの種類"
 
 #. :src: bpy.types.Lamp.type:'POINT'
 #. :src: bpy.types.OBJECT_OT_lamp_add.type:'POINT'
-#: source/blender/editors/object/object_add.c:907
+#: source/blender/editors/object/object_add.c:905
 msgctxt "Lamp"
 msgid "Point"
 msgstr "ポイント"
@@ -22687,7 +22707,7 @@ msgstr "無指向性の点光源"
 
 #. :src: bpy.types.Lamp.type:'SUN'
 #. :src: bpy.types.OBJECT_OT_lamp_add.type:'SUN'
-#: source/blender/editors/object/object_add.c:908
+#: source/blender/editors/object/object_add.c:906
 msgctxt "Lamp"
 msgid "Sun"
 msgstr "サン"
@@ -22699,7 +22719,7 @@ msgstr "一定方向の平行光の光源"
 
 #. :src: bpy.types.Lamp.type:'SPOT'
 #. :src: bpy.types.OBJECT_OT_lamp_add.type:'SPOT'
-#: source/blender/editors/object/object_add.c:909
+#: source/blender/editors/object/object_add.c:907
 msgctxt "Lamp"
 msgid "Spot"
 msgstr "スポット"
@@ -22711,7 +22731,7 @@ msgstr "指向性の円錐光源"
 
 #. :src: bpy.types.Lamp.type:'HEMI'
 #. :src: bpy.types.OBJECT_OT_lamp_add.type:'HEMI'
-#: source/blender/editors/object/object_add.c:910
+#: source/blender/editors/object/object_add.c:908
 msgctxt "Lamp"
 msgid "Hemi"
 msgstr "ヘミ"
@@ -22723,7 +22743,7 @@ msgstr "180度一定の光源"
 
 #. :src: bpy.types.Lamp.type:'AREA'
 #. :src: bpy.types.OBJECT_OT_lamp_add.type:'AREA'
-#: source/blender/editors/object/object_add.c:911
+#: source/blender/editors/object/object_add.c:909
 msgctxt "Lamp"
 msgid "Area"
 msgstr "エリア"
@@ -22799,7 +22819,7 @@ msgstr "スペキュラーハイライトを作成します"
 #. :src: bpy.types.RenderPass.type:'DIFFUSE'
 #. :src: bpy.types.SceneRenderLayer.use_pass_diffuse
 #. :src: bpy.types.MaterialTextureSlot.use_map_diffuse
-#: scripts/addons/cycles/ui.py:224
+#: scripts/addons/cycles/ui.py:225
 #: scripts/addons/cycles/ui.py:149
 #: source/blender/editors/space_outliner/outliner_tree.c:336
 #: source/blender/nodes/composite/nodes/node_composite_image.c:53
@@ -23352,7 +23372,7 @@ msgid "Emphasize parts that are fully shadowed (Constant Jittered sampling)"
 msgstr "完全に影になる部分を強調(コンスタントジッターサンプリング)"
 
 #. :src: bpy.types.AreaLamp.use_dither
-#: scripts/addons/cycles/ui.py:431
+#: scripts/addons/cycles/ui.py:432
 #: scripts/startup/bl_ui/properties_render.py:315
 msgid "Dither"
 msgstr "ディザー"
@@ -23382,7 +23402,7 @@ msgstr "エリアランプの面積の大きさ。長方形のX方向のサイ�
 #. :src: bpy.types.MetaElement.size_y
 #. :src: bpy.types.CompositorNodeBlur.size_y
 #. :src: bpy.types.GaussianBlurSequence.size_y
-#: scripts/addons/cycles/ui.py:726
+#: scripts/addons/cycles/ui.py:728
 #: scripts/startup/bl_ui/properties_data_lamp.py:329
 msgid "Size Y"
 msgstr "サイズY"
@@ -24469,6 +24489,8 @@ msgstr "シェーダー"
 #. :src: bpy.types.OBJECT_OT_bake.type:'NORMAL'
 #. :src: bpy.types.PAINT_OT_add_texture_paint_slot.type:'NORMAL'
 #. :src: bpy.types.PAINT_OT_image_paint.mode:'NORMAL'
+#. :src: bpy.types.PAINT_OT_vertex_paint.mode:'NORMAL'
+#. :src: bpy.types.PAINT_OT_weight_paint.mode:'NORMAL'
 #. :src: bpy.types.SCULPT_OT_brush_stroke.mode:'NORMAL'
 #. :src: bpy.types.SCULPT_OT_uv_sculpt_stroke.mode:'NORMAL'
 #. :src: bpy.types.TRANSFORM_OT_bend.snap_normal
@@ -26957,7 +26979,7 @@ msgstr "親パーティクルをレンダリングします"
 #. :src: bpy.types.BRUSH_OT_active_index_set.index
 #. :src: bpy.types.VIEW3D_OT_layers.nr
 #. :src: bpy.types.ToolSettings.etch_number
-#: scripts/addons/cycles/ui.py:466
+#: scripts/addons/cycles/ui.py:467
 msgid "Number"
 msgstr "数"
 
@@ -27105,7 +27127,7 @@ msgstr "補間"
 #. :src: bpy.types.OBJECT_OT_vertex_group_quantize.steps
 #. :src: bpy.types.ParticleBrush.steps
 #. :src: bpy.types.ParticleEdit.draw_step
-#: scripts/addons/cycles/ui.py:594
+#: scripts/addons/cycles/ui.py:595
 #: scripts/startup/bl_ui/properties_particle.py:303
 #: scripts/startup/bl_ui/properties_particle.py:842
 #: scripts/startup/bl_ui/properties_physics_cloth.py:73
@@ -27280,9 +27302,9 @@ msgstr "経過時間"
 #. :src: bpy.types.TRANSFORM_OT_tilt.value
 #. :src: bpy.types.TRANSFORM_OT_trackball.value
 #. :src: bpy.types.ImagePaint.normal_angle
-#. :src: bpy.types.Print3DSettings.angle_overhang
-#. :src: bpy.types.Print3DSettings.angle_sharp
 #. :src: bpy.types.Print3DSettings.angle_distort
+#. :src: bpy.types.Print3DSettings.angle_sharp
+#. :src: bpy.types.Print3DSettings.angle_overhang
 #. :src: bpy.types.SceneGameData.dome_angle
 #. :src: bpy.types.RadarSensor.angle
 #. :src: bpy.types.WipeSequence.angle
@@ -27966,7 +27988,8 @@ msgid "Visible layers - Shift-Click to select multiple layers"
 msgstr "可視レイヤー - Shift-クリックで複数レイヤーを選択します"
 
 #. :src: bpy.types.Scene.active_layer
-#. :src: bpy.types.WM_OT_link_append.active_layer
+#. :src: bpy.types.WM_OT_append.active_layer
+#. :src: bpy.types.WM_OT_link.active_layer
 msgid "Active Layer"
 msgstr "アクティブなレイヤー"
 
@@ -30704,7 +30727,7 @@ msgstr "ウィンドウ"
 #. :src: bpy.types.ThemePanelColors.header
 #. :src: bpy.types.ThemeSpaceGeneric.header
 #. :src: bpy.types.ThemeSpaceGradient.header
-#: source/blender/editors/interface/interface_handlers.c:6015
+#: source/blender/editors/interface/interface_handlers.c:6018
 #: source/blender/editors/screen/screen_ops.c:3144
 msgid "Header"
 msgstr "ヘッダー"
@@ -32530,7 +32553,7 @@ msgid "Insert a keyframe on each of the scale channels"
 msgstr "スケーリングチャンネルにキーフレームを挿入します"
 
 #. :src: bpy.types.Scaling
-#: scripts/addons/cycles/ui.py:1317
+#: scripts/addons/cycles/ui.py:1320
 msgid "Scaling"
 msgstr "スケーリング"
 
@@ -33880,7 +33903,7 @@ msgstr "このレベルオブディテール(LOD)で、このオブジェクト�
 
 #. :src: bpy.types.MaskLayer
 #. :src: bpy.types.VIEW3D_MT_tools_projectpaint_stencil
-#: scripts/addons/cycles/ui.py:343
+#: scripts/addons/cycles/ui.py:344
 #: scripts/startup/bl_ui/properties_render_layer.py:91
 msgid "Mask Layer"
 msgstr "マスクレイヤー"
@@ -34819,7 +34842,8 @@ msgid "Material datablock used by this material slot"
 msgstr "このマテリアルスロットに使用されるマテリアルデータブロックします"
 
 #. :src: bpy.types.MaterialSlot.link
-#. :src: bpy.types.WM_OT_link_append.link
+#. :src: bpy.types.WM_OT_append.link
+#. :src: bpy.types.WM_OT_link.link
 #: source/blender/editors/space_logic/logic_window.c:2410
 #: source/blender/editors/space_logic/logic_window.c:2526
 #: source/blender/editors/space_logic/logic_window.c:2600
@@ -35143,7 +35167,7 @@ msgstr "放射光の色"
 #. :src: bpy.types.PARTICLE_PT_emission
 #. :src: bpy.types.RenderSettings.bake_type:'EMIT'
 #. :src: bpy.types.MaterialTextureSlot.use_map_emission
-#: scripts/addons/cycles/ui.py:411
+#: scripts/addons/cycles/ui.py:412
 #: source/blender/nodes/shader/nodes/node_shader_emission.c:38
 msgid "Emission"
 msgstr "放射"
@@ -36025,7 +36049,7 @@ msgstr "スキンの半径"
 #. :src: bpy.types.MeshSkinVertex.use_root
 #. :src: bpy.types.PointDensity.falloff:'ROOT'
 #. :src: bpy.types.ToolSettings.proportional_edit_falloff:'ROOT'
-#: scripts/addons/cycles/ui.py:1313
+#: scripts/addons/cycles/ui.py:1316
 #: scripts/startup/bl_ui/properties_material.py:722
 #: scripts/startup/bl_ui/space_view3d_toolbar.py:1712
 msgid "Root"
@@ -36328,7 +36352,7 @@ msgstr "正規化されたクォータニオン回転"
 #. :src: bpy.types.MetaElement.size_x
 #. :src: bpy.types.CompositorNodeBlur.size_x
 #. :src: bpy.types.GaussianBlurSequence.size_x
-#: scripts/addons/cycles/ui.py:725
+#: scripts/addons/cycles/ui.py:727
 #: scripts/startup/bl_ui/properties_data_lamp.py:328
 msgid "Size X"
 msgstr "サイズ X"
@@ -36552,6 +36576,7 @@ msgstr "パーティクルコピー"
 
 #. :src: bpy.types.Modifier.type:'SMOKE'
 #. :src: bpy.types.OBJECT_OT_modifier_add.type:'SMOKE'
+#. :src: bpy.types.OBJECT_OT_quick_smoke.style:'SMOKE'
 #. :src: bpy.types.PHYSICS_PT_smoke
 #. :src: bpy.types.SmokeDomainSettings.flame_smoke
 #. :src: bpy.types.SmokeFlowSettings.smoke_flow_type:'SMOKE'
@@ -37146,7 +37171,7 @@ msgstr "形状を統合して平面ポリゴンにします"
 #. :src: bpy.types.CLIP_OT_view_zoom_ratio.ratio
 #. :src: bpy.types.IMAGE_OT_view_zoom_ratio.ratio
 #. :src: bpy.types.SEQUENCER_OT_view_zoom_ratio.ratio
-#: scripts/addons/cycles/ui.py:471
+#: scripts/addons/cycles/ui.py:472
 msgid "Ratio"
 msgstr "比率"
 
@@ -43087,7 +43112,7 @@ msgstr "トーンBSDF"
 
 #. :src: bpy.types.ShaderNodeBsdfToon.component:'GLOSSY'
 #. :src: bpy.types.CyclesVisibilitySettings.glossy
-#: scripts/addons/cycles/ui.py:225
+#: scripts/addons/cycles/ui.py:226
 #: scripts/addons/cycles/ui.py:150
 msgid "Glossy"
 msgstr "光沢"
@@ -43723,6 +43748,7 @@ msgid "Volume Absorption"
 msgstr "ボリュームの吸収"
 
 #. :src: bpy.types.ShaderNodeVolumeScatter
+#. :src: bpy.types.CyclesVisibilitySettings.scatter
 msgid "Volume Scatter"
 msgstr "ボリュームの散乱"
 
@@ -43799,7 +43825,7 @@ msgstr "ソケットのデータタイプ"
 #. :src: bpy.types.NodeInternalSocketTemplate.type:'INT'
 #. :src: bpy.types.NodeSocket.type:'INT'
 #. :src: bpy.types.NodeSocketInterfaceStandard.type:'INT'
-#: source/blender/blenkernel/intern/customdata.c:1103
+#: source/blender/blenkernel/intern/customdata.c:1111
 msgid "Int"
 msgstr "Int型"
 
@@ -44393,7 +44419,7 @@ msgstr "キーフレームをコピー/ペーストバッファーにコピー�
 
 #. :src: bpy.types.ACTION_OT_delete
 #. :src: bpy.types.GRAPH_OT_delete
-#: source/blender/editors/interface/interface_handlers.c:5832
+#: source/blender/editors/interface/interface_handlers.c:5835
 msgctxt "Operator"
 msgid "Delete Keyframes"
 msgstr "キーフレーム削除"
@@ -44534,7 +44560,7 @@ msgstr "そのFカーブの選択中のキーフレーム以降の部分の補�
 
 #. :src: bpy.types.ACTION_OT_keyframe_insert
 #. :src: bpy.types.GRAPH_OT_keyframe_insert
-#: source/blender/editors/interface/interface_handlers.c:5854
+#: source/blender/editors/interface/interface_handlers.c:5857
 msgctxt "Operator"
 msgid "Insert Keyframes"
 msgstr "キーフレームを挿入"
@@ -45411,7 +45437,7 @@ msgid "Only unused (Fake User only) actions get considered"
 msgstr "未使用(フェイクユーザーのみ)のアクションを考慮します"
 
 #. :src: bpy.types.ANIM_OT_copy_driver_button
-#: source/blender/editors/interface/interface_handlers.c:5893
+#: source/blender/editors/interface/interface_handlers.c:5896
 msgctxt "Operator"
 msgid "Copy Driver"
 msgstr "ドライバーをコピー"
@@ -45421,7 +45447,7 @@ msgid "Copy the driver for the highlighted button"
 msgstr "ドライバーをハイライトされたボタンにコピーします"
 
 #. :src: bpy.types.ANIM_OT_driver_button_add
-#: source/blender/editors/interface/interface_handlers.c:5913
+#: source/blender/editors/interface/interface_handlers.c:5916
 msgctxt "Operator"
 msgid "Add Driver"
 msgstr "ドライバーを追加"
@@ -45508,7 +45534,7 @@ msgid "Delete keyframes from all elements of the array"
 msgstr "配列のすべての要素からキーフレームを削除します"
 
 #. :src: bpy.types.ANIM_OT_keyframe_delete_v3d
-#: source/blender/editors/interface/interface_handlers.c:5840
+#: source/blender/editors/interface/interface_handlers.c:5843
 msgctxt "Operator"
 msgid "Delete Keyframe"
 msgstr "キーフレームを削除"
@@ -45518,7 +45544,7 @@ msgid "Remove keyframes on current frame for selected objects"
 msgstr "選択中のオブジェクトのカレントフレームのキーフレームを削除します"
 
 #. :src: bpy.types.ANIM_OT_keyframe_insert
-#: source/blender/editors/interface/interface_handlers.c:5860
+#: source/blender/editors/interface/interface_handlers.c:5863
 msgctxt "Operator"
 msgid "Insert Keyframe"
 msgstr "キーフレームを挿入"
@@ -45617,11 +45643,12 @@ msgstr "キーイングセットをPythonスクリプトへエクスポートし
 #. :src: bpy.types.TEXT_OT_open.filter_folder
 #. :src: bpy.types.TEXT_OT_save_as.filter_folder
 #. :src: bpy.types.WM_OT_addon_install.filter_folder
+#. :src: bpy.types.WM_OT_append.filter_folder
 #. :src: bpy.types.WM_OT_collada_export.filter_folder
 #. :src: bpy.types.WM_OT_collada_import.filter_folder
 #. :src: bpy.types.WM_OT_keyconfig_export.filter_folder
 #. :src: bpy.types.WM_OT_keyconfig_import.filter_folder
-#. :src: bpy.types.WM_OT_link_append.filter_folder
+#. :src: bpy.types.WM_OT_link.filter_folder
 #. :src: bpy.types.WM_OT_open_mainfile.filter_folder
 #. :src: bpy.types.WM_OT_recover_auto_save.filter_folder
 #. :src: bpy.types.WM_OT_save_as_mainfile.filter_folder
@@ -45671,7 +45698,7 @@ msgid "Remove the active Keying Set"
 msgstr "アクティブなキーイングセットを削除します"
 
 #. :src: bpy.types.ANIM_OT_keyingset_button_add
-#: source/blender/editors/interface/interface_handlers.c:5937
+#: source/blender/editors/interface/interface_handlers.c:5940
 msgctxt "Operator"
 msgid "Add to Keying Set"
 msgstr "キーイングセットに追加"
@@ -45685,8 +45712,8 @@ msgid "Add all elements of the array to a Keying Set"
 msgstr "キーイングセットに配列のすべての要素を追加します"
 
 #. :src: bpy.types.ANIM_OT_keyingset_button_remove
-#: source/blender/editors/interface/interface_handlers.c:5933
-#: source/blender/editors/interface/interface_handlers.c:5939
+#: source/blender/editors/interface/interface_handlers.c:5936
+#: source/blender/editors/interface/interface_handlers.c:5942
 msgctxt "Operator"
 msgid "Remove from Keying Set"
 msgstr "キーイングセットから除外"
@@ -45696,8 +45723,8 @@ msgid "Remove current UI-active property from current keying set"
 msgstr "カレントUI（カレントキーイングセットのアクティブプロパティ）を削除"
 
 #. :src: bpy.types.ANIM_OT_paste_driver_button
-#: source/blender/editors/interface/interface_handlers.c:5896
-#: source/blender/editors/interface/interface_handlers.c:5918
+#: source/blender/editors/interface/interface_handlers.c:5899
+#: source/blender/editors/interface/interface_handlers.c:5921
 msgctxt "Operator"
 msgid "Paste Driver"
 msgstr "ドライバーを貼り付け"
@@ -46779,7 +46806,8 @@ msgstr "ディレクトリブラウザーを開きます。Shiftを押しなが�
 #. :src: bpy.types.IMAGE_OT_open.directory
 #. :src: bpy.types.SEQUENCER_OT_change_path.directory
 #. :src: bpy.types.SEQUENCER_OT_image_strip_add.directory
-#. :src: bpy.types.WM_OT_link_append.directory
+#. :src: bpy.types.WM_OT_append.directory
+#. :src: bpy.types.WM_OT_link.directory
 msgid "Directory of the file"
 msgstr "ファイルのディレクトリ"
 
@@ -46833,12 +46861,14 @@ msgstr "ファイルのディレクトリ"
 #. :src: bpy.types.TEXT_OT_open.filter_backup
 #. :src: bpy.types.TEXT_OT_save_as.filter_blender
 #. :src: bpy.types.TEXT_OT_save_as.filter_backup
+#. :src: bpy.types.WM_OT_append.filter_blender
+#. :src: bpy.types.WM_OT_append.filter_backup
 #. :src: bpy.types.WM_OT_collada_export.filter_blender
 #. :src: bpy.types.WM_OT_collada_export.filter_backup
 #. :src: bpy.types.WM_OT_collada_import.filter_blender
 #. :src: bpy.types.WM_OT_collada_import.filter_backup
-#. :src: bpy.types.WM_OT_link_append.filter_blender
-#. :src: bpy.types.WM_OT_link_append.filter_backup
+#. :src: bpy.types.WM_OT_link.filter_blender
+#. :src: bpy.types.WM_OT_link.filter_backup
 #. :src: bpy.types.WM_OT_open_mainfile.filter_blender
 #. :src: bpy.types.WM_OT_open_mainfile.filter_backup
 #. :src: bpy.types.WM_OT_recover_auto_save.filter_blender
@@ -46875,9 +46905,10 @@ msgstr ".blendファイルをフィルタリング"
 #. :src: bpy.types.TEXTURE_OT_envmap_save.filter_image
 #. :src: bpy.types.TEXT_OT_open.filter_image
 #. :src: bpy.types.TEXT_OT_save_as.filter_image
+#. :src: bpy.types.WM_OT_append.filter_image
 #. :src: bpy.types.WM_OT_collada_export.filter_image
 #. :src: bpy.types.WM_OT_collada_import.filter_image
-#. :src: bpy.types.WM_OT_link_append.filter_image
+#. :src: bpy.types.WM_OT_link.filter_image
 #. :src: bpy.types.WM_OT_open_mainfile.filter_image
 #. :src: bpy.types.WM_OT_recover_auto_save.filter_image
 #. :src: bpy.types.WM_OT_save_as_mainfile.filter_image
@@ -46910,9 +46941,10 @@ msgstr "画像ファイルをフィルタリング"
 #. :src: bpy.types.TEXTURE_OT_envmap_save.filter_movie
 #. :src: bpy.types.TEXT_OT_open.filter_movie
 #. :src: bpy.types.TEXT_OT_save_as.filter_movie
+#. :src: bpy.types.WM_OT_append.filter_movie
 #. :src: bpy.types.WM_OT_collada_export.filter_movie
 #. :src: bpy.types.WM_OT_collada_import.filter_movie
-#. :src: bpy.types.WM_OT_link_append.filter_movie
+#. :src: bpy.types.WM_OT_link.filter_movie
 #. :src: bpy.types.WM_OT_open_mainfile.filter_movie
 #. :src: bpy.types.WM_OT_recover_auto_save.filter_movie
 #. :src: bpy.types.WM_OT_save_as_mainfile.filter_movie
@@ -46945,9 +46977,10 @@ msgstr "動画ファイルをフィルタリング"
 #. :src: bpy.types.TEXTURE_OT_envmap_save.filter_python
 #. :src: bpy.types.TEXT_OT_open.filter_python
 #. :src: bpy.types.TEXT_OT_save_as.filter_python
+#. :src: bpy.types.WM_OT_append.filter_python
 #. :src: bpy.types.WM_OT_collada_export.filter_python
 #. :src: bpy.types.WM_OT_collada_import.filter_python
-#. :src: bpy.types.WM_OT_link_append.filter_python
+#. :src: bpy.types.WM_OT_link.filter_python
 #. :src: bpy.types.WM_OT_open_mainfile.filter_python
 #. :src: bpy.types.WM_OT_recover_auto_save.filter_python
 #. :src: bpy.types.WM_OT_save_as_mainfile.filter_python
@@ -46980,9 +47013,10 @@ msgstr "Pythonファイルをフィルタリング"
 #. :src: bpy.types.TEXTURE_OT_envmap_save.filter_font
 #. :src: bpy.types.TEXT_OT_open.filter_font
 #. :src: bpy.types.TEXT_OT_save_as.filter_font
+#. :src: bpy.types.WM_OT_append.filter_font
 #. :src: bpy.types.WM_OT_collada_export.filter_font
 #. :src: bpy.types.WM_OT_collada_import.filter_font
-#. :src: bpy.types.WM_OT_link_append.filter_font
+#. :src: bpy.types.WM_OT_link.filter_font
 #. :src: bpy.types.WM_OT_open_mainfile.filter_font
 #. :src: bpy.types.WM_OT_recover_auto_save.filter_font
 #. :src: bpy.types.WM_OT_save_as_mainfile.filter_font
@@ -47015,9 +47049,10 @@ msgstr "フォントファイルをフィルタリング"
 #. :src: bpy.types.TEXTURE_OT_envmap_save.filter_sound
 #. :src: bpy.types.TEXT_OT_open.filter_sound
 #. :src: bpy.types.TEXT_OT_save_as.filter_sound
+#. :src: bpy.types.WM_OT_append.filter_sound
 #. :src: bpy.types.WM_OT_collada_export.filter_sound
 #. :src: bpy.types.WM_OT_collada_import.filter_sound
-#. :src: bpy.types.WM_OT_link_append.filter_sound
+#. :src: bpy.types.WM_OT_link.filter_sound
 #. :src: bpy.types.WM_OT_open_mainfile.filter_sound
 #. :src: bpy.types.WM_OT_recover_auto_save.filter_sound
 #. :src: bpy.types.WM_OT_save_as_mainfile.filter_sound
@@ -47050,9 +47085,10 @@ msgstr "音声ファイルをフィルタリング"
 #. :src: bpy.types.TEXTURE_OT_envmap_save.filter_text
 #. :src: bpy.types.TEXT_OT_open.filter_text
 #. :src: bpy.types.TEXT_OT_save_as.filter_text
+#. :src: bpy.types.WM_OT_append.filter_text
 #. :src: bpy.types.WM_OT_collada_export.filter_text
 #. :src: bpy.types.WM_OT_collada_import.filter_text
-#. :src: bpy.types.WM_OT_link_append.filter_text
+#. :src: bpy.types.WM_OT_link.filter_text
 #. :src: bpy.types.WM_OT_open_mainfile.filter_text
 #. :src: bpy.types.WM_OT_recover_auto_save.filter_text
 #. :src: bpy.types.WM_OT_save_as_mainfile.filter_text
@@ -47085,9 +47121,10 @@ msgstr "テキストファイルをフィルタリング"
 #. :src: bpy.types.TEXTURE_OT_envmap_save.filter_btx
 #. :src: bpy.types.TEXT_OT_open.filter_btx
 #. :src: bpy.types.TEXT_OT_save_as.filter_btx
+#. :src: bpy.types.WM_OT_append.filter_btx
 #. :src: bpy.types.WM_OT_collada_export.filter_btx
 #. :src: bpy.types.WM_OT_collada_import.filter_btx
-#. :src: bpy.types.WM_OT_link_append.filter_btx
+#. :src: bpy.types.WM_OT_link.filter_btx
 #. :src: bpy.types.WM_OT_open_mainfile.filter_btx
 #. :src: bpy.types.WM_OT_recover_auto_save.filter_btx
 #. :src: bpy.types.WM_OT_save_as_mainfile.filter_btx
@@ -47120,9 +47157,10 @@ msgstr "btxファイルをフィルタリング"
 #. :src: bpy.types.TEXTURE_OT_envmap_save.filter_collada
 #. :src: bpy.types.TEXT_OT_open.filter_collada
 #. :src: bpy.types.TEXT_OT_save_as.filter_collada
+#. :src: bpy.types.WM_OT_append.filter_collada
 #. :src: bpy.types.WM_OT_collada_export.filter_collada
 #. :src: bpy.types.WM_OT_collada_import.filter_collada
-#. :src: bpy.types.WM_OT_link_append.filter_collada
+#. :src: bpy.types.WM_OT_link.filter_collada
 #. :src: bpy.types.WM_OT_open_mainfile.filter_collada
 #. :src: bpy.types.WM_OT_recover_auto_save.filter_collada
 #. :src: bpy.types.WM_OT_save_as_mainfile.filter_collada
@@ -47155,9 +47193,10 @@ msgstr "COLLADAファイルをフィルタリング"
 #. :src: bpy.types.TEXTURE_OT_envmap_save.filemode
 #. :src: bpy.types.TEXT_OT_open.filemode
 #. :src: bpy.types.TEXT_OT_save_as.filemode
+#. :src: bpy.types.WM_OT_append.filemode
 #. :src: bpy.types.WM_OT_collada_export.filemode
 #. :src: bpy.types.WM_OT_collada_import.filemode
-#. :src: bpy.types.WM_OT_link_append.filemode
+#. :src: bpy.types.WM_OT_link.filemode
 #. :src: bpy.types.WM_OT_open_mainfile.filemode
 #. :src: bpy.types.WM_OT_recover_auto_save.filemode
 #. :src: bpy.types.WM_OT_save_as_mainfile.filemode
@@ -47190,9 +47229,10 @@ msgstr "ファイルブラウザーモード"
 #. :src: bpy.types.TEXTURE_OT_envmap_save.filemode
 #. :src: bpy.types.TEXT_OT_open.filemode
 #. :src: bpy.types.TEXT_OT_save_as.filemode
+#. :src: bpy.types.WM_OT_append.filemode
 #. :src: bpy.types.WM_OT_collada_export.filemode
 #. :src: bpy.types.WM_OT_collada_import.filemode
-#. :src: bpy.types.WM_OT_link_append.filemode
+#. :src: bpy.types.WM_OT_link.filemode
 #. :src: bpy.types.WM_OT_open_mainfile.filemode
 #. :src: bpy.types.WM_OT_recover_auto_save.filemode
 #. :src: bpy.types.WM_OT_save_as_mainfile.filemode
@@ -47216,7 +47256,7 @@ msgstr "ライブラリまたは特別なblendファイルを読み込む時の�
 #. :src: bpy.types.SOUND_OT_mixdown.relative_path
 #. :src: bpy.types.SOUND_OT_open.relative_path
 #. :src: bpy.types.SOUND_OT_open_mono.relative_path
-#. :src: bpy.types.WM_OT_link_append.relative_path
+#. :src: bpy.types.WM_OT_link.relative_path
 msgid "Relative Path"
 msgstr "相対パス"
 
@@ -47236,7 +47276,7 @@ msgstr "相対パス"
 #. :src: bpy.types.SOUND_OT_mixdown.relative_path
 #. :src: bpy.types.SOUND_OT_open.relative_path
 #. :src: bpy.types.SOUND_OT_open_mono.relative_path
-#. :src: bpy.types.WM_OT_link_append.relative_path
+#. :src: bpy.types.WM_OT_link.relative_path
 msgid "Select the file relative to the blend file"
 msgstr "blendファイルへの相対パスにします"
 
@@ -47265,9 +47305,10 @@ msgstr "blendファイルへの相対パスにします"
 #. :src: bpy.types.TEXTURE_OT_envmap_save.display_type
 #. :src: bpy.types.TEXT_OT_open.display_type
 #. :src: bpy.types.TEXT_OT_save_as.display_type
+#. :src: bpy.types.WM_OT_append.display_type
 #. :src: bpy.types.WM_OT_collada_export.display_type
 #. :src: bpy.types.WM_OT_collada_import.display_type
-#. :src: bpy.types.WM_OT_link_append.display_type
+#. :src: bpy.types.WM_OT_link.display_type
 #. :src: bpy.types.WM_OT_open_mainfile.display_type
 #. :src: bpy.types.WM_OT_recover_auto_save.display_type
 #. :src: bpy.types.WM_OT_save_as_mainfile.display_type
@@ -47300,9 +47341,10 @@ msgstr "表示タイプ"
 #. :src: bpy.types.TEXTURE_OT_envmap_save.display_type:'FILE_DEFAULTDISPLAY'
 #. :src: bpy.types.TEXT_OT_open.display_type:'FILE_DEFAULTDISPLAY'
 #. :src: bpy.types.TEXT_OT_save_as.display_type:'FILE_DEFAULTDISPLAY'
+#. :src: bpy.types.WM_OT_append.display_type:'FILE_DEFAULTDISPLAY'
 #. :src: bpy.types.WM_OT_collada_export.display_type:'FILE_DEFAULTDISPLAY'
 #. :src: bpy.types.WM_OT_collada_import.display_type:'FILE_DEFAULTDISPLAY'
-#. :src: bpy.types.WM_OT_link_append.display_type:'FILE_DEFAULTDISPLAY'
+#. :src: bpy.types.WM_OT_link.display_type:'FILE_DEFAULTDISPLAY'
 #. :src: bpy.types.WM_OT_open_mainfile.display_type:'FILE_DEFAULTDISPLAY'
 #. :src: bpy.types.WM_OT_recover_auto_save.display_type:'FILE_DEFAULTDISPLAY'
 #. :src: bpy.types.WM_OT_save_as_mainfile.display_type:'FILE_DEFAULTDISPLAY'
@@ -47335,9 +47377,10 @@ msgstr "ファイルブラウザを開く、＋[Shift]キーでファイルを�
 #. :src: bpy.types.TEXTURE_OT_envmap_save.filepath
 #. :src: bpy.types.TEXT_OT_open.filepath
 #. :src: bpy.types.TEXT_OT_save_as.filepath
+#. :src: bpy.types.WM_OT_append.filepath
 #. :src: bpy.types.WM_OT_collada_export.filepath
 #. :src: bpy.types.WM_OT_collada_import.filepath
-#. :src: bpy.types.WM_OT_link_append.filepath
+#. :src: bpy.types.WM_OT_link.filepath
 #. :src: bpy.types.WM_OT_open_mainfile.filepath
 #. :src: bpy.types.WM_OT_recover_auto_save.filepath
 #. :src: bpy.types.WM_OT_save_as_mainfile.filepath
@@ -47792,7 +47835,7 @@ msgstr "カーブのもつれを削除します"
 #. :src: bpy.types.NODE_OT_select
 #. :src: bpy.types.SKETCH_OT_select
 #. :src: bpy.types.UV_OT_select
-#: scripts/addons/cycles/ui.py:505
+#: scripts/addons/cycles/ui.py:506
 #: scripts/startup/bl_ui/properties_data_armature.py:159
 #: scripts/startup/bl_ui/properties_data_mesh.py:221
 #: scripts/startup/bl_ui/properties_data_modifier.py:382
@@ -47951,7 +47994,8 @@ msgstr "連番画像もしくは動画ファイルを読み込み"
 #. :src: bpy.types.SEQUENCER_OT_image_strip_add.files
 #. :src: bpy.types.SEQUENCER_OT_movie_strip_add.files
 #. :src: bpy.types.SEQUENCER_OT_sound_strip_add.files
-#. :src: bpy.types.WM_OT_link_append.files
+#. :src: bpy.types.WM_OT_append.files
+#. :src: bpy.types.WM_OT_link.files
 #. :src: bpy.types.USERPREF_PT_file
 msgid "Files"
 msgstr "ファイル"
@@ -48012,7 +48056,7 @@ msgstr "選択中のマーカーの位置を、トラックの参照フレーム
 
 #. :src: bpy.types.CLIP_OT_refine_markers.backwards
 #. :src: bpy.types.CLIP_OT_track_markers.backwards
-#: scripts/startup/bl_ui/space_sequencer.py:844
+#: scripts/startup/bl_ui/space_sequencer.py:851
 msgid "Backwards"
 msgstr "後方"
 
@@ -49301,7 +49345,7 @@ msgstr "ベベルウェイト"
 #. :src: bpy.types.SpaceProperties.align
 #. :src: bpy.types.SpaceView3D.use_pivot_point_align
 #: source/blender/editors/space_buttons/buttons_ops.c:74
-#: source/blender/editors/transform/transform.c:7109
+#: source/blender/editors/transform/transform.c:7111
 msgid "Align"
 msgstr "整列"
 
@@ -51319,7 +51363,7 @@ msgstr ".blend ファイルにパックされたすべてのファイルを、�
 #. :src: bpy.types.SOUND_OT_unpack.method
 #. :src: bpy.types.UV_OT_unwrap.method
 #. :src: bpy.types.WM_OT_demo_mode_setup.mode
-#: scripts/addons/cycles/ui.py:550
+#: scripts/addons/cycles/ui.py:551
 #: scripts/startup/bl_ui/properties_texture.py:1201
 msgid "Method"
 msgstr "方式"
@@ -57138,12 +57182,6 @@ msgstr "ノードの追加とリンク"
 msgid "Add a node to the active tree and link to an existing socket"
 msgstr "アクティブツリーにノードを追加し、現存のソケットにリンクします"
 
-#. :src: bpy.types.NODE_OT_add_and_link_node.settings
-#. :src: bpy.types.NODE_OT_add_node.settings
-#. :src: bpy.types.NODE_OT_add_search.settings
-msgid "Settings to be applied on the newly created node"
-msgstr "新規ノードに設定を適用します"
-
 #. :src: bpy.types.NODE_OT_add_and_link_node.type
 #. :src: bpy.types.NODE_OT_add_node.type
 #. :src: bpy.types.NODE_OT_add_search.type
@@ -57157,6 +57195,12 @@ msgstr "ノードタイプ"
 #. :src: bpy.types.NODE_OT_add_search.node_item
 msgid "Node type"
 msgstr "ノードタイプ"
+
+#. :src: bpy.types.NODE_OT_add_and_link_node.settings
+#. :src: bpy.types.NODE_OT_add_node.settings
+#. :src: bpy.types.NODE_OT_add_search.settings
+msgid "Settings to be applied on the newly created node"
+msgstr "新規ノードに設定を適用します"
 
 #. :src: bpy.types.NODE_OT_add_and_link_node.use_transform
 #. :src: bpy.types.NODE_OT_add_node.use_transform
@@ -58858,7 +58902,7 @@ msgstr "メタボールオブジェクトをシーンに追加します"
 
 #. :src: bpy.types.OBJECT_OT_metaball_add.type
 #. :src: bpy.types.CyclesCurveRenderSettings.primitive
-#: scripts/addons/cycles/ui.py:1225
+#: scripts/addons/cycles/ui.py:1228
 msgid "Primitive"
 msgstr "プリミティブ"
 
@@ -59350,14 +59394,14 @@ msgstr "クイック煙"
 msgid "Smoke Style"
 msgstr "煙スタイル"
 
-#. :src: bpy.types.OBJECT_OT_quick_smoke.style:'STREAM'
-msgid "Stream"
-msgstr "ストリーム"
-
 #. :src: bpy.types.OBJECT_OT_quick_smoke.style:'FIRE'
 #. :src: bpy.types.SmokeFlowSettings.smoke_flow_type:'FIRE'
 msgid "Fire"
 msgstr "火炎"
+
+#. :src: bpy.types.OBJECT_OT_quick_smoke.style:'BOTH'
+msgid "Smoke + Fire"
+msgstr ""
 
 #. :src: bpy.types.OBJECT_OT_quick_smoke.show_flows
 msgid "Render Smoke Objects"
@@ -61008,10 +61052,9 @@ msgid "If the requested brush type does not exist, create a new brush"
 msgstr "要求されたブラシタイプがない場合、新しいブラシを作成"
 
 #. :src: bpy.types.PAINT_OT_delete_texture_paint_slot
-#, fuzzy
 msgctxt "Operator"
 msgid "Delete Texture Paint Slot"
-msgstr "テクスチャペイントスロット"
+msgstr "テクスチャペイントスロットを削除"
 
 #. :src: bpy.types.PAINT_OT_face_select_all
 msgid "Change selection for all faces"
@@ -61121,7 +61164,8 @@ msgid "Make an image from the current 3D view for re-projection"
 msgstr "再投影するために現在の視点から画像を作ります"
 
 #. :src: bpy.types.PAINT_OT_image_from_view.filepath
-#. :src: bpy.types.WM_OT_link_append.filename
+#. :src: bpy.types.WM_OT_append.filename
+#. :src: bpy.types.WM_OT_link.filename
 msgid "Name of the file"
 msgstr "ファイルの名前"
 
@@ -61135,24 +61179,42 @@ msgid "Paint a stroke into the image"
 msgstr "画像にストロークをペイント"
 
 #. :src: bpy.types.PAINT_OT_image_paint.mode
-msgid "Paint Stroke Mode"
-msgstr "ペイントストロークモード"
+#. :src: bpy.types.PAINT_OT_vertex_paint.mode
+#. :src: bpy.types.PAINT_OT_weight_paint.mode
+#. :src: bpy.types.SCULPT_OT_brush_stroke.mode
+#. :src: bpy.types.SCULPT_OT_uv_sculpt_stroke.mode
+msgid "Stroke Mode"
+msgstr "ストロークモード"
 
 #. :src: bpy.types.PAINT_OT_image_paint.mode
+#. :src: bpy.types.PAINT_OT_vertex_paint.mode
+#. :src: bpy.types.PAINT_OT_weight_paint.mode
+#. :src: bpy.types.SCULPT_OT_brush_stroke.mode
 msgid "Action taken when a paint stroke is made"
 msgstr "ペイントストローク時の動作"
 
 #. :src: bpy.types.PAINT_OT_image_paint.mode:'NORMAL'
+#. :src: bpy.types.PAINT_OT_vertex_paint.mode:'NORMAL'
+#. :src: bpy.types.PAINT_OT_weight_paint.mode:'NORMAL'
 #. :src: bpy.types.SCULPT_OT_brush_stroke.mode:'NORMAL'
 #. :src: bpy.types.SCULPT_OT_uv_sculpt_stroke.mode:'NORMAL'
 msgid "Apply brush normally"
 msgstr "ブラシを普通に適用"
 
 #. :src: bpy.types.PAINT_OT_image_paint.mode:'INVERT'
+#. :src: bpy.types.PAINT_OT_vertex_paint.mode:'INVERT'
+#. :src: bpy.types.PAINT_OT_weight_paint.mode:'INVERT'
 #. :src: bpy.types.SCULPT_OT_brush_stroke.mode:'INVERT'
 #. :src: bpy.types.SCULPT_OT_uv_sculpt_stroke.mode:'INVERT'
 msgid "Invert action of brush for duration of stroke"
 msgstr "ブラシを反転"
+
+#. :src: bpy.types.PAINT_OT_image_paint.mode:'SMOOTH'
+#. :src: bpy.types.PAINT_OT_vertex_paint.mode:'SMOOTH'
+#. :src: bpy.types.PAINT_OT_weight_paint.mode:'SMOOTH'
+#. :src: bpy.types.SCULPT_OT_brush_stroke.mode:'SMOOTH'
+msgid "Switch brush to smooth mode for duration of stroke"
+msgstr "スムースモードに切り替え"
 
 #. :src: bpy.types.PAINT_OT_mask_flood_fill
 msgctxt "Operator"
@@ -63465,18 +63527,6 @@ msgstr "スカルプト"
 msgid "Sculpt a stroke into the geometry"
 msgstr "形状にストロークを彫刻(スカルプト)します"
 
-#. :src: bpy.types.SCULPT_OT_brush_stroke.mode
-msgid "Sculpt Stroke Mode"
-msgstr "スカルプトのストロークモード"
-
-#. :src: bpy.types.SCULPT_OT_brush_stroke.mode
-msgid "Action taken when a sculpt stroke is made"
-msgstr "スカルプトした時の動作"
-
-#. :src: bpy.types.SCULPT_OT_brush_stroke.mode:'SMOOTH'
-msgid "Switch brush to smooth mode for duration of stroke"
-msgstr "スムースモードに切り替え"
-
 #. :src: bpy.types.SCULPT_OT_brush_stroke.ignore_background_click
 msgid "Ignore Background Click"
 msgstr "背景クリックを無視"
@@ -63555,10 +63605,6 @@ msgstr "UVをスカルプト"
 #. :src: bpy.types.SCULPT_OT_uv_sculpt_stroke
 msgid "Sculpt UVs using a brush"
 msgstr "ブラシを使用したUVのスカルプト"
-
-#. :src: bpy.types.SCULPT_OT_uv_sculpt_stroke.mode
-msgid "Stroke Mode"
-msgstr "ストロークモード"
 
 #. :src: bpy.types.SCULPT_OT_uv_sculpt_stroke.mode:'RELAX'
 msgid "Switch brush to relax mode for duration of stroke"
@@ -64055,7 +64101,7 @@ msgid "Refresh the sequencer editor"
 msgstr "シーケンスエディターを更新"
 
 #. :src: bpy.types.SEQUENCER_OT_reload
-#: scripts/startup/bl_ui/space_sequencer.py:379
+#: scripts/startup/bl_ui/space_sequencer.py:386
 msgctxt "Operator"
 msgid "Reload Strips"
 msgstr "ストリップを再読込"
@@ -64115,6 +64161,25 @@ msgstr "アクティブストリップの隣のハンドルを選択します"
 #. :src: bpy.types.SEQUENCER_OT_select.left_right
 msgid "Select based on the current frame side the cursor is on"
 msgstr "カーソルのあるフレームの左右に基づき選択します"
+
+#. :src: bpy.types.SEQUENCER_OT_select.left_right:'NONE'
+msgid "Don't do left-right selection"
+msgstr ""
+
+#. :src: bpy.types.SEQUENCER_OT_select.left_right:'MOUSE'
+#, fuzzy
+msgid "Use mouse position for selection"
+msgstr "左クリックを選択に使用します"
+
+#. :src: bpy.types.SEQUENCER_OT_select.left_right:'LEFT'
+#, fuzzy
+msgid "Select left"
+msgstr "次を選択"
+
+#. :src: bpy.types.SEQUENCER_OT_select.left_right:'RIGHT'
+#, fuzzy
+msgid "Select right"
+msgstr "リングを選択します"
 
 #. :src: bpy.types.SEQUENCER_OT_select.linked_time
 msgid "Linked Time"
@@ -65553,7 +65618,7 @@ msgid "Trackball style rotation of selected items"
 msgstr "選択されたアイテムの周りをトラックボールのように回転"
 
 #. :src: bpy.types.TRANSFORM_OT_transform
-#: scripts/startup/bl_ui/space_sequencer.py:307
+#: scripts/startup/bl_ui/space_sequencer.py:314
 msgctxt "Operator"
 msgid "Transform"
 msgstr "トランスフォーム"
@@ -65577,7 +65642,7 @@ msgid "Slide a vertex along a mesh"
 msgstr "メッシュに沿って頂点をスライドします"
 
 #. :src: bpy.types.UI_OT_copy_data_path_button
-#: source/blender/editors/interface/interface_handlers.c:5966
+#: source/blender/editors/interface/interface_handlers.c:5969
 msgctxt "Operator"
 msgid "Copy Data Path"
 msgstr "データパスをコピー"
@@ -65587,7 +65652,7 @@ msgid "Copy the RNA data path for this property to the clipboard"
 msgstr "このプロパティのRNAデータパスをクリップボードにコピーします"
 
 #. :src: bpy.types.UI_OT_copy_to_selected_button
-#: source/blender/editors/interface/interface_handlers.c:5968
+#: source/blender/editors/interface/interface_handlers.c:5971
 msgctxt "Operator"
 msgid "Copy To Selected"
 msgstr "選択にコピー"
@@ -65997,7 +66062,7 @@ msgid "Write the reports "
 msgstr "レポートを書く"
 
 #. :src: bpy.types.UI_OT_reset_default_button
-#: source/blender/editors/interface/interface_handlers.c:5958
+#: source/blender/editors/interface/interface_handlers.c:5961
 msgctxt "Operator"
 msgid "Reset to Default Value"
 msgstr "デフォルトに戻す"
@@ -67714,6 +67779,44 @@ msgctxt "Operator"
 msgid "Default Application Configuration"
 msgstr "デフォルトのアプリケーションの構成"
 
+#. :src: bpy.types.WM_OT_append
+#, fuzzy
+msgctxt "Operator"
+msgid "Append from Library"
+msgstr "ライブラリからリンク/アペンド"
+
+#. :src: bpy.types.WM_OT_append
+#, fuzzy
+msgid "Append from a Library .blend file"
+msgstr "他の.blendファイルの内容をリンク/アペンド(コピー)します"
+
+#. :src: bpy.types.WM_OT_append.link
+#. :src: bpy.types.WM_OT_link.link
+msgid "Link the objects or datablocks rather than appending"
+msgstr "オブジェクトやデータブロックを追加するのではなくリンクさせます"
+
+#. :src: bpy.types.WM_OT_append.autoselect
+#. :src: bpy.types.WM_OT_link.autoselect
+#, fuzzy
+msgid "Select new objects"
+msgstr "選択したオブジェクト"
+
+#. :src: bpy.types.WM_OT_append.active_layer
+#. :src: bpy.types.WM_OT_link.active_layer
+#, fuzzy
+msgid "Put new objects on the active layer"
+msgstr "リンクオブジェクトをアクティブレイヤーに配置します"
+
+#. :src: bpy.types.WM_OT_append.instance_groups
+#. :src: bpy.types.WM_OT_link.instance_groups
+msgid "Instance Groups"
+msgstr "インスタンスグループ"
+
+#. :src: bpy.types.WM_OT_append.instance_groups
+#. :src: bpy.types.WM_OT_link.instance_groups
+msgid "Create Dupli-Group instances for each group"
+msgstr ""
+
 #. :src: bpy.types.WM_OT_blenderplayer_start
 msgctxt "Operator"
 msgid "Start Game In Player"
@@ -68431,34 +68534,16 @@ msgstr "全キーマップ"
 msgid "Restore all keymaps to default"
 msgstr "すべてのキーマップをデフォルトに戻します"
 
-#. :src: bpy.types.WM_OT_link_append
+#. :src: bpy.types.WM_OT_link
+#, fuzzy
 msgctxt "Operator"
-msgid "Link/Append from Library"
+msgid "Link from Library"
 msgstr "ライブラリからリンク/アペンド"
 
-#. :src: bpy.types.WM_OT_link_append
-msgid "Link or Append from a Library .blend file"
+#. :src: bpy.types.WM_OT_link
+#, fuzzy
+msgid "Link from a Library .blend file"
 msgstr "他の.blendファイルの内容をリンク/アペンド(コピー)します"
-
-#. :src: bpy.types.WM_OT_link_append.link
-msgid "Link the objects or datablocks rather than appending"
-msgstr "オブジェクトやデータブロックを追加するのではなくリンクさせます"
-
-#. :src: bpy.types.WM_OT_link_append.autoselect
-msgid "Select the linked objects"
-msgstr "リンクされたオブジェクトを選択"
-
-#. :src: bpy.types.WM_OT_link_append.active_layer
-msgid "Put the linked objects on the active layer"
-msgstr "リンクオブジェクトをアクティブレイヤーに配置します"
-
-#. :src: bpy.types.WM_OT_link_append.instance_groups
-msgid "Instance Groups"
-msgstr "インスタンスグループ"
-
-#. :src: bpy.types.WM_OT_link_append.instance_groups
-msgid "Create instances for each group as a DupliGroup"
-msgstr "グループ複製として各グループのインスタンスを作成します"
 
 #. :src: bpy.types.WM_OT_memory_statistics
 msgctxt "Operator"
@@ -69100,12 +69185,11 @@ msgstr "ステンシルとして使用する画像"
 
 #. :src: bpy.types.ImagePaint.canvas
 msgid "Image used as canvas"
-msgstr ""
+msgstr "キャンバスとして使用する画像"
 
 #. :src: bpy.types.ImagePaint.clone_image
-#, fuzzy
 msgid "Image used as clone source"
-msgstr "クローンソースとして使用されるUVマップ"
+msgstr "クローンソースとして使用する画像"
 
 #. :src: bpy.types.ImagePaint.stencil_color
 msgid "Stencil Color"
@@ -69141,15 +69225,15 @@ msgstr "再投影用の画像キャプチャサイズ"
 
 #. :src: bpy.types.ImagePaint.mode
 msgid "Mode of operation for projection painting"
-msgstr ""
+msgstr "投影ペインティング用操作モード"
 
 #. :src: bpy.types.ImagePaint.mode:'MATERIAL'
 msgid "Detect image slots from the material"
-msgstr ""
+msgstr "マテリアルの画像スロットを探します"
 
 #. :src: bpy.types.ImagePaint.mode:'IMAGE'
 msgid "Set image for texture painting directly"
-msgstr ""
+msgstr "直接テクスチャペインティング用に画像を設定します"
 
 #. :src: bpy.types.Sculpt.radial_symmetry
 msgid "Radial Symmetry Count X Axis"
@@ -70258,7 +70342,7 @@ msgid "Point select mode"
 msgstr "ポイント選択モード"
 
 #. :src: bpy.types.ParticleEdit.select_mode:'TIP'
-#: scripts/addons/cycles/ui.py:1314
+#: scripts/addons/cycles/ui.py:1317
 #: scripts/startup/bl_ui/properties_material.py:723
 msgid "Tip"
 msgstr "先端"
@@ -70433,7 +70517,7 @@ msgid "Particles generated by the particle system"
 msgstr "パーティクルシステムによって作成されたパーティクル"
 
 #. :src: bpy.types.ParticleSystem.child_particles
-#: scripts/addons/cycles/ui.py:1339
+#: scripts/addons/cycles/ui.py:1342
 #: scripts/startup/bl_ui/properties_scene.py:348
 msgid "Child Particles"
 msgstr "子パーティクル"
@@ -71379,13 +71463,13 @@ msgstr "アクション1"
 msgid "First action in stitch"
 msgstr "スティッチの最初のアクション"
 
-#. :src: bpy.types.AnimationStitchSettings.stick_bone
-msgid "Stick Bone"
-msgstr "スティックボーン"
+#. :src: bpy.types.AnimationStitchSettings.blend_amount
+msgid "Blend amount"
+msgstr "ブレンド量"
 
-#. :src: bpy.types.AnimationStitchSettings.stick_bone
-msgid "Bone to freeze during transition"
-msgstr "推移中にボーンをフリーズ"
+#. :src: bpy.types.AnimationStitchSettings.blend_amount
+msgid "Size of blending transition, on both sides of the stitch"
+msgstr "スティッチ両側の移行部分のブレンドサイズ"
 
 #. :src: bpy.types.AnimationStitchSettings.blend_frame
 msgid "Stitch frame"
@@ -71403,14 +71487,6 @@ msgstr "アクション2"
 msgid "Second action in stitch"
 msgstr "スティッチ内の二つめのアクション"
 
-#. :src: bpy.types.AnimationStitchSettings.blend_amount
-msgid "Blend amount"
-msgstr "ブレンド量"
-
-#. :src: bpy.types.AnimationStitchSettings.blend_amount
-msgid "Size of blending transition, on both sides of the stitch"
-msgstr "スティッチ両側の移行部分のブレンドサイズ"
-
 #. :src: bpy.types.AnimationStitchSettings.second_offset
 msgid "Second offset"
 msgstr "第2オフセット"
@@ -71418,6 +71494,14 @@ msgstr "第2オフセット"
 #. :src: bpy.types.AnimationStitchSettings.second_offset
 msgid "Frame offset for 2nd animation, where it should start"
 msgstr "二つめのアニメーションが開始するフレームオフセットです"
+
+#. :src: bpy.types.AnimationStitchSettings.stick_bone
+msgid "Stick Bone"
+msgstr "スティックボーン"
+
+#. :src: bpy.types.AnimationStitchSettings.stick_bone
+msgid "Bone to freeze during transition"
+msgstr "推移中にボーンをフリーズ"
 
 #. :src: bpy.types.CyclesCameraSettings.aperture_type
 msgid "Aperture Type"
@@ -71472,13 +71556,12 @@ msgid "Rotation of blades in aperture"
 msgstr "絞りのブレードの回転"
 
 #. :src: bpy.types.CyclesCameraSettings.aperture_ratio
-#, fuzzy
 msgid "Aperture Ratio"
-msgstr "絞りの回転"
+msgstr "開口率"
 
 #. :src: bpy.types.CyclesCameraSettings.aperture_ratio
 msgid "Distortion to simulate anamorphic lens bokeh"
-msgstr ""
+msgstr "アナモルフィックなレンズぼけをシミュレートする歪み"
 
 #. :src: bpy.types.CyclesCameraSettings.panorama_type
 msgid "Panorama Type"
@@ -71569,7 +71652,7 @@ msgid "Use thickness of strand when rendering"
 msgstr "レンダリングにストランドの厚さを使用します"
 
 #. :src: bpy.types.CyclesCurveRenderSettings.cull_backfacing
-#: scripts/addons/cycles/ui.py:1229
+#: scripts/addons/cycles/ui.py:1232
 msgid "Cull back-faces"
 msgstr "背面の間引き"
 
@@ -71638,7 +71721,7 @@ msgid "Strand shape parameter"
 msgstr "ストランド形状パラメーター"
 
 #. :src: bpy.types.CyclesCurveSettings.use_closetip
-#: scripts/addons/cycles/ui.py:1318
+#: scripts/addons/cycles/ui.py:1321
 msgid "Close tip"
 msgstr "最小先端"
 
@@ -71713,8 +71796,8 @@ msgstr "等角サンプリングを使用します。光源がボリュームの
 
 #. :src: bpy.types.CyclesMaterialSettings.volume_sampling:'MULTIPLE_IMPORTANCE'
 #. :src: bpy.types.CyclesWorldSettings.volume_sampling:'MULTIPLE_IMPORTANCE'
-#: scripts/addons/cycles/ui.py:923
-#: scripts/addons/cycles/ui.py:1032
+#: scripts/addons/cycles/ui.py:926
+#: scripts/addons/cycles/ui.py:1035
 msgid "Multiple Importance"
 msgstr "多重重点"
 
@@ -72025,13 +72108,21 @@ msgstr "すべての間接光源のサンプル"
 msgid "Sample all lights (for indirect samples), rather than randomly picking one"
 msgstr "ランダムに拾い上げず、(間接サンプル用の)すべての光源をサンプリングします"
 
-#. :src: bpy.types.CyclesRenderSettings.no_caustics
-msgid "No Caustics"
-msgstr "コースティクスなし"
+#. :src: bpy.types.CyclesRenderSettings.caustics_reflective
+msgid "Reflective Caustics"
+msgstr ""
 
-#. :src: bpy.types.CyclesRenderSettings.no_caustics
-msgid "Leave out caustics, resulting in a darker image with less noise"
-msgstr "コースティクスを除外します。ノイズの少ない暗い画像になります"
+#. :src: bpy.types.CyclesRenderSettings.caustics_reflective
+msgid "Use reflective caustics, resulting in a brighter image (more noise but added realism)"
+msgstr ""
+
+#. :src: bpy.types.CyclesRenderSettings.caustics_refractive
+msgid "Refractive Caustics"
+msgstr ""
+
+#. :src: bpy.types.CyclesRenderSettings.caustics_refractive
+msgid "Use refractive caustics, resulting in a brighter image (more noise but added realism)"
+msgstr ""
 
 #. :src: bpy.types.CyclesRenderSettings.blur_glossy
 msgid "Filter Glossy"
@@ -72314,7 +72405,7 @@ msgid "Object visibility for glossy reflection rays"
 msgstr "光沢反射レイに対するオブジェクトの可視性"
 
 #. :src: bpy.types.CyclesVisibilitySettings.transmission
-#: scripts/addons/cycles/ui.py:226
+#: scripts/addons/cycles/ui.py:227
 #: scripts/addons/cycles/ui.py:151
 msgid "Transmission"
 msgstr "透過"
@@ -72326,6 +72417,11 @@ msgstr "透過レイのオブジェクトの可視性"
 #. :src: bpy.types.CyclesVisibilitySettings.shadow
 msgid "Object visibility for shadow rays"
 msgstr "シャドウレイのオブジェクトの可視性"
+
+#. :src: bpy.types.CyclesVisibilitySettings.scatter
+#, fuzzy
+msgid "Object visibility for volume scatter rays"
+msgstr "カメラ・レイに対するオブジェクトの可視性"
 
 #. :src: bpy.types.CyclesWorldSettings.sample_as_light
 msgid "Use multiple importance sampling for the environment, enabling for non-solid colors is recommended"
@@ -72348,17 +72444,17 @@ msgstr "ボリュームレンダリング使用時、ボリューム内のすべ
 msgid "Settings/info about a language"
 msgstr "言語の設定/情報"
 
-#. :src: bpy.types.I18nUpdateTranslationLanguage.name
-msgid "Language Name"
-msgstr "言語名"
-
-#. :src: bpy.types.I18nUpdateTranslationLanguage.name
-msgid "English language name/label (like \"French (Français)\")"
-msgstr "英語での言語名/ラベル(「Japanese (日本語)」など)"
-
 #. :src: bpy.types.I18nUpdateTranslationLanguage.use
 msgid "Use this language in current operator"
 msgstr "現在のオペレーターで現在の言語を使用します"
+
+#. :src: bpy.types.I18nUpdateTranslationLanguage.mo_path_trunk
+msgid "MO File Path"
+msgstr "MOファイルパス"
+
+#. :src: bpy.types.I18nUpdateTranslationLanguage.mo_path_trunk
+msgid "Path to the relevant mo file"
+msgstr "適合するmoファイルへのパス"
 
 #. :src: bpy.types.I18nUpdateTranslationLanguage.uid
 msgid "Language ID"
@@ -72368,13 +72464,13 @@ msgstr "言語ID"
 msgid "ISO code, like fr_FR"
 msgstr "ja_JPなどのISOコード"
 
-#. :src: bpy.types.I18nUpdateTranslationLanguage.mo_path_trunk
-msgid "MO File Path"
-msgstr "MOファイルパス"
+#. :src: bpy.types.I18nUpdateTranslationLanguage.name
+msgid "Language Name"
+msgstr "言語名"
 
-#. :src: bpy.types.I18nUpdateTranslationLanguage.mo_path_trunk
-msgid "Path to the relevant mo file"
-msgstr "適合するmoファイルへのパス"
+#. :src: bpy.types.I18nUpdateTranslationLanguage.name
+msgid "English language name/label (like \"French (Français)\")"
+msgstr "英語での言語名/ラベル(「Japanese (日本語)」など)"
 
 #. :src: bpy.types.I18nUpdateTranslationLanguage.po_path
 msgid "PO File Path"
@@ -72400,14 +72496,6 @@ msgstr "PO Trunkファイルパス"
 msgid "Path to the relevant po file in trunk"
 msgstr "trunk内の適合するpoファイルへのパス"
 
-#. :src: bpy.types.I18nUpdateTranslationSettings.active_lang
-msgid "Active Language"
-msgstr "アクティブ言語"
-
-#. :src: bpy.types.I18nUpdateTranslationSettings.active_lang
-msgid "Index of active language in langs collection"
-msgstr "言語群中のアクティブ言語のインデックス"
-
 #. :src: bpy.types.I18nUpdateTranslationSettings.langs
 msgid "Languages"
 msgstr "言語"
@@ -72415,10 +72503,6 @@ msgstr "言語"
 #. :src: bpy.types.I18nUpdateTranslationSettings.langs
 msgid "Languages to update in branches"
 msgstr "branch内の言語の更新"
-
-#. :src: bpy.types.I18nUpdateTranslationSettings.is_init
-msgid "Whether these settings have already been auto-set or not"
-msgstr "すでにこれらの設定が自動設定されているかどうか"
 
 #. :src: bpy.types.I18nUpdateTranslationSettings.pot_path
 msgid "POT File Path"
@@ -72428,6 +72512,18 @@ msgstr "POTファイルパス"
 msgid "Path to the pot template file"
 msgstr "適合するpotテンプレートファイルへのパス"
 
+#. :src: bpy.types.I18nUpdateTranslationSettings.is_init
+msgid "Whether these settings have already been auto-set or not"
+msgstr "すでにこれらの設定が自動設定されているかどうか"
+
+#. :src: bpy.types.I18nUpdateTranslationSettings.active_lang
+msgid "Active Language"
+msgstr "アクティブ言語"
+
+#. :src: bpy.types.I18nUpdateTranslationSettings.active_lang
+msgid "Index of active language in langs collection"
+msgstr "言語群中のアクティブ言語のインデックス"
+
 #. :src: bpy.types.MocapConstraint.constrained_boneB
 msgid "Bone (2)"
 msgstr "ボーン (2)"
@@ -72436,13 +72532,39 @@ msgstr "ボーン (2)"
 msgid "Other Constrained Bone (optional, depends on type)"
 msgstr "他のコンストレイントされたボーン（オプション、タイプに依存）"
 
-#. :src: bpy.types.MocapConstraint.s_frame
-msgid "Start frame of Fix"
-msgstr "補正の開始フレーム"
+#. :src: bpy.types.MocapConstraint.show_expanded
+msgid "Fix is fully shown"
+msgstr "補正を完全に表示"
 
 #. :src: bpy.types.MocapConstraint.constrained_bone
 msgid "Constrained Bone"
 msgstr "コンストレイントの掛けられたボーン"
+
+#. :src: bpy.types.MocapConstraint.type
+msgid "Type of constraint"
+msgstr "コンストレイントの種類"
+
+#. :src: bpy.types.MocapConstraint.targetDist
+msgid "Distance and Floor Fixes - Desired offset"
+msgstr "距離と床の補正 - 希望のオフセット"
+
+#. :src: bpy.types.MocapConstraint.targetMesh
+msgid "Target of Fix - Mesh (optional, depends on type)"
+msgstr "補正ターゲット - メッシュ（オプション、タイプに依存）"
+
+#. :src: bpy.types.MocapConstraint.smooth_out
+#. :src: bpy.types.WipeSequence.direction:'OUT'
+#: source/blender/editors/animation/fmodifier_ui.c:671
+msgid "Out"
+msgstr "出力"
+
+#. :src: bpy.types.MocapConstraint.smooth_out
+msgid "Number of frames to smooth out"
+msgstr "スムーズアウトする為のフレーム数"
+
+#. :src: bpy.types.MocapConstraint.active
+msgid "Fix is active"
+msgstr "補正がアクティブである"
 
 #. :src: bpy.types.MocapConstraint.targetSpace
 msgid "In which space should Point type target be evaluated"
@@ -72468,19 +72590,17 @@ msgstr "他のボーン空間"
 msgid "Evaluate target in specified other bone space"
 msgstr "ターゲットを指定の他のボーン空間で評価します"
 
-#. :src: bpy.types.MocapConstraint.smooth_out
-#. :src: bpy.types.WipeSequence.direction:'OUT'
-#: source/blender/editors/animation/fmodifier_ui.c:671
-msgid "Out"
-msgstr "出力"
+#. :src: bpy.types.MocapConstraint.name
+msgid "Name of Mocap Fix"
+msgstr "モーキャプ補正の名前"
 
-#. :src: bpy.types.MocapConstraint.smooth_out
-msgid "Number of frames to smooth out"
-msgstr "スムーズアウトする為のフレーム数"
+#. :src: bpy.types.MocapConstraint.s_frame
+msgid "Start frame of Fix"
+msgstr "補正の開始フレーム"
 
-#. :src: bpy.types.MocapConstraint.targetMesh
-msgid "Target of Fix - Mesh (optional, depends on type)"
-msgstr "補正ターゲット - メッシュ（オプション、タイプに依存）"
+#. :src: bpy.types.MocapConstraint.targetPoint
+msgid "Target of Fix - Point"
+msgstr "補正ターゲット - ポイント"
 
 #. :src: bpy.types.MocapConstraint.e_frame
 msgid "E"
@@ -72489,10 +72609,6 @@ msgstr "E"
 #. :src: bpy.types.MocapConstraint.e_frame
 msgid "End frame of Fix"
 msgstr "補正の終了フレーム"
-
-#. :src: bpy.types.MocapConstraint.name
-msgid "Name of Mocap Fix"
-msgstr "モーキャプ補正の名前"
 
 #. :src: bpy.types.MocapConstraint.smooth_in
 #. :src: bpy.types.WipeSequence.direction:'IN'
@@ -72503,26 +72619,6 @@ msgstr "入力"
 #. :src: bpy.types.MocapConstraint.smooth_in
 msgid "Number of frames to smooth in"
 msgstr "スムーズインするフレーム数"
-
-#. :src: bpy.types.MocapConstraint.active
-msgid "Fix is active"
-msgstr "補正がアクティブである"
-
-#. :src: bpy.types.MocapConstraint.targetPoint
-msgid "Target of Fix - Point"
-msgstr "補正ターゲット - ポイント"
-
-#. :src: bpy.types.MocapConstraint.type
-msgid "Type of constraint"
-msgstr "コンストレイントの種類"
-
-#. :src: bpy.types.MocapConstraint.targetDist
-msgid "Distance and Floor Fixes - Desired offset"
-msgstr "距離と床の補正 - 希望のオフセット"
-
-#. :src: bpy.types.MocapConstraint.show_expanded
-msgid "Fix is fully shown"
-msgstr "補正を完全に表示"
 
 #. :src: bpy.types.NodeSetting.value
 msgid "Python expression to be evaluated as the initial node setting"
@@ -72568,6 +72664,10 @@ msgstr "スクリーン空間でのブラシサイズ"
 msgid "Is Stroke Start"
 msgstr "ストロークが開始したか"
 
+#. :src: bpy.types.Print3DSettings.thickness_min
+msgid "Minimum thickness"
+msgstr "最小厚み"
+
 #. :src: bpy.types.Print3DSettings.angle_distort
 msgid "Limit for checking distorted faces"
 msgstr "面の歪みをチェックする限界"
@@ -72599,10 +72699,6 @@ msgstr "スケールを適用"
 #. :src: bpy.types.Print3DSettings.use_apply_scale
 msgid "Apply scene scale setting on export"
 msgstr "エクスポート時にシーンスケール設定を適用します"
-
-#. :src: bpy.types.Print3DSettings.thickness_min
-msgid "Minimum thickness"
-msgstr "最小厚み"
 
 #. :src: bpy.types.Print3DSettings.use_export_texture
 msgid "Copy Textures"
@@ -72980,10 +73076,10 @@ msgstr "環境照明(Environment)パスを出力します"
 
 #. :src: bpy.types.RenderLayer.use_pass_indirect
 #. :src: bpy.types.SceneRenderLayer.use_pass_indirect
-#: scripts/addons/cycles/ui.py:392
-#: scripts/addons/cycles/ui.py:397
-#: scripts/addons/cycles/ui.py:402
-#: scripts/addons/cycles/ui.py:407
+#: scripts/addons/cycles/ui.py:393
+#: scripts/addons/cycles/ui.py:398
+#: scripts/addons/cycles/ui.py:403
+#: scripts/addons/cycles/ui.py:408
 #: source/blender/editors/space_outliner/outliner_tree.c:360
 #: source/blender/nodes/composite/nodes/node_composite_image.c:59
 msgid "Indirect"
@@ -77699,7 +77795,7 @@ msgid "Scene that this sequence uses"
 msgstr "このシーケンスが使うシーン"
 
 #. :src: bpy.types.SceneSequence.scene_camera
-#: scripts/startup/bl_ui/space_sequencer.py:765
+#: scripts/startup/bl_ui/space_sequencer.py:772
 msgid "Camera Override"
 msgstr "カメラオーバーライド"
 
@@ -81225,7 +81321,7 @@ msgstr "テクスチャペインティング情報を含むスロット"
 
 #. :src: bpy.types.TexPaintSlot.index
 msgid "Index of MTex slot in the material"
-msgstr ""
+msgstr "マテリアルのテクスチャスロットインデックス"
 
 #. :src: bpy.types.TextBox
 msgid "Text Box"
@@ -87007,112 +87103,112 @@ msgstr "異質:"
 msgid "Transparency:"
 msgstr "透明度:"
 
-#: scripts/addons/cycles/ui.py:219
+#: scripts/addons/cycles/ui.py:220
 msgid "Bounces:"
 msgstr "バウンス:"
 
-#: scripts/addons/cycles/ui.py:286
+#: scripts/addons/cycles/ui.py:287
 #: scripts/startup/bl_ui/properties_render.py:266
 msgid "Threads:"
 msgstr "スレッド:"
 
-#: scripts/addons/cycles/ui.py:293
+#: scripts/addons/cycles/ui.py:294
 msgid "Tiles:"
 msgstr "タイル:"
 
-#: scripts/addons/cycles/ui.py:307
+#: scripts/addons/cycles/ui.py:308
 msgid "Viewport:"
 msgstr "ビューポート:"
 
-#: scripts/addons/cycles/ui.py:314
+#: scripts/addons/cycles/ui.py:315
 msgid "Final Render:"
 msgstr "最終レンダー:"
 
-#: scripts/addons/cycles/ui.py:316
+#: scripts/addons/cycles/ui.py:317
 msgid "Persistent Images"
 msgstr "画像保持"
 
-#: scripts/addons/cycles/ui.py:320
+#: scripts/addons/cycles/ui.py:321
 #: scripts/startup/bl_ui/properties_render.py:290
 msgid "Acceleration structure:"
 msgstr "アクセラレーション構造体:"
 
-#: scripts/addons/cycles/ui.py:339
+#: scripts/addons/cycles/ui.py:340
 msgid "Exclude"
 msgstr "除外"
 
-#: scripts/addons/cycles/ui.py:348
+#: scripts/addons/cycles/ui.py:349
 #: scripts/startup/bl_ui/properties_particle.py:288
 #: scripts/startup/bl_ui/properties_physics_cloth.py:75
 msgid "Material:"
 msgstr "マテリアル:"
 
-#: scripts/addons/cycles/ui.py:354
+#: scripts/addons/cycles/ui.py:355
 msgid "Use Environment"
 msgstr "ワールドを使用"
 
-#: scripts/addons/cycles/ui.py:355
+#: scripts/addons/cycles/ui.py:356
 msgid "Use Surfaces"
 msgstr "サーフェスを使用"
 
-#: scripts/addons/cycles/ui.py:356
+#: scripts/addons/cycles/ui.py:357
 msgid "Use Hair"
 msgstr "ヘアーを使用"
 
-#: scripts/addons/cycles/ui.py:389
+#: scripts/addons/cycles/ui.py:390
 #: scripts/startup/bl_ui/properties_texture.py:1049
 #: scripts/startup/bl_ui/space_userpref.py:34
 msgid "Diffuse:"
 msgstr "ディフューズ:"
 
-#: scripts/addons/cycles/ui.py:391
-#: scripts/addons/cycles/ui.py:396
-#: scripts/addons/cycles/ui.py:401
-#: scripts/addons/cycles/ui.py:406
+#: scripts/addons/cycles/ui.py:392
+#: scripts/addons/cycles/ui.py:397
+#: scripts/addons/cycles/ui.py:402
+#: scripts/addons/cycles/ui.py:407
 msgid "Direct"
 msgstr "直接照明"
 
-#: scripts/addons/cycles/ui.py:394
+#: scripts/addons/cycles/ui.py:395
 msgid "Glossy:"
 msgstr "光沢:"
 
-#: scripts/addons/cycles/ui.py:399
+#: scripts/addons/cycles/ui.py:400
 msgid "Transmission:"
 msgstr "透過:"
 
-#: scripts/addons/cycles/ui.py:404
+#: scripts/addons/cycles/ui.py:405
 msgid "Subsurface:"
 msgstr "サブサーフェス:"
 
-#: scripts/addons/cycles/ui.py:451
+#: scripts/addons/cycles/ui.py:452
 #: scripts/startup/bl_ui/properties_data_camera.py:165
 msgid "Focus:"
 msgstr "焦点:"
 
-#: scripts/addons/cycles/ui.py:460
+#: scripts/addons/cycles/ui.py:461
 msgid "Aperture:"
 msgstr "絞り:"
 
-#: scripts/addons/cycles/ui.py:469
+#: scripts/addons/cycles/ui.py:470
 msgid "Blades"
 msgstr "絞り羽根"
 
-#: scripts/addons/cycles/ui.py:590
+#: scripts/addons/cycles/ui.py:591
 msgid "Deformation"
 msgstr "変形"
 
-#: scripts/addons/cycles/ui.py:675
+#: scripts/addons/cycles/ui.py:677
 msgid "No output node"
 msgstr "出力ノードなし"
 
-#: scripts/addons/cycles/ui.py:922
-#: scripts/addons/cycles/ui.py:1031
+#: scripts/addons/cycles/ui.py:925
+#: scripts/addons/cycles/ui.py:1034
 #: scripts/startup/bl_ui/properties_physics_fluid.py:283
 msgid "Surface:"
 msgstr "サーフェス:"
 
-#: scripts/addons/cycles/ui.py:932
-#: scripts/addons/cycles/ui.py:1036
+#: scripts/addons/cycles/ui.py:935
+#: scripts/addons/cycles/ui.py:1039
 #: scripts/startup/bl_ui/properties_constraint.py:507
 #: scripts/startup/bl_ui/properties_data_speaker.py:87
 #: scripts/startup/bl_ui/properties_data_speaker.py:115
@@ -87120,46 +87216,46 @@ msgstr "サーフェス:"
 msgid "Volume:"
 msgstr "ボリューム:"
 
-#: scripts/addons/cycles/ui.py:936
-#: scripts/addons/cycles/ui.py:1040
+#: scripts/addons/cycles/ui.py:939
+#: scripts/addons/cycles/ui.py:1043
 msgid "Homogeneous"
 msgstr "均質"
 
-#: scripts/addons/cycles/ui.py:1021
+#: scripts/addons/cycles/ui.py:1024
 msgid "Viewport Color"
 msgstr "ビューの色"
 
-#: scripts/addons/cycles/ui.py:1125
+#: scripts/addons/cycles/ui.py:1128
 #: scripts/startup/bl_ui/properties_texture.py:972
 #: scripts/startup/bl_ui/properties_texture.py:984
 msgid "Projection:"
 msgstr "投影:"
 
-#: scripts/addons/cycles/ui.py:1154
+#: scripts/addons/cycles/ui.py:1157
 #: scripts/startup/bl_ui/properties_data_mesh.py:309
 #: scripts/startup/bl_ui/properties_material.py:542
-#: scripts/startup/bl_ui/space_sequencer.py:448
+#: scripts/startup/bl_ui/space_sequencer.py:455
 msgid "Blend:"
 msgstr "ブレンド:"
 
-#: scripts/addons/cycles/ui.py:1160
+#: scripts/addons/cycles/ui.py:1163
 #: scripts/startup/bl_ui/properties_texture.py:273
 msgid "Adjust:"
 msgstr "調整:"
 
-#: scripts/addons/cycles/ui.py:1237
+#: scripts/addons/cycles/ui.py:1240
 msgid "Min Pixels"
 msgstr "最小ピクセル"
 
-#: scripts/addons/cycles/ui.py:1238
+#: scripts/addons/cycles/ui.py:1241
 msgid "Max Ext."
 msgstr "最大幅"
 
-#: scripts/addons/cycles/ui.py:1311
+#: scripts/addons/cycles/ui.py:1314
 msgid "Thickness:"
 msgstr "太さ:"
 
-#: scripts/addons/cycles/ui.py:1338
+#: scripts/addons/cycles/ui.py:1341
 #: scripts/startup/bl_ui/properties_scene.py:347
 msgid "Subdivision"
 msgstr "細分化"
@@ -87193,27 +87289,27 @@ msgstr "メッシュライト"
 msgid "Subsurface"
 msgstr "サブサーフェス"
 
-#: scripts/addons/cycles/ui.py:737
+#: scripts/addons/cycles/ui.py:739
 msgid "Not supported, interpreted as sun lamp"
 msgstr "未対応、太陽光源として解釈されます"
 
-#: scripts/addons/cycles/ui.py:1272
+#: scripts/addons/cycles/ui.py:1275
 msgid "Extrusion"
 msgstr "押し出し"
 
-#: scripts/addons/cycles/ui.py:1275
+#: scripts/addons/cycles/ui.py:1278
 msgid "Ray Distance"
 msgstr "レイの距離"
 
-#: scripts/addons/cycles/ui.py:1280
+#: scripts/addons/cycles/ui.py:1283
 msgid "Normal Settings:"
 msgstr "ノーマル設定:"
 
-#: scripts/addons/cycles/ui.py:1284
+#: scripts/addons/cycles/ui.py:1287
 msgid "Swizzle:"
 msgstr "変換:"
 
-#: scripts/addons/cycles/ui.py:504
+#: scripts/addons/cycles/ui.py:505
 #: scripts/startup/bl_ui/properties_data_armature.py:155
 #: scripts/startup/bl_ui/properties_data_mesh.py:217
 #: scripts/startup/bl_ui/properties_data_modifier.py:383
@@ -87222,7 +87318,7 @@ msgctxt "Operator"
 msgid "Assign"
 msgstr "適用"
 
-#: scripts/addons/cycles/ui.py:506
+#: scripts/addons/cycles/ui.py:507
 #: scripts/startup/bl_ui/properties_data_armature.py:160
 #: scripts/startup/bl_ui/properties_data_mesh.py:222
 #: scripts/startup/bl_ui/properties_material.py:142
@@ -87230,17 +87326,17 @@ msgctxt "Operator"
 msgid "Deselect"
 msgstr "選択解除"
 
-#: scripts/addons/cycles/ui.py:1080
+#: scripts/addons/cycles/ui.py:1083
 #: scripts/startup/bl_ui/properties_particle.py:138
 #: scripts/startup/bl_ui/properties_physics_field.py:55
 #: scripts/startup/bl_ui/properties_physics_fluid.py:169
 #: scripts/startup/bl_ui/properties_texture.py:224
 #: scripts/startup/bl_ui/properties_texture.py:191
-#: scripts/startup/bl_ui/space_sequencer.py:443
+#: scripts/startup/bl_ui/space_sequencer.py:450
 msgid "Type:"
 msgstr "タイプ:"
 
-#: scripts/addons/cycles/ui.py:1234
+#: scripts/addons/cycles/ui.py:1237
 msgid "Curve subdivisions"
 msgstr "カーブ細分化"
 
@@ -87257,7 +87353,7 @@ msgid "Object %r can't be written into a 3DS file"
 msgstr "オブジェクト %r が3DSファイルに保存できません"
 
 #: scripts/addons/io_scene_fbx/export_fbx.py:443
-#: scripts/addons/io_scene_fbx/import_fbx.py:1465
+#: scripts/addons/io_scene_fbx/import_fbx.py:1466
 msgid "Couldn't open file %r"
 msgstr "ファイル%rが開けませんでした"
 
@@ -87265,23 +87361,23 @@ msgstr "ファイル%rが開けませんでした"
 msgid "Object '%s' has a scale of (%.3f, %.3f, %.3f), Armature deformation will not work as expected (apply Scale to fix)"
 msgstr "オブジェクト'%s'のスケールが(%.3f, %.3f, %.3f)なため、アーマチュア変形が期待通りにならないでしょう（拡大縮小を適用して解決）"
 
-#: scripts/addons/io_scene_fbx/import_fbx.py:1456
+#: scripts/addons/io_scene_fbx/import_fbx.py:1457
 msgid "ASCII FBX files are not supported %r"
 msgstr "ASCII FBX ファイルは %r に未対応です"
 
-#: scripts/addons/io_scene_fbx/import_fbx.py:1469
+#: scripts/addons/io_scene_fbx/import_fbx.py:1470
 msgid "Version %r unsupported, must be %r or later"
 msgstr "Ver. %r は未対応です。%r 以降にしてください"
 
-#: scripts/addons/io_scene_fbx/import_fbx.py:1502
+#: scripts/addons/io_scene_fbx/import_fbx.py:1503
 msgid "No 'GlobalSettings' found in file %r"
 msgstr "ファイル「%r」内に 'GlobalSettings' がありません"
 
-#: scripts/addons/io_scene_fbx/import_fbx.py:1545
+#: scripts/addons/io_scene_fbx/import_fbx.py:1546
 msgid "No 'Objects' found in file %r"
 msgstr "ファイル「%r」内に 'Objects' がありません"
 
-#: scripts/addons/io_scene_fbx/import_fbx.py:1548
+#: scripts/addons/io_scene_fbx/import_fbx.py:1549
 msgid "No 'Connections' found in file %r"
 msgstr "ファイル「%r」内に 'Connections' がありません"
 
@@ -87590,7 +87686,7 @@ msgstr "[{}]: \"{}\" ({})"
 #: scripts/startup/bl_ui/properties_freestyle.py:153
 #: scripts/startup/bl_ui/properties_game.py:798
 #: scripts/startup/bl_ui/space_clip.py:268
-#: scripts/startup/bl_ui/space_sequencer.py:296
+#: scripts/startup/bl_ui/space_sequencer.py:303
 #: scripts/startup/bl_ui/space_view3d_toolbar.py:634
 msgctxt "Operator"
 msgid "Add"
@@ -87680,13 +87776,13 @@ msgid "Location:"
 msgstr "位置:"
 
 #: scripts/startup/bl_ui/properties_constraint.py:104
-#: scripts/startup/bl_ui/space_sequencer.py:584
+#: scripts/startup/bl_ui/space_sequencer.py:591
 #: source/blender/editors/space_node/drawnode.c:707
 msgid "Rotation:"
 msgstr "回転:"
 
 #: scripts/startup/bl_ui/properties_constraint.py:110
-#: scripts/startup/bl_ui/space_sequencer.py:577
+#: scripts/startup/bl_ui/space_sequencer.py:584
 #: source/blender/editors/space_node/drawnode.c:711
 msgid "Scale:"
 msgstr "拡大縮小:"
@@ -88481,7 +88577,7 @@ msgstr "テクスチャ:"
 
 #: scripts/startup/bl_ui/properties_data_modifier.py:294
 #: scripts/startup/bl_ui/properties_data_modifier.py:726
-#: scripts/startup/bl_ui/space_sequencer.py:528
+#: scripts/startup/bl_ui/space_sequencer.py:535
 #: scripts/startup/bl_ui/space_userpref.py:480
 msgid "Direction:"
 msgstr "方向:"
@@ -88678,7 +88774,7 @@ msgid "Life"
 msgstr "寿命"
 
 #: scripts/startup/bl_ui/properties_data_modifier.py:949
-#: scripts/startup/bl_ui/space_sequencer.py:564
+#: scripts/startup/bl_ui/space_sequencer.py:571
 #: source/blender/editors/space_clip/clip_buttons.c:461
 msgid "Position:"
 msgstr "位置:"
@@ -89282,7 +89378,7 @@ msgstr "選択していないものを隠す"
 #: scripts/startup/bl_ui/space_clip.py:1297
 #: scripts/startup/bl_ui/space_image.py:128
 #: scripts/startup/bl_ui/space_node.py:197
-#: scripts/startup/bl_ui/space_sequencer.py:220
+#: scripts/startup/bl_ui/space_sequencer.py:227
 #: scripts/startup/bl_ui/space_view3d.py:534
 #: scripts/startup/bl_ui/space_view3d.py:560
 #: scripts/startup/bl_ui/space_view3d.py:598
@@ -89476,9 +89572,9 @@ msgstr "背景色"
 msgid "Clone from paint slot"
 msgstr "ペイントスロットからクローンします"
 
-#. :src: scripts/startup/bl_ui/properties_paint_common.py:158
+#: scripts/startup/bl_ui/properties_paint_common.py:158
 msgid "Clone from image/UV map"
-msgstr ""
+msgstr "画像/UVマップからクローンします"
 
 #: scripts/startup/bl_ui/properties_paint_common.py:173
 msgid "Clone Slot"
@@ -90628,7 +90724,7 @@ msgid "3D Markers"
 msgstr "3Dマーカー"
 
 #: scripts/startup/bl_ui/space_clip.py:988
-#: scripts/startup/bl_ui/space_sequencer.py:904
+#: scripts/startup/bl_ui/space_sequencer.py:911
 msgid "Use timecode index:"
 msgstr "タイムコードインデックスを使用:"
 
@@ -90782,7 +90878,7 @@ msgstr "現在のフレームの後"
 #: scripts/startup/bl_ui/space_dopesheet.py:324
 #: scripts/startup/bl_ui/space_graph.py:253
 #: scripts/startup/bl_ui/space_nla.py:199
-#: scripts/startup/bl_ui/space_sequencer.py:322
+#: scripts/startup/bl_ui/space_sequencer.py:329
 #: scripts/startup/bl_ui/space_view3d.py:185
 msgctxt "Operator"
 msgid "Grab/Move"
@@ -91058,17 +91154,17 @@ msgctxt "Operator"
 msgid "Append"
 msgstr "アペンド"
 
-#: scripts/startup/bl_ui/space_info.py:149
+#: scripts/startup/bl_ui/space_info.py:147
 msgctxt "Operator"
 msgid "Quit"
 msgstr "終了"
 
-#: scripts/startup/bl_ui/space_info.py:225
+#: scripts/startup/bl_ui/space_info.py:223
 msgctxt "Operator"
 msgid "Render Animation"
 msgstr "アニメーションレンダリング"
 
-#: scripts/startup/bl_ui/space_info.py:231
+#: scripts/startup/bl_ui/space_info.py:229
 msgctxt "Operator"
 msgid "OpenGL Render Image"
 msgstr "OpenGL画像レンダリング"
@@ -91092,59 +91188,59 @@ msgctxt "Operator"
 msgid "Save Copy..."
 msgstr "コピーを保存..."
 
-#: scripts/startup/bl_ui/space_info.py:158
-#: scripts/startup/bl_ui/space_info.py:167
+#: scripts/startup/bl_ui/space_info.py:156
+#: scripts/startup/bl_ui/space_info.py:165
 msgctxt "Operator"
 msgid "Collada (Default) (.dae)"
 msgstr "Collada (デフォルト) (.dae)"
 
-#: scripts/startup/bl_ui/space_info.py:224
+#: scripts/startup/bl_ui/space_info.py:222
 msgctxt "Operator"
 msgid "Render Image"
 msgstr "画像をレンダリング"
 
-#: scripts/startup/bl_ui/space_info.py:232
+#: scripts/startup/bl_ui/space_info.py:230
 msgctxt "Operator"
 msgid "OpenGL Render Animation"
 msgstr "OpenGLアニメーションレンダリング"
 
-#: scripts/startup/bl_ui/space_info.py:281
+#: scripts/startup/bl_ui/space_info.py:279
 msgctxt "Operator"
 msgid "Manual"
 msgstr "マニュアル"
 
-#: scripts/startup/bl_ui/space_info.py:282
+#: scripts/startup/bl_ui/space_info.py:280
 msgctxt "Operator"
 msgid "Release Log"
 msgstr "リリースノート"
 
-#: scripts/startup/bl_ui/space_info.py:285
+#: scripts/startup/bl_ui/space_info.py:283
 msgctxt "Operator"
 msgid "Blender Website"
 msgstr "Blender Webサイト"
 
-#: scripts/startup/bl_ui/space_info.py:286
+#: scripts/startup/bl_ui/space_info.py:284
 msgctxt "Operator"
 msgid "Blender e-Shop"
 msgstr "Blender e-ショップ"
 
-#: scripts/startup/bl_ui/space_info.py:287
+#: scripts/startup/bl_ui/space_info.py:285
 msgctxt "Operator"
 msgid "Developer Community"
 msgstr "開発者向けコミュニティ"
 
-#: scripts/startup/bl_ui/space_info.py:288
+#: scripts/startup/bl_ui/space_info.py:286
 msgctxt "Operator"
 msgid "User Community"
 msgstr "ユーザーコミュニティ"
 
-#: scripts/startup/bl_ui/space_info.py:290
+#: scripts/startup/bl_ui/space_info.py:288
 #: scripts/startup/bl_ui/space_userpref.py:1333
 msgctxt "Operator"
 msgid "Report a Bug"
 msgstr "バグを報告"
 
-#: scripts/startup/bl_ui/space_info.py:293
+#: scripts/startup/bl_ui/space_info.py:291
 msgctxt "Operator"
 msgid "Python API Reference"
 msgstr "PythonAPIリファレンスマニュアル"
@@ -91288,85 +91384,97 @@ msgstr "ガンマ:"
 msgid "Gain:"
 msgstr "ゲイン:"
 
-#: scripts/startup/bl_ui/space_sequencer.py:217
+#: scripts/startup/bl_ui/space_sequencer.py:212
+#, fuzzy
+msgctxt "Operator"
+msgid "All strips to the Left"
+msgstr "ストリップを左へ"
+
+#: scripts/startup/bl_ui/space_sequencer.py:215
+#, fuzzy
+msgctxt "Operator"
+msgid "All strips to the Right"
+msgstr "ストリップを右へ"
+
+#: scripts/startup/bl_ui/space_sequencer.py:224
 #: scripts/startup/bl_ui/space_view3d.py:543
 #: scripts/startup/bl_ui/space_view3d.py:582
 msgctxt "Operator"
 msgid "Grouped"
 msgstr "関係で選択"
 
-#: scripts/startup/bl_ui/space_sequencer.py:243
+#: scripts/startup/bl_ui/space_sequencer.py:250
 msgctxt "Operator"
 msgid "Path/Files"
 msgstr "パス/ファイル"
 
-#: scripts/startup/bl_ui/space_sequencer.py:281
+#: scripts/startup/bl_ui/space_sequencer.py:288
 msgctxt "Operator"
 msgid "Movie"
 msgstr "動画"
 
-#: scripts/startup/bl_ui/space_sequencer.py:282
+#: scripts/startup/bl_ui/space_sequencer.py:289
 msgctxt "Operator"
 msgid "Image"
 msgstr "画像"
 
-#: scripts/startup/bl_ui/space_sequencer.py:283
+#: scripts/startup/bl_ui/space_sequencer.py:290
 msgctxt "Operator"
 msgid "Sound"
 msgstr "サウンド"
 
-#: scripts/startup/bl_ui/space_sequencer.py:439
+#: scripts/startup/bl_ui/space_sequencer.py:446
 msgid "Name:"
 msgstr "名前:"
 
-#: scripts/startup/bl_ui/space_sequencer.py:471
+#: scripts/startup/bl_ui/space_sequencer.py:478
 msgid "Final Length: %s"
 msgstr "最終的な長さ: %s"
 
-#: scripts/startup/bl_ui/space_sequencer.py:475
+#: scripts/startup/bl_ui/space_sequencer.py:482
 msgid "Playhead: %d"
 msgstr "再生場所: %d"
 
-#: scripts/startup/bl_ui/space_sequencer.py:477
+#: scripts/startup/bl_ui/space_sequencer.py:484
 msgid "Frame Offset %d:%d"
 msgstr "フレームオフセット %d:%d"
 
-#: scripts/startup/bl_ui/space_sequencer.py:479
+#: scripts/startup/bl_ui/space_sequencer.py:486
 msgid "Frame Still %d:%d"
 msgstr "フレーム静止 %d:%d"
 
-#: scripts/startup/bl_ui/space_sequencer.py:666
+#: scripts/startup/bl_ui/space_sequencer.py:673
 msgid "Image Offset"
 msgstr "画像オフセット"
 
-#: scripts/startup/bl_ui/space_sequencer.py:672
+#: scripts/startup/bl_ui/space_sequencer.py:679
 msgid "Image Crop"
 msgstr "画像トリミング"
 
-#: scripts/startup/bl_ui/space_sequencer.py:687
-#: scripts/startup/bl_ui/space_sequencer.py:737
+#: scripts/startup/bl_ui/space_sequencer.py:694
+#: scripts/startup/bl_ui/space_sequencer.py:744
 msgid "Trim Duration (soft):"
 msgstr "期間トリミング(ソフト)"
 
-#: scripts/startup/bl_ui/space_sequencer.py:732
-#: scripts/startup/bl_ui/space_sequencer.py:682
+#: scripts/startup/bl_ui/space_sequencer.py:739
+#: scripts/startup/bl_ui/space_sequencer.py:689
 msgid "Trim Duration (hard):"
 msgstr "期間トリミング(ハード):"
 
-#: scripts/startup/bl_ui/space_sequencer.py:829
+#: scripts/startup/bl_ui/space_sequencer.py:836
 msgid "Video:"
 msgstr "動画:"
 
-#: scripts/startup/bl_ui/space_sequencer.py:848
+#: scripts/startup/bl_ui/space_sequencer.py:855
 msgid "Flip:"
 msgstr "反転:"
 
-#: scripts/startup/bl_ui/space_sequencer.py:853
+#: scripts/startup/bl_ui/space_sequencer.py:860
 #: scripts/startup/bl_ui/space_userpref.py:479
 msgid "Colors:"
 msgstr "カラー:"
 
-#: scripts/startup/bl_ui/space_sequencer.py:920
+#: scripts/startup/bl_ui/space_sequencer.py:927
 msgid "Open GL Preview"
 msgstr "OpenGLプレビュー"
 
@@ -91390,211 +91498,211 @@ msgctxt "Operator"
 msgid "Strips to the Right"
 msgstr "ストリップを右へ"
 
-#: scripts/startup/bl_ui/space_sequencer.py:213
+#: scripts/startup/bl_ui/space_sequencer.py:220
 msgctxt "Operator"
 msgid "Surrounding Handles"
 msgstr "両ハンドル"
 
-#: scripts/startup/bl_ui/space_sequencer.py:214
+#: scripts/startup/bl_ui/space_sequencer.py:221
 msgctxt "Operator"
 msgid "Left Handle"
 msgstr "左ハンドル"
 
-#: scripts/startup/bl_ui/space_sequencer.py:215
+#: scripts/startup/bl_ui/space_sequencer.py:222
 msgctxt "Operator"
 msgid "Right Handle"
 msgstr "右ハンドル"
 
-#: scripts/startup/bl_ui/space_sequencer.py:265
-#: scripts/startup/bl_ui/space_sequencer.py:267
+#: scripts/startup/bl_ui/space_sequencer.py:272
+#: scripts/startup/bl_ui/space_sequencer.py:274
 msgctxt "Operator"
 msgid "Scene..."
 msgstr "シーン..."
 
-#: scripts/startup/bl_ui/space_sequencer.py:271
+#: scripts/startup/bl_ui/space_sequencer.py:278
 msgctxt "Operator"
 msgid "Clips..."
 msgstr "クリップ..."
 
-#: scripts/startup/bl_ui/space_sequencer.py:273
+#: scripts/startup/bl_ui/space_sequencer.py:280
 msgctxt "Operator"
 msgid "Clip..."
 msgstr "クリップ..."
 
-#: scripts/startup/bl_ui/space_sequencer.py:277
+#: scripts/startup/bl_ui/space_sequencer.py:284
 msgctxt "Operator"
 msgid "Masks..."
 msgstr "マスク..."
 
-#: scripts/startup/bl_ui/space_sequencer.py:279
+#: scripts/startup/bl_ui/space_sequencer.py:286
 msgctxt "Operator"
 msgid "Mask..."
 msgstr "マスク..."
 
-#: scripts/startup/bl_ui/space_sequencer.py:297
+#: scripts/startup/bl_ui/space_sequencer.py:304
 msgctxt "Operator"
 msgid "Subtract"
 msgstr "減算"
 
-#: scripts/startup/bl_ui/space_sequencer.py:298
+#: scripts/startup/bl_ui/space_sequencer.py:305
 msgctxt "Operator"
 msgid "Alpha Over"
 msgstr "アルファオーバー"
 
-#: scripts/startup/bl_ui/space_sequencer.py:299
+#: scripts/startup/bl_ui/space_sequencer.py:306
 msgctxt "Operator"
 msgid "Alpha Under"
 msgstr "アルファアンダー"
 
-#: scripts/startup/bl_ui/space_sequencer.py:300
+#: scripts/startup/bl_ui/space_sequencer.py:307
 msgctxt "Operator"
 msgid "Cross"
 msgstr "クロス"
 
-#: scripts/startup/bl_ui/space_sequencer.py:301
+#: scripts/startup/bl_ui/space_sequencer.py:308
 msgctxt "Operator"
 msgid "Gamma Cross"
 msgstr "ガンマクロス"
 
-#: scripts/startup/bl_ui/space_sequencer.py:302
+#: scripts/startup/bl_ui/space_sequencer.py:309
 msgctxt "Operator"
 msgid "Gaussian Blur"
 msgstr "ガウシアンぼかし"
 
-#: scripts/startup/bl_ui/space_sequencer.py:303
+#: scripts/startup/bl_ui/space_sequencer.py:310
 msgctxt "Operator"
 msgid "Multiply"
 msgstr "乗算"
 
-#: scripts/startup/bl_ui/space_sequencer.py:304
+#: scripts/startup/bl_ui/space_sequencer.py:311
 msgctxt "Operator"
 msgid "Over Drop"
 msgstr "オーバードロップ"
 
-#: scripts/startup/bl_ui/space_sequencer.py:305
+#: scripts/startup/bl_ui/space_sequencer.py:312
 msgctxt "Operator"
 msgid "Wipe"
 msgstr "ワイプ"
 
-#: scripts/startup/bl_ui/space_sequencer.py:306
+#: scripts/startup/bl_ui/space_sequencer.py:313
 msgctxt "Operator"
 msgid "Glow"
 msgstr "グロー"
 
-#: scripts/startup/bl_ui/space_sequencer.py:308
+#: scripts/startup/bl_ui/space_sequencer.py:315
 msgctxt "Operator"
 msgid "Color"
 msgstr "カラー"
 
-#: scripts/startup/bl_ui/space_sequencer.py:309
+#: scripts/startup/bl_ui/space_sequencer.py:316
 msgctxt "Operator"
 msgid "Speed Control"
 msgstr "スピードコントロール"
 
-#: scripts/startup/bl_ui/space_sequencer.py:310
+#: scripts/startup/bl_ui/space_sequencer.py:317
 msgctxt "Operator"
 msgid "Multicam Selector"
 msgstr "マルチカムセレクタ"
 
-#: scripts/startup/bl_ui/space_sequencer.py:311
+#: scripts/startup/bl_ui/space_sequencer.py:318
 msgctxt "Operator"
 msgid "Adjustment Layer"
 msgstr "レイヤー調整"
 
-#: scripts/startup/bl_ui/space_sequencer.py:323
+#: scripts/startup/bl_ui/space_sequencer.py:330
 msgctxt "Operator"
 msgid "Grab/Extend from frame"
 msgstr "フレームから移動/延長"
 
-#: scripts/startup/bl_ui/space_sequencer.py:330
+#: scripts/startup/bl_ui/space_sequencer.py:337
 msgctxt "Operator"
 msgid "Cut (hard) at frame"
 msgstr "フレームでカット(ハード)"
 
-#: scripts/startup/bl_ui/space_sequencer.py:331
+#: scripts/startup/bl_ui/space_sequencer.py:338
 msgctxt "Operator"
 msgid "Cut (soft) at frame"
 msgstr "フレームでカット(ソフト)"
 
-#: scripts/startup/bl_ui/space_sequencer.py:380
+#: scripts/startup/bl_ui/space_sequencer.py:387
 msgctxt "Operator"
 msgid "Reload Strips and Adjust Length"
 msgstr "ストリップ再読み込みと長さ調整"
 
-#: scripts/startup/bl_ui/space_sequencer.py:390
+#: scripts/startup/bl_ui/space_sequencer.py:397
 msgctxt "Operator"
 msgid "Mute Deselected Strips"
 msgstr "非選択ストリップをミュート"
 
-#: scripts/startup/bl_ui/space_sequencer.py:489
+#: scripts/startup/bl_ui/space_sequencer.py:496
 msgid "Original Dimension: %dx%d"
 msgstr "元の寸法: %d×%d"
 
-#: scripts/startup/bl_ui/space_sequencer.py:491
+#: scripts/startup/bl_ui/space_sequencer.py:498
 msgid "Original Dimension: None"
 msgstr "元の寸法: なし"
 
-#: scripts/startup/bl_ui/space_sequencer.py:640
-#: scripts/startup/bl_ui/space_sequencer.py:658
+#: scripts/startup/bl_ui/space_sequencer.py:647
+#: scripts/startup/bl_ui/space_sequencer.py:665
 #: source/blender/editors/space_node/drawnode.c:1647
 msgid "Path:"
 msgstr "パス:"
 
-#: scripts/startup/bl_ui/space_sequencer.py:769
+#: scripts/startup/bl_ui/space_sequencer.py:776
 msgid "Audio Volume"
 msgstr "オーディオの音量"
 
-#: scripts/startup/bl_ui/space_sequencer.py:773
-#: scripts/startup/bl_ui/space_sequencer.py:802
+#: scripts/startup/bl_ui/space_sequencer.py:780
+#: scripts/startup/bl_ui/space_sequencer.py:809
 msgid "Original frame range: %d-%d (%d)"
 msgstr "元のフレーム範囲: %d-%d (%d)"
 
-#: scripts/startup/bl_ui/space_sequencer.py:834
+#: scripts/startup/bl_ui/space_sequencer.py:841
 msgid "Tracker:"
 msgstr "トラッカー:"
 
-#: scripts/startup/bl_ui/space_sequencer.py:838
+#: scripts/startup/bl_ui/space_sequencer.py:845
 msgid "Distortion:"
 msgstr "歪み:"
 
-#: scripts/startup/bl_ui/space_sequencer.py:899
+#: scripts/startup/bl_ui/space_sequencer.py:906
 msgid "Build JPEG quality"
 msgstr "JPEG品質を構築"
 
-#: scripts/startup/bl_ui/space_sequencer.py:604
+#: scripts/startup/bl_ui/space_sequencer.py:611
 msgid "Default fade"
 msgstr "デフォルトフェード"
 
 # ## Audio Window ###
 # ## Text Editor ###
-#: scripts/startup/bl_ui/space_sequencer.py:648
+#: scripts/startup/bl_ui/space_sequencer.py:655
 #: scripts/startup/bl_ui/space_userpref.py:1310
 msgid "File:"
 msgstr "ファイル:"
 
-#: scripts/startup/bl_ui/space_sequencer.py:720
+#: scripts/startup/bl_ui/space_sequencer.py:727
 msgctxt "Operator"
 msgid "Unpack"
 msgstr "パック解除"
 
-#: scripts/startup/bl_ui/space_sequencer.py:722
+#: scripts/startup/bl_ui/space_sequencer.py:729
 msgctxt "Operator"
 msgid "Pack"
 msgstr "パック"
 
-#: scripts/startup/bl_ui/space_sequencer.py:606
+#: scripts/startup/bl_ui/space_sequencer.py:613
 msgid "Effect fader"
 msgstr "エフェクトフェーダー"
 
-#: scripts/startup/bl_ui/space_sequencer.py:548
+#: scripts/startup/bl_ui/space_sequencer.py:555
 msgid "Stretch to input strip length"
 msgstr "入力ストリップの長さにストレッチ"
 
-#: scripts/startup/bl_ui/space_sequencer.py:554
+#: scripts/startup/bl_ui/space_sequencer.py:561
 msgid "Frame number"
 msgstr "フレーム番号"
 
-#: scripts/startup/bl_ui/space_sequencer.py:596
+#: scripts/startup/bl_ui/space_sequencer.py:603
 msgid "Cut To"
 msgstr "カット"
 
@@ -93713,7 +93821,6 @@ msgid "Add To Library"
 msgstr "ライブラリに追加"
 
 #: scripts/startup/bl_ui/space_view3d_toolbar.py:1029
-#, fuzzy
 msgid "Painting Mode"
 msgstr "ペイントモード"
 
@@ -93868,25 +93975,25 @@ msgid "Multi-Paint"
 msgstr "マルチペイント"
 
 #: source/blender/blenkernel/BKE_library.h:113
-#: source/blender/editors/sculpt_paint/paint_image_proj.c:4972
+#: source/blender/editors/sculpt_paint/paint_image_proj.c:5104
 #: source/blender/editors/space_image/image_ops.c:1905
 msgid "Untitled"
 msgstr "無題"
 
-#: source/blender/blenkernel/intern/DerivedMesh.c:1619
-#: source/blender/blenkernel/intern/DerivedMesh.c:1978
+#: source/blender/blenkernel/intern/DerivedMesh.c:1620
+#: source/blender/blenkernel/intern/DerivedMesh.c:1979
 msgid "Modifier requires original data, bad stack position"
 msgstr "このモディファイアーには元データが必要です。スタック位置を変更してください"
 
-#: source/blender/blenkernel/intern/DerivedMesh.c:1643
+#: source/blender/blenkernel/intern/DerivedMesh.c:1644
 msgid "Not supported in dyntopo"
 msgstr "Dyntopoでは未対応です"
 
-#: source/blender/blenkernel/intern/DerivedMesh.c:1645
+#: source/blender/blenkernel/intern/DerivedMesh.c:1646
 msgid "Not supported in sculpt mode"
 msgstr "スカルプトモードでは未対応です"
 
-#: source/blender/blenkernel/intern/DerivedMesh.c:1649
+#: source/blender/blenkernel/intern/DerivedMesh.c:1650
 msgid "Hide, Mask and optimized display disabled"
 msgstr "隠す/マスク、最適化表示が無効です"
 
@@ -93986,59 +94093,59 @@ msgstr "コンストレイント"
 msgid "blend_data"
 msgstr "blend_data"
 
-#: source/blender/blenkernel/intern/customdata.c:1087
-#: source/blender/blenkernel/intern/customdata.c:1107
-#: source/blender/blenkernel/intern/customdata.c:1113
+#: source/blender/blenkernel/intern/customdata.c:1095
 #: source/blender/blenkernel/intern/customdata.c:1115
+#: source/blender/blenkernel/intern/customdata.c:1121
+#: source/blender/blenkernel/intern/customdata.c:1123
 msgid "UVMap"
 msgstr "UVマップ"
 
-#: source/blender/blenkernel/intern/customdata.c:1091
-#: source/blender/blenkernel/intern/customdata.c:1119
+#: source/blender/blenkernel/intern/customdata.c:1099
+#: source/blender/blenkernel/intern/customdata.c:1127
 msgid "Col"
 msgstr "色"
 
-#: source/blender/blenkernel/intern/customdata.c:1130
+#: source/blender/blenkernel/intern/customdata.c:1138
 msgid "PreviewCol"
 msgstr "プレビュー色"
 
-#: source/blender/blenkernel/intern/customdata.c:1133
+#: source/blender/blenkernel/intern/customdata.c:1141
 msgid "IDCol"
 msgstr "ID色"
 
-#: source/blender/blenkernel/intern/customdata.c:1136
+#: source/blender/blenkernel/intern/customdata.c:1144
 msgid "TexturedCol"
 msgstr "テクスチャ色"
 
-#: source/blender/blenkernel/intern/customdata.c:1141
+#: source/blender/blenkernel/intern/customdata.c:1149
 msgid "Recast"
 msgstr "Recast"
 
-#: source/blender/blenkernel/intern/customdata.c:1145
+#: source/blender/blenkernel/intern/customdata.c:1153
 msgid "NGon Face"
 msgstr "Nゴン面"
 
-#: source/blender/blenkernel/intern/customdata.c:1147
+#: source/blender/blenkernel/intern/customdata.c:1155
 msgid "NGon Face-Vertex"
 msgstr "Nゴン面-頂点"
 
-#: source/blender/blenkernel/intern/customdata.c:1151
+#: source/blender/blenkernel/intern/customdata.c:1159
 msgid "ShapeKey"
 msgstr "シェイプキー"
 
-#: source/blender/blenkernel/intern/customdata.c:1153
+#: source/blender/blenkernel/intern/customdata.c:1161
 msgid "BevelWeight"
 msgstr "ベベルウェイト"
 
-#: source/blender/blenkernel/intern/customdata.c:1155
+#: source/blender/blenkernel/intern/customdata.c:1163
 msgid "SubSurfCrease"
 msgstr "細分割クリース"
 
-#: source/blender/blenkernel/intern/customdata.c:1157
+#: source/blender/blenkernel/intern/customdata.c:1165
 msgid "OS Loop"
 msgstr "OSループ"
 
-#: source/blender/blenkernel/intern/customdata.c:1161
+#: source/blender/blenkernel/intern/customdata.c:1169
 msgid "PreviewLoopCol"
 msgstr "プレビューループ色"
 
@@ -94092,7 +94199,7 @@ msgid "Stepped"
 msgstr "階段"
 
 #: source/blender/blenkernel/intern/gpencil.c:188
-#: source/blender/editors/gpencil/gpencil_edit.c:314
+#: source/blender/editors/gpencil/gpencil_edit.c:315
 #: source/blender/makesrna/intern/rna_gpencil.c:114
 msgid "GP_Layer"
 msgstr "GPレイヤー"
@@ -94290,21 +94397,21 @@ msgctxt "Sequence"
 msgid "Bright/Contrast"
 msgstr "輝度/コントラスト"
 
-#: source/blender/blenkernel/intern/sequencer.c:3993
+#: source/blender/blenkernel/intern/sequencer.c:4005
 msgid "Strips must be the same length"
 msgstr "ストリップを同じ長さにしてください"
 
-#: source/blender/blenkernel/intern/sequencer.c:4000
-#: source/blender/blenkernel/intern/sequencer.c:4006
+#: source/blender/blenkernel/intern/sequencer.c:4012
+#: source/blender/blenkernel/intern/sequencer.c:4018
 msgid "Strips were not compatible"
 msgstr "ストリップの互換性がありませんでした"
 
-#: source/blender/blenkernel/intern/sequencer.c:4012
+#: source/blender/blenkernel/intern/sequencer.c:4024
 msgid "Strips must have the same number of inputs"
 msgstr "ストリップの入力数を同じにしてください"
 
-#: source/blender/blenkernel/intern/sequencer.c:4381
 #: source/blender/blenkernel/intern/sequencer.c:4393
+#: source/blender/blenkernel/intern/sequencer.c:4405
 #: source/blender/editors/sound/sound_ops.c:110
 #: source/blender/editors/sound/sound_ops.c:119
 #: source/blender/editors/space_graph/graph_edit.c:1170
@@ -94409,31 +94516,31 @@ msgstr "開くことができません"
 msgid "LIB ERROR: object lost from scene: '%s'"
 msgstr "ライブラリエラー：シーン '%s' からオブジェクトが失われました"
 
-#: source/blender/blenloader/intern/readfile.c:6594
+#: source/blender/blenloader/intern/readfile.c:6596
 msgid "Library '%s', '%s' had multiple instances, save and reload!"
 msgstr "ライブラリ '%s'、'%s' に複数のインスタンスあり。保存と再読込してください！"
 
-#: source/blender/blenloader/intern/readfile.c:7866
+#: source/blender/blenloader/intern/readfile.c:7868
 msgid "LIB ERROR: Data refers to main .blend file: '%s' from %s"
 msgstr "ライブラリエラー：データ '%s' がメイン.blend ファイル(%s)を参照しています"
 
-#: source/blender/blenloader/intern/readfile.c:9219
+#: source/blender/blenloader/intern/readfile.c:9221
 msgid "Read packed library:  '%s'"
 msgstr "パックされたライブラリ読み込み：'%s'"
 
-#: source/blender/blenloader/intern/readfile.c:9228
+#: source/blender/blenloader/intern/readfile.c:9230
 msgid "Read library:  '%s', '%s'"
 msgstr "ライブラリ読み込み：'%s'、'%s'"
 
-#: source/blender/blenloader/intern/readfile.c:9282
+#: source/blender/blenloader/intern/readfile.c:9284
 msgid "Cannot find lib '%s'"
 msgstr "ライブラリ '%s' がありません"
 
-#: source/blender/blenloader/intern/readfile.c:9301
+#: source/blender/blenloader/intern/readfile.c:9303
 msgid "LIB ERROR: %s: '%s' missing from '%s'"
 msgstr "ライブラリエラー：%s: '%s' が '%s' から欠けています"
 
-#: source/blender/blenloader/intern/readfile.c:9333
+#: source/blender/blenloader/intern/readfile.c:9335
 msgid "LIB ERROR: %s: '%s' unread lib block missing from '%s'"
 msgstr "ライブラリエラー：%s: 未読込ライブラリブロック '%s' が '%s' から欠けています"
 
@@ -94445,7 +94552,7 @@ msgstr "(メモリ上の)blendファイルを開くことができません"
 msgid "Warning in console"
 msgstr "コンソールに警告"
 
-#: source/blender/blenloader/intern/readfile.c:7472
+#: source/blender/blenloader/intern/readfile.c:7474
 msgid "Texface conversion problem (see error in console)"
 msgstr "テクスチャ面の変換に問題（コンソールにエラー表示）"
 
@@ -94480,33 +94587,24 @@ msgstr ""
 "オブジェクト '%s' のゲームプロパティ名が重複しています。\n"
 "テキストオブジェクトにロジックブリックを通じて内容を変更する ['Text'] ゲームプロパティがあります"
 
-#: source/blender/blenloader/intern/writefile.c:3477
+#: source/blender/blenloader/intern/writefile.c:3593
 msgid "Unable to make version backup: filename too short"
 msgstr "ファイル名が短すぎてバージョンバックアップが作成できません"
 
-#: source/blender/blenloader/intern/writefile.c:3486
-#: source/blender/blenloader/intern/writefile.c:3496
+#: source/blender/blenloader/intern/writefile.c:3602
+#: source/blender/blenloader/intern/writefile.c:3612
 msgid "Unable to make version backup"
 msgstr "バージョンバックアップが作成できません"
 
-#: source/blender/blenloader/intern/writefile.c:3578
+#: source/blender/blenloader/intern/writefile.c:3705
 msgid "Version backup failed (file saved with @)"
 msgstr "バージョンバックアップに失敗 (@をつけて保存済)"
 
-#: source/blender/blenloader/intern/writefile.c:3595
-#: source/blender/blenloader/intern/writefile.c:3611
+#: source/blender/blenloader/intern/writefile.c:3711
 msgid "Cannot change old file (file saved with @)"
 msgstr "旧ファイルを変更できません (@をつけて保存済)"
 
-#: source/blender/blenloader/intern/writefile.c:3602
-msgid "Failed opening .gz file"
-msgstr ".gzファイルを開くのに失敗しました"
-
-#: source/blender/blenloader/intern/writefile.c:3606
-msgid "Failed opening .blend file for compression"
-msgstr "圧縮のため.blendファイルを開くのに失敗しました"
-
-#: source/blender/blenloader/intern/writefile.c:3518
+#: source/blender/blenloader/intern/writefile.c:3644
 msgid "Cannot open file %s for writing: %s"
 msgstr "ファイル %s を %s の保存用に開けませんでした"
 
@@ -95316,30 +95414,30 @@ msgstr "レイヤーを上に移動します"
 msgid "Move layer down"
 msgstr "レイヤーを下に移動します"
 
-#: source/blender/editors/gpencil/gpencil_edit.c:228
-#: source/blender/editors/gpencil/gpencil_edit.c:311
+#: source/blender/editors/gpencil/gpencil_edit.c:229
+#: source/blender/editors/gpencil/gpencil_edit.c:312
 msgid "GPencil"
 msgstr "グリースペンシル"
 
-#: source/blender/editors/gpencil/gpencil_edit.c:220
-#: source/blender/editors/gpencil/gpencil_edit.c:268
-#: source/blender/editors/gpencil/gpencil_edit.c:307
+#: source/blender/editors/gpencil/gpencil_edit.c:221
+#: source/blender/editors/gpencil/gpencil_edit.c:269
+#: source/blender/editors/gpencil/gpencil_edit.c:308
 msgid "Nowhere for grease pencil data to go"
 msgstr "グリースペンシルデータの移動先がありません"
 
-#: source/blender/editors/gpencil/gpencil_edit.c:356
+#: source/blender/editors/gpencil/gpencil_edit.c:357
 msgid "No grease pencil data"
 msgstr "グリースペンシルデータなし"
 
-#: source/blender/editors/gpencil/gpencil_edit.c:360
+#: source/blender/editors/gpencil/gpencil_edit.c:361
 msgid "No active frame to delete"
 msgstr "削除するアクティブフレームがありません"
 
-#: source/blender/editors/gpencil/gpencil_edit.c:1592
+#: source/blender/editors/gpencil/gpencil_edit.c:1594
 msgid "No Grease Pencil data to work on"
 msgstr "作業するグリースペンシルデータブロックなし"
 
-#: source/blender/editors/gpencil/gpencil_edit.c:1597
+#: source/blender/editors/gpencil/gpencil_edit.c:1599
 msgid "Current Grease Pencil strokes have no valid timing data, most timing options will be hidden!"
 msgstr "グリースペンシルストロークに有効なタイミングデータがないため、大半のタイミングオプションは非表示です"
 
@@ -95383,133 +95481,133 @@ msgstr "アクティブ領域が未設定です"
 msgid "Failed to set value"
 msgstr "値の設定に失敗しました"
 
-#: source/blender/editors/interface/interface_handlers.c:5767
+#: source/blender/editors/interface/interface_handlers.c:5770
 msgid "Pin"
 msgstr "ピン止め"
 
-#: source/blender/editors/interface/interface_handlers.c:5767
+#: source/blender/editors/interface/interface_handlers.c:5770
 msgid "Shift+Left Mouse"
 msgstr "[Shift]＋左クリック"
 
-#: source/blender/editors/interface/interface_handlers.c:5828
+#: source/blender/editors/interface/interface_handlers.c:5831
 msgctxt "Operator"
 msgid "Replace Keyframes"
 msgstr "キーフレーム上書き"
 
-#: source/blender/editors/interface/interface_handlers.c:5830
+#: source/blender/editors/interface/interface_handlers.c:5833
 msgctxt "Operator"
 msgid "Replace Single Keyframe"
 msgstr "単一キーフレームの上書き"
 
-#: source/blender/editors/interface/interface_handlers.c:5834
+#: source/blender/editors/interface/interface_handlers.c:5837
 msgctxt "Operator"
 msgid "Delete Single Keyframe"
 msgstr "シングルキーフレームを削除"
 
-#: source/blender/editors/interface/interface_handlers.c:5838
+#: source/blender/editors/interface/interface_handlers.c:5841
 msgctxt "Operator"
 msgid "Replace Keyframe"
 msgstr "キーフレームを上書き"
 
-#: source/blender/editors/interface/interface_handlers.c:5856
+#: source/blender/editors/interface/interface_handlers.c:5859
 msgctxt "Operator"
 msgid "Insert Single Keyframe"
 msgstr "一つのキーフレームを挿入"
 
-#: source/blender/editors/interface/interface_handlers.c:5867
-#: source/blender/editors/interface/interface_handlers.c:5873
+#: source/blender/editors/interface/interface_handlers.c:5870
+#: source/blender/editors/interface/interface_handlers.c:5876
 msgctxt "Operator"
 msgid "Clear Keyframes"
 msgstr "キーフレームをクリア"
 
-#: source/blender/editors/interface/interface_handlers.c:5869
+#: source/blender/editors/interface/interface_handlers.c:5872
 msgctxt "Operator"
 msgid "Clear Single Keyframes"
 msgstr "シングルキーフレームをクリア"
 
-#: source/blender/editors/interface/interface_handlers.c:5883
+#: source/blender/editors/interface/interface_handlers.c:5886
 msgctxt "Operator"
 msgid "Delete Drivers"
 msgstr "ドライバーを削除"
 
-#: source/blender/editors/interface/interface_handlers.c:5885
+#: source/blender/editors/interface/interface_handlers.c:5888
 msgctxt "Operator"
 msgid "Delete Single Driver"
 msgstr "シングルドライバーを削除"
 
-#: source/blender/editors/interface/interface_handlers.c:5889
+#: source/blender/editors/interface/interface_handlers.c:5892
 msgctxt "Operator"
 msgid "Delete Driver"
 msgstr "ドライバーを削除"
 
-#: source/blender/editors/interface/interface_handlers.c:5907
+#: source/blender/editors/interface/interface_handlers.c:5910
 msgctxt "Operator"
 msgid "Add Drivers"
 msgstr "ドライバーを追加"
 
-#: source/blender/editors/interface/interface_handlers.c:5909
+#: source/blender/editors/interface/interface_handlers.c:5912
 msgctxt "Operator"
 msgid "Add Single Driver"
 msgstr "単一のドライバーを追加"
 
-#: source/blender/editors/interface/interface_handlers.c:5929
+#: source/blender/editors/interface/interface_handlers.c:5932
 msgctxt "Operator"
 msgid "Add All to Keying Set"
 msgstr "すべてキーイングセットに追加"
 
-#: source/blender/editors/interface/interface_handlers.c:5931
+#: source/blender/editors/interface/interface_handlers.c:5934
 msgctxt "Operator"
 msgid "Add Single to Keying Set"
 msgstr "キーイングセットに単一で追加"
 
-#: source/blender/editors/interface/interface_handlers.c:5952
+#: source/blender/editors/interface/interface_handlers.c:5955
 msgctxt "Operator"
 msgid "Reset All to Default Values"
 msgstr "すべてデフォルト値に戻す"
 
-#: source/blender/editors/interface/interface_handlers.c:5954
+#: source/blender/editors/interface/interface_handlers.c:5957
 msgctxt "Operator"
 msgid "Reset Single to Default Value"
 msgstr "単一のプロパティをデフォルトに戻す"
 
-#: source/blender/editors/interface/interface_handlers.c:5962
+#: source/blender/editors/interface/interface_handlers.c:5965
 msgctxt "Operator"
 msgid "Unset"
 msgstr "未設定化"
 
-#: source/blender/editors/interface/interface_handlers.c:5993
+#: source/blender/editors/interface/interface_handlers.c:5996
 msgctxt "Operator"
 msgid "Change Shortcut"
 msgstr "ショートカット変更"
 
-#: source/blender/editors/interface/interface_handlers.c:5997
+#: source/blender/editors/interface/interface_handlers.c:6000
 msgctxt "Operator"
 msgid "Remove Shortcut"
 msgstr "ショートカット削除"
 
-#: source/blender/editors/interface/interface_handlers.c:6003
+#: source/blender/editors/interface/interface_handlers.c:6006
 msgctxt "Operator"
 msgid "Add Shortcut"
 msgstr "ショートカット追加"
 
-#: source/blender/editors/interface/interface_handlers.c:6030
-#: source/blender/editors/interface/interface_handlers.c:6053
+#: source/blender/editors/interface/interface_handlers.c:6033
+#: source/blender/editors/interface/interface_handlers.c:6056
 msgctxt "Operator"
 msgid "Online Manual"
 msgstr "オンラインマニュアル"
 
-#: source/blender/editors/interface/interface_handlers.c:6035
-#: source/blender/editors/interface/interface_handlers.c:6058
+#: source/blender/editors/interface/interface_handlers.c:6038
+#: source/blender/editors/interface/interface_handlers.c:6061
 msgctxt "Operator"
 msgid "Online Python Reference"
 msgstr "Blender PythonAPI リファレンス"
 
-#: source/blender/editors/interface/interface_handlers.c:6067
+#: source/blender/editors/interface/interface_handlers.c:6070
 msgctxt "Operator"
 msgid "Submit Description"
 msgstr "説明を送信"
 
-#: source/blender/editors/interface/interface_handlers.c:6206
+#: source/blender/editors/interface/interface_handlers.c:6209
 msgid "DoButton pointer error: %s"
 msgstr "DoButtonポインタエラー：%s"
 
@@ -95754,7 +95852,7 @@ msgstr "キャプチャ"
 msgid "Anim Player"
 msgstr "アニメプレイヤー"
 
-#: source/blender/editors/interface/interface_templates.c:3572
+#: source/blender/editors/interface/interface_templates.c:3568
 msgid "Input Color Space:"
 msgstr "入力色空間:"
 
@@ -96210,7 +96308,7 @@ msgstr "交点が見つかりません"
 msgid "LMB: define cut lines, Return/Spacebar: confirm, Esc or RMB: cancel, E: new cut, Ctrl: midpoint snap (%s), Shift: ignore snap (%s), C: angle constrain (%s), Z: cut through (%s)"
 msgstr "左クリック:カットライン設定、Enter/スペース:確定、Esc/右クリック:キャンセル、E:新規カット、Ctrl:中点にスナップ(%s)、Shift:スナップ無視(%s)、C:角度制約(%s)、Z:透過(%s)"
 
-#: source/blender/editors/mesh/editmesh_knife.c:2739
+#: source/blender/editors/mesh/editmesh_knife.c:2742
 msgid "Selected faces required"
 msgstr "選択された面が必要です"
 
@@ -96258,6 +96356,10 @@ msgstr "切り裂きできる辺がありません"
 msgid "Cannot rip selected faces"
 msgstr "選択中の面が切り裂きできません"
 
+#. :src: source/blender/editors/mesh/editmesh_rip.c:997
+msgid "Cannot rip multiple disconnected vertices"
+msgstr ""
+
 #: source/blender/editors/mesh/editmesh_select.c:2629
 msgid "Mesh has no active vert/edge/face"
 msgstr "メッシュにアクティブ頂点/辺/面がありません"
@@ -96276,49 +96378,49 @@ msgstr "頂点選択モードでないといけません"
 
 #: source/blender/editors/mesh/editmesh_select.c:2970
 #: source/blender/editors/object/object_lattice.c:511
-#: source/blender/editors/sculpt_paint/paint_utils.c:674
+#: source/blender/editors/sculpt_paint/paint_utils.c:691
 msgid "No weights/vertex groups on object"
 msgstr "オブジェクトに頂点グループがありません"
 
-#: source/blender/editors/mesh/editmesh_tools.c:1114
+#: source/blender/editors/mesh/editmesh_tools.c:1120
 msgid "Select edges or face pairs for edge loops to rotate about"
 msgstr "辺ループを回転させる辺、または面の組を選択してください"
 
-#: source/blender/editors/mesh/editmesh_tools.c:1137
+#: source/blender/editors/mesh/editmesh_tools.c:1143
 msgid "Could not find any selected edges that can be rotated"
 msgstr "回転できる選択中の辺が見つかりませんでした"
 
-#: source/blender/editors/mesh/editmesh_tools.c:1377
+#: source/blender/editors/mesh/editmesh_tools.c:1383
 msgid "Selected faces must be triangles or quads"
 msgstr "選択する面は三角もしくは四角形面のみです"
 
-#: source/blender/editors/mesh/editmesh_tools.c:1975
+#: source/blender/editors/mesh/editmesh_tools.c:1981
 msgid "Mesh does not have shape keys"
 msgstr "メッシュにシェイプキーがありません"
 
-#: source/blender/editors/mesh/editmesh_tools.c:2425
+#: source/blender/editors/mesh/editmesh_tools.c:2431
 msgid "No edges are selected to operate on"
 msgstr "実行する辺が選択されていません"
 
-#: source/blender/editors/mesh/editmesh_tools.c:2432
+#: source/blender/editors/mesh/editmesh_tools.c:2438
 msgid "Mouse path too short"
 msgstr "マウスの経路が短すぎます"
 
-#: source/blender/editors/mesh/editmesh_tools.c:2823
+#: source/blender/editors/mesh/editmesh_tools.c:2829
 #: source/blender/editors/space_view3d/view3d_buttons.c:316
 #: source/blender/editors/space_view3d/view3d_buttons.c:1028
 msgid "Nothing selected"
 msgstr "何も選択していません"
 
-#: source/blender/editors/mesh/editmesh_tools.c:2840
+#: source/blender/editors/mesh/editmesh_tools.c:2846
 msgid "Selection not supported in object mode"
 msgstr "オブジェクトモードでは未対応の選択です"
 
-#: source/blender/editors/mesh/editmesh_tools.c:4325
+#: source/blender/editors/mesh/editmesh_tools.c:4331
 msgid "View not found, cannot sort by view axis"
 msgstr "ビューが見つからないためビュー軸でソートできません"
 
-#: source/blender/editors/mesh/editmesh_tools.c:4453
+#: source/blender/editors/mesh/editmesh_tools.c:4459
 msgid "Mesh has no material or texture assigned"
 msgstr "メッシュに適用されたマテリアルまたはテクスチャがありません"
 
@@ -96326,15 +96428,15 @@ msgstr "メッシュに適用されたマテリアルまたはテクスチャが
 msgid "Removed: %d vertices, %d edges, %d faces"
 msgstr "頂点：%d個、辺：%d個、面：%d個を削除しました"
 
-#: source/blender/editors/mesh/editmesh_tools.c:1933
+#: source/blender/editors/mesh/editmesh_tools.c:1939
 msgid "Removed %d vertices"
 msgstr "%d個の頂点を削除しました"
 
-#: source/blender/editors/mesh/editmesh_tools.c:4982
+#: source/blender/editors/mesh/editmesh_tools.c:4988
 msgid "%d already symmetrical, %d pairs mirrored, %d failed"
 msgstr "%d個がすでに対称、%d個のペアをミラー化、%d個が失敗"
 
-#: source/blender/editors/mesh/editmesh_tools.c:4986
+#: source/blender/editors/mesh/editmesh_tools.c:4992
 msgid "%d already symmetrical, %d pairs mirrored"
 msgstr "%d個がすでに対称、%d個のペアをミラー化"
 
@@ -96353,7 +96455,7 @@ msgid "Not an object or mesh"
 msgstr "オブジェクトもしくはメッシュではありません"
 
 #: source/blender/editors/mesh/mesh_data.c:560
-#: source/blender/editors/object/object_add.c:843
+#: source/blender/editors/object/object_add.c:841
 msgid "Not an image"
 msgstr "画像ではありません"
 
@@ -96489,48 +96591,48 @@ msgstr "統合するのに同じ頂点数のメッシュが追加選択されて
 msgid "Joining results in %d vertices, limit is %ld"
 msgstr "%d個の頂点を統合しました(%ld個の制限中)"
 
-#: source/blender/editors/object/object_add.c:1072
+#: source/blender/editors/object/object_add.c:1070
 msgid "SoundTrack"
 msgstr "サウンド"
 
-#: source/blender/editors/object/object_add.c:510
+#: source/blender/editors/object/object_add.c:508
 msgctxt "Object"
 msgid "CurveGuide"
 msgstr "カーブガイド"
 
-#: source/blender/editors/object/object_add.c:522
+#: source/blender/editors/object/object_add.c:520
 msgctxt "Object"
 msgid "Field"
 msgstr "フィールド"
 
-#: source/blender/editors/object/object_add.c:913
+#: source/blender/editors/object/object_add.c:911
 msgctxt "Lamp"
 msgid "Lamp"
 msgstr "ランプ"
 
-#: source/blender/editors/object/object_add.c:398
+#: source/blender/editors/object/object_add.c:396
 msgid "Property 'layer' has no values set"
 msgstr "'レイヤー' プロパティに値が設定されていません"
 
-#: source/blender/editors/object/object_add.c:742
+#: source/blender/editors/object/object_add.c:740
 msgid "Cannot create editmode armature"
 msgstr "編集モードでアーマチュアを作成できません"
 
-#: source/blender/editors/object/object_add.c:2233
+#: source/blender/editors/object/object_add.c:2232
 msgid "Object not found"
 msgstr "オブジェクトがありません"
 
-#: source/blender/editors/object/object_add.c:2249
+#: source/blender/editors/object/object_add.c:2248
 msgid "Object could not be duplicated"
 msgstr "オブジェクトを複製できませんでした"
 
-#: source/blender/editors/object/object_add.c:2316
-#: source/blender/editors/object/object_add.c:2370
+#: source/blender/editors/object/object_add.c:2315
+#: source/blender/editors/object/object_add.c:2369
 msgid "This data does not support joining in edit mode"
 msgstr "このデータは編集モードでの統合に対応していません"
 
-#: source/blender/editors/object/object_add.c:2320
-#: source/blender/editors/object/object_add.c:2374
+#: source/blender/editors/object/object_add.c:2319
+#: source/blender/editors/object/object_add.c:2373
 #: source/blender/editors/space_outliner/outliner_edit.c:229
 #: source/blender/editors/space_text/text_ops.c:95
 #: source/blender/editors/space_text/text_ops.c:111
@@ -96961,11 +97063,15 @@ msgstr "リンクされているシーンにオブジェクトをリンクでき
 msgid "Skipped editing library object data"
 msgstr "ライブラリオブジェクトデータの編集をスキップしました"
 
-#: source/blender/editors/object/object_relations.c:2410
+#. :src: source/blender/editors/object/object_relations.c:2191
+msgid "Orphan library objects added to the current scene to avoid loss"
+msgstr ""
+
+#: source/blender/editors/object/object_relations.c:2449
 msgid "Incorrect context for running object data unlink"
 msgstr "オブジェクトデータのリンク解除に不適切なコンテクストです"
 
-#: source/blender/editors/object/object_relations.c:2426
+#: source/blender/editors/object/object_relations.c:2465
 msgid "Can't unlink this object data"
 msgstr "このオブジェクトデータはリンク解除できません"
 
@@ -97554,17 +97660,13 @@ msgstr "3Dビュー領域＆カーブ編集が要求されています"
 msgid "Screencast job stopped"
 msgstr "スクリーンキャストのジョブを停止"
 
-#: source/blender/editors/sculpt_paint/paint_image.c:905
+#: source/blender/editors/sculpt_paint/paint_image.c:904
 msgid "Image requires 4 color channels to paint: %s"
 msgstr "画像のペイントには4つのカラーチャンネルが必要です: %s"
 
-#: source/blender/editors/sculpt_paint/paint_image.c:907
+#: source/blender/editors/sculpt_paint/paint_image.c:906
 msgid "Packed MultiLayer files cannot be painted: %s"
 msgstr "パックされたマルチレイヤーファイルはペイントできません: %s"
-
-#: source/blender/editors/sculpt_paint/paint_image.c:1451
-msgid "Object did not have UV map, manual unwrap recommended"
-msgstr "オブジェクトにUVマップがありません。手動による展開をお勧めします"
 
 #: source/blender/editors/sculpt_paint/paint_image_2d.c:1242
 msgid "Image requires 4 color channels to paint"
@@ -97574,29 +97676,33 @@ msgstr "画像のペイントには4つのカラーチャンネルが必要で�
 msgid "Packed MultiLayer files cannot be painted"
 msgstr "パックされたマルチレイヤーファイルはペイントできません"
 
-#: source/blender/editors/sculpt_paint/paint_image_proj.c:4659
+#: source/blender/editors/sculpt_paint/paint_image_proj.c:4667
 msgid "No active mesh object"
 msgstr "アクティブメッシュオブジェクトがありません"
 
-#: source/blender/editors/sculpt_paint/paint_image_proj.c:4664
+#: source/blender/editors/sculpt_paint/paint_image_proj.c:4672
 msgid "Image could not be found"
 msgstr "画像が見つかりません"
 
-#: source/blender/editors/sculpt_paint/paint_image_proj.c:4672
+#: source/blender/editors/sculpt_paint/paint_image_proj.c:4680
 msgid "Image data could not be found"
 msgstr "画像データが見つかりません"
 
-#: source/blender/editors/sculpt_paint/paint_image_proj.c:4683
+#: source/blender/editors/sculpt_paint/paint_image_proj.c:4691
 msgid "Image project data invalid"
 msgstr "画像投影データが無効です"
 
-#: source/blender/editors/sculpt_paint/paint_image_proj.c:4696
+#: source/blender/editors/sculpt_paint/paint_image_proj.c:4704
 msgid "No active camera set"
 msgstr "アクティブカメラセットがありません"
 
-#: source/blender/editors/sculpt_paint/paint_image_proj.c:4794
+#: source/blender/editors/sculpt_paint/paint_image_proj.c:4802
 msgid "Failed to create OpenGL off-screen buffer: %s"
 msgstr "OpenGLオフスクリーンバッファ作成失敗: %s"
+
+#: source/blender/editors/sculpt_paint/paint_image_proj.c:4956
+msgid "Object did not have UV map, manual unwrap recommended"
+msgstr "オブジェクトにUVマップがありません。手動による展開をお勧めします"
 
 #: source/blender/editors/sculpt_paint/paint_vertex.c:1112
 msgid "The modifier used does not support deformed locations"
@@ -97610,37 +97716,37 @@ msgstr "ペイントするアクティブ頂点グループがありません。
 msgid "Active group is locked, aborting"
 msgstr "アクショングループはロックされています。中止します"
 
-#: source/blender/editors/sculpt_paint/sculpt.c:4727
+#: source/blender/editors/sculpt_paint/sculpt.c:4716
 msgid "Warning!"
 msgstr "警告！"
 
-#: source/blender/editors/sculpt_paint/sculpt.c:4747
+#: source/blender/editors/sculpt_paint/sculpt.c:4736
 #: source/blender/editors/space_image/image_ops.c:2198
 #: source/blender/windowmanager/intern/wm_operators.c:1511
 msgid "OK"
 msgstr "OK"
 
-#: source/blender/editors/sculpt_paint/sculpt.c:4731
+#: source/blender/editors/sculpt_paint/sculpt.c:4720
 msgid "Vertex Data Detected!"
 msgstr "頂点データ発見！"
 
-#: source/blender/editors/sculpt_paint/sculpt.c:4732
+#: source/blender/editors/sculpt_paint/sculpt.c:4721
 msgid "Dyntopo will not preserve vertex colors, UVs, or other customdata"
 msgstr "Dyntopo（ダイナミックトポロジー）スカルプトは頂点カラーやUV、その他カスタムデータを維持しません"
 
-#: source/blender/editors/sculpt_paint/sculpt.c:4739
+#: source/blender/editors/sculpt_paint/sculpt.c:4728
 msgid "Generative Modifiers Detected!"
 msgstr "生成モディファイアー発見！"
 
-#: source/blender/editors/sculpt_paint/sculpt.c:4740
+#: source/blender/editors/sculpt_paint/sculpt.c:4729
 msgid "Keeping the modifiers will increase polycount when returning to object mode"
 msgstr "このモディファイアーを保持すると、オブジェクトモードに戻った時にポリゴン数が増えます"
 
-#: source/blender/editors/sculpt_paint/sculpt.c:5000
+#: source/blender/editors/sculpt_paint/sculpt.c:4989
 msgid "Object has non-uniform scale, sculpting may be unpredictable"
 msgstr "オブジェクトの各軸のスケールが同じでないため、スカルプトが正常でないかもしれません"
 
-#: source/blender/editors/sculpt_paint/sculpt.c:5004
+#: source/blender/editors/sculpt_paint/sculpt.c:4993
 msgid "Object has negative scale, sculpting may be unpredictable"
 msgstr "オブジェクトに負のスケールがあり、スカルプトが正常でないかもしれません"
 
@@ -98633,9 +98739,9 @@ msgstr "頂点色"
 msgid "Squash"
 msgstr "別のレンガ"
 
-#. :src: source/blender/editors/space_node/drawnode.c:953
+#: source/blender/editors/space_node/drawnode.c:953
 msgid "Only enabled in experimental GPU kernel"
-msgstr ""
+msgstr "実験的GPUカーネルでのみ有効です"
 
 #: source/blender/editors/space_node/drawnode.c:1247
 msgid "Center:"
@@ -98957,6 +99063,10 @@ msgid "No valid inputs to swap"
 msgstr "入れ替えに適切な入力ではありません"
 
 #: source/blender/editors/space_sequencer/sequencer_edit.c:2062
+#, fuzzy
+msgid "Please select more than one or all related strips"
+msgstr "関連するストリップをすべて選択してください"
+
 #: source/blender/editors/space_sequencer/sequencer_edit.c:2770
 msgid "Please select all related strips"
 msgstr "関連するストリップをすべて選択してください"
@@ -98973,7 +99083,7 @@ msgstr "エフェクトの入力の1つが未設定です。入れ替えでき�
 msgid "New effect needs more input strips"
 msgstr "新しいエフェクトにもっと入力ストリップが必要です"
 
-#: source/blender/editors/space_sequencer/sequencer_select.c:1150
+#: source/blender/editors/space_sequencer/sequencer_select.c:1170
 msgid "No active sequence!"
 msgstr "アクティブシーケンスがありません！"
 
@@ -99399,254 +99509,254 @@ msgstr "ローカルZ軸上"
 msgid "Auto Keying On"
 msgstr "自動キー挿入ON"
 
-#: source/blender/editors/transform/transform.c:2876
+#: source/blender/editors/transform/transform.c:2878
 msgid "Bend Angle: %s Radius: %s Alt, Clamp %s"
 msgstr "湾曲角度: %s 半径: %s [Alt]で範囲制限 %s"
 
-#: source/blender/editors/transform/transform.c:2882
+#: source/blender/editors/transform/transform.c:2884
 msgid "Bend Angle: %.3f Radius: %.4f, Alt, Clamp %s"
 msgstr "湾曲角度: %.3f 半径: %.4f、[Alt]で範囲制限 %s"
 
-#: source/blender/editors/transform/transform.c:3044
+#: source/blender/editors/transform/transform.c:3046
 msgid "Shear: %s %s"
 msgstr "せん断：%s %s"
 
-#: source/blender/editors/transform/transform.c:3048
+#: source/blender/editors/transform/transform.c:3050
 msgid "Shear: %.3f %s (Press X or Y to set shear axis)"
 msgstr "せん断：%.3f %s（XまたはYキーでせん断の軸を設定）"
 
-#: source/blender/editors/transform/transform.c:3154
+#: source/blender/editors/transform/transform.c:3156
 msgid "Scale: %s%s %s"
 msgstr "スケール: %s%s %s"
 
-#: source/blender/editors/transform/transform.c:3158
+#: source/blender/editors/transform/transform.c:3160
 msgid "Scale: %s : %s%s %s"
 msgstr "スケール：%s : %s%s %s"
 
-#: source/blender/editors/transform/transform.c:3162
+#: source/blender/editors/transform/transform.c:3164
 msgid "Scale: %s : %s : %s%s %s"
 msgstr "スケール：%s : %s : %s%s %s"
 
-#: source/blender/editors/transform/transform.c:3169
+#: source/blender/editors/transform/transform.c:3171
 msgid "Scale X: %s   Y: %s%s %s"
 msgstr "スケールX: %s   Y: %s%s %s"
 
-#: source/blender/editors/transform/transform.c:3173
+#: source/blender/editors/transform/transform.c:3175
 msgid "Scale X: %s   Y: %s  Z: %s%s %s"
 msgstr "スケールX: %s   Y: %s  Z: %s%s %s"
 
-#: source/blender/editors/transform/transform.c:3179
-#: source/blender/editors/transform/transform.c:3931
-#: source/blender/editors/transform/transform.c:4036
-#: source/blender/editors/transform/transform.c:4207
+#: source/blender/editors/transform/transform.c:3181
+#: source/blender/editors/transform/transform.c:3933
+#: source/blender/editors/transform/transform.c:4038
+#: source/blender/editors/transform/transform.c:4209
 msgid " Proportional size: %.2f"
 msgstr "プロポーショナルサイズ：%.2f"
 
-#: source/blender/editors/transform/transform.c:3559
+#: source/blender/editors/transform/transform.c:3561
 msgid "To Sphere: %s %s"
 msgstr "球へ変形：%s %s"
 
-#: source/blender/editors/transform/transform.c:3563
+#: source/blender/editors/transform/transform.c:3565
 msgid "To Sphere: %.4f %s"
 msgstr "球へ変形：%.4f %s"
 
-#: source/blender/editors/transform/transform.c:3923
+#: source/blender/editors/transform/transform.c:3925
 msgid "Rot: %s %s %s"
 msgstr "回転：%s %s %s"
 
-#: source/blender/editors/transform/transform.c:3926
+#: source/blender/editors/transform/transform.c:3928
 msgid "Rot: %.2f%s %s"
 msgstr "回転：%.2f%s %s"
 
-#: source/blender/editors/transform/transform.c:4027
+#: source/blender/editors/transform/transform.c:4029
 msgid "Trackball: %s %s %s"
 msgstr "トラックボール：%s %s %s"
 
-#: source/blender/editors/transform/transform.c:4031
+#: source/blender/editors/transform/transform.c:4033
 msgid "Trackball: %.2f %.2f %s"
 msgstr "トラックボール：%.2f %.2f %s"
 
-#: source/blender/editors/transform/transform.c:4170
+#: source/blender/editors/transform/transform.c:4172
 msgid "AutoIK-Len: %d"
 msgstr "自動IK長さ：%d"
 
-#: source/blender/editors/transform/transform.c:4372
+#: source/blender/editors/transform/transform.c:4374
 msgid "Shrink/Fatten:"
 msgstr "収縮/膨張："
 
-#: source/blender/editors/transform/transform.c:4394
+#: source/blender/editors/transform/transform.c:4396
 msgid " or Alt) Even Thickness %s"
 msgstr "またはAlt）均一な厚さ %s"
 
-#: source/blender/editors/transform/transform.c:4472
+#: source/blender/editors/transform/transform.c:4474
 msgid "Tilt: %s° %s"
 msgstr "傾き：%s° %s"
 
-#: source/blender/editors/transform/transform.c:4478
+#: source/blender/editors/transform/transform.c:4480
 msgid "Tilt: %.2f° %s"
 msgstr "傾き：%.2f° %s"
 
-#: source/blender/editors/transform/transform.c:4549
+#: source/blender/editors/transform/transform.c:4551
 msgid "Shrink/Fatten: %s"
 msgstr "収縮/膨張：%s"
 
-#: source/blender/editors/transform/transform.c:4552
+#: source/blender/editors/transform/transform.c:4554
 msgid "Shrink/Fatten: %3f"
 msgstr "収縮/膨張：%3f"
 
-#: source/blender/editors/transform/transform.c:4627
+#: source/blender/editors/transform/transform.c:4629
 msgid "Feather Shrink/Fatten: %s"
 msgstr "フェザー収縮/膨張：%s"
 
-#: source/blender/editors/transform/transform.c:4630
+#: source/blender/editors/transform/transform.c:4632
 msgid "Feather Shrink/Fatten: %3f"
 msgstr "フェザー収縮/膨張：%3f"
 
-#: source/blender/editors/transform/transform.c:4721
+#: source/blender/editors/transform/transform.c:4723
 msgid "Push/Pull: %s%s %s"
 msgstr "押す/引く：%s%s %s"
 
-#: source/blender/editors/transform/transform.c:4725
+#: source/blender/editors/transform/transform.c:4727
 msgid "Push/Pull: %.4f%s %s"
 msgstr "押す/引く：%.4f%s %s"
 
-#: source/blender/editors/transform/transform.c:4815
+#: source/blender/editors/transform/transform.c:4817
 msgid "Bevel Weight: +%s %s"
 msgstr "ベベルウェイト: +%s %s"
 
-#: source/blender/editors/transform/transform.c:4817
+#: source/blender/editors/transform/transform.c:4819
 msgid "Bevel Weight: %s %s"
 msgstr "ベベルウェイト: %s %s"
 
-#: source/blender/editors/transform/transform.c:4822
+#: source/blender/editors/transform/transform.c:4824
 msgid "Bevel Weight: +%.3f %s"
 msgstr "ベベルウェイト: +%.3f %s"
 
-#: source/blender/editors/transform/transform.c:4824
+#: source/blender/editors/transform/transform.c:4826
 msgid "Bevel Weight: %.3f %s"
 msgstr "ベベルウェイト: %.3f %s"
 
-#: source/blender/editors/transform/transform.c:4893
+#: source/blender/editors/transform/transform.c:4895
 msgid "Crease: +%s %s"
 msgstr "クリース: +%s %s"
 
-#: source/blender/editors/transform/transform.c:4895
+#: source/blender/editors/transform/transform.c:4897
 msgid "Crease: %s %s"
 msgstr "クリース: %s %s"
 
-#: source/blender/editors/transform/transform.c:4900
+#: source/blender/editors/transform/transform.c:4902
 msgid "Crease: +%.3f %s"
 msgstr "クリース: +%.3f %s"
 
-#: source/blender/editors/transform/transform.c:4902
+#: source/blender/editors/transform/transform.c:4904
 msgid "Crease: %.3f %s"
 msgstr "クリース: %.3f %s"
 
-#: source/blender/editors/transform/transform.c:4971
+#: source/blender/editors/transform/transform.c:4973
 msgid "ScaleB: %s%s %s"
 msgstr "スケールB: %s%s %s"
 
-#: source/blender/editors/transform/transform.c:4973
+#: source/blender/editors/transform/transform.c:4975
 msgid "ScaleB: %s : %s : %s%s %s"
 msgstr "スケールB: %s : %s : %s%s %s"
 
-#: source/blender/editors/transform/transform.c:4977
+#: source/blender/editors/transform/transform.c:4979
 msgid "ScaleB X: %s  Y: %s  Z: %s%s %s"
 msgstr "スケールB X: %s  Y: %s  Z: %s%s %s"
 
-#: source/blender/editors/transform/transform.c:5098
+#: source/blender/editors/transform/transform.c:5100
 msgid "Envelope: %s"
 msgstr "エンベロープ: %s"
 
-#: source/blender/editors/transform/transform.c:5101
+#: source/blender/editors/transform/transform.c:5103
 msgid "Envelope: %3f"
 msgstr "エンベロープ: %3f"
 
-#: source/blender/editors/transform/transform.c:6275
+#: source/blender/editors/transform/transform.c:6277
 msgid "Edge Slide: %s (E)ven: %s"
 msgstr "辺スライド: %s 均等(E): %s"
 
-#: source/blender/editors/transform/transform.c:6279
+#: source/blender/editors/transform/transform.c:6281
 msgid "Edge Slide: %s (E)ven: %s, (F)lipped: %s"
 msgstr "辺スライド: %s 均等(E): %s、反転(F): %s"
 
-#: source/blender/editors/transform/transform.c:6284
+#: source/blender/editors/transform/transform.c:6286
 msgid "Edge Slide: %.4f (E)ven: %s"
 msgstr "辺スライド: %.4f 均等(E): %s"
 
-#: source/blender/editors/transform/transform.c:6288
+#: source/blender/editors/transform/transform.c:6290
 msgid "Edge Slide: %.4f (E)ven: %s, (F)lipped: %s"
 msgstr "辺スライド: %.4f 均等(E): %s、反転(F): %s"
 
-#: source/blender/editors/transform/transform.c:6792
+#: source/blender/editors/transform/transform.c:6794
 msgid "Vert Slide: "
 msgstr "頂点スライド: "
 
-#: source/blender/editors/transform/transform.c:6801
+#: source/blender/editors/transform/transform.c:6803
 msgid "(E)ven: %s, "
 msgstr "均等(E): %s、"
 
-#: source/blender/editors/transform/transform.c:6803
+#: source/blender/editors/transform/transform.c:6805
 msgid "(F)lipped: %s, "
 msgstr "反転(F): %s、"
 
-#: source/blender/editors/transform/transform.c:6805
+#: source/blender/editors/transform/transform.c:6807
 msgid "Alt or (C)lamp: %s"
 msgstr "Altまたはクランプ(C): %s"
 
-#: source/blender/editors/transform/transform.c:6864
+#: source/blender/editors/transform/transform.c:6866
 msgid "Roll: %s"
 msgstr "ロール: %s"
 
-#: source/blender/editors/transform/transform.c:6867
+#: source/blender/editors/transform/transform.c:6869
 msgid "Roll: %.2f"
 msgstr "ロール: %.2f"
 
-#: source/blender/editors/transform/transform.c:6939
+#: source/blender/editors/transform/transform.c:6941
 msgid "Time: +%s %s"
 msgstr "時間: +%s %s"
 
-#: source/blender/editors/transform/transform.c:6941
+#: source/blender/editors/transform/transform.c:6943
 msgid "Time: %s %s"
 msgstr "時間: %s %s"
 
-#: source/blender/editors/transform/transform.c:6946
+#: source/blender/editors/transform/transform.c:6948
 msgid "Time: +%.3f %s"
 msgstr "時間: +%.3f %s"
 
-#: source/blender/editors/transform/transform.c:6948
+#: source/blender/editors/transform/transform.c:6950
 msgid "Time: %.3f %s"
 msgstr "時間: %.3f %s"
 
-#: source/blender/editors/transform/transform.c:7012
+#: source/blender/editors/transform/transform.c:7014
 msgid "Mirror%s"
 msgstr "ミラー%s"
 
-#: source/blender/editors/transform/transform.c:7046
+#: source/blender/editors/transform/transform.c:7048
 msgid "Select a mirror axis (X, Y)"
 msgstr "ミラー反転する軸を選択(X、Y)"
 
-#: source/blender/editors/transform/transform.c:7048
+#: source/blender/editors/transform/transform.c:7050
 msgid "Select a mirror axis (X, Y, Z)"
 msgstr "ミラー反転する軸を選択(X、Y、Z)"
 
-#: source/blender/editors/transform/transform.c:7153
+#: source/blender/editors/transform/transform.c:7155
 msgid "Sequence Slide: %s%s, ("
 msgstr "シーケンススライド: %s%s、("
 
-#: source/blender/editors/transform/transform.c:7161
+#: source/blender/editors/transform/transform.c:7163
 msgid " or Alt) Expand to fit %s"
 msgstr "またはAlt)で押しのけて配置 %s"
 
-#: source/blender/editors/transform/transform.c:7405
+#: source/blender/editors/transform/transform.c:7407
 msgid "DeltaX: %s"
 msgstr "デルタX: %s"
 
-#: source/blender/editors/transform/transform.c:7551
+#: source/blender/editors/transform/transform.c:7553
 msgid "TimeSlide: %s"
 msgstr "タイムスライド: %s"
 
-#: source/blender/editors/transform/transform.c:7689
+#: source/blender/editors/transform/transform.c:7691
 msgid "ScaleX: %s"
 msgstr "拡大縮小X: %s"
 
@@ -101107,7 +101217,7 @@ msgstr "環境マップを作成中"
 msgid "Blender Game"
 msgstr "Blenderゲーム"
 
-#: source/blender/render/intern/source/occlusion.c:1266
+#: source/blender/render/intern/source/occlusion.c:1272
 msgid "Occlusion preprocessing"
 msgstr "オクルージョンの前処理中"
 
@@ -101349,7 +101459,7 @@ msgstr "Blender Webサイト"
 msgid "Python API Reference"
 msgstr "PythonAPIリファレンスマニュアル"
 
-#: source/blender/windowmanager/intern/wm_operators.c:2886
+#: source/blender/windowmanager/intern/wm_operators.c:2915
 msgid "Save Over?"
 msgstr "上書きしますか？"
 
@@ -101361,11 +101471,11 @@ msgstr "(文書化されていない操作)"
 msgid "Dummy Name"
 msgstr "仮の名前"
 
-#: source/blender/windowmanager/intern/wm_operators.c:2961
+#: source/blender/windowmanager/intern/wm_operators.c:2990
 msgid "Toggle System Console"
 msgstr "システムコンソール切替"
 
-#: source/blender/windowmanager/intern/wm_operators.c:2959
+#: source/blender/windowmanager/intern/wm_operators.c:2988
 msgctxt "Operator"
 msgid "Toggle System Console"
 msgstr "システムコンソール切替"
@@ -101392,19 +101502,19 @@ msgstr "何も表示していません"
 msgid "Cannot use current file as library"
 msgstr "現在のファイルはライブラリとして使用できません"
 
-#: source/blender/windowmanager/intern/wm_operators.c:3929
+#: source/blender/windowmanager/intern/wm_operators.c:3958
 msgid "Property cannot be both boolean and float"
 msgstr "プロパティはbooleanとfloatの両方にはなれません"
 
-#: source/blender/windowmanager/intern/wm_operators.c:4041
+#: source/blender/windowmanager/intern/wm_operators.c:4070
 msgid "Pointer from path image_id is not an ID"
 msgstr "パスimage_idのポインタがIDではありません"
 
-#: source/blender/windowmanager/intern/wm_operators.c:4081
+#: source/blender/windowmanager/intern/wm_operators.c:4110
 msgid "Property must be an integer or a float"
 msgstr "プロパティはintegerまたはfloatのみです"
 
-#: source/blender/windowmanager/intern/wm_operators.c:4089
+#: source/blender/windowmanager/intern/wm_operators.c:4118
 msgid "Property must be a none, distance, a factor, or an angle"
 msgstr "プロパティはNoneまたは距離、係数、角度のみです"
 
@@ -101428,19 +101538,19 @@ msgstr "'%s' オペレーターのやり直し：不適切なコンテクスト�
 msgid "Scene '%s' is linked, group instance disabled"
 msgstr "シーン '%s' はリンク中です。グループインスタンスは禁止です"
 
-#: source/blender/windowmanager/intern/wm_operators.c:3952
+#: source/blender/windowmanager/intern/wm_operators.c:3981
 msgid "Could not resolve path '%s'"
 msgstr "パス '%s' を解決できませんでした"
 
-#: source/blender/windowmanager/intern/wm_operators.c:3965
+#: source/blender/windowmanager/intern/wm_operators.c:3994
 msgid "Property from path '%s' is not a float"
 msgstr "パス '%s' のプロパティはfloatではありません"
 
-#: source/blender/windowmanager/intern/wm_operators.c:3973
+#: source/blender/windowmanager/intern/wm_operators.c:4002
 msgid "Property from path '%s' has length %d instead of %d"
 msgstr "パス '%s' のプロパティの長さが%dで、%dになっていません"
 
-#: source/blender/windowmanager/intern/wm_operators.c:4435
+#: source/blender/windowmanager/intern/wm_operators.c:4464
 msgid "%d x %s: %.2f ms,  average: %.4f"
 msgstr "%d × %s: %.2f ms、平均: %.4f"
 
