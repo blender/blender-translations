@@ -1,9 +1,9 @@
 
 msgid ""
 msgstr ""
-"Project-Id-Version: Blender 2.74 (sub 5) (b'45d4fad')\n"
+"Project-Id-Version: Blender 2.75 (sub 1) (b'124b25c')\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-06-09 20:11:05\n"
+"POT-Creation-Date: 2015-06-15 21:39:08\n"
 "PO-Revision-Date: 2014-01-09 12:04+0900\n"
 "Last-Translator: \n"
 "Language-Team: Japanese Translation Team (https://sites.google.com/site/blugjp/blender-translators)\n"
@@ -1953,6 +1953,14 @@ msgid "Addon Preferences"
 msgstr "アドオン設定"
 
 
+msgid "Warn Msgid Not Capitalized"
+msgstr "msgidの先頭文字の警告"
+
+
+msgid "Warn about messages not starting by a capitalized letter (with a few allowed exceptions!)"
+msgstr "開始文字が大文字ではないメッセージを警告します(少しの例外を可能にするため！)"
+
+
 msgid "Fribidi Library"
 msgstr "Fribidiライブラリ"
 
@@ -1969,22 +1977,6 @@ msgid "Additional paths to add to sys.path (';' separated)"
 msgstr "sys.pathに追加するパス(「;」で区切り)"
 
 
-msgid "Spell Cache"
-msgstr "スペルキャッシュ"
-
-
-msgid "A cache storing validated msgids, to avoid re-spellchecking them"
-msgstr "有効な msgid を格納するキャッシュ。再スペルチェックを防ぎます"
-
-
-msgid "Persistent Data Path"
-msgstr "Persistenデータパス"
-
-
-msgid "The name of a json file storing those settings (unfortunately, Blender's system does not work here)"
-msgstr "これらの設定が含まれるJSONファイル名(残念ながらBlenderのシステムはここでは動作しません)"
-
-
 msgid "Translation Root"
 msgstr "ルートの移動"
 
@@ -1993,12 +1985,12 @@ msgid "The bf-translation repository"
 msgstr "bf-translationリポジトリ"
 
 
-msgid "Warn Msgid Not Capitalized"
-msgstr "msgidの先頭文字の警告"
+msgid "Gettext 'msgfmt' executable"
+msgstr "実行可能なGettext 'msgfmt'"
 
 
-msgid "Warn about messages not starting by a capitalized letter (with a few allowed exceptions!)"
-msgstr "開始文字が大文字ではないメッセージを警告します(少しの例外を可能にするため！)"
+msgid "The gettext msgfmt 'compiler'. You’ll likely have to edit it if you’re under Windows"
+msgstr "Gettext msgfmtコンパイラ。Windows環境では編集しないといけないかもしれません"
 
 
 msgid "Source Root"
@@ -2009,12 +2001,20 @@ msgid "The Blender source root path"
 msgstr "Blenderソースルートパス"
 
 
-msgid "Gettext 'msgfmt' executable"
-msgstr "実行可能なGettext 'msgfmt'"
+msgid "Persistent Data Path"
+msgstr "Persistenデータパス"
 
 
-msgid "The gettext msgfmt 'compiler'. You’ll likely have to edit it if you’re under Windows"
-msgstr "Gettext msgfmtコンパイラ。Windows環境では編集しないといけないかもしれません"
+msgid "The name of a json file storing those settings (unfortunately, Blender's system does not work here)"
+msgstr "これらの設定が含まれるJSONファイル名(残念ながらBlenderのシステムはここでは動作しません)"
+
+
+msgid "Spell Cache"
+msgstr "スペルキャッシュ"
+
+
+msgid "A cache storing validated msgids, to avoid re-spellchecking them"
+msgstr "有効な msgid を格納するキャッシュ。再スペルチェックを防ぎます"
 
 
 msgid "Animation Data"
@@ -17470,10 +17470,6 @@ msgstr "カスタム分割法線データがメッシュ内にあれば True"
 
 msgid "Double Sided"
 msgstr "両面表示"
-
-
-msgid "Render/display the mesh with double or single sided lighting"
-msgstr "3Dビューで面の裏側を明るく表示します"
 
 
 msgid "Texture Space Mesh"
@@ -39252,6 +39248,14 @@ msgid "Activate/select the file(s) contained in the border"
 msgstr "矩形内に含まれるファイルを アクティブ化/選択"
 
 
+msgid "Prev"
+msgstr "前"
+
+
+msgid "Next"
+msgstr "次"
+
+
 msgctxt "Operator"
 msgid "Smooth Scroll"
 msgstr "スムーズスクロール"
@@ -41466,10 +41470,6 @@ msgstr "新しいタイムマーカーを追加します"
 msgctxt "Operator"
 msgid "Bind Camera to Markers"
 msgstr "カメラをマーカーにバインド"
-
-
-msgid "Bind the active camera to selected markers(s)"
-msgstr "アクティブカメラを選択したマーカーにバインドさせます"
 
 
 msgctxt "Operator"
@@ -44887,20 +44887,20 @@ msgid "Settings to be applied on the newly created node"
 msgstr "新規ノードに設定を適用します"
 
 
-msgid "Node Type"
-msgstr "ノードタイプ"
-
-
-msgid "Node type"
-msgstr "ノードタイプ"
-
-
 msgid "Use Transform"
 msgstr "トランスフォーム使用"
 
 
 msgid "Start transform operator after inserting the node"
 msgstr "ノード挿入後にトランスフォーム演算を開始します"
+
+
+msgid "Node Type"
+msgstr "ノードタイプ"
+
+
+msgid "Node type"
+msgstr "ノードタイプ"
 
 
 msgid "Link Socket Index"
@@ -51529,10 +51529,6 @@ msgid "Mute Strips"
 msgstr "ストリップのミュート"
 
 
-msgid "Mute selected strips"
-msgstr "選択したストリップをミュートにします"
-
-
 msgid "Mute unselected rather than selected strips"
 msgstr "選択していないストリップをミュートにします"
 
@@ -51881,14 +51877,6 @@ msgstr "トランスフォームできないアクティブストリップのロ
 msgctxt "Operator"
 msgid "Un-Mute Strips"
 msgstr "ストリップのミュート解除"
-
-
-msgid "Un-Mute unselected rather than selected strips"
-msgstr "選択していないストリップをミュート解除します"
-
-
-msgid "UnMute unselected rather than selected strips"
-msgstr "非選択ストリップのミュートを解除します"
 
 
 msgid "View all the strips in the sequencer"
@@ -55503,14 +55491,6 @@ msgid "Control"
 msgstr "管理"
 
 
-msgid "Prev"
-msgstr "前"
-
-
-msgid "Next"
-msgstr "次"
-
-
 msgctxt "Operator"
 msgid "Demo Mode (Start)"
 msgstr "デモモード (開始)"
@@ -58786,12 +58766,12 @@ msgid "Group of ID properties"
 msgstr "IDプロパティのグループ"
 
 
-msgid "Second offset"
-msgstr "第2オフセット"
+msgid "Action 2"
+msgstr "アクション2"
 
 
-msgid "Frame offset for 2nd animation, where it should start"
-msgstr "二つめのアニメーションが開始するフレームオフセットです"
+msgid "Second action in stitch"
+msgstr "スティッチ内の二つめのアクション"
 
 
 msgid "Action 1"
@@ -58800,22 +58780,6 @@ msgstr "アクション1"
 
 msgid "First action in stitch"
 msgstr "スティッチの最初のアクション"
-
-
-msgid "Blend amount"
-msgstr "ブレンド量"
-
-
-msgid "Size of blending transition, on both sides of the stitch"
-msgstr "スティッチ両側の移行部分のブレンドサイズ"
-
-
-msgid "Action 2"
-msgstr "アクション2"
-
-
-msgid "Second action in stitch"
-msgstr "スティッチ内の二つめのアクション"
 
 
 msgid "Stitch frame"
@@ -58832,6 +58796,22 @@ msgstr "スティックボーン"
 
 msgid "Bone to freeze during transition"
 msgstr "推移中にボーンをフリーズ"
+
+
+msgid "Blend amount"
+msgstr "ブレンド量"
+
+
+msgid "Size of blending transition, on both sides of the stitch"
+msgstr "スティッチ両側の移行部分のブレンドサイズ"
+
+
+msgid "Second offset"
+msgstr "第2オフセット"
+
+
+msgid "Frame offset for 2nd animation, where it should start"
+msgstr "二つめのアニメーションが開始するフレームオフセットです"
 
 
 msgid "Aperture Type"
@@ -59822,20 +59802,20 @@ msgid "Settings/info about a language"
 msgstr "言語の設定/情報"
 
 
+msgid "Numeric ID"
+msgstr "数値ID"
+
+
+msgid "Numeric ID (readonly!)"
+msgstr "数値ID(読み込みのみ！)"
+
+
 msgid "PO Trunk File Path"
 msgstr "PO Trunkファイルパス"
 
 
 msgid "Path to the relevant po file in trunk"
 msgstr "trunk内の適合するpoファイルへのパス"
-
-
-msgid "Language ID"
-msgstr "言語ID"
-
-
-msgid "ISO code, like fr_FR"
-msgstr "ja_JPなどのISOコード"
 
 
 msgid "MO File Path"
@@ -59846,24 +59826,12 @@ msgid "Path to the relevant mo file"
 msgstr "適合するmoファイルへのパス"
 
 
-msgid "PO File Path"
-msgstr "POファイルパス"
+msgid "Language ID"
+msgstr "言語ID"
 
 
-msgid "Path to the relevant po file in branches"
-msgstr "branch内の適合するpoファイルへのパス"
-
-
-msgid "Numeric ID"
-msgstr "数値ID"
-
-
-msgid "Numeric ID (readonly!)"
-msgstr "数値ID(読み込みのみ！)"
-
-
-msgid "Use this language in current operator"
-msgstr "現在のオペレーターで現在の言語を使用します"
+msgid "ISO code, like fr_FR"
+msgstr "ja_JPなどのISOコード"
 
 
 msgid "Language Name"
@@ -59874,8 +59842,16 @@ msgid "English language name/label (like \"French (Français)\")"
 msgstr "英語での言語名/ラベル(「Japanese (日本語)」など)"
 
 
-msgid "Whether these settings have already been auto-set or not"
-msgstr "すでにこれらの設定が自動設定されているかどうか"
+msgid "PO File Path"
+msgstr "POファイルパス"
+
+
+msgid "Path to the relevant po file in branches"
+msgstr "branch内の適合するpoファイルへのパス"
+
+
+msgid "Use this language in current operator"
+msgstr "現在のオペレーターで現在の言語を使用します"
 
 
 msgid "Active Language"
@@ -59886,14 +59862,6 @@ msgid "Index of active language in langs collection"
 msgstr "言語群中のアクティブ言語のインデックス"
 
 
-msgid "Languages"
-msgstr "言語"
-
-
-msgid "Languages to update in branches"
-msgstr "branch内の言語の更新"
-
-
 msgid "POT File Path"
 msgstr "POTファイルパス"
 
@@ -59902,8 +59870,16 @@ msgid "Path to the pot template file"
 msgstr "適合するpotテンプレートファイルへのパス"
 
 
-msgid "Fix is active"
-msgstr "補正がアクティブである"
+msgid "Whether these settings have already been auto-set or not"
+msgstr "すでにこれらの設定が自動設定されているかどうか"
+
+
+msgid "Languages"
+msgstr "言語"
+
+
+msgid "Languages to update in branches"
+msgstr "branch内の言語の更新"
 
 
 msgid "Bone (2)"
@@ -59912,42 +59888,6 @@ msgstr "ボーン (2)"
 
 msgid "Other Constrained Bone (optional, depends on type)"
 msgstr "他のコンストレイントされたボーン（オプション、タイプに依存）"
-
-
-msgid "Distance and Floor Fixes - Desired offset"
-msgstr "距離と床の補正 - 希望のオフセット"
-
-
-msgid "Type of constraint"
-msgstr "コンストレイントの種類"
-
-
-msgid "E"
-msgstr "E"
-
-
-msgid "End frame of Fix"
-msgstr "補正の終了フレーム"
-
-
-msgid "Target of Fix - Mesh (optional, depends on type)"
-msgstr "補正ターゲット - メッシュ（オプション、タイプに依存）"
-
-
-msgid "Target of Fix - Point"
-msgstr "補正ターゲット - ポイント"
-
-
-msgid "Fix is fully shown"
-msgstr "補正を完全に表示"
-
-
-msgid "Out"
-msgstr "出力"
-
-
-msgid "Number of frames to smooth out"
-msgstr "スムーズアウトする為のフレーム数"
 
 
 msgid "In which space should Point type target be evaluated"
@@ -59982,16 +59922,56 @@ msgid "Number of frames to smooth in"
 msgstr "スムーズインするフレーム数"
 
 
+msgid "Target of Fix - Mesh (optional, depends on type)"
+msgstr "補正ターゲット - メッシュ（オプション、タイプに依存）"
+
+
+msgid "Target of Fix - Point"
+msgstr "補正ターゲット - ポイント"
+
+
+msgid "Type of constraint"
+msgstr "コンストレイントの種類"
+
+
 msgid "Start frame of Fix"
 msgstr "補正の開始フレーム"
+
+
+msgid "Constrained Bone"
+msgstr "コンストレイントの掛けられたボーン"
+
+
+msgid "Fix is fully shown"
+msgstr "補正を完全に表示"
+
+
+msgid "E"
+msgstr "E"
+
+
+msgid "End frame of Fix"
+msgstr "補正の終了フレーム"
+
+
+msgid "Distance and Floor Fixes - Desired offset"
+msgstr "距離と床の補正 - 希望のオフセット"
+
+
+msgid "Out"
+msgstr "出力"
+
+
+msgid "Number of frames to smooth out"
+msgstr "スムーズアウトする為のフレーム数"
 
 
 msgid "Name of Mocap Fix"
 msgstr "モーキャプ補正の名前"
 
 
-msgid "Constrained Bone"
-msgstr "コンストレイントの掛けられたボーン"
+msgid "Fix is active"
+msgstr "補正がアクティブである"
 
 
 msgid "Python expression to be evaluated as the initial node setting"
@@ -60038,34 +60018,6 @@ msgid "Is Stroke Start"
 msgstr "ストロークが開始したか"
 
 
-msgid "Export Directory"
-msgstr "エクスポートディレクトリ"
-
-
-msgid "Path to directory where the files are created"
-msgstr "ファイルを作成するディレクトリへのパス"
-
-
-msgid "Copy Textures"
-msgstr "テクスチャをコピー"
-
-
-msgid "Copy textures on export to the output path"
-msgstr "エクスポート時、テクスチャを出力パスにコピーします"
-
-
-msgid "Minimum thickness"
-msgstr "最小厚み"
-
-
-msgid "Limit for checking zero area/length"
-msgstr "面積や長さが0かチェックする限界"
-
-
-msgid "Limit for checking distorted faces"
-msgstr "面の歪みをチェックする限界"
-
-
 msgid "Format type to export to"
 msgstr "エクスポートするフォーマットタイプ"
 
@@ -60074,12 +60026,40 @@ msgid "VRML2"
 msgstr "VRML2"
 
 
+msgid "Limit for checking distorted faces"
+msgstr "面の歪みをチェックする限界"
+
+
+msgid "Minimum thickness"
+msgstr "最小厚み"
+
+
 msgid "Apply Scale"
 msgstr "スケールを適用"
 
 
 msgid "Apply scene scale setting on export"
 msgstr "エクスポート時にシーンスケール設定を適用します"
+
+
+msgid "Export Directory"
+msgstr "エクスポートディレクトリ"
+
+
+msgid "Path to directory where the files are created"
+msgstr "ファイルを作成するディレクトリへのパス"
+
+
+msgid "Limit for checking zero area/length"
+msgstr "面積や長さが0かチェックする限界"
+
+
+msgid "Copy Textures"
+msgstr "テクスチャをコピー"
+
+
+msgid "Copy textures on export to the output path"
+msgstr "エクスポート時、テクスチャを出力パスにコピーします"
 
 
 msgid "Selected UV Element"
@@ -66204,6 +66184,10 @@ msgid "Show disabled tracks from the footage"
 msgstr "フッテージの無効のトラックを表示します"
 
 
+msgid "Show Metadata"
+msgstr "メタデータ表示"
+
+
 msgid "Scopes to visualize movie clip statistics"
 msgstr "動画クリップの統計を視覚化するスコープ"
 
@@ -67408,10 +67392,6 @@ msgstr "プレビューにTVタイトルセーフとアクションセーフゾ�
 
 msgid "Center-Cut Safe Areas"
 msgstr "センターカットセーフエリア"
-
-
-msgid "Show Metadata"
-msgstr "メタデータ表示"
 
 
 msgid "Show metadata of first visible strip"

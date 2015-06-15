@@ -1,9 +1,9 @@
 
 msgid ""
 msgstr ""
-"Project-Id-Version: Blender 2.74 (sub 5) (b'45d4fad')\n"
+"Project-Id-Version: Blender 2.75 (sub 1) (b'124b25c')\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-06-09 20:11:05\n"
+"POT-Creation-Date: 2015-06-15 21:39:08\n"
 "PO-Revision-Date: \n"
 "Last-Translator: Gabriel Gazzan <gabcorreo@gmail.com>\n"
 "Language-Team: Español <gabcorreo@gmail.com>\n"
@@ -1952,6 +1952,14 @@ msgid "Addon Preferences"
 msgstr "Opciones de agregados"
 
 
+msgid "Warn Msgid Not Capitalized"
+msgstr "Advertencia mensajes sin mayúsculas"
+
+
+msgid "Warn about messages not starting by a capitalized letter (with a few allowed exceptions!)"
+msgstr "Advertencia sobre mensajes que no comienzan con mayúsculas (¡con algunas excepciones permitidas!)"
+
+
 msgid "Fribidi Library"
 msgstr "Biblioteca Fribidi"
 
@@ -1968,22 +1976,6 @@ msgid "Additional paths to add to sys.path (';' separated)"
 msgstr "Rutas adicionales a agregar al sys.path (separadas por ';')"
 
 
-msgid "Spell Cache"
-msgstr "Caché de ortografía"
-
-
-msgid "A cache storing validated msgids, to avoid re-spellchecking them"
-msgstr "Un caché que almacena los mensajes validados, para evitar tener que volver a comprobar su ortografía"
-
-
-msgid "Persistent Data Path"
-msgstr "Ruta de datos persistentes"
-
-
-msgid "The name of a json file storing those settings (unfortunately, Blender's system does not work here)"
-msgstr "El nombre de un archivo json que almacena estas opciones (desafortunadamente, el sistema de Blender no funciona aquí)"
-
-
 msgid "Translation Root"
 msgstr "Raíz de la traducción"
 
@@ -1992,12 +1984,12 @@ msgid "The bf-translation repository"
 msgstr "El repositorio de la traducción de Blender"
 
 
-msgid "Warn Msgid Not Capitalized"
-msgstr "Advertencia mensajes sin mayúsculas"
+msgid "Gettext 'msgfmt' executable"
+msgstr "Ejecutable 'msgfmt' de Gettext"
 
 
-msgid "Warn about messages not starting by a capitalized letter (with a few allowed exceptions!)"
-msgstr "Advertencia sobre mensajes que no comienzan con mayúsculas (¡con algunas excepciones permitidas!)"
+msgid "The gettext msgfmt 'compiler'. You’ll likely have to edit it if you’re under Windows"
+msgstr "El 'compilador' de msgfmt de gettext. Es posible que haya que editarlo en Windows"
 
 
 msgid "Source Root"
@@ -2008,12 +2000,20 @@ msgid "The Blender source root path"
 msgstr "La ruta raíz del código fuente de Blender"
 
 
-msgid "Gettext 'msgfmt' executable"
-msgstr "Ejecutable 'msgfmt' de Gettext"
+msgid "Persistent Data Path"
+msgstr "Ruta de datos persistentes"
 
 
-msgid "The gettext msgfmt 'compiler'. You’ll likely have to edit it if you’re under Windows"
-msgstr "El 'compilador' de msgfmt de gettext. Es posible que haya que editarlo en Windows"
+msgid "The name of a json file storing those settings (unfortunately, Blender's system does not work here)"
+msgstr "El nombre de un archivo json que almacena estas opciones (desafortunadamente, el sistema de Blender no funciona aquí)"
+
+
+msgid "Spell Cache"
+msgstr "Caché de ortografía"
+
+
+msgid "A cache storing validated msgids, to avoid re-spellchecking them"
+msgstr "Un caché que almacena los mensajes validados, para evitar tener que volver a comprobar su ortografía"
 
 
 msgid "Animation Data"
@@ -9034,7 +9034,7 @@ msgstr "La curva-f y sus fotogramas clave están ocultos en el editor de curvas"
 
 
 msgid "False when F-Curve could not be evaluated in past, so should be skipped when evaluating"
-msgstr "Falso cuando no sea posible evaluar la curva-f con anterioridad, por lo que debería ser omitida durante la evaluación"
+msgstr "Falso cuando no haya sido posible evaluar la curva-f con anterioridad, por lo que debería ser omitida durante la evaluación"
 
 
 msgid "Sampled Points"
@@ -17465,10 +17465,6 @@ msgstr "Verdadero si existen datos de normales divididas en esta malla"
 
 msgid "Double Sided"
 msgstr "Doble lado"
-
-
-msgid "Render/display the mesh with double or single sided lighting"
-msgstr "Procesar y mostrar la malla con iluminación de un lado o de ambos"
 
 
 msgid "Texture Space Mesh"
@@ -27719,6 +27715,10 @@ msgstr "Invertir influencia del grupo de vértices (solo modo Colapsar)"
 
 msgid "Keep triangulated faces resulting from decimation (collapse only)"
 msgstr "Conservar caras trianguladas resultantes del diezmado (solo modo Colapsar)"
+
+
+msgid "Vertex group strength"
+msgstr "Intensidad del grupo de vértices"
 
 
 msgid "All Boundaries"
@@ -39231,6 +39231,14 @@ msgid "Activate/select the file(s) contained in the border"
 msgstr "Activa o selecciona los archivos contenidos en el marco"
 
 
+msgid "Prev"
+msgstr "Prev"
+
+
+msgid "Next"
+msgstr "Sig."
+
+
 msgctxt "Operator"
 msgid "Smooth Scroll"
 msgstr "Desplazamiento suave"
@@ -41443,10 +41451,6 @@ msgstr "Agrega un nuevo marcador de tiempo"
 msgctxt "Operator"
 msgid "Bind Camera to Markers"
 msgstr "Enlazar cámara a marcadores"
-
-
-msgid "Bind the active camera to selected markers(s)"
-msgstr "Enlaza la cámara activa a los marcadores seleccionados"
 
 
 msgctxt "Operator"
@@ -44862,20 +44866,20 @@ msgid "Settings to be applied on the newly created node"
 msgstr "Opciones a ser aplicadas al nuevo nodo"
 
 
-msgid "Node Type"
-msgstr "Tipo de nodo"
-
-
-msgid "Node type"
-msgstr "Tipo de nodo"
-
-
 msgid "Use Transform"
 msgstr "Usar transformación"
 
 
 msgid "Start transform operator after inserting the node"
 msgstr "Inicia el operador de transformación luego de insertar el nodo"
+
+
+msgid "Node Type"
+msgstr "Tipo de nodo"
+
+
+msgid "Node type"
+msgstr "Tipo de nodo"
 
 
 msgid "Link Socket Index"
@@ -51502,10 +51506,6 @@ msgid "Mute Strips"
 msgstr "Deshabilitar clips"
 
 
-msgid "Mute selected strips"
-msgstr "Deshabilita los clips seleccionados"
-
-
 msgid "Mute unselected rather than selected strips"
 msgstr "Deshabilita los clips no seleccionados"
 
@@ -51854,14 +51854,6 @@ msgstr "Desbloquea el clip activo para que pueda ser transformado"
 msgctxt "Operator"
 msgid "Un-Mute Strips"
 msgstr "Habilitar clips"
-
-
-msgid "Un-Mute unselected rather than selected strips"
-msgstr "Habilita los clips no seleccionados"
-
-
-msgid "UnMute unselected rather than selected strips"
-msgstr "Habilita los clips no seleccionados"
 
 
 msgid "View all the strips in the sequencer"
@@ -55476,14 +55468,6 @@ msgid "Control"
 msgstr "Control"
 
 
-msgid "Prev"
-msgstr "Prev"
-
-
-msgid "Next"
-msgstr "Sig."
-
-
 msgctxt "Operator"
 msgid "Demo Mode (Start)"
 msgstr "Modo demostración (Inicio)"
@@ -58759,12 +58743,12 @@ msgid "Group of ID properties"
 msgstr "Grupo de propiedades ID"
 
 
-msgid "Second offset"
-msgstr "Segundo desplazamiento"
+msgid "Action 2"
+msgstr "Acción 2"
 
 
-msgid "Frame offset for 2nd animation, where it should start"
-msgstr "Desplazamiento de fotogramas para la 2da animación, donde debería comenzar"
+msgid "Second action in stitch"
+msgstr "Segunda acción al unir"
 
 
 msgid "Action 1"
@@ -58773,22 +58757,6 @@ msgstr "Acción 1"
 
 msgid "First action in stitch"
 msgstr "Primera acción al unir"
-
-
-msgid "Blend amount"
-msgstr "Cantidad de fundido"
-
-
-msgid "Size of blending transition, on both sides of the stitch"
-msgstr "Tamaño de la transición de fundido, a ambos lados de la unión"
-
-
-msgid "Action 2"
-msgstr "Acción 2"
-
-
-msgid "Second action in stitch"
-msgstr "Segunda acción al unir"
 
 
 msgid "Stitch frame"
@@ -58805,6 +58773,22 @@ msgstr "Hueso tipo bastón"
 
 msgid "Bone to freeze during transition"
 msgstr "Hueso a congelar durante la transición"
+
+
+msgid "Blend amount"
+msgstr "Cantidad de fundido"
+
+
+msgid "Size of blending transition, on both sides of the stitch"
+msgstr "Tamaño de la transición de fundido, a ambos lados de la unión"
+
+
+msgid "Second offset"
+msgstr "Segundo desplazamiento"
+
+
+msgid "Frame offset for 2nd animation, where it should start"
+msgstr "Desplazamiento de fotogramas para la 2da animación, donde debería comenzar"
 
 
 msgid "Aperture Type"
@@ -59795,20 +59779,20 @@ msgid "Settings/info about a language"
 msgstr "Configuración/info acerca de un idioma"
 
 
+msgid "Numeric ID"
+msgstr "ID numérico"
+
+
+msgid "Numeric ID (readonly!)"
+msgstr "ID numérico (¡solo lectura!)"
+
+
 msgid "PO Trunk File Path"
 msgstr "Ruta archivo PO en tronco"
 
 
 msgid "Path to the relevant po file in trunk"
 msgstr "Ruta al archivo .PO relevante en el tronco principal"
-
-
-msgid "Language ID"
-msgstr "Idioma"
-
-
-msgid "ISO code, like fr_FR"
-msgstr "Código ISO, del estilo es_AR"
 
 
 msgid "MO File Path"
@@ -59819,24 +59803,12 @@ msgid "Path to the relevant mo file"
 msgstr "Ruta al archivo .MO relevante"
 
 
-msgid "PO File Path"
-msgstr "Ruta del archivo"
+msgid "Language ID"
+msgstr "Idioma"
 
 
-msgid "Path to the relevant po file in branches"
-msgstr "Ruta al archivo .PO relevante en las ramas"
-
-
-msgid "Numeric ID"
-msgstr "ID numérico"
-
-
-msgid "Numeric ID (readonly!)"
-msgstr "ID numérico (¡solo lectura!)"
-
-
-msgid "Use this language in current operator"
-msgstr "Usar este idioma en el operador actual"
+msgid "ISO code, like fr_FR"
+msgstr "Código ISO, del estilo es_AR"
 
 
 msgid "Language Name"
@@ -59847,8 +59819,16 @@ msgid "English language name/label (like \"French (Français)\")"
 msgstr "Etiqueta del nombre en inglés (como \"Spanish (Español)\")"
 
 
-msgid "Whether these settings have already been auto-set or not"
-msgstr "Si estas opciones ya han sido definidas automáticamente o no"
+msgid "PO File Path"
+msgstr "Ruta del archivo"
+
+
+msgid "Path to the relevant po file in branches"
+msgstr "Ruta al archivo .PO relevante en las ramas"
+
+
+msgid "Use this language in current operator"
+msgstr "Usar este idioma en el operador actual"
 
 
 msgid "Active Language"
@@ -59859,14 +59839,6 @@ msgid "Index of active language in langs collection"
 msgstr "Índice del idioma activo en la colección de idiomas"
 
 
-msgid "Languages"
-msgstr "Idioma"
-
-
-msgid "Languages to update in branches"
-msgstr "Idiomas a actualizar en las ramas"
-
-
 msgid "POT File Path"
 msgstr "Ruta del archivo"
 
@@ -59875,8 +59847,16 @@ msgid "Path to the pot template file"
 msgstr "Ruta al archivo de plantilla .POT"
 
 
-msgid "Fix is active"
-msgstr "La corrección está activa"
+msgid "Whether these settings have already been auto-set or not"
+msgstr "Si estas opciones ya han sido definidas automáticamente o no"
+
+
+msgid "Languages"
+msgstr "Idioma"
+
+
+msgid "Languages to update in branches"
+msgstr "Idiomas a actualizar en las ramas"
 
 
 msgid "Bone (2)"
@@ -59885,42 +59865,6 @@ msgstr "Hueso (2)"
 
 msgid "Other Constrained Bone (optional, depends on type)"
 msgstr "El otro hueso restringido (opcional, depende del tipo)"
-
-
-msgid "Distance and Floor Fixes - Desired offset"
-msgstr "Correcciones de distancia y piso - Desplazamiento deseado"
-
-
-msgid "Type of constraint"
-msgstr "Tipo de restricción"
-
-
-msgid "E"
-msgstr "E"
-
-
-msgid "End frame of Fix"
-msgstr "Fotoframa final de la corrección"
-
-
-msgid "Target of Fix - Mesh (optional, depends on type)"
-msgstr "Objetivo de corrección - Malla (opcional, depende del tipo)"
-
-
-msgid "Target of Fix - Point"
-msgstr "Objetivo de corrección - Punto"
-
-
-msgid "Fix is fully shown"
-msgstr "La corrección se muestra completamente"
-
-
-msgid "Out"
-msgstr "Salida"
-
-
-msgid "Number of frames to smooth out"
-msgstr "Cantidad de fotogramas a suavizar"
 
 
 msgid "In which space should Point type target be evaluated"
@@ -59955,16 +59899,56 @@ msgid "Number of frames to smooth in"
 msgstr "Cantidad de fotogramas para suavizar"
 
 
+msgid "Target of Fix - Mesh (optional, depends on type)"
+msgstr "Objetivo de corrección - Malla (opcional, depende del tipo)"
+
+
+msgid "Target of Fix - Point"
+msgstr "Objetivo de corrección - Punto"
+
+
+msgid "Type of constraint"
+msgstr "Tipo de restricción"
+
+
 msgid "Start frame of Fix"
 msgstr "Fotograma inicial de la corrección"
+
+
+msgid "Constrained Bone"
+msgstr "Hueso restringido"
+
+
+msgid "Fix is fully shown"
+msgstr "La corrección se muestra completamente"
+
+
+msgid "E"
+msgstr "E"
+
+
+msgid "End frame of Fix"
+msgstr "Fotoframa final de la corrección"
+
+
+msgid "Distance and Floor Fixes - Desired offset"
+msgstr "Correcciones de distancia y piso - Desplazamiento deseado"
+
+
+msgid "Out"
+msgstr "Salida"
+
+
+msgid "Number of frames to smooth out"
+msgstr "Cantidad de fotogramas a suavizar"
 
 
 msgid "Name of Mocap Fix"
 msgstr "Nombre de la corrección de CaptMov"
 
 
-msgid "Constrained Bone"
-msgstr "Hueso restringido"
+msgid "Fix is active"
+msgstr "La corrección está activa"
 
 
 msgid "Python expression to be evaluated as the initial node setting"
@@ -60011,34 +59995,6 @@ msgid "Is Stroke Start"
 msgstr "Es comienzo de trazo"
 
 
-msgid "Export Directory"
-msgstr "Directorio de exportación"
-
-
-msgid "Path to directory where the files are created"
-msgstr "Ruta al directorio donde se crearán los archivos"
-
-
-msgid "Copy Textures"
-msgstr "Copiar texturas"
-
-
-msgid "Copy textures on export to the output path"
-msgstr "Al exportar copia las texturas a la ruta de destino"
-
-
-msgid "Minimum thickness"
-msgstr "Grosor mínimo"
-
-
-msgid "Limit for checking zero area/length"
-msgstr "Límite para comprobar área/longitud nulas"
-
-
-msgid "Limit for checking distorted faces"
-msgstr "Límite para comprobar caras distorsionadas"
-
-
 msgid "Format type to export to"
 msgstr "Tipo de formato al cual exportar"
 
@@ -60047,12 +60003,40 @@ msgid "VRML2"
 msgstr "VRML2"
 
 
+msgid "Limit for checking distorted faces"
+msgstr "Límite para comprobar caras distorsionadas"
+
+
+msgid "Minimum thickness"
+msgstr "Grosor mínimo"
+
+
 msgid "Apply Scale"
 msgstr "Aplicar escala"
 
 
 msgid "Apply scene scale setting on export"
 msgstr "Aplica la escala de la escena al exportar"
+
+
+msgid "Export Directory"
+msgstr "Directorio de exportación"
+
+
+msgid "Path to directory where the files are created"
+msgstr "Ruta al directorio donde se crearán los archivos"
+
+
+msgid "Limit for checking zero area/length"
+msgstr "Límite para comprobar área/longitud nulas"
+
+
+msgid "Copy Textures"
+msgstr "Copiar texturas"
+
+
+msgid "Copy textures on export to the output path"
+msgstr "Al exportar copia las texturas a la ruta de destino"
 
 
 msgid "Selected UV Element"
@@ -66175,6 +66159,10 @@ msgid "Show disabled tracks from the footage"
 msgstr "Muestra los rastros deshabilitados de la película"
 
 
+msgid "Show Metadata"
+msgstr "Mostrar metadatos"
+
+
 msgid "Scopes to visualize movie clip statistics"
 msgstr "Instrumentos para visualizar estadísticas del clip de película"
 
@@ -67379,10 +67367,6 @@ msgstr "Muestra zonas de seguridad de títulos y acción para TV en la vista pre
 
 msgid "Center-Cut Safe Areas"
 msgstr "Márgenes secundarios"
-
-
-msgid "Show Metadata"
-msgstr "Mostrar metadatos"
 
 
 msgid "Show metadata of first visible strip"
@@ -75562,6 +75546,10 @@ msgstr "Opciones dentro de la solapa Dinámicas"
 
 msgid "Deformation Axis:"
 msgstr "Eje de deformación"
+
+
+msgid "Faces: %d"
+msgstr "Caras: %d"
 
 
 msgid "Texture:"
@@ -87417,6 +87405,14 @@ msgid "Object '%s' does not support shapes"
 msgstr "El objeto '%s' no soporta formas"
 
 
+msgid "ShapeKey not found"
+msgstr "Forma clave no encontrada"
+
+
+msgid "Could not remove ShapeKey"
+msgstr "No se pudo remover la Forma clave"
+
+
 msgid "Object '%s' has no mesh data to be used for ray casting"
 msgstr "El objeto '%s' no contiene datos de malla a ser usados para la proyección de rayos"
 
@@ -88485,6 +88481,10 @@ msgstr "%d x %s: %.2f ms,  promedio: %.4f"
 
 msgid "Failed to create a window without quad-buffer support, you may experience flickering"
 msgstr "Falla al crear una ventana sin soporte para búfer cuádruple, es posible que se vean parpadeos"
+
+
+msgid "Failed to switch to Time Sequential mode when in fullscreen"
+msgstr "Falla al cambiar al modo Secuencia temporal estando en pantalla completa"
 
 
 msgid "Quad-buffer window successfully created"

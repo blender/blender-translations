@@ -1,9 +1,9 @@
 
 msgid ""
 msgstr ""
-"Project-Id-Version: Blender 2.74 (sub 5) (b'45d4fad')\n"
+"Project-Id-Version: Blender 2.75 (sub 1) (b'124b25c')\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-06-09 20:11:05\n"
+"POT-Creation-Date: 2015-06-15 21:39:08\n"
 "PO-Revision-Date: \n"
 "Last-Translator: blend-it\n"
 "Language-Team: \n"
@@ -1852,6 +1852,14 @@ msgid "Addon Preferences"
 msgstr "Preferenze Addon"
 
 
+msgid "Warn Msgid Not Capitalized"
+msgstr "Avverti se il Msgid non è Maiuscolo"
+
+
+msgid "Warn about messages not starting by a capitalized letter (with a few allowed exceptions!)"
+msgstr "Avverte se i messaggi non iniziano con una lettera maiuscola (con poche eccezioni permesse!)"
+
+
 msgid "Fribidi Library"
 msgstr "Libreria FriBidi"
 
@@ -1868,14 +1876,6 @@ msgid "Additional paths to add to sys.path (';' separated)"
 msgstr "Percorsi addizionali da aggiungere a sys.path (separati con ';')"
 
 
-msgid "Persistent Data Path"
-msgstr "Percorso Dati Persistenti"
-
-
-msgid "The name of a json file storing those settings (unfortunately, Blender's system does not work here)"
-msgstr "Nome del file json per archiviare queste impostazioni (sfortunatamente il sistema di Blender qui non funziona)"
-
-
 msgid "Translation Root"
 msgstr "Root Traduzione"
 
@@ -1884,12 +1884,12 @@ msgid "The bf-translation repository"
 msgstr "Il repository bf-translation"
 
 
-msgid "Warn Msgid Not Capitalized"
-msgstr "Avverti se il Msgid non è Maiuscolo"
+msgid "Gettext 'msgfmt' executable"
+msgstr "Eseguibile 'msgfmt' di Gettext"
 
 
-msgid "Warn about messages not starting by a capitalized letter (with a few allowed exceptions!)"
-msgstr "Avverte se i messaggi non iniziano con una lettera maiuscola (con poche eccezioni permesse!)"
+msgid "The gettext msgfmt 'compiler'. You’ll likely have to edit it if you’re under Windows"
+msgstr "Il 'compilatore' msgfmt di gettext. Probabilmente devi indicare il percorso se sei sotto Windows"
 
 
 msgid "Source Root"
@@ -1900,12 +1900,12 @@ msgid "The Blender source root path"
 msgstr "Il percorso dei sorgenti di Blender"
 
 
-msgid "Gettext 'msgfmt' executable"
-msgstr "Eseguibile 'msgfmt' di Gettext"
+msgid "Persistent Data Path"
+msgstr "Percorso Dati Persistenti"
 
 
-msgid "The gettext msgfmt 'compiler'. You’ll likely have to edit it if you’re under Windows"
-msgstr "Il 'compilatore' msgfmt di gettext. Probabilmente devi indicare il percorso se sei sotto Windows"
+msgid "The name of a json file storing those settings (unfortunately, Blender's system does not work here)"
+msgstr "Nome del file json per archiviare queste impostazioni (sfortunatamente il sistema di Blender qui non funziona)"
 
 
 msgid "Animation Data"
@@ -9158,11 +9158,11 @@ msgstr "Mostra i file come lista dettagliata"
 
 
 msgid "Thumbnails"
-msgstr "Miniature"
+msgstr "Anteprime"
 
 
 msgid "Display files as thumbnails"
-msgstr "Mostra i file come miniature"
+msgstr "Mostra i file come anteprime"
 
 
 msgid "Filter Files"
@@ -9226,7 +9226,7 @@ msgstr "Mostra i file di immagini"
 
 
 msgid "Filter Blender"
-msgstr "Filtro Blender"
+msgstr "Filtra file Blender"
 
 
 msgid "Show .blend files"
@@ -9234,15 +9234,15 @@ msgstr "Mostra file .blend"
 
 
 msgid "Filter BlenderBackup files"
-msgstr "Filtra file .blend"
+msgstr "Filtra file backup di Blender"
 
 
 msgid "Show .blend1, .blend2, etc. files"
-msgstr "Mostra file .blend"
+msgstr "Mostra file .blend1, .blend2 ecc."
 
 
 msgid "Filter Movies"
-msgstr "Filtro Filmati"
+msgstr "Filtra Filmati"
 
 
 msgid "Show movie files"
@@ -9250,7 +9250,7 @@ msgstr "Mostra i file dei filmati"
 
 
 msgid "Filter Script"
-msgstr "Filtro Script"
+msgstr "Filtra Script"
 
 
 msgid "Show script files"
@@ -9258,7 +9258,7 @@ msgstr "Mostra i file di script"
 
 
 msgid "Filter Fonts"
-msgstr "Filtro Fonts"
+msgstr "Filtra Fonts"
 
 
 msgid "Show font files"
@@ -9266,7 +9266,7 @@ msgstr "Mostra i files dei caratteri di scrittura"
 
 
 msgid "Filter Sound"
-msgstr "Filtro Suono"
+msgstr "Filtra Suoni"
 
 
 msgid "Show sound files"
@@ -9274,15 +9274,15 @@ msgstr "Mostra i file di suoni"
 
 
 msgid "Filter Text"
-msgstr "Filtro Testo"
+msgstr "Filtra Testi"
 
 
 msgid "Show text files"
-msgstr "Mostra file testo"
+msgstr "Mostra file di testo"
 
 
 msgid "Filter Folder"
-msgstr "Filtro Cartella"
+msgstr "Filtra Cartelle"
 
 
 msgid "Show folders"
@@ -9294,11 +9294,11 @@ msgstr "Filtro Estensione"
 
 
 msgid "Filter by name, supports '*' wildcard"
-msgstr "Filtra per nome, supporta carattere '*'"
+msgstr "Filtra per nome, supporta il metacarattere '*'"
 
 
 msgid "Thumbnails Size"
-msgstr "Dimensione Miniature"
+msgstr "Dimensione Anteprime"
 
 
 msgid "Change the size of the thumbnails"
@@ -11634,7 +11634,7 @@ msgstr "Campo visivo della lente della camera in gradi"
 
 
 msgid "Camera near clipping distance"
-msgstr "Distanza di taglio iniziale della camera (non postra ciò che è più vicino)"
+msgstr "Distanza di taglio iniziale della camera (non mostra ciò che è più vicino)"
 
 
 msgid "Camera far clipping distance"
@@ -14271,10 +14271,6 @@ msgid "Double Sided"
 msgstr "Doppio Lato"
 
 
-msgid "Render/display the mesh with double or single sided lighting"
-msgstr "Renderizza/mostra la mesh  con doppia o singola faccia d'illuminazione"
-
-
 msgid "Texture Space Mesh"
 msgstr "Spazio Texture Mesh"
 
@@ -14425,6 +14421,10 @@ msgstr "Usa Proxy / Timecode"
 
 msgid "Movie File"
 msgstr "File Filmato"
+
+
+msgid "Proxy Custom Directory"
+msgstr "Cartella Proxy Personalizzata"
 
 
 msgid "Create proxy images in a custom directory (default is movie location)"
@@ -15532,7 +15532,7 @@ msgstr "Renderizzato"
 
 
 msgid "Cross"
-msgstr "Croce"
+msgstr "Incrociata"
 
 
 msgid "Particle Rendering"
@@ -16602,6 +16602,10 @@ msgstr "Volume fuori dal cono esterno"
 
 msgid "How loud the sound is"
 msgstr "Quanto è forte il suono"
+
+
+msgid "Playback pitch of the sound"
+msgstr "Timbro di riproduzione del suono"
 
 
 msgid "Filename of the text file"
@@ -23891,6 +23895,10 @@ msgid "Longest"
 msgstr "Lista lunga"
 
 
+msgid "Total"
+msgstr "Totale"
+
+
 msgid "Include channels from objects/bone that aren't visible"
 msgstr "Include i canali da oggetti/ossa che non sono visibili"
 
@@ -26270,7 +26278,7 @@ msgstr "Proprietà input di un Operatore"
 
 msgctxt "Operator"
 msgid "Clean Keyframes"
-msgstr "Ripulisci Keyframes"
+msgstr "Ripulisci Fotogrammi Chiave"
 
 
 msgid "Simplify F-Curves by removing closely spaced keyframes"
@@ -26308,7 +26316,7 @@ msgstr "Seleziona tutti i keyframes nel canale sotto il mouse"
 
 msgctxt "Operator"
 msgid "Copy Keyframes"
-msgstr "Copia Keyframes"
+msgstr "Copia Fotogrammi Chiave"
 
 
 msgid "Copy selected keyframes to the copy/paste buffer"
@@ -26317,11 +26325,11 @@ msgstr "Copia i keyframes selezionati nel buffer di copia/incolla"
 
 msgctxt "Operator"
 msgid "Delete Keyframes"
-msgstr "Cancella Keyframes"
+msgstr "Cancella Fotogrammi Chiave"
 
 
 msgid "Remove all selected keyframes"
-msgstr "Rimuove tutti i keyframes selezionati"
+msgstr "Rimuove tutti i fotogrammi chiave selezionati"
 
 
 msgctxt "Operator"
@@ -26412,7 +26420,7 @@ msgstr "Imposta il metodo di interpolazione dei segmenti di F-Curve iniziando da
 
 msgctxt "Operator"
 msgid "Insert Keyframes"
-msgstr "Inserisci Keyframes"
+msgstr "Inserisci Fotogrammi Chiave"
 
 
 msgid "Insert keyframes for the specified channels"
@@ -26485,7 +26493,7 @@ msgstr "Crea nuova azione"
 
 msgctxt "Operator"
 msgid "Paste Keyframes"
-msgstr "Incolla Keyframes"
+msgstr "Incolla Fotogrammi Chiave"
 
 
 msgid "Paste keyframes from copy/paste buffer for the selected channels, starting on the current frame"
@@ -26570,8 +26578,13 @@ msgstr "Imposta l'Intervallo di Anteprima basato sulle estensioni dei Keyframes 
 
 
 msgctxt "Operator"
+msgid "Push Down Action"
+msgstr "Sposta Giù l'Azione"
+
+
+msgctxt "Operator"
 msgid "Sample Keyframes"
-msgstr "Keyframe Campionati"
+msgstr "Campiona Fotogrammi Chiave"
 
 
 msgid "Add keyframes on every frame between the selected keyframes"
@@ -26731,11 +26744,20 @@ msgstr "Aggancia i keyframes selezionati al tempo specificato"
 
 msgctxt "Operator"
 msgid "View All"
-msgstr "Mostra tutto"
+msgstr "Mostra Tutto"
 
 
 msgid "Reset viewable area to show full keyframe range"
 msgstr "Resetta l'area visibile per mostrare l'intero intervallo di keyframe"
+
+
+msgctxt "Operator"
+msgid "View Frame"
+msgstr "Mostra Frame"
+
+
+msgid "Reset viewable area to show range around current frame"
+msgstr "Resetta l'area visibile per mostrare l'intervallo attorno al fotogramma corrente"
 
 
 msgctxt "Operator"
@@ -28075,7 +28097,7 @@ msgstr "Copia le tracce selezionate negli appunti"
 
 msgctxt "Operator"
 msgid "Create Plane Track"
-msgstr "Crea Piano Traccia"
+msgstr "Crea Piano Tracciamento"
 
 
 msgctxt "Operator"
@@ -28175,7 +28197,7 @@ msgstr "Estende la selezione anziché cancellare la selezione esistente"
 
 msgctxt "Operator"
 msgid "Filter Tracks"
-msgstr "FiltraTracce"
+msgstr "Filtra Tracce"
 
 
 msgid "Track Threshold"
@@ -28327,6 +28349,10 @@ msgid "Tracking"
 msgstr "Tracciamento"
 
 
+msgid "Show tracking and solving tools"
+msgstr "Mostra strumenti tracciamento e risoluzione"
+
+
 msgid "Show mask editing tools"
 msgstr "Mostra gli strumenti di modifica maschera"
 
@@ -28369,7 +28395,7 @@ msgstr "Proprietà"
 
 msgctxt "Operator"
 msgid "Rebuild Proxy and Timecode Indices"
-msgstr "Ricostruisce gli indici proxy e timecode"
+msgstr "Ricostruisci Proxy e Indici Timecode"
 
 
 msgid "Rebuild all selected proxies and timecode indices in the background"
@@ -29627,7 +29653,11 @@ msgstr "Elemento"
 
 msgctxt "Operator"
 msgid "Undo Push"
-msgstr "Livelli di Annullamento"
+msgstr "Forza Annullamento"
+
+
+msgid "Add an undo state (internal use only)"
+msgstr "Aggiungi uno stato di annullamento (solo uso interno)"
 
 
 msgid "Undo Message"
@@ -30457,6 +30487,14 @@ msgstr "Cartella"
 
 msgid "Activate/select the file(s) contained in the border"
 msgstr "Attiva/seleziona il file/i contenuti nel margine"
+
+
+msgid "Prev"
+msgstr "Precedente"
+
+
+msgid "Next"
+msgstr "Successivo"
 
 
 msgctxt "Operator"
@@ -32221,10 +32259,6 @@ msgstr "Aggiunge un nuovo marcatore del tempo"
 msgctxt "Operator"
 msgid "Bind Camera to Markers"
 msgstr "Vincola Camera ai Marcatori"
-
-
-msgid "Bind the active camera to selected markers(s)"
-msgstr "Vincola la camera attiva al marcatore(i) selezionato"
 
 
 msgctxt "Operator"
@@ -34805,7 +34839,7 @@ msgstr "Includi Oggetti Selezionati"
 
 msgctxt "Operator"
 msgid "Snap Strips"
-msgstr "Aggancia strisce"
+msgstr "Aggancia Strisce"
 
 
 msgid "Move start of strips to specified time"
@@ -34900,16 +34934,16 @@ msgid "Reset viewable area to show selected strips range"
 msgstr "Ripristina l'area visibile per mostrare tutte le strisce selezionate"
 
 
+msgid "Use Transform"
+msgstr "Usa Trasforma"
+
+
 msgid "Node Type"
 msgstr "Tipo Nodo"
 
 
 msgid "Node type"
 msgstr "Tipo di nodo"
-
-
-msgid "Use Transform"
-msgstr "Usa Trasforma"
 
 
 msgctxt "Operator"
@@ -37832,7 +37866,7 @@ msgstr "Mostra Gerarchia"
 
 
 msgid "Open all object entries and close all others"
-msgstr "Apre tutti gli oggetti inserimento e chiude tutti gli altri"
+msgstr "Apre tutti gli elementi degli oggetti e chiude tutto il resto"
 
 
 msgctxt "Operator"
@@ -39256,7 +39290,11 @@ msgstr "Alterna la visualizzazione della vista render"
 
 msgctxt "Operator"
 msgid "Bake To Keyframes"
-msgstr "Incolla Keyframes"
+msgstr "Precalcola a Keyframes"
+
+
+msgid "Bake rigid body transformations of selected objects to keyframes"
+msgstr "Precalcola le trasformazioni corpo rigido degli oggetti selezionati a fotogrammi chiave"
 
 
 msgid "Type of generated constraint"
@@ -39635,7 +39673,7 @@ msgstr "Ritorna allo Schermo Precedente"
 
 
 msgid "Revert back to the original screen layout, before fullscreen area overlay"
-msgstr "Riporta indietro alla disposizione originale dello schermo, prima della zona sovrapposizione a schermo intero."
+msgstr "Riporta indietro alla disposizione originale dello schermo, prima della sovrapposizione dell'area a schermo intero."
 
 
 msgctxt "Operator"
@@ -40129,7 +40167,7 @@ msgstr "Deinterlaccia tutte le sorgenti di filmato selezionate"
 
 msgctxt "Operator"
 msgid "Erase Strips"
-msgstr "Cancella le strisce"
+msgstr "Cancella Strisce"
 
 
 msgid "Erase selected strips from the sequencer"
@@ -40253,7 +40291,7 @@ msgstr "Aggiunge una striscia maschera al sequencer"
 
 msgctxt "Operator"
 msgid "Make Meta Strip"
-msgstr "Crea metastriscia"
+msgstr "Crea Metastriscia"
 
 
 msgid "Group selected strips into a metastrip"
@@ -40302,11 +40340,7 @@ msgstr "Agg. una striscia movie al sequencer"
 
 msgctxt "Operator"
 msgid "Mute Strips"
-msgstr "Strisce silenziate"
-
-
-msgid "Mute selected strips"
-msgstr "Silenzia le strisce selezionate"
+msgstr "Disattiva Strisce"
 
 
 msgid "Mute unselected rather than selected strips"
@@ -40341,7 +40375,7 @@ msgstr "Riassegna gli input per la strip degli effetti"
 
 
 msgid "Rebuild all selected proxies and timecode indices using the job system"
-msgstr "Riorganizza tutti i proxies e gli indici del timecode selezionati usando il sistema di lavoro"
+msgstr "Ricostruisce tutti i proxies e gli indici del timecode selezionati usando il sistema di lavoro"
 
 
 msgctxt "Operator"
@@ -40508,7 +40542,7 @@ msgstr "Seleziona Maniglie"
 
 
 msgid "Select manipulator handles on the sides of the selected strip"
-msgstr "Seleziona le maniglie di manipolazione a lato della striscia selezionata"
+msgstr "Seleziona le maniglie di manipolazione ai lati della striscia selezionata"
 
 
 msgid "Shrink the current selection of adjacent selected strips"
@@ -40533,7 +40567,7 @@ msgstr "Seleziona più strisce adiacenti alla selezione corrente"
 
 
 msgid "Frame where selected strips will be snapped"
-msgstr "Fotogramma in cui le strisce selezionate vengono divise"
+msgstr "Fotogramma in cui le strisce selezionate vengono agganciate"
 
 
 msgctxt "Operator"
@@ -40599,7 +40633,7 @@ msgstr "Rimuove un modificatore dalla striscia"
 
 msgctxt "Operator"
 msgid "Swap Strip"
-msgstr "Scambia le Strisce"
+msgstr "Scambia Strisce"
 
 
 msgid "Swap active strip with strip to the right or left"
@@ -40612,7 +40646,7 @@ msgstr "Lato della striscia da scambiare"
 
 msgctxt "Operator"
 msgid "Sequencer Swap Data"
-msgstr "Scambio dati del sequencer"
+msgstr "Scambia Dati del Sequencer"
 
 
 msgid "Swap 2 sequencer strips"
@@ -40621,7 +40655,7 @@ msgstr "Scambia 2 strisce del sequencer"
 
 msgctxt "Operator"
 msgid "Swap Inputs"
-msgstr "Scambia gli ingressi"
+msgstr "Scambia Ingressi"
 
 
 msgid "Swap the first two inputs for the effect strip"
@@ -40630,24 +40664,16 @@ msgstr "Scambia i primi due ingressi della striscia degli effetti"
 
 msgctxt "Operator"
 msgid "UnLock Strips"
-msgstr "Sblocca le strisce"
+msgstr "Sblocca Strisce"
 
 
 msgid "Unlock the active strip so that it can't be transformed"
-msgstr "Sblocca la striscia attiva così non può essere modificata"
+msgstr "Sblocca la striscia attiva così non può essere trasformata (??)"
 
 
 msgctxt "Operator"
 msgid "Un-Mute Strips"
-msgstr "Riattiva l'audio delle strisce"
-
-
-msgid "Un-Mute unselected rather than selected strips"
-msgstr "Riattiva l'audio delle strisce non selezionate invece di quelle selezionate"
-
-
-msgid "UnMute unselected rather than selected strips"
-msgstr "Riattiva l'audio delle strisce non selezionate invece di quelle selezionate"
+msgstr "Riattiva Strisce"
 
 
 msgid "View all the strips in the sequencer"
@@ -43326,7 +43352,7 @@ msgstr "Appendi da Libreria"
 
 
 msgid "Append from a Library .blend file"
-msgstr "Appende da un file Libreria .blend"
+msgstr "Incorpora (appendi) da un file Libreria .blend"
 
 
 msgid "Link the objects or datablocks rather than appending"
@@ -43539,14 +43565,6 @@ msgstr "Demo"
 msgctxt "Operator"
 msgid "Control"
 msgstr "Controllo"
-
-
-msgid "Prev"
-msgstr "Precedente"
-
-
-msgid "Next"
-msgstr "Successivo"
 
 
 msgctxt "Operator"
@@ -46228,12 +46246,12 @@ msgid "Group of ID properties"
 msgstr "Gruppo di proprietà ID"
 
 
-msgid "Action 1"
-msgstr "Azione 1"
-
-
 msgid "Action 2"
 msgstr "Azione 2"
+
+
+msgid "Action 1"
+msgstr "Azione 1"
 
 
 msgid "Aperture Type"
@@ -46792,6 +46810,10 @@ msgid "Map Resolution"
 msgstr "Risoluzione Mappa"
 
 
+msgid "MO File Path"
+msgstr "Percorso File MO"
+
+
 msgid "Language ID"
 msgstr "ID Lingua"
 
@@ -46800,44 +46822,28 @@ msgid "ISO code, like fr_FR"
 msgstr "Codice ISO, tipo it_IT"
 
 
-msgid "MO File Path"
-msgstr "Percorso File MO"
+msgid "Language Name"
+msgstr "Nome Lingua"
 
 
 msgid "PO File Path"
 msgstr "Percorso File PO"
 
 
-msgid "Language Name"
-msgstr "Nome Lingua"
-
-
 msgid "Active Language"
 msgstr "Lingua Attiva"
-
-
-msgid "Languages"
-msgstr "Lingue"
 
 
 msgid "POT File Path"
 msgstr "Percorso File POT"
 
 
+msgid "Languages"
+msgstr "Lingue"
+
+
 msgid "Bone (2)"
 msgstr "Osso (2)"
-
-
-msgid "Type of constraint"
-msgstr "Tipo di vincolo"
-
-
-msgid "E"
-msgstr "E"
-
-
-msgid "Out"
-msgstr "Uscita"
 
 
 msgid "Evaluate target in global space"
@@ -46860,8 +46866,20 @@ msgid "In"
 msgstr "Ingresso"
 
 
+msgid "Type of constraint"
+msgstr "Tipo di vincolo"
+
+
 msgid "Constrained Bone"
 msgstr "Osso Vincolato"
+
+
+msgid "E"
+msgstr "E"
+
+
+msgid "Out"
+msgstr "Uscita"
 
 
 msgid "Operator File List Element"
@@ -46892,36 +46910,16 @@ msgid "Brush Size"
 msgstr "Dimensione Pennello"
 
 
-msgid "Export Directory"
-msgstr "Cartella Esportazione"
-
-
-msgid "Path to directory where the files are created"
-msgstr "Cartella in cui i files vengono creati"
-
-
-msgid "Copy Textures"
-msgstr "Copia Texture"
-
-
-msgid "Copy textures on export to the output path"
-msgstr "Esportando, copia nel percorso di salvataggio le texture"
-
-
-msgid "Minimum thickness"
-msgstr "Spessore minimo"
-
-
-msgid "Limit for checking zero area/length"
-msgstr "Limite di controllo di aree/lunghezze nulle"
+msgid "Format type to export to"
+msgstr "Tipo formato in cui esportare"
 
 
 msgid "Limit for checking distorted faces"
 msgstr "Limite di controllo facce distorte"
 
 
-msgid "Format type to export to"
-msgstr "Tipo formato in cui esportare"
+msgid "Minimum thickness"
+msgstr "Spessore minimo"
 
 
 msgid "Apply Scale"
@@ -46930,6 +46928,26 @@ msgstr "Applica Scala"
 
 msgid "Apply scene scale setting on export"
 msgstr "Applica le impostazioni scala di scena esportando"
+
+
+msgid "Export Directory"
+msgstr "Cartella Esportazione"
+
+
+msgid "Path to directory where the files are created"
+msgstr "Cartella in cui i files vengono creati"
+
+
+msgid "Limit for checking zero area/length"
+msgstr "Limite di controllo di aree/lunghezze nulle"
+
+
+msgid "Copy Textures"
+msgstr "Copia Texture"
+
+
+msgid "Copy textures on export to the output path"
+msgstr "Esportando, copia nel percorso di salvataggio le texture"
 
 
 msgid "Selected UV Element"
@@ -48126,6 +48144,14 @@ msgstr "Colore da usare dietro il testo sovraimpresso"
 
 msgid "Sequencer OpenGL"
 msgstr "Sequencer OpenGL"
+
+
+msgid "Sequencer Preview Shading"
+msgstr "Ombreggiatura Anteprima Sequencer"
+
+
+msgid "Method to draw in the sequencer view"
+msgstr "Modo per disegnare nella vista sequencer"
 
 
 msgid "Display the object's local bounding boxes only"
@@ -50204,8 +50230,16 @@ msgid "Lock strip so that it can't be transformed"
 msgstr "Blocca la strip attiva in modo che non possa essere modificata"
 
 
+msgid "The length of the contents of this strip after the handles are applied"
+msgstr "Lunghezza del contenuto di questa striscia dopo aver applicato le maniglie"
+
+
 msgid "The length of the contents of this strip before the handles are applied"
 msgstr "Lunghezza del contenuto di questa striscia prima che la maniglia sia applicata"
+
+
+msgid "Y position of the sequence strip"
+msgstr "Posizione Y della striscia sequenza"
 
 
 msgid "Use Linear Modifiers"
@@ -50248,8 +50282,24 @@ msgid "Flip on the Y axis"
 msgstr "Capovolge sull'asse Y"
 
 
+msgid "Convert Float"
+msgstr "Converti in Float"
+
+
+msgid "Flip Time"
+msgstr "Ribalta il Tempo"
+
+
+msgid "Reverse frame order"
+msgstr "Ribalta l'ordine dei fotogrammi"
+
+
+msgid "Strobe"
+msgstr "Strobo"
+
+
 msgid "Only display every nth frame"
-msgstr "Mostra solo ogni n esimo fotogramma"
+msgstr "Mostra solo ogni n-esimo fotogramma"
 
 
 msgid "Add Sequence"
@@ -50412,6 +50462,10 @@ msgid "Stream Index"
 msgstr "Indice Stream"
 
 
+msgid "For files with several movie streams, use the stream with the given index"
+msgstr "Per files contenenti più stream video, usa lo stream con l'indice dato"
+
+
 msgid "Scene Sequence"
 msgstr "Sequenza Scena"
 
@@ -50432,12 +50486,16 @@ msgid "Playback volume of the sound"
 msgstr "Volume di riproduzione del suono"
 
 
+msgid "Playback panning of the sound (only for Mono sources)"
+msgstr "Scorrimento (pan) della riproduzione del suono (solo sorgenti Mono)"
+
+
 msgid "Draw Waveform"
 msgstr "Disegna Forma d'Onda"
 
 
 msgid "Whether to draw the sound's waveform"
-msgstr "Se disegnare la forma d'onda del suono"
+msgstr "Raffigura la forma d'onda del suono"
 
 
 msgid "Sequence Color Balance Data"
@@ -50589,7 +50647,15 @@ msgstr "Utilizza le immagini nell'ordine in cui sono registrate"
 
 
 msgid "Use a custom directory to store data"
-msgstr "Usa una directory personalizzata per memorizzare i dati"
+msgstr "Usa una cartella personalizzata per memorizzare i dati"
+
+
+msgid "Proxy Custom File"
+msgstr "File Personalizzato Proxy"
+
+
+msgid "Use a custom file to read proxy data from"
+msgstr "Usa un file personalizzato da cui leggere i dati proxy"
 
 
 msgid "Sequence Transform"
@@ -51341,6 +51407,10 @@ msgstr "Mostra la proiezione dei marcatori 3D nel filmato"
 
 msgid "Show Disabled"
 msgstr "Mostra Disabilitati"
+
+
+msgid "Show Metadata"
+msgstr "Mostra Metadati"
 
 
 msgid "Scopes to visualize movie clip statistics"
@@ -52241,6 +52311,10 @@ msgid "Sequencer and Image Preview"
 msgstr "Anteprima Sequencer e Immagine"
 
 
+msgid "View mode to use for displaying sequencer output"
+msgstr "Modalità visualizzazione da usare per mostrare l'uscita del Sequencer"
+
+
 msgid "Luma Waveform"
 msgstr "Forma d'Onda Luma"
 
@@ -52269,10 +52343,6 @@ msgid "Show TV title safe and action safe areas in preview"
 msgstr "Mostra le aree sicure titolo TV e azione nell'anteprima"
 
 
-msgid "Show Metadata"
-msgstr "Mostra Metadati"
-
-
 msgid "Display Channel"
 msgstr "Mostra Canale"
 
@@ -52285,16 +52355,40 @@ msgid "Channels of the preview to draw"
 msgstr "Canali dell'anteprima da disegnare"
 
 
+msgid "Waveform Drawing"
+msgstr "Disegno Forma d'Onda"
+
+
+msgid "How Waveforms are drawn"
+msgstr "Come sono disegnate la forme d'onda"
+
+
 msgid "Waveforms Off"
 msgstr "Forma d'onda Off"
+
+
+msgid "No waveforms drawn for any sound strips"
+msgstr "Nessuna forma d'onda disegnata per alcuna striscia audio"
 
 
 msgid "Waveforms On"
 msgstr "Forma d'onda On"
 
 
+msgid "Waveforms drawn for all sound strips"
+msgstr "Forme d'onda disegnate per tutte le strisce audio"
+
+
+msgid "Use Strip Option"
+msgstr "Usa Impostazione Striscia"
+
+
+msgid "Waveforms drawn according to strip setting"
+msgstr "Forme d'onda rappresentate in accordo con le impostazioni della striscia"
+
+
 msgid "Show Overexposed"
-msgstr "Mostra Sovraesposto"
+msgstr "Mostra Sovraesposte"
 
 
 msgid "Show overexposed areas with zebra stripes"
@@ -57788,8 +57882,16 @@ msgid "Object '%s' has a scale of (%.3f, %.3f, %.3f), Armature deformation will 
 msgstr "L'oggetto '%s' ha una scala di (%.3f, %.3f, %.3f), La deformazione armatura potrebbe non comportarsi come previsto (applicare la scala per risolvere)"
 
 
+msgid "Group '%s' not found"
+msgstr "Gruppo '%s' non trovato"
+
+
+msgid "Group %r not found"
+msgstr "Gruppo '%r' non trovato"
+
+
 msgid "Modified Verts:%+d, Edges:%+d, Faces:%+d"
-msgstr "Modificati %+d Vertici, %+d Spigoli, %+d Facce."
+msgstr "Modificati %+d Vertici, %+d Spigoli, %+d Facce"
 
 
 msgid "Scaled by %s%s%.6f"
@@ -58694,6 +58796,10 @@ msgstr "Le impostazioni sono nel tab Fisica"
 
 msgid "Deformation Axis:"
 msgstr "Asse Deformazione:"
+
+
+msgid "Faces: %d"
+msgstr "Facce: %d"
 
 
 msgid "Texture:"
@@ -61034,7 +61140,7 @@ msgstr "Collegamento"
 
 msgctxt "Operator"
 msgid "Append"
-msgstr "Appendi (incorpora)"
+msgstr "Incorpora"
 
 
 msgctxt "Operator"
@@ -65494,7 +65600,7 @@ msgstr "Copia i keyframes selezionati nel buffer di copia/incolla"
 
 
 msgid "Follow context or keep fixed datablock displayed"
-msgstr "Segue il contesto o mantieni visualizzato un bloccodati fisso"
+msgstr "Segue il contesto o mantiene visualizzato un bloccodati fisso"
 
 
 msgid "Track is locked"
