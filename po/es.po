@@ -1,9 +1,9 @@
 
 msgid ""
 msgstr ""
-"Project-Id-Version: Blender 2.75 (sub 1) (b'124b25c')\n"
+"Project-Id-Version: Blender 2.75 (sub 1) (b'04e9a70')\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-06-15 21:39:08\n"
+"POT-Creation-Date: 2015-06-23 20:35:04\n"
 "PO-Revision-Date: \n"
 "Last-Translator: Gabriel Gazzan <gabcorreo@gmail.com>\n"
 "Language-Team: Español <gabcorreo@gmail.com>\n"
@@ -1952,30 +1952,6 @@ msgid "Addon Preferences"
 msgstr "Opciones de agregados"
 
 
-msgid "Warn Msgid Not Capitalized"
-msgstr "Advertencia mensajes sin mayúsculas"
-
-
-msgid "Warn about messages not starting by a capitalized letter (with a few allowed exceptions!)"
-msgstr "Advertencia sobre mensajes que no comienzan con mayúsculas (¡con algunas excepciones permitidas!)"
-
-
-msgid "Fribidi Library"
-msgstr "Biblioteca Fribidi"
-
-
-msgid "The FriBidi C compiled library (.so under Linux, .dll under windows...), you’ll likely have to edit it if you’re under Windows, e.g. using the one included in svn's libraries repository"
-msgstr "La biblioteca escrita en C y compilada FriBidi (.so en Linux, .dll en windows...), es probable que se deba editar bajo Windows, p.ej: usando la que se incluye en el repositorio de bibliotecas del SVN"
-
-
-msgid "Import Paths"
-msgstr "Rutas de importación"
-
-
-msgid "Additional paths to add to sys.path (';' separated)"
-msgstr "Rutas adicionales a agregar al sys.path (separadas por ';')"
-
-
 msgid "Translation Root"
 msgstr "Raíz de la traducción"
 
@@ -1992,12 +1968,36 @@ msgid "The gettext msgfmt 'compiler'. You’ll likely have to edit it if you’r
 msgstr "El 'compilador' de msgfmt de gettext. Es posible que haya que editarlo en Windows"
 
 
+msgid "Warn Msgid Not Capitalized"
+msgstr "Advertencia mensajes sin mayúsculas"
+
+
+msgid "Warn about messages not starting by a capitalized letter (with a few allowed exceptions!)"
+msgstr "Advertencia sobre mensajes que no comienzan con mayúsculas (¡con algunas excepciones permitidas!)"
+
+
 msgid "Source Root"
 msgstr "Raíz del cód. fuente"
 
 
 msgid "The Blender source root path"
 msgstr "La ruta raíz del código fuente de Blender"
+
+
+msgid "Import Paths"
+msgstr "Rutas de importación"
+
+
+msgid "Additional paths to add to sys.path (';' separated)"
+msgstr "Rutas adicionales a agregar al sys.path (separadas por ';')"
+
+
+msgid "Fribidi Library"
+msgstr "Biblioteca Fribidi"
+
+
+msgid "The FriBidi C compiled library (.so under Linux, .dll under windows...), you’ll likely have to edit it if you’re under Windows, e.g. using the one included in svn's libraries repository"
+msgstr "La biblioteca escrita en C y compilada FriBidi (.so en Linux, .dll en windows...), es probable que se deba editar bajo Windows, p.ej: usando la que se incluye en el repositorio de bibliotecas del SVN"
 
 
 msgid "Persistent Data Path"
@@ -17467,6 +17467,10 @@ msgid "Double Sided"
 msgstr "Doble lado"
 
 
+msgid "Display the mesh with double or single sided lighting (OpenGL only)"
+msgstr "Mostrar la malla con iluminación de un lado o de ambos (solo OpenGL)"
+
+
 msgid "Texture Space Mesh"
 msgstr "Malla para espacio texturizado"
 
@@ -18125,10 +18129,6 @@ msgstr "Tipo de relación jerárquica"
 
 msgid "The object is parented to an object"
 msgstr "El objeto está subordinado a un objeto"
-
-
-msgid "The object is parented to a curve"
-msgstr "El objeto está subordinado a una curva"
 
 
 msgid "The object is parented to a lattice"
@@ -27193,10 +27193,6 @@ msgid "Object Transform"
 msgstr "Transformaciones del objeto"
 
 
-msgid "Evaluate source and destination meshes in their respective object spaces"
-msgstr "Evaluar las mallas de origen y destino en sus respectivos espacios de objeto"
-
-
 msgid "Vertex Data"
 msgstr "Vértices"
 
@@ -35384,6 +35380,15 @@ msgstr "Remueve los huesos seleccionados del esqueleto"
 
 
 msgctxt "Operator"
+msgid "Dissolve Selected Bone(s)"
+msgstr "Disolver huesos seleccionados"
+
+
+msgid "Dissolve selected bones from the armature"
+msgstr "Disuelve los huesos seleccionados del esqueleto"
+
+
+msgctxt "Operator"
 msgid "Duplicate Selected Bone(s)"
 msgstr "Duplicar huesos seleccionados"
 
@@ -38475,6 +38480,14 @@ msgid "Scale all data (Some importers do not support scaled armatures!)"
 msgstr "Escalar todos los datos (¡algunos importadores no soportan esqueletos escalados!)"
 
 
+msgid "Apply Unit"
+msgstr "Aplicar unidad"
+
+
+msgid "Scale all data according to current Blender size, to match default FBX unit (centimeter, some importers do not handle UnitScaleFactor properly)"
+msgstr "Escala todos los datos para que concuerden con la unidad predefinida de FBX (el centímetro, algunos importadores no son capaces de manipular apropiadamente el atributo UnitScaleFactor)"
+
+
 msgid "!EXPERIMENTAL! Apply Transform"
 msgstr "¡EXPERIMENTAL! Aplicar transformación"
 
@@ -39229,6 +39242,23 @@ msgstr "Dir"
 
 msgid "Activate/select the file(s) contained in the border"
 msgstr "Activa o selecciona los archivos contenidos en el marco"
+
+
+msgctxt "Operator"
+msgid "Walk Select/Deselect File"
+msgstr "Seleccionar/Deseleccionar archivo transitando"
+
+
+msgid "Select/Deselect files by walking through them"
+msgstr "Selecciona/deselecciona archivos transitando entre ellos"
+
+
+msgid "Walk Direction"
+msgstr "Dirección de tránsito"
+
+
+msgid "Select/Deselect file in this direction"
+msgstr "Seleccionar/deseleccionar archivos en esta dirección"
 
 
 msgid "Prev"
@@ -41453,6 +41483,10 @@ msgid "Bind Camera to Markers"
 msgstr "Enlazar cámara a marcadores"
 
 
+msgid "Bind the active camera to selected marker(s)"
+msgstr "Enlaza la cámara activa a los marcadores seleccionados"
+
+
 msgctxt "Operator"
 msgid "Delete Markers"
 msgstr "Borrar marcadores"
@@ -42626,6 +42660,15 @@ msgstr "Extruir solo vértices"
 
 
 msgctxt "Operator"
+msgid "Make Planar Faces"
+msgstr "Aplanar caras"
+
+
+msgid "Flatten selected faces"
+msgstr "Aplana las caras seleccionadas"
+
+
+msgctxt "Operator"
 msgid "Split by Edges"
 msgstr "Dividir por bordes"
 
@@ -43052,6 +43095,28 @@ msgstr "Hacer consistentes a las normales"
 
 msgid "Make face and vertex normals point either outside or inside the mesh"
 msgstr "Hace que las normales de caras y vértices apunten hacia afuera o hacia adentro de la malla"
+
+
+msgctxt "Operator"
+msgid "Offset Edge Loop"
+msgstr "Desplazar bucle de bordes"
+
+
+msgid "Create offset edge loop from the current selection"
+msgstr "Crea un ciclo de bordes desplazado con respecto a la selección actual"
+
+
+msgctxt "Operator"
+msgid "Offset Edge Slide"
+msgstr "Desplazar y deslizar bordes"
+
+
+msgid "Offset edge loop slide"
+msgstr "Desplaza y desliza un ciclo de bordes"
+
+
+msgid "Offset Edge Loop"
+msgstr "Desplazar bucle de bordes"
 
 
 msgctxt "Operator"
@@ -44862,16 +44927,16 @@ msgid "Add a node to the active tree and link to an existing socket"
 msgstr "Agrega un nodo al árbol activo y lo vincula a un conector existente"
 
 
-msgid "Settings to be applied on the newly created node"
-msgstr "Opciones a ser aplicadas al nuevo nodo"
-
-
 msgid "Use Transform"
 msgstr "Usar transformación"
 
 
 msgid "Start transform operator after inserting the node"
 msgstr "Inicia el operador de transformación luego de insertar el nodo"
+
+
+msgid "Settings to be applied on the newly created node"
+msgstr "Opciones a ser aplicadas al nuevo nodo"
 
 
 msgid "Node Type"
@@ -51506,6 +51571,10 @@ msgid "Mute Strips"
 msgstr "Deshabilitar clips"
 
 
+msgid "Mute (un)selected strips"
+msgstr "Deshabilita los clips seleccionados o deseleccionados"
+
+
 msgid "Mute unselected rather than selected strips"
 msgstr "Deshabilita los clips no seleccionados"
 
@@ -51790,6 +51859,15 @@ msgstr "Agrega un modificador al clip"
 
 
 msgctxt "Operator"
+msgid "Copy to Selected Strips"
+msgstr "Copiar a clips seleccionados"
+
+
+msgid "Copy modifiers of the active strip to all selected strips"
+msgstr "Copia los modificadores del clip activo a los clips seleccionados"
+
+
+msgctxt "Operator"
 msgid "Move Strip Modifier"
 msgstr "Mover modificador de clip"
 
@@ -51854,6 +51932,14 @@ msgstr "Desbloquea el clip activo para que pueda ser transformado"
 msgctxt "Operator"
 msgid "Un-Mute Strips"
 msgstr "Habilitar clips"
+
+
+msgid "Unmute (un)selected strips"
+msgstr "Habilita los clips seleccionados o deseleccionados"
+
+
+msgid "Unmute unselected rather than selected strips"
+msgstr "Habilitar los clips no seleccionados"
 
 
 msgid "View all the strips in the sequencer"
@@ -52743,6 +52829,10 @@ msgstr "Cambia el pliegue de los bordes"
 msgctxt "Operator"
 msgid "Edge Slide"
 msgstr "Deslizar bordes"
+
+
+msgid "Single Side"
+msgstr "Un solo lado"
 
 
 msgid "Correct UVs"
@@ -58743,12 +58833,12 @@ msgid "Group of ID properties"
 msgstr "Grupo de propiedades ID"
 
 
-msgid "Action 2"
-msgstr "Acción 2"
+msgid "Stitch frame"
+msgstr "Marco de unión"
 
 
-msgid "Second action in stitch"
-msgstr "Segunda acción al unir"
+msgid "Frame to locate stitch on"
+msgstr "Marco donde ubicar la unión"
 
 
 msgid "Action 1"
@@ -58759,12 +58849,20 @@ msgid "First action in stitch"
 msgstr "Primera acción al unir"
 
 
-msgid "Stitch frame"
-msgstr "Marco de unión"
+msgid "Second offset"
+msgstr "Segundo desplazamiento"
 
 
-msgid "Frame to locate stitch on"
-msgstr "Marco donde ubicar la unión"
+msgid "Frame offset for 2nd animation, where it should start"
+msgstr "Desplazamiento de fotogramas para la 2da animación, donde debería comenzar"
+
+
+msgid "Action 2"
+msgstr "Acción 2"
+
+
+msgid "Second action in stitch"
+msgstr "Segunda acción al unir"
 
 
 msgid "Stick Bone"
@@ -58781,14 +58879,6 @@ msgstr "Cantidad de fundido"
 
 msgid "Size of blending transition, on both sides of the stitch"
 msgstr "Tamaño de la transición de fundido, a ambos lados de la unión"
-
-
-msgid "Second offset"
-msgstr "Segundo desplazamiento"
-
-
-msgid "Frame offset for 2nd animation, where it should start"
-msgstr "Desplazamiento de fotogramas para la 2da animación, donde debería comenzar"
 
 
 msgid "Aperture Type"
@@ -59779,6 +59869,14 @@ msgid "Settings/info about a language"
 msgstr "Configuración/info acerca de un idioma"
 
 
+msgid "PO Git Master File Path"
+msgstr "Ruta al archivo PO maestro en el GIT"
+
+
+msgid "Path to the relevant po file in Blender's translations git repository"
+msgstr "Ruta al archivo .po relevante en el repositorio GIT que contiene las traducciones de Blender"
+
+
 msgid "Numeric ID"
 msgstr "ID numérico"
 
@@ -59787,12 +59885,8 @@ msgid "Numeric ID (readonly!)"
 msgstr "ID numérico (¡solo lectura!)"
 
 
-msgid "PO Trunk File Path"
-msgstr "Ruta archivo PO en tronco"
-
-
-msgid "Path to the relevant po file in trunk"
-msgstr "Ruta al archivo .PO relevante en el tronco principal"
+msgid "Use this language in current operator"
+msgstr "Usar este idioma en el operador actual"
 
 
 msgid "MO File Path"
@@ -59801,6 +59895,14 @@ msgstr "Ruta del archivo"
 
 msgid "Path to the relevant mo file"
 msgstr "Ruta al archivo .MO relevante"
+
+
+msgid "PO Trunk File Path"
+msgstr "Ruta archivo PO en tronco"
+
+
+msgid "Path to the relevant po file in trunk"
+msgstr "Ruta al archivo .PO relevante en el tronco principal"
 
 
 msgid "Language ID"
@@ -59827,10 +59929,6 @@ msgid "Path to the relevant po file in branches"
 msgstr "Ruta al archivo .PO relevante en las ramas"
 
 
-msgid "Use this language in current operator"
-msgstr "Usar este idioma en el operador actual"
-
-
 msgid "Active Language"
 msgstr "Idioma activo"
 
@@ -59847,10 +59945,6 @@ msgid "Path to the pot template file"
 msgstr "Ruta al archivo de plantilla .POT"
 
 
-msgid "Whether these settings have already been auto-set or not"
-msgstr "Si estas opciones ya han sido definidas automáticamente o no"
-
-
 msgid "Languages"
 msgstr "Idioma"
 
@@ -59859,12 +59953,52 @@ msgid "Languages to update in branches"
 msgstr "Idiomas a actualizar en las ramas"
 
 
-msgid "Bone (2)"
-msgstr "Hueso (2)"
+msgid "Whether these settings have already been auto-set or not"
+msgstr "Si estas opciones ya han sido definidas automáticamente o no"
 
 
-msgid "Other Constrained Bone (optional, depends on type)"
-msgstr "El otro hueso restringido (opcional, depende del tipo)"
+msgid "Target of Fix - Mesh (optional, depends on type)"
+msgstr "Objetivo de corrección - Malla (opcional, depende del tipo)"
+
+
+msgid "Fix is active"
+msgstr "La corrección está activa"
+
+
+msgid "Name of Mocap Fix"
+msgstr "Nombre de la corrección de CaptMov"
+
+
+msgid "Constrained Bone"
+msgstr "Hueso restringido"
+
+
+msgid "Out"
+msgstr "Salida"
+
+
+msgid "Number of frames to smooth out"
+msgstr "Cantidad de fotogramas a suavizar"
+
+
+msgid "Distance and Floor Fixes - Desired offset"
+msgstr "Correcciones de distancia y piso - Desplazamiento deseado"
+
+
+msgid "Type of constraint"
+msgstr "Tipo de restricción"
+
+
+msgid "E"
+msgstr "E"
+
+
+msgid "End frame of Fix"
+msgstr "Fotoframa final de la corrección"
+
+
+msgid "Fix is fully shown"
+msgstr "La corrección se muestra completamente"
 
 
 msgid "In which space should Point type target be evaluated"
@@ -59891,64 +60025,28 @@ msgid "Evaluate target in specified other bone space"
 msgstr "Evalúa el objetivo en el espacio de huesos del otro especificado"
 
 
-msgid "In"
-msgstr "Entrada"
+msgid "Bone (2)"
+msgstr "Hueso (2)"
 
 
-msgid "Number of frames to smooth in"
-msgstr "Cantidad de fotogramas para suavizar"
-
-
-msgid "Target of Fix - Mesh (optional, depends on type)"
-msgstr "Objetivo de corrección - Malla (opcional, depende del tipo)"
-
-
-msgid "Target of Fix - Point"
-msgstr "Objetivo de corrección - Punto"
-
-
-msgid "Type of constraint"
-msgstr "Tipo de restricción"
+msgid "Other Constrained Bone (optional, depends on type)"
+msgstr "El otro hueso restringido (opcional, depende del tipo)"
 
 
 msgid "Start frame of Fix"
 msgstr "Fotograma inicial de la corrección"
 
 
-msgid "Constrained Bone"
-msgstr "Hueso restringido"
+msgid "Target of Fix - Point"
+msgstr "Objetivo de corrección - Punto"
 
 
-msgid "Fix is fully shown"
-msgstr "La corrección se muestra completamente"
+msgid "In"
+msgstr "Entrada"
 
 
-msgid "E"
-msgstr "E"
-
-
-msgid "End frame of Fix"
-msgstr "Fotoframa final de la corrección"
-
-
-msgid "Distance and Floor Fixes - Desired offset"
-msgstr "Correcciones de distancia y piso - Desplazamiento deseado"
-
-
-msgid "Out"
-msgstr "Salida"
-
-
-msgid "Number of frames to smooth out"
-msgstr "Cantidad de fotogramas a suavizar"
-
-
-msgid "Name of Mocap Fix"
-msgstr "Nombre de la corrección de CaptMov"
-
-
-msgid "Fix is active"
-msgstr "La corrección está activa"
+msgid "Number of frames to smooth in"
+msgstr "Cantidad de fotogramas para suavizar"
 
 
 msgid "Python expression to be evaluated as the initial node setting"
@@ -59995,20 +60093,12 @@ msgid "Is Stroke Start"
 msgstr "Es comienzo de trazo"
 
 
-msgid "Format type to export to"
-msgstr "Tipo de formato al cual exportar"
+msgid "Export Directory"
+msgstr "Directorio de exportación"
 
 
-msgid "VRML2"
-msgstr "VRML2"
-
-
-msgid "Limit for checking distorted faces"
-msgstr "Límite para comprobar caras distorsionadas"
-
-
-msgid "Minimum thickness"
-msgstr "Grosor mínimo"
+msgid "Path to directory where the files are created"
+msgstr "Ruta al directorio donde se crearán los archivos"
 
 
 msgid "Apply Scale"
@@ -60019,16 +60109,16 @@ msgid "Apply scene scale setting on export"
 msgstr "Aplica la escala de la escena al exportar"
 
 
-msgid "Export Directory"
-msgstr "Directorio de exportación"
-
-
-msgid "Path to directory where the files are created"
-msgstr "Ruta al directorio donde se crearán los archivos"
-
-
 msgid "Limit for checking zero area/length"
 msgstr "Límite para comprobar área/longitud nulas"
+
+
+msgid "Format type to export to"
+msgstr "Tipo de formato al cual exportar"
+
+
+msgid "VRML2"
+msgstr "VRML2"
 
 
 msgid "Copy Textures"
@@ -60037,6 +60127,14 @@ msgstr "Copiar texturas"
 
 msgid "Copy textures on export to the output path"
 msgstr "Al exportar copia las texturas a la ruta de destino"
+
+
+msgid "Limit for checking distorted faces"
+msgstr "Límite para comprobar caras distorsionadas"
+
+
+msgid "Minimum thickness"
+msgstr "Grosor mínimo"
 
 
 msgid "Selected UV Element"
@@ -60489,6 +60587,14 @@ msgstr "Pasada de procesamiento"
 
 msgid "BVH Traversal Steps"
 msgstr "Intervalos transversales de BVH"
+
+
+msgid "BVH Traversed Instances"
+msgstr "Instancias atravesadas de la BVH"
+
+
+msgid "Ray Steps"
+msgstr "Intervalos del rayo"
 
 
 msgid "Result of rendering, including all layers and passes"
@@ -66161,6 +66267,10 @@ msgstr "Muestra los rastros deshabilitados de la película"
 
 msgid "Show Metadata"
 msgstr "Mostrar metadatos"
+
+
+msgid "Show metadata of clip"
+msgstr "Muestra los metadatos del clip"
 
 
 msgid "Scopes to visualize movie clip statistics"
@@ -79837,6 +79947,11 @@ msgstr "Conectar vértices"
 
 
 msgctxt "Operator"
+msgid "Clear Sharp Edges"
+msgstr "Limpiar bordes definidos"
+
+
+msgctxt "Operator"
 msgid "Edge Loops"
 msgstr "Bucles de bordes"
 
@@ -79844,6 +79959,16 @@ msgstr "Bucles de bordes"
 msgctxt "Operator"
 msgid "Make"
 msgstr "Hacer"
+
+
+msgctxt "Operator"
+msgid "Delete Bones"
+msgstr "Borrar huesos"
+
+
+msgctxt "Operator"
+msgid "Dissolve"
+msgstr "Disolver"
 
 
 msgid "Lock to Object:"
@@ -80158,6 +80283,11 @@ msgstr "Región"
 msgctxt "Operator"
 msgid "Region (Vertex Normals)"
 msgstr "Región (nomales de vértices)"
+
+
+msgctxt "Operator"
+msgid "Mark Sharp Edges"
+msgstr "Marcar bordes definidos"
 
 
 msgctxt "Operator"
@@ -81984,6 +82114,10 @@ msgstr "La propiedad \"%s\" no puede ser animada"
 
 msgid "Button doesn't appear to have any property information attached (ptr.data = %p, prop = %p)"
 msgstr "El botón no parece contener ninguna información de propiedad adjunta (ptr.data = %p, prop = %p)"
+
+
+msgid "Not deleting keyframe for locked F-Curve for NLA Strip influence on %s - %s '%s'"
+msgstr "No se ha borrado el fotograma clave de la curva-f bloqueada de la influencia del clip de ANL en %s - %s '%s'"
 
 
 msgid "No active keying set to remove"

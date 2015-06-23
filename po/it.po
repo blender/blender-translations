@@ -1,9 +1,9 @@
 
 msgid ""
 msgstr ""
-"Project-Id-Version: Blender 2.75 (sub 1) (b'124b25c')\n"
+"Project-Id-Version: Blender 2.75 (sub 1) (b'04e9a70')\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-06-15 21:39:08\n"
+"POT-Creation-Date: 2015-06-23 20:35:04\n"
 "PO-Revision-Date: \n"
 "Last-Translator: blend-it\n"
 "Language-Team: \n"
@@ -1852,30 +1852,6 @@ msgid "Addon Preferences"
 msgstr "Preferenze Addon"
 
 
-msgid "Warn Msgid Not Capitalized"
-msgstr "Avverti se il Msgid non è Maiuscolo"
-
-
-msgid "Warn about messages not starting by a capitalized letter (with a few allowed exceptions!)"
-msgstr "Avverte se i messaggi non iniziano con una lettera maiuscola (con poche eccezioni permesse!)"
-
-
-msgid "Fribidi Library"
-msgstr "Libreria FriBidi"
-
-
-msgid "The FriBidi C compiled library (.so under Linux, .dll under windows...), you’ll likely have to edit it if you’re under Windows, e.g. using the one included in svn's libraries repository"
-msgstr "La libreria compilata C FriBidi (.so in Linux, .dll in Windows). Probabilmente devi specificarla se sei sotto Windows, x es. usando quella inclusa nel repository delle librerie di svn."
-
-
-msgid "Import Paths"
-msgstr "Percorsi di Importazione"
-
-
-msgid "Additional paths to add to sys.path (';' separated)"
-msgstr "Percorsi addizionali da aggiungere a sys.path (separati con ';')"
-
-
 msgid "Translation Root"
 msgstr "Root Traduzione"
 
@@ -1892,12 +1868,36 @@ msgid "The gettext msgfmt 'compiler'. You’ll likely have to edit it if you’r
 msgstr "Il 'compilatore' msgfmt di gettext. Probabilmente devi indicare il percorso se sei sotto Windows"
 
 
+msgid "Warn Msgid Not Capitalized"
+msgstr "Avverti se il Msgid non è Maiuscolo"
+
+
+msgid "Warn about messages not starting by a capitalized letter (with a few allowed exceptions!)"
+msgstr "Avverte se i messaggi non iniziano con una lettera maiuscola (con poche eccezioni permesse!)"
+
+
 msgid "Source Root"
 msgstr "Root Sorgente"
 
 
 msgid "The Blender source root path"
 msgstr "Il percorso dei sorgenti di Blender"
+
+
+msgid "Import Paths"
+msgstr "Percorsi di Importazione"
+
+
+msgid "Additional paths to add to sys.path (';' separated)"
+msgstr "Percorsi addizionali da aggiungere a sys.path (separati con ';')"
+
+
+msgid "Fribidi Library"
+msgstr "Libreria FriBidi"
+
+
+msgid "The FriBidi C compiled library (.so under Linux, .dll under windows...), you’ll likely have to edit it if you’re under Windows, e.g. using the one included in svn's libraries repository"
+msgstr "La libreria compilata C FriBidi (.so in Linux, .dll in Windows). Probabilmente devi specificarla se sei sotto Windows, x es. usando quella inclusa nel repository delle librerie di svn."
 
 
 msgid "Persistent Data Path"
@@ -14635,10 +14635,6 @@ msgid "The object is parented to an object"
 msgstr "L'oggetto è imparentato ad un oggetto"
 
 
-msgid "The object is parented to a curve"
-msgstr "L'oggetto è imparentato ad una curva"
-
-
 msgid "The object is parented to a lattice"
 msgstr "L'oggetto è imparentato ad un lattice"
 
@@ -23005,7 +23001,7 @@ msgstr "Riempi Bordo"
 
 
 msgid "Create edge loops between the inner and outer surfaces on face edges (slow, disable when not needed)"
-msgstr "Creare edge loop tra le superfici interne ed esterne sugli spigoli della faccia (lento, disattivare quando non serve)"
+msgstr "Crea un anello di spigoli tra le superfici interne ed esterne sugli spigoli della faccia (lento, disattivare quando non serve)"
 
 
 msgid "Even Thickness"
@@ -27369,7 +27365,7 @@ msgstr "Crea un nuovo osso partendo dall'ultima articolazione selezionata fino a
 
 msgctxt "Operator"
 msgid "Delete Selected Bone(s)"
-msgstr "Cancella Osso(a) Selezionato(e)"
+msgstr "Cancella Ossa Selezionate"
 
 
 msgid "Remove selected bones from the armature"
@@ -27377,8 +27373,17 @@ msgstr "Rimuove le ossa selezionate dall'armatura"
 
 
 msgctxt "Operator"
+msgid "Dissolve Selected Bone(s)"
+msgstr "Dissolvi Ossa Selezionate"
+
+
+msgid "Dissolve selected bones from the armature"
+msgstr "Dissolve le ossa selezionate dall'armatura"
+
+
+msgctxt "Operator"
 msgid "Duplicate Selected Bone(s)"
-msgstr "Duplica Osso(a) Selezionato(e)"
+msgstr "Duplica Ossa Selezionate"
 
 
 msgid "Make copies of the selected bones within the same armature"
@@ -27390,7 +27395,7 @@ msgstr "Crea copie delle ossa selezionate all'interno della stessa armatura e mu
 
 
 msgid "Duplicate Selected Bone(s)"
-msgstr "Duplica Osso(a) Selezionato(e)"
+msgstr "Duplica Ossa Selezionate"
 
 
 msgid "Translate (move) selected items"
@@ -29912,6 +29917,10 @@ msgstr "Esporta gli oggetti selezionati nei livelli visibili"
 
 msgid "Scale all data (Some importers do not support scaled armatures!)"
 msgstr "Scala tutti i dati (Alcuni importatori non supportano le armature scalate!)"
+
+
+msgid "Apply Unit"
+msgstr "Applica Unità"
 
 
 msgid "!EXPERIMENTAL! Apply Transform"
@@ -33200,7 +33209,7 @@ msgstr "Estrudi Regione e Restringi/Allarga"
 
 msgctxt "Operator"
 msgid "Extrude Repeat Mesh"
-msgstr "Estrudi Mesh"
+msgstr "Estrudi Mesh Ripetutamente"
 
 
 msgid "Extrude selected vertices, edges or faces repeatedly"
@@ -33213,25 +33222,39 @@ msgstr "Estrudi Solo Vertici e Muovi"
 
 
 msgid "Extrude vertices and move result"
-msgstr "Estrudi Solo Vertici e Muovi"
+msgstr "Estrude i vertici e muove il risultato"
 
 
 msgid "Extrude Only Vertices"
-msgstr "Estrudi Solo Vertici e Muovi"
+msgstr "Estrudi Solo Vertici"
 
 
 msgid "Extrude individual vertices only"
-msgstr "Estrusione Singola"
+msgstr "Estrudi solo i vertici individuali"
 
 
 msgctxt "Operator"
 msgid "Extrude Only Vertices"
-msgstr "Estrudi Solo Vertici e Muovi"
+msgstr "Estrudi Solo Vertici"
+
+
+msgctxt "Operator"
+msgid "Make Planar Faces"
+msgstr "Rendi Facce Planari"
+
+
+msgid "Flatten selected faces"
+msgstr "Appiattisce le facce selezionate"
+
+
+msgctxt "Operator"
+msgid "Split by Edges"
+msgstr "Dividi per Spigoli"
 
 
 msgctxt "Operator"
 msgid "Copy Mirrored UV coords"
-msgstr "Copia coordinate UV Riflesse"
+msgstr "Copia Coordinate UV Riflesse"
 
 
 msgid "Copy mirror UV coordinates on the X axis based on a mirrored mesh"
@@ -33300,7 +33323,7 @@ msgstr "Lati"
 
 msgctxt "Operator"
 msgid "Flip Normals"
-msgstr "Inverti normali"
+msgstr "Inverti Normali"
 
 
 msgid "Flip the direction of selected faces' normals (and of their vertices)"
@@ -33331,6 +33354,10 @@ msgstr "Lungo gli Spigoli Esistenti"
 
 msgid "Outset"
 msgstr "Esterno"
+
+
+msgid "Outset rather than inset"
+msgstr "Verso l'esterno anzichè verso l'interno"
 
 
 msgid "Select Outer"
@@ -33562,6 +33589,11 @@ msgstr "Usa le coordinate dei vertici come coordinate di texture"
 msgctxt "Operator"
 msgid "Make Normals Consistent"
 msgstr "Rendi Normali Coerenti"
+
+
+msgctxt "Operator"
+msgid "Offset Edge Loop"
+msgstr "Offset Anello di Spigoli"
 
 
 msgctxt "Operator"
@@ -33910,7 +33942,7 @@ msgstr "Disconnette vertici o spigoli da una geometria connessa"
 
 
 msgid "Proportional Editing"
-msgstr "Editing Proporzionale"
+msgstr "Modifica Proporzionale"
 
 
 msgid "Proportional Editing disabled"
@@ -34475,6 +34507,15 @@ msgstr "Connetti Vertice"
 
 msgid "Connect selected vertices of faces, splitting the face"
 msgstr "Connette i vertici selezionati di una faccia con uno spigolo, dividendo la faccia in due"
+
+
+msgctxt "Operator"
+msgid "Split Concave Faces"
+msgstr "Dividi Facce Concave"
+
+
+msgid "Make all faces convex"
+msgstr "Rende tutte le facce convesse"
 
 
 msgctxt "Operator"
@@ -39212,15 +39253,11 @@ msgstr "Renderizza i files della gamma di animazione di questa scena"
 
 
 msgid "Sequencer"
-msgstr "Sequencer"
-
-
-msgid "Render using the sequencer's OpenGL display"
-msgstr "Aggiorna l'editor del sequencer"
+msgstr "Editor Sequenze Video (Sequencer)"
 
 
 msgid "Write Image"
-msgstr "Scrive Immagine"
+msgstr "Scrivi Immagine"
 
 
 msgid "Save rendered the image to the output path (used only when animation is disabled)"
@@ -39228,7 +39265,7 @@ msgstr "Salva rendered the image sul percorso di output (usato solo quando l'ani
 
 
 msgid "View Context"
-msgstr "Contesto visuale"
+msgstr "Contesto Visuale"
 
 
 msgid "Use the current 3D view for rendering, else use scene settings"
@@ -39260,6 +39297,10 @@ msgstr "Render"
 
 msgid "Render active scene"
 msgstr "Renderizza la scena attiva"
+
+
+msgid "Use 3D Viewport"
+msgstr "Usa Vista 3D"
 
 
 msgid "Render Layer"
@@ -40095,6 +40136,14 @@ msgid "Color effect strip type"
 msgstr "Tipo strip effetto colore"
 
 
+msgid "Multicam Selector"
+msgstr "Selettore Multicamera"
+
+
+msgid "Adjustment Layer"
+msgstr "Livello Aggiustamento"
+
+
 msgid "Gaussian Blur"
 msgstr "Sfocatura Gaussiana"
 
@@ -40343,8 +40392,12 @@ msgid "Mute Strips"
 msgstr "Disattiva Strisce"
 
 
+msgid "Mute (un)selected strips"
+msgstr "Disattiva le strisce (de)selezionate"
+
+
 msgid "Mute unselected rather than selected strips"
-msgstr "Silenzia le strisce non selezionate piuttosto che le selezionate"
+msgstr "Disattiva le strisce non selezionate piuttosto che le selezionate"
 
 
 msgctxt "Operator"
@@ -40384,7 +40437,7 @@ msgstr "Aggiorna Sequencer"
 
 
 msgid "Refresh the sequencer editor"
-msgstr "Aggiorna l'editor del sequencer"
+msgstr "Aggiorna l'editor sequenze video"
 
 
 msgctxt "Operator"
@@ -40610,6 +40663,11 @@ msgstr "Aggiunge un modificatore alla striscia"
 
 
 msgctxt "Operator"
+msgid "Copy to Selected Strips"
+msgstr "Copia alle Strisce Selezionate"
+
+
+msgctxt "Operator"
 msgid "Move Strip Modifier"
 msgstr "Muovi Modificatore Striscia"
 
@@ -40674,6 +40732,14 @@ msgstr "Sblocca la striscia attiva così non può essere trasformata (??)"
 msgctxt "Operator"
 msgid "Un-Mute Strips"
 msgstr "Riattiva Strisce"
+
+
+msgid "Unmute (un)selected strips"
+msgstr "Riattiva le strisce (de)selezioante"
+
+
+msgid "Unmute unselected rather than selected strips"
+msgstr "Riattiva le strisce deselezionate anzichè quelle selezionate"
 
 
 msgid "View all the strips in the sequencer"
@@ -46246,12 +46312,12 @@ msgid "Group of ID properties"
 msgstr "Gruppo di proprietà ID"
 
 
-msgid "Action 2"
-msgstr "Azione 2"
-
-
 msgid "Action 1"
 msgstr "Azione 1"
+
+
+msgid "Action 2"
+msgstr "Azione 2"
 
 
 msgid "Aperture Type"
@@ -46842,8 +46908,20 @@ msgid "Languages"
 msgstr "Lingue"
 
 
-msgid "Bone (2)"
-msgstr "Osso (2)"
+msgid "Constrained Bone"
+msgstr "Osso Vincolato"
+
+
+msgid "Out"
+msgstr "Uscita"
+
+
+msgid "Type of constraint"
+msgstr "Tipo di vincolo"
+
+
+msgid "E"
+msgstr "E"
 
 
 msgid "Evaluate target in global space"
@@ -46862,24 +46940,12 @@ msgid "Other Bone Space"
 msgstr "Altro Spazio Osso"
 
 
+msgid "Bone (2)"
+msgstr "Osso (2)"
+
+
 msgid "In"
 msgstr "Ingresso"
-
-
-msgid "Type of constraint"
-msgstr "Tipo di vincolo"
-
-
-msgid "Constrained Bone"
-msgstr "Osso Vincolato"
-
-
-msgid "E"
-msgstr "E"
-
-
-msgid "Out"
-msgstr "Uscita"
 
 
 msgid "Operator File List Element"
@@ -46910,16 +46976,12 @@ msgid "Brush Size"
 msgstr "Dimensione Pennello"
 
 
-msgid "Format type to export to"
-msgstr "Tipo formato in cui esportare"
+msgid "Export Directory"
+msgstr "Cartella Esportazione"
 
 
-msgid "Limit for checking distorted faces"
-msgstr "Limite di controllo facce distorte"
-
-
-msgid "Minimum thickness"
-msgstr "Spessore minimo"
+msgid "Path to directory where the files are created"
+msgstr "Cartella in cui i files vengono creati"
 
 
 msgid "Apply Scale"
@@ -46930,16 +46992,12 @@ msgid "Apply scene scale setting on export"
 msgstr "Applica le impostazioni scala di scena esportando"
 
 
-msgid "Export Directory"
-msgstr "Cartella Esportazione"
-
-
-msgid "Path to directory where the files are created"
-msgstr "Cartella in cui i files vengono creati"
-
-
 msgid "Limit for checking zero area/length"
 msgstr "Limite di controllo di aree/lunghezze nulle"
+
+
+msgid "Format type to export to"
+msgstr "Tipo formato in cui esportare"
 
 
 msgid "Copy Textures"
@@ -46948,6 +47006,14 @@ msgstr "Copia Texture"
 
 msgid "Copy textures on export to the output path"
 msgstr "Esportando, copia nel percorso di salvataggio le texture"
+
+
+msgid "Limit for checking distorted faces"
+msgstr "Limite di controllo facce distorte"
+
+
+msgid "Minimum thickness"
+msgstr "Spessore minimo"
 
 
 msgid "Selected UV Element"
@@ -54908,7 +54974,7 @@ msgstr "Testo Area Faccia"
 
 
 msgid "Split Normal"
-msgstr "Inverti normali"
+msgstr "Inverti Normali"
 
 
 msgid "Bone Solid"
@@ -55004,7 +55070,7 @@ msgstr "Algoritmo usato per il rilassamento dell'UV"
 
 
 msgid "Proportional Editing mode, allows transforms with distance fall-off"
-msgstr "La modalità Editing Proporzionale, consente la trasformazione con una distanza di decadimento"
+msgstr "Modalità Modifica Proporzionale, consente la trasformazione con una distanza di decadimento"
 
 
 msgid "Proportional Editing Objects"
@@ -61327,6 +61393,16 @@ msgstr "Adatta sfondo allo spazio disponibile"
 
 
 msgctxt "Operator"
+msgid "Activate Same Type Previous"
+msgstr "Attiva Precedente dello Stesso Tipo"
+
+
+msgctxt "Operator"
+msgid "Activate Same Type Next"
+msgstr "Attiva Seguente dello Stesso Tipo"
+
+
+msgctxt "Operator"
 msgid "Make and Replace Links"
 msgstr "Crea e Sostituisci Connessioni"
 
@@ -61347,6 +61423,10 @@ msgstr "Rimpicciolisci Sfondo"
 
 msgid "Free Unused"
 msgstr "Libera Non Usato"
+
+
+msgid "No Keying Set active"
+msgstr "Nessun Gruppo Chiavi attivo"
 
 
 msgid "Gamma:"
@@ -61397,7 +61477,11 @@ msgstr "Nome:"
 
 
 msgid "Final Length: %s"
-msgstr "Lunghezza finale: %s"
+msgstr "Lunghezza Finale: %s"
+
+
+msgid "Frame Offset %d:%d"
+msgstr "Scostamento Frame %d:%d"
 
 
 msgid "Image Offset"
@@ -61454,7 +61538,7 @@ msgstr "Strisce alla Destra"
 
 msgctxt "Operator"
 msgid "Surrounding Handles"
-msgstr "Maniglie Surround"
+msgstr "Entrambe le Maniglie"
 
 
 msgctxt "Operator"
@@ -62765,6 +62849,11 @@ msgstr "Connetti Vertici"
 
 
 msgctxt "Operator"
+msgid "Clear Sharp Edges"
+msgstr "Pulisci Spigoli Netti"
+
+
+msgctxt "Operator"
 msgid "Edge Loops"
 msgstr "Anello di Spigoli (loop)"
 
@@ -62772,6 +62861,16 @@ msgstr "Anello di Spigoli (loop)"
 msgctxt "Operator"
 msgid "Make"
 msgstr "Imposta"
+
+
+msgctxt "Operator"
+msgid "Delete Bones"
+msgstr "Cancella Ossa"
+
+
+msgctxt "Operator"
+msgid "Dissolve"
+msgstr "Dissolvi"
 
 
 msgid "Lock to Object:"
@@ -63081,6 +63180,11 @@ msgstr "Regione"
 msgctxt "Operator"
 msgid "Region (Vertex Normals)"
 msgstr "Regione (Normali ai Vertici)"
+
+
+msgctxt "Operator"
+msgid "Mark Sharp Edges"
+msgstr "Marca Spigoli Netti"
 
 
 msgctxt "Operator"
