@@ -1,9 +1,9 @@
 
 msgid ""
 msgstr ""
-"Project-Id-Version: Blender 2.75 (sub 1) (b'04e9a70')\n"
+"Project-Id-Version: Blender 2.75 (sub 1) (b'079b41d')\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-06-23 20:35:04\n"
+"POT-Creation-Date: 2015-06-29 20:33:40\n"
 "PO-Revision-Date: 2015-05-22 01:24+0000\n"
 "Last-Translator: Urkokul <urkokul@gmail.com>\n"
 "Language-Team: Ukrainian (Ukraine) (http://www.transifex.com/projects/p/blender/language/uk_UA/)\n"
@@ -1952,12 +1952,44 @@ msgid "Addon Preferences"
 msgstr "Уподобання для додатків"
 
 
-msgid "Translation Root"
-msgstr "Шлях до теки з перекладами"
+msgid "Persistent Data Path"
+msgstr "Постійні дані"
 
 
-msgid "The bf-translation repository"
-msgstr "Сховище bf-translation"
+msgid "The name of a json file storing those settings (unfortunately, Blender's system does not work here)"
+msgstr "Назва файлу json для зберігання цих налаштувань (на жаль, система Blender тут не діє)"
+
+
+msgid "Source Root"
+msgstr "Корінь джерела"
+
+
+msgid "The Blender source root path"
+msgstr "Кореневий каталог сирцевого коду Blender"
+
+
+msgid "Fribidi Library"
+msgstr "Бібліотека Fribidi"
+
+
+msgid "The FriBidi C compiled library (.so under Linux, .dll under windows...), you’ll likely have to edit it if you’re under Windows, e.g. using the one included in svn's libraries repository"
+msgstr "Скомпільована бібліотека FriBidi мовою Сі (.so у Linux, .dll у Windows...). Для роботи у Windows необхідно вручну вказати правильний шлях, наприклад, на файл з svn-сховища бібліотек"
+
+
+msgid "Spell Cache"
+msgstr "Кеш повідомлень"
+
+
+msgid "A cache storing validated msgids, to avoid re-spellchecking them"
+msgstr "Кеш, що містить перевірені msgid, щоб уникнути повторної їх перевірки"
+
+
+msgid "Import Paths"
+msgstr "Шляхи імпорту"
+
+
+msgid "Additional paths to add to sys.path (';' separated)"
+msgstr "Додаткові шляхи для додання до sys.path (відокремити ';')"
 
 
 msgid "Gettext 'msgfmt' executable"
@@ -1976,44 +2008,12 @@ msgid "Warn about messages not starting by a capitalized letter (with a few allo
 msgstr "Попередити, якщо повідомлення не починається з великої літери (з можливими винятками!)"
 
 
-msgid "Source Root"
-msgstr "Корінь джерела"
+msgid "Translation Root"
+msgstr "Шлях до теки з перекладами"
 
 
-msgid "The Blender source root path"
-msgstr "Кореневий каталог сирцевого коду Blender"
-
-
-msgid "Import Paths"
-msgstr "Шляхи імпорту"
-
-
-msgid "Additional paths to add to sys.path (';' separated)"
-msgstr "Додаткові шляхи для додання до sys.path (відокремити ';')"
-
-
-msgid "Fribidi Library"
-msgstr "Бібліотека Fribidi"
-
-
-msgid "The FriBidi C compiled library (.so under Linux, .dll under windows...), you’ll likely have to edit it if you’re under Windows, e.g. using the one included in svn's libraries repository"
-msgstr "Скомпільована бібліотека FriBidi мовою Сі (.so у Linux, .dll у Windows...). Для роботи у Windows необхідно вручну вказати правильний шлях, наприклад, на файл з svn-сховища бібліотек"
-
-
-msgid "Persistent Data Path"
-msgstr "Постійні дані"
-
-
-msgid "The name of a json file storing those settings (unfortunately, Blender's system does not work here)"
-msgstr "Назва файлу json для зберігання цих налаштувань (на жаль, система Blender тут не діє)"
-
-
-msgid "Spell Cache"
-msgstr "Кеш повідомлень"
-
-
-msgid "A cache storing validated msgids, to avoid re-spellchecking them"
-msgstr "Кеш, що містить перевірені msgid, щоб уникнути повторної їх перевірки"
+msgid "The bf-translation repository"
+msgstr "Сховище bf-translation"
 
 
 msgid "Animation Data"
@@ -4146,14 +4146,6 @@ msgstr "Відстань до площини збігання"
 
 msgid "The converge point for the stereo cameras (often the distance between a projector and the projection screen)"
 msgstr "Точка збігання для стерео-камер (часто відстань між проектором та екраном проекції)"
-
-
-msgid "Viewport Convergence"
-msgstr "Збігання в області вигляду"
-
-
-msgid "Preview convergence distance for the stereo effect in the viewport (it does not affect the render!)"
-msgstr "Відстань збігання для стерео-ефекту, попередньо переглядуваного в області вигляду (не впливає на результатне зображування!)"
 
 
 msgid "Child Particle"
@@ -44822,24 +44814,24 @@ msgid "Add a node to the active tree and link to an existing socket"
 msgstr "Додати вузол до активного дерева та приєднати до наявного роз'єму"
 
 
-msgid "Use Transform"
-msgstr "Використати трансформації"
-
-
-msgid "Start transform operator after inserting the node"
-msgstr "Запустити трансформації після вставляння вузла"
-
-
-msgid "Settings to be applied on the newly created node"
-msgstr "Параметри, що будуть застосовані при створенні вузла"
-
-
 msgid "Node Type"
 msgstr "Тип вузла"
 
 
 msgid "Node type"
 msgstr "Тип вузла"
+
+
+msgid "Settings to be applied on the newly created node"
+msgstr "Параметри, що будуть застосовані при створенні вузла"
+
+
+msgid "Use Transform"
+msgstr "Використати трансформації"
+
+
+msgid "Start transform operator after inserting the node"
+msgstr "Запустити трансформації після вставляння вузла"
 
 
 msgid "Link Socket Index"
@@ -47514,12 +47506,12 @@ msgstr "Включити вибрані вершини до нової груп�
 
 
 msgctxt "Operator"
-msgid "Blend Vertex Group"
-msgstr "Змішати групу вершин"
+msgid "Clean Vertex Group"
+msgstr "Вичистити групу вершин"
 
 
-msgid "Blend selected vertex weights with unselected for the active group"
-msgstr "Змішати вагомості  вибраних вершин з невибраними для активної групи"
+msgid "Remove vertex group assignments which are not required"
+msgstr "Вилучити непотрібні призначення в групи вершин"
 
 
 msgid "Subset"
@@ -47528,15 +47520,6 @@ msgstr "Підмножина"
 
 msgid "Define which subset of Groups shall be used"
 msgstr "Визначити, яка підмножина груп використовуватиметься"
-
-
-msgctxt "Operator"
-msgid "Clean Vertex Group"
-msgstr "Вичистити групу вершин"
-
-
-msgid "Remove vertex group assignments which are not required"
-msgstr "Вилучити непотрібні призначення в групи вершин"
 
 
 msgid "Remove vertices which weight is below or equal to this limit"
@@ -58703,12 +58686,12 @@ msgid "Group of ID properties"
 msgstr "Група ID-властивостей"
 
 
-msgid "Stitch frame"
-msgstr "Кадр склейки"
+msgid "Action 2"
+msgstr "Дія 2"
 
 
-msgid "Frame to locate stitch on"
-msgstr "Кадр, на якому виконати склеювання"
+msgid "Second action in stitch"
+msgstr "Друга дія у склейці"
 
 
 msgid "Action 1"
@@ -58719,6 +58702,22 @@ msgid "First action in stitch"
 msgstr "Перша дія у склейці"
 
 
+msgid "Blend amount"
+msgstr "Величина змішування"
+
+
+msgid "Size of blending transition, on both sides of the stitch"
+msgstr "Величина перехідного змішування по обидва боки від склейки"
+
+
+msgid "Stitch frame"
+msgstr "Кадр склейки"
+
+
+msgid "Frame to locate stitch on"
+msgstr "Кадр, на якому виконати склеювання"
+
+
 msgid "Second offset"
 msgstr "Зсув другої"
 
@@ -58727,28 +58726,12 @@ msgid "Frame offset for 2nd animation, where it should start"
 msgstr "Зсув у кадрах 2-ї анімації, з якого вона має починатися"
 
 
-msgid "Action 2"
-msgstr "Дія 2"
-
-
-msgid "Second action in stitch"
-msgstr "Друга дія у склейці"
-
-
 msgid "Stick Bone"
 msgstr "Закріпити кістку"
 
 
 msgid "Bone to freeze during transition"
 msgstr "Кістка, що заморожується при переміщенні"
-
-
-msgid "Blend amount"
-msgstr "Величина змішування"
-
-
-msgid "Size of blending transition, on both sides of the stitch"
-msgstr "Величина перехідного змішування по обидва боки від склейки"
 
 
 msgid "Aperture Type"
@@ -59739,6 +59722,38 @@ msgid "Settings/info about a language"
 msgstr "Параметри/інформація про мову"
 
 
+msgid "PO Trunk File Path"
+msgstr "Шлях до файлу PO у гілці trunk"
+
+
+msgid "Path to the relevant po file in trunk"
+msgstr "Шлях до актуального po-файлу у гілці trunk"
+
+
+msgid "Language Name"
+msgstr "Назва мови"
+
+
+msgid "English language name/label (like \"French (Français)\")"
+msgstr "Англійська назва/позначення мови (наприклад \"Ukrainian (Українська)\")"
+
+
+msgid "Language ID"
+msgstr "Мова"
+
+
+msgid "ISO code, like fr_FR"
+msgstr "Код ISO, наприклад uk_UK"
+
+
+msgid "MO File Path"
+msgstr "Шлях до файлу MO"
+
+
+msgid "Path to the relevant mo file"
+msgstr "Шлях до актуального mo-файлу"
+
+
 msgid "Numeric ID"
 msgstr "Числовий ID"
 
@@ -59751,44 +59766,20 @@ msgid "Use this language in current operator"
 msgstr "Використати цю мову у поточному операторі"
 
 
-msgid "MO File Path"
-msgstr "Шлях до файлу MO"
-
-
-msgid "Path to the relevant mo file"
-msgstr "Шлях до актуального mo-файлу"
-
-
-msgid "PO Trunk File Path"
-msgstr "Шлях до файлу PO у гілці trunk"
-
-
-msgid "Path to the relevant po file in trunk"
-msgstr "Шлях до актуального po-файлу у гілці trunk"
-
-
-msgid "Language ID"
-msgstr "Мова"
-
-
-msgid "ISO code, like fr_FR"
-msgstr "Код ISO, наприклад uk_UK"
-
-
-msgid "Language Name"
-msgstr "Назва мови"
-
-
-msgid "English language name/label (like \"French (Français)\")"
-msgstr "Англійська назва/позначення мови (наприклад \"Ukrainian (Українська)\")"
-
-
 msgid "PO File Path"
 msgstr "Шлях до файлу PO"
 
 
 msgid "Path to the relevant po file in branches"
 msgstr "Шлях до актуального po-файлу у гілці branches"
+
+
+msgid "Languages"
+msgstr "Мова"
+
+
+msgid "Languages to update in branches"
+msgstr "Мови для оновлення в гілці branches"
 
 
 msgid "Active Language"
@@ -59807,32 +59798,12 @@ msgid "Path to the pot template file"
 msgstr "Шлях до POT-файлу з шаблоном"
 
 
-msgid "Languages"
-msgstr "Мова"
-
-
-msgid "Languages to update in branches"
-msgstr "Мови для оновлення в гілці branches"
-
-
 msgid "Whether these settings have already been auto-set or not"
 msgstr "Чи були значення цих параметрів встановлені автоматично"
 
 
-msgid "Target of Fix - Mesh (optional, depends on type)"
-msgstr "Ціль поправки - каркас (не обов'язково, залежно від типу)"
-
-
-msgid "Fix is active"
-msgstr "Поправки увімкнені"
-
-
-msgid "Name of Mocap Fix"
-msgstr "Назва поправки захоплення руху"
-
-
-msgid "Constrained Bone"
-msgstr "Обмежена кістка"
+msgid "Distance and Floor Fixes - Desired offset"
+msgstr "Поправки відстані та підлоги - бажане зміщення"
 
 
 msgid "Out"
@@ -59843,12 +59814,32 @@ msgid "Number of frames to smooth out"
 msgstr "Кількість кадрів для згладжування"
 
 
-msgid "Distance and Floor Fixes - Desired offset"
-msgstr "Поправки відстані та підлоги - бажане зміщення"
+msgid "Bone (2)"
+msgstr "Кістка (2)"
+
+
+msgid "Other Constrained Bone (optional, depends on type)"
+msgstr "Інша обмежена кістка (не обов'язково, залежно від типу)"
+
+
+msgid "Fix is fully shown"
+msgstr "Повний показ поправок"
+
+
+msgid "Start frame of Fix"
+msgstr "Початковий кадр поправки"
+
+
+msgid "Constrained Bone"
+msgstr "Обмежена кістка"
 
 
 msgid "Type of constraint"
 msgstr "Тип обмеження"
+
+
+msgid "Target of Fix - Mesh (optional, depends on type)"
+msgstr "Ціль поправки - каркас (не обов'язково, залежно від типу)"
 
 
 msgid "E"
@@ -59859,8 +59850,20 @@ msgid "End frame of Fix"
 msgstr "Кінцевий кадр поправки"
 
 
-msgid "Fix is fully shown"
-msgstr "Повний показ поправок"
+msgid "Name of Mocap Fix"
+msgstr "Назва поправки захоплення руху"
+
+
+msgid "In"
+msgstr "В"
+
+
+msgid "Number of frames to smooth in"
+msgstr "Кількість кадрів для згладжування"
+
+
+msgid "Fix is active"
+msgstr "Поправки увімкнені"
 
 
 msgid "In which space should Point type target be evaluated"
@@ -59887,28 +59890,8 @@ msgid "Evaluate target in specified other bone space"
 msgstr "Розрахувати ціль у просторі зазначеної іншої кістки"
 
 
-msgid "Bone (2)"
-msgstr "Кістка (2)"
-
-
-msgid "Other Constrained Bone (optional, depends on type)"
-msgstr "Інша обмежена кістка (не обов'язково, залежно від типу)"
-
-
-msgid "Start frame of Fix"
-msgstr "Початковий кадр поправки"
-
-
 msgid "Target of Fix - Point"
 msgstr "Ціль поправки - точка"
-
-
-msgid "In"
-msgstr "В"
-
-
-msgid "Number of frames to smooth in"
-msgstr "Кількість кадрів для згладжування"
 
 
 msgid "Python expression to be evaluated as the initial node setting"
@@ -59955,12 +59938,12 @@ msgid "Is Stroke Start"
 msgstr "Є початком штриха"
 
 
-msgid "Export Directory"
-msgstr "Тека експорту"
+msgid "Copy Textures"
+msgstr "Скопіювати текстури"
 
 
-msgid "Path to directory where the files are created"
-msgstr "Шлях до теки, в якій створюються файли"
+msgid "Copy textures on export to the output path"
+msgstr "При експорті копіювати текстури у вивідну теку"
 
 
 msgid "Apply Scale"
@@ -59969,6 +59952,14 @@ msgstr "Застосувати масштаб"
 
 msgid "Apply scene scale setting on export"
 msgstr "При експорті застосувати параметри масштабу сцени"
+
+
+msgid "Minimum thickness"
+msgstr "Найменша товщина"
+
+
+msgid "Limit for checking distorted faces"
+msgstr "Межа для перевірки викривлення граней"
 
 
 msgid "Limit for checking zero area/length"
@@ -59983,20 +59974,12 @@ msgid "VRML2"
 msgstr "VRML2"
 
 
-msgid "Copy Textures"
-msgstr "Скопіювати текстури"
+msgid "Export Directory"
+msgstr "Тека експорту"
 
 
-msgid "Copy textures on export to the output path"
-msgstr "При експорті копіювати текстури у вивідну теку"
-
-
-msgid "Limit for checking distorted faces"
-msgstr "Межа для перевірки викривлення граней"
-
-
-msgid "Minimum thickness"
-msgstr "Найменша товщина"
+msgid "Path to directory where the files are created"
+msgstr "Шлях до теки, в якій створюються файли"
 
 
 msgid "Selected UV Element"
@@ -76113,10 +76096,6 @@ msgid "Attributes:"
 msgstr "Атрибути:"
 
 
-msgid "Velocity:"
-msgstr "Швидкість:"
-
-
 msgid "Damping:"
 msgstr "Згасання:"
 
@@ -79619,11 +79598,6 @@ msgstr "Квантувати"
 msgctxt "Operator"
 msgid "Levels"
 msgstr "Рівні"
-
-
-msgctxt "Operator"
-msgid "Blend"
-msgstr "Змішування"
 
 
 msgctxt "Operator"
