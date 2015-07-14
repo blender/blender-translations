@@ -1,9 +1,9 @@
 
 msgid ""
 msgstr ""
-"Project-Id-Version: Blender 2.75 (sub 1) (b'079b41d')\n"
+"Project-Id-Version: Blender 2.75 (sub 2) (b'9cc1953')\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-06-29 20:33:40\n"
+"POT-Creation-Date: 2015-07-14 21:46:53\n"
 "PO-Revision-Date: \n"
 "Last-Translator: blend-it\n"
 "Language-Team: \n"
@@ -1852,20 +1852,12 @@ msgid "Addon Preferences"
 msgstr "Preferenze Addon"
 
 
-msgid "Persistent Data Path"
-msgstr "Percorso Dati Persistenti"
+msgid "Warn Msgid Not Capitalized"
+msgstr "Avverti se il Msgid non è Maiuscolo"
 
 
-msgid "The name of a json file storing those settings (unfortunately, Blender's system does not work here)"
-msgstr "Nome del file json per archiviare queste impostazioni (sfortunatamente il sistema di Blender qui non funziona)"
-
-
-msgid "Source Root"
-msgstr "Root Sorgente"
-
-
-msgid "The Blender source root path"
-msgstr "Il percorso dei sorgenti di Blender"
+msgid "Warn about messages not starting by a capitalized letter (with a few allowed exceptions!)"
+msgstr "Avverte se i messaggi non iniziano con una lettera maiuscola (con poche eccezioni permesse!)"
 
 
 msgid "Fribidi Library"
@@ -1876,14 +1868,6 @@ msgid "The FriBidi C compiled library (.so under Linux, .dll under windows...), 
 msgstr "La libreria compilata C FriBidi (.so in Linux, .dll in Windows). Probabilmente devi specificarla se sei sotto Windows, x es. usando quella inclusa nel repository delle librerie di svn."
 
 
-msgid "Import Paths"
-msgstr "Percorsi di Importazione"
-
-
-msgid "Additional paths to add to sys.path (';' separated)"
-msgstr "Percorsi addizionali da aggiungere a sys.path (separati con ';')"
-
-
 msgid "Gettext 'msgfmt' executable"
 msgstr "Eseguibile 'msgfmt' di Gettext"
 
@@ -1892,20 +1876,36 @@ msgid "The gettext msgfmt 'compiler'. You’ll likely have to edit it if you’r
 msgstr "Il 'compilatore' msgfmt di gettext. Probabilmente devi indicare il percorso se sei sotto Windows"
 
 
-msgid "Warn Msgid Not Capitalized"
-msgstr "Avverti se il Msgid non è Maiuscolo"
-
-
-msgid "Warn about messages not starting by a capitalized letter (with a few allowed exceptions!)"
-msgstr "Avverte se i messaggi non iniziano con una lettera maiuscola (con poche eccezioni permesse!)"
-
-
 msgid "Translation Root"
 msgstr "Root Traduzione"
 
 
 msgid "The bf-translation repository"
 msgstr "Il repository bf-translation"
+
+
+msgid "Source Root"
+msgstr "Root Sorgente"
+
+
+msgid "The Blender source root path"
+msgstr "Il percorso dei sorgenti di Blender"
+
+
+msgid "Persistent Data Path"
+msgstr "Percorso Dati Persistenti"
+
+
+msgid "The name of a json file storing those settings (unfortunately, Blender's system does not work here)"
+msgstr "Nome del file json per archiviare queste impostazioni (sfortunatamente il sistema di Blender qui non funziona)"
+
+
+msgid "Import Paths"
+msgstr "Percorsi di Importazione"
+
+
+msgid "Additional paths to add to sys.path (';' separated)"
+msgstr "Percorsi addizionali da aggiungere a sys.path (separati con ';')"
 
 
 msgid "Animation Data"
@@ -10317,16 +10317,8 @@ msgid "Velocity Min"
 msgstr "Velocità Minima"
 
 
-msgid "Clamp velocity to this minimum speed (except when totally still)"
-msgstr "Fissa velocità a questa velocità minima (tranne quando tutto è ancora fermo)"
-
-
 msgid "Velocity Max"
 msgstr "Velocità Massima"
-
-
-msgid "Clamp velocity to this maximum speed"
-msgstr "Fissa velocità a questa massima velocità"
 
 
 msgid "Step Height"
@@ -11677,16 +11669,8 @@ msgid "Shift X"
 msgstr "Scostamento X"
 
 
-msgid "Perspective Camera horizontal shift"
-msgstr "Spostamento orizzontale della Camera Prospettica"
-
-
 msgid "Shift Y"
 msgstr "Scostamento Y"
-
-
-msgid "Perspective Camera vertical shift"
-msgstr "Spostamento verticale della Camera Prospettica"
 
 
 msgid "DOF Distance"
@@ -19476,6 +19460,10 @@ msgid "Polygonalization"
 msgstr "Poligonalizzazione"
 
 
+msgid "Tolerance"
+msgstr "Tolleranza"
+
+
 msgid "Wavelength"
 msgstr "Lunghezza d'onda"
 
@@ -19506,6 +19494,10 @@ msgstr "Spessore Min"
 
 msgid "Max Thickness"
 msgstr "Spessore Max"
+
+
+msgid "Minimum thickness"
+msgstr "Spessore minimo"
 
 
 msgid "Hysteresis %"
@@ -24999,10 +24991,6 @@ msgid "Difference Key"
 msgstr "Chiave Differenza"
 
 
-msgid "Tolerance"
-msgstr "Tolleranza"
-
-
 msgid "Dilate/Erode"
 msgstr "Dilata/Erodi"
 
@@ -29450,6 +29438,22 @@ msgid "Select Control Point Row"
 msgstr "Seleziona Riga Punto di Controllo"
 
 
+msgid "Compare"
+msgstr "Compara"
+
+
+msgid "Equal"
+msgstr "Uguale"
+
+
+msgid "Greater"
+msgstr "Maggiore"
+
+
+msgid "Less"
+msgstr "Minore"
+
+
 msgctxt "Operator"
 msgid "Separate"
 msgstr "Separa"
@@ -29471,6 +29475,10 @@ msgstr "Ombreggiatura Levigata"
 
 msgid "Set shading to smooth"
 msgstr "Imposta l'ombreggiatura levigata (sfumata uniformemente)"
+
+
+msgid "Select shortest path between two selections"
+msgstr "Seleziona il percorso più breve tra due selezioni"
 
 
 msgctxt "Operator"
@@ -30964,8 +30972,9 @@ msgid "Delete active frame"
 msgstr "Cancella Fotogramma Attivo"
 
 
-msgid "Dissolve Points"
-msgstr "Dissolvi Punti"
+msgctxt "Operator"
+msgid "Dissolve"
+msgstr "Dissolvi"
 
 
 msgctxt "Operator"
@@ -34219,22 +34228,6 @@ msgid "Co-planar"
 msgstr "Complanare"
 
 
-msgid "Compare"
-msgstr "Compara"
-
-
-msgid "Equal"
-msgstr "Uguale"
-
-
-msgid "Greater"
-msgstr "Maggiore"
-
-
-msgid "Less"
-msgstr "Minore"
-
-
 msgctxt "Operator"
 msgid "Select Similar Regions"
 msgstr "Seleziona Regioni Simili"
@@ -34259,10 +34252,6 @@ msgstr "Propaga Forma"
 
 msgid "Apply selected vertex locations to all other shape keys"
 msgstr "Applica la posizione dei vertici selezionati a tutte le altre chiavi forma"
-
-
-msgid "Select shortest path between two selections"
-msgstr "Seleziona il percorso più breve tra due selezioni"
 
 
 msgctxt "Operator"
@@ -46299,12 +46288,12 @@ msgid "Group of ID properties"
 msgstr "Gruppo di proprietà ID"
 
 
-msgid "Action 2"
-msgstr "Azione 2"
-
-
 msgid "Action 1"
 msgstr "Azione 1"
+
+
+msgid "Action 2"
+msgstr "Azione 2"
 
 
 msgid "Aperture Type"
@@ -46863,6 +46852,10 @@ msgid "Map Resolution"
 msgstr "Risoluzione Mappa"
 
 
+msgid "PO File Path"
+msgstr "Percorso File PO"
+
+
 msgid "Language Name"
 msgstr "Nome Lingua"
 
@@ -46879,44 +46872,32 @@ msgid "MO File Path"
 msgstr "Percorso File MO"
 
 
-msgid "PO File Path"
-msgstr "Percorso File PO"
-
-
 msgid "Languages"
 msgstr "Lingue"
-
-
-msgid "Active Language"
-msgstr "Lingua Attiva"
 
 
 msgid "POT File Path"
 msgstr "Percorso File POT"
 
 
-msgid "Out"
-msgstr "Uscita"
-
-
-msgid "Bone (2)"
-msgstr "Osso (2)"
+msgid "Active Language"
+msgstr "Lingua Attiva"
 
 
 msgid "Constrained Bone"
 msgstr "Osso Vincolato"
 
 
+msgid "Bone (2)"
+msgstr "Osso (2)"
+
+
 msgid "Type of constraint"
 msgstr "Tipo di vincolo"
 
 
-msgid "E"
-msgstr "E"
-
-
-msgid "In"
-msgstr "Ingresso"
+msgid "Out"
+msgstr "Uscita"
 
 
 msgid "Evaluate target in global space"
@@ -46933,6 +46914,14 @@ msgstr "Valuta l'obiettivo nello spazio dell'oggetto"
 
 msgid "Other Bone Space"
 msgstr "Altro Spazio Osso"
+
+
+msgid "E"
+msgstr "E"
+
+
+msgid "In"
+msgstr "Ingresso"
 
 
 msgid "Operator File List Element"
@@ -46963,12 +46952,8 @@ msgid "Brush Size"
 msgstr "Dimensione Pennello"
 
 
-msgid "Copy Textures"
-msgstr "Copia Texture"
-
-
-msgid "Copy textures on export to the output path"
-msgstr "Esportando, copia nel percorso di salvataggio le texture"
+msgid "Limit for checking zero area/length"
+msgstr "Limite di controllo di aree/lunghezze nulle"
 
 
 msgid "Apply Scale"
@@ -46979,20 +46964,16 @@ msgid "Apply scene scale setting on export"
 msgstr "Applica le impostazioni scala di scena esportando"
 
 
-msgid "Minimum thickness"
-msgstr "Spessore minimo"
-
-
-msgid "Limit for checking distorted faces"
-msgstr "Limite di controllo facce distorte"
-
-
-msgid "Limit for checking zero area/length"
-msgstr "Limite di controllo di aree/lunghezze nulle"
-
-
 msgid "Format type to export to"
 msgstr "Tipo formato in cui esportare"
+
+
+msgid "Copy Textures"
+msgstr "Copia Texture"
+
+
+msgid "Copy textures on export to the output path"
+msgstr "Esportando, copia nel percorso di salvataggio le texture"
 
 
 msgid "Export Directory"
@@ -47001,6 +46982,10 @@ msgstr "Cartella Esportazione"
 
 msgid "Path to directory where the files are created"
 msgstr "Cartella in cui i files vengono creati"
+
+
+msgid "Limit for checking distorted faces"
+msgstr "Limite di controllo facce distorte"
 
 
 msgid "Selected UV Element"
@@ -48167,8 +48152,8 @@ msgid "Custom text to appear in the stamp note"
 msgstr "Testo personalizzato da mostrare nelle note sovraimpresse"
 
 
-msgid "Render Stamp"
-msgstr "Renderizza Sovraimpressione"
+msgid "Stamp Output"
+msgstr "Sovaraimprimi Uscita"
 
 
 msgid "Render the stamp info text in the rendered image"
@@ -60423,10 +60408,6 @@ msgid "Still"
 msgstr "Fermo"
 
 
-msgid "Stamp Output"
-msgstr "Sovaraimprimi Uscita"
-
-
 msgid "Enabled Metadata"
 msgstr "Metadati Abilitati"
 
@@ -61600,6 +61581,11 @@ msgstr "Incandescenza"
 
 
 msgctxt "Operator"
+msgid "Text"
+msgstr "Testo"
+
+
+msgctxt "Operator"
 msgid "Color"
 msgstr "Colore"
 
@@ -62538,11 +62524,6 @@ msgstr "Osso Singolo"
 
 
 msgctxt "Operator"
-msgid "Text"
-msgstr "Testo"
-
-
-msgctxt "Operator"
 msgid "Empty"
 msgstr "Vuoto"
 
@@ -62844,11 +62825,6 @@ msgstr "Imposta"
 msgctxt "Operator"
 msgid "Delete Bones"
 msgstr "Cancella Ossa"
-
-
-msgctxt "Operator"
-msgid "Dissolve"
-msgstr "Dissolvi"
 
 
 msgid "Lock to Object:"
@@ -65010,10 +64986,6 @@ msgid "Icosphere"
 msgstr "Icosfera"
 
 
-msgid "Confirm: (Enter/LMB), Cancel: (Esc/RMB), Mode: %s (M), Clamp Overlap: %s (C), Offset: %s, Segments: %d"
-msgstr "Conferma: (Invio/LMB), Annulla: (Esc/RMB), Modo: %s (M), Fissa Sovrapposizione: %s (C), Offset: %s, Segmenti: %d"
-
-
 msgid "LMB: Click and drag to draw cut line"
 msgstr "LMB: click e trascina per disegnare la linea di taglio"
 
@@ -65036,10 +65008,6 @@ msgstr "Conferma: Invio/LMB, Annulla: (Esc/RMB), Spessore: %s, Profondità (Ctrl
 
 msgid "No intersections found"
 msgstr "Nessuna intersezione trovata"
-
-
-msgid "LMB: define cut lines, Return/Spacebar: confirm, Esc or RMB: cancel, E: new cut, Ctrl: midpoint snap (%s), Shift: ignore snap (%s), C: angle constrain (%s), Z: cut through (%s)"
-msgstr "LMB: definisce le linee di taglio; Invio/Spazio: conferma; Esc o RMB: annulla; E: nuovo taglio; Ctrl: snap mezzeria (%s); Shift: ignora snap (%s); C: vincolo angolo (%s); Z: taglia attraverso (%s)"
 
 
 msgid "Number of Cuts: %s, Smooth: %s (Alt)"
@@ -65371,10 +65339,6 @@ msgstr "Il gruppo vertici è bloccato"
 
 msgid "Baking canceled!"
 msgstr "Precalcolo annullato!"
-
-
-msgid "Bake complete! (%s)"
-msgstr "Precalcolo completo! (%s)"
 
 
 msgid "Bake failed: %s"
@@ -66544,20 +66508,12 @@ msgid "Depth too large"
 msgstr "Profondità troppo ampia"
 
 
-msgid "LMB/Return: confirm, RMB/Esc: cancel, MMB: pan, WASDQE: direction, Alt: slow, Ctrl: free look, X: Upright x axis (%s), Z: Upright z axis (%s), (+/- | Wheel): speed"
-msgstr "LMB/Invio: conferma, RMB/Esc: annulla, MMB: pan, WASDQE: direzione, Alt: lento, Ctrl: vista libera, X: Upright x axis (%s), Z: Upright z axis (%s), (+/- | Rotellina): velocità"
-
-
 msgid "Tool Shelf"
 msgstr "Scaffale Attrezzi"
 
 
 msgid "No active camera"
 msgstr "Nessuna camera attiva"
-
-
-msgid "LMB/Return: confirm, Esc/RMB: cancel, Tab: gravity (%s), WASD: move around, Shift: fast, Alt: slow, QE: up and down, MMB/Space: teleport, V: jump, Pad +/Wheel Up: increase speed, Pad -/Wheel Down: decrease speed"
-msgstr "LMB/Invio: conferma, Esc/RMB: annulla, Tab: gravità (%s), WASD: muovi attorno, Shift: veloce, Alt: lento, QE: su e giù, MMB/Spazio: teleport, V: salto, Pad +/Rotella Su: aumenta velocità, Pad -/RotellaGiù: diminuisci velocità"
 
 
 msgid "along X"
@@ -67710,10 +67666,6 @@ msgstr "La proprietà dal percorso '%s' non è in virgola mobile (float)"
 
 msgid "Property from path '%s' has length %d instead of %d"
 msgstr "La proprietà dal percorso '%s' ha lunghezza %d invece di %d"
-
-
-msgid "%d x %s: %.2f ms,  average: %.4f"
-msgstr "%d x %s: %.2f ms,  media: %.4f"
 
 
 msgid "Blender User Preferences"

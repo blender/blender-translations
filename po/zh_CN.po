@@ -1,9 +1,9 @@
 
 msgid ""
 msgstr ""
-"Project-Id-Version: Blender 2.75 (sub 1) (b'079b41d')\n"
+"Project-Id-Version: Blender 2.75 (sub 2) (b'9cc1953')\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-06-29 20:33:40\n"
+"POT-Creation-Date: 2015-07-14 21:46:53\n"
 "PO-Revision-Date: \n"
 "Last-Translator: congcong009 <congcong009@gmail.com>\n"
 "Language-Team: \n"
@@ -14,7 +14,7 @@ msgstr ""
 "Language: zh_CN\n"
 "=====X-Generator: Poedit 1.6.9\n"
 "Language: zh_CN>>>>>> .r306\n"
-"X-Generator: Poedit 1.8beta1"
+"X-Generator: Poedit 1.8.2"
 
 
 msgid "Action Group"
@@ -155,6 +155,10 @@ msgstr "20 - 主题配色集"
 
 msgid "Custom Color Set"
 msgstr "自定义配色集"
+
+
+msgid "Color set is user-defined instead of a fixed theme color set"
+msgstr "自定义色彩用于修改界面的主题颜色"
 
 
 msgid "Colors"
@@ -1109,8 +1113,16 @@ msgid "Use X Axis"
 msgstr "使用 X 轴"
 
 
+msgid "Calculate mouse movement on the X axis"
+msgstr "计算X轴上的鼠标运动"
+
+
 msgid "Use Y Axis"
 msgstr "使用 Y 轴"
+
+
+msgid "Calculate mouse movement on the Y axis"
+msgstr "计算Y轴上的鼠标运动"
 
 
 msgid "Reset"
@@ -1147,6 +1159,14 @@ msgstr "Z 轴"
 
 msgid "Sensitivity"
 msgstr "敏感度"
+
+
+msgid "Sensitivity of the X axis"
+msgstr "X轴敏感度"
+
+
+msgid "Sensitivity of the Y axis"
+msgstr "Y轴敏感度"
 
 
 msgid "Motion Actuator"
@@ -1831,6 +1851,10 @@ msgid "Use normal of the navmesh to set \"UP\" vector"
 msgstr "使用网格的法线来设置顶部矢量"
 
 
+msgid "Lock Z velocity"
+msgstr "锁定Z向速度"
+
+
 msgid "Visibility Actuator"
 msgstr "可见促动器"
 
@@ -1871,52 +1895,12 @@ msgid "Addon Preferences"
 msgstr "插件首选项"
 
 
-msgid "Persistent Data Path"
-msgstr "持久数据"
-
-
-msgid "The name of a json file storing those settings (unfortunately, Blender's system does not work here)"
-msgstr "存储这些设置的 JSon 文件的名称 (但 Blender 的系统对此不支持)"
-
-
-msgid "Source Root"
-msgstr "平方根"
-
-
-msgid "The Blender source root path"
-msgstr "Blender 源文件的根路径"
-
-
-msgid "Fribidi Library"
-msgstr "Fribidi 库文件"
-
-
-msgid "The FriBidi C compiled library (.so under Linux, .dll under windows...), you’ll likely have to edit it if you’re under Windows, e.g. using the one included in svn's libraries repository"
-msgstr "FriBidi C 语言编译库的文件 (Linux 系统下为 .so, Windows 系统下为 .dll), 若在 Windows 系统下则可能进行编辑. 例如, 在使用包含在 svn 的存储库中的库文件时"
-
-
 msgid "Spell Cache"
 msgstr "拼写缓存"
 
 
 msgid "A cache storing validated msgids, to avoid re-spellchecking them"
 msgstr "存储经确认的 msgid 的缓存, 以避免再次拼写检查"
-
-
-msgid "Import Paths"
-msgstr "导入单位"
-
-
-msgid "Additional paths to add to sys.path (';' separated)"
-msgstr "添加 sys.path 的附加路径 (用 ';' 隔开)"
-
-
-msgid "Gettext 'msgfmt' executable"
-msgstr "可执行 Gettext 'msgfmt'"
-
-
-msgid "The gettext msgfmt 'compiler'. You’ll likely have to edit it if you’re under Windows"
-msgstr "gettext msgfmt 的 '编译器', 如果是在 WIndows 系统下, 可能会编辑此项"
 
 
 msgid "Warn Msgid Not Capitalized"
@@ -1927,12 +1911,52 @@ msgid "Warn about messages not starting by a capitalized letter (with a few allo
 msgstr "对未以大写字母开头的信息发出提醒 (容许个别例外!)"
 
 
+msgid "Fribidi Library"
+msgstr "Fribidi 库文件"
+
+
+msgid "The FriBidi C compiled library (.so under Linux, .dll under windows...), you’ll likely have to edit it if you’re under Windows, e.g. using the one included in svn's libraries repository"
+msgstr "FriBidi C 语言编译库的文件 (Linux 系统下为 .so, Windows 系统下为 .dll), 若在 Windows 系统下则可能进行编辑. 例如, 在使用包含在 svn 的存储库中的库文件时"
+
+
+msgid "Gettext 'msgfmt' executable"
+msgstr "可执行 Gettext 'msgfmt'"
+
+
+msgid "The gettext msgfmt 'compiler'. You’ll likely have to edit it if you’re under Windows"
+msgstr "gettext msgfmt 的 '编译器', 如果是在 WIndows 系统下, 可能会编辑此项"
+
+
 msgid "Translation Root"
 msgstr "移动"
 
 
 msgid "The bf-translation repository"
 msgstr "bf-translation 存储库"
+
+
+msgid "Source Root"
+msgstr "平方根"
+
+
+msgid "The Blender source root path"
+msgstr "Blender 源文件的根路径"
+
+
+msgid "Persistent Data Path"
+msgstr "持久数据"
+
+
+msgid "The name of a json file storing those settings (unfortunately, Blender's system does not work here)"
+msgstr "存储这些设置的 JSon 文件的名称 (但 Blender 的系统对此不支持)"
+
+
+msgid "Import Paths"
+msgstr "导入单位"
+
+
+msgid "Additional paths to add to sys.path (';' separated)"
+msgstr "添加 sys.path 的附加路径 (用 ';' 隔开)"
 
 
 msgid "Animation Data"
@@ -2535,6 +2559,22 @@ msgid "Size"
 msgstr "尺寸"
 
 
+msgid "Flip Horizontally"
+msgstr "水平翻转"
+
+
+msgid "Flip the background image horizontally"
+msgstr "水平翻转背景图片"
+
+
+msgid "Flip Vertically"
+msgstr "垂直翻转"
+
+
+msgid "Flip the background image vertically"
+msgstr "垂直翻转背景图片"
+
+
 msgid "Opacity"
 msgstr "不透明度"
 
@@ -2685,6 +2725,10 @@ msgstr "场景数据块的烘焙数据"
 
 msgid "Cage Object"
 msgstr "闭合物体"
+
+
+msgid "Object to use as cage instead of calculating the cage from the active object with cage extrusion"
+msgstr "使用物体来做为封口，而不是使用激活物体的延长部分"
 
 
 msgid "File Path"
@@ -2979,6 +3023,10 @@ msgid "Version"
 msgstr "版本"
 
 
+msgid "Version of the blender the .blend was saved with"
+msgstr "该.blend文件保存于对应版本的Blender"
+
+
 msgid "Cameras"
 msgstr "摄像机"
 
@@ -3193,6 +3241,14 @@ msgstr "粒子系统"
 
 msgid "Particle datablocks"
 msgstr "粒子数据块"
+
+
+msgid "Palettes"
+msgstr "图案"
+
+
+msgid "Palette datablocks"
+msgstr "图案数据块"
 
 
 msgid "Grease Pencil"
@@ -4339,12 +4395,20 @@ msgid "Status"
 msgstr "状态"
 
 
+msgid "Success"
+msgstr "成功"
+
+
 msgid "Invalid Input"
 msgstr "非法输入"
 
 
 msgid "Average Error"
 msgstr "平均误差"
+
+
+msgid "Average Iterations"
+msgstr "平均迭代"
 
 
 msgid "Collision Settings"
@@ -9968,8 +10032,20 @@ msgid "Extension Filter"
 msgstr "扩展名过滤"
 
 
+msgid "Tiny"
+msgstr "细"
+
+
+msgid "Small"
+msgstr "小"
+
+
 msgid "Normal"
 msgstr "法线"
+
+
+msgid "Large"
+msgstr "大"
 
 
 msgid "Fluid Mesh Vertex"
@@ -10872,6 +10948,14 @@ msgid "Line Sets"
 msgstr "线条集"
 
 
+msgid "GPU DOF"
+msgstr "GPU景深"
+
+
+msgid "Focus distance"
+msgstr "焦点距离"
+
+
 msgid "Focal Length"
 msgstr "焦距"
 
@@ -10892,8 +10976,16 @@ msgid "High Quality"
 msgstr "高质量"
 
 
+msgid "GPU FX Settings"
+msgstr "GPU的特效设置"
+
+
 msgid "Depth Of Field"
 msgstr "景深"
+
+
+msgid "SSAO"
+msgstr "SSAO"
 
 
 msgid "Strength of the SSAO effect"
@@ -11288,16 +11380,8 @@ msgid "Velocity Min"
 msgstr "最小速度"
 
 
-msgid "Clamp velocity to this minimum speed (except when totally still)"
-msgstr "将速度限定在最小速率之上 (完全静止除外)"
-
-
 msgid "Velocity Max"
 msgstr "最大速度"
-
-
-msgid "Clamp velocity to this maximum speed"
-msgstr "将速率限制在最大速率之下"
 
 
 msgid "Step Height"
@@ -12152,24 +12236,84 @@ msgid "Hard light"
 msgstr "强光"
 
 
+msgid "Use hard light blending mode while painting"
+msgstr "在绘图时使用强光混合模式"
+
+
+msgid "Use color burn blending mode while painting"
+msgstr "在绘图时使用变暗混合模式"
+
+
+msgid "Use linear burn blending mode while painting"
+msgstr "在绘图时使用线性加深混合模式"
+
+
 msgid "Color dodge"
 msgstr "颜色减淡"
+
+
+msgid "Use color dodge blending mode while painting"
+msgstr "在绘图时使用颜色减淡混合模式"
+
+
+msgid "Use screen blending mode while painting"
+msgstr "在绘图时使用叠加混合模式"
 
 
 msgid "Soft light"
 msgstr "柔光"
 
 
+msgid "Use softlight blending mode while painting"
+msgstr "在绘图时使用柔光混合模式"
+
+
 msgid "Pin light"
 msgstr "点光"
+
+
+msgid "Use pinlight blending mode while painting"
+msgstr "在绘图时使用点光混合模式"
+
+
+msgid "Use vividlight blending mode while painting"
+msgstr "在绘图时使用动态光混合模式"
 
 
 msgid "Linear light"
 msgstr "线性光"
 
 
+msgid "Use linearlight blending mode while painting"
+msgstr "在绘图时使用线性光混合模式"
+
+
+msgid "Use difference blending mode while painting"
+msgstr "在绘图时使用差值混合混合模式"
+
+
 msgid "Exclusion"
 msgstr "排除"
+
+
+msgid "Use exclusion blending mode while painting"
+msgstr "在绘图时使用排斥混合模式"
+
+
+msgid "Use hue blending mode while painting"
+msgstr "在绘图时使用色调混合模式"
+
+
+msgid "Use saturation blending mode while painting"
+msgstr "在绘图时使用饱和度混合模式"
+
+
+msgid "Use luminosity blending mode while painting"
+msgstr "在绘图时使用亮度混合模式"
+
+
+msgid "Use color blending mode while painting"
+msgstr "在绘图时使用色彩混合模式"
 
 
 msgid "Sculpt Tool"
@@ -12502,6 +12646,10 @@ msgstr "填充阈值"
 
 msgid "Kernel Radius"
 msgstr "核心范围"
+
+
+msgid "Blur Mode"
+msgstr "模糊模式"
 
 
 msgid "Gaussian"
@@ -13000,16 +13148,8 @@ msgid "Shift X"
 msgstr "X 移动"
 
 
-msgid "Perspective Camera horizontal shift"
-msgstr "摄像机透视镜头的水平移轴"
-
-
 msgid "Shift Y"
 msgstr "Y 移动"
-
-
-msgid "Perspective Camera vertical shift"
-msgstr "摄像机透视镜头的垂直移轴"
 
 
 msgid "DOF Distance"
@@ -13090,6 +13230,10 @@ msgstr "景深物体"
 
 msgid "Use this object to define the depth of field focal point"
 msgstr "使用此物体指定焦点景深"
+
+
+msgid "GPU Depth Of Field"
+msgstr "GPU景深"
 
 
 msgid "Cycles Camera Settings"
@@ -14376,6 +14520,10 @@ msgid "Use the alpha channel information from the image or make image fully opaq
 msgstr "使用图像中的 Alpha 通道信息或使图像完全不透明"
 
 
+msgid "Stereo 3D"
+msgstr "立体3D"
+
+
 msgid "Multiple Views"
 msgstr "多视角"
 
@@ -14630,6 +14778,10 @@ msgstr "视图格式"
 
 msgid "Individual"
 msgstr "各面"
+
+
+msgid "Settings for stereo 3d"
+msgstr "立体3D的设置"
 
 
 msgid "Shape keys datablock containing different shapes of geometric datablocks"
@@ -16328,6 +16480,14 @@ msgstr "皮肤顶点"
 
 msgid "All skin vertices"
 msgstr "全部表皮的顶点"
+
+
+msgid "Vertex Paint Mask"
+msgstr "顶点绘制遮罩"
+
+
+msgid "Vertex paint mask"
+msgstr "顶点绘制遮罩"
 
 
 msgid "Auto Smooth"
@@ -20983,6 +21143,14 @@ msgid "Image Size"
 msgstr "图像尺寸"
 
 
+msgid "Icon Size"
+msgstr "图标尺寸"
+
+
+msgid "Icon Pixels"
+msgstr "图标像素"
+
+
 msgid "Parameters defining how an Image datablock is used by another datablock"
 msgstr "定义一个图像数据块被另一数据块所调用的方式的参数"
 
@@ -22707,6 +22875,10 @@ msgid "New sampling value to be used for subsequent modifiers"
 msgstr "用于后续修改器的新采样值"
 
 
+msgid "Tolerance"
+msgstr "容差"
+
+
 msgid "Add sinus displacement to stroke backbone geometry"
 msgstr "为笔触主干构型添加凹陷位移"
 
@@ -22805,6 +22977,10 @@ msgstr "最小厚度"
 
 msgid "Max Thickness"
 msgstr "最大厚度"
+
+
+msgid "Minimum thickness"
+msgstr "最小厚度"
 
 
 msgid "Use Mesh"
@@ -29662,10 +29838,6 @@ msgid "Difference Key"
 msgstr "色差抠像"
 
 
-msgid "Tolerance"
-msgstr "容差"
-
-
 msgid "Color distances below this threshold are keyed"
 msgstr "对低于此阈值的色距执行抠像"
 
@@ -31837,6 +32009,10 @@ msgstr "重写全部范围"
 
 msgid "Overwrite keys in pasted range, using the range of all copied keys"
 msgstr "覆盖已粘贴区间的关键帧, 使用所有已复制关键帧的区间"
+
+
+msgid "Flipped"
+msgstr "翻转"
 
 
 msgctxt "Operator"
@@ -35072,6 +35248,22 @@ msgid "Select a row of control points including active one"
 msgstr "选择一排控制点, 包括活动的"
 
 
+msgid "Compare"
+msgstr "比较"
+
+
+msgid "Equal"
+msgstr "相等"
+
+
+msgid "Greater"
+msgstr "大于"
+
+
+msgid "Less"
+msgstr "缩减选区"
+
+
 msgctxt "Operator"
 msgid "Separate"
 msgstr "分离"
@@ -35093,6 +35285,10 @@ msgstr "光滑着色"
 
 msgid "Set shading to smooth"
 msgstr "将着色方式设为光滑"
+
+
+msgid "Select shortest path between two selections"
+msgstr "选择两选中对象间的最短路径"
 
 
 msgctxt "Operator"
@@ -35571,6 +35767,10 @@ msgstr "将所选物体导出至可见图层"
 
 msgid "Scale all data (Some importers do not support scaled armatures!)"
 msgstr "缩放所有数据 (某些导入器不支持经缩放的骨架!)"
+
+
+msgid "Apply Unit"
+msgstr "应用单位"
 
 
 msgid "Object Types"
@@ -40274,22 +40474,6 @@ msgid "Freestyle Face Marks"
 msgstr "Freestyle 面标记"
 
 
-msgid "Compare"
-msgstr "比较"
-
-
-msgid "Equal"
-msgstr "相等"
-
-
-msgid "Greater"
-msgstr "大于"
-
-
-msgid "Less"
-msgstr "缩减选区"
-
-
 msgid "Separate selected geometry into a new mesh"
 msgstr "将选中的几何部分分离为新的网格"
 
@@ -40309,10 +40493,6 @@ msgstr "形变传导"
 
 msgid "Apply selected vertex locations to all other shape keys"
 msgstr "将所选点的坐标应用到其他所有形变键"
-
-
-msgid "Select shortest path between two selections"
-msgstr "选择两选中对象间的最短路径"
 
 
 msgctxt "Operator"
@@ -53578,20 +53758,20 @@ msgid "Group of ID properties"
 msgstr "ID 组的属性"
 
 
-msgid "Action 2"
-msgstr "动作2"
-
-
-msgid "Second action in stitch"
-msgstr "缝合中的附加动作"
-
-
 msgid "Action 1"
 msgstr "动作1"
 
 
 msgid "First action in stitch"
 msgstr "首个缝合动作"
+
+
+msgid "Action 2"
+msgstr "动作2"
+
+
+msgid "Second action in stitch"
+msgstr "缝合中的附加动作"
 
 
 msgid "Blend amount"
@@ -54398,12 +54578,20 @@ msgid "Settings/info about a language"
 msgstr "针对某种语言的设定 / 信息"
 
 
-msgid "PO Trunk File Path"
-msgstr "PO 主干文件路径"
+msgid "PO File Path"
+msgstr "文件路径"
 
 
-msgid "Path to the relevant po file in trunk"
-msgstr "主干中相关 po 文件的路径"
+msgid "Path to the relevant po file in branches"
+msgstr "分支中相关 po 文件的路径"
+
+
+msgid "Numeric ID"
+msgstr "数值型 ID"
+
+
+msgid "Numeric ID (readonly!)"
+msgstr "数值型 ID (只读!)"
 
 
 msgid "Language Name"
@@ -54430,24 +54618,16 @@ msgid "Path to the relevant mo file"
 msgstr "相关 mo 文件的路径"
 
 
-msgid "Numeric ID"
-msgstr "数值型 ID"
+msgid "PO Trunk File Path"
+msgstr "PO 主干文件路径"
 
 
-msgid "Numeric ID (readonly!)"
-msgstr "数值型 ID (只读!)"
+msgid "Path to the relevant po file in trunk"
+msgstr "主干中相关 po 文件的路径"
 
 
 msgid "Use this language in current operator"
 msgstr "在当前操作项中使用此语言"
-
-
-msgid "PO File Path"
-msgstr "文件路径"
-
-
-msgid "Path to the relevant po file in branches"
-msgstr "分支中相关 po 文件的路径"
 
 
 msgid "Languages"
@@ -54458,14 +54638,6 @@ msgid "Languages to update in branches"
 msgstr "更新到分支目录中的语言"
 
 
-msgid "Active Language"
-msgstr "活动语言"
-
-
-msgid "Index of active language in langs collection"
-msgstr "语言集合中的活动语言的索引"
-
-
 msgid "POT File Path"
 msgstr "文件路径"
 
@@ -54474,20 +54646,20 @@ msgid "Path to the pot template file"
 msgstr "pot 模板文件的路径"
 
 
+msgid "Active Language"
+msgstr "活动语言"
+
+
+msgid "Index of active language in langs collection"
+msgstr "语言集合中的活动语言的索引"
+
+
 msgid "Whether these settings have already been auto-set or not"
 msgstr "这些设置是否已经进行了自动设置"
 
 
-msgid "Distance and Floor Fixes - Desired offset"
-msgstr "锯床及基面的修正 - 预期偏移"
-
-
-msgid "Out"
-msgstr "输出"
-
-
-msgid "Number of frames to smooth out"
-msgstr "平滑淡出所需的帧数"
+msgid "Constrained Bone"
+msgstr "被约束骨骼"
 
 
 msgid "Bone (2)"
@@ -54498,44 +54670,16 @@ msgid "Other Constrained Bone (optional, depends on type)"
 msgstr "其他被约束的骨骼 (可选, 视类型而定)"
 
 
-msgid "Fix is fully shown"
-msgstr "修正项已完全显示"
-
-
-msgid "Start frame of Fix"
-msgstr "修正项起始帧"
-
-
-msgid "Constrained Bone"
-msgstr "被约束骨骼"
-
-
 msgid "Type of constraint"
 msgstr "约束类型"
 
 
-msgid "Target of Fix - Mesh (optional, depends on type)"
-msgstr "修正目标 - 网格(可选, 视类型而定)"
+msgid "Out"
+msgstr "输出"
 
 
-msgid "E"
-msgstr "E"
-
-
-msgid "End frame of Fix"
-msgstr "修正项结束帧"
-
-
-msgid "Name of Mocap Fix"
-msgstr "动作捕捉修正项名称"
-
-
-msgid "In"
-msgstr "输入"
-
-
-msgid "Number of frames to smooth in"
-msgstr "平滑起始帧数量"
+msgid "Number of frames to smooth out"
+msgstr "平滑淡出所需的帧数"
 
 
 msgid "Fix is active"
@@ -54564,6 +54708,42 @@ msgstr "其他骨骼空间"
 
 msgid "Evaluate target in specified other bone space"
 msgstr "在其他指定的骨骼空间中解算靶点位置"
+
+
+msgid "Fix is fully shown"
+msgstr "修正项已完全显示"
+
+
+msgid "E"
+msgstr "E"
+
+
+msgid "End frame of Fix"
+msgstr "修正项结束帧"
+
+
+msgid "Name of Mocap Fix"
+msgstr "动作捕捉修正项名称"
+
+
+msgid "In"
+msgstr "输入"
+
+
+msgid "Number of frames to smooth in"
+msgstr "平滑起始帧数量"
+
+
+msgid "Target of Fix - Mesh (optional, depends on type)"
+msgstr "修正目标 - 网格(可选, 视类型而定)"
+
+
+msgid "Start frame of Fix"
+msgstr "修正项起始帧"
+
+
+msgid "Distance and Floor Fixes - Desired offset"
+msgstr "锯床及基面的修正 - 预期偏移"
 
 
 msgid "Target of Fix - Point"
@@ -54606,12 +54786,8 @@ msgid "Is Stroke Start"
 msgstr "笔触起始"
 
 
-msgid "Copy Textures"
-msgstr "复制纹理"
-
-
-msgid "Copy textures on export to the output path"
-msgstr "导出到输出路径时复制纹理"
+msgid "Limit for checking zero area/length"
+msgstr "用于检查零面积或零长度的限值"
 
 
 msgid "Apply Scale"
@@ -54622,18 +54798,6 @@ msgid "Apply scene scale setting on export"
 msgstr "导出时应用场景缩放设置"
 
 
-msgid "Minimum thickness"
-msgstr "最小厚度"
-
-
-msgid "Limit for checking distorted faces"
-msgstr "用于检查畸形面的限值"
-
-
-msgid "Limit for checking zero area/length"
-msgstr "用于检查零面积或零长度的限值"
-
-
 msgid "Format type to export to"
 msgstr "要导出的目标格式"
 
@@ -54642,12 +54806,24 @@ msgid "VRML2"
 msgstr "VRML2"
 
 
+msgid "Copy Textures"
+msgstr "复制纹理"
+
+
+msgid "Copy textures on export to the output path"
+msgstr "导出到输出路径时复制纹理"
+
+
 msgid "Export Directory"
 msgstr "导出目录"
 
 
 msgid "Path to directory where the files are created"
 msgstr "文件的创建目录所在的路径"
+
+
+msgid "Limit for checking distorted faces"
+msgstr "用于检查畸形面的限值"
 
 
 msgid "Selected UV Element"
@@ -55836,10 +56012,6 @@ msgstr "戳记注释"
 
 msgid "Custom text to appear in the stamp note"
 msgstr "自定义标记的文字"
-
-
-msgid "Render Stamp"
-msgstr "渲染标记"
 
 
 msgid "Render the stamp info text in the rendered image"
@@ -71885,6 +72057,11 @@ msgstr "辉光"
 
 
 msgctxt "Operator"
+msgid "Text"
+msgstr "文本"
+
+
+msgctxt "Operator"
 msgid "Color"
 msgstr "颜色"
 
@@ -72825,11 +73002,6 @@ msgstr "相似项"
 msgctxt "Operator"
 msgid "Single Bone"
 msgstr "单段骨骼"
-
-
-msgctxt "Operator"
-msgid "Text"
-msgstr "文本"
 
 
 msgctxt "Operator"
@@ -74265,10 +74437,6 @@ msgid "PreviewCol"
 msgstr "预览色"
 
 
-msgid "IDCol"
-msgstr "IDCol"
-
-
 msgid "TexturedCol"
 msgstr "纹理色"
 
@@ -75225,14 +75393,6 @@ msgid "Cannot spin"
 msgstr "无法旋绕"
 
 
-msgid "Surface has not got active point"
-msgstr "表面没有选中的点"
-
-
-msgid "Curve has not got active point"
-msgstr "曲线映射中的曲线"
-
-
 msgid "Active object is not a selected curve"
 msgstr "激活的物体不是一个被选中的曲线物体"
 
@@ -75295,6 +75455,14 @@ msgstr "曲面环"
 msgctxt "Curve"
 msgid "Surface"
 msgstr "曲面"
+
+
+msgid "Surface has not got active point"
+msgstr "表面没有选中的点"
+
+
+msgid "Curve has not got active point"
+msgstr "曲线映射中的曲线"
 
 
 msgid "Clipboard empty"
@@ -76136,10 +76304,6 @@ msgid "Confirm: Enter/LClick, Cancel: (Esc/RClick), Thickness: %s, Depth (Ctrl t
 msgstr "确认: 回车键/鼠标左键点击, 取消: (Esc/鼠标右键), 厚度: %s, 深度 (按 Ctrl 键调节): %s (%s), 外插 (O): (%s), 边界 (B): (%s), 分离 (I): (%s)"
 
 
-msgid "LMB: define cut lines, Return/Spacebar: confirm, Esc or RMB: cancel, E: new cut, Ctrl: midpoint snap (%s), Shift: ignore snap (%s), C: angle constrain (%s), Z: cut through (%s)"
-msgstr "鼠标左键: 划定切割线, 回车键/空格键: 确认, Esc 或鼠标右键: 取消, E: 另起新的切割线, Ctrl: 中点吸附 (%s), Shift: 忽略吸附 (%s), C: 角度约束 (%s), Z: 穿透切割 (%s)"
-
-
 msgid "No other selected objects found to use for projection"
 msgstr "未选中其他的物体，无法使用投影"
 
@@ -76831,10 +76995,6 @@ msgid "Baking canceled!"
 msgstr "烘焙取消!"
 
 
-msgid "Bake complete! (%s)"
-msgstr "烘焙完成! (%s)"
-
-
 msgid "Bake failed: %s"
 msgstr "烘焙失败: %s"
 
@@ -77325,6 +77485,10 @@ msgstr "不使用声音来进行编译"
 
 msgid "AutoPack is enabled, so image will be packed again on file save"
 msgstr "自动打包已经开启, 当保存文件时图像将被一并打包保存"
+
+
+msgid "Could not find current NLA Track"
+msgstr "没找到当前的NLA块"
 
 
 msgid "Keyframe pasting is not available for grease pencil mode"
@@ -77929,6 +78093,14 @@ msgstr " | 内存:%.2fM"
 
 msgid " (%.2fM)"
 msgstr " (%.2fM)"
+
+
+msgid " | Free GPU Mem:%.2fM"
+msgstr " |清空 GPU 内存:%.2fM"
+
+
+msgid "/%.2fM"
+msgstr "/%.2fM"
 
 
 msgid "(Key) "
@@ -79833,6 +80005,10 @@ msgid "Sequence '%s' not in scene '%s'"
 msgstr "序列 '%s' 不在场景 '%s' 中"
 
 
+msgid "Sound not packed"
+msgstr "未打包声音"
+
+
 msgid "Background image cannot be removed"
 msgstr "未能移除的背景图"
 
@@ -79871,6 +80047,10 @@ msgstr "外部路径失效"
 
 msgid "Registering addon-prefs class: '%s' is too long, maximum length is %d"
 msgstr "注册 addon-prefs 类: '%s'过长, 长度上限为 %d"
+
+
+msgid "Font not packed"
+msgstr "未打包字体"
 
 
 msgid "Registering operator class: '%s' is too long, maximum length is %d"
@@ -80634,10 +80814,6 @@ msgid "Property from path '%s' has length %d instead of %d"
 msgstr "路径 '%s' 的属性长度为 %d 而非 %d"
 
 
-msgid "%d x %s: %.2f ms,  average: %.4f"
-msgstr "%d x %s: %.2f 毫秒, 均值: %.4f"
-
-
 msgid "Blender User Preferences"
 msgstr "Blender 用户设置面板"
 
@@ -80844,6 +81020,10 @@ msgstr "乌兹别克 西里尔文 (Ўзбек)"
 
 msgid "Hindi (मानक हिन्दी)"
 msgstr "印地文 (मानक हिन्दी)"
+
+
+msgid "Vietnamese (tiếng Việt)"
+msgstr "越南语 (tiếng Việt)"
 
 
 msgid "Complete"
