@@ -1,9 +1,9 @@
 
 msgid ""
 msgstr ""
-"Project-Id-Version: Blender 2.75 (sub 2) (b'9cc1953')\n"
+"Project-Id-Version: Blender 2.75 (sub 2) (b'6190d75')\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-07-14 21:46:53\n"
+"POT-Creation-Date: 2015-07-20 22:24:58\n"
 "PO-Revision-Date: \n"
 "Last-Translator: Gabriel Gazzan <gabcorreo@gmail.com>\n"
 "Language-Team: Español <gabcorreo@gmail.com>\n"
@@ -1952,12 +1952,12 @@ msgid "Addon Preferences"
 msgstr "Opciones de agregados"
 
 
-msgid "Spell Cache"
-msgstr "Caché de ortografía"
+msgid "Translation Root"
+msgstr "Raíz de la traducción"
 
 
-msgid "A cache storing validated msgids, to avoid re-spellchecking them"
-msgstr "Un caché que almacena los mensajes validados, para evitar tener que volver a comprobar su ortografía"
+msgid "The bf-translation repository"
+msgstr "El repositorio de la traducción de Blender"
 
 
 msgid "Warn Msgid Not Capitalized"
@@ -1968,12 +1968,20 @@ msgid "Warn about messages not starting by a capitalized letter (with a few allo
 msgstr "Advertencia sobre mensajes que no comienzan con mayúsculas (¡con algunas excepciones permitidas!)"
 
 
-msgid "Fribidi Library"
-msgstr "Biblioteca Fribidi"
+msgid "Spell Cache"
+msgstr "Caché de ortografía"
 
 
-msgid "The FriBidi C compiled library (.so under Linux, .dll under windows...), you’ll likely have to edit it if you’re under Windows, e.g. using the one included in svn's libraries repository"
-msgstr "La biblioteca escrita en C y compilada FriBidi (.so en Linux, .dll en windows...), es probable que se deba editar bajo Windows, p.ej: usando la que se incluye en el repositorio de bibliotecas del SVN"
+msgid "A cache storing validated msgids, to avoid re-spellchecking them"
+msgstr "Un caché que almacena los mensajes validados, para evitar tener que volver a comprobar su ortografía"
+
+
+msgid "Import Paths"
+msgstr "Rutas de importación"
+
+
+msgid "Additional paths to add to sys.path (';' separated)"
+msgstr "Rutas adicionales a agregar al sys.path (separadas por ';')"
 
 
 msgid "Gettext 'msgfmt' executable"
@@ -1984,12 +1992,12 @@ msgid "The gettext msgfmt 'compiler'. You’ll likely have to edit it if you’r
 msgstr "El 'compilador' de msgfmt de gettext. Es posible que haya que editarlo en Windows"
 
 
-msgid "Translation Root"
-msgstr "Raíz de la traducción"
+msgid "Fribidi Library"
+msgstr "Biblioteca Fribidi"
 
 
-msgid "The bf-translation repository"
-msgstr "El repositorio de la traducción de Blender"
+msgid "The FriBidi C compiled library (.so under Linux, .dll under windows...), you’ll likely have to edit it if you’re under Windows, e.g. using the one included in svn's libraries repository"
+msgstr "La biblioteca escrita en C y compilada FriBidi (.so en Linux, .dll en windows...), es probable que se deba editar bajo Windows, p.ej: usando la que se incluye en el repositorio de bibliotecas del SVN"
 
 
 msgid "Source Root"
@@ -2006,14 +2014,6 @@ msgstr "Ruta de datos persistentes"
 
 msgid "The name of a json file storing those settings (unfortunately, Blender's system does not work here)"
 msgstr "El nombre de un archivo json que almacena estas opciones (desafortunadamente, el sistema de Blender no funciona aquí)"
-
-
-msgid "Import Paths"
-msgstr "Rutas de importación"
-
-
-msgid "Additional paths to add to sys.path (';' separated)"
-msgstr "Rutas adicionales a agregar al sys.path (separadas por ';')"
 
 
 msgid "Animation Data"
@@ -33585,6 +33585,70 @@ msgid "Musgrave Texture"
 msgstr "Musgrave"
 
 
+msgid "Object to take point data from"
+msgstr "Objeto del cual tomar datos de puntos"
+
+
+msgid "Point Source"
+msgstr "Origen de los puntos"
+
+
+msgid "Point data to use as renderable point density"
+msgstr "Datos de puntos a usar como densidad de puntos al procesar"
+
+
+msgid "Generate point density from a particle system"
+msgstr "Generar densidad de puntos a partir de un sistema de partículas"
+
+
+msgid "Object Vertices"
+msgstr "Vértices del objeto"
+
+
+msgid "Generate point density from an object's vertices"
+msgstr "Generar densidad de puntos a partir de los vértices del objeto"
+
+
+msgid "Particle System to render as points"
+msgstr "Sistema de partículas a procesar como puntos"
+
+
+msgid "Radius from the shaded sample to look for points within"
+msgstr "Radio (a partir de la muestra de sombreado) dentro del cual buscar puntos"
+
+
+msgid "Color Source"
+msgstr "Origen de color"
+
+
+msgid "Data to derive color results from"
+msgstr "Datos de donde derivar los resultados de color"
+
+
+msgid "Particle Age"
+msgstr "Edad de la partícula"
+
+
+msgid "Lifetime mapped as 0.0 - 1.0 intensity"
+msgstr "Tiempo de vida mapeado como intensidad de 0.0 a 1.0"
+
+
+msgid "Particle Speed"
+msgstr "Vel. absoluta de la partícula"
+
+
+msgid "Particle speed (absolute magnitude of velocity) mapped as 0.0-1.0 intensity"
+msgstr "Velocidad de la partícula (magnitud absoluta de velocidad) mapeada como una intensidad de rango 0.0-1.0"
+
+
+msgid "Particle Velocity"
+msgstr "Velocidad de la partícula"
+
+
+msgid "XYZ velocity mapped to RGB colors"
+msgstr "Velocidad XYZ mapeada a colores RVA"
+
+
 msgid "Sky Texture"
 msgstr "Cielo"
 
@@ -38484,10 +38548,6 @@ msgid "FBX 6.1 ASCII"
 msgstr "FBX 6.1 ASCII"
 
 
-msgid "Legacy 6.1 ascii version"
-msgstr "Antigua versión 6.1 ASCII"
-
-
 msgid "Selected Objects"
 msgstr "Objetos seleccionados"
 
@@ -40906,10 +40966,6 @@ msgid "Specify orientation and scale, instead of using embedded data in FBX file
 msgstr "Especificar la orientación y escala, en vez de utilizar los datos incorporados en el archivo FBX"
 
 
-msgid "Search subdirs for any associated images (Warning, may be slow)"
-msgstr "Busca cualquier imagen asociada en los subdirectorios (Advertencia, puede ser lento)"
-
-
 msgid "Alpha Decals"
 msgstr "Calcomanías alfa"
 
@@ -41146,6 +41202,10 @@ msgstr "Grupos poligonales"
 
 msgid "Import OBJ groups as vertex groups"
 msgstr "Importa grupos OBJ como grupos de vértices"
+
+
+msgid "Search subdirs for any associated images (Warning, may be slow)"
+msgstr "Busca cualquier imagen asociada en los subdirectorios (Advertencia, puede ser lento)"
 
 
 msgid "Split"
@@ -44964,6 +45024,14 @@ msgid "Add a node to the active tree and link to an existing socket"
 msgstr "Agrega un nodo al árbol activo y lo vincula a un conector existente"
 
 
+msgid "Use Transform"
+msgstr "Usar transformación"
+
+
+msgid "Start transform operator after inserting the node"
+msgstr "Inicia el operador de transformación luego de insertar el nodo"
+
+
 msgid "Settings to be applied on the newly created node"
 msgstr "Opciones a ser aplicadas al nuevo nodo"
 
@@ -44974,14 +45042,6 @@ msgstr "Tipo de nodo"
 
 msgid "Node type"
 msgstr "Tipo de nodo"
-
-
-msgid "Use Transform"
-msgstr "Usar transformación"
-
-
-msgid "Start transform operator after inserting the node"
-msgstr "Inicia el operador de transformación luego de insertar el nodo"
 
 
 msgid "Link Socket Index"
@@ -56990,10 +57050,6 @@ msgid "Spot Shape"
 msgstr "Forma del foco"
 
 
-msgid "Ray Visibility"
-msgstr "Visibilidad a los rayos"
-
-
 msgid "Cycles Hair Rendering"
 msgstr "Cycles - Procesamiento de pelo "
 
@@ -57024,6 +57080,10 @@ msgstr "Muestreo volumétrico"
 
 msgid "Mist Pass"
 msgstr "Pasada de niebla"
+
+
+msgid "Ray Visibility"
+msgstr "Visibilidad a los rayos"
 
 
 msgid "Post Processing"
@@ -57596,10 +57656,6 @@ msgstr "Partícula en un sistema de partículas"
 
 msgid "Particle Location"
 msgstr "Posición partícula"
-
-
-msgid "Particle Velocity"
-msgstr "Velocidad de la partícula"
 
 
 msgid "Previous Particle Location"
@@ -58438,34 +58494,6 @@ msgid "Point density settings"
 msgstr "Opciones de densidad de puntos"
 
 
-msgid "Point Source"
-msgstr "Origen de los puntos"
-
-
-msgid "Point data to use as renderable point density"
-msgstr "Datos de puntos a usar como densidad de puntos al procesar"
-
-
-msgid "Generate point density from a particle system"
-msgstr "Generar densidad de puntos a partir de un sistema de partículas"
-
-
-msgid "Object Vertices"
-msgstr "Vértices del objeto"
-
-
-msgid "Generate point density from an object's vertices"
-msgstr "Generar densidad de puntos a partir de los vértices del objeto"
-
-
-msgid "Object to take point data from"
-msgstr "Objeto del cual tomar datos de puntos"
-
-
-msgid "Particle System to render as points"
-msgstr "Sistema de partículas a procesar como puntos"
-
-
 msgid "Particle Cache"
 msgstr "Caché de partículas"
 
@@ -58498,10 +58526,6 @@ msgid "Object Location"
 msgstr "Posición del objeto"
 
 
-msgid "Radius from the shaded sample to look for points within"
-msgstr "Radio (a partir de la muestra de sombreado) dentro del cual buscar puntos"
-
-
 msgid "Method of attenuating density by distance from the point"
 msgstr "Método de atenuación de la densidad a medida que se aleja del punto"
 
@@ -58510,40 +58534,12 @@ msgid "Density is constant within lookup radius"
 msgstr "La densidad es constante dentro del radio de búsqueda"
 
 
-msgid "Particle Age"
-msgstr "Edad de la partícula"
-
-
 msgid "Softness"
 msgstr "Suavizado"
 
 
 msgid "Softness of the 'soft' falloff option"
 msgstr "Suavidad de la opción de decaimiento \"suave\""
-
-
-msgid "Color Source"
-msgstr "Origen de color"
-
-
-msgid "Data to derive color results from"
-msgstr "Datos de donde derivar los resultados de color"
-
-
-msgid "Lifetime mapped as 0.0 - 1.0 intensity"
-msgstr "Tiempo de vida mapeado como intensidad de 0.0 a 1.0"
-
-
-msgid "Particle Speed"
-msgstr "Vel. absoluta de la partícula"
-
-
-msgid "Particle speed (absolute magnitude of velocity) mapped as 0.0-1.0 intensity"
-msgstr "Velocidad de la partícula (magnitud absoluta de velocidad) mapeada como una intensidad de rango 0.0-1.0"
-
-
-msgid "XYZ velocity mapped to RGB colors"
-msgstr "Velocidad XYZ mapeada a colores RVA"
 
 
 msgid "Multiplier to bring particle speed within an acceptable range"
@@ -58894,14 +58890,6 @@ msgid "First action in stitch"
 msgstr "Primera acción al unir"
 
 
-msgid "Action 2"
-msgstr "Acción 2"
-
-
-msgid "Second action in stitch"
-msgstr "Segunda acción al unir"
-
-
 msgid "Blend amount"
 msgstr "Cantidad de fundido"
 
@@ -58910,12 +58898,20 @@ msgid "Size of blending transition, on both sides of the stitch"
 msgstr "Tamaño de la transición de fundido, a ambos lados de la unión"
 
 
-msgid "Stitch frame"
-msgstr "Marco de unión"
+msgid "Stick Bone"
+msgstr "Hueso tipo bastón"
 
 
-msgid "Frame to locate stitch on"
-msgstr "Marco donde ubicar la unión"
+msgid "Bone to freeze during transition"
+msgstr "Hueso a congelar durante la transición"
+
+
+msgid "Action 2"
+msgstr "Acción 2"
+
+
+msgid "Second action in stitch"
+msgstr "Segunda acción al unir"
 
 
 msgid "Second offset"
@@ -58926,12 +58922,12 @@ msgid "Frame offset for 2nd animation, where it should start"
 msgstr "Desplazamiento de fotogramas para la 2da animación, donde debería comenzar"
 
 
-msgid "Stick Bone"
-msgstr "Hueso tipo bastón"
+msgid "Stitch frame"
+msgstr "Marco de unión"
 
 
-msgid "Bone to freeze during transition"
-msgstr "Hueso a congelar durante la transición"
+msgid "Frame to locate stitch on"
+msgstr "Marco donde ubicar la unión"
 
 
 msgid "Aperture Type"
@@ -59922,38 +59918,6 @@ msgid "Settings/info about a language"
 msgstr "Configuración/info acerca de un idioma"
 
 
-msgid "PO File Path"
-msgstr "Ruta del archivo"
-
-
-msgid "Path to the relevant po file in branches"
-msgstr "Ruta al archivo .PO relevante en las ramas"
-
-
-msgid "Numeric ID"
-msgstr "ID numérico"
-
-
-msgid "Numeric ID (readonly!)"
-msgstr "ID numérico (¡solo lectura!)"
-
-
-msgid "Language Name"
-msgstr "Idioma"
-
-
-msgid "English language name/label (like \"French (Français)\")"
-msgstr "Etiqueta del nombre en inglés (como \"Spanish (Español)\")"
-
-
-msgid "Language ID"
-msgstr "Idioma"
-
-
-msgid "ISO code, like fr_FR"
-msgstr "Código ISO, del estilo es_AR"
-
-
 msgid "MO File Path"
 msgstr "Ruta del archivo"
 
@@ -59970,16 +59934,48 @@ msgid "Path to the relevant po file in Blender's translations git repository"
 msgstr "Ruta al archivo .po relevante en el repositorio GIT que contiene las traducciones de Blender"
 
 
+msgid "Language Name"
+msgstr "Idioma"
+
+
+msgid "English language name/label (like \"French (Français)\")"
+msgstr "Etiqueta del nombre en inglés (como \"Spanish (Español)\")"
+
+
+msgid "Use this language in current operator"
+msgstr "Usar este idioma en el operador actual"
+
+
+msgid "Language ID"
+msgstr "Idioma"
+
+
+msgid "ISO code, like fr_FR"
+msgstr "Código ISO, del estilo es_AR"
+
+
+msgid "Numeric ID"
+msgstr "ID numérico"
+
+
+msgid "Numeric ID (readonly!)"
+msgstr "ID numérico (¡solo lectura!)"
+
+
+msgid "PO File Path"
+msgstr "Ruta del archivo"
+
+
+msgid "Path to the relevant po file in branches"
+msgstr "Ruta al archivo .PO relevante en las ramas"
+
+
 msgid "PO Trunk File Path"
 msgstr "Ruta archivo PO en tronco"
 
 
 msgid "Path to the relevant po file in trunk"
 msgstr "Ruta al archivo .PO relevante en el tronco principal"
-
-
-msgid "Use this language in current operator"
-msgstr "Usar este idioma en el operador actual"
 
 
 msgid "Languages"
@@ -60010,20 +60006,12 @@ msgid "Whether these settings have already been auto-set or not"
 msgstr "Si estas opciones ya han sido definidas automáticamente o no"
 
 
-msgid "Constrained Bone"
-msgstr "Hueso restringido"
+msgid "Distance and Floor Fixes - Desired offset"
+msgstr "Correcciones de distancia y piso - Desplazamiento deseado"
 
 
-msgid "Bone (2)"
-msgstr "Hueso (2)"
-
-
-msgid "Other Constrained Bone (optional, depends on type)"
-msgstr "El otro hueso restringido (opcional, depende del tipo)"
-
-
-msgid "Type of constraint"
-msgstr "Tipo de restricción"
+msgid "Name of Mocap Fix"
+msgstr "Nombre de la corrección de CaptMov"
 
 
 msgid "Out"
@@ -60036,6 +60024,18 @@ msgstr "Cantidad de fotogramas a suavizar"
 
 msgid "Fix is active"
 msgstr "La corrección está activa"
+
+
+msgid "Target of Fix - Mesh (optional, depends on type)"
+msgstr "Objetivo de corrección - Malla (opcional, depende del tipo)"
+
+
+msgid "E"
+msgstr "E"
+
+
+msgid "End frame of Fix"
+msgstr "Fotoframa final de la corrección"
 
 
 msgid "In which space should Point type target be evaluated"
@@ -60066,16 +60066,28 @@ msgid "Fix is fully shown"
 msgstr "La corrección se muestra completamente"
 
 
-msgid "E"
-msgstr "E"
+msgid "Type of constraint"
+msgstr "Tipo de restricción"
 
 
-msgid "End frame of Fix"
-msgstr "Fotoframa final de la corrección"
+msgid "Target of Fix - Point"
+msgstr "Objetivo de corrección - Punto"
 
 
-msgid "Name of Mocap Fix"
-msgstr "Nombre de la corrección de CaptMov"
+msgid "Bone (2)"
+msgstr "Hueso (2)"
+
+
+msgid "Other Constrained Bone (optional, depends on type)"
+msgstr "El otro hueso restringido (opcional, depende del tipo)"
+
+
+msgid "Start frame of Fix"
+msgstr "Fotograma inicial de la corrección"
+
+
+msgid "Constrained Bone"
+msgstr "Hueso restringido"
 
 
 msgid "In"
@@ -60084,22 +60096,6 @@ msgstr "Entrada"
 
 msgid "Number of frames to smooth in"
 msgstr "Cantidad de fotogramas para suavizar"
-
-
-msgid "Target of Fix - Mesh (optional, depends on type)"
-msgstr "Objetivo de corrección - Malla (opcional, depende del tipo)"
-
-
-msgid "Start frame of Fix"
-msgstr "Fotograma inicial de la corrección"
-
-
-msgid "Distance and Floor Fixes - Desired offset"
-msgstr "Correcciones de distancia y piso - Desplazamiento deseado"
-
-
-msgid "Target of Fix - Point"
-msgstr "Objetivo de corrección - Punto"
 
 
 msgid "Python expression to be evaluated as the initial node setting"
@@ -60146,8 +60142,8 @@ msgid "Is Stroke Start"
 msgstr "Es comienzo de trazo"
 
 
-msgid "Limit for checking zero area/length"
-msgstr "Límite para comprobar área/longitud nulas"
+msgid "Limit for checking distorted faces"
+msgstr "Límite para comprobar caras distorsionadas"
 
 
 msgid "Apply Scale"
@@ -60158,20 +60154,16 @@ msgid "Apply scene scale setting on export"
 msgstr "Aplica la escala de la escena al exportar"
 
 
+msgid "Limit for checking zero area/length"
+msgstr "Límite para comprobar área/longitud nulas"
+
+
 msgid "Format type to export to"
 msgstr "Tipo de formato al cual exportar"
 
 
 msgid "VRML2"
 msgstr "VRML2"
-
-
-msgid "Copy Textures"
-msgstr "Copiar texturas"
-
-
-msgid "Copy textures on export to the output path"
-msgstr "Al exportar copia las texturas a la ruta de destino"
 
 
 msgid "Export Directory"
@@ -60182,8 +60174,12 @@ msgid "Path to directory where the files are created"
 msgstr "Ruta al directorio donde se crearán los archivos"
 
 
-msgid "Limit for checking distorted faces"
-msgstr "Límite para comprobar caras distorsionadas"
+msgid "Copy Textures"
+msgstr "Copiar texturas"
+
+
+msgid "Copy textures on export to the output path"
+msgstr "Al exportar copia las texturas a la ruta de destino"
 
 
 msgid "Selected UV Element"
@@ -60996,10 +60992,6 @@ msgstr "Se procesará solo una región de la imagen definida por el usuario medi
 
 msgid "Border Minimum X"
 msgstr "Marco Mínimo X"
-
-
-msgid "Minimum X value to for the render border"
-msgstr "Valor mínimo en X para el marco de la imagen procesada"
 
 
 msgid "Border Minimum Y"
@@ -84761,16 +84753,12 @@ msgid "Active group is locked, aborting"
 msgstr "El grupo activo está bloqueado, abortando"
 
 
-msgid "Error!"
-msgstr "Error!"
+msgid "Warning!"
+msgstr "Advertencia!"
 
 
 msgid "OK"
 msgstr "Aceptar"
-
-
-msgid "Warning!"
-msgstr "Advertencia!"
 
 
 msgid "Vertex Data Detected!"

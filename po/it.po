@@ -1,9 +1,9 @@
 
 msgid ""
 msgstr ""
-"Project-Id-Version: Blender 2.75 (sub 2) (b'9cc1953')\n"
+"Project-Id-Version: Blender 2.75 (sub 2) (b'6190d75')\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-07-14 21:46:53\n"
+"POT-Creation-Date: 2015-07-20 22:24:58\n"
 "PO-Revision-Date: \n"
 "Last-Translator: blend-it\n"
 "Language-Team: \n"
@@ -1852,6 +1852,14 @@ msgid "Addon Preferences"
 msgstr "Preferenze Addon"
 
 
+msgid "Translation Root"
+msgstr "Root Traduzione"
+
+
+msgid "The bf-translation repository"
+msgstr "Il repository bf-translation"
+
+
 msgid "Warn Msgid Not Capitalized"
 msgstr "Avverti se il Msgid non è Maiuscolo"
 
@@ -1860,12 +1868,12 @@ msgid "Warn about messages not starting by a capitalized letter (with a few allo
 msgstr "Avverte se i messaggi non iniziano con una lettera maiuscola (con poche eccezioni permesse!)"
 
 
-msgid "Fribidi Library"
-msgstr "Libreria FriBidi"
+msgid "Import Paths"
+msgstr "Percorsi di Importazione"
 
 
-msgid "The FriBidi C compiled library (.so under Linux, .dll under windows...), you’ll likely have to edit it if you’re under Windows, e.g. using the one included in svn's libraries repository"
-msgstr "La libreria compilata C FriBidi (.so in Linux, .dll in Windows). Probabilmente devi specificarla se sei sotto Windows, x es. usando quella inclusa nel repository delle librerie di svn."
+msgid "Additional paths to add to sys.path (';' separated)"
+msgstr "Percorsi addizionali da aggiungere a sys.path (separati con ';')"
 
 
 msgid "Gettext 'msgfmt' executable"
@@ -1876,12 +1884,12 @@ msgid "The gettext msgfmt 'compiler'. You’ll likely have to edit it if you’r
 msgstr "Il 'compilatore' msgfmt di gettext. Probabilmente devi indicare il percorso se sei sotto Windows"
 
 
-msgid "Translation Root"
-msgstr "Root Traduzione"
+msgid "Fribidi Library"
+msgstr "Libreria FriBidi"
 
 
-msgid "The bf-translation repository"
-msgstr "Il repository bf-translation"
+msgid "The FriBidi C compiled library (.so under Linux, .dll under windows...), you’ll likely have to edit it if you’re under Windows, e.g. using the one included in svn's libraries repository"
+msgstr "La libreria compilata C FriBidi (.so in Linux, .dll in Windows). Probabilmente devi specificarla se sei sotto Windows, x es. usando quella inclusa nel repository delle librerie di svn."
 
 
 msgid "Source Root"
@@ -1898,14 +1906,6 @@ msgstr "Percorso Dati Persistenti"
 
 msgid "The name of a json file storing those settings (unfortunately, Blender's system does not work here)"
 msgstr "Nome del file json per archiviare queste impostazioni (sfortunatamente il sistema di Blender qui non funziona)"
-
-
-msgid "Import Paths"
-msgstr "Percorsi di Importazione"
-
-
-msgid "Additional paths to add to sys.path (';' separated)"
-msgstr "Percorsi addizionali da aggiungere a sys.path (separati con ';')"
 
 
 msgid "Animation Data"
@@ -25908,6 +25908,70 @@ msgid "Musgrave Texture"
 msgstr "Texture Musgrave"
 
 
+msgid "Object to take point data from"
+msgstr "Oggetto da cui prendere i dati del punto"
+
+
+msgid "Point Source"
+msgstr "Sorgente Punto"
+
+
+msgid "Point data to use as renderable point density"
+msgstr "Dati dei punti da utilizzare come densità dei punti renderizzabili"
+
+
+msgid "Generate point density from a particle system"
+msgstr "Genera la densità dei punti da un sistema particellare"
+
+
+msgid "Object Vertices"
+msgstr "Vertici Oggetto"
+
+
+msgid "Generate point density from an object's vertices"
+msgstr "Genera la densità dei punti dai vertici di un oggetto"
+
+
+msgid "Particle System to render as points"
+msgstr "Sistema Particellare da renderizzare come punto"
+
+
+msgid "Radius from the shaded sample to look for points within"
+msgstr "Raggio del campione in ombra per cercare punti all'interno"
+
+
+msgid "Color Source"
+msgstr "Sorgente Colore"
+
+
+msgid "Data to derive color results from"
+msgstr "Dati da cui derivare il colore risultante"
+
+
+msgid "Particle Age"
+msgstr "Età Particella"
+
+
+msgid "Lifetime mapped as 0.0 - 1.0 intensity"
+msgstr "Tempo di vita mappato come intensità 0.0 - 1.0"
+
+
+msgid "Particle Speed"
+msgstr "Velocità Particella"
+
+
+msgid "Particle speed (absolute magnitude of velocity) mapped as 0.0-1.0 intensity"
+msgstr "Velocità delle particella (magnitudo assoluta della velocità) mappata come intensità 0.0-1.0"
+
+
+msgid "Particle Velocity"
+msgstr "Velocità Particelle"
+
+
+msgid "XYZ velocity mapped to RGB colors"
+msgstr "Velocità XYZ mappata sui colori RGB"
+
+
 msgid "Sky Texture"
 msgstr "Texture Cielo"
 
@@ -31830,10 +31894,6 @@ msgid "Manual Orientation"
 msgstr "Orientamento Manuale"
 
 
-msgid "Search subdirs for any associated images (Warning, may be slow)"
-msgstr "Ricerca nelle sottodrectory per qualsiasi immagine associata (Attenzione, può essere lento)"
-
-
 msgid "Import User Properties"
 msgstr "Importa Proprietà Utente"
 
@@ -31926,6 +31986,10 @@ msgstr "Importa Gruppi OBJ in Oggetti Blender"
 
 msgid "Import OBJ groups as vertex groups"
 msgstr "Importa gruppi OBJ come gruppo di vertici"
+
+
+msgid "Search subdirs for any associated images (Warning, may be slow)"
+msgstr "Ricerca nelle sottodrectory per qualsiasi immagine associata (Attenzione, può essere lento)"
 
 
 msgid "Split"
@@ -34960,16 +35024,16 @@ msgid "Reset viewable area to show selected strips range"
 msgstr "Ripristina l'area visibile per mostrare tutte le strisce selezionate"
 
 
+msgid "Use Transform"
+msgstr "Usa Trasforma"
+
+
 msgid "Node Type"
 msgstr "Tipo Nodo"
 
 
 msgid "Node type"
 msgstr "Tipo di nodo"
-
-
-msgid "Use Transform"
-msgstr "Usa Trasforma"
 
 
 msgctxt "Operator"
@@ -44664,10 +44728,6 @@ msgid "Spot Shape"
 msgstr "Forma Faretto"
 
 
-msgid "Ray Visibility"
-msgstr "Visibilità Raggio"
-
-
 msgid "Cycles Hair Rendering"
 msgstr "Rendering Capelli Cycles"
 
@@ -44698,6 +44758,10 @@ msgstr "Campionatura Volume"
 
 msgid "Mist Pass"
 msgstr "Passata Foschia"
+
+
+msgid "Ray Visibility"
+msgstr "Visibilità Raggio"
 
 
 msgid "Post Processing"
@@ -45250,10 +45314,6 @@ msgstr "Particella in un sistema particellare"
 
 msgid "Particle Location"
 msgstr "Posizione Particelle"
-
-
-msgid "Particle Velocity"
-msgstr "Velocità Particelle"
 
 
 msgid "Previous Particle Location"
@@ -45940,34 +46000,6 @@ msgid "Point density settings"
 msgstr "Impostazioni densità del punto"
 
 
-msgid "Point Source"
-msgstr "Sorgente Punto"
-
-
-msgid "Point data to use as renderable point density"
-msgstr "Dati dei punti da utilizzare come densità dei punti renderizzabili"
-
-
-msgid "Generate point density from a particle system"
-msgstr "Genera la densità dei punti da un sistema particellare"
-
-
-msgid "Object Vertices"
-msgstr "Vertici Oggetto"
-
-
-msgid "Generate point density from an object's vertices"
-msgstr "Genera la densità dei punti dai vertici di un oggetto"
-
-
-msgid "Object to take point data from"
-msgstr "Oggetto da cui prendere i dati del punto"
-
-
-msgid "Particle System to render as points"
-msgstr "Sistema Particellare da renderizzare come punto"
-
-
 msgid "Particle Cache"
 msgstr "Cache Particelle"
 
@@ -46000,10 +46032,6 @@ msgid "Object Location"
 msgstr "Posizione Oggetto"
 
 
-msgid "Radius from the shaded sample to look for points within"
-msgstr "Raggio del campione in ombra per cercare punti all'interno"
-
-
 msgid "Method of attenuating density by distance from the point"
 msgstr "Metodo di calcolo dei passi attraverso il volume"
 
@@ -46012,36 +46040,8 @@ msgid "Density is constant within lookup radius"
 msgstr "La densità è costante all'interno del raggio di ricerca"
 
 
-msgid "Particle Age"
-msgstr "Età Particella"
-
-
 msgid "Softness"
 msgstr "Morbidezza"
-
-
-msgid "Color Source"
-msgstr "Sorgente Colore"
-
-
-msgid "Data to derive color results from"
-msgstr "Dati da cui derivare il colore risultante"
-
-
-msgid "Lifetime mapped as 0.0 - 1.0 intensity"
-msgstr "Tempo di vita mappato come intensità 0.0 - 1.0"
-
-
-msgid "Particle Speed"
-msgstr "Velocità Particella"
-
-
-msgid "Particle speed (absolute magnitude of velocity) mapped as 0.0-1.0 intensity"
-msgstr "Velocità delle particella (magnitudo assoluta della velocità) mappata come intensità 0.0-1.0"
-
-
-msgid "XYZ velocity mapped to RGB colors"
-msgstr "Velocità XYZ mappata sui colori RGB"
 
 
 msgid "Multiplier to bring particle speed within an acceptable range"
@@ -46852,8 +46852,8 @@ msgid "Map Resolution"
 msgstr "Risoluzione Mappa"
 
 
-msgid "PO File Path"
-msgstr "Percorso File PO"
+msgid "MO File Path"
+msgstr "Percorso File MO"
 
 
 msgid "Language Name"
@@ -46868,8 +46868,8 @@ msgid "ISO code, like fr_FR"
 msgstr "Codice ISO, tipo it_IT"
 
 
-msgid "MO File Path"
-msgstr "Percorso File MO"
+msgid "PO File Path"
+msgstr "Percorso File PO"
 
 
 msgid "Languages"
@@ -46884,20 +46884,12 @@ msgid "Active Language"
 msgstr "Lingua Attiva"
 
 
-msgid "Constrained Bone"
-msgstr "Osso Vincolato"
-
-
-msgid "Bone (2)"
-msgstr "Osso (2)"
-
-
-msgid "Type of constraint"
-msgstr "Tipo di vincolo"
-
-
 msgid "Out"
 msgstr "Uscita"
+
+
+msgid "E"
+msgstr "E"
 
 
 msgid "Evaluate target in global space"
@@ -46916,8 +46908,16 @@ msgid "Other Bone Space"
 msgstr "Altro Spazio Osso"
 
 
-msgid "E"
-msgstr "E"
+msgid "Type of constraint"
+msgstr "Tipo di vincolo"
+
+
+msgid "Bone (2)"
+msgstr "Osso (2)"
+
+
+msgid "Constrained Bone"
+msgstr "Osso Vincolato"
 
 
 msgid "In"
@@ -46952,8 +46952,8 @@ msgid "Brush Size"
 msgstr "Dimensione Pennello"
 
 
-msgid "Limit for checking zero area/length"
-msgstr "Limite di controllo di aree/lunghezze nulle"
+msgid "Limit for checking distorted faces"
+msgstr "Limite di controllo facce distorte"
 
 
 msgid "Apply Scale"
@@ -46964,16 +46964,12 @@ msgid "Apply scene scale setting on export"
 msgstr "Applica le impostazioni scala di scena esportando"
 
 
+msgid "Limit for checking zero area/length"
+msgstr "Limite di controllo di aree/lunghezze nulle"
+
+
 msgid "Format type to export to"
 msgstr "Tipo formato in cui esportare"
-
-
-msgid "Copy Textures"
-msgstr "Copia Texture"
-
-
-msgid "Copy textures on export to the output path"
-msgstr "Esportando, copia nel percorso di salvataggio le texture"
 
 
 msgid "Export Directory"
@@ -46984,8 +46980,12 @@ msgid "Path to directory where the files are created"
 msgstr "Cartella in cui i files vengono creati"
 
 
-msgid "Limit for checking distorted faces"
-msgstr "Limite di controllo facce distorte"
+msgid "Copy Textures"
+msgstr "Copia Texture"
+
+
+msgid "Copy textures on export to the output path"
+msgstr "Esportando, copia nel percorso di salvataggio le texture"
 
 
 msgid "Selected UV Element"
@@ -47738,10 +47738,6 @@ msgstr "Renderizza una regione definita dall'utente all'interno del fotogramma (
 
 msgid "Border Minimum X"
 msgstr "Bordo Minimo X"
-
-
-msgid "Minimum X value to for the render border"
-msgstr "Valore minimo per la X per il bordo del render"
 
 
 msgid "Border Minimum Y"
@@ -65629,16 +65625,12 @@ msgid "Active group is locked, aborting"
 msgstr "Il gruppo attivo è bloccato, comando annullato"
 
 
-msgid "Error!"
-msgstr "Errore!"
+msgid "Warning!"
+msgstr "Attenzione!"
 
 
 msgid "OK"
 msgstr "OK"
-
-
-msgid "Warning!"
-msgstr "Attenzione!"
 
 
 msgid "No keyframes copied to keyframes copy/paste buffer"

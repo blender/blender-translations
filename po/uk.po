@@ -1,9 +1,9 @@
 
 msgid ""
 msgstr ""
-"Project-Id-Version: Blender 2.75 (sub 2) (b'9cc1953')\n"
+"Project-Id-Version: Blender 2.75 (sub 2) (b'6190d75')\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-07-14 21:46:53\n"
+"POT-Creation-Date: 2015-07-20 22:24:58\n"
 "PO-Revision-Date: 2015-05-22 01:24+0000\n"
 "Last-Translator: Urkokul <urkokul@gmail.com>\n"
 "Language-Team: Ukrainian (Ukraine) (http://www.transifex.com/projects/p/blender/language/uk_UA/)\n"
@@ -1952,12 +1952,12 @@ msgid "Addon Preferences"
 msgstr "Уподобання для додатків"
 
 
-msgid "Spell Cache"
-msgstr "Кеш повідомлень"
+msgid "Translation Root"
+msgstr "Шлях до теки з перекладами"
 
 
-msgid "A cache storing validated msgids, to avoid re-spellchecking them"
-msgstr "Кеш, що містить перевірені msgid, щоб уникнути повторної їх перевірки"
+msgid "The bf-translation repository"
+msgstr "Сховище bf-translation"
 
 
 msgid "Warn Msgid Not Capitalized"
@@ -1968,12 +1968,20 @@ msgid "Warn about messages not starting by a capitalized letter (with a few allo
 msgstr "Попередити, якщо повідомлення не починається з великої літери (з можливими винятками!)"
 
 
-msgid "Fribidi Library"
-msgstr "Бібліотека Fribidi"
+msgid "Spell Cache"
+msgstr "Кеш повідомлень"
 
 
-msgid "The FriBidi C compiled library (.so under Linux, .dll under windows...), you’ll likely have to edit it if you’re under Windows, e.g. using the one included in svn's libraries repository"
-msgstr "Скомпільована бібліотека FriBidi мовою Сі (.so у Linux, .dll у Windows...). Для роботи у Windows необхідно вручну вказати правильний шлях, наприклад, на файл з svn-сховища бібліотек"
+msgid "A cache storing validated msgids, to avoid re-spellchecking them"
+msgstr "Кеш, що містить перевірені msgid, щоб уникнути повторної їх перевірки"
+
+
+msgid "Import Paths"
+msgstr "Шляхи імпорту"
+
+
+msgid "Additional paths to add to sys.path (';' separated)"
+msgstr "Додаткові шляхи для додання до sys.path (відокремити ';')"
 
 
 msgid "Gettext 'msgfmt' executable"
@@ -1984,12 +1992,12 @@ msgid "The gettext msgfmt 'compiler'. You’ll likely have to edit it if you’r
 msgstr "Компілятор msgfmt для файлів gettext. Для роботи у Windows слід вручну вказати правильний шлях"
 
 
-msgid "Translation Root"
-msgstr "Шлях до теки з перекладами"
+msgid "Fribidi Library"
+msgstr "Бібліотека Fribidi"
 
 
-msgid "The bf-translation repository"
-msgstr "Сховище bf-translation"
+msgid "The FriBidi C compiled library (.so under Linux, .dll under windows...), you’ll likely have to edit it if you’re under Windows, e.g. using the one included in svn's libraries repository"
+msgstr "Скомпільована бібліотека FriBidi мовою Сі (.so у Linux, .dll у Windows...). Для роботи у Windows необхідно вручну вказати правильний шлях, наприклад, на файл з svn-сховища бібліотек"
 
 
 msgid "Source Root"
@@ -2006,14 +2014,6 @@ msgstr "Постійні дані"
 
 msgid "The name of a json file storing those settings (unfortunately, Blender's system does not work here)"
 msgstr "Назва файлу json для зберігання цих налаштувань (на жаль, система Blender тут не діє)"
-
-
-msgid "Import Paths"
-msgstr "Шляхи імпорту"
-
-
-msgid "Additional paths to add to sys.path (';' separated)"
-msgstr "Додаткові шляхи для додання до sys.path (відокремити ';')"
 
 
 msgid "Animation Data"
@@ -33565,6 +33565,70 @@ msgid "Musgrave Texture"
 msgstr "Текстура Масгрейва"
 
 
+msgid "Object to take point data from"
+msgstr "Об'єкт з якого отримати дані точок"
+
+
+msgid "Point Source"
+msgstr "Джерело точок"
+
+
+msgid "Point data to use as renderable point density"
+msgstr "Дані точки, що використовується в якості щільності вимальовуваної точки"
+
+
+msgid "Generate point density from a particle system"
+msgstr "Генерувати щільність точок з системи частинок"
+
+
+msgid "Object Vertices"
+msgstr "Вершини об'єкта"
+
+
+msgid "Generate point density from an object's vertices"
+msgstr "Генерувати щільність точок з вершин об'єкта"
+
+
+msgid "Particle System to render as points"
+msgstr "Системи частинок для вимальовування у вигляді крапок"
+
+
+msgid "Radius from the shaded sample to look for points within"
+msgstr "Радіус відтіненої вибірки для пошуку точок"
+
+
+msgid "Color Source"
+msgstr "Джерело кольору"
+
+
+msgid "Data to derive color results from"
+msgstr "Дані, з яких одержати колір"
+
+
+msgid "Particle Age"
+msgstr "Вік частинки"
+
+
+msgid "Lifetime mapped as 0.0 - 1.0 intensity"
+msgstr "Час життя за шкалою 0.0 - 1.0"
+
+
+msgid "Particle Speed"
+msgstr "Швидкість частинки"
+
+
+msgid "Particle speed (absolute magnitude of velocity) mapped as 0.0-1.0 intensity"
+msgstr "Швидкість частинки (абсолютна величина швидкості) за шкалою інтенсивності 0.0-1.0"
+
+
+msgid "Particle Velocity"
+msgstr "Швидкість частинки"
+
+
+msgid "XYZ velocity mapped to RGB colors"
+msgstr "XYZ-швидкість відображена на RGB-кольори"
+
+
 msgid "Sky Texture"
 msgstr "Текстура неба"
 
@@ -38447,10 +38511,6 @@ msgid "FBX 6.1 ASCII"
 msgstr "FBX 6.1 ASCII"
 
 
-msgid "Legacy 6.1 ascii version"
-msgstr "Традиційна версія 6.1 ASCII"
-
-
 msgid "Selected Objects"
 msgstr "Вибрані об'єкти"
 
@@ -40839,10 +40899,6 @@ msgid "Specify orientation and scale, instead of using embedded data in FBX file
 msgstr "Вказати орієнтацію і масштаб замість використання даних, включених у файл FBX"
 
 
-msgid "Search subdirs for any associated images (Warning, may be slow)"
-msgstr "Пошук у підкаталогах будь-яких зв'язаних зображень (попередження: може бути повільним)"
-
-
 msgid "Alpha Decals"
 msgstr "Альфа-наклейки"
 
@@ -41063,6 +41119,10 @@ msgstr "Полігрупи"
 
 msgid "Import OBJ groups as vertex groups"
 msgstr "Імпортувати OBJ-групи як групи вершин"
+
+
+msgid "Search subdirs for any associated images (Warning, may be slow)"
+msgstr "Пошук у підкаталогах будь-яких зв'язаних зображень (попередження: може бути повільним)"
 
 
 msgid "Split"
@@ -44798,6 +44858,14 @@ msgid "Add a node to the active tree and link to an existing socket"
 msgstr "Додати вузол до активного дерева та приєднати до наявного роз'єму"
 
 
+msgid "Use Transform"
+msgstr "Використати трансформації"
+
+
+msgid "Start transform operator after inserting the node"
+msgstr "Запустити трансформації після вставляння вузла"
+
+
 msgid "Settings to be applied on the newly created node"
 msgstr "Параметри, що будуть застосовані при створенні вузла"
 
@@ -44808,14 +44876,6 @@ msgstr "Тип вузла"
 
 msgid "Node type"
 msgstr "Тип вузла"
-
-
-msgid "Use Transform"
-msgstr "Використати трансформації"
-
-
-msgid "Start transform operator after inserting the node"
-msgstr "Запустити трансформації після вставляння вузла"
 
 
 msgid "Link Socket Index"
@@ -56774,10 +56834,6 @@ msgid "Spot Shape"
 msgstr "Форма прожектора"
 
 
-msgid "Ray Visibility"
-msgstr "Видимість променів"
-
-
 msgid "Cycles Hair Rendering"
 msgstr "Вимальовування волосся Cycles"
 
@@ -56808,6 +56864,10 @@ msgstr "Відбір об'єму"
 
 msgid "Mist Pass"
 msgstr "Прохід туману"
+
+
+msgid "Ray Visibility"
+msgstr "Видимість променів"
 
 
 msgid "Post Processing"
@@ -57380,10 +57440,6 @@ msgstr "Частинка в системі частинок"
 
 msgid "Particle Location"
 msgstr "Розташування частинки"
-
-
-msgid "Particle Velocity"
-msgstr "Швидкість частинки"
 
 
 msgid "Previous Particle Location"
@@ -58222,34 +58278,6 @@ msgid "Point density settings"
 msgstr "Параметри щільності точок"
 
 
-msgid "Point Source"
-msgstr "Джерело точок"
-
-
-msgid "Point data to use as renderable point density"
-msgstr "Дані точки, що використовується в якості щільності вимальовуваної точки"
-
-
-msgid "Generate point density from a particle system"
-msgstr "Генерувати щільність точок з системи частинок"
-
-
-msgid "Object Vertices"
-msgstr "Вершини об'єкта"
-
-
-msgid "Generate point density from an object's vertices"
-msgstr "Генерувати щільність точок з вершин об'єкта"
-
-
-msgid "Object to take point data from"
-msgstr "Об'єкт з якого отримати дані точок"
-
-
-msgid "Particle System to render as points"
-msgstr "Системи частинок для вимальовування у вигляді крапок"
-
-
 msgid "Particle Cache"
 msgstr "Кеш частинок"
 
@@ -58282,10 +58310,6 @@ msgid "Object Location"
 msgstr "Розташування об'єкта"
 
 
-msgid "Radius from the shaded sample to look for points within"
-msgstr "Радіус відтіненої вибірки для пошуку точок"
-
-
 msgid "Method of attenuating density by distance from the point"
 msgstr "Метод послаблення щільності з відстанню від точки"
 
@@ -58294,40 +58318,12 @@ msgid "Density is constant within lookup radius"
 msgstr "Щільність постійна у межах радіусу пошуку"
 
 
-msgid "Particle Age"
-msgstr "Вік частинки"
-
-
 msgid "Softness"
 msgstr "М'якість"
 
 
 msgid "Softness of the 'soft' falloff option"
 msgstr "М'якість параметру 'м'якого' спаду"
-
-
-msgid "Color Source"
-msgstr "Джерело кольору"
-
-
-msgid "Data to derive color results from"
-msgstr "Дані, з яких одержати колір"
-
-
-msgid "Lifetime mapped as 0.0 - 1.0 intensity"
-msgstr "Час життя за шкалою 0.0 - 1.0"
-
-
-msgid "Particle Speed"
-msgstr "Швидкість частинки"
-
-
-msgid "Particle speed (absolute magnitude of velocity) mapped as 0.0-1.0 intensity"
-msgstr "Швидкість частинки (абсолютна величина швидкості) за шкалою інтенсивності 0.0-1.0"
-
-
-msgid "XYZ velocity mapped to RGB colors"
-msgstr "XYZ-швидкість відображена на RGB-кольори"
 
 
 msgid "Multiplier to bring particle speed within an acceptable range"
@@ -58678,14 +58674,6 @@ msgid "First action in stitch"
 msgstr "Перша дія у склейці"
 
 
-msgid "Action 2"
-msgstr "Дія 2"
-
-
-msgid "Second action in stitch"
-msgstr "Друга дія у склейці"
-
-
 msgid "Blend amount"
 msgstr "Величина змішування"
 
@@ -58694,12 +58682,20 @@ msgid "Size of blending transition, on both sides of the stitch"
 msgstr "Величина перехідного змішування по обидва боки від склейки"
 
 
-msgid "Stitch frame"
-msgstr "Кадр склейки"
+msgid "Stick Bone"
+msgstr "Закріпити кістку"
 
 
-msgid "Frame to locate stitch on"
-msgstr "Кадр, на якому виконати склеювання"
+msgid "Bone to freeze during transition"
+msgstr "Кістка, що заморожується при переміщенні"
+
+
+msgid "Action 2"
+msgstr "Дія 2"
+
+
+msgid "Second action in stitch"
+msgstr "Друга дія у склейці"
 
 
 msgid "Second offset"
@@ -58710,12 +58706,12 @@ msgid "Frame offset for 2nd animation, where it should start"
 msgstr "Зсув у кадрах 2-ї анімації, з якого вона має починатися"
 
 
-msgid "Stick Bone"
-msgstr "Закріпити кістку"
+msgid "Stitch frame"
+msgstr "Кадр склейки"
 
 
-msgid "Bone to freeze during transition"
-msgstr "Кістка, що заморожується при переміщенні"
+msgid "Frame to locate stitch on"
+msgstr "Кадр, на якому виконати склеювання"
 
 
 msgid "Aperture Type"
@@ -59706,20 +59702,12 @@ msgid "Settings/info about a language"
 msgstr "Параметри/інформація про мову"
 
 
-msgid "PO File Path"
-msgstr "Шлях до файлу PO"
+msgid "MO File Path"
+msgstr "Шлях до файлу MO"
 
 
-msgid "Path to the relevant po file in branches"
-msgstr "Шлях до актуального po-файлу у гілці branches"
-
-
-msgid "Numeric ID"
-msgstr "Числовий ID"
-
-
-msgid "Numeric ID (readonly!)"
-msgstr "Числовий ID (лише читання!)"
+msgid "Path to the relevant mo file"
+msgstr "Шлях до актуального mo-файлу"
 
 
 msgid "Language Name"
@@ -59730,6 +59718,10 @@ msgid "English language name/label (like \"French (Français)\")"
 msgstr "Англійська назва/позначення мови (наприклад \"Ukrainian (Українська)\")"
 
 
+msgid "Use this language in current operator"
+msgstr "Використати цю мову у поточному операторі"
+
+
 msgid "Language ID"
 msgstr "Мова"
 
@@ -59738,12 +59730,20 @@ msgid "ISO code, like fr_FR"
 msgstr "Код ISO, наприклад uk_UK"
 
 
-msgid "MO File Path"
-msgstr "Шлях до файлу MO"
+msgid "Numeric ID"
+msgstr "Числовий ID"
 
 
-msgid "Path to the relevant mo file"
-msgstr "Шлях до актуального mo-файлу"
+msgid "Numeric ID (readonly!)"
+msgstr "Числовий ID (лише читання!)"
+
+
+msgid "PO File Path"
+msgstr "Шлях до файлу PO"
+
+
+msgid "Path to the relevant po file in branches"
+msgstr "Шлях до актуального po-файлу у гілці branches"
 
 
 msgid "PO Trunk File Path"
@@ -59752,10 +59752,6 @@ msgstr "Шлях до файлу PO у гілці trunk"
 
 msgid "Path to the relevant po file in trunk"
 msgstr "Шлях до актуального po-файлу у гілці trunk"
-
-
-msgid "Use this language in current operator"
-msgstr "Використати цю мову у поточному операторі"
 
 
 msgid "Languages"
@@ -59786,20 +59782,12 @@ msgid "Whether these settings have already been auto-set or not"
 msgstr "Чи були значення цих параметрів встановлені автоматично"
 
 
-msgid "Constrained Bone"
-msgstr "Обмежена кістка"
+msgid "Distance and Floor Fixes - Desired offset"
+msgstr "Поправки відстані та підлоги - бажане зміщення"
 
 
-msgid "Bone (2)"
-msgstr "Кістка (2)"
-
-
-msgid "Other Constrained Bone (optional, depends on type)"
-msgstr "Інша обмежена кістка (не обов'язково, залежно від типу)"
-
-
-msgid "Type of constraint"
-msgstr "Тип обмеження"
+msgid "Name of Mocap Fix"
+msgstr "Назва поправки захоплення руху"
 
 
 msgid "Out"
@@ -59812,6 +59800,18 @@ msgstr "Кількість кадрів для згладжування"
 
 msgid "Fix is active"
 msgstr "Поправки увімкнені"
+
+
+msgid "Target of Fix - Mesh (optional, depends on type)"
+msgstr "Ціль поправки - каркас (не обов'язково, залежно від типу)"
+
+
+msgid "E"
+msgstr "E"
+
+
+msgid "End frame of Fix"
+msgstr "Кінцевий кадр поправки"
 
 
 msgid "In which space should Point type target be evaluated"
@@ -59842,16 +59842,28 @@ msgid "Fix is fully shown"
 msgstr "Повний показ поправок"
 
 
-msgid "E"
-msgstr "E"
+msgid "Type of constraint"
+msgstr "Тип обмеження"
 
 
-msgid "End frame of Fix"
-msgstr "Кінцевий кадр поправки"
+msgid "Target of Fix - Point"
+msgstr "Ціль поправки - точка"
 
 
-msgid "Name of Mocap Fix"
-msgstr "Назва поправки захоплення руху"
+msgid "Bone (2)"
+msgstr "Кістка (2)"
+
+
+msgid "Other Constrained Bone (optional, depends on type)"
+msgstr "Інша обмежена кістка (не обов'язково, залежно від типу)"
+
+
+msgid "Start frame of Fix"
+msgstr "Початковий кадр поправки"
+
+
+msgid "Constrained Bone"
+msgstr "Обмежена кістка"
 
 
 msgid "In"
@@ -59860,22 +59872,6 @@ msgstr "В"
 
 msgid "Number of frames to smooth in"
 msgstr "Кількість кадрів для згладжування"
-
-
-msgid "Target of Fix - Mesh (optional, depends on type)"
-msgstr "Ціль поправки - каркас (не обов'язково, залежно від типу)"
-
-
-msgid "Start frame of Fix"
-msgstr "Початковий кадр поправки"
-
-
-msgid "Distance and Floor Fixes - Desired offset"
-msgstr "Поправки відстані та підлоги - бажане зміщення"
-
-
-msgid "Target of Fix - Point"
-msgstr "Ціль поправки - точка"
 
 
 msgid "Python expression to be evaluated as the initial node setting"
@@ -59922,8 +59918,8 @@ msgid "Is Stroke Start"
 msgstr "Є початком штриха"
 
 
-msgid "Limit for checking zero area/length"
-msgstr "Границі для виявлення нульової площі/довжини "
+msgid "Limit for checking distorted faces"
+msgstr "Межа для перевірки викривлення граней"
 
 
 msgid "Apply Scale"
@@ -59934,20 +59930,16 @@ msgid "Apply scene scale setting on export"
 msgstr "При експорті застосувати параметри масштабу сцени"
 
 
+msgid "Limit for checking zero area/length"
+msgstr "Границі для виявлення нульової площі/довжини "
+
+
 msgid "Format type to export to"
 msgstr "Тип формату, в який експортувати"
 
 
 msgid "VRML2"
 msgstr "VRML2"
-
-
-msgid "Copy Textures"
-msgstr "Скопіювати текстури"
-
-
-msgid "Copy textures on export to the output path"
-msgstr "При експорті копіювати текстури у вивідну теку"
 
 
 msgid "Export Directory"
@@ -59958,8 +59950,12 @@ msgid "Path to directory where the files are created"
 msgstr "Шлях до теки, в якій створюються файли"
 
 
-msgid "Limit for checking distorted faces"
-msgstr "Межа для перевірки викривлення граней"
+msgid "Copy Textures"
+msgstr "Скопіювати текстури"
+
+
+msgid "Copy textures on export to the output path"
+msgstr "При експорті копіювати текстури у вивідну теку"
 
 
 msgid "Selected UV Element"
@@ -60764,10 +60760,6 @@ msgstr "Вималювати (Shift+B) визначену користуваче
 
 msgid "Border Minimum X"
 msgstr "Межовий мінімум X"
-
-
-msgid "Minimum X value to for the render border"
-msgstr "Найменше значення X для межі вимальовування"
 
 
 msgid "Border Minimum Y"
@@ -84459,16 +84451,12 @@ msgid "Active group is locked, aborting"
 msgstr "Активна група заблокована, припинено"
 
 
-msgid "Error!"
-msgstr "Помилка!"
+msgid "Warning!"
+msgstr "Обережно!"
 
 
 msgid "OK"
 msgstr "Гаразд"
-
-
-msgid "Warning!"
-msgstr "Обережно!"
 
 
 msgid "Vertex Data Detected!"
