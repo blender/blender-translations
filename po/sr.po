@@ -1,9 +1,9 @@
 
 msgid ""
 msgstr ""
-"Project-Id-Version: Blender 2.75 (sub 3) (b'335c301')\n"
+"Project-Id-Version: Blender 2.75 (sub 4) (b'8a2371e')\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-07-28 23:13:15\n"
+"POT-Creation-Date: 2015-08-11 22:30:02\n"
 "PO-Revision-Date: 2012-09-07 22:32+0100\n"
 "Last-Translator: Nikola Radovanovic <cobisimo@gmail.com>\n"
 "Language-Team: Nikola Radovanovic\n"
@@ -744,23 +744,35 @@ msgstr "Замућење покрета"
 
 
 msgid "Blur"
-msgstr "Замути"
+msgstr "Замућено"
 
 
 msgid "Sharpen"
-msgstr "Изоштри"
+msgstr "Изоштрено"
 
 
 msgid "Dilation"
-msgstr "Засићеност"
+msgstr "Дилатација"
 
 
 msgid "Erosion"
 msgstr "Ерозија"
 
 
+msgid "Laplacian"
+msgstr "Лапласово"
+
+
+msgid "Sobel"
+msgstr "Собел"
+
+
+msgid "Prewitt"
+msgstr "Превит"
+
+
 msgid "Gray Scale"
-msgstr "Црно-бело"
+msgstr "Сиви тонови"
 
 
 msgid "Sepia"
@@ -1084,11 +1096,19 @@ msgstr "Додаје нови Меш"
 
 
 msgid "Add Background Scene"
-msgstr "Позадина %%x%d"
+msgstr "Додај позадинску сцену"
+
+
+msgid "Remove Scene"
+msgstr "Уклони сцену"
 
 
 msgid "Suspend Scene"
 msgstr "Суспендуј сцену"
+
+
+msgid "Resume Scene"
+msgstr "Настави сцену"
 
 
 msgid "Sound file"
@@ -1245,14 +1265,6 @@ msgid "Addon Preferences"
 msgstr "Ваша подешавања"
 
 
-msgid "Import Paths"
-msgstr "Путање за увоз"
-
-
-msgid "Translation Root"
-msgstr "Корен превода"
-
-
 msgid "Source Root"
 msgstr "Корен изворног кода"
 
@@ -1261,12 +1273,20 @@ msgid "The Blender source root path"
 msgstr "Корени директоријум изворног кода Blender-а"
 
 
-msgid "Persistent Data Path"
-msgstr "Трајна путања до података"
+msgid "Translation Root"
+msgstr "Корен превода"
 
 
 msgid "Fribidi Library"
 msgstr "Fribidi збирка"
+
+
+msgid "Import Paths"
+msgstr "Путање за увоз"
+
+
+msgid "Persistent Data Path"
+msgstr "Трајна путања до података"
 
 
 msgid "NLA Tracks"
@@ -1517,8 +1537,16 @@ msgid "Node Editor"
 msgstr "Уређивач чворова"
 
 
+msgid "Editor for node-based shading and compositing tools"
+msgstr "Уређивач сенчења базираног на чворовима и алата слагања"
+
+
 msgid "Logic Editor"
 msgstr "Уређивач логике"
+
+
+msgid "Game logic editing"
+msgstr "Уређивање логике игре"
 
 
 msgid "Properties"
@@ -1709,8 +1737,8 @@ msgid "Crop"
 msgstr "Исеци"
 
 
-msgid "Bake Data"
-msgstr "Запакуј податке"
+msgid "Cage Object"
+msgstr "Одстојање камере"
 
 
 msgid "File Path"
@@ -1741,6 +1769,10 @@ msgid "Image Format"
 msgstr "Формат слике"
 
 
+msgid "Save Mode"
+msgstr "Начин уписивања"
+
+
 msgid "Internal"
 msgstr "Интерно"
 
@@ -1755,6 +1787,18 @@ msgstr "Изабран на активан"
 
 msgid "Clear"
 msgstr "Очисти"
+
+
+msgid "Split Materials"
+msgstr "Раздвој материјале"
+
+
+msgid "Automatic Name"
+msgstr "Аутоматска имена"
+
+
+msgid "Cage"
+msgstr "Кавез"
 
 
 msgid "Bezier Curve Point"
@@ -2081,6 +2125,22 @@ msgid "Particle datablocks"
 msgstr "Блокови података честица"
 
 
+msgid "Grease Pencil"
+msgstr "Скицирање"
+
+
+msgid "Grease Pencil datablocks"
+msgstr "Блок података скицирања"
+
+
+msgid "Movie Clips"
+msgstr "Филмски исечак"
+
+
+msgid "Movie Clip datablocks"
+msgstr "Блок података филмског исечка"
+
+
 msgid "Masks"
 msgstr "Маске"
 
@@ -2194,7 +2254,11 @@ msgstr "Ограничи раздаљину"
 
 
 msgid "Flee Distance"
-msgstr "растојање"
+msgstr "Удаљеност бежања"
+
+
+msgid "Flee to this distance"
+msgstr "Бежи до ове удаљености"
 
 
 msgid "Queue Size"
@@ -2286,11 +2350,11 @@ msgstr "Дозволи слетање"
 
 
 msgid "Rule Evaluation"
-msgstr "Примена правила"
+msgstr "Провера правила"
 
 
 msgid "How the rules in the list are evaluated"
-msgstr "Како се правила у листи примењују"
+msgstr "Како се правила у листи проверавају"
 
 
 msgid "Fuzzy"
@@ -2395,10 +2459,6 @@ msgstr "Селективан"
 
 msgid "Bone is able to be selected"
 msgstr "Може се изабрати кост"
-
-
-msgid "Envelope Deform Distance"
-msgstr "Растојање деформације коверте"
 
 
 msgid "Bone is not visible when it is not in Edit Mode (i.e. in Object or Pose Modes)"
@@ -2622,7 +2682,7 @@ msgstr "Минимална брзина"
 
 
 msgid "Pin Cloth"
-msgstr "Прикаћи тканину"
+msgstr "Закачи тканину"
 
 
 msgid "Enable pinning of cloth vertices to other objects/positions"
@@ -2630,11 +2690,11 @@ msgstr "Омогући качење тканине за објекте/пози�
 
 
 msgid "Pin Stiffness"
-msgstr "Укоченост качења"
+msgstr "Крутост качења"
 
 
 msgid "Pin (vertex target position) spring stiffness"
-msgstr "Укоченост качења спирале (позиције циљних темена)"
+msgstr "Крутост качења спирале (позиције циљних темена)"
 
 
 msgid "Quality"
@@ -3811,7 +3871,7 @@ msgstr "Задржи осе"
 
 
 msgid "Keep Z Axis"
-msgstr "Z оса"
+msgstr "Задржи Z осу"
 
 
 msgid "Original Length"
@@ -4270,6 +4330,14 @@ msgid "Include visualization of speaker related animation data"
 msgstr "Укључи приказ података везаних за приказ анимације звучника"
 
 
+msgid "Display Grease Pencil"
+msgstr "Прикажи скициран цртеж"
+
+
+msgid "Include visualization of Grease Pencil related animation data and frames"
+msgstr "Укључи приказ података скицираног цртежа анимације и кадрова"
+
+
 msgid "Driver type"
 msgstr "Врста возача"
 
@@ -4491,7 +4559,7 @@ msgstr "UV координате"
 
 
 msgid "UV coordinates in parent object space"
-msgstr "Приказује особине оквира у игри"
+msgstr "UV координате у простору родитеља"
 
 
 msgid "Dupli Type"
@@ -4771,11 +4839,19 @@ msgstr "Брзина растапања"
 
 
 msgid "Dry"
-msgstr "Контуре"
+msgstr "Сушење"
+
+
+msgid "Enable to make surface wetness dry over time"
+msgstr "Омогући сушење мокре површи током времена"
 
 
 msgid "Dry Speed"
 msgstr "Брзина сушења"
+
+
+msgid "Approximately in how many frames should drying happen"
+msgstr "Приближан број кадрова потербан за сушење"
 
 
 msgid "Resolution"
@@ -4823,7 +4899,7 @@ msgstr "Почетне вредности:"
 
 
 msgid "UV Texture"
-msgstr "Радијална лопта"
+msgstr "UV текстура"
 
 
 msgid "Vertex Color"
@@ -4963,19 +5039,27 @@ msgstr "Режим измене"
 
 
 msgid "Roll"
-msgstr "Изоштри"
+msgstr "Окрени"
 
 
 msgid "Bone rotation around head-tail axis"
-msgstr "Максимална ротација по осама"
+msgstr "Ротација кости око подужне осе"
 
 
 msgid "Location of head end of the bone"
 msgstr "Локација врха кости"
 
 
+msgid "Head Select"
+msgstr "Избор врха"
+
+
+msgid "Tail Select"
+msgstr "Избор краја"
+
+
 msgid "Editbone Matrix"
-msgstr "Матрица погледа"
+msgstr "Матрица уређења кости"
 
 
 msgid "Global gravity weight"
@@ -5155,7 +5239,7 @@ msgstr "Кључни кадрови"
 
 
 msgid "Modifiers"
-msgstr "Модификатори:"
+msgstr "Модификатори"
 
 
 msgid "Selection status"
@@ -5335,7 +5419,7 @@ msgstr "Шум"
 
 
 msgid "Limits"
-msgstr "Границе"
+msgstr "Ограничења"
 
 
 msgid "Disabled"
@@ -5394,16 +5478,28 @@ msgid "Phase Multiplier"
 msgstr "Множилац"
 
 
+msgid "Sine"
+msgstr "Синус"
+
+
+msgid "Cosine"
+msgstr "Косинус"
+
+
 msgid "Square Root"
-msgstr "Површи"
+msgstr "Квадратни корен"
 
 
 msgid "Normalized Sine"
-msgstr "Величина нормале"
+msgstr "Нормализован синус"
+
+
+msgid "sin(x) / x"
+msgstr "sin(x) / x"
 
 
 msgid "Generator F-Modifier"
-msgstr "Z изврн."
+msgstr "Генератор Ф-модификатора"
 
 
 msgid "Coefficients"
@@ -5867,11 +5963,11 @@ msgstr "Слободно"
 
 
 msgid "Surface Smoothing"
-msgstr "Површи"
+msgstr "Умекшање површи"
 
 
 msgid "Surface Subdivisions"
-msgstr "Издели"
+msgstr "Издељеност површи"
 
 
 msgid "Generate Speed Vectors"
@@ -5879,7 +5975,7 @@ msgstr "Генериши информације о систему"
 
 
 msgid "Remove air bubbles"
-msgstr "Уклони дупликате"
+msgstr "Уклони ваздушне мехуриће"
 
 
 msgid "Generate Particles"
@@ -6074,6 +6170,10 @@ msgid "Sensor"
 msgstr "Сензор"
 
 
+msgid "Blades"
+msgstr "Сечива"
+
+
 msgid "High Quality"
 msgstr "Висок квалитет"
 
@@ -6083,31 +6183,127 @@ msgstr "Пажња"
 
 
 msgid "Samples"
-msgstr "Примери"
+msgstr "Узорака"
+
+
+msgid "Grease Pencil Frame"
+msgstr "Скицирани кадар"
+
+
+msgid "Collection of related sketches on a particular frame"
+msgstr "Збирка скицираних цртежа тренутног кадра"
 
 
 msgid "Strokes"
 msgstr "Потези"
 
 
+msgid "Freehand curves defining the sketch on this frame"
+msgstr "Слободоручне криве које формирају цртеж тренутног кадра"
+
+
 msgid "Frame Number"
 msgstr "Број кадра"
+
+
+msgid "The frame on which this sketch appears"
+msgstr "Кадар на коме се ова скица појављује"
+
+
+msgid "Paint Lock"
+msgstr "Закључај цртање"
+
+
+msgid "Frame is being edited (painted on)"
+msgstr "Кадар се уређује (омогући цртање)"
+
+
+msgid "Grease Pencil Layer"
+msgstr "Слој скице"
+
+
+msgid "Collection of related sketches"
+msgstr "Збирка повезаних скица"
+
+
+msgid "Layer name"
+msgstr "Име слоја"
+
+
+msgid "Sketches for this layer on different frames"
+msgstr "Скице овог слоја на различитим кадровима"
 
 
 msgid "Active Frame"
 msgstr "Активни оквир"
 
 
+msgid "Frame currently being displayed for this layer"
+msgstr "Тренутно приказани оквир овог слоја"
+
+
+msgid "Volumetric Strokes"
+msgstr "Волуметрични потези"
+
+
+msgid "Draw strokes as a series of circular blobs, resulting in a volumetric effect"
+msgstr "Пиказује потезе као низ кружних мрља, што даје ефекат волуметричности"
+
+
+msgid "Color for all strokes in this layer"
+msgstr "Боја свих потеза у овом слоју"
+
+
 msgid "Layer Opacity"
 msgstr "Провидност слоја"
 
 
+msgid "Fill Color"
+msgstr "Боја испуне"
+
+
+msgid "Color for filling region bounded by each stroke"
+msgstr "Боја испуне региона уоквиреног потезом"
+
+
 msgid "Fill Opacity"
-msgstr "Пуна провидност"
+msgstr "Провидност испуне"
+
+
+msgid "Opacity for filling region bounded by each stroke"
+msgstr "Провидност испуне региона уоквиреног потезом"
 
 
 msgid "Thickness"
 msgstr "Дебљина"
+
+
+msgid "Thickness of strokes (in pixels)"
+msgstr "Дебљина потеза (у пикселима)"
+
+
+msgid "Frames Before"
+msgstr "Претходни кадрови"
+
+
+msgid "Frames After"
+msgstr "Наредни кадрови"
+
+
+msgid "Use Custom Ghost Colors"
+msgstr "Прилагођена боја духа"
+
+
+msgid "Use custom colors for ghost frames"
+msgstr "Користи прилагођену боју духа кадрова"
+
+
+msgid "Before Color"
+msgstr "Боја претходних"
+
+
+msgid "After Color"
+msgstr "Боја наредних"
 
 
 msgid "Set layer Visibility"
@@ -6118,24 +6314,48 @@ msgid "Locked"
 msgstr "Закључај"
 
 
+msgid "Frame Locked"
+msgstr "Закључан кадар"
+
+
+msgid "Show Points"
+msgstr "Прикажи тачке"
+
+
 msgid "X Ray"
 msgstr "X зрак"
+
+
+msgid "Make the layer draw in front of objects"
+msgstr "Исцртавај слој испред осталих објеката"
+
+
+msgid "Is Stroke Visible"
+msgstr "Прикажи потез"
+
+
+msgid "Is Fill Visible"
+msgstr "Прикажи испуну"
+
+
+msgid "Grease Pencil Stroke"
+msgstr "Потез скице"
+
+
+msgid "Freehand curve defining part of a sketch"
+msgstr "Слободоручна крива као део скице"
+
+
+msgid "Stroke Points"
+msgstr "Тачке потеза"
 
 
 msgid "Draw Mode"
 msgstr "Режим приказа"
 
 
-msgid "3D Space"
-msgstr "Сачувај"
-
-
-msgid "2D Space"
-msgstr "Сачувај"
-
-
-msgid "2D Image"
-msgstr "Додај слику"
+msgid "Grease Pencil Stroke Point"
+msgstr "Тачка скицираног потеза"
 
 
 msgid "Coordinates"
@@ -6331,7 +6551,7 @@ msgstr "Капсула"
 
 
 msgid "Collision Compound"
-msgstr "Границе"
+msgstr "Судар једињења"
 
 
 msgid "Collision Margin"
@@ -6371,7 +6591,7 @@ msgstr "Прикажи панел стања"
 
 
 msgid "Game Property"
-msgstr "Особине игре"
+msgstr "Особина игре"
 
 
 msgid "Game engine user defined object property"
@@ -6450,14 +6670,6 @@ msgid "Cluster Iterations"
 msgstr "Итерације"
 
 
-msgid "Number of cluster iterations"
-msgstr "Број пуних окрета код увијања"
-
-
-msgid "Shape Match"
-msgstr "Облик"
-
-
 msgid "Rigid to Soft Body"
 msgstr "Круто у меко тело"
 
@@ -6524,10 +6736,6 @@ msgstr "Индиректно"
 
 msgid "F-Curves"
 msgstr "Ф-крива"
-
-
-msgid "Convenient groupings of F-Curves"
-msgstr "Предмет ограничења"
 
 
 msgid "Frame Range"
@@ -6887,7 +7095,7 @@ msgstr "Избриши тежишну тачку"
 
 
 msgid "Strength Pressure"
-msgstr "Снага"
+msgstr "Снага притиска"
 
 
 msgid "Use Gradient"
@@ -6962,6 +7170,10 @@ msgid "Texture Slot"
 msgstr "Слот текстуре"
 
 
+msgid "Mask Texture Slot"
+msgstr "Слот маске текстуре"
+
+
 msgid "Mask Texture"
 msgstr "Текстура маске"
 
@@ -6999,7 +7211,11 @@ msgstr "X алфа"
 
 
 msgid "Camera types"
-msgstr "Камере"
+msgstr "Врсте камера"
+
+
+msgid "Perspective"
+msgstr "Перспектива"
 
 
 msgid "Orthographic"
@@ -7011,7 +7227,7 @@ msgstr "Панорама"
 
 
 msgid "Composition Guides"
-msgstr "Израз"
+msgstr "Вођице слагања"
 
 
 msgid "Center Diagonal"
@@ -7216,10 +7432,6 @@ msgstr "Извуци"
 
 msgid "Bevel Depth"
 msgstr "Дубина искошавање"
-
-
-msgid "Evaluation Time"
-msgstr "Примена правила"
 
 
 msgid "Bevel Object"
@@ -7567,7 +7779,19 @@ msgstr "Квадратно"
 
 
 msgid "Use Textures"
-msgstr "Радијална лопта"
+msgstr "Користи текстуре"
+
+
+msgid "Texture spacing"
+msgstr "Размак текстуре"
+
+
+msgid "Spacing for textures along stroke length"
+msgstr "Размак текстуре дуж потеза четкице"
+
+
+msgid "Node Tree"
+msgstr "Дрво чворова"
 
 
 msgid "Use Nodes"
@@ -7691,7 +7915,7 @@ msgstr "Погледач"
 
 
 msgid "Compositing node viewer"
-msgstr "Погледач композитног чвора"
+msgstr "Погледач чвора слагања"
 
 
 msgid "How to generate the image"
@@ -7711,7 +7935,7 @@ msgstr "Резултат рендеринга"
 
 
 msgid "Compositing"
-msgstr "Компоновање"
+msgstr "Слагање"
 
 
 msgid "Packed File"
@@ -7981,19 +8205,15 @@ msgstr "Користи дифузно сенчење"
 
 
 msgid "Area Lamp"
-msgstr "сцена"
+msgstr "Површинско светло"
+
+
+msgid "Directional area lamp"
+msgstr "Усмерено површинско светло"
 
 
 msgid "No Shadow"
 msgstr "Без сенке"
-
-
-msgid "Ray Shadow"
-msgstr "Сенка"
-
-
-msgid "Shadow Buffer Size"
-msgstr "Сенка"
 
 
 msgid "Shadow Filter Type"
@@ -8001,15 +8221,31 @@ msgstr "Врста филтера сенке"
 
 
 msgid "Number of shadow buffer samples"
-msgstr "Поставља број додатних бљесова"
+msgstr "Број узорака умекшане сенке"
 
 
 msgid "Shadow Buffer Type"
-msgstr "Издели умекшано"
+msgstr "Врста умекшане сенке"
+
+
+msgid "Type of shadow buffer"
+msgstr "Врста умекшања сенке"
+
+
+msgid "Classical"
+msgstr "Класично"
+
+
+msgid "Classic shadow buffer"
+msgstr "Класично умекшање сенке"
 
 
 msgid "Irregular"
-msgstr "Нормално"
+msgstr "Неправилно"
+
+
+msgid "Deep"
+msgstr "Дубоко"
 
 
 msgid "Shadow Map Type"
@@ -8109,7 +8345,7 @@ msgstr "Величина пројекције"
 
 
 msgid "Show Cone"
-msgstr "Прикажи оставу"
+msgstr "Прикажи купу"
 
 
 msgid "Sun Lamp"
@@ -8174,6 +8410,18 @@ msgstr "Екстерна .blend датотека из поје су повеза
 
 msgid "Path to the library .blend file"
 msgstr "Путања до .blend датотеке збирке"
+
+
+msgid "Mask datablock defining mask for compositing"
+msgstr "Блок података маске који одређује маску слагања"
+
+
+msgid "Collection of layers which defines this mask"
+msgstr "Збирка слојева који одређују ову маску"
+
+
+msgid "Active Shape Index"
+msgstr "Индекс активног сенчења"
 
 
 msgid "Index of active layer in list of all mask's layers"
@@ -8497,7 +8745,7 @@ msgstr "Храпавост"
 
 
 msgid "Oren-Nayar Roughness"
-msgstr "Храпавост"
+msgstr "Орен-Најар храпавост"
 
 
 msgid "Diffuse Toon Smooth"
@@ -8772,6 +9020,14 @@ msgid "Movie File"
 msgstr "Датотека филма"
 
 
+msgid "Grease pencil data for this movie clip"
+msgstr "Податак скицирања овог филмског исечка"
+
+
+msgid "Node tree consisting of linked nodes used for shading, textures and compositing"
+msgstr "Дрво чворова које чине повезани чворови сенчења, текстура и слагања"
+
+
 msgid "Nodes"
 msgstr "Чворови"
 
@@ -8780,12 +9036,24 @@ msgid "Links"
 msgstr "Везе"
 
 
+msgid "Grease Pencil Data"
+msgstr "Подаци скицирања"
+
+
+msgid "Grease Pencil datablock"
+msgstr "Блок података скицирања"
+
+
 msgid "Shader nodes"
 msgstr "Чворови сенчења"
 
 
 msgid "Texture nodes"
 msgstr "Чворови текстура"
+
+
+msgid "Compositing nodes"
+msgstr "Чворови слагања"
 
 
 msgid "Inputs"
@@ -8814,6 +9082,14 @@ msgstr "ID имена"
 
 msgid "Label"
 msgstr "Назив"
+
+
+msgid "Compositor Node Tree"
+msgstr "Дрво чворова слагања"
+
+
+msgid "Node tree consisting of linked nodes used for compositing"
+msgstr "Дрво чворова који чине чворови за слагање"
 
 
 msgid "Render Quality"
@@ -8920,8 +9196,16 @@ msgid "Viewer Border"
 msgstr "Оквир прегледача"
 
 
+msgid "Use boundaries for viewer nodes and composite backdrop"
+msgstr "Користи оквир за чворове приказа и сложену позадину"
+
+
 msgid "Shader Node Tree"
-msgstr "Низ чворова сенчења"
+msgstr "Дрво чворова сенчења"
+
+
+msgid "Texture Node Tree"
+msgstr "Дрво чворова текстуре"
 
 
 msgid "Data"
@@ -9202,6 +9486,10 @@ msgstr "Систем честица који емитује објекат"
 
 msgid "Rigid Body Settings"
 msgstr "Подешавања меког тела"
+
+
+msgid "Rigid Body Constraint"
+msgstr "Ограничења крутог тела"
 
 
 msgid "Restrict View"
@@ -9492,10 +9780,6 @@ msgid "Advanced"
 msgstr "Напредно"
 
 
-msgid "Constrain boids to a surface"
-msgstr "Предмет ограничења"
-
-
 msgid "Invert Grid"
 msgstr "Обрнута мрежа"
 
@@ -9669,7 +9953,7 @@ msgstr "Билборд"
 
 
 msgid "Draw Color"
-msgstr "Боја преноса"
+msgstr "Боја цртања"
 
 
 msgid "Children From"
@@ -9749,7 +10033,7 @@ msgstr "Угао"
 
 
 msgid "Color Maximum"
-msgstr "Максимално исецање:"
+msgstr "Максимална боја"
 
 
 msgid "Billboard Offset"
@@ -9897,7 +10181,7 @@ msgstr "Унутрашњи полупречник"
 
 
 msgid "Child Roundness"
-msgstr "Храпавост"
+msgstr "Храпавост деце"
 
 
 msgid "Rough1"
@@ -10061,7 +10345,11 @@ msgstr "Синхронизуј са репродукцијом звука, пр�
 
 
 msgid "Compositing node tree"
-msgstr "Израз"
+msgstr "Дрво чворова слагања"
+
+
+msgid "Enable the compositing node tree"
+msgstr "Омогућује дрво чворова слагања"
 
 
 msgid "Sequence Editor"
@@ -10133,11 +10421,19 @@ msgstr "Обрнуто"
 
 
 msgid "Inverse Clamped"
-msgstr "Z изврн."
+msgstr "Обрнуто стегнуто"
+
+
+msgid "Linear Clamped"
+msgstr "Линеарно стегнуто"
 
 
 msgid "Exponent"
-msgstr "Изложилац"
+msgstr "Експонент"
+
+
+msgid "Exponent Clamped"
+msgstr "Експоненцијално стегнуто"
 
 
 msgid "Game Data"
@@ -10197,23 +10493,27 @@ msgstr "Сви погледи"
 
 
 msgid "Animation Editors"
-msgstr "NLA Уређивач %x13"
+msgstr "Уређивачи анимације"
 
 
 msgid "Property Editors"
-msgstr "Уређивач особина"
+msgstr "Уређивачи особина"
 
 
 msgid "Image Editors"
-msgstr "Уређивач слика"
+msgstr "Уређивачи слика"
 
 
 msgid "Sequencer Editors"
-msgstr "Уређивач секвенци"
+msgstr "Уређивачи секвенци"
 
 
 msgid "Node Editors"
-msgstr "Уређивач чворова"
+msgstr "Уређивачи чворова"
+
+
+msgid "Clip Editors"
+msgstr "Уређивачи исечака"
 
 
 msgid "Caching"
@@ -10577,16 +10877,8 @@ msgid "Mirror Y"
 msgstr "Огледало"
 
 
-msgid "Checker Even"
-msgstr "Једнако увећање"
-
-
-msgid "Even checker tiles"
-msgstr "Дебљина"
-
-
 msgid "Crop Minimum X"
-msgstr "Минимално исецање:"
+msgstr "Минимално исецање по X"
 
 
 msgid "Minimum X value to crop the image"
@@ -10594,7 +10886,7 @@ msgstr "Поставља минималну X вредност рендеров�
 
 
 msgid "Crop Minimum Y"
-msgstr "Минимално исецање:"
+msgstr "Минимално исецање по Y"
 
 
 msgid "Minimum Y value to crop the image"
@@ -10602,27 +10894,31 @@ msgstr "Поставља минималну X вредност рендеров�
 
 
 msgid "Crop Maximum X"
-msgstr "Максимално исецање:"
+msgstr "Максимално исецање по X"
 
 
 msgid "Maximum X value to crop the image"
-msgstr "Поставља максималну X вредност рендерованог оквира"
+msgstr "Поставља максималну X вредност исецања слике"
 
 
 msgid "Crop Maximum Y"
-msgstr "Максимално исецање:"
+msgstr "Максимално исецање по Y"
 
 
 msgid "Maximum Y value to crop the image"
-msgstr "Поставља максималну Y вредност рендерованог оквира"
+msgstr "Поставља максималну Y вредност исецања слике"
 
 
 msgid "Normal Map"
-msgstr "Нормала"
+msgstr "Мапа нормала"
 
 
 msgid "Use image RGB values for normal mapping"
 msgstr "Користи исте вредности увећања по свим осама"
+
+
+msgid "Derivative Map"
+msgstr "Изведена мапа"
 
 
 msgid "Magic Texture"
@@ -10718,7 +11014,7 @@ msgstr "Одстојање фрактала"
 
 
 msgid "Gain"
-msgstr "Појачање"
+msgstr "Добијање"
 
 
 msgid "Noise Intensity"
@@ -11147,10 +11443,6 @@ msgstr "Ставке"
 
 msgid "Children Expanded"
 msgstr "Прошири наследнике"
-
-
-msgid "Key Map Item"
-msgstr "Уклони сцену"
 
 
 msgid "Map Type"
@@ -11606,7 +11898,7 @@ msgstr "Кубично"
 
 
 msgid "Circular"
-msgstr "Круг"
+msgstr "Кружно"
 
 
 msgid "Bounce"
@@ -11650,11 +11942,11 @@ msgstr "Збирка кључева"
 
 
 msgid "UI Name"
-msgstr "Име"
+msgstr "UI Име"
 
 
 msgid "Type Info"
-msgstr "Систем:"
+msgstr "Информације о типу"
 
 
 msgid "Paths"
@@ -12296,7 +12588,7 @@ msgstr "Висина Fh подручја"
 
 
 msgid "Fade-out Color"
-msgstr "Контуре"
+msgstr "Боја нестајања"
 
 
 msgid "IOR"
@@ -12500,6 +12792,18 @@ msgid "Fluid Presets"
 msgstr "Својства течности:"
 
 
+msgid "Grease Pencil Settings"
+msgstr "Подешавање скицирања"
+
+
+msgid "Grease Pencil Tools"
+msgstr "Алатке скицирања"
+
+
+msgid "More Grease Pencil Tools"
+msgstr "Више алатки скицирања"
+
+
 msgid "UVs"
 msgstr "UV-е"
 
@@ -12530,6 +12834,10 @@ msgstr "Спољашњи подаци"
 
 msgid "Import"
 msgstr "Увоз"
+
+
+msgid "Data Previews"
+msgstr "Прегледи података"
 
 
 msgid "Help"
@@ -13016,12 +13324,16 @@ msgid "Edge Split"
 msgstr "Раздвој ивице"
 
 
-msgid "Remesh"
-msgstr "Теме"
-
-
 msgid "Screw"
 msgstr "Заврни"
+
+
+msgid "Skin"
+msgstr "Кожа"
+
+
+msgid "Solidify"
+msgstr "Дебљина"
 
 
 msgid "Subdivision Surface"
@@ -13045,7 +13357,11 @@ msgstr "Удица"
 
 
 msgid "Laplacian Smooth"
-msgstr "Меканост слетања"
+msgstr "Лапласово умекшање"
+
+
+msgid "Laplacian Deform"
+msgstr "Лапласова деформација"
 
 
 msgid "Mesh Deform"
@@ -13309,7 +13625,7 @@ msgstr "Модификатор симулације тканине"
 
 
 msgid "Settings"
-msgstr "Подешавања:"
+msgstr "Подешавања"
 
 
 msgid "Smooth factor effect"
@@ -13317,15 +13633,15 @@ msgstr "Ефекат фактор умекшавања"
 
 
 msgid "Curve Modifier"
-msgstr "Z изврн."
+msgstr "Модификатор криве"
 
 
 msgid "Curve deformation modifier"
-msgstr "Режим трансформације"
+msgstr "Модификатор деформације криве"
 
 
 msgid "Deform Axis"
-msgstr "Оса деформације:"
+msgstr "Оса деформације"
 
 
 msgid "Nearest vertex"
@@ -13528,12 +13844,20 @@ msgid "Constant"
 msgstr "Константно"
 
 
+msgid "Laplacian Deform Modifier"
+msgstr "Модификатор Лапласове деформације"
+
+
 msgid "Mesh deform modifier"
 msgstr "Модификатор деформације меша"
 
 
 msgid "Bound"
 msgstr "Граница"
+
+
+msgid "Laplacian Smooth Modifier"
+msgstr "Модификатор Лапласовог умекшања"
 
 
 msgid "Smoothing effect modifier"
@@ -13792,16 +14116,16 @@ msgid "Pole axis for rotation"
 msgstr "Поларне осе ротације"
 
 
-msgid "Create instances from child particles"
-msgstr "Координате контролне тачке"
-
-
 msgid "Show instances when particles are dead"
 msgstr "Висина Fh подручја"
 
 
 msgid "Keep Shape"
-msgstr "сцена"
+msgstr "Задржи облик"
+
+
+msgid "Don't stretch the object"
+msgstr "Не развлачи објекат"
 
 
 msgid "Position along path"
@@ -13905,7 +14229,7 @@ msgstr "Савијање"
 
 
 msgid "Origin"
-msgstr "Почетак"
+msgstr "Центар"
 
 
 msgid "Angle of deformation"
@@ -14096,15 +14420,11 @@ msgstr "Локалне координате"
 
 
 msgid "Use coordinates from an UV layer"
-msgstr "Приказује особине оквира у игри"
+msgstr "Користи координате са UV слоја"
 
 
 msgid "Which object to take texture coordinates from"
 msgstr "Брише лепљиве координате текстуре"
-
-
-msgid "WeightVG Mix Modifier"
-msgstr "Режим бојења тежине"
 
 
 msgid "Vertex Group A"
@@ -14232,11 +14552,15 @@ msgstr "Фактор дебљине"
 
 
 msgid "Remove original geometry"
-msgstr "Уклони оригиналну геометрију"
+msgstr "Уклони изворну геометрију"
 
 
 msgid "Boundary"
-msgstr "Границе"
+msgstr "Граница"
+
+
+msgid "Support face boundaries"
+msgstr "Подржава границе странице"
 
 
 msgid "End frame of the stored range"
@@ -14675,6 +14999,10 @@ msgid "Interface"
 msgstr "Интерфејс"
 
 
+msgid "Compositor Node"
+msgstr "Чвор слагања"
+
+
 msgid "Alpha Over"
 msgstr "Провидност преко"
 
@@ -14875,6 +15203,30 @@ msgid "Combine YUVA"
 msgstr "Комбинуј YUVA"
 
 
+msgid "Composite"
+msgstr "Спојено"
+
+
+msgid "Corner Pin"
+msgstr "Закачи угао"
+
+
+msgid "X1"
+msgstr "X1"
+
+
+msgid "X2"
+msgstr "X2"
+
+
+msgid "Y1"
+msgstr "Y1"
+
+
+msgid "Y2"
+msgstr "Y2"
+
+
 msgid "RGB Curves"
 msgstr "RGB крива"
 
@@ -15036,15 +15388,11 @@ msgstr "Умекшавање ивица"
 
 
 msgid "Auto-Refresh"
-msgstr "Освежи"
+msgstr "Ауто-освежи"
 
 
 msgid "Inpaint"
 msgstr "Обоји"
-
-
-msgid "Distance to inpaint (number of iterations)"
-msgstr "Број пуних окрета код увијања"
 
 
 msgid "RGB"
@@ -15120,7 +15468,7 @@ msgstr "Умекшавање ивица"
 
 
 msgid "Use feather information from the mask"
-msgstr "Приказује особине оквира у игри"
+msgstr "Користи информације умекшавања са маске"
 
 
 msgid "Number of motion blur samples"
@@ -15132,19 +15480,19 @@ msgstr "Извор боје"
 
 
 msgid "Scene Size"
-msgstr "Дод.велич.:"
-
-
-msgid "Use pixel size for the buffer"
-msgstr "Симулација почиње у овом кадру"
+msgstr "Величина сцене"
 
 
 msgid "Fixed/Scene"
-msgstr "Сцена"
+msgstr "Фиксно/Сцена"
 
 
 msgid "Math"
 msgstr "Математика"
+
+
+msgid "Logarithm"
+msgstr "Логаритам"
 
 
 msgid "Less Than"
@@ -15391,12 +15739,16 @@ msgid "Camera Data"
 msgstr "Податци камере"
 
 
+msgid "Combine HSV"
+msgstr "Комбиновано HSV"
+
+
 msgid "Combine RGB"
 msgstr "Комбиновано RGB"
 
 
 msgid "Extended Material"
-msgstr "Убаци материјал"
+msgstr "Продужени материјал"
 
 
 msgid "Invert Normal"
@@ -15837,7 +16189,7 @@ msgstr "Интерполација"
 
 msgctxt "Operator"
 msgid "Insert Keyframes"
-msgstr "Уметни кључни кадар"
+msgstr "Уметни кључне кадарове"
 
 
 msgid "Insert keyframes for the specified channels"
@@ -16239,7 +16591,7 @@ msgstr "Уклања активну збирку кључева"
 
 msgctxt "Operator"
 msgid "Add to Keying Set"
-msgstr "Додај збирку кључева"
+msgstr "Додај у збирку кључева"
 
 
 msgid "Add all elements of the array to a Keying Set"
@@ -16438,7 +16790,11 @@ msgstr "Изабери све елементе"
 
 
 msgid "Deselect all elements"
-msgstr "Изабери све/ништа"
+msgstr "Поништи избор свих елемената"
+
+
+msgid "Invert selection of all elements"
+msgstr "Обрнут избор свих елемената"
 
 
 msgctxt "Operator"
@@ -16468,13 +16824,34 @@ msgid "Select Similar"
 msgstr "Изабери слично"
 
 
+msgid "Select similar bones by property types"
+msgstr "Изабери сличне кости по врсти особине"
+
+
 msgid "Direction (Y axis)"
-msgstr "Смер"
+msgstr "Смер (Y оса)"
+
+
+msgid "Prefix"
+msgstr "Префикс"
+
+
+msgid "Suffix"
+msgstr "Суфикс"
 
 
 msgctxt "Operator"
 msgid "Separate Bones"
 msgstr "Раздвој кости"
+
+
+msgid "Isolate selected bones into a separate armature"
+msgstr "Издвој изабране кости у засебан костур"
+
+
+msgctxt "Operator"
+msgid "Pick Shortest Path"
+msgstr "Изабери најкраћу путању"
 
 
 msgid "Select shortest path between two bones"
@@ -16520,11 +16897,6 @@ msgstr "+X до -X"
 msgctxt "Operator"
 msgid "Remove Boid State"
 msgstr "Изаберите слику за позадину"
-
-
-msgctxt "Operator"
-msgid "Move Down Boid State"
-msgstr "Премести на слој..."
 
 
 msgctxt "Operator"
@@ -16788,6 +17160,22 @@ msgid "Whole Frame"
 msgstr "Цео кадар"
 
 
+msgid "Inside grease pencil"
+msgstr "У скицираном делу"
+
+
+msgid "Place markers only inside areas outlined with grease pencil"
+msgstr "Поставља маркере само у оквиру скицираног дела"
+
+
+msgid "Outside grease pencil"
+msgstr "Ван скицираног дела"
+
+
+msgid "Place markers only outside areas outlined with grease pencil"
+msgstr "Поставља маркере само ван скицираног дела"
+
+
 msgctxt "Operator"
 msgid "Disable Markers"
 msgstr "Онемогући маркере"
@@ -16957,12 +17345,7 @@ msgstr "Особине"
 
 
 msgid "Toggle clip properties panel"
-msgstr "Приказ информација о слици"
-
-
-msgctxt "Operator"
-msgid "Rebuild Proxy and Timecode Indices"
-msgstr "Време"
+msgstr "Приказ панела са особинама исечка"
 
 
 msgctxt "Operator"
@@ -16975,7 +17358,7 @@ msgstr "Уназад"
 
 
 msgid "Tracked tracks"
-msgstr "Праћене стаза"
+msgstr "Праћење стаза"
 
 
 msgid "Select all tracked tracks"
@@ -17022,7 +17405,7 @@ msgstr "Постави осе"
 
 msgctxt "Operator"
 msgid "Set Origin"
-msgstr "Постави почетак"
+msgstr "Постави центар"
 
 
 msgid "Use Median"
@@ -17050,6 +17433,10 @@ msgstr "Кључни кадар за постављање"
 msgctxt "Operator"
 msgid "Set as Background"
 msgstr "Постави као позадину"
+
+
+msgid "Prepare scene for compositing 3D objects into this footage"
+msgstr "Припреми сцену за слагање 3D објеката на овај видео"
 
 
 msgctxt "Operator"
@@ -17091,7 +17478,7 @@ msgstr "Алатке"
 
 
 msgid "Toggle clip tools panel"
-msgstr "Приказ информација о слици"
+msgstr "Приказ панела са алаткама исечка"
 
 
 msgctxt "Operator"
@@ -17526,6 +17913,14 @@ msgid "Shrinkfatten"
 msgstr "СкупиУдебљај"
 
 
+msgid "Mask_Shrinkfatten"
+msgstr "Маска_СкупиУдебљај"
+
+
+msgid "GPencil_Shrinkfatten"
+msgstr "Слица_СкупиУдебљај"
+
+
 msgid "Align"
 msgstr "Поравнај"
 
@@ -17939,6 +18334,14 @@ msgid "Euler (ZYX)"
 msgstr "Ојлер (ZYX)"
 
 
+msgid "Root Translation Only"
+msgstr "Само корене трансформације"
+
+
+msgid "Only write out translation channels for the root bone"
+msgstr "Испиши само канале трансформације корене кости"
+
+
 msgctxt "Operator"
 msgid "Export PLY"
 msgstr "Извоз PLY"
@@ -17946,34 +18349,6 @@ msgstr "Извоз PLY"
 
 msgid "Export a single object as a Stanford PLY with normals, colors and texture coordinates"
 msgstr "Користи глобалне координате за координате текстуре"
-
-
-msgid "X Forward"
-msgstr "Напред по X"
-
-
-msgid "Y Forward"
-msgstr "Напред по Y"
-
-
-msgid "Z Forward"
-msgstr "Напред по Z"
-
-
-msgid "-X Forward"
-msgstr "Напред по -X"
-
-
-msgid "-Y Forward"
-msgstr "Напред по -Y"
-
-
-msgid "-Z Forward"
-msgstr "Напред по -Z"
-
-
-msgid "X Up"
-msgstr "Горе по X"
 
 
 msgid "Y Up"
@@ -18036,11 +18411,15 @@ msgstr "Умекшање"
 
 
 msgid "Write face smoothing"
-msgstr "Површи"
+msgstr "Уписуј умекшање страна"
+
+
+msgid "Write edge smoothing"
+msgstr "Уписуј умекшање ивица"
 
 
 msgid "Custom Properties"
-msgstr "Прилагођена особина"
+msgstr "Прилагођене особине"
 
 
 msgid "Export custom properties"
@@ -18108,7 +18487,7 @@ msgstr "Направи директоријум за сваку извезену
 
 
 msgid "Use Metadata"
-msgstr "Метаподаци"
+msgstr "Користи метаподатке"
 
 
 msgctxt "Operator"
@@ -18250,7 +18629,7 @@ msgstr "Направи нови директоријум"
 
 
 msgid "Create a new directory"
-msgstr "Направи нови директоријум"
+msgstr "Прави нови директоријум"
 
 
 msgid "Name of new directory"
@@ -18407,15 +18786,20 @@ msgstr "Изабери све почев од последњег избора"
 
 msgctxt "Operator"
 msgid "(De)select All Files"
-msgstr "Изабери све/ништа"
+msgstr "Изабери све датотеке"
 
 
 msgid "Select or deselect all files"
-msgstr "Изабери све/ништа"
+msgstr "Бира или поништава избор свих датотека"
+
+
+msgctxt "Operator"
+msgid "Select Directory"
+msgstr "Изабери директоријум"
 
 
 msgid "Dir"
-msgstr "Ваздух"
+msgstr "Дир"
 
 
 msgid "Prev"
@@ -18592,6 +18976,20 @@ msgstr "Убаци текст"
 
 
 msgctxt "Operator"
+msgid "Paste Clipboard"
+msgstr "Убаци из оставе"
+
+
+msgid "Paste contents from system clipboard"
+msgstr "Убаци садржај из системске оставе"
+
+
+msgctxt "Operator"
+msgid "Paste File"
+msgstr "Убаци датотеку"
+
+
+msgctxt "Operator"
 msgid "Remove Textbox"
 msgstr "Уклони блок текста"
 
@@ -18607,6 +19005,40 @@ msgstr "Текући блок текста"
 msgctxt "Operator"
 msgid "Unlink"
 msgstr "Прекини везу"
+
+
+msgid "Unlink active font data block"
+msgstr "Прекини везу ка блоку података фонта"
+
+
+msgctxt "Operator"
+msgid "Delete Active Frame"
+msgstr "Избриши активан кадар"
+
+
+msgid "Delete the active frame for the active Grease Pencil datablock"
+msgstr "Брише активни кадар активаног блока података скице"
+
+
+msgctxt "Operator"
+msgid "Convert Grease Pencil"
+msgstr "Претвори скицу"
+
+
+msgid "Convert the active Grease Pencil layer to a new Curve Object"
+msgstr "Претвара активни слој скице у објекат криве"
+
+
+msgid "Which type of curve to convert to"
+msgstr "У коју врсту криве да претворим?"
+
+
+msgid "Polygon Curve"
+msgstr "Полигон"
+
+
+msgid "Normalize Weight"
+msgstr "Нормализована дебљина"
 
 
 msgid "Radius Fac"
@@ -18626,7 +19058,7 @@ msgstr "Изабери све по типу"
 
 
 msgid "Original"
-msgstr "Почетак"
+msgstr "Оригинал"
 
 
 msgid "Use the original timing, gaps included"
@@ -18634,7 +19066,7 @@ msgstr "Кост наслеђује увећање са родитељске к�
 
 
 msgid "Custom Gaps"
-msgstr "Прилагођено"
+msgstr "Прилагођени размаци"
 
 
 msgid "Gap Duration"
@@ -18642,8 +19074,77 @@ msgstr "Трајање рупе"
 
 
 msgctxt "Operator"
+msgid "Copy Strokes"
+msgstr "Копирај потезе"
+
+
+msgid "Copy selected Grease Pencil points and strokes"
+msgstr "Копира изабране потезе скице"
+
+
+msgctxt "Operator"
+msgid "Grease Pencil Add New"
+msgstr "Нова скица"
+
+
+msgid "Add new Grease Pencil datablock"
+msgstr "Додаје нови блок података за скицирање"
+
+
+msgctxt "Operator"
+msgid "Grease Pencil Unlink"
+msgstr "Раскачи скицу"
+
+
+msgid "Unlink active Grease Pencil datablock"
+msgstr "Прекида везу ка блоку података активне скице"
+
+
+msgctxt "Operator"
 msgid "Delete..."
 msgstr "Избриши..."
+
+
+msgid "Delete selected Grease Pencil strokes, vertices, or frames"
+msgstr "Брише изабране потезе, тачке или кадрове скице"
+
+
+msgid "Method used for deleting Grease Pencil data"
+msgstr "Начин брисања података скице"
+
+
+msgid "Delete selected points and split strokes into segments"
+msgstr "Избриши изабране тачке и раздвој сегменте потеза"
+
+
+msgid "Delete selected strokes"
+msgstr "Избриши изабране потезе"
+
+
+msgid "Delete active frame"
+msgstr "Избриши активне кадрове"
+
+
+msgctxt "Operator"
+msgid "Dissolve"
+msgstr "Растопи"
+
+
+msgid "Delete selected points without splitting strokes"
+msgstr "Брише изабране тачке без прекидања потеза"
+
+
+msgctxt "Operator"
+msgid "Grease Pencil Draw"
+msgstr "Скицирање"
+
+
+msgid "Make annotations on the active data"
+msgstr "Додаје ознаке на активне податке"
+
+
+msgid "Way to interpret mouse movements"
+msgstr "Начин интерпретирања кретања миша"
 
 
 msgid "Draw Freehand"
@@ -18651,7 +19152,7 @@ msgstr "Слободоручно цртање"
 
 
 msgid "Draw freehand stroke(s)"
-msgstr "Слободоручно цртање"
+msgstr "Црта слободоручни потез/потезе"
 
 
 msgid "Draw Straight Lines"
@@ -18659,23 +19160,168 @@ msgstr "Цртај праве линије"
 
 
 msgid "Draw straight line segment(s)"
-msgstr "Цртај праве линије"
+msgstr "Црта праву линију/линије"
 
 
 msgid "Draw Poly Line"
-msgstr "Прозор"
+msgstr "Цртај полигон"
 
 
 msgid "Eraser"
 msgstr "Гумица"
 
 
+msgid "Erase Grease Pencil strokes"
+msgstr "Брише скициране потезе"
+
+
+msgid "Wait for Input"
+msgstr "Чекај на унос"
+
+
+msgctxt "Operator"
+msgid "Duplicate Strokes"
+msgstr "Дуплирај потезе"
+
+
+msgid "Duplicate the selected Grease Pencil strokes"
+msgstr "Дуплирај изабране потезе скице"
+
+
+msgid "Make copies of the selected Grease Pencil strokes and move them"
+msgstr "Прави копију изабраних потеза скице и помера их"
+
+
+msgid "Duplicate Strokes"
+msgstr "Дуплирај потезе"
+
+
+msgctxt "Operator"
+msgid "Hide Layer(s)"
+msgstr "Сакриј слој/слојеве"
+
+
+msgid "Hide selected/unselected Grease Pencil layers"
+msgstr "Сакрива изабране/неизрабране слојеве скице"
+
+
+msgid "Hide unselected rather than selected layers"
+msgstr "Сакри неизабране уместо изабраних слојева"
+
+
+msgctxt "Operator"
+msgid "Add New Layer"
+msgstr "Додај нови слој"
+
+
+msgid "Add new Grease Pencil layer for the active Grease Pencil datablock"
+msgstr "Додај нови слој за скицирање на активни блок података скице"
+
+
+msgctxt "Operator"
+msgid "Duplicate Layer"
+msgstr "Дуплирај слој"
+
+
+msgid "Make a copy of the active Grease Pencil layer"
+msgstr "Дуплира активни слој скице"
+
+
+msgctxt "Operator"
+msgid "Move Grease Pencil Layer"
+msgstr "Премести слој скице"
+
+
+msgid "Move the active Grease Pencil layer up/down in the list"
+msgstr "Премешта редослед приказа активног слоја скицирања у оквиру листе слојева"
+
+
+msgctxt "Operator"
+msgid "Remove Layer"
+msgstr "Уклони слој"
+
+
+msgid "Remove active Grease Pencil layer"
+msgstr "Уклања активни слој скице"
+
+
+msgctxt "Operator"
+msgid "Paste Strokes"
+msgstr "Убаци потезе"
+
+
+msgid "Paste previously copied strokes into active layer"
+msgstr "Убацује претходно копиране потезе на активни слој"
+
+
+msgid "Show all Grease Pencil layers"
+msgstr "Пиркажи све слојеве скице"
+
+
+msgid "Select Grease Pencil strokes and/or stroke points"
+msgstr "Изабери потезе и/или тачке скице"
+
+
 msgid "Remove from selection"
 msgstr "Уклони из избора"
 
 
+msgid "Toggle Selection"
+msgstr "Изабери/поништи избор"
+
+
+msgid "Toggle the selection"
+msgstr "Бира или поништава избор"
+
+
+msgid "Entire Strokes"
+msgstr "Целе потезе"
+
+
+msgid "Select entire strokes instead of just the nearest stroke vertex"
+msgstr "Бира целе потезе иместо само околних темена потеза"
+
+
 msgid "Mouse location"
 msgstr "Локација миша"
+
+
+msgctxt "Operator"
+msgid "(De)select All Strokes"
+msgstr "Изабери/поништи избор свих потеза"
+
+
+msgid "Change selection of all Grease Pencil strokes currently visible"
+msgstr "Мења избор свих видљивих потеза скице"
+
+
+msgid "Select Grease Pencil strokes within a rectangular region"
+msgstr "Бира потезе скице у оквиру правоугаоног региона"
+
+
+msgid "Select Grease Pencil strokes using brush selection"
+msgstr "Бира потезе скице користећи избор четкицом"
+
+
+msgctxt "Operator"
+msgid "Lasso Select Strokes"
+msgstr "Ласо избор потеза"
+
+
+msgid "Select Grease Pencil strokes using lasso selection"
+msgstr "Бира потезе скице користећи ласо избор"
+
+
+msgid "Shrink sets of selected Grease Pencil points"
+msgstr "Умањује збирку изабраних тачака потеза скице"
+
+
+msgid "Select all points in same strokes as already selected points"
+msgstr "Изабери све тачке у тренутном потезу као већ изабране тачке"
+
+
+msgid "Grow sets of selected Grease Pencil points"
+msgstr "Увећава збирку изабраних тачака потеза скице"
 
 
 msgctxt "Operator"
@@ -18707,15 +19353,23 @@ msgstr "Постави курсор"
 
 msgctxt "Operator"
 msgid "Add F-Curve Modifier"
-msgstr "Z изврн."
+msgstr "Додај модификатор Ф-криве"
+
+
+msgid "Add F-Modifiers to the selected F-Curves"
+msgstr "Додаје модификатор на изабране Ф-криве"
 
 
 msgid "Only Active"
-msgstr "Само активни"
+msgstr "Само активне"
 
 
 msgid "Toggle display properties panel"
-msgstr "Приказ информација о слици"
+msgstr "Приказ панела са особинама приказа"
+
+
+msgid "Include Handles"
+msgstr "Укључи ручке"
 
 
 msgid "Event Type"
@@ -19056,6 +19710,18 @@ msgid "Manual Orientation"
 msgstr "Ручна оријентација"
 
 
+msgid "Auto Detect"
+msgstr "Самостално препознај"
+
+
+msgid "Only detects DEM3 and DEM1 currently"
+msgstr "Тренутно препознаје само DEM3 и DEM1"
+
+
+msgid "HGT Resolution"
+msgstr "HGT резолуција"
+
+
 msgid "Modifier"
 msgstr "Модификатор"
 
@@ -19107,7 +19773,7 @@ msgstr "Освежи приказ извештаја"
 
 
 msgid "Select or deselect all reports"
-msgstr "Изабери све/ништа"
+msgstr "Изабери/поништи све извештаје"
 
 
 msgid "Toggle border selection"
@@ -19141,15 +19807,15 @@ msgstr "Координате прве ручке"
 
 
 msgid "U (X) Axis"
-msgstr "X оса"
+msgstr "U (X) оса"
 
 
 msgid "V (Y) Axis"
-msgstr "Y оса"
+msgstr "V (Y) оса"
 
 
 msgid "W (Z) Axis"
-msgstr "Z оса"
+msgstr "W (Z) оса"
 
 
 msgid "Randomly select UVW control points"
@@ -19442,6 +20108,10 @@ msgstr "Поставља мапирање текстуре у моду слик�
 
 msgid "Set the mask's parenting"
 msgstr "Поставља мапирање текстуре у моду сликања"
+
+
+msgid "Paste splines from clipboard"
+msgstr "Убаци криве из оставе"
 
 
 msgctxt "Operator"
@@ -20190,7 +20860,7 @@ msgstr "Главни полупречник"
 
 
 msgid "Radius from the origin to the center of the cross sections"
-msgstr "Полупречник од тежишта до центра пресека"
+msgstr "Полупречник од центра до пресека"
 
 
 msgid "Minor Radius"
@@ -20565,8 +21235,14 @@ msgid "Rotate UVs"
 msgstr "Окретање UV-а"
 
 
-msgid "Rotate UV coordinates inside faces"
-msgstr "Приказује особине оквира у игри"
+msgctxt "Operator"
+msgid "Vertex Connect"
+msgstr "Повежи темена"
+
+
+msgctxt "Operator"
+msgid "Add Vertex Color"
+msgstr "Додај боју темена"
 
 
 msgctxt "Operator"
@@ -20578,8 +21254,13 @@ msgid "Flatten angles of selected vertices"
 msgstr "Поравнава углове изабраних темена"
 
 
+msgctxt "Operator"
+msgid "Laplacian Smooth Vertex"
+msgstr "Лапласово умекшавање темена"
+
+
 msgid "Laplacian smooth of selected vertices"
-msgstr "Поравнава углове изабраних темена"
+msgstr "Лапласово умекшавање изабраних темена"
 
 
 msgid "Smooth Z Axis"
@@ -21047,7 +21728,7 @@ msgstr "Ново дрво чворова"
 
 
 msgid "Create a new node tree"
-msgstr "Направи нови директоријум"
+msgstr "Направи ново дрво чворова"
 
 
 msgid "Tree Type"
@@ -21156,7 +21837,7 @@ msgstr "Релативно ка:"
 
 
 msgid "Scene Origin"
-msgstr "Почетак сцене"
+msgstr "Центар сцене"
 
 
 msgid "3D Cursor"
@@ -21222,7 +21903,7 @@ msgstr "Преношење"
 
 
 msgid "Transmission Indirect"
-msgstr "Боја преноса"
+msgstr "Индиректни пренос"
 
 
 msgctxt "Operator"
@@ -21241,7 +21922,7 @@ msgstr "Додај ограничење"
 
 msgctxt "Operator"
 msgid "Add Constraint (with Targets)"
-msgstr "Предмет ограничења"
+msgstr "Додај ограничење (са циљевима)"
 
 
 msgctxt "Operator"
@@ -21316,11 +21997,7 @@ msgstr "Дуплирај повезано"
 
 msgctxt "Operator"
 msgid "Make Duplicates Real"
-msgstr "Дуплирај"
-
-
-msgid "Make dupli objects attached to this object real"
-msgstr "Повежи материјал новог објекта са блоком објекта"
+msgstr "Примени дупликате"
 
 
 msgid "Keep Hierarchy"
@@ -21516,6 +22193,15 @@ msgstr "Додај светло"
 
 
 msgctxt "Operator"
+msgid "Laplacian Deform Bind"
+msgstr "Лапласово везивање деформације"
+
+
+msgid "Bind mesh to system in laplacian deform modifier"
+msgstr "Повежи меш и систем модификатора Лапласове деформације"
+
+
+msgctxt "Operator"
 msgid "Clear Location"
 msgstr "Очисти локацију"
 
@@ -21669,7 +22355,7 @@ msgstr "Поремести модификатор на горе"
 
 msgctxt "Operator"
 msgid "Move to Layer"
-msgstr "Премести на слој..."
+msgstr "Премести на слој"
 
 
 msgid "Move the object to different layers"
@@ -21708,11 +22394,11 @@ msgstr "Испеци океан"
 
 msgctxt "Operator"
 msgid "Clear Origin"
-msgstr "Избриши почетак"
+msgstr "Избриши центар"
 
 
 msgid "Clear the object's origin"
-msgstr "Избриши почетку тачку објекта"
+msgstr "Избриши централну тачку објекта"
 
 
 msgid "Geometry to Origin"
@@ -21732,7 +22418,11 @@ msgstr "Премешта центар објекта на његово геом�
 
 
 msgid "Origin to 3D Cursor"
-msgstr "Поглед према курсору"
+msgstr "Центар на 3D курсор"
+
+
+msgid "Move object origin to position of the 3D cursor"
+msgstr "Премешта центар објекта на позицију 3D курсора"
 
 
 msgid "Origin to Center of Mass"
@@ -21749,6 +22439,18 @@ msgstr "Средиште"
 
 msgid "Bounds Center"
 msgstr "Центар граничне коцке"
+
+
+msgid "Clear the object's parenting"
+msgstr "Избриши родитељску везу објекта"
+
+
+msgid "Completely clear the parenting relationship, including involved modifiers is any"
+msgstr "Брише све родитељске везе укључујући и модификаторе ако постоје"
+
+
+msgid "Clear and Keep Transformation"
+msgstr "Очисти и задржи трансформације"
 
 
 msgid "Armature Deform"
@@ -21924,6 +22626,11 @@ msgstr "Користи исте вредности увећања по свим 
 
 msgid "Maximum scale randomization over each axis"
 msgstr "Максимално насумично увећање по осама"
+
+
+msgctxt "Operator"
+msgid "Grease Pencil Scatter"
+msgstr "Разбацано скицирање"
 
 
 msgid "Multiplier for the density of items"
@@ -22218,11 +22925,7 @@ msgstr "Вредност за коју се увећава вредност те
 
 msgctxt "Operator"
 msgid "Limit Number of Weights per Vertex"
-msgstr "Број пуних окрета код увијања"
-
-
-msgid "Maximum number of deform weights"
-msgstr "Број пуних окрета код увијања"
+msgstr "Ограничен број тежина по темену"
 
 
 msgid "Change the lock state of all vertex groups of active object"
@@ -22272,6 +22975,10 @@ msgid "Remove Vertex Group"
 msgstr "Уклони групу темена"
 
 
+msgid "Delete the active or all vertex groups from the active object"
+msgstr "Брише активну и све групе темена из активног објекта"
+
+
 msgid "Remove all vertex groups"
 msgstr "Уклони све групе темена"
 
@@ -22283,6 +22990,18 @@ msgstr "Уклони из групе темена"
 
 msgid "Remove the selected vertices from active or all vertex group(s)"
 msgstr "Уклања изабрана темена из активне групе темена"
+
+
+msgid "Remove from all groups"
+msgstr "Уклони из свих група"
+
+
+msgid "All Verts"
+msgstr "Сва темена"
+
+
+msgid "Clear the active group"
+msgstr "Избриши активну групу"
 
 
 msgctxt "Operator"
@@ -22305,6 +23024,10 @@ msgstr "Поставља активну групу темена"
 
 msgctxt "Operator"
 msgid "Sort Vertex Groups"
+msgstr "Поређај групе темена"
+
+
+msgid "Sort vertex groups"
 msgstr "Сортирај групе темена"
 
 
@@ -22313,9 +23036,17 @@ msgid "Normalize Active"
 msgstr "Нормализуј активно"
 
 
+msgid "Normalize active vertex's weights"
+msgstr "Нормализуј тежине активних темена"
+
+
 msgctxt "Operator"
 msgid "Set Active Group"
 msgstr "Постави активну групу"
+
+
+msgid "Set as active vertex group"
+msgstr "Постави као активну групу темена"
 
 
 msgctxt "Operator"
@@ -22380,12 +23111,7 @@ msgstr "Приказује/скрива групу"
 
 
 msgid "Rename"
-msgstr "сцена"
-
-
-msgctxt "Operator"
-msgid "Outliner ID data Operation"
-msgstr "Булове операције"
+msgstr "Преименуј"
 
 
 msgid "Unlink"
@@ -22393,15 +23119,15 @@ msgstr "Прекини везу"
 
 
 msgid "Make Local"
-msgstr "Створи везе..."
+msgstr "Направи локално"
 
 
 msgid "Add Fake User"
-msgstr "Слике"
+msgstr "Додај лажног корисника"
 
 
 msgid "Clear Fake User"
-msgstr "Слике"
+msgstr "Обриши лажног корисника"
 
 
 msgctxt "Operator"
@@ -22589,7 +23315,7 @@ msgstr "Углови оса"
 
 
 msgid "Dirt Only"
-msgstr "Контуре"
+msgstr "Само прљаво"
 
 
 msgctxt "Operator"
@@ -22755,11 +23481,6 @@ msgstr "Изабери све честице"
 
 msgid "Subdivide selected particles segments (adds keys)"
 msgstr "Издели изабране сегменте"
-
-
-msgctxt "Operator"
-msgid "Move Down Target"
-msgstr "Премести на слој..."
 
 
 msgctxt "Operator"
@@ -23152,6 +23873,11 @@ msgid "View Context"
 msgstr "Контекст погледа"
 
 
+msgctxt "Operator"
+msgid "Play Rendered Animation"
+msgstr "Пусти рендеровану анимацију"
+
+
 msgid "Play back rendered frames/movies using an external player"
 msgstr "Репродукује рендероване кадрове/филмове помоћу спољашњег програма за њихово пуштање."
 
@@ -23162,7 +23888,7 @@ msgstr "Рендеринг"
 
 
 msgid "Render active scene"
-msgstr "Рендеруј активну сцену"
+msgstr "Рендерује активну сцену"
 
 
 msgid "Render Layer"
@@ -23192,6 +23918,10 @@ msgid "Type of generated constraint"
 msgstr "Врста генерисаног ограничења"
 
 
+msgid "Glue rigid bodies together"
+msgstr "Лепи крута тела међусобно"
+
+
 msgid "Slider"
 msgstr "Клизај"
 
@@ -23200,8 +23930,21 @@ msgid "Generic"
 msgstr "Почетни NLA"
 
 
+msgid "Connect selected objects to the active object"
+msgstr "Повежи изабране објекте за активан објекат"
+
+
 msgid "Chain by Distance"
-msgstr "Ограничи раздаљину"
+msgstr "Ланац по раздаљини"
+
+
+msgctxt "Operator"
+msgid "Add Rigid Body Constraint"
+msgstr "Додаје ограничења крутог тела"
+
+
+msgid "Add Rigid Body Constraint to active object"
+msgstr "Додаје ограничења крутог тела активном објекту"
 
 
 msgctxt "Operator"
@@ -23222,8 +23965,44 @@ msgstr "Објекат директно контролише систем ани
 
 
 msgctxt "Operator"
+msgid "Delete Scene"
+msgstr "Избриши сцену"
+
+
+msgid "Delete active scene"
+msgstr "Брише активну сцену"
+
+
+msgctxt "Operator"
+msgid "Add Edge Marks to Keying Set"
+msgstr "Додај ознаке ивица у збирку кључева"
+
+
+msgctxt "Operator"
 msgid "Add Face Marks to Keying Set"
 msgstr "Додај ознаке страница у збирку кључева"
+
+
+msgid "Name of the modifier to work on"
+msgstr "Име модификатора за рад"
+
+
+msgctxt "Operator"
+msgid "Move Line Set"
+msgstr "Помери збирку линија"
+
+
+msgctxt "Operator"
+msgid "Move Modifier"
+msgstr "Поремести модификатор"
+
+
+msgid "Move the modifier within the list of modifiers"
+msgstr "Премешта модификатор на листи модификатора"
+
+
+msgid "Remove the modifier from the list of modifiers"
+msgstr "Уклања модификатор са листе модификатора"
 
 
 msgctxt "Operator"
@@ -23290,25 +24069,80 @@ msgstr "Насумично померај"
 
 
 msgid "Modifier state"
-msgstr "Модификатори:"
+msgstr "Стање модификатора"
+
+
+msgctxt "Operator"
+msgid "Cancel Animation"
+msgstr "Прекини анимацију"
+
+
+msgid "Cancel animation, returning to the original frame"
+msgstr "Прекида анимацију и враћа се на почетни кадар"
 
 
 msgid "Restore Frame"
 msgstr "Поврати кадар"
 
 
+msgctxt "Operator"
+msgid "Play Animation"
+msgstr "Покрени анимацију"
+
+
 msgid "Play animation"
 msgstr "Покрени анимацију"
 
 
+msgid "Play in Reverse"
+msgstr "Покрени уназад"
+
+
+msgid "Sync"
+msgstr "Синхронизуј"
+
+
+msgid "Drop frames to maintain framerate"
+msgstr "Прескачи кадрове да би задржао брзину"
+
+
+msgctxt "Operator"
+msgid "Animation Step"
+msgstr "Корак анимације"
+
+
 msgctxt "Operator"
 msgid "Duplicate Area into New Window"
-msgstr "Дуплирај повезано"
+msgstr "Дуплирај оквир у нови прозор"
+
+
+msgid "Duplicate selected area into new window"
+msgstr "Дуплира изабрани оквир у нови прозор"
 
 
 msgctxt "Operator"
 msgid "Join Area"
-msgstr "Споји стазе"
+msgstr "Споји оквире"
+
+
+msgid "Join selected areas into new window"
+msgstr "Спаја изабране оквире у нови прозор"
+
+
+msgid "X 1"
+msgstr "X 1"
+
+
+msgid "Y 1"
+msgstr "Y 1"
+
+
+msgid "X 2"
+msgstr "X 2"
+
+
+msgid "Y 2"
+msgstr "Y 2"
 
 
 msgctxt "Operator"
@@ -23346,8 +24180,13 @@ msgstr "Изврни област"
 
 
 msgctxt "Operator"
+msgid "Expand/Collapse Header Menus"
+msgstr "Прошири/скупи мени заглавља"
+
+
+msgctxt "Operator"
 msgid "Header Toolbox"
-msgstr "алати"
+msgstr "Алатке заглавља"
 
 
 msgctxt "Operator"
@@ -23360,8 +24199,21 @@ msgstr "Скочи на претходни/наредни кључни када�
 
 
 msgctxt "Operator"
+msgid "Jump to Marker"
+msgstr "Скочи на маркер"
+
+
+msgid "Jump to previous/next marker"
+msgstr "Скочи на претходни/наредни маркер"
+
+
+msgid "Next Marker"
+msgstr "Следећи маркер"
+
+
+msgctxt "Operator"
 msgid "New Screen"
-msgstr "сцена"
+msgstr "Нови екран"
 
 
 msgid "Add a new screen"
@@ -23452,7 +24304,12 @@ msgstr "Игнориши клик на позадину"
 
 msgctxt "Operator"
 msgid "Optimize"
-msgstr "Оптимизација:"
+msgstr "Оптимизуј"
+
+
+msgctxt "Operator"
+msgid "Sample Detail Size"
+msgstr "Једноставна детаљност"
 
 
 msgctxt "Operator"
@@ -23671,6 +24528,10 @@ msgid "Initialize the strip with this color (only used when type='COLOR')"
 msgstr "Постави траку ове боје (само за траке бојења)"
 
 
+msgid "All Gaps"
+msgstr "Све рупе"
+
+
 msgctxt "Operator"
 msgid "Add Image Strip"
 msgstr "Додај траку са сликом"
@@ -23773,10 +24634,6 @@ msgstr "Повезана ручка"
 
 msgid "Linked Time"
 msgstr "Повезано време"
-
-
-msgid "Select or deselect all strips"
-msgstr "Изабери све/ништа"
 
 
 msgid "Global Type"
@@ -23891,7 +24748,7 @@ msgstr "Претвори"
 
 msgctxt "Operator"
 msgid "Draw Preview"
-msgstr "Преглед"
+msgstr "Цртај преглед"
 
 
 msgctxt "Operator"
@@ -23906,6 +24763,15 @@ msgstr "Гест"
 
 msgid "Select a sketch stroke"
 msgstr "Изабери потез цртања"
+
+
+msgctxt "Operator"
+msgid "Mixdown"
+msgstr "Миксуј"
+
+
+msgid "Mixes the scene's audio to a sound file"
+msgstr "Миксује звук сцене са звуком из датотеке"
 
 
 msgid "Container"
@@ -24099,7 +24965,16 @@ msgstr "Исеци"
 
 msgctxt "Operator"
 msgid "Duplicate Line"
-msgstr "Дуплирај повезано"
+msgstr "Дуплирај линију"
+
+
+msgid "Duplicate the current line"
+msgstr "Дуплира текућу линију"
+
+
+msgctxt "Operator"
+msgid "Find Next"
+msgstr "Пронађи следеће"
 
 
 msgid "Indent selected text"
@@ -24316,8 +25191,17 @@ msgid "Set the start frame"
 msgstr "Постави почетни кадар"
 
 
+msgctxt "Operator"
+msgid "Bend"
+msgstr "Савијање"
+
+
+msgid "Bend selected items between the 3D cursor and the mouse"
+msgstr "Савија изабране ставке између 3Д курсора и миша"
+
+
 msgid "Use Snapping Options"
-msgstr "Користи лепљење"
+msgstr "Користи опције лепљења"
 
 
 msgid "Closest"
@@ -24348,9 +25232,21 @@ msgid "Align with Point Normal"
 msgstr "Поравнај са нормалом тачке"
 
 
+msgid "Edit Grease Pencil"
+msgstr "Измени скицу"
+
+
+msgid "Edit selected Grease Pencil strokes"
+msgstr "Уређује изабране потезе скице"
+
+
 msgctxt "Operator"
 msgid "Create Orientation"
-msgstr "Избриши оријентацију"
+msgstr "Направи оријентацију"
+
+
+msgid "Use View"
+msgstr "Користи поглед"
 
 
 msgid "Use after creation"
@@ -24546,11 +25442,11 @@ msgstr "Савет контроле дефинисан у РНК, уколико
 
 
 msgid "Original label of the control"
-msgstr "Координате контролне тачке"
+msgstr "Оригинална ознака контроле"
 
 
 msgid "Original tip of the control"
-msgstr "Координате контролне тачке"
+msgstr "Оригинални врх контроле"
 
 
 msgid "Edit i18n in current language for the active button"
@@ -24563,7 +25459,11 @@ msgstr "Пипета"
 
 
 msgid "Addon"
-msgstr "Додатци"
+msgstr "Додаци"
+
+
+msgid "Export POT"
+msgstr "Извоз POT"
 
 
 msgid "Operator Name"
@@ -24646,11 +25546,11 @@ msgstr "Величина коцке"
 
 
 msgid "Clip to Bounds"
-msgstr "Границе"
+msgstr "Исеци до граница"
 
 
 msgid "Scale to Bounds"
-msgstr "Повећај/смањи по оси"
+msgstr "Повећај до граница"
 
 
 msgctxt "Operator"
@@ -24775,7 +25675,7 @@ msgstr "Спакуј острва"
 
 msgctxt "Operator"
 msgid "Pin"
-msgstr "Игла"
+msgstr "Закачи"
 
 
 msgctxt "Operator"
@@ -24783,9 +25683,13 @@ msgid "Project From View"
 msgstr "Пројектуј из погледа"
 
 
+msgid "Camera Bounds"
+msgstr "Границе камере"
+
+
 msgctxt "Operator"
 msgid "Remove Doubles UV"
-msgstr "Уклони дупликате"
+msgstr "Уклони UV дупликате"
 
 
 msgid "Maximum distance between welded vertices"
@@ -25075,8 +25979,17 @@ msgstr "Извуци и помери по нормалама"
 
 
 msgctxt "Operator"
+msgid "Extrude and Move on Individual Normals"
+msgstr "Извлачи и помера по индивидуалним нормалама"
+
+
+msgid "Extrude and move along individual normals"
+msgstr "Извлачи и помера дуж индивидуалних нормала"
+
+
+msgctxt "Operator"
 msgid "Enable 3D Manipulator"
-msgstr "Омогући 3D манипулаторе"
+msgstr "Омогући 3D манипулатор"
 
 
 msgid "Enable the transform manipulator for use"
@@ -25221,6 +26134,11 @@ msgstr "Мени извора"
 
 msgid "Object Name"
 msgstr "Име објекта"
+
+
+msgctxt "Operator"
+msgid "Select or Deselect All"
+msgstr "Изабери све/ништа"
 
 
 msgctxt "Operator"
@@ -25639,10 +26557,6 @@ msgid "Text to display in header during scale"
 msgstr "Осе на којима лежи слика"
 
 
-msgid "Invert the mouse input"
-msgstr "Изврнуте осе"
-
-
 msgid "Assign value"
 msgstr "Придружи вредност"
 
@@ -25735,11 +26649,6 @@ msgid "Keep original"
 msgstr "Сачувај оригинал"
 
 
-msgctxt "Operator"
-msgid "Remove Key Config"
-msgstr "Уклони сцену"
-
-
 msgid "Remove key config"
 msgstr "Уклони подешавање кључа"
 
@@ -25750,27 +26659,12 @@ msgstr "Конфигурације пречица"
 
 
 msgctxt "Operator"
-msgid "Add Key Map Item"
-msgstr "Уклони сцену"
-
-
-msgctxt "Operator"
-msgid "Remove Key Map Item"
-msgstr "Уклони сцену"
-
-
-msgid "Remove key map item"
-msgstr "Дуплирај"
-
-
-msgctxt "Operator"
-msgid "Restore Key Map Item"
-msgstr "Уклони сцену"
-
-
-msgctxt "Operator"
 msgid "Restore Key Map(s)"
-msgstr "Врати"
+msgstr "Поврати мапу тастера"
+
+
+msgid "Restore key map(s)"
+msgstr "Поврати мапу тастера"
 
 
 msgid "All Keymaps"
@@ -25778,7 +26672,7 @@ msgstr "Сви мапирани тастери"
 
 
 msgid "Restore all keymaps to default"
-msgstr "Врати све мапе знакова на почетно"
+msgstr "Врати све мапе тастера на почетно"
 
 
 msgctxt "Operator"
@@ -26104,7 +26998,7 @@ msgstr "Брза навигација"
 
 
 msgid "Input Samples"
-msgstr "Примери"
+msgstr "Улазни узорци"
 
 
 msgid "Symmetry X"
@@ -26332,8 +27226,12 @@ msgid "Paragraph"
 msgstr "Параграф"
 
 
+msgid "Path Animation"
+msgstr "Путања анимације"
+
+
 msgid "Skeleton"
-msgstr "Костур"
+msgstr "Скелет"
 
 
 msgid "Sky & Atmosphere"
@@ -26345,7 +27243,7 @@ msgstr "Блок текста"
 
 
 msgid "Bookmarks"
-msgstr "Додај обележивач"
+msgstr "Обележивачи"
 
 
 msgid "Recent"
@@ -26353,7 +27251,7 @@ msgstr "Скорашње"
 
 
 msgid "System Bookmarks"
-msgstr "Додај обележивач"
+msgstr "Системски обележивачи"
 
 
 msgid "System"
@@ -26461,15 +27359,11 @@ msgstr "Границе судара"
 
 
 msgid "Smoke Cache"
-msgstr "Прикажи оставу"
+msgstr "Кеш дима"
 
 
 msgid "Smoke Flames"
-msgstr "Прикажи оставу"
-
-
-msgid "Smoke Flow Advanced"
-msgstr "Прикажи оставу"
+msgstr "Прикажи пламен"
 
 
 msgid "Smoke Groups"
@@ -26556,6 +27450,10 @@ msgid "Find"
 msgstr "Пронађи"
 
 
+msgid "Add-ons"
+msgstr "Додаци"
+
+
 msgid "Themes"
 msgstr "Теме"
 
@@ -26566,6 +27464,22 @@ msgstr "Позадинске слике"
 
 msgid "Skeleton Sketching"
 msgstr "Цртање костура"
+
+
+msgid "Missing Data"
+msgstr "Непостојећи подаци"
+
+
+msgid "Dyntopo"
+msgstr "Динамичко вајање"
+
+
+msgid "Symmetry / Lock"
+msgstr "Симетрично / закључано"
+
+
+msgid "Slots"
+msgstr "Слотови"
 
 
 msgid "Create"
@@ -27028,10 +27942,6 @@ msgid "Point density settings"
 msgstr "Подешавање густине тачака"
 
 
-msgid "Coordinate system to cache particles in"
-msgstr "Координате контролне тачке"
-
-
 msgid "Global Space"
 msgstr "Општа сцена"
 
@@ -27200,16 +28110,16 @@ msgid "Action 2"
 msgstr "Акција 2"
 
 
-msgid "Stitch frame"
-msgstr "Почетни кадар"
-
-
 msgid "Stick Bone"
 msgstr "Лепљивост"
 
 
 msgid "Action 1"
 msgstr "Акција 1"
+
+
+msgid "Stitch frame"
+msgstr "Почетни кадар"
 
 
 msgid "Aperture Type"
@@ -27352,6 +28262,10 @@ msgid "Use Open Shading Language (CPU rendering only)"
 msgstr "Отворени језик сенчења OSL"
 
 
+msgid "Path Tracing"
+msgstr "Праћење путање"
+
+
 msgid "Number of samples to render for each pixel"
 msgstr "Број узорака рендерованих за сваки пиксел"
 
@@ -27385,7 +28299,7 @@ msgstr "Број узорака дифузног сенчења рендеров
 
 
 msgid "Transmission Samples"
-msgstr "Боја преноса"
+msgstr "Узорци преноса"
 
 
 msgid "Ambient Occlusion Samples"
@@ -27520,11 +28434,15 @@ msgid "When using volume rendering, assume volume has the same density everywher
 msgstr "При рендеровању запремине, рачунај да је густина свуда иста (не користи текстуре), ради бржег рендеровања"
 
 
-msgid "MO File Path"
-msgstr "Путања до датотека"
+msgid "Language Name"
+msgstr "Језик"
 
 
 msgid "PO File Path"
+msgstr "Путања до датотека"
+
+
+msgid "MO File Path"
 msgstr "Путања до датотека"
 
 
@@ -27536,16 +28454,20 @@ msgid "ISO code, like fr_FR"
 msgstr "ISO код, нпр. sr_RS"
 
 
-msgid "Language Name"
-msgstr "Језик"
+msgid "POT File Path"
+msgstr "Путања до датотека"
 
 
 msgid "Languages"
 msgstr "Језик"
 
 
-msgid "POT File Path"
-msgstr "Путања до датотека"
+msgid "Object space"
+msgstr "Простор објекта"
+
+
+msgid "Out"
+msgstr "Ван"
 
 
 msgid "E"
@@ -27568,28 +28490,20 @@ msgid "Number of frames to smooth in"
 msgstr "Почетак анимације"
 
 
-msgid "Object space"
-msgstr "Простор објекта"
-
-
 msgid "Bone (2)"
 msgstr "Кост (2)"
-
-
-msgid "Out"
-msgstr "Ван"
 
 
 msgid "Is Stroke Start"
 msgstr "Самостални почетак"
 
 
-msgid "Apply Scale"
-msgstr "Примени увећање"
-
-
 msgid "VRML2"
 msgstr "VRML2"
+
+
+msgid "Apply Scale"
+msgstr "Примени увећање"
 
 
 msgid "Element Index"
@@ -27748,10 +28662,6 @@ msgid "FPS"
 msgstr "FPS"
 
 
-msgid "FPS Base"
-msgstr "растојање"
-
-
 msgid "Framerate base"
 msgstr "Крадрова у секунди"
 
@@ -27904,8 +28814,16 @@ msgid "Create empty placeholder files while rendering frames (similar to Unix 't
 msgstr "Прави празне датотеке пре рендеровања кадра (слично као Unix-ова команда 'touch')"
 
 
+msgid "Process the render result through the compositing pipeline, if compositing nodes are enabled"
+msgstr "Обради резултат рендеровања кроз процес слагање, ако су омогућени чворови слагања"
+
+
+msgid "Process the render (and composited) result through the video sequence editor pipeline, if sequencer strips exist"
+msgstr "Обради резултат рендеровања (и слагања) кроз уређивач видео исечака, ако постоје траке секвенцера"
+
+
 msgid "File Extensions"
-msgstr "Наставци"
+msgstr "Наставци датотека"
 
 
 msgid "The file extension used for saving renders"
@@ -27921,7 +28839,7 @@ msgstr "Ослободи текстуре"
 
 
 msgid "Free all image textures from memory after render, to save memory before compositing"
-msgstr "Ослобађа из меморије све слике текстура пре слагања"
+msgstr "Ослобађа из меморије све слике текстура након рендеринга, како би сачувао меморију за слагање"
 
 
 msgid "Free Unused Nodes"
@@ -27929,7 +28847,7 @@ msgstr "Ослободи некоришћене чворове"
 
 
 msgid "Free Nodes that are not used while compositing, to save memory"
-msgstr "Ослобађа из меморије све чворове који се не користе"
+msgstr "Ослобађа из меморије све чворове који се не користе приликом слагања, да сачува меморију"
 
 
 msgid "Save Buffers"
@@ -27938,6 +28856,10 @@ msgstr "Чувај бафере"
 
 msgid "Full Sample"
 msgstr "Цео екран"
+
+
+msgid "Save for every anti-aliasing sample the entire RenderLayer results (this solves anti-aliasing issues with compositing)"
+msgstr "Чува за сваки узорак умекшавања целокупан резултат рендерованих слојева (како би избегао проблеме умекшавања приликом слагања)"
 
 
 msgid "Select where rendered images will be displayed"
@@ -27970,6 +28892,14 @@ msgstr "Задржи кориснички интерфејс"
 
 msgid "Images are rendered without forcing UI changes"
 msgstr "Слике се рендерују у позадини, без утицаја на кориснички интерфејс"
+
+
+msgid "Cache Result"
+msgstr "Кеширај резултат"
+
+
+msgid "Save render cache to EXR files (useful for heavy compositing, Note: affects indirectly rendered scenes)"
+msgstr "Чува кеш рендеринга у EXR датотеке (корисно за захтевна слагања, утиче на индиректно рендероване сцене)"
 
 
 msgid "Bake Mode"
@@ -28332,12 +29262,32 @@ msgid "Factor Radius"
 msgstr "Фактор полупречника"
 
 
+msgid "Vsync"
+msgstr "Vsync"
+
+
+msgid "Change vsync settings"
+msgstr "Измени vsync подешавања"
+
+
+msgid "Disable vsync"
+msgstr "Искључи vsync"
+
+
 msgid "On"
 msgstr "Укључено"
 
 
+msgid "Enable vsync"
+msgstr "Укључи vsync"
+
+
 msgid "Adaptive"
 msgstr "Прилагођено"
+
+
+msgid "Enable adaptive vsync (if supported)"
+msgstr "Укључи прилагодљиви vsync (ако је подржан)"
 
 
 msgid "The number of AA Samples to use for MSAA"
@@ -28441,7 +29391,7 @@ msgstr "Сферична панорама"
 
 
 msgid "Camera rotation in horizontal axis"
-msgstr "Максимална ротација по осама"
+msgstr "Ротација камере по хоризонталној оси"
 
 
 msgid "Physics Engine"
@@ -28482,10 +29432,6 @@ msgstr "Највише физичких корака"
 
 msgid "Physics Sub Steps"
 msgstr "Физички подкораци"
-
-
-msgid "Deactivation Time"
-msgstr "Примена правила"
 
 
 msgid "Box Radius"
@@ -28749,11 +29695,11 @@ msgstr "Све ивице"
 
 
 msgid "Button Number"
-msgstr "Дугмићи"
+msgstr "Бројеви дугмића"
 
 
 msgid "Which button to use"
-msgstr "Дугмићи"
+msgstr "Који дугмић да користим"
 
 
 msgid "Right Axis"
@@ -29296,7 +30242,19 @@ msgstr "Поставља максималну X вредност рендеро�
 
 
 msgid "Radar Sensor"
-msgstr "Сензор"
+msgstr "Сензор радара"
+
+
+msgid "+X axis"
+msgstr "+X оса"
+
+
+msgid "+Y axis"
+msgstr "+Y оса"
+
+
+msgid "+Z axis"
+msgstr "+Z оса"
 
 
 msgid "Random Sensor"
@@ -29304,7 +30262,7 @@ msgstr "Насумично сеј"
 
 
 msgid "Ray Sensor"
-msgstr "Сензор"
+msgstr "Сензор зрака"
 
 
 msgid "Ray Type"
@@ -29576,7 +30534,7 @@ msgstr "Угао ивице"
 
 
 msgid "Wipe direction"
-msgstr "Смер"
+msgstr "Смер брисања"
 
 
 msgid "Transition Type"
@@ -29623,6 +30581,14 @@ msgid "Override the scenes active camera"
 msgstr "Величина текста"
 
 
+msgid "Use Grease Pencil"
+msgstr "Користи скицирање"
+
+
+msgid "Show Grease Pencil strokes in OpenGL previews"
+msgstr "Прикази скицирање у OpenGL прегледу"
+
+
 msgid "Sound Sequence"
 msgstr "Звучна секвенца"
 
@@ -29632,7 +30598,7 @@ msgstr "Јачина звука при репродукцији"
 
 
 msgid "Inverse Gamma"
-msgstr "Z изврн."
+msgstr "Обрнута гама"
 
 
 msgid "Sequence Crop"
@@ -29772,11 +30738,11 @@ msgstr "Дупликат"
 
 
 msgid "Strength of noise"
-msgstr "Снага"
+msgstr "Јачина шума"
 
 
 msgid "Dissolve Smoke"
-msgstr "Растапање"
+msgstr "Растапање дима"
 
 
 msgid "Using 1/x "
@@ -29836,7 +30802,7 @@ msgstr "Резолуција мреже дима"
 
 
 msgid "Ignition"
-msgstr "Почетак"
+msgstr "Паљење"
 
 
 msgid "Minimum temperature of flames"
@@ -30052,10 +31018,6 @@ msgid "Graph"
 msgstr "Графикон"
 
 
-msgid "Lock to Time Cursor"
-msgstr "Курсор "
-
-
 msgid "Show Track Path"
 msgstr "Прикажи путању стазе"
 
@@ -30116,8 +31078,20 @@ msgid "Use manual calibration helpers"
 msgstr "Користи помоћнике за ручну калибрацију"
 
 
+msgid "Show Grease Pencil"
+msgstr "Прикажи скицирање"
+
+
+msgid "Show grease pencil for this view"
+msgstr "Приказује скицирање у овом погледу"
+
+
 msgid "Show Filters"
 msgstr "Прикажи филтере"
+
+
+msgid "Show filters for graph editor"
+msgstr "Прикажи филтере у уређивачу графикона"
 
 
 msgid "Show Frames"
@@ -30164,16 +31138,38 @@ msgid "Show Seconds"
 msgstr "Прикажи секунде"
 
 
+msgctxt "MovieClip"
+msgid "Grease Pencil Source"
+msgstr "Извор скице"
+
+
 msgid "Where the grease pencil comes from"
-msgstr "Одакле долази слика"
+msgstr "Одакле долази скица"
+
+
+msgid "Show grease pencil datablock which belongs to movie clip"
+msgstr "Пиказује блок података скице која припада исечку филма"
+
+
+msgctxt "MovieClip"
+msgid "Track"
+msgstr "Стаза"
+
+
+msgid "Show grease pencil datablock which belongs to active track"
+msgstr "Пиказује блок података скице која припада активној стази"
 
 
 msgid "Bounding Box Center"
-msgstr "Центар граничне коцке %x0"
+msgstr "Центар граничне коцке"
 
 
 msgid "2D Cursor"
 msgstr "2D курсор"
+
+
+msgid "Pivot around the 2D cursor"
+msgstr "Тежиште око 2D курсора"
 
 
 msgid "Individual Origins"
@@ -30197,7 +31193,11 @@ msgstr "Историјат команди"
 
 
 msgid "Action Editor"
-msgstr "Уређивач акције"
+msgstr "Уређивач акција"
+
+
+msgid "Edit timings for all Grease Pencil sketches in file"
+msgstr "Уређује времена свих скица у датотеци"
 
 
 msgid "Show Sliders"
@@ -30209,7 +31209,7 @@ msgstr "Прикажи групу боја"
 
 
 msgid "Realtime Updates"
-msgstr "Дуплирај"
+msgstr "Освежавање у реалном времену"
 
 
 msgid "Auto Snap"
@@ -30225,7 +31225,7 @@ msgstr "Други корак"
 
 
 msgid "Snap to nearest marker"
-msgstr "Премести на слој..."
+msgstr "Залепи за најближи маркер"
 
 
 msgid "Active Operator"
@@ -30266,6 +31266,10 @@ msgstr "Ауто нормализација"
 
 msgid "Automatically recalculate curve normalization on every curve edit"
 msgstr "Аутоматски нормализује криву при свакој измени"
+
+
+msgid "Image Pin"
+msgstr "Закачи слику"
 
 
 msgid "Display current image regardless of object selection"
@@ -30310,6 +31314,10 @@ msgstr "Локација 2D курсора"
 
 msgid "2D cursor location for this view"
 msgstr "Локација 2D курсора у овом погледу"
+
+
+msgid "Grease pencil data for this space"
+msgstr "Подаци скице за овај простор"
 
 
 msgid "Update Automatically"
@@ -30376,24 +31384,56 @@ msgid "Edit Tree"
 msgstr "Извор боје"
 
 
+msgid "Use the pinned node tree"
+msgstr "Користи закачено дрво чворова"
+
+
+msgid "Use active Viewer Node output as backdrop for compositing nodes"
+msgstr "Користи активни чвор излаза за приказ слагања чворова"
+
+
 msgid "Auto Render"
 msgstr "Ауто рендеринг"
 
 
+msgid "Re-render and composite changed layers on 3D edits"
+msgstr "Поновно рендеруј и сложи измењене слојеве приликом 3D измена"
+
+
 msgid "Backdrop Zoom"
-msgstr "Ивица"
+msgstr "Увећање позадине"
+
+
+msgid "Backdrop zoom factor"
+msgstr "Фактор увећања приказа позадине"
+
+
+msgid "Backdrop X"
+msgstr "X позадине"
+
+
+msgid "Backdrop X offset"
+msgstr "X померај приказа позадине"
+
+
+msgid "Backdrop Y"
+msgstr "Y позадине"
+
+
+msgid "Backdrop Y offset"
+msgstr "Y померај приказа позадине"
 
 
 msgid "Highlight"
-msgstr "Истакни линију"
+msgstr "Истакни"
+
+
+msgid "Highlight nodes that are being calculated"
+msgstr "Истакни чворове који се обрађују"
 
 
 msgid "Location for adding new nodes"
-msgstr "Локација новоформираних објеката"
-
-
-msgid "Outliner space data"
-msgstr "Уређивач текста %x9"
+msgstr "Локација новоформираних чворова"
 
 
 msgid "All Scenes"
@@ -30545,7 +31585,7 @@ msgstr "Следеће"
 
 
 msgid "Show Cache"
-msgstr "Прикажи оставу"
+msgstr "Прикажи кеш"
 
 
 msgid "Filter method"
@@ -30905,11 +31945,7 @@ msgstr "Вредност за коју текстура утиче на дифу
 
 
 msgid "Map to Bounds"
-msgstr "Границе"
-
-
-msgid "Map coordinates in object bounds"
-msgstr "Приказује особине оквира у игри"
+msgstr "Мапирај до граница"
 
 
 msgid "From Original"
@@ -31057,7 +32093,7 @@ msgstr "Поље утицаја"
 
 
 msgid "Rough"
-msgstr "Храпавост"
+msgstr "Храпаво"
 
 
 msgid "Emission Time Factor"
@@ -31160,6 +32196,18 @@ msgid "Settings for space list"
 msgstr "Подешавања коришћена за течности."
 
 
+msgid "Grease Pencil Vertex"
+msgstr "Темена скице"
+
+
+msgid "Grease Pencil Vertex Select"
+msgstr "Избор темена скице"
+
+
+msgid "Grease Pencil Vertex Size"
+msgstr "Величина темена скице"
+
+
 msgid "Marker Outline Color"
 msgstr "Боја оквира маркера"
 
@@ -31249,7 +32297,7 @@ msgstr "Клизачи погледа"
 
 
 msgid "Channels Selected"
-msgstr "Изабрани канали %%x%d"
+msgstr "Изабрани канали"
 
 
 msgid "Channel Group"
@@ -31265,11 +32313,11 @@ msgstr "Ивица кључног кадра"
 
 
 msgid "Summary"
-msgstr "Преглед"
+msgstr "Резиме"
 
 
 msgid "Color of summary channel"
-msgstr "Боја маркера"
+msgstr "Боја канала резимеа"
 
 
 msgid "Selected File"
@@ -31452,10 +32500,6 @@ msgid "Sound Strips Selected"
 msgstr "Изабране траке"
 
 
-msgid "Tweak Duplicate Flag"
-msgstr "Дуплирај"
-
-
 msgid "Active Node"
 msgstr "Активна кост"
 
@@ -31604,8 +32648,12 @@ msgid "Region Text"
 msgstr "Текст региона"
 
 
+msgid "Tab Background"
+msgstr "Позадина језичка"
+
+
 msgid "Gradient Colors"
-msgstr "Боја фарбе"
+msgstr "Боје прелаза"
 
 
 msgid "Theme Space List Settings"
@@ -31613,19 +32661,19 @@ msgstr "Запамти корисничке поставке"
 
 
 msgid "Source List"
-msgstr "Површи"
+msgstr "Изворна листа"
 
 
 msgid "Source List Title"
-msgstr "Кружи лево"
+msgstr "Наслов изворне листе"
 
 
 msgid "Source List Text"
-msgstr "Површи"
+msgstr "Текст изворне листе"
 
 
 msgid "Widget Style"
-msgstr "Кружи лево"
+msgstr "Стил виџета"
 
 
 msgid "Theme Text Editor"
@@ -31650,6 +32698,10 @@ msgstr "Бројеви синтаксе"
 
 msgid "Syntax Numbers"
 msgstr "Бројеви синтаксе"
+
+
+msgid "Color of Grease Pencil keyframes"
+msgstr "Боја кључних кадрова скице"
 
 
 msgid "Theme User Interface"
@@ -31760,8 +32812,8 @@ msgid "UV Sculpt Tools"
 msgstr "Алатка за UV вајање"
 
 
-msgid "Use HC method for relaxation"
-msgstr "Користи прилагођену трансформацију оријентације"
+msgid "Use Laplacian method for relaxation"
+msgstr "Користи Лапласов метод за опуштање"
 
 
 msgid "Normal Size"
@@ -31848,8 +32900,28 @@ msgid "Which part to snap onto the target"
 msgstr "Део објекта који се лепи за циљ"
 
 
-msgid "Project to Self"
-msgstr "Запакуј слику"
+msgid "Use Sketching Sessions"
+msgstr "Користи фазе скицирања"
+
+
+msgid "Allow drawing multiple strokes at a time with Grease Pencil"
+msgstr "Омогућава цртање више слободоручних потеза приликом скицирања"
+
+
+msgid "Grease Pencil Source"
+msgstr "Извор скицирања"
+
+
+msgid "Datablock where active Grease Pencil data is found from"
+msgstr "Блок података одакле је пронађена активна скица"
+
+
+msgid "Grease Pencil data attached to the current scene is used, unless the active object already has Grease Pencil data (i.e. for old files)"
+msgstr "Користе се подаци скице придружени тренутној сцени, осим ако активни објекат већ нема податке о скици (нпр. за старе датотеке)"
+
+
+msgid "Grease Pencil datablocks attached to the active object are used (required using pre 2.73 add-ons, e.g. BSurfaces)"
+msgstr "Користе се подаци скице придружени активном објекту (неопходно због додатака до верзије 2.73, нпр. BSurfaces)"
 
 
 msgid "Automatic keyframe insertion for Objects and Bones"
@@ -32124,14 +33196,6 @@ msgid "New Handles Type"
 msgstr "Нова врста ручке"
 
 
-msgid "Unselected F-Curve Visibility"
-msgstr "Z изврн."
-
-
-msgid "Grease Pencil Euclidean Distance"
-msgstr "растојање"
-
-
 msgid "Grease Pencil Eraser Radius"
 msgstr "Избриши ивице"
 
@@ -32201,19 +33265,11 @@ msgstr "Омогућава копирање текстура помоћу Shift+
 
 
 msgid "Duplicate F-Curve"
-msgstr "Дуплирај повезано"
-
-
-msgid "Causes F-curve data to be duplicated with the object"
-msgstr "Омогућава копирање кривих помоћу Shift+D"
+msgstr "Дуплирај Ф-криву"
 
 
 msgid "Duplicate Action"
-msgstr "Дуплирај повезано"
-
-
-msgid "Causes actions to be duplicated with the object"
-msgstr "Омогућава копирање ipo података помоћу Shift+D"
+msgstr "Дуплирај акцију"
 
 
 msgid "Duplicate Particle"
@@ -32402,6 +33458,26 @@ msgstr "Изврнуто увећање"
 
 msgid "Show Navigation Guide"
 msgstr "Промена погледа"
+
+
+msgid "Invert Yaw (Y) Axis"
+msgstr "Изврнута оса скретања (Y)"
+
+
+msgid "Invert Roll (Z) Axis"
+msgstr "Изврнута оса окретања (Z)"
+
+
+msgid "Invert X Axis"
+msgstr "Изврнута X оса"
+
+
+msgid "Invert Y Axis"
+msgstr "Изврнута Y оса"
+
+
+msgid "Invert Z Axis"
+msgstr "Изврнута Z оса"
 
 
 msgid "Lock Horizon"
@@ -32848,6 +33924,10 @@ msgid "Manipulator Size"
 msgstr "Величина манипулатора"
 
 
+msgid "Object Origin Size"
+msgstr "Величина центра објекта"
+
+
 msgid "Only Seconds"
 msgstr "Само секунде"
 
@@ -32958,10 +34038,6 @@ msgstr "Одбијање"
 
 msgid "Gather Method"
 msgstr "Методе измене"
-
-
-msgid "Number of preprocessing passes to reduce over-occlusion"
-msgstr "Број пуних окрета код увијања"
 
 
 msgid "Adapt To Speed"
@@ -33289,7 +34365,7 @@ msgstr "Дифузно:"
 
 
 msgid "Direct"
-msgstr "Смер"
+msgstr "Директно"
 
 
 msgid "Glossy:"
@@ -33353,11 +34429,11 @@ msgstr "Рендер:"
 
 
 msgid "Samples:"
-msgstr "Примери"
+msgstr "Узорака:"
 
 
 msgid "AA Samples:"
-msgstr "Примери"
+msgstr "AA узорака:"
 
 
 msgid "Mesh Light"
@@ -33497,7 +34573,7 @@ msgstr "Статистика"
 
 
 msgid "Addons:"
-msgstr "Додатци:"
+msgstr "Додаци:"
 
 
 msgctxt "Operator"
@@ -34561,20 +35637,12 @@ msgid "Track:"
 msgstr "Стазе:"
 
 
-msgid "Cast Only"
-msgstr "Контуре"
-
-
-msgid "Casting Alpha"
-msgstr "X алфа"
-
-
-msgid "Fade To:"
-msgstr "Издели умекшано"
-
-
 msgid "RGB Radius"
-msgstr "RGB Радијус"
+msgstr "RGB полупречник"
+
+
+msgid "Boost"
+msgstr "Појачавање"
 
 
 msgid "Face Orientation:"
@@ -34603,14 +35671,6 @@ msgstr "Прими провидност"
 
 msgid "Shadows Only"
 msgstr "Само сенке"
-
-
-msgid "Auto Ray Bias"
-msgstr "Сенка"
-
-
-msgid "Ray Bias"
-msgstr "Сенка"
 
 
 msgid "Node %s"
@@ -34719,15 +35779,15 @@ msgstr "Уклапање"
 
 
 msgid "Roundness"
-msgstr "Храпавост"
+msgstr "Заобљеност"
 
 
 msgid "Roughness:"
-msgstr "Храпавост"
+msgstr "Храпавост:"
 
 
 msgid "Endpoint"
-msgstr "Спој"
+msgstr "Крајња тачка"
 
 
 msgid "Settings used for fluid"
@@ -34807,12 +35867,8 @@ msgid "Air"
 msgstr "Ваздух"
 
 
-msgid "Structural Stiffness:"
-msgstr "Систем:"
-
-
-msgid "Bending Stiffness:"
-msgstr "Систем:"
+msgid "Sewing Force"
+msgstr "Сила увијања"
 
 
 msgid "Shrinking:"
@@ -34884,11 +35940,15 @@ msgstr "Растапање:"
 
 
 msgid "Filename:"
-msgstr "Назив датотеке"
+msgstr "Назив датотеке:"
 
 
 msgid "Surface Movement:"
-msgstr "Кретање површине:"
+msgstr "Кретање површи:"
+
+
+msgid "Particle effect:"
+msgstr "Ефекат честица:"
 
 
 msgid "Use Particle's Radius"
@@ -35815,7 +36875,7 @@ msgstr "Гама"
 
 
 msgid "Gain:"
-msgstr "Појачање"
+msgstr "Добијање:"
 
 
 msgctxt "Operator"
@@ -36129,19 +37189,19 @@ msgstr "Пречник гумице"
 
 
 msgid "Euclidean Distance"
-msgstr "растојање"
+msgstr "Еуклидско растојање"
 
 
 msgid "Simplify Stroke"
-msgstr "Поједностави"
+msgstr "Поједностављен потез"
+
+
+msgid "Default Color"
+msgstr "Текућа боја"
 
 
 msgid "Playback:"
 msgstr "Репродукција:"
-
-
-msgid "Animation Editors:"
-msgstr "NLA Уређивач %x13"
 
 
 msgid "F-Curve Visibility"
@@ -36333,11 +37393,11 @@ msgstr "Мени:"
 
 
 msgid "Menu Back:"
-msgstr "Дугмићи"
+msgstr "Мени назад:"
 
 
 msgid "Tooltip:"
-msgstr "Описи"
+msgstr "Опис:"
 
 
 msgid "Menu Item:"
@@ -36704,7 +37764,11 @@ msgstr "Окретање"
 
 msgctxt "Operator"
 msgid "Origin"
-msgstr "Почетак"
+msgstr "Центар"
+
+
+msgid "Visual Transform"
+msgstr "Визуелна трансформација"
 
 
 msgctxt "Operator"
@@ -36765,11 +37829,6 @@ msgstr "Очисти"
 msgctxt "Operator"
 msgid "Levels"
 msgstr "Нивои"
-
-
-msgctxt "Operator"
-msgid "Transfer Weights"
-msgstr "Тежина слоја"
 
 
 msgctxt "Operator"
@@ -36856,13 +37915,23 @@ msgstr "Раствори UV ..."
 
 
 msgctxt "Operator"
+msgid "Sort Elements..."
+msgstr "Поређај елементе..."
+
+
+msgctxt "Operator"
 msgid "Merge..."
 msgstr "Сједини..."
 
 
 msgctxt "Operator"
 msgid "Laplacian Smooth"
-msgstr "Меканост слетања"
+msgstr "Лапласово умекшање"
+
+
+msgctxt "Operator"
+msgid "Connect Vertices"
+msgstr "Темена објекта"
 
 
 msgctxt "Operator"
@@ -37244,7 +38313,7 @@ msgstr "Коцка"
 
 msgctxt "Operator"
 msgid "UV Sphere"
-msgstr "Радијална лопта"
+msgstr "Радијална сфера"
 
 
 msgctxt "Operator"
@@ -37658,6 +38727,10 @@ msgid "MaskLayer"
 msgstr "Слој маске"
 
 
+msgid "Mball"
+msgstr "Мета лопта"
+
+
 msgid "ParticleSettings"
 msgstr "ПодешавањеЧестица"
 
@@ -37775,11 +38848,16 @@ msgstr "Не могу да спојим темена"
 
 
 msgid "Could not create merged face"
-msgstr "Направи нови директоријум"
+msgstr "Не могу да направим спојену страницу"
 
 
 msgid "Could not rotate edge"
-msgstr "Направи нови директоријум"
+msgstr "Не могу да ротирам ивицу"
+
+
+msgctxt "Action"
+msgid "Group"
+msgstr "Група"
 
 
 msgid "Scene not found"
@@ -37866,6 +38944,10 @@ msgid "No active keying set path to remove"
 msgstr "Нема путање активне збирке кључева за уклањање"
 
 
+msgid "Template %t|None %x0|"
+msgstr "Шаблон %t|Ништа %x0|"
+
+
 msgid "Add New"
 msgstr "Додај ново"
 
@@ -37887,7 +38969,7 @@ msgstr "Кључеви објекта"
 
 
 msgid "Invalid index for pose"
-msgstr "Додај збирку кључева"
+msgstr "Неисправан индекс позе"
 
 
 msgid "Object does not have a valid pose lib"
@@ -37922,12 +39004,37 @@ msgstr "БазиерКруг"
 
 msgctxt "Curve"
 msgid "NurbsCurve"
-msgstr "НурбсКрива"
+msgstr "Нурбс крива"
 
 
 msgctxt "Curve"
 msgid "NurbsCircle"
-msgstr "НурбсКруг"
+msgstr "Нурбс круг"
+
+
+msgctxt "Curve"
+msgid "NurbsPath"
+msgstr "Нурбс путања"
+
+
+msgctxt "Curve"
+msgid "SurfCurve"
+msgstr "Крива површи"
+
+
+msgctxt "Curve"
+msgid "SurfCircle"
+msgstr "Круг површи"
+
+
+msgctxt "Curve"
+msgid "SurfSphere"
+msgstr "Сфера површи"
+
+
+msgctxt "Curve"
+msgid "SurfTorus"
+msgstr "Торус површи"
 
 
 msgctxt "Curve"
@@ -37949,6 +39056,10 @@ msgstr "Не могу да прочитам датотеку: '%s', %s"
 
 msgid "No active frame to delete"
 msgstr "Модификатор вредности F-криве"
+
+
+msgid "Pin"
+msgstr "Закачи"
 
 
 msgid "Shift+Left Mouse"
@@ -37987,42 +39098,17 @@ msgstr "Очисти кључне кадрове"
 
 msgctxt "Operator"
 msgid "Clear Single Keyframes"
-msgstr "Уметни кључни кадар"
-
-
-msgctxt "Operator"
-msgid "Delete Drivers"
-msgstr "Уклони маркере"
-
-
-msgctxt "Operator"
-msgid "Delete Single Driver"
-msgstr "Избриши више"
-
-
-msgctxt "Operator"
-msgid "Delete Driver"
-msgstr "Избриши криву"
-
-
-msgctxt "Operator"
-msgid "Add Drivers"
-msgstr "Додај маркер"
-
-
-msgctxt "Operator"
-msgid "Add Single Driver"
-msgstr "Додај маркер"
+msgstr "Очисти кључни кадар"
 
 
 msgctxt "Operator"
 msgid "Add All to Keying Set"
-msgstr "Додај збирку кључева"
+msgstr "Додај све у збирку кључева"
 
 
 msgctxt "Operator"
 msgid "Add Single to Keying Set"
-msgstr "Додај збирку кључева"
+msgstr "Додај у збирку кључева"
 
 
 msgctxt "Operator"
@@ -38203,6 +39289,10 @@ msgstr "Избриши тачке"
 
 msgid "Reset Black/White point and curves"
 msgstr "Ресетуј црну и белу тачку и криве"
+
+
+msgid "Double click to rename"
+msgstr "Дупли клик за преименовање"
 
 
 msgid "Stop this job"
@@ -38442,7 +39532,7 @@ msgstr "Врста трансформације"
 
 
 msgid "No filename given"
-msgstr "Назив датотеке"
+msgstr "Без имена датотеке"
 
 
 msgctxt "Mesh"
@@ -38938,11 +40028,11 @@ msgstr "Иди на претходни каталог (PKEY)"
 
 
 msgid "Could not create new folder name"
-msgstr "Направи нови директоријум"
+msgstr "Не могу да направим име новог директоријума"
 
 
 msgid "Could not create new folder"
-msgstr "Направи нови директоријум"
+msgstr "Не могу да направим нови директоријум"
 
 
 msgid "Cursor from Selection"
@@ -39133,6 +40223,50 @@ msgid "Cannot set absolute paths with an unsaved blend file"
 msgstr "Изабер датотеке релативно у односу на blend датотеку"
 
 
+msgid " | Mem:%.2fM"
+msgstr " | Мем:%.2fM"
+
+
+msgid " (%.2fM)"
+msgstr " (%.2fM)"
+
+
+msgid " | Free GPU Mem:%.2fM"
+msgstr " | Слободна GPU мем:%.2fM"
+
+
+msgid "/%.2fM"
+msgstr "/%.2fM"
+
+
+msgid "(Key) "
+msgstr "(кључ)"
+
+
+msgid "Verts:%s/%s | Edges:%s/%s | Faces:%s/%s | Tris:%s"
+msgstr "Темена:%s/%s | Ивица:%s/%s | Страна:%s/%s | Троуглова:%s"
+
+
+msgid "Verts:%s/%s | Bones:%s/%s"
+msgstr "Темена:%s/%s | Костију:%s/%s"
+
+
+msgid "Verts:%s/%s"
+msgstr "Темена:%s/%s"
+
+
+msgid "Bones:%s/%s %s%s"
+msgstr "Костију:%s/%s %s%s"
+
+
+msgid "Verts:%s | Tris:%s%s"
+msgstr "Темена:%s | Троуглова:%s%s"
+
+
+msgid "Verts:%s | Faces:%s | Tris:%s | Objects:%s/%s | Lamps:%s/%s%s%s"
+msgstr "Темена:%s | Страна:%s | Троуглова:%s | Објеката:%s/%s | Светала:%s/%s%s%s"
+
+
 msgid "No Recent Files"
 msgstr "Без скорашњих датотека"
 
@@ -39227,19 +40361,19 @@ msgstr "Звезда"
 
 
 msgid "Label Size"
-msgstr "Величина фонта"
+msgstr "Величина ознаке"
+
+
+msgid "Frame: %d"
+msgstr "Кадар: %d"
 
 
 msgid "Squash"
-msgstr "Површи"
+msgstr "Кашасто"
 
 
 msgid "Center:"
-msgstr "Средиште"
-
-
-msgid "Bokeh Type:"
-msgstr "Име сокета"
+msgstr "Средиште:"
 
 
 msgid "Speed:"
@@ -39414,18 +40548,6 @@ msgstr "Главни полупречник"
 
 msgid "4L"
 msgstr "4L"
-
-
-msgid "X radius used by Skin modifier"
-msgstr "Режим бојења тежине"
-
-
-msgid "Y radius used by Skin modifier"
-msgstr "Режим бојења тежине"
-
-
-msgid "Weight used by SubSurf modifier"
-msgstr "Режим бојења тежине"
 
 
 msgid "Radius of curve control points"
@@ -39681,10 +40803,6 @@ msgid "Keying set paths could not be removed"
 msgstr "Путања збирке кључева"
 
 
-msgid "Invalid context for keying set"
-msgstr "Додај збирку кључева"
-
-
 msgid "Relationship"
 msgstr "Однос"
 
@@ -39754,12 +40872,8 @@ msgid "Background image cannot be removed"
 msgstr "Индекс позадинске слике за уклањање "
 
 
-msgid "Property value not in enumeration"
-msgstr "Измена вредности особине"
-
-
 msgid "Cannot execute boolean operation"
-msgstr "Приказ информација о слици"
+msgstr "Не могу да извршим логичку операцију"
 
 
 msgid "Cannot get mesh from cage object"
@@ -39903,7 +41017,7 @@ msgstr "Z дубина погледа"
 
 
 msgid "View Distance"
-msgstr "Растојање погледа"
+msgstr "Удаљеност погледа"
 
 
 msgid "Vertex Alpha"
@@ -39916,14 +41030,6 @@ msgstr "Стварна нормала"
 
 msgid "Parametric"
 msgstr "Параметарски"
-
-
-msgid "Intercept"
-msgstr "Пресек"
-
-
-msgid "Tangent Normal"
-msgstr "Циљна нормала"
 
 
 msgid "Light Vector"
@@ -39976,6 +41082,14 @@ msgstr "Боја1"
 
 msgid "Color2"
 msgstr "Боја2"
+
+
+msgid "Color Fac"
+msgstr "Фактор боје"
+
+
+msgid "Alpha Fac"
+msgstr "Алфа фактор"
 
 
 msgid "Texture Blur"
@@ -40183,6 +41297,10 @@ msgid "Add Curve"
 msgstr "Додај криву"
 
 
+msgid "Add Mesh"
+msgstr "Додај меш"
+
+
 msgid "Development"
 msgstr "Развој"
 
@@ -40307,6 +41425,10 @@ msgid "Serbian Latin (Srpski latinica)"
 msgstr "Српски латиница"
 
 
+msgid "Kyrgyz (Кыргыз тили)"
+msgstr "Киргиски (Кыргыз тили)"
+
+
 msgid "Turkish (Türkçe)"
 msgstr "Турски (Türkçe)"
 
@@ -40317,6 +41439,10 @@ msgstr "Мађарски (Magyar)"
 
 msgid "Brazilian Portuguese (Português do Brasil)"
 msgstr "Португалски Бразил (Português do Brasil)"
+
+
+msgid "Hebrew (תירִבְעִ)"
+msgstr "Хебрејски (תירִבְעִ)"
 
 
 msgid "Estonian (Eestlane)"
