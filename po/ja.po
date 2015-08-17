@@ -1,9 +1,9 @@
 
 msgid ""
 msgstr ""
-"Project-Id-Version: Blender 2.75 (sub 4) (b'8a2371e')\n"
+"Project-Id-Version: Blender 2.75 (sub 4) (b'3047b96')\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-08-11 22:30:02\n"
+"POT-Creation-Date: 2015-08-17 20:08:38\n"
 "PO-Revision-Date: 2014-01-09 12:04+0900\n"
 "Last-Translator: \n"
 "Language-Team: Japanese Translation Team (https://sites.google.com/site/blugjp/blender-translators)\n"
@@ -1953,22 +1953,6 @@ msgid "Addon Preferences"
 msgstr "アドオン設定"
 
 
-msgid "Source Root"
-msgstr "ソースルート"
-
-
-msgid "The Blender source root path"
-msgstr "Blenderソースルートパス"
-
-
-msgid "Translation Root"
-msgstr "ルートの移動"
-
-
-msgid "The bf-translation repository"
-msgstr "bf-translationリポジトリ"
-
-
 msgid "Warn Msgid Not Capitalized"
 msgstr "msgidの先頭文字の警告"
 
@@ -1977,28 +1961,12 @@ msgid "Warn about messages not starting by a capitalized letter (with a few allo
 msgstr "開始文字が大文字ではないメッセージを警告します(少しの例外を可能にするため！)"
 
 
-msgid "Spell Cache"
-msgstr "スペルキャッシュ"
-
-
-msgid "A cache storing validated msgids, to avoid re-spellchecking them"
-msgstr "有効な msgid を格納するキャッシュ。再スペルチェックを防ぎます"
-
-
 msgid "Gettext 'msgfmt' executable"
 msgstr "実行可能なGettext 'msgfmt'"
 
 
 msgid "The gettext msgfmt 'compiler'. You’ll likely have to edit it if you’re under Windows"
 msgstr "Gettext msgfmtコンパイラ。Windows環境では編集しないといけないかもしれません"
-
-
-msgid "Fribidi Library"
-msgstr "Fribidiライブラリ"
-
-
-msgid "The FriBidi C compiled library (.so under Linux, .dll under windows...), you’ll likely have to edit it if you’re under Windows, e.g. using the one included in svn's libraries repository"
-msgstr "FriBidi Cコンパイル済ライブラリ(Linuxでは .so、Windowsでは .dll)。Windows環境の場合、編集しないといけないでしょう。例：SVNのライブラリリポジトリ内でインクルードされたこれを使用するなど"
 
 
 msgid "Import Paths"
@@ -2015,6 +1983,38 @@ msgstr "Persistenデータパス"
 
 msgid "The name of a json file storing those settings (unfortunately, Blender's system does not work here)"
 msgstr "これらの設定が含まれるJSONファイル名(残念ながらBlenderのシステムはここでは動作しません)"
+
+
+msgid "Source Root"
+msgstr "ソースルート"
+
+
+msgid "The Blender source root path"
+msgstr "Blenderソースルートパス"
+
+
+msgid "Fribidi Library"
+msgstr "Fribidiライブラリ"
+
+
+msgid "The FriBidi C compiled library (.so under Linux, .dll under windows...), you’ll likely have to edit it if you’re under Windows, e.g. using the one included in svn's libraries repository"
+msgstr "FriBidi Cコンパイル済ライブラリ(Linuxでは .so、Windowsでは .dll)。Windows環境の場合、編集しないといけないでしょう。例：SVNのライブラリリポジトリ内でインクルードされたこれを使用するなど"
+
+
+msgid "Spell Cache"
+msgstr "スペルキャッシュ"
+
+
+msgid "A cache storing validated msgids, to avoid re-spellchecking them"
+msgstr "有効な msgid を格納するキャッシュ。再スペルチェックを防ぎます"
+
+
+msgid "Translation Root"
+msgstr "ルートの移動"
+
+
+msgid "The bf-translation repository"
+msgstr "bf-translationリポジトリ"
 
 
 msgid "Animation Data"
@@ -12544,6 +12544,10 @@ msgstr "このIDブロックが間接的にリンクされているか"
 
 msgid "Library file the datablock is linked from"
 msgstr "ライブラリファイル。データブロックのリンク元"
+
+
+msgid "Preview image and icon of this datablock (None if not supported for this type of data)"
+msgstr "このデータブロックのプレビュー画像とアイコン（このデータタイプが未対応の場合は None）"
 
 
 msgid "A collection of F-Curves for animation"
@@ -28378,10 +28382,6 @@ msgid "Use the texture's intensity value to displace in the Z direction"
 msgstr "テクスチャの輝度をZ方向のディスプレイスに使用します"
 
 
-msgid "Use the texture's intensity value to displace in the normal direction"
-msgstr "テクスチャの輝度を法線方向のディスプレイスに使用します"
-
-
 msgid "RGB to XYZ"
 msgstr "RGBからXYZへ"
 
@@ -29774,12 +29774,20 @@ msgid "Number of subdivisions to perform when rendering"
 msgstr "レンダリング時の細分化数"
 
 
+msgid "Use OpenSubdiv"
+msgstr "OpenSubdivを使用"
+
+
+msgid "Use OpenSubdiv for the subdivisions (viewport only)"
+msgstr "OpenSubdiv を細分化に使用します（ビューのみ）"
+
+
 msgid "Surface Modifier"
 msgstr "サーフェスモディファイアー"
 
 
 msgid "Surface modifier defining modifier stack position used for surface fields"
-msgstr "サーフェスモディファイアーはサーフェースフィールドに使用するスタックの位置を決めます"
+msgstr "サーフェスモディファイアーはサーフェスフィールドに使用するスタックの位置を決めます"
 
 
 msgid "Triangulate Modifier"
@@ -34206,8 +34214,16 @@ msgid "Particle System to render as points"
 msgstr "パーティクルシステムを点としてレンダリングします"
 
 
+msgid "Resolution used by the texture holding the point density"
+msgstr "点密度を保有するテクスチャが使用する解像度"
+
+
 msgid "Radius from the shaded sample to look for points within"
 msgstr "中のポイントを探すシェーディングされたサンプルからの半径"
+
+
+msgid "Coordinate system to calculate voxels in"
+msgstr "ボクセルが計算される座標系"
 
 
 msgid "Color Source"
@@ -39145,6 +39161,38 @@ msgid "FBX 6.1 ASCII"
 msgstr "FBX 6.1 ASCII"
 
 
+msgid "Legacy 6.1 ascii version - WARNING: Deprecated and no more maintained"
+msgstr "旧6.1 Asciiバージョン。注意：廃止予定なので以降は保守されません"
+
+
+msgid "Export options categories"
+msgstr "エクスポートオプションのカテゴリ"
+
+
+msgid "Main"
+msgstr "メイン"
+
+
+msgid "Main basic settings"
+msgstr "メインの基本設定"
+
+
+msgid "Geometries"
+msgstr "ジオメトリ"
+
+
+msgid "Geometry-related settings"
+msgstr "ジオメトリ関連の設定"
+
+
+msgid "Armature-related settings"
+msgstr "アーマチュア関連の設定"
+
+
+msgid "Animation-related settings"
+msgstr "アニメーション関連の設定"
+
+
 msgid "Selected Objects"
 msgstr "選択したオブジェクト"
 
@@ -39184,6 +39232,10 @@ msgstr "オブジェクトタイプ"
 
 msgid "Which kind of object to export"
 msgstr "どの種類のオブジェクトをエクスポートするか"
+
+
+msgid "WARNING: not supported in dupli/group instances"
+msgstr "注意：複製・グループインスタンスに未対応です"
 
 
 msgid "Other"
@@ -39310,6 +39362,14 @@ msgid "Export each action as a separated FBX's AnimStack, instead of global scen
 msgstr ""
 "各アクションをグローバルシーンアニメーションではなく、FBX の AnimStack として別々にエクスポートします。\n"
 "（アニメーションするオブジェクトは全アクション）"
+
+
+msgid "Force Start/End Keying"
+msgstr "強制的に開始/終了キーを挿入"
+
+
+msgid "Always add a keyframe at start and end of actions for animated channels"
+msgstr "アニメーションチャンネルのアクションの開始と終了に、常にキーフレームを追加します"
 
 
 msgid "Sampling Rate"
@@ -41568,6 +41628,10 @@ msgid "Load a FBX file"
 msgstr "FBXファイルを読み込みます"
 
 
+msgid "Import options categories"
+msgstr "インポートオプションカテゴリ"
+
+
 msgid "Manual Orientation"
 msgstr "方向を手動で設定"
 
@@ -41582,6 +41646,10 @@ msgstr "法線をインポート"
 
 msgid "Import custom normals, if available (otherwise Blender will recompute them)"
 msgstr "可能性であればカスタム法線をインポートします（無理なら Blender が自動計算します）"
+
+
+msgid "Search subdirs for any associated images (WARNING: may be slow)"
+msgstr "関連画像用にサブフォルダを検索します（遅くなることがあります）"
 
 
 msgid "Alpha Decals"
@@ -45656,16 +45724,16 @@ msgid "Node type"
 msgstr "ノードタイプ"
 
 
+msgid "Settings to be applied on the newly created node"
+msgstr "新規ノードに設定を適用します"
+
+
 msgid "Use Transform"
 msgstr "トランスフォーム使用"
 
 
 msgid "Start transform operator after inserting the node"
 msgstr "ノード挿入後にトランスフォーム演算を開始します"
-
-
-msgid "Settings to be applied on the newly created node"
-msgstr "新規ノードに設定を適用します"
 
 
 msgid "Link Socket Index"
@@ -45951,6 +46019,15 @@ msgstr "選択中のノードの表示/非表示を切り替えます"
 
 
 msgctxt "Operator"
+msgid "Insert Offset"
+msgstr "オフセット挿入"
+
+
+msgid "Automatically offset nodes on insertion"
+msgstr "挿入時に自動的にノードにオフセットを追加します"
+
+
+msgctxt "Operator"
 msgid "Join Nodes"
 msgstr "ノードを統合"
 
@@ -46022,6 +46099,10 @@ msgstr "ノードを移動しリンクを切り離します"
 
 msgid "Detach Links"
 msgstr "リンクを分離"
+
+
+msgid "Insert Offset"
+msgstr "オフセット挿入"
 
 
 msgctxt "Operator"
@@ -46591,6 +46672,14 @@ msgstr "反対に転送"
 
 msgid "Transfer from selected objects to active one"
 msgstr "選択中のオブジェクトからアクティブに転送します"
+
+
+msgid "Freeze Operator"
+msgstr "オペレーターを凍結"
+
+
+msgid "Prevent changes to settings to re-run the operator, handy to change several things at once with heavy geometry"
+msgstr "オペレーター再実行時用の設定の変更を防ぎます。重い形状に一度に複数の変更を行うのに便利です"
 
 
 msgid "Which data to transfer"
@@ -56658,6 +56747,85 @@ msgstr "ファイルブラウザーでパスを開きます"
 
 
 msgctxt "Operator"
+msgid "Batch-Clear Previews"
+msgstr "プレビューの一括削除"
+
+
+msgid "Clear selected .blend file's previews"
+msgstr "選択中の.blendファイルのプレビューを削除します"
+
+
+msgid "Clear scenes' previews"
+msgstr "シーンのプレビューを削除します"
+
+
+msgid "Clear groups' previews"
+msgstr "グループのプレビューを削除します"
+
+
+msgid "Clear objects' previews"
+msgstr "オブジェクトのプレビューを削除します"
+
+
+msgid "Mat/Tex/..."
+msgstr "Mat/Tex/..."
+
+
+msgid "Clear 'internal' previews (materials, textures, images, etc.)"
+msgstr "「内部」プレビュー（マテリアル、テクスチャ、画像など）を削除します"
+
+
+msgid "Trusted Blend Files"
+msgstr "信頼できるBlendファイル"
+
+
+msgid "Enable python evaluation for selected files"
+msgstr "選択中のファイルで Python の評価を有効にします"
+
+
+msgctxt "Operator"
+msgid "Batch-Generate Previews"
+msgstr "プレビューの一括生成"
+
+
+msgid "Generate selected .blend file's previews"
+msgstr "選択中の.blend ファイルのプレビューを生成します"
+
+
+msgid "Generate scenes' previews"
+msgstr "シーンのプレビューを生成します"
+
+
+msgid "Generate groups' previews"
+msgstr "グループのプレビューを生成します"
+
+
+msgid "Generate objects' previews"
+msgstr "オブジェクトのプレビューを生成します"
+
+
+msgid "Generate 'internal' previews (materials, textures, images, etc.)"
+msgstr "「内部」プレビュー（マテリアル、テクスチャ、画像など）を生成します"
+
+
+msgctxt "Operator"
+msgid "Clear DataBlock Previews"
+msgstr "データブロックプレビューの削除"
+
+
+msgid "Clear datablock previews (only for some types like objects, materials, textures, etc.)"
+msgstr "データブロックのプレビューを削除します（オブジェクト、マテリアル、テクスチャなどの一部のタイプのみ）"
+
+
+msgid "DataBlock Type"
+msgstr "データブロックタイプ"
+
+
+msgid "Which datablock previews to clear"
+msgstr "削除するプレビューのデータブロック"
+
+
+msgctxt "Operator"
 msgid "Refresh DataBlock Previews"
 msgstr "データブロックプレビューの更新"
 
@@ -57276,12 +57444,36 @@ msgid "Mask painting according to mesh geometry cavity"
 msgstr "メッシュ形状の凹みを元にしたマスクペインティング"
 
 
+msgid "Tiling offset for the X Axis"
+msgstr "X軸のタイリングオフセット"
+
+
+msgid "Stride at which tiled strokes are copied"
+msgstr "タイルストロークをコピーする"
+
+
 msgid "Tile X"
 msgstr "タイルX"
 
 
+msgid "Tile along X axis"
+msgstr "X軸に沿ってタイリング"
+
+
 msgid "Tile Y"
 msgstr "タイルY"
+
+
+msgid "Tile along Y axis"
+msgstr "Y軸上に沿ってタイリング"
+
+
+msgid "Tile Z"
+msgstr "タイルZ"
+
+
+msgid "Tile along Z axis"
+msgstr "Z軸上に沿ってタイリング"
 
 
 msgid "Image Paint"
@@ -57709,6 +57901,10 @@ msgstr "被写界深度"
 
 msgid "Spot Shape"
 msgstr "スポット形状"
+
+
+msgid "Cycles Settings"
+msgstr "Cycles設定"
 
 
 msgid "Cycles Hair Rendering"
@@ -58225,6 +58421,10 @@ msgstr "カーブツール"
 
 msgid "Symmetry"
 msgstr "対称"
+
+
+msgid "Tiling"
+msgstr "タイリング"
 
 
 msgid "Lattice Tools"
@@ -59543,12 +59743,20 @@ msgid "Group of ID properties"
 msgstr "IDプロパティのグループ"
 
 
-msgid "Action 2"
-msgstr "アクション2"
+msgid "Stick Bone"
+msgstr "スティックボーン"
 
 
-msgid "Second action in stitch"
-msgstr "スティッチ内の二つめのアクション"
+msgid "Bone to freeze during transition"
+msgstr "推移中にボーンをフリーズ"
+
+
+msgid "Stitch frame"
+msgstr "フレームにスティッチ"
+
+
+msgid "Frame to locate stitch on"
+msgstr "スティッチを行うフレーム位置"
 
 
 msgid "Second offset"
@@ -59559,22 +59767,6 @@ msgid "Frame offset for 2nd animation, where it should start"
 msgstr "二つめのアニメーションが開始するフレームオフセットです"
 
 
-msgid "Blend amount"
-msgstr "ブレンド量"
-
-
-msgid "Size of blending transition, on both sides of the stitch"
-msgstr "スティッチ両側の移行部分のブレンドサイズ"
-
-
-msgid "Stick Bone"
-msgstr "スティックボーン"
-
-
-msgid "Bone to freeze during transition"
-msgstr "推移中にボーンをフリーズ"
-
-
 msgid "Action 1"
 msgstr "アクション1"
 
@@ -59583,12 +59775,20 @@ msgid "First action in stitch"
 msgstr "スティッチの最初のアクション"
 
 
-msgid "Stitch frame"
-msgstr "フレームにスティッチ"
+msgid "Action 2"
+msgstr "アクション2"
 
 
-msgid "Frame to locate stitch on"
-msgstr "スティッチを行うフレーム位置"
+msgid "Second action in stitch"
+msgstr "スティッチ内の二つめのアクション"
+
+
+msgid "Blend amount"
+msgstr "ブレンド量"
+
+
+msgid "Size of blending transition, on both sides of the stitch"
+msgstr "スティッチ両側の移行部分のブレンドサイズ"
 
 
 msgid "Aperture Type"
@@ -60001,6 +60201,14 @@ msgstr "モーションステップ"
 
 msgid "Control accuracy of deformation motion blur, more steps gives more memory usage (actual number of steps is 2^(steps - 1))"
 msgstr "変形モーションブラーの精度。大きいとメモリ使用量が増えます（実際のステップ数は 2^(ステップ－1)）"
+
+
+msgid "Use Camera Cull"
+msgstr "カメラでカリング"
+
+
+msgid "Allow this object and its duplicators to be culled by camera space culling"
+msgstr "このオブジェクトとそのコピーがカメラ空間でカリングされるようにします"
 
 
 msgid "Device"
@@ -60527,6 +60735,18 @@ msgid "Type of pass to bake"
 msgstr "ベイクするパスの種類"
 
 
+msgid "Allow objects to be culled based on the camera frustum"
+msgstr "オブジェクトがカメラ錐体を元にカリングされるようにします"
+
+
+msgid "Camera Cull Margin"
+msgstr "カリングマージン"
+
+
+msgid "Margin for the camera space culling"
+msgstr "カメラ空間のカリングのマージン"
+
+
 msgid "Object visibility for camera rays"
 msgstr "カメラ・レイに対するオブジェクトの可視性"
 
@@ -60583,40 +60803,16 @@ msgid "Settings/info about a language"
 msgstr "言語の設定/情報"
 
 
-msgid "PO Trunk File Path"
-msgstr "PO Trunkファイルパス"
-
-
-msgid "Path to the relevant po file in trunk"
-msgstr "trunk内の適合するpoファイルへのパス"
-
-
-msgid "Language Name"
-msgstr "言語名"
-
-
-msgid "English language name/label (like \"French (Français)\")"
-msgstr "英語での言語名/ラベル(「Japanese (日本語)」など)"
-
-
-msgid "PO File Path"
-msgstr "POファイルパス"
-
-
-msgid "Path to the relevant po file in branches"
-msgstr "branch内の適合するpoファイルへのパス"
-
-
-msgid "PO Git Master File Path"
-msgstr "PO Git Masterファイルパス"
-
-
-msgid "Path to the relevant po file in Blender's translations git repository"
-msgstr "poファイルに対応するBlenderの翻訳Gitリポジトリへのパス"
-
-
 msgid "Use this language in current operator"
 msgstr "現在のオペレーターで現在の言語を使用します"
+
+
+msgid "Language ID"
+msgstr "言語ID"
+
+
+msgid "ISO code, like fr_FR"
+msgstr "ja_JPなどのISOコード"
 
 
 msgid "MO File Path"
@@ -60635,12 +60831,44 @@ msgid "Numeric ID (readonly!)"
 msgstr "数値ID(読み込みのみ！)"
 
 
-msgid "Language ID"
-msgstr "言語ID"
+msgid "PO Trunk File Path"
+msgstr "PO Trunkファイルパス"
 
 
-msgid "ISO code, like fr_FR"
-msgstr "ja_JPなどのISOコード"
+msgid "Path to the relevant po file in trunk"
+msgstr "trunk内の適合するpoファイルへのパス"
+
+
+msgid "Language Name"
+msgstr "言語名"
+
+
+msgid "English language name/label (like \"French (Français)\")"
+msgstr "英語での言語名/ラベル(「Japanese (日本語)」など)"
+
+
+msgid "PO Git Master File Path"
+msgstr "PO Git Masterファイルパス"
+
+
+msgid "Path to the relevant po file in Blender's translations git repository"
+msgstr "poファイルに対応するBlenderの翻訳Gitリポジトリへのパス"
+
+
+msgid "PO File Path"
+msgstr "POファイルパス"
+
+
+msgid "Path to the relevant po file in branches"
+msgstr "branch内の適合するpoファイルへのパス"
+
+
+msgid "Languages"
+msgstr "言語"
+
+
+msgid "Languages to update in branches"
+msgstr "branch内の言語の更新"
 
 
 msgid "POT File Path"
@@ -60663,20 +60891,48 @@ msgid "Whether these settings have already been auto-set or not"
 msgstr "すでにこれらの設定が自動設定されているかどうか"
 
 
-msgid "Languages"
-msgstr "言語"
+msgid "In"
+msgstr "入力"
 
 
-msgid "Languages to update in branches"
-msgstr "branch内の言語の更新"
+msgid "Number of frames to smooth in"
+msgstr "スムーズインするフレーム数"
 
 
-msgid "Fix is active"
-msgstr "補正がアクティブである"
+msgid "Fix is fully shown"
+msgstr "補正を完全に表示"
+
+
+msgid "Bone (2)"
+msgstr "ボーン (2)"
+
+
+msgid "Other Constrained Bone (optional, depends on type)"
+msgstr "他のコンストレイントされたボーン（オプション、タイプに依存）"
+
+
+msgid "Target of Fix - Mesh (optional, depends on type)"
+msgstr "補正ターゲット - メッシュ（オプション、タイプに依存）"
+
+
+msgid "Constrained Bone"
+msgstr "コンストレイントの掛けられたボーン"
+
+
+msgid "Name of Mocap Fix"
+msgstr "モーキャプ補正の名前"
 
 
 msgid "Target of Fix - Point"
 msgstr "補正ターゲット - ポイント"
+
+
+msgid "Distance and Floor Fixes - Desired offset"
+msgstr "距離と床の補正 - 希望のオフセット"
+
+
+msgid "Type of constraint"
+msgstr "コンストレイントの種類"
 
 
 msgid "In which space should Point type target be evaluated"
@@ -60703,8 +60959,8 @@ msgid "Evaluate target in specified other bone space"
 msgstr "ターゲットを指定の他のボーン空間で評価します"
 
 
-msgid "Distance and Floor Fixes - Desired offset"
-msgstr "距離と床の補正 - 希望のオフセット"
+msgid "Start frame of Fix"
+msgstr "補正の開始フレーム"
 
 
 msgid "Out"
@@ -60715,12 +60971,8 @@ msgid "Number of frames to smooth out"
 msgstr "スムーズアウトする為のフレーム数"
 
 
-msgid "Target of Fix - Mesh (optional, depends on type)"
-msgstr "補正ターゲット - メッシュ（オプション、タイプに依存）"
-
-
-msgid "Start frame of Fix"
-msgstr "補正の開始フレーム"
+msgid "Fix is active"
+msgstr "補正がアクティブである"
 
 
 msgid "E"
@@ -60729,38 +60981,6 @@ msgstr "E"
 
 msgid "End frame of Fix"
 msgstr "補正の終了フレーム"
-
-
-msgid "Constrained Bone"
-msgstr "コンストレイントの掛けられたボーン"
-
-
-msgid "Type of constraint"
-msgstr "コンストレイントの種類"
-
-
-msgid "Fix is fully shown"
-msgstr "補正を完全に表示"
-
-
-msgid "Name of Mocap Fix"
-msgstr "モーキャプ補正の名前"
-
-
-msgid "In"
-msgstr "入力"
-
-
-msgid "Number of frames to smooth in"
-msgstr "スムーズインするフレーム数"
-
-
-msgid "Bone (2)"
-msgstr "ボーン (2)"
-
-
-msgid "Other Constrained Bone (optional, depends on type)"
-msgstr "他のコンストレイントされたボーン（オプション、タイプに依存）"
 
 
 msgid "Python expression to be evaluated as the initial node setting"
@@ -60807,24 +61027,8 @@ msgid "Is Stroke Start"
 msgstr "ストロークが開始したか"
 
 
-msgid "Format type to export to"
-msgstr "エクスポートするフォーマットタイプ"
-
-
-msgid "VRML2"
-msgstr "VRML2"
-
-
 msgid "Limit for checking distorted faces"
 msgstr "面の歪みをチェックする限界"
-
-
-msgid "Copy Textures"
-msgstr "テクスチャをコピー"
-
-
-msgid "Copy textures on export to the output path"
-msgstr "エクスポート時、テクスチャを出力パスにコピーします"
 
 
 msgid "Limit for checking zero area/length"
@@ -60845,6 +61049,22 @@ msgstr "スケールを適用"
 
 msgid "Apply scene scale setting on export"
 msgstr "エクスポート時にシーンスケール設定を適用します"
+
+
+msgid "Copy Textures"
+msgstr "テクスチャをコピー"
+
+
+msgid "Copy textures on export to the output path"
+msgstr "エクスポート時、テクスチャを出力パスにコピーします"
+
+
+msgid "Format type to export to"
+msgstr "エクスポートするフォーマットタイプ"
+
+
+msgid "VRML2"
+msgstr "VRML2"
 
 
 msgid "Selected UV Element"
@@ -61651,12 +61871,16 @@ msgid "Border Minimum X"
 msgstr "ボーダー最小X"
 
 
+msgid "Minimum X value for the render border"
+msgstr "レンダーボーダーのX軸最小値"
+
+
 msgid "Border Minimum Y"
 msgstr "ボーダー最小Y"
 
 
 msgid "Minimum Y value for the render border"
-msgstr "レンダー枠の最小Y値"
+msgstr "レンダーボーダーのY軸最小値"
 
 
 msgid "Border Maximum X"
@@ -61664,7 +61888,7 @@ msgstr "ボーダー最大X"
 
 
 msgid "Maximum X value for the render border"
-msgstr "レンダー枠の最大X値"
+msgstr "レンダーボーダーのX軸最大値"
 
 
 msgid "Border Maximum Y"
@@ -61672,7 +61896,7 @@ msgstr "ボーダー最大Y"
 
 
 msgid "Maximum Y value for the render border"
-msgstr "レンダー枠の最大Y値"
+msgstr "レンダーボーダーのY軸最大値"
 
 
 msgid "Crop to Border"
@@ -67964,6 +68188,22 @@ msgid "Location for adding new nodes"
 msgstr "新しいノードを追加する位置"
 
 
+msgid "Auto-offset"
+msgstr "自動オフセット"
+
+
+msgid "Automatically offset the following or previous nodes in a chain when inserting a new node"
+msgstr "新規ノード追加時、チェーンの後または前のノードとの距離を自動的に調節します"
+
+
+msgid "Auto-offset Direction"
+msgstr "自動オフセットの方向"
+
+
+msgid "Direction to offset nodes on insertion"
+msgstr "挿入時にノードの距離を調整する方向"
+
+
 msgid "Space Outliner"
 msgstr "アウトライナースペース"
 
@@ -72672,6 +72912,14 @@ msgid "Causes particle systems to be duplicated with the object"
 msgstr "パーティクルシステムがオブジェクトと一緒に複製されるようになります"
 
 
+msgid "Auto-offset Margin"
+msgstr "自動オフセットの余白"
+
+
+msgid "Minimum distance between nodes for Auto-offsetting nodes"
+msgstr "自動オフセット用のノード間の最小距離"
+
+
 msgid "Hide Dot Files/Datablocks"
 msgstr "ドットファイル/データブロックを隠す"
 
@@ -73826,6 +74074,14 @@ msgstr "演算装置"
 
 msgid "Device to use for computation"
 msgstr "計算に使用するデバイス"
+
+
+msgid "OpenSubdiv Compute Type"
+msgstr "OpenSubdiv 計算タイプ"
+
+
+msgid "Type of computer back-end used with OpenSubdiv"
+msgstr "OpenSubdiv で使用されるバックエンドの計算タイプ"
 
 
 msgid "Tooltips"
@@ -75210,6 +75466,14 @@ msgstr "絞り:"
 
 msgid "Deformation"
 msgstr "変形"
+
+
+msgid "Ray Visibility:"
+msgstr "レイの可視性:"
+
+
+msgid "Performance:"
+msgstr "パフォーマンス:"
 
 
 msgid "No output node"
@@ -77154,6 +77418,11 @@ msgstr "メインパレットに戻る..."
 
 
 msgctxt "Operator"
+msgid "New Layer"
+msgstr "新規レイヤー"
+
+
+msgctxt "Operator"
 msgid "Settings..."
 msgstr "設定..."
 
@@ -78705,6 +78974,11 @@ msgstr "選択中のマーカーの間"
 
 
 msgctxt "Operator"
+msgid "Clean Channels"
+msgstr "チャンネルの削除"
+
+
+msgctxt "Operator"
 msgid "Grab/Move"
 msgstr "移動"
 
@@ -79734,6 +80008,10 @@ msgid "Playback:"
 msgstr "再生:"
 
 
+msgid "Node Editor:"
+msgstr "ノードエディター:"
+
+
 msgid "Animation Editors:"
 msgstr "アニメーションエディター:"
 
@@ -79988,6 +80266,10 @@ msgstr "警告"
 
 msgid "Compute Device:"
 msgstr "演算デバイス:"
+
+
+msgid "OpenSubdiv compute:"
+msgstr "OpenSubdiv 演算:"
 
 
 msgid "Might fail for Mesh editing selection!"
@@ -81624,6 +81906,14 @@ msgid "Painting Mode"
 msgstr "ペイントモード"
 
 
+msgid "Tiling:"
+msgstr "タイリング:"
+
+
+msgid "Tile Offset"
+msgstr "タイルオフセット"
+
+
 msgid "Show Zero Weights:"
 msgstr "ウェイト0を表示:"
 
@@ -81917,6 +82207,10 @@ msgstr "ばねの構築ができません"
 
 msgid "Out of memory on allocating clmd->clothObject->verts"
 msgstr "次の割り当てでメモリが不足。clmd->clothObject->verts"
+
+
+msgid "Out of memory on allocating clmd->clothObject->looptri"
+msgstr "次の割り当てでメモリが不足。clmd->clothObject->looptri"
 
 
 msgid "Const"
@@ -82591,6 +82885,10 @@ msgstr "編集用にグラフエディター内にFカーブを表示します"
 
 msgid "Channels are visible in Graph Editor for editing"
 msgstr "編集用にグラフエディター内にチャンネルを表示します"
+
+
+msgid "F-Curve modifiers are disabled"
+msgstr "Fカーブモディファイアーは無効です"
 
 
 msgid "Make channels grouped under this channel visible"
@@ -84669,6 +84967,10 @@ msgstr "コンテクストにアクティブオブジェクトがありません
 
 msgid "Cannot edit library data"
 msgstr "ライブラリデータは編集できません"
+
+
+msgid "Operator is frozen, changes to its settings won't take effect until you unfreeze it"
+msgstr "オペレーターは凍結中です。あなたが凍結を解除するまで設定の変更は反映されません"
 
 
 msgid "Skipping object '%s', linked data '%s' cannot be modified"
@@ -88631,6 +88933,10 @@ msgstr "スキンエラー"
 
 msgid "Faces needed for useful output"
 msgstr "実用的な出力を得るには面が必要です"
+
+
+msgid "OpenSubdiv is disabled due to dependencies"
+msgstr "依存の所為でOpenSubdivが無効です"
 
 
 msgid "From/To objects must be set"

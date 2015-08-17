@@ -1,9 +1,9 @@
 
 msgid ""
 msgstr ""
-"Project-Id-Version: Blender 2.75 (sub 4) (b'8a2371e')\n"
+"Project-Id-Version: Blender 2.75 (sub 4) (b'3047b96')\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-08-11 22:30:02\n"
+"POT-Creation-Date: 2015-08-17 20:08:38\n"
 "PO-Revision-Date: \n"
 "Last-Translator: Bastien Montagne <montagne29@wanadoo.fr>\n"
 "Language-Team: \n"
@@ -1952,22 +1952,6 @@ msgid "Addon Preferences"
 msgstr "Préférences d’addon"
 
 
-msgid "Source Root"
-msgstr "Racine carrée"
-
-
-msgid "The Blender source root path"
-msgstr "Le chemin racine des sources de Blender"
-
-
-msgid "Translation Root"
-msgstr "Translation"
-
-
-msgid "The bf-translation repository"
-msgstr "Le dépôt bf-translation"
-
-
 msgid "Warn Msgid Not Capitalized"
 msgstr "Avertir msgid sans majuscule"
 
@@ -1976,28 +1960,12 @@ msgid "Warn about messages not starting by a capitalized letter (with a few allo
 msgstr "Avertir à propos de messages ne commençant par par une majuscule (à quelques exceptions autorisées près !)"
 
 
-msgid "Spell Cache"
-msgstr "Cache de vérification orthographique"
-
-
-msgid "A cache storing validated msgids, to avoid re-spellchecking them"
-msgstr "Un cache stockant les msgids validés, pour éviter de les revérifier"
-
-
 msgid "Gettext 'msgfmt' executable"
 msgstr "Exécutable gettext “msgfmt”"
 
 
 msgid "The gettext msgfmt 'compiler'. You’ll likely have to edit it if you’re under Windows"
 msgstr "Le “compilateur“ gettext msgfmt (vous devrez probablement l’éditer si vous êtes sous Windows)"
-
-
-msgid "Fribidi Library"
-msgstr "Bibliothèque fribidi"
-
-
-msgid "The FriBidi C compiled library (.so under Linux, .dll under windows...), you’ll likely have to edit it if you’re under Windows, e.g. using the one included in svn's libraries repository"
-msgstr "La bibliothèque C fribidi compilée (.so sous Linux, .dll sous Windows…), vous devrez probablement l’éditer si vous êtes sous Windows, par ex. en utilisant celle incluse dans le dépôt svn des bibliothèques"
 
 
 msgid "Import Paths"
@@ -2014,6 +1982,38 @@ msgstr "Données persistantes"
 
 msgid "The name of a json file storing those settings (unfortunately, Blender's system does not work here)"
 msgstr "Le nom d’un fichier json stockant ces réglages (malheureusement, le système de Blender ne fonctionne pas ici)"
+
+
+msgid "Source Root"
+msgstr "Racine carrée"
+
+
+msgid "The Blender source root path"
+msgstr "Le chemin racine des sources de Blender"
+
+
+msgid "Fribidi Library"
+msgstr "Bibliothèque fribidi"
+
+
+msgid "The FriBidi C compiled library (.so under Linux, .dll under windows...), you’ll likely have to edit it if you’re under Windows, e.g. using the one included in svn's libraries repository"
+msgstr "La bibliothèque C fribidi compilée (.so sous Linux, .dll sous Windows…), vous devrez probablement l’éditer si vous êtes sous Windows, par ex. en utilisant celle incluse dans le dépôt svn des bibliothèques"
+
+
+msgid "Spell Cache"
+msgstr "Cache de vérification orthographique"
+
+
+msgid "A cache storing validated msgids, to avoid re-spellchecking them"
+msgstr "Un cache stockant les msgids validés, pour éviter de les revérifier"
+
+
+msgid "Translation Root"
+msgstr "Translation"
+
+
+msgid "The bf-translation repository"
+msgstr "Le dépôt bf-translation"
 
 
 msgid "Animation Data"
@@ -28369,8 +28369,16 @@ msgid "Use the texture's intensity value to displace in the Z direction"
 msgstr "Utiliser la valeur d’intensité de la texture pour déplacer dans la direction Z"
 
 
-msgid "Use the texture's intensity value to displace in the normal direction"
-msgstr "Utiliser la valeur d’intensité de la texture pour déplacer dans la direction de la normale"
+msgid "Use the texture's intensity value to displace along the vertex normal"
+msgstr "Utiliser la valeur d’intensité de la texture pour déplacer le long de la normale de vertex"
+
+
+msgid "Custom Normal"
+msgstr "Normale personnalisée"
+
+
+msgid "Use the texture's intensity value to displace along the (averaged) custom normal (falls back to vertex)"
+msgstr "Utiliser la valeur d’intensité de la texture pour déplacer le long de la normale personnalisée (moyennée, sinon utilise celle du vertex)"
 
 
 msgid "RGB to XYZ"
@@ -45700,16 +45708,16 @@ msgid "Node type"
 msgstr "Type de nœud"
 
 
+msgid "Settings to be applied on the newly created node"
+msgstr "Réglages à appliquer au nœud nouvellement créé"
+
+
 msgid "Use Transform"
 msgstr "Utiliser transformations"
 
 
 msgid "Start transform operator after inserting the node"
 msgstr "Lancer l’opérateur de transformation après insertion du nœud"
-
-
-msgid "Settings to be applied on the newly created node"
-msgstr "Réglages à appliquer au nœud nouvellement créé"
 
 
 msgid "Link Socket Index"
@@ -49178,6 +49186,19 @@ msgstr "Tirer un objet dans une scène dans l’Outliner"
 
 msgid "Target Scene"
 msgstr "Scène cible"
+
+
+msgctxt "Operator"
+msgid "Outliner Scene Operation"
+msgstr "Outliner opération de scène"
+
+
+msgid "Context menu for scene operations"
+msgstr "Menu contextuel pour les opérations sur la scène"
+
+
+msgid "Scene Operation"
+msgstr "Opération de scène"
 
 
 msgctxt "Operator"
@@ -58391,12 +58412,12 @@ msgid "Curve Tools"
 msgstr "Outils de courbe"
 
 
-msgid "Tiling"
-msgstr "Tuilage"
-
-
 msgid "Symmetry"
 msgstr "Symétrie"
+
+
+msgid "Tiling"
+msgstr "Tuilage"
 
 
 msgid "Lattice Tools"
@@ -59715,12 +59736,20 @@ msgid "Group of ID properties"
 msgstr "Groupe de propriétés ID"
 
 
-msgid "Action 2"
-msgstr "Action 2"
+msgid "Stick Bone"
+msgstr "Os collant"
 
 
-msgid "Second action in stitch"
-msgstr "Seconde action à joindre"
+msgid "Bone to freeze during transition"
+msgstr "Os à figer durant la transition"
+
+
+msgid "Stitch frame"
+msgstr "Frame de jonction"
+
+
+msgid "Frame to locate stitch on"
+msgstr "Frame à laquelle positionner la jonction"
 
 
 msgid "Second offset"
@@ -59731,22 +59760,6 @@ msgid "Frame offset for 2nd animation, where it should start"
 msgstr "Décalage de frame pour la 2ème animation, là ou elle devrait démarrer"
 
 
-msgid "Blend amount"
-msgstr "Quantité de mélange"
-
-
-msgid "Size of blending transition, on both sides of the stitch"
-msgstr "Taille du fondu de transition, des deux côtés de la jonction"
-
-
-msgid "Stick Bone"
-msgstr "Os collant"
-
-
-msgid "Bone to freeze during transition"
-msgstr "Os à figer durant la transition"
-
-
 msgid "Action 1"
 msgstr "Action 1"
 
@@ -59755,12 +59768,20 @@ msgid "First action in stitch"
 msgstr "Première action à joindre"
 
 
-msgid "Stitch frame"
-msgstr "Frame de jonction"
+msgid "Action 2"
+msgstr "Action 2"
 
 
-msgid "Frame to locate stitch on"
-msgstr "Frame à laquelle positionner la jonction"
+msgid "Second action in stitch"
+msgstr "Seconde action à joindre"
+
+
+msgid "Blend amount"
+msgstr "Quantité de mélange"
+
+
+msgid "Size of blending transition, on both sides of the stitch"
+msgstr "Taille du fondu de transition, des deux côtés de la jonction"
 
 
 msgid "Aperture Type"
@@ -60775,40 +60796,16 @@ msgid "Settings/info about a language"
 msgstr "Réglages/info à propos d’une langue"
 
 
-msgid "PO Trunk File Path"
-msgstr "Chemin de fichier PO tronc"
+msgid "Use this language in current operator"
+msgstr "Utiliser cette langue dans l’opérateur courant"
 
 
-msgid "Path to the relevant po file in trunk"
-msgstr "Chemin vers le fichier po correspondant dans le tronc"
-
-
-msgid "Language Name"
+msgid "Language ID"
 msgstr "Langue"
 
 
-msgid "English language name/label (like \"French (Français)\")"
-msgstr "Nom/libellé en anglais (comme “French (Français)”)"
-
-
-msgid "PO File Path"
-msgstr "Chemin de fichier"
-
-
-msgid "Path to the relevant po file in branches"
-msgstr "Chemin vers le fichier po correspondant dans les branches"
-
-
-msgid "PO Git Master File Path"
-msgstr "Chemin de fichier PO git master"
-
-
-msgid "Path to the relevant po file in Blender's translations git repository"
-msgstr "Chemin vers le fichier po correspondant dans le dépôt git des traductions de Blender"
-
-
-msgid "Use this language in current operator"
-msgstr "Utiliser cette langue dans l’opérateur courant"
+msgid "ISO code, like fr_FR"
+msgstr "Code ISO, comme fr_FR"
 
 
 msgid "MO File Path"
@@ -60827,12 +60824,44 @@ msgid "Numeric ID (readonly!)"
 msgstr "ID numérique (lecture seule !)"
 
 
-msgid "Language ID"
+msgid "PO Trunk File Path"
+msgstr "Chemin de fichier PO tronc"
+
+
+msgid "Path to the relevant po file in trunk"
+msgstr "Chemin vers le fichier po correspondant dans le tronc"
+
+
+msgid "Language Name"
 msgstr "Langue"
 
 
-msgid "ISO code, like fr_FR"
-msgstr "Code ISO, comme fr_FR"
+msgid "English language name/label (like \"French (Français)\")"
+msgstr "Nom/libellé en anglais (comme “French (Français)”)"
+
+
+msgid "PO Git Master File Path"
+msgstr "Chemin de fichier PO git master"
+
+
+msgid "Path to the relevant po file in Blender's translations git repository"
+msgstr "Chemin vers le fichier po correspondant dans le dépôt git des traductions de Blender"
+
+
+msgid "PO File Path"
+msgstr "Chemin de fichier"
+
+
+msgid "Path to the relevant po file in branches"
+msgstr "Chemin vers le fichier po correspondant dans les branches"
+
+
+msgid "Languages"
+msgstr "Langue"
+
+
+msgid "Languages to update in branches"
+msgstr "Langues à mettre à jour dans les branches"
 
 
 msgid "POT File Path"
@@ -60855,20 +60884,48 @@ msgid "Whether these settings have already been auto-set or not"
 msgstr "Si ces réglages ont déjà été auto-initialisés ou pas"
 
 
-msgid "Languages"
-msgstr "Langue"
+msgid "In"
+msgstr "Entrée"
 
 
-msgid "Languages to update in branches"
-msgstr "Langues à mettre à jour dans les branches"
+msgid "Number of frames to smooth in"
+msgstr "Nombre de frames à fondre en entrée (?)"
 
 
-msgid "Fix is active"
-msgstr "La correction est active"
+msgid "Fix is fully shown"
+msgstr "La correction est totalement affichée"
+
+
+msgid "Bone (2)"
+msgstr "Os (2)"
+
+
+msgid "Other Constrained Bone (optional, depends on type)"
+msgstr "Autre os contraint (optionnel, dépend du type)"
+
+
+msgid "Target of Fix - Mesh (optional, depends on type)"
+msgstr "Cible de la correction – Mesh (optionnel, dépend du type)"
+
+
+msgid "Constrained Bone"
+msgstr "Os contraint"
+
+
+msgid "Name of Mocap Fix"
+msgstr "Nom de la correction mocap"
 
 
 msgid "Target of Fix - Point"
 msgstr "Cible de la correction – Point"
+
+
+msgid "Distance and Floor Fixes - Desired offset"
+msgstr "Corrections de distance et plancher – décalage désiré"
+
+
+msgid "Type of constraint"
+msgstr "Type de contrainte"
 
 
 msgid "In which space should Point type target be evaluated"
@@ -60895,8 +60952,8 @@ msgid "Evaluate target in specified other bone space"
 msgstr "Évaluer la cible dans l’espace de l’autre os spécifié"
 
 
-msgid "Distance and Floor Fixes - Desired offset"
-msgstr "Corrections de distance et plancher – décalage désiré"
+msgid "Start frame of Fix"
+msgstr "Première frame de la correction"
 
 
 msgid "Out"
@@ -60907,12 +60964,8 @@ msgid "Number of frames to smooth out"
 msgstr "Nombre de frames à fondre en sortie (?)"
 
 
-msgid "Target of Fix - Mesh (optional, depends on type)"
-msgstr "Cible de la correction – Mesh (optionnel, dépend du type)"
-
-
-msgid "Start frame of Fix"
-msgstr "Première frame de la correction"
+msgid "Fix is active"
+msgstr "La correction est active"
 
 
 msgid "E"
@@ -60921,38 +60974,6 @@ msgstr "E"
 
 msgid "End frame of Fix"
 msgstr "Dernière frame de la correction"
-
-
-msgid "Constrained Bone"
-msgstr "Os contraint"
-
-
-msgid "Type of constraint"
-msgstr "Type de contrainte"
-
-
-msgid "Fix is fully shown"
-msgstr "La correction est totalement affichée"
-
-
-msgid "Name of Mocap Fix"
-msgstr "Nom de la correction mocap"
-
-
-msgid "In"
-msgstr "Entrée"
-
-
-msgid "Number of frames to smooth in"
-msgstr "Nombre de frames à fondre en entrée (?)"
-
-
-msgid "Bone (2)"
-msgstr "Os (2)"
-
-
-msgid "Other Constrained Bone (optional, depends on type)"
-msgstr "Autre os contraint (optionnel, dépend du type)"
 
 
 msgid "Python expression to be evaluated as the initial node setting"
@@ -60999,24 +61020,8 @@ msgid "Is Stroke Start"
 msgstr "Trait démarré"
 
 
-msgid "Format type to export to"
-msgstr "Type de format vers lequel exporter"
-
-
-msgid "VRML2"
-msgstr "VRML2"
-
-
 msgid "Limit for checking distorted faces"
 msgstr "Limite de vérification des faces distordues"
-
-
-msgid "Copy Textures"
-msgstr "Copier textures"
-
-
-msgid "Copy textures on export to the output path"
-msgstr "Copier les textures à l’export, dans le chemin de sortie"
 
 
 msgid "Limit for checking zero area/length"
@@ -61037,6 +61042,22 @@ msgstr "Appliquer échelle"
 
 msgid "Apply scene scale setting on export"
 msgstr "Appliquer le réglage d’échelle de scène à l’export"
+
+
+msgid "Copy Textures"
+msgstr "Copier textures"
+
+
+msgid "Copy textures on export to the output path"
+msgstr "Copier les textures à l’export, dans le chemin de sortie"
+
+
+msgid "Format type to export to"
+msgstr "Type de format vers lequel exporter"
+
+
+msgid "VRML2"
+msgstr "VRML2"
 
 
 msgid "Selected UV Element"
