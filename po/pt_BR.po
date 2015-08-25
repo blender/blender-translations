@@ -1,11 +1,11 @@
 
 msgid ""
 msgstr ""
-"Project-Id-Version: Blender 2.75 (sub 4) (b'3047b96')\n"
+"Project-Id-Version: Blender 2.75 (sub 4) (b'c62ebef')\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-08-17 20:08:38\n"
+"POT-Creation-Date: 2015-08-25 21:14:06\n"
 "PO-Revision-Date: \n"
-"Last-Translator: Ivan Paulos Tomé <greylica@gmail.com>\n"
+"Last-Translator: Ivan Paulos Tomé <ivan.paulos.tome>\n"
 "Language-Team: Ivan Paulos Tomé, Dalai Felinto, Bruno Gonçalves Pirajá, Samuel Arataca, Daniel Tavares, Moraes Junior <greylica@gmail.com>\n"
 "Language: pt_BR\n"
 "MIME-Version: 1.0\n"
@@ -1953,28 +1953,12 @@ msgid "Addon Preferences"
 msgstr "Preferências de complementos"
 
 
-msgid "Warn Msgid Not Capitalized"
-msgstr "Emite um aviso sobre Msgid não capitalizadas"
-
-
-msgid "Warn about messages not starting by a capitalized letter (with a few allowed exceptions!)"
-msgstr "Emite um aviso sobre mensagens que não iniciam com letras capitalizadas (com poucas exceções permitidas!)"
-
-
 msgid "Gettext 'msgfmt' executable"
 msgstr "Executável \"msgfmt\" Gettext"
 
 
 msgid "The gettext msgfmt 'compiler'. You’ll likely have to edit it if you’re under Windows"
 msgstr "O compilador \"msgfmt gettext\". Você provavelmente terá de editá-lo se estiver usando Windows "
-
-
-msgid "Import Paths"
-msgstr "Importar unidades"
-
-
-msgid "Additional paths to add to sys.path (';' separated)"
-msgstr "Caminhos adicionais para adicionar para sys.path (separados por \";\")"
 
 
 msgid "Persistent Data Path"
@@ -1985,12 +1969,12 @@ msgid "The name of a json file storing those settings (unfortunately, Blender's 
 msgstr "O nome do arquivo json guardando estas configurações (infelizmente, o sistema do Blender não funciona aqui) "
 
 
-msgid "Source Root"
-msgstr "Raiz dos arquivos fonte"
+msgid "Translation Root"
+msgstr "Raiz das traduções"
 
 
-msgid "The Blender source root path"
-msgstr "O caminho da raiz de arquivos fonte do Blender"
+msgid "The bf-translation repository"
+msgstr "O repositório de tradução da fundação Blender"
 
 
 msgid "Fribidi Library"
@@ -2001,20 +1985,36 @@ msgid "The FriBidi C compiled library (.so under Linux, .dll under windows...), 
 msgstr "A biblioteca Fribidi C compilada (.so em sistemas Linux, .dll em sistemas Windows...), você provavelmente irá ter de editá-la se estiver no Windows, ex: usando aquelas inclusas dentro dos repositórios svn de bibliotecas."
 
 
+msgid "Source Root"
+msgstr "Raiz dos arquivos fonte"
+
+
+msgid "The Blender source root path"
+msgstr "O caminho da raiz de arquivos fonte do Blender"
+
+
+msgid "Import Paths"
+msgstr "Importar unidades"
+
+
+msgid "Additional paths to add to sys.path (';' separated)"
+msgstr "Caminhos adicionais para adicionar para sys.path (separados por \";\")"
+
+
+msgid "Warn Msgid Not Capitalized"
+msgstr "Emite um aviso sobre Msgid não capitalizadas"
+
+
+msgid "Warn about messages not starting by a capitalized letter (with a few allowed exceptions!)"
+msgstr "Emite um aviso sobre mensagens que não iniciam com letras capitalizadas (com poucas exceções permitidas!)"
+
+
 msgid "Spell Cache"
 msgstr "Cache de ortografia"
 
 
 msgid "A cache storing validated msgids, to avoid re-spellchecking them"
 msgstr "Um cache guardando msgids validadas, para evitar que sejam refeitas verificações ortográficas"
-
-
-msgid "Translation Root"
-msgstr "Raiz das traduções"
-
-
-msgid "The bf-translation repository"
-msgstr "O repositório de tradução da fundação Blender"
 
 
 msgid "Animation Data"
@@ -10286,10 +10286,6 @@ msgid "Sort by extension"
 msgstr "Ordenar por extensão"
 
 
-msgid "Sort the file list by extension"
-msgstr "Ordena a lista de arquivos pela extensão"
-
-
 msgid "Sort by time"
 msgstr "Ordenar por data"
 
@@ -10376,6 +10372,22 @@ msgstr "Filtrar por pastas"
 
 msgid "Show folders"
 msgstr "Mostra as pastas"
+
+
+msgid "Fonts"
+msgstr "Fontes"
+
+
+msgid "Geometry"
+msgstr "Geometria"
+
+
+msgid "Shading"
+msgstr "Sombreamento"
+
+
+msgid "Environment"
+msgstr "Ambiente"
 
 
 msgid "Extension Filter"
@@ -10576,10 +10588,6 @@ msgstr "Modo de visualização na porta de visão"
 
 msgid "How to display the mesh in the viewport"
 msgstr "Permite definir como mostrar a malha na porta de visão"
-
-
-msgid "Geometry"
-msgstr "Geometria"
 
 
 msgid "Display geometry"
@@ -28359,15 +28367,27 @@ msgstr "Quanto deslocar a geometria"
 
 
 msgid "Use the texture's intensity value to displace in the X direction"
-msgstr "Usa o valor de intensidade de textura para deslocar na direção de X"
+msgstr "Usa os valores de intensidade das texturas para deslocar na direção de X"
 
 
 msgid "Use the texture's intensity value to displace in the Y direction"
-msgstr "Usa o valor de intensidade da textura para deslocar na direção de Y"
+msgstr "Usa os valores de intensidade das texturas para deslocar na direção de Y"
 
 
 msgid "Use the texture's intensity value to displace in the Z direction"
-msgstr "Usa o valor de intensidade da textura para deslocar na direção de Z"
+msgstr "Usa os valores de intensidade das texturas para deslocar na direção de Z"
+
+
+msgid "Use the texture's intensity value to displace along the vertex normal"
+msgstr "Usa os valores de intensidade das texturas para deslocar na direção das normais dos vértices"
+
+
+msgid "Custom Normal"
+msgstr "Normais personalizadas"
+
+
+msgid "Use the texture's intensity value to displace along the (averaged) custom normal (falls back to vertex)"
+msgstr "Usa os valores de intensidade das texturas para deslocar (usando médias) ao longo das normais personalizadas (em caso de erros, retornando para as normais dos vértices)"
 
 
 msgid "RGB to XYZ"
@@ -28375,7 +28395,7 @@ msgstr "RGB para XYZ"
 
 
 msgid "Use the texture's RGB values to displace the mesh in the XYZ direction"
-msgstr "Usa os valores RGB de textura para deslocar a malha na direção XYZ"
+msgstr "Usa os valores RGB das texturas para deslocar a malha na direção XYZ"
 
 
 msgid "Texture Coordinates"
@@ -28391,11 +28411,11 @@ msgstr "Usa o sistema de coordenadas globais para as coordenadas de textura"
 
 
 msgid "Use the linked object's local coordinate system for the texture coordinates"
-msgstr "Usa o sistema de coordenada local vinculado ao objeto para as coordenadas de textura"
+msgstr "Usa o sistema de coordenadas local vinculado ao objeto para as coordenadas de textura"
 
 
 msgid "Use UV coordinates for the texture coordinates"
-msgstr "Usa as coordenadas UV para coordenadas da textura"
+msgstr "Usa as coordenadas UV para as coordenadas de textura"
 
 
 msgid "Texture Coordinate Object"
@@ -45689,24 +45709,24 @@ msgid "Add a node to the active tree and link to an existing socket"
 msgstr "Adiciona um nó à árvore ativa e a vincula a um conector existente"
 
 
-msgid "Node Type"
-msgstr "Tipo de nó"
-
-
-msgid "Node type"
-msgstr "O tipo de nó"
-
-
-msgid "Settings to be applied on the newly created node"
-msgstr "Configurações a ser aplicadas no nó recentemente criado"
-
-
 msgid "Use Transform"
 msgstr "Usar transformações"
 
 
 msgid "Start transform operator after inserting the node"
 msgstr "Inicia o operador de transformação após a inserção do nó"
+
+
+msgid "Settings to be applied on the newly created node"
+msgstr "Configurações a ser aplicadas no nó recentemente criado"
+
+
+msgid "Node Type"
+msgstr "Tipo de nó"
+
+
+msgid "Node type"
+msgstr "O tipo de nó"
 
 
 msgid "Link Socket Index"
@@ -46471,10 +46491,6 @@ msgid "Object Index"
 msgstr "Índice de objeto"
 
 
-msgid "Environment"
-msgstr "Ambiente"
-
-
 msgid "Diffuse Direct"
 msgstr "Difusas diretas"
 
@@ -47233,10 +47249,6 @@ msgstr "Dados do objeto"
 
 msgid "DupliGroup"
 msgstr "Grupo de duplicação"
-
-
-msgid "Fonts"
-msgstr "Fontes"
 
 
 msgctxt "Operator"
@@ -49170,11 +49182,24 @@ msgstr "Soltar objeto na cena"
 
 
 msgid "Drag object to scene in Outliner"
-msgstr "Arrasta o objeto para a cena dentro do esquematizador"
+msgstr "Arrasta o objeto para a cena localizada no esquematizador"
 
 
 msgid "Target Scene"
 msgstr "Cena alvo"
+
+
+msgctxt "Operator"
+msgid "Outliner Scene Operation"
+msgstr "Operações de cena no esquematizador"
+
+
+msgid "Context menu for scene operations"
+msgstr "Menu de contexto para operações de cenas"
+
+
+msgid "Scene Operation"
+msgstr "Operações de cena"
 
 
 msgctxt "Operator"
@@ -56800,7 +56825,7 @@ msgstr "Atualizar previsões de blocos de dados"
 
 
 msgid "Ensure datablock previews are available and up-to-date (to be saved in .blend file, only for some types like materials, textures, etc.)"
-msgstr "Garante que as previsões de blocos de dados estão disponíveis e atualizadas (para serem salvas no arquivo Blender, somente para alguns tipos como materiais, texturas, etc.)"
+msgstr "Garante que as previsões de blocos de dados estejam disponíveis e atualizadas (para serem salvas no arquivo Blender, somente para alguns tipos como materiais, texturas, etc.)"
 
 
 msgctxt "Operator"
@@ -58030,10 +58055,6 @@ msgstr "Linha Freestyle"
 
 msgid "Render Pipeline Options"
 msgstr "Opções de funcionamento da renderização"
-
-
-msgid "Shading"
-msgstr "Sombreamento"
 
 
 msgid "3D Printing"
@@ -59712,6 +59733,14 @@ msgid "Group of ID properties"
 msgstr "Grupo de propriedades do identificador"
 
 
+msgid "Second offset"
+msgstr "Segundo deslocamento"
+
+
+msgid "Frame offset for 2nd animation, where it should start"
+msgstr "Deslocamento de quadro para a segunda animação, onde ela deve iniciar"
+
+
 msgid "Stick Bone"
 msgstr "Paralisar osso"
 
@@ -59720,20 +59749,20 @@ msgid "Bone to freeze during transition"
 msgstr "Osso para congelar durante a transição"
 
 
+msgid "Blend amount"
+msgstr "Quantidade de mescla"
+
+
+msgid "Size of blending transition, on both sides of the stitch"
+msgstr "Tamanho das transições de mesclagem, em ambos os lados das junções"
+
+
 msgid "Stitch frame"
 msgstr "Quadro de junção"
 
 
 msgid "Frame to locate stitch on"
 msgstr "Quadro para localizar a junção"
-
-
-msgid "Second offset"
-msgstr "Segundo deslocamento"
-
-
-msgid "Frame offset for 2nd animation, where it should start"
-msgstr "Deslocamento de quadro para a segunda animação, onde ela deve iniciar"
 
 
 msgid "Action 1"
@@ -59750,14 +59779,6 @@ msgstr "Ação 2"
 
 msgid "Second action in stitch"
 msgstr "Segunda ação na costura"
-
-
-msgid "Blend amount"
-msgstr "Quantidade de mescla"
-
-
-msgid "Size of blending transition, on both sides of the stitch"
-msgstr "Tamanho das transições de mesclagem, em ambos os lados das junções"
 
 
 msgid "Aperture Type"
@@ -60772,32 +60793,16 @@ msgid "Settings/info about a language"
 msgstr "Configurações e informações sobre uma tradução"
 
 
+msgid "Language Name"
+msgstr "Nome da língua"
+
+
+msgid "English language name/label (like \"French (Français)\")"
+msgstr "Nome ou rótulo em inglês da tradução (como \"Francês (Francês)\")"
+
+
 msgid "Use this language in current operator"
 msgstr "Usar esta língua no operador atual"
-
-
-msgid "Language ID"
-msgstr "Identificador da língua"
-
-
-msgid "ISO code, like fr_FR"
-msgstr "Código ISO, algo como pt_BR"
-
-
-msgid "MO File Path"
-msgstr "Caminho de arquivo MO"
-
-
-msgid "Path to the relevant mo file"
-msgstr "Caminho para o arquivo mo relevante"
-
-
-msgid "Numeric ID"
-msgstr "Identificador numérico"
-
-
-msgid "Numeric ID (readonly!)"
-msgstr "Identificador numérico (somente leitura!)"
 
 
 msgid "PO Trunk File Path"
@@ -60808,20 +60813,12 @@ msgid "Path to the relevant po file in trunk"
 msgstr "Caminho para o arquivo po relevante dentro do tronco"
 
 
-msgid "Language Name"
-msgstr "Nome da língua"
+msgid "Numeric ID"
+msgstr "Identificador numérico"
 
 
-msgid "English language name/label (like \"French (Français)\")"
-msgstr "Nome ou rótulo em inglês da tradução (como \"Francês (Francês)\")"
-
-
-msgid "PO Git Master File Path"
-msgstr "Caminho dos arquivos PO mestres no Git"
-
-
-msgid "Path to the relevant po file in Blender's translations git repository"
-msgstr "O caminho para os arquivos de catálogos .po relevantes no repositório Git de traduções do Blender"
+msgid "Numeric ID (readonly!)"
+msgstr "Identificador numérico (somente leitura!)"
 
 
 msgid "PO File Path"
@@ -60832,12 +60829,28 @@ msgid "Path to the relevant po file in branches"
 msgstr "Caminho para o arquivo po relevante dentro das ramificações"
 
 
-msgid "Languages"
-msgstr "Línguas para tradução"
+msgid "Language ID"
+msgstr "Identificador da língua"
 
 
-msgid "Languages to update in branches"
-msgstr "Traduções para atualizar nas ramificações"
+msgid "ISO code, like fr_FR"
+msgstr "Código ISO, algo como pt_BR"
+
+
+msgid "PO Git Master File Path"
+msgstr "Caminho dos arquivos PO mestres no Git"
+
+
+msgid "Path to the relevant po file in Blender's translations git repository"
+msgstr "O caminho para os arquivos de catálogos .po relevantes no repositório Git de traduções do Blender"
+
+
+msgid "MO File Path"
+msgstr "Caminho de arquivo MO"
+
+
+msgid "Path to the relevant mo file"
+msgstr "Caminho para o arquivo mo relevante"
 
 
 msgid "POT File Path"
@@ -60846,6 +60859,14 @@ msgstr "Caminho de arquivo POT"
 
 msgid "Path to the pot template file"
 msgstr "O caminho para o arquivo modelo tipo pot"
+
+
+msgid "Languages"
+msgstr "Línguas para tradução"
+
+
+msgid "Languages to update in branches"
+msgstr "Traduções para atualizar nas ramificações"
 
 
 msgid "Active Language"
@@ -60860,48 +60881,8 @@ msgid "Whether these settings have already been auto-set or not"
 msgstr "Caso estes ajustes já tenham sido configurados automaticamente ou não"
 
 
-msgid "In"
-msgstr "Entrada"
-
-
-msgid "Number of frames to smooth in"
-msgstr "Número de quadros para suavizar"
-
-
-msgid "Fix is fully shown"
-msgstr "O conserto está plenamente mostrado"
-
-
-msgid "Bone (2)"
-msgstr "Osso (2)"
-
-
-msgid "Other Constrained Bone (optional, depends on type)"
-msgstr "Outro osso restrito (opcional, dependente do tipo específico)"
-
-
-msgid "Target of Fix - Mesh (optional, depends on type)"
-msgstr "Alvo para conserto - Malha (opcional, depende do tipo)"
-
-
-msgid "Constrained Bone"
-msgstr "Osso restringido"
-
-
-msgid "Name of Mocap Fix"
-msgstr "Nome do ponto fixo de captura de movimentos"
-
-
-msgid "Target of Fix - Point"
-msgstr "Alvo do conserto - Ponto"
-
-
-msgid "Distance and Floor Fixes - Desired offset"
-msgstr "Distância e consertos de piso - deslocamento desejado"
-
-
-msgid "Type of constraint"
-msgstr "Tipo de restrição"
+msgid "Fix is active"
+msgstr "Conserto está ativo"
 
 
 msgid "In which space should Point type target be evaluated"
@@ -60928,20 +60909,36 @@ msgid "Evaluate target in specified other bone space"
 msgstr "Avalia o alvo dentro do outro espaço de osso especificado"
 
 
+msgid "Target of Fix - Point"
+msgstr "Alvo do conserto - Ponto"
+
+
+msgid "Constrained Bone"
+msgstr "Osso restringido"
+
+
+msgid "Type of constraint"
+msgstr "Tipo de restrição"
+
+
+msgid "Name of Mocap Fix"
+msgstr "Nome do ponto fixo de captura de movimentos"
+
+
 msgid "Start frame of Fix"
 msgstr "Quadro inicial do conserto"
 
 
-msgid "Out"
-msgstr "Saída"
+msgid "Target of Fix - Mesh (optional, depends on type)"
+msgstr "Alvo para conserto - Malha (opcional, depende do tipo)"
 
 
-msgid "Number of frames to smooth out"
-msgstr "Número de quadros para suavizar"
+msgid "Distance and Floor Fixes - Desired offset"
+msgstr "Distância e consertos de piso - deslocamento desejado"
 
 
-msgid "Fix is active"
-msgstr "Conserto está ativo"
+msgid "Fix is fully shown"
+msgstr "O conserto está plenamente mostrado"
 
 
 msgid "E"
@@ -60950,6 +60947,30 @@ msgstr "E"
 
 msgid "End frame of Fix"
 msgstr "Quadro final do conserto"
+
+
+msgid "Bone (2)"
+msgstr "Osso (2)"
+
+
+msgid "Other Constrained Bone (optional, depends on type)"
+msgstr "Outro osso restrito (opcional, dependente do tipo específico)"
+
+
+msgid "In"
+msgstr "Entrada"
+
+
+msgid "Number of frames to smooth in"
+msgstr "Número de quadros para suavizar"
+
+
+msgid "Out"
+msgstr "Saída"
+
+
+msgid "Number of frames to smooth out"
+msgstr "Número de quadros para suavizar"
 
 
 msgid "Python expression to be evaluated as the initial node setting"
@@ -60996,14 +61017,6 @@ msgid "Is Stroke Start"
 msgstr "É um início de traço"
 
 
-msgid "Limit for checking distorted faces"
-msgstr "Limite para verificação de faces distorcidas"
-
-
-msgid "Limit for checking zero area/length"
-msgstr "Limite para verificação de áreas ou comprimentos de valor zero"
-
-
 msgid "Export Directory"
 msgstr "Diretório de exportação"
 
@@ -61012,12 +61025,16 @@ msgid "Path to directory where the files are created"
 msgstr "Caminho para o diretório onde os arquivos são criados"
 
 
-msgid "Apply Scale"
-msgstr "Aplicar escala"
+msgid "Format type to export to"
+msgstr "Tipo de formato para o qual exportar"
 
 
-msgid "Apply scene scale setting on export"
-msgstr "Aplica a configuração de escala de cena na exportação"
+msgid "VRML2"
+msgstr "VRML2"
+
+
+msgid "Limit for checking distorted faces"
+msgstr "Limite para verificação de faces distorcidas"
 
 
 msgid "Copy Textures"
@@ -61028,12 +61045,16 @@ msgid "Copy textures on export to the output path"
 msgstr "Copia as texturas durante a exportação para o caminho de saída"
 
 
-msgid "Format type to export to"
-msgstr "Tipo de formato para o qual exportar"
+msgid "Limit for checking zero area/length"
+msgstr "Limite para verificação de áreas ou comprimentos de valor zero"
 
 
-msgid "VRML2"
-msgstr "VRML2"
+msgid "Apply Scale"
+msgstr "Aplicar escala"
+
+
+msgid "Apply scene scale setting on export"
+msgstr "Aplica a configuração de escala de cena na exportação"
 
 
 msgid "Selected UV Element"
@@ -71968,7 +71989,7 @@ msgstr "Alinha os objetos ou elementos àos pontos absolutos na grade durante a 
 
 
 msgid "Snap Element"
-msgstr "Atrair elemento"
+msgstr "Elemento de atração"
 
 
 msgid "Type of element to snap to"
@@ -71996,7 +72017,7 @@ msgstr "Atrai para volume"
 
 
 msgid "Snap Node Element"
-msgstr "Atrai para elemento do nó"
+msgstr "Elemento para atrair os nós"
 
 
 msgid "Snap to grid"
@@ -72004,27 +72025,27 @@ msgstr "Atrair para a grade"
 
 
 msgid "Node X"
-msgstr "Nó X"
+msgstr "Nós para o eixo X"
 
 
 msgid "Snap to left/right node border"
-msgstr "Atrai para as margens da esquerda ou direita do nó"
+msgstr "Atrai os nós para as margens esquerda ou direita no eixo X"
 
 
 msgid "Node Y"
-msgstr "Nó Y"
+msgstr "Nós para o eixo Y"
 
 
 msgid "Snap to top/bottom node border"
-msgstr "Atrai para as margens de topo ou base do nó "
+msgstr "Atrai os nós para o as margens do topo ou base no eixo Y"
 
 
 msgid "Node X / Y"
-msgstr "Nó X / Y"
+msgstr "Nós para os eixos X ou Y"
 
 
 msgid "Snap to any node border"
-msgstr "Atrai para qualquer uma das margens do nó"
+msgstr "Atrai os nós para quaisquer das margens presentes nos eixos"
 
 
 msgid "Snap UV Element"
@@ -72032,11 +72053,11 @@ msgstr "Atrair elemento UV"
 
 
 msgid "Snap Target"
-msgstr "Atrair alvo"
+msgstr "Alvo de atração"
 
 
 msgid "Which part to snap onto the target"
-msgstr "Qual parte atrair no alvo"
+msgstr "Qual parte atrair na direção do alvo"
 
 
 msgid "Snap Peel Object"
@@ -89629,12 +89650,12 @@ msgid "Operator redo '%s': wrong context"
 msgstr "Refazendo operador '%s': contexto incorreto"
 
 
-msgid "Scene '%s' is linked, group instance disabled"
-msgstr "A cena '%s' está vinculada, instância de grupo desabilitada"
-
-
 msgid "Linking or appending from a very old .blend file format (%d.%d), no animation conversion will be done! You may want to re-save your lib file with current Blender"
 msgstr "Vínculo ou anexação a partir de um formato de arquivo (%d.%d) muito antigo do Blender. Nenhuma conversão de animação será feita ! Talvez você queira salvar novamente seu arquivo de bibliotecas usando a versão atual do Blender"
+
+
+msgid "Scene '%s' is linked, group instance disabled"
+msgstr "A cena '%s' está vinculada, instância de grupo desabilitada"
 
 
 msgid "Could not resolve path '%s'"

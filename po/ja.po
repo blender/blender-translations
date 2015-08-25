@@ -1,9 +1,9 @@
 
 msgid ""
 msgstr ""
-"Project-Id-Version: Blender 2.75 (sub 4) (b'3047b96')\n"
+"Project-Id-Version: Blender 2.75 (sub 4) (b'c62ebef')\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-08-17 20:08:38\n"
+"POT-Creation-Date: 2015-08-25 21:14:06\n"
 "PO-Revision-Date: 2014-01-09 12:04+0900\n"
 "Last-Translator: \n"
 "Language-Team: Japanese Translation Team (https://sites.google.com/site/blugjp/blender-translators)\n"
@@ -1953,28 +1953,12 @@ msgid "Addon Preferences"
 msgstr "アドオン設定"
 
 
-msgid "Warn Msgid Not Capitalized"
-msgstr "msgidの先頭文字の警告"
-
-
-msgid "Warn about messages not starting by a capitalized letter (with a few allowed exceptions!)"
-msgstr "開始文字が大文字ではないメッセージを警告します(少しの例外を可能にするため！)"
-
-
 msgid "Gettext 'msgfmt' executable"
 msgstr "実行可能なGettext 'msgfmt'"
 
 
 msgid "The gettext msgfmt 'compiler'. You’ll likely have to edit it if you’re under Windows"
 msgstr "Gettext msgfmtコンパイラ。Windows環境では編集しないといけないかもしれません"
-
-
-msgid "Import Paths"
-msgstr "パスのインポート"
-
-
-msgid "Additional paths to add to sys.path (';' separated)"
-msgstr "sys.pathに追加するパス(「;」で区切り)"
 
 
 msgid "Persistent Data Path"
@@ -1985,12 +1969,12 @@ msgid "The name of a json file storing those settings (unfortunately, Blender's 
 msgstr "これらの設定が含まれるJSONファイル名(残念ながらBlenderのシステムはここでは動作しません)"
 
 
-msgid "Source Root"
-msgstr "ソースルート"
+msgid "Translation Root"
+msgstr "ルートの移動"
 
 
-msgid "The Blender source root path"
-msgstr "Blenderソースルートパス"
+msgid "The bf-translation repository"
+msgstr "bf-translationリポジトリ"
 
 
 msgid "Fribidi Library"
@@ -2001,20 +1985,36 @@ msgid "The FriBidi C compiled library (.so under Linux, .dll under windows...), 
 msgstr "FriBidi Cコンパイル済ライブラリ(Linuxでは .so、Windowsでは .dll)。Windows環境の場合、編集しないといけないでしょう。例：SVNのライブラリリポジトリ内でインクルードされたこれを使用するなど"
 
 
+msgid "Source Root"
+msgstr "ソースルート"
+
+
+msgid "The Blender source root path"
+msgstr "Blenderソースルートパス"
+
+
+msgid "Import Paths"
+msgstr "パスのインポート"
+
+
+msgid "Additional paths to add to sys.path (';' separated)"
+msgstr "sys.pathに追加するパス(「;」で区切り)"
+
+
+msgid "Warn Msgid Not Capitalized"
+msgstr "msgidの先頭文字の警告"
+
+
+msgid "Warn about messages not starting by a capitalized letter (with a few allowed exceptions!)"
+msgstr "開始文字が大文字ではないメッセージを警告します(少しの例外を可能にするため！)"
+
+
 msgid "Spell Cache"
 msgstr "スペルキャッシュ"
 
 
 msgid "A cache storing validated msgids, to avoid re-spellchecking them"
 msgstr "有効な msgid を格納するキャッシュ。再スペルチェックを防ぎます"
-
-
-msgid "Translation Root"
-msgstr "ルートの移動"
-
-
-msgid "The bf-translation repository"
-msgstr "bf-translationリポジトリ"
 
 
 msgid "Animation Data"
@@ -10290,10 +10290,6 @@ msgid "Sort by extension"
 msgstr "拡張子順ソート"
 
 
-msgid "Sort the file list by extension"
-msgstr "ファイルリストを拡張子で並び替えます"
-
-
 msgid "Sort by time"
 msgstr "時間順ソート"
 
@@ -10380,6 +10376,22 @@ msgstr "フォルダーをフィルタリング"
 
 msgid "Show folders"
 msgstr "フォルダーを表示"
+
+
+msgid "Fonts"
+msgstr "フォント"
+
+
+msgid "Geometry"
+msgstr "ジオメトリ"
+
+
+msgid "Shading"
+msgstr "シェーディング"
+
+
+msgid "Environment"
+msgstr "環境照明"
 
 
 msgid "Extension Filter"
@@ -10580,10 +10592,6 @@ msgstr "ビュー表示モード"
 
 msgid "How to display the mesh in the viewport"
 msgstr "ビューポートでのメッシュの表示方法"
-
-
-msgid "Geometry"
-msgstr "ジオメトリ"
 
 
 msgid "Display geometry"
@@ -28382,6 +28390,18 @@ msgid "Use the texture's intensity value to displace in the Z direction"
 msgstr "テクスチャの輝度をZ方向のディスプレイスに使用します"
 
 
+msgid "Use the texture's intensity value to displace along the vertex normal"
+msgstr "テクスチャの輝度を頂点の法線に沿ったディスプレイスに使用します"
+
+
+msgid "Custom Normal"
+msgstr "カスタム法線"
+
+
+msgid "Use the texture's intensity value to displace along the (averaged) custom normal (falls back to vertex)"
+msgstr "テクスチャの輝度を（頂点の代わりに）カスタム法線（の平均）に沿ったディスプレイスに使用します"
+
+
 msgid "RGB to XYZ"
 msgstr "RGBからXYZへ"
 
@@ -45716,24 +45736,24 @@ msgid "Add a node to the active tree and link to an existing socket"
 msgstr "アクティブツリーにノードを追加し、現存のソケットにリンクします"
 
 
-msgid "Node Type"
-msgstr "ノードタイプ"
-
-
-msgid "Node type"
-msgstr "ノードタイプ"
-
-
-msgid "Settings to be applied on the newly created node"
-msgstr "新規ノードに設定を適用します"
-
-
 msgid "Use Transform"
 msgstr "トランスフォーム使用"
 
 
 msgid "Start transform operator after inserting the node"
 msgstr "ノード挿入後にトランスフォーム演算を開始します"
+
+
+msgid "Settings to be applied on the newly created node"
+msgstr "新規ノードに設定を適用します"
+
+
+msgid "Node Type"
+msgstr "ノードタイプ"
+
+
+msgid "Node type"
+msgstr "ノードタイプ"
 
 
 msgid "Link Socket Index"
@@ -46498,10 +46518,6 @@ msgid "Object Index"
 msgstr "オブジェクトインデックス"
 
 
-msgid "Environment"
-msgstr "環境照明"
-
-
 msgid "Diffuse Direct"
 msgstr "直接ディフューズ"
 
@@ -47262,10 +47278,6 @@ msgstr "オブジェクトデータ"
 
 msgid "DupliGroup"
 msgstr "グループ複製"
-
-
-msgid "Fonts"
-msgstr "フォント"
 
 
 msgctxt "Operator"
@@ -49188,7 +49200,7 @@ msgstr "アウトライナーでドラッグして親を設定します"
 
 msgctxt "Operator"
 msgid "Toggle Renderability"
-msgstr "レンダ可/不可を切り替え"
+msgstr "レンダリング可/不可切替"
 
 
 msgid "Toggle the renderability of selected items"
@@ -49206,6 +49218,19 @@ msgstr "アウトライナーでシーンにオブジェクトをドラッグし
 
 msgid "Target Scene"
 msgstr "ターゲットシーン"
+
+
+msgctxt "Operator"
+msgid "Outliner Scene Operation"
+msgstr "アウトライナーシーン操作"
+
+
+msgid "Context menu for scene operations"
+msgstr "シーン操作用のコンテクストメニュー"
+
+
+msgid "Scene Operation"
+msgstr "シーン操作"
 
 
 msgctxt "Operator"
@@ -58063,10 +58088,6 @@ msgid "Render Pipeline Options"
 msgstr "レンダーパイプラインオプション"
 
 
-msgid "Shading"
-msgstr "シェーディング"
-
-
 msgid "3D Printing"
 msgstr "3Dプリンティング"
 
@@ -59743,6 +59764,14 @@ msgid "Group of ID properties"
 msgstr "IDプロパティのグループ"
 
 
+msgid "Second offset"
+msgstr "第2オフセット"
+
+
+msgid "Frame offset for 2nd animation, where it should start"
+msgstr "二つめのアニメーションが開始するフレームオフセットです"
+
+
 msgid "Stick Bone"
 msgstr "スティックボーン"
 
@@ -59751,20 +59780,20 @@ msgid "Bone to freeze during transition"
 msgstr "推移中にボーンをフリーズ"
 
 
+msgid "Blend amount"
+msgstr "ブレンド量"
+
+
+msgid "Size of blending transition, on both sides of the stitch"
+msgstr "スティッチ両側の移行部分のブレンドサイズ"
+
+
 msgid "Stitch frame"
 msgstr "フレームにスティッチ"
 
 
 msgid "Frame to locate stitch on"
 msgstr "スティッチを行うフレーム位置"
-
-
-msgid "Second offset"
-msgstr "第2オフセット"
-
-
-msgid "Frame offset for 2nd animation, where it should start"
-msgstr "二つめのアニメーションが開始するフレームオフセットです"
 
 
 msgid "Action 1"
@@ -59781,14 +59810,6 @@ msgstr "アクション2"
 
 msgid "Second action in stitch"
 msgstr "スティッチ内の二つめのアクション"
-
-
-msgid "Blend amount"
-msgstr "ブレンド量"
-
-
-msgid "Size of blending transition, on both sides of the stitch"
-msgstr "スティッチ両側の移行部分のブレンドサイズ"
 
 
 msgid "Aperture Type"
@@ -60803,32 +60824,16 @@ msgid "Settings/info about a language"
 msgstr "言語の設定/情報"
 
 
+msgid "Language Name"
+msgstr "言語名"
+
+
+msgid "English language name/label (like \"French (Français)\")"
+msgstr "英語での言語名/ラベル(「Japanese (日本語)」など)"
+
+
 msgid "Use this language in current operator"
 msgstr "現在のオペレーターで現在の言語を使用します"
-
-
-msgid "Language ID"
-msgstr "言語ID"
-
-
-msgid "ISO code, like fr_FR"
-msgstr "ja_JPなどのISOコード"
-
-
-msgid "MO File Path"
-msgstr "MOファイルパス"
-
-
-msgid "Path to the relevant mo file"
-msgstr "適合するmoファイルへのパス"
-
-
-msgid "Numeric ID"
-msgstr "数値ID"
-
-
-msgid "Numeric ID (readonly!)"
-msgstr "数値ID(読み込みのみ！)"
 
 
 msgid "PO Trunk File Path"
@@ -60839,20 +60844,12 @@ msgid "Path to the relevant po file in trunk"
 msgstr "trunk内の適合するpoファイルへのパス"
 
 
-msgid "Language Name"
-msgstr "言語名"
+msgid "Numeric ID"
+msgstr "数値ID"
 
 
-msgid "English language name/label (like \"French (Français)\")"
-msgstr "英語での言語名/ラベル(「Japanese (日本語)」など)"
-
-
-msgid "PO Git Master File Path"
-msgstr "PO Git Masterファイルパス"
-
-
-msgid "Path to the relevant po file in Blender's translations git repository"
-msgstr "poファイルに対応するBlenderの翻訳Gitリポジトリへのパス"
+msgid "Numeric ID (readonly!)"
+msgstr "数値ID(読み込みのみ！)"
 
 
 msgid "PO File Path"
@@ -60863,12 +60860,28 @@ msgid "Path to the relevant po file in branches"
 msgstr "branch内の適合するpoファイルへのパス"
 
 
-msgid "Languages"
-msgstr "言語"
+msgid "Language ID"
+msgstr "言語ID"
 
 
-msgid "Languages to update in branches"
-msgstr "branch内の言語の更新"
+msgid "ISO code, like fr_FR"
+msgstr "ja_JPなどのISOコード"
+
+
+msgid "PO Git Master File Path"
+msgstr "PO Git Masterファイルパス"
+
+
+msgid "Path to the relevant po file in Blender's translations git repository"
+msgstr "poファイルに対応するBlenderの翻訳Gitリポジトリへのパス"
+
+
+msgid "MO File Path"
+msgstr "MOファイルパス"
+
+
+msgid "Path to the relevant mo file"
+msgstr "適合するmoファイルへのパス"
 
 
 msgid "POT File Path"
@@ -60877,6 +60890,14 @@ msgstr "POTファイルパス"
 
 msgid "Path to the pot template file"
 msgstr "適合するpotテンプレートファイルへのパス"
+
+
+msgid "Languages"
+msgstr "言語"
+
+
+msgid "Languages to update in branches"
+msgstr "branch内の言語の更新"
 
 
 msgid "Active Language"
@@ -60891,48 +60912,8 @@ msgid "Whether these settings have already been auto-set or not"
 msgstr "すでにこれらの設定が自動設定されているかどうか"
 
 
-msgid "In"
-msgstr "入力"
-
-
-msgid "Number of frames to smooth in"
-msgstr "スムーズインするフレーム数"
-
-
-msgid "Fix is fully shown"
-msgstr "補正を完全に表示"
-
-
-msgid "Bone (2)"
-msgstr "ボーン (2)"
-
-
-msgid "Other Constrained Bone (optional, depends on type)"
-msgstr "他のコンストレイントされたボーン（オプション、タイプに依存）"
-
-
-msgid "Target of Fix - Mesh (optional, depends on type)"
-msgstr "補正ターゲット - メッシュ（オプション、タイプに依存）"
-
-
-msgid "Constrained Bone"
-msgstr "コンストレイントの掛けられたボーン"
-
-
-msgid "Name of Mocap Fix"
-msgstr "モーキャプ補正の名前"
-
-
-msgid "Target of Fix - Point"
-msgstr "補正ターゲット - ポイント"
-
-
-msgid "Distance and Floor Fixes - Desired offset"
-msgstr "距離と床の補正 - 希望のオフセット"
-
-
-msgid "Type of constraint"
-msgstr "コンストレイントの種類"
+msgid "Fix is active"
+msgstr "補正がアクティブである"
 
 
 msgid "In which space should Point type target be evaluated"
@@ -60959,20 +60940,36 @@ msgid "Evaluate target in specified other bone space"
 msgstr "ターゲットを指定の他のボーン空間で評価します"
 
 
+msgid "Target of Fix - Point"
+msgstr "補正ターゲット - ポイント"
+
+
+msgid "Constrained Bone"
+msgstr "コンストレイントの掛けられたボーン"
+
+
+msgid "Type of constraint"
+msgstr "コンストレイントの種類"
+
+
+msgid "Name of Mocap Fix"
+msgstr "モーキャプ補正の名前"
+
+
 msgid "Start frame of Fix"
 msgstr "補正の開始フレーム"
 
 
-msgid "Out"
-msgstr "出力"
+msgid "Target of Fix - Mesh (optional, depends on type)"
+msgstr "補正ターゲット - メッシュ（オプション、タイプに依存）"
 
 
-msgid "Number of frames to smooth out"
-msgstr "スムーズアウトする為のフレーム数"
+msgid "Distance and Floor Fixes - Desired offset"
+msgstr "距離と床の補正 - 希望のオフセット"
 
 
-msgid "Fix is active"
-msgstr "補正がアクティブである"
+msgid "Fix is fully shown"
+msgstr "補正を完全に表示"
 
 
 msgid "E"
@@ -60981,6 +60978,30 @@ msgstr "E"
 
 msgid "End frame of Fix"
 msgstr "補正の終了フレーム"
+
+
+msgid "Bone (2)"
+msgstr "ボーン (2)"
+
+
+msgid "Other Constrained Bone (optional, depends on type)"
+msgstr "他のコンストレイントされたボーン（オプション、タイプに依存）"
+
+
+msgid "In"
+msgstr "入力"
+
+
+msgid "Number of frames to smooth in"
+msgstr "スムーズインするフレーム数"
+
+
+msgid "Out"
+msgstr "出力"
+
+
+msgid "Number of frames to smooth out"
+msgstr "スムーズアウトする為のフレーム数"
 
 
 msgid "Python expression to be evaluated as the initial node setting"
@@ -61027,14 +61048,6 @@ msgid "Is Stroke Start"
 msgstr "ストロークが開始したか"
 
 
-msgid "Limit for checking distorted faces"
-msgstr "面の歪みをチェックする限界"
-
-
-msgid "Limit for checking zero area/length"
-msgstr "面積や長さが0かチェックする限界"
-
-
 msgid "Export Directory"
 msgstr "エクスポートディレクトリ"
 
@@ -61043,12 +61056,16 @@ msgid "Path to directory where the files are created"
 msgstr "ファイルを作成するディレクトリへのパス"
 
 
-msgid "Apply Scale"
-msgstr "スケールを適用"
+msgid "Format type to export to"
+msgstr "エクスポートするフォーマットタイプ"
 
 
-msgid "Apply scene scale setting on export"
-msgstr "エクスポート時にシーンスケール設定を適用します"
+msgid "VRML2"
+msgstr "VRML2"
+
+
+msgid "Limit for checking distorted faces"
+msgstr "面の歪みをチェックする限界"
 
 
 msgid "Copy Textures"
@@ -61059,12 +61076,16 @@ msgid "Copy textures on export to the output path"
 msgstr "エクスポート時、テクスチャを出力パスにコピーします"
 
 
-msgid "Format type to export to"
-msgstr "エクスポートするフォーマットタイプ"
+msgid "Limit for checking zero area/length"
+msgstr "面積や長さが0かチェックする限界"
 
 
-msgid "VRML2"
-msgstr "VRML2"
+msgid "Apply Scale"
+msgstr "スケールを適用"
+
+
+msgid "Apply scene scale setting on export"
+msgstr "エクスポート時にシーンスケール設定を適用します"
 
 
 msgid "Selected UV Element"
@@ -89672,14 +89693,14 @@ msgid "Operator redo '%s': wrong context"
 msgstr "'%s' オペレーターのやり直し：不適切なコンテクストです"
 
 
-msgid "Scene '%s' is linked, group instance disabled"
-msgstr "シーン '%s' はリンク中です。グループインスタンスは禁止です"
-
-
 msgid "Linking or appending from a very old .blend file format (%d.%d), no animation conversion will be done! You may want to re-save your lib file with current Blender"
 msgstr ""
 "非常に古い.blendファイルフォーマット(%d.%d)からのリンクまたはアペンドのため、アニメーションの変換が行われません！\n"
 "現在の Blender でライブラリファイルを再保存してください"
+
+
+msgid "Scene '%s' is linked, group instance disabled"
+msgstr "シーン '%s' はリンク中です。グループインスタンスは禁止です"
 
 
 msgid "Could not resolve path '%s'"
