@@ -1,9 +1,9 @@
 
 msgid ""
 msgstr ""
-"Project-Id-Version: Blender 2.75 (sub 4) (b'c62ebef')\n"
+"Project-Id-Version: Blender 2.75 (sub 4) (b'b3f4bf8')\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-08-25 21:14:06\n"
+"POT-Creation-Date: 2015-08-31 22:04:34\n"
 "PO-Revision-Date: \n"
 "Last-Translator: blend-it\n"
 "Language-Team: \n"
@@ -1852,20 +1852,20 @@ msgid "Addon Preferences"
 msgstr "Preferenze Addon"
 
 
+msgid "Fribidi Library"
+msgstr "Libreria FriBidi"
+
+
+msgid "The FriBidi C compiled library (.so under Linux, .dll under windows...), you’ll likely have to edit it if you’re under Windows, e.g. using the one included in svn's libraries repository"
+msgstr "La libreria compilata C FriBidi (.so in Linux, .dll in Windows). Probabilmente devi specificarla se sei sotto Windows, x es. usando quella inclusa nel repository delle librerie di svn."
+
+
 msgid "Gettext 'msgfmt' executable"
 msgstr "Eseguibile 'msgfmt' di Gettext"
 
 
 msgid "The gettext msgfmt 'compiler'. You’ll likely have to edit it if you’re under Windows"
 msgstr "Il 'compilatore' msgfmt di gettext. Probabilmente devi indicare il percorso se sei sotto Windows"
-
-
-msgid "Persistent Data Path"
-msgstr "Percorso Dati Persistenti"
-
-
-msgid "The name of a json file storing those settings (unfortunately, Blender's system does not work here)"
-msgstr "Nome del file json per archiviare queste impostazioni (sfortunatamente il sistema di Blender qui non funziona)"
 
 
 msgid "Translation Root"
@@ -1876,14 +1876,6 @@ msgid "The bf-translation repository"
 msgstr "Il repository bf-translation"
 
 
-msgid "Fribidi Library"
-msgstr "Libreria FriBidi"
-
-
-msgid "The FriBidi C compiled library (.so under Linux, .dll under windows...), you’ll likely have to edit it if you’re under Windows, e.g. using the one included in svn's libraries repository"
-msgstr "La libreria compilata C FriBidi (.so in Linux, .dll in Windows). Probabilmente devi specificarla se sei sotto Windows, x es. usando quella inclusa nel repository delle librerie di svn."
-
-
 msgid "Source Root"
 msgstr "Root Sorgente"
 
@@ -1892,20 +1884,28 @@ msgid "The Blender source root path"
 msgstr "Il percorso dei sorgenti di Blender"
 
 
-msgid "Import Paths"
-msgstr "Percorsi di Importazione"
-
-
-msgid "Additional paths to add to sys.path (';' separated)"
-msgstr "Percorsi addizionali da aggiungere a sys.path (separati con ';')"
-
-
 msgid "Warn Msgid Not Capitalized"
 msgstr "Avverti se il Msgid non è Maiuscolo"
 
 
 msgid "Warn about messages not starting by a capitalized letter (with a few allowed exceptions!)"
 msgstr "Avverte se i messaggi non iniziano con una lettera maiuscola (con poche eccezioni permesse!)"
+
+
+msgid "Persistent Data Path"
+msgstr "Percorso Dati Persistenti"
+
+
+msgid "The name of a json file storing those settings (unfortunately, Blender's system does not work here)"
+msgstr "Nome del file json per archiviare queste impostazioni (sfortunatamente il sistema di Blender qui non funziona)"
+
+
+msgid "Import Paths"
+msgstr "Percorsi di Importazione"
+
+
+msgid "Additional paths to add to sys.path (';' separated)"
+msgstr "Percorsi addizionali da aggiungere a sys.path (separati con ';')"
 
 
 msgid "Animation Data"
@@ -6611,6 +6611,10 @@ msgstr "Livello Bianco"
 
 msgid "For RGB curves, the color that white is mapped to"
 msgstr "Per curve RGB, il colore su cui è mappato il bianco"
+
+
+msgid "Dependency Graph"
+msgstr "Grafico Dipendenze"
 
 
 msgid "Safe Areas"
@@ -21524,6 +21528,10 @@ msgid "Profile"
 msgstr "Profilo"
 
 
+msgid "The profile shape (0.5 = round)"
+msgstr "Forma del profilo (0.5 = rotondo)"
+
+
 msgid "Boolean Modifier"
 msgstr "Modificatore Booleano"
 
@@ -21612,6 +21620,10 @@ msgid "Use radius as size of projection shape (0 = auto)"
 msgstr "Usa il raggio come dimensione della forma di proiezione (0 = automatico)"
 
 
+msgid "Use transform"
+msgstr "Usa trasformazione"
+
+
 msgid "Only deform vertices within this distance from the center of the effect (leave as 0 for infinite.)"
 msgstr "Deforma solo i vertici entro questa distanza dal centro dell'effetto (lasciare 0 per infinito.)"
 
@@ -21690,6 +21702,10 @@ msgstr "Dati Vertice"
 
 msgid "Edge Data"
 msgstr "Dati Spigolo"
+
+
+msgid "Face Corner Data"
+msgstr "Dati Angolo Faccia"
 
 
 msgid "Face Data"
@@ -32974,6 +32990,11 @@ msgstr "Cancella Dati Scultura-Maschera"
 
 
 msgctxt "Operator"
+msgid "Add Skin Data"
+msgstr "Aggiungi Dati Pelle"
+
+
+msgctxt "Operator"
 msgid "Clear Skin Data"
 msgstr "Cancella Dati Pelle"
 
@@ -35922,6 +35943,15 @@ msgstr "Copia una Proprietà"
 
 msgid "Properties to copy"
 msgstr "Proprietà da copiare"
+
+
+msgctxt "Operator"
+msgid "Move Game Property"
+msgstr "Muovi Proprietà Gioco"
+
+
+msgid "Property index to move"
+msgstr "Indice della proprietà da muovere"
 
 
 msgctxt "Operator"
@@ -44599,6 +44629,10 @@ msgid "Detail Size"
 msgstr "Dimensione Dettaglio"
 
 
+msgid "Detail Percentage"
+msgstr "Percentuale Dettaglio"
+
+
 msgid "Subdivide Edges"
 msgstr "Suddividi Spigoli"
 
@@ -46288,12 +46322,12 @@ msgid "Group of ID properties"
 msgstr "Gruppo di proprietà ID"
 
 
-msgid "Action 1"
-msgstr "Azione 1"
-
-
 msgid "Action 2"
 msgstr "Azione 2"
+
+
+msgid "Action 1"
+msgstr "Azione 1"
 
 
 msgid "Aperture Type"
@@ -46856,6 +46890,10 @@ msgid "Language Name"
 msgstr "Nome Lingua"
 
 
+msgid "MO File Path"
+msgstr "Percorso File MO"
+
+
 msgid "PO File Path"
 msgstr "Percorso File PO"
 
@@ -46868,20 +46906,32 @@ msgid "ISO code, like fr_FR"
 msgstr "Codice ISO, tipo it_IT"
 
 
-msgid "MO File Path"
-msgstr "Percorso File MO"
+msgid "Languages"
+msgstr "Lingue"
 
 
 msgid "POT File Path"
 msgstr "Percorso File POT"
 
 
-msgid "Languages"
-msgstr "Lingue"
-
-
 msgid "Active Language"
 msgstr "Lingua Attiva"
+
+
+msgid "Constrained Bone"
+msgstr "Osso Vincolato"
+
+
+msgid "Type of constraint"
+msgstr "Tipo di vincolo"
+
+
+msgid "Bone (2)"
+msgstr "Osso (2)"
+
+
+msgid "In"
+msgstr "Ingresso"
 
 
 msgid "Evaluate target in global space"
@@ -46900,28 +46950,12 @@ msgid "Other Bone Space"
 msgstr "Altro Spazio Osso"
 
 
-msgid "Constrained Bone"
-msgstr "Osso Vincolato"
-
-
-msgid "Type of constraint"
-msgstr "Tipo di vincolo"
+msgid "Out"
+msgstr "Uscita"
 
 
 msgid "E"
 msgstr "E"
-
-
-msgid "Bone (2)"
-msgstr "Osso (2)"
-
-
-msgid "In"
-msgstr "Ingresso"
-
-
-msgid "Out"
-msgstr "Uscita"
 
 
 msgid "Operator File List Element"
@@ -46960,14 +46994,6 @@ msgid "Path to directory where the files are created"
 msgstr "Cartella in cui i files vengono creati"
 
 
-msgid "Format type to export to"
-msgstr "Tipo formato in cui esportare"
-
-
-msgid "Limit for checking distorted faces"
-msgstr "Limite di controllo facce distorte"
-
-
 msgid "Copy Textures"
 msgstr "Copia Texture"
 
@@ -46976,16 +47002,24 @@ msgid "Copy textures on export to the output path"
 msgstr "Esportando, copia nel percorso di salvataggio le texture"
 
 
-msgid "Limit for checking zero area/length"
-msgstr "Limite di controllo di aree/lunghezze nulle"
-
-
 msgid "Apply Scale"
 msgstr "Applica Scala"
 
 
 msgid "Apply scene scale setting on export"
 msgstr "Applica le impostazioni scala di scena esportando"
+
+
+msgid "Limit for checking zero area/length"
+msgstr "Limite di controllo di aree/lunghezze nulle"
+
+
+msgid "Limit for checking distorted faces"
+msgstr "Limite di controllo facce distorte"
+
+
+msgid "Format type to export to"
+msgstr "Tipo formato in cui esportare"
 
 
 msgid "Selected UV Element"
@@ -58990,7 +59024,7 @@ msgstr "Movimento:"
 
 
 msgid "Time:"
-msgstr "Tempo"
+msgstr "Tempo:"
 
 
 msgid "Life"
@@ -61107,6 +61141,11 @@ msgstr "Disattiva pennello"
 
 
 msgctxt "Operator"
+msgid "Zoom %d:%d"
+msgstr "Zoom %d:%d"
+
+
+msgctxt "Operator"
 msgid "Render Slot Cycle Previous"
 msgstr "Slot Render Precedente"
 
@@ -61193,6 +61232,11 @@ msgstr "Ignora"
 msgctxt "Operator"
 msgid "Save Copy..."
 msgstr "Salva una Copia..."
+
+
+msgctxt "Operator"
+msgid "Collada (Default) (.dae)"
+msgstr "Collada (Default) (.dae)"
 
 
 msgctxt "Operator"
@@ -61584,6 +61628,11 @@ msgstr "Controllo Velocità"
 
 
 msgctxt "Operator"
+msgid "Multicam Selector"
+msgstr "Selettore Multicam"
+
+
+msgctxt "Operator"
 msgid "Grab/Extend from frame"
 msgstr "Prendi/estendi da fotogramma"
 
@@ -61620,8 +61669,12 @@ msgid "Path:"
 msgstr "Percorso:"
 
 
+msgid "Views Format:"
+msgstr "Formato Viste:"
+
+
 msgid "Audio Volume"
-msgstr "Volume audio"
+msgstr "Volume Audio"
 
 
 msgid "Original frame range: %d-%d (%d)"
@@ -62207,6 +62260,10 @@ msgid "Invert Mouse Zoom Direction"
 msgstr "Inverti Direzione Zoom Mouse"
 
 
+msgid "Natural Trackpad Direction"
+msgstr "Direzione Naturale Trackpad"
+
+
 msgctxt "Operator"
 msgid "API Concepts"
 msgstr "Concetti API"
@@ -62669,6 +62726,11 @@ msgstr "Trasferisci Pesi"
 
 
 msgctxt "Operator"
+msgid "Limit Total"
+msgstr "Limita Totale"
+
+
+msgctxt "Operator"
 msgid "Fix Deforms"
 msgstr "Correggi Deformazione"
 
@@ -63075,6 +63137,11 @@ msgstr "All'ultimo Fotogramma Chiave (Rende Ciclico)"
 
 
 msgctxt "Operator"
+msgid "On Selected Keyframes"
+msgstr "Su Fotogrammi Chiave Selezionati"
+
+
+msgctxt "Operator"
 msgid "On Selected Markers"
 msgstr "Su Marcatori Selezionati"
 
@@ -63091,7 +63158,7 @@ msgstr "Assegna da Inviluppi Ossa"
 
 msgctxt "Operator"
 msgid "Clear User Transforms (All)"
-msgstr "Annulla le trasformazioni dell'utente"
+msgstr "Annulla Trasformazioni Utente (Tutte)"
 
 
 msgctxt "Operator"
@@ -63687,6 +63754,11 @@ msgstr "Posa:"
 
 
 msgctxt "Operator"
+msgid "Propagate"
+msgstr "Propaga"
+
+
+msgctxt "Operator"
 msgid "Add To Library"
 msgstr "Aggiungi A Libreria"
 
@@ -63696,7 +63768,7 @@ msgstr "Modalità Pittura"
 
 
 msgid "Show Zero Weights:"
-msgstr "Mostra Pesi Nulli"
+msgstr "Mostra Pesi Nulli:"
 
 
 msgctxt "Operator"
@@ -63793,6 +63865,20 @@ msgid "Underline"
 msgstr "Sottolineato"
 
 
+msgid "Unwrap the mesh in edit mode or generate a simple UV layer"
+msgstr "Sviluppa la mesh in Modalità Modifica o genera un livello UV semplice"
+
+
+msgctxt "Operator"
+msgid "Disable Dyntopo"
+msgstr "Disabilita Dyntopo"
+
+
+msgctxt "Operator"
+msgid "Enable Dyntopo"
+msgstr "Abilita Dyntopo"
+
+
 msgid "in memory to enable editing!"
 msgstr "in memoria per abilitare la modifica!"
 
@@ -63854,6 +63940,34 @@ msgstr "Non supportato in modalità scultura"
 
 msgid "No AnimData to set action on"
 msgstr "Livello dell'animazione su cui eseguire l'azione"
+
+
+msgid "Loading failed: "
+msgstr "Fallito caricamento: "
+
+
+msgid "Loading '%s' failed: "
+msgstr "Caricamento '%s' fallito: "
+
+
+msgid "Path '%s' not found"
+msgstr "Percorso '%s' non trovato"
+
+
+msgid "Path '%s' cannot be made relative"
+msgstr "Il percorso '%s' non può essere reso relativo"
+
+
+msgid "Path '%s' cannot be made absolute"
+msgstr "Il percorso '%s' non può essere reso assoluto"
+
+
+msgid "Could not open directory '%s'"
+msgstr "Impossibile aprire la cartella '%s'"
+
+
+msgid "Could not find '%s' in '%s'"
+msgstr "Impossibile trovare '%s' in '%s'"
 
 
 msgid "Const"
@@ -63937,6 +64051,18 @@ msgid "No new files have been packed"
 msgstr "Nessun nuovo file è stato incorporato"
 
 
+msgid "Error creating file '%s'"
+msgstr "Errore creazione file '%s'"
+
+
+msgid "Error writing file '%s'"
+msgstr "Errore scrivendo il file '%s'"
+
+
+msgid "Error deleting '%s' (ignored)"
+msgstr "Errore cancellando '%s' (ignorato)"
+
+
 msgid "ParticleSettings"
 msgstr "Impostazioni Particelle"
 
@@ -63955,6 +64081,14 @@ msgstr "%i fotogrammi su disco"
 
 msgid "%i frames in memory (%.1f %s)"
 msgstr "%i fotogrammi in memoria (%.1f %s)"
+
+
+msgid "Mb"
+msgstr "Mb"
+
+
+msgid "kb"
+msgstr "kb"
 
 
 msgid "%s, cache is outdated!"
@@ -64035,6 +64169,18 @@ msgstr "Impossibile allocare frame temporaneo"
 
 msgid "No valid formats found"
 msgstr "Non trovati formati validi"
+
+
+msgid "Render width has to be 720 pixels for DV!"
+msgstr "La larghezza del render deve essere di 720 pixels per DV!"
+
+
+msgid "Render height has to be 480 pixels for DV-NTSC!"
+msgstr "L'altezza del render deve essere di 480 pixels per DV-NTSC!"
+
+
+msgid "Render height has to be 576 pixels for DV-PAL!"
+msgstr "L'altezza del render deve essere di 576 pixels per DV-PAL!"
 
 
 msgid "Could not open file for writing"
@@ -65538,7 +65684,7 @@ msgstr "| Ultimo:%s "
 
 
 msgid "Time:%s "
-msgstr "Tempo:%s"
+msgstr "Tempo:%s "
 
 
 msgid "Ve:%d "
@@ -66194,6 +66340,10 @@ msgid "Sockets"
 msgstr "Connettori"
 
 
+msgid "Clipboard is empty"
+msgstr "Gli appunti sono vuoti"
+
+
 msgid "LMB: drag node link, RMB: cancel"
 msgstr "LMB: trascina link nodo, RMB: annulla"
 
@@ -66216,6 +66366,10 @@ msgstr "Renderizza questo Passaggio"
 
 msgid "Exclude this Pass from Combined"
 msgstr "Esclude questo Passaggio dal Combinato"
+
+
+msgid "Number of users of this datablock"
+msgstr "Numero di utilizzatori di questo bloccodati"
 
 
 msgid "Not found: %s"
@@ -66382,6 +66536,14 @@ msgstr "Nessun Osso Attivo"
 
 msgid "Radius (Parent)"
 msgstr "Raggio (Genitore)"
+
+
+msgid "Displays global values"
+msgstr "Mostra valori globali"
+
+
+msgid "Displays local values"
+msgstr "Mostra valori locali"
 
 
 msgid "Vertex weight used by Bevel modifier"
@@ -66885,6 +67047,10 @@ msgid "AaBbCc"
 msgstr "AaBbCc"
 
 
+msgid "Index out of range"
+msgstr "Indice fuori intervallo"
+
+
 msgid "Relationship"
 msgstr "Relazioni"
 
@@ -67083,6 +67249,10 @@ msgid "Modifier was not found in the stack"
 msgstr "Modificatore non trovato nella lista"
 
 
+msgid "Sound not packed"
+msgstr "Suono non incorporato"
+
+
 msgid "Background image cannot be removed"
 msgstr "Indice immagine di sfondo da rimuovere"
 
@@ -67091,8 +67261,20 @@ msgid "Cannot execute boolean operation"
 msgstr "Impossibile eseguire l'operazione booleana"
 
 
+msgid "Vertices changed from %d to %d"
+msgstr "Vertici cambiati da %d a %d"
+
+
+msgid "Edges changed from %d to %d"
+msgstr "Spigoli cambiati da %d a %d"
+
+
 msgid "Vertex group '%s' is not valid"
 msgstr "Il gruppo vertici '%s' non è valido"
+
+
+msgid "Verts changed from %d to %d"
+msgstr "Vertici cambiati da %d a %d"
 
 
 msgid "Enable 'Auto Smooth' option in mesh settings"
@@ -67403,6 +67585,10 @@ msgstr ""
 "posizione: %s:%d"
 
 
+msgid "Creating Shadowbuffers"
+msgstr "Creazione Shadowbuffers"
+
+
 msgid "Creating Environment maps"
 msgstr "Creazione Mappe ambientali"
 
@@ -67417,6 +67603,10 @@ msgstr "Preprocesso occlusione"
 
 msgid "Fra:%d Mem:%.2fM (%.2fM, Peak %.2fM) "
 msgstr "Fra:%d Mem:%.2fM (%.2fM, Picco %.2fM) "
+
+
+msgid "| Time:%s | "
+msgstr "| Tempo:%s | "
 
 
 msgid "Sce: %s Ve:%d Fa:%d Ha:%d La:%d"

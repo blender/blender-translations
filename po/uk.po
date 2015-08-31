@@ -1,10 +1,10 @@
 
 msgid ""
 msgstr ""
-"Project-Id-Version: Blender 2.75 (sub 4) (b'c62ebef')\n"
+"Project-Id-Version: Blender 2.75 (sub 4) (b'b3f4bf8')\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-08-25 21:14:06\n"
-"PO-Revision-Date: 2015-08-18 21:31+0000\n"
+"POT-Creation-Date: 2015-08-31 22:04:34\n"
+"PO-Revision-Date: 2015-08-27 09:27+0000\n"
 "Last-Translator: lxlalexlxl <pilipchukap@rambler.ru>\n"
 "Language-Team: Ukrainian (Ukraine) (http://www.transifex.com/lxlalexlxl/blender/language/uk_UA/)\n"
 "MIME-Version: 1.0\n"
@@ -1952,6 +1952,14 @@ msgid "Addon Preferences"
 msgstr "Уподобання для додатків"
 
 
+msgid "Fribidi Library"
+msgstr "Бібліотека Fribidi"
+
+
+msgid "The FriBidi C compiled library (.so under Linux, .dll under windows...), you’ll likely have to edit it if you’re under Windows, e.g. using the one included in svn's libraries repository"
+msgstr "Скомпільована бібліотека FriBidi мовою Сі (.so у Linux, .dll у Windows...). Для роботи у Windows необхідно вручну вказати правильний шлях, наприклад, на файл з svn-сховища бібліотек"
+
+
 msgid "Gettext 'msgfmt' executable"
 msgstr "Виконуваний файл gettext 'msgfmt'"
 
@@ -1960,12 +1968,12 @@ msgid "The gettext msgfmt 'compiler'. You’ll likely have to edit it if you’r
 msgstr "Компілятор msgfmt для файлів gettext. Для роботи у Windows слід вручну вказати правильний шлях"
 
 
-msgid "Persistent Data Path"
-msgstr "Постійні дані"
+msgid "Spell Cache"
+msgstr "Кеш повідомлень"
 
 
-msgid "The name of a json file storing those settings (unfortunately, Blender's system does not work here)"
-msgstr "Назва файлу json для зберігання цих налаштувань (на жаль, система Blender тут не діє)"
+msgid "A cache storing validated msgids, to avoid re-spellchecking them"
+msgstr "Кеш, що містить перевірені msgid, щоб уникнути повторної їх перевірки"
 
 
 msgid "Translation Root"
@@ -1976,28 +1984,12 @@ msgid "The bf-translation repository"
 msgstr "Сховище bf-translation"
 
 
-msgid "Fribidi Library"
-msgstr "Бібліотека Fribidi"
-
-
-msgid "The FriBidi C compiled library (.so under Linux, .dll under windows...), you’ll likely have to edit it if you’re under Windows, e.g. using the one included in svn's libraries repository"
-msgstr "Скомпільована бібліотека FriBidi мовою Сі (.so у Linux, .dll у Windows...). Для роботи у Windows необхідно вручну вказати правильний шлях, наприклад, на файл з svn-сховища бібліотек"
-
-
 msgid "Source Root"
 msgstr "Корінь джерела"
 
 
 msgid "The Blender source root path"
 msgstr "Кореневий каталог сирцевого коду Blender"
-
-
-msgid "Import Paths"
-msgstr "Шляхи імпорту"
-
-
-msgid "Additional paths to add to sys.path (';' separated)"
-msgstr "Додаткові шляхи для додання до sys.path (відокремити ';')"
 
 
 msgid "Warn Msgid Not Capitalized"
@@ -2008,12 +2000,20 @@ msgid "Warn about messages not starting by a capitalized letter (with a few allo
 msgstr "Попередити, якщо повідомлення не починається з великої літери (з можливими винятками!)"
 
 
-msgid "Spell Cache"
-msgstr "Кеш повідомлень"
+msgid "Persistent Data Path"
+msgstr "Постійні дані"
 
 
-msgid "A cache storing validated msgids, to avoid re-spellchecking them"
-msgstr "Кеш, що містить перевірені msgid, щоб уникнути повторної їх перевірки"
+msgid "The name of a json file storing those settings (unfortunately, Blender's system does not work here)"
+msgstr "Назва файлу json для зберігання цих налаштувань (на жаль, система Blender тут не діє)"
+
+
+msgid "Import Paths"
+msgstr "Шляхи імпорту"
+
+
+msgid "Additional paths to add to sys.path (';' separated)"
+msgstr "Додаткові шляхи для додання до sys.path (відокремити ';')"
 
 
 msgid "Animation Data"
@@ -10221,6 +10221,14 @@ msgid "Active file in the file browser"
 msgstr "Активний файл у оглядачі файлів"
 
 
+msgid "Library Browser"
+msgstr "Огляд бібліотек"
+
+
+msgid "Whether we may browse blender files' content or not"
+msgstr "Можливо чи ні оглядати вміст файлів Blender"
+
+
 msgid "Display Mode"
 msgstr "Режим показу"
 
@@ -10253,6 +10261,50 @@ msgid "Display files as thumbnails"
 msgstr "перегляд файлів у вигляді мініатюр"
 
 
+msgid "Recursion"
+msgstr "Рекурсія"
+
+
+msgid "Numbers of dirtree levels to show simultaneously"
+msgstr "Кількість одночасно показаних рівнів дерева тек"
+
+
+msgid "Only list current directory's content, with no recursion"
+msgstr "Показувати лише вміст поточної теки, без рекурсії"
+
+
+msgid "Blend File"
+msgstr "Файл blend"
+
+
+msgid "List .blend files' content"
+msgstr "Показувати вміст .blend-файлів"
+
+
+msgid "One Level"
+msgstr "Один рівень"
+
+
+msgid "List all sub-directories' content, one level of recursion"
+msgstr "Показувати вміст всіх підтек, один рівень рекурсії"
+
+
+msgid "Two Levels"
+msgstr "Два рівні"
+
+
+msgid "List all sub-directories' content, two levels of recursion"
+msgstr "Показувати вміст всіх підтек, два рівні рекурсії"
+
+
+msgid "Three Levels"
+msgstr "Три рівні"
+
+
+msgid "List all sub-directories' content, three levels of recursion"
+msgstr "Показувати вміст всіх підтек, три рівні рекурсії"
+
+
 msgid "Filter Files"
 msgstr "Фільтрувати файли"
 
@@ -10283,6 +10335,10 @@ msgstr "сортування списку файлів в алфавітному
 
 msgid "Sort by extension"
 msgstr "Упорядкувати за розширенням"
+
+
+msgid "Sort the file list by extension/type"
+msgstr "Упорядкувати список файлів за розширенням/типом"
 
 
 msgid "Sort by time"
@@ -10373,20 +10429,220 @@ msgid "Show folders"
 msgstr "Показати теки"
 
 
+msgid "Filter Blender IDs"
+msgstr "Фільтр за ID елементів"
+
+
+msgid "Show .blend files items (objects, materials, etc.)"
+msgstr "Показати елементи .blend-файлів (об'єкти, матеріали тощо)"
+
+
+msgid "Filter ID types"
+msgstr "Фільтр типів за ID"
+
+
+msgid "Which ID types to show/hide, when browsing a library"
+msgstr "Які типи за ID показувати/ховати при огляді бібліотеки"
+
+
+msgid "Show/hide Action datablocks"
+msgstr "Показати/сховати блоки даних Дій"
+
+
+msgid "Show/hide Armature datablocks"
+msgstr "Показати/сховати блоки даних Арматур"
+
+
+msgid "Show/hide Brushes datablocks"
+msgstr "Показати/сховати блоки даних Пензлів"
+
+
+msgid "Show/hide Camera datablocks"
+msgstr "Показати/сховати блоки даних Камер"
+
+
+msgid "Show/hide Curve datablocks"
+msgstr "Показати/сховати блоки даних Кривих"
+
+
+msgid "Show/hide Grease pencil datablocks"
+msgstr "Показати/сховати блоки даних Нарисних олівців"
+
+
+msgid "Show/hide Group datablocks"
+msgstr "Показати/сховати блоки даних Груп"
+
+
+msgid "Show/hide Image datablocks"
+msgstr "Показати/сховати блоки даних Зображень"
+
+
+msgid "Show/hide Lamp datablocks"
+msgstr "Показати/сховати блоки даних Ламп"
+
+
+msgid "Freestyle Linestyles"
+msgstr "Стилі ліній Freestyle"
+
+
+msgid "Show/hide Freestyle's Line Style datablocks"
+msgstr "Показати/сховати блоки даних Стилів Ліній Freestyle"
+
+
+msgid "Show/hide Lattice datablocks"
+msgstr "Показати/сховати блоки даних Решіток"
+
+
+msgid "Show/hide Material datablocks"
+msgstr "Показати/сховати блоки даних Матеріалів"
+
+
+msgid "Show/hide Metaball datablocks"
+msgstr "Показати/сховати блоки даних Мета-об'єктів"
+
+
+msgid "Show/hide Movie Clip datablocks"
+msgstr "Показати/сховати блоки даних Відеокліпів"
+
+
+msgid "Show/hide Mesh datablocks"
+msgstr "Показати/сховати блоки даних Каркасів"
+
+
+msgid "Show/hide Mask datablocks"
+msgstr "Показати/сховати блоки даних Масок"
+
+
+msgid "Node Trees"
+msgstr "Дерева вузлів"
+
+
+msgid "Show/hide Node Tree datablocks"
+msgstr "Показати/сховати блоки даних Дерев Вузлів"
+
+
+msgid "Show/hide Object datablocks"
+msgstr "Показати/сховати блоки даних Об'єктів"
+
+
+msgid "Particles Settings"
+msgstr "Параметри частинок"
+
+
+msgid "Show/hide Particle Settings datablocks"
+msgstr "Показати/сховати блоки даних Параметрів Частинок"
+
+
+msgid "Show/hide Palette datablocks"
+msgstr "Показати/сховати блоки даних Палітр"
+
+
+msgid "Paint Curves"
+msgstr "Криві малювання"
+
+
+msgid "Show/hide Paint Curve datablocks"
+msgstr "Показати/сховати блоки даних Кривих Малювання"
+
+
+msgid "Show/hide Scene datablocks"
+msgstr "Показати/сховати блоки даних Сцен"
+
+
+msgid "Show/hide Speaker datablocks"
+msgstr "Показати/сховати блоки даних Гучномовців"
+
+
+msgid "Show/hide Sound datablocks"
+msgstr "Показати/сховати блоки даних Звуків"
+
+
+msgid "Show/hide Texture datablocks"
+msgstr "Показати/сховати блоки даних Текстур"
+
+
+msgid "Show/hide Text datablocks"
+msgstr "Показати/сховати блоки даних Текстів"
+
+
 msgid "Fonts"
 msgstr "Шрифти"
+
+
+msgid "Show/hide Font datablocks"
+msgstr "Показати/сховати блоки даних Шрифтів"
+
+
+msgid "Show/hide World datablocks"
+msgstr "Показати/сховати блоки даних Світів сцен"
+
+
+msgid "Filter ID categories"
+msgstr "Фільтр категорій за ID"
+
+
+msgid "Which ID categories to show/hide, when browsing a library"
+msgstr "Які категорії за ID показувати/ховати при прогляді бібліотеки"
+
+
+msgid "Show/hide scenes"
+msgstr "Показати/сховати сцени"
+
+
+msgid "Animations"
+msgstr "Анімації"
+
+
+msgid "Show/hide animation data"
+msgstr "Показати/сховати дані анімації"
+
+
+msgid "Objects & Groups"
+msgstr "Об'єкти і групи"
+
+
+msgid "Show/hide objects and groups"
+msgstr "Показати/сховати об'єкти і групи"
 
 
 msgid "Geometry"
 msgstr "Геометрія"
 
 
+msgid "Show/hide meshes, curves, lattice, armatures and metaballs data"
+msgstr "Показати/сховати дані каркасів, кривих, решіток, арматур та мета-об'єктів"
+
+
 msgid "Shading"
 msgstr "Відтінення"
 
 
+msgid "Show/hide materials, nodetrees, textures and Freestyle's linestyles"
+msgstr "Показати/сховати матеріали, дерева вузлів, текстури та стилі ліній Freestyle"
+
+
+msgid "Images & Sounds"
+msgstr "Зображення і звуки"
+
+
+msgid "Show/hide images, movie clips, sounds and masks"
+msgstr "Показати/сховати зображення, відеокліпи, звуки та маски"
+
+
 msgid "Environment"
 msgstr "Оточення"
+
+
+msgid "Show/hide worlds, lamps, cameras and speakers"
+msgstr "Показати/сховати світи сцен, лампи, камери та гучномовці"
+
+
+msgid "Miscellaneous"
+msgstr "Різне"
+
+
+msgid "Show/hide other data types"
+msgstr "Показати/приховати дані інших типів"
 
 
 msgid "Extension Filter"
@@ -10814,7 +11070,7 @@ msgstr "Тип ініціалізації об'єму (УВАГА: складн�
 
 
 msgid "Use only the inner volume of the mesh"
-msgstr "Використати лише внутрішній об'єм сітки"
+msgstr "Використати лише внутрішній об'єм каркаса"
 
 
 msgid "Shell"
@@ -10838,7 +11094,7 @@ msgstr "Експорт анімованого каркасу"
 
 
 msgid "Export this mesh as an animated one (slower and enforces No Slip, only use if really necessary [e.g. armatures or parented objects], animated pos/rot/scale F-Curves do not require it)"
-msgstr "Експортувати цю сіть з анімацією (повільніше і примусово вимикає ковзання; використовувати, лише коли дійсно необхідно [наприклад, арматури або батьківські об'єкти]; анімаційні F-криві розташ./оберт. /масшт. цього не вимагають)"
+msgstr "Експортувати цей каркас з анімацією (повільніше і примусово вимикає ковзання; використовувати, лише коли дійсно необхідно [наприклад, арматури або батьківські об'єкти]; анімаційні F-криві розташ./оберт. /масшт. цього не вимагають)"
 
 
 msgid "Initial Velocity"
@@ -12402,7 +12658,7 @@ msgstr "Злиття"
 
 
 msgid "Welding threshold: distance between nearby vertices to be considered equal => set to 0.0 to disable welding test and speed up scene loading (ok if the mesh has no duplicates)"
-msgstr "Поріг злиття: відстань між сусідніми вершинами, які вважаються однаковими => встановити в 0.0, щоб відключити перевірку злиття і прискорити завантаження сцени (добре, якщо сітка не має дублів)"
+msgstr "Поріг злиття: відстань між сусідніми вершинами, які вважаються однаковими => встановити в 0.0, щоб відключити перевірку злиття і прискорити завантаження сцени (добре, якщо каркас не має дублів)"
 
 
 msgid "Position Iterations"
@@ -17456,7 +17712,7 @@ msgstr "Автозгладжування"
 
 
 msgid "Auto smooth (based on smooth/sharp faces/edges and angle between faces), or use custom split normals data if available"
-msgstr "Авто-згладження (базоване на згладженості/гостроті граней/ребер та куті між гранями) або використати власні дані розділу нормалей, якщо останні наявні"
+msgstr "Автозгладжування (базоване на згладженості/гостроті граней/ребер та куті між гранями) або використати власні дані розділу нормалей, якщо останні наявні"
 
 
 msgid "Auto Smooth Angle"
@@ -17472,7 +17728,7 @@ msgstr "Має власні нормалі"
 
 
 msgid "True if there are custom split normals data in this mesh"
-msgstr "Вірно, якщо наявні власні дані розділу нормалей для сіті"
+msgstr "Так, якщо наявні власні дані розділу нормалей для каркаса"
 
 
 msgid "Double Sided"
@@ -17480,7 +17736,7 @@ msgstr "Двосторонні"
 
 
 msgid "Display the mesh with double or single sided lighting (OpenGL only)"
-msgstr "Показувати сіть з дво- або одностороннім освітленням (OpenGL only)"
+msgstr "Показувати каркас з дво- або одностороннім освітленням (OpenGL only)"
 
 
 msgid "Texture Space Mesh"
@@ -24481,7 +24737,7 @@ msgstr "Змінити колір ліній на основі кута скла
 
 
 msgid "Change line color based on the radial curvature of 3D mesh surfaces"
-msgstr "Змінити колір ліній на основі радіальної кривизни сітьових 3D-поверхонь"
+msgstr "Змінити колір ліній на основі радіальної кривини поверхонь 3D-каркасів"
 
 
 msgid "Change line color based on the distance from the camera"
@@ -24929,7 +25185,7 @@ msgstr "Максимальна товщина"
 
 
 msgid "Line thickness based on the radial curvature of 3D mesh surfaces"
-msgstr "Товщина ліній на основі радіальної кривизни сітьових 3D-поверхонь"
+msgstr "Товщина ліній на основі радіальної кривини поверхонь 3D-каркасів"
 
 
 msgid "Change line thickness based on the distance from the camera"
@@ -26582,7 +26838,7 @@ msgstr "Колір петлі вершин у каркасі"
 
 
 msgid "Mesh Paint Mask Layer"
-msgstr "Шар маски малювання сіті"
+msgstr "Шар маски малювання каркаса"
 
 
 msgid "Per-vertex paint mask data"
@@ -26590,7 +26846,7 @@ msgstr "Дані маски малювання по вершинам"
 
 
 msgid "Mesh Paint Mask Property"
-msgstr "Властивість маски малювання сіті"
+msgstr "Властивість маски малювання каркаса"
 
 
 msgid "Floating point paint mask value"
@@ -26658,7 +26914,7 @@ msgstr "Індекс цього багатокутника"
 
 
 msgid "Mesh Polygon Float Property"
-msgstr "Дійсно-числова властивість полігональної сіті"
+msgstr "Дійсно-числова властивість полігона каркаса "
 
 
 msgid "User defined floating point number value in a float properties layer"
@@ -26666,7 +26922,7 @@ msgstr "Визначене користувачем дійсне значенн�
 
 
 msgid "Mesh Polygon Float Property Layer"
-msgstr "Шар дійсно-числової властивості полігональної сіті"
+msgstr "Шар дійсно-числової властивості полігона каркаса"
 
 
 msgid "User defined layer of floating point number values"
@@ -26674,7 +26930,7 @@ msgstr "Визначений користувачем шар дійсних зн
 
 
 msgid "Mesh Polygon Int Property"
-msgstr "Ціло-числова властивість полігональної сіті"
+msgstr "Ціло-числова властивість полігона каркаса"
 
 
 msgid "User defined integer number value in an integer properties layer"
@@ -26682,7 +26938,7 @@ msgstr "Визначене користувачем цілочисельне з�
 
 
 msgid "Mesh Polygon Int Property Layer"
-msgstr "Шар ціло-числової властивості полігональної сіті"
+msgstr "Шар ціло-числової властивості полігона каркаса"
 
 
 msgid "User defined layer of integer number values"
@@ -26690,7 +26946,7 @@ msgstr "Визначений користувачем шар цілочисел�
 
 
 msgid "Mesh Polygon String Property"
-msgstr "Рядова властивість полігональної сіті"
+msgstr "Рядова властивість полігона каркаса"
 
 
 msgid "User defined string text value in a string properties layer"
@@ -26698,7 +26954,7 @@ msgstr "Визначене користувачем рядкове значен�
 
 
 msgid "Mesh Polygon String Property Layer"
-msgstr "Шар рядової властивості полігональної сіті"
+msgstr "Шар рядової властивості полігона каркаса"
 
 
 msgid "User defined layer of string text values"
@@ -26942,27 +27198,27 @@ msgstr "Для каркасів з застосованими модифікат
 
 
 msgid "Mesh Vertex Float Property"
-msgstr "Дійсно-числова властивість вершини сіті"
+msgstr "Дійсно-числова властивість вершини каркаса"
 
 
 msgid "Mesh Vertex Float Property Layer"
-msgstr "Шар дійсно-числової властивості вершини сіті"
+msgstr "Шар дійсно-числової властивості вершини каркаса"
 
 
 msgid "Mesh Vertex Int Property"
-msgstr "Ціло-числова властивість вершини сіті"
+msgstr "Ціло-числова властивість вершини каркаса"
 
 
 msgid "Mesh Vertex Int Property Layer"
-msgstr "Шар ціло-числової властивості вершини сіті"
+msgstr "Шар ціло-числової властивості вершини каркаса"
 
 
 msgid "Mesh Vertex String Property"
-msgstr "Рядова властивість вершини сіті"
+msgstr "Рядкова властивість вершини каркаса"
 
 
 msgid "Mesh Vertex String Property Layer"
-msgstr "Шар рядової властивості вершини сіті"
+msgstr "Шар рядкової властивості вершини каркаса"
 
 
 msgid "Meta Element"
@@ -27774,7 +28030,7 @@ msgstr "Трансформації об'єкта"
 
 
 msgid "Evaluate source and destination meshes in global space"
-msgstr "Оцінити сіті джерела та призначення у глобальному просторі"
+msgstr "Оцінити каркаса джерела та призначення у глобальному просторі"
 
 
 msgid "Vertex Data"
@@ -27922,7 +28178,7 @@ msgstr "Топологія"
 
 
 msgid "Copy from identical topology meshes"
-msgstr "Копіювати із сітей з ідентичною топологією"
+msgstr "Копіювати із каркасів з ідентичною топологією"
 
 
 msgid "Nearest vertex"
@@ -29306,7 +29562,7 @@ msgstr "Модифікатор Перебудова"
 
 
 msgid "Generate a new surface with regular topology that follows the shape of the input mesh"
-msgstr "Створити нову поверхню з регулярною топологією, що повторює форму ввідної сіті"
+msgstr "Створити нову поверхню з регулярною топологією, що повторює форму вхідного каркаса"
 
 
 msgid "Blocks"
@@ -29322,7 +29578,7 @@ msgstr "Вивести гладку поверхню без виявлення �
 
 
 msgid "Output a surface that reproduces sharp edges and corners from the input mesh"
-msgstr "Вивести поверхню, яка відтворює гострі ребра та кути ввідної сіті"
+msgstr "Вивести поверхню, яка відтворює гострі ребра та кути вхідного каркаса"
 
 
 msgid "The ratio of the largest dimension of the model over the size of the grid"
@@ -35371,6 +35627,14 @@ msgid "Unlink this action from the active action slot (and/or exit Tweak Mode)"
 msgstr "Відв'язати дану дію від гнізда активної дії (та/або вийти з режиму уточнення)"
 
 
+msgid "Force Delete"
+msgstr "Примусове видалення"
+
+
+msgid "Clear Fake User and remove copy stashed in this datablock's NLA stack"
+msgstr "Зчистити Псевдо-Користувач та вилучити копію запасену у NLA-стеку цього блоку даних"
+
+
 msgctxt "Operator"
 msgid "View All"
 msgstr "Показати всі"
@@ -36720,6 +36984,10 @@ msgid "Automatically determine display type for files"
 msgstr "Автоматичне визначення типу показу файлів"
 
 
+msgid "File sorting mode"
+msgstr "Режим упорядкування файлів"
+
+
 msgid "Open a file browser, Hold Shift to open the file, Alt to browse containing directory"
 msgstr "Відкрити оглядач файлів; утримуйте Shift, щоб відкрити файл, Alt, щоб переглянути каталог"
 
@@ -36817,7 +37085,7 @@ msgstr "Відстань між вибраними стежками"
 
 msgctxt "Operator"
 msgid "3D Markers to Mesh"
-msgstr "3D-мітки у сіть"
+msgstr "3D-мітки в каркас"
 
 
 msgid "Create vertex cloud using coordinates of reconstructed tracks"
@@ -39249,7 +39517,7 @@ msgstr "Інші види геометрії, такі як криві, мета
 
 
 msgid "Apply modifiers to mesh objects (except Armature ones) - WARNING: prevents exporting shape keys"
-msgstr "Застосувати модифікатори до сітьових об'єктів (за винятком Арматурних) - УВАГА: пропускає експортування ключів форм"
+msgstr "Застосувати модифікатори до каркасних об'єктів (за винятком Арматурних) - УВАГА: пропускає експортування ключів форм"
 
 
 msgid "Smoothing"
@@ -39612,7 +39880,7 @@ msgstr "Експортувати вибране до файлу Extensible 3D (.
 
 
 msgid "Use transformed mesh data from each object"
-msgstr "Використати трансформовані дані сіті з кожного об'єкта"
+msgstr "Використати трансформовані дані каркаса з кожного об'єкта"
 
 
 msgid "Write quads into 'IndexedTriangleSet'"
@@ -43053,7 +43321,7 @@ msgstr "Зчистити дані маски ліплення"
 
 
 msgid "Clear vertex sculpt masking data from the mesh"
-msgstr "Зчистити із сіті дані маскування вершин при ліпленні"
+msgstr "Зчистити із каркаса дані маскування вершин при ліпленні"
 
 
 msgctxt "Operator"
@@ -44060,7 +44328,7 @@ msgstr "Додати Мавпочку"
 
 
 msgid "Construct a Suzanne mesh"
-msgstr "Побудувати сіть Сюзанна"
+msgstr "Побудувати каркас Сюзанна"
 
 
 msgctxt "Operator"
@@ -44069,7 +44337,7 @@ msgstr "Додати площину"
 
 
 msgid "Construct a filled planar mesh with 4 vertices"
-msgstr "Побудувати заповнену плоску сіть із 4 вершинами"
+msgstr "Побудувати заповнений плоский каркас із 4 вершинами"
 
 
 msgctxt "Operator"
@@ -45716,16 +45984,16 @@ msgid "Start transform operator after inserting the node"
 msgstr "Запустити трансформації після вставляння вузла"
 
 
-msgid "Settings to be applied on the newly created node"
-msgstr "Параметри, що будуть застосовані при створенні вузла"
-
-
 msgid "Node Type"
 msgstr "Тип вузла"
 
 
 msgid "Node type"
 msgstr "Тип вузла"
+
+
+msgid "Settings to be applied on the newly created node"
+msgstr "Параметри, що будуть застосовані при створенні вузла"
 
 
 msgid "Link Socket Index"
@@ -46687,7 +46955,7 @@ msgstr "Авто-трансформації"
 
 
 msgid "Automatically compute transformation to get the best possible match between source and destination meshes (WARNING: results will never be as good as manual matching of objects)"
-msgstr "Автоматично обчислити трансформування для отримання найкращої можливої відповідності між джерельною та цільовою сітями (УВАГА: результати ніколи не будуть настільки хороші як при ручному приведенні відповідностей)"
+msgstr "Автоматично обчислити трансформування для отримання найкращої можливої відповідності між джерельним та цільовим каркасами (УВАГА: результати ніколи не будуть настільки хороші, як при ручному вказанні відповідностей)"
 
 
 msgid "Islands Precision"
@@ -46700,7 +46968,7 @@ msgstr "Фактор, що керує точністю оброблення ос
 
 msgctxt "Operator"
 msgid "Transfer Mesh Data Layout"
-msgstr "Перенести розстановку даних сіті"
+msgstr "Перенести розстановку даних каркаса"
 
 
 msgid "Transfer layout of data layer(s) from active to selected meshes"
@@ -47373,7 +47641,7 @@ msgstr "Зв'язати з каркасом деформації"
 
 
 msgid "Bind mesh to cage in mesh deform modifier"
-msgstr "Прив'язка сіті до остова у модифікаторі деформації"
+msgstr "Прив'язка каркаса до остова в модифікаторі деформації"
 
 
 msgctxt "Operator"
@@ -47523,7 +47791,7 @@ msgstr "Видалити вищі рівні"
 
 
 msgid "Deletes the higher resolution mesh, potential loss of detail"
-msgstr "Видалити вищу роздільність сітки (можлива втрата деталей)"
+msgstr "Видалити вищу роздільність каркаса (можлива втрата деталей)"
 
 
 msgctxt "Operator"
@@ -51238,7 +51506,7 @@ msgstr "Заповнити діапазон вибраним"
 
 
 msgid "Fill the Range Min/Max entries by the min/max distance between selected mesh objects and the source object "
-msgstr "Заповнити значення Мін та Макс Діапазону найменшою/найбільшою відстанню від виділених сітьових об'єктів до джерельного об'єкта"
+msgstr "Заповнити значення Мін та Макс Діапазону найменшою/найбільшою відстанню від виділених каркасних об'єктів до джерельного об'єкта"
 
 
 msgid "Type of the modifier to work on"
@@ -51960,7 +52228,7 @@ msgstr "Вибірка розміру деталі"
 
 
 msgid "Sample the mesh detail on clicked point"
-msgstr "Вибірка розміру деталі сіті у точці клацку"
+msgstr "Вибірка розміру деталі каркаса в точці клацку"
 
 
 msgid "Screen Coordinates of sampling"
@@ -57121,11 +57389,11 @@ msgstr "Зберегти копію наявного робочого стану
 
 
 msgid "Legacy Mesh Format"
-msgstr "Традиційний формат сіті"
+msgstr "Традиційний формат каркаса"
 
 
 msgid "Save using legacy mesh format (no ngons) - WARNING: only saves tris and quads, other ngons will be lost (no implicit triangulation)"
-msgstr "Зберегти у традиційному форматі сіті (без n-кутників). ПОПЕРЕДЖЕННЯ: збережуться лише три- та чотирикутники; інші n-кутники будуть втрачені (неявна триангуляція відсутня)"
+msgstr "Зберегти в традиційному форматі каркаса (без n-кутників). ПОПЕРЕДЖЕННЯ: збережуться лише три- та чотирикутники; інші n-кутники будуть втрачені (неявна триангуляція відсутня)"
 
 
 msgctxt "Operator"
@@ -57434,7 +57702,7 @@ msgstr "Маска впадин"
 
 
 msgid "Mask painting according to mesh geometry cavity"
-msgstr "Малювання з маскою відповідно до геометричних впадин на сіті"
+msgstr "Малювання з маскою відповідно до геометричних впадин на каркасі"
 
 
 msgid "Tiling offset for the X Axis"
@@ -57750,7 +58018,7 @@ msgstr "Детальність пензля"
 
 
 msgid "Mesh detail is relative to brush radius"
-msgstr "Детальність сіті є відносною до радіусу пензля"
+msgstr "Детальність каркаса є відносною до радіусу пензля"
 
 
 msgid "Amount of gravity after each dab"
@@ -57984,6 +58252,10 @@ msgid "Extra Mocap Tools"
 msgstr "Додаткові засоби захоплення руху"
 
 
+msgid "Advanced Filter"
+msgstr "Розширений фільтр"
+
+
 msgid "Bookmarks"
 msgstr "Закладки"
 
@@ -58022,6 +58294,10 @@ msgstr "Параметри"
 
 msgid "Appearance"
 msgstr "Вигляд"
+
+
+msgid "Tiling"
+msgstr "Плитка"
 
 
 msgid "Texture Mask"
@@ -58410,10 +58686,6 @@ msgstr "Засоби кривих"
 
 msgid "Symmetry"
 msgstr "Симетрія"
-
-
-msgid "Tiling"
-msgstr "Плитка"
 
 
 msgid "Lattice Tools"
@@ -59732,28 +60004,20 @@ msgid "Group of ID properties"
 msgstr "Група ID-властивостей"
 
 
-msgid "Second offset"
-msgstr "Зсув другої"
-
-
-msgid "Frame offset for 2nd animation, where it should start"
-msgstr "Зсув у кадрах 2-ї анімації, з якого вона має починатися"
-
-
-msgid "Stick Bone"
-msgstr "Закріпити кістку"
-
-
-msgid "Bone to freeze during transition"
-msgstr "Кістка, що заморожується при переміщенні"
-
-
 msgid "Blend amount"
 msgstr "Величина змішування"
 
 
 msgid "Size of blending transition, on both sides of the stitch"
 msgstr "Величина перехідного змішування по обидва боки від склейки"
+
+
+msgid "Second offset"
+msgstr "Зсув другої"
+
+
+msgid "Frame offset for 2nd animation, where it should start"
+msgstr "Зсув у кадрах 2-ї анімації, з якого вона має починатися"
 
 
 msgid "Stitch frame"
@@ -59764,20 +60028,28 @@ msgid "Frame to locate stitch on"
 msgstr "Кадр, на якому виконати склеювання"
 
 
-msgid "Action 1"
-msgstr "Дія 1"
-
-
-msgid "First action in stitch"
-msgstr "Перша дія у склейці"
-
-
 msgid "Action 2"
 msgstr "Дія 2"
 
 
 msgid "Second action in stitch"
 msgstr "Друга дія у склейці"
+
+
+msgid "Stick Bone"
+msgstr "Закріпити кістку"
+
+
+msgid "Bone to freeze during transition"
+msgstr "Кістка, що заморожується при переміщенні"
+
+
+msgid "Action 1"
+msgstr "Дія 1"
+
+
+msgid "First action in stitch"
+msgstr "Перша дія у склейці"
 
 
 msgid "Aperture Type"
@@ -60792,6 +61064,14 @@ msgid "Settings/info about a language"
 msgstr "Параметри/інформація про мову"
 
 
+msgid "Numeric ID"
+msgstr "Числовий ID"
+
+
+msgid "Numeric ID (readonly!)"
+msgstr "Числовий ID (лише читання!)"
+
+
 msgid "Language Name"
 msgstr "Назва мови"
 
@@ -60800,24 +61080,16 @@ msgid "English language name/label (like \"French (Français)\")"
 msgstr "Англійська назва/позначення мови (наприклад \"Ukrainian (Українська)\")"
 
 
+msgid "MO File Path"
+msgstr "Шлях до файлу MO"
+
+
+msgid "Path to the relevant mo file"
+msgstr "Шлях до актуального mo-файлу"
+
+
 msgid "Use this language in current operator"
 msgstr "Використати цю мову у поточному операторі"
-
-
-msgid "PO Trunk File Path"
-msgstr "Шлях до файлу PO у гілці trunk"
-
-
-msgid "Path to the relevant po file in trunk"
-msgstr "Шлях до актуального po-файлу у гілці trunk"
-
-
-msgid "Numeric ID"
-msgstr "Числовий ID"
-
-
-msgid "Numeric ID (readonly!)"
-msgstr "Числовий ID (лише читання!)"
 
 
 msgid "PO File Path"
@@ -60836,6 +61108,14 @@ msgid "ISO code, like fr_FR"
 msgstr "Код ISO, наприклад uk_UK"
 
 
+msgid "PO Trunk File Path"
+msgstr "Шлях до файлу PO у гілці trunk"
+
+
+msgid "Path to the relevant po file in trunk"
+msgstr "Шлях до актуального po-файлу у гілці trunk"
+
+
 msgid "PO Git Master File Path"
 msgstr "Шлях до файлу PO у Git-репозиторії"
 
@@ -60844,12 +61124,12 @@ msgid "Path to the relevant po file in Blender's translations git repository"
 msgstr "Шлях до відповідного po-файлу у git-репозиторії перекладів Blender'а"
 
 
-msgid "MO File Path"
-msgstr "Шлях до файлу MO"
+msgid "Languages"
+msgstr "Мова"
 
 
-msgid "Path to the relevant mo file"
-msgstr "Шлях до актуального mo-файлу"
+msgid "Languages to update in branches"
+msgstr "Мови для оновлення в гілці branches"
 
 
 msgid "POT File Path"
@@ -60858,14 +61138,6 @@ msgstr "Шлях до файлу POT"
 
 msgid "Path to the pot template file"
 msgstr "Шлях до POT-файлу з шаблоном"
-
-
-msgid "Languages"
-msgstr "Мова"
-
-
-msgid "Languages to update in branches"
-msgstr "Мови для оновлення в гілці branches"
 
 
 msgid "Active Language"
@@ -60880,8 +61152,32 @@ msgid "Whether these settings have already been auto-set or not"
 msgstr "Чи були значення цих параметрів встановлені автоматично"
 
 
-msgid "Fix is active"
-msgstr "Поправки увімкнені"
+msgid "Constrained Bone"
+msgstr "Обмежена кістка"
+
+
+msgid "Type of constraint"
+msgstr "Тип обмеження"
+
+
+msgid "Bone (2)"
+msgstr "Кістка (2)"
+
+
+msgid "Other Constrained Bone (optional, depends on type)"
+msgstr "Інша обмежена кістка (не обов'язково, залежно від типу)"
+
+
+msgid "Name of Mocap Fix"
+msgstr "Назва поправки захоплення руху"
+
+
+msgid "In"
+msgstr "В"
+
+
+msgid "Number of frames to smooth in"
+msgstr "Кількість кадрів для згладжування"
 
 
 msgid "In which space should Point type target be evaluated"
@@ -60908,60 +61204,20 @@ msgid "Evaluate target in specified other bone space"
 msgstr "Розрахувати ціль у просторі зазначеної іншої кістки"
 
 
+msgid "Fix is active"
+msgstr "Поправки увімкнені"
+
+
 msgid "Target of Fix - Point"
 msgstr "Ціль поправки - точка"
-
-
-msgid "Constrained Bone"
-msgstr "Обмежена кістка"
-
-
-msgid "Type of constraint"
-msgstr "Тип обмеження"
-
-
-msgid "Name of Mocap Fix"
-msgstr "Назва поправки захоплення руху"
-
-
-msgid "Start frame of Fix"
-msgstr "Початковий кадр поправки"
-
-
-msgid "Target of Fix - Mesh (optional, depends on type)"
-msgstr "Ціль поправки - каркас (не обов'язково, залежно від типу)"
 
 
 msgid "Distance and Floor Fixes - Desired offset"
 msgstr "Поправки відстані та підлоги - бажане зміщення"
 
 
-msgid "Fix is fully shown"
-msgstr "Повний показ поправок"
-
-
-msgid "E"
-msgstr "E"
-
-
-msgid "End frame of Fix"
-msgstr "Кінцевий кадр поправки"
-
-
-msgid "Bone (2)"
-msgstr "Кістка (2)"
-
-
-msgid "Other Constrained Bone (optional, depends on type)"
-msgstr "Інша обмежена кістка (не обов'язково, залежно від типу)"
-
-
-msgid "In"
-msgstr "В"
-
-
-msgid "Number of frames to smooth in"
-msgstr "Кількість кадрів для згладжування"
+msgid "Start frame of Fix"
+msgstr "Початковий кадр поправки"
 
 
 msgid "Out"
@@ -60970,6 +61226,22 @@ msgstr "З"
 
 msgid "Number of frames to smooth out"
 msgstr "Кількість кадрів для згладжування"
+
+
+msgid "Fix is fully shown"
+msgstr "Повний показ поправок"
+
+
+msgid "Target of Fix - Mesh (optional, depends on type)"
+msgstr "Ціль поправки - каркас (не обов'язково, залежно від типу)"
+
+
+msgid "E"
+msgstr "E"
+
+
+msgid "End frame of Fix"
+msgstr "Кінцевий кадр поправки"
 
 
 msgid "Python expression to be evaluated as the initial node setting"
@@ -61024,18 +61296,6 @@ msgid "Path to directory where the files are created"
 msgstr "Шлях до теки, в якій створюються файли"
 
 
-msgid "Format type to export to"
-msgstr "Тип формату, в який експортувати"
-
-
-msgid "VRML2"
-msgstr "VRML2"
-
-
-msgid "Limit for checking distorted faces"
-msgstr "Межа для перевірки викривлення граней"
-
-
 msgid "Copy Textures"
 msgstr "Скопіювати текстури"
 
@@ -61044,16 +61304,28 @@ msgid "Copy textures on export to the output path"
 msgstr "При експорті копіювати текстури у вивідну теку"
 
 
-msgid "Limit for checking zero area/length"
-msgstr "Границі для виявлення нульової площі/довжини "
-
-
 msgid "Apply Scale"
 msgstr "Застосувати масштаб"
 
 
 msgid "Apply scene scale setting on export"
 msgstr "При експорті застосувати параметри масштабу сцени"
+
+
+msgid "Limit for checking zero area/length"
+msgstr "Границі для виявлення нульової площі/довжини "
+
+
+msgid "Limit for checking distorted faces"
+msgstr "Межа для перевірки викривлення граней"
+
+
+msgid "Format type to export to"
+msgstr "Тип формату, в який експортувати"
+
+
+msgid "VRML2"
+msgstr "VRML2"
 
 
 msgid "Selected UV Element"
@@ -63461,7 +63733,7 @@ msgstr "Теселяція"
 
 
 msgid "Tessellation level - check the generated mesh in wireframe mode"
-msgstr "Рівень теселяції - перевірте створену сітку в каркасному режимі"
+msgstr "Рівень теселяції - перевірте створений каркас в каркасному режимі"
 
 
 msgid "Buffer Resolution"
@@ -67828,7 +68100,7 @@ msgstr "Параметри UV-редактора"
 
 
 msgid "View the image and UV edit in mesh editmode"
-msgstr "Показувати зображення та редаговану UV-сітку в режимі редагування каркасу"
+msgstr "Показувати зображення та зміни UV в режимі редагування каркаса"
 
 
 msgid "2D image painting mode"
@@ -75483,6 +75755,10 @@ msgid "Viewport Color:"
 msgstr "Колір в області перегляду:"
 
 
+msgid "Viewport Alpha:"
+msgstr "Альфа області вигляду:"
+
+
 msgid "Viewport Specular:"
 msgstr "Бліки в області перегляду:"
 
@@ -82253,35 +82529,35 @@ msgstr "Колір петлі при перегляді"
 
 
 msgid "Source and destination meshes do not have the same amount of vertices, 'Topology' mapping cannot be used in this case"
-msgstr "Сіті джерела та сіті призначення не мають однакової кількості ВЕРШИН. Розкладка «Топологія» не може бути використана у цьому випадку"
+msgstr "Джерельний та цільовий каркаси відрізняються кількістю вершин. В цьому випадку неможливо використати розкладку «Топологія»"
 
 
 msgid "Source or destination meshes do not have any vertices, cannot transfer vertex data"
-msgstr "Неможливий перенос даних про вершини, оскільки джерельна або цільова сіті не мають жодних вершин"
+msgstr "Неможливо перенести дані вершин, оскільки джерельний або цільовий каркас не має жодної вершини"
 
 
 msgid "Source and destination meshes do not have the same amount of edges, 'Topology' mapping cannot be used in this case"
-msgstr "Сіті джерела та сіті призначення не мають однакової кількості РЕБЕР. Розкладка «Топологія» не може бути використана у цьому випадку"
+msgstr "Джерельний та цільовий каркаси відрізняються кількістю ребер. В цьому випадку неможливо використати розкладку «Топологія»"
 
 
 msgid "Source or destination meshes do not have any edges, cannot transfer edge data"
-msgstr "Неможливий перенос даних про ребра, оскільки джерельна або цільова сіті не мають жодних ребер"
+msgstr "Неможливо перенести дані ребер, оскільки джерельний або цільовий каркас не має жодного ребра"
 
 
 msgid "Source and destination meshes do not have the same amount of face corners, 'Topology' mapping cannot be used in this case"
-msgstr "Сіті джерела та сіті призначення не мають однакової кількості КУТІВ ГРАНЕЙ. Розкладка «Топологія» не може бути використана у цьому випадку"
+msgstr "Джерельний та цільовий каркаси відрізняються кількістю кутів граней. В цьому випадку неможливо використати розкладку «Топологія»"
 
 
 msgid "Source or destination meshes do not have any polygons, cannot transfer loop data"
-msgstr "Неможливий перенос даних про петлі, оскільки джерельна або цільова сіті не мають жодних полігонів"
+msgstr "Неможливо перенести дані петель, оскільки джерельний або цільовий каркас не має жодного полігона"
 
 
 msgid "Source and destination meshes do not have the same amount of faces, 'Topology' mapping cannot be used in this case"
-msgstr "Сіті джерела та сіті призначення не мають однакової кількості ГРАНЕЙ. Розкладка «Топологія» не може бути використана у цьому випадку"
+msgstr "Джерельний та цільовий каркаси відрізняються кількістю граней. В цьому випадку неможливо використати розкладку «Топологія»"
 
 
 msgid "Source or destination meshes do not have any polygons, cannot transfer poly data"
-msgstr "Неможливий перенос даних про полігони, оскільки джерельна або цільова сіті не мають жодних полігонів"
+msgstr "Неможливо перенести дані полігонів, оскільки джерельний або цільовий каркас не має жодного полігона"
 
 
 msgid "Not enough free memory"
@@ -84803,7 +85079,7 @@ msgstr "Немає правильного об'єкта остова"
 
 
 msgid "Invalid cage object, the cage mesh must have the same number of faces as the active object"
-msgstr "Хибний об'єкт-остов; сіть остова повинна мати таку ж кількість граней, як активний об'єкт"
+msgstr "Хибний об'єкт-остов; каркас остова повинен мати таку ж кількість граней, як активний об'єкт"
 
 
 msgid "Error handling selected objects"
@@ -86476,6 +86752,10 @@ msgstr "файл з зображенням не знайдено"
 
 msgid "image path can't be written to"
 msgstr "шлях не доступний для запису"
+
+
+msgid "image format is read-only"
+msgstr "формат зображення є лише-для-читання"
 
 
 msgid "can't save image while rendering"
@@ -88885,7 +89165,7 @@ msgstr "Для об'єднання потрібні грані"
 
 
 msgid "Cannot get mesh from cage object"
-msgstr "Неможливо отримати сіть з остова"
+msgstr "Неможливо отримати каркас з остова"
 
 
 msgid "Verts changed from %d to %d"
@@ -88905,7 +89185,7 @@ msgstr "Недійсні параметри цілі"
 
 
 msgid "Enable 'Auto Smooth' option in mesh settings"
-msgstr "Увімкнути опцію «Авто-Згладження» у параметрах сіті"
+msgstr "Увімкнути опцію «Автозгладжування» в параметрах каркаса"
 
 
 msgid "Hull error"
@@ -88914,6 +89194,10 @@ msgstr "Помилка оболонки"
 
 msgid "Faces needed for useful output"
 msgstr "Для успішного виводу потрібні грані"
+
+
+msgid "OpenSubdiv is disabled in User Preferences"
+msgstr "OpenSubdiv вимкнуто у Налаштунках Користувача"
 
 
 msgid "OpenSubdiv is disabled due to dependencies"

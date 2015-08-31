@@ -1,9 +1,9 @@
 
 msgid ""
 msgstr ""
-"Project-Id-Version: Blender 2.75 (sub 4) (b'c62ebef')\n"
+"Project-Id-Version: Blender 2.75 (sub 4) (b'b3f4bf8')\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-08-25 21:14:06\n"
+"POT-Creation-Date: 2015-08-31 22:04:34\n"
 "PO-Revision-Date: 2014-01-09 12:04+0900\n"
 "Last-Translator: \n"
 "Language-Team: Japanese Translation Team (https://sites.google.com/site/blugjp/blender-translators)\n"
@@ -1953,6 +1953,14 @@ msgid "Addon Preferences"
 msgstr "アドオン設定"
 
 
+msgid "Fribidi Library"
+msgstr "Fribidiライブラリ"
+
+
+msgid "The FriBidi C compiled library (.so under Linux, .dll under windows...), you’ll likely have to edit it if you’re under Windows, e.g. using the one included in svn's libraries repository"
+msgstr "FriBidi Cコンパイル済ライブラリ(Linuxでは .so、Windowsでは .dll)。Windows環境の場合、編集しないといけないでしょう。例：SVNのライブラリリポジトリ内でインクルードされたこれを使用するなど"
+
+
 msgid "Gettext 'msgfmt' executable"
 msgstr "実行可能なGettext 'msgfmt'"
 
@@ -1961,12 +1969,12 @@ msgid "The gettext msgfmt 'compiler'. You’ll likely have to edit it if you’r
 msgstr "Gettext msgfmtコンパイラ。Windows環境では編集しないといけないかもしれません"
 
 
-msgid "Persistent Data Path"
-msgstr "Persistenデータパス"
+msgid "Spell Cache"
+msgstr "スペルキャッシュ"
 
 
-msgid "The name of a json file storing those settings (unfortunately, Blender's system does not work here)"
-msgstr "これらの設定が含まれるJSONファイル名(残念ながらBlenderのシステムはここでは動作しません)"
+msgid "A cache storing validated msgids, to avoid re-spellchecking them"
+msgstr "有効な msgid を格納するキャッシュ。再スペルチェックを防ぎます"
 
 
 msgid "Translation Root"
@@ -1977,28 +1985,12 @@ msgid "The bf-translation repository"
 msgstr "bf-translationリポジトリ"
 
 
-msgid "Fribidi Library"
-msgstr "Fribidiライブラリ"
-
-
-msgid "The FriBidi C compiled library (.so under Linux, .dll under windows...), you’ll likely have to edit it if you’re under Windows, e.g. using the one included in svn's libraries repository"
-msgstr "FriBidi Cコンパイル済ライブラリ(Linuxでは .so、Windowsでは .dll)。Windows環境の場合、編集しないといけないでしょう。例：SVNのライブラリリポジトリ内でインクルードされたこれを使用するなど"
-
-
 msgid "Source Root"
 msgstr "ソースルート"
 
 
 msgid "The Blender source root path"
 msgstr "Blenderソースルートパス"
-
-
-msgid "Import Paths"
-msgstr "パスのインポート"
-
-
-msgid "Additional paths to add to sys.path (';' separated)"
-msgstr "sys.pathに追加するパス(「;」で区切り)"
 
 
 msgid "Warn Msgid Not Capitalized"
@@ -2009,12 +2001,20 @@ msgid "Warn about messages not starting by a capitalized letter (with a few allo
 msgstr "開始文字が大文字ではないメッセージを警告します(少しの例外を可能にするため！)"
 
 
-msgid "Spell Cache"
-msgstr "スペルキャッシュ"
+msgid "Persistent Data Path"
+msgstr "Persistenデータパス"
 
 
-msgid "A cache storing validated msgids, to avoid re-spellchecking them"
-msgstr "有効な msgid を格納するキャッシュ。再スペルチェックを防ぎます"
+msgid "The name of a json file storing those settings (unfortunately, Blender's system does not work here)"
+msgstr "これらの設定が含まれるJSONファイル名(残念ながらBlenderのシステムはここでは動作しません)"
+
+
+msgid "Import Paths"
+msgstr "パスのインポート"
+
+
+msgid "Additional paths to add to sys.path (';' separated)"
+msgstr "sys.pathに追加するパス(「;」で区切り)"
 
 
 msgid "Animation Data"
@@ -10226,6 +10226,14 @@ msgid "Active file in the file browser"
 msgstr "ファイルブラウザーでのアクティブファイル"
 
 
+msgid "Library Browser"
+msgstr "ライブラリブラウザー"
+
+
+msgid "Whether we may browse blender files' content or not"
+msgstr "Blenderファイルの内容を閲覧するかどうか"
+
+
 msgid "Display Mode"
 msgstr "表示モード"
 
@@ -10258,6 +10266,50 @@ msgid "Display files as thumbnails"
 msgstr "ファイルをサムネイルで表示します"
 
 
+msgid "Recursion"
+msgstr "再帰"
+
+
+msgid "Numbers of dirtree levels to show simultaneously"
+msgstr "同時に表示するディレクトリツリー深度"
+
+
+msgid "Only list current directory's content, with no recursion"
+msgstr "現在のディレクトリの内容のみリストアップし、再帰しません"
+
+
+msgid "Blend File"
+msgstr "Blendファイル"
+
+
+msgid "List .blend files' content"
+msgstr ".blendファイルの内容をリストアップします"
+
+
+msgid "One Level"
+msgstr "レベル1"
+
+
+msgid "List all sub-directories' content, one level of recursion"
+msgstr "再帰レベル 1 の全サブディレクトリの内容をリストアップします。"
+
+
+msgid "Two Levels"
+msgstr "レベル2"
+
+
+msgid "List all sub-directories' content, two levels of recursion"
+msgstr "再帰レベル 2 の全サブディレクトリの内容をリストアップします。"
+
+
+msgid "Three Levels"
+msgstr "レベル3"
+
+
+msgid "List all sub-directories' content, three levels of recursion"
+msgstr "再帰レベル 3 の全サブディレクトリの内容をリストアップします。"
+
+
 msgid "Filter Files"
 msgstr "ファイルのフィルタリング"
 
@@ -10288,6 +10340,10 @@ msgstr "ファイルリストをアルファベット順に並び替えます"
 
 msgid "Sort by extension"
 msgstr "拡張子順ソート"
+
+
+msgid "Sort the file list by extension/type"
+msgstr "ファイルリストを拡張子/タイプで並び替えます"
 
 
 msgid "Sort by time"
@@ -10378,20 +10434,220 @@ msgid "Show folders"
 msgstr "フォルダーを表示"
 
 
+msgid "Filter Blender IDs"
+msgstr "Blender IDでフィルタリング"
+
+
+msgid "Show .blend files items (objects, materials, etc.)"
+msgstr ".blendファイルのアイテム（オブジェクト、マテリアルなど）を表示します"
+
+
+msgid "Filter ID types"
+msgstr "IDタイプでフィルタリング"
+
+
+msgid "Which ID types to show/hide, when browsing a library"
+msgstr "ライブラリ閲覧中に表示・非表示するIDタイプ"
+
+
+msgid "Show/hide Action datablocks"
+msgstr "アクションデータブロックの表示・非表示"
+
+
+msgid "Show/hide Armature datablocks"
+msgstr "アーマチュアデータブロックの表示・非表示"
+
+
+msgid "Show/hide Brushes datablocks"
+msgstr "ブラシデータブロックの表示・非表示"
+
+
+msgid "Show/hide Camera datablocks"
+msgstr "カメラデータブロックの表示・非表示"
+
+
+msgid "Show/hide Curve datablocks"
+msgstr "カーブデータブロックの表示・非表示"
+
+
+msgid "Show/hide Grease pencil datablocks"
+msgstr "グリースペンシルデータブロックの表示・非表示"
+
+
+msgid "Show/hide Group datablocks"
+msgstr "グループデータブロックの表示・非表示"
+
+
+msgid "Show/hide Image datablocks"
+msgstr "画像データブロックの表示・非表示"
+
+
+msgid "Show/hide Lamp datablocks"
+msgstr "ランプデータブロックの表示・非表示"
+
+
+msgid "Freestyle Linestyles"
+msgstr "Freestyleラインスタイル"
+
+
+msgid "Show/hide Freestyle's Line Style datablocks"
+msgstr "Freestyleラインスタイルの表示・非表示"
+
+
+msgid "Show/hide Lattice datablocks"
+msgstr "ラティスデータブロックの表示・非表示"
+
+
+msgid "Show/hide Material datablocks"
+msgstr "マテリアルデータブロックの表示・非表示"
+
+
+msgid "Show/hide Metaball datablocks"
+msgstr "メタボールデータブロックの表示・非表示"
+
+
+msgid "Show/hide Movie Clip datablocks"
+msgstr "ムービークリップデータブロックの表示・非表示"
+
+
+msgid "Show/hide Mesh datablocks"
+msgstr "メッシュデータブロックの表示・非表示"
+
+
+msgid "Show/hide Mask datablocks"
+msgstr "マスクデータブロックの表示・非表示"
+
+
+msgid "Node Trees"
+msgstr "ノードツリー"
+
+
+msgid "Show/hide Node Tree datablocks"
+msgstr "ノードツリーの表示・非表示"
+
+
+msgid "Show/hide Object datablocks"
+msgstr "オブジェクトデータブロックの表示・非表示"
+
+
+msgid "Particles Settings"
+msgstr "パーティクル設定"
+
+
+msgid "Show/hide Particle Settings datablocks"
+msgstr "パーティクル設定の表示・非表示"
+
+
+msgid "Show/hide Palette datablocks"
+msgstr "パレットデータブロックの表示・非表示"
+
+
+msgid "Paint Curves"
+msgstr "ペイントカーブ"
+
+
+msgid "Show/hide Paint Curve datablocks"
+msgstr "ペイントカーブの表示・非表示"
+
+
+msgid "Show/hide Scene datablocks"
+msgstr "シーンデータブロックの表示・非表示"
+
+
+msgid "Show/hide Speaker datablocks"
+msgstr "スピーカーデータブロックの表示・非表示"
+
+
+msgid "Show/hide Sound datablocks"
+msgstr "サウンドデータブロックの表示・非表示"
+
+
+msgid "Show/hide Texture datablocks"
+msgstr "テクスチャデータブロックの表示・非表示"
+
+
+msgid "Show/hide Text datablocks"
+msgstr "テキストデータブロックの表示・非表示"
+
+
 msgid "Fonts"
 msgstr "フォント"
+
+
+msgid "Show/hide Font datablocks"
+msgstr "フォントデータブロックの表示・非表示"
+
+
+msgid "Show/hide World datablocks"
+msgstr "ワールドデータブロックの表示・非表示"
+
+
+msgid "Filter ID categories"
+msgstr "IDカテゴリでフィルタリング"
+
+
+msgid "Which ID categories to show/hide, when browsing a library"
+msgstr "ライブラリ閲覧中に表示・非表示にするIDカテゴリ"
+
+
+msgid "Show/hide scenes"
+msgstr "シーンの表示・非表示"
+
+
+msgid "Animations"
+msgstr "アニメーション"
+
+
+msgid "Show/hide animation data"
+msgstr "アニメーションデータの表示・非表示"
+
+
+msgid "Objects & Groups"
+msgstr "オブジェクトとグループ"
+
+
+msgid "Show/hide objects and groups"
+msgstr "オブジェクトとグループの表示・非表示"
 
 
 msgid "Geometry"
 msgstr "ジオメトリ"
 
 
+msgid "Show/hide meshes, curves, lattice, armatures and metaballs data"
+msgstr "メッシュ、カーブ、ラティス、アーマチュア、メタボールの表示・非表示"
+
+
 msgid "Shading"
 msgstr "シェーディング"
 
 
+msgid "Show/hide materials, nodetrees, textures and Freestyle's linestyles"
+msgstr "マテリアル、ノードツリー、テクスチャ、Freestyleラインスタイルの表示・非表示"
+
+
+msgid "Images & Sounds"
+msgstr "画像と音声"
+
+
+msgid "Show/hide images, movie clips, sounds and masks"
+msgstr "画像、ムービークリップ、音声、マスクの表示・非表示"
+
+
 msgid "Environment"
-msgstr "環境照明"
+msgstr "環境"
+
+
+msgid "Show/hide worlds, lamps, cameras and speakers"
+msgstr "ワールド、ランプ、カメラ、スピーカーの表示・非表示"
+
+
+msgid "Miscellaneous"
+msgstr "その他"
+
+
+msgid "Show/hide other data types"
+msgstr "その他データタイプの表示・非表示"
 
 
 msgid "Extension Filter"
@@ -12559,7 +12815,7 @@ msgstr "このデータブロックのプレビュー画像とアイコン（こ
 
 
 msgid "A collection of F-Curves for animation"
-msgstr "アニメーション用のFカーブのコリジョン"
+msgstr "アニメーション用Fカーブの集合"
 
 
 msgid "F-Curves"
@@ -35384,6 +35640,14 @@ msgid "Unlink this action from the active action slot (and/or exit Tweak Mode)"
 msgstr "このアクションをアクティブアクションスロットからリンク解除（そして調整モードを終了）します"
 
 
+msgid "Force Delete"
+msgstr "強制的に削除"
+
+
+msgid "Clear Fake User and remove copy stashed in this datablock's NLA stack"
+msgstr "このデータブロックのNLAスタック内に保留されたコピーのフェイクユーザーをクリアし、削除します"
+
+
 msgctxt "Operator"
 msgid "View All"
 msgstr "全てを表示"
@@ -36731,6 +36995,10 @@ msgstr "表示タイプ"
 
 msgid "Automatically determine display type for files"
 msgstr "自動的にファイルの表示タイプを決定します"
+
+
+msgid "File sorting mode"
+msgstr "ファイルの並び順"
 
 
 msgid "Open a file browser, Hold Shift to open the file, Alt to browse containing directory"
@@ -45744,16 +46012,16 @@ msgid "Start transform operator after inserting the node"
 msgstr "ノード挿入後にトランスフォーム演算を開始します"
 
 
-msgid "Settings to be applied on the newly created node"
-msgstr "新規ノードに設定を適用します"
-
-
 msgid "Node Type"
 msgstr "ノードタイプ"
 
 
 msgid "Node type"
 msgstr "ノードタイプ"
+
+
+msgid "Settings to be applied on the newly created node"
+msgstr "新規ノードに設定を適用します"
 
 
 msgid "Link Socket Index"
@@ -58016,6 +58284,10 @@ msgid "Extra Mocap Tools"
 msgstr "拡張モーキャプツール"
 
 
+msgid "Advanced Filter"
+msgstr "詳細なフィルタリング"
+
+
 msgid "Bookmarks"
 msgstr "ブックマーク"
 
@@ -58054,6 +58326,10 @@ msgstr "オプション"
 
 msgid "Appearance"
 msgstr "外観"
+
+
+msgid "Tiling"
+msgstr "タイリング"
 
 
 msgid "Texture Mask"
@@ -58442,10 +58718,6 @@ msgstr "カーブツール"
 
 msgid "Symmetry"
 msgstr "対称"
-
-
-msgid "Tiling"
-msgstr "タイリング"
 
 
 msgid "Lattice Tools"
@@ -59764,28 +60036,20 @@ msgid "Group of ID properties"
 msgstr "IDプロパティのグループ"
 
 
-msgid "Second offset"
-msgstr "第2オフセット"
-
-
-msgid "Frame offset for 2nd animation, where it should start"
-msgstr "二つめのアニメーションが開始するフレームオフセットです"
-
-
-msgid "Stick Bone"
-msgstr "スティックボーン"
-
-
-msgid "Bone to freeze during transition"
-msgstr "推移中にボーンをフリーズ"
-
-
 msgid "Blend amount"
 msgstr "ブレンド量"
 
 
 msgid "Size of blending transition, on both sides of the stitch"
 msgstr "スティッチ両側の移行部分のブレンドサイズ"
+
+
+msgid "Second offset"
+msgstr "第2オフセット"
+
+
+msgid "Frame offset for 2nd animation, where it should start"
+msgstr "二つめのアニメーションが開始するフレームオフセットです"
 
 
 msgid "Stitch frame"
@@ -59796,20 +60060,28 @@ msgid "Frame to locate stitch on"
 msgstr "スティッチを行うフレーム位置"
 
 
-msgid "Action 1"
-msgstr "アクション1"
-
-
-msgid "First action in stitch"
-msgstr "スティッチの最初のアクション"
-
-
 msgid "Action 2"
 msgstr "アクション2"
 
 
 msgid "Second action in stitch"
 msgstr "スティッチ内の二つめのアクション"
+
+
+msgid "Stick Bone"
+msgstr "スティックボーン"
+
+
+msgid "Bone to freeze during transition"
+msgstr "推移中にボーンをフリーズ"
+
+
+msgid "Action 1"
+msgstr "アクション1"
+
+
+msgid "First action in stitch"
+msgstr "スティッチの最初のアクション"
 
 
 msgid "Aperture Type"
@@ -60824,6 +61096,14 @@ msgid "Settings/info about a language"
 msgstr "言語の設定/情報"
 
 
+msgid "Numeric ID"
+msgstr "数値ID"
+
+
+msgid "Numeric ID (readonly!)"
+msgstr "数値ID(読み込みのみ！)"
+
+
 msgid "Language Name"
 msgstr "言語名"
 
@@ -60832,24 +61112,16 @@ msgid "English language name/label (like \"French (Français)\")"
 msgstr "英語での言語名/ラベル(「Japanese (日本語)」など)"
 
 
+msgid "MO File Path"
+msgstr "MOファイルパス"
+
+
+msgid "Path to the relevant mo file"
+msgstr "適合するmoファイルへのパス"
+
+
 msgid "Use this language in current operator"
 msgstr "現在のオペレーターで現在の言語を使用します"
-
-
-msgid "PO Trunk File Path"
-msgstr "PO Trunkファイルパス"
-
-
-msgid "Path to the relevant po file in trunk"
-msgstr "trunk内の適合するpoファイルへのパス"
-
-
-msgid "Numeric ID"
-msgstr "数値ID"
-
-
-msgid "Numeric ID (readonly!)"
-msgstr "数値ID(読み込みのみ！)"
 
 
 msgid "PO File Path"
@@ -60868,6 +61140,14 @@ msgid "ISO code, like fr_FR"
 msgstr "ja_JPなどのISOコード"
 
 
+msgid "PO Trunk File Path"
+msgstr "PO Trunkファイルパス"
+
+
+msgid "Path to the relevant po file in trunk"
+msgstr "trunk内の適合するpoファイルへのパス"
+
+
 msgid "PO Git Master File Path"
 msgstr "PO Git Masterファイルパス"
 
@@ -60876,12 +61156,12 @@ msgid "Path to the relevant po file in Blender's translations git repository"
 msgstr "poファイルに対応するBlenderの翻訳Gitリポジトリへのパス"
 
 
-msgid "MO File Path"
-msgstr "MOファイルパス"
+msgid "Languages"
+msgstr "言語"
 
 
-msgid "Path to the relevant mo file"
-msgstr "適合するmoファイルへのパス"
+msgid "Languages to update in branches"
+msgstr "branch内の言語の更新"
 
 
 msgid "POT File Path"
@@ -60890,14 +61170,6 @@ msgstr "POTファイルパス"
 
 msgid "Path to the pot template file"
 msgstr "適合するpotテンプレートファイルへのパス"
-
-
-msgid "Languages"
-msgstr "言語"
-
-
-msgid "Languages to update in branches"
-msgstr "branch内の言語の更新"
 
 
 msgid "Active Language"
@@ -60912,8 +61184,32 @@ msgid "Whether these settings have already been auto-set or not"
 msgstr "すでにこれらの設定が自動設定されているかどうか"
 
 
-msgid "Fix is active"
-msgstr "補正がアクティブである"
+msgid "Constrained Bone"
+msgstr "コンストレイントの掛けられたボーン"
+
+
+msgid "Type of constraint"
+msgstr "コンストレイントの種類"
+
+
+msgid "Bone (2)"
+msgstr "ボーン (2)"
+
+
+msgid "Other Constrained Bone (optional, depends on type)"
+msgstr "他のコンストレイントされたボーン（オプション、タイプに依存）"
+
+
+msgid "Name of Mocap Fix"
+msgstr "モーキャプ補正の名前"
+
+
+msgid "In"
+msgstr "入力"
+
+
+msgid "Number of frames to smooth in"
+msgstr "スムーズインするフレーム数"
 
 
 msgid "In which space should Point type target be evaluated"
@@ -60940,60 +61236,20 @@ msgid "Evaluate target in specified other bone space"
 msgstr "ターゲットを指定の他のボーン空間で評価します"
 
 
+msgid "Fix is active"
+msgstr "補正がアクティブである"
+
+
 msgid "Target of Fix - Point"
 msgstr "補正ターゲット - ポイント"
-
-
-msgid "Constrained Bone"
-msgstr "コンストレイントの掛けられたボーン"
-
-
-msgid "Type of constraint"
-msgstr "コンストレイントの種類"
-
-
-msgid "Name of Mocap Fix"
-msgstr "モーキャプ補正の名前"
-
-
-msgid "Start frame of Fix"
-msgstr "補正の開始フレーム"
-
-
-msgid "Target of Fix - Mesh (optional, depends on type)"
-msgstr "補正ターゲット - メッシュ（オプション、タイプに依存）"
 
 
 msgid "Distance and Floor Fixes - Desired offset"
 msgstr "距離と床の補正 - 希望のオフセット"
 
 
-msgid "Fix is fully shown"
-msgstr "補正を完全に表示"
-
-
-msgid "E"
-msgstr "E"
-
-
-msgid "End frame of Fix"
-msgstr "補正の終了フレーム"
-
-
-msgid "Bone (2)"
-msgstr "ボーン (2)"
-
-
-msgid "Other Constrained Bone (optional, depends on type)"
-msgstr "他のコンストレイントされたボーン（オプション、タイプに依存）"
-
-
-msgid "In"
-msgstr "入力"
-
-
-msgid "Number of frames to smooth in"
-msgstr "スムーズインするフレーム数"
+msgid "Start frame of Fix"
+msgstr "補正の開始フレーム"
 
 
 msgid "Out"
@@ -61002,6 +61258,22 @@ msgstr "出力"
 
 msgid "Number of frames to smooth out"
 msgstr "スムーズアウトする為のフレーム数"
+
+
+msgid "Fix is fully shown"
+msgstr "補正を完全に表示"
+
+
+msgid "Target of Fix - Mesh (optional, depends on type)"
+msgstr "補正ターゲット - メッシュ（オプション、タイプに依存）"
+
+
+msgid "E"
+msgstr "E"
+
+
+msgid "End frame of Fix"
+msgstr "補正の終了フレーム"
 
 
 msgid "Python expression to be evaluated as the initial node setting"
@@ -61056,18 +61328,6 @@ msgid "Path to directory where the files are created"
 msgstr "ファイルを作成するディレクトリへのパス"
 
 
-msgid "Format type to export to"
-msgstr "エクスポートするフォーマットタイプ"
-
-
-msgid "VRML2"
-msgstr "VRML2"
-
-
-msgid "Limit for checking distorted faces"
-msgstr "面の歪みをチェックする限界"
-
-
 msgid "Copy Textures"
 msgstr "テクスチャをコピー"
 
@@ -61076,16 +61336,28 @@ msgid "Copy textures on export to the output path"
 msgstr "エクスポート時、テクスチャを出力パスにコピーします"
 
 
-msgid "Limit for checking zero area/length"
-msgstr "面積や長さが0かチェックする限界"
-
-
 msgid "Apply Scale"
 msgstr "スケールを適用"
 
 
 msgid "Apply scene scale setting on export"
 msgstr "エクスポート時にシーンスケール設定を適用します"
+
+
+msgid "Limit for checking zero area/length"
+msgstr "面積や長さが0かチェックする限界"
+
+
+msgid "Limit for checking distorted faces"
+msgstr "面の歪みをチェックする限界"
+
+
+msgid "Format type to export to"
+msgstr "エクスポートするフォーマットタイプ"
+
+
+msgid "VRML2"
+msgstr "VRML2"
 
 
 msgid "Selected UV Element"
@@ -75517,6 +75789,10 @@ msgid "Viewport Color:"
 msgstr "ビューの色:"
 
 
+msgid "Viewport Alpha:"
+msgstr "ビューのアルファ:"
+
+
 msgid "Viewport Specular:"
 msgstr "ビューのスペキュラ:"
 
@@ -86518,6 +86794,10 @@ msgid "image path can't be written to"
 msgstr "画像のパスに書き込みできません"
 
 
+msgid "image format is read-only"
+msgstr "読み込みのみの画像フォーマットです"
+
+
 msgid "can't save image while rendering"
 msgstr "レンダリング中に画像が保存できません"
 
@@ -88954,6 +89234,10 @@ msgstr "スキンエラー"
 
 msgid "Faces needed for useful output"
 msgstr "実用的な出力を得るには面が必要です"
+
+
+msgid "OpenSubdiv is disabled in User Preferences"
+msgstr "ユーザー設定でOpenSubdivが無効になっています"
 
 
 msgid "OpenSubdiv is disabled due to dependencies"

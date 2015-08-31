@@ -1,11 +1,11 @@
 
 msgid ""
 msgstr ""
-"Project-Id-Version: Blender 2.75 (sub 4) (b'c62ebef')\n"
+"Project-Id-Version: Blender 2.75 (sub 4) (b'b3f4bf8')\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-08-25 21:14:06\n"
+"POT-Creation-Date: 2015-08-31 22:04:34\n"
 "PO-Revision-Date: \n"
-"Last-Translator: Ivan Paulos Tomé <ivan.paulos.tome>\n"
+"Last-Translator: Ivan Paulos Tomé <greylica@gmail.com>\n"
 "Language-Team: Ivan Paulos Tomé, Dalai Felinto, Bruno Gonçalves Pirajá, Samuel Arataca, Daniel Tavares, Moraes Junior <greylica@gmail.com>\n"
 "Language: pt_BR\n"
 "MIME-Version: 1.0\n"
@@ -1953,6 +1953,14 @@ msgid "Addon Preferences"
 msgstr "Preferências de complementos"
 
 
+msgid "Fribidi Library"
+msgstr "Biblioteca FriBidi"
+
+
+msgid "The FriBidi C compiled library (.so under Linux, .dll under windows...), you’ll likely have to edit it if you’re under Windows, e.g. using the one included in svn's libraries repository"
+msgstr "A biblioteca Fribidi C compilada (.so em sistemas Linux, .dll em sistemas Windows...), você provavelmente irá ter de editá-la se estiver no Windows, ex: usando aquelas inclusas dentro dos repositórios svn de bibliotecas."
+
+
 msgid "Gettext 'msgfmt' executable"
 msgstr "Executável \"msgfmt\" Gettext"
 
@@ -1961,12 +1969,12 @@ msgid "The gettext msgfmt 'compiler'. You’ll likely have to edit it if you’r
 msgstr "O compilador \"msgfmt gettext\". Você provavelmente terá de editá-lo se estiver usando Windows "
 
 
-msgid "Persistent Data Path"
-msgstr "Dados persistentes"
+msgid "Spell Cache"
+msgstr "Cache de ortografia"
 
 
-msgid "The name of a json file storing those settings (unfortunately, Blender's system does not work here)"
-msgstr "O nome do arquivo json guardando estas configurações (infelizmente, o sistema do Blender não funciona aqui) "
+msgid "A cache storing validated msgids, to avoid re-spellchecking them"
+msgstr "Um cache guardando msgids validadas, para evitar que sejam refeitas verificações ortográficas"
 
 
 msgid "Translation Root"
@@ -1977,28 +1985,12 @@ msgid "The bf-translation repository"
 msgstr "O repositório de tradução da fundação Blender"
 
 
-msgid "Fribidi Library"
-msgstr "Biblioteca FriBidi"
-
-
-msgid "The FriBidi C compiled library (.so under Linux, .dll under windows...), you’ll likely have to edit it if you’re under Windows, e.g. using the one included in svn's libraries repository"
-msgstr "A biblioteca Fribidi C compilada (.so em sistemas Linux, .dll em sistemas Windows...), você provavelmente irá ter de editá-la se estiver no Windows, ex: usando aquelas inclusas dentro dos repositórios svn de bibliotecas."
-
-
 msgid "Source Root"
 msgstr "Raiz dos arquivos fonte"
 
 
 msgid "The Blender source root path"
 msgstr "O caminho da raiz de arquivos fonte do Blender"
-
-
-msgid "Import Paths"
-msgstr "Importar unidades"
-
-
-msgid "Additional paths to add to sys.path (';' separated)"
-msgstr "Caminhos adicionais para adicionar para sys.path (separados por \";\")"
 
 
 msgid "Warn Msgid Not Capitalized"
@@ -2009,12 +2001,20 @@ msgid "Warn about messages not starting by a capitalized letter (with a few allo
 msgstr "Emite um aviso sobre mensagens que não iniciam com letras capitalizadas (com poucas exceções permitidas!)"
 
 
-msgid "Spell Cache"
-msgstr "Cache de ortografia"
+msgid "Persistent Data Path"
+msgstr "Dados persistentes"
 
 
-msgid "A cache storing validated msgids, to avoid re-spellchecking them"
-msgstr "Um cache guardando msgids validadas, para evitar que sejam refeitas verificações ortográficas"
+msgid "The name of a json file storing those settings (unfortunately, Blender's system does not work here)"
+msgstr "O nome do arquivo json guardando estas configurações (infelizmente, o sistema do Blender não funciona aqui) "
+
+
+msgid "Import Paths"
+msgstr "Importar unidades"
+
+
+msgid "Additional paths to add to sys.path (';' separated)"
+msgstr "Caminhos adicionais para adicionar para sys.path (separados por \";\")"
 
 
 msgid "Animation Data"
@@ -10222,6 +10222,14 @@ msgid "Active file in the file browser"
 msgstr "Arquivo ativo no navegador de arquivos"
 
 
+msgid "Library Browser"
+msgstr "Navegador de bibliotecas"
+
+
+msgid "Whether we may browse blender files' content or not"
+msgstr "Permite definir se será possível ou não a navegação nos conteúdos dos arquivos Blender"
+
+
 msgid "Display Mode"
 msgstr "Modo de visualização"
 
@@ -10254,6 +10262,50 @@ msgid "Display files as thumbnails"
 msgstr "Mostra arquivos como miniaturas"
 
 
+msgid "Recursion"
+msgstr "Recursão"
+
+
+msgid "Numbers of dirtree levels to show simultaneously"
+msgstr "Número dos níveis da árvore de diretórios a ser mostrados simultaneamente"
+
+
+msgid "Only list current directory's content, with no recursion"
+msgstr "Lista somente o conteúdo do diretório atual, sem recursões"
+
+
+msgid "Blend File"
+msgstr "Arquivo Blender"
+
+
+msgid "List .blend files' content"
+msgstr "Lista o conteúdo dos arquivos Blender"
+
+
+msgid "One Level"
+msgstr "Um nível"
+
+
+msgid "List all sub-directories' content, one level of recursion"
+msgstr "Lista o conteúdo de todos os sub-diretórios, com um nível de recursão"
+
+
+msgid "Two Levels"
+msgstr "Dois níveis"
+
+
+msgid "List all sub-directories' content, two levels of recursion"
+msgstr "Lista o conteúdo de todos os sub-diretórios, com dois níveis de recursão"
+
+
+msgid "Three Levels"
+msgstr "Três níveis"
+
+
+msgid "List all sub-directories' content, three levels of recursion"
+msgstr "Lista o conteúdo de todos os sub-diretórios, com três níveis de recursão"
+
+
 msgid "Filter Files"
 msgstr "Filtrar arquivos"
 
@@ -10284,6 +10336,10 @@ msgstr "Ordena a lista de arquivos alfabeticamente"
 
 msgid "Sort by extension"
 msgstr "Ordenar por extensão"
+
+
+msgid "Sort the file list by extension/type"
+msgstr "Ordena a lista de arquivos pelo tipo ou extensão"
 
 
 msgid "Sort by time"
@@ -10374,20 +10430,220 @@ msgid "Show folders"
 msgstr "Mostra as pastas"
 
 
+msgid "Filter Blender IDs"
+msgstr "Filtrar por identificadores Blender"
+
+
+msgid "Show .blend files items (objects, materials, etc.)"
+msgstr "Mostra os itens dos arquivos Blender (tais como objetos, materiais, texturas, etc.)"
+
+
+msgid "Filter ID types"
+msgstr "Tipo de filtro de identificação"
+
+
+msgid "Which ID types to show/hide, when browsing a library"
+msgstr "Quais tipos de identificador serão mostrados ou ocultados, ao navegar nas bibliotecas"
+
+
+msgid "Show/hide Action datablocks"
+msgstr "Mostra ou oculta os blocos de dados de ação"
+
+
+msgid "Show/hide Armature datablocks"
+msgstr "Mostra ou oculta os blocos de dados de armações de ossos"
+
+
+msgid "Show/hide Brushes datablocks"
+msgstr "Mostra ou oculta os blocos de dados de pincéis"
+
+
+msgid "Show/hide Camera datablocks"
+msgstr "Mostra ou oculta os blocos de dados de câmeras"
+
+
+msgid "Show/hide Curve datablocks"
+msgstr "Mostra ou oculta os blocos de dados de curvas"
+
+
+msgid "Show/hide Grease pencil datablocks"
+msgstr "Mostra ou oculta os blocos de dados de lápis de cera"
+
+
+msgid "Show/hide Group datablocks"
+msgstr "Mostra ou oculta os blocos de dados de grupos"
+
+
+msgid "Show/hide Image datablocks"
+msgstr "Mostra ou oculta os blocos de dados de imagens"
+
+
+msgid "Show/hide Lamp datablocks"
+msgstr "Mostra ou oculta os blocos de dados de lâmpadas"
+
+
+msgid "Freestyle Linestyles"
+msgstr "Freestyle - Estilos de linhas"
+
+
+msgid "Show/hide Freestyle's Line Style datablocks"
+msgstr "Mostra ou oculta os blocos de dados de estilos de linha Freestyle"
+
+
+msgid "Show/hide Lattice datablocks"
+msgstr "Mostra ou oculta os blocos de dados de treliças"
+
+
+msgid "Show/hide Material datablocks"
+msgstr "Mostra ou oculta os blocos de dados de materiais"
+
+
+msgid "Show/hide Metaball datablocks"
+msgstr "Mostra ou oculta os blocos de dados de esferas-meta"
+
+
+msgid "Show/hide Movie Clip datablocks"
+msgstr "Mostra ou oculta os blocos de dados de clipes de filme"
+
+
+msgid "Show/hide Mesh datablocks"
+msgstr "Mostra ou oculta os blocos de dados de malhas"
+
+
+msgid "Show/hide Mask datablocks"
+msgstr "Mostra ou oculta os blocos de dados de máscara"
+
+
+msgid "Node Trees"
+msgstr "Árvores de nós"
+
+
+msgid "Show/hide Node Tree datablocks"
+msgstr "Mostra ou oculta os blocos de dados de árvores de nós"
+
+
+msgid "Show/hide Object datablocks"
+msgstr "Mostra ou oculta os blocos de dados de objetos"
+
+
+msgid "Particles Settings"
+msgstr "Configurações de partículas"
+
+
+msgid "Show/hide Particle Settings datablocks"
+msgstr "Mostra ou oculta os blocos de dados de definições de partículas"
+
+
+msgid "Show/hide Palette datablocks"
+msgstr "Mostra ou oculta os blocos de dados de paletas"
+
+
+msgid "Paint Curves"
+msgstr "Curvas de pintura"
+
+
+msgid "Show/hide Paint Curve datablocks"
+msgstr "Mostra ou oculta os blocos de dados de curvas de pintura"
+
+
+msgid "Show/hide Scene datablocks"
+msgstr "Mostra ou oculta os blocos de dados de cenas"
+
+
+msgid "Show/hide Speaker datablocks"
+msgstr "Mostra ou oculta os blocos de dados de alto-falantes"
+
+
+msgid "Show/hide Sound datablocks"
+msgstr "Mostra ou oculta os blocos de dados de sons"
+
+
+msgid "Show/hide Texture datablocks"
+msgstr "Mostra ou oculta os blocos de dados de texturas"
+
+
+msgid "Show/hide Text datablocks"
+msgstr "Mostra ou oculta os blocos de dados de textos"
+
+
 msgid "Fonts"
 msgstr "Fontes"
+
+
+msgid "Show/hide Font datablocks"
+msgstr "Mostra ou oculta os blocos de dados de fontes"
+
+
+msgid "Show/hide World datablocks"
+msgstr "Mostra ou oculta os blocos de dados de ambiente (mundo)"
+
+
+msgid "Filter ID categories"
+msgstr "Filtrar categorias por identificador"
+
+
+msgid "Which ID categories to show/hide, when browsing a library"
+msgstr "Quais categorias de identificador serão mostradas ou ocultadas, ao navegar nas bibliotecas"
+
+
+msgid "Show/hide scenes"
+msgstr "Mostra ou oculta as cenas"
+
+
+msgid "Animations"
+msgstr "Animações"
+
+
+msgid "Show/hide animation data"
+msgstr "Mostra ou oculta os dados de animação"
+
+
+msgid "Objects & Groups"
+msgstr "Objetos e grupos"
+
+
+msgid "Show/hide objects and groups"
+msgstr "Mostra ou oculta os objetos e grupos"
 
 
 msgid "Geometry"
 msgstr "Geometria"
 
 
+msgid "Show/hide meshes, curves, lattice, armatures and metaballs data"
+msgstr "Mostra ou oculta os dados de malhas, curvas, treliças, armações (de ossos) e esferas-meta"
+
+
 msgid "Shading"
 msgstr "Sombreamento"
 
 
+msgid "Show/hide materials, nodetrees, textures and Freestyle's linestyles"
+msgstr "Mostra ou oculta materiais, árvores de nós, texturas e estilos de linha Freestyle"
+
+
+msgid "Images & Sounds"
+msgstr "Imagens e sons"
+
+
+msgid "Show/hide images, movie clips, sounds and masks"
+msgstr "Mostra ou oculta imagens, clipes de filme, sons e máscaras"
+
+
 msgid "Environment"
 msgstr "Ambiente"
+
+
+msgid "Show/hide worlds, lamps, cameras and speakers"
+msgstr "Mostra ou oculta ambientes, lâmpadas, câmeras e alto-falantes"
+
+
+msgid "Miscellaneous"
+msgstr "Miscelânea"
+
+
+msgid "Show/hide other data types"
+msgstr "Mostra ou oculta os blocos de dados de outros tipos de dados"
 
 
 msgid "Extension Filter"
@@ -35372,6 +35628,14 @@ msgid "Unlink this action from the active action slot (and/or exit Tweak Mode)"
 msgstr "Desvincula esta ação do compartimento de ação ativo ( e / ou sai do modo de ajuste) "
 
 
+msgid "Force Delete"
+msgstr "Forçar apagamento"
+
+
+msgid "Clear Fake User and remove copy stashed in this datablock's NLA stack"
+msgstr "Limpa todos os usuários virtuais e remove as cópias armazenadas nesta pilha de bloco de dados de animação não linear"
+
+
 msgctxt "Operator"
 msgid "View All"
 msgstr "Mostrar tudo"
@@ -36719,6 +36983,10 @@ msgstr "Tipo de amostragem"
 
 msgid "Automatically determine display type for files"
 msgstr "Determina automaticamente o tipo de visualização para arquivos"
+
+
+msgid "File sorting mode"
+msgstr "Modo de ordenamento de arquivos"
 
 
 msgid "Open a file browser, Hold Shift to open the file, Alt to browse containing directory"
@@ -45717,16 +45985,16 @@ msgid "Start transform operator after inserting the node"
 msgstr "Inicia o operador de transformação após a inserção do nó"
 
 
-msgid "Settings to be applied on the newly created node"
-msgstr "Configurações a ser aplicadas no nó recentemente criado"
-
-
 msgid "Node Type"
 msgstr "Tipo de nó"
 
 
 msgid "Node type"
 msgstr "O tipo de nó"
+
+
+msgid "Settings to be applied on the newly created node"
+msgstr "Configurações a ser aplicadas no nó recentemente criado"
 
 
 msgid "Link Socket Index"
@@ -57985,6 +58253,10 @@ msgid "Extra Mocap Tools"
 msgstr "Ferramentas extras de captura de movimentos"
 
 
+msgid "Advanced Filter"
+msgstr "Filtros avançados"
+
+
 msgid "Bookmarks"
 msgstr "Favoritos"
 
@@ -58023,6 +58295,10 @@ msgstr "Opções"
 
 msgid "Appearance"
 msgstr "Aparência"
+
+
+msgid "Tiling"
+msgstr "Ladrilhamento"
 
 
 msgid "Texture Mask"
@@ -58411,10 +58687,6 @@ msgstr "Ferramentas de curva"
 
 msgid "Symmetry"
 msgstr "Simetrizar"
-
-
-msgid "Tiling"
-msgstr "Ladrilhamento"
 
 
 msgid "Lattice Tools"
@@ -59733,28 +60005,20 @@ msgid "Group of ID properties"
 msgstr "Grupo de propriedades do identificador"
 
 
-msgid "Second offset"
-msgstr "Segundo deslocamento"
-
-
-msgid "Frame offset for 2nd animation, where it should start"
-msgstr "Deslocamento de quadro para a segunda animação, onde ela deve iniciar"
-
-
-msgid "Stick Bone"
-msgstr "Paralisar osso"
-
-
-msgid "Bone to freeze during transition"
-msgstr "Osso para congelar durante a transição"
-
-
 msgid "Blend amount"
 msgstr "Quantidade de mescla"
 
 
 msgid "Size of blending transition, on both sides of the stitch"
 msgstr "Tamanho das transições de mesclagem, em ambos os lados das junções"
+
+
+msgid "Second offset"
+msgstr "Segundo deslocamento"
+
+
+msgid "Frame offset for 2nd animation, where it should start"
+msgstr "Deslocamento de quadro para a segunda animação, onde ela deve iniciar"
 
 
 msgid "Stitch frame"
@@ -59765,20 +60029,28 @@ msgid "Frame to locate stitch on"
 msgstr "Quadro para localizar a junção"
 
 
-msgid "Action 1"
-msgstr "Ação 1"
-
-
-msgid "First action in stitch"
-msgstr "Primeira ação dentro do ponto de junção"
-
-
 msgid "Action 2"
 msgstr "Ação 2"
 
 
 msgid "Second action in stitch"
 msgstr "Segunda ação na costura"
+
+
+msgid "Stick Bone"
+msgstr "Paralisar osso"
+
+
+msgid "Bone to freeze during transition"
+msgstr "Osso para congelar durante a transição"
+
+
+msgid "Action 1"
+msgstr "Ação 1"
+
+
+msgid "First action in stitch"
+msgstr "Primeira ação dentro do ponto de junção"
 
 
 msgid "Aperture Type"
@@ -60793,6 +61065,14 @@ msgid "Settings/info about a language"
 msgstr "Configurações e informações sobre uma tradução"
 
 
+msgid "Numeric ID"
+msgstr "Identificador numérico"
+
+
+msgid "Numeric ID (readonly!)"
+msgstr "Identificador numérico (somente leitura!)"
+
+
 msgid "Language Name"
 msgstr "Nome da língua"
 
@@ -60801,24 +61081,16 @@ msgid "English language name/label (like \"French (Français)\")"
 msgstr "Nome ou rótulo em inglês da tradução (como \"Francês (Francês)\")"
 
 
+msgid "MO File Path"
+msgstr "Caminho de arquivo MO"
+
+
+msgid "Path to the relevant mo file"
+msgstr "Caminho para o arquivo mo relevante"
+
+
 msgid "Use this language in current operator"
 msgstr "Usar esta língua no operador atual"
-
-
-msgid "PO Trunk File Path"
-msgstr "Caminho tronco dos arquivos PO"
-
-
-msgid "Path to the relevant po file in trunk"
-msgstr "Caminho para o arquivo po relevante dentro do tronco"
-
-
-msgid "Numeric ID"
-msgstr "Identificador numérico"
-
-
-msgid "Numeric ID (readonly!)"
-msgstr "Identificador numérico (somente leitura!)"
 
 
 msgid "PO File Path"
@@ -60837,6 +61109,14 @@ msgid "ISO code, like fr_FR"
 msgstr "Código ISO, algo como pt_BR"
 
 
+msgid "PO Trunk File Path"
+msgstr "Caminho tronco dos arquivos PO"
+
+
+msgid "Path to the relevant po file in trunk"
+msgstr "Caminho para o arquivo po relevante dentro do tronco"
+
+
 msgid "PO Git Master File Path"
 msgstr "Caminho dos arquivos PO mestres no Git"
 
@@ -60845,12 +61125,12 @@ msgid "Path to the relevant po file in Blender's translations git repository"
 msgstr "O caminho para os arquivos de catálogos .po relevantes no repositório Git de traduções do Blender"
 
 
-msgid "MO File Path"
-msgstr "Caminho de arquivo MO"
+msgid "Languages"
+msgstr "Línguas para tradução"
 
 
-msgid "Path to the relevant mo file"
-msgstr "Caminho para o arquivo mo relevante"
+msgid "Languages to update in branches"
+msgstr "Traduções para atualizar nas ramificações"
 
 
 msgid "POT File Path"
@@ -60859,14 +61139,6 @@ msgstr "Caminho de arquivo POT"
 
 msgid "Path to the pot template file"
 msgstr "O caminho para o arquivo modelo tipo pot"
-
-
-msgid "Languages"
-msgstr "Línguas para tradução"
-
-
-msgid "Languages to update in branches"
-msgstr "Traduções para atualizar nas ramificações"
 
 
 msgid "Active Language"
@@ -60881,8 +61153,32 @@ msgid "Whether these settings have already been auto-set or not"
 msgstr "Caso estes ajustes já tenham sido configurados automaticamente ou não"
 
 
-msgid "Fix is active"
-msgstr "Conserto está ativo"
+msgid "Constrained Bone"
+msgstr "Osso restringido"
+
+
+msgid "Type of constraint"
+msgstr "Tipo de restrição"
+
+
+msgid "Bone (2)"
+msgstr "Osso (2)"
+
+
+msgid "Other Constrained Bone (optional, depends on type)"
+msgstr "Outro osso restrito (opcional, dependente do tipo específico)"
+
+
+msgid "Name of Mocap Fix"
+msgstr "Nome do ponto fixo de captura de movimentos"
+
+
+msgid "In"
+msgstr "Entrada"
+
+
+msgid "Number of frames to smooth in"
+msgstr "Número de quadros para suavizar"
 
 
 msgid "In which space should Point type target be evaluated"
@@ -60909,60 +61205,20 @@ msgid "Evaluate target in specified other bone space"
 msgstr "Avalia o alvo dentro do outro espaço de osso especificado"
 
 
+msgid "Fix is active"
+msgstr "Conserto está ativo"
+
+
 msgid "Target of Fix - Point"
 msgstr "Alvo do conserto - Ponto"
-
-
-msgid "Constrained Bone"
-msgstr "Osso restringido"
-
-
-msgid "Type of constraint"
-msgstr "Tipo de restrição"
-
-
-msgid "Name of Mocap Fix"
-msgstr "Nome do ponto fixo de captura de movimentos"
-
-
-msgid "Start frame of Fix"
-msgstr "Quadro inicial do conserto"
-
-
-msgid "Target of Fix - Mesh (optional, depends on type)"
-msgstr "Alvo para conserto - Malha (opcional, depende do tipo)"
 
 
 msgid "Distance and Floor Fixes - Desired offset"
 msgstr "Distância e consertos de piso - deslocamento desejado"
 
 
-msgid "Fix is fully shown"
-msgstr "O conserto está plenamente mostrado"
-
-
-msgid "E"
-msgstr "E"
-
-
-msgid "End frame of Fix"
-msgstr "Quadro final do conserto"
-
-
-msgid "Bone (2)"
-msgstr "Osso (2)"
-
-
-msgid "Other Constrained Bone (optional, depends on type)"
-msgstr "Outro osso restrito (opcional, dependente do tipo específico)"
-
-
-msgid "In"
-msgstr "Entrada"
-
-
-msgid "Number of frames to smooth in"
-msgstr "Número de quadros para suavizar"
+msgid "Start frame of Fix"
+msgstr "Quadro inicial do conserto"
 
 
 msgid "Out"
@@ -60971,6 +61227,22 @@ msgstr "Saída"
 
 msgid "Number of frames to smooth out"
 msgstr "Número de quadros para suavizar"
+
+
+msgid "Fix is fully shown"
+msgstr "O conserto está plenamente mostrado"
+
+
+msgid "Target of Fix - Mesh (optional, depends on type)"
+msgstr "Alvo para conserto - Malha (opcional, depende do tipo)"
+
+
+msgid "E"
+msgstr "E"
+
+
+msgid "End frame of Fix"
+msgstr "Quadro final do conserto"
 
 
 msgid "Python expression to be evaluated as the initial node setting"
@@ -61025,18 +61297,6 @@ msgid "Path to directory where the files are created"
 msgstr "Caminho para o diretório onde os arquivos são criados"
 
 
-msgid "Format type to export to"
-msgstr "Tipo de formato para o qual exportar"
-
-
-msgid "VRML2"
-msgstr "VRML2"
-
-
-msgid "Limit for checking distorted faces"
-msgstr "Limite para verificação de faces distorcidas"
-
-
 msgid "Copy Textures"
 msgstr "Copiar texturas"
 
@@ -61045,16 +61305,28 @@ msgid "Copy textures on export to the output path"
 msgstr "Copia as texturas durante a exportação para o caminho de saída"
 
 
-msgid "Limit for checking zero area/length"
-msgstr "Limite para verificação de áreas ou comprimentos de valor zero"
-
-
 msgid "Apply Scale"
 msgstr "Aplicar escala"
 
 
 msgid "Apply scene scale setting on export"
 msgstr "Aplica a configuração de escala de cena na exportação"
+
+
+msgid "Limit for checking zero area/length"
+msgstr "Limite para verificação de áreas ou comprimentos de valor zero"
+
+
+msgid "Limit for checking distorted faces"
+msgstr "Limite para verificação de faces distorcidas"
+
+
+msgid "Format type to export to"
+msgstr "Tipo de formato para o qual exportar"
+
+
+msgid "VRML2"
+msgstr "VRML2"
 
 
 msgid "Selected UV Element"
@@ -75484,6 +75756,10 @@ msgid "Viewport Color:"
 msgstr "Cor da porta de visão:"
 
 
+msgid "Viewport Alpha:"
+msgstr "Alfa na porta de visão:"
+
+
 msgid "Viewport Specular:"
 msgstr "Grandeza especular na porta de visão:"
 
@@ -86475,6 +86751,10 @@ msgid "image path can't be written to"
 msgstr "Caminho de imagem não pôde ser escrito"
 
 
+msgid "image format is read-only"
+msgstr "O formato de imagem é somente-leitura"
+
+
 msgid "can't save image while rendering"
 msgstr "Não é possível salvar imagem durante a renderização"
 
@@ -88911,6 +89191,10 @@ msgstr "Erro de casco"
 
 msgid "Faces needed for useful output"
 msgstr "Faces necessárias para uma saída útil"
+
+
+msgid "OpenSubdiv is disabled in User Preferences"
+msgstr "A subdivisão aberta está desabilitada nas preferências de usuário"
 
 
 msgid "OpenSubdiv is disabled due to dependencies"
