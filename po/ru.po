@@ -1,9 +1,9 @@
 
 msgid ""
 msgstr ""
-"Project-Id-Version: Blender 2.75 (sub 4) (b'b3f4bf8')\n"
+"Project-Id-Version: Blender 2.75 (sub 4) (b'946b850')\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-08-31 22:04:34\n"
+"POT-Creation-Date: 2015-09-07 20:31:18\n"
 "PO-Revision-Date: 2015-06-08 11:49+0300\n"
 "Last-Translator: Lockal S <lockalsash@gmail.com>\n"
 "Language-Team: Russian <http://translateblender.ru/projects/blender/blender/ru/>\n"
@@ -1955,6 +1955,38 @@ msgid "Addon Preferences"
 msgstr "Настройки дополнения"
 
 
+msgid "Gettext 'msgfmt' executable"
+msgstr "Исполняемый файл gettext 'msgfmt'"
+
+
+msgid "The gettext msgfmt 'compiler'. You’ll likely have to edit it if you’re under Windows"
+msgstr "Компилятор msgfmt для файлов gettext. Для работы в Windows необходимо вручную указать правильный путь"
+
+
+msgid "Source Root"
+msgstr "Путь к коду"
+
+
+msgid "The Blender source root path"
+msgstr "Путь к исходному коду Blender"
+
+
+msgid "Import Paths"
+msgstr "Пути импорта"
+
+
+msgid "Additional paths to add to sys.path (';' separated)"
+msgstr "Дополнительные пути, добавляемые в sys.path (разделённые «;»)"
+
+
+msgid "Persistent Data Path"
+msgstr "Путь постоянных данных"
+
+
+msgid "The name of a json file storing those settings (unfortunately, Blender's system does not work here)"
+msgstr "Имя файла json для хранения этих настроек (к сожалению, система Blender здесь не работает)"
+
+
 msgid "Fribidi Library"
 msgstr "Библиотека FriBidi"
 
@@ -1963,12 +1995,12 @@ msgid "The FriBidi C compiled library (.so under Linux, .dll under windows...), 
 msgstr "Скомпилированная библиотека FriBidi на языке Си (.so в Linux, .dll в windows...). Для работы в Windows необходимо вручную указать правильный путь, например, на файл из svn-репозитария библиотек"
 
 
-msgid "Gettext 'msgfmt' executable"
-msgstr "Исполняемый файл gettext 'msgfmt'"
+msgid "Warn Msgid Not Capitalized"
+msgstr "Предупреждать о msgid со строчных"
 
 
-msgid "The gettext msgfmt 'compiler'. You’ll likely have to edit it if you’re under Windows"
-msgstr "Компилятор msgfmt для файлов gettext. Для работы в Windows необходимо вручную указать правильный путь"
+msgid "Warn about messages not starting by a capitalized letter (with a few allowed exceptions!)"
+msgstr "Предупреждать о сообщениях, которые начинаются не с прописных букв (за редкими разрешёнными исключениями!)"
 
 
 msgid "Spell Cache"
@@ -1985,38 +2017,6 @@ msgstr "Корневая папка переводов"
 
 msgid "The bf-translation repository"
 msgstr "Репозитарий bf-translation"
-
-
-msgid "Source Root"
-msgstr "Путь к коду"
-
-
-msgid "The Blender source root path"
-msgstr "Путь к исходному коду Blender"
-
-
-msgid "Warn Msgid Not Capitalized"
-msgstr "Предупреждать о msgid со строчных"
-
-
-msgid "Warn about messages not starting by a capitalized letter (with a few allowed exceptions!)"
-msgstr "Предупреждать о сообщениях, которые начинаются не с прописных букв (за редкими разрешёнными исключениями!)"
-
-
-msgid "Persistent Data Path"
-msgstr "Путь постоянных данных"
-
-
-msgid "The name of a json file storing those settings (unfortunately, Blender's system does not work here)"
-msgstr "Имя файла json для хранения этих настроек (к сожалению, система Blender здесь не работает)"
-
-
-msgid "Import Paths"
-msgstr "Пути импорта"
-
-
-msgid "Additional paths to add to sys.path (';' separated)"
-msgstr "Дополнительные пути, добавляемые в sys.path (разделённые «;»)"
 
 
 msgid "Animation Data"
@@ -44889,12 +44889,8 @@ msgid "Add a node to the active tree and link to an existing socket"
 msgstr "Добавить узел к активному дереву и связать с существующим сокетом"
 
 
-msgid "Use Transform"
-msgstr "С преобразованием"
-
-
-msgid "Start transform operator after inserting the node"
-msgstr "Запустить оператор преобразования после вставки узла"
+msgid "Settings to be applied on the newly created node"
+msgstr "Настройки, применяемые для создаваемого узла"
 
 
 msgid "Node Type"
@@ -44905,8 +44901,12 @@ msgid "Node type"
 msgstr "Тип узла"
 
 
-msgid "Settings to be applied on the newly created node"
-msgstr "Настройки, применяемые для создаваемого узла"
+msgid "Use Transform"
+msgstr "С преобразованием"
+
+
+msgid "Start transform operator after inserting the node"
+msgstr "Запустить оператор преобразования после вставки узла"
 
 
 msgid "Link Socket Index"
@@ -58693,28 +58693,12 @@ msgid "Group of ID properties"
 msgstr "Группа ID-свойств"
 
 
-msgid "Blend amount"
-msgstr "Величина смешения"
-
-
-msgid "Size of blending transition, on both sides of the stitch"
-msgstr "Величина переходного смешения по обоим сторонам от места склейки"
-
-
 msgid "Second offset"
 msgstr "Смещение 2"
 
 
 msgid "Frame offset for 2nd animation, where it should start"
 msgstr "Смещение в кадрах, определяющее место начала второй анимации"
-
-
-msgid "Stitch frame"
-msgstr "Кадр склейки"
-
-
-msgid "Frame to locate stitch on"
-msgstr "Кадр, на котором необходимо осуществить склейку"
 
 
 msgid "Action 2"
@@ -58725,12 +58709,12 @@ msgid "Second action in stitch"
 msgstr "Второе действие в склейке"
 
 
-msgid "Stick Bone"
-msgstr "Закреп. кость"
+msgid "Blend amount"
+msgstr "Величина смешения"
 
 
-msgid "Bone to freeze during transition"
-msgstr "Кость, которая должна оставаться неподвижной на переходе"
+msgid "Size of blending transition, on both sides of the stitch"
+msgstr "Величина переходного смешения по обоим сторонам от места склейки"
 
 
 msgid "Action 1"
@@ -58739,6 +58723,22 @@ msgstr "Действие 1"
 
 msgid "First action in stitch"
 msgstr "Первое действие в склейке"
+
+
+msgid "Stitch frame"
+msgstr "Кадр склейки"
+
+
+msgid "Frame to locate stitch on"
+msgstr "Кадр, на котором необходимо осуществить склейку"
+
+
+msgid "Stick Bone"
+msgstr "Закреп. кость"
+
+
+msgid "Bone to freeze during transition"
+msgstr "Кость, которая должна оставаться неподвижной на переходе"
 
 
 msgid "Aperture Type"
@@ -59729,12 +59729,12 @@ msgid "Settings/info about a language"
 msgstr "Настройки/информация о языке"
 
 
-msgid "Numeric ID"
-msgstr "Числовой ID"
+msgid "PO File Path"
+msgstr "Путь в файлу .po"
 
 
-msgid "Numeric ID (readonly!)"
-msgstr "Числовой идентификатор (только для чтения!)"
+msgid "Path to the relevant po file in branches"
+msgstr "Путь к соответствующему файлу .po в ветвях"
 
 
 msgid "Language Name"
@@ -59753,18 +59753,6 @@ msgid "Path to the relevant mo file"
 msgstr "Путь к соответствующему файлу .mo"
 
 
-msgid "Use this language in current operator"
-msgstr "Использовать этот язык в текущем операторе"
-
-
-msgid "PO File Path"
-msgstr "Путь в файлу .po"
-
-
-msgid "Path to the relevant po file in branches"
-msgstr "Путь к соответствующему файлу .po в ветвях"
-
-
 msgid "Language ID"
 msgstr "ID языка"
 
@@ -59773,12 +59761,36 @@ msgid "ISO code, like fr_FR"
 msgstr "Код ISO, например, fr_FR"
 
 
+msgid "Numeric ID"
+msgstr "Числовой ID"
+
+
+msgid "Numeric ID (readonly!)"
+msgstr "Числовой идентификатор (только для чтения!)"
+
+
+msgid "Use this language in current operator"
+msgstr "Использовать этот язык в текущем операторе"
+
+
 msgid "PO Trunk File Path"
 msgstr "Путь к файлу .po в trunk"
 
 
 msgid "Path to the relevant po file in trunk"
 msgstr "Путь к соответствующему файлу .po в ветке trunk"
+
+
+msgid "Active Language"
+msgstr "Активный язык"
+
+
+msgid "Index of active language in langs collection"
+msgstr "Индекс активного языка в коллекции языков"
+
+
+msgid "Whether these settings have already been auto-set or not"
+msgstr "Использовать автоустановленные значения настроек"
 
 
 msgid "Languages"
@@ -59797,24 +59809,36 @@ msgid "Path to the pot template file"
 msgstr "Путь к файлу-шаблону .pot"
 
 
-msgid "Active Language"
-msgstr "Активный язык"
+msgid "Target of Fix - Point"
+msgstr "Цель поправки - точка"
 
 
-msgid "Index of active language in langs collection"
-msgstr "Индекс активного языка в коллекции языков"
-
-
-msgid "Whether these settings have already been auto-set or not"
-msgstr "Использовать автоустановленные значения настроек"
-
-
-msgid "Constrained Bone"
-msgstr "Ограничиваемая кость"
+msgid "Name of Mocap Fix"
+msgstr "Название поправки захвата движения"
 
 
 msgid "Type of constraint"
 msgstr "Тип ограничения"
+
+
+msgid "Distance and Floor Fixes - Desired offset"
+msgstr "Поправки расстояния и пола - желаемое смещение"
+
+
+msgid "Start frame of Fix"
+msgstr "Начальный кадр поправки"
+
+
+msgid "Target of Fix - Mesh (optional, depends on type)"
+msgstr "Цель поправок - полисетка (опционально, зависит от типа)"
+
+
+msgid "E"
+msgstr "E"
+
+
+msgid "End frame of Fix"
+msgstr "Конечный кадр поправки"
 
 
 msgid "Bone (2)"
@@ -59825,8 +59849,8 @@ msgid "Other Constrained Bone (optional, depends on type)"
 msgstr "Другая кость с ограничением (опционально, зависит от типа)"
 
 
-msgid "Name of Mocap Fix"
-msgstr "Название поправки захвата движения"
+msgid "Constrained Bone"
+msgstr "Ограничиваемая кость"
 
 
 msgid "In"
@@ -59835,6 +59859,10 @@ msgstr "Вход"
 
 msgid "Number of frames to smooth in"
 msgstr "Количество кадров на полное включение поправки"
+
+
+msgid "Fix is active"
+msgstr "Поправки включены"
 
 
 msgid "In which space should Point type target be evaluated"
@@ -59861,20 +59889,8 @@ msgid "Evaluate target in specified other bone space"
 msgstr "Рассчитывать цель в пространстве другой кости"
 
 
-msgid "Fix is active"
-msgstr "Поправки включены"
-
-
-msgid "Target of Fix - Point"
-msgstr "Цель поправки - точка"
-
-
-msgid "Distance and Floor Fixes - Desired offset"
-msgstr "Поправки расстояния и пола - желаемое смещение"
-
-
-msgid "Start frame of Fix"
-msgstr "Начальный кадр поправки"
+msgid "Fix is fully shown"
+msgstr "Полное отображение поправок"
 
 
 msgid "Out"
@@ -59883,22 +59899,6 @@ msgstr "Выход"
 
 msgid "Number of frames to smooth out"
 msgstr "Количество кадров для сглаживания"
-
-
-msgid "Fix is fully shown"
-msgstr "Полное отображение поправок"
-
-
-msgid "Target of Fix - Mesh (optional, depends on type)"
-msgstr "Цель поправок - полисетка (опционально, зависит от типа)"
-
-
-msgid "E"
-msgstr "E"
-
-
-msgid "End frame of Fix"
-msgstr "Конечный кадр поправки"
 
 
 msgid "Python expression to be evaluated as the initial node setting"
@@ -59945,22 +59945,6 @@ msgid "Is Stroke Start"
 msgstr "Является началом штриха"
 
 
-msgid "Export Directory"
-msgstr "Папка экспорта"
-
-
-msgid "Path to directory where the files are created"
-msgstr "Путь к папке, в которой создаются файлы"
-
-
-msgid "Copy Textures"
-msgstr "Копировать текстуры"
-
-
-msgid "Copy textures on export to the output path"
-msgstr "Копировать текстуры при экспорте в место сохранения"
-
-
 msgid "Apply Scale"
 msgstr "Применить масштаб"
 
@@ -59969,12 +59953,16 @@ msgid "Apply scene scale setting on export"
 msgstr "Применять значение масштаба сцены при экспорте"
 
 
-msgid "Limit for checking zero area/length"
-msgstr "Ограничение для проверки на нулевой размер площади/длины"
-
-
 msgid "Limit for checking distorted faces"
 msgstr "Ограничение для проверки граней на искажённость"
+
+
+msgid "Export Directory"
+msgstr "Папка экспорта"
+
+
+msgid "Path to directory where the files are created"
+msgstr "Путь к папке, в которой создаются файлы"
 
 
 msgid "Format type to export to"
@@ -59983,6 +59971,18 @@ msgstr "Тип формата, в который осуществляется э
 
 msgid "VRML2"
 msgstr "VRML2"
+
+
+msgid "Limit for checking zero area/length"
+msgstr "Ограничение для проверки на нулевой размер площади/длины"
+
+
+msgid "Copy Textures"
+msgstr "Копировать текстуры"
+
+
+msgid "Copy textures on export to the output path"
+msgstr "Копировать текстуры при экспорте в место сохранения"
 
 
 msgid "Selected UV Element"
