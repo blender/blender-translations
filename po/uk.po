@@ -1,9 +1,9 @@
 
 msgid ""
 msgstr ""
-"Project-Id-Version: Blender 2.75 (sub 4) (b'946b850')\n"
+"Project-Id-Version: Blender 2.75 (sub 4) (b'dbe1829')\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-09-07 20:31:18\n"
+"POT-Creation-Date: 2015-09-14 22:33:23\n"
 "PO-Revision-Date: 2015-08-27 09:27+0000\n"
 "Last-Translator: lxlalexlxl <pilipchukap@rambler.ru>\n"
 "Language-Team: Ukrainian (Ukraine) (http://www.transifex.com/lxlalexlxl/blender/language/uk_UA/)\n"
@@ -1952,12 +1952,12 @@ msgid "Addon Preferences"
 msgstr "Уподобання для додатків"
 
 
-msgid "Gettext 'msgfmt' executable"
-msgstr "Виконуваний файл gettext 'msgfmt'"
+msgid "Persistent Data Path"
+msgstr "Постійні дані"
 
 
-msgid "The gettext msgfmt 'compiler'. You’ll likely have to edit it if you’re under Windows"
-msgstr "Компілятор msgfmt для файлів gettext. Для роботи у Windows слід вручну вказати правильний шлях"
+msgid "The name of a json file storing those settings (unfortunately, Blender's system does not work here)"
+msgstr "Назва файлу json для зберігання цих налаштувань (на жаль, система Blender тут не діє)"
 
 
 msgid "Source Root"
@@ -1976,12 +1976,12 @@ msgid "Additional paths to add to sys.path (';' separated)"
 msgstr "Додаткові шляхи для додання до sys.path (відокремити ';')"
 
 
-msgid "Persistent Data Path"
-msgstr "Постійні дані"
+msgid "Translation Root"
+msgstr "Шлях до теки з перекладами"
 
 
-msgid "The name of a json file storing those settings (unfortunately, Blender's system does not work here)"
-msgstr "Назва файлу json для зберігання цих налаштувань (на жаль, система Blender тут не діє)"
+msgid "The bf-translation repository"
+msgstr "Сховище bf-translation"
 
 
 msgid "Fribidi Library"
@@ -1992,14 +1992,6 @@ msgid "The FriBidi C compiled library (.so under Linux, .dll under windows...), 
 msgstr "Скомпільована бібліотека FriBidi мовою Сі (.so у Linux, .dll у Windows...). Для роботи у Windows необхідно вручну вказати правильний шлях, наприклад, на файл з svn-сховища бібліотек"
 
 
-msgid "Warn Msgid Not Capitalized"
-msgstr "Попередити про велику літеру"
-
-
-msgid "Warn about messages not starting by a capitalized letter (with a few allowed exceptions!)"
-msgstr "Попередити, якщо повідомлення не починається з великої літери (з можливими винятками!)"
-
-
 msgid "Spell Cache"
 msgstr "Кеш повідомлень"
 
@@ -2008,12 +2000,20 @@ msgid "A cache storing validated msgids, to avoid re-spellchecking them"
 msgstr "Кеш, що містить перевірені msgid, щоб уникнути повторної їх перевірки"
 
 
-msgid "Translation Root"
-msgstr "Шлях до теки з перекладами"
+msgid "Gettext 'msgfmt' executable"
+msgstr "Виконуваний файл gettext 'msgfmt'"
 
 
-msgid "The bf-translation repository"
-msgstr "Сховище bf-translation"
+msgid "The gettext msgfmt 'compiler'. You’ll likely have to edit it if you’re under Windows"
+msgstr "Компілятор msgfmt для файлів gettext. Для роботи у Windows слід вручну вказати правильний шлях"
+
+
+msgid "Warn Msgid Not Capitalized"
+msgstr "Попередити про велику літеру"
+
+
+msgid "Warn about messages not starting by a capitalized letter (with a few allowed exceptions!)"
+msgstr "Попередити, якщо повідомлення не починається з великої літери (з можливими винятками!)"
 
 
 msgid "Animation Data"
@@ -22634,6 +22634,10 @@ msgstr "Кількість полів на вималюваний кадр (2 п
 
 msgid "Layer in multilayer image"
 msgstr "Шар у багатошаровому зображенні"
+
+
+msgid "Pass"
+msgstr "Прохід"
 
 
 msgid "View in multilayer image"
@@ -45976,16 +45980,16 @@ msgid "Add a node to the active tree and link to an existing socket"
 msgstr "Додати вузол до активного дерева та прив'язати до наявного роз'єму"
 
 
-msgid "Settings to be applied on the newly created node"
-msgstr "Параметри, що будуть застосовані при створенні вузла"
-
-
 msgid "Node Type"
 msgstr "Тип вузла"
 
 
 msgid "Node type"
 msgstr "Тип вузла"
+
+
+msgid "Settings to be applied on the newly created node"
+msgstr "Параметри, що будуть застосовані при створенні вузла"
 
 
 msgid "Use Transform"
@@ -48314,10 +48318,6 @@ msgstr "Спільні шари"
 
 msgid "Shared group"
 msgstr "Спільна група"
-
-
-msgid "Pass"
-msgstr "Прохід"
 
 
 msgid "Render pass Index"
@@ -60004,12 +60004,20 @@ msgid "Group of ID properties"
 msgstr "Група ID-властивостей"
 
 
-msgid "Second offset"
-msgstr "Зсув другої"
+msgid "Action 1"
+msgstr "Дія 1"
 
 
-msgid "Frame offset for 2nd animation, where it should start"
-msgstr "Зсув у кадрах 2-ї анімації, з якого вона має починатися"
+msgid "First action in stitch"
+msgstr "Перша дія у склейці"
+
+
+msgid "Stitch frame"
+msgstr "Кадр склейки"
+
+
+msgid "Frame to locate stitch on"
+msgstr "Кадр, на якому виконати склеювання"
 
 
 msgid "Action 2"
@@ -60028,20 +60036,12 @@ msgid "Size of blending transition, on both sides of the stitch"
 msgstr "Величина перехідного змішування по обидва боки від склейки"
 
 
-msgid "Action 1"
-msgstr "Дія 1"
+msgid "Second offset"
+msgstr "Зсув другої"
 
 
-msgid "First action in stitch"
-msgstr "Перша дія у склейці"
-
-
-msgid "Stitch frame"
-msgstr "Кадр склейки"
-
-
-msgid "Frame to locate stitch on"
-msgstr "Кадр, на якому виконати склеювання"
+msgid "Frame offset for 2nd animation, where it should start"
+msgstr "Зсув у кадрах 2-ї анімації, з якого вона має починатися"
 
 
 msgid "Stick Bone"
@@ -61064,12 +61064,16 @@ msgid "Settings/info about a language"
 msgstr "Параметри/інформація про мову"
 
 
-msgid "PO File Path"
-msgstr "Шлях до файлу PO"
+msgid "Use this language in current operator"
+msgstr "Використати цю мову у поточному операторі"
 
 
-msgid "Path to the relevant po file in branches"
-msgstr "Шлях до актуального po-файлу у гілці branches"
+msgid "Numeric ID"
+msgstr "Числовий ID"
+
+
+msgid "Numeric ID (readonly!)"
+msgstr "Числовий ID (лише читання!)"
 
 
 msgid "Language Name"
@@ -61078,6 +61082,14 @@ msgstr "Назва мови"
 
 msgid "English language name/label (like \"French (Français)\")"
 msgstr "Англійська назва/позначення мови (наприклад \"Ukrainian (Українська)\")"
+
+
+msgid "PO File Path"
+msgstr "Шлях до файлу PO"
+
+
+msgid "Path to the relevant po file in branches"
+msgstr "Шлях до актуального po-файлу у гілці branches"
 
 
 msgid "PO Git Master File Path"
@@ -61104,18 +61116,6 @@ msgid "ISO code, like fr_FR"
 msgstr "Код ISO, наприклад uk_UK"
 
 
-msgid "Numeric ID"
-msgstr "Числовий ID"
-
-
-msgid "Numeric ID (readonly!)"
-msgstr "Числовий ID (лише читання!)"
-
-
-msgid "Use this language in current operator"
-msgstr "Використати цю мову у поточному операторі"
-
-
 msgid "PO Trunk File Path"
 msgstr "Шлях до файлу PO у гілці trunk"
 
@@ -61132,16 +61132,16 @@ msgid "Index of active language in langs collection"
 msgstr "Індекс активної мови у сукупності мов"
 
 
-msgid "Whether these settings have already been auto-set or not"
-msgstr "Чи були значення цих параметрів встановлені автоматично"
-
-
 msgid "Languages"
 msgstr "Мова"
 
 
 msgid "Languages to update in branches"
 msgstr "Мови для оновлення в гілці branches"
+
+
+msgid "Whether these settings have already been auto-set or not"
+msgstr "Чи були значення цих параметрів встановлені автоматично"
 
 
 msgid "POT File Path"
@@ -61152,48 +61152,20 @@ msgid "Path to the pot template file"
 msgstr "Шлях до POT-файлу з шаблоном"
 
 
-msgid "Target of Fix - Point"
-msgstr "Ціль поправки - точка"
-
-
-msgid "Name of Mocap Fix"
-msgstr "Назва поправки захоплення руху"
-
-
-msgid "Type of constraint"
-msgstr "Тип обмеження"
+msgid "Start frame of Fix"
+msgstr "Початковий кадр поправки"
 
 
 msgid "Distance and Floor Fixes - Desired offset"
 msgstr "Поправки відстані та підлоги - бажане зміщення"
 
 
-msgid "Start frame of Fix"
-msgstr "Початковий кадр поправки"
+msgid "Target of Fix - Point"
+msgstr "Ціль поправки - точка"
 
 
-msgid "Target of Fix - Mesh (optional, depends on type)"
-msgstr "Ціль поправки - каркас (не обов'язково, залежно від типу)"
-
-
-msgid "E"
-msgstr "E"
-
-
-msgid "End frame of Fix"
-msgstr "Кінцевий кадр поправки"
-
-
-msgid "Bone (2)"
-msgstr "Кістка (2)"
-
-
-msgid "Other Constrained Bone (optional, depends on type)"
-msgstr "Інша обмежена кістка (не обов'язково, залежно від типу)"
-
-
-msgid "Constrained Bone"
-msgstr "Обмежена кістка"
+msgid "Name of Mocap Fix"
+msgstr "Назва поправки захоплення руху"
 
 
 msgid "In"
@@ -61204,8 +61176,16 @@ msgid "Number of frames to smooth in"
 msgstr "Кількість кадрів для згладжування"
 
 
+msgid "Fix is fully shown"
+msgstr "Повний показ поправок"
+
+
 msgid "Fix is active"
 msgstr "Поправки увімкнені"
+
+
+msgid "Type of constraint"
+msgstr "Тип обмеження"
 
 
 msgid "In which space should Point type target be evaluated"
@@ -61232,8 +61212,28 @@ msgid "Evaluate target in specified other bone space"
 msgstr "Розрахувати ціль у просторі зазначеної іншої кістки"
 
 
-msgid "Fix is fully shown"
-msgstr "Повний показ поправок"
+msgid "Target of Fix - Mesh (optional, depends on type)"
+msgstr "Ціль поправки - каркас (не обов'язково, залежно від типу)"
+
+
+msgid "E"
+msgstr "E"
+
+
+msgid "End frame of Fix"
+msgstr "Кінцевий кадр поправки"
+
+
+msgid "Bone (2)"
+msgstr "Кістка (2)"
+
+
+msgid "Other Constrained Bone (optional, depends on type)"
+msgstr "Інша обмежена кістка (не обов'язково, залежно від типу)"
+
+
+msgid "Constrained Bone"
+msgstr "Обмежена кістка"
 
 
 msgid "Out"
@@ -61288,32 +61288,8 @@ msgid "Is Stroke Start"
 msgstr "Є початком штриха"
 
 
-msgid "Apply Scale"
-msgstr "Застосувати масштаб"
-
-
-msgid "Apply scene scale setting on export"
-msgstr "При експорті застосувати параметри масштабу сцени"
-
-
 msgid "Limit for checking distorted faces"
 msgstr "Межа для перевірки викривлення граней"
-
-
-msgid "Export Directory"
-msgstr "Тека експорту"
-
-
-msgid "Path to directory where the files are created"
-msgstr "Шлях до теки, в якій створюються файли"
-
-
-msgid "Format type to export to"
-msgstr "Тип формату, в який експортувати"
-
-
-msgid "VRML2"
-msgstr "VRML2"
 
 
 msgid "Limit for checking zero area/length"
@@ -61326,6 +61302,30 @@ msgstr "Скопіювати текстури"
 
 msgid "Copy textures on export to the output path"
 msgstr "При експорті копіювати текстури у вивідну теку"
+
+
+msgid "Apply Scale"
+msgstr "Застосувати масштаб"
+
+
+msgid "Apply scene scale setting on export"
+msgstr "При експорті застосувати параметри масштабу сцени"
+
+
+msgid "Format type to export to"
+msgstr "Тип формату, в який експортувати"
+
+
+msgid "VRML2"
+msgstr "VRML2"
+
+
+msgid "Export Directory"
+msgstr "Тека експорту"
+
+
+msgid "Path to directory where the files are created"
+msgstr "Шлях до теки, в якій створюються файли"
 
 
 msgid "Selected UV Element"
