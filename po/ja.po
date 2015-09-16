@@ -1,9 +1,9 @@
 
 msgid ""
 msgstr ""
-"Project-Id-Version: Blender 2.75 (sub 4) (b'dbe1829')\n"
+"Project-Id-Version: Blender 2.75 (sub 4) (b'cf4711b')\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-09-14 22:33:23\n"
+"POT-Creation-Date: 2015-09-16 17:34:32\n"
 "PO-Revision-Date: 2014-01-09 12:04+0900\n"
 "Last-Translator: \n"
 "Language-Team: Japanese Translation Team (https://sites.google.com/site/blugjp/blender-translators)\n"
@@ -1953,12 +1953,12 @@ msgid "Addon Preferences"
 msgstr "アドオン設定"
 
 
-msgid "Persistent Data Path"
-msgstr "Persistenデータパス"
+msgid "Gettext 'msgfmt' executable"
+msgstr "実行可能なGettext 'msgfmt'"
 
 
-msgid "The name of a json file storing those settings (unfortunately, Blender's system does not work here)"
-msgstr "これらの設定が含まれるJSONファイル名(残念ながらBlenderのシステムはここでは動作しません)"
+msgid "The gettext msgfmt 'compiler'. You’ll likely have to edit it if you’re under Windows"
+msgstr "Gettext msgfmtコンパイラ。Windows環境では編集しないといけないかもしれません"
 
 
 msgid "Source Root"
@@ -1969,14 +1969,6 @@ msgid "The Blender source root path"
 msgstr "Blenderソースルートパス"
 
 
-msgid "Import Paths"
-msgstr "パスのインポート"
-
-
-msgid "Additional paths to add to sys.path (';' separated)"
-msgstr "sys.pathに追加するパス(「;」で区切り)"
-
-
 msgid "Translation Root"
 msgstr "ルートの移動"
 
@@ -1985,12 +1977,12 @@ msgid "The bf-translation repository"
 msgstr "bf-translationリポジトリ"
 
 
-msgid "Fribidi Library"
-msgstr "Fribidiライブラリ"
+msgid "Import Paths"
+msgstr "パスのインポート"
 
 
-msgid "The FriBidi C compiled library (.so under Linux, .dll under windows...), you’ll likely have to edit it if you’re under Windows, e.g. using the one included in svn's libraries repository"
-msgstr "FriBidi Cコンパイル済ライブラリ(Linuxでは .so、Windowsでは .dll)。Windows環境の場合、編集しないといけないでしょう。例：SVNのライブラリリポジトリ内でインクルードされたこれを使用するなど"
+msgid "Additional paths to add to sys.path (';' separated)"
+msgstr "sys.pathに追加するパス(「;」で区切り)"
 
 
 msgid "Spell Cache"
@@ -2001,12 +1993,20 @@ msgid "A cache storing validated msgids, to avoid re-spellchecking them"
 msgstr "有効な msgid を格納するキャッシュ。再スペルチェックを防ぎます"
 
 
-msgid "Gettext 'msgfmt' executable"
-msgstr "実行可能なGettext 'msgfmt'"
+msgid "Persistent Data Path"
+msgstr "Persistenデータパス"
 
 
-msgid "The gettext msgfmt 'compiler'. You’ll likely have to edit it if you’re under Windows"
-msgstr "Gettext msgfmtコンパイラ。Windows環境では編集しないといけないかもしれません"
+msgid "The name of a json file storing those settings (unfortunately, Blender's system does not work here)"
+msgstr "これらの設定が含まれるJSONファイル名(残念ながらBlenderのシステムはここでは動作しません)"
+
+
+msgid "Fribidi Library"
+msgstr "Fribidiライブラリ"
+
+
+msgid "The FriBidi C compiled library (.so under Linux, .dll under windows...), you’ll likely have to edit it if you’re under Windows, e.g. using the one included in svn's libraries repository"
+msgstr "FriBidi Cコンパイル済ライブラリ(Linuxでは .so、Windowsでは .dll)。Windows環境の場合、編集しないといけないでしょう。例：SVNのライブラリリポジトリ内でインクルードされたこれを使用するなど"
 
 
 msgid "Warn Msgid Not Capitalized"
@@ -22661,6 +22661,10 @@ msgstr "マルチレイヤー画像内のレイヤー"
 
 msgid "Pass"
 msgstr "パス"
+
+
+msgid "Pass in multilayer image"
+msgstr "マルチレイヤー画像内のパス"
 
 
 msgid "View in multilayer image"
@@ -50870,6 +50874,14 @@ msgid "To Next Keyframe"
 msgstr "次のキーフレームへ"
 
 
+msgid "Propagate pose to first keyframe following the current frame only"
+msgstr "現在のフレーム以降の最初のフレームにのみにポーズを伝播します"
+
+
+msgid "To Last Keyframe"
+msgstr "最後のキーフレームへ"
+
+
 msgid "Propagate pose to the last keyframe only (i.e. making action cyclic)"
 msgstr "最後のキーフレームにのみポーズを伝播（アクションをループに）します"
 
@@ -60052,14 +60064,6 @@ msgid "Group of ID properties"
 msgstr "IDプロパティのグループ"
 
 
-msgid "Action 1"
-msgstr "アクション1"
-
-
-msgid "First action in stitch"
-msgstr "スティッチの最初のアクション"
-
-
 msgid "Stitch frame"
 msgstr "フレームにスティッチ"
 
@@ -60076,20 +60080,28 @@ msgid "Second action in stitch"
 msgstr "スティッチ内の二つめのアクション"
 
 
-msgid "Blend amount"
-msgstr "ブレンド量"
-
-
-msgid "Size of blending transition, on both sides of the stitch"
-msgstr "スティッチ両側の移行部分のブレンドサイズ"
-
-
 msgid "Second offset"
 msgstr "第2オフセット"
 
 
 msgid "Frame offset for 2nd animation, where it should start"
 msgstr "二つめのアニメーションが開始するフレームオフセットです"
+
+
+msgid "Action 1"
+msgstr "アクション1"
+
+
+msgid "First action in stitch"
+msgstr "スティッチの最初のアクション"
+
+
+msgid "Blend amount"
+msgstr "ブレンド量"
+
+
+msgid "Size of blending transition, on both sides of the stitch"
+msgstr "スティッチ両側の移行部分のブレンドサイズ"
 
 
 msgid "Stick Bone"
@@ -61112,16 +61124,12 @@ msgid "Settings/info about a language"
 msgstr "言語の設定/情報"
 
 
-msgid "Use this language in current operator"
-msgstr "現在のオペレーターで現在の言語を使用します"
+msgid "MO File Path"
+msgstr "MOファイルパス"
 
 
-msgid "Numeric ID"
-msgstr "数値ID"
-
-
-msgid "Numeric ID (readonly!)"
-msgstr "数値ID(読み込みのみ！)"
+msgid "Path to the relevant mo file"
+msgstr "適合するmoファイルへのパス"
 
 
 msgid "Language Name"
@@ -61132,12 +61140,32 @@ msgid "English language name/label (like \"French (Français)\")"
 msgstr "英語での言語名/ラベル(「Japanese (日本語)」など)"
 
 
+msgid "Language ID"
+msgstr "言語ID"
+
+
+msgid "ISO code, like fr_FR"
+msgstr "ja_JPなどのISOコード"
+
+
 msgid "PO File Path"
 msgstr "POファイルパス"
 
 
 msgid "Path to the relevant po file in branches"
 msgstr "branch内の適合するpoファイルへのパス"
+
+
+msgid "Use this language in current operator"
+msgstr "現在のオペレーターで現在の言語を使用します"
+
+
+msgid "PO Trunk File Path"
+msgstr "PO Trunkファイルパス"
+
+
+msgid "Path to the relevant po file in trunk"
+msgstr "trunk内の適合するpoファイルへのパス"
 
 
 msgid "PO Git Master File Path"
@@ -61148,28 +61176,12 @@ msgid "Path to the relevant po file in Blender's translations git repository"
 msgstr "poファイルに対応するBlenderの翻訳Gitリポジトリへのパス"
 
 
-msgid "MO File Path"
-msgstr "MOファイルパス"
+msgid "Numeric ID"
+msgstr "数値ID"
 
 
-msgid "Path to the relevant mo file"
-msgstr "適合するmoファイルへのパス"
-
-
-msgid "Language ID"
-msgstr "言語ID"
-
-
-msgid "ISO code, like fr_FR"
-msgstr "ja_JPなどのISOコード"
-
-
-msgid "PO Trunk File Path"
-msgstr "PO Trunkファイルパス"
-
-
-msgid "Path to the relevant po file in trunk"
-msgstr "trunk内の適合するpoファイルへのパス"
+msgid "Numeric ID (readonly!)"
+msgstr "数値ID(読み込みのみ！)"
 
 
 msgid "Active Language"
@@ -61200,20 +61212,32 @@ msgid "Path to the pot template file"
 msgstr "適合するpotテンプレートファイルへのパス"
 
 
-msgid "Start frame of Fix"
-msgstr "補正の開始フレーム"
-
-
-msgid "Distance and Floor Fixes - Desired offset"
-msgstr "距離と床の補正 - 希望のオフセット"
-
-
 msgid "Target of Fix - Point"
 msgstr "補正ターゲット - ポイント"
 
 
 msgid "Name of Mocap Fix"
 msgstr "モーキャプ補正の名前"
+
+
+msgid "Bone (2)"
+msgstr "ボーン (2)"
+
+
+msgid "Other Constrained Bone (optional, depends on type)"
+msgstr "他のコンストレイントされたボーン（オプション、タイプに依存）"
+
+
+msgid "Type of constraint"
+msgstr "コンストレイントの種類"
+
+
+msgid "Start frame of Fix"
+msgstr "補正の開始フレーム"
+
+
+msgid "Fix is active"
+msgstr "補正がアクティブである"
 
 
 msgid "In"
@@ -61228,12 +61252,16 @@ msgid "Fix is fully shown"
 msgstr "補正を完全に表示"
 
 
-msgid "Fix is active"
-msgstr "補正がアクティブである"
+msgid "Out"
+msgstr "出力"
 
 
-msgid "Type of constraint"
-msgstr "コンストレイントの種類"
+msgid "Number of frames to smooth out"
+msgstr "スムーズアウトする為のフレーム数"
+
+
+msgid "Target of Fix - Mesh (optional, depends on type)"
+msgstr "補正ターゲット - メッシュ（オプション、タイプに依存）"
 
 
 msgid "In which space should Point type target be evaluated"
@@ -61260,8 +61288,8 @@ msgid "Evaluate target in specified other bone space"
 msgstr "ターゲットを指定の他のボーン空間で評価します"
 
 
-msgid "Target of Fix - Mesh (optional, depends on type)"
-msgstr "補正ターゲット - メッシュ（オプション、タイプに依存）"
+msgid "Constrained Bone"
+msgstr "コンストレイントの掛けられたボーン"
 
 
 msgid "E"
@@ -61272,24 +61300,8 @@ msgid "End frame of Fix"
 msgstr "補正の終了フレーム"
 
 
-msgid "Bone (2)"
-msgstr "ボーン (2)"
-
-
-msgid "Other Constrained Bone (optional, depends on type)"
-msgstr "他のコンストレイントされたボーン（オプション、タイプに依存）"
-
-
-msgid "Constrained Bone"
-msgstr "コンストレイントの掛けられたボーン"
-
-
-msgid "Out"
-msgstr "出力"
-
-
-msgid "Number of frames to smooth out"
-msgstr "スムーズアウトする為のフレーム数"
+msgid "Distance and Floor Fixes - Desired offset"
+msgstr "距離と床の補正 - 希望のオフセット"
 
 
 msgid "Python expression to be evaluated as the initial node setting"
@@ -61336,8 +61348,12 @@ msgid "Is Stroke Start"
 msgstr "ストロークが開始したか"
 
 
-msgid "Limit for checking distorted faces"
-msgstr "面の歪みをチェックする限界"
+msgid "Format type to export to"
+msgstr "エクスポートするフォーマットタイプ"
+
+
+msgid "VRML2"
+msgstr "VRML2"
 
 
 msgid "Limit for checking zero area/length"
@@ -61352,28 +61368,24 @@ msgid "Copy textures on export to the output path"
 msgstr "エクスポート時、テクスチャを出力パスにコピーします"
 
 
-msgid "Apply Scale"
-msgstr "スケールを適用"
-
-
-msgid "Apply scene scale setting on export"
-msgstr "エクスポート時にシーンスケール設定を適用します"
-
-
-msgid "Format type to export to"
-msgstr "エクスポートするフォーマットタイプ"
-
-
-msgid "VRML2"
-msgstr "VRML2"
-
-
 msgid "Export Directory"
 msgstr "エクスポートディレクトリ"
 
 
 msgid "Path to directory where the files are created"
 msgstr "ファイルを作成するディレクトリへのパス"
+
+
+msgid "Limit for checking distorted faces"
+msgstr "面の歪みをチェックする限界"
+
+
+msgid "Apply Scale"
+msgstr "スケールを適用"
+
+
+msgid "Apply scene scale setting on export"
+msgstr "エクスポート時にシーンスケール設定を適用します"
 
 
 msgid "Selected UV Element"

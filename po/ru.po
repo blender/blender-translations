@@ -1,9 +1,9 @@
 
 msgid ""
 msgstr ""
-"Project-Id-Version: Blender 2.75 (sub 4) (b'dbe1829')\n"
+"Project-Id-Version: Blender 2.75 (sub 4) (b'cf4711b')\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-09-14 22:33:23\n"
+"POT-Creation-Date: 2015-09-16 17:34:32\n"
 "PO-Revision-Date: 2015-06-08 11:49+0300\n"
 "Last-Translator: Lockal S <lockalsash@gmail.com>\n"
 "Language-Team: Russian <http://translateblender.ru/projects/blender/blender/ru/>\n"
@@ -1955,12 +1955,12 @@ msgid "Addon Preferences"
 msgstr "Настройки дополнения"
 
 
-msgid "Persistent Data Path"
-msgstr "Путь постоянных данных"
+msgid "Gettext 'msgfmt' executable"
+msgstr "Исполняемый файл gettext 'msgfmt'"
 
 
-msgid "The name of a json file storing those settings (unfortunately, Blender's system does not work here)"
-msgstr "Имя файла json для хранения этих настроек (к сожалению, система Blender здесь не работает)"
+msgid "The gettext msgfmt 'compiler'. You’ll likely have to edit it if you’re under Windows"
+msgstr "Компилятор msgfmt для файлов gettext. Для работы в Windows необходимо вручную указать правильный путь"
 
 
 msgid "Source Root"
@@ -1971,14 +1971,6 @@ msgid "The Blender source root path"
 msgstr "Путь к исходному коду Blender"
 
 
-msgid "Import Paths"
-msgstr "Пути импорта"
-
-
-msgid "Additional paths to add to sys.path (';' separated)"
-msgstr "Дополнительные пути, добавляемые в sys.path (разделённые «;»)"
-
-
 msgid "Translation Root"
 msgstr "Корневая папка переводов"
 
@@ -1987,12 +1979,12 @@ msgid "The bf-translation repository"
 msgstr "Репозитарий bf-translation"
 
 
-msgid "Fribidi Library"
-msgstr "Библиотека FriBidi"
+msgid "Import Paths"
+msgstr "Пути импорта"
 
 
-msgid "The FriBidi C compiled library (.so under Linux, .dll under windows...), you’ll likely have to edit it if you’re under Windows, e.g. using the one included in svn's libraries repository"
-msgstr "Скомпилированная библиотека FriBidi на языке Си (.so в Linux, .dll в windows...). Для работы в Windows необходимо вручную указать правильный путь, например, на файл из svn-репозитария библиотек"
+msgid "Additional paths to add to sys.path (';' separated)"
+msgstr "Дополнительные пути, добавляемые в sys.path (разделённые «;»)"
 
 
 msgid "Spell Cache"
@@ -2003,12 +1995,20 @@ msgid "A cache storing validated msgids, to avoid re-spellchecking them"
 msgstr "Кэш, хранящий проверенные значения msgid, для исключения повторной проверки синтаксиса"
 
 
-msgid "Gettext 'msgfmt' executable"
-msgstr "Исполняемый файл gettext 'msgfmt'"
+msgid "Persistent Data Path"
+msgstr "Путь постоянных данных"
 
 
-msgid "The gettext msgfmt 'compiler'. You’ll likely have to edit it if you’re under Windows"
-msgstr "Компилятор msgfmt для файлов gettext. Для работы в Windows необходимо вручную указать правильный путь"
+msgid "The name of a json file storing those settings (unfortunately, Blender's system does not work here)"
+msgstr "Имя файла json для хранения этих настроек (к сожалению, система Blender здесь не работает)"
+
+
+msgid "Fribidi Library"
+msgstr "Библиотека FriBidi"
+
+
+msgid "The FriBidi C compiled library (.so under Linux, .dll under windows...), you’ll likely have to edit it if you’re under Windows, e.g. using the one included in svn's libraries repository"
+msgstr "Скомпилированная библиотека FriBidi на языке Си (.so в Linux, .dll в windows...). Для работы в Windows необходимо вручную указать правильный путь, например, на файл из svn-репозитария библиотек"
 
 
 msgid "Warn Msgid Not Capitalized"
@@ -58697,14 +58697,6 @@ msgid "Group of ID properties"
 msgstr "Группа ID-свойств"
 
 
-msgid "Action 1"
-msgstr "Действие 1"
-
-
-msgid "First action in stitch"
-msgstr "Первое действие в склейке"
-
-
 msgid "Stitch frame"
 msgstr "Кадр склейки"
 
@@ -58721,20 +58713,28 @@ msgid "Second action in stitch"
 msgstr "Второе действие в склейке"
 
 
-msgid "Blend amount"
-msgstr "Величина смешения"
-
-
-msgid "Size of blending transition, on both sides of the stitch"
-msgstr "Величина переходного смешения по обоим сторонам от места склейки"
-
-
 msgid "Second offset"
 msgstr "Смещение 2"
 
 
 msgid "Frame offset for 2nd animation, where it should start"
 msgstr "Смещение в кадрах, определяющее место начала второй анимации"
+
+
+msgid "Action 1"
+msgstr "Действие 1"
+
+
+msgid "First action in stitch"
+msgstr "Первое действие в склейке"
+
+
+msgid "Blend amount"
+msgstr "Величина смешения"
+
+
+msgid "Size of blending transition, on both sides of the stitch"
+msgstr "Величина переходного смешения по обоим сторонам от места склейки"
 
 
 msgid "Stick Bone"
@@ -59733,16 +59733,12 @@ msgid "Settings/info about a language"
 msgstr "Настройки/информация о языке"
 
 
-msgid "Use this language in current operator"
-msgstr "Использовать этот язык в текущем операторе"
+msgid "MO File Path"
+msgstr "Путь в файлу .mo"
 
 
-msgid "Numeric ID"
-msgstr "Числовой ID"
-
-
-msgid "Numeric ID (readonly!)"
-msgstr "Числовой идентификатор (только для чтения!)"
+msgid "Path to the relevant mo file"
+msgstr "Путь к соответствующему файлу .mo"
 
 
 msgid "Language Name"
@@ -59753,22 +59749,6 @@ msgid "English language name/label (like \"French (Français)\")"
 msgstr "Имя языка на английском/метка (например, \"French (Français)\")"
 
 
-msgid "PO File Path"
-msgstr "Путь в файлу .po"
-
-
-msgid "Path to the relevant po file in branches"
-msgstr "Путь к соответствующему файлу .po в ветвях"
-
-
-msgid "MO File Path"
-msgstr "Путь в файлу .mo"
-
-
-msgid "Path to the relevant mo file"
-msgstr "Путь к соответствующему файлу .mo"
-
-
 msgid "Language ID"
 msgstr "ID языка"
 
@@ -59777,12 +59757,32 @@ msgid "ISO code, like fr_FR"
 msgstr "Код ISO, например, fr_FR"
 
 
+msgid "PO File Path"
+msgstr "Путь в файлу .po"
+
+
+msgid "Path to the relevant po file in branches"
+msgstr "Путь к соответствующему файлу .po в ветвях"
+
+
+msgid "Use this language in current operator"
+msgstr "Использовать этот язык в текущем операторе"
+
+
 msgid "PO Trunk File Path"
 msgstr "Путь к файлу .po в trunk"
 
 
 msgid "Path to the relevant po file in trunk"
 msgstr "Путь к соответствующему файлу .po в ветке trunk"
+
+
+msgid "Numeric ID"
+msgstr "Числовой ID"
+
+
+msgid "Numeric ID (readonly!)"
+msgstr "Числовой идентификатор (только для чтения!)"
 
 
 msgid "Active Language"
@@ -59813,20 +59813,32 @@ msgid "Path to the pot template file"
 msgstr "Путь к файлу-шаблону .pot"
 
 
-msgid "Start frame of Fix"
-msgstr "Начальный кадр поправки"
-
-
-msgid "Distance and Floor Fixes - Desired offset"
-msgstr "Поправки расстояния и пола - желаемое смещение"
-
-
 msgid "Target of Fix - Point"
 msgstr "Цель поправки - точка"
 
 
 msgid "Name of Mocap Fix"
 msgstr "Название поправки захвата движения"
+
+
+msgid "Bone (2)"
+msgstr "Кость (2)"
+
+
+msgid "Other Constrained Bone (optional, depends on type)"
+msgstr "Другая кость с ограничением (опционально, зависит от типа)"
+
+
+msgid "Type of constraint"
+msgstr "Тип ограничения"
+
+
+msgid "Start frame of Fix"
+msgstr "Начальный кадр поправки"
+
+
+msgid "Fix is active"
+msgstr "Поправки включены"
 
 
 msgid "In"
@@ -59841,12 +59853,16 @@ msgid "Fix is fully shown"
 msgstr "Полное отображение поправок"
 
 
-msgid "Fix is active"
-msgstr "Поправки включены"
+msgid "Out"
+msgstr "Выход"
 
 
-msgid "Type of constraint"
-msgstr "Тип ограничения"
+msgid "Number of frames to smooth out"
+msgstr "Количество кадров для сглаживания"
+
+
+msgid "Target of Fix - Mesh (optional, depends on type)"
+msgstr "Цель поправок - полисетка (опционально, зависит от типа)"
 
 
 msgid "In which space should Point type target be evaluated"
@@ -59873,8 +59889,8 @@ msgid "Evaluate target in specified other bone space"
 msgstr "Рассчитывать цель в пространстве другой кости"
 
 
-msgid "Target of Fix - Mesh (optional, depends on type)"
-msgstr "Цель поправок - полисетка (опционально, зависит от типа)"
+msgid "Constrained Bone"
+msgstr "Ограничиваемая кость"
 
 
 msgid "E"
@@ -59885,24 +59901,8 @@ msgid "End frame of Fix"
 msgstr "Конечный кадр поправки"
 
 
-msgid "Bone (2)"
-msgstr "Кость (2)"
-
-
-msgid "Other Constrained Bone (optional, depends on type)"
-msgstr "Другая кость с ограничением (опционально, зависит от типа)"
-
-
-msgid "Constrained Bone"
-msgstr "Ограничиваемая кость"
-
-
-msgid "Out"
-msgstr "Выход"
-
-
-msgid "Number of frames to smooth out"
-msgstr "Количество кадров для сглаживания"
+msgid "Distance and Floor Fixes - Desired offset"
+msgstr "Поправки расстояния и пола - желаемое смещение"
 
 
 msgid "Python expression to be evaluated as the initial node setting"
@@ -59949,8 +59949,12 @@ msgid "Is Stroke Start"
 msgstr "Является началом штриха"
 
 
-msgid "Limit for checking distorted faces"
-msgstr "Ограничение для проверки граней на искажённость"
+msgid "Format type to export to"
+msgstr "Тип формата, в который осуществляется экспорт"
+
+
+msgid "VRML2"
+msgstr "VRML2"
 
 
 msgid "Limit for checking zero area/length"
@@ -59965,28 +59969,24 @@ msgid "Copy textures on export to the output path"
 msgstr "Копировать текстуры при экспорте в место сохранения"
 
 
-msgid "Apply Scale"
-msgstr "Применить масштаб"
-
-
-msgid "Apply scene scale setting on export"
-msgstr "Применять значение масштаба сцены при экспорте"
-
-
-msgid "Format type to export to"
-msgstr "Тип формата, в который осуществляется экспорт"
-
-
-msgid "VRML2"
-msgstr "VRML2"
-
-
 msgid "Export Directory"
 msgstr "Папка экспорта"
 
 
 msgid "Path to directory where the files are created"
 msgstr "Путь к папке, в которой создаются файлы"
+
+
+msgid "Limit for checking distorted faces"
+msgstr "Ограничение для проверки граней на искажённость"
+
+
+msgid "Apply Scale"
+msgstr "Применить масштаб"
+
+
+msgid "Apply scene scale setting on export"
+msgstr "Применять значение масштаба сцены при экспорте"
 
 
 msgid "Selected UV Element"

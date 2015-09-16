@@ -1,10 +1,10 @@
 
 msgid ""
 msgstr ""
-"Project-Id-Version: Blender 2.75 (sub 4) (b'dbe1829')\n"
+"Project-Id-Version: Blender 2.75 (sub 4) (b'cf4711b')\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-09-14 22:33:23\n"
-"PO-Revision-Date: 2015-08-27 09:27+0000\n"
+"POT-Creation-Date: 2015-09-16 17:34:32\n"
+"PO-Revision-Date: 2015-09-15 19:09+0000\n"
 "Last-Translator: lxlalexlxl <pilipchukap@rambler.ru>\n"
 "Language-Team: Ukrainian (Ukraine) (http://www.transifex.com/lxlalexlxl/blender/language/uk_UA/)\n"
 "MIME-Version: 1.0\n"
@@ -1952,12 +1952,12 @@ msgid "Addon Preferences"
 msgstr "Уподобання для додатків"
 
 
-msgid "Persistent Data Path"
-msgstr "Постійні дані"
+msgid "Gettext 'msgfmt' executable"
+msgstr "Виконуваний файл gettext 'msgfmt'"
 
 
-msgid "The name of a json file storing those settings (unfortunately, Blender's system does not work here)"
-msgstr "Назва файлу json для зберігання цих налаштувань (на жаль, система Blender тут не діє)"
+msgid "The gettext msgfmt 'compiler'. You’ll likely have to edit it if you’re under Windows"
+msgstr "Компілятор msgfmt для файлів gettext. Для роботи у Windows слід вручну вказати правильний шлях"
 
 
 msgid "Source Root"
@@ -1968,14 +1968,6 @@ msgid "The Blender source root path"
 msgstr "Кореневий каталог сирцевого коду Blender"
 
 
-msgid "Import Paths"
-msgstr "Шляхи імпорту"
-
-
-msgid "Additional paths to add to sys.path (';' separated)"
-msgstr "Додаткові шляхи для додання до sys.path (відокремити ';')"
-
-
 msgid "Translation Root"
 msgstr "Шлях до теки з перекладами"
 
@@ -1984,12 +1976,12 @@ msgid "The bf-translation repository"
 msgstr "Сховище bf-translation"
 
 
-msgid "Fribidi Library"
-msgstr "Бібліотека Fribidi"
+msgid "Import Paths"
+msgstr "Шляхи імпорту"
 
 
-msgid "The FriBidi C compiled library (.so under Linux, .dll under windows...), you’ll likely have to edit it if you’re under Windows, e.g. using the one included in svn's libraries repository"
-msgstr "Скомпільована бібліотека FriBidi мовою Сі (.so у Linux, .dll у Windows...). Для роботи у Windows необхідно вручну вказати правильний шлях, наприклад, на файл з svn-сховища бібліотек"
+msgid "Additional paths to add to sys.path (';' separated)"
+msgstr "Додаткові шляхи для додання до sys.path (відокремити ';')"
 
 
 msgid "Spell Cache"
@@ -2000,12 +1992,20 @@ msgid "A cache storing validated msgids, to avoid re-spellchecking them"
 msgstr "Кеш, що містить перевірені msgid, щоб уникнути повторної їх перевірки"
 
 
-msgid "Gettext 'msgfmt' executable"
-msgstr "Виконуваний файл gettext 'msgfmt'"
+msgid "Persistent Data Path"
+msgstr "Постійні дані"
 
 
-msgid "The gettext msgfmt 'compiler'. You’ll likely have to edit it if you’re under Windows"
-msgstr "Компілятор msgfmt для файлів gettext. Для роботи у Windows слід вручну вказати правильний шлях"
+msgid "The name of a json file storing those settings (unfortunately, Blender's system does not work here)"
+msgstr "Назва файлу json для зберігання цих налаштувань (на жаль, система Blender тут не діє)"
+
+
+msgid "Fribidi Library"
+msgstr "Бібліотека Fribidi"
+
+
+msgid "The FriBidi C compiled library (.so under Linux, .dll under windows...), you’ll likely have to edit it if you’re under Windows, e.g. using the one included in svn's libraries repository"
+msgstr "Скомпільована бібліотека FriBidi мовою Сі (.so у Linux, .dll у Windows...). Для роботи у Windows необхідно вручну вказати правильний шлях, наприклад, на файл з svn-сховища бібліотек"
 
 
 msgid "Warn Msgid Not Capitalized"
@@ -2817,7 +2817,7 @@ msgstr "Межа"
 
 
 msgid "Extends the baked result as a post process filter"
-msgstr "Поширити результат запікання як фільтр постобробки"
+msgstr "Поширити результат запікання як фільтр післяобробки"
 
 
 msgid "Cage Extrusion"
@@ -4773,7 +4773,7 @@ msgstr "Стандартний RGB-простір екрану"
 
 
 msgid "The simple video conversion from a gamma 2.2 sRGB space"
-msgstr "Просте перетворення відео з гами простору 2.2 sRGB"
+msgstr "Просте перетворення відео з 2.2-гамми sRGB-простору"
 
 
 msgid "Color Space"
@@ -4817,11 +4817,11 @@ msgstr "Експозиція (стопи), що застосовується п�
 
 
 msgid "Gamma"
-msgstr "Гама"
+msgstr "Гамма"
 
 
 msgid "Amount of gamma modification applied after display transform"
-msgstr "Рівень гама-корекції, що застосовується після трансформацій для показу"
+msgstr "Рівень гамма-корекції, що застосовується після трансформацій для показу"
 
 
 msgid "Curve"
@@ -8582,7 +8582,7 @@ msgstr "Згладженість"
 
 
 msgid "Limit maximum steepness of wave slope between simulation points (use higher values for smoother waves at expense of reduced detail)"
-msgstr "Обмежує найбільшу крутизну нахилу хвилі між точками моделювання (більші значення дадуть більш гладкі хвилі за рахунок втрати деталей)"
+msgstr "Обмежує найбільшу крутизну cхилу хвилі між точками моделювання (більші значення дадуть більш гладкі хвилі за рахунок втрати деталей)"
 
 
 msgid "Open Borders"
@@ -8946,7 +8946,7 @@ msgstr "Зберігати значення останнього ключово�
 
 
 msgid "Use slope of curve leading in/out of endpoint keyframes"
-msgstr "Зберегти нахил кривої поза кінцевими ключовими кадрами"
+msgstr "Зберегти cхил кривої поза кінцевими ключовими кадрами"
 
 
 msgid "Driver"
@@ -17508,7 +17508,7 @@ msgstr "Згладжування дзеркальної області toon-ві
 
 
 msgid "Specular Slope"
-msgstr "Нахил кривої спаду бліку"
+msgstr "Cхил кривої спаду бліку"
 
 
 msgid "The standard deviation of surface slope"
@@ -21769,7 +21769,7 @@ msgstr "Фрактальний зсув"
 
 
 msgid "Gain"
-msgstr "Підсилення"
+msgstr "Підсил"
 
 
 msgid "The gain multiplier"
@@ -22533,7 +22533,7 @@ msgstr "Логарифмічне гамма-перетворення"
 
 
 msgid "Format of multiview media"
-msgstr "Формат медіаданих багато-вигляду"
+msgstr "Формат багатовиглядних медіаданих"
 
 
 msgid "Image Preview"
@@ -22568,6 +22568,14 @@ msgid "Image pixels, as bytes (always RGBA 32bits)"
 msgstr "Пікселі зображення як байти (завжди  RGBA 32bits)"
 
 
+msgid "Float Image Pixels"
+msgstr "Дійсночислові пікселі зображення"
+
+
+msgid "Image pixels components, as floats (RGBA concatenated values)"
+msgstr "Компоненти пікселів зображення, як дійсночислові значення (RGBA-належні значення)"
+
+
 msgid "True if this preview icon has been modified by py script,and is no more auto-generated by Blender"
 msgstr "Вірно, якщо дана іконка передогляду була модифікована py-скриптом і не існує більше інших, авто-генерованих Blender'ом"
 
@@ -22584,12 +22592,20 @@ msgid "Icon pixels, as bytes (always RGBA 32bits)"
 msgstr "Пікселі іконки як байти (завжди RGBA 32bits)"
 
 
+msgid "Float Icon Pixels"
+msgstr "Дійсночислові пікселі іконок"
+
+
+msgid "Icon pixels components, as floats (RGBA concatenated values)"
+msgstr "Компоненти пікселів іконок, як дійсночислові значення (RGBA-належні значення)"
+
+
 msgid "Icon ID"
 msgstr "ID іконки"
 
 
 msgid "Unique integer identifying this preview as an icon (zero means invalid)"
-msgstr "Унікальне цілочислове значення, що ідентифікує даний передогляд як іконку (нуль означає помилку)"
+msgstr "Унікальне цілочислове значення, що ідентифікує даний передогляд як піктограму (нуль означає помилку)"
 
 
 msgid "Parameters defining how an Image datablock is used by another datablock"
@@ -22638,6 +22654,10 @@ msgstr "Шар у багатошаровому зображенні"
 
 msgid "Pass"
 msgstr "Прохід"
+
+
+msgid "Pass in multilayer image"
+msgstr "Прохід у багатошаровому зображенні"
 
 
 msgid "View in multilayer image"
@@ -32205,7 +32225,7 @@ msgstr "Альфа над"
 
 
 msgid "Convert Premul"
-msgstr "Перетворення передмноження"
+msgstr "Конвертація передмноження"
 
 
 msgid "Premul"
@@ -32449,7 +32469,7 @@ msgstr "Допустиме значення, нижче якого кольор�
 
 
 msgid "Lift"
-msgstr "Підняти"
+msgstr "Підйом"
 
 
 msgid "Alpha lift"
@@ -32477,11 +32497,11 @@ msgstr "Формула корекції"
 
 
 msgid "Lift/Gamma/Gain"
-msgstr "Підйом/гама/підсилення"
+msgstr "Підйом/гамма/підсил"
 
 
 msgid "Offset/Power/Slope (ASC-CDL)"
-msgstr "Зсув/потужність/нахил (ASC-CDL)"
+msgstr "Зсув/потужність/cхил (ASC-CDL)"
 
 
 msgid "ASC-CDL standard color correction"
@@ -32493,7 +32513,7 @@ msgstr "Корекція тіней"
 
 
 msgid "Correction for Midtones"
-msgstr "Корекція середніх"
+msgstr "Корекція для сертонів"
 
 
 msgid "Correction for Highlights"
@@ -32501,11 +32521,11 @@ msgstr "Корекція підсвіток"
 
 
 msgid "Power"
-msgstr "Потужність"
+msgstr "Потуга"
 
 
 msgid "Slope"
-msgstr "Нахил"
+msgstr "Cхил"
 
 
 msgid "Color Correction"
@@ -32525,19 +32545,19 @@ msgstr "Активний канал синього"
 
 
 msgid "Midtones Start"
-msgstr "Початок середніх"
+msgstr "Старт сертонів"
 
 
 msgid "Start of midtones"
-msgstr "Початок середніх тонів"
+msgstr "Початок діапазону середніх тонів"
 
 
 msgid "Midtones End"
-msgstr "Кінець середніх"
+msgstr "Кінець сертонів"
 
 
 msgid "End of midtones"
-msgstr "Кінець середніх тонів"
+msgstr "Кінець діапазону середніх тонів"
 
 
 msgid "Master Saturation"
@@ -32557,11 +32577,11 @@ msgstr "Загальна контрастність"
 
 
 msgid "Master Gamma"
-msgstr "Загальна гама"
+msgstr "Загальна гамма"
 
 
 msgid "Master gamma"
-msgstr "Загальна гама"
+msgstr "Загальна гамма"
 
 
 msgid "Master Gain"
@@ -32573,11 +32593,11 @@ msgstr "Загальне підсилення"
 
 
 msgid "Master Lift"
-msgstr "Загальне підняття"
+msgstr "Загальний підйом"
 
 
 msgid "Master lift"
-msgstr "Загальне підняття"
+msgstr "Загальний підйом"
 
 
 msgid "Shadows Saturation"
@@ -32597,11 +32617,11 @@ msgstr "Контрастність темних тонів"
 
 
 msgid "Shadows Gamma"
-msgstr "Гама темних"
+msgstr "Гамма темних"
 
 
 msgid "Shadows gamma"
-msgstr "Гама темних тонів"
+msgstr "Гамма темних тонів"
 
 
 msgid "Shadows Gain"
@@ -32613,15 +32633,15 @@ msgstr "Підсилення темних тонів"
 
 
 msgid "Shadows Lift"
-msgstr "Підняття темних"
+msgstr "Підйом тіней"
 
 
 msgid "Shadows lift"
-msgstr "Підняття темних тонів"
+msgstr "Підняття темних тонів, тіней"
 
 
 msgid "Midtones Saturation"
-msgstr "Насиченість середніх"
+msgstr "Насиченість сертонів"
 
 
 msgid "Midtones saturation"
@@ -32629,7 +32649,7 @@ msgstr "Насиченість середніх тонів"
 
 
 msgid "Midtones Contrast"
-msgstr "Контрастність середніх"
+msgstr "Контраст сертонів"
 
 
 msgid "Midtones contrast"
@@ -32637,15 +32657,15 @@ msgstr "Контрастність середніх тонів"
 
 
 msgid "Midtones Gamma"
-msgstr "Гама середніх"
+msgstr "Гамма сертонів"
 
 
 msgid "Midtones gamma"
-msgstr "Гама середніх тонів"
+msgstr "Гамма середніх тонів"
 
 
 msgid "Midtones Gain"
-msgstr "Підсилення середніх"
+msgstr "Підсилення сертонів"
 
 
 msgid "Midtones gain"
@@ -32653,7 +32673,7 @@ msgstr "Підсилення середніх тонів"
 
 
 msgid "Midtones Lift"
-msgstr "Підняття середніх"
+msgstr "Підйом сертонів"
 
 
 msgid "Midtones lift"
@@ -32677,11 +32697,11 @@ msgstr "Контрастність підсвіток - світлих тоні�
 
 
 msgid "Highlights Gamma"
-msgstr "Гама підсвіток"
+msgstr "Гамма підсвіток"
 
 
 msgid "Highlights gamma"
-msgstr "Гама підсвіток - світлих тонів"
+msgstr "Гамма підсвіток - світлих тонів"
 
 
 msgid "Highlights Gain"
@@ -32693,7 +32713,7 @@ msgstr "Підсилення підсвіток - світлих тонів"
 
 
 msgid "Highlights Lift"
-msgstr "Підняття підсвіток"
+msgstr "Підйом підсвіток"
 
 
 msgid "Highlights lift"
@@ -32945,11 +32965,11 @@ msgstr "Кутовий зсув фігури боке"
 
 
 msgid "Gamma Correction"
-msgstr "Корекція гами"
+msgstr "Корекція гамми"
 
 
 msgid "Enable gamma correction before and after main process"
-msgstr "Увімкнути корекцію гами до і після основного процесу"
+msgstr "Увімкнути корекцію гамми до і після основного процесу"
 
 
 msgid "Amount of focal blur, 128=infinity=perfect focus, half the value doubles the blur radius"
@@ -33594,7 +33614,7 @@ msgstr "RGB в BW"
 
 
 msgid "Render Layers"
-msgstr "Шари вимальовування"
+msgstr "Шари зображування"
 
 
 msgid "Method to use to filter rotation"
@@ -35193,7 +35213,7 @@ msgstr "Лінійна екстраполяція"
 
 
 msgid "Straight-line slope of end segments are extended past the endpoint keyframes"
-msgstr "Подовжити ділянки за кінцевими ключовими кадрами прямими, зберігши кут нахилу"
+msgstr "Подовжити ділянки за кінцевими ключовими кадрами прямими, зберігши кут cхилу"
 
 
 msgid "Make Cyclic (F-Modifier)"
@@ -41578,11 +41598,11 @@ msgstr "Редагувати знімок перегляду у зовнішнь
 
 msgctxt "Operator"
 msgid "Read Render Layers"
-msgstr "Читати шари вимальовування"
+msgstr "Читати шари зображування"
 
 
 msgid "Read all the current scene's render layers from cache, as needed"
-msgstr "Прочитати з кешу, за потреби, всі шари вимальовування поточної сцени"
+msgstr "Прочитати з кешу, за потреби, всі шари зображування поточної сцени"
 
 
 msgctxt "Operator"
@@ -41932,6 +41952,14 @@ msgstr "Зсув наклейки"
 
 msgid "Displace geometry of alpha meshes"
 msgstr "Змістити геометрію альфа-каркасів"
+
+
+msgid "Import Animation"
+msgstr "Імпортувати анімацію"
+
+
+msgid "Import FBX animation"
+msgstr "Імпортувати анімацію FBX"
 
 
 msgid "Animation Offset"
@@ -46467,11 +46495,11 @@ msgstr "Читати шари з повною вибіркою"
 
 
 msgid "Read all render layers of current scene, in full sample"
-msgstr "Читати всі шари вимальовування поточної сцени з повною вибіркою"
+msgstr "Читати всі шари зображування поточної сцени з повною вибіркою"
 
 
 msgid "Read all render layers of all used scenes"
-msgstr "Читати всі шари вимальовування у всіх використаних сценах"
+msgstr "Читати всі шари зображування у всіх використаних сценах"
 
 
 msgctxt "Operator"
@@ -52342,11 +52370,11 @@ msgstr "Смужка з ефектом альфа-підкладки"
 
 
 msgid "Gamma Cross"
-msgstr "Гама перетин"
+msgstr "Гамма перетин"
 
 
 msgid "Gamma Cross effect strip type"
-msgstr "Смужка з ефектом гама-перетину"
+msgstr "Смужка з ефектом гамма-перетину"
 
 
 msgid "Multiply effect strip type"
@@ -54183,11 +54211,11 @@ msgstr "Колір джерела"
 
 
 msgid "Gamma Corrected"
-msgstr "Гаму виправлено"
+msgstr "Гамму виправлено"
 
 
 msgid "The source color is gamma corrected "
-msgstr "Початковий колір зазнав гама-корекції"
+msgstr "Початковий колір зазнав гамма-корекції"
 
 
 msgctxt "Operator"
@@ -58205,7 +58233,7 @@ msgstr "Видимість променів"
 
 
 msgid "Post Processing"
-msgstr "Після-обробка"
+msgstr "Післяобробка"
 
 
 msgid "Area Shape"
@@ -60004,14 +60032,6 @@ msgid "Group of ID properties"
 msgstr "Група ID-властивостей"
 
 
-msgid "Action 1"
-msgstr "Дія 1"
-
-
-msgid "First action in stitch"
-msgstr "Перша дія у склейці"
-
-
 msgid "Stitch frame"
 msgstr "Кадр склейки"
 
@@ -60028,20 +60048,28 @@ msgid "Second action in stitch"
 msgstr "Друга дія у склейці"
 
 
-msgid "Blend amount"
-msgstr "Величина змішування"
-
-
-msgid "Size of blending transition, on both sides of the stitch"
-msgstr "Величина перехідного змішування по обидва боки від склейки"
-
-
 msgid "Second offset"
 msgstr "Зсув другої"
 
 
 msgid "Frame offset for 2nd animation, where it should start"
 msgstr "Зсув у кадрах 2-ї анімації, з якого вона має починатися"
+
+
+msgid "Action 1"
+msgstr "Дія 1"
+
+
+msgid "First action in stitch"
+msgstr "Перша дія у склейці"
+
+
+msgid "Blend amount"
+msgstr "Величина змішування"
+
+
+msgid "Size of blending transition, on both sides of the stitch"
+msgstr "Величина перехідного змішування по обидва боки від склейки"
 
 
 msgid "Stick Bone"
@@ -61064,16 +61092,12 @@ msgid "Settings/info about a language"
 msgstr "Параметри/інформація про мову"
 
 
-msgid "Use this language in current operator"
-msgstr "Використати цю мову у поточному операторі"
+msgid "MO File Path"
+msgstr "Шлях до файлу MO"
 
 
-msgid "Numeric ID"
-msgstr "Числовий ID"
-
-
-msgid "Numeric ID (readonly!)"
-msgstr "Числовий ID (лише читання!)"
+msgid "Path to the relevant mo file"
+msgstr "Шлях до актуального mo-файлу"
 
 
 msgid "Language Name"
@@ -61084,12 +61108,32 @@ msgid "English language name/label (like \"French (Français)\")"
 msgstr "Англійська назва/позначення мови (наприклад \"Ukrainian (Українська)\")"
 
 
+msgid "Language ID"
+msgstr "Мова"
+
+
+msgid "ISO code, like fr_FR"
+msgstr "Код ISO, наприклад uk_UK"
+
+
 msgid "PO File Path"
 msgstr "Шлях до файлу PO"
 
 
 msgid "Path to the relevant po file in branches"
 msgstr "Шлях до актуального po-файлу у гілці branches"
+
+
+msgid "Use this language in current operator"
+msgstr "Використати цю мову у поточному операторі"
+
+
+msgid "PO Trunk File Path"
+msgstr "Шлях до файлу PO у гілці trunk"
+
+
+msgid "Path to the relevant po file in trunk"
+msgstr "Шлях до актуального po-файлу у гілці trunk"
 
 
 msgid "PO Git Master File Path"
@@ -61100,28 +61144,12 @@ msgid "Path to the relevant po file in Blender's translations git repository"
 msgstr "Шлях до відповідного po-файлу у git-репозиторії перекладів Blender'а"
 
 
-msgid "MO File Path"
-msgstr "Шлях до файлу MO"
+msgid "Numeric ID"
+msgstr "Числовий ID"
 
 
-msgid "Path to the relevant mo file"
-msgstr "Шлях до актуального mo-файлу"
-
-
-msgid "Language ID"
-msgstr "Мова"
-
-
-msgid "ISO code, like fr_FR"
-msgstr "Код ISO, наприклад uk_UK"
-
-
-msgid "PO Trunk File Path"
-msgstr "Шлях до файлу PO у гілці trunk"
-
-
-msgid "Path to the relevant po file in trunk"
-msgstr "Шлях до актуального po-файлу у гілці trunk"
+msgid "Numeric ID (readonly!)"
+msgstr "Числовий ID (лише читання!)"
 
 
 msgid "Active Language"
@@ -61152,20 +61180,32 @@ msgid "Path to the pot template file"
 msgstr "Шлях до POT-файлу з шаблоном"
 
 
-msgid "Start frame of Fix"
-msgstr "Початковий кадр поправки"
-
-
-msgid "Distance and Floor Fixes - Desired offset"
-msgstr "Поправки відстані та підлоги - бажане зміщення"
-
-
 msgid "Target of Fix - Point"
 msgstr "Ціль поправки - точка"
 
 
 msgid "Name of Mocap Fix"
 msgstr "Назва поправки захоплення руху"
+
+
+msgid "Bone (2)"
+msgstr "Кістка (2)"
+
+
+msgid "Other Constrained Bone (optional, depends on type)"
+msgstr "Інша обмежена кістка (не обов'язково, залежно від типу)"
+
+
+msgid "Type of constraint"
+msgstr "Тип обмеження"
+
+
+msgid "Start frame of Fix"
+msgstr "Початковий кадр поправки"
+
+
+msgid "Fix is active"
+msgstr "Поправки увімкнені"
 
 
 msgid "In"
@@ -61180,12 +61220,16 @@ msgid "Fix is fully shown"
 msgstr "Повний показ поправок"
 
 
-msgid "Fix is active"
-msgstr "Поправки увімкнені"
+msgid "Out"
+msgstr "З"
 
 
-msgid "Type of constraint"
-msgstr "Тип обмеження"
+msgid "Number of frames to smooth out"
+msgstr "Кількість кадрів для згладжування"
+
+
+msgid "Target of Fix - Mesh (optional, depends on type)"
+msgstr "Ціль поправки - каркас (не обов'язково, залежно від типу)"
 
 
 msgid "In which space should Point type target be evaluated"
@@ -61212,8 +61256,8 @@ msgid "Evaluate target in specified other bone space"
 msgstr "Розрахувати ціль у просторі зазначеної іншої кістки"
 
 
-msgid "Target of Fix - Mesh (optional, depends on type)"
-msgstr "Ціль поправки - каркас (не обов'язково, залежно від типу)"
+msgid "Constrained Bone"
+msgstr "Обмежена кістка"
 
 
 msgid "E"
@@ -61224,24 +61268,8 @@ msgid "End frame of Fix"
 msgstr "Кінцевий кадр поправки"
 
 
-msgid "Bone (2)"
-msgstr "Кістка (2)"
-
-
-msgid "Other Constrained Bone (optional, depends on type)"
-msgstr "Інша обмежена кістка (не обов'язково, залежно від типу)"
-
-
-msgid "Constrained Bone"
-msgstr "Обмежена кістка"
-
-
-msgid "Out"
-msgstr "З"
-
-
-msgid "Number of frames to smooth out"
-msgstr "Кількість кадрів для згладжування"
+msgid "Distance and Floor Fixes - Desired offset"
+msgstr "Поправки відстані та підлоги - бажане зміщення"
 
 
 msgid "Python expression to be evaluated as the initial node setting"
@@ -61288,8 +61316,12 @@ msgid "Is Stroke Start"
 msgstr "Є початком штриха"
 
 
-msgid "Limit for checking distorted faces"
-msgstr "Межа для перевірки викривлення граней"
+msgid "Format type to export to"
+msgstr "Тип формату, в який експортувати"
+
+
+msgid "VRML2"
+msgstr "VRML2"
 
 
 msgid "Limit for checking zero area/length"
@@ -61304,28 +61336,24 @@ msgid "Copy textures on export to the output path"
 msgstr "При експорті копіювати текстури у вивідну теку"
 
 
-msgid "Apply Scale"
-msgstr "Застосувати масштаб"
-
-
-msgid "Apply scene scale setting on export"
-msgstr "При експорті застосувати параметри масштабу сцени"
-
-
-msgid "Format type to export to"
-msgstr "Тип формату, в який експортувати"
-
-
-msgid "VRML2"
-msgstr "VRML2"
-
-
 msgid "Export Directory"
 msgstr "Тека експорту"
 
 
 msgid "Path to directory where the files are created"
 msgstr "Шлях до теки, в якій створюються файли"
+
+
+msgid "Limit for checking distorted faces"
+msgstr "Межа для перевірки викривлення граней"
+
+
+msgid "Apply Scale"
+msgstr "Застосувати масштаб"
+
+
+msgid "Apply scene scale setting on export"
+msgstr "При експорті застосувати параметри масштабу сцени"
 
 
 msgid "Selected UV Element"
@@ -61501,7 +61529,7 @@ msgstr "Група, що перевизначає всі інші джерела
 
 
 msgid "Scene layers included in this render layer"
-msgstr "Шари сцени, включені до цього шару вимальовування"
+msgstr "Шари сцени, включені до цього шару зображування"
 
 
 msgid "Zmask Layers"
@@ -61789,7 +61817,7 @@ msgstr "Кроки променя"
 
 
 msgid "Result of rendering, including all layers and passes"
-msgstr "Результат вимальовування, включно зі всіма шарами та проходами"
+msgstr "Результат зображування, включно зі всіма шарами та проходами"
 
 
 msgid "Rendering settings for a Scene datablock"
@@ -62229,7 +62257,7 @@ msgstr "Зберегти буфери"
 
 
 msgid "Save tiles for all RenderLayers and SceneNodes to files in the temp directory (saves memory, required for Full Sample)"
-msgstr "Зберегти плитки для всіх шарів вимальовування та вузлів сцени до файлів у тимчасовому каталозі (економія пам'яті, необхідно для повної вибірки)"
+msgstr "Зберегти плитки для всіх шарів зображування та вузлів сцени до файлів у тимчасовому каталозі (економія пам'яті, необхідно для повної вибірки)"
 
 
 msgid "Full Sample"
@@ -62673,7 +62701,7 @@ msgstr "Багато-вигляд"
 
 
 msgid "Multi camera system, adjust the cameras individually"
-msgstr "Система багато-камер, коригуйте кожну камеру окремо"
+msgstr "Багатокамерна система, коригуйте кожну камеру окремо"
 
 
 msgid "Engine"
@@ -64117,11 +64145,11 @@ msgstr "Найбільша висота між чарунками сітки, н
 
 
 msgid "Max Slope"
-msgstr "Найбільший нахил"
+msgstr "Найбільший cхил"
 
 
 msgid "Maximum walkable slope angle"
-msgstr "Найбільший кут нахилу, який можна здолати"
+msgstr "Найбільший кут cхилу, який можна здолати"
 
 
 msgid "Min Region Size"
@@ -64205,7 +64233,7 @@ msgstr "Вигляд зображування для сцени"
 
 
 msgid "Render viewpoint for 3D stereo and multiview rendering"
-msgstr "Зображувана точка зору для 3D-стерео та багато-виглядного зображування"
+msgstr "Зображувана точка зору для 3D-стерео та багатовиглядного зображування"
 
 
 msgid "Render view name"
@@ -65564,7 +65592,7 @@ msgstr "Альфа під"
 
 msgctxt "Sequence"
 msgid "Gamma Cross"
-msgstr "Перетин гами"
+msgstr "Гамма перетин"
 
 
 msgctxt "Sequence"
@@ -65855,7 +65883,7 @@ msgstr "Послідовність перетину"
 
 
 msgid "Gamma Cross Sequence"
-msgstr "Послідовність гама-перетину"
+msgstr "Послідовність гамма-перетину"
 
 
 msgid "Gaussian Blur Sequence"
@@ -66219,7 +66247,7 @@ msgstr "Підйом балансу кольорів (тіні)"
 
 
 msgid "Color balance gamma (midtones)"
-msgstr "Гама балансу кольорів (середні тони)"
+msgstr "Гамма балансу кольорів (сертони)"
 
 
 msgid "Color balance gain (highlights)"
@@ -66231,7 +66259,7 @@ msgstr "Обернути підсилення"
 
 
 msgid "Inverse Gamma"
-msgstr "Обернути гаму"
+msgstr "Інверсія гамми"
 
 
 msgid "Inverse Lift"
@@ -66391,7 +66419,7 @@ msgstr "Дані модифікатора яскравості/контраст�
 
 
 msgid "Bright"
-msgstr "Яскравий"
+msgstr "Яскравість"
 
 
 msgid "Color balance modifier for sequence strip"
@@ -68404,7 +68432,7 @@ msgstr "Використати активний вивід вузла перег
 
 
 msgid "Auto Render"
-msgstr "Автовимальовування"
+msgstr "Авто-зображування"
 
 
 msgid "Re-render and composite changed layers on 3D edits"
@@ -68600,7 +68628,7 @@ msgstr "Тип активних даних для показу та редагу
 
 
 msgid "Render layers"
-msgstr "Шари вимальовування"
+msgstr "Шари зображування"
 
 
 msgid "Object constraints"
@@ -71860,7 +71888,7 @@ msgstr "Файл піктограми"
 
 
 msgid "Icon Alpha"
-msgstr "Прозорість значків"
+msgstr "Прозорість піктограм"
 
 
 msgid "Transparency of icons in the interface, to reduce contrast"
@@ -79757,15 +79785,15 @@ msgstr "Немає активного набору ключів"
 
 
 msgid "Lift:"
-msgstr "Підняти:"
+msgstr "Підйом:"
 
 
 msgid "Gamma:"
-msgstr "Гама:"
+msgstr "Гамма:"
 
 
 msgid "Gain:"
-msgstr "Підсилення:"
+msgstr "Підсил:"
 
 
 msgctxt "Operator"
@@ -79942,7 +79970,7 @@ msgstr "Перетин"
 
 msgctxt "Operator"
 msgid "Gamma Cross"
-msgstr "Гама-перетин"
+msgstr "Гамма-перетин"
 
 
 msgctxt "Operator"
@@ -82607,7 +82635,7 @@ msgstr "Шар_ЕО"
 
 
 msgid "Cannot pack multiview images from raw data currently..."
-msgstr "Неможливо наразі запакувати багато-виглядні зображення з джерельними даними..."
+msgstr "Неможливо наразі запакувати багатовиглядні зображення з джерельними даними..."
 
 
 msgid "Key %d"
@@ -83269,7 +83297,7 @@ msgstr "Коефіцієнт многочлена"
 
 
 msgid "Power of x"
-msgstr "Сила х"
+msgstr "Степінь х"
 
 
 msgid "Coefficient of x"
@@ -84083,7 +84111,7 @@ msgstr "Hex:"
 
 
 msgid "(Gamma Corrected)"
-msgstr "(Гаму виправлено)"
+msgstr "(Гамму виправлено)"
 
 
 msgid "Shortcut: %s"
@@ -86631,7 +86659,7 @@ msgstr "Гніздо %d"
 
 
 msgid "No Layers in Render Result"
-msgstr "У результатах вимальовування немає шарів"
+msgstr "У результатах зображування немає шарів"
 
 
 msgid "(%d) Frames"
@@ -86643,7 +86671,7 @@ msgstr "Глибина кольору:"
 
 
 msgid "Hard coded Non-Linear, Gamma:1.7"
-msgstr "Жорстко фіксована нелінійна, гама: 1.7"
+msgstr "Жорстко фіксована нелінійна, гамма: 1.7"
 
 
 msgid "Select Slot"
@@ -87128,7 +87156,7 @@ msgstr "Підшлях файлу:"
 
 
 msgid "Master"
-msgstr "Загальний"
+msgstr "Загальне"
 
 
 msgid "Highlights"
@@ -87136,7 +87164,7 @@ msgstr "Підсвітки"
 
 
 msgid "Midtones"
-msgstr "Середні тони"
+msgstr "Сертони"
 
 
 msgid "Undefined Socket Type"
@@ -87328,7 +87356,7 @@ msgstr "Індекси матеріалів"
 
 
 msgid "RenderLayers"
-msgstr "ШариВимальовування"
+msgstr "ШариЗображування"
 
 
 msgid "Strip None"
@@ -89653,11 +89681,11 @@ msgstr "Freestyle не підтримує полів"
 
 
 msgid "All render layers are disabled"
-msgstr "Всі шари вимальовування вимкнено"
+msgstr "Всі шари зображування вимкнено"
 
 
 msgid "Frame Server only support stereo output for multiview rendering"
-msgstr "Сервер кадрів підтримує вивід стерео тільки для багато-виглядного зображування"
+msgstr "Сервер кадрів підтримує вивід стерео тільки для багатовиглядного зображування"
 
 
 msgid "No frames rendered, skipped to not overwrite"
@@ -89681,7 +89709,7 @@ msgstr "Встановити передмножений режим альфа с
 
 
 msgid "Camera \"%s\" is not a multi-view camera"
-msgstr "Камера \"%s\" не є багато-виглядною камерою"
+msgstr "Камера \"%s\" не є багатовиглядною камерою"
 
 
 msgid "No active view found in scene \"%s\""
