@@ -1,9 +1,9 @@
 
 msgid ""
 msgstr ""
-"Project-Id-Version: Blender 2.75 (sub 4) (b'cf4711b')\n"
+"Project-Id-Version: Blender 2.76 (sub 0) (b'c586e30')\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-09-16 17:34:32\n"
+"POT-Creation-Date: 2015-09-22 22:53:33\n"
 "PO-Revision-Date: \n"
 "Last-Translator: Leon Cheung <leon4you@gmail.com>\n"
 "Language-Team: \n"
@@ -1895,20 +1895,20 @@ msgid "Addon Preferences"
 msgstr "插件首选项"
 
 
-msgid "Gettext 'msgfmt' executable"
-msgstr "可执行 Gettext 'msgfmt'"
+msgid "Fribidi Library"
+msgstr "Fribidi 库文件"
 
 
-msgid "The gettext msgfmt 'compiler'. You’ll likely have to edit it if you’re under Windows"
-msgstr "gettext msgfmt 的 '编译器', 如果是在 WIndows 系统下, 可能会编辑此项"
+msgid "The FriBidi C compiled library (.so under Linux, .dll under windows...), you’ll likely have to edit it if you’re under Windows, e.g. using the one included in svn's libraries repository"
+msgstr "FriBidi C 语言编译库的文件 (Linux 系统下为 .so, Windows 系统下为 .dll), 若在 Windows 系统下则可能进行编辑. 例如, 在使用包含在 svn 的存储库中的库文件时"
 
 
-msgid "Source Root"
-msgstr "平方根"
+msgid "Spell Cache"
+msgstr "拼写缓存"
 
 
-msgid "The Blender source root path"
-msgstr "Blender 源文件的根路径"
+msgid "A cache storing validated msgids, to avoid re-spellchecking them"
+msgstr "存储经确认的 msgid 的缓存, 以避免再次拼写检查"
 
 
 msgid "Translation Root"
@@ -1927,12 +1927,12 @@ msgid "Additional paths to add to sys.path (';' separated)"
 msgstr "添加 sys.path 的附加路径 (用 ';' 隔开)"
 
 
-msgid "Spell Cache"
-msgstr "拼写缓存"
+msgid "Source Root"
+msgstr "平方根"
 
 
-msgid "A cache storing validated msgids, to avoid re-spellchecking them"
-msgstr "存储经确认的 msgid 的缓存, 以避免再次拼写检查"
+msgid "The Blender source root path"
+msgstr "Blender 源文件的根路径"
 
 
 msgid "Persistent Data Path"
@@ -1943,12 +1943,12 @@ msgid "The name of a json file storing those settings (unfortunately, Blender's 
 msgstr "存储这些设置的 JSon 文件的名称 (但 Blender 的系统对此不支持)"
 
 
-msgid "Fribidi Library"
-msgstr "Fribidi 库文件"
+msgid "Gettext 'msgfmt' executable"
+msgstr "可执行 Gettext 'msgfmt'"
 
 
-msgid "The FriBidi C compiled library (.so under Linux, .dll under windows...), you’ll likely have to edit it if you’re under Windows, e.g. using the one included in svn's libraries repository"
-msgstr "FriBidi C 语言编译库的文件 (Linux 系统下为 .so, Windows 系统下为 .dll), 若在 Windows 系统下则可能进行编辑. 例如, 在使用包含在 svn 的存储库中的库文件时"
+msgid "The gettext msgfmt 'compiler'. You’ll likely have to edit it if you’re under Windows"
+msgstr "gettext msgfmt 的 '编译器', 如果是在 WIndows 系统下, 可能会编辑此项"
 
 
 msgid "Warn Msgid Not Capitalized"
@@ -41931,20 +41931,20 @@ msgid "Add and Link Node"
 msgstr "添加并联接结点"
 
 
-msgid "Node Type"
-msgstr "节点类型"
-
-
-msgid "Node type"
-msgstr "节点类型"
-
-
 msgid "Use Transform"
 msgstr "使用变换"
 
 
 msgid "Start transform operator after inserting the node"
 msgstr "动画插入的起始帧"
+
+
+msgid "Node Type"
+msgstr "节点类型"
+
+
+msgid "Node type"
+msgstr "节点类型"
 
 
 msgid "Link Socket Index"
@@ -54430,14 +54430,6 @@ msgid "Group of ID properties"
 msgstr "ID 组的属性"
 
 
-msgid "Stitch frame"
-msgstr "缝合帧"
-
-
-msgid "Frame to locate stitch on"
-msgstr "缝合线所在帧"
-
-
 msgid "Action 2"
 msgstr "动作2"
 
@@ -54446,12 +54438,20 @@ msgid "Second action in stitch"
 msgstr "缝合中的附加动作"
 
 
-msgid "Second offset"
-msgstr "附加偏移"
+msgid "Stitch frame"
+msgstr "缝合帧"
 
 
-msgid "Frame offset for 2nd animation, where it should start"
-msgstr "第2个动画的帧偏移量, 即起始位置"
+msgid "Frame to locate stitch on"
+msgstr "缝合线所在帧"
+
+
+msgid "Stick Bone"
+msgstr "棍形骨骼"
+
+
+msgid "Bone to freeze during transition"
+msgstr "变换过程中的限动骨骼"
 
 
 msgid "Action 1"
@@ -54470,12 +54470,12 @@ msgid "Size of blending transition, on both sides of the stitch"
 msgstr "缝合线两侧的混合过渡尺寸"
 
 
-msgid "Stick Bone"
-msgstr "棍形骨骼"
+msgid "Second offset"
+msgstr "附加偏移"
 
 
-msgid "Bone to freeze during transition"
-msgstr "变换过程中的限动骨骼"
+msgid "Frame offset for 2nd animation, where it should start"
+msgstr "第2个动画的帧偏移量, 即起始位置"
 
 
 msgid "Aperture Type"
@@ -55254,20 +55254,12 @@ msgid "Settings/info about a language"
 msgstr "针对某种语言的设定 / 信息"
 
 
-msgid "MO File Path"
-msgstr "文件路径"
+msgid "PO Trunk File Path"
+msgstr "PO 主干文件路径"
 
 
-msgid "Path to the relevant mo file"
-msgstr "相关 mo 文件的路径"
-
-
-msgid "Language Name"
-msgstr "语言"
-
-
-msgid "English language name/label (like \"French (Français)\")"
-msgstr "英文名称 / 标签 (例如 \"French (Français)\")"
+msgid "Path to the relevant po file in trunk"
+msgstr "主干中相关 po 文件的路径"
 
 
 msgid "Language ID"
@@ -55278,6 +55270,14 @@ msgid "ISO code, like fr_FR"
 msgstr "ISO 编码, 例如 fr_FR"
 
 
+msgid "Language Name"
+msgstr "语言"
+
+
+msgid "English language name/label (like \"French (Français)\")"
+msgstr "英文名称 / 标签 (例如 \"French (Français)\")"
+
+
 msgid "PO File Path"
 msgstr "文件路径"
 
@@ -55286,16 +55286,12 @@ msgid "Path to the relevant po file in branches"
 msgstr "分支中相关 po 文件的路径"
 
 
-msgid "Use this language in current operator"
-msgstr "在当前操作项中使用此语言"
+msgid "MO File Path"
+msgstr "文件路径"
 
 
-msgid "PO Trunk File Path"
-msgstr "PO 主干文件路径"
-
-
-msgid "Path to the relevant po file in trunk"
-msgstr "主干中相关 po 文件的路径"
+msgid "Path to the relevant mo file"
+msgstr "相关 mo 文件的路径"
 
 
 msgid "Numeric ID"
@@ -55304,6 +55300,22 @@ msgstr "数值型 ID"
 
 msgid "Numeric ID (readonly!)"
 msgstr "数值型 ID (只读!)"
+
+
+msgid "Use this language in current operator"
+msgstr "在当前操作项中使用此语言"
+
+
+msgid "POT File Path"
+msgstr "文件路径"
+
+
+msgid "Path to the pot template file"
+msgstr "pot 模板文件的路径"
+
+
+msgid "Whether these settings have already been auto-set or not"
+msgstr "这些设置是否已经进行了自动设置"
 
 
 msgid "Active Language"
@@ -55322,44 +55334,8 @@ msgid "Languages to update in branches"
 msgstr "更新到分支目录中的语言"
 
 
-msgid "Whether these settings have already been auto-set or not"
-msgstr "这些设置是否已经进行了自动设置"
-
-
-msgid "POT File Path"
-msgstr "文件路径"
-
-
-msgid "Path to the pot template file"
-msgstr "pot 模板文件的路径"
-
-
-msgid "Target of Fix - Point"
-msgstr "修正目标 - 点"
-
-
-msgid "Name of Mocap Fix"
-msgstr "动作捕捉修正项名称"
-
-
-msgid "Bone (2)"
-msgstr "骨骼(2)"
-
-
-msgid "Other Constrained Bone (optional, depends on type)"
-msgstr "其他被约束的骨骼 (可选, 视类型而定)"
-
-
 msgid "Type of constraint"
 msgstr "约束类型"
-
-
-msgid "Start frame of Fix"
-msgstr "修正项起始帧"
-
-
-msgid "Fix is active"
-msgstr "确定项为激活状态"
 
 
 msgid "In"
@@ -55370,20 +55346,16 @@ msgid "Number of frames to smooth in"
 msgstr "平滑起始帧数量"
 
 
-msgid "Fix is fully shown"
-msgstr "修正项已完全显示"
+msgid "Bone (2)"
+msgstr "骨骼(2)"
 
 
-msgid "Out"
-msgstr "输出"
+msgid "Other Constrained Bone (optional, depends on type)"
+msgstr "其他被约束的骨骼 (可选, 视类型而定)"
 
 
-msgid "Number of frames to smooth out"
-msgstr "平滑淡出所需的帧数"
-
-
-msgid "Target of Fix - Mesh (optional, depends on type)"
-msgstr "修正目标 - 网格(可选, 视类型而定)"
+msgid "Target of Fix - Point"
+msgstr "修正目标 - 点"
 
 
 msgid "In which space should Point type target be evaluated"
@@ -55414,6 +55386,10 @@ msgid "Constrained Bone"
 msgstr "被约束骨骼"
 
 
+msgid "Distance and Floor Fixes - Desired offset"
+msgstr "锯床及基面的修正 - 预期偏移"
+
+
 msgid "E"
 msgstr "E"
 
@@ -55422,8 +55398,32 @@ msgid "End frame of Fix"
 msgstr "修正项结束帧"
 
 
-msgid "Distance and Floor Fixes - Desired offset"
-msgstr "锯床及基面的修正 - 预期偏移"
+msgid "Target of Fix - Mesh (optional, depends on type)"
+msgstr "修正目标 - 网格(可选, 视类型而定)"
+
+
+msgid "Name of Mocap Fix"
+msgstr "动作捕捉修正项名称"
+
+
+msgid "Out"
+msgstr "输出"
+
+
+msgid "Number of frames to smooth out"
+msgstr "平滑淡出所需的帧数"
+
+
+msgid "Start frame of Fix"
+msgstr "修正项起始帧"
+
+
+msgid "Fix is fully shown"
+msgstr "修正项已完全显示"
+
+
+msgid "Fix is active"
+msgstr "确定项为激活状态"
 
 
 msgid "Python expression to be evaluated as the initial node setting"
@@ -55462,24 +55462,12 @@ msgid "Is Stroke Start"
 msgstr "笔触起始"
 
 
-msgid "Format type to export to"
-msgstr "要导出的目标格式"
+msgid "Apply Scale"
+msgstr "应用缩放"
 
 
-msgid "VRML2"
-msgstr "VRML2"
-
-
-msgid "Limit for checking zero area/length"
-msgstr "用于检查零面积或零长度的限值"
-
-
-msgid "Copy Textures"
-msgstr "复制纹理"
-
-
-msgid "Copy textures on export to the output path"
-msgstr "导出到输出路径时复制纹理"
+msgid "Apply scene scale setting on export"
+msgstr "导出时应用场景缩放设置"
 
 
 msgid "Export Directory"
@@ -55490,16 +55478,28 @@ msgid "Path to directory where the files are created"
 msgstr "文件的创建目录所在的路径"
 
 
+msgid "Format type to export to"
+msgstr "要导出的目标格式"
+
+
+msgid "VRML2"
+msgstr "VRML2"
+
+
+msgid "Copy Textures"
+msgstr "复制纹理"
+
+
+msgid "Copy textures on export to the output path"
+msgstr "导出到输出路径时复制纹理"
+
+
 msgid "Limit for checking distorted faces"
 msgstr "用于检查畸形面的限值"
 
 
-msgid "Apply Scale"
-msgstr "应用缩放"
-
-
-msgid "Apply scene scale setting on export"
-msgstr "导出时应用场景缩放设置"
+msgid "Limit for checking zero area/length"
+msgstr "用于检查零面积或零长度的限值"
 
 
 msgid "Selected UV Element"

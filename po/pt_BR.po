@@ -1,11 +1,11 @@
 
 msgid ""
 msgstr ""
-"Project-Id-Version: Blender 2.75 (sub 4) (b'cf4711b')\n"
+"Project-Id-Version: Blender 2.76 (sub 0) (b'c586e30')\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-09-16 17:34:32\n"
+"POT-Creation-Date: 2015-09-22 22:53:33\n"
 "PO-Revision-Date: \n"
-"Last-Translator: Ivan Paulos Tomé <ivan.paulos.tome>\n"
+"Last-Translator: Ivan Paulos Tomé <ivan.paulos.tome@gmail.com>\n"
 "Language-Team: Ivan Paulos Tomé, Dalai Felinto, Bruno Gonçalves Pirajá, Samuel Arataca, Daniel Tavares, Moraes Junior <greylica@gmail.com>\n"
 "Language: pt_BR\n"
 "MIME-Version: 1.0\n"
@@ -1953,20 +1953,20 @@ msgid "Addon Preferences"
 msgstr "Preferências de complementos"
 
 
-msgid "Gettext 'msgfmt' executable"
-msgstr "Executável \"msgfmt\" Gettext"
+msgid "Fribidi Library"
+msgstr "Biblioteca FriBidi"
 
 
-msgid "The gettext msgfmt 'compiler'. You’ll likely have to edit it if you’re under Windows"
-msgstr "O compilador \"msgfmt gettext\". Você provavelmente terá de editá-lo se estiver usando Windows "
+msgid "The FriBidi C compiled library (.so under Linux, .dll under windows...), you’ll likely have to edit it if you’re under Windows, e.g. using the one included in svn's libraries repository"
+msgstr "A biblioteca Fribidi C compilada (.so em sistemas Linux, .dll em sistemas Windows...), você provavelmente irá ter de editá-la se estiver no Windows, ex: usando aquelas inclusas dentro dos repositórios svn de bibliotecas."
 
 
-msgid "Source Root"
-msgstr "Raiz dos arquivos fonte"
+msgid "Spell Cache"
+msgstr "Cache de ortografia"
 
 
-msgid "The Blender source root path"
-msgstr "O caminho da raiz de arquivos fonte do Blender"
+msgid "A cache storing validated msgids, to avoid re-spellchecking them"
+msgstr "Um cache guardando msgids validadas, para evitar que sejam refeitas verificações ortográficas"
 
 
 msgid "Translation Root"
@@ -1985,12 +1985,12 @@ msgid "Additional paths to add to sys.path (';' separated)"
 msgstr "Caminhos adicionais para adicionar para sys.path (separados por \";\")"
 
 
-msgid "Spell Cache"
-msgstr "Cache de ortografia"
+msgid "Source Root"
+msgstr "Raiz dos arquivos fonte"
 
 
-msgid "A cache storing validated msgids, to avoid re-spellchecking them"
-msgstr "Um cache guardando msgids validadas, para evitar que sejam refeitas verificações ortográficas"
+msgid "The Blender source root path"
+msgstr "O caminho da raiz de arquivos fonte do Blender"
 
 
 msgid "Persistent Data Path"
@@ -2001,12 +2001,12 @@ msgid "The name of a json file storing those settings (unfortunately, Blender's 
 msgstr "O nome do arquivo json guardando estas configurações (infelizmente, o sistema do Blender não funciona aqui) "
 
 
-msgid "Fribidi Library"
-msgstr "Biblioteca FriBidi"
+msgid "Gettext 'msgfmt' executable"
+msgstr "Executável \"msgfmt\" Gettext"
 
 
-msgid "The FriBidi C compiled library (.so under Linux, .dll under windows...), you’ll likely have to edit it if you’re under Windows, e.g. using the one included in svn's libraries repository"
-msgstr "A biblioteca Fribidi C compilada (.so em sistemas Linux, .dll em sistemas Windows...), você provavelmente irá ter de editá-la se estiver no Windows, ex: usando aquelas inclusas dentro dos repositórios svn de bibliotecas."
+msgid "The gettext msgfmt 'compiler'. You’ll likely have to edit it if you’re under Windows"
+msgstr "O compilador \"msgfmt gettext\". Você provavelmente terá de editá-lo se estiver usando Windows "
 
 
 msgid "Warn Msgid Not Capitalized"
@@ -43849,6 +43849,15 @@ msgstr "Número de lados no orifício requerido para preencher (zero preenche to
 
 
 msgctxt "Operator"
+msgid "Flip Custom Normals"
+msgstr "Virar as normais personalizadas"
+
+
+msgid "Flip active mesh's normals, including custom ones (only in Object mode)"
+msgstr "Vira as normais da malha ativa, incluindo as personalizadas (somente no \"Modo de objeto\")"
+
+
+msgctxt "Operator"
 msgid "Flip Normals"
 msgstr "Inverter normais"
 
@@ -46009,6 +46018,14 @@ msgid "Add a node to the active tree and link to an existing socket"
 msgstr "Adiciona um nó à árvore ativa e a vincula a um conector existente"
 
 
+msgid "Use Transform"
+msgstr "Usar transformações"
+
+
+msgid "Start transform operator after inserting the node"
+msgstr "Inicia o operador de transformação após a inserção do nó"
+
+
 msgid "Node Type"
 msgstr "Tipo de nó"
 
@@ -46019,14 +46036,6 @@ msgstr "O tipo de nó"
 
 msgid "Settings to be applied on the newly created node"
 msgstr "Configurações a ser aplicadas no nó recentemente criado"
-
-
-msgid "Use Transform"
-msgstr "Usar transformações"
-
-
-msgid "Start transform operator after inserting the node"
-msgstr "Inicia o operador de transformação após a inserção do nó"
 
 
 msgid "Link Socket Index"
@@ -60033,14 +60042,6 @@ msgid "Group of ID properties"
 msgstr "Grupo de propriedades do identificador"
 
 
-msgid "Stitch frame"
-msgstr "Quadro de junção"
-
-
-msgid "Frame to locate stitch on"
-msgstr "Quadro para localizar a junção"
-
-
 msgid "Action 2"
 msgstr "Ação 2"
 
@@ -60049,12 +60050,20 @@ msgid "Second action in stitch"
 msgstr "Segunda ação na costura"
 
 
-msgid "Second offset"
-msgstr "Segundo deslocamento"
+msgid "Stitch frame"
+msgstr "Quadro de junção"
 
 
-msgid "Frame offset for 2nd animation, where it should start"
-msgstr "Deslocamento de quadro para a segunda animação, onde ela deve iniciar"
+msgid "Frame to locate stitch on"
+msgstr "Quadro para localizar a junção"
+
+
+msgid "Stick Bone"
+msgstr "Paralisar osso"
+
+
+msgid "Bone to freeze during transition"
+msgstr "Osso para congelar durante a transição"
 
 
 msgid "Action 1"
@@ -60073,12 +60082,12 @@ msgid "Size of blending transition, on both sides of the stitch"
 msgstr "Tamanho das transições de mesclagem, em ambos os lados das junções"
 
 
-msgid "Stick Bone"
-msgstr "Paralisar osso"
+msgid "Second offset"
+msgstr "Segundo deslocamento"
 
 
-msgid "Bone to freeze during transition"
-msgstr "Osso para congelar durante a transição"
+msgid "Frame offset for 2nd animation, where it should start"
+msgstr "Deslocamento de quadro para a segunda animação, onde ela deve iniciar"
 
 
 msgid "Aperture Type"
@@ -61093,20 +61102,12 @@ msgid "Settings/info about a language"
 msgstr "Configurações e informações sobre uma tradução"
 
 
-msgid "MO File Path"
-msgstr "Caminho de arquivo MO"
+msgid "PO Trunk File Path"
+msgstr "Caminho tronco dos arquivos PO"
 
 
-msgid "Path to the relevant mo file"
-msgstr "Caminho para o arquivo mo relevante"
-
-
-msgid "Language Name"
-msgstr "Nome da língua"
-
-
-msgid "English language name/label (like \"French (Français)\")"
-msgstr "Nome ou rótulo em inglês da tradução (como \"Francês (Francês)\")"
+msgid "Path to the relevant po file in trunk"
+msgstr "Caminho para o arquivo po relevante dentro do tronco"
 
 
 msgid "Language ID"
@@ -61117,6 +61118,14 @@ msgid "ISO code, like fr_FR"
 msgstr "Código ISO, algo como pt_BR"
 
 
+msgid "Language Name"
+msgstr "Nome da língua"
+
+
+msgid "English language name/label (like \"French (Français)\")"
+msgstr "Nome ou rótulo em inglês da tradução (como \"Francês (Francês)\")"
+
+
 msgid "PO File Path"
 msgstr "Caminho de arquivo PO"
 
@@ -61125,16 +61134,24 @@ msgid "Path to the relevant po file in branches"
 msgstr "Caminho para o arquivo po relevante dentro das ramificações"
 
 
+msgid "MO File Path"
+msgstr "Caminho de arquivo MO"
+
+
+msgid "Path to the relevant mo file"
+msgstr "Caminho para o arquivo mo relevante"
+
+
+msgid "Numeric ID"
+msgstr "Identificador numérico"
+
+
+msgid "Numeric ID (readonly!)"
+msgstr "Identificador numérico (somente leitura!)"
+
+
 msgid "Use this language in current operator"
 msgstr "Usar esta língua no operador atual"
-
-
-msgid "PO Trunk File Path"
-msgstr "Caminho tronco dos arquivos PO"
-
-
-msgid "Path to the relevant po file in trunk"
-msgstr "Caminho para o arquivo po relevante dentro do tronco"
 
 
 msgid "PO Git Master File Path"
@@ -61145,12 +61162,16 @@ msgid "Path to the relevant po file in Blender's translations git repository"
 msgstr "O caminho para os arquivos de catálogos .po relevantes no repositório Git de traduções do Blender"
 
 
-msgid "Numeric ID"
-msgstr "Identificador numérico"
+msgid "POT File Path"
+msgstr "Caminho de arquivo POT"
 
 
-msgid "Numeric ID (readonly!)"
-msgstr "Identificador numérico (somente leitura!)"
+msgid "Path to the pot template file"
+msgstr "O caminho para o arquivo modelo tipo pot"
+
+
+msgid "Whether these settings have already been auto-set or not"
+msgstr "Caso estes ajustes já tenham sido configurados automaticamente ou não"
 
 
 msgid "Active Language"
@@ -61169,44 +61190,8 @@ msgid "Languages to update in branches"
 msgstr "Traduções para atualizar nas ramificações"
 
 
-msgid "Whether these settings have already been auto-set or not"
-msgstr "Caso estes ajustes já tenham sido configurados automaticamente ou não"
-
-
-msgid "POT File Path"
-msgstr "Caminho de arquivo POT"
-
-
-msgid "Path to the pot template file"
-msgstr "O caminho para o arquivo modelo tipo pot"
-
-
-msgid "Target of Fix - Point"
-msgstr "Alvo do conserto - Ponto"
-
-
-msgid "Name of Mocap Fix"
-msgstr "Nome do ponto fixo de captura de movimentos"
-
-
-msgid "Bone (2)"
-msgstr "Osso (2)"
-
-
-msgid "Other Constrained Bone (optional, depends on type)"
-msgstr "Outro osso restrito (opcional, dependente do tipo específico)"
-
-
 msgid "Type of constraint"
 msgstr "Tipo de restrição"
-
-
-msgid "Start frame of Fix"
-msgstr "Quadro inicial do conserto"
-
-
-msgid "Fix is active"
-msgstr "Conserto está ativo"
 
 
 msgid "In"
@@ -61217,20 +61202,16 @@ msgid "Number of frames to smooth in"
 msgstr "Número de quadros para suavizar"
 
 
-msgid "Fix is fully shown"
-msgstr "O conserto está plenamente mostrado"
+msgid "Bone (2)"
+msgstr "Osso (2)"
 
 
-msgid "Out"
-msgstr "Saída"
+msgid "Other Constrained Bone (optional, depends on type)"
+msgstr "Outro osso restrito (opcional, dependente do tipo específico)"
 
 
-msgid "Number of frames to smooth out"
-msgstr "Número de quadros para suavizar"
-
-
-msgid "Target of Fix - Mesh (optional, depends on type)"
-msgstr "Alvo para conserto - Malha (opcional, depende do tipo)"
+msgid "Target of Fix - Point"
+msgstr "Alvo do conserto - Ponto"
 
 
 msgid "In which space should Point type target be evaluated"
@@ -61261,6 +61242,10 @@ msgid "Constrained Bone"
 msgstr "Osso restringido"
 
 
+msgid "Distance and Floor Fixes - Desired offset"
+msgstr "Distância e consertos de piso - deslocamento desejado"
+
+
 msgid "E"
 msgstr "E"
 
@@ -61269,8 +61254,32 @@ msgid "End frame of Fix"
 msgstr "Quadro final do conserto"
 
 
-msgid "Distance and Floor Fixes - Desired offset"
-msgstr "Distância e consertos de piso - deslocamento desejado"
+msgid "Target of Fix - Mesh (optional, depends on type)"
+msgstr "Alvo para conserto - Malha (opcional, depende do tipo)"
+
+
+msgid "Name of Mocap Fix"
+msgstr "Nome do ponto fixo de captura de movimentos"
+
+
+msgid "Out"
+msgstr "Saída"
+
+
+msgid "Number of frames to smooth out"
+msgstr "Número de quadros para suavizar"
+
+
+msgid "Start frame of Fix"
+msgstr "Quadro inicial do conserto"
+
+
+msgid "Fix is fully shown"
+msgstr "O conserto está plenamente mostrado"
+
+
+msgid "Fix is active"
+msgstr "Conserto está ativo"
 
 
 msgid "Python expression to be evaluated as the initial node setting"
@@ -61317,24 +61326,12 @@ msgid "Is Stroke Start"
 msgstr "É um início de traço"
 
 
-msgid "Format type to export to"
-msgstr "Tipo de formato para o qual exportar"
+msgid "Apply Scale"
+msgstr "Aplicar escala"
 
 
-msgid "VRML2"
-msgstr "VRML2"
-
-
-msgid "Limit for checking zero area/length"
-msgstr "Limite para verificação de áreas ou comprimentos de valor zero"
-
-
-msgid "Copy Textures"
-msgstr "Copiar texturas"
-
-
-msgid "Copy textures on export to the output path"
-msgstr "Copia as texturas durante a exportação para o caminho de saída"
+msgid "Apply scene scale setting on export"
+msgstr "Aplica a configuração de escala de cena na exportação"
 
 
 msgid "Export Directory"
@@ -61345,16 +61342,28 @@ msgid "Path to directory where the files are created"
 msgstr "Caminho para o diretório onde os arquivos são criados"
 
 
+msgid "Format type to export to"
+msgstr "Tipo de formato para o qual exportar"
+
+
+msgid "VRML2"
+msgstr "VRML2"
+
+
+msgid "Copy Textures"
+msgstr "Copiar texturas"
+
+
+msgid "Copy textures on export to the output path"
+msgstr "Copia as texturas durante a exportação para o caminho de saída"
+
+
 msgid "Limit for checking distorted faces"
 msgstr "Limite para verificação de faces distorcidas"
 
 
-msgid "Apply Scale"
-msgstr "Aplicar escala"
-
-
-msgid "Apply scene scale setting on export"
-msgstr "Aplica a configuração de escala de cena na exportação"
+msgid "Limit for checking zero area/length"
+msgstr "Limite para verificação de áreas ou comprimentos de valor zero"
 
 
 msgid "Selected UV Element"
@@ -75942,6 +75951,10 @@ msgid "No 'Connections' found in file %r"
 msgstr "Nenhuma \"Conexão\" encontrada no arquivo %r"
 
 
+msgid "Custom Normal Tools:"
+msgstr "Ferramentas para normais personalizadas:"
+
+
 msgid "Group '%s' not found"
 msgstr "Grupo '%s' não encontrado"
 
@@ -89698,11 +89711,11 @@ msgstr "Tipo de mapa de ambiente inválido"
 
 
 msgid "Error writing environment map"
-msgstr "Erro ao escrever mapa de ambiente."
+msgstr "Erro ao escrever o mapa de ambiente."
 
 
 msgid "Setting scene %s alpha mode to Premul"
-msgstr "Configurar modo de alfa da cena %s para pré-multiplicação"
+msgstr "Definindo o modo de alfa da cena %s para pré-multiplicado"
 
 
 msgid "Camera \"%s\" is not a multi-view camera"
@@ -89798,7 +89811,7 @@ msgstr "Caminho muito longo, não é possível salvar"
 
 
 msgid "Engine '%s' not available for scene '%s' (an addon may need to be installed or enabled)"
-msgstr "Motor '%s' não disponível para a cena '%s' (pode ser necessário que complementos sejam instalados ou habilitados)"
+msgstr "O motor '%s' não está disponível para a cena '%s' (pode ser necessário que complementos sejam instalados ou habilitados)"
 
 
 msgid "Cannot read file '%s': %s"
@@ -89834,7 +89847,7 @@ msgstr "Não é possível sobrescrever a biblioteca usada '%.240s'"
 
 
 msgid "No valid 3D View found, game auto start is not possible"
-msgstr "Nenhuma visualização 3D válida encontrada, não é possível início automático de jogo"
+msgstr "Nenhuma visualização 3D válida encontrada, não é possível iníciar automaticamente o jogo"
 
 
 msgid "dbl-"
@@ -89923,15 +89936,15 @@ msgstr "Não é possível usar o arquivo atual como biblioteca"
 
 
 msgid "Property cannot be both boolean and float"
-msgstr "Propriedade não pode ser booleana e flutuante ao mesmo tempo"
+msgstr "A propriedade não pode ser booleana e ponto flutuante ao mesmo tempo"
 
 
 msgid "Pointer from path image_id is not an ID"
-msgstr "O ponteiro obtido para o caminho do valor image_id não é um identificador válido"
+msgstr "O ponteiro obtido para o caminho da variável image_id não é um identificador válido"
 
 
 msgid "Property must be an integer or a float"
-msgstr "Propriedade deve ser um inteiro ou um flutuante"
+msgstr "A propriedade deve ser expressa em números inteiros ou em ponto flutuante"
 
 
 msgid "Property must be a none, distance, factor, percentage, angle, or pixel"
@@ -89971,11 +89984,11 @@ msgstr "A cena '%s' está vinculada, instância de grupo desabilitada"
 
 
 msgid "Could not resolve path '%s'"
-msgstr "Não foi possível resolver caminho '%s'"
+msgstr "Não foi possível resolver o caminho fornecido '%s'"
 
 
 msgid "Property from path '%s' is not a float"
-msgstr "Propriedade a partir do caminho '%s' não é flutuante"
+msgstr "Propriedade a partir do caminho '%s' não está definida em ponto flutuante"
 
 
 msgid "Property from path '%s' has length %d instead of %d"
