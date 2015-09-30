@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Blender 2.76 (sub 0) (b'e24ea81')\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-09-28 19:35:12\n"
+"POT-Creation-Date: 2015-09-30 16:04:40\n"
 "PO-Revision-Date: 2015-08-27 01:35+0900\n"
 "Last-Translator: Geuntak Jeong <beroberos@gmail.com>\n"
 "Language-Team: Korean (http://www.transifex.com/lxlalexlxl/blender/language/ko/)\n"
@@ -1937,22 +1937,6 @@ msgid "Addon Preferences"
 msgstr "애드온 환경 설정"
 
 
-msgid "Gettext 'msgfmt' executable"
-msgstr "Gettext 'msgfmt' 실행 가능"
-
-
-msgid "The gettext msgfmt 'compiler'. You’ll likely have to edit it if you’re under Windows"
-msgstr "The gettext msgfmt 'compiler'. 당신이 윈도우즈 환경이라면 편집 해야 할 것입니다"
-
-
-msgid "Import Paths"
-msgstr "가져오기 경로"
-
-
-msgid "Spell Cache"
-msgstr "맞춤법 캐시"
-
-
 msgid "Translation Root"
 msgstr "번역 루트"
 
@@ -1961,12 +1945,12 @@ msgid "The bf-translation repository"
 msgstr "BF-번역 저장소"
 
 
-msgid "Warn Msgid Not Capitalized"
-msgstr "경고 Msgid 대문자 하지 않음"
+msgid "Fribidi Library"
+msgstr "Fribidi 라이브러리"
 
 
-msgid "Persistent Data Path"
-msgstr "지속적인 데이터 경로"
+msgid "The FriBidi C compiled library (.so under Linux, .dll under windows...), you’ll likely have to edit it if you’re under Windows, e.g. using the one included in svn's libraries repository"
+msgstr "FriBidi는 C로 컴파일된 라이브러리 (.so 리눅스용, .dll 윈도우즈용), 당신이 윈도우즈 환경이라면 편집 해야 할 것입니다, 예를 들어 svn의 라이브러리 저장소에 있는 것 중 하나를 사용"
 
 
 msgid "Source Root"
@@ -1977,12 +1961,28 @@ msgid "The Blender source root path"
 msgstr "블렌더 소스 루트 경로"
 
 
-msgid "Fribidi Library"
-msgstr "Fribidi 라이브러리"
+msgid "Spell Cache"
+msgstr "맞춤법 캐시"
 
 
-msgid "The FriBidi C compiled library (.so under Linux, .dll under windows...), you’ll likely have to edit it if you’re under Windows, e.g. using the one included in svn's libraries repository"
-msgstr "FriBidi는 C로 컴파일된 라이브러리 (.so 리눅스용, .dll 윈도우즈용), 당신이 윈도우즈 환경이라면 편집 해야 할 것입니다, 예를 들어 svn의 라이브러리 저장소에 있는 것 중 하나를 사용"
+msgid "Warn Msgid Not Capitalized"
+msgstr "경고 Msgid 대문자 하지 않음"
+
+
+msgid "Persistent Data Path"
+msgstr "지속적인 데이터 경로"
+
+
+msgid "Gettext 'msgfmt' executable"
+msgstr "Gettext 'msgfmt' 실행 가능"
+
+
+msgid "The gettext msgfmt 'compiler'. You’ll likely have to edit it if you’re under Windows"
+msgstr "The gettext msgfmt 'compiler'. 당신이 윈도우즈 환경이라면 편집 해야 할 것입니다"
+
+
+msgid "Import Paths"
+msgstr "가져오기 경로"
 
 
 msgid "Animation Data"
@@ -42498,6 +42498,10 @@ msgid "Add a node to the active tree and link to an existing socket"
 msgstr "기존의 소켓으로 활성 트리 및 연결에 노드를 추가"
 
 
+msgid "Settings to be applied on the newly created node"
+msgstr "새로 작성된 노드에 적용하는 설정"
+
+
 msgid "Node Type"
 msgstr "노드 유형"
 
@@ -42512,10 +42516,6 @@ msgstr "변환을 사용"
 
 msgid "Start transform operator after inserting the node"
 msgstr "노드를 삽입한 이후에 연산자를 변환 시작"
-
-
-msgid "Settings to be applied on the newly created node"
-msgstr "새로 작성된 노드에 적용하는 설정"
 
 
 msgid "Link Socket Index"
@@ -55664,12 +55664,20 @@ msgid "Second offset"
 msgstr "두 번째 오프셋"
 
 
-msgid "Action 1"
-msgstr "액션 1"
+msgid "Action 2"
+msgstr "액션 2"
 
 
-msgid "First action in stitch"
-msgstr "봉합에서 첫 번째 액션"
+msgid "Second action in stitch"
+msgstr "봉합에서 두 번째 액션"
+
+
+msgid "Stick Bone"
+msgstr "스틱 본"
+
+
+msgid "Bone to freeze during transition"
+msgstr "이행하는 동안 동결하는 본"
 
 
 msgid "Blend amount"
@@ -55688,20 +55696,12 @@ msgid "Frame to locate stitch on"
 msgstr "다음에 봉합을 찾는 프레임"
 
 
-msgid "Action 2"
-msgstr "액션 2"
+msgid "Action 1"
+msgstr "액션 1"
 
 
-msgid "Second action in stitch"
-msgstr "봉합에서 두 번째 액션"
-
-
-msgid "Stick Bone"
-msgstr "스틱 본"
-
-
-msgid "Bone to freeze during transition"
-msgstr "이행하는 동안 동결하는 본"
+msgid "First action in stitch"
+msgstr "봉합에서 첫 번째 액션"
 
 
 msgid "Aperture Type"
@@ -56628,16 +56628,24 @@ msgid "Path to the relevant po file in trunk"
 msgstr "트렁크에서 해당 PO 파일에 대한 경로"
 
 
+msgid "PO Git Master File Path"
+msgstr "PO Git  마스터 파일 경로"
+
+
+msgid "Numeric ID"
+msgstr "숫자 ID"
+
+
+msgid "Numeric ID (readonly!)"
+msgstr "숫자 ID (읽기 전용!)"
+
+
 msgid "Language ID"
 msgstr "언어 ID"
 
 
 msgid "ISO code, like fr_FR"
 msgstr "ISO 코드, fr_FR 같은"
-
-
-msgid "Language Name"
-msgstr "언어 이름"
 
 
 msgid "MO File Path"
@@ -56660,32 +56668,8 @@ msgid "Use this language in current operator"
 msgstr "현재 연산자에서 이 언어를 사용"
 
 
-msgid "Numeric ID"
-msgstr "숫자 ID"
-
-
-msgid "Numeric ID (readonly!)"
-msgstr "숫자 ID (읽기 전용!)"
-
-
-msgid "PO Git Master File Path"
-msgstr "PO Git  마스터 파일 경로"
-
-
-msgid "Active Language"
-msgstr "활성 언어"
-
-
-msgid "Index of active language in langs collection"
-msgstr "랭스 모음에서 활성 언어의 인덱스"
-
-
-msgid "Languages"
-msgstr "언어"
-
-
-msgid "Languages to update in branches"
-msgstr "분기에서 업데이트하는 언어"
+msgid "Language Name"
+msgstr "언어 이름"
 
 
 msgid "POT File Path"
@@ -56696,56 +56680,24 @@ msgid "Path to the pot template file"
 msgstr "POT 서식 파일에 대한 경로"
 
 
-msgid "Fix is fully shown"
-msgstr "고정이 완전히 표시됨"
+msgid "Languages"
+msgstr "언어"
+
+
+msgid "Languages to update in branches"
+msgstr "분기에서 업데이트하는 언어"
+
+
+msgid "Active Language"
+msgstr "활성 언어"
+
+
+msgid "Index of active language in langs collection"
+msgstr "랭스 모음에서 활성 언어의 인덱스"
 
 
 msgid "Start frame of Fix"
 msgstr "고정의 시작 프레임"
-
-
-msgid "Target of Fix - Point"
-msgstr "고정의 대상 - 포인트"
-
-
-msgid "Distance and Floor Fixes - Desired offset"
-msgstr "거리 및 바닥 고정 - 원하는 오프셋"
-
-
-msgid "Name of Mocap Fix"
-msgstr "모캡 고정의 이름"
-
-
-msgid "Out"
-msgstr "Out"
-
-
-msgid "Number of frames to smooth out"
-msgstr "다음 밖에서 매끄럽게 하는 프레임의 수"
-
-
-msgid "Fix is active"
-msgstr "고정이 활성"
-
-
-msgid "E"
-msgstr "E"
-
-
-msgid "End frame of Fix"
-msgstr "고정의 종료 프레임"
-
-
-msgid "Bone (2)"
-msgstr "본 (2)"
-
-
-msgid "Other Constrained Bone (optional, depends on type)"
-msgstr "다른 제약된 본 (선택 사항, 유형에 따라 다름)"
-
-
-msgid "Type of constraint"
-msgstr "제약의 유형"
 
 
 msgid "Evaluate target in global space"
@@ -56768,6 +56720,46 @@ msgid "Evaluate target in specified other bone space"
 msgstr "지정된 다른 본 공간에서 대상을 평가"
 
 
+msgid "Distance and Floor Fixes - Desired offset"
+msgstr "거리 및 바닥 고정 - 원하는 오프셋"
+
+
+msgid "Fix is active"
+msgstr "고정이 활성"
+
+
+msgid "Type of constraint"
+msgstr "제약의 유형"
+
+
+msgid "Target of Fix - Mesh (optional, depends on type)"
+msgstr "고정의 대상 - 메시 (선택 사항, 유형에 따라 다름)"
+
+
+msgid "Target of Fix - Point"
+msgstr "고정의 대상 - 포인트"
+
+
+msgid "Fix is fully shown"
+msgstr "고정이 완전히 표시됨"
+
+
+msgid "Out"
+msgstr "Out"
+
+
+msgid "Number of frames to smooth out"
+msgstr "다음 밖에서 매끄럽게 하는 프레임의 수"
+
+
+msgid "E"
+msgstr "E"
+
+
+msgid "End frame of Fix"
+msgstr "고정의 종료 프레임"
+
+
 msgid "In"
 msgstr "In"
 
@@ -56776,8 +56768,16 @@ msgid "Number of frames to smooth in"
 msgstr "다음 안에서 매끄럽게 하는 프레임의 수"
 
 
-msgid "Target of Fix - Mesh (optional, depends on type)"
-msgstr "고정의 대상 - 메시 (선택 사항, 유형에 따라 다름)"
+msgid "Bone (2)"
+msgstr "본 (2)"
+
+
+msgid "Other Constrained Bone (optional, depends on type)"
+msgstr "다른 제약된 본 (선택 사항, 유형에 따라 다름)"
+
+
+msgid "Name of Mocap Fix"
+msgstr "모캡 고정의 이름"
 
 
 msgid "Constrained Bone"
@@ -56836,12 +56836,12 @@ msgid "VRML2"
 msgstr "VRML2"
 
 
-msgid "Limit for checking zero area/length"
-msgstr "제로 영역/길이를 확인하기 위한 제한"
+msgid "Apply Scale"
+msgstr "규모를 적용"
 
 
-msgid "Limit for checking distorted faces"
-msgstr "왜곡된 페이스를 확인하기 위한 제한"
+msgid "Apply scene scale setting on export"
+msgstr "내보내기에 장면 규모 설정을 적용"
 
 
 msgid "Copy Textures"
@@ -56852,20 +56852,20 @@ msgid "Copy textures on export to the output path"
 msgstr "출력 경로로 내보내기에 텍스처를 복사"
 
 
-msgid "Apply Scale"
-msgstr "규모를 적용"
-
-
-msgid "Apply scene scale setting on export"
-msgstr "내보내기에 장면 규모 설정을 적용"
-
-
 msgid "Export Directory"
 msgstr "내보내기 디렉토리"
 
 
 msgid "Path to directory where the files are created"
 msgstr "파일이 생성되는 디렉토리에 경로"
+
+
+msgid "Limit for checking zero area/length"
+msgstr "제로 영역/길이를 확인하기 위한 제한"
+
+
+msgid "Limit for checking distorted faces"
+msgstr "왜곡된 페이스를 확인하기 위한 제한"
 
 
 msgid "Selected UV Element"

@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Blender 2.76 (sub 0) (b'e24ea81')\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-09-28 19:35:12\n"
+"POT-Creation-Date: 2015-09-30 16:04:40\n"
 "PO-Revision-Date: \n"
 "Last-Translator: Gabriel Gazzan <gabcorreo@gmail.com>\n"
 "Language-Team: Español <gabcorreo@gmail.com>\n"
@@ -1952,20 +1952,28 @@ msgid "Addon Preferences"
 msgstr "Opciones de agregados"
 
 
-msgid "Gettext 'msgfmt' executable"
-msgstr "Ejecutable 'msgfmt' de Gettext"
+msgid "Translation Root"
+msgstr "Raíz de la traducción"
 
 
-msgid "The gettext msgfmt 'compiler'. You’ll likely have to edit it if you’re under Windows"
-msgstr "El 'compilador' de msgfmt de gettext. Es posible que haya que editarlo en Windows"
+msgid "The bf-translation repository"
+msgstr "El repositorio de la traducción de Blender"
 
 
-msgid "Import Paths"
-msgstr "Rutas de importación"
+msgid "Fribidi Library"
+msgstr "Biblioteca Fribidi"
 
 
-msgid "Additional paths to add to sys.path (';' separated)"
-msgstr "Rutas adicionales a agregar al sys.path (separadas por ';')"
+msgid "The FriBidi C compiled library (.so under Linux, .dll under windows...), you’ll likely have to edit it if you’re under Windows, e.g. using the one included in svn's libraries repository"
+msgstr "La biblioteca escrita en C y compilada FriBidi (.so en Linux, .dll en windows...), es probable que se deba editar bajo Windows, p.ej: usando la que se incluye en el repositorio de bibliotecas del SVN"
+
+
+msgid "Source Root"
+msgstr "Raíz del cód. fuente"
+
+
+msgid "The Blender source root path"
+msgstr "La ruta raíz del código fuente de Blender"
 
 
 msgid "Spell Cache"
@@ -1974,14 +1982,6 @@ msgstr "Caché de ortografía"
 
 msgid "A cache storing validated msgids, to avoid re-spellchecking them"
 msgstr "Un caché que almacena los mensajes validados, para evitar tener que volver a comprobar su ortografía"
-
-
-msgid "Translation Root"
-msgstr "Raíz de la traducción"
-
-
-msgid "The bf-translation repository"
-msgstr "El repositorio de la traducción de Blender"
 
 
 msgid "Warn Msgid Not Capitalized"
@@ -2000,20 +2000,20 @@ msgid "The name of a json file storing those settings (unfortunately, Blender's 
 msgstr "El nombre de un archivo json que almacena estas opciones (desafortunadamente, el sistema de Blender no funciona aquí)"
 
 
-msgid "Source Root"
-msgstr "Raíz del cód. fuente"
+msgid "Gettext 'msgfmt' executable"
+msgstr "Ejecutable 'msgfmt' de Gettext"
 
 
-msgid "The Blender source root path"
-msgstr "La ruta raíz del código fuente de Blender"
+msgid "The gettext msgfmt 'compiler'. You’ll likely have to edit it if you’re under Windows"
+msgstr "El 'compilador' de msgfmt de gettext. Es posible que haya que editarlo en Windows"
 
 
-msgid "Fribidi Library"
-msgstr "Biblioteca Fribidi"
+msgid "Import Paths"
+msgstr "Rutas de importación"
 
 
-msgid "The FriBidi C compiled library (.so under Linux, .dll under windows...), you’ll likely have to edit it if you’re under Windows, e.g. using the one included in svn's libraries repository"
-msgstr "La biblioteca escrita en C y compilada FriBidi (.so en Linux, .dll en windows...), es probable que se deba editar bajo Windows, p.ej: usando la que se incluye en el repositorio de bibliotecas del SVN"
+msgid "Additional paths to add to sys.path (';' separated)"
+msgstr "Rutas adicionales a agregar al sys.path (separadas por ';')"
 
 
 msgid "Animation Data"
@@ -46017,6 +46017,10 @@ msgid "Add a node to the active tree and link to an existing socket"
 msgstr "Agrega un nodo al árbol activo y lo vincula a un conector existente"
 
 
+msgid "Settings to be applied on the newly created node"
+msgstr "Opciones a ser aplicadas al nuevo nodo"
+
+
 msgid "Node Type"
 msgstr "Tipo de nodo"
 
@@ -46031,10 +46035,6 @@ msgstr "Usar transformación"
 
 msgid "Start transform operator after inserting the node"
 msgstr "Inicia el operador de transformación luego de insertar el nodo"
-
-
-msgid "Settings to be applied on the newly created node"
-msgstr "Opciones a ser aplicadas al nuevo nodo"
 
 
 msgid "Link Socket Index"
@@ -60049,12 +60049,20 @@ msgid "Frame offset for 2nd animation, where it should start"
 msgstr "Desplazamiento de fotogramas para la 2da animación, donde debería comenzar"
 
 
-msgid "Action 1"
-msgstr "Acción 1"
+msgid "Action 2"
+msgstr "Acción 2"
 
 
-msgid "First action in stitch"
-msgstr "Primera acción al unir"
+msgid "Second action in stitch"
+msgstr "Segunda acción al unir"
+
+
+msgid "Stick Bone"
+msgstr "Hueso tipo bastón"
+
+
+msgid "Bone to freeze during transition"
+msgstr "Hueso a congelar durante la transición"
 
 
 msgid "Blend amount"
@@ -60073,20 +60081,12 @@ msgid "Frame to locate stitch on"
 msgstr "Marco donde ubicar la unión"
 
 
-msgid "Action 2"
-msgstr "Acción 2"
+msgid "Action 1"
+msgstr "Acción 1"
 
 
-msgid "Second action in stitch"
-msgstr "Segunda acción al unir"
-
-
-msgid "Stick Bone"
-msgstr "Hueso tipo bastón"
-
-
-msgid "Bone to freeze during transition"
-msgstr "Hueso a congelar durante la transición"
+msgid "First action in stitch"
+msgstr "Primera acción al unir"
 
 
 msgid "Aperture Type"
@@ -61109,20 +61109,28 @@ msgid "Path to the relevant po file in trunk"
 msgstr "Ruta al archivo .PO relevante en el tronco principal"
 
 
+msgid "PO Git Master File Path"
+msgstr "Ruta al archivo PO maestro en el GIT"
+
+
+msgid "Path to the relevant po file in Blender's translations git repository"
+msgstr "Ruta al archivo .po relevante en el repositorio GIT que contiene las traducciones de Blender"
+
+
+msgid "Numeric ID"
+msgstr "ID numérico"
+
+
+msgid "Numeric ID (readonly!)"
+msgstr "ID numérico (¡solo lectura!)"
+
+
 msgid "Language ID"
 msgstr "Idioma"
 
 
 msgid "ISO code, like fr_FR"
 msgstr "Código ISO, del estilo es_AR"
-
-
-msgid "Language Name"
-msgstr "Idioma"
-
-
-msgid "English language name/label (like \"French (Français)\")"
-msgstr "Etiqueta del nombre en inglés (como \"Spanish (Español)\")"
 
 
 msgid "MO File Path"
@@ -61145,40 +61153,16 @@ msgid "Use this language in current operator"
 msgstr "Usar este idioma en el operador actual"
 
 
-msgid "Numeric ID"
-msgstr "ID numérico"
+msgid "Language Name"
+msgstr "Idioma"
 
 
-msgid "Numeric ID (readonly!)"
-msgstr "ID numérico (¡solo lectura!)"
-
-
-msgid "PO Git Master File Path"
-msgstr "Ruta al archivo PO maestro en el GIT"
-
-
-msgid "Path to the relevant po file in Blender's translations git repository"
-msgstr "Ruta al archivo .po relevante en el repositorio GIT que contiene las traducciones de Blender"
-
-
-msgid "Active Language"
-msgstr "Idioma activo"
-
-
-msgid "Index of active language in langs collection"
-msgstr "Índice del idioma activo en la colección de idiomas"
+msgid "English language name/label (like \"French (Français)\")"
+msgstr "Etiqueta del nombre en inglés (como \"Spanish (Español)\")"
 
 
 msgid "Whether these settings have already been auto-set or not"
 msgstr "Si estas opciones ya han sido definidas automáticamente o no"
-
-
-msgid "Languages"
-msgstr "Idioma"
-
-
-msgid "Languages to update in branches"
-msgstr "Idiomas a actualizar en las ramas"
 
 
 msgid "POT File Path"
@@ -61189,56 +61173,24 @@ msgid "Path to the pot template file"
 msgstr "Ruta al archivo de plantilla .POT"
 
 
-msgid "Fix is fully shown"
-msgstr "La corrección se muestra completamente"
+msgid "Languages"
+msgstr "Idioma"
+
+
+msgid "Languages to update in branches"
+msgstr "Idiomas a actualizar en las ramas"
+
+
+msgid "Active Language"
+msgstr "Idioma activo"
+
+
+msgid "Index of active language in langs collection"
+msgstr "Índice del idioma activo en la colección de idiomas"
 
 
 msgid "Start frame of Fix"
 msgstr "Fotograma inicial de la corrección"
-
-
-msgid "Target of Fix - Point"
-msgstr "Objetivo de corrección - Punto"
-
-
-msgid "Distance and Floor Fixes - Desired offset"
-msgstr "Correcciones de distancia y piso - Desplazamiento deseado"
-
-
-msgid "Name of Mocap Fix"
-msgstr "Nombre de la corrección de CaptMov"
-
-
-msgid "Out"
-msgstr "Salida"
-
-
-msgid "Number of frames to smooth out"
-msgstr "Cantidad de fotogramas a suavizar"
-
-
-msgid "Fix is active"
-msgstr "La corrección está activa"
-
-
-msgid "E"
-msgstr "E"
-
-
-msgid "End frame of Fix"
-msgstr "Fotoframa final de la corrección"
-
-
-msgid "Bone (2)"
-msgstr "Hueso (2)"
-
-
-msgid "Other Constrained Bone (optional, depends on type)"
-msgstr "El otro hueso restringido (opcional, depende del tipo)"
-
-
-msgid "Type of constraint"
-msgstr "Tipo de restricción"
 
 
 msgid "In which space should Point type target be evaluated"
@@ -61265,6 +61217,46 @@ msgid "Evaluate target in specified other bone space"
 msgstr "Evalúa el objetivo en el espacio de huesos del otro especificado"
 
 
+msgid "Distance and Floor Fixes - Desired offset"
+msgstr "Correcciones de distancia y piso - Desplazamiento deseado"
+
+
+msgid "Fix is active"
+msgstr "La corrección está activa"
+
+
+msgid "Type of constraint"
+msgstr "Tipo de restricción"
+
+
+msgid "Target of Fix - Mesh (optional, depends on type)"
+msgstr "Objetivo de corrección - Malla (opcional, depende del tipo)"
+
+
+msgid "Target of Fix - Point"
+msgstr "Objetivo de corrección - Punto"
+
+
+msgid "Fix is fully shown"
+msgstr "La corrección se muestra completamente"
+
+
+msgid "Out"
+msgstr "Salida"
+
+
+msgid "Number of frames to smooth out"
+msgstr "Cantidad de fotogramas a suavizar"
+
+
+msgid "E"
+msgstr "E"
+
+
+msgid "End frame of Fix"
+msgstr "Fotoframa final de la corrección"
+
+
 msgid "In"
 msgstr "Entrada"
 
@@ -61273,8 +61265,16 @@ msgid "Number of frames to smooth in"
 msgstr "Cantidad de fotogramas para suavizar"
 
 
-msgid "Target of Fix - Mesh (optional, depends on type)"
-msgstr "Objetivo de corrección - Malla (opcional, depende del tipo)"
+msgid "Bone (2)"
+msgstr "Hueso (2)"
+
+
+msgid "Other Constrained Bone (optional, depends on type)"
+msgstr "El otro hueso restringido (opcional, depende del tipo)"
+
+
+msgid "Name of Mocap Fix"
+msgstr "Nombre de la corrección de CaptMov"
 
 
 msgid "Constrained Bone"
@@ -61333,12 +61333,12 @@ msgid "VRML2"
 msgstr "VRML2"
 
 
-msgid "Limit for checking zero area/length"
-msgstr "Límite para comprobar área/longitud nulas"
+msgid "Apply Scale"
+msgstr "Aplicar escala"
 
 
-msgid "Limit for checking distorted faces"
-msgstr "Límite para comprobar caras distorsionadas"
+msgid "Apply scene scale setting on export"
+msgstr "Aplica la escala de la escena al exportar"
 
 
 msgid "Copy Textures"
@@ -61349,20 +61349,20 @@ msgid "Copy textures on export to the output path"
 msgstr "Al exportar copia las texturas a la ruta de destino"
 
 
-msgid "Apply Scale"
-msgstr "Aplicar escala"
-
-
-msgid "Apply scene scale setting on export"
-msgstr "Aplica la escala de la escena al exportar"
-
-
 msgid "Export Directory"
 msgstr "Directorio de exportación"
 
 
 msgid "Path to directory where the files are created"
 msgstr "Ruta al directorio donde se crearán los archivos"
+
+
+msgid "Limit for checking zero area/length"
+msgstr "Límite para comprobar área/longitud nulas"
+
+
+msgid "Limit for checking distorted faces"
+msgstr "Límite para comprobar caras distorsionadas"
 
 
 msgid "Selected UV Element"
