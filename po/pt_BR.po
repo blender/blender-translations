@@ -1,9 +1,9 @@
 
 msgid ""
 msgstr ""
-"Project-Id-Version: Blender 2.76 (sub 0) (b'e24ea81')\n"
+"Project-Id-Version: Blender 2.76 (sub 0) (b'fb78f6d')\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-09-30 16:04:40\n"
+"POT-Creation-Date: 2015-10-05 20:13:42\n"
 "PO-Revision-Date: \n"
 "Last-Translator: Ivan Paulos Tomé <ivan.paulos.tome@gmail.com>\n"
 "Language-Team: Ivan Paulos Tomé, Dalai Felinto, Bruno Gonçalves Pirajá, Samuel Arataca, Daniel Tavares, Moraes Junior <greylica@gmail.com>\n"
@@ -1953,28 +1953,12 @@ msgid "Addon Preferences"
 msgstr "Preferências de complementos"
 
 
-msgid "Translation Root"
-msgstr "Raiz das traduções"
+msgid "Import Paths"
+msgstr "Importar unidades"
 
 
-msgid "The bf-translation repository"
-msgstr "O repositório de tradução da fundação Blender"
-
-
-msgid "Fribidi Library"
-msgstr "Biblioteca FriBidi"
-
-
-msgid "The FriBidi C compiled library (.so under Linux, .dll under windows...), you’ll likely have to edit it if you’re under Windows, e.g. using the one included in svn's libraries repository"
-msgstr "A biblioteca Fribidi C compilada (.so em sistemas Linux, .dll em sistemas Windows...), você provavelmente irá ter de editá-la se estiver no Windows, ex: usando aquelas inclusas dentro dos repositórios svn de bibliotecas."
-
-
-msgid "Source Root"
-msgstr "Raiz dos arquivos fonte"
-
-
-msgid "The Blender source root path"
-msgstr "O caminho da raiz de arquivos fonte do Blender"
+msgid "Additional paths to add to sys.path (';' separated)"
+msgstr "Caminhos adicionais para adicionar para sys.path (separados por \";\")"
 
 
 msgid "Spell Cache"
@@ -1985,12 +1969,12 @@ msgid "A cache storing validated msgids, to avoid re-spellchecking them"
 msgstr "Um cache guardando msgids validadas, para evitar que sejam refeitas verificações ortográficas"
 
 
-msgid "Warn Msgid Not Capitalized"
-msgstr "Emite um aviso sobre Msgid não capitalizadas"
+msgid "Fribidi Library"
+msgstr "Biblioteca FriBidi"
 
 
-msgid "Warn about messages not starting by a capitalized letter (with a few allowed exceptions!)"
-msgstr "Emite um aviso sobre mensagens que não iniciam com letras capitalizadas (com poucas exceções permitidas!)"
+msgid "The FriBidi C compiled library (.so under Linux, .dll under windows...), you’ll likely have to edit it if you’re under Windows, e.g. using the one included in svn's libraries repository"
+msgstr "A biblioteca Fribidi C compilada (.so em sistemas Linux, .dll em sistemas Windows...), você provavelmente irá ter de editá-la se estiver no Windows, ex: usando aquelas inclusas dentro dos repositórios svn de bibliotecas."
 
 
 msgid "Persistent Data Path"
@@ -2009,12 +1993,28 @@ msgid "The gettext msgfmt 'compiler'. You’ll likely have to edit it if you’r
 msgstr "O compilador \"msgfmt gettext\". Você provavelmente terá de editá-lo se estiver usando Windows "
 
 
-msgid "Import Paths"
-msgstr "Importar unidades"
+msgid "Translation Root"
+msgstr "Raiz das traduções"
 
 
-msgid "Additional paths to add to sys.path (';' separated)"
-msgstr "Caminhos adicionais para adicionar para sys.path (separados por \";\")"
+msgid "The bf-translation repository"
+msgstr "O repositório de tradução da fundação Blender"
+
+
+msgid "Warn Msgid Not Capitalized"
+msgstr "Emite um aviso sobre Msgid não capitalizadas"
+
+
+msgid "Warn about messages not starting by a capitalized letter (with a few allowed exceptions!)"
+msgstr "Emite um aviso sobre mensagens que não iniciam com letras capitalizadas (com poucas exceções permitidas!)"
+
+
+msgid "Source Root"
+msgstr "Raiz dos arquivos fonte"
+
+
+msgid "The Blender source root path"
+msgstr "O caminho da raiz de arquivos fonte do Blender"
 
 
 msgid "Animation Data"
@@ -3694,7 +3694,7 @@ msgstr "Velocidade terrestre máxima"
 
 
 msgid "Maximum speed on land"
-msgstr "Velocidade máxima na terra"
+msgstr "A velocidade máxima quando em solo"
 
 
 msgid "Max Land Acceleration"
@@ -3702,31 +3702,31 @@ msgstr "Aceleração terrestre máxima"
 
 
 msgid "Maximum acceleration on land (relative to maximum speed)"
-msgstr "Aceleração máxima na terra (relativa a velocidade máxima)"
+msgstr "A aceleração máxima quando em solo (relativa a velocidade máxima)"
 
 
 msgid "Max Land Angular Velocity"
-msgstr "Velocidade angular máxima de aterrizagem"
+msgstr "Velocidade terrestre angular máxima"
 
 
 msgid "Maximum angular velocity on land (relative to 180 degrees)"
-msgstr "Velocidade angular máxima na terra (relativa a 180 graus)"
+msgstr "A velocidade angular máxima quando em solo (relativa a 180 graus)"
 
 
 msgid "Land Personal Space"
-msgstr "Pousar em espaço pessoal"
+msgstr "Espaço pessoal terrestre"
 
 
 msgid "Radius of boids personal space on land (% of particle size)"
-msgstr "Raio do espaço pessoal das revoadas quando aterrizadas (porcentagem do tamanho das partículas)"
+msgstr "O raio do espaço pessoal das revoadas quando em solo (porcentagem do tamanho das partículas)"
 
 
 msgid "Land Stick Force"
-msgstr "Força de fixação para aterrizar"
+msgstr "Força de fixação terrestre"
 
 
 msgid "How strong a force must be to start effecting a boid on land"
-msgstr "Quão potente uma força deverá ser inicialmente para afetar uma revoada aterrizada"
+msgstr "Quão potente uma força deverá ser para afetar inicialmente uma revoada quando em solo"
 
 
 msgid "Allow Flight"
@@ -3742,7 +3742,7 @@ msgstr "Permitir aterrizagem"
 
 
 msgid "Allow boids to move on land"
-msgstr "Permite que as revoadas se movam em terra"
+msgstr "Permite que as revoadas se movam quando em solo"
 
 
 msgid "Allow Climbing"
@@ -9027,7 +9027,7 @@ msgstr "A curva-f e seus quadros-chave são ocultados dentro dos gráficos do ed
 
 
 msgid "False when F-Curve could not be evaluated in past, so should be skipped when evaluating"
-msgstr "Falso quando a curva-f não pôde ser avaliada no passado, portanto deve ser saltada enquanto a avaliação procede"
+msgstr "Falso quando a curva-f não pôde ser avaliada no passado, portanto será desprezada nas procedências das avaliações"
 
 
 msgid "Sampled Points"
@@ -40753,7 +40753,7 @@ msgstr "Saltos de tempo personalizados"
 
 
 msgid "Use the original timing, but with custom gap lengths (in frames)"
-msgstr "Usa a temporização original, mas com lacunas comprimento personalizado (em quadros)"
+msgstr "Usa a temporização original, mas com espaços personalizados de comprimento (em quadros)"
 
 
 msgid "The duration of evaluation of the path control curve"
@@ -45677,7 +45677,7 @@ msgstr "Somente a faixa ativa"
 
 
 msgid "Only sync the active length for the active strip"
-msgstr "Somente sincronizar o comprimento ativo para a faixa ativa"
+msgstr "Sincroniza somente o comprimento ativo para a faixa ativa"
 
 
 msgctxt "Operator"
@@ -46018,10 +46018,6 @@ msgid "Add a node to the active tree and link to an existing socket"
 msgstr "Adiciona um nó à árvore ativa e a vincula a um conector existente"
 
 
-msgid "Settings to be applied on the newly created node"
-msgstr "Configurações a ser aplicadas no nó recentemente criado"
-
-
 msgid "Node Type"
 msgstr "Tipo de nó"
 
@@ -46036,6 +46032,10 @@ msgstr "Usar transformações"
 
 msgid "Start transform operator after inserting the node"
 msgstr "Inicia o operador de transformação após a inserção do nó"
+
+
+msgid "Settings to be applied on the newly created node"
+msgstr "Configurações a ser aplicadas no nó recentemente criado"
 
 
 msgid "Link Socket Index"
@@ -47288,7 +47288,7 @@ msgstr "Desvincular grupo"
 
 
 msgid "Unlink the group from all objects"
-msgstr "Desvincular o grupo de todos os objetos"
+msgstr "Desvincula o grupo de todos os objetos"
 
 
 msgid "Select all objects in group"
@@ -47397,7 +47397,7 @@ msgstr "Redefinir o gancho"
 
 
 msgid "Recalculate and clear offset transformation"
-msgstr "Recalcula e limpa a transformação de deslocamento"
+msgstr "Recalcula e limpa as transformações de deslocamento"
 
 
 msgctxt "Operator"
@@ -60042,20 +60042,12 @@ msgid "Group of ID properties"
 msgstr "Grupo de propriedades do identificador"
 
 
-msgid "Second offset"
-msgstr "Segundo deslocamento"
+msgid "Action 1"
+msgstr "Ação 1"
 
 
-msgid "Frame offset for 2nd animation, where it should start"
-msgstr "Deslocamento de quadro para a segunda animação, onde ela deve iniciar"
-
-
-msgid "Action 2"
-msgstr "Ação 2"
-
-
-msgid "Second action in stitch"
-msgstr "Segunda ação na costura"
+msgid "First action in stitch"
+msgstr "Primeira ação dentro do ponto de junção"
 
 
 msgid "Stick Bone"
@@ -60066,14 +60058,6 @@ msgid "Bone to freeze during transition"
 msgstr "Osso para congelar durante a transição"
 
 
-msgid "Blend amount"
-msgstr "Quantidade de mescla"
-
-
-msgid "Size of blending transition, on both sides of the stitch"
-msgstr "Tamanho das transições de mesclagem, em ambos os lados das junções"
-
-
 msgid "Stitch frame"
 msgstr "Quadro de junção"
 
@@ -60082,12 +60066,28 @@ msgid "Frame to locate stitch on"
 msgstr "Quadro para localizar a junção"
 
 
-msgid "Action 1"
-msgstr "Ação 1"
+msgid "Action 2"
+msgstr "Ação 2"
 
 
-msgid "First action in stitch"
-msgstr "Primeira ação dentro do ponto de junção"
+msgid "Second action in stitch"
+msgstr "Segunda ação na costura"
+
+
+msgid "Blend amount"
+msgstr "Quantidade de mescla"
+
+
+msgid "Size of blending transition, on both sides of the stitch"
+msgstr "Tamanho das transições de mesclagem, em ambos os lados das junções"
+
+
+msgid "Second offset"
+msgstr "Segundo deslocamento"
+
+
+msgid "Frame offset for 2nd animation, where it should start"
+msgstr "Deslocamento de quadro para a segunda animação, onde ela deve iniciar"
 
 
 msgid "Aperture Type"
@@ -61102,12 +61102,16 @@ msgid "Settings/info about a language"
 msgstr "Configurações e informações sobre uma tradução"
 
 
-msgid "PO Trunk File Path"
-msgstr "Caminho tronco dos arquivos PO"
+msgid "Language Name"
+msgstr "Nome da língua"
 
 
-msgid "Path to the relevant po file in trunk"
-msgstr "Caminho para o arquivo po relevante dentro do tronco"
+msgid "English language name/label (like \"French (Français)\")"
+msgstr "Nome ou rótulo em inglês da tradução (como \"Francês (Francês)\")"
+
+
+msgid "Use this language in current operator"
+msgstr "Usar esta língua no operador atual"
 
 
 msgid "PO Git Master File Path"
@@ -61126,20 +61130,20 @@ msgid "Numeric ID (readonly!)"
 msgstr "Identificador numérico (somente leitura!)"
 
 
+msgid "PO Trunk File Path"
+msgstr "Caminho tronco dos arquivos PO"
+
+
+msgid "Path to the relevant po file in trunk"
+msgstr "Caminho para o arquivo po relevante dentro do tronco"
+
+
 msgid "Language ID"
 msgstr "Identificador da língua"
 
 
 msgid "ISO code, like fr_FR"
 msgstr "Código ISO, algo como pt_BR"
-
-
-msgid "MO File Path"
-msgstr "Caminho de arquivo MO"
-
-
-msgid "Path to the relevant mo file"
-msgstr "Caminho para o arquivo mo relevante"
 
 
 msgid "PO File Path"
@@ -61150,20 +61154,24 @@ msgid "Path to the relevant po file in branches"
 msgstr "Caminho para o arquivo po relevante dentro das ramificações"
 
 
-msgid "Use this language in current operator"
-msgstr "Usar esta língua no operador atual"
+msgid "MO File Path"
+msgstr "Caminho de arquivo MO"
 
 
-msgid "Language Name"
-msgstr "Nome da língua"
-
-
-msgid "English language name/label (like \"French (Français)\")"
-msgstr "Nome ou rótulo em inglês da tradução (como \"Francês (Francês)\")"
+msgid "Path to the relevant mo file"
+msgstr "Caminho para o arquivo mo relevante"
 
 
 msgid "Whether these settings have already been auto-set or not"
 msgstr "Caso estes ajustes já tenham sido configurados automaticamente ou não"
+
+
+msgid "Active Language"
+msgstr "Tradução ativa"
+
+
+msgid "Index of active language in langs collection"
+msgstr "Índice da língua ativa dentro da coleção de traduções"
 
 
 msgid "POT File Path"
@@ -61182,16 +61190,72 @@ msgid "Languages to update in branches"
 msgstr "Traduções para atualizar nas ramificações"
 
 
-msgid "Active Language"
-msgstr "Tradução ativa"
+msgid "In"
+msgstr "Entrada"
 
 
-msgid "Index of active language in langs collection"
-msgstr "Índice da língua ativa dentro da coleção de traduções"
+msgid "Number of frames to smooth in"
+msgstr "Número de quadros para suavizar"
+
+
+msgid "Name of Mocap Fix"
+msgstr "Nome do ponto fixo de captura de movimentos"
+
+
+msgid "Fix is fully shown"
+msgstr "O conserto está plenamente mostrado"
+
+
+msgid "Constrained Bone"
+msgstr "Osso restringido"
+
+
+msgid "Fix is active"
+msgstr "Conserto está ativo"
+
+
+msgid "Distance and Floor Fixes - Desired offset"
+msgstr "Distância e consertos de piso - deslocamento desejado"
+
+
+msgid "E"
+msgstr "E"
+
+
+msgid "End frame of Fix"
+msgstr "Quadro final do conserto"
+
+
+msgid "Target of Fix - Point"
+msgstr "Alvo do conserto - Ponto"
+
+
+msgid "Bone (2)"
+msgstr "Osso (2)"
+
+
+msgid "Other Constrained Bone (optional, depends on type)"
+msgstr "Outro osso restrito (opcional, dependente do tipo específico)"
+
+
+msgid "Type of constraint"
+msgstr "Tipo de restrição"
+
+
+msgid "Target of Fix - Mesh (optional, depends on type)"
+msgstr "Alvo para conserto - Malha (opcional, depende do tipo)"
 
 
 msgid "Start frame of Fix"
 msgstr "Quadro inicial do conserto"
+
+
+msgid "Out"
+msgstr "Saída"
+
+
+msgid "Number of frames to smooth out"
+msgstr "Número de quadros para suavizar"
 
 
 msgid "In which space should Point type target be evaluated"
@@ -61216,70 +61280,6 @@ msgstr "Outro espaço de ossos"
 
 msgid "Evaluate target in specified other bone space"
 msgstr "Avalia o alvo dentro do outro espaço de osso especificado"
-
-
-msgid "Distance and Floor Fixes - Desired offset"
-msgstr "Distância e consertos de piso - deslocamento desejado"
-
-
-msgid "Fix is active"
-msgstr "Conserto está ativo"
-
-
-msgid "Type of constraint"
-msgstr "Tipo de restrição"
-
-
-msgid "Target of Fix - Mesh (optional, depends on type)"
-msgstr "Alvo para conserto - Malha (opcional, depende do tipo)"
-
-
-msgid "Target of Fix - Point"
-msgstr "Alvo do conserto - Ponto"
-
-
-msgid "Fix is fully shown"
-msgstr "O conserto está plenamente mostrado"
-
-
-msgid "Out"
-msgstr "Saída"
-
-
-msgid "Number of frames to smooth out"
-msgstr "Número de quadros para suavizar"
-
-
-msgid "E"
-msgstr "E"
-
-
-msgid "End frame of Fix"
-msgstr "Quadro final do conserto"
-
-
-msgid "In"
-msgstr "Entrada"
-
-
-msgid "Number of frames to smooth in"
-msgstr "Número de quadros para suavizar"
-
-
-msgid "Bone (2)"
-msgstr "Osso (2)"
-
-
-msgid "Other Constrained Bone (optional, depends on type)"
-msgstr "Outro osso restrito (opcional, dependente do tipo específico)"
-
-
-msgid "Name of Mocap Fix"
-msgstr "Nome do ponto fixo de captura de movimentos"
-
-
-msgid "Constrained Bone"
-msgstr "Osso restringido"
 
 
 msgid "Python expression to be evaluated as the initial node setting"
@@ -61326,30 +61326,6 @@ msgid "Is Stroke Start"
 msgstr "É um início de traço"
 
 
-msgid "Format type to export to"
-msgstr "Tipo de formato para o qual exportar"
-
-
-msgid "VRML2"
-msgstr "VRML2"
-
-
-msgid "Apply Scale"
-msgstr "Aplicar escala"
-
-
-msgid "Apply scene scale setting on export"
-msgstr "Aplica a configuração de escala de cena na exportação"
-
-
-msgid "Copy Textures"
-msgstr "Copiar texturas"
-
-
-msgid "Copy textures on export to the output path"
-msgstr "Copia as texturas durante a exportação para o caminho de saída"
-
-
 msgid "Export Directory"
 msgstr "Diretório de exportação"
 
@@ -61362,8 +61338,32 @@ msgid "Limit for checking zero area/length"
 msgstr "Limite para verificação de áreas ou comprimentos de valor zero"
 
 
+msgid "Format type to export to"
+msgstr "Tipo de formato para o qual exportar"
+
+
+msgid "VRML2"
+msgstr "VRML2"
+
+
 msgid "Limit for checking distorted faces"
 msgstr "Limite para verificação de faces distorcidas"
+
+
+msgid "Copy Textures"
+msgstr "Copiar texturas"
+
+
+msgid "Copy textures on export to the output path"
+msgstr "Copia as texturas durante a exportação para o caminho de saída"
+
+
+msgid "Apply Scale"
+msgstr "Aplicar escala"
+
+
+msgid "Apply scene scale setting on export"
+msgstr "Aplica a configuração de escala de cena na exportação"
 
 
 msgid "Selected UV Element"
@@ -86809,7 +86809,7 @@ msgstr "Desempacotar um arquivo"
 
 
 msgid "Unpack %d Files"
-msgstr "Desempacotar %d Arquivos"
+msgstr "Desempacotando %d arquivos"
 
 
 msgid "Unpack"
