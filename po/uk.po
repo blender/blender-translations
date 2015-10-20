@@ -1,10 +1,10 @@
 
 msgid ""
 msgstr ""
-"Project-Id-Version: Blender 2.76 (sub 1) (b'cdd727b')\n"
+"Project-Id-Version: Blender 2.76 (sub 1) (b'6bc0076')\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-10-12 21:34:33\n"
-"PO-Revision-Date: 2015-09-23 16:02+0000\n"
+"POT-Creation-Date: 2015-10-20 20:09:12\n"
+"PO-Revision-Date: 2015-10-14 10:22+0000\n"
 "Last-Translator: lxlalexlxl <pilipchukap@rambler.ru>\n"
 "Language-Team: Ukrainian (Ukraine) (http://www.transifex.com/lxlalexlxl/blender/language/uk_UA/)\n"
 "MIME-Version: 1.0\n"
@@ -1026,6 +1026,10 @@ msgid "File"
 msgstr "Файл"
 
 
+msgid "The file to use, depending on the mode (e.g. the blend file to load or a destination for saving a screenshot) - use the \"//\" prefix for a relative path"
+msgstr "Файл для використання залежно від режиму (наприклад, blend-файл для завантаження або цільовий для збереження знімка екрану) - використовуйте префікс \"//\" для позначення відносного шляху до файлу"
+
+
 msgid "Start Game From File"
 msgstr "Запустити гру з файлу"
 
@@ -1044,6 +1048,10 @@ msgstr "Зберегти bge.logic.globalDict"
 
 msgid "Load bge.logic.globalDict"
 msgstr "Завантажити bge.logic.globalDict"
+
+
+msgid "Screenshot"
+msgstr "Знімок екрану"
 
 
 msgid "Message Actuator"
@@ -8918,7 +8926,7 @@ msgstr "Об'єкт, що використовується як точка сп�
 
 
 msgid "Zoom"
-msgstr "Наближення/віддалення"
+msgstr "Близь/даль"
 
 
 msgid "F-Curve"
@@ -10201,6 +10209,22 @@ msgid "Directory displayed in the file browser"
 msgstr "Тека, показана в оглядачі файлів"
 
 
+msgid "Tiny"
+msgstr "Малесенькі"
+
+
+msgid "Small"
+msgstr "Малі"
+
+
+msgid "Normal"
+msgstr "Нормаль"
+
+
+msgid "Large"
+msgstr "Великі"
+
+
 msgid "Display Mode"
 msgstr "Режим показу"
 
@@ -10543,30 +10567,6 @@ msgstr "Упорядкувати за розміром"
 
 msgid "Sort files by size"
 msgstr "упорядкування файлів за розміром"
-
-
-msgid "Thumbnails Size"
-msgstr "Розмір мініатюр"
-
-
-msgid "Change the size of the thumbnails"
-msgstr "Змінити розмір мініатюр"
-
-
-msgid "Tiny"
-msgstr "Малесенькі"
-
-
-msgid "Small"
-msgstr "Малі"
-
-
-msgid "Normal"
-msgstr "Нормаль"
-
-
-msgid "Large"
-msgstr "Великі"
 
 
 msgid "Title"
@@ -11702,7 +11702,7 @@ msgstr "Відстань фокусування для глибини різко
 
 
 msgid "F-stop"
-msgstr "Діафрагмове число"
+msgstr "Д-число"
 
 
 msgid "F-stop for dof effect"
@@ -12179,6 +12179,14 @@ msgstr "Коефіцієнти тертя"
 
 msgid "Relative friction coefficients in the in the X, Y and Z directions, when anisotropic friction is enabled"
 msgstr "Відносні коефіцієнти тертя у напрямках X, Y і Z, коли увімкнене анізотропне тертя"
+
+
+msgid "Max Jumps"
+msgstr "Макс Стрибки"
+
+
+msgid "The maximum number of jumps the character can make before it hits the ground"
+msgstr "Максимальна кількість стрибків яку персонаж може зробити перед його приземленням"
 
 
 msgid "Jump Force"
@@ -22840,436 +22848,1061 @@ msgid "Is this keymap item modified by the user"
 msgstr "Чи цей елемент розкладки змінений користувачем"
 
 
+msgctxt "UI_Events_KeyMaps"
+msgid "Key Modifier"
+msgstr "Модифікатор клавіші"
+
+
 msgid "Regular key pressed as a modifier"
 msgstr "Звичайну клавішу натиснуто в якості модифікатора"
+
+
+msgctxt "UI_Events_KeyMaps"
+msgid "Left Mouse"
+msgstr "Ліва кнопка миші"
 
 
 msgid "LMB"
 msgstr "ЛКМ"
 
 
+msgctxt "UI_Events_KeyMaps"
+msgid "Middle Mouse"
+msgstr "Середня кнопка миші"
+
+
 msgid "MMB"
 msgstr "СКМ"
+
+
+msgctxt "UI_Events_KeyMaps"
+msgid "Right Mouse"
+msgstr "Права кнопка миші"
 
 
 msgid "RMB"
 msgstr "ПКМ"
 
 
+msgctxt "UI_Events_KeyMaps"
+msgid "Button4 Mouse"
+msgstr "Кнопка4 миші"
+
+
 msgid "MB4"
 msgstr "КМ4"
+
+
+msgctxt "UI_Events_KeyMaps"
+msgid "Button5 Mouse"
+msgstr "Кнопка5 миші"
 
 
 msgid "MB5"
 msgstr "КМ5"
 
 
+msgctxt "UI_Events_KeyMaps"
+msgid "Button6 Mouse"
+msgstr "Кнопка6 миші"
+
+
 msgid "MB6"
 msgstr "КМ6"
+
+
+msgctxt "UI_Events_KeyMaps"
+msgid "Button7 Mouse"
+msgstr "Кнопка7 миші"
 
 
 msgid "MB7"
 msgstr "КМ7"
 
 
+msgctxt "UI_Events_KeyMaps"
+msgid "Action Mouse"
+msgstr "Дія мишею"
+
+
 msgid "MBA"
 msgstr "Дія мишею"
+
+
+msgctxt "UI_Events_KeyMaps"
+msgid "Select Mouse"
+msgstr "Вибір мишею"
 
 
 msgid "MBS"
 msgstr "Вибір мишею"
 
 
+msgctxt "UI_Events_KeyMaps"
+msgid "Mouse Move"
+msgstr "Рух мишею"
+
+
 msgid "MsMov"
 msgstr "Рух мишею"
+
+
+msgctxt "UI_Events_KeyMaps"
+msgid "In-between Move"
+msgstr "Проміжний рух"
 
 
 msgid "MsSubMov"
 msgstr "Між рухами миші"
 
 
+msgctxt "UI_Events_KeyMaps"
+msgid "Mouse/Trackpad Pan"
+msgstr "Панорамування мишею/трекпадом"
+
+
 msgid "MsPan"
 msgstr "Панорама трекпадом"
 
 
+msgctxt "UI_Events_KeyMaps"
+msgid "Mouse/Trackpad Zoom"
+msgstr "Наближення/віддалення мишею/трекпадом"
+
+
 msgid "MsZoom"
-msgstr "Наближення/віддалення трекпадом"
+msgstr "Близь/даль трекпадом"
+
+
+msgctxt "UI_Events_KeyMaps"
+msgid "Mouse/Trackpad Rotate"
+msgstr "Оберт мишею/трекпадом"
 
 
 msgid "MsRot"
 msgstr "Обертання мишею"
 
 
+msgctxt "UI_Events_KeyMaps"
+msgid "Wheel Up"
+msgstr "Відпускання коліщатка"
+
+
 msgid "WhUp"
 msgstr "Уверх коліщам миші"
+
+
+msgctxt "UI_Events_KeyMaps"
+msgid "Wheel Down"
+msgstr "Натискання коліщатка"
 
 
 msgid "WhDown"
 msgstr "Вниз коліщам миші"
 
 
+msgctxt "UI_Events_KeyMaps"
+msgid "Wheel In"
+msgstr "Коліщатко до себе"
+
+
 msgid "WhIn"
 msgstr "Натиск коліща миші"
+
+
+msgctxt "UI_Events_KeyMaps"
+msgid "Wheel Out"
+msgstr "Коліщатко від себе"
 
 
 msgid "WhOut"
 msgstr "Відпуск коліща миші"
 
 
+msgctxt "UI_Events_KeyMaps"
+msgid "Tweak Left"
+msgstr "Підправити вліво"
+
+
 msgid "TwkL"
 msgstr "TwkL"
+
+
+msgctxt "UI_Events_KeyMaps"
+msgid "Tweak Middle"
+msgstr "Підправити по центру"
 
 
 msgid "TwkM"
 msgstr "TwkM"
 
 
+msgctxt "UI_Events_KeyMaps"
+msgid "Tweak Right"
+msgstr "Підправити вправо"
+
+
 msgid "TwkR"
 msgstr "TwkR"
+
+
+msgctxt "UI_Events_KeyMaps"
+msgid "Tweak Action"
+msgstr "Дія підправлення"
 
 
 msgid "TwkA"
 msgstr "TwkA"
 
 
+msgctxt "UI_Events_KeyMaps"
+msgid "Tweak Select"
+msgstr "Вибір підправлення"
+
+
 msgid "TwkS"
 msgstr "TwkS"
+
+
+msgctxt "UI_Events_KeyMaps"
+msgid "Left Ctrl"
+msgstr "Лівий Ctrl"
 
 
 msgid "CtrlL"
 msgstr "Ліва Ctrl"
 
 
+msgctxt "UI_Events_KeyMaps"
+msgid "Left Alt"
+msgstr "Лівий Alt"
+
+
 msgid "AltL"
 msgstr "Ліва Alt"
+
+
+msgctxt "UI_Events_KeyMaps"
+msgid "Left Shift"
+msgstr "Лівий Shift"
 
 
 msgid "ShiftL"
 msgstr "Ліва Shift"
 
 
+msgctxt "UI_Events_KeyMaps"
+msgid "Right Alt"
+msgstr "Правий Alt"
+
+
 msgid "AltR"
 msgstr "Права Alt"
+
+
+msgctxt "UI_Events_KeyMaps"
+msgid "Right Ctrl"
+msgstr "Правий Ctrl"
 
 
 msgid "CtrlR"
 msgstr "Права Ctrl"
 
 
+msgctxt "UI_Events_KeyMaps"
+msgid "Right Shift"
+msgstr "Правий Shift"
+
+
 msgid "ShiftR"
 msgstr "Права Shift"
+
+
+msgctxt "UI_Events_KeyMaps"
+msgid "OS Key"
+msgstr "Клавіша ОС"
 
 
 msgid "Cmd"
 msgstr "Cmd/Win"
 
 
+msgctxt "UI_Events_KeyMaps"
+msgid "Grless"
+msgstr "Grless"
+
+
+msgctxt "UI_Events_KeyMaps"
+msgid "Esc"
+msgstr "Esc"
+
+
+msgctxt "UI_Events_KeyMaps"
+msgid "Tab"
+msgstr "Tab"
+
+
+msgctxt "UI_Events_KeyMaps"
+msgid "Return"
+msgstr "Return"
+
+
 msgid "Enter"
 msgstr "Enter"
+
+
+msgctxt "UI_Events_KeyMaps"
+msgid "Spacebar"
+msgstr "Пробіл"
+
+
+msgctxt "UI_Events_KeyMaps"
+msgid "Line Feed"
+msgstr "Перевід рядка"
+
+
+msgctxt "UI_Events_KeyMaps"
+msgid "Back Space"
+msgstr "Back Space"
 
 
 msgid "BkSpace"
 msgstr "BkSpace"
 
 
+msgctxt "UI_Events_KeyMaps"
+msgid "Delete"
+msgstr "Видалити"
+
+
 msgid "Del"
 msgstr "Delete"
+
+
+msgctxt "UI_Events_KeyMaps"
+msgid ";"
+msgstr ";"
+
+
+msgctxt "UI_Events_KeyMaps"
+msgid ","
+msgstr ","
+
+
+msgctxt "UI_Events_KeyMaps"
+msgid "\""
+msgstr "\""
+
+
+msgctxt "UI_Events_KeyMaps"
+msgid "`"
+msgstr "`"
+
+
+msgctxt "UI_Events_KeyMaps"
+msgid "="
+msgstr "="
+
+
+msgctxt "UI_Events_KeyMaps"
+msgid "["
+msgstr "["
+
+
+msgctxt "UI_Events_KeyMaps"
+msgid "]"
+msgstr "]"
+
+
+msgctxt "UI_Events_KeyMaps"
+msgid "Left Arrow"
+msgstr "Стрілка вліво"
 
 
 msgid "←"
 msgstr "←"
 
 
+msgctxt "UI_Events_KeyMaps"
+msgid "Down Arrow"
+msgstr "Стрілка вниз"
+
+
 msgid "↓"
 msgstr "↓"
+
+
+msgctxt "UI_Events_KeyMaps"
+msgid "Right Arrow"
+msgstr "Стрілка вправо"
 
 
 msgid "→"
 msgstr "→"
 
 
+msgctxt "UI_Events_KeyMaps"
+msgid "Up Arrow"
+msgstr "Стрілка вгору"
+
+
 msgid "↑"
 msgstr "↑"
+
+
+msgctxt "UI_Events_KeyMaps"
+msgid "Numpad 2"
+msgstr "Додаткова 2"
 
 
 msgid "Pad2"
 msgstr "Pad2"
 
 
+msgctxt "UI_Events_KeyMaps"
+msgid "Numpad 4"
+msgstr "Додаткова 4"
+
+
 msgid "Pad4"
 msgstr "Pad4"
+
+
+msgctxt "UI_Events_KeyMaps"
+msgid "Numpad 6"
+msgstr "Додаткова 6"
 
 
 msgid "Pad6"
 msgstr "Pad6"
 
 
+msgctxt "UI_Events_KeyMaps"
+msgid "Numpad 8"
+msgstr "Додаткова 8"
+
+
 msgid "Pad8"
 msgstr "Pad8"
+
+
+msgctxt "UI_Events_KeyMaps"
+msgid "Numpad 1"
+msgstr "Додаткова 1"
 
 
 msgid "Pad1"
 msgstr "Pad1"
 
 
+msgctxt "UI_Events_KeyMaps"
+msgid "Numpad 3"
+msgstr "Додаткова 3"
+
+
 msgid "Pad3"
 msgstr "Pad3"
+
+
+msgctxt "UI_Events_KeyMaps"
+msgid "Numpad 5"
+msgstr "Додаткова 5"
 
 
 msgid "Pad5"
 msgstr "Pad5"
 
 
+msgctxt "UI_Events_KeyMaps"
+msgid "Numpad 7"
+msgstr "Додаткова 7"
+
+
 msgid "Pad7"
 msgstr "Pad7"
+
+
+msgctxt "UI_Events_KeyMaps"
+msgid "Numpad 9"
+msgstr "Додаткова 9"
 
 
 msgid "Pad9"
 msgstr "Pad9"
 
 
+msgctxt "UI_Events_KeyMaps"
+msgid "Numpad ."
+msgstr "Додаткова ."
+
+
 msgid "Pad."
 msgstr "Pad."
+
+
+msgctxt "UI_Events_KeyMaps"
+msgid "Numpad /"
+msgstr "Додаткова /"
 
 
 msgid "Pad/"
 msgstr "Pad/"
 
 
+msgctxt "UI_Events_KeyMaps"
+msgid "Numpad *"
+msgstr "Додаткова *"
+
+
 msgid "Pad*"
 msgstr "Pad*"
+
+
+msgctxt "UI_Events_KeyMaps"
+msgid "Numpad 0"
+msgstr "Додатковий 0"
 
 
 msgid "Pad0"
 msgstr "Pad0"
 
 
+msgctxt "UI_Events_KeyMaps"
+msgid "Numpad -"
+msgstr "Додатковий -"
+
+
 msgid "Pad-"
 msgstr "Pad-"
+
+
+msgctxt "UI_Events_KeyMaps"
+msgid "Numpad Enter"
+msgstr "Додатковий Enter"
 
 
 msgid "PadEnter"
 msgstr "PadEnter"
 
 
+msgctxt "UI_Events_KeyMaps"
+msgid "Numpad +"
+msgstr "Додатковий +"
+
+
 msgid "Pad+"
 msgstr "Pad+"
+
+
+msgctxt "UI_Events_KeyMaps"
+msgid "Pause"
+msgstr "Pause"
+
+
+msgctxt "UI_Events_KeyMaps"
+msgid "Insert"
+msgstr "Insert"
 
 
 msgid "Ins"
 msgstr "Ins"
 
 
+msgctxt "UI_Events_KeyMaps"
+msgid "Home"
+msgstr "Home"
+
+
+msgctxt "UI_Events_KeyMaps"
+msgid "Page Up"
+msgstr "Page Up"
+
+
 msgid "PgUp"
 msgstr "PgUp"
+
+
+msgctxt "UI_Events_KeyMaps"
+msgid "Page Down"
+msgstr "Page Down"
 
 
 msgid "PgDown"
 msgstr "PgDown"
 
 
+msgctxt "UI_Events_KeyMaps"
+msgid "End"
+msgstr "End"
+
+
+msgctxt "UI_Events_KeyMaps"
+msgid "Media Play/Pause"
+msgstr "Медія Відтвор/Пауза"
+
+
 msgid ">/||"
 msgstr ">/||"
+
+
+msgctxt "UI_Events_KeyMaps"
+msgid "Media Stop"
+msgstr "Медія Стоп"
 
 
 msgid "Stop"
 msgstr "Stop"
 
 
+msgctxt "UI_Events_KeyMaps"
+msgid "Media First"
+msgstr "Медіа Перше"
+
+
 msgid "|<<"
 msgstr "|<<"
+
+
+msgctxt "UI_Events_KeyMaps"
+msgid "Media Last"
+msgstr "Медіа Останнє"
 
 
 msgid ">>|"
 msgstr ">>|"
 
 
+msgctxt "UI_Events_KeyMaps"
+msgid "Text Input"
+msgstr "Ввід тексту"
+
+
 msgid "TxtIn"
 msgstr "TxtIn"
+
+
+msgctxt "UI_Events_KeyMaps"
+msgid "Window Deactivate"
+msgstr "Знеактивити вікно"
+
+
+msgctxt "UI_Events_KeyMaps"
+msgid "Timer"
+msgstr "Таймер"
 
 
 msgid "Tmr"
 msgstr "Таймер"
 
 
+msgctxt "UI_Events_KeyMaps"
+msgid "Timer 0"
+msgstr "Таймер 0"
+
+
 msgid "Tmr0"
 msgstr "Таймер0"
+
+
+msgctxt "UI_Events_KeyMaps"
+msgid "Timer 1"
+msgstr "Таймер 1"
 
 
 msgid "Tmr1"
 msgstr "Таймер1"
 
 
+msgctxt "UI_Events_KeyMaps"
+msgid "Timer 2"
+msgstr "Таймер 2"
+
+
 msgid "Tmr2"
 msgstr "Таймер2"
+
+
+msgctxt "UI_Events_KeyMaps"
+msgid "Timer Jobs"
+msgstr "Завдання таймера"
 
 
 msgid "TmrJob"
 msgstr "Таймер виконань"
 
 
+msgctxt "UI_Events_KeyMaps"
+msgid "Timer Autosave"
+msgstr "Автозбереження таймера"
+
+
 msgid "TmrSave"
 msgstr "Таймер автозбереження"
+
+
+msgctxt "UI_Events_KeyMaps"
+msgid "Timer Report"
+msgstr "Звіт таймера"
 
 
 msgid "TmrReport"
 msgstr "Таймер звіту"
 
 
+msgctxt "UI_Events_KeyMaps"
+msgid "Timer Region"
+msgstr "Область таймера"
+
+
 msgid "TmrReg"
 msgstr "Таймер регіону"
+
+
+msgctxt "UI_Events_KeyMaps"
+msgid "NDOF Motion"
+msgstr "Рух 3D-маніп."
 
 
 msgid "NdofMov"
 msgstr "NdofMov"
 
 
+msgctxt "UI_Events_KeyMaps"
+msgid "NDOF Menu"
+msgstr "Меню 3D-маніп."
+
+
 msgid "NdofMenu"
 msgstr "NdofMenu"
+
+
+msgctxt "UI_Events_KeyMaps"
+msgid "NDOF Fit"
+msgstr "3D-маніп. підігнати розмір"
 
 
 msgid "NdofFit"
 msgstr "NdofFit"
 
 
+msgctxt "UI_Events_KeyMaps"
+msgid "NDOF Top"
+msgstr "3D-маніп. вгору"
+
+
 msgid "Ndof↑"
 msgstr "Ndof↑"
+
+
+msgctxt "UI_Events_KeyMaps"
+msgid "NDOF Bottom"
+msgstr "3D-маніп. вниз"
 
 
 msgid "Ndof↓"
 msgstr "Ndof↓"
 
 
+msgctxt "UI_Events_KeyMaps"
+msgid "NDOF Left"
+msgstr "3D-маніп. вліво"
+
+
 msgid "Ndof←"
 msgstr "Ndof←"
+
+
+msgctxt "UI_Events_KeyMaps"
+msgid "NDOF Right"
+msgstr "3D-маніп. вправо"
 
 
 msgid "Ndof→"
 msgstr "Ndof→"
 
 
+msgctxt "UI_Events_KeyMaps"
+msgid "NDOF Front"
+msgstr "3D-маніп. вперед"
+
+
 msgid "NdofFront"
 msgstr "NdofFront"
+
+
+msgctxt "UI_Events_KeyMaps"
+msgid "NDOF Back"
+msgstr "3D-маніп. назад"
 
 
 msgid "NdofBack"
 msgstr "NdofBack"
 
 
+msgctxt "UI_Events_KeyMaps"
+msgid "NDOF Isometric 1"
+msgstr "3D-маніп. ізометрична проек. 1"
+
+
 msgid "NdofIso1"
 msgstr "NdofIso1"
+
+
+msgctxt "UI_Events_KeyMaps"
+msgid "NDOF Isometric 2"
+msgstr "3D-маніп. ізометрична проек. 2"
 
 
 msgid "NdofIso2"
 msgstr "NdofIso2"
 
 
+msgctxt "UI_Events_KeyMaps"
+msgid "NDOF Roll CW"
+msgstr "3D-маніп. обкат за ГС"
+
+
 msgid "NdofRCW"
 msgstr "NdofRCW"
+
+
+msgctxt "UI_Events_KeyMaps"
+msgid "NDOF Roll CCW"
+msgstr "3D-маніп. обкат проти ГС"
 
 
 msgid "NdofRCCW"
 msgstr "NdofRCCW"
 
 
+msgctxt "UI_Events_KeyMaps"
+msgid "NDOF Spin CW"
+msgstr "Обкрут 3D-маніп. за ГС"
+
+
 msgid "NdofSCW"
 msgstr "NdofSCW"
+
+
+msgctxt "UI_Events_KeyMaps"
+msgid "NDOF Spin CCW"
+msgstr "Обкрут 3D-маніп. проти ГС"
 
 
 msgid "NdofSCCW"
 msgstr "NdofSCCW"
 
 
+msgctxt "UI_Events_KeyMaps"
+msgid "NDOF Tilt CW"
+msgstr "3D-маніп. нахил за ГС"
+
+
 msgid "NdofTCW"
 msgstr "NdofTCW"
+
+
+msgctxt "UI_Events_KeyMaps"
+msgid "NDOF Tilt CCW"
+msgstr "3D-маніп. нахил проти ГС"
 
 
 msgid "NdofTCCW"
 msgstr "NdofTCCW"
 
 
+msgctxt "UI_Events_KeyMaps"
+msgid "NDOF Rotate"
+msgstr "Оберт 3D-маніп."
+
+
 msgid "NdofRot"
 msgstr "NdofRot"
+
+
+msgctxt "UI_Events_KeyMaps"
+msgid "NDOF Pan/Zoom"
+msgstr "3D-маніп. панорама / близь/даль"
 
 
 msgid "NdofPanZoom"
 msgstr "NdofPanZoom"
 
 
+msgctxt "UI_Events_KeyMaps"
+msgid "NDOF Dominant"
+msgstr "3D-маніп. оберт за домін. віссю"
+
+
 msgid "NdofDom"
 msgstr "NdofDom"
+
+
+msgctxt "UI_Events_KeyMaps"
+msgid "NDOF Plus"
+msgstr "3D-маніп. плюс"
 
 
 msgid "Ndof+"
 msgstr "Ndof+"
 
 
+msgctxt "UI_Events_KeyMaps"
+msgid "NDOF Minus"
+msgstr "3D-маніп. мінус"
+
+
 msgid "Ndof-"
 msgstr "Ndof-"
+
+
+msgctxt "UI_Events_KeyMaps"
+msgid "NDOF Esc"
+msgstr "3D-маніп. Esc"
 
 
 msgid "NdofEsc"
 msgstr "NdofEsc"
 
 
+msgctxt "UI_Events_KeyMaps"
+msgid "NDOF Alt"
+msgstr "3D-маніп. Alt"
+
+
 msgid "NdofAlt"
 msgstr "NdofAlt"
+
+
+msgctxt "UI_Events_KeyMaps"
+msgid "NDOF Shift"
+msgstr "3D-маніп. Shift"
 
 
 msgid "NdofShift"
 msgstr "NdofShift"
 
 
+msgctxt "UI_Events_KeyMaps"
+msgid "NDOF Ctrl"
+msgstr "3D-маніп. Ctrl"
+
+
 msgid "NdofCtrl"
 msgstr "NdofCtrl"
+
+
+msgctxt "UI_Events_KeyMaps"
+msgid "NDOF Button 1"
+msgstr "3D-маніп. кнопка 1"
 
 
 msgid "NdofB1"
 msgstr "NdofB1"
 
 
+msgctxt "UI_Events_KeyMaps"
+msgid "NDOF Button 2"
+msgstr "3D-маніп. кнопка 2"
+
+
 msgid "NdofB2"
 msgstr "NdofB2"
+
+
+msgctxt "UI_Events_KeyMaps"
+msgid "NDOF Button 3"
+msgstr "3D-маніп. кнопка 3"
 
 
 msgid "NdofB3"
 msgstr "NdofB3"
 
 
+msgctxt "UI_Events_KeyMaps"
+msgid "NDOF Button 4"
+msgstr "3D-маніп. кнопка 4"
+
+
 msgid "NdofB4"
 msgstr "NdofB4"
+
+
+msgctxt "UI_Events_KeyMaps"
+msgid "NDOF Button 5"
+msgstr "3D-маніп. кнопка 5"
 
 
 msgid "NdofB5"
 msgstr "NdofB5"
 
 
+msgctxt "UI_Events_KeyMaps"
+msgid "NDOF Button 6"
+msgstr "3D-маніп. кнопка 6"
+
+
 msgid "NdofB6"
 msgstr "NdofB6"
+
+
+msgctxt "UI_Events_KeyMaps"
+msgid "NDOF Button 7"
+msgstr "3D-маніп. кнопка 7"
 
 
 msgid "NdofB7"
 msgstr "NdofB7"
 
 
+msgctxt "UI_Events_KeyMaps"
+msgid "NDOF Button 8"
+msgstr "3D-маніп. кнопка 8"
+
+
 msgid "NdofB8"
 msgstr "NdofB8"
+
+
+msgctxt "UI_Events_KeyMaps"
+msgid "NDOF Button 9"
+msgstr "3D-маніп. кнопка 9"
 
 
 msgid "NdofB9"
 msgstr "NdofB9"
 
 
+msgctxt "UI_Events_KeyMaps"
+msgid "NDOF Button 10"
+msgstr "3D-маніп. кнопка 10"
+
+
 msgid "NdofB10"
 msgstr "NdofB10"
+
+
+msgctxt "UI_Events_KeyMaps"
+msgid "NDOF Button A"
+msgstr "3D-маніп. кнопка A"
 
 
 msgid "NdofBA"
 msgstr "NdofBA"
 
 
+msgctxt "UI_Events_KeyMaps"
+msgid "NDOF Button B"
+msgstr "3D-маніп. кнопка B"
+
+
 msgid "NdofBB"
 msgstr "NdofBB"
+
+
+msgctxt "UI_Events_KeyMaps"
+msgid "NDOF Button C"
+msgstr "3D-маніп. кнопка C"
 
 
 msgid "NdofBC"
@@ -23326,6 +23959,11 @@ msgstr "Натиснуто Shift"
 
 msgid "Show key map event and property details in the user interface"
 msgstr "Показати подію розкладки клавіш та подробиці властивості в інтерфейсі"
+
+
+msgctxt "UI_Events_KeyMaps"
+msgid "Type"
+msgstr "Тип"
 
 
 msgid "Type of event"
@@ -23529,11 +24167,11 @@ msgstr "Експоненційне ослаблення (дуже сильне)"
 
 
 msgid "Circular"
-msgstr "Круговий"
+msgstr "Кругове"
 
 
 msgid "Circular easing (strongest and most dynamic)"
-msgstr "Колове ослаблення (найсильніше і найбільш динамічне)"
+msgstr "Кругове ослаблення (найсильніше і найбільш динамічне)"
 
 
 msgid "Cubic easing with overshoot and settle"
@@ -25994,7 +26632,7 @@ msgstr "Розстановка"
 
 
 msgid "Matte"
-msgstr "Матовість"
+msgstr "Маска"
 
 
 msgid "Node"
@@ -31965,7 +32603,7 @@ msgstr "Значення менші, ніж цей параметр, на 100% �
 
 
 msgid "Channel used to determine matte"
-msgstr "Канал, який визначає матовість"
+msgstr "Канал, який визначає маску"
 
 
 msgid "Chroma Key"
@@ -32673,7 +33311,7 @@ msgstr "Кутове зміщення"
 
 
 msgid "Streak angle offset"
-msgstr "Кутовий зсув смуг"
+msgstr "Кутовий зсув стрічок"
 
 
 msgid "Color Modulation"
@@ -32681,15 +33319,15 @@ msgstr "Модуляція кольору"
 
 
 msgid "Amount of Color Modulation, modulates colors of streaks and ghosts for a spectral dispersion effect"
-msgstr "Величина модуляції кольору; змінює кольори смуг та привидів для отримання ефекту спектральної дисперсії"
+msgstr "Величина модуляції кольору; змінює кольори стрічок та привидів для отримання ефекту спектральної дисперсії"
 
 
 msgid "Fade"
-msgstr "Вицвітання"
+msgstr "Зникання"
 
 
 msgid "Streak fade-out factor"
-msgstr "Коефіцієнт вицвітання смуг"
+msgstr "Коефіцієнт зникання стрічок"
 
 
 msgid "Glare Type"
@@ -32701,11 +33339,11 @@ msgstr "Привиди"
 
 
 msgid "Streaks"
-msgstr "Смуги"
+msgstr "Стрічки"
 
 
 msgid "Fog Glow"
-msgstr "Свічення туману"
+msgstr "Сяяння туману"
 
 
 msgid "Simple Star"
@@ -32725,7 +33363,7 @@ msgstr "Розмір сяяння/блиску  (не фактичний роз�
 
 
 msgid "Total number of streaks"
-msgstr "Загальна кількість рисок"
+msgstr "Загальна кількість стрічок"
 
 
 msgid "The glare filter will only be applied to pixels brighter than this value"
@@ -32817,7 +33455,7 @@ msgstr "Після-розмив"
 
 
 msgid "Matte blur size which applies after clipping and dilate/eroding"
-msgstr "Розмір розмиття матовості, що застосовується після відсікання та розширення/ерозії"
+msgstr "Розмір розмиття маски, що застосовується після відсікання та розширення/звуження"
 
 
 msgid "Pre Blur"
@@ -32833,7 +33471,7 @@ msgstr "Точка чорного"
 
 
 msgid "Value of non-scaled matte pixel which considers as fully background pixel"
-msgstr "Значення пікселя немасштабованоої матовості, який вважається повністю пікселем фону"
+msgstr "Значення пікселя немасштабованої маски, який вважається повністю пікселем фону"
 
 
 msgid "Clip White"
@@ -32841,7 +33479,7 @@ msgstr "Точка білого"
 
 
 msgid "Value of non-scaled matte pixel which considers as fully foreground pixel"
-msgstr "Значення пікселя немасштабованої матовості, який вважається повністю пікселем переднього плану"
+msgstr "Значення пікселя немасштабованої маски, який вважається повністю пікселем переднього плану"
 
 
 msgid "Despill Balance"
@@ -32861,7 +33499,7 @@ msgstr "Коефіцієнт зменшення розтікання кольо�
 
 
 msgid "Matte dilate/erode side"
-msgstr "Бік розширення/звуження матовості"
+msgstr "Бік розширення/звуження маски"
 
 
 msgid "Edge Kernel Radius"
@@ -33118,11 +33756,11 @@ msgstr "Перетворення між альфа-каналом з  перед
 
 
 msgid "Straight to Premul"
-msgstr "Пряме до передмноженого"
+msgstr "Пряме у передмножене"
 
 
 msgid "Premul to Straight"
-msgstr "Передмножене до прямого"
+msgstr "Передмножене у пряме"
 
 
 msgid "RGB to BW"
@@ -37579,11 +38217,11 @@ msgstr "Помістити кадр у вікні перегляду"
 
 msgctxt "Operator"
 msgid "NDOF Pan/Zoom"
-msgstr "3D-маніп. панорама / наближенн/віддалення"
+msgstr "3D-маніп. панорама / близь/даль"
 
 
 msgid "Use a 3D mouse device to pan/zoom the view"
-msgstr "Використовувати 3D-мишу для панорамування / наближення/віддалення вигляду "
+msgstr "Використати 3D-мишу для панорамування / наближення/віддалення вигляду "
 
 
 msgctxt "Operator"
@@ -37601,7 +38239,7 @@ msgstr "Показати всі вибрані елементи"
 
 msgctxt "Operator"
 msgid "View Zoom"
-msgstr "Наближення/віддалення вигляду"
+msgstr "Близь/даль вигляду"
 
 
 msgid "Zoom in/out the view"
@@ -37609,7 +38247,7 @@ msgstr "Наближення/віддалення вигляду"
 
 
 msgid "Zoom factor, values higher than 1.0 zoom in, lower values zoom out"
-msgstr "Наближення/віддалення; значення більші ніж 1,0 - наближити, менші - віддалити"
+msgstr "Фактор наближення/віддалення; значення більші ніж 1,0 - наближити, менші - віддалити"
 
 
 msgctxt "Operator"
@@ -37640,7 +38278,7 @@ msgstr "Розташування курсора у нормалізованих 
 
 msgctxt "Operator"
 msgid "View Zoom Ratio"
-msgstr "Пропорція наближення/віддалення вигляду"
+msgstr "Пропорція близі/далі вигляду"
 
 
 msgid "Set the zoom ratio (based on clip size)"
@@ -45644,7 +46282,7 @@ msgstr "Використати мишу, щоб взяти зразок коль
 
 msgctxt "Operator"
 msgid "Background Image Zoom"
-msgstr "Наближення/віддалення фонового зображення"
+msgstr "Близь/даль фонового зображення"
 
 
 msgid "Zoom in/out the background image"
@@ -51915,11 +52553,11 @@ msgstr "Смужка з ефектом затирання"
 
 
 msgid "Glow"
-msgstr "Свічення"
+msgstr "Сяяння"
 
 
 msgid "Glow effect strip type"
-msgstr "Glow ефект свічення"
+msgstr "Тип смужки ефекту сяяння"
 
 
 msgid "Transform effect strip type"
@@ -52627,7 +53265,7 @@ msgstr "Перемикання між виглядами відеорядник�
 
 msgctxt "Operator"
 msgid "Sequencer View Zoom Ratio"
-msgstr "Пропорція наближення/віддалення вигляду відеорядника"
+msgstr "Пропорція близі/далі вигляду відеорядника"
 
 
 msgid "Change zoom ratio of sequencer preview"
@@ -53492,8 +54130,16 @@ msgid "Correct UV coordinates when transforming"
 msgstr "Виправити UV-координати при трансформуванні"
 
 
+msgid "When Even mode is active, flips between the two adjacent edge loops"
+msgstr "Коли режим Рівно активний перевертає між двома суміжними петлями ребер"
+
+
 msgid "Single Side"
 msgstr "Одинична сторона"
+
+
+msgid "Make the edge loop match the shape of the adjacent edge loop"
+msgstr "Зробити форму петлю ребер відповідно формі суміжної петлі ребер"
 
 
 msgid "Mirror selected vertices around one or more axes"
@@ -54927,16 +55573,16 @@ msgstr "Пом'якшити 2D-вигляд"
 
 msgctxt "Operator"
 msgid "Zoom 2D View"
-msgstr "Наближення/віддалення 2D-вигляду"
+msgstr "Близь/даль 2D-вигляду"
 
 
 msgctxt "Operator"
 msgid "Zoom to Border"
-msgstr "Наблизити до межі"
+msgstr "Наблизити у межах"
 
 
 msgid "Zoom in the view to the nearest item contained in the border"
-msgstr "Наблизити вигляд до найближчого об'єкту, який міститься у рамці"
+msgstr "Наблизити вигляд до найближчого об'єкту, який міститься у заданих рамкою межах"
 
 
 msgctxt "Operator"
@@ -54945,11 +55591,11 @@ msgstr "Наближення"
 
 
 msgid "Zoom Factor X"
-msgstr "Коефіцієнт наближення/віддалення X"
+msgstr "Фактор близі/далі X"
 
 
 msgid "Zoom Factor Y"
-msgstr "Коефіцієнт наближення/віддалення Y"
+msgstr "Фактор близі/далі Y"
 
 
 msgctxt "Operator"
@@ -55039,11 +55685,11 @@ msgstr "Наблизити/віддалити як з операторськог
 
 
 msgid "Zoom Position X"
-msgstr "Позиція наближення/віддалення X"
+msgstr "Позиція близі/далі X"
 
 
 msgid "Zoom Position Y"
-msgstr "Позиція наближення/віддалення Y"
+msgstr "Позиція близі/далі Y"
 
 
 msgctxt "Operator"
@@ -55640,7 +56286,7 @@ msgstr "Інтерактивно ходити по сцені"
 
 msgctxt "Operator"
 msgid "Zoom View"
-msgstr "Наближення/віддалення вигляду"
+msgstr "Близь/даль вигляду"
 
 
 msgid "Zoom in/out in the view"
@@ -55648,12 +56294,12 @@ msgstr "Наблизити/віддалити вигляд"
 
 
 msgid "Zoom in the view to the nearest object contained in the border"
-msgstr "Наблизити вигляд до найближчого об'єкта, що міститься у рамці"
+msgstr "Наблизити вигляд до найближчого об'єкта, що міститься у заданих рамкою межах"
 
 
 msgctxt "Operator"
 msgid "Zoom Camera 1:1"
-msgstr "Наближення/віддалення камери 1:1"
+msgstr "Близь/даль камери 1:1"
 
 
 msgid "Match the camera to 1:1 to the render output"
@@ -56774,7 +57420,7 @@ msgstr "Шлях властивості, за якою робиться вибі
 
 
 msgid "Zoom Path"
-msgstr "Шлях наближення/віддалення"
+msgstr "Шлях близі/далі"
 
 
 msgid "Path of property used to set the zoom level for the control"
@@ -59345,6 +59991,14 @@ msgid "Object that defines custom draw type for this bone"
 msgstr "Об'єкт, що визначає для цієї кістки користувацький тип малювання"
 
 
+msgid "Custom Shape Scale"
+msgstr "Масштаб власної форми"
+
+
+msgid "Adjust the size of the custom shape"
+msgstr "Коригувати розмір власної форми"
+
+
 msgid "Custom Shape Transform"
 msgstr "Трансформації власної заданої користувачем форми"
 
@@ -59509,6 +60163,14 @@ msgid "Location of tail of the channel's bone"
 msgstr "Розташування кінця кістки каналу"
 
 
+msgid "Use Bone Size"
+msgstr "Використати розмір кості"
+
+
+msgid "Scale the custom object by the bone length"
+msgstr "Масштабувати власний об'єкт за довжиною кості"
+
+
 msgid "IK X Limit"
 msgstr "Межа X ІК"
 
@@ -59610,7 +60272,7 @@ msgstr "Кількість пелюсток діафрагми для багат
 
 
 msgid "Aperture f-stop"
-msgstr "Діафрагмове число апертури"
+msgstr "Д-число апертури"
 
 
 msgid "F-stop ratio (lower numbers give more defocus, higher numbers give a sharper image)"
@@ -60970,7 +61632,7 @@ msgstr "Зсув вигляду на вигляді з камери"
 
 
 msgid "Camera Zoom"
-msgstr "Наближення/віддалення камери"
+msgstr "Близь/даль камери"
 
 
 msgid "Zoom factor in camera view"
@@ -61446,7 +62108,7 @@ msgstr "Запекти кольори вершин"
 
 
 msgid "Bake Emit values (glow)"
-msgstr "Запекти значення випромінювання (світіння)"
+msgstr "Запекти значення випромінювання (сяяння)"
 
 
 msgid "Bake Alpha values (transparency)"
@@ -63121,6 +63783,11 @@ msgid "Camera rotation in horizontal axis"
 msgstr "Оберт камери відносно горизонтальної осі"
 
 
+msgctxt "UI_Events_KeyMaps"
+msgid "Exit Key"
+msgstr "Клавіша виходу"
+
+
 msgid "The key that exits the Game Engine"
 msgstr "Клавіша для виходу з ігрового рушія"
 
@@ -64105,8 +64772,33 @@ msgid "Which button to use"
 msgstr "Яку кнопку використовувати"
 
 
+msgctxt "UI_Events_KeyMaps"
+msgid "Event Type"
+msgstr "Тип події"
+
+
 msgid "The type of event this joystick sensor is triggered on"
 msgstr "Тип події, яка перемикає цей датчик джойстика"
+
+
+msgctxt "UI_Events_KeyMaps"
+msgid "Button"
+msgstr "Кнопка"
+
+
+msgctxt "UI_Events_KeyMaps"
+msgid "Axis"
+msgstr "Вісь"
+
+
+msgctxt "UI_Events_KeyMaps"
+msgid "Hat"
+msgstr "Перехрестя"
+
+
+msgctxt "UI_Events_KeyMaps"
+msgid "Single Axis"
+msgstr "Одна вісь"
 
 
 msgid "Hat Direction"
@@ -64687,7 +65379,7 @@ msgstr "Оберт 3D-маніп."
 
 msgctxt "WindowManager"
 msgid "NDOF Pan/Zoom"
-msgstr "3D-маніп. панорама / наближення/віддалення"
+msgstr "3D-маніп. панорама / близь/даль"
 
 
 msgctxt "WindowManager"
@@ -64798,8 +65490,18 @@ msgid "Property that indicates whether to log keystrokes as a string"
 msgstr "Властивість, яка вказує, чи слід сприймати натискання клавіш у вигляді рядка"
 
 
+msgctxt "UI_Events_KeyMaps"
+msgid "Modifier Key"
+msgstr "Клавіша-модифікатор"
+
+
 msgid "Modifier key code"
 msgstr "Код клавіші-модифікатора"
+
+
+msgctxt "UI_Events_KeyMaps"
+msgid "Second Modifier Key"
+msgstr "Друга клавіша-модифікатор"
 
 
 msgid "Property that receives the keystrokes in case a string is logged"
@@ -65181,7 +65883,7 @@ msgstr "Затирання"
 
 msgctxt "Sequence"
 msgid "Glow"
-msgstr "Свічення"
+msgstr "Сяяння"
 
 
 msgctxt "Sequence"
@@ -65400,11 +66102,11 @@ msgstr "Розмір розмиву за віссю Y"
 
 
 msgid "Glow Sequence"
-msgstr "Послідовність свічення"
+msgstr "Відеоряд сяяння"
 
 
 msgid "Sequence strip creating a glow effect"
-msgstr "Смужка послідовності для створення ефекту світіння"
+msgstr "Смужка відеоряду для створення ефекту сяяння"
 
 
 msgid "Blur Distance"
@@ -65412,7 +66114,7 @@ msgstr "Відстань розмиву"
 
 
 msgid "Radius of glow effect"
-msgstr "Радіус світіння"
+msgstr "Радіус ефекту сяяння"
 
 
 msgid "Boost Factor"
@@ -65432,7 +66134,7 @@ msgstr "Точність ефекту розмиву"
 
 
 msgid "Minimum intensity to trigger a glow"
-msgstr "Найменша інтенсивність, що викликає світіння"
+msgstr "Найменша інтенсивність, що викликає сяяння"
 
 
 msgid "Only Boost"
@@ -65440,7 +66142,7 @@ msgstr "Лише підсилення"
 
 
 msgid "Show the glow buffer only"
-msgstr "Показати лише буфер світіння"
+msgstr "Показати лише буфер сяяння"
 
 
 msgid "Multicam Select Sequence"
@@ -65521,6 +66223,14 @@ msgstr "Текст, що виводитиметься"
 
 msgid "Draw text with shadow"
 msgstr "Виводити текст з тінню"
+
+
+msgid "Wrap Width"
+msgstr "Ширина переносу"
+
+
+msgid "Word wrap width as factor, zero disables"
+msgstr "Ширина переносу слів як фактор, значення нуль вимикає переніс слів"
 
 
 msgid "Transform Sequence"
@@ -66629,6 +67339,10 @@ msgstr "Загальне тертя середовища під час рухі�
 
 msgid "Fuzziness while on collision, high values make collision handling faster but less stable"
 msgstr "Невизначеність під час зіткнення; високі значення прискорюють обробку зіткнення, але знижують стабільність"
+
+
+msgid "Default Goal (vertex target position) value"
+msgstr "Стандартне значення цілі (цільових положень вершин)"
 
 
 msgid "Goal maximum, vertex weights are scaled to match this range"
@@ -67865,7 +68579,7 @@ msgstr "Зсув тла за Y"
 
 
 msgid "Backdrop Zoom"
-msgstr "Наближення/віддалення тла"
+msgstr "Близь/даль тла"
 
 
 msgid "Backdrop zoom factor"
@@ -70993,7 +71707,7 @@ msgstr "Вузол розстановки"
 
 
 msgid "Matte Node"
-msgstr "Вузол матовості"
+msgstr "Вузол маскування"
 
 
 msgid "Active Node"
@@ -72953,7 +73667,7 @@ msgstr "Кількість пікселів, на яку потрібно пер
 
 
 msgid "Invert Zoom Direction"
-msgstr "Інвертувати напрям наближення/віддалення"
+msgstr "Інвертувати напрям близі/далі"
 
 
 msgid "Invert the axis of mouse movement for zooming"
@@ -72961,7 +73675,7 @@ msgstr "Інвертувати осі руху миші для наближен�
 
 
 msgid "Wheel Invert Zoom"
-msgstr "Інвертоване наближення/віддалення коліщатком"
+msgstr "Інвертован близь/даль коліщатком"
 
 
 msgid "Swap the Mouse Wheel zoom direction"
@@ -73113,7 +73827,7 @@ msgstr "Використати у вікні стиль обертання тр�
 
 
 msgid "Invert Zoom"
-msgstr "Інвертувати наближення/віддалення"
+msgstr "Інвертувати близь/даль"
 
 
 msgid "Zoom using opposite direction"
@@ -73185,7 +73899,7 @@ msgstr "Підтримувати однорідність взаємодії з 
 
 
 msgid "Zoom Axis"
-msgstr "Вісь наближення/віддалення"
+msgstr "Вісь близі/далі"
 
 
 msgid "Axis of mouse movement to zoom in or out on"
@@ -73201,7 +73915,7 @@ msgstr "Наближення та віддалення на основі гор�
 
 
 msgid "Zoom Style"
-msgstr "Стиль наближення/віддалення"
+msgstr "Стиль близі/далі"
 
 
 msgid "Which style to use for viewport scaling"
@@ -74209,7 +74923,7 @@ msgstr "Використати вибране, як опорну точку"
 
 
 msgid "Zoom To Mouse Position"
-msgstr "Наблизити/віддалити до позиції миші"
+msgstr "Близь/даль до позиції миші"
 
 
 msgid "Zoom in towards the mouse pointer's position in the 3D view, rather than the 2D window center"
@@ -74225,7 +74939,7 @@ msgstr "Найменша кількість пікселів між лініям
 
 
 msgid "Zoom Keyframes"
-msgstr "Ключкадри наближення/віддалення"
+msgstr "Ключкадри близі/далі"
 
 
 msgid "Keyframes around cursor that we zoom around"
@@ -74233,7 +74947,7 @@ msgstr "Ключкадри навколо курсору, до/від яких �
 
 
 msgid "Zoom Seconds"
-msgstr "Секунди наближення/віддалення"
+msgstr "Секунди близі/далі"
 
 
 msgid "Seconds around cursor that we zoom around"
@@ -74241,7 +74955,7 @@ msgstr "Секунди навколо курсору, до/від яких бу�
 
 
 msgid "Zoom To Frame Type"
-msgstr "Тип наближення/віддалення до кадру"
+msgstr "Тип близі/далі до кадру"
 
 
 msgid "How zooming to frame focuses around current frame"
@@ -74910,7 +75624,7 @@ msgstr "Модальне переміщення у 3D-вікні"
 
 msgctxt "WindowManager"
 msgid "View3D Zoom Modal"
-msgstr "Модальне наближення/віддалення у 3D-вікні"
+msgstr "Модальна близь/даль у 3D-вікні"
 
 
 msgctxt "WindowManager"
@@ -75110,7 +75824,7 @@ msgstr "Прямолінійний жест"
 
 msgctxt "WindowManager"
 msgid "Gesture Zoom Border"
-msgstr "Жест межового наближення/віддалення"
+msgstr "Жест межової близі/далі"
 
 
 msgctxt "WindowManager"
@@ -75547,6 +76261,11 @@ msgstr "Вичистити:"
 msgctxt "Operator"
 msgid "Isolated"
 msgstr "Ізольовані"
+
+
+msgctxt "Operator"
+msgid "Make Manifold"
+msgstr "Зробити розгортуваним"
 
 
 msgid "Scale To:"
@@ -76102,6 +76821,10 @@ msgstr "Крен:"
 
 msgid "Custom Shape:"
 msgstr "Власна форма:"
+
+
+msgid "Bone Size"
+msgstr "Розмір кості"
 
 
 msgid "Shift:"
@@ -79499,7 +80222,7 @@ msgstr "Затирання"
 
 msgctxt "Operator"
 msgid "Glow"
-msgstr "Свічення"
+msgstr "Сяяння"
 
 
 msgctxt "Operator"
@@ -80020,7 +80743,7 @@ msgstr "Стиль обертання:"
 
 
 msgid "Zoom Style:"
-msgstr "Стиль наближення/віддалення:"
+msgstr "Стиль близі/далі:"
 
 
 msgid "Invert Wheel Zoom Direction"
@@ -82459,6 +83182,10 @@ msgid "LIB ERROR: Data refers to main .blend file: '%s' from %s"
 msgstr "ПОМИЛКА БІБЛІОТЕКИ: Дані відносяться до головного .blend файлу: '%s' з %s"
 
 
+msgid "LIB ERROR: %s: '%s' missing from '%s', parent '%s'"
+msgstr "ПОМИЛКА БІБЛІОТЕКИ: %s: '%s' немає у '%s', предок '%s'"
+
+
 msgid "Read packed library:  '%s', parent '%s'"
 msgstr "Читати упаковану бібліотеку:  '%s', предок '%s'"
 
@@ -82469,14 +83196,6 @@ msgstr "Читати бібліотеку: '%s', '%s', предок '%s'"
 
 msgid "Cannot find lib '%s'"
 msgstr "Не знайдено бібліотеку '%s'"
-
-
-msgid "LIB ERROR: %s: '%s' missing from '%s', parent '%s'"
-msgstr "ПОМИЛКА БІБЛІОТЕКИ: %s: '%s' немає у '%s', предок '%s'"
-
-
-msgid "LIB ERROR: %s: '%s' unread lib block missing from '%s', parent '%s'"
-msgstr "ПОМИЛКА БІБЛІОТЕКИ: %s: '%s' непрочитаний бібліотечний блок, відсутній у '%s', предок '%s'"
 
 
 msgid "Unable to open blend <memory>"
@@ -83402,6 +84121,14 @@ msgstr "Пришпилити"
 
 msgid "Shift+Left Mouse"
 msgstr "Shift+Ліва кнопка"
+
+
+msgid "Non-Keyboard Shortcut"
+msgstr "Не-клавіатурна швидка клавіша"
+
+
+msgid "Only keyboard shortcuts can be edited that way, please use User Preferences otherwise"
+msgstr "Лише клавіатурні швидкі клавіші можуть таким чином редагуватися, для усіх інших випадків скористайтесь вікном Налаштунки Користувача"
 
 
 msgctxt "Operator"
@@ -85006,6 +85733,10 @@ msgid "Can't apply to a curve with shape-keys: Object \"%s\", %s \"%s\", abortin
 msgstr "Неможливо застосувати до кривої з ключами форм: об'єкт \"%s\", %s \"%s\"; припинення"
 
 
+msgid "Font's can only have scale applied: \"%s\""
+msgstr "Шрифти можуть лише мати застосований масштаб: \"%s\""
+
+
 msgid "%i object(s) not centered, %i changed:"
 msgstr "%i об'єкт(и) не відцентровано, %i змінено:"
 
@@ -85394,6 +86125,10 @@ msgid "Scene has no camera"
 msgstr "Сцена не має камери"
 
 
+msgid "Movie format unsupported"
+msgstr "Непідтримуваний формат відео"
+
+
 msgid "Failed to create OpenGL off-screen buffer, %s"
 msgstr "Не вдалося створити позаекранний буфер OpenGL, %s"
 
@@ -85452,6 +86187,10 @@ msgstr "Об'єкт, на який посилається вказівник д�
 
 msgid "No active line style in the current scene"
 msgstr "Поточна сцена не має активного стилю лінії"
+
+
+msgid "Failed to open window!"
+msgstr "Збій відкриття вікна!"
 
 
 msgid "Flip to Bottom"
@@ -86951,6 +87690,10 @@ msgid "Can't create subtitle file"
 msgstr "Неможливо створити файл субтитрів"
 
 
+msgid "No subtitles (text strips) to export"
+msgstr "Нема підтитрів (текстових смужок) для експорту"
+
+
 msgid "No active sequence!"
 msgstr "Немає активної послідовності!"
 
@@ -88056,10 +88799,6 @@ msgstr "Зображення не упаковано"
 
 msgid "Could not write image '%s'"
 msgstr "Неможливо зберегти зображення '%s'"
-
-
-msgid "Image '%s' could not save packed file to '%s'"
-msgstr "Зображення '%s' неможливо записати упакований файл до '%s'"
 
 
 msgid "Image '%s' could not be saved to '%s'"
@@ -89467,6 +90206,22 @@ msgstr "Повторення оператора '%s': поганий конте�
 
 msgid "Linking or appending from a very old .blend file format (%d.%d), no animation conversion will be done! You may want to re-save your lib file with current Blender"
 msgstr "Зв'язування або вставляння з дуже старого .blend-файлу формату (%d.%d), анімація не буде перетворена! Спробуйте переписати бібліотечний файл з поточної версії Blender'а."
+
+
+msgid "'%s': not a library"
+msgstr "'%s': не є бібліотекою"
+
+
+msgid "'%s': nothing indicated"
+msgstr "'%s': нічого не вказано"
+
+
+msgid "'%s': cannot use current file as library"
+msgstr "'%s': неможливо використати поточний файл як бібліотеку"
+
+
+msgid "Scene '%s' is linked, instantiation of objects & groups is disabled"
+msgstr "Сцена '%s' є прив'язаною, примірники об'єктів і груп вимкнені"
 
 
 msgid "Could not resolve path '%s'"

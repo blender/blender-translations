@@ -1,9 +1,9 @@
 
 msgid ""
 msgstr ""
-"Project-Id-Version: Blender 2.76 (sub 1) (b'cdd727b')\n"
+"Project-Id-Version: Blender 2.76 (sub 1) (b'6bc0076')\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-10-12 21:34:33\n"
+"POT-Creation-Date: 2015-10-20 20:09:12\n"
 "PO-Revision-Date: \n"
 "Last-Translator: Bastien Montagne <montagne29@wanadoo.fr>\n"
 "Language-Team: \n"
@@ -10209,6 +10209,30 @@ msgid "Directory displayed in the file browser"
 msgstr "Dossier affiché dans le navigateur de fichiers"
 
 
+msgid "Display Size"
+msgstr "Taille d’affichage"
+
+
+msgid "Change the size of the display (width of columns or thumbnails size)"
+msgstr "Modifier la taille de l’affichage (largeur des colonnes ou taille des miniatures)"
+
+
+msgid "Tiny"
+msgstr "Minuscules"
+
+
+msgid "Small"
+msgstr "Petites"
+
+
+msgid "Normal"
+msgstr "Normale"
+
+
+msgid "Large"
+msgstr "Grandes"
+
+
 msgid "Display Mode"
 msgstr "Mode d’affichage"
 
@@ -10551,30 +10575,6 @@ msgstr "Trier par taille"
 
 msgid "Sort files by size"
 msgstr "Trier la liste des fichiers par leur taille"
-
-
-msgid "Thumbnails Size"
-msgstr "Taille des miniatures"
-
-
-msgid "Change the size of the thumbnails"
-msgstr "Modifier la taille des miniatures"
-
-
-msgid "Tiny"
-msgstr "Minuscules"
-
-
-msgid "Small"
-msgstr "Petites"
-
-
-msgid "Normal"
-msgstr "Normale"
-
-
-msgid "Large"
-msgstr "Grandes"
 
 
 msgid "Title"
@@ -54146,6 +54146,10 @@ msgid "Single Side"
 msgstr "Un seul côté"
 
 
+msgid "Clamp within the edge extents"
+msgstr "Limiter aux dimensions de l’arête"
+
+
 msgid "Make the edge loop match the shape of the adjacent edge loop"
 msgstr "Faire correspondre la boucle d’arêtes à la forme de celle adjacente"
 
@@ -57794,6 +57798,15 @@ msgstr "Supprimer un chemin à exclure de l’auto-exécution"
 
 
 msgctxt "Operator"
+msgid "Close Window"
+msgstr "Fermer fenêtre"
+
+
+msgid "Close the current Blender window"
+msgstr "Fermer la fenêtre Blender active"
+
+
+msgctxt "Operator"
 msgid "Duplicate Window"
 msgstr "Dupliquer fenêtre"
 
@@ -60921,6 +60934,38 @@ msgstr "Rebonds min"
 
 msgid "Minimum number of bounces, setting this lower than the maximum enables probabilistic path termination (faster but noisier)"
 msgstr "Nombre de rebonds minimum, régler cela en-dessous du maximum active la cessation probabiliste de chemin (plus rapide mais plus bruité)"
+
+
+msgid "Motion Blur Position"
+msgstr "Position de flou cinétique"
+
+
+msgid "Offset for the shutter's time interval, allows to change the motion blur trails"
+msgstr "Décalage pour l’intervalle de temps de l’obturateur, permet de modifier les traînées de flou cinétique"
+
+
+msgid "Start on Frame"
+msgstr "Démarrer à la frame"
+
+
+msgid "The shutter opens at the current frame"
+msgstr "L’obturateur s’ouvre à la frame courante"
+
+
+msgid "Center on Frame"
+msgstr "Centrer sur la frame"
+
+
+msgid "The shutter is open during the current frame"
+msgstr "L’obturateur est ouvert durant la frame courante"
+
+
+msgid "End on Frame"
+msgstr "Terminer à la frame"
+
+
+msgid "The shutter closes at the current frame"
+msgstr "L’obturateur est fermé à la frame courante"
 
 
 msgid "Number of antialiasing samples to render in the viewport, unlimited if 0"
@@ -83194,6 +83239,10 @@ msgid "LIB ERROR: Data refers to main .blend file: '%s' from %s"
 msgstr "ERREUR BIBLIOTHÈQUE : Les données se réfèrent au fichier .blend principal : “%s” de %s"
 
 
+msgid "LIB ERROR: %s: '%s' missing from '%s', parent '%s'"
+msgstr "ERREUR DE LIB : %s : “%s” manque dans “%s”, parent “%s”"
+
+
 msgid "Read packed library:  '%s', parent '%s'"
 msgstr "Lecture de la bibliothèque empaquetée : “%s”, parent “%s”"
 
@@ -83206,12 +83255,8 @@ msgid "Cannot find lib '%s'"
 msgstr "Impossible de trouver la bibliothèque “%s”"
 
 
-msgid "LIB ERROR: %s: '%s' missing from '%s', parent '%s'"
-msgstr "ERREUR DE LIB : %s : “%s” manque dans “%s”, parent “%s”"
-
-
-msgid "LIB ERROR: %s: '%s' unread lib block missing from '%s', parent '%s'"
-msgstr "ERREUR DE LIB : %s : le bloc de bibliothèque non-lu “%s” manque dans “%s”, parent “%s”"
+msgid "LIB ERROR: %s: '%s' unread lib block missing from '%s', parent '%s' - Please file a bug report if you see this message"
+msgstr "ERREUR LIB : %s : block de librarie “%s” manquant dans “%s”, parent “%s” – Merci d’ouvrir un rapport de bug si vous voyez ce message"
 
 
 msgid "Unable to open blend <memory>"
@@ -88813,12 +88858,12 @@ msgid "Image not packed"
 msgstr "Image non empaquetée"
 
 
+msgid "Image could not save packed file to '%s'"
+msgstr "L’image n’a pu enregistrer le fichier empaqueté vers “%s”"
+
+
 msgid "Could not write image '%s'"
 msgstr "Impossible d’écrire l’image %s"
-
-
-msgid "Image '%s' could not save packed file to '%s'"
-msgstr "L’image “%s” n’a pu enregistrer le fichier empaqueté vers “%s”"
 
 
 msgid "Image '%s' could not be saved to '%s'"
