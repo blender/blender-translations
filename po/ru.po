@@ -1,9 +1,9 @@
 
 msgid ""
 msgstr ""
-"Project-Id-Version: Blender 2.76 (sub 5) (b'2fb3fa1')\n"
+"Project-Id-Version: Blender 2.76 (sub 8) (b'aeaa0ce')\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-01-14 17:00:34\n"
+"POT-Creation-Date: 2016-01-19 20:32:10\n"
 "PO-Revision-Date: 2015-06-08 11:49+0300\n"
 "Last-Translator: Lockal S <lockalsash@gmail.com>\n"
 "Language-Team: Russian <http://translateblender.ru/projects/blender/blender/ru/>\n"
@@ -2839,6 +2839,38 @@ msgid "Bake the normals in tangent space"
 msgstr "Запечь нормали в тангенциальном пространстве (пространстве касательной)"
 
 
+msgid "Emit"
+msgstr "Свечение"
+
+
+msgid "Direct"
+msgstr "Прямое"
+
+
+msgid "Indirect"
+msgstr "Отражённое"
+
+
+msgid "Color"
+msgstr "Цвет"
+
+
+msgid "Diffuse"
+msgstr "Диффуз."
+
+
+msgid "Glossy"
+msgstr "Глянец"
+
+
+msgid "Transmission"
+msgstr "Передача"
+
+
+msgid "Subsurface"
+msgstr "Подпов. рассеяние"
+
+
 msgid "Save Mode"
 msgstr "Режим сохранения"
 
@@ -2881,6 +2913,10 @@ msgstr "Очистить"
 
 msgid "Clear Images before baking (internal only)"
 msgstr "Очищать изображения перед запеканием (только для встроенных)"
+
+
+msgid "AO"
+msgstr "AO"
 
 
 msgid "Selected to Active"
@@ -4801,10 +4837,6 @@ msgstr "Отображение цветов"
 
 msgid "Color mapping settings"
 msgstr "Настройки отображения цветов"
-
-
-msgid "Color"
-msgstr "Цвет"
 
 
 msgid "Blend color to mix with texture output color"
@@ -15638,10 +15670,6 @@ msgid "Directional area light source"
 msgstr "Плоскость направленного света"
 
 
-msgid "Diffuse"
-msgstr "Диффуз."
-
-
 msgid "Do diffuse shading"
 msgstr "Выполнение диффузного затенения"
 
@@ -16424,10 +16452,6 @@ msgstr "Диффузный переход (toon)"
 
 msgid "Smoothness of diffuse toon area"
 msgstr "Плавность цветового перехода в диффузной области toon-шейдера"
-
-
-msgid "Emit"
-msgstr "Свечение"
 
 
 msgid "Amount of light to emit"
@@ -26516,10 +26540,6 @@ msgid "Nearest Vertices"
 msgstr "Ближайшие вершины"
 
 
-msgid "Copy from most similar edge (edge which vertices are the closest of destination edge’s ones)"
-msgstr "Копировать с наиближайших рёбер (с рёбер, чьи вершины расположены ближе всего к рёбрам получателя)"
-
-
 msgid "Nearest Edge"
 msgstr "Ближайшие рёбра"
 
@@ -32326,10 +32346,6 @@ msgstr "Преломляющий BSDF"
 
 msgid "Toon BSDF"
 msgstr "Toon BSDF"
-
-
-msgid "Glossy"
-msgstr "Глянец"
 
 
 msgid "Translucent BSDF"
@@ -44850,54 +44866,6 @@ msgstr "Тип запекаемого прохода; некоторые тип�
 
 msgid "Combined"
 msgstr "Комбинация"
-
-
-msgid "Refraction"
-msgstr "Преломление"
-
-
-msgid "Object Index"
-msgstr "Индекс объекта"
-
-
-msgid "Diffuse Direct"
-msgstr "Диффузное прямое"
-
-
-msgid "Diffuse Indirect"
-msgstr "Диффузное отражённое"
-
-
-msgid "Glossy Direct"
-msgstr "Прямой блеск"
-
-
-msgid "Glossy Indirect"
-msgstr "Отражённый блеск"
-
-
-msgid "Glossy Color"
-msgstr "Цвет блеска"
-
-
-msgid "Transmission Direct"
-msgstr "Пропускаемое прямое"
-
-
-msgid "Transmission Indirect"
-msgstr "Пропускаемое отражённое"
-
-
-msgid "Subsurface Direct"
-msgstr "Подпов. прямое"
-
-
-msgid "Subsurface Indirect"
-msgstr "Подпов. отраж."
-
-
-msgid "Subsurface Color"
-msgstr "Подпов. цвет"
 
 
 msgid "Automatically name the output file with the pass type"
@@ -58796,10 +58764,6 @@ msgid "Object visibility for shadow rays"
 msgstr "Видимость объекта для теневых лучей"
 
 
-msgid "Transmission"
-msgstr "Передача"
-
-
 msgid "Object visibility for transmission rays"
 msgstr "Видимость объекта для лучей передачи"
 
@@ -59360,10 +59324,6 @@ msgid "Fill in Z values for solid faces in invisible layers, for masking"
 msgstr "Заполнить значения Z для маскировки сплошных поверхностей в скрытых слоях"
 
 
-msgid "AO"
-msgstr "AO"
-
-
 msgid "Render Edge-enhance in this Layer (only works for Solid faces)"
 msgstr "Визуализировать с улучшением рёбер для этого слоя (работает только для сплошных граней)"
 
@@ -59396,8 +59356,16 @@ msgid "Deliver diffuse color pass"
 msgstr "Выполнять проход расчёта цвета рассеянного освещения"
 
 
+msgid "Diffuse Direct"
+msgstr "Диффузное прямое"
+
+
 msgid "Deliver diffuse direct pass"
 msgstr "Выполнять проход расчёта рассеянного прямого освещения"
+
+
+msgid "Diffuse Indirect"
+msgstr "Диффузное отражённое"
 
 
 msgid "Deliver diffuse indirect pass"
@@ -59412,20 +59380,28 @@ msgid "Deliver environment lighting pass"
 msgstr "Выполнять проход освещения окружающей среды"
 
 
+msgid "Glossy Color"
+msgstr "Цвет блеска"
+
+
 msgid "Deliver glossy color pass"
 msgstr "Выполнять проход расчёта цвета блеска"
+
+
+msgid "Glossy Direct"
+msgstr "Прямой блеск"
 
 
 msgid "Deliver glossy direct pass"
 msgstr "Выполнять проход расчёта прямого блеска"
 
 
+msgid "Glossy Indirect"
+msgstr "Отражённый блеск"
+
+
 msgid "Deliver glossy indirect pass"
 msgstr "Выполнять проход расчёта отражённого блеска"
-
-
-msgid "Indirect"
-msgstr "Отражённое"
 
 
 msgid "Deliver indirect lighting pass"
@@ -59444,12 +59420,20 @@ msgid "Deliver normal pass"
 msgstr "Выполнять проход нормалей"
 
 
+msgid "Object Index"
+msgstr "Индекс объекта"
+
+
 msgid "Deliver object index pass"
 msgstr "Выполнять проход индексов объектов"
 
 
 msgid "Deliver raytraced reflection pass"
 msgstr "Выполнять проход отражения с трассировкой лучей"
+
+
+msgid "Refraction"
+msgstr "Преломление"
 
 
 msgid "Deliver raytraced refraction pass"
@@ -59464,12 +59448,24 @@ msgid "Deliver specular pass"
 msgstr "Выполнять зеркальный проход"
 
 
+msgid "Subsurface Color"
+msgstr "Подпов. цвет"
+
+
 msgid "Deliver subsurface color pass"
 msgstr "Выполнять проход расчёта цветов подповерхностного освещения"
 
 
+msgid "Subsurface Direct"
+msgstr "Подпов. прямое"
+
+
 msgid "Deliver subsurface direct pass"
 msgstr "Выполнять проход расчёта подповерхностного прямого освещения"
+
+
+msgid "Subsurface Indirect"
+msgstr "Подпов. отраж."
 
 
 msgid "Deliver subsurface indirect pass"
@@ -59480,8 +59476,16 @@ msgid "Deliver transmission color pass"
 msgstr "Выполнять проход расчёта пропускаемого цвета"
 
 
+msgid "Transmission Direct"
+msgstr "Пропускаемое прямое"
+
+
 msgid "Deliver transmission direct pass"
 msgstr "Выполнять проход расчёта пропускаемого прямого освещения"
+
+
+msgid "Transmission Indirect"
+msgstr "Пропускаемое отражённое"
 
 
 msgid "Deliver transmission indirect pass"
@@ -69962,10 +69966,6 @@ msgid "WPaint Multi-Paint"
 msgstr "Мультирисование веса"
 
 
-msgid "Paint across all selected bones while weight painting"
-msgstr "Рисовать для всех выделенных костей при рисовании весов"
-
-
 msgid "Proportional Editing Actions"
 msgstr "Действия пропорциональной правки"
 
@@ -73186,10 +73186,6 @@ msgid "Diffuse:"
 msgstr "Цвет:"
 
 
-msgid "Direct"
-msgstr "Прямое"
-
-
 msgid "Glossy:"
 msgstr "Глянцевое:"
 
@@ -73292,10 +73288,6 @@ msgstr "Сэмплы сглаж.:"
 
 msgid "Mesh Light"
 msgstr "Полисетки-лампы"
-
-
-msgid "Subsurface"
-msgstr "Подпов. рассеяние"
 
 
 msgid "File Suffix:"
@@ -81640,10 +81632,6 @@ msgid "Stop this job"
 msgstr "Остановить эту работу"
 
 
-msgid "Progress"
-msgstr "Прогресс"
-
-
 msgid "Stop screencast"
 msgstr "Остановить скринкаст"
 
@@ -82852,14 +82840,6 @@ msgid "Bake failed: invalid canvas"
 msgstr "Запекание не удалось: недопустимый холст"
 
 
-msgid "Baking canceled!"
-msgstr "Запекание отменено!"
-
-
-msgid "Bake failed: %s"
-msgstr "Запечь не удалось: %s"
-
-
 msgid "Removed %d double particles"
 msgstr "Удалено %d сдвоенных частиц"
 
@@ -83580,12 +83560,16 @@ msgid "Use LMB click to define location where place the marker"
 msgstr "Используйте ЛКМ для задания положения маркера"
 
 
-msgid "Invoking this operator only supported from Clip Editor space"
-msgstr "Этот оператор можно запустить только в пространстве редактора видеофрагментов"
+msgid "No active track to join to"
+msgstr "Нет активного трека для присоединения"
 
 
-msgid "Some data failed to reconstruct (see console for details)"
-msgstr "Невозможно восстановить некоторые данные (дополнительная информация приведена в консоли)"
+msgid "Object used for camera tracking cannot be deleted"
+msgstr "Объект, используемый для трекинга камеры, не может быть удалён"
+
+
+msgid "Feature detection requires valid clip frame"
+msgstr "Для обнаружения характерных мест необходим корректный кадр видеофрагмента"
 
 
 msgid "At least one track with bundle should be selected to define origin position"
@@ -83608,24 +83592,20 @@ msgid "Two tracks with bundles should be selected to set scale"
 msgstr "Выберите два рассчитанных трека для задания масштаба"
 
 
-msgid "Feature detection requires valid clip frame"
-msgstr "Для обнаружения характерных мест необходим корректный кадр видеофрагмента"
-
-
-msgid "No active track to join to"
-msgstr "Нет активного трека для присоединения"
-
-
-msgid "Object used for camera tracking cannot be deleted"
-msgstr "Объект, используемый для трекинга камеры, не может быть удалён"
-
-
 msgid "Need at least 4 selected point tracks to create a plane"
 msgstr "Выделите хотя бы 4 трека-точки для создания плоскости"
 
 
+msgid "Some data failed to reconstruct (see console for details)"
+msgstr "Невозможно восстановить некоторые данные (дополнительная информация приведена в консоли)"
+
+
 msgid "Average re-projection error: %.3f"
 msgstr "Средняя ошибка перепроецирования: %.3f"
+
+
+msgid "Invoking this operator only supported from Clip Editor space"
+msgstr "Этот оператор можно запустить только в пространстве редактора видеофрагментов"
 
 
 msgid "Cancel"

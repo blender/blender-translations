@@ -1,9 +1,9 @@
 
 msgid ""
 msgstr ""
-"Project-Id-Version: Blender 2.76 (sub 5) (b'2fb3fa1')\n"
+"Project-Id-Version: Blender 2.76 (sub 8) (b'aeaa0ce')\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-01-14 17:00:34\n"
+"POT-Creation-Date: 2016-01-19 20:32:10\n"
 "PO-Revision-Date: \n"
 "Last-Translator: Leon Cheung <leon4you@gmail.com>\n"
 "Language-Team: \n"
@@ -2771,6 +2771,38 @@ msgid "Bake the normals in tangent space"
 msgstr "在切线空间上执行烘培"
 
 
+msgid "Emit"
+msgstr "自发光"
+
+
+msgid "Direct"
+msgstr "直接光"
+
+
+msgid "Indirect"
+msgstr "间接光"
+
+
+msgid "Color"
+msgstr "颜色"
+
+
+msgid "Diffuse"
+msgstr "漫射"
+
+
+msgid "Glossy"
+msgstr "光泽"
+
+
+msgid "Transmission"
+msgstr "传递"
+
+
+msgid "Subsurface"
+msgstr "表面细分"
+
+
 msgid "Save Mode"
 msgstr "保存模式"
 
@@ -2813,6 +2845,10 @@ msgstr "清空"
 
 msgid "Clear Images before baking (internal only)"
 msgstr "烘培前清除图像（仅限内置渲染器）"
+
+
+msgid "AO"
+msgstr "AO"
 
 
 msgid "Selected to Active"
@@ -4657,10 +4693,6 @@ msgstr "色彩映射"
 
 msgid "Color mapping settings"
 msgstr "颜色映射设定"
-
-
-msgid "Color"
-msgstr "颜色"
 
 
 msgid "Blend color to mix with texture output color"
@@ -14862,10 +14894,6 @@ msgid "Directional area light source"
 msgstr "定向面光源"
 
 
-msgid "Diffuse"
-msgstr "漫射"
-
-
 msgid "Do diffuse shading"
 msgstr "执行漫射着色"
 
@@ -15640,10 +15668,6 @@ msgstr "漫射卡通平滑效果"
 
 msgid "Smoothness of diffuse toon area"
 msgstr "漫射卡通效果的平滑度"
-
-
-msgid "Emit"
-msgstr "自发光"
 
 
 msgid "Amount of light to emit"
@@ -30440,10 +30464,6 @@ msgid "Toon BSDF"
 msgstr "卡通 BSDF"
 
 
-msgid "Glossy"
-msgstr "光泽"
-
-
 msgid "Translucent BSDF"
 msgstr "半透 BSDF"
 
@@ -41924,54 +41944,6 @@ msgstr "烘焙所选物体的图像贴图"
 
 msgid "Combined"
 msgstr "合成结果"
-
-
-msgid "Refraction"
-msgstr "折射"
-
-
-msgid "Object Index"
-msgstr "物体索引"
-
-
-msgid "Diffuse Direct"
-msgstr "直接漫射光"
-
-
-msgid "Diffuse Indirect"
-msgstr "间接漫射光"
-
-
-msgid "Glossy Direct"
-msgstr "直接光泽"
-
-
-msgid "Glossy Indirect"
-msgstr "间接光泽"
-
-
-msgid "Glossy Color"
-msgstr "光泽颜色"
-
-
-msgid "Transmission Direct"
-msgstr "直接传递"
-
-
-msgid "Transmission Indirect"
-msgstr "间接传递"
-
-
-msgid "Subsurface Direct"
-msgstr "直接 SSS"
-
-
-msgid "Subsurface Indirect"
-msgstr "间接 SSS"
-
-
-msgid "Subsurface Color"
-msgstr "次表面颜色"
 
 
 msgctxt "Operator"
@@ -54414,10 +54386,6 @@ msgid "Object visibility for shadow rays"
 msgstr "物体对于阴影光线的可见性"
 
 
-msgid "Transmission"
-msgstr "传递"
-
-
 msgid "Object visibility for transmission rays"
 msgstr "物体对于投射光线的可见性"
 
@@ -54950,10 +54918,6 @@ msgid "Fill in Z values for solid faces in invisible layers, for masking"
 msgstr "为了实现遮罩, 将不同层上的实体面均填充为 Z 值"
 
 
-msgid "AO"
-msgstr "AO"
-
-
 msgid "Render Edge-enhance in this Layer (only works for Solid faces)"
 msgstr "在当前层中渲染强化边(仅适用于实体面)"
 
@@ -54986,8 +54950,16 @@ msgid "Deliver diffuse color pass"
 msgstr "传递漫射颜色通道"
 
 
+msgid "Diffuse Direct"
+msgstr "直接漫射光"
+
+
 msgid "Deliver diffuse direct pass"
 msgstr "传递直接漫射通道"
+
+
+msgid "Diffuse Indirect"
+msgstr "间接漫射光"
 
 
 msgid "Deliver diffuse indirect pass"
@@ -55002,20 +54974,28 @@ msgid "Deliver environment lighting pass"
 msgstr "传递环境光照通道"
 
 
+msgid "Glossy Color"
+msgstr "光泽颜色"
+
+
 msgid "Deliver glossy color pass"
 msgstr "传递光泽颜色通道"
+
+
+msgid "Glossy Direct"
+msgstr "直接光泽"
 
 
 msgid "Deliver glossy direct pass"
 msgstr "传递直接光泽通道"
 
 
+msgid "Glossy Indirect"
+msgstr "间接光泽"
+
+
 msgid "Deliver glossy indirect pass"
 msgstr "传递间接光泽通道"
-
-
-msgid "Indirect"
-msgstr "间接光"
 
 
 msgid "Deliver indirect lighting pass"
@@ -55034,12 +55014,20 @@ msgid "Deliver normal pass"
 msgstr "传递法线通道"
 
 
+msgid "Object Index"
+msgstr "物体索引"
+
+
 msgid "Deliver object index pass"
 msgstr "传递物体索引通道"
 
 
 msgid "Deliver raytraced reflection pass"
 msgstr "传递光线追踪反射通道"
+
+
+msgid "Refraction"
+msgstr "折射"
 
 
 msgid "Deliver raytraced refraction pass"
@@ -55054,12 +55042,24 @@ msgid "Deliver specular pass"
 msgstr "传递高光通道"
 
 
+msgid "Subsurface Color"
+msgstr "次表面颜色"
+
+
 msgid "Deliver subsurface color pass"
 msgstr "传递光泽颜色通道"
 
 
+msgid "Subsurface Direct"
+msgstr "直接 SSS"
+
+
 msgid "Deliver subsurface direct pass"
 msgstr "传递直接光泽通道"
+
+
+msgid "Subsurface Indirect"
+msgstr "间接 SSS"
 
 
 msgid "Deliver subsurface indirect pass"
@@ -55070,8 +55070,16 @@ msgid "Deliver transmission color pass"
 msgstr "传递透射光颜色通道"
 
 
+msgid "Transmission Direct"
+msgstr "直接传递"
+
+
 msgid "Deliver transmission direct pass"
 msgstr "传递直接透射光通道"
+
+
+msgid "Transmission Indirect"
+msgstr "间接传递"
 
 
 msgid "Deliver transmission indirect pass"
@@ -64965,10 +64973,6 @@ msgid "WPaint Multi-Paint"
 msgstr "多种绘制的权重绘制"
 
 
-msgid "Paint across all selected bones while weight painting"
-msgstr "在权重绘制时绘制全部选中的骨骼"
-
-
 msgid "Proportional Editing Actions"
 msgstr "衰减编辑动作"
 
@@ -67971,10 +67975,6 @@ msgid "Diffuse:"
 msgstr "漫射:"
 
 
-msgid "Direct"
-msgstr "直接光"
-
-
 msgid "Glossy:"
 msgstr "光泽:"
 
@@ -68061,10 +68061,6 @@ msgstr "抗锯齿采样:"
 
 msgid "Mesh Light"
 msgstr "网格灯光"
-
-
-msgid "Subsurface"
-msgstr "表面细分"
 
 
 msgid "Not supported, interpreted as sun lamp"
@@ -75776,10 +75772,6 @@ msgid "Stop this job"
 msgstr "停止当前工作"
 
 
-msgid "Progress"
-msgstr "进度"
-
-
 msgid "Stop screencast"
 msgstr "停止截屏"
 
@@ -76800,14 +76792,6 @@ msgid "Bake failed: invalid canvas"
 msgstr "烘焙失败：非法绘制"
 
 
-msgid "Baking canceled!"
-msgstr "烘焙取消!"
-
-
-msgid "Bake failed: %s"
-msgstr "烘焙失败: %s"
-
-
 msgid "Removed %d double particles"
 msgstr "移除了 %d 个重叠粒子"
 
@@ -77436,8 +77420,16 @@ msgid "Cannot read '%s': %s"
 msgstr "无法读取 '%s': %s"
 
 
-msgid "Some data failed to reconstruct (see console for details)"
-msgstr "一些数据无法被重构（请参考控制台打印信息）"
+msgid "No active track to join to"
+msgstr "无可供接合的活动轨迹"
+
+
+msgid "Object used for camera tracking cannot be deleted"
+msgstr "不能删除用于摄像机追踪的物体"
+
+
+msgid "Feature detection requires valid clip frame"
+msgstr "破碎探测需要有效的剪辑帧"
 
 
 msgid "At least one track with bundle should be selected to define origin position"
@@ -77460,16 +77452,8 @@ msgid "Two tracks with bundles should be selected to set scale"
 msgstr "需要两个带控制的跟踪点来定义缩放"
 
 
-msgid "Feature detection requires valid clip frame"
-msgstr "破碎探测需要有效的剪辑帧"
-
-
-msgid "No active track to join to"
-msgstr "无可供接合的活动轨迹"
-
-
-msgid "Object used for camera tracking cannot be deleted"
-msgstr "不能删除用于摄像机追踪的物体"
+msgid "Some data failed to reconstruct (see console for details)"
+msgstr "一些数据无法被重构（请参考控制台打印信息）"
 
 
 msgid "Average re-projection error: %.3f"
