@@ -1,9 +1,9 @@
 
 msgid ""
 msgstr ""
-"Project-Id-Version: Blender 2.76 (sub 8) (b'aeaa0ce')\n"
+"Project-Id-Version: Blender 2.76 (sub 9) (b'66aa4af')\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-01-19 20:32:10\n"
+"POT-Creation-Date: 2016-01-27 22:21:07\n"
 "PO-Revision-Date: \n"
 "Last-Translator: Bastien Montagne <montagne29@wanadoo.fr>\n"
 "Language-Team: \n"
@@ -13675,6 +13675,14 @@ msgstr "Ajustage de plan (?)"
 
 msgid "If a vertex is further away from offset plane than this, then it is not affected"
 msgstr "Si un vertex est plus éloigné du plan de décalage que cela, alors il n’est pas affecté"
+
+
+msgid "Rake"
+msgstr "Ratisser (?)"
+
+
+msgid "How much grab will follow cursor rotation"
+msgstr "À quel point “attraper” va suivre la rotation du curseur"
 
 
 msgid "Rate"
@@ -38379,10 +38387,6 @@ msgid "Track selected markers"
 msgstr "Suivre les marqueurs sélectionnés"
 
 
-msgid "Movie Clip to be tracked"
-msgstr "Clip vidéo à traquer"
-
-
 msgid "Track Sequence"
 msgstr "Suivre séquence"
 
@@ -41530,6 +41534,14 @@ msgstr "Sélectionner les traits de crayon gras au sein d’une région rectangu
 
 msgid "Select Grease Pencil strokes using brush selection"
 msgstr "Sélectionner les traits de crayon gras avec un pinceau"
+
+
+msgid "Select all strokes with similar characteristics"
+msgstr "Sélectionner tous les traits ayant des caractéristiques similaires"
+
+
+msgid "Shared layers"
+msgstr "Calques partagés"
 
 
 msgctxt "Operator"
@@ -48920,10 +48932,6 @@ msgstr "Parent partagé"
 
 msgid "Shared object type"
 msgstr "Type d’objet partagé"
-
-
-msgid "Shared layers"
-msgstr "Calques partagés"
 
 
 msgid "Shared group"
@@ -65173,6 +65181,10 @@ msgid "Has Plane Offset"
 msgstr "A décalage de plan"
 
 
+msgid "Has Rake Factor"
+msgstr "A facteur de ratissage (?)"
+
+
 msgid "Has Sculpt Plane"
 msgstr "A plan de sculpture"
 
@@ -67288,6 +67300,22 @@ msgid "Use mask ID as mask input"
 msgstr "Utiliser le masque ID comme entrée de masque"
 
 
+msgid "Mask Time"
+msgstr "Temps du masque"
+
+
+msgid "Time to use for the Mask animation"
+msgstr "Temps à utiliser pour l’animation du masque"
+
+
+msgid "Mask animation is offset to start of strip"
+msgstr "L’animation du masque est décalée au début de la bande"
+
+
+msgid "Mask animation is in sync with scene frame"
+msgstr "L’animation du masque est synchrone avec la scène"
+
+
 msgid "Mute this modifier"
 msgstr "Rendre muet ce modificateur"
 
@@ -67568,6 +67596,14 @@ msgid "Speed of the burning reaction (use larger values for smaller flame)"
 msgstr "Vitesse de la réaction de combustion (utiliser de plus fortes valeurs pour des flammes plus petites)"
 
 
+msgid "Select the file format to be used for caching"
+msgstr "Sélectionner le format de fichier à utiliser pour la mise en cache"
+
+
+msgid "Blender specific point cache file format"
+msgstr "Format de fichier de cache de points spécifique à Blender"
+
+
 msgid "Border Collisions"
 msgstr "Collisions de bord"
 
@@ -67602,6 +67638,30 @@ msgstr "Limiter les collisions à ce groupe"
 
 msgid "Smoke color grid"
 msgstr "Grille de couleur pour la fumée"
+
+
+msgid "Data Depth"
+msgstr "Résolution de données"
+
+
+msgid "Bit depth for writing all scalar (including vector) lower values reduce file size"
+msgstr "Résolution en bits pour enregistrer tous les scalaires (y compris les vecteurs), de plus faibles valeurs réduisent les tailles de fichiers"
+
+
+msgid "Float (Half)"
+msgstr "Flottant (demi)"
+
+
+msgid "Half float (16 bit data)"
+msgstr "Demi-flottant (données 16bits)"
+
+
+msgid "Float (Full)"
+msgstr "Flottant (complet)"
+
+
+msgid "Full float (32 bit data)"
+msgstr "Flottant complet (données 32bits)"
 
 
 msgid "Density Grid"
@@ -67690,6 +67750,14 @@ msgstr "Vaguelette"
 
 msgid "FFT"
 msgstr "FFT"
+
+
+msgid "Zip"
+msgstr "Zip"
+
+
+msgid "Do not use any compression"
+msgstr "N’utiliser aucune compression"
 
 
 msgid "Max Res"
@@ -70873,10 +70941,6 @@ msgid "Brush texture random angle"
 msgstr "Angle aléatoire de texture de brosse"
 
 
-msgid "Rake"
-msgstr "Ratisser (?)"
-
-
 msgid "Lamp Texture Slot"
 msgstr "Emplacement de texture de lampe"
 
@@ -73593,8 +73657,8 @@ msgid "Mask Non-Group Vertices"
 msgstr "Masquer vertices non-groupés"
 
 
-msgid "Display unweighted vertices (multi-paint overrides)"
-msgstr "Afficher les vertices sans poids (écrase multi-paint)"
+msgid "Display unweighted vertices"
+msgstr "Afficher les vertices non-pondérés"
 
 
 msgid "Show vertices with no weights in the active group"
@@ -79684,12 +79748,20 @@ msgid "Behavior:"
 msgstr "Comportement :"
 
 
+msgid "Data Depth:"
+msgstr "Résolution de données :"
+
+
 msgid "Flow Source:"
 msgstr "Source de flux :"
 
 
 msgid "Initial Values:"
 msgstr "Valeurs initiales :"
+
+
+msgid "Built without OpenVDB support"
+msgstr "Compilé sans support d’OpenVDB"
 
 
 msgid "Particle System:"
@@ -84519,6 +84591,10 @@ msgid "Could not clear keyframe, as RNA path is invalid for the given ID (ID = %
 msgstr "Impossible d’insérer une image clé, car le chemin RNA est invalide pour l’ID donnée (ID : %s, chemin : %s)"
 
 
+msgid "Not clearing all keyframes from locked F-Curve '%s' for %s '%s'"
+msgstr "Pas de nettoyage de toutes les images clé pour la F-courbe verrouillée “%s” pour %s “%s”"
+
+
 msgid "Keying set '%s' - successfully added %d keyframes"
 msgstr "Ensemble d’images clé “%s” – %d images clé ajoutées avec succès (?)"
 
@@ -87499,10 +87575,6 @@ msgstr "Certaines données ont échoué à la reconstruction (voyez la console p
 
 msgid "Average re-projection error: %.3f"
 msgstr "Erreur moyenne de re-projection : %.3f"
-
-
-msgid "Invoking this operator only supported from Clip Editor space"
-msgstr "L’invocation de cet opérateur ne fonctionne que depuis l’espace Éditeur de clip"
 
 
 msgid "Parent Directory"
