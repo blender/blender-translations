@@ -1,9 +1,9 @@
 
 msgid ""
 msgstr ""
-"Project-Id-Version: Blender 2.76 (sub 9) (b'e3f48bd')\n"
+"Project-Id-Version: Blender 2.76 (sub 10) (b'e927f8b')\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-02-02 20:42:40\n"
+"POT-Creation-Date: 2016-02-09 20:25:28\n"
 "PO-Revision-Date: \n"
 "Last-Translator: Bastien Montagne <montagne29@wanadoo.fr>\n"
 "Language-Team: \n"
@@ -4850,6 +4850,10 @@ msgstr "Espace d’écran RGB standard"
 
 msgid "The simple video conversion from a gamma 2.2 sRGB space"
 msgstr "La simple conversion vidéo depuis un espace sRGB de gamma 2.2"
+
+
+msgid "Do not perform any color transform on load, treat colors as in scene linear space already"
+msgstr "N’effectuer aucune transformation colorimétrique au chargement, traiter les couleurs comme étant déjà dans l’espace linéaire de la scène"
 
 
 msgid "Color Space"
@@ -34689,6 +34693,14 @@ msgid "Normal distribution, multiple can be combined to fit more complex profile
 msgstr "Distribution normale, plusieurs peuvent être combinées pour correspondre à des profils plus complexes"
 
 
+msgid "Christensen-Burley"
+msgstr "Christensen-Burley"
+
+
+msgid "Approximation to physically based volume scattering"
+msgstr "Approximation de diffusion volumétrique physique"
+
+
 msgid "Axis for radial tangents"
 msgstr "Axe pour les tangentes radiales"
 
@@ -48646,8 +48658,8 @@ msgid "Clear Object Paths"
 msgstr "Effacer chemins d’objets"
 
 
-msgid "Clear path caches for selected objects"
-msgstr "Effacer le cache des chemins pour les objets sélectionnés"
+msgid "Clear path caches for all objects"
+msgstr "Effacer le cache des chemins pour tous les objets"
 
 
 msgctxt "Operator"
@@ -50572,12 +50584,16 @@ msgid "Use the mouse to sample a color in the image"
 msgstr "Utiliser la souris pour échantillonner une couleur dans l’image"
 
 
-msgid "Cursor location in region coordinates"
-msgstr "Position du curseur en coordonnées de région"
+msgid "Sample Merged"
+msgstr "Échantillonnage fusionné"
 
 
-msgid "Add color to palette"
-msgstr "Ajouter une couleur à la palette"
+msgid "Sample the output display color"
+msgstr "Échantillonner la couleur finale"
+
+
+msgid "Add to Palette"
+msgstr "Ajouter à la palette"
 
 
 msgctxt "Operator"
@@ -51425,8 +51441,8 @@ msgid "Clear Bone Paths"
 msgstr "Effacer chemins d’os"
 
 
-msgid "Clear path caches for selected bones"
-msgstr "Effacer le cache des chemins pour les os sélectionnés"
+msgid "Clear path caches for all bones"
+msgstr "Effacer le cache des chemins pour tous les os"
 
 
 msgctxt "Operator"
@@ -57902,6 +57918,14 @@ msgstr "Chemin de données secondaire"
 
 msgid "Secondary path of property to be set by the radial control"
 msgstr "Chemin secondaire de la propriété à définir/régler par le contrôle radial (?)"
+
+
+msgid "Fill Color Override Path"
+msgstr "Remplacer chemin de couleur de remplissage (???)"
+
+
+msgid "Fill Color Override Test"
+msgstr "Test d’écrasement de la couleur de remplissage (???)"
 
 
 msgid "Fill Color Path"
@@ -75046,6 +75070,14 @@ msgid "Don't use compute device"
 msgstr "Ne pas utiliser le périphérique de calculs"
 
 
+msgid "Use CUDA for GPU acceleration"
+msgstr "Utiliser CUDA pour l’accélération GPU"
+
+
+msgid "Use OpenCL for GPU acceleration"
+msgstr "Utiliser OpenCL pour l’accélération GPU"
+
+
 msgid "DPI"
 msgstr "PPP"
 
@@ -75192,6 +75224,18 @@ msgstr "Type de calcul OpenSubdiv"
 
 msgid "Type of computer back-end used with OpenSubdiv"
 msgstr "Type de “back-end” de calcul utilisé par OpenSubdiv"
+
+
+msgid "OpenMP"
+msgstr "OpenMP"
+
+
+msgid "GLSL Transform Feedback"
+msgstr "GLSL Transform Feedback"
+
+
+msgid "GLSL Compute"
+msgstr "Calculs GLSL"
 
 
 msgid "Prefetch Frames"
@@ -76930,20 +76974,16 @@ msgid "Not supported, interpreted as sun lamp"
 msgstr "Non supportée, interprétée comme une lampe soleil"
 
 
+msgid "Swizzle:"
+msgstr "Mélange :"
+
+
 msgid "Extrusion"
 msgstr "Extrusion"
 
 
 msgid "Ray Distance"
 msgstr "Distance de rayon"
-
-
-msgid "Normal Settings:"
-msgstr "Paramètres de normales :"
-
-
-msgid "Swizzle:"
-msgstr "Mélange :"
 
 
 msgctxt "Operator"
@@ -76962,14 +77002,6 @@ msgstr "Type :"
 
 msgid "Curve subdivisions"
 msgstr "Subdivisions de courbe"
-
-
-msgid "Combined Settings:"
-msgstr "Réglages combiné :"
-
-
-msgid "{0} Settings:"
-msgstr "Réglages {0} :"
 
 
 msgid "The BVH file does not contain frame duration in its MOTION section, assuming the BVH and Blender scene have the same frame rate"
@@ -83215,6 +83247,11 @@ msgid "Motion Paths:"
 msgstr "Chemins de mouvement :"
 
 
+msgctxt "Operator"
+msgid "Update"
+msgstr "Rafraîchir"
+
+
 msgid "Action:"
 msgstr "Action :"
 
@@ -84376,6 +84413,10 @@ msgid "F-Curve is visible in Graph Editor for editing"
 msgstr "La F-courbe est visible dans l’éditeur de graphe pour l’édition"
 
 
+msgid "Grease Pencil layer is visible in the viewport"
+msgstr "Le calque de crayon gras est visible dans la vue 3D"
+
+
 msgid "Channels are visible in Graph Editor for editing"
 msgstr "Les canaux sont visibles dans l’éditeur de graphes pour l’édition"
 
@@ -84406,6 +84447,10 @@ msgstr "La F-courbe contribue-t-elle au résultat"
 
 msgid "Temporarily disable NLA stack evaluation (i.e. only the active action is evaluated)"
 msgstr "Désactiver temporairement l’évaluation de la pile NLA (c-à-d que seule l’action active est évaluée)"
+
+
+msgid "Lock current frame displayed by layer (i.e. disable animation playback)"
+msgstr "Verrouiller la frame actuellement affichée par le calque (c-à-d désactiver les animations)"
 
 
 msgid "Do channels contribute to result (toggle channel muting)"
@@ -87662,12 +87707,16 @@ msgid "Could not create new folder name"
 msgstr "Impossible de créer le nom d’un nouveau dossier (?)"
 
 
-msgid "Could not create new folder"
-msgstr "Impossible de créer un nouveau dossier"
-
-
 msgid "'%s' given path is OS-invalid, creating '%s' path instead"
 msgstr "Le chemin donné “%s” n’est pas valide pour l’OS, “%s” est créé à la place"
+
+
+msgid "Could not create new folder: %s"
+msgstr "Impossible de créer un nouveau dossier : %s"
+
+
+msgid "Could not delete file: %s"
+msgstr "Impossible de supprimer le fichier : %s"
 
 
 msgid "Cursor from Selection"
