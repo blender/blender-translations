@@ -1,10 +1,10 @@
 
 msgid ""
 msgstr ""
-"Project-Id-Version: Blender 2.76 (sub 11) (b'f2d564d')\n"
+"Project-Id-Version: Blender 2.76 (sub 11) (b'adab35b')\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-02-15 20:19:24\n"
-"PO-Revision-Date: 2016-02-11 12:24+0900\n"
+"POT-Creation-Date: 2016-02-22 21:53:41\n"
+"PO-Revision-Date: 2016-02-19 03:53+0900\n"
 "Last-Translator: \n"
 "Language-Team: Japanese Translation Team (https://sites.google.com/site/blugjp/blender-translators)\n"
 "MIME-Version: 1.0\n"
@@ -723,12 +723,8 @@ msgid "Maximum activation time in frame, 0 for unlimited"
 msgstr "最大持続時間、0で無限"
 
 
-msgid "N"
-msgstr "法線"
-
-
 msgid "Add a horizontal spring force on slopes"
-msgstr "四角ポリゴンの対角線にスプリングを使用し形状が崩れるのを防ぎます"
+msgstr "坂で縦方向のばねの力を加えます"
 
 
 msgid "Rot Fh"
@@ -736,7 +732,7 @@ msgstr "Fh回転"
 
 
 msgid "Keep object axis parallel to normal"
-msgstr "オブジェクト軸を法線に平行に保ちます"
+msgstr "オブジェクトの軸を法線と平行に保ちます"
 
 
 msgid "Force Distance"
@@ -2991,6 +2987,10 @@ msgstr "間接照明の寄与を付与します"
 
 msgid "Add subsurface contribution"
 msgstr "サブサーフェスの寄与を付与します"
+
+
+msgid "Add transmission contribution"
+msgstr "透過(伝播)の寄与を付与します"
 
 
 msgid "Selected to Active"
@@ -6715,11 +6715,11 @@ msgstr "最も近いターゲット表面へ位置を縮小します"
 
 
 msgid "Project"
-msgstr "投影"
+msgstr "プロジェクト"
 
 
 msgid "Shrink the location to the nearest target surface along a given axis"
-msgstr "与えられた軸に沿って、最も近いターゲット表面へ位置を変更します"
+msgstr "与えられた軸に沿って、最も近いターゲット表面へ引っ付けます"
 
 
 msgid "Nearest Vertex"
@@ -6727,7 +6727,7 @@ msgstr "最近接頂点"
 
 
 msgid "Shrink the location to the nearest target vertex"
-msgstr "最も近いターゲット頂点へ位置を縮小します"
+msgstr "ターゲットの最も近い頂点へ引っ付けます"
 
 
 msgid "Spline IK Constraint"
@@ -13861,11 +13861,11 @@ msgstr "単一のドットを細かく配置できるようにします"
 
 
 msgid "Space"
-msgstr "空間"
+msgstr "スペース"
 
 
 msgid "Limit brush application to the distance specified by spacing"
-msgstr "間隔で指定した距離にブラシの適用を制限します"
+msgstr "指定の間隔でブラシを適用します"
 
 
 msgid "Airbrush"
@@ -39914,8 +39914,28 @@ msgstr ""
 "（いくつかのインポータは UnitScaleFactor を正しく扱えないため）"
 
 
-msgid "Null"
-msgstr "不定"
+msgid "Armature FBXNode Type"
+msgstr "アーマチュアFBXノードタイプ"
+
+
+msgid "FBX type of node (object) used to represent Blender's armatures (use Null one unless you experience issues with other app, other choices may no import back perfectly in Blender...)"
+msgstr "Blender のアーマチュアで表示されるのに使用されるノード（オブジェクト）の FBX タイプ（Null）"
+
+
+msgid "'Null' FBX node, similar to Blender's Empty (default)"
+msgstr "'Null' FBX ノード。Blender のエンプティに似ています（デフォルト）"
+
+
+msgid "'Root' FBX node, supposed to be the root of chains of bones..."
+msgstr "'Root' FBX ノード。ボーンチェーンのルート用"
+
+
+msgid "LimbNode"
+msgstr "LimbNode"
+
+
+msgid "'LimbNode' FBX node, a regular joint between two bones..."
+msgstr "'LimbNode' FBX ノード。標準の二つのボーン間の間接"
 
 
 msgid "Baked Animation"
@@ -50595,6 +50615,10 @@ msgid "Use the mouse to sample a color in the image"
 msgstr "画像中の色を拾うのにマウスを使用します"
 
 
+msgid "Sample Merged"
+msgstr "画面上から取得"
+
+
 msgid "Sample the output display color"
 msgstr "出力表示色からサンプリングします"
 
@@ -54674,6 +54698,10 @@ msgstr "辺の範囲に制限します"
 
 msgid "Make the edge loop match the shape of the adjacent edge loop"
 msgstr "辺ループを、隣り合う辺ループの形状にマッチするようにします"
+
+
+msgid "Mirror selected items around one or more axes"
+msgstr "選択されたアイテムを一つ以上の軸でミラー反転します"
 
 
 msgid "Constraint Axis"
@@ -69551,6 +69579,10 @@ msgid "Display data-blocks in visible layers"
 msgstr "表示中のレイヤーのデータブロックを表示します"
 
 
+msgid "Display data-blocks of selected, visible objects"
+msgstr "表示中の選択オブジェクトのデータブロックを表示します"
+
+
 msgid "Display data-blocks of active object"
 msgstr "アクティブオブジェクトのデータブロックを表示します"
 
@@ -78241,10 +78273,6 @@ msgid "Target:"
 msgstr "ターゲット:"
 
 
-msgid "Origin:"
-msgstr "原点:"
-
-
 msgid "Crease:"
 msgstr "クリース:"
 
@@ -80052,7 +80080,7 @@ msgstr "ノイズ:"
 
 
 msgid "Basis"
-msgstr "基本ノイズ"
+msgstr "ベース"
 
 
 msgid "Alpha:"
@@ -81085,6 +81113,10 @@ msgstr "反転:"
 
 msgid "Colors:"
 msgstr "カラー:"
+
+
+msgid "OpenGL Preview"
+msgstr "OpenGLプレビュー"
 
 
 msgctxt "Operator"
@@ -90828,6 +90860,10 @@ msgstr "レイの深度"
 
 msgid "Transparent Depth"
 msgstr "透過の深度"
+
+
+msgid "Transmission Depth"
+msgstr "透過(伝播)の深度"
 
 
 msgid "Spec"
