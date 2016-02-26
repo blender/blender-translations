@@ -1,10 +1,10 @@
 
 msgid ""
 msgstr ""
-"Project-Id-Version: Blender 2.76 (sub 11) (b'adab35b')\n"
+"Project-Id-Version: Blender 2.76 (sub 11) (b'9177bf2')\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-02-22 21:53:41\n"
-"PO-Revision-Date: 2016-02-19 03:53+0900\n"
+"POT-Creation-Date: 2016-02-26 10:54:12\n"
+"PO-Revision-Date: 2016-02-26 08:57+0900\n"
 "Last-Translator: \n"
 "Language-Team: Japanese Translation Team (https://sites.google.com/site/blugjp/blender-translators)\n"
 "MIME-Version: 1.0\n"
@@ -39922,6 +39922,10 @@ msgid "FBX type of node (object) used to represent Blender's armatures (use Null
 msgstr "Blender のアーマチュアで表示されるのに使用されるノード（オブジェクト）の FBX タイプ（Null）"
 
 
+msgid "Null"
+msgstr "Null"
+
+
 msgid "'Null' FBX node, similar to Blender's Empty (default)"
 msgstr "'Null' FBX ノード。Blender のエンプティに似ています（デフォルト）"
 
@@ -48687,10 +48691,6 @@ msgid "Clear Object Paths"
 msgstr "オブジェクトパスをクリア"
 
 
-msgid "Clear path caches for all objects"
-msgstr "全オブジェクトのパスのキャッシュをクリアします"
-
-
 msgctxt "Operator"
 msgid "Update Object Paths"
 msgstr "オブジェクトパス更新"
@@ -51470,10 +51470,6 @@ msgstr "ボーンパスの計算開始フレーム"
 msgctxt "Operator"
 msgid "Clear Bone Paths"
 msgstr "ボーンのパスをクリア"
-
-
-msgid "Clear path caches for all bones"
-msgstr "全ボーンのパスのキャッシュをクリアします"
 
 
 msgctxt "Operator"
@@ -63472,14 +63468,6 @@ msgid "Free all image textures from memory after render, to save memory before c
 msgstr "レンダリング後メモリから全画像テクスチャを解放し、コンポジティング前にメモリを節約します"
 
 
-msgid "Free Unused Nodes"
-msgstr "未使用のノードを解放"
-
-
-msgid "Free Nodes that are not used while compositing, to save memory"
-msgstr "コンポジティング中に使用されないノードを解放し、メモリ節約します"
-
-
 msgid "Draw stylized strokes using Freestyle"
 msgstr "Freestyleを使用し、ストロークを描画します"
 
@@ -73079,8 +73067,16 @@ msgid "Split Normal"
 msgstr "分割法線"
 
 
+msgid "Grease Pencil Keyframe"
+msgstr "グリースペンシルキーフレーム"
+
+
 msgid "Color for indicating Grease Pencil keyframes"
 msgstr "グリースペンシルキーフレームの色"
+
+
+msgid "Object Keyframe"
+msgstr "オブジェクトキーフレーム"
 
 
 msgid "Color for indicating Object keyframes"
@@ -76156,7 +76152,9 @@ msgstr "スピードに合わせる"
 
 
 msgid "Use the speed vector pass to reduce AO samples in fast moving pixels - higher values result in more aggressive sample reduction (requires Vec pass enabled, for Raytrace Adaptive QMC)"
-msgstr "高速移動するピクセルのAOサンプルを減らしてスピードベクトルパスを使用します。値が大きいほど積極的にサンプルを減らします。(ベクトルパスが有効になっている必要があります。 レイトレース適応QMC用)"
+msgstr ""
+"高速移動するピクセルのAOサンプルを減らし、スピードベクトルパスを使用します。値が大きいほど積極的にサンプルを減らします。\n"
+"(ベクトルパスが有効になっている必要があります。 レイトレースアダプティブQMC用)"
 
 
 msgid "Defines how AO mixes with material shading"
@@ -76288,7 +76286,7 @@ msgstr "光線のサンプル量。値が大きいほど滑らかな結果にな
 
 
 msgid "Samples below this threshold will be considered fully shadowed/unshadowed and skipped (for Raytrace Adaptive QMC)"
-msgstr "このしきい値以下のサンプルは、完全に影付き/影無しとみなされスキップされます (レイトレース適応QMC用)"
+msgstr "このしきい値以下のサンプルは、完全に影付き/影無しとみなされスキップされます (レイトレースアダプティブQMC用)"
 
 
 msgid "Use Ambient Occlusion"
@@ -78271,6 +78269,10 @@ msgstr "軸オブジェクト"
 
 msgid "Target:"
 msgstr "ターゲット:"
+
+
+msgid "Axis, Origin:"
+msgstr "軸、原点:"
 
 
 msgid "Crease:"
@@ -81007,10 +81009,6 @@ msgid "Backdrop zoom out"
 msgstr "背景のズームアウト"
 
 
-msgid "Free Unused"
-msgstr "未使用ノードを解放"
-
-
 msgid "No Keying Set active"
 msgstr "アクティブなキーイングセットはありません"
 
@@ -82250,11 +82248,6 @@ msgstr "ローカル化..."
 
 
 msgctxt "Operator"
-msgid "Move to Layer..."
-msgstr "レイヤー移動..."
-
-
-msgctxt "Operator"
 msgid "Insert Keyframe..."
 msgstr "キーフレーム挿入..."
 
@@ -82710,6 +82703,11 @@ msgstr "グループインスタンス..."
 msgctxt "Operator"
 msgid "Group Instance"
 msgstr "グループのインスタンス"
+
+
+msgctxt "Operator"
+msgid "Move to Layer..."
+msgstr "レイヤー移動..."
 
 
 msgctxt "Operator"
@@ -85926,6 +85924,10 @@ msgstr "エクスポートファイルを上書きできません"
 
 msgid "Export file is empty"
 msgstr "エクスポートファイルが空です"
+
+
+msgid "Error during export (see Console)"
+msgstr "エクスポート中にエラー（コンソール表示）"
 
 
 msgid "Errors found during parsing COLLADA document (see console for details)"
