@@ -1,9 +1,9 @@
 
 msgid ""
 msgstr ""
-"Project-Id-Version: Blender 2.77 (sub 0) (b'0f8290a')\n"
+"Project-Id-Version: Blender 2.77 (sub 1) (b'886ff72')\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-04-26 10:13:16\n"
+"POT-Creation-Date: 2016-05-16 21:46:50\n"
 "PO-Revision-Date: \n"
 "Last-Translator: Ivan Paulos Tomé <ivan.paulos.tome@gmail.com>\n"
 "Language-Team: Ivan Paulos Tomé, Dalai Felinto, Bruno Gonçalves Pirajá, Samuel Arataca, Daniel Tavares, Moraes Junior <greylica@gmail.com>\n"
@@ -7366,12 +7366,32 @@ msgid "For RGB curves, the color that white is mapped to"
 msgstr "Para as curvas RGB, a cor na qual o branco está mapeado."
 
 
+msgid "Curve Paint Settings"
+msgstr "Definições de pintura de curvas"
+
+
+msgid "Corner Angle"
+msgstr "Ângulo das quinas"
+
+
+msgid "Angles above this are considered corners"
+msgstr "Os ângulos acima deste valor são considerados quinas ou adjacências."
+
+
+msgid "Type of curve to use for new strokes"
+msgstr "Permite definir o tipo de curva a ser usado para os novos traços."
+
+
 msgid "Poly"
 msgstr "Polígonos"
 
 
 msgid "Bezier"
 msgstr "Bézier"
+
+
+msgid "Method of projecting depth"
+msgstr "O método de projeção da profundidade."
 
 
 msgid "Cursor"
@@ -7386,12 +7406,88 @@ msgid "Tolerance"
 msgstr "Tolerância"
 
 
+msgid "Allow deviation for a smoother, less precise line"
+msgstr "Permite um desvio dos valores para que as linhas sejam mais suaves e menos precisas."
+
+
+msgid "Radius Max"
+msgstr "Raio máximo"
+
+
+msgid "Radius to use when the maximum pressure is applied (or when a tablet isn't used)"
+msgstr "O raio a ser utilizado quando a pressão máxima estiver sendo aplicada (ou quando uma mesa de desenho não está sendo usada)."
+
+
+msgid "Radius Min"
+msgstr "Raio mínimo"
+
+
+msgid "Minimum radius when the minimum pressure is applied (also the minimum when tapering)"
+msgstr "O raio mínimo quando a pressão mínima estiver sendo aplicada (especifica também o valor mínimo para o afilamento dos traços)."
+
+
+msgid "Taper factor for the radius of each point along the curve"
+msgstr "O fator de afilamento para os raios de cada um dos pontos ao longo da curva. "
+
+
+msgid "Offset the stroke from the surface"
+msgstr "Desloca os traços a partir da superfície."
+
+
 msgid "Plane"
 msgstr "Plano"
 
 
+msgid "Plane for projected stroke"
+msgstr "O plano para a projeção dos traços."
+
+
+msgid "Normal/View"
+msgstr "Normais e visualização"
+
+
+msgid "Draw perpendicular to the surface"
+msgstr "Desenha as curvas perpendiculares a superfície."
+
+
+msgid "Normal/Surface"
+msgstr "Normais e superfícies"
+
+
+msgid "Draw aligned to the surface"
+msgstr "Desenha as curvas alinhadas as superfícies."
+
+
 msgid "View"
 msgstr "Visualizar"
+
+
+msgid "Draw aligned to the viewport"
+msgstr "Desenha as curvas alinhadas a porta de visão."
+
+
+msgid "Detect Corners"
+msgstr "Detecção de quinas"
+
+
+msgid "Detect corners and use non-aligned handles"
+msgstr "Detecta as quinas ou adjacências e usa manípulos com hastes sem alinhamentos."
+
+
+msgid "Use Pressure"
+msgstr "Usar pressão"
+
+
+msgid "Map tablet pressure to curve radius"
+msgstr "Mapeia a pressão da mesa de desenho para os raios das curvas."
+
+
+msgid "Only First"
+msgstr "Referenciar pelas terminações iniciais"
+
+
+msgid "Use the start of the stroke for the depth"
+msgstr "Usa as terminações iniciais dos traços para definir a profundidade."
 
 
 msgid "Dependency Graph"
@@ -12026,16 +12122,8 @@ msgid "Frames After"
 msgstr "Quadros posteriores"
 
 
-msgid "Maximum number of frames to show after current frame (0 = show only the next sketch)"
-msgstr "Número máximo de quadros para mostrar após o quadro atual. Um valor zero mostra somente o rascunho anterior."
-
-
 msgid "Frames Before"
 msgstr "Quadros anteriores"
-
-
-msgid "Maximum number of frames to show before current frame (0 = show only the previous sketch)"
-msgstr "Número máximo de quadros para mostrar antes do quadro atual. Um valor zero mostra somente o rascunho anterior."
 
 
 msgid "Set layer Visibility"
@@ -32977,6 +33065,10 @@ msgid "Correction for Shadows"
 msgstr "Correção para sombras"
 
 
+msgid "Basis"
+msgstr "Base"
+
+
 msgid "Power"
 msgstr "Potência"
 
@@ -35950,6 +36042,15 @@ msgstr "Define o campo de previsão com base nas extensões dos quadros-chave se
 
 
 msgctxt "Operator"
+msgid "Properties"
+msgstr "Painéis de propriedades"
+
+
+msgid "Toggle display properties panel"
+msgstr "Alterna o painel de propriedades da tela"
+
+
+msgctxt "Operator"
 msgid "Push Down Action"
 msgstr "Empurrar ação para baixo"
 
@@ -36413,6 +36514,10 @@ msgstr "Copia o controlador para o botão realçado."
 msgctxt "Operator"
 msgid "Add Driver"
 msgstr "Adicionar controlador"
+
+
+msgid "Add driver(s) for the property(s) represented by the highlighted button"
+msgstr "Adiciona controladores para as propriedades conectadas representadas pelo botão realçado."
 
 
 msgid "Mapping Type"
@@ -38152,11 +38257,6 @@ msgid "Prefetch frames from disk for faster playback/tracking"
 msgstr "Carrega previamente os quadros a partir do disco para rastreamentos ou reproduções mais rápidas."
 
 
-msgctxt "Operator"
-msgid "Properties"
-msgstr "Painéis de propriedades"
-
-
 msgid "Toggle clip properties panel"
 msgstr "Alterna o painel de propriedades de clipe."
 
@@ -39101,8 +39201,21 @@ msgstr "Quais elementos para apagar."
 
 
 msgctxt "Operator"
+msgid "Dissolve Vertices"
+msgstr "Dissolver vértices"
+
+
+msgctxt "Operator"
 msgid "Draw Curve"
 msgstr "Desenhar curva"
+
+
+msgid "Draw a freehand spline"
+msgstr "Permite o desenho de curvas do tipo spline a mão livre."
+
+
+msgid "Error distance threshold (in object units)"
+msgstr "Ajuste para erros de distanciamento (em unidades de objeto). "
 
 
 msgid "Stroke"
@@ -41832,6 +41945,32 @@ msgstr "Permite definir interativamente o quadro atual e o valor do cursor."
 
 
 msgctxt "Operator"
+msgid "Copy Driver Variables"
+msgstr "Copiar as variáveis dos controladores"
+
+
+msgid "Copy the driver variables of the active F-Curve"
+msgstr "Copia as variáveis dos controladores da curva-f ativa."
+
+
+msgctxt "Operator"
+msgid "Paste Driver Variables"
+msgstr "Colar as variáveis dos controladores"
+
+
+msgid "Add copied driver variables to the active driver"
+msgstr "Adiciona as variáveis de controlador previamente copiadas ao controlador atual."
+
+
+msgid "Replace Existing"
+msgstr "Substituir existentes"
+
+
+msgid "Replace existing driver variables, instead of just appending to the end of the existing list"
+msgstr "Substitui as variáveis de controlador existentes, ao invés de simplesmente anexá-las ao final da lista existente."
+
+
+msgctxt "Operator"
 msgid "Set Keyframe Easing Type"
 msgstr "Configurar o tipo de facilitação dos quadros-chave"
 
@@ -41852,6 +41991,10 @@ msgstr "Conserta grandes saltos e inversões dentro das rotações de curvas dos
 msgctxt "Operator"
 msgid "Add F-Curve Modifier"
 msgstr "Adicionar modificador de curva-f"
+
+
+msgid "Add F-Modifier to the active/selected F-Curves"
+msgstr "Adiciona modificadores-f para as curvas-f ativas ou selecionadas."
 
 
 msgid "Only Active"
@@ -41878,6 +42021,14 @@ msgstr "Colar modificadores-f"
 
 msgid "Add copied F-Modifiers to the selected F-Curves"
 msgstr "Adiciona os modificadores-f copiados para as curvas-f selecionadas."
+
+
+msgid "Only paste F-Modifiers on active F-Curve"
+msgstr "Cola modificadores-f somente para as curvas-f ativas."
+
+
+msgid "Replace existing F-Modifiers, instead of just appending to the end of the existing list"
+msgstr "Substitui os modificadores-f existentes, ao invés de simplesmente anexá-las ao final da lista existente."
 
 
 msgid "Place the cursor on the midpoint of selected keyframes"
@@ -41961,10 +42112,6 @@ msgstr "Vira os tempos dos quadros-chave selecionados, efetivamente revertendo a
 
 msgid "Automatically set Preview Range based on range of keyframes"
 msgstr "Configura automaticamente o espaço de previsão com base no intervalo de quadros-chave."
-
-
-msgid "Toggle display properties panel"
-msgstr "Alterna o painel de propriedades da tela"
 
 
 msgctxt "Operator"
@@ -42525,6 +42672,15 @@ msgstr "Permite a visualização de todas as UVs selecionadas."
 
 msgid "Zoom in/out the image"
 msgstr "Amplia ou reduz a imagem."
+
+
+msgctxt "Operator"
+msgid "Zoom to Border"
+msgstr "Ampliar para as margens"
+
+
+msgid "Zoom in the view to the nearest item contained in the border"
+msgstr "Amplia a visualização até o item mais próximo que esteja contido nas margens."
 
 
 msgid "Zoom in the image (centered around 2D cursor)"
@@ -44270,11 +44426,6 @@ msgstr "Romper extremidades"
 
 msgid "Split off face corners instead of merging faces"
 msgstr "Separa (dividindo) as junções (quinas) das faces ao invés de fazer uma fusão."
-
-
-msgctxt "Operator"
-msgid "Dissolve Vertices"
-msgstr "Dissolver vértices"
 
 
 msgid "Dissolve verts, merge edges and faces"
@@ -46625,6 +46776,10 @@ msgid "Add F-Modifier"
 msgstr "Adicionar modificador-f"
 
 
+msgid "Add F-Modifier to the active/selected NLA-Strips"
+msgstr "Adiciona os modificadores-f para as faixas de animação não linear ativas ou selecionadas."
+
+
 msgid "Only add a F-Modifier of the specified type to the active strip"
 msgstr "Somente adicionar um modificador-f do tipo especificado para a faixa ativa."
 
@@ -46635,6 +46790,10 @@ msgstr "Copia os modificadores-f da faixa de animação não linear ativa."
 
 msgid "Add copied F-Modifiers to the selected NLA-Strips"
 msgstr "Adiciona os modificadores-f copiados para as faixas de animação não linear selecionadas."
+
+
+msgid "Only paste F-Modifiers on active strip"
+msgstr "Cola os modificadores-f somente na faixa ativa."
 
 
 msgctxt "Operator"
@@ -55059,6 +55218,10 @@ msgid "Copy property from this object to selected objects or bones"
 msgstr "Copia a propriedade a partir deste objeto para os objetos selecionados ou ossos."
 
 
+msgid "Copy to selected all elements of the array"
+msgstr "Copia todos os elementos da matriz para a seleção atual."
+
+
 msgctxt "Operator"
 msgid "Drop Color"
 msgstr "Despejar cor"
@@ -56297,15 +56460,6 @@ msgstr "Ampliação para visualização 2D"
 
 
 msgctxt "Operator"
-msgid "Zoom to Border"
-msgstr "Ampliar para as margens"
-
-
-msgid "Zoom in the view to the nearest item contained in the border"
-msgstr "Amplia a visualização até o item mais próximo que esteja contido nas margens."
-
-
-msgctxt "Operator"
 msgid "Zoom In"
 msgstr "Ampliar visualização"
 
@@ -57019,12 +57173,22 @@ msgid "Match the camera to 1:1 to the render output"
 msgstr "Combina a câmera para relação de 1:1 para a saída de renderização."
 
 
+msgctxt "Operator"
+msgid "Disable Add-on"
+msgstr "Desabilitar complemento"
+
+
 msgid "Disable an add-on"
 msgstr "Permite desabilitar um complemento."
 
 
 msgid "Module name of the add-on to disable"
 msgstr "O nome do módulo de complemento para desabilitar."
+
+
+msgctxt "Operator"
+msgid "Enable Add-on"
+msgstr "Habilitar complemento"
 
 
 msgid "Enable an add-on"
@@ -57052,6 +57216,10 @@ msgid "Install an add-on"
 msgstr "Permite a instalação de um complemento."
 
 
+msgid "Remove existing add-ons with the same ID"
+msgstr "Remove os complementos existentes com o mesmo identificador."
+
+
 msgid "Target Path"
 msgstr "Caminho alvo"
 
@@ -57067,6 +57235,11 @@ msgstr "Atualizar"
 
 msgid "Scan add-on directories for new modules"
 msgstr "Escaneia os diretórios de complementos por novos módulos."
+
+
+msgctxt "Operator"
+msgid "Remove Add-on"
+msgstr "Remover complemento"
 
 
 msgid "Delete the add-on from the file system"
@@ -59610,6 +59783,10 @@ msgid "Curve Tools"
 msgstr "Ferramentas de curva"
 
 
+msgid "Curve Stroke"
+msgstr "Traços das curvas"
+
+
 msgid "Lattice Tools"
 msgstr "Ferramentas de treliça"
 
@@ -61346,6 +61523,10 @@ msgid "Dicing Rate"
 msgstr "Taxa de filetamento"
 
 
+msgid "Multiplier for scene dicing rate"
+msgstr "Multiplicador para a taxa de compartimentalização de cena."
+
+
 msgid "Displacement Method"
 msgstr "Método de deslocamento"
 
@@ -61368,6 +61549,26 @@ msgstr "Usa somente o deslocamento verdadeiro, requer uma subdivisão fina."
 
 msgid "Combination of displacement and bump mapping"
 msgstr "Combinação de deslocamento e mapa de relevos."
+
+
+msgid "Type of subdivision to use"
+msgstr "O tipo de subdivisão a ser usado."
+
+
+msgid "No subdivision"
+msgstr "Sem subdivisões"
+
+
+msgid "Use linear subdivision"
+msgstr "Usa subdivisão linear"
+
+
+msgid "Catmull–Clark"
+msgstr "Catmull-Clark"
+
+
+msgid "Use Catmull-Clark subdivision"
+msgstr "Usa uma subdivisão do tipo Catmull-Clark."
 
 
 msgid "Motion Steps"
@@ -61570,6 +61771,10 @@ msgid "Use GPU compute device for rendering, configured in user preferences"
 msgstr "Usa o dispositivo de computação GPU para renderização, configurado nas preferências do usuário."
 
 
+msgid "Size of a micropolygon in pixels"
+msgstr "O tamanho de um micro-polígono em pixeis."
+
+
 msgid "Diffuse Bounces"
 msgstr "Rebatimentos difusos"
 
@@ -61670,6 +61875,14 @@ msgid "Total maximum number of bounces"
 msgstr "Número total de rebatimentos."
 
 
+msgid "Max Subdivisions"
+msgstr "Máximo de subdivisões"
+
+
+msgid "Stop subdividing when this level is reached even if the dice rate would produce finer tessellation"
+msgstr "Interrompe a subdivisão quando este nível for alcançado, mesmo que a taxa de compartimentalização ainda possa produzir uma tesselação mais refinada."
+
+
 msgid "Mesh Light Samples"
 msgstr "Amostras de malha de luz"
 
@@ -61728,6 +61941,14 @@ msgstr "Pré-visualizar camada ativa"
 
 msgid "Preview active render layer in viewport"
 msgstr "Previsão de camada ativa de renderização dentro da porta de visão."
+
+
+msgid "Preview Dicing Rate"
+msgstr "Taxa de previsão de compartimentalização"
+
+
+msgid "Size of a micropolygon in pixels during preview render"
+msgstr "Tamanho de um micro-polígono em pixeis durante a previsão de renderização."
 
 
 msgid "Pause Preview"
@@ -67978,6 +68199,14 @@ msgid "Limit fluid objects to this group"
 msgstr "Limita os objetos de fluido a este grupo."
 
 
+msgid "Heat Grid"
+msgstr "Grade calorífica"
+
+
+msgid "Smoke heat grid"
+msgstr "Grade calorífica para fumaça."
+
+
 msgid "Method for sampling the high resolution flow"
 msgstr "Método para a amostragem do fluxo de alta resolução."
 
@@ -74136,7 +74365,7 @@ msgstr "Seção ativa"
 
 
 msgid "Active section of the user preferences shown in the user interface"
-msgstr "Seção ativa das preferências de usuário mostrada dentro da interface de usuário."
+msgstr "Seção ativa das preferências de usuário mostrada atualmente na interface."
 
 
 msgid "Editing"
@@ -77057,6 +77286,14 @@ msgid "Aperture:"
 msgstr "Abertura:"
 
 
+msgid "Displacment:"
+msgstr "Deslocamento:"
+
+
+msgid "Subdivision:"
+msgstr "Subdivisões:"
+
+
 msgid "Deformation"
 msgstr "Deformação"
 
@@ -77163,6 +77400,14 @@ msgstr "Amostras de antisserrilhamento:"
 
 msgid "Mesh Light"
 msgstr "Malha de luz"
+
+
+msgid "Volume Sampling:"
+msgstr "Amostragem de volumes:"
+
+
+msgid "Subdivision Rate:"
+msgstr "Passos de subdivisão:"
 
 
 msgid "File Suffix:"
@@ -80275,10 +80520,6 @@ msgstr "Multiplicador RGB:"
 
 msgid "Noise:"
 msgstr "Ruído:"
-
-
-msgid "Basis"
-msgstr "Base"
 
 
 msgid "Alpha:"
@@ -83608,6 +83849,18 @@ msgid "Modeling:"
 msgstr "Modelagem:"
 
 
+msgid "Pressure Radius:"
+msgstr "Raio circular para a pressão:"
+
+
+msgid "Taper Radius:"
+msgstr "Raio de afilamento:"
+
+
+msgid "Projection Depth:"
+msgstr "Profundidade de projeção:"
+
+
 msgid "Set Case:"
 msgstr "Definir capitalização:"
 
@@ -83741,6 +83994,10 @@ msgstr "Vetores"
 msgctxt "Operator"
 msgid "Free"
 msgstr "Livre"
+
+
+msgid "Bezier Options:"
+msgstr "Opções de curvas bézier:"
 
 
 msgctxt "Operator"
@@ -84522,14 +84779,6 @@ msgid "Cannot open file %s for writing: %s"
 msgstr "Não foi possível abrir o arquivo %s para escrita: %s"
 
 
-msgid "Input faces do not form a contiguous manifold region"
-msgstr "As normais das faces de entrada não formam contiguidades definidas nas circularidades das regiões selecionadas."
-
-
-msgid "Invalid boundary region to join faces"
-msgstr "Região circundante inválida para juntar as faces."
-
-
 msgid "Self intersection error"
 msgstr "Erro de intersecção em si mesmo."
 
@@ -84564,10 +84813,6 @@ msgstr "Seleção invalida."
 
 msgid "Internal mesh error"
 msgstr "Erro interno de malha ."
-
-
-msgid "Non-manifold vert while searching region boundary"
-msgstr "Um vértice não contíguo foi encontrado durante a pesquisa nos limites da região."
 
 
 msgid "Zero normal given"
@@ -84741,6 +84986,22 @@ msgstr "Uma região de animação ou linha do tempo ativa era esperada."
 
 msgid "Paste driver: no driver to paste"
 msgstr "Colar controlador: sem controlador para colar"
+
+
+msgid "No driver to copy variables from"
+msgstr "Não há controladores a partir dos quais copiar as variáveis."
+
+
+msgid "Driver has no variables to copy"
+msgstr "O controlador não possui variáveis para ser copiadas."
+
+
+msgid "No driver variables in clipboard to paste"
+msgstr "Sem variáveis de controlador disponíveis na área de transferência para ser coladas."
+
+
+msgid "Cannot paste driver variables without a driver"
+msgstr "Não é possível colar variáveis de controlador sem um controlador funcional."
 
 
 msgid "Could not add driver, as RNA path is invalid for the given ID (ID = %s, path = %s)"
@@ -85267,6 +85528,14 @@ msgid "Surface"
 msgstr "Superfície"
 
 
+msgid "Unable to access 3D viewport"
+msgstr "Não é possível obter acesso aos dados da porta de visão 3D."
+
+
+msgid "Unable to access depth buffer, using view plane"
+msgstr "Não é possível acessar o buffer de profundidade, o plano de visualização será usado como referência."
+
+
 msgid "Surface has not got active point"
 msgstr "Superfície não possuía um ponto ativo."
 
@@ -85517,6 +85786,16 @@ msgstr "Redefinir único ao seu valor padrão"
 msgctxt "Operator"
 msgid "Unset"
 msgstr "Não configurado"
+
+
+msgctxt "Operator"
+msgid "Copy All To Selected"
+msgstr "Copiar todos para seleção"
+
+
+msgctxt "Operator"
+msgid "Copy Single To Selected"
+msgstr "Copiar único para seleção"
 
 
 msgctxt "Operator"
@@ -87680,6 +87959,14 @@ msgid "AutoPack is enabled, so image will be packed again on file save"
 msgstr "Empacotamento automático habilitado, portanto a imagem será empacotada novamente ao salvar o arquivo."
 
 
+msgid "Active F-Curve"
+msgstr "Curva-f ativa"
+
+
+msgid "Active Keyframe"
+msgstr "Quadros-chave ativos"
+
+
 msgid "Action must have at least one keyframe or F-Modifier"
 msgstr "A ação deve possuir ao menos um quadro-chave ou modificador-f."
 
@@ -88032,6 +88319,14 @@ msgid "Prop:"
 msgstr "Propriedades:"
 
 
+msgid "Bone 1"
+msgstr "Osso 1"
+
+
+msgid "Bone 2"
+msgstr "Osso 2"
+
+
 msgid "Update Dependencies"
 msgstr "Atualizar dependências"
 
@@ -88110,14 +88405,6 @@ msgstr "Remover este controlador"
 
 msgid "Driver variables ensure that all dependencies will be accounted for and that drivers will update correctly"
 msgstr "As variáveis do controlador garantem que todas as dependências serão consideradas e que os controladores serão atualizados corretamente."
-
-
-msgid "Active F-Curve"
-msgstr "Curva-f ativa"
-
-
-msgid "Active Keyframe"
-msgstr "Quadros-chave ativos"
 
 
 msgid "View Properties"

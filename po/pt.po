@@ -1,11 +1,11 @@
 
 msgid ""
 msgstr ""
-"Project-Id-Version: Blender 2.77 (sub 0) (b'0f8290a')\n"
+"Project-Id-Version: Blender 2.77 (sub 1) (b'886ff72')\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-04-26 10:13:16\n"
+"POT-Creation-Date: 2016-05-16 21:46:50\n"
 "PO-Revision-Date: \n"
-"Last-Translator: Ivan Paulos Tomé <ivan.paulos.tome@gmail.com>\n"
+"Last-Translator: Ivan Paulos Tomé <greylica@gmail.com>\n"
 "Language-Team: Ivan Paulos Tomé, Inês Almeida, João Brandão (ULISBOA), Paulo Martins <greylica@gmail.com>\n"
 "Language: pt\n"
 "MIME-Version: 1.0\n"
@@ -1189,11 +1189,11 @@ msgstr "Ajuste"
 
 
 msgid "Amount of X motion before mouse movement will register"
-msgstr "Quantidade de movimento do rato antes de ser registrado em X."
+msgstr "Quantidade de movimento do rato antes de ser registado em X."
 
 
 msgid "Amount of Y motion before mouse movement will register"
-msgstr "Quantidade de movimento do rato antes de ser registrado em Y."
+msgstr "Quantidade de movimento do rato antes de ser registado em Y."
 
 
 msgid "Use X Axis"
@@ -2496,6 +2496,10 @@ msgstr "Visão geral dos gráficos de cena e todos os blocos de dados disponíve
 
 msgid "User Preferences"
 msgstr "Preferências de utilizador"
+
+
+msgid "Edit persistent configuration settings"
+msgstr "Permite editar definições de configuração persistentes."
 
 
 msgid "Info"
@@ -7363,12 +7367,32 @@ msgid "For RGB curves, the color that white is mapped to"
 msgstr "Para as curvas RGB, a cor na qual o branco está mapeado."
 
 
+msgid "Curve Paint Settings"
+msgstr "Definições de curvas de pintura"
+
+
+msgid "Corner Angle"
+msgstr "Ângulo das quinas"
+
+
+msgid "Angles above this are considered corners"
+msgstr "ângulos acima deste valor são considerados quinas (ou cantos vivos)."
+
+
+msgid "Type of curve to use for new strokes"
+msgstr "O tipo de curva a ser usado para os novos traços."
+
+
 msgid "Poly"
 msgstr "Polígonos"
 
 
 msgid "Bezier"
 msgstr "Bézier"
+
+
+msgid "Method of projecting depth"
+msgstr "O método para a projeção da profundidade."
 
 
 msgid "Cursor"
@@ -7383,12 +7407,88 @@ msgid "Tolerance"
 msgstr "Tolerância"
 
 
+msgid "Allow deviation for a smoother, less precise line"
+msgstr "Permite um desvio nos valores para obtenção de uma linha mais suavizada e menos precisa. "
+
+
+msgid "Radius Max"
+msgstr "Raio máximo"
+
+
+msgid "Radius to use when the maximum pressure is applied (or when a tablet isn't used)"
+msgstr "O raio a ser usado quando a pressão máxima for aplicada (ou quando uma mesa de desenho não estiver em uso)."
+
+
+msgid "Radius Min"
+msgstr "Raio mínimo"
+
+
+msgid "Minimum radius when the minimum pressure is applied (also the minimum when tapering)"
+msgstr "O raio mínimo quando a pressão mínima for aplicada (também referencia a pressão mínima ao rabiscar)."
+
+
+msgid "Taper factor for the radius of each point along the curve"
+msgstr "Fator de afilamento para o raio de cada um dos pontos ao longo das curvas."
+
+
+msgid "Offset the stroke from the surface"
+msgstr "Deslocamento dos traços a partir da superfície."
+
+
 msgid "Plane"
 msgstr "Plano"
 
 
+msgid "Plane for projected stroke"
+msgstr "O plano para a projeção dos traços."
+
+
+msgid "Normal/View"
+msgstr "Normais e visualização"
+
+
+msgid "Draw perpendicular to the surface"
+msgstr "Desenha os traços perpendiculares a superfície."
+
+
+msgid "Normal/Surface"
+msgstr "Normais e superfícies"
+
+
+msgid "Draw aligned to the surface"
+msgstr "Desenha os traços alinhados a superfície."
+
+
 msgid "View"
 msgstr "Visualizar"
+
+
+msgid "Draw aligned to the viewport"
+msgstr "Desenha os traços alinhados com a porta de visão."
+
+
+msgid "Detect Corners"
+msgstr "Detecção de quinas"
+
+
+msgid "Detect corners and use non-aligned handles"
+msgstr "Detecta as quinas e usa manípulos com hastes não alinhadas."
+
+
+msgid "Use Pressure"
+msgstr "Usar pressão"
+
+
+msgid "Map tablet pressure to curve radius"
+msgstr "Mapeia a pressão da mesa de desenho para fornecer os valores dos raios das curvas. "
+
+
+msgid "Only First"
+msgstr "Somente terminações iniciais"
+
+
+msgid "Use the start of the stroke for the depth"
+msgstr "Usa os inícios dos traços para definição de profundidade. "
 
 
 msgid "Dependency Graph"
@@ -11655,6 +11755,10 @@ msgid "Freestyle Module"
 msgstr "Módulo Freestyle"
 
 
+msgid "Style module configuration for specifying a style module"
+msgstr "Definição de módulo de estilo para especificação de um módulo de estilo."
+
+
 msgid "Style Module"
 msgstr "Módulo de estilo"
 
@@ -12019,16 +12123,8 @@ msgid "Frames After"
 msgstr "Quadros posteriores"
 
 
-msgid "Maximum number of frames to show after current frame (0 = show only the next sketch)"
-msgstr "Número máximo de fotogramas para mostrar após o fotograma atual. Um valor zero mostra somente o rascunho anterior."
-
-
 msgid "Frames Before"
 msgstr "Quadros anteriores"
-
-
-msgid "Maximum number of frames to show before current frame (0 = show only the previous sketch)"
-msgstr "Número máximo de fotogramas para mostrar antes do fotograma atual. Um valor zero mostra somente o rascunho anterior."
 
 
 msgid "Set layer Visibility"
@@ -21227,11 +21323,11 @@ msgstr "A linha final da seleção"
 
 
 msgid "Register"
-msgstr "Registrar"
+msgstr "Registar"
 
 
 msgid "Register this text as a module on loading, Text name must end with \".py\""
-msgstr "Registra este texto como um módulo durante o carregamento, o nome do texto deve terminar com \".py\"."
+msgstr "Regista este texto como um módulo durante o carregamento, o nome do texto deve terminar com \".py\"."
 
 
 msgid "Tabs as Spaces"
@@ -22330,12 +22426,20 @@ msgid "Text Clipboard"
 msgstr "Área de transferência de texto."
 
 
+msgid "Key Configurations"
+msgstr "Definições de teclas"
+
+
+msgid "Registered key configurations"
+msgstr "Definição de teclas registada."
+
+
 msgid "Operators"
 msgstr "Operadores"
 
 
 msgid "Operator registry"
-msgstr "Registro de operador."
+msgstr "Registos de operador."
 
 
 msgid "Windows"
@@ -22934,12 +23038,28 @@ msgid "Has Space Attenuation"
 msgstr "Possui atenuação de espaço"
 
 
+msgid "Key Configuration"
+msgstr "As definições de mapa de teclas"
+
+
+msgid "Input configuration, including keymaps"
+msgstr "Definições de entrada, incluindo os mapas de tecla."
+
+
 msgid "Indicates that a keyconfig was defined by the user"
 msgstr "Indica que uma defineção de tecla foi definida pelo utilizador."
 
 
 msgid "Key Maps"
 msgstr "Mapa de teclas"
+
+
+msgid "Key maps configured as part of this configuration"
+msgstr "O mapas de teclas definidos como parte desta configuração."
+
+
+msgid "Name of the key configuration"
+msgstr "Nome da definição do mapa de teclas."
 
 
 msgid "Key Map"
@@ -32623,7 +32743,7 @@ msgstr "Grupo personalizado"
 
 
 msgid "Base node type for custom registered node group types"
-msgstr "Tipo de nó base para tipos de grupos de nós personalizados registrados."
+msgstr "Tipo de nó base para tipos de grupos de nós personalizados registados."
 
 
 msgid "Interface"
@@ -32944,6 +33064,10 @@ msgstr "Correção para os meios tons"
 
 msgid "Correction for Shadows"
 msgstr "Correção para sombras"
+
+
+msgid "Basis"
+msgstr "Base"
 
 
 msgid "Power"
@@ -35919,6 +36043,15 @@ msgstr "Define o campo de previsão com base nas extensões dos fotogramas-chave
 
 
 msgctxt "Operator"
+msgid "Properties"
+msgstr "Painéis de propriedades"
+
+
+msgid "Toggle display properties panel"
+msgstr "Alterna o painel de propriedades da tela"
+
+
+msgctxt "Operator"
 msgid "Push Down Action"
 msgstr "Empurrar ação para baixo"
 
@@ -36382,6 +36515,10 @@ msgstr "Copia o controlador para o botão realçado."
 msgctxt "Operator"
 msgid "Add Driver"
 msgstr "Adicionar controlador"
+
+
+msgid "Add driver(s) for the property(s) represented by the highlighted button"
+msgstr "Adiciona controladores para as propriedades representadas pelo botão realçado."
 
 
 msgid "Mapping Type"
@@ -38121,11 +38258,6 @@ msgid "Prefetch frames from disk for faster playback/tracking"
 msgstr "Carrega previamente os fotogramas a partir do disco para rastreamentos ou reproduções mais rápidas."
 
 
-msgctxt "Operator"
-msgid "Properties"
-msgstr "Painéis de propriedades"
-
-
 msgid "Toggle clip properties panel"
 msgstr "Alterna o painel de propriedades de clipe."
 
@@ -39070,8 +39202,21 @@ msgstr "Quais elementos para apagar."
 
 
 msgctxt "Operator"
+msgid "Dissolve Vertices"
+msgstr "Dissolver vértices"
+
+
+msgctxt "Operator"
 msgid "Draw Curve"
 msgstr "Desenhar curva"
+
+
+msgid "Draw a freehand spline"
+msgstr "Permite desenhar uma curva apline a mão livre."
+
+
+msgid "Error distance threshold (in object units)"
+msgstr "Ajuste fino para erros de distância (em unidades de objeto)"
 
 
 msgid "Stroke"
@@ -41801,6 +41946,32 @@ msgstr "Permite definir interativamente o fotograma atual e o valor do cursor."
 
 
 msgctxt "Operator"
+msgid "Copy Driver Variables"
+msgstr "Copiar as variáveis de controlador"
+
+
+msgid "Copy the driver variables of the active F-Curve"
+msgstr "Copia as variáveis de controlador para as curvas-f ativas."
+
+
+msgctxt "Operator"
+msgid "Paste Driver Variables"
+msgstr "Colar as variáveis de controlador"
+
+
+msgid "Add copied driver variables to the active driver"
+msgstr "Adiciona as variáveis de controlador previamente copiadas ao controlador atual."
+
+
+msgid "Replace Existing"
+msgstr "Substituir existente..."
+
+
+msgid "Replace existing driver variables, instead of just appending to the end of the existing list"
+msgstr "Substitui as variáveis dos controladores existentes, ao invés de somente anexá-las ao final da lista de variáveis existente."
+
+
+msgctxt "Operator"
 msgid "Set Keyframe Easing Type"
 msgstr "Definir o tipo de facilitação dos fotogramas-chave"
 
@@ -41821,6 +41992,10 @@ msgstr "Conserta grandes saltos e inversões dentro das rotações de curvas dos
 msgctxt "Operator"
 msgid "Add F-Curve Modifier"
 msgstr "Adicionar modificador de curva-f"
+
+
+msgid "Add F-Modifier to the active/selected F-Curves"
+msgstr "Adiciona modificadores-f para as curvas-f ativas ou selecionadas."
 
 
 msgid "Only Active"
@@ -41847,6 +42022,14 @@ msgstr "Colar modificadores-f"
 
 msgid "Add copied F-Modifiers to the selected F-Curves"
 msgstr "Adiciona os modificadores-f copiados para as curvas-f selecionadas."
+
+
+msgid "Only paste F-Modifiers on active F-Curve"
+msgstr "Cola modificadores-f somente para as curvas-f ativas."
+
+
+msgid "Replace existing F-Modifiers, instead of just appending to the end of the existing list"
+msgstr "Substitui os modificadores-f existentes, ao invés de somente anexá-los ao final da lista de modificadores existente."
 
 
 msgid "Place the cursor on the midpoint of selected keyframes"
@@ -41930,10 +42113,6 @@ msgstr "Vira os tempos dos fotogramas-chave selecionados, efetivamente revertend
 
 msgid "Automatically set Preview Range based on range of keyframes"
 msgstr "Define automaticamente o espaço de previsão com base no intervalo de fotogramas-chave."
-
-
-msgid "Toggle display properties panel"
-msgstr "Alterna o painel de propriedades da tela"
 
 
 msgctxt "Operator"
@@ -42494,6 +42673,15 @@ msgstr "Permite a visualização de todas as UVs selecionadas."
 
 msgid "Zoom in/out the image"
 msgstr "Amplia ou reduz a imagem."
+
+
+msgctxt "Operator"
+msgid "Zoom to Border"
+msgstr "Ampliar para as margens"
+
+
+msgid "Zoom in the view to the nearest item contained in the border"
+msgstr "Amplia a visualização até o item mais próximo que esteja contido nas margens."
 
 
 msgid "Zoom in the image (centered around 2D cursor)"
@@ -44239,11 +44427,6 @@ msgstr "Romper extremidades"
 
 msgid "Split off face corners instead of merging faces"
 msgstr "Separa (dividindo) as junções (quinas) das faces ao invés de fazer uma fusão."
-
-
-msgctxt "Operator"
-msgid "Dissolve Vertices"
-msgstr "Dissolver vértices"
 
 
 msgid "Dissolve verts, merge edges and faces"
@@ -46594,6 +46777,10 @@ msgid "Add F-Modifier"
 msgstr "Adicionar modificador-f"
 
 
+msgid "Add F-Modifier to the active/selected NLA-Strips"
+msgstr "Adiciona os modificadores-f para as faixas de animação não linear ativas ou selecionadas."
+
+
 msgid "Only add a F-Modifier of the specified type to the active strip"
 msgstr "Somente adicionar um modificador-f do tipo especificado para a faixa ativa."
 
@@ -46604,6 +46791,10 @@ msgstr "Copia os modificadores-f da faixa de animação não linear ativa."
 
 msgid "Add copied F-Modifiers to the selected NLA-Strips"
 msgstr "Adiciona os modificadores-f copiados para as faixas de animação não linear selecionadas."
+
+
+msgid "Only paste F-Modifiers on active strip"
+msgstr "Cola modificadores-f somente na trilha ativa."
 
 
 msgctxt "Operator"
@@ -55028,6 +55219,10 @@ msgid "Copy property from this object to selected objects or bones"
 msgstr "Copia a propriedade a partir deste objeto para os objetos selecionados ou ossos."
 
 
+msgid "Copy to selected all elements of the array"
+msgstr "Copia todos os elementos da matriz para a seleção."
+
+
 msgctxt "Operator"
 msgid "Drop Color"
 msgstr "Despejar cor"
@@ -56266,15 +56461,6 @@ msgstr "Ampliação para visualização 2D"
 
 
 msgctxt "Operator"
-msgid "Zoom to Border"
-msgstr "Ampliar para as margens"
-
-
-msgid "Zoom in the view to the nearest item contained in the border"
-msgstr "Amplia a visualização até o item mais próximo que esteja contido nas margens."
-
-
-msgctxt "Operator"
 msgid "Zoom In"
 msgstr "Ampliar visualização"
 
@@ -56988,12 +57174,22 @@ msgid "Match the camera to 1:1 to the render output"
 msgstr "Combina a câmara para relação de 1:1 para a saída de renderização."
 
 
+msgctxt "Operator"
+msgid "Disable Add-on"
+msgstr "Desativar complemento"
+
+
 msgid "Disable an add-on"
 msgstr "Permite desativar um complemento."
 
 
 msgid "Module name of the add-on to disable"
 msgstr "O nome do módulo de complemento para desativar."
+
+
+msgctxt "Operator"
+msgid "Enable Add-on"
+msgstr "Ativar complemento"
 
 
 msgid "Enable an add-on"
@@ -57021,6 +57217,10 @@ msgid "Install an add-on"
 msgstr "Permite a instalação de um complemento."
 
 
+msgid "Remove existing add-ons with the same ID"
+msgstr "Remove os complementos existentes com o mesmo identificador."
+
+
 msgid "Target Path"
 msgstr "Caminho alvo"
 
@@ -57038,12 +57238,27 @@ msgid "Scan add-on directories for new modules"
 msgstr "Escaneia os diretórios de complementos por novos módulos."
 
 
+msgctxt "Operator"
+msgid "Remove Add-on"
+msgstr "Remover complemento"
+
+
 msgid "Delete the add-on from the file system"
 msgstr "Apaga o complemento a partir do sistema de ficheiros."
 
 
 msgid "Module name of the add-on to remove"
 msgstr "O nome do módulo de complemento a ser removido."
+
+
+msgctxt "Operator"
+msgid "Activate Application Configuration"
+msgstr "Ativar definição da aplicação"
+
+
+msgctxt "Operator"
+msgid "Default Application Configuration"
+msgstr "Definição padrão da aplicação"
 
 
 msgctxt "Operator"
@@ -57671,8 +57886,30 @@ msgid "Activate Keyconfig"
 msgstr "Ativar defineção de teclas"
 
 
+msgctxt "Operator"
+msgid "Export Key Configuration..."
+msgstr "Exportar definição de teclas..."
+
+
+msgid "Export key configuration to a python script"
+msgstr "Exporta as definições de teclas para um script Python."
+
+
+msgctxt "Operator"
+msgid "Import Key Configuration..."
+msgstr "Importar definição de teclas..."
+
+
+msgid "Import key configuration from a python script"
+msgstr "Importa as definições de teclas a partir de um script Python."
+
+
 msgid "Keep original"
 msgstr "Manter original"
+
+
+msgid "Keep original file after copying to configuration folder"
+msgstr "Mantém o ficheiro original após a cópia para a pasta de definições."
 
 
 msgctxt "Operator"
@@ -57691,6 +57928,11 @@ msgstr "Remover defineção de teclas"
 
 msgid "Remove key config"
 msgstr "Remove uma defineção de teclas."
+
+
+msgctxt "Operator"
+msgid "Test Key Configuration for Conflicts"
+msgstr "Testar definição de teclas para verificar por conflitos"
 
 
 msgid "Test key-config for conflicts"
@@ -58320,6 +58562,10 @@ msgstr "Renderiza as visualizações para os olhos esquerdo e direito em modo de
 
 msgid "Interlace"
 msgstr "Entrelaçamento"
+
+
+msgid "Render views for left and right eyes interlaced in a single image (3D-ready monitor is required)"
+msgstr "Renderiza as visualizações para os entrelaçamentos dos olhos esquerdo e direito em uma única imagem (Requer um ecrã pronto para 3D (com duplo escaneamento de linhas)."
 
 
 msgid "Time Sequential"
@@ -59536,6 +59782,10 @@ msgstr "Opções para armações"
 
 msgid "Curve Tools"
 msgstr "Ferramentas de curva"
+
+
+msgid "Curve Stroke"
+msgstr "Traços de curvas"
 
 
 msgid "Lattice Tools"
@@ -61274,6 +61524,10 @@ msgid "Dicing Rate"
 msgstr "Taxa de filetamento"
 
 
+msgid "Multiplier for scene dicing rate"
+msgstr "Muliplicador para a taxa de particionamento da cena."
+
+
 msgid "Displacement Method"
 msgstr "Método de deslocamento"
 
@@ -61296,6 +61550,26 @@ msgstr "Usa somente o deslocamento verdadeiro, requer uma subdivisão fina."
 
 msgid "Combination of displacement and bump mapping"
 msgstr "Combinação de deslocamento e mapa de relevos."
+
+
+msgid "Type of subdivision to use"
+msgstr "Permite definir o tipo de subdivisão a ser usado."
+
+
+msgid "No subdivision"
+msgstr "Sem subdivisões"
+
+
+msgid "Use linear subdivision"
+msgstr "Usar uma subdivisão linear."
+
+
+msgid "Catmull–Clark"
+msgstr "Catmull-Clark"
+
+
+msgid "Use Catmull-Clark subdivision"
+msgstr "Usa uma subdivisão do tipo Catmull-Clark."
 
 
 msgid "Motion Steps"
@@ -61498,6 +61772,10 @@ msgid "Use GPU compute device for rendering, configured in user preferences"
 msgstr "Usa o dispositivo de computação GPU para renderização, definedo nas preferências do utilizador."
 
 
+msgid "Size of a micropolygon in pixels"
+msgstr "Tamanho de um micropolígono em pixeis."
+
+
 msgid "Diffuse Bounces"
 msgstr "Rebatimentos difusos"
 
@@ -61598,6 +61876,14 @@ msgid "Total maximum number of bounces"
 msgstr "Número total de rebatimentos."
 
 
+msgid "Max Subdivisions"
+msgstr "Subdivisões máximas"
+
+
+msgid "Stop subdividing when this level is reached even if the dice rate would produce finer tessellation"
+msgstr "Interrompe a subdivisão quando este nível for alcançado mesmo que a taxa de particionamento possa produzir tesselações ainda mais refinadas."
+
+
 msgid "Mesh Light Samples"
 msgstr "Amostras de malha de luz"
 
@@ -61656,6 +61942,14 @@ msgstr "Pré-visualizar camada ativa"
 
 msgid "Preview active render layer in viewport"
 msgstr "Previsão de camada ativa de renderização dentro da porta de visão."
+
+
+msgid "Preview Dicing Rate"
+msgstr "Taxa de particionamento de previsão"
+
+
+msgid "Size of a micropolygon in pixels during preview render"
+msgstr "Tamanho de um micropolígono em pixeis durante a previsão de renderização."
 
 
 msgid "Pause Preview"
@@ -64550,6 +64844,10 @@ msgid "Dome Mode"
 msgstr "Modo de domo"
 
 
+msgid "Dome physical configurations"
+msgstr "Definição física para domos."
+
+
 msgid "Fisheye"
 msgstr "Olho de peixe"
 
@@ -65141,6 +65439,34 @@ msgstr "Comprimento máximo de aresta"
 
 msgid "Maximum contour edge length"
 msgstr "Comprimento máximo do contorno da aresta"
+
+
+msgid "Partitioning"
+msgstr "Particionamento"
+
+
+msgid "Choose partitioning method"
+msgstr "Permite escolher o método de particionamento."
+
+
+msgid "Watershed"
+msgstr "Seladas"
+
+
+msgid "Classic Recast partitioning method generating the nicest tessellation"
+msgstr "Um método de re-projeção de particionamento gerando uma tesselação mais homogênea e refinada."
+
+
+msgid "Monotone"
+msgstr "Monotónica"
+
+
+msgid "Fastest navmesh generation method, may create long thin polygons"
+msgstr "O método de geração de malha de navegação mais rápido. Existe a possibilidade de geração de polígonos finos e compridos."
+
+
+msgid "Reasonably fast method that produces better triangles than monotone partitioning"
+msgstr "Um método razoavelmente rápido que produz melhores triângulos do que o particionamento monotónico."
 
 
 msgid "Merged Region Size"
@@ -67872,6 +68198,14 @@ msgstr "Grupo de fluidos"
 
 msgid "Limit fluid objects to this group"
 msgstr "Limita os objetos de fluido a este grupo."
+
+
+msgid "Heat Grid"
+msgstr "Grelha calorífica"
+
+
+msgid "Smoke heat grid"
+msgstr "Grelha calorífica."
 
 
 msgid "Method for sampling the high resolution flow"
@@ -74623,6 +74957,10 @@ msgid "Key Config"
 msgstr "Defineção de tecla"
 
 
+msgid "The name of the active key configuration"
+msgstr "O nome da definição de teclas ativas."
+
+
 msgid "Drag Threshold"
 msgstr "Ajuste de arrasto"
 
@@ -76949,6 +77287,14 @@ msgid "Aperture:"
 msgstr "Abertura:"
 
 
+msgid "Displacment:"
+msgstr "Deslocamento:"
+
+
+msgid "Subdivision:"
+msgstr "Subdivisões:"
+
+
 msgid "Deformation"
 msgstr "Deformação"
 
@@ -77055,6 +77401,14 @@ msgstr "Amostras de antisserrilhamento:"
 
 msgid "Mesh Light"
 msgstr "Malha de luz"
+
+
+msgid "Volume Sampling:"
+msgstr "Amostragem de volumes:"
+
+
+msgid "Subdivision Rate:"
+msgstr "Passos de subdivisão:"
 
 
 msgid "File Suffix:"
@@ -77303,6 +77657,10 @@ msgstr "Saída:"
 
 msgid "Demo Mode:"
 msgstr "Modo de demonstração:"
+
+
+msgid "No configuration found with text or file: %s. Run File -> Demo Mode Setup"
+msgstr "Nenhuma definição encontrada nos textos ou no ficheiro  %s fornecido: Por favor, acione o ficheiro \"Demo Mode Setup\""
 
 
 msgid "Save to PO File"
@@ -80165,10 +80523,6 @@ msgid "Noise:"
 msgstr "Ruído:"
 
 
-msgid "Basis"
-msgstr "Base"
-
-
 msgid "Alpha:"
 msgstr "Alfa:"
 
@@ -83012,7 +83366,7 @@ msgstr "Copyright (Direitos autorais)"
 
 msgctxt "Operator"
 msgid "Registered Trademark"
-msgstr "Marca registrada"
+msgstr "Marca registada"
 
 
 msgctxt "Operator"
@@ -83496,6 +83850,18 @@ msgid "Modeling:"
 msgstr "Modelagem:"
 
 
+msgid "Pressure Radius:"
+msgstr "Raio definido pela pressão:"
+
+
+msgid "Taper Radius:"
+msgstr "Raio de afilamento:"
+
+
+msgid "Projection Depth:"
+msgstr "Profundidade da projeção:"
+
+
 msgid "Set Case:"
 msgstr "Definir capitalização:"
 
@@ -83629,6 +83995,10 @@ msgstr "Vetores"
 msgctxt "Operator"
 msgid "Free"
 msgstr "Livre"
+
+
+msgid "Bezier Options:"
+msgstr "Opções para curvas bézier:"
 
 
 msgctxt "Operator"
@@ -84299,7 +84669,7 @@ msgstr "Não é possível vincular ao conector."
 
 
 msgid "Cannot establish listen backlog"
-msgstr "Não é possível estabelecer ecrãamento para registro de funcionamento remissivo."
+msgstr "Não é possível estabelecer ecrãamento para registo de funcionamento remissivo."
 
 
 msgid "unknown error reading file"
@@ -84410,14 +84780,6 @@ msgid "Cannot open file %s for writing: %s"
 msgstr "Não foi possível abrir o ficheiro %s para escrita: %s"
 
 
-msgid "Input faces do not form a contiguous manifold region"
-msgstr "As normais das faces de entrada não formam contiguidades definidas nas circularidades das regiões selecionadas."
-
-
-msgid "Invalid boundary region to join faces"
-msgstr "Região circundante inválida para juntar as faces."
-
-
 msgid "Self intersection error"
 msgstr "Erro de intersecção em si mesmo."
 
@@ -84452,10 +84814,6 @@ msgstr "Seleção invalida."
 
 msgid "Internal mesh error"
 msgstr "Erro interno de malha ."
-
-
-msgid "Non-manifold vert while searching region boundary"
-msgstr "Um vértice não contíguo foi encontrado durante a pesquisa nos limites da região."
 
 
 msgid "Zero normal given"
@@ -84629,6 +84987,22 @@ msgstr "Uma região de animação ou linha do tempo ativa era esperada."
 
 msgid "Paste driver: no driver to paste"
 msgstr "Colar controlador: sem controlador para colar"
+
+
+msgid "No driver to copy variables from"
+msgstr "Não há controladores dos quais copiar as variáveis"
+
+
+msgid "Driver has no variables to copy"
+msgstr "O controlador não possui vaiáveis a ser copiadas"
+
+
+msgid "No driver variables in clipboard to paste"
+msgstr "Não há variáveis de controladores na área de transferência para colar."
+
+
+msgid "Cannot paste driver variables without a driver"
+msgstr "Não é possível colar variáveis de controlador sem um controlador disponível."
 
 
 msgid "Could not add driver, as RNA path is invalid for the given ID (ID = %s, path = %s)"
@@ -85155,6 +85529,14 @@ msgid "Surface"
 msgstr "Superfície"
 
 
+msgid "Unable to access 3D viewport"
+msgstr "Não é possível acessar a porta de visão 3D."
+
+
+msgid "Unable to access depth buffer, using view plane"
+msgstr "Não é possível acessar o buffer de profundidade. O Blender está usando o plano de visualização como solução alternativa."
+
+
 msgid "Surface has not got active point"
 msgstr "Superfície não possuía um ponto ativo."
 
@@ -85405,6 +85787,16 @@ msgstr "Redefinir único ao seu valor padrão"
 msgctxt "Operator"
 msgid "Unset"
 msgstr "Não definedo"
+
+
+msgctxt "Operator"
+msgid "Copy All To Selected"
+msgstr "Copiar todos para a seleção"
+
+
+msgctxt "Operator"
+msgid "Copy Single To Selected"
+msgstr "Copiar único para a seleção"
 
 
 msgctxt "Operator"
@@ -86355,6 +86747,18 @@ msgstr "Falha ao erodir área trafegável."
 
 msgid "Failed to build distance field"
 msgstr "Falha ao construir campo de distância."
+
+
+msgid "Failed to build watershed regions"
+msgstr "Falha ao construir regiões seladas."
+
+
+msgid "Failed to build monotone regions"
+msgstr "Falha ao construir regiões monotónicas."
+
+
+msgid "Failed to build layer regions"
+msgstr "Falha ao construir regiões em camadas."
 
 
 msgid "Failed to build contours"
@@ -87556,6 +87960,14 @@ msgid "AutoPack is enabled, so image will be packed again on file save"
 msgstr "Empacotamento automático ativado, portanto a imagem será empacotada novamente ao salvar o ficheiro."
 
 
+msgid "Active F-Curve"
+msgstr "Curva-f ativa"
+
+
+msgid "Active Keyframe"
+msgstr "Fotogramas-chave ativos"
+
+
 msgid "Action must have at least one keyframe or F-Modifier"
 msgstr "A ação deve possuir ao menos um fotograma-chave ou modificador-f."
 
@@ -87908,6 +88320,14 @@ msgid "Prop:"
 msgstr "Propriedades:"
 
 
+msgid "Bone 1"
+msgstr "Osso 1"
+
+
+msgid "Bone 2"
+msgstr "Osso 2"
+
+
 msgid "Update Dependencies"
 msgstr "Atualizar dependências"
 
@@ -87986,14 +88406,6 @@ msgstr "Remover este controlador"
 
 msgid "Driver variables ensure that all dependencies will be accounted for and that drivers will update correctly"
 msgstr "As variáveis do controlador garantem que todas as dependências serão consideradas e que os controladores serão atualizados corretamente."
-
-
-msgid "Active F-Curve"
-msgstr "Curva-f ativa"
-
-
-msgid "Active Keyframe"
-msgstr "Fotogramas-chave ativos"
 
 
 msgid "View Properties"
@@ -89794,7 +90206,7 @@ msgstr "Sem materiais a ser removidos."
 
 
 msgid "Registering id property class: '%s' is too long, maximum length is %d"
-msgstr "Registrando id de classe de operador: '%s' é muito longo, comprimento máximo é %d"
+msgstr "Registando id de classe de operador: '%s' é muito longo, comprimento máximo é %d"
 
 
 msgid "Only boolean, int and float properties supported"
@@ -89854,7 +90266,7 @@ msgstr "O controlador não possui dados válidos a partir dos quais poderiam ser
 
 
 msgid "Registering keying set info class: '%s' is too long, maximum length is %d"
-msgstr "Registrando informação de classe de conjunto de inserção de chaves: '%s' é muito longo, comprimento máximo é %d"
+msgstr "Registando informação de classe de conjunto de inserção de chaves: '%s' é muito longo, comprimento máximo é %d"
 
 
 msgid "NlaTrack '%s' cannot be removed"
@@ -90267,7 +90679,7 @@ msgstr "Não é possível de criar conector"
 
 
 msgid "Registering node tree class: '%s' is too long, maximum length is %d"
-msgstr "Registrando classe de árvore de nós: '%s' é muito grande, comprimento máximo é %d."
+msgstr "Registando classe de árvore de nós: '%s' é muito grande, comprimento máximo é %d."
 
 
 msgid "Node tree '%s' has undefined type %s"
@@ -90291,11 +90703,11 @@ msgstr "Não é possível localizar conector '%s' no nó."
 
 
 msgid "Registering node class: '%s' is too long, maximum length is %d"
-msgstr "Registrando classe de nó: '%s' é muito grande, comprimento máximo é %d."
+msgstr "Registando classe de nó: '%s' é muito grande, comprimento máximo é %d."
 
 
 msgid "Registering node socket class: '%s' is too long, maximum length is %d"
-msgstr "Registrando classe de conector de nó: '%s' é muito longo, comprimento máximo é %d."
+msgstr "Registando classe de conector de nó: '%s' é muito longo, comprimento máximo é %d."
 
 
 msgid "Cannot set dupli-group as object belongs in group being instanced, thus causing a cycle"
@@ -90404,7 +90816,7 @@ msgstr "Restrição '%s' não encontrada dentro do osso de pose '%s'"
 
 
 msgid "Registering render engine class: '%s' is too long, maximum length is %d"
-msgstr "Registrando classe de motor de renderização: '%s' é muito longo, comprimento máximo é %d."
+msgstr "Registando classe de motor de renderização: '%s' é muito longo, comprimento máximo é %d."
 
 
 msgid "A non convex collision shape was passed to the function, use only convex collision shapes"
@@ -90528,19 +90940,19 @@ msgstr "Região não encontrada dentro do tipo de espaço."
 
 
 msgid "Registering panel class: '%s' is too long, maximum length is %d"
-msgstr "Erro ao registrar a classe do painel '%s'. O nome ou bloco é muito grande. O comprimento máximo é %d"
+msgstr "Erro ao registar a classe do painel '%s'. O nome ou bloco é muito grande. O comprimento máximo é %d"
 
 
 msgid "Registering uilist class: '%s' is too long, maximum length is %d"
-msgstr "Erro ao registrar a classe da lista de interface de utilizador '%s'. O nome ou bloco é muito grande. O comprimento máximo é %d"
+msgstr "Erro ao registar a classe da lista de interface de utilizador '%s'. O nome ou bloco é muito grande. O comprimento máximo é %d"
 
 
 msgid "Registering header class: '%s' is too long, maximum length is %d"
-msgstr "Erro ao registrar a classe de cabeçalho '%s'. O nome ou bloco é muito grande. O comprimento máximo é %d"
+msgstr "Erro ao registar a classe de cabeçalho '%s'. O nome ou bloco é muito grande. O comprimento máximo é %d"
 
 
 msgid "Registering menu class: '%s' is too long, maximum length is %d"
-msgstr "Erro ao registrar a classe de menu '%s'. O nome ou bloco é muito grande. O comprimento máximo é %d"
+msgstr "Erro ao registar a classe de menu '%s'. O nome ou bloco é muito grande. O comprimento máximo é %d"
 
 
 msgid "Addon is no longer valid"
@@ -90552,7 +90964,7 @@ msgstr "O caminho excluído não é mais válido."
 
 
 msgid "Registering addon-prefs class: '%s' is too long, maximum length is %d"
-msgstr "Erro ao registrar a classe de preferências do complemento '%s'. O nome ou bloco é muito grande. O comprimento máximo é %d."
+msgstr "Erro ao registar a classe de preferências do complemento '%s'. O nome ou bloco é muito grande. O comprimento máximo é %d."
 
 
 msgid "Font not packed"
@@ -90560,19 +90972,19 @@ msgstr "Fonte não empacotada"
 
 
 msgid "Registering operator class: '%s', invalid bl_idname '%s', at position %d"
-msgstr "Erro ao registrar a classe de operador para '%s'. O nome ou bloco '%s' é inválido na posição %d."
+msgstr "Erro ao registar a classe de operador para '%s'. O nome ou bloco '%s' é inválido na posição %d."
 
 
 msgid "Registering operator class: '%s', invalid bl_idname '%s', is too long, maximum length is %d"
-msgstr "Erro ao registrar a classe de operador '%s'. O nome do identificador do bloco '%s' é muito grande O comprimento máximo é %d."
+msgstr "Erro ao registar a classe de operador '%s'. O nome do identificador do bloco '%s' é muito grande O comprimento máximo é %d."
 
 
 msgid "Registering operator class: '%s', invalid bl_idname '%s', must contain 1 '.' character"
-msgstr "Erro ao registrar a classe de operador '%s'. O nome do identificador do bloco '%s' deve conter ao menos um caractere do tipo ponto para definição."
+msgstr "Erro ao registar a classe de operador '%s'. O nome do identificador do bloco '%s' deve conter ao menos um caractere do tipo ponto para definição."
 
 
 msgid "Registering operator class: '%s' is too long, maximum length is %d"
-msgstr "Erro ao registrar a classe de operador '%s'. O nome é muito grande. O comprimento máximo é %d."
+msgstr "Erro ao registar a classe de operador '%s'. O nome é muito grande. O comprimento máximo é %d."
 
 
 msgid "Not a non-modal keymap"
@@ -91429,7 +91841,7 @@ msgstr "%s '%s' não encontrado(a)"
 
 
 msgid "Operator '%s' does not have register enabled, incorrect invoke function"
-msgstr "Operador '%s' não possui registro ativado, função chamada incorretamente."
+msgstr "Operador '%s' não possui registo ativado, função chamada incorretamente."
 
 
 msgid "Operator '%s' does not have undo enabled, incorrect invoke function"
@@ -91437,7 +91849,7 @@ msgstr "Operador '%s' não possui opção de desfazer ativada, função chamada 
 
 
 msgid "Operator redo '%s' does not have register enabled, incorrect invoke function"
-msgstr "Refazendo operador '%s': não possui registro ativado, função chamada incorretamente."
+msgstr "Refazendo operador '%s': não possui registo ativado, função chamada incorretamente."
 
 
 msgid "Operator redo '%s': wrong context"
