@@ -1,9 +1,9 @@
 
 msgid ""
 msgstr ""
-"Project-Id-Version: Blender 2.77 (sub 1) (b'a21549f')\n"
+"Project-Id-Version: Blender 2.77 (sub 1) (b'eeedcf3')\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-06-28 21:34:56\n"
+"POT-Creation-Date: 2016-07-19 15:42:03\n"
 "PO-Revision-Date: \n"
 "Last-Translator: Bastien Montagne <montagne29@wanadoo.fr>\n"
 "Language-Team: \n"
@@ -7929,6 +7929,14 @@ msgid "ID-Block representing source data, usually ID_SCE (i.e. Scene)"
 msgstr "Bloc ID représentant les données source, généralement ID_SCE (c-à-d une scène)"
 
 
+msgid "Sort Datablocks"
+msgstr "Trier blocs de données"
+
+
+msgid "Alphabetically sorts datablocks - mainly objects in the scene (disable to increase viewport speed)"
+msgstr "Trier alphabétiquement les blocs de données ‑ principalement les objets de la scène (désactiver pour augmenter la vitesse d’affichage)"
+
+
 msgid "Only Matching Channels"
 msgstr "Canaux correspondants uniquement"
 
@@ -11037,14 +11045,6 @@ msgid "Whether we may browse blender files' content or not"
 msgstr "Si l’on peut naviguer dans le contenu des fichiers blender ou pas"
 
 
-msgid "Fluid Mesh Vertex"
-msgstr "Vertex de mesh fluide"
-
-
-msgid "Vertex of a simulated fluid mesh"
-msgstr "Vertex d’un mesh de fluide simulé"
-
-
 msgid "Fluid Simulation Settings"
 msgstr "Réglages de simulation de fluide"
 
@@ -11559,6 +11559,14 @@ msgstr "Flottantes"
 
 msgid "Show floating foam particles"
 msgstr "Montrer les particules d’écume flottantes"
+
+
+msgid "Fluid Mesh Velocity"
+msgstr "Vélocité du mesh fluide"
+
+
+msgid "Velocity of a simulated fluid mesh"
+msgstr "Vélocité d’un mesh de fluide simulé"
 
 
 msgid "Freestyle Line Set"
@@ -24768,6 +24776,14 @@ msgid "A breakdown pose - e.g. for transitions between key poses"
 msgstr "Une pose de rupture – par ex. pour des transitions entre poses clé"
 
 
+msgid "Moving Hold"
+msgstr "Maintien mouvant (???)"
+
+
+msgid "A keyframe that is part of a moving hold"
+msgstr "Une image-clé faisant partie d’un “maintien mouvant” (?)"
+
+
 msgid "Extreme"
 msgstr "Extrême"
 
@@ -28521,6 +28537,14 @@ msgid "Boolean operations modifier"
 msgstr "Modificateur d’opérations booléennes"
 
 
+msgid "Overlap Threshold"
+msgstr "Limite de superposition"
+
+
+msgid "Threshold for checking overlapping geometry"
+msgstr "Limite pour tester la géométrie en superposition"
+
+
 msgid "Mesh object to use for Boolean operation"
 msgstr "Objet mesh à utiliser pour l’opération booléenne"
 
@@ -28539,6 +28563,22 @@ msgstr "Combiner deux meshes de façon additive"
 
 msgid "Combine two meshes in a subtractive way"
 msgstr "Combiner deux meshes de façon soustractive"
+
+
+msgid "BMesh"
+msgstr "BMesh"
+
+
+msgid "Use the BMesh boolean solver"
+msgstr "Utiliser le solveur booléen BMesh"
+
+
+msgid "Carve"
+msgstr "Carve"
+
+
+msgid "Use the Carve boolean solver"
+msgstr "Utiliser le solveur booléen Carve"
 
 
 msgid "Build Modifier"
@@ -34547,6 +34587,10 @@ msgstr "Méthode à utiliser pour filtrer la transformation"
 
 msgid "Translate"
 msgstr "Déplacer"
+
+
+msgid "Use relative (fraction of input image size) values to define translation"
+msgstr "Utiliser des valeurs relatives (à la taille de l’image d’entrée) pour définir la translation"
 
 
 msgid "Wrapping"
@@ -44578,6 +44622,19 @@ msgid "Clear vertex skin layer"
 msgstr "Supprimer calque de peau de vertex (?)"
 
 
+msgctxt "Operator"
+msgid "Decimate Geometry"
+msgstr "Décimer géométrie"
+
+
+msgid "Simplify geometry by collapsing edges"
+msgstr "Simplifier la géométrie en fusionnant des arêtes"
+
+
+msgid "Use active vertex group as an influence"
+msgstr "Utiliser le groupe de vertices actif comme influence"
+
+
 msgid "Delete selected vertices, edges or faces"
 msgstr "Supprimer les vertices, arêtes ou faces sélectionnés"
 
@@ -48676,6 +48733,14 @@ msgid "Clear the object's location"
 msgstr "Réinitialiser la position de l’objet"
 
 
+msgid "Clear Delta"
+msgstr "Efface delta"
+
+
+msgid "Clear delta location in addition to clearing the normal location transform"
+msgstr "Effacer la position delta en plus de la transformation de position normale"
+
+
 msgctxt "Operator"
 msgid "Add Level of Detail"
 msgstr "Ajouter niveau de détails"
@@ -49466,8 +49531,16 @@ msgid "Clear the object's rotation"
 msgstr "Réinitialiser la rotation de l’objet"
 
 
+msgid "Clear delta rotation in addition to clearing the normal rotation transform"
+msgstr "Effacer la rotation delta en plus de la transformation de rotation normale"
+
+
 msgid "Clear the object's scale"
 msgstr "Réinitialiser la taille de l’objet"
+
+
+msgid "Clear delta scale in addition to clearing the normal scale transform"
+msgstr "Effacer l’échelle delta en plus de la transformation d’échelle normale"
 
 
 msgctxt "Operator"
@@ -49901,6 +49974,47 @@ msgstr "Appliquer transformation objet"
 
 msgid "Apply the object's transformation to its data"
 msgstr "Appliquer la transformation de l’objet à ses données"
+
+
+msgctxt "Operator"
+msgid "Transforms to Deltas"
+msgstr "Transformations vers delta"
+
+
+msgid "Convert normal object transforms to delta transforms, any existing delta transforms will be included as well"
+msgstr "Convertir les transformations d’objet normales en transformations delta, toute transformation delta pré-existante sera également incorporée"
+
+
+msgid "Which transforms to transfer"
+msgstr "Quelles transformations transférer"
+
+
+msgid "All Transforms"
+msgstr "Toutes les transformations"
+
+
+msgid "Transfer location, rotation, and scale transforms"
+msgstr "Transférer les transformations de position, rotation et échelle"
+
+
+msgid "Transfer location transforms only"
+msgstr "Ne transférer que les transformations de position"
+
+
+msgid "Transfer rotation transforms only"
+msgstr "Ne transférer que les transformations de rotation"
+
+
+msgid "Transfer scale transforms only"
+msgstr "Ne transférer que les transformations d’échelle"
+
+
+msgid "Reset Values"
+msgstr "Ré-initialiser valeurs"
+
+
+msgid "Clear transform values after transferring to deltas"
+msgstr "Effacer les valeurs de transformation après transfert vers delta"
 
 
 msgctxt "Operator"
@@ -57272,6 +57386,15 @@ msgid "Snap cursor to center of selected item(s)"
 msgstr "Aimanter le curseur au centre des éléments sélectionnés"
 
 
+msgctxt "Operator"
+msgid "Snap Selection to Active"
+msgstr "Aimanter sélection à l’actif"
+
+
+msgid "Snap selected item(s) to the active item"
+msgstr "Aimanter le(s) élément(s) sélectionné(s) à l’actif"
+
+
 msgid "Snap selected item(s) to cursor"
 msgstr "Aimanter les éléments sélectionnés au curseur"
 
@@ -59662,8 +59785,8 @@ msgid "Mask Layers"
 msgstr "Calques de masque"
 
 
-msgid "Proxy / Timecode"
-msgstr "Proxy / Timecode"
+msgid "Proxy/Timecode"
+msgstr "Proxy/Timecode"
 
 
 msgid "Stabilization"
@@ -60193,8 +60316,8 @@ msgid "Dyntopo"
 msgstr "Dyntopo"
 
 
-msgid "Symmetry / Lock"
-msgstr "Symétrie / Verrouillage"
+msgid "Symmetry/Lock"
+msgstr "Symétrie/Verrouillage"
 
 
 msgid "Slots"
@@ -62231,6 +62354,14 @@ msgstr "SSE41"
 
 msgid "Adaptive Compile"
 msgstr "Compilation adaptative"
+
+
+msgid "Use Hair BVH"
+msgstr "Utiliser BVH cheveux"
+
+
+msgid "Use special type BVH optimized for hair (uses more ram but renders faster)"
+msgstr "Utiliser un type de BVH spécial optimisé pour les cheveux (utilise plus de RAM mais rend plus rapidement)"
 
 
 msgid "Debug OpenCL"
@@ -65786,6 +65917,14 @@ msgid "Use color management for GLSL rendering"
 msgstr "Utiliser la gestion de couleurs dans le rendu GLSL"
 
 
+msgid "GLSL Environment Lighting"
+msgstr "Éclairage environnemental GLSL"
+
+
+msgid "Use environment lighting for GLSL rendering"
+msgstr "Utiliser l’éclairage environnemental dans le rendu GLSL"
+
+
 msgid "GLSL Extra Textures"
 msgstr "Textures supplémentaires GLSL"
 
@@ -66112,6 +66251,10 @@ msgstr "Opacité de forme d’onde"
 
 msgid "Waveform Mode"
 msgstr "Mode forme d’onde"
+
+
+msgid "Parade"
+msgstr "Parade"
 
 
 msgid "YCbCr (ITU 601)"
@@ -70310,6 +70453,14 @@ msgid "NLA editor space data"
 msgstr "Données de l’espace de l’éditeur NLA"
 
 
+msgid "Show Local Markers"
+msgstr "Afficher marqueurs locaux"
+
+
+msgid "Show action-local markers on the strips, useful when synchronizing timing across strips"
+msgstr "Afficher les marqueurs locaux aux actions sur les bandes, utile pour synchroniser le timing entre bandes"
+
+
 msgid "Show Control F-Curves"
 msgstr "Montrer F-courbes de contrôle"
 
@@ -73008,6 +73159,14 @@ msgstr "Image clé de bruit sélectionnée"
 
 msgid "Color of selected jitter keyframe"
 msgstr "Couleur d’image clé de bruit sélectionnée"
+
+
+msgid "Keyframe Scale Factor"
+msgstr "Facteur d’échelle d’image clé"
+
+
+msgid "Scale factor for adjusting the height of keyframes"
+msgstr "Facteur d’échelle pour ajuster la hauteur des images clé"
 
 
 msgid "Keyframe Selected"
@@ -78429,6 +78588,18 @@ msgid "Calculate..."
 msgstr "Calculer…"
 
 
+msgid "Location:"
+msgstr "Position :"
+
+
+msgid "Rotation:"
+msgstr "Rotation :"
+
+
+msgid "Scale:"
+msgstr "Taille/échelle :"
+
+
 msgid "To:"
 msgstr "Vers :"
 
@@ -78682,10 +78853,6 @@ msgid "Roll:"
 msgstr "Roulis :"
 
 
-msgid "Scale:"
-msgstr "Taille/échelle :"
-
-
 msgid "Easing:"
 msgstr "Lissage :"
 
@@ -78842,8 +79009,8 @@ msgid "Fill:"
 msgstr "Remplir :"
 
 
-msgid "Path / Curve-Deform:"
-msgstr "Chemin / Déformer par courbe :"
+msgid "Path/Curve-Deform:"
+msgstr "Chemin/Déformer par courbe :"
 
 
 msgid "Bevel Factor:"
@@ -79074,6 +79241,10 @@ msgstr "Méthode de largeur :"
 
 msgid "Operation:"
 msgstr "Opération :"
+
+
+msgid "Solver:"
+msgstr "Solveur :"
 
 
 msgid "Evaluation:"
@@ -82352,10 +82523,6 @@ msgid "Stretch to input strip length"
 msgstr "Étirer à la longueur de la bande source"
 
 
-msgid "Rotation:"
-msgstr "Rotation :"
-
-
 msgid "Frame number"
 msgstr "Numéro de frame"
 
@@ -82649,8 +82816,8 @@ msgid "Images Draw Method:"
 msgstr "Méthode d’affichage d’image :"
 
 
-msgid "Sequencer / Clip Editor:"
-msgstr "Éditeurs de séquence/de clip:"
+msgid "Sequencer/Clip Editor:"
+msgstr "Éditeurs de séquence/de clip :"
 
 
 msgid "Solid OpenGL lights:"
@@ -82987,10 +83154,6 @@ msgid "description"
 msgstr "description"
 
 
-msgid "Location:"
-msgstr "Position :"
-
-
 msgid "location"
 msgstr "position"
 
@@ -83047,6 +83210,11 @@ msgstr "Y global"
 msgctxt "Operator"
 msgid "Z Global"
 msgstr "Z global"
+
+
+msgctxt "Operator"
+msgid "Selection to Active"
+msgstr "Sélection vers actif"
 
 
 msgctxt "Operator"
@@ -83754,6 +83922,22 @@ msgstr "Taille de largeur (?)"
 msgctxt "Operator"
 msgid "Empty Draw Size"
 msgstr "Taille affichage empty"
+
+
+msgid "Location to Deltas"
+msgstr "Position vers delta"
+
+
+msgid "Rotation to Deltas"
+msgstr "Rotation vers delta"
+
+
+msgid "Scale to Deltas"
+msgstr "Échelle vers delta"
+
+
+msgid "All Transforms to Deltas"
+msgstr "Toutes les transformations vers delta"
 
 
 msgctxt "Operator"
@@ -84606,16 +84790,6 @@ msgid "Add or assign a stencil image below"
 msgstr "Ajouter ou assigner une image de tampon ci-dessous"
 
 
-msgctxt "Operator"
-msgid "Disable Dyntopo"
-msgstr "Désactiver dyntopo"
-
-
-msgctxt "Operator"
-msgid "Enable Dyntopo"
-msgstr "Activer dyntopo"
-
-
 msgid "Point cache must be baked"
 msgstr "Le cache de points doit être pré-calculé"
 
@@ -85304,8 +85478,8 @@ msgid "Texface conversion problem (see error in console)"
 msgstr "Problème de conversion texface (voyez l’erreur dans la console)"
 
 
-msgid "Failed to read blend file '%s', incomplete"
-msgstr "La lecture de fichier blend “%s” a échoué, il est incomplet"
+msgid "Failed to read blend file '%s': %s"
+msgstr "Impossible de lire le fichier blend “%s” : %s"
 
 
 msgid "Failed to read blend file '%s', not a blend file"
@@ -87233,6 +87407,10 @@ msgid "No faces filled"
 msgstr "Aucune face de remplie"
 
 
+msgid "No active vertex group"
+msgstr "Aucun groupe de vertices actif"
+
+
 msgid "View not found, cannot sort by view axis"
 msgstr "Aucune vue de trouvée, impossible de trier par axe de vue"
 
@@ -87450,6 +87628,14 @@ msgstr "Ces données ne supportent pas la jonction en mode édition"
 
 msgid "Cannot edit external libdata"
 msgstr "Impossible d’éditer les données de bibliothèque externe"
+
+
+msgid "Cannot delete indirectly linked object '%s'"
+msgstr "Impossible de supprimer l’objet lié indirectement “%s”"
+
+
+msgid "Cannot delete object '%s' from scene '%s', indirectly used objects need at least one user"
+msgstr "Impossible de supprimer l’objet “%s” de la scène “%s”, les objets utilisés indirectement doivent avoir au moins un utilisateur"
 
 
 msgid "Baking of multires data only works with an active mesh object"
@@ -88556,12 +88742,40 @@ msgid "Keeping the modifiers will increase polycount when returning to object mo
 msgstr "Conserver ces modificateurs augmentera le nombre de polygones lors du retour en mode objet"
 
 
+msgid "non-triangle face"
+msgstr "face non-triangulaire"
+
+
+msgid "multi-res modifier"
+msgstr "modificateur multi-res"
+
+
+msgid "vertex data"
+msgstr "données de vertex"
+
+
+msgid "edge data"
+msgstr "données d’arête"
+
+
+msgid "face data"
+msgstr "données de face"
+
+
+msgid "constructive modifier"
+msgstr "modificateur constructif"
+
+
 msgid "Object has non-uniform scale, sculpting may be unpredictable"
 msgstr "L’objet a une échelle non-uniforme, la sculpture peut se révéler imprévisible"
 
 
 msgid "Object has negative scale, sculpting may be unpredictable"
 msgstr "L’objet a une échelle négative, la sculpture peut se révéler imprévisible"
+
+
+msgid "Dynamic Topology found: %s, disabled"
+msgstr "Topologie dynamique trouvée : %s, désactivée"
 
 
 msgid "Compiled without sound support"
@@ -89790,6 +90004,14 @@ msgid "Can't edit library linked object"
 msgstr "Impossible d’éditer un objet de bibliothèque lié"
 
 
+msgid "Cannot delete indirectly linked id '%s'"
+msgstr "Impossible de supprimer l’id lié indirectement “%s”"
+
+
+msgid "Cannot delete id '%s', indirectly used datablocks need at least one user"
+msgstr "Impossible de supprimer l’id “%s”, les blocs de données utilisés indirectement doivent avoir au moins un utilisateur"
+
+
 msgid "Cannot delete indirectly linked library '%s'"
 msgstr "Impossible de supprimer la bibliothèque liée indirectement “%s”"
 
@@ -90282,6 +90504,10 @@ msgstr "Pas de tampon duquel coller"
 
 msgid "Ctrl+LMB: Add, Del: Remove, Ctrl+Drag: Snap, Shift+Drag: Thickness, Ctrl+C: Copy Value, Enter: Store,  Esc: Cancel"
 msgstr "Ctrl+LMB : Ajouter, Suppr : Enlever, Ctrl+CliquerTirer : Aimanter, Maj+CliquerTirer : Épaisseur, Ctrl+C : Copier Valeur, Entrée : valider,  Échap : annuler"
+
+
+msgid "No active element found!"
+msgstr "Pas d’élément actif de trouvé !"
 
 
 msgid "Tool Shelf"
@@ -91134,8 +91360,8 @@ msgid "Object does not have geometry data"
 msgstr "L’objet n’a pas de donnée de géométrie"
 
 
-msgid "%s '%s' must have zero users to be removed, found %d (try with unlink=True parameter)"
-msgstr "%s “%s” doit avoir zéro utilisateur pour être supprimé, %d trouvés (essayer avec le paramètre unlink=True)"
+msgid "%s '%s' must have zero users to be removed, found %d (try with do_unlink=True parameter)"
+msgstr "%s “%s” doit avoir zéro utilisateur pour être supprimé, %d trouvés (essayer avec le paramètre do_unlink=True)"
 
 
 msgid "Scene '%s' is the last, cannot be removed"
