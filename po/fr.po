@@ -1,9 +1,9 @@
 
 msgid ""
 msgstr ""
-"Project-Id-Version: Blender 2.77 (sub 1) (b'eeedcf3')\n"
+"Project-Id-Version: Blender 2.77 (sub 1) (b'8e015e3')\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-07-19 15:42:03\n"
+"POT-Creation-Date: 2016-08-01 20:42:33\n"
 "PO-Revision-Date: \n"
 "Last-Translator: Bastien Montagne <montagne29@wanadoo.fr>\n"
 "Language-Team: \n"
@@ -2146,6 +2146,14 @@ msgstr "Évaluation NLA activée"
 
 msgid "NLA stack is evaluated when evaluating this block"
 msgstr "La pile NLA est évaluée quand ce bloc est évalué"
+
+
+msgid "Use NLA Tweak Mode"
+msgstr "Utiliser mode d’ajustage NLA"
+
+
+msgid "Whether to enable or disable tweak mode in NLA"
+msgstr "S‘il faut activer ou non le mode d’ajustage dans le NLA"
 
 
 msgid "Animation Visualization"
@@ -4654,6 +4662,18 @@ msgstr "Raideur structurelle maximum"
 
 msgid "Maximum structural stiffness value"
 msgstr "Valeur de la raideur structurelle maximale"
+
+
+msgid "Cloth speed is multiplied by this value"
+msgstr "La vitesse du tissu est multipliée par cette valeur"
+
+
+msgid "Dynamic Base Mesh"
+msgstr "Mesh de base dynamique"
+
+
+msgid "Make simulation respect deformations in the base mesh"
+msgstr "Forcer la simulation à respecter les déformations du mesh de base"
 
 
 msgid "Pin Cloth"
@@ -7429,6 +7449,10 @@ msgid "Auto Handle"
 msgstr "Poignée auto"
 
 
+msgid "Auto Clamped Handle"
+msgstr "Poignée auto-limitée"
+
+
 msgid "Vector Handle"
 msgstr "Poignée vectorielle"
 
@@ -7527,6 +7551,30 @@ msgstr "Tolérance"
 
 msgid "Allow deviation for a smoother, less precise line"
 msgstr "Autoriser de la déviation, pour une ligne plus douce, moins précise"
+
+
+msgid "Method"
+msgstr "Méthode"
+
+
+msgid "Curve fitting method"
+msgstr "Méthode d’ajustement à la courbe"
+
+
+msgid "Refit"
+msgstr "Ré-ajustement"
+
+
+msgid "Incrementally re-fit the curve (high quality)"
+msgstr "Ré-ajuster incrémentalement à la courbe (meilleure qualité)"
+
+
+msgid "Split"
+msgstr "Division"
+
+
+msgid "Split the curve until the tolerance is met (fast)"
+msgstr "Diviser la courbe jusqu’à atteindre le seuil de tolérance (rapide)"
 
 
 msgid "Radius Max"
@@ -8001,6 +8049,14 @@ msgid "Maximum Value"
 msgstr "Valeur maximum"
 
 
+msgid "Use Self"
+msgstr "Utiliser self"
+
+
+msgid "Include a 'self' variable in the name-space, so drivers can easily reference the data being modified (object, bone, etc...)"
+msgstr "Inclure une variable “self” dans l’espace de nom, afin que les contrôleurs puissent aisément référencer les données affectées (objet, os, etc.)."
+
+
 msgid "Variables"
 msgstr "Variables"
 
@@ -8085,11 +8141,11 @@ msgid "Mask"
 msgstr "Masquer"
 
 
-msgid "MetaBall"
-msgstr "Méta-balle"
+msgid "Metaball"
+msgstr "Métaballe"
 
 
-msgid "NodeTree"
+msgid "Node Tree"
 msgstr "Arborescence de nœuds"
 
 
@@ -15511,10 +15567,6 @@ msgstr "Longueur 2D curviligne minimale pour la sélection des chaînes"
 
 msgid "If true, chains of feature edges are split at material boundaries"
 msgstr "Si vrai, les chaînes d’arêtes “fonctionnelles” sont divisées aux limites des matériaux (?)"
-
-
-msgid "Node Tree"
-msgstr "Arborescence de nœuds"
 
 
 msgid "Node tree for node-based shaders"
@@ -27151,10 +27203,6 @@ msgstr "Prévisualisations de données"
 
 msgid "Help"
 msgstr "Aide"
-
-
-msgid "Metaball"
-msgstr "Métaballe"
 
 
 msgid "OpenGL Render Options"
@@ -39500,6 +39548,10 @@ msgid "Error distance threshold (in object units)"
 msgstr "Limite d’erreur de distance (en unité objet)"
 
 
+msgid "Fit Method"
+msgstr "Méthode d’ajustage"
+
+
 msgid "Stroke"
 msgstr "Trait"
 
@@ -41337,10 +41389,6 @@ msgstr "Dépaqueter tous dans des fichiers"
 
 msgid "Unpack all files packed into this .blend to external ones"
 msgstr "Dépaqueter tous les fichiers empaquetés dans ce .blend vers des fichiers externes"
-
-
-msgid "Method"
-msgstr "Méthode"
 
 
 msgid "How to unpack"
@@ -43414,10 +43462,6 @@ msgstr "Tronquer taille (?)"
 
 msgid "Clamp bounds under this value (zero to disable)"
 msgstr "Limiter les limites en-deçà de cette valeur (zéro pour désactiver)"
-
-
-msgid "Split"
-msgstr "Division"
 
 
 msgid "Split geometry, omits unused verts"
@@ -56992,8 +57036,8 @@ msgid "Add Background Image (Ctrl for Empty Object)"
 msgstr "Ajouter image d’arrière-plan (ctrl pour un objet Empty)"
 
 
-msgid "Add a new background image"
-msgstr "Ajouter une nouvelle image d’arrière-plan"
+msgid "Add a new background image (Ctrl for Empty Object)"
+msgstr "Ajouter une nouvelle image d’arrière-plan (Ctrl pour un objet Empty)"
 
 
 msgctxt "Operator"
@@ -62136,14 +62180,6 @@ msgid "Combine distance and equi-angular sampling for volumes where neither meth
 msgstr "Combiner l’échantillonnage de distance et équi-angulaire pour les volumes pour lesquels aucune des deux méthodes n’est idéale"
 
 
-msgid "Dicing Rate"
-msgstr "Taux de découpage en dés"
-
-
-msgid "Multiplier for scene dicing rate"
-msgstr "Multiplicateur pour le taux de découpage en dés"
-
-
 msgid "Displacement Method"
 msgstr "Méthode de déplacement"
 
@@ -62168,24 +62204,12 @@ msgid "Combination of displacement and bump mapping"
 msgstr "Combinaison de déplacement et de bump mapping"
 
 
-msgid "Type of subdivision to use"
-msgstr "Type de subdivision à utiliser"
+msgid "Dicing Rate"
+msgstr "Taux de découpage en dés"
 
 
-msgid "No subdivision"
-msgstr "Pas de subdivision"
-
-
-msgid "Use linear subdivision"
-msgstr "Utiliser subdivision linéaire"
-
-
-msgid "Catmull–Clark"
-msgstr "Catmull-Clark"
-
-
-msgid "Use Catmull-Clark subdivision"
-msgstr "Utiliser la subdivision de Catmull-Clark"
+msgid "Multiplier for scene dicing rate"
+msgstr "Multiplicateur pour le taux de découpage en dés"
 
 
 msgid "Motion Steps"
@@ -62194,6 +62218,14 @@ msgstr "Étapes de mouvement"
 
 msgid "Control accuracy of deformation motion blur, more steps gives more memory usage (actual number of steps is 2^(steps - 1))"
 msgstr "Contrôler la précision du flou cinétique de déformation, plus d’étapes consomme plus de mémoire (nombre d’étapes réel : 2^(étapes - 1))"
+
+
+msgid "Use Adaptive Subdivision"
+msgstr "Utiliser subdivision adaptative"
+
+
+msgid "Use adaptive render time subdivision"
+msgstr "Utiliser la subdivision adaptative au rendu"
 
 
 msgid "Use Camera Cull"
@@ -77984,10 +78016,6 @@ msgid "Displacement:"
 msgstr "Déplacement :"
 
 
-msgid "Subdivision:"
-msgstr "Subdivision :"
-
-
 msgid "Deformation"
 msgstr "Déformation"
 
@@ -79428,10 +79456,6 @@ msgid "Material Index Offset:"
 msgstr "Décalage de l’indice de matériau :"
 
 
-msgid "Subdivisions:"
-msgstr "Subdivisions :"
-
-
 msgid "Image:"
 msgstr "Image :"
 
@@ -79597,6 +79621,14 @@ msgstr "Compilé sans le modificateur Océan"
 
 msgid "Cull Faces:"
 msgstr "Culling des faces :"
+
+
+msgid "Preview:"
+msgstr "Prévisualisation :"
+
+
+msgid "Subdivisions:"
+msgstr "Subdivisions :"
 
 
 msgid "Vertex Group Mask:"
@@ -80623,12 +80655,28 @@ msgid "Presets:"
 msgstr "Pré-réglages :"
 
 
+msgid "Speed:"
+msgstr "Vitesse :"
+
+
+msgid "Multiplier"
+msgstr "Multiplicateur"
+
+
 msgid "Structural"
 msgstr "Structurelle"
 
 
 msgid "Air"
 msgstr "Air"
+
+
+msgid "Pinning:"
+msgstr "Épinglage :"
+
+
+msgid "Dynamic Mesh"
+msgstr "Mesh dynamique"
 
 
 msgid "Repel"
@@ -87190,8 +87238,8 @@ msgid "Can't overwrite export file"
 msgstr "Impossible d’écraser le fichier d’export"
 
 
-msgid "Export file is empty"
-msgstr "Le fichier à exporter est vide"
+msgid "No objects selected -- Created empty export file"
+msgstr "Pas d’objet sélectionné, fichier d’export vide créé"
 
 
 msgid "Error during export (see Console)"
@@ -89776,10 +89824,6 @@ msgid "Bokeh Type:"
 msgstr "Type de bokeh :"
 
 
-msgid "Speed:"
-msgstr "Vitesse :"
-
-
 msgid "Inner Edge:"
 msgstr "Bord interne :"
 
@@ -89830,6 +89874,10 @@ msgstr "Tons moyens"
 
 msgid "Undefined Socket Type"
 msgstr "Type de prise indéfini"
+
+
+msgid "NodeTree"
+msgstr "Arborescence de nœuds"
 
 
 msgid "Could not add an image node"
@@ -92553,6 +92601,14 @@ msgid "Lib Reload: Replacing all references to old datablock '%s' by reloaded on
 msgstr "Rechargement de bibliothèque : remplacer toutes les références à l’ancien bloc de données “%s” par celui rechargé a échoué, l’ancien (%d utilisateurs restants) a été conservé et renommé en “%s”"
 
 
+msgid "'%s' is not a valid library filepath"
+msgstr "“%s” n’est pas un chemin de bibliothèque valide"
+
+
+msgid "Trying to reload library '%s' from invalid path '%s'"
+msgstr "Essai de rechargement de la bibliothèque “%s” depuis le chemin non-valide “%s”"
+
+
 msgid "Trying to reload or relocate library '%s' to invalid path '%s'"
 msgstr "Essai de rechargement ou de relocalisation de la bibliothèque “%s” vers le chemin non-valide “%s”"
 
@@ -92748,10 +92804,6 @@ msgstr "Import-export"
 
 msgid "MakeHuman"
 msgstr "MakeHuman"
-
-
-msgid "Pie Menu"
-msgstr "Menu camembert"
 
 
 msgid "Rigging"
