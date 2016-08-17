@@ -1,9 +1,9 @@
 
 msgid ""
 msgstr ""
-"Project-Id-Version: Blender 2.77 (sub 1) (b'8e015e3')\n"
+"Project-Id-Version: Blender 2.77 (sub 3) (b'c783e65')\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-08-01 20:42:33\n"
+"POT-Creation-Date: 2016-08-17 21:47:13\n"
 "PO-Revision-Date: \n"
 "Last-Translator: Gabriel Gazzan <gabcorreo@gmail.com>\n"
 "Language-Team: Español <gabcorreo@gmail.com>\n"
@@ -2034,6 +2034,10 @@ msgstr "Ruta de datos persistentes"
 
 msgid "The name of a json file storing those settings (unfortunately, Blender's system does not work here)"
 msgstr "El nombre de un archivo json que almacena estas opciones (desafortunadamente, el sistema de Blender no funciona aquí)"
+
+
+msgid "Path"
+msgstr "Trayectoria"
 
 
 msgid "Animation Data"
@@ -10545,10 +10549,6 @@ msgid "Whether this path is currently reachable"
 msgstr "Indica si esta ruta está actualmente accesible"
 
 
-msgid "Path"
-msgstr "Trayectoria"
-
-
 msgid "Save"
 msgstr "Guardar"
 
@@ -12149,6 +12149,34 @@ msgid "Number of samples"
 msgstr "Cantidad de muestras"
 
 
+msgid "Angle"
+msgstr "Ángulo"
+
+
+msgid "Jitter"
+msgstr "Alteración"
+
+
+msgid "Thickness"
+msgstr "Grosor"
+
+
+msgid "Thickness of strokes (in pixels)"
+msgstr "Grosor de trazos (en píxeles)"
+
+
+msgid "Amount of smoothing to apply to newly created strokes, to reduce jitter/noise"
+msgstr "Cantidad de suavizado a aplicar a los nuevos trazos creados, para reducir su vibración/ruido)"
+
+
+msgid "Subdivision Steps"
+msgstr "Intervalos de subdivisión"
+
+
+msgid "Number of times to subdivide newly created strokes, for less jagged strokes"
+msgstr "Cantidad de veces a subdividir los nuevos trazos creados, para reducir sus vibraciones"
+
+
 msgid "Grease Pencil Frame"
 msgstr "Fotograma lápiz de cera"
 
@@ -12209,36 +12237,12 @@ msgid "Base color for ghosts after the active frame"
 msgstr "Color base para los fantasmas posteriores al fotograma actual"
 
 
-msgid "Layer Opacity"
-msgstr "Opacidad de la capa"
-
-
 msgid "Before Color"
 msgstr "Color anteriores"
 
 
 msgid "Base color for ghosts before the active frame"
 msgstr "Color base para los fantasmas anteriores al fotograma actual"
-
-
-msgid "Color for all strokes in this layer"
-msgstr "Color para todos los trazos de esta capa"
-
-
-msgid "Fill Opacity"
-msgstr "Opacidad de relleno"
-
-
-msgid "Opacity for filling region bounded by each stroke"
-msgstr "Opacidad de la región comprendida por cada trazo"
-
-
-msgid "Fill Color"
-msgstr "Color de relleno"
-
-
-msgid "Color for filling region bounded by each stroke"
-msgstr "Color de relleno de la región comprendida por cada trazo"
 
 
 msgid "Sketches for this layer on different frames"
@@ -12269,30 +12273,6 @@ msgid "Layer name"
 msgstr "Nombre de la capa"
 
 
-msgid "Is Fill Visible"
-msgstr "Es visible el relleno"
-
-
-msgid "True when opacity of fill is set high enough to be visible"
-msgstr "Verdadero cuando la opacidad esté definida lo suficientemente alta como para que el relleno sea visible"
-
-
-msgid "Is Stroke Visible"
-msgstr "Es visible el trazo"
-
-
-msgid "True when opacity of stroke is set high enough to be visible"
-msgstr "Verdadero cuando la opacidad esté definida lo suficientemente alta como para que el trazo sea visible"
-
-
-msgid "Thickness"
-msgstr "Grosor"
-
-
-msgid "Thickness of strokes (in pixels)"
-msgstr "Grosor de trazos (en píxeles)"
-
-
 msgid "Locked"
 msgstr "Bloqueado"
 
@@ -12309,20 +12289,24 @@ msgid "Lock current frame displayed by layer"
 msgstr "Bloquear el fotograma actual mostrado por la capa"
 
 
-msgid "Amount of smoothing to apply to newly created strokes, to reduce jitter/noise"
-msgstr "Cantidad de suavizado a aplicar a los nuevos trazos creados, para reducir su vibración/ruido)"
+msgid "Layer Opacity"
+msgstr "Opacidad de la capa"
 
 
-msgid "Number of times to smooth newly created strokes (smoothing strength is halved on each successive round of smoothing)"
-msgstr "Cantidad de veces a suavizar los nuevos trazos creados (la intensidad del suavizado es reducida a la mitad con cada nueva instancia de suavizado)"
+msgid "Parent Bone"
+msgstr "Hueso superior"
 
 
-msgid "Subdivision Steps"
-msgstr "Intervalos de subdivisión"
+msgid "Name of parent bone in case of a bone parenting relation"
+msgstr "Nombre del hueso superior, en una relación jerárquica de huesos"
 
 
-msgid "Number of times to subdivide newly created strokes, for less jagged strokes"
-msgstr "Cantidad de veces a subdividir los nuevos trazos creados, para reducir sus vibraciones"
+msgid "Parent Type"
+msgstr "Tipo de relación jerárquica"
+
+
+msgid "Type of parent relation"
+msgstr "Tipo de relación jerárquica"
 
 
 msgid "Layer is selected for editing in the Dope Sheet"
@@ -12353,14 +12337,6 @@ msgid "Use custom colors for ghost frames"
 msgstr "Permite usar un color personalizado para los fotogramas fantasma"
 
 
-msgid "High Quality Fill"
-msgstr "Relleno de alta calidad"
-
-
-msgid "Fill strokes using high quality method to avoid glitches (slower fps during animation playback)"
-msgstr "Rellenar los trazos usando un método de alta calidad para evitar defectos (velocidad más lenta durante la reproducción)"
-
-
 msgid "Ghost frames on either side of frame"
 msgstr "Fotogramas fantasma a cada lado del fotograma"
 
@@ -12371,6 +12347,42 @@ msgstr "Trazos volumétricos"
 
 msgid "Draw strokes as a series of circular blobs, resulting in a volumetric effect"
 msgstr "Dibuja los trazos como una serie de glóbulos circulares, logrando un efecto volumétrico"
+
+
+msgid "Fill Opacity"
+msgstr "Opacidad de relleno"
+
+
+msgid "Opacity for filling region bounded by each stroke"
+msgstr "Opacidad de la región comprendida por cada trazo"
+
+
+msgid "Fill Color"
+msgstr "Color de relleno"
+
+
+msgid "Color for filling region bounded by each stroke"
+msgstr "Color de relleno de la región comprendida por cada trazo"
+
+
+msgid "Is Fill Visible"
+msgstr "Es visible el relleno"
+
+
+msgid "True when opacity of fill is set high enough to be visible"
+msgstr "Verdadero cuando la opacidad esté definida lo suficientemente alta como para que el relleno sea visible"
+
+
+msgid "Is Stroke Visible"
+msgstr "Es visible el trazo"
+
+
+msgid "True when opacity of stroke is set high enough to be visible"
+msgstr "Verdadero cuando la opacidad esté definida lo suficientemente alta como para que el trazo sea visible"
+
+
+msgid "High Quality Fill"
+msgstr "Relleno de alta calidad"
 
 
 msgid "GPencil Sculpt Brush"
@@ -12509,6 +12521,10 @@ msgid "Freehand curve defining part of a sketch"
 msgstr "Curva a mano alzada que define parte de un dibujo"
 
 
+msgid "Palette Color"
+msgstr "Color de la paleta"
+
+
 msgid "Draw Mode"
 msgstr "Modo de dibujo"
 
@@ -12551,6 +12567,10 @@ msgstr "Puntos del trazo"
 
 msgid "Stroke is selected for viewport editing"
 msgstr "El trazo se encuentra seleccionado para su edición en la vista"
+
+
+msgid "Triangles"
+msgstr "Triángulos"
 
 
 msgid "Grease Pencil Stroke Point"
@@ -13905,10 +13925,6 @@ msgid "Fill"
 msgstr "Rellenar"
 
 
-msgid "Jitter"
-msgstr "Alteración"
-
-
 msgid "Jitter the position of the brush while painting"
 msgstr "Altera la posición del pincel mientras se pinta"
 
@@ -14443,6 +14459,22 @@ msgstr "Desenfoca el color usando los valores cercanos"
 
 msgid "Vertex weight when brush is applied"
 msgstr "Influencia del vértice al aplicar el pincel"
+
+
+msgid "Path to external displacements file"
+msgstr "Ruta al archivo externo de desplazamientos"
+
+
+msgid "Forward"
+msgstr "Adelante"
+
+
+msgid "Sequence"
+msgstr "Secuencias"
+
+
+msgid "Up"
+msgstr "Arriba"
 
 
 msgid "Camera data-block for storing camera settings"
@@ -19243,22 +19275,6 @@ msgid "Motion Path for this element"
 msgstr "Trayectoria de este elemento"
 
 
-msgid "Parent Bone"
-msgstr "Hueso superior"
-
-
-msgid "Name of parent bone in case of a bone parenting relation"
-msgstr "Nombre del hueso superior, en una relación jerárquica de huesos"
-
-
-msgid "Parent Type"
-msgstr "Tipo de relación jerárquica"
-
-
-msgid "Type of parent relation"
-msgstr "Tipo de relación jerárquica"
-
-
 msgid "The object is parented to an object"
 msgstr "El objeto está subordinado a un objeto"
 
@@ -19693,10 +19709,6 @@ msgstr "Cómo animar las texturas de los carteles"
 
 msgid "Age"
 msgstr "Edad"
-
-
-msgid "Angle"
-msgstr "Ángulo"
 
 
 msgid "Billboard Object"
@@ -26905,16 +26917,16 @@ msgid "Select Grouped"
 msgstr "Seleccionar agrupado"
 
 
-msgid "Track Color Specials"
-msgstr "Especiales de color de marcadores"
-
-
 msgid "Predefined track color"
 msgstr "Color predefinido de marcador"
 
 
 msgid "Color Presets"
 msgstr "Ajustes de color"
+
+
+msgid "Track Color Specials"
+msgstr "Especiales de color de marcadores"
 
 
 msgid "Transform"
@@ -29673,14 +29685,6 @@ msgid "Influence of the deformation"
 msgstr "Influencia de la deformación"
 
 
-msgid "Path to external displacements file"
-msgstr "Ruta al archivo externo de desplazamientos"
-
-
-msgid "Forward"
-msgstr "Adelante"
-
-
 msgid "Frame Scale"
 msgstr "Escala de fotogramas"
 
@@ -29727,10 +29731,6 @@ msgstr "Controlar la reproducción usando tiempo en segundos"
 
 msgid "Control playback using a value between [0, 1]"
 msgstr "Controlar la reproducción usando un valor entre [0, 1]"
-
-
-msgid "Up"
-msgstr "Arriba"
 
 
 msgid "MeshDeform Modifier"
@@ -32332,20 +32332,12 @@ msgid "Movie tracking stabilization data"
 msgstr "Datos de estabilización del rastreo de la película"
 
 
-msgid "Match-moving stabilization data for tracking"
-msgstr "Datos de estabilización de movimiento del rastreo"
-
-
 msgid "Active Track Index"
 msgstr "Índice del rastro activo"
 
 
-msgid "Index of active track in stabilization tracks list"
-msgstr "Índice del rastro activo en la lista de rastros de estabilización"
-
-
-msgid "Method to use to filter stabilization"
-msgstr "Método a usar para filtrar la estabilización"
+msgid "Interpolate"
+msgstr "Interpolar"
 
 
 msgid "Nearest"
@@ -32384,24 +32376,12 @@ msgid "Influence of stabilization algorithm on footage scale"
 msgstr "Influencia del algoritmo de estabilización sobre la escala de la imagen"
 
 
-msgid "Rotation Track"
-msgstr "Rastrear rotación"
-
-
-msgid "Track used to compensate rotation"
-msgstr "Marcador usado para compensar la rotación"
-
-
 msgid "Maximal Scale"
 msgstr "Escala máxima"
 
 
 msgid "Limit the amount of automatic scaling"
 msgstr "Limita la cantidad de escalado automático"
-
-
-msgid "Collection of tracks used for stabilization"
-msgstr "Colección de rastros usados para la estabilización"
 
 
 msgid "Use 2D stabilization"
@@ -32422,10 +32402,6 @@ msgstr "Escala automáticamente la imagen para cubrir áreas no rellenas durante
 
 msgid "Stabilize Rotation"
 msgstr "Estabilizar rotación"
-
-
-msgid "Stabilize horizon line on the shot"
-msgstr "Estabilizar línea de horizonte en la toma"
 
 
 msgid "Movie tracking track data"
@@ -34329,6 +34305,10 @@ msgid "Stabilize 2D"
 msgstr "Estabilización 2D"
 
 
+msgid "Method to use to filter stabilization"
+msgstr "Método a usar para filtrar la estabilización"
+
+
 msgid "Invert stabilization to re-introduce motion to the frame"
 msgstr "Permite invertir la estabilización para reintroducir el movimiento original en la película"
 
@@ -36165,10 +36145,6 @@ msgid "Properties"
 msgstr "Propiedades"
 
 
-msgid "Toggle display properties panel"
-msgstr "Alterna el panel de propiedades de visualización"
-
-
 msgctxt "Operator"
 msgid "Push Down Action"
 msgstr "Empujar acción abajo"
@@ -37848,6 +37824,14 @@ msgid "Display button panel toolbox"
 msgstr "Muestra el panel de botones de la barra de herramientas"
 
 
+msgid "Check Existing"
+msgstr "Comprobar existencia"
+
+
+msgid "Check and warn on overwriting existing files"
+msgstr "Comprobar y advertir antes de sobrescribir archivos existentes"
+
+
 msgctxt "Operator"
 msgid "Add Camera Preset"
 msgstr "Agregar ajuste de cámara"
@@ -38417,10 +38401,6 @@ msgid "Prefetch frames from disk for faster playback/tracking"
 msgstr "Precarga fotogramas desde el disco para una reproducción o rastreo más rápidos"
 
 
-msgid "Toggle clip properties panel"
-msgstr "Alternar el panel de propiedades de clip"
-
-
 msgctxt "Operator"
 msgid "Rebuild Proxy and Timecode Indices"
 msgstr "Reconstruir reemplazo e índices de código de tiempo"
@@ -38716,35 +38696,14 @@ msgid "Add Stabilization Tracks"
 msgstr "Agregar rastros de estabilización"
 
 
-msgid "Add selected tracks to 2D stabilization tool"
-msgstr "Agrega los marcadores seleccionados a la herramienta de estabilización 2D"
-
-
 msgctxt "Operator"
 msgid "Remove Stabilization Track"
 msgstr "Remover rastro de estabilización"
 
 
-msgid "Remove selected track from stabilization"
-msgstr "Elimina el rastro seleccionado de la estabilización"
-
-
 msgctxt "Operator"
 msgid "Select Stabilization Tracks"
 msgstr "Seleccionar rastros de estabilización"
-
-
-msgid "Select tracks which are used for stabilization"
-msgstr "Selecciona los rastros usados para la estabilización"
-
-
-msgctxt "Operator"
-msgid "Set Rotation Track"
-msgstr "Definir rastro de rotación"
-
-
-msgid "Use active track to compensate rotation when doing 2D stabilization"
-msgstr "Usa el rastro activo para compensar la rotación, al realizar una estabilización 2D"
 
 
 msgctxt "Operator"
@@ -40036,14 +39995,6 @@ msgstr "Exportar cámara y marcadores"
 
 msgid "Save a python script which re-creates cameras and markers elsewhere"
 msgstr "Guarda un script Python que recrea las cámaras y marcadores en otro lado"
-
-
-msgid "Check Existing"
-msgstr "Comprobar existencia"
-
-
-msgid "Check and warn on overwriting existing files"
-msgstr "Comprobar y advertir antes de sobrescribir archivos existentes"
 
 
 msgid "Filepath used for exporting the file"
@@ -41559,6 +41510,11 @@ msgstr "Permite el ingreso a un mini 'modo escultura', de lo contrario se finali
 
 
 msgctxt "Operator"
+msgid "Remove Brush"
+msgstr "Remover pincel"
+
+
+msgctxt "Operator"
 msgid "Convert Grease Pencil"
 msgstr "Convertir lápiz de cera"
 
@@ -41716,11 +41672,6 @@ msgstr "Lápiz de cera Desvincular"
 
 msgid "Unlink active Grease Pencil datablock"
 msgstr "Desvincula el bloque de datos del lápiz de cera activo"
-
-
-msgctxt "Operator"
-msgid "Delete..."
-msgstr "Borrar..."
 
 
 msgid "Delete selected Grease Pencil strokes, vertices, or frames"
@@ -41925,8 +41876,8 @@ msgid "Paste Strokes"
 msgstr "Pegar trazos"
 
 
-msgid "Paste previously copied strokes into active layer"
-msgstr "Pega los trazos previamente copiados en la capa activa"
+msgid "Merge"
+msgstr "Fusionar"
 
 
 msgid "Show all Grease Pencil layers"
@@ -42039,6 +41990,11 @@ msgstr "Permite seleccionar todos los puntos en los mismos trazos como puntos ya
 
 msgid "Grow sets of selected Grease Pencil points"
 msgstr "Permite expandir conjuntos de puntos de lápiz de cera seleccionados"
+
+
+msgctxt "Operator"
+msgid "Hide Selection"
+msgstr "Ocultar selección"
 
 
 msgctxt "Operator"
@@ -44317,10 +44273,6 @@ msgid "Loop Pairs"
 msgstr "Pares de bucles"
 
 
-msgid "Merge"
-msgstr "Fusionar"
-
-
 msgid "Merge rather than creating faces"
 msgstr "Fusiionar en vez de crear caras"
 
@@ -44955,11 +44907,6 @@ msgid "Flip the direction of selected faces' normals (and of their vertices)"
 msgstr "Invierte la dirección de las normales de las caras seleccionadas (y de sus vértices)"
 
 
-msgctxt "Operator"
-msgid "Hide Selection"
-msgstr "Ocultar selección"
-
-
 msgid "Hide (un)selected vertices, edges or faces"
 msgstr "Oculta vértices, bordes o caras (de)seleccionados"
 
@@ -44987,10 +44934,6 @@ msgstr "Inserta la región a lo largo de los bordes existentes"
 
 msgid "Individual Face Inset"
 msgstr "Insertar caras individuales"
-
-
-msgid "Interpolate"
-msgstr "Interpolar"
 
 
 msgid "Blend face data across the inset"
@@ -47632,10 +47575,6 @@ msgstr "Alternar previsualización nodos"
 
 msgid "Toggle preview display for selected nodes"
 msgstr "Alterna la previsualización de los nodos seleccionados"
-
-
-msgid "Toggles the properties panel display"
-msgstr "Alterna la visualización del panel de propiedades"
 
 
 msgctxt "Operator"
@@ -53873,10 +53812,6 @@ msgid "Paste"
 msgstr "Pegar"
 
 
-msgid "Open sequencer properties panel"
-msgstr "Abre el panel de opciones del secuenciador"
-
-
 msgctxt "Operator"
 msgid "Reassign Inputs"
 msgstr "Reasignar entradas"
@@ -54831,10 +54766,6 @@ msgstr "Alternar sobreescritura al escribir"
 
 msgid "Paste text selected elsewhere rather than copied (X11 only)"
 msgstr "Pegar texto seleccionado en otro lado, no copiado (solo para sistemas X11)"
-
-
-msgid "Toggle text properties panel"
-msgstr "Alterna el panel de propiedades de texto"
 
 
 msgctxt "Operator"
@@ -59353,10 +59284,6 @@ msgid "Keep applying paint effect while holding mouse"
 msgstr "Sigue aplicando pintura mientras se presiona el ratón"
 
 
-msgid "Palette Color"
-msgstr "Color de la paleta"
-
-
 msgid "Bone Constraints"
 msgstr "Restricciones de huesos"
 
@@ -61552,10 +61479,6 @@ msgid "Type of primitive used for hair rendering"
 msgstr "Tipo de primitiva usada para el procesamiento del pelo"
 
 
-msgid "Triangles"
-msgstr "Triángulos"
-
-
 msgid "Create triangle geometry around strands"
 msgstr "Crea geometría triangular alrededor de las hebras"
 
@@ -61684,6 +61607,30 @@ msgid "Use multiple importance sampling for the lamp, reduces noise for area lam
 msgstr "Usa un muestreo de importancia múltiple para la lámpara, reduce el ruido en lámparas de área y materiales reflectivos definidos"
 
 
+msgid "Displacement Method"
+msgstr "Método de desplazamiento"
+
+
+msgid "Method to use for the displacement"
+msgstr "Método a usar para el desplazamiento"
+
+
+msgid "Bump mapping to simulate the appearance of displacement"
+msgstr "Mapeo de relieve para simular la apariencia de desplazamiento"
+
+
+msgid "True"
+msgstr "Real"
+
+
+msgid "Use true displacement only, requires fine subdivision"
+msgstr "Usar solo desplazamiento real, requiere una subdivisión fina"
+
+
+msgid "Combination of displacement and bump mapping"
+msgstr "Combinación de desplazamiento y mapeo de relieve"
+
+
 msgid "Homogeneous Volume"
 msgstr "Volumen homogéneo"
 
@@ -61746,30 +61693,6 @@ msgstr "Importancia múltiple"
 
 msgid "Combine distance and equi-angular sampling for volumes where neither method is ideal"
 msgstr "Combinar el muestreo por distancia y el equiangular, para volúmenes donde ninguno de los dos es el ideal"
-
-
-msgid "Displacement Method"
-msgstr "Método de desplazamiento"
-
-
-msgid "Method to use for the displacement"
-msgstr "Método a usar para el desplazamiento"
-
-
-msgid "Bump mapping to simulate the appearance of displacement"
-msgstr "Mapeo de relieve para simular la apariencia de desplazamiento"
-
-
-msgid "True"
-msgstr "Real"
-
-
-msgid "Use true displacement only, requires fine subdivision"
-msgstr "Usar solo desplazamiento real, requiere una subdivisión fina"
-
-
-msgid "Combination of displacement and bump mapping"
-msgstr "Combinación de desplazamiento y mapeo de relieve"
 
 
 msgid "Dicing Rate"
@@ -70237,10 +70160,6 @@ msgid "Display groups and their data-blocks"
 msgstr "Muestra los grupos y sus bloques de datos"
 
 
-msgid "Sequence"
-msgstr "Secuencias"
-
-
 msgid "Display sequence data-blocks"
 msgstr "Muestra los bloques de datos de secuencias"
 
@@ -77536,10 +77455,6 @@ msgid "Aperture:"
 msgstr "Apertura:"
 
 
-msgid "Displacement:"
-msgstr "Desplazamiento"
-
-
 msgid "Deformation"
 msgstr "Deformación"
 
@@ -77674,6 +77589,10 @@ msgstr "Portal"
 
 msgid "Not supported, interpreted as sun lamp"
 msgstr "No soportado, interpretado como una lámpara de tipo Sol"
+
+
+msgid "Displacement:"
+msgstr "Desplazamiento"
 
 
 msgid "Swizzle:"
@@ -79488,6 +79407,11 @@ msgid "Edit:"
 msgstr "Editar:"
 
 
+msgctxt "Operator"
+msgid "Flip Direction"
+msgstr "Invertir dirección"
+
+
 msgid "Active Layer:      "
 msgstr "Capa activa:"
 
@@ -79524,10 +79448,6 @@ msgstr "Mostrar todo"
 
 msgid "Stroke:"
 msgstr "Trazo:"
-
-
-msgid "New Stroke Quality:"
-msgstr "Calidad nuevos trazos:"
 
 
 msgid "Enable Editing"
@@ -79628,6 +79548,11 @@ msgstr "Salir del modo Edición"
 msgctxt "Operator"
 msgid "Select Inverse"
 msgstr "Invertir selección"
+
+
+msgctxt "Operator"
+msgid "Delete..."
+msgstr "Borrar..."
 
 
 msgctxt "Operator"
@@ -80346,11 +80271,6 @@ msgstr "Tipo Desplazamiento"
 
 msgid "Color Layer"
 msgstr "Capa de color"
-
-
-msgctxt "Operator"
-msgid "Remove Brush"
-msgstr "Remover pincel"
 
 
 msgid "Wave Clamp"
@@ -84082,11 +84002,6 @@ msgid "Recalculate"
 msgstr "Recalcular"
 
 
-msgctxt "Operator"
-msgid "Flip Direction"
-msgstr "Invertir dirección"
-
-
 msgid "UV Mapping:"
 msgstr "Mapeo UV:"
 
@@ -85928,10 +85843,6 @@ msgid "Grease Pencil Line Session: Hold and drag LMB to draw | ESC/Enter to end 
 msgstr "Lápiz de cera - Sesión de línea: Arrastrar con botón Izq para dibujar | Esc/Intro para finalizar (o clic fuera de este área)"
 
 
-msgid "Grease Pencil Freehand Session: Hold and drag LMB to draw | ESC/Enter to end  (or click outside this area)"
-msgstr "Lápiz de cera - Sesión a mano alzada: Arrastrar con botón Izq para dibujar | Esc/Intro para finalizar (o clic fuera de este área)"
-
-
 msgid "Grease Pencil Poly Session: LMB click to place next stroke vertex | ESC/Enter to end  (or click outside this area)"
 msgstr "Lápiz de cera - Sesión de línea poligonal: Clic con botón Izq para ubicar el siguiente punto del trazo | Esc/Intro para finalizar (o clic fuera de este área)"
 
@@ -86651,6 +86562,10 @@ msgid "%d items"
 msgstr "%d elementos"
 
 
+msgid "No filename given"
+msgstr "No se proporcionó un nombre de archivo"
+
+
 msgid "Export Data Options:"
 msgstr "Opciones de exportación de datos:"
 
@@ -86673,10 +86588,6 @@ msgstr "Tipo de transformación"
 
 msgid "Import Data Options:"
 msgstr "Opciones de importación de datos:"
-
-
-msgid "No filename given"
-msgstr "No se proporcionó un nombre de archivo"
 
 
 msgid "Can't create export file"
@@ -90696,6 +90607,10 @@ msgid "Frame already exists on this frame number %d"
 msgstr "Ya existe un fotograma en este número de fotograma %d"
 
 
+msgid "Palette '%s' does not contain color given"
+msgstr "La paleta '%s' no contiene el color indicado"
+
+
 msgid "Object '%s' already in group '%s'"
 msgstr "El objeto '%s' ya está en el grupo '%s'"
 
@@ -90995,10 +90910,6 @@ msgstr "El objeto '%s' no contiene datos de malla a ser usados para buscar el pu
 
 msgid "Object '%s' could not create internal data for finding nearest point"
 msgstr "El objeto '%s' no pudo crear datos internos para buscar el punto más cercano"
-
-
-msgid "Palette '%s' does not contain color given"
-msgstr "La paleta '%s' no contiene el color indicado"
 
 
 msgid "Mesh has no UV data"
@@ -92157,6 +92068,10 @@ msgstr "Importación-Exportación"
 
 msgid "MakeHuman"
 msgstr "MakeHuman"
+
+
+msgid "Pie Menu"
+msgstr "Menú circular"
 
 
 msgid "Rigging"

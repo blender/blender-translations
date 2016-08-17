@@ -1,9 +1,9 @@
 
 msgid ""
 msgstr ""
-"Project-Id-Version: Blender 2.77 (sub 1) (b'8e015e3')\n"
+"Project-Id-Version: Blender 2.77 (sub 3) (b'c783e65')\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-08-01 20:42:33\n"
+"POT-Creation-Date: 2016-08-17 21:47:13\n"
 "PO-Revision-Date: 2016-08-01 09:38+0000\n"
 "Last-Translator: lxlalexlxl <pilipchukap@rambler.ru>\n"
 "Language-Team: Ukrainian (Ukraine) (http://www.transifex.com/lxlalexlxl/blender/language/uk_UA/)\n"
@@ -2034,6 +2034,10 @@ msgstr "Постійні дані"
 
 msgid "The name of a json file storing those settings (unfortunately, Blender's system does not work here)"
 msgstr "Назва файлу json для зберігання цих налаштувань (на жаль, система Blender тут не діє)"
+
+
+msgid "Path"
+msgstr "Шлях"
 
 
 msgid "Animation Data"
@@ -10561,10 +10565,6 @@ msgid "Whether this path is currently reachable"
 msgstr "Чи доступний зараз цей шлях"
 
 
-msgid "Path"
-msgstr "Шлях"
-
-
 msgid "Save"
 msgstr "Зберегти"
 
@@ -12173,6 +12173,34 @@ msgid "Number of samples"
 msgstr "Кількість вибірок"
 
 
+msgid "Angle"
+msgstr "Кут"
+
+
+msgid "Jitter"
+msgstr "Тремтіння"
+
+
+msgid "Thickness"
+msgstr "Товщина"
+
+
+msgid "Thickness of strokes (in pixels)"
+msgstr "Товщина штрихів (у пікселях)"
+
+
+msgid "Amount of smoothing to apply to newly created strokes, to reduce jitter/noise"
+msgstr "Величина згладжування, що застосовується до новостворених штрихів з метою скорочення тремтіння/шуму"
+
+
+msgid "Subdivision Steps"
+msgstr "Кроки поділу"
+
+
+msgid "Number of times to subdivide newly created strokes, for less jagged strokes"
+msgstr "Кількість поділів новоствореного штриха для зменшення нерівностей"
+
+
 msgid "Grease Pencil Frame"
 msgstr "Кадр нарисного олівця"
 
@@ -12233,36 +12261,12 @@ msgid "Base color for ghosts after the active frame"
 msgstr "Базовий колір для привидів після активного кадру"
 
 
-msgid "Layer Opacity"
-msgstr "Непрозорість шару"
-
-
 msgid "Before Color"
 msgstr "Колір Перед"
 
 
 msgid "Base color for ghosts before the active frame"
 msgstr "Базовий колір для привидів перед активним кадром"
-
-
-msgid "Color for all strokes in this layer"
-msgstr "Колір для всіх штрихів у цьому шарі"
-
-
-msgid "Fill Opacity"
-msgstr "Непрозорість заповнення"
-
-
-msgid "Opacity for filling region bounded by each stroke"
-msgstr "Непрозорість для заливки області, обведеної кожним штрихом"
-
-
-msgid "Fill Color"
-msgstr "Колір заливки"
-
-
-msgid "Color for filling region bounded by each stroke"
-msgstr "Колір для заливки області, обведененої кожним штрихом"
 
 
 msgid "Sketches for this layer on different frames"
@@ -12293,30 +12297,6 @@ msgid "Layer name"
 msgstr "Назва шару"
 
 
-msgid "Is Fill Visible"
-msgstr "Чи видима заливка"
-
-
-msgid "True when opacity of fill is set high enough to be visible"
-msgstr "Так, якщо непрозорість заливки досить висока, щоб вона була видимою"
-
-
-msgid "Is Stroke Visible"
-msgstr "Чи видимий штрих"
-
-
-msgid "True when opacity of stroke is set high enough to be visible"
-msgstr "Так, якщо непрозорість штриха досить висока, щоб він був видимим"
-
-
-msgid "Thickness"
-msgstr "Товщина"
-
-
-msgid "Thickness of strokes (in pixels)"
-msgstr "Товщина штрихів (у пікселях)"
-
-
 msgid "Locked"
 msgstr "Заблоковано"
 
@@ -12333,20 +12313,24 @@ msgid "Lock current frame displayed by layer"
 msgstr "Блокувати поточний кадр, відображений шаром"
 
 
-msgid "Amount of smoothing to apply to newly created strokes, to reduce jitter/noise"
-msgstr "Величина згладжування, що застосовується до новостворених штрихів з метою скорочення тремтіння/шуму"
+msgid "Layer Opacity"
+msgstr "Непрозорість шару"
 
 
-msgid "Number of times to smooth newly created strokes (smoothing strength is halved on each successive round of smoothing)"
-msgstr "Кількість разів згладження новостворених штрихів (сила згладження зменшується на половину з кожним успішним разом його здійснення)"
+msgid "Parent Bone"
+msgstr "Кістка-предок"
 
 
-msgid "Subdivision Steps"
-msgstr "Кроки поділу"
+msgid "Name of parent bone in case of a bone parenting relation"
+msgstr "Ім'я кістки-предка у разі зв'язку предок-нащадок"
 
 
-msgid "Number of times to subdivide newly created strokes, for less jagged strokes"
-msgstr "Кількість поділів новоствореного штриха для зменшення нерівностей"
+msgid "Parent Type"
+msgstr "Тип приріднення"
+
+
+msgid "Type of parent relation"
+msgstr "Тип відношення приріднення"
 
 
 msgid "Layer is selected for editing in the Dope Sheet"
@@ -12377,14 +12361,6 @@ msgid "Use custom colors for ghost frames"
 msgstr "Використати власні задані користувачем кольори для кадрів привидів"
 
 
-msgid "High Quality Fill"
-msgstr "Високоякісне заповнення"
-
-
-msgid "Fill strokes using high quality method to avoid glitches (slower fps during animation playback)"
-msgstr "Заповнювати штрихи високоякісним методом для запобігання збоям (нижча частота кадрів у ході відтворення анімації)"
-
-
 msgid "Ghost frames on either side of frame"
 msgstr "Кадри-привиди з обох сторін кадру"
 
@@ -12395,6 +12371,42 @@ msgstr "Об'ємні штрихи"
 
 msgid "Draw strokes as a series of circular blobs, resulting in a volumetric effect"
 msgstr "Прорисовувати штрихи Ескізного Олівця як бульбашки, створюючи об'ємний їх ефект"
+
+
+msgid "Fill Opacity"
+msgstr "Непрозорість заповнення"
+
+
+msgid "Opacity for filling region bounded by each stroke"
+msgstr "Непрозорість для заливки області, обведеної кожним штрихом"
+
+
+msgid "Fill Color"
+msgstr "Колір заливки"
+
+
+msgid "Color for filling region bounded by each stroke"
+msgstr "Колір для заливки області, обведененої кожним штрихом"
+
+
+msgid "Is Fill Visible"
+msgstr "Чи видима заливка"
+
+
+msgid "True when opacity of fill is set high enough to be visible"
+msgstr "Так, якщо непрозорість заливки досить висока, щоб вона була видимою"
+
+
+msgid "Is Stroke Visible"
+msgstr "Чи видимий штрих"
+
+
+msgid "True when opacity of stroke is set high enough to be visible"
+msgstr "Так, якщо непрозорість штриха досить висока, щоб він був видимим"
+
+
+msgid "High Quality Fill"
+msgstr "Високоякісне заповнення"
 
 
 msgid "GPencil Sculpt Brush"
@@ -12533,6 +12545,10 @@ msgid "Freehand curve defining part of a sketch"
 msgstr "Рисована крива, що визначає частину нарису"
 
 
+msgid "Palette Color"
+msgstr "Колір палітри"
+
+
 msgid "Draw Mode"
 msgstr "Режим малювання"
 
@@ -12575,6 +12591,10 @@ msgstr "Точки даних штриха"
 
 msgid "Stroke is selected for viewport editing"
 msgstr "Штрих вибрано для редагування в області вигляду"
+
+
+msgid "Triangles"
+msgstr "Трикутники"
 
 
 msgid "Grease Pencil Stroke Point"
@@ -13929,10 +13949,6 @@ msgid "Fill"
 msgstr "Заповнення"
 
 
-msgid "Jitter"
-msgstr "Тремтіння"
-
-
 msgid "Jitter the position of the brush while painting"
 msgstr "Тремтіння положення пензля при малюванні"
 
@@ -14467,6 +14483,22 @@ msgstr "Розмити колір навколишніми значеннями"
 
 msgid "Vertex weight when brush is applied"
 msgstr "Вагомість вершини після застосування пензля"
+
+
+msgid "Path to external displacements file"
+msgstr "Шлях до зовнішнього файлу зміщень"
+
+
+msgid "Forward"
+msgstr "Вперед"
+
+
+msgid "Sequence"
+msgstr "Послідовність"
+
+
+msgid "Up"
+msgstr "Вгору"
 
 
 msgid "Camera data-block for storing camera settings"
@@ -19303,22 +19335,6 @@ msgid "Motion Path for this element"
 msgstr "Траєкторія руху даного елемента"
 
 
-msgid "Parent Bone"
-msgstr "Кістка-предок"
-
-
-msgid "Name of parent bone in case of a bone parenting relation"
-msgstr "Ім'я кістки-предка у разі зв'язку предок-нащадок"
-
-
-msgid "Parent Type"
-msgstr "Тип приріднення"
-
-
-msgid "Type of parent relation"
-msgstr "Тип відношення приріднення"
-
-
 msgid "The object is parented to an object"
 msgstr "Об'єкт є нащадком об'єкта"
 
@@ -19753,10 +19769,6 @@ msgstr "Як анімувати текстури плакату"
 
 msgid "Age"
 msgstr "Вік"
-
-
-msgid "Angle"
-msgstr "Кут"
 
 
 msgid "Billboard Object"
@@ -27001,16 +27013,16 @@ msgid "Select Grouped"
 msgstr "Вибрати згруповане"
 
 
-msgid "Track Color Specials"
-msgstr "Параметри кольорів стежок"
-
-
 msgid "Predefined track color"
 msgstr "Напередзаданий колір стежки"
 
 
 msgid "Color Presets"
 msgstr "Передустановки кольору"
+
+
+msgid "Track Color Specials"
+msgstr "Параметри кольорів стежок"
 
 
 msgid "Transform"
@@ -29797,14 +29809,6 @@ msgid "Influence of the deformation"
 msgstr "Вплив деформації"
 
 
-msgid "Path to external displacements file"
-msgstr "Шлях до зовнішнього файлу зміщень"
-
-
-msgid "Forward"
-msgstr "Вперед"
-
-
 msgid "Frame Scale"
 msgstr "Масштаб кадру"
 
@@ -29851,10 +29855,6 @@ msgstr "Керувати відтворенням, вказуючи час у с
 
 msgid "Control playback using a value between [0, 1]"
 msgstr "Керувати відтворенням за допомогою значень з діапазону [0,1]"
-
-
-msgid "Up"
-msgstr "Вгору"
 
 
 msgid "MeshDeform Modifier"
@@ -32456,20 +32456,12 @@ msgid "Movie tracking stabilization data"
 msgstr "Дані стабілізації відстеження руху"
 
 
-msgid "Match-moving stabilization data for tracking"
-msgstr "Дані стабілізації відновлення траєкторії для відстеження"
-
-
 msgid "Active Track Index"
 msgstr "Індекс активної стежки"
 
 
-msgid "Index of active track in stabilization tracks list"
-msgstr "Індекс активної стежки у списку стежок стабілізації"
-
-
-msgid "Method to use to filter stabilization"
-msgstr "Метод, який використовується для стабілізації фільтру"
+msgid "Interpolate"
+msgstr "Інтерполювати"
 
 
 msgid "Nearest"
@@ -32508,24 +32500,12 @@ msgid "Influence of stabilization algorithm on footage scale"
 msgstr "Вплив алгоритму стабілізації на масштаб відео"
 
 
-msgid "Rotation Track"
-msgstr "Стежка оберту"
-
-
-msgid "Track used to compensate rotation"
-msgstr "Стежка, що використовується для компенсації обертання"
-
-
 msgid "Maximal Scale"
 msgstr "Максимальний масштаб"
 
 
 msgid "Limit the amount of automatic scaling"
 msgstr "Обмежити величину автоматичного масштабування"
-
-
-msgid "Collection of tracks used for stabilization"
-msgstr "Колекція стежок для стабілізації"
 
 
 msgid "Use 2D stabilization"
@@ -32546,10 +32526,6 @@ msgstr "При стабілізації автоматично масштабу�
 
 msgid "Stabilize Rotation"
 msgstr "Стабілізація оберту"
-
-
-msgid "Stabilize horizon line on the shot"
-msgstr "Стабілізувати лінію горизонту у зйомці"
 
 
 msgid "Movie tracking track data"
@@ -34453,6 +34429,10 @@ msgid "Stabilize 2D"
 msgstr "Стабілізація 2D"
 
 
+msgid "Method to use to filter stabilization"
+msgstr "Метод, який використовується для стабілізації фільтру"
+
+
 msgid "Invert stabilization to re-introduce motion to the frame"
 msgstr "Інвертувати стабілізацію для повторного вводу руху у кадр"
 
@@ -36297,10 +36277,6 @@ msgid "Properties"
 msgstr "Властивості"
 
 
-msgid "Toggle display properties panel"
-msgstr "Перемкнути видимість панелі властивостей"
-
-
 msgctxt "Operator"
 msgid "Push Down Action"
 msgstr "Виштовхнути дію"
@@ -37980,6 +37956,14 @@ msgid "Display button panel toolbox"
 msgstr "Показати кнопкову панель інструментів"
 
 
+msgid "Check Existing"
+msgstr "Перевірка наявних"
+
+
+msgid "Check and warn on overwriting existing files"
+msgstr "Перевіряти і попереджати про перезапис наявних файлів"
+
+
 msgctxt "Operator"
 msgid "Add Camera Preset"
 msgstr "Додати передустановку камери"
@@ -38549,10 +38533,6 @@ msgid "Prefetch frames from disk for faster playback/tracking"
 msgstr "Заготовити в пам'яті кадри з диска наперед, щоб прискорити відтворення/стеження"
 
 
-msgid "Toggle clip properties panel"
-msgstr "Перемкнути панель властивостей кліпу"
-
-
 msgctxt "Operator"
 msgid "Rebuild Proxy and Timecode Indices"
 msgstr "Перебудувати замісник та індекси час-коду"
@@ -38848,35 +38828,14 @@ msgid "Add Stabilization Tracks"
 msgstr "Додати стежки стабілізації"
 
 
-msgid "Add selected tracks to 2D stabilization tool"
-msgstr "Додати вибрані доріжки до інструменту 2D-стабілізації"
-
-
 msgctxt "Operator"
 msgid "Remove Stabilization Track"
 msgstr "Вилучити стежку стабілізації"
 
 
-msgid "Remove selected track from stabilization"
-msgstr "Вилучити вибрану стежку зі стабілізації"
-
-
 msgctxt "Operator"
 msgid "Select Stabilization Tracks"
 msgstr "Вибір стежок стабілізації"
-
-
-msgid "Select tracks which are used for stabilization"
-msgstr "Вибрати стежки, які використовуються для стабілізації"
-
-
-msgctxt "Operator"
-msgid "Set Rotation Track"
-msgstr "Задати стежку оберту"
-
-
-msgid "Use active track to compensate rotation when doing 2D stabilization"
-msgstr "Використати активну стежку для компенсації обертання при виконанні 2D-стабілізації"
 
 
 msgctxt "Operator"
@@ -40168,14 +40127,6 @@ msgstr "Експорт камери та міток"
 
 msgid "Save a python script which re-creates cameras and markers elsewhere"
 msgstr "Зберегти Python-скрипт, який відтворює камери та мітки в іншому місці"
-
-
-msgid "Check Existing"
-msgstr "Перевірка наявних"
-
-
-msgid "Check and warn on overwriting existing files"
-msgstr "Перевіряти і попереджати про перезапис наявних файлів"
 
 
 msgid "Filepath used for exporting the file"
@@ -41704,6 +41655,11 @@ msgstr "Увійти у міні-режим 'ліпки' якщо він уві�
 
 
 msgctxt "Operator"
+msgid "Remove Brush"
+msgstr "Вилучити пензель"
+
+
+msgctxt "Operator"
 msgid "Convert Grease Pencil"
 msgstr "Перетворити нарисний олівець"
 
@@ -41861,11 +41817,6 @@ msgstr "Відв'язати нарисний олівець"
 
 msgid "Unlink active Grease Pencil datablock"
 msgstr "Від'єднати активний блок даних нарисного олівця"
-
-
-msgctxt "Operator"
-msgid "Delete..."
-msgstr "Видалити..."
 
 
 msgid "Delete selected Grease Pencil strokes, vertices, or frames"
@@ -42070,8 +42021,8 @@ msgid "Paste Strokes"
 msgstr "Вставити штрихи"
 
 
-msgid "Paste previously copied strokes into active layer"
-msgstr "Вставити на активний шар раніше скопійовані штрихи"
+msgid "Merge"
+msgstr "Злиття"
 
 
 msgid "Show all Grease Pencil layers"
@@ -42184,6 +42135,11 @@ msgstr "Вибрати усі точки подібні до вибраних н
 
 msgid "Grow sets of selected Grease Pencil points"
 msgstr "Розширити набори вибраних точок Нарисного олівця"
+
+
+msgctxt "Operator"
+msgid "Hide Selection"
+msgstr "Приховати вибране"
 
 
 msgctxt "Operator"
@@ -44462,10 +44418,6 @@ msgid "Loop Pairs"
 msgstr "Пари петель"
 
 
-msgid "Merge"
-msgstr "Злиття"
-
-
 msgid "Merge rather than creating faces"
 msgstr "З'єднати, а не створити грані"
 
@@ -45113,11 +45065,6 @@ msgid "Flip the direction of selected faces' normals (and of their vertices)"
 msgstr "Обернути напрями нормалей вибраних граней  (та їх вершин)"
 
 
-msgctxt "Operator"
-msgid "Hide Selection"
-msgstr "Приховати вибране"
-
-
 msgid "Hide (un)selected vertices, edges or faces"
 msgstr "Приховати (не)вибрані вершини, ребра або грані"
 
@@ -45145,10 +45092,6 @@ msgstr "Втягнути область вздовж наявних ребер"
 
 msgid "Individual Face Inset"
 msgstr "Вставити кожну грань окремо"
-
-
-msgid "Interpolate"
-msgstr "Інтерполювати"
 
 
 msgid "Blend face data across the inset"
@@ -47790,10 +47733,6 @@ msgstr "Перемкнути область передогляду вузла"
 
 msgid "Toggle preview display for selected nodes"
 msgstr "Перемкнути показ передогляду для вибраних вузлів"
-
-
-msgid "Toggles the properties panel display"
-msgstr "Перемкнути видимість панелі властивостей"
 
 
 msgctxt "Operator"
@@ -54211,10 +54150,6 @@ msgid "Paste"
 msgstr "Вставити"
 
 
-msgid "Open sequencer properties panel"
-msgstr "Відкрити панель властивостей відеорядника"
-
-
 msgctxt "Operator"
 msgid "Reassign Inputs"
 msgstr "Перепризначити вводи"
@@ -55169,10 +55104,6 @@ msgstr "Перемкнути перезапис при введенні"
 
 msgid "Paste text selected elsewhere rather than copied (X11 only)"
 msgstr "Вставити текст, вибраний в іншому місці, замість скопійованого (лише для X11)"
-
-
-msgid "Toggle text properties panel"
-msgstr "Перемкнути панель властивостей тексту"
 
 
 msgctxt "Operator"
@@ -59721,10 +59652,6 @@ msgid "Keep applying paint effect while holding mouse"
 msgstr "Продовжувати ефект малювання доки утримується кнопка миші"
 
 
-msgid "Palette Color"
-msgstr "Колір палітри"
-
-
 msgid "Bone Constraints"
 msgstr "Обмежувачі кістки"
 
@@ -61928,10 +61855,6 @@ msgid "Type of primitive used for hair rendering"
 msgstr "Тип примітиву, що  використовується для вимальовування волосся"
 
 
-msgid "Triangles"
-msgstr "Трикутники"
-
-
 msgid "Create triangle geometry around strands"
 msgstr "Створити трикутникову геометрію навколо пасм"
 
@@ -62060,6 +61983,30 @@ msgid "Use multiple importance sampling for the lamp, reduces noise for area lam
 msgstr "Використати багаторазовий відбір за значимістю для джерела світла, щоб зменшити шум від прожекторів та різких глянцевих матеріалів"
 
 
+msgid "Displacement Method"
+msgstr "Метод зміщення"
+
+
+msgid "Method to use for the displacement"
+msgstr "Метод, який використовується для зміщення"
+
+
+msgid "Bump mapping to simulate the appearance of displacement"
+msgstr "Розкладання вигинів для імітації вигляду зміщення"
+
+
+msgid "True"
+msgstr "Істинно"
+
+
+msgid "Use true displacement only, requires fine subdivision"
+msgstr "Використати лише істинне зміщення; вимагає дрібного поділу"
+
+
+msgid "Combination of displacement and bump mapping"
+msgstr "Поєднання зміщення та розкладання вигинів"
+
+
 msgid "Homogeneous Volume"
 msgstr "Однорідний об'єм"
 
@@ -62122,30 +62069,6 @@ msgstr "Багатовибірка за значимістю"
 
 msgid "Combine distance and equi-angular sampling for volumes where neither method is ideal"
 msgstr "Комбінувати відбір за відстанню та рівнокутний для об'ємів, де не підходить жоден з методів"
-
-
-msgid "Displacement Method"
-msgstr "Метод зміщення"
-
-
-msgid "Method to use for the displacement"
-msgstr "Метод, який використовується для зміщення"
-
-
-msgid "Bump mapping to simulate the appearance of displacement"
-msgstr "Розкладання вигинів для імітації вигляду зміщення"
-
-
-msgid "True"
-msgstr "Істинно"
-
-
-msgid "Use true displacement only, requires fine subdivision"
-msgstr "Використати лише істинне зміщення; вимагає дрібного поділу"
-
-
-msgid "Combination of displacement and bump mapping"
-msgstr "Поєднання зміщення та розкладання вигинів"
 
 
 msgid "Dicing Rate"
@@ -70641,10 +70564,6 @@ msgid "Display groups and their data-blocks"
 msgstr "Показати групи та їхні блоки даних"
 
 
-msgid "Sequence"
-msgstr "Послідовність"
-
-
 msgid "Display sequence data-blocks"
 msgstr "Показати блоки даних послідовності"
 
@@ -77948,10 +77867,6 @@ msgid "Aperture:"
 msgstr "Апертура:"
 
 
-msgid "Displacement:"
-msgstr "Зміщення:"
-
-
 msgid "Deformation"
 msgstr "Деформація"
 
@@ -78086,6 +78001,10 @@ msgstr "Портал"
 
 msgid "Not supported, interpreted as sun lamp"
 msgstr "Не підтримується; інтерпретується як лампа-Сонце"
+
+
+msgid "Displacement:"
+msgstr "Зміщення:"
 
 
 msgid "Swizzle:"
@@ -79916,6 +79835,11 @@ msgid "Edit:"
 msgstr "Змінити:"
 
 
+msgctxt "Operator"
+msgid "Flip Direction"
+msgstr "Обернути напрям"
+
+
 msgid "Active Layer:      "
 msgstr "Активний шар:"
 
@@ -79952,10 +79876,6 @@ msgstr "Показати все"
 
 msgid "Stroke:"
 msgstr "Штрих:"
-
-
-msgid "New Stroke Quality:"
-msgstr "Якість нового штриха:"
 
 
 msgid "Enable Editing"
@@ -80056,6 +79976,11 @@ msgstr "Вийти з режиму правки"
 msgctxt "Operator"
 msgid "Select Inverse"
 msgstr "Обернути вибір"
+
+
+msgctxt "Operator"
+msgid "Delete..."
+msgstr "Видалити..."
 
 
 msgctxt "Operator"
@@ -80774,11 +80699,6 @@ msgstr "Тип зміщення"
 
 msgid "Color Layer"
 msgstr "Шар кольору"
-
-
-msgctxt "Operator"
-msgid "Remove Brush"
-msgstr "Вилучити пензель"
 
 
 msgid "Wave Clamp"
@@ -84541,11 +84461,6 @@ msgid "Recalculate"
 msgstr "Переобчислити"
 
 
-msgctxt "Operator"
-msgid "Flip Direction"
-msgstr "Обернути напрям"
-
-
 msgid "UV Mapping:"
 msgstr "UV-розкладка:"
 
@@ -86395,10 +86310,6 @@ msgid "Grease Pencil Line Session: Hold and drag LMB to draw | ESC/Enter to end 
 msgstr "Сесія прямолінійного рисування Нарисним Олівцем: Утримуйте натисненою та тягніть LMB або RMB для рисування прямих ліній | ESC/Enter для завершення (або клацніть поза цією ділянкою)"
 
 
-msgid "Grease Pencil Freehand Session: Hold and drag LMB to draw | ESC/Enter to end  (or click outside this area)"
-msgstr "Сесія вільного рисування Нарисним Олівцем: Утримуйте натисненою та тягніть LMB або RMB для вільного рисування | ESC/Enter для завершення (або клацніть поза цією ділянкою)"
-
-
 msgid "Grease Pencil Poly Session: LMB click to place next stroke vertex | ESC/Enter to end  (or click outside this area)"
 msgstr "Полісесія рисування Нарисним Олівцем: Клацайте LMB для розміщення нових вершин штриха | ESC/Enter для завершення (або клацніть поза цією ділянкою)"
 
@@ -87118,6 +87029,10 @@ msgid "%d items"
 msgstr "%d елементів"
 
 
+msgid "No filename given"
+msgstr "Не дано назви файлу"
+
+
 msgid "Export Data Options:"
 msgstr "Опції експорту даних:"
 
@@ -87140,10 +87055,6 @@ msgstr "Тип трансформування"
 
 msgid "Import Data Options:"
 msgstr "Опції імпорту даних:"
-
-
-msgid "No filename given"
-msgstr "Не дано назви файлу"
 
 
 msgid "Can't create export file"
@@ -91231,6 +91142,10 @@ msgid "Frame already exists on this frame number %d"
 msgstr "Кадр з номером %d вже є"
 
 
+msgid "Palette '%s' does not contain color given"
+msgstr "Палітра '%s' не містить даного кольору"
+
+
 msgid "Object '%s' already in group '%s'"
 msgstr "Об'єкт '%s' вже входить до групи '%s'"
 
@@ -91538,10 +91453,6 @@ msgstr "Об'єкт '%s' не має даних каркаса для знахо
 
 msgid "Object '%s' could not create internal data for finding nearest point"
 msgstr "об'єкт '%s' не може створити внутрішніх даних для пошуку найближчої точки"
-
-
-msgid "Palette '%s' does not contain color given"
-msgstr "Палітра '%s' не містить даного кольору"
 
 
 msgid "Mesh has no UV data"
@@ -92708,6 +92619,10 @@ msgstr "Імпорт-експорт"
 
 msgid "MakeHuman"
 msgstr "MakeHuman"
+
+
+msgid "Pie Menu"
+msgstr "Кругове меню"
 
 
 msgid "Rigging"
