@@ -1,9 +1,9 @@
 
 msgid ""
 msgstr ""
-"Project-Id-Version: Blender 2.77 (sub 3) (b'c783e65')\n"
+"Project-Id-Version: Blender 2.77 (sub 3) (b'e484fe8')\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-08-17 21:47:13\n"
+"POT-Creation-Date: 2016-08-23 22:03:45\n"
 "PO-Revision-Date: \n"
 "Last-Translator: Ivan Paulos Tomé <greylica@gmail.com>\n"
 "Language-Team: Ivan Paulos Tomé, Dalai Felinto, Bruno Gonçalves Pirajá, Samuel Arataca, Daniel Tavares, Moraes Junior <greylica@gmail.com>\n"
@@ -1572,7 +1572,7 @@ msgstr "Define o declive do exponencial negativo"
 
 
 msgid "Expected mean value of the distribution"
-msgstr "Valor médio esperado da distribuição"
+msgstr "Valor médio previsto da distribuição"
 
 
 msgid "Assign the random value to this property"
@@ -2037,8 +2037,28 @@ msgid "The name of a json file storing those settings (unfortunately, Blender's 
 msgstr "O nome do arquivo json guardando estas configurações (infelizmente, o sistema do Blender não funciona aqui)."
 
 
+msgid "Tab Category"
+msgstr "Abas de categorias"
+
+
+msgid "Choose a name for the category of the panel"
+msgstr "Permite escolher um nome para a categoria do painel."
+
+
+msgid "Object Path"
+msgstr "Caminho de objetos"
+
+
+msgid "Path of an object inside of an Alembic archive"
+msgstr "Caminho de um objeto dentro de um arquivo de cache do tipo Alembic."
+
+
 msgid "Path"
 msgstr "Caminho"
+
+
+msgid "Object path"
+msgstr "Os caminhos dos objetos nos arquivos do tipo Alembic."
 
 
 msgid "Animation Data"
@@ -3187,6 +3207,14 @@ msgstr "Pincéis"
 
 msgid "Brush datablocks"
 msgstr "Bloco de dados de pincel."
+
+
+msgid "Cache Files"
+msgstr "Arquivos de cache"
+
+
+msgid "Cache Files datablocks"
+msgstr "Bloco de dados de arquivos de cache."
 
 
 msgid "Cameras"
@@ -5506,6 +5534,14 @@ msgid "Use one transform property from target to control another (or same) prope
 msgstr "Usa uma propriedade de transformação a partir do alvo para controlar outro (ou a mesma) propriedade no detentor."
 
 
+msgid "Transform Cache"
+msgstr "Cache de transformações"
+
+
+msgid "Look up the transformation matrix from an external file"
+msgstr "Pesquisa pela matriz das transformações a partir de um arquivo externo."
+
+
 msgid "Clamp To"
 msgstr "Atracar para"
 
@@ -7076,6 +7112,22 @@ msgstr "Alvo Z"
 
 msgid "Target's Z axis, not World Z axis, will constraint the Up direction"
 msgstr "Eixo Z do alvo, não o eixo Z do ambiente (mundo), irá restringir na direção para cima."
+
+
+msgid "Transform Cache Constraint"
+msgstr "Restrição - Cache de transformações"
+
+
+msgid "Look up transformation from an external file"
+msgstr "Pesquisa pelos dados de transformações a partir de um arquivo externo."
+
+
+msgid "Cache File"
+msgstr "Arquivo(s) de cache"
+
+
+msgid "Path to the object in the Alembic archive used to lookup the transform matrix"
+msgstr "Caminho para o objeto dentro do arquivo do tipo Alembic usado para pesquisar pelas matrizes de transformações."
 
 
 msgid "Transformation Constraint"
@@ -10722,6 +10774,10 @@ msgid "Show/hide Camera data-blocks"
 msgstr "Mostra ou oculta os blocos de dados de câmeras."
 
 
+msgid "Show/hide Cache File data-blocks"
+msgstr "Mostra ou oculta os blocos de dados de arquivos de cache."
+
+
 msgid "Show/hide Curve data-blocks"
 msgstr "Mostra ou oculta os blocos de dados de curvas."
 
@@ -12222,12 +12278,60 @@ msgid "Number of samples"
 msgstr "Número de amostras."
 
 
+msgid "Grease Pencil Brush"
+msgstr "Pincel de lápis de cera"
+
+
+msgid "Collection of brushes being used to control the line style of new strokes"
+msgstr "Coleção de pincéis sendo usados para controlar o estilo de linha dos novos traços."
+
+
 msgid "Angle"
 msgstr "Ângulo"
 
 
+msgid "Direction of the stroke at which brush gives maximal thickness (0° for horizontal)"
+msgstr "Direção do traço na qual o pincel fornece a espessura máxima (0° para a direção horizontal) "
+
+
+msgid "Angle Factor"
+msgstr "Fator de ângulo"
+
+
+msgid "Reduce brush thickness by this factor when stroke is perpendicular to 'Angle' direction"
+msgstr "Reduz a espessura do pincel por este fator quando os traços fores perpendiculares a direção do \"Ângulo\" definido."
+
+
+msgid "Curve Jitter"
+msgstr "Curva de tremulação"
+
+
+msgid "Curve used for the jitter effect"
+msgstr "A curva usada para o efeito de tremulação."
+
+
+msgid "Curve Sensitivity"
+msgstr "Curva de sensibilidade"
+
+
+msgid "Curve used for the sensitivity"
+msgstr "Curva usada para a sensibilidade."
+
+
+msgid "Curve Strength"
+msgstr "Curva de força"
+
+
+msgid "Curve used for the strength"
+msgstr "A curva usada para a força."
+
+
 msgid "Jitter"
 msgstr "Tremulação"
+
+
+msgid "Jitter factor for new strokes"
+msgstr "Fator de tremulação para os novos traços."
 
 
 msgid "Thickness"
@@ -12238,8 +12342,20 @@ msgid "Thickness of strokes (in pixels)"
 msgstr "Espessura dos traços (em pixeis)."
 
 
+msgid "Brush name"
+msgstr "Nome do pincel"
+
+
+msgid "Pressure sensitivity factor for new strokes"
+msgstr "Fator de sensibilidade de pressão para os novos traços."
+
+
 msgid "Amount of smoothing to apply to newly created strokes, to reduce jitter/noise"
-msgstr "A quantidade de suavização a ser aplicada para os traços recém criados, para a redução de ruídos e pontilhamentos."
+msgstr "A quantidade de suavização a ser aplicada para os traços recém criados, para a redução de ruídos e tremulações."
+
+
+msgid "Number of times to smooth newly created strokes"
+msgstr "Número de vezes para suavizar os traços recém criados."
 
 
 msgid "Subdivision Steps"
@@ -12248,6 +12364,62 @@ msgstr "Passos de subdivisão"
 
 msgid "Number of times to subdivide newly created strokes, for less jagged strokes"
 msgstr "O número de vezes para subdividir os traços recém criados, para obtenção de menos saliências."
+
+
+msgid "Randomness"
+msgstr "Aleatorização"
+
+
+msgid "Randomness factor for pressure and strength in new strokes"
+msgstr "Fator aleatório para a pressão e força nos novos traços."
+
+
+msgid "Random Subdivision"
+msgstr "Subdivisão aleatória"
+
+
+msgid "Randomness factor for new strokes after subdivision"
+msgstr "Fator aleatório para os novos traços após a subdivisão."
+
+
+msgid "Color strength for new strokes (affect alpha factor of color)"
+msgstr "A força das cores para os novos traços. (afeta o fator de alfa das cores)."
+
+
+msgid "Use Pressure Jitter"
+msgstr "Usar pressão tremulada"
+
+
+msgid "Use tablet pressure for jitter"
+msgstr "Usa a pressão da mesa de desenho para a tremulação."
+
+
+msgid "Use tablet pressure"
+msgstr "Usar a pressão de mesa de desenho."
+
+
+msgid "Random Pressure"
+msgstr "Pressão aleatória"
+
+
+msgid "Use random value for pressure"
+msgstr "Usa um valor aleatório para a pressão."
+
+
+msgid "Random Strength"
+msgstr "Força aleatória"
+
+
+msgid "Use random value for strength"
+msgstr "Usa um valor aleatório para a força."
+
+
+msgid "Use Pressure Strength"
+msgstr "Usar a força conforme a pressão"
+
+
+msgid "Use tablet pressure for color strength"
+msgstr "Usa a pressão da mesa de desenho para a aplicação de força nas cores."
 
 
 msgid "Grease Pencil Frame"
@@ -12346,6 +12518,18 @@ msgid "Layer name"
 msgstr "Nome da camada"
 
 
+msgid "Is Parented"
+msgstr "Está parenteado"
+
+
+msgid "True when the layer parent object is set"
+msgstr "Verdadeiro quando uma camada parenteada a um objeto está definida."
+
+
+msgid "Thickness change to apply to current strokes (in pixels)"
+msgstr "Alterações de espessura a ser aplicada nos traços atuais (em pixeis)."
+
+
 msgid "Locked"
 msgstr "Travado"
 
@@ -12360,6 +12544,10 @@ msgstr "Quadros travados"
 
 msgid "Lock current frame displayed by layer"
 msgstr "Trava o quadro atual mostrado pela camada."
+
+
+msgid "Parent inverse transformation matrix"
+msgstr "Matriz de transformação inversa de parentesco."
 
 
 msgid "Layer Opacity"
@@ -12382,6 +12570,14 @@ msgid "Type of parent relation"
 msgstr "Tipo de relação de parentesco"
 
 
+msgid "The layer is parented to an object"
+msgstr "A camada está parenteada a um objeto."
+
+
+msgid "The layer is parented to a bone"
+msgstr "A camada está parenteada a um osso."
+
+
 msgid "Layer is selected for editing in the Dope Sheet"
 msgstr "A camada está selecionada para edição na tabela de animação."
 
@@ -12400,6 +12596,30 @@ msgstr "Raio X"
 
 msgid "Make the layer draw in front of objects"
 msgstr "Faz com que o desenho das camadas seja feito na frente dos objetos."
+
+
+msgid "Tint Color"
+msgstr "Cor de tingimento"
+
+
+msgid "Color for tinting stroke colors"
+msgstr "A cor para tingimento das cores dos traços."
+
+
+msgid "Tint Factor"
+msgstr "Fator de tingimento"
+
+
+msgid "Factor of tinting color"
+msgstr "O fator de tingimento das cores."
+
+
+msgid "Unlock Color"
+msgstr "Desbloquear cor"
+
+
+msgid "Unprotect selected colors from further editing and/or frame changes"
+msgstr "Remove a proteção das cores selecionadas para edições futuras e / ou alterações nos quadros."
 
 
 msgid "Use Custom Ghost Colors"
@@ -12422,6 +12642,38 @@ msgid "Draw strokes as a series of circular blobs, resulting in a volumetric eff
 msgstr "Desenha os traços como uma série de bolhas circulares, resultando em um efeito volumétrico."
 
 
+msgid "Grease Pencil Palette"
+msgstr "Paleta de lápis de cera"
+
+
+msgid "Collection of related palettes"
+msgstr "Coleção de paletas relacionadas."
+
+
+msgid "Colors of the palette"
+msgstr "As cores da paleta."
+
+
+msgid "Palette name"
+msgstr "O nome da paleta"
+
+
+msgid "Grease Pencil Palette color"
+msgstr "Cores de paleta de lápis de cera"
+
+
+msgid "Collection of related colors"
+msgstr "Coleção de cores relacionadas."
+
+
+msgid "Color Opacity"
+msgstr "Opacidade da cor"
+
+
+msgid "Color for strokes"
+msgstr "Cor para os traços"
+
+
 msgid "Fill Opacity"
 msgstr "Preencher opacidade"
 
@@ -12436,6 +12688,14 @@ msgstr "Cor de preenchimento"
 
 msgid "Color for filling region bounded by each stroke"
 msgstr "Cor para o preenchimento da região circundada por cada traço."
+
+
+msgid "Display the color in onion skinning"
+msgstr "Mostra as cores nas transparências do tipo papel vegetal."
+
+
+msgid "Set color Visibility"
+msgstr "Define a visibilidade das cores."
 
 
 msgid "Is Fill Visible"
@@ -12454,8 +12714,20 @@ msgid "True when opacity of stroke is set high enough to be visible"
 msgstr "Verdadeiro quando a opacidade dos traços estão definidas em um valor suficientemente alto para estarem visíveis."
 
 
+msgid "Protect color from further editing and/or frame changes"
+msgstr "Protege a cor de edições futuras e / ou alterações nos quadros."
+
+
+msgid "Color name"
+msgstr "O nome da cor"
+
+
 msgid "High Quality Fill"
 msgstr "Preenchimento de alta qualidade"
+
+
+msgid "Fill strokes using high quality to avoid glitches (slower fps during animation play)"
+msgstr "Preenche os traços usando um método de alta qualidade para evitar falhas. Pode reduzir a quantidade de quadros por segundo durante as reproduções das animações."
 
 
 msgid "GPencil Sculpt Brush"
@@ -12518,6 +12790,34 @@ msgid "Properties for Grease Pencil stroke sculpting tool"
 msgstr "Propriedades para as ferramentas de escultura dos traços de lápis de cera."
 
 
+msgid "Affect Position"
+msgstr "Afetar a posição"
+
+
+msgid "The brush affects the position of the point"
+msgstr "O pincel afeta a posição dos pontos."
+
+
+msgid "Affect Strength"
+msgstr "Afetar a força"
+
+
+msgid "The brush affects the color strength of the point"
+msgstr "O pincel afeta a força das cores dos pontos."
+
+
+msgid "Affect Thickness"
+msgstr "Afetar espessura"
+
+
+msgid "The brush affects the thickness of the point"
+msgstr "O pincel afeta a espessura dos pontos."
+
+
+msgid "Alpha value for selected vertices"
+msgstr "O valor alfa para os vértices selecionados."
+
+
 msgid "Tool"
 msgstr "Ferramentas"
 
@@ -12528,6 +12828,10 @@ msgstr "Suaviza os pontos dos traços."
 
 msgid "Adjust thickness of strokes"
 msgstr "Ajusta a espessura dos traços."
+
+
+msgid "Adjust color strength of strokes"
+msgstr "Permite ajustar a força das cores dos traços."
 
 
 msgid "Grab"
@@ -12567,7 +12871,7 @@ msgstr "Aleatorizar"
 
 
 msgid "Introduce jitter/randomness into strokes"
-msgstr "Introduz pontilhamento e aleatoriedade nos traços."
+msgstr "Introduz tremulação e aleatoriedade nos traços."
 
 
 msgid "Clone"
@@ -12596,6 +12900,22 @@ msgstr "Curvas a mão livre definindo partes dos rascunhos."
 
 msgid "Palette Color"
 msgstr "Cor da paleta"
+
+
+msgid "Color from palette used in Stroke"
+msgstr "A cor da paleta usada nos traços."
+
+
+msgid "Color Name"
+msgstr "Nome da cor"
+
+
+msgid "Palette color name"
+msgstr "Nome da paleta de cores"
+
+
+msgid "Enable cyclic drawing, closing the stroke"
+msgstr "Habilita o desenho cíclico, mantendo os pontos inicial e final dos traços conectados."
 
 
 msgid "Draw Mode"
@@ -12630,6 +12950,10 @@ msgid "Stroke is in 2D-space (but with special 'image' scaling)"
 msgstr "Os traços estão no espaço 2D (mas como uma escala de \"imagem\" especial)."
 
 
+msgid "Thickness of stroke (in pixels)"
+msgstr "Espessura dos traços (em pixeis)."
+
+
 msgid "Stroke Points"
 msgstr "Pontos de traço"
 
@@ -12644,6 +12968,10 @@ msgstr "O traço está selecionado para a edição na porta de visão."
 
 msgid "Triangles"
 msgstr "Triângulos"
+
+
+msgid "Triangulation data for HQ fill"
+msgstr "Dados de triangulação para preenchimentos de alta qualidade."
 
 
 msgid "Grease Pencil Stroke Point"
@@ -12668,6 +12996,26 @@ msgstr "Pressão pontual na mesa de desenho ao desenhar."
 
 msgid "Point is selected for viewport editing"
 msgstr "O ponto está selecionado para edição na porta de visão."
+
+
+msgid "Color intensity (alpha factor)"
+msgstr "Intensidade das cores (especificado em fator alfa)."
+
+
+msgid "Triangle"
+msgstr "Triângulos"
+
+
+msgid "First triangle vertex index"
+msgstr "Índice do primeiro vértice do triângulo."
+
+
+msgid "Second triangle vertex index"
+msgstr "Índice do segundo vértice do triângulo."
+
+
+msgid "Third triangle vertex index"
+msgstr "Índice do terceiro vértice do triângulo."
 
 
 msgid "Game Object Settings"
@@ -14542,8 +14890,36 @@ msgid "Forward"
 msgstr "Para frente"
 
 
+msgid "The time to use for looking up the data in the cache file, or to determine which file to use in a file sequence"
+msgstr "O tempo a ser usado para a pesquisa dos dados nos arquivos de cache, ou para determinar qual arquivo será utilizado em uma sequência de arquivos."
+
+
 msgid "Sequence"
 msgstr "Sequências"
+
+
+msgid "Whether the cache is separated in a series of files"
+msgstr "Define se o cache está separado em uma série de arquivos"
+
+
+msgid "Object Paths"
+msgstr "Caminhos dos objetos"
+
+
+msgid "Paths of the objects inside the Alembic archive"
+msgstr "Caminhos dos objetos nos arquivos do tipo Alembic."
+
+
+msgid "Override Frame"
+msgstr "Desprezar quadro"
+
+
+msgid "Whether to use a custom frame for looking up data in the cache file, instead of using the current scene frame"
+msgstr "Define se está sendo utilizado um quadro personalizado para a pesquisa de dados dentro do arquivo de cache, ao invés da utilização do quadro atual da cena."
+
+
+msgid "Value by which to enlarge or shrink the object with respect to the world's origin (only applicable through a Transform Cache constraint)"
+msgstr "Valor pelo qual alargar ou encolher o objeto com relação a origem do ambiente. (Aplicável somente através de uma restrição de cache de transformações)."
 
 
 msgid "Up"
@@ -15928,6 +16304,14 @@ msgstr "Habilita ou desabilita traços texturizados."
 
 msgid "Freehand annotation sketchbook"
 msgstr "Bloco de anotações de rascunho a mão livre."
+
+
+msgid "Show Direction"
+msgstr "Mostrar a direção"
+
+
+msgid "Show stroke drawing direction with a bigger green dot (start) and smaller red dot (end) points"
+msgstr "Mostra a direção do desenho dos traços usando um grande ponto verde para marcar os pontos  iniciais e pontos menores em vermelho para marcar os pontos finais."
 
 
 msgid "Onion Skins"
@@ -27062,6 +27446,14 @@ msgid "Select Grouped"
 msgstr "Selecionar agrupados"
 
 
+msgid "Rotation Track Specials"
+msgstr "Especiais para rastreamento de rotação"
+
+
+msgid "Translation Track Specials"
+msgstr "Especiais para rastreamento de localização"
+
+
 msgid "Predefined track color"
 msgstr "Cor de trilha predefinida."
 
@@ -28132,6 +28524,10 @@ msgstr "Transferência de dados"
 
 msgid "Mesh Cache"
 msgstr "Cache de malha"
+
+
+msgid "Mesh Sequence Cache"
+msgstr "Sequência de cache de malhas"
 
 
 msgid "Normal Edit"
@@ -29928,6 +30324,10 @@ msgstr "O tamanho da grade para vinculação."
 
 msgid "Recompute binding dynamically on top of other deformers (slower and more memory consuming)"
 msgstr "Re-computa a atrelação dinamicamente por cima dos outros deformadores (mais lento e consome mais memória)."
+
+
+msgid "Path to the object in the Alembic archive used to lookup geometric data"
+msgstr "O caminho para o objeto dentro do arquivo de cache do tipo Alembic usado para a pesquisa de dados geométricos."
 
 
 msgid "Mirror Modifier"
@@ -32505,24 +32905,64 @@ msgid "Movie tracking stabilization data"
 msgstr "Dados de estabilização de rastreamento de filme."
 
 
+msgid "2D stabilization based on tracking markers"
+msgstr "Estabilização 2D com base em marcadores de rastreamento."
+
+
+msgid "Active Rotation Track Index"
+msgstr "Índice de trilha de rotação ativa"
+
+
+msgid "Index of active track in rotation stabilization tracks list"
+msgstr "O índice da trilha ativa de estabilização de rotação dentro da lista de trilhas de estabilização."
+
+
 msgid "Active Track Index"
 msgstr "Índice de trilha ativa"
+
+
+msgid "Index of active track in translation stabilization tracks list"
+msgstr "O índice da trilha ativa de estabilização de localização dentro da lista de trilhas de estabilização."
+
+
+msgid "Anchor Frame"
+msgstr "Quadro de ancoragem"
+
+
+msgid "Reference point to anchor stabilization (other frames will be adjusted relative to this frame's position)"
+msgstr "O quadro que serve como ponto de referência para o ancoramento da estabilização (outros quadros serão ajustados com relação a posição presente neste quadro)."
 
 
 msgid "Interpolate"
 msgstr "Interpolar"
 
 
+msgid "Interpolation to use for sub-pixel shifts and rotations due to stabilization"
+msgstr "O tipo de interpolação a ser usado para as alterações dos sub-pixeis e rotações devido a estabilização."
+
+
 msgid "Nearest"
 msgstr "Mais próximo"
+
+
+msgid "No interpolation, use nearest neighbor pixel"
+msgstr "Sem interpolações, usa o pixel avizinhado mais próximo."
 
 
 msgid "Bilinear"
 msgstr "Bilinear"
 
 
+msgid "Simple interpolation between adjacent pixels"
+msgstr "Interpolação simples entre os pixeis adjacentes."
+
+
 msgid "Bicubic"
 msgstr "Bi-cúbica"
+
+
+msgid "High quality pixel interpolation"
+msgstr "Interpolação de pixeis de alta qualidade."
 
 
 msgid "Location Influence"
@@ -32549,12 +32989,52 @@ msgid "Influence of stabilization algorithm on footage scale"
 msgstr "A influência do algoritmo de estabilização na escala da filmagem."
 
 
+msgid "Rotation Tracks"
+msgstr "Rotação das trilhas"
+
+
+msgid "Collection of tracks used for 2D stabilization (translation)"
+msgstr "Coleção de trilhas usadas para estabilização 2D, contendo translações usadas para referenciar a localização."
+
+
 msgid "Maximal Scale"
 msgstr "Escala máxima"
 
 
 msgid "Limit the amount of automatic scaling"
 msgstr "Limita a quantidade de escalonamento automático."
+
+
+msgid "Show Tracks"
+msgstr "Mostrar as trilhas"
+
+
+msgid "Show UI list of tracks participating in stabilization"
+msgstr "Mostra a lista de interface de usuário das trilhas de rastreamento partícipes da estabilização."
+
+
+msgid "Expected Position"
+msgstr "Posição prevista"
+
+
+msgid "Known relative offset of original shot, will be subtracted (e.g. for panning shot, can be animated)"
+msgstr "Deslocamento relativo conhecido da tomada de filmagem original, para ser subtraído. Usado por exemplo para tomadas em panorama. Esse valor pode ser animado opcionalmente."
+
+
+msgid "Expected Rotation"
+msgstr "Rotação prevista"
+
+
+msgid "Rotation present on original shot, will be compensated (e.g. for deliberate tilting)"
+msgstr "Rotação presente na tomada de cena original, para ser compensado. Usado por exemplo para inclinações deliberadas."
+
+
+msgid "Explicitly scale resulting frame to compensate zoom of original shot"
+msgstr "Escalona explicitamente o quadro resultante para compensar a ampliação da tomada original da filmagem."
+
+
+msgid "Translation Tracks"
+msgstr "Trilha de rastreamentos de localização"
 
 
 msgid "Use 2D stabilization"
@@ -32575,6 +33055,18 @@ msgstr "Escalona automaticamente a filmagem para cobrir áreas não preenchidas 
 
 msgid "Stabilize Rotation"
 msgstr "Estabilizar rotação"
+
+
+msgid "Stabilize detected rotation around center of frame"
+msgstr "Estabiliza a rotação detectada em torno do centro do quadro."
+
+
+msgid "Stabilize Scale"
+msgstr "Escalonar a estabilização"
+
+
+msgid "Compensate any scale changes relative to center of rotation"
+msgstr "Compensa quaisquer alterações de escalonamentos relacionadas ao centro de rotação."
 
 
 msgid "Movie tracking track data"
@@ -32687,6 +33179,14 @@ msgstr "Normaliza as intensidades de luz enquanto rastreia (mais lento)."
 
 msgid "Influence of this track on a final solution"
 msgstr "Influência denta trilha na solução final."
+
+
+msgid "Stab Weight"
+msgstr "Influência da estabilização"
+
+
+msgid "Influence of this track on 2D stabilization"
+msgstr "Influência desta trilha na estabilização 2D."
 
 
 msgid "NLA Strip"
@@ -36326,6 +36826,10 @@ msgid "Properties"
 msgstr "Painéis de propriedades"
 
 
+msgid "Toggle the properties region visibility"
+msgstr "Alterna a visibilidade da região contendo os painéis de propriedades."
+
+
 msgctxt "Operator"
 msgid "Push Down Action"
 msgstr "Empurrar ação para baixo"
@@ -37940,6 +38444,10 @@ msgid "The setting for the file browser mode to load a .blend file, a library or
 msgstr "As definições para o navegador de arquivos carregar arquivos Blender, bibliotecas ou arquivos especiais."
 
 
+msgid "Filter Alembic files"
+msgstr "Filtra por arquivos do tipo Alembic"
+
+
 msgid "Filter .blend files"
 msgstr "Filtra por arquivos Blender (.blend)"
 
@@ -38005,12 +38513,30 @@ msgid "Display button panel toolbox"
 msgstr "Mostra o painel de botões da caixa de ferramentas."
 
 
+msgctxt "Operator"
+msgid "Open Cache File"
+msgstr "Abrir arquivo(s) de cache"
+
+
+msgid "Load a cache file"
+msgstr "Carrega arquivo(s) de cache"
+
+
 msgid "Check Existing"
 msgstr "Verificar existentes"
 
 
 msgid "Check and warn on overwriting existing files"
 msgstr "Verifica e avisa caso esteja sobrescrevendo arquivos existentes."
+
+
+msgctxt "Operator"
+msgid "Refresh Archive"
+msgstr "Atualizar arquivos"
+
+
+msgid "Update objects paths list with new data from the archive"
+msgstr "Atualiza a lista de caminhos de objetos juntamente com seus dados a partir do(s) arquivo(s)."
 
 
 msgctxt "Operator"
@@ -38877,14 +39403,53 @@ msgid "Add Stabilization Tracks"
 msgstr "Adicionar trilhas de estabilização"
 
 
+msgid "Add selected tracks to 2D translation stabilization"
+msgstr "Adiciona as trilhas selecionadas para a ferramenta de estabilização de localização 2D."
+
+
 msgctxt "Operator"
 msgid "Remove Stabilization Track"
 msgstr "Remover trilha de estabilização"
 
 
+msgid "Remove selected track from translation stabilization"
+msgstr "Remove a trilha selecionada da estabilização de localização."
+
+
+msgctxt "Operator"
+msgid "Add Stabilization Rotation Tracks"
+msgstr "Adicionar trilhas de estabilização de rotação"
+
+
+msgid "Add selected tracks to 2D rotation stabilization"
+msgstr "Adiciona as trilhas selecionadas para a ferramenta de estabilização 2D de rotação."
+
+
+msgctxt "Operator"
+msgid "Remove Stabilization Rotation Track"
+msgstr "Remover trilha de estabilização de rotação"
+
+
+msgid "Remove selected track from rotation stabilization"
+msgstr "Remove a trilha de rastreamento de estabilização de rotação selecionada."
+
+
+msgctxt "Operator"
+msgid "Select Stabilization Rotation Tracks"
+msgstr "Selecionar trilhas de estabilização de rotação"
+
+
+msgid "Select tracks which are used for rotation stabilization"
+msgstr "Permite selecionar as trilhas que são usadas para estabilização de rotação."
+
+
 msgctxt "Operator"
 msgid "Select Stabilization Tracks"
 msgstr "Selecionar trilhas de estabilização"
+
+
+msgid "Select tracks which are used for translation stabilization"
+msgstr "Permite selecionar as trilhas que são usadas para estabilização da localização."
 
 
 msgctxt "Operator"
@@ -41694,6 +42259,37 @@ msgid "Delete the active frame(s) of all editable Grease Pencil layers"
 msgstr "Apaga os quadros ativos de todas as camadas editáveis de lápis de cera."
 
 
+msgid "Add new Grease Pencil drawing brush for the active Grease Pencil datablock"
+msgstr "Adiciona um novo pincel de desenho de lápis de cera para o bloco de dados de lápis de cera ativo."
+
+
+msgctxt "Operator"
+msgid "Change Brush"
+msgstr "Alterar pincel"
+
+
+msgid "Change active Grease Pencil drawing brush"
+msgstr "Altera o pincel de desenho de lápis de cera ativo."
+
+
+msgctxt "Operator"
+msgid "Copy Brush"
+msgstr "Copiar pincel"
+
+
+msgid "Copy current Grease Pencil drawing brush"
+msgstr "Copia o pincel de desenho atual do lápis de cera."
+
+
+msgctxt "Operator"
+msgid "Move Brush"
+msgstr "Mover pincel"
+
+
+msgid "Move the active Grease Pencil drawing brush up/down in the list"
+msgstr "Move o pincel de desenho ativo do lápis de cera para cima ou para baixo na lista."
+
+
 msgctxt "Operator"
 msgid "Stroke Sculpt"
 msgstr "Escultura de traços"
@@ -41708,8 +42304,34 @@ msgstr "Entra em um modo de escultura muito localizado caso habilitado, caso con
 
 
 msgctxt "Operator"
+msgid "Create Preset Brushes"
+msgstr "Criar predefinições de pincéis"
+
+
+msgid "Create a set of predefined Grease Pencil drawing brushes"
+msgstr "Cria um conjunto de pincéis de lápis de cera predefinidos."
+
+
+msgctxt "Operator"
 msgid "Remove Brush"
 msgstr "Remover pincel"
+
+
+msgid "Remove active Grease Pencil drawing brush"
+msgstr "Remove o pincel de desenho ativo do lápis de cera."
+
+
+msgctxt "Operator"
+msgid "Select Brush"
+msgstr "Selecioar pincéis"
+
+
+msgid "Select a Grease Pencil drawing brush"
+msgstr "Seleciona um pincel de desenho de lápis de cera."
+
+
+msgid "Index of Drawing Brush"
+msgstr "Índice do pincel de desenho"
 
 
 msgctxt "Operator"
@@ -42034,6 +42656,15 @@ msgstr "Em adição a alternância da editabilidade, também afeta a visibilidad
 
 
 msgctxt "Operator"
+msgid "Merge Down"
+msgstr "Fundir abaixo"
+
+
+msgid "Merge the current layer with the layer below"
+msgstr "Funde a camada atual com a camada logo abaixo."
+
+
+msgctxt "Operator"
 msgid "Move Grease Pencil Layer"
 msgstr "Mover camada de lápis de cera"
 
@@ -42070,8 +42701,137 @@ msgstr "Move os traços selecionados para outra camada."
 
 
 msgctxt "Operator"
+msgid "Add Palette"
+msgstr "Adicionar paleta de cores"
+
+
+msgid "Add new Grease Pencil palette for the active Grease Pencil datablock"
+msgstr "Adiciona uma nova paleta de cores de lápis de cera para o bloco de dados de lápis de cera ativo."
+
+
+msgctxt "Operator"
+msgid "Change Palette"
+msgstr "Alterar paleta de cores"
+
+
+msgid "Change active Grease Pencil palette"
+msgstr "Altera a paleta de cores de lápis de cera ativa."
+
+
+msgctxt "Operator"
+msgid "Disable Unused Layer Colors"
+msgstr "Desabilitar as cores não utilizadas na camada"
+
+
+msgid "Lock and hide any color not used in any layer"
+msgstr "Bloqueia e oculta quaisquer cores não utilizadas em quaisquer camadas."
+
+
+msgctxt "Operator"
+msgid "Remove palette"
+msgstr "Remover paleta de cores"
+
+
+msgid "Remove active Grease Pencil palette"
+msgstr "Remove a paleta de cores de lápis de cera ativa."
+
+
+msgctxt "Operator"
+msgid "Add Palette Color"
+msgstr "Adicionar nova paleta de cores"
+
+
+msgid "Add new Grease Pencil palette color for the active Grease Pencil datablock"
+msgstr "Adiciona uma nova paleta de cores de lápis de cera para o bloco de dados de lápis de cera ativo."
+
+
+msgid "Copy current Grease Pencil palette color"
+msgstr "Copia a paleta de cores atual do lápis de cera."
+
+
+msgctxt "Operator"
+msgid "Hide Color(s)"
+msgstr "Ocultar as cores"
+
+
+msgid "Hide selected/unselected Grease Pencil colors"
+msgstr "Oculta as cores de lápis de cera selecionadas ou não selecionadas."
+
+
+msgid "Hide unselected rather than selected colors"
+msgstr "Oculta as não selecionadas ao invés das cores selecionadas."
+
+
+msgctxt "Operator"
+msgid "Isolate Palette Color"
+msgstr "Isola a paleta de cores"
+
+
+msgid "Toggle whether the active color is the only one that is editable and/or visible"
+msgstr "Permite alternar entre manter a cor ativa como a única que poderá ser editada e / ou estar visível."
+
+
+msgctxt "Operator"
+msgid "Lock All Colors"
+msgstr "Bloquear todas as cores"
+
+
+msgid "Lock all Grease Pencil colors to prevent them from being accidentally modified"
+msgstr "Bloqueia todas as cores de lápis de cera para evitar que elas sejam modificadas acidentalmente."
+
+
+msgctxt "Operator"
+msgid "Move Palette color"
+msgstr "Mover paleta de cores"
+
+
+msgid "Move the active Grease Pencil palette color up/down in the list"
+msgstr "Move a paleta de cores ativa do lápis de cera para cima ou para baixo na lista."
+
+
+msgctxt "Operator"
+msgid "Remove palette color"
+msgstr "Remover paleta de cores"
+
+
+msgid "Remove active Grease Pencil palette color"
+msgstr "Remove a paleta de cores ativa do lápis de cera."
+
+
+msgctxt "Operator"
+msgid "Show All Colors"
+msgstr "Mostrar todas as cores"
+
+
+msgid "Unhide all hidden Grease Pencil palette colors"
+msgstr "Revela todas as cores das paletas de lápis de cera ocultadas."
+
+
+msgctxt "Operator"
+msgid "Select Color"
+msgstr "Seleção por cores"
+
+
+msgid "Select all Grease Pencil strokes using current color"
+msgstr "Permite selecionar os traços de lápis de cera usando a cor ativa atualmente selecionada."
+
+
+msgctxt "Operator"
+msgid "Unlock All Colors"
+msgstr "Desbloquear todas as cores"
+
+
+msgid "Unlock all Grease Pencil colors so that they can be edited"
+msgstr "Desbloqueia todas as cores de lápis de cera de maneira que estas possam ser editadas."
+
+
+msgctxt "Operator"
 msgid "Paste Strokes"
 msgstr "Colar traços"
+
+
+msgid "Paste previously copied strokes or copy and merge in active layer"
+msgstr "Cola os traços copiados previamente ou então copia-os e efetua sua fusão na camada ativa."
 
 
 msgid "Merge"
@@ -42195,6 +42955,10 @@ msgid "Hide Selection"
 msgstr "Ocultar seleção"
 
 
+msgid "Hide/Unhide selected points for Grease Pencil strokes setting alpha factor"
+msgstr "Oculta ou revela os pontos selecionados para que o fator de alfa seja definido pelos traços de lápis de cera. "
+
+
 msgctxt "Operator"
 msgid "Snap Cursor to Selected Points"
 msgstr "Atrair o cursor para os pontos selecionados"
@@ -42228,6 +42992,109 @@ msgstr "Atrair seleção para a grade"
 
 msgid "Snap selected points to the nearest grid points"
 msgstr "Atrai os pontos selecionados para a divisão de grade mais próxima."
+
+
+msgctxt "Operator"
+msgid "Apply Stroke Thickness"
+msgstr "Aplicar a espessura dos traços"
+
+
+msgid "Apply the thickness change of the layer to its strokes"
+msgstr "Aplica as alterações de espessura da camada aos seus traços."
+
+
+msgctxt "Operator"
+msgid "Arrange Stroke"
+msgstr "Organizar traços"
+
+
+msgid "Arrange selected strokes up/down in the drawing order of the active layer"
+msgstr "Organiza os traços selecionados para cima ou para baixo na ordem de desenho da camada ativa."
+
+
+msgid "Bring Forward"
+msgstr "Trazer para frente"
+
+
+msgid "Send Backward"
+msgstr "Enviar para trás"
+
+
+msgid "Bring to Front"
+msgstr "Trazer para o topo"
+
+
+msgid "Send to Back"
+msgstr "Enviar para o fundo"
+
+
+msgctxt "Operator"
+msgid "Change Stroke Color"
+msgstr "Alterar a cor dos traços"
+
+
+msgid "Move selected strokes to active color"
+msgstr "Move os traços selecionados para a cor ativa."
+
+
+msgctxt "Operator"
+msgid "Set Cyclical State"
+msgstr "Definir estado cíclico"
+
+
+msgid "Close or open the selected stroke adding an edge from last to first point"
+msgstr "Abre ou fecha os traços selecionados adicionando uma aresta que se estende formando uma conexão do último ponto ao primeiro ponto."
+
+
+msgid "Close all"
+msgstr "Fechar tudo"
+
+
+msgid "Open all"
+msgstr "Abrir todos"
+
+
+msgctxt "Operator"
+msgid "Flip Stroke"
+msgstr "Virar os traços"
+
+
+msgid "Change direction of the points of the selected strokes"
+msgstr "Altera a direção dos pontos dos traços selecionados."
+
+
+msgctxt "Operator"
+msgid "Join Strokes"
+msgstr "Juntar traços"
+
+
+msgid "Join selected strokes (optionally as new stroke)"
+msgstr "Junta os traços selecionados (opcionalmente como novos traços)"
+
+
+msgid "Leave Gaps"
+msgstr "Manter lacunas"
+
+
+msgid "Leave gaps between joined strokes instead of linking them"
+msgstr "Mantém as lacunas entre os traços ajuntados ao invés de conectá-los."
+
+
+msgid "Join"
+msgstr "Juntar"
+
+
+msgid "Join and Copy"
+msgstr "Juntar e copiar"
+
+
+msgctxt "Operator"
+msgid "Lock Unused Colors"
+msgstr "Bloquear as cores não usadas"
+
+
+msgid "Lock any color not used in any selected stroke"
+msgstr "Bloqueia quaisquer cores não usadas em quaisquer traços selecionados."
 
 
 msgctxt "Operator"
@@ -48018,6 +48885,10 @@ msgid "Align Mode:"
 msgstr "Modo de alinhamento:"
 
 
+msgid "Side of object to use for alignment"
+msgstr "Lateral do objeto a ser usado para alinhamento."
+
+
 msgid "Negative Sides"
 msgstr "Lados negativos"
 
@@ -48038,12 +48909,32 @@ msgid "Relative To:"
 msgstr "Relativos a:"
 
 
+msgid "Reference location to align to"
+msgstr "Localização referencial na qual será feito o alinhamento."
+
+
 msgid "Scene Origin"
 msgstr "Origem da cena"
 
 
+msgid "Use the Scene Origin as the position for the selected objects to align to"
+msgstr "Usa a origem da cena como referência de posição para que os objetos selecionados sejam alinhados."
+
+
 msgid "3D Cursor"
 msgstr "Cursor 3D"
+
+
+msgid "Use the 3D cursor as the position for the selected objects to align to"
+msgstr "Usa o cursor 3D como referência de posição para que os objetos selecionados sejam alinhados."
+
+
+msgid "Use the selected objects as the position for the selected objects to align to"
+msgstr "Usa o centro mediano dos objetos selecionados como referência de posição para que os objetos selecionados sejam alinhados."
+
+
+msgid "Use the active object as the position for the selected objects to align to"
+msgstr "Usa o objeto ativo como referência de posição para que os objetos selecionados sejam alinhados."
 
 
 msgctxt "Operator"
@@ -57755,6 +58646,164 @@ msgstr "O nome do módulo de complemento a ser removido."
 
 
 msgctxt "Operator"
+msgid "Export Alembic"
+msgstr "Exportar como Alembic"
+
+
+msgid "Export current scene in an Alembic archive"
+msgstr "Exporta a cena atual em um ou mais arquivos do tipo Alembic."
+
+
+msgid "Apply Subsurf"
+msgstr "Aplicar subdivisão de superfície"
+
+
+msgid "Export subdivision surfaces as meshes"
+msgstr "Exporta as subdivisões de superfícies como malhas."
+
+
+msgid "Ogawa"
+msgstr "Ogawa"
+
+
+msgid "Face Sets"
+msgstr "Conjuntos de faces"
+
+
+msgid "Export per face shading group assignments"
+msgstr "Exporta as atribuições de sombreamento por grupo de faces."
+
+
+msgid "Flatten Hierarchy"
+msgstr "Achatar toda a hierarquia"
+
+
+msgid "Do not preserve objects' parent/children relationship"
+msgstr "Não preserva os relacionamento de parentesco e afiliação dos objetos."
+
+
+msgid "Value by which to enlarge or shrink the objects with respect to the world's origin"
+msgstr "Valor pelo qual alargar ou encolher os objetos com relação a origem do ambiente 3D."
+
+
+msgid "Geometry Samples"
+msgstr "Amostras de geometria"
+
+
+msgid "Number of times per frame object data are sampled"
+msgstr "Número de vezes que os dados de amostra são tomados por quadro."
+
+
+msgid "Export normals"
+msgstr "Exportar as normais"
+
+
+msgid "Pack UV Islands"
+msgstr "Empacotar as ilhas UV"
+
+
+msgid "Export UVs with packed island"
+msgstr "Exporta as UVs com as ilhas empacotadas."
+
+
+msgid "Renderable Objects Only"
+msgstr "Somente os objetos renderizáveis"
+
+
+msgid "Export only objects marked renderable in the outliner"
+msgstr "Exporta somente os objetos marcados como renderizáveis dentro do esquematizador"
+
+
+msgid "Selected Objects Only"
+msgstr "Somente os objetos selecionados"
+
+
+msgid "Export only selected objects"
+msgstr "Exporta somente os objetos selecionados."
+
+
+msgid "Shutter Close"
+msgstr "Obturador fechado"
+
+
+msgid "Time at which the shutter is closed"
+msgstr "O tempo no qual o obturador estará fechado."
+
+
+msgid "Shutter Open"
+msgstr "Obturador aberto"
+
+
+msgid "Time at which the shutter is open"
+msgstr "O tempo no qual o obturador estará aberto."
+
+
+msgid "Use Subdivision Schema"
+msgstr "Usar esquema de subdivisão"
+
+
+msgid "Export meshes using Alembic's subdivision schema"
+msgstr "Exporta as malhas usando o esquema de subdivisão de arquivos do tipo Alembic."
+
+
+msgid "Export UVs"
+msgstr "Exportar UVs"
+
+
+msgid "Export vertex colors"
+msgstr "Exporta as cores dos vértices."
+
+
+msgid "Visible Layers Only"
+msgstr "Somente as camadas visíveis"
+
+
+msgid "Export only objects in visible layers"
+msgstr "Exporta somente os objetos presentes nas camadas visíveis"
+
+
+msgid "Transform Samples"
+msgstr "Amostras de transformações"
+
+
+msgid "Number of times per frame transformations are sampled"
+msgstr "Número de vezes que as amostras de transformações são tomadas por quadro."
+
+
+msgctxt "Operator"
+msgid "Import Alembic"
+msgstr "Importar arquivo Alembic"
+
+
+msgid "Load an Alembic archive"
+msgstr "Carrega um arquivo do tipo Alembic."
+
+
+msgid "Is Sequence"
+msgstr "É uma sequência"
+
+
+msgid "Set to true if the cache is split into separate files"
+msgstr "Define para verdadeiro caso o cache seja dividido em múltiplos arquivos separados."
+
+
+msgid "Set Frame Range"
+msgstr "Definir intervalo de quadros"
+
+
+msgid "If checked, update scene's start and end frame to match those of the Alembic archive"
+msgstr "Caso esteja marcado, atualiza os quadros inicial e final da cena para combinar com aqueles que estão presentes no arquivo tipo Alembic."
+
+
+msgid "Validate Meshes"
+msgstr "Validar malhas"
+
+
+msgid "Check imported mesh objects for invalid data (slow)"
+msgstr "Checa os objetos de malha importados para verificar se existem dados inválidos (pouco mais lento)."
+
+
+msgctxt "Operator"
 msgid "Activate Application Configuration"
 msgstr "Ativar configuração da aplicação"
 
@@ -59741,6 +60790,14 @@ msgid "Footage Information"
 msgstr "Informações de filmagem"
 
 
+msgid "Grease Pencil Layers"
+msgstr "Camadas de lápis de cera"
+
+
+msgid "Grease Pencil Colors"
+msgstr "Cores de lápis de cera"
+
+
 msgid "Marker Display"
 msgstr "Mostrador de marcadores"
 
@@ -59776,6 +60833,14 @@ msgstr "Dissolver"
 msgctxt "MovieClip"
 msgid "CLIP_PT_tools_clip"
 msgstr "Painel com definições de clipes para o rastreamento"
+
+
+msgid "Drawing Brushes"
+msgstr "Pincéis de desenho"
+
+
+msgid "Brush Curves"
+msgstr "Curvas de pincéis"
 
 
 msgid "Sculpt Strokes"
@@ -69885,6 +70950,10 @@ msgid "Edit timings for Mask Editor splines"
 msgstr "Permite edição das temporizações para as Splines no editor de máscaras."
 
 
+msgid "Edit timings for Cache File data-blocks"
+msgstr "Permite a edição das temporizações para os blocos de dados de arquivos de cache."
+
+
 msgid "Show Frame Number Indicator"
 msgstr "Mostrar o indicador de número de quadro"
 
@@ -74341,6 +75410,14 @@ msgid "Template armature that will be retargeted to the stroke"
 msgstr "Armação de referência que será realinhada ao alvo de traço."
 
 
+msgid "Grease Pencil Brushes"
+msgstr "Pincéis de lápis de cera"
+
+
+msgid "Grease Pencil drawing brushes"
+msgstr "Pincéis de desenho do lápis de cera"
+
+
 msgid "Stroke Placement (Image Editor)"
 msgstr "Posicionamento dos traços (Editor de imagens e UVs)"
 
@@ -74575,6 +75652,14 @@ msgstr "Usar desenho contínuo"
 
 msgid "Allow drawing multiple strokes at a time with Grease Pencil"
 msgstr "Permite o desenho de múltiplos traços ao mesmo tempo com o lápis de cera."
+
+
+msgid "Draw Strokes on Back"
+msgstr "Desenhar traços logo atrás"
+
+
+msgid "When draw new strokes, the new stroke is drawn below of all strokes in the layer"
+msgstr "Durante o desenho de novos traços, os mesmos serão desenhados abaixo de todos os traços presentes na camada."
 
 
 msgid "Only Endpoints"
@@ -78685,6 +79770,14 @@ msgid "Pivot When"
 msgstr "Quando pivotar"
 
 
+msgid "Cache File Properties:"
+msgstr "Propriedades do(s) arquivo(s) de cache:"
+
+
+msgid "Constraint Properties:"
+msgstr "Propriedades das restrições:"
+
+
 msgid "Blender 2.6 doesn't support python constraints yet"
 msgstr "Blender 2.6 ainda não suporta restrições Python."
 
@@ -79213,6 +80306,10 @@ msgstr "Eixo apontado à frente e para cima:"
 
 msgid "Flip Axis:"
 msgstr "Inverter eixos:"
+
+
+msgid "Modifier Properties:"
+msgstr "Propriedades dos modificadores:"
 
 
 msgid "Cast Type:"
@@ -79900,8 +80997,22 @@ msgid "Continuous Drawing"
 msgstr "Desenhar continuamente"
 
 
+msgid "Draw on Back"
+msgstr "Desenhar atrás"
+
+
 msgid "Edit:"
 msgstr "Editar:"
+
+
+msgctxt "Operator"
+msgid "Arrange Strokes..."
+msgstr "Organizar traços..."
+
+
+msgctxt "Operator"
+msgid "Move to Color"
+msgstr "Mover para a cor"
 
 
 msgctxt "Operator"
@@ -79909,8 +81020,25 @@ msgid "Flip Direction"
 msgstr "Alternar direção"
 
 
+msgid "Active Brush:      "
+msgstr "Pincel ativo:"
+
+
 msgid "Active Layer:      "
 msgstr "Camada ativa:"
+
+
+msgid "Arrange Strokes"
+msgstr "Organizar traços"
+
+
+msgid "Join Strokes"
+msgstr "Juntar traços"
+
+
+msgctxt "Operator"
+msgid "Flip direction"
+msgstr "Alternar direção"
 
 
 msgctxt "Operator"
@@ -79941,6 +81069,24 @@ msgstr "Cursor para a grade"
 msgctxt "Operator"
 msgid "Show All"
 msgstr "Mostrar tudo"
+
+
+msgctxt "Operator"
+msgid "Copy current drawing brush"
+msgstr "Copia o pincel de desenho atual."
+
+
+msgctxt "Operator"
+msgid "Create a set of predefined brushes"
+msgstr "Cria um conjunto de pincéis predefinidos."
+
+
+msgid "Tint"
+msgstr "Tingimento"
+
+
+msgid "Thickness Change"
+msgstr "Alterações de espessura"
 
 
 msgid "Stroke:"
@@ -79993,8 +81139,26 @@ msgstr "Selecionar:"
 
 
 msgctxt "Operator"
+msgid "Paste & Merge"
+msgstr "Colar e fundir"
+
+
+msgctxt "Operator"
 msgid "Scale"
 msgstr "Escalonamento"
+
+
+msgctxt "Operator"
+msgid "Join & Copy"
+msgstr "Juntar e copiar"
+
+
+msgid "Show Directions"
+msgstr "Mostrar as direções"
+
+
+msgid "Stroke Quality:"
+msgstr "Qualidade dos traços:"
 
 
 msgctxt "Operator"
@@ -80005,6 +81169,30 @@ msgstr "Linhas retas"
 msgctxt "Operator"
 msgid "Eraser"
 msgstr "Apagador"
+
+
+msgctxt "Operator"
+msgid "Send to Back"
+msgstr "Enviar para o fundo"
+
+
+msgctxt "Operator"
+msgid "Send Backward"
+msgstr "Enviar para trás"
+
+
+msgctxt "Operator"
+msgid "Bring to Front"
+msgstr "Trazer para o topo"
+
+
+msgctxt "Operator"
+msgid "Bring Forward"
+msgstr "Trazer para a frente"
+
+
+msgid "Show drawing direction"
+msgstr "Mostra a direção do desenho."
 
 
 msgctxt "Operator"
@@ -81504,6 +82692,14 @@ msgid "3D Markers"
 msgstr "Marcadores 3D"
 
 
+msgid "Tracks For Stabilization"
+msgstr "Rastreamentos para estabilização"
+
+
+msgid "Tracks For Location"
+msgstr "Rastreamentos para localização"
+
+
 msgid "Use timecode index:"
 msgstr "Usar índice de código de tempo:"
 
@@ -81540,6 +82736,10 @@ msgstr "Desabilitar marcadores"
 msgctxt "Operator"
 msgid "Unlock Tracks"
 msgstr "Destravar trilhas"
+
+
+msgid "Tracks For Rotation / Scale"
+msgstr "Rastreamentos para rotação e escala"
 
 
 msgctxt "Operator"
@@ -81948,6 +83148,11 @@ msgstr "Salvar cópia..."
 msgctxt "Operator"
 msgid "Collada (Default) (.dae)"
 msgstr "COLLADA (padrão) (.dae)"
+
+
+msgctxt "Operator"
+msgid "Alembic (.abc)"
+msgstr "Alembic (.abc)"
 
 
 msgctxt "Operator"
@@ -82905,22 +84110,6 @@ msgid "View Navigation:"
 msgstr "Navegação da visualização:"
 
 
-msgid "NDOF Device:"
-msgstr "NDOF - Dispositivo:"
-
-
-msgid "NDOF Sensitivity"
-msgstr "NDOF - Sensibilidade"
-
-
-msgid "NDOF Orbit Sensitivity"
-msgstr "NDOF - Sensibilidade de órbita"
-
-
-msgid "NDOF Deadzone"
-msgstr "Zona de inatividade NDOF"
-
-
 msgid "Supported Level"
 msgstr "Nível de suporte"
 
@@ -83051,6 +84240,22 @@ msgstr "Inverter direção de ampliação do mouse"
 
 msgid "Natural Trackpad Direction"
 msgstr "Direção natural da mesa de tração"
+
+
+msgid "NDOF Device:"
+msgstr "NDOF - Dispositivo:"
+
+
+msgid "NDOF Sensitivity"
+msgstr "NDOF - Sensibilidade"
+
+
+msgid "NDOF Orbit Sensitivity"
+msgstr "NDOF - Sensibilidade de órbita"
+
+
+msgid "NDOF Deadzone"
+msgstr "Zona de inatividade NDOF"
 
 
 msgctxt "Operator"
@@ -85071,6 +86276,14 @@ msgid "GP_Layer"
 msgstr "Camada de lápis de cera"
 
 
+msgid "GP_Palette"
+msgstr "Paleta de lápis de cera"
+
+
+msgid "GP_Brush"
+msgstr "Pincel de lápis de cera"
+
+
 msgid "Cannot pack multiview images from raw data currently..."
 msgstr "Não é possível empacotar imagens de múltipla visualização a partir dos dados brutos atualmente..."
 
@@ -86339,8 +87552,48 @@ msgid "No active layer to isolate"
 msgstr "Sem camadas ativas para isolar"
 
 
+msgid "No layers to merge"
+msgstr "Sem camadas para fundir."
+
+
+msgid "Some selected stroke is already on top"
+msgstr "Alguns traços selecionados já estão no topo."
+
+
+msgid "Some selected stroke is already on bottom"
+msgstr "Alguns traços selecionados já estão no fundo."
+
+
+msgid "Nowhere for brush data to go"
+msgstr "Sem local de destinação para o qual transportar os dados dos pincéis."
+
+
+msgid "Grease Pencil needs a brush, unable to delete the last one"
+msgstr "O lápis de cera necessita de ao menos um pincel listado, não é possível apagar o último disponível."
+
+
+msgid "Nowhere to go"
+msgstr "Nenhum local a ser alcançado..."
+
+
+msgid "Grease Pencil needs a palette, unable to delete the last one"
+msgstr "O lápis de cera necessita de ao menos uma palea de cores listada, não é possível apagar a última disponível."
+
+
+msgid "No active color to isolate"
+msgstr "Sem cores ativas para isolar."
+
+
 msgid "Cannot change to non-existent layer (index = %d)"
 msgstr "Não é possível alterar para uma camada não existente (O índice afetado é %d)"
+
+
+msgid "Cannot change to non-existent brush (index = %d)"
+msgstr "Não é possível alterar para um pincel não existente (O índice afetado é %d)"
+
+
+msgid "Cannot change to non-existent palette (index = %d)"
+msgstr "Não é possível alterar para uma paleta de cores não existente (O índice afetado é %d)"
 
 
 msgid "No Grease Pencil data"
@@ -86389,6 +87642,10 @@ msgstr "Sessão para apagar lápis de cera: Mantenha e arraste com BEM ou BDM pa
 
 msgid "Grease Pencil Line Session: Hold and drag LMB to draw | ESC/Enter to end  (or click outside this area)"
 msgstr "Sessão de linha de lápis de cera: Mantenha e arraste com BEM para desenhar | Pressione Esc ou Enter para encerrar (ou clique fora desta área)"
+
+
+msgid "Grease Pencil Freehand Session: Hold and drag LMB to draw | E/ESC/Enter to end  (or click outside this area)"
+msgstr "Sessão de mão livre de lápis de cera: Pressione e arraste com BEM para desenhar | Pressione a tecla E, Esc ou Enter para encerrar (ou clique fora desta área)."
 
 
 msgid "Grease Pencil Poly Session: LMB click to place next stroke vertex | ESC/Enter to end  (or click outside this area)"
@@ -86782,6 +88039,10 @@ msgid "Anim Player"
 msgstr "Rep. animação"
 
 
+msgid "Manual Transform:"
+msgstr "Transformações manuais:"
+
+
 msgid "Indirect library datablock, cannot change"
 msgstr "Bloco de dados de biblioteca indireta, não é possível alterar."
 
@@ -86982,6 +88243,10 @@ msgid "Browse Paint Curve Data to be linked"
 msgstr "Permite navegar entre os dados de curva de pintura a ser vinculados."
 
 
+msgid "Browse Cache Files to be linked"
+msgstr "Permite navegar entre os dados de arquivos de cache a ser vinculados."
+
+
 msgid "Browse ID data to be linked"
 msgstr "Permite navegar entre os dados de identificadores a ser vinculados."
 
@@ -87108,6 +88373,18 @@ msgstr "Novo(a)"
 
 msgid "%d items"
 msgstr "%d itens"
+
+
+msgid "Archive Options:"
+msgstr "Opções para arquivos:"
+
+
+msgid "Scene Options:"
+msgstr "Opções para cenas:"
+
+
+msgid "Object Options:"
+msgstr "Opções para objetos:"
 
 
 msgid "No filename given"
@@ -91223,6 +92500,10 @@ msgid "Layer not found in grease pencil data"
 msgstr "Camada não encontrada dentro dos dados do lápis de cera."
 
 
+msgid "Palette not found in grease pencil data"
+msgstr "Paleta não encontrada dentro dos dados do lápis de cera."
+
+
 msgid "Frame already exists on this frame number %d"
 msgstr "Quadro já existe dentro deste número de quadros %d."
 
@@ -91571,6 +92852,10 @@ msgstr "Um formato de colisão não convexo foi passado para a função, use som
 
 msgid "Rigidbody world was not properly initialized, need to step the simulation first"
 msgstr "Ambiente de corpo rígido não foi inicializado corretamente, é necessário acionar a simulação primeiro."
+
+
+msgid "Brush not found in grease pencil data"
+msgstr "Pincel não encontrado dentro dos dados do lápis de cera."
 
 
 msgid "Keying set could not be added"
@@ -92712,6 +93997,10 @@ msgstr "Importar e exportar"
 
 msgid "MakeHuman"
 msgstr "MakeHuman"
+
+
+msgid "Pie Menu"
+msgstr "Menus setorizados"
 
 
 msgid "Rigging"
