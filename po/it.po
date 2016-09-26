@@ -1,9 +1,9 @@
 
 msgid ""
 msgstr ""
-"Project-Id-Version: Blender 2.78 (sub 0) (b'd146030')\n"
+"Project-Id-Version: Blender 2.78 (sub 0) (b'2c19ddf')\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-09-22 11:41:36\n"
+"POT-Creation-Date: 2016-09-26 12:09:58\n"
 "PO-Revision-Date: \n"
 "Last-Translator: blend-it <https://developer.blender.org/T42765>\n"
 "Language-Team: blend-it <https://developer.blender.org/T42765>\n"
@@ -176,6 +176,14 @@ msgstr "Gruppo Azione è espanso"
 
 msgid "Action Groups"
 msgstr "Gruppi Azione"
+
+
+msgid "Collection of action groups"
+msgstr "Raccolta di gruppi azione"
+
+
+msgid "Collection of timeline markers"
+msgstr "Raccolta di marcatori del tempo"
 
 
 msgid "Actuator to apply actions in the game engine"
@@ -2000,6 +2008,10 @@ msgid "Object Paths"
 msgstr "Percorsi Oggetto"
 
 
+msgid "Collection of object paths"
+msgstr "Raccolta di percorsi oggetto"
+
+
 msgid "Animation Data"
 msgstr "Dati Animazione"
 
@@ -2492,6 +2504,10 @@ msgid "Area Spaces"
 msgstr "Spazi Area"
 
 
+msgid "Collection of spaces"
+msgstr "Raccolta di spazi"
+
+
 msgid "Active Space"
 msgstr "Spazio Attivo"
 
@@ -2501,11 +2517,15 @@ msgstr "Ossa Armatura"
 
 
 msgid "Collection of armature bones"
-msgstr "Raccolta di ossa armatura"
+msgstr "Raccolta di ossi armatura"
 
 
 msgid "Active Bone"
 msgstr "Osso Attivo"
+
+
+msgid "Collection of armature edit bones"
+msgstr "Raccolta di ossi modifica armatura"
 
 
 msgid "Background Image"
@@ -3254,6 +3274,22 @@ msgstr "Gestori Finestre"
 
 msgid "Worlds"
 msgstr "Mondi"
+
+
+msgid "World datablocks"
+msgstr "Blocchi dati Mondo"
+
+
+msgid "Collection of actions"
+msgstr "Raccolta di azioni"
+
+
+msgid "Collection of armatures"
+msgstr "Raccolta di armature"
+
+
+msgid "Collection of brushes"
+msgstr "Raccolta di pennelli"
 
 
 msgid "Blender RNA"
@@ -29254,6 +29290,10 @@ msgid "Squeeze Value"
 msgstr "Schiaccia Valore"
 
 
+msgid "Christensen-Burley"
+msgstr "Christensen-Burley"
+
+
 msgid "Method to use for the tangent"
 msgstr "Metodo da usare per la tangente"
 
@@ -29327,11 +29367,11 @@ msgstr "Immagine contenente dati non cromatici, per esempio mappa scostamento o 
 
 
 msgid "Texture interpolation"
-msgstr "Interpolazione Texture"
+msgstr "Interpolazione texture"
 
 
 msgid "Linear interpolation"
-msgstr "Interpolazione Lineare"
+msgstr "Interpolazione lineare"
 
 
 msgid "Cubic interpolation (CPU only)"
@@ -29342,8 +29382,24 @@ msgid "Projection"
 msgstr "Proiezione"
 
 
+msgid "Projection of the input image"
+msgstr "Proiezione dell'immagine in entrata"
+
+
 msgid "Equirectangular"
 msgstr "Equirettangolare"
+
+
+msgid "Equirectangular or latitude-longitude projection"
+msgstr "Equirettangolare o proiezione latitudine-longitudine"
+
+
+msgid "Mirror Ball"
+msgstr "Sfera a Specchio"
+
+
+msgid "Projection from an orthographic photo of a mirror ball"
+msgstr "Proiezione da una foto ortografica di una sfera a specchio"
 
 
 msgid "Gradient Texture"
@@ -29462,6 +29518,10 @@ msgid "Ground Albedo"
 msgstr "Albedo Terreno"
 
 
+msgid "Ground color that is subtly reflected in the sky"
+msgstr "Colore del suolo che viene leggermente riflesso nel cielo"
+
+
 msgid "Sky Type"
 msgstr "Tipo Cielo"
 
@@ -29476,6 +29536,10 @@ msgstr "Hosek / Wilkie"
 
 msgid "Sun Direction"
 msgstr "Direzione Sole"
+
+
+msgid "Direction from where the sun is shining"
+msgstr "Direzione da cui brilla il sole"
 
 
 msgid "Turbidity"
@@ -52255,8 +52319,16 @@ msgid "Volume Sampling"
 msgstr "Campionatura Volume"
 
 
+msgid "Sampling method to use for volumes"
+msgstr "Metodo di campionatura usato per i volumi"
+
+
 msgid "Equiangular"
 msgstr "Equiangolare"
+
+
+msgid "Use equiangular sampling, best for volumes with low density with light inside or near the volume"
+msgstr "Usa la campionatura equiangolare, migliore per i volumi a bassa densità con luci all'interno o vicine"
 
 
 msgid "Multiple Importance"
@@ -52827,8 +52899,20 @@ msgid "Number of volume scattering samples to render for each AA sample"
 msgstr "Numero di campioni di dispersione volume da renderizzare per ogni campione AA"
 
 
+msgid "When using volume rendering, assume volume has the same density everywhere(not using any textures), for faster rendering"
+msgstr "Quando si usa il rendering volume, assume che questo abbia tutto la stessa densità (non usando alcuna texture), per un rendering più veloce"
+
+
+msgid "Maximum number of bounces the background light will contribute to the render"
+msgstr "Massimo numero di rimbalzi con cui la luce di sfondo contribuisce al render"
+
+
 msgid "Map Resolution"
 msgstr "Risoluzione Mappa"
+
+
+msgid "Importance map size is resolution x resolution; higher values potentially produce less noise, at the cost of memory and speed"
+msgstr "La dimensione mappa d'importanza è risoluzione x risoluzione: valori più alti potenzialmente producono meno rumore, a costo di minor velocità e più uso di memoria"
 
 
 msgid "Interpolation method to use for volumes"
@@ -64397,308 +64481,8 @@ msgstr "Occlude gli oggetti con il colore dell'ambiente tanto più sono distanti
 
 
 msgctxt "Operator"
-msgid "Curve:"
-msgstr "Curva:"
-
-
-msgctxt "Operator"
-msgid "Cycles:"
-msgstr "Cycles:"
-
-
-msgctxt "Operator"
-msgid "Lamp:"
-msgstr "Luce:"
-
-
-msgctxt "Operator"
-msgid "Constraint:"
-msgstr "Vincolo:"
-
-
-msgctxt "Operator"
-msgid "Ui:"
-msgstr "Ui:"
-
-
-msgctxt "Operator"
-msgid "Outliner:"
-msgstr "Struttura:"
-
-
-msgctxt "Operator"
-msgid "Import_anim:"
-msgstr "Importa_anim:"
-
-
-msgctxt "Operator"
-msgid "Mask:"
-msgstr "Maschera:"
-
-
-msgctxt "Operator"
-msgid "Time:"
-msgstr "Tempo:"
-
-
-msgctxt "Operator"
-msgid "Camera:"
-msgstr "Camera:"
-
-
-msgctxt "Operator"
-msgid "Import_scene:"
-msgstr "Importa_scena:"
-
-
-msgctxt "Operator"
-msgid "World:"
-msgstr "Mondo:"
-
-
-msgctxt "Operator"
-msgid "Action:"
-msgstr "Azione:"
-
-
-msgctxt "Operator"
-msgid "Surface:"
-msgstr "Superficie:"
-
-
-msgctxt "Operator"
-msgid "Mocap:"
-msgstr "Mocap:"
-
-
-msgctxt "Operator"
-msgid "Export_mesh:"
-msgstr "Esporta_mesh:"
-
-
-msgctxt "Operator"
-msgid "Sequencer:"
-msgstr "Sequenziatore:"
-
-
-msgctxt "Operator"
-msgid "Graph:"
-msgstr "Grafico:"
-
-
-msgctxt "Operator"
-msgid "Info:"
-msgstr "Info:"
-
-
-msgctxt "Operator"
-msgid "View2d:"
-msgstr "Vista 2D:"
-
-
-msgctxt "Operator"
-msgid "Brush:"
-msgstr "Pennello:"
-
-
-msgctxt "Operator"
-msgid "Import_mesh:"
-msgstr "Importa_mesh:"
-
-
-msgctxt "Operator"
-msgid "Palette:"
-msgstr "Tavolozza:"
-
-
-msgctxt "Operator"
-msgid "Mesh:"
-msgstr "Mesh:"
-
-
-msgctxt "Operator"
-msgid "Pose:"
-msgstr "Posa:"
-
-
-msgctxt "Operator"
-msgid "Sculpt:"
-msgstr "Scultura:"
-
-
-msgctxt "Operator"
-msgid "Script:"
-msgstr "Script:"
-
-
-msgctxt "Operator"
-msgid "Font:"
-msgstr "Carattere:"
-
-
-msgctxt "Operator"
-msgid "Export_animation:"
-msgstr "Esporta_Animazione:"
-
-
-msgctxt "Operator"
-msgid "Node:"
-msgstr "Nodo:"
-
-
-msgctxt "Operator"
-msgid "Wm:"
-msgstr "Wm:"
-
-
-msgctxt "Operator"
-msgid "Boid:"
-msgstr "Stormo:"
-
-
-msgctxt "Operator"
-msgid "Texture:"
-msgstr "Texture:"
-
-
-msgctxt "Operator"
-msgid "Poselib:"
-msgstr "LibPosa:"
-
-
-msgctxt "Operator"
-msgid "Anim:"
-msgstr "Anim:"
-
-
-msgctxt "Operator"
-msgid "Object:"
-msgstr "Oggetto:"
-
-
-msgctxt "Operator"
-msgid "Uv:"
-msgstr "Uv:"
-
-
-msgctxt "Operator"
-msgid "Scene:"
-msgstr "Scena:"
-
-
-msgctxt "Operator"
-msgid "Export_shape:"
-msgstr "Esporta_forma:"
-
-
-msgctxt "Operator"
-msgid "Import_shape:"
-msgstr "Importa_forma:"
-
-
-msgctxt "Operator"
-msgid "Console:"
-msgstr "Console:"
-
-
-msgctxt "Operator"
-msgid "Clip:"
-msgstr "Filmato:"
-
-
-msgctxt "Operator"
-msgid "Material:"
-msgstr "Materiale:"
-
-
-msgctxt "Operator"
-msgid "Rigidbody:"
-msgstr "Corpo Rigido:"
-
-
-msgctxt "Operator"
-msgid "Dpaint:"
-msgstr "PitturaDin:"
-
-
-msgctxt "Operator"
-msgid "Nla:"
-msgstr "Nla:"
-
-
-msgctxt "Operator"
-msgid "Ptcache:"
-msgstr "Ptcache:"
-
-
-msgctxt "Operator"
-msgid "Export_anim:"
-msgstr "Esporta_anim:"
-
-
-msgctxt "Operator"
-msgid "Buttons:"
-msgstr "Bottoni:"
-
-
-msgctxt "Operator"
-msgid "Paintcurve:"
-msgstr "Paintcurve:"
-
-
-msgctxt "Operator"
-msgid "Import_curve:"
-msgstr "Importa_curva:"
-
-
-msgctxt "Operator"
-msgid "Cloth:"
-msgstr "Stoffa:"
-
-
-msgctxt "Operator"
-msgid "Render:"
-msgstr "Render:"
-
-
-msgctxt "Operator"
-msgid "Armature:"
-msgstr "Armatura:"
-
-
-msgctxt "Operator"
 msgid "Screen:"
 msgstr "Schermo:"
-
-
-msgctxt "Operator"
-msgid "Fluid:"
-msgstr "Fluido:"
-
-
-msgctxt "Operator"
-msgid "Blender_id:"
-msgstr "Blender_id:"
-
-
-msgctxt "Operator"
-msgid "Group:"
-msgstr "Gruppo:"
-
-
-msgctxt "Operator"
-msgid "View3d:"
-msgstr "Vista 3D:"
-
-
-msgctxt "Operator"
-msgid "Cachefile:"
-msgstr "CacheFile:"
-
-
-msgctxt "Operator"
-msgid "Export_blend:"
-msgstr "Esporta_blend:"
 
 
 msgctxt "Operator"
@@ -64707,38 +64491,48 @@ msgstr "Suono:"
 
 
 msgctxt "Operator"
-msgid "Text:"
-msgstr "Testo:"
+msgid "Particle:"
+msgstr "Particella:"
 
 
 msgctxt "Operator"
-msgid "File:"
-msgstr "File:"
+msgid "Import_shape:"
+msgstr "Importa_forma:"
 
 
 msgctxt "Operator"
-msgid "Paint:"
-msgstr "Pittura:"
+msgid "Poselib:"
+msgstr "LibPosa:"
 
 
 msgctxt "Operator"
-msgid "Logic:"
-msgstr "Logica:"
+msgid "Time:"
+msgstr "Tempo:"
 
 
 msgctxt "Operator"
-msgid "Sketch:"
-msgstr "Schizzo:"
+msgid "Export_anim:"
+msgstr "Esporta_anim:"
 
 
 msgctxt "Operator"
-msgid "Transform:"
-msgstr "Trasformaz:"
+msgid "Sequencer:"
+msgstr "Sequenziatore:"
 
 
 msgctxt "Operator"
-msgid "Image:"
-msgstr "Immagine:"
+msgid "Node:"
+msgstr "Nodo:"
+
+
+msgctxt "Operator"
+msgid "Console:"
+msgstr "Console:"
+
+
+msgctxt "Operator"
+msgid "Info:"
+msgstr "Info:"
 
 
 msgctxt "Operator"
@@ -64747,13 +64541,178 @@ msgstr "Ed:"
 
 
 msgctxt "Operator"
-msgid "Marker:"
-msgstr "Marcatore:"
+msgid "Import_mesh:"
+msgstr "Importa_mesh:"
 
 
 msgctxt "Operator"
-msgid "Export_scene:"
-msgstr "Esporta_scena:"
+msgid "Cloth:"
+msgstr "Stoffa:"
+
+
+msgctxt "Operator"
+msgid "Import_anim:"
+msgstr "Importa_anim:"
+
+
+msgctxt "Operator"
+msgid "Script:"
+msgstr "Script:"
+
+
+msgctxt "Operator"
+msgid "Import_scene:"
+msgstr "Importa_scena:"
+
+
+msgctxt "Operator"
+msgid "Material:"
+msgstr "Materiale:"
+
+
+msgctxt "Operator"
+msgid "Object:"
+msgstr "Oggetto:"
+
+
+msgctxt "Operator"
+msgid "Sculpt:"
+msgstr "Scultura:"
+
+
+msgctxt "Operator"
+msgid "Mesh:"
+msgstr "Mesh:"
+
+
+msgctxt "Operator"
+msgid "Image:"
+msgstr "Immagine:"
+
+
+msgctxt "Operator"
+msgid "Texture:"
+msgstr "Texture:"
+
+
+msgctxt "Operator"
+msgid "Mocap:"
+msgstr "Mocap:"
+
+
+msgctxt "Operator"
+msgid "Export_animation:"
+msgstr "Esporta_Animazione:"
+
+
+msgctxt "Operator"
+msgid "Text:"
+msgstr "Testo:"
+
+
+msgctxt "Operator"
+msgid "Surface:"
+msgstr "Superficie:"
+
+
+msgctxt "Operator"
+msgid "Scene:"
+msgstr "Scena:"
+
+
+msgctxt "Operator"
+msgid "Brush:"
+msgstr "Pennello:"
+
+
+msgctxt "Operator"
+msgid "Buttons:"
+msgstr "Bottoni:"
+
+
+msgctxt "Operator"
+msgid "Graph:"
+msgstr "Grafico:"
+
+
+msgctxt "Operator"
+msgid "Anim:"
+msgstr "Anim:"
+
+
+msgctxt "Operator"
+msgid "Ptcache:"
+msgstr "Ptcache:"
+
+
+msgctxt "Operator"
+msgid "View2d:"
+msgstr "Vista 2D:"
+
+
+msgctxt "Operator"
+msgid "Wm:"
+msgstr "Wm:"
+
+
+msgctxt "Operator"
+msgid "Outliner:"
+msgstr "Struttura:"
+
+
+msgctxt "Operator"
+msgid "Uv:"
+msgstr "Uv:"
+
+
+msgctxt "Operator"
+msgid "View3d:"
+msgstr "Vista 3D:"
+
+
+msgctxt "Operator"
+msgid "Palette:"
+msgstr "Tavolozza:"
+
+
+msgctxt "Operator"
+msgid "Blender_id:"
+msgstr "Blender_id:"
+
+
+msgctxt "Operator"
+msgid "Boid:"
+msgstr "Stormo:"
+
+
+msgctxt "Operator"
+msgid "Export_mesh:"
+msgstr "Esporta_mesh:"
+
+
+msgctxt "Operator"
+msgid "Cachefile:"
+msgstr "CacheFile:"
+
+
+msgctxt "Operator"
+msgid "Lamp:"
+msgstr "Luce:"
+
+
+msgctxt "Operator"
+msgid "Group:"
+msgstr "Gruppo:"
+
+
+msgctxt "Operator"
+msgid "Export_shape:"
+msgstr "Esporta_forma:"
+
+
+msgctxt "Operator"
+msgid "Armature:"
+msgstr "Armatura:"
 
 
 msgctxt "Operator"
@@ -64762,8 +64721,93 @@ msgstr "Mball:"
 
 
 msgctxt "Operator"
-msgid "Particle:"
-msgstr "Particella:"
+msgid "Constraint:"
+msgstr "Vincolo:"
+
+
+msgctxt "Operator"
+msgid "Nla:"
+msgstr "Nla:"
+
+
+msgctxt "Operator"
+msgid "World:"
+msgstr "Mondo:"
+
+
+msgctxt "Operator"
+msgid "Marker:"
+msgstr "Marcatore:"
+
+
+msgctxt "Operator"
+msgid "Camera:"
+msgstr "Camera:"
+
+
+msgctxt "Operator"
+msgid "Pose:"
+msgstr "Posa:"
+
+
+msgctxt "Operator"
+msgid "Cycles:"
+msgstr "Cycles:"
+
+
+msgctxt "Operator"
+msgid "Import_curve:"
+msgstr "Importa_curva:"
+
+
+msgctxt "Operator"
+msgid "Dpaint:"
+msgstr "PitturaDin:"
+
+
+msgctxt "Operator"
+msgid "Export_blend:"
+msgstr "Esporta_blend:"
+
+
+msgctxt "Operator"
+msgid "Paintcurve:"
+msgstr "Paintcurve:"
+
+
+msgctxt "Operator"
+msgid "Font:"
+msgstr "Carattere:"
+
+
+msgctxt "Operator"
+msgid "Logic:"
+msgstr "Logica:"
+
+
+msgctxt "Operator"
+msgid "Fluid:"
+msgstr "Fluido:"
+
+
+msgctxt "Operator"
+msgid "Paint:"
+msgstr "Pittura:"
+
+
+msgctxt "Operator"
+msgid "Export_scene:"
+msgstr "Esporta_scena:"
+
+
+msgctxt "Operator"
+msgid "Rigidbody:"
+msgstr "Corpo Rigido:"
+
+
+msgctxt "Operator"
+msgid "Clip:"
+msgstr "Filmato:"
 
 
 msgctxt "Operator"
@@ -64772,13 +64816,53 @@ msgstr "Matita:"
 
 
 msgctxt "Operator"
-msgid "Safe_areas:"
-msgstr "Aree_sicure:"
+msgid "Sketch:"
+msgstr "Schizzo:"
+
+
+msgctxt "Operator"
+msgid "Curve:"
+msgstr "Curva:"
 
 
 msgctxt "Operator"
 msgid "Lattice:"
 msgstr "Lattice:"
+
+
+msgctxt "Operator"
+msgid "Action:"
+msgstr "Azione:"
+
+
+msgctxt "Operator"
+msgid "Mask:"
+msgstr "Maschera:"
+
+
+msgctxt "Operator"
+msgid "Ui:"
+msgstr "Ui:"
+
+
+msgctxt "Operator"
+msgid "Render:"
+msgstr "Render:"
+
+
+msgctxt "Operator"
+msgid "File:"
+msgstr "File:"
+
+
+msgctxt "Operator"
+msgid "Transform:"
+msgstr "Trasformaz:"
+
+
+msgctxt "Operator"
+msgid "Safe_areas:"
+msgstr "Aree_sicure:"
 
 
 msgctxt "WindowManager"
