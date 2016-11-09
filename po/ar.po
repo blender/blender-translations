@@ -1,9 +1,9 @@
 
 msgid ""
 msgstr ""
-"Project-Id-Version: Blender 2.78 (sub 0) (b'2c19ddf')\n"
+"Project-Id-Version: Blender 2.78 (sub 2) (b'afc8a4f')\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-09-26 12:09:58\n"
+"POT-Creation-Date: 2016-11-09 19:42:55\n"
 "PO-Revision-Date: 2016-04-23 22:41+0300\n"
 "Last-Translator: Yousef Harfoush <bat3a@msn.com>\n"
 "Language-Team: Yousef Harfoush, Amine Moussaoui <bat3a@msn.com>\n"
@@ -1945,6 +1945,14 @@ msgid "Module name"
 msgstr "ﺓﺪﺣﻮﻟﺍ ﻢﺳﺇ"
 
 
+msgid "Compute Device Type"
+msgstr "ﺏﺎﺴﺤﻟﺍ ﺯﺎﻬﺟ ﻉﻮﻧ"
+
+
+msgid "Device to use for computation (rendering with Cycles)"
+msgstr "(ﺰﻠﻜﻳﺎﺴﺑ ﺮﻴﻴﺼﺘﻟﺍ ﺪﻨﻋ) ﺏﺎﺴﺤﻠﻟ ﻡﺪﺨﺘﺴﻤﻟﺍ ﺯﺎﻬﺠﻟﺍ"
+
+
 msgid "Fribidi Library"
 msgstr "ﻱﺪﻴﺒﻳﺮﻓ ﺔﺒﺘﻜﻣ"
 
@@ -3061,48 +3069,24 @@ msgid "Blendfile Data"
 msgstr "ﺭﺪﻨﻠﺑ ﻒﻠﻣ ﺕﺎﻧﺎﻴﺑ"
 
 
-msgid "Main data structure representing a .blend file and all its datablocks"
-msgstr "ﻪﺗﺎﻧﺎﻴﺑ ﻞﺘﻛ ﻞﻛﻭ blend. ﻒﻠﻤﻟ ﺔﻠﺜﻤﻤﻟﺍ ﺔﻴﺴﻴﺋﺮﻟﺍ ﺕﺎﻧﺎﻴﺒﻟﺍ ﺔﻴﻠﻴﻜﻴﻫ"
-
-
 msgid "Actions"
 msgstr "ﺙﺍﺪﺣﻷ﻿ﺍ"
-
-
-msgid "Action datablocks"
-msgstr "ﺙﺪﺤﻟﺍ ﺕﺎﻧﺎﻴﺑ ﻞﺘﻛ"
 
 
 msgid "Armatures"
 msgstr "ﻞﻛﺎﻴﻬﻟﺍ"
 
 
-msgid "Armature datablocks"
-msgstr "ﻞﻜﻴﻬﻟﺍ ﺕﺎﻧﺎﻴﺑ ﻞﺘﻛ"
-
-
 msgid "Brushes"
 msgstr "ﻲﺷﺍﺮﻔﻟﺍ"
-
-
-msgid "Brush datablocks"
-msgstr "ﺓﺎﺷﺮﻔﻟﺍ ﺕﺎﻧﺎﻴﺑ ﻞﺘﻛ"
 
 
 msgid "Cameras"
 msgstr "ﺕﺍﺮﻴﻤﻜﻟﺍ"
 
 
-msgid "Camera datablocks"
-msgstr "ﺕﺍﺮﻴﻤﻜﻟﺍ ﺕﺎﻧﺎﻴﺑ ﻞﺘﻛ"
-
-
 msgid "Curves"
 msgstr "ﺕﺎﻴﻨﺤﻨﻣ"
-
-
-msgid "Curve datablocks"
-msgstr "ﻰﻨﺤﻨﻤﻟﺍ ﺕﺎﻧﺎﻴﺑ ﻞﺘﻛ"
 
 
 msgid "Filename"
@@ -3117,32 +3101,16 @@ msgid "Vector Fonts"
 msgstr "ﻪﺠﺘﻤﻟﺍ ﻁﻮﻄﺨﻟﺍ"
 
 
-msgid "Vector font datablocks"
-msgstr "ﻪﺠﺘﻤﻟﺍ ﻂﺨﻟﺍ ﺕﺎﻧﺎﻴﺑ ﻞﺘﻛ"
-
-
 msgid "Grease Pencil"
 msgstr "ﺕﺎﻈﺣﻼ﻿ﻣ ﻢﻠﻗ"
-
-
-msgid "Grease Pencil datablocks"
-msgstr "ﺕﺎﻈﺣﻼ﻿ﻤﻟﺍ ﻢﻠﻗ ﺕﺎﻧﺎﻴﺑ ﻞﺘﻛ"
 
 
 msgid "Groups"
 msgstr "ﺕﺎﻋﻮﻤﺠﻣ"
 
 
-msgid "Group datablocks"
-msgstr "ﺔﻋﻮﻤﺠﻤﻟﺍ ﺕﺎﻧﺎﻴﺑ ﻞﺘﻛ"
-
-
 msgid "Images"
 msgstr "ﺭﻮﺼﻟﺍ"
-
-
-msgid "Image datablocks"
-msgstr "ﺓﺭﻮﺼﻟﺍ ﺕﺎﻧﺎﻴﺑ ﻞﺘﻛ"
 
 
 msgid "File Has Unsaved Changes"
@@ -3165,88 +3133,44 @@ msgid "Lamps"
 msgstr "ﺢﺑﺎﺼﻤﻟﺍ"
 
 
-msgid "Lamp datablocks"
-msgstr "ﺡﺎﺒﺼﻤﻟﺍ ﺕﺎﻧﺎﻴﺑ ﻞﺘﻛ"
-
-
 msgid "Lattices"
 msgstr "ﺕﺎﻜﺒﺸﻟﺍ"
-
-
-msgid "Lattice datablocks"
-msgstr "ﺔﻜﺒﺸﻟﺍ ﺕﺎﻧﺎﻴﺑ ﻞﺘﻛ"
 
 
 msgid "Libraries"
 msgstr "ﺕﺎﺒﺘﻜﻤﻟﺍ"
 
 
-msgid "Library datablocks"
-msgstr "ﺔﺒﺘﻜﻤﻟﺍ ﺕﺎﻧﺎﻴﺑ ﻞﺘﻛ"
-
-
 msgid "Line Styles"
 msgstr "ﻂﺨﻟﺍ ﻁﺎﻤﻧﺃ"
-
-
-msgid "Line Style datablocks"
-msgstr "ﻂﺨﻟﺍ ﻁﺎﻤﻧﺃ ﺕﺎﻧﺎﻴﺑ ﻞﺘﻛ"
 
 
 msgid "Masks"
 msgstr "ﺔﻌﻨﻗﻷ﻿ﺍ"
 
 
-msgid "Masks datablocks"
-msgstr "ﺔﻌﻨﻗﻻ﻿ﺍ ﺕﺎﻧﺎﻴﺑ ﻞﺘﻛ"
-
-
 msgid "Materials"
 msgstr "ﺕﺎﻣﺎﺨﻟﺍ"
-
-
-msgid "Material datablocks"
-msgstr "ﺔﻣﺎﺨﻟﺍ ﺕﺎﻧﺎﻴﺑ ﻞﺘﻛ"
 
 
 msgid "Meshes"
 msgstr "ﺕﺎﻤﺴﺠﻤﻟﺍ"
 
 
-msgid "Mesh datablocks"
-msgstr "ﻢﺴﺠﻤﻟﺍ ﺕﺎﻧﺎﻴﺑ ﻞﺘﻛ"
-
-
 msgid "Metaballs"
 msgstr "ﺔﻠﻋﺎﻔﺘﻤﻟﺍ ﺕﺍﺮﻜﻟﺍ"
-
-
-msgid "Metaball datablocks"
-msgstr "ﺔﻠﻋﺎﻔﺘﻤﻟﺍ ﺓﺮﻜﻟﺍ ﺕﺎﻧﺎﻴﺑ ﻞﺘﻛ"
 
 
 msgid "Movie Clips"
 msgstr "ﻢﻠﻴﻔﻟﺍ ﺕﺎﺻﺎﺼﻗ"
 
 
-msgid "Movie Clip datablocks"
-msgstr "ﻢﻠﻔﻟﺍ ﺔﺻﺎﺼﻗ ﺕﺎﻧﺎﻴﺑ ﻞﺘﻛ"
-
-
 msgid "Node Groups"
 msgstr "ﺪﻘﻌﻟﺍ ﺔﻋﻮﻤﺠﻣ"
 
 
-msgid "Node group datablocks"
-msgstr "ﺓﺪﻘﻌﻟﺍ ﺔﻋﻮﻤﺠﻣ ﺕﺎﻧﺎﻴﺑ ﻞﺘﻛ"
-
-
 msgid "Objects"
 msgstr "ﺕﺎﻨﺋﺎﻜﻟﺍ"
-
-
-msgid "Object datablocks"
-msgstr "ﻦﺋﺎﻜﻟﺍ ﺕﺎﻧﺎﻴﺑ ﻞﺘﻛ"
 
 
 msgid "Paint Curves"
@@ -3257,72 +3181,36 @@ msgid "Palettes"
 msgstr "ﻥﺍﻮﻟﻻ﻿ﺃ ﺡﻮﻟ"
 
 
-msgid "Palette datablocks"
-msgstr "ﻥﺍﻮﻟﻻ﻿ﺍ ﺡﻮﻟ ﺕﺎﻧﺎﻴﺑ ﻞﺘﻛ"
-
-
 msgid "Particles"
 msgstr "ﺕﺎﺌﻳﺰﺟ"
-
-
-msgid "Particle datablocks"
-msgstr "ءﻱﺰﺠﻟﺍ ﺕﺎﻧﺎﻴﺑ ﻞﺘﻛ"
 
 
 msgid "Scenes"
 msgstr "ﺪﻫﺎﺸﻤﻟﺍ"
 
 
-msgid "Scene datablocks"
-msgstr "ﺪﻬﺸﻤﻟﺍ ﺕﺎﻧﺎﻴﺑ ﻞﺘﻛ"
-
-
 msgid "Screens"
 msgstr "ﺕﺎﺷﺎﺸﻟﺍ"
-
-
-msgid "Screen datablocks"
-msgstr "ﺔﺷﺎﺸﻟﺍ ﺕﺎﻧﺎﻴﺑ ﻞﺘﻛ"
 
 
 msgid "Shape Keys"
 msgstr "ﻞﻜﺸﻟﺍ ﺢﻴﺗﺎﻔﻣ"
 
 
-msgid "Shape Key datablocks"
-msgstr "ﻞﻜﺸﻟﺍ ﺡﺎﺘﻔﻣ ﺕﺎﻧﺎﻴﺑ ﻞﺘﻛ"
-
-
 msgid "Sounds"
 msgstr "ﺕﺍﻮﺻﻷ﻿ﺍ"
-
-
-msgid "Sound datablocks"
-msgstr "ﺕﻮﺼﻟﺍ ﺕﺎﻧﺎﻴﺑ ﻞﺘﻛ"
 
 
 msgid "Speakers"
 msgstr "ﺕﻮﺼﻟﺍ ﺕﺍﺮﺒﻜﻣ"
 
 
-msgid "Speaker datablocks"
-msgstr "ﺔﻋﺎﻤﺴﻟﺍ ﺕﺎﻧﺎﻴﺑ ﻞﺘﻛ"
-
-
 msgid "Texts"
 msgstr "ﺹﻮﺼﻨﻟﺍ"
 
 
-msgid "Text datablocks"
-msgstr "ﺺﻨﻟﺍ ﺕﺎﻧﺎﻴﺑ ﻞﺘﻛ"
-
-
 msgid "Textures"
 msgstr "ﺞﺳﺎﻨﻤﻟﺍ"
-
-
-msgid "Texture datablocks"
-msgstr "ﺞﻴﺴﻨﻟﺍ ﺕﺎﻧﺎﻴﺑ ﻞﺘﻛ"
 
 
 msgid "Use Autopack"
@@ -3345,16 +3233,8 @@ msgid "Window Managers"
 msgstr "ﺓﺬﻓﺎﻨﻟﺍ ءﺍﺭﺪﻣ"
 
 
-msgid "Window manager datablocks"
-msgstr "ﺓﺬﻓﺎﻨﻟﺍ ﺮﻳﺪﻣ ﺕﺎﻧﺎﻴﺑ ﻞﺘﻛ"
-
-
 msgid "Worlds"
 msgstr "ﻢﻟﺍﻮﻌﻟﺍ"
-
-
-msgid "World datablocks"
-msgstr "ﻢﻟﺎﻌﻟﺍ ﺕﺎﻧﺎﻴﺑ ﻞﺘﻛ"
 
 
 msgid "Blender RNA"
@@ -7498,10 +7378,6 @@ msgid "Include Missing NLA"
 msgstr "ﺓﺩﻮﻘﻔﻤﻟﺍ ﺔﻴﻄﺧ-ﻼ﻿ﻟﺍ ﺕﺎﻛﺮﺤﻟﺍ ﻦﻤّﺿ"
 
 
-msgid "Include animation data blocks with no NLA data (NLA editor only)"
-msgstr "(ﻂﻘﻓ ﺔﻴﻄﺧﻼ﻿ﻟﺍ ﺔﻛﺮﺤﻟﺍ ﺭﺮﺤﻣ) ﺔﻴﻄﺧ-ﻻ﻿ ﺔﻛﺮﺣ ﺕﺎﻧﺎﻴﺑ ﺪﺟﺍﻮﺗ ﻡﺪﻋ ﻊﻣ ﺔﻛﺮﺤﻠﻟ ﺕﺎﻧﺎﻴﺒﻟﺍ ﻞﺴﻠﺴﺗ ﻦﻤﻀﺘﻳ"
-
-
 msgid "Display Modifier Data"
 msgstr "ﺽﺮﻌﻟﺍ ﺮﻴّﻐﻣ ﺕﺎﻧﺎﻴﺑ"
 
@@ -9238,8 +9114,20 @@ msgid "DNxHD"
 msgstr "DNxHD"
 
 
-msgid "Output file format"
-msgstr "ﺝﺮﺨﻟﺍ ﻒﻠﻣ ﻖﻴﺴﻨﺗ"
+msgid "High quality"
+msgstr "ﺔﻴﻟﺎﻋ ﺓﺩﻮﺟ"
+
+
+msgid "Medium quality"
+msgstr "ﺔﻄﺳﻮﺘﻣ ﺓﺩﻮﺟ"
+
+
+msgid "Low quality"
+msgstr "ﺔﻴﻧﺪﺘﻣ ﺓﺩﻮﺟ"
+
+
+msgid "Fast"
+msgstr "ﻊﻳﺮﺳ"
 
 
 msgid "MPEG-4"
@@ -9248,10 +9136,6 @@ msgstr "MPEG-4"
 
 msgid "Quicktime"
 msgstr "Quicktime"
-
-
-msgid "Xvid"
-msgstr "Xvid"
 
 
 msgid "Ogg"
@@ -9264,14 +9148,6 @@ msgstr "Matroska"
 
 msgid "Flash"
 msgstr "Flash"
-
-
-msgid "GOP Size"
-msgstr "ﺏﻮﻐﻟﺍ ﻢﺠﺣ"
-
-
-msgid "Distance between key frames"
-msgstr "ﺢﻴﺗﺎﻔﻤﻟﺍ ﻦﻴﺑ ﺔﻓﺎﺴﻤﻟﺍ"
 
 
 msgid "Max Rate"
@@ -12734,16 +12610,8 @@ msgid "Is Updated"
 msgstr "ﺙﺪﺤﻣ ﻮﻫﺍ"
 
 
-msgid "Datablock is tagged for recalculation"
-msgstr "ﺏﺎﺴﺤﻟﺍ ﺓﺩﺎﻋﻻ﻿ ﺓﺪﻌﻣ ﺕﺎﻧﺎﻴﺒﻟﺍ ﺔﻠﺘﻛ"
-
-
 msgid "Is Updated Data"
 msgstr "ﺔﺛﺪّﺤﻣ ﺕﺎﻧﺎﻴﺒﻟﺍ ﻞﻫ"
-
-
-msgid "Datablock data is tagged for recalculation"
-msgstr "ﺏﺎﺴﺤﻟﺍ ﺓﺩﺎﻋﻻ﻿ ﺓﺪﻌﻣ ﺕﺎﻧﺎﻴﺒﻟﺍ ﺔﻠﺘﻛ ﺕﺎﻧﺎﻴﺑ"
 
 
 msgid "Unique data-block ID name"
@@ -15422,30 +15290,6 @@ msgid "Output image to a frameserver"
 msgstr " (ﺭﺎﻃﺇ-ﻡﺩﺎﺧ) frameserver ﻰﻟﺇ ﺓﺭﻮﺼﻟﺍ ﺝﺮﺧﺃ"
 
 
-msgid "Output video in H.264 format"
-msgstr "H.264 ﻖﻴﺴﻨﺘﺑ ﻢﻠﻔﻟﺍ ﺭﺪّﺻ"
-
-
-msgid "MPEG"
-msgstr "MPEG"
-
-
-msgid "Output video in MPEG format"
-msgstr "MPEG ﻖﻴﺴﻨﺘﺑ ﻢﻠﻔﻟﺍ ﺭﺪّﺻ"
-
-
-msgid "Ogg Theora"
-msgstr "Ogg Theora"
-
-
-msgid "Output video in Ogg format"
-msgstr "Ogg ﻖﻴﺴﻨﺘﺑ ﺓﺭﻮﺼﻟﺍ ﺝﺮﺧﺍ"
-
-
-msgid "Output video in Xvid format"
-msgstr "Xvid ﻖﻴﺴﻨﺘﺑ ﻢﻠﻔﻟﺍ ﺭﺪّﺻ"
-
-
 msgid "Image/Movie file name"
 msgstr "ﻢﻠﻔﻟﺍ/ﺓﺭﻮﺼﻟﺍ ﻒﻠﻣ ﻢﺳﺍ"
 
@@ -15836,10 +15680,6 @@ msgstr "  ﻢﻴﻴﻘﺘﻟﺍ ﺖﻗﻭ ﻝﺎﻤﻌﺘﺳﺎﺑ ﻞﺴﻠﺴ�
 
 msgid "User"
 msgstr "ﻡﺪﺨﺘﺴﻣ"
-
-
-msgid "Datablock using these shape keys"
-msgstr "ﻩﺬﻫ ﻞﻜﺸﻟﺍ ﺢﻴﺗﺎﻔﻤﻟ ﺔﻣﺪﺨﺘﺴﻤﻟﺍ ﺕﺎﻧﺎﻴﺒﻟﺍ ﺔﻠﺘﻛ"
 
 
 msgid "Light color"
@@ -17804,10 +17644,6 @@ msgid "While editing, update metaball in half resolution"
 msgstr "ﺔﻗﺪﻟﺍ ﻒﺼﻨﺑ ﺔﻠﻋﺎﻔﺘﻤﻟﺍ ﺓﺮﻜﻟﺍ ﺙﺪﺣ ،ﺮﻳﺮﺤﺘﻟﺍ ﻝﻼ﻿ﺧ"
 
 
-msgid "Fast"
-msgstr "ﻊﻳﺮﺳ"
-
-
 msgid "While editing, update metaball without polygonization"
 msgstr "ﻊﻴﻠﻀﺗ ﻥﻭﺪﺑ ﻞﻋﺎﻔﺘﻟﺍ ﺓﺮﻛ ﺙﺪّﺣ ,ﺮﻳﺮﺤﺘﻟﺍ ءﺎﻨﺛﺃ"
 
@@ -18028,24 +17864,12 @@ msgid "High"
 msgstr "ﻲﻟﺎﻋ"
 
 
-msgid "High quality"
-msgstr "ﺔﻴﻟﺎﻋ ﺓﺩﻮﺟ"
-
-
 msgid "Medium"
 msgstr "ﻂﺳﻮﺘﻣ"
 
 
-msgid "Medium quality"
-msgstr "ﺔﻄﺳﻮﺘﻣ ﺓﺩﻮﺟ"
-
-
 msgid "Low"
 msgstr "ﻲﻧﺪﺘﻣ"
-
-
-msgid "Low quality"
-msgstr "ﺔﻴﻧﺪﺘﻣ ﺓﺩﻮﺟ"
 
 
 msgid "Render Quality"
@@ -20082,10 +19906,6 @@ msgstr "ﺔﻴﺿﺍﺮﺘﻓﺇ ﻝﻮﺻﺍ"
 
 msgid "Relative amount of virtual parents"
 msgstr "ﺔﻴﻌﻗﺍﻮﻟﺍ ﻝﻮﺻﻸ﻿ﻟ ﺔﻴﺒﺴﻨﻟﺍ ﺔﻴﻤﻜﻟﺍ"
-
-
-msgid "Scene data block, consisting in objects and defining time and render related settings"
-msgstr "ﺮﻴﻴﺼﺘﻟﺎﺑ ﺔﻘﻠﻌﺘﻤﻟﺍ ﺕﺍﺩﺍﺪﻋﻹ﻿ﺍ ﻭ ﻒﻳﺮﻌﺘﻟﺍ ﻦﻣﺯ ﻭ ﺕﺎﻨﺋﺎﻜﻟﺍ ﻦﻣ ﺔﻧﻮﻜﻤﻟﺍ ﻭ ,ﺪﻬﺸﻤﻟﺍ ﺕﺎﻧﺎﻴﺑ ﺔﻠﺘﻛ"
 
 
 msgid "Active Movie Clip"
@@ -23902,10 +23722,6 @@ msgstr "ﻉﺎﻨﻘﻟﺍ ﺮﺼﻨﻌﻟ ﻞﺻﻻ﻿ﺍ ﺕﺍﺩﺍﺪﻋﺇ
 
 msgid "Sub Parent"
 msgstr "ﻲﻋﺮﻔﻟﺍ ﻞﺻﻻ﻿ﺍ"
-
-
-msgid "Name of parent sub-object in specified data block to which parenting happens"
-msgstr "ﻂﺑﺮﻟﺍ ﺎﻬﺑ ﻞﺼﺤﻳ ﻲﺘﻟﺍ ﻭ ﺓﺩﺪﺤﻣ ﺕﺎﻧﺎﻴﺑ ﺔﻠﺘﻛ ﻲﻓ ﻲﻋﺮﻔﻟﺍ ﻦﺋﺎﻜﻟﺍ ﻞﺻﺍ ﻢﺳﺍ"
 
 
 msgid "Plane Track"
@@ -32304,6 +32120,15 @@ msgstr "ﺔﻴﺟﺭﺎﺨﻟﺍ ﺓﺩﻮﻘﻔﻤﻟﺍ ﺕﺎﻔﻠﻤﻟﺍ 
 
 
 msgctxt "Operator"
+msgid "Toggle Hide Dot Files"
+msgstr "ﺔﻄﻘﻨﺑ ﺕﺎﻔﻠﻤﻟﺍ ءﺎﻔﺧﺍ ﺐﻠﻗﺍ"
+
+
+msgid "Toggle hide hidden dot files"
+msgstr " ﺔﻴﻔﺨﻤﻟﺍ ﺔﻄﻘﻨﺑ ﺕﺎﻔﻠﻣ ﺭﻮﻬﻇ ﺐﻠﻗﺍ"
+
+
+msgctxt "Operator"
 msgid "Highlight File"
 msgstr "ﻒﻠﻤﻟﺍ ﺯﺮﺑﺍ"
 
@@ -35021,10 +34846,6 @@ msgstr "ﻝﻮﺤﺗ ﻥﻭﺪﺑ"
 
 msgid "Clear Parents"
 msgstr "ﻝﻮﺻﻻ﻿ﺍ ﺭﺮﺣ"
-
-
-msgid "Only key selected object/bones"
-msgstr "ﺓﺭﺎﺘﺨﻤﻟﺍ/ﺓﺮﻫﺎﻈﻟﺍ ﻡﺎﻈﻌﻟﺍ ﻂﻘﻓ"
 
 
 msgid "Visual Keying"
@@ -38953,10 +38774,6 @@ msgid "Move the currently selected line(s) up/down"
 msgstr "ﻞﻔﺳﻷ﻿/ﻕﻮﻔﻟ ﺎﻴﻟﺎﺣ ﺓﺭﺎﺘﺨﻤﻟﺍ ﺮﻄﺳﻻ﻿ﺍ ﻙﺮّﺣ"
 
 
-msgid "Open a new text data block"
-msgstr "ﺓﺪﻳﺪﺟ ﺺﻧ ﺕﺎﻧﺎﻴﺑ ﺔﻠﺘﻛ ﺢﺘﻓﺍ"
-
-
 msgctxt "Operator"
 msgid "Toggle Overwrite"
 msgstr "ﻪﻗﻮﻓ ﺔﺑﺎﺘﻜﻟﺍ ﺐﻠﻗﺍ"
@@ -38974,10 +38791,6 @@ msgstr "ﻥﻮﺜﻳﺎﺑ ﺩﻮﻴﻗ ﺶﻌﻧﺍ"
 msgctxt "Operator"
 msgid "Reload"
 msgstr "ﻞﻴﻤﺤﺘﻟﺍ ﺪﻋﺍ"
-
-
-msgid "Reload active text data block from its file"
-msgstr "ﺎﻬﻔﻠﻣ ﻦﻣ ﻝﺎﻌﻔﻟﺍ ﺺﻨﻟﺍ ﺕﺎﻧﺎﻴﺑ ﺔﻠﺘﻛ ﻞﻴﻤﺤﺗ ﺪﻋﺍ"
 
 
 msgctxt "Operator"
@@ -40068,10 +39881,6 @@ msgid "Append from Library"
 msgstr "ﺔﺒﺘﻜﻣ ﻦﻣ ﻦﻤّﺿ"
 
 
-msgid "Link the objects or datablocks rather than appending"
-msgstr "ﺎﻬﻨﻴﻤﻀﺗ ﻦﻣ ﻻ﻿ﺪﺑ ﺕﺎﻧﺎﻴﺒﻟﺍ ﻞﺘﻛ ﻭﺍ ﺕﺎﻨﺋﺎﻜﻟﺍ ﻂﺑﺭﺍ"
-
-
 msgctxt "Operator"
 msgid "Start Game In Player"
 msgstr "ﺔﺒﻌﻠﻟﺍ ﻙﺮﺤﻣ ﻲﻓ ﺔﺒﻌﻠﻟﺍ ﺃﺪﺑﺇ"
@@ -40521,10 +40330,6 @@ msgstr "ﻞﻣﺎﻌﻠﻟ ﻖﺒﺴﻣ ﺩﺍﺪﻋﺇ"
 
 msgid "Add or remove an Operator Preset"
 msgstr "ﻞﻣﺎﻌﻟ ﻖﺒﺴﻣ ﺩﺍﺪﻋﺇ ﻎﻟﺍ ﻭﺃ ﻒﺿﺍ"
-
-
-msgid "DataBlock Type"
-msgstr "ﺕﺎﻧﺎﻴﺒﻟﺍ ﺔﻠﺘﻛ ﻉﻮﻧ"
 
 
 msgctxt "Operator"
@@ -48780,16 +48585,8 @@ msgid "Active Action"
 msgstr "ﺔﻟﺎﻌﻔﻟﺍ ﺔﻛﺮﺤﻟﺍ"
 
 
-msgid "Animation data block has active action"
-msgstr "ﺔﻟﺎﻌﻓ ﺔﻛﺮﺣ ﺎﻬﻳﺪﻟ ﻙﺮﺤﺘﻟﺍ ﺕﺎﻧﺎﻴﺑ ﺔﻠﺘﻛ"
-
-
 msgid "No Active Action"
 msgstr "ﺔﻟﺎﻌﻓ ﺔﻛﺮﺣ ﺪﺟﻮﻳ ﻻ﻿"
-
-
-msgid "Animation data block doesn't have active action"
-msgstr "ﺔﻟﺎﻌﻓ ﺔﻛﺮﺣ ﺎﻬﻳﺪﻟ ﺲﻴﻟ ﻙﺮﺤﺘﻟﺍ ﺕﺎﻧﺎﻴﺑ ﺔﻠﺘﻛ"
 
 
 msgid "Meta Strips"
@@ -50268,10 +50065,6 @@ msgid "Python Scripts Directory"
 msgstr "ﻥﻮﺜﻳﺎﺑ ﺕﺎﺘﺒﻳﺮﻜﺳ ﺪﻠﺠﻣ"
 
 
-msgid "Hide Dot Files/Datablocks"
-msgstr "ﻂﻘﻨﻟﺍ ﺕﺍﺫ ﺕﺎﻧﺎﻴﺒﻟﺍ ﻞﺘﻛ/ﺕﺎﻔﻠﻤﻟﺍ ﻲﻔﺧﺃ"
-
-
 msgid "Hide files/data-blocks that start with a dot (.*)"
 msgstr "(.*)ـﺑ ﺃﺪﺒﺗ ﻲﺘﻟﺍ ﺕﺎﻧﺎﻴﺒﻟﺍ ﻞﺘﻛ/ﺕﺎﻔﻠﻤﻟﺍ ﻲﻔﺧﺍ"
 
@@ -50636,14 +50429,6 @@ msgid "OpenAL device - supports 3D audio, recommended for game engine usage"
 msgstr "ﺔﺒﻌﻠﻟﺍ ﻙﺮﺤﻣ ﻊﻣ ﻪﻣﺍﺪﺨﺘﺳﺎﺑ ﺢﺼﻨﻳ ،ﻲﺛﻼ﻿ﺜﻟﺍ ﺕﻮﺼﻟﺍ ﻢﻋﺪﻳ - OpenAL ﺯﺎﻬﺟ"
 
 
-msgid "Jack"
-msgstr "Jack"
-
-
-msgid "JACK - Audio Connection Kit, recommended for pro audio users"
-msgstr "JACK - ﺕﻮﺼﻟﺍ ﻲﻓﺮﺘﺤﻣ ﻑﺮﻃ ﻦﻣ ﻪﻣﺍﺪﺨﺘﺳﺎﺑ ﺢﻨﻳ ،ﺕﻮﺼﻟﺍ ﻞﻴﺻﻮﺗ ﺓﺪﻋ"
-
-
 msgid "Audio Mixing Buffer"
 msgstr "ﺕﻮﺼﻟﺍ ﺝﺰﻣ ﻥﺰﺨﻣ"
 
@@ -50826,26 +50611,6 @@ msgstr "(HV + S) ﻊﺑﺮﻣ"
 
 msgid "A square showing Hue/Value, with Saturation slider"
 msgstr "ﻊﺒﺸﺘﻟﺍ ﺔﻘﻟﺰﻣ ﻊﻣ ،ﺔﻤﻴﻘﻟﺍ/ﻑﺍﺮﺤﻧﻻ﻿ﺍ ﺮﻬﻈﻳ ﻊﺑﺮﻣ"
-
-
-msgid "Compute Device"
-msgstr "ﺏﺎﺴﺤﻟﺍ ﺯﺎﻬﺟ"
-
-
-msgid "Device to use for computation"
-msgstr "ﺏﺎﺴﺤﻠﻟ ﻡﺪﺨﺘﺴﻤﻟﺍ ﺯﺎﻬﺠﻟﺍ"
-
-
-msgid "Compute Device Type"
-msgstr "ﺏﺎﺴﺤﻟﺍ ﺯﺎﻬﺟ ﻉﻮﻧ"
-
-
-msgid "Device to use for computation (rendering with Cycles)"
-msgstr "(ﺰﻠﻜﻳﺎﺴﺑ ﺮﻴﻴﺼﺘﻟﺍ ﺪﻨﻋ) ﺏﺎﺴﺤﻠﻟ ﻡﺪﺨﺘﺴﻤﻟﺍ ﺯﺎﻬﺠﻟﺍ"
-
-
-msgid "Don't use compute device"
-msgstr "ﺏﺎﺴﺣ ﺯﺎﻬﺟ ﻡﺪﺨﺘﺴﺗ ﻻ﻿"
 
 
 msgid "DPI"
@@ -52226,6 +51991,10 @@ msgstr "ﺔﻃﻭﺮﺸﻣ ﺔﻴﺳﺎﻴﻗ ﺔﻄﻳﺮﺧ"
 msgctxt "WindowManager"
 msgid "Transform Modal Map"
 msgstr "ﺔﻃﻭﺮﺸﻣ ﺔﻟﻮّﺤﺘﻣ ﺔﻄﻳﺮﺧ"
+
+
+msgid "Compute Device:"
+msgstr ":ﺏﺎﺴﺤﻟﺍ ﺯﺎﻬﺟ"
 
 
 msgid "Settings:"
@@ -56392,10 +56161,6 @@ msgid "Warnings"
 msgstr "ﺮﻳﺫﺎﺤﺗ"
 
 
-msgid "Compute Device:"
-msgstr ":ﺏﺎﺴﺤﻟﺍ ﺯﺎﻬﺟ"
-
-
 msgid "Regular:"
 msgstr ":ﻱﺩﺎﻴﺘﻋﺍ"
 
@@ -58788,20 +58553,8 @@ msgid "Anim Player"
 msgstr "ﺮﻴﻴﺼﺘﻟﺍ ﻞﻐﺸﻣ"
 
 
-msgid "Indirect library datablock, cannot change"
-msgstr "ﺮﻴﻴﻐﺘﻟﺍ ﻦﻜﻤﻳ ﻻ﻿ ،ﺮﺷﺎﺒﻣ ﺮﻴﻏ ﺔﺒﺘﻜﻣ ﺕﺎﻧﺎﻴﺑ ﻞﺴﻠﺴﺗ"
-
-
-msgid "Direct linked library datablock, click to make local"
-msgstr " ﺎﻴﻠﺤﻣ ﻞﻌﺠﻠﻟ ﻂﻐﺿﺍ ،ﺮﺷﺎﺒﻣ ﺔﺒﺘﻜﻣ ﺕﺎﻧﺎﻴﺑ ﻞﺴﻠﺴﺗ"
-
-
 msgid "Display number of users of this data (click to make a single-user copy)"
 msgstr "(ﺪﻴﺣﻭ-ﻡﺪﺨﺘﺴﻣ ﺔﺨﺴﻧ ﻞﻌﺠﻟ ﻂﻐﺿﺇ) ﺕﺎﻧﺎﻴﺒﻟﺍ ﻩﺬﻫ ﻲﻣﺪﺨﺘﺴﻣ ﺩﺪﻋ ﺮﻬﻈﻳ"
-
-
-msgid "Unlink datablock (Shift + Click to set users to zero, data will then not be saved)"
-msgstr "ﺎﻫﺪﻨﻋ ﺕﺎﻧﺎﻴﺒﻟﺍ ﻞﺠﺴﺗ ﻦﻟ ،ﺍﺮﻔﺻ ﻦﻴﻣﺪﺨﺘﺴﻤﻟﺍ ﻞﻌﺠﻟ ﺔﻄﻐﺿ + 'ﺖﻔﻴﺷ' .ﺕﺎﻧﺎﻴﺒﻟﺍ ﻞﺴﻠﺴﺗ ﻂﺑﺭ ﻚﻓ"
 
 
 msgid "Convert virtual modifier to a real modifier"
@@ -59598,10 +59351,6 @@ msgid "Scene has no camera"
 msgstr "ﺔﻟﺎﻌﻔﻟﺍ ﺍﺮﻴﻤﻜﻟﺍ ﺮﺘﺧﺍ"
 
 
-msgid "Appended frame: %d"
-msgstr "‬%d‪ :ﺭﺎﻃﺃ"
-
-
 msgid "Flip to Bottom"
 msgstr "NDOF ﻞﻔﺳﺃ"
 
@@ -59632,6 +59381,10 @@ msgstr "ﻩﺎﺠﺗﻹ﻿ﺍ ﺍﺬﻫ ﻲﻓ ﺎﻬﻴﻟﺍ ﺰﻔﻘﻠﻟ �
 
 msgid "Screencast job stopped"
 msgstr ":ﺔﺷﺎﺸﻟﺍ ﻞﻴﺠﺴﺗ"
+
+
+msgid "Appended frame: %d"
+msgstr "‬%d‪ :ﺭﺎﻃﺃ"
 
 
 msgid "No active mesh object"
@@ -60862,10 +60615,6 @@ msgstr "Cr"
 
 msgid "Val"
 msgstr "ﺔﻤﻴﻘﻟﺍ"
-
-
-msgid "Missing Datablock"
-msgstr "ﺓﺩﻮﻘﻔﻣ ﺕﺎﻧﺎﻴﺒﻟﺍ ﺔﻠﺘﻛ"
 
 
 msgid "Temperature"
