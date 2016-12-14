@@ -1,9 +1,9 @@
 
 msgid ""
 msgstr ""
-"Project-Id-Version: Blender 2.78 (sub 3) (b'2a2eb0c')\n"
+"Project-Id-Version: Blender 2.78 (sub 4) (b'd210755')\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-11-16 16:31:11\n"
+"POT-Creation-Date: 2016-12-14 10:56:39\n"
 "PO-Revision-Date: \n"
 "Last-Translator: Bastien Montagne <montagne29@wanadoo.fr>\n"
 "Language-Team: \n"
@@ -3592,7 +3592,7 @@ msgid "Version"
 msgstr "Version"
 
 
-msgid "Version of the blender the .blend was saved with"
+msgid "Version of Blender the .blend was saved with"
 msgstr "Version de Blender avec laquelle le .blend a été enregistré"
 
 
@@ -13289,8 +13289,12 @@ msgid "Color for filling region bounded by each stroke"
 msgstr "Couleur pour le remplissage des régions définies par chaque trait"
 
 
-msgid "Display the color in onion skinning"
-msgstr "Afficher la couleur en “peau d’oignon”"
+msgid "Show in Ghosts"
+msgstr "Afficher en fantômes"
+
+
+msgid "Display strokes using this color when showing onion skins"
+msgstr "Dessiner les traits dans cette couleur lors de l’affichage en “peaux d’oignon”"
 
 
 msgid "Set color Visibility"
@@ -28721,6 +28725,10 @@ msgid "GPencil"
 msgstr "CrayonG"
 
 
+msgid "Interpolate"
+msgstr "Interpoler"
+
+
 msgid "Clean up"
 msgstr "Nettoyer"
 
@@ -33998,10 +34006,6 @@ msgstr "Frame d’ancrage"
 
 msgid "Reference point to anchor stabilization (other frames will be adjusted relative to this frame's position)"
 msgstr "Point de référence où ancrer la stabilisation (les autres frames seront ajustées par rapport à la position de celle-ci)"
-
-
-msgid "Interpolate"
-msgstr "Interpoler"
 
 
 msgid "Interpolation to use for sub-pixel shifts and rotations due to stabilization"
@@ -46299,6 +46303,51 @@ msgstr "Ajouter pré-réglage de SSS"
 
 msgid "Add or remove a Subsurface Scattering Preset"
 msgstr "Ajouter ou supprimer un pré-réglage de dispersion sub-surfacique"
+
+
+msgctxt "Operator"
+msgid "Cleanup Math Vis Console"
+msgstr "Nettoyer console Math Vis"
+
+
+msgid "Remove all visualized variables from the Console"
+msgstr "Enlever toutes les variables visualisées de la console"
+
+
+msgctxt "Operator"
+msgid "Delete Var"
+msgstr "Supprimer var"
+
+
+msgid "Remove the variable from the Console"
+msgstr "Enlever la variable de la console"
+
+
+msgctxt "Operator"
+msgid "Show BBox"
+msgstr "Afficher BBox"
+
+
+msgid "Show/Hide the BBox of Matrix items"
+msgstr "Afficher/cacher la bbox (boîte englobante) des éléments de la matrice"
+
+
+msgctxt "Operator"
+msgid "Hide/Unhide"
+msgstr "Cacher/afficher"
+
+
+msgid "Change the display state of the var"
+msgstr "Modifier l’état d’affichage de la variable"
+
+
+msgctxt "Operator"
+msgid "Lock/Unlock"
+msgstr "(Dé)verrouiller"
+
+
+msgid "Lock the var from being deleted"
+msgstr "Empêcher la variable d’être supprimée"
 
 
 msgid "Delete selected metaelement(s)"
@@ -62740,6 +62789,14 @@ msgid "Indirect Lighting"
 msgstr "Éclairage indirect"
 
 
+msgid "Math Vis"
+msgstr "Math Vis"
+
+
+msgid "Console Vars"
+msgstr "Variables console"
+
+
 msgid "Particle in a particle system"
 msgstr "Particule dans un système de particules"
 
@@ -64568,6 +64625,14 @@ msgid "Use deformation motion blur for this object"
 msgstr "Utiliser le flou cinétique de déformation pour cet objet"
 
 
+msgid "Use Distance Cull"
+msgstr "Utiliser distance de culling"
+
+
+msgid "Allow this object and its duplicators to be culled by distance from camera"
+msgstr "Permettre que cet objet et ses copies soient “décimés” (culled) par la distance à la caméra"
+
+
 msgid "Use Motion Blur"
 msgstr "Utiliser flou cinétique"
 
@@ -64752,8 +64817,8 @@ msgid "GPU Compute"
 msgstr "Calculs GPU"
 
 
-msgid "Use GPU compute device for rendering, configured in user preferences"
-msgstr "Utiliser un périphérique de calculs GPU pour le rendu, configuré dans les préférences utilisateurs"
+msgid "Use GPU compute device for rendering, configured in the system tab in the user preferences"
+msgstr "Utiliser un périphérique de calculs GPU pour le rendu, configuré dans l’onglet système des préférences utilisateurs"
 
 
 msgid "Dicing Rate"
@@ -64778,6 +64843,14 @@ msgstr "Échantillons diffus"
 
 msgid "Number of diffuse bounce samples to render for each AA sample"
 msgstr "Nombre d’échantillons de rebonds diffus à rendre pour chaque échantillon AA"
+
+
+msgid "Cull Distance"
+msgstr "Distance de culling"
+
+
+msgid "Cull objects which are further away from camera than this distance"
+msgstr "Appliquer le culling aux objets plus éloignés de la caméra que cette distance"
 
 
 msgid "Feature Set"
@@ -65096,6 +65169,58 @@ msgid "Number of subsurface scattering samples to render for each AA sample"
 msgstr "Nombre d’échantillons de diffusion sub-surfacique à rendre pour chaque échantillon AA"
 
 
+msgid "Viewport Texture Limit"
+msgstr "Limiter texture de l’affichage"
+
+
+msgid "Limit texture size used by viewport rendering"
+msgstr "Limiter la taille de texture utilisée pour le rendu de la vue 3D"
+
+
+msgid "No Limit"
+msgstr "Pas de limite"
+
+
+msgid "No texture size limit"
+msgstr "Pas de limite de taille de texture"
+
+
+msgid "Limit texture size to 128 pixels"
+msgstr "Limiter la taille de texture à 128 pixels"
+
+
+msgid "Limit texture size to 256 pixels"
+msgstr "Limiter la taille de texture à 256 pixels"
+
+
+msgid "Limit texture size to 512 pixels"
+msgstr "Limiter la taille de texture à 512 pixels"
+
+
+msgid "Limit texture size to 1024 pixels"
+msgstr "Limiter la taille de texture à 1024 pixels"
+
+
+msgid "Limit texture size to 2048 pixels"
+msgstr "Limiter la taille de texture à 2048 pixels"
+
+
+msgid "Limit texture size to 4096 pixels"
+msgstr "Limiter la taille de texture à 4096 pixels"
+
+
+msgid "Limit texture size to 8192 pixels"
+msgstr "Limiter la taille de texture à 8192 pixels"
+
+
+msgid "Render Texture Limit"
+msgstr "Limite de texture de rendu"
+
+
+msgid "Limit texture size used by final rendering"
+msgstr "Limiter la taille de texture utilisée pour le rendu final"
+
+
 msgid "Tile Order"
 msgstr "Ordre des éléments"
 
@@ -65190,6 +65315,10 @@ msgstr "Utiliser des valeurs de graine (et donc des motifs de bruit) différente
 
 msgid "Allow objects to be culled based on the camera frustum"
 msgstr "Permettre que les objets soient “décimés” (culled) par l’espace de “culling” de la caméra"
+
+
+msgid "Allow objects to be culled based on the distance from camera"
+msgstr "Permettre que les objets soient “décimés” (culled) en fonction de leur distance à la caméra"
 
 
 msgid "Layer Samples"
@@ -65402,6 +65531,30 @@ msgstr "Chemin de fichier"
 
 msgid "Path to the pot template file"
 msgstr "Chemin vers le fichier patron pot"
+
+
+msgid "Hide BBoxes"
+msgstr "Cacher bboxes"
+
+
+msgid "Hide the bounding boxes rendered for Matrix like items"
+msgstr "Cacher les boîtes englobantes affichées pour les éléments de type matrice"
+
+
+msgid "Scale factor"
+msgstr "Facteur d’échelle"
+
+
+msgid "Resize the Bounding Box and the coordinate lines for the display of Matrix items"
+msgstr "Ré-dimensionner la boîte englobante et les lignes de coordonnées pour l’affichage des éléments de matrice"
+
+
+msgid "Hide Names"
+msgstr "Cacher noms"
+
+
+msgid "Hide the names of the rendered items"
+msgstr "Cacher les noms des éléments affichés"
 
 
 msgid "Fix is active"
@@ -77869,6 +78022,10 @@ msgid "Styles"
 msgstr "Styles"
 
 
+msgid "Version of Blender the userpref.blend was saved with"
+msgstr "Version de Blender avec laquelle l’userpref.blend a été enregistré"
+
+
 msgid "View & Controls"
 msgstr "Vues & contrôles"
 
@@ -79023,6 +79180,14 @@ msgstr "Langue utilisée pour la traduction"
 
 msgid "Default (Default)"
 msgstr "Par défaut (Par défaut)"
+
+
+msgid "Legacy Compute Device Type"
+msgstr "Ancien type de périphérique de calculs"
+
+
+msgid "For backwards compatibility only"
+msgstr "Pour compatibilité arrière uniquement"
 
 
 msgid "Memory Cache Limit"
@@ -80226,88 +80391,18 @@ msgstr "Occlure les objets avec la couleur d’environnement à mesure qu’ils 
 
 
 msgctxt "Operator"
-msgid "Rigidbody:"
-msgstr "Corps rigide :"
-
-
-msgctxt "Operator"
-msgid "Material:"
-msgstr "Matériau :"
-
-
-msgctxt "Operator"
-msgid "Brush:"
-msgstr "Brosse :"
-
-
-msgctxt "Operator"
-msgid "Script:"
-msgstr "Script :"
-
-
-msgctxt "Operator"
-msgid "Sequencer:"
-msgstr "Séquenceur :"
-
-
-msgctxt "Operator"
 msgid "Cycles:"
 msgstr "Cycles :"
 
 
 msgctxt "Operator"
-msgid "Boid:"
-msgstr "Boïd :"
+msgid "Import_curve:"
+msgstr "Import courbe :"
 
 
 msgctxt "Operator"
-msgid "Ui:"
-msgstr "Ui :"
-
-
-msgctxt "Operator"
-msgid "View3d:"
-msgstr "Vue 3D :"
-
-
-msgctxt "Operator"
-msgid "Fluid:"
-msgstr "Fluide :"
-
-
-msgctxt "Operator"
-msgid "Sculpt:"
-msgstr "Sculpture :"
-
-
-msgctxt "Operator"
-msgid "Render:"
-msgstr "Rendu :"
-
-
-msgctxt "Operator"
-msgid "Graph:"
-msgstr "Graphe :"
-
-
-msgctxt "Operator"
-msgid "Lamp:"
-msgstr "Lampe :"
-
-
-msgctxt "Operator"
-msgid "Sound:"
-msgstr "Audio :"
-
-
-msgctxt "Operator"
-msgid "Constraint:"
-msgstr "Contrainte :"
-
-
-msgctxt "Operator"
-msgid "Paintcurve:"
-msgstr "Courbe peinture :"
+msgid "Import_shape:"
+msgstr "Import forme :"
 
 
 msgctxt "Operator"
@@ -80316,108 +80411,8 @@ msgstr "Export blend :"
 
 
 msgctxt "Operator"
-msgid "Blender_id:"
-msgstr "Blender id :"
-
-
-msgctxt "Operator"
-msgid "Sketch:"
-msgstr "Esquisse :"
-
-
-msgctxt "Operator"
-msgid "Object:"
-msgstr "Objet :"
-
-
-msgctxt "Operator"
-msgid "Console:"
-msgstr "Console :"
-
-
-msgctxt "Operator"
-msgid "Ed:"
-msgstr "Éditeur :"
-
-
-msgctxt "Operator"
-msgid "Import_mesh:"
-msgstr "Import mesh :"
-
-
-msgctxt "Operator"
-msgid "Anim:"
-msgstr "Anim :"
-
-
-msgctxt "Operator"
-msgid "Lattice:"
-msgstr "Lattice :"
-
-
-msgctxt "Operator"
-msgid "Marker:"
-msgstr "Marqueur :"
-
-
-msgctxt "Operator"
-msgid "Palette:"
-msgstr "Palette :"
-
-
-msgctxt "Operator"
-msgid "Mesh:"
-msgstr "Mesh :"
-
-
-msgctxt "Operator"
-msgid "Node:"
-msgstr "Nœud :"
-
-
-msgctxt "Operator"
-msgid "Dpaint:"
-msgstr "Peinture dyn :"
-
-
-msgctxt "Operator"
-msgid "Image:"
-msgstr "Image :"
-
-
-msgctxt "Operator"
-msgid "Export_anim:"
-msgstr "Export anim :"
-
-
-msgctxt "Operator"
-msgid "Particle:"
-msgstr "Particule :"
-
-
-msgctxt "Operator"
-msgid "Transform:"
-msgstr "Transformation :"
-
-
-msgctxt "Operator"
-msgid "Camera:"
-msgstr "Caméra :"
-
-
-msgctxt "Operator"
-msgid "Text:"
-msgstr "Texte :"
-
-
-msgctxt "Operator"
-msgid "Export_scene:"
-msgstr "Export scène :"
-
-
-msgctxt "Operator"
-msgid "Nla:"
-msgstr "Nla :"
+msgid "Render:"
+msgstr "Rendu :"
 
 
 msgctxt "Operator"
@@ -80426,13 +80421,103 @@ msgstr "Pose :"
 
 
 msgctxt "Operator"
-msgid "Poselib:"
-msgstr "Pose biblio :"
+msgid "View3d:"
+msgstr "Vue 3D :"
+
+
+msgctxt "Operator"
+msgid "Paint:"
+msgstr "Peinture :"
+
+
+msgctxt "Operator"
+msgid "Ui:"
+msgstr "Ui :"
+
+
+msgctxt "Operator"
+msgid "Rigidbody:"
+msgstr "Corps rigide :"
+
+
+msgctxt "Operator"
+msgid "Script:"
+msgstr "Script :"
+
+
+msgctxt "Operator"
+msgid "Mathvis:"
+msgstr "Mathvis :"
+
+
+msgctxt "Operator"
+msgid "Curve:"
+msgstr "Courbe :"
+
+
+msgctxt "Operator"
+msgid "Constraint:"
+msgstr "Contrainte :"
+
+
+msgctxt "Operator"
+msgid "Import_mesh:"
+msgstr "Import mesh :"
+
+
+msgctxt "Operator"
+msgid "Scene:"
+msgstr "Scène :"
+
+
+msgctxt "Operator"
+msgid "Import_scene:"
+msgstr "Import scène :"
 
 
 msgctxt "Operator"
 msgid "Safe_areas:"
 msgstr "Zones sûres :"
+
+
+msgctxt "Operator"
+msgid "Clip:"
+msgstr "Clip :"
+
+
+msgctxt "Operator"
+msgid "Transform:"
+msgstr "Transformation :"
+
+
+msgctxt "Operator"
+msgid "Ptcache:"
+msgstr "Cache point :"
+
+
+msgctxt "Operator"
+msgid "Mball:"
+msgstr "Mballe :"
+
+
+msgctxt "Operator"
+msgid "Buttons:"
+msgstr "Boutons :"
+
+
+msgctxt "Operator"
+msgid "Material:"
+msgstr "Matériau :"
+
+
+msgctxt "Operator"
+msgid "Cloth:"
+msgstr "Tissu :"
+
+
+msgctxt "Operator"
+msgid "Texture:"
+msgstr "Texture :"
 
 
 msgctxt "Operator"
@@ -80446,118 +80531,23 @@ msgstr "Fichier :"
 
 
 msgctxt "Operator"
-msgid "Scene:"
-msgstr "Scène :"
+msgid "Sequencer:"
+msgstr "Séquenceur :"
 
 
 msgctxt "Operator"
-msgid "Mocap:"
-msgstr "Mocap :"
+msgid "Dpaint:"
+msgstr "Peinture dyn :"
 
 
 msgctxt "Operator"
-msgid "Texture:"
-msgstr "Texture :"
+msgid "Export_scene:"
+msgstr "Export scène :"
 
 
 msgctxt "Operator"
-msgid "Export_shape:"
-msgstr "Export forme :"
-
-
-msgctxt "Operator"
-msgid "Logic:"
-msgstr "Logique :"
-
-
-msgctxt "Operator"
-msgid "Cloth:"
-msgstr "Tissu :"
-
-
-msgctxt "Operator"
-msgid "Wm:"
-msgstr "Wm :"
-
-
-msgctxt "Operator"
-msgid "Screen:"
-msgstr "Écran :"
-
-
-msgctxt "Operator"
-msgid "Import_anim:"
-msgstr "Import anim :"
-
-
-msgctxt "Operator"
-msgid "Surface:"
-msgstr "Surface :"
-
-
-msgctxt "Operator"
-msgid "Uv:"
-msgstr "Uv :"
-
-
-msgctxt "Operator"
-msgid "Action:"
-msgstr "Action :"
-
-
-msgctxt "Operator"
-msgid "Import_shape:"
-msgstr "Import forme :"
-
-
-msgctxt "Operator"
-msgid "Export_animation:"
-msgstr "Export animation :"
-
-
-msgctxt "Operator"
-msgid "Outliner:"
-msgstr "Outliner :"
-
-
-msgctxt "Operator"
-msgid "Mask:"
-msgstr "Masque :"
-
-
-msgctxt "Operator"
-msgid "Time:"
-msgstr "Temps :"
-
-
-msgctxt "Operator"
-msgid "Import_curve:"
-msgstr "Import courbe :"
-
-
-msgctxt "Operator"
-msgid "Curve:"
-msgstr "Courbe :"
-
-
-msgctxt "Operator"
-msgid "Info:"
-msgstr "Info :"
-
-
-msgctxt "Operator"
-msgid "Paint:"
-msgstr "Peinture :"
-
-
-msgctxt "Operator"
-msgid "Mball:"
-msgstr "Mballe :"
-
-
-msgctxt "Operator"
-msgid "Clip:"
-msgstr "Clip :"
+msgid "Poselib:"
+msgstr "Pose biblio :"
 
 
 msgctxt "Operator"
@@ -80566,23 +80556,33 @@ msgstr "Groupe :"
 
 
 msgctxt "Operator"
-msgid "Gpencil:"
-msgstr "CrayonG :"
+msgid "Image:"
+msgstr "Image :"
 
 
 msgctxt "Operator"
-msgid "View2d:"
-msgstr "Vue 2D :"
+msgid "Lattice:"
+msgstr "Lattice :"
 
 
 msgctxt "Operator"
-msgid "Export_mesh:"
-msgstr "Export mesh :"
+msgid "Import_anim:"
+msgstr "Import anim :"
 
 
 msgctxt "Operator"
-msgid "Ptcache:"
-msgstr "Cache point :"
+msgid "Console:"
+msgstr "Console :"
+
+
+msgctxt "Operator"
+msgid "Palette:"
+msgstr "Palette :"
+
+
+msgctxt "Operator"
+msgid "Uv:"
+msgstr "Uv :"
 
 
 msgctxt "Operator"
@@ -80591,8 +80591,128 @@ msgstr "Polices :"
 
 
 msgctxt "Operator"
-msgid "Buttons:"
-msgstr "Boutons :"
+msgid "Sketch:"
+msgstr "Esquisse :"
+
+
+msgctxt "Operator"
+msgid "Fluid:"
+msgstr "Fluide :"
+
+
+msgctxt "Operator"
+msgid "Ed:"
+msgstr "Éditeur :"
+
+
+msgctxt "Operator"
+msgid "Export_animation:"
+msgstr "Export animation :"
+
+
+msgctxt "Operator"
+msgid "Export_mesh:"
+msgstr "Export mesh :"
+
+
+msgctxt "Operator"
+msgid "Logic:"
+msgstr "Logique :"
+
+
+msgctxt "Operator"
+msgid "Node:"
+msgstr "Nœud :"
+
+
+msgctxt "Operator"
+msgid "Gpencil:"
+msgstr "CrayonG :"
+
+
+msgctxt "Operator"
+msgid "Object:"
+msgstr "Objet :"
+
+
+msgctxt "Operator"
+msgid "Text:"
+msgstr "Texte :"
+
+
+msgctxt "Operator"
+msgid "Action:"
+msgstr "Action :"
+
+
+msgctxt "Operator"
+msgid "Lamp:"
+msgstr "Lampe :"
+
+
+msgctxt "Operator"
+msgid "Surface:"
+msgstr "Surface :"
+
+
+msgctxt "Operator"
+msgid "Graph:"
+msgstr "Graphe :"
+
+
+msgctxt "Operator"
+msgid "Screen:"
+msgstr "Écran :"
+
+
+msgctxt "Operator"
+msgid "Brush:"
+msgstr "Brosse :"
+
+
+msgctxt "Operator"
+msgid "Camera:"
+msgstr "Caméra :"
+
+
+msgctxt "Operator"
+msgid "Nla:"
+msgstr "Nla :"
+
+
+msgctxt "Operator"
+msgid "View2d:"
+msgstr "Vue 2D :"
+
+
+msgctxt "Operator"
+msgid "Paintcurve:"
+msgstr "Courbe peinture :"
+
+
+msgctxt "Operator"
+msgid "Anim:"
+msgstr "Anim :"
+
+
+msgctxt "Operator"
+msgid "Export_anim:"
+msgstr "Export anim :"
+
+
+msgctxt "Operator"
+msgid "Particle:"
+msgstr "Particule :"
+
+
+msgctxt "Operator"
+msgid "Sculpt:"
+msgstr "Sculpture :"
+
+
+msgctxt "Operator"
+msgid "Export_shape:"
+msgstr "Export forme :"
 
 
 msgctxt "Operator"
@@ -80601,13 +80721,63 @@ msgstr "Armature :"
 
 
 msgctxt "Operator"
+msgid "Boid:"
+msgstr "Boïd :"
+
+
+msgctxt "Operator"
+msgid "Blender_id:"
+msgstr "Blender id :"
+
+
+msgctxt "Operator"
 msgid "Cachefile:"
 msgstr "Fichier cache :"
 
 
 msgctxt "Operator"
-msgid "Import_scene:"
-msgstr "Import scène :"
+msgid "Mocap:"
+msgstr "Mocap :"
+
+
+msgctxt "Operator"
+msgid "Sound:"
+msgstr "Audio :"
+
+
+msgctxt "Operator"
+msgid "Wm:"
+msgstr "Wm :"
+
+
+msgctxt "Operator"
+msgid "Mesh:"
+msgstr "Mesh :"
+
+
+msgctxt "Operator"
+msgid "Info:"
+msgstr "Info :"
+
+
+msgctxt "Operator"
+msgid "Outliner:"
+msgstr "Outliner :"
+
+
+msgctxt "Operator"
+msgid "Time:"
+msgstr "Temps :"
+
+
+msgctxt "Operator"
+msgid "Marker:"
+msgstr "Marqueur :"
+
+
+msgctxt "Operator"
+msgid "Mask:"
+msgstr "Masque :"
 
 
 msgctxt "WindowManager"
@@ -81037,16 +81207,8 @@ msgid "Failed to write .oso file next to external .osl file at "
 msgstr "Impossible d’écrire le fichier .oso à côté du fichier externe .osl en "
 
 
-msgid "Compute Device:"
-msgstr "Périphérique de calculs :"
-
-
-msgid "CUDA devices:"
-msgstr "Périphériques CUDA :"
-
-
-msgid "OpenCL devices:"
-msgstr "Périphériques OpenCL :"
+msgid "Cycles Compute Device:"
+msgstr "Périphérique de calculs Cycles :"
 
 
 msgid "Total Samples:"
@@ -81225,8 +81387,12 @@ msgid "Subdivision"
 msgstr "Subdivision"
 
 
-msgid "Render:"
-msgstr "Rendu :"
+msgid "Texture Limit Viewport"
+msgstr "Limite texture vue3D"
+
+
+msgid "Texture Limit Render"
+msgstr "Limite texture rendu"
 
 
 msgid "Device:"
@@ -81295,11 +81461,6 @@ msgstr "Extrusion"
 
 msgid "Ray Distance"
 msgstr "Distance de rayon"
-
-
-msgctxt "Operator"
-msgid "Preferences"
-msgstr "Préférences"
 
 
 msgctxt "Operator"
@@ -82755,6 +82916,10 @@ msgid "Generate Data Layers"
 msgstr "Générer couches de données"
 
 
+msgid "Built without Boolean modifier"
+msgstr "Compilé sans le modificateur Booléen"
+
+
 msgid "Bone:"
 msgstr "Os :"
 
@@ -82790,6 +82955,10 @@ msgid "View:"
 msgstr "Vue :"
 
 
+msgid "Render:"
+msgstr "Rendu :"
+
+
 msgid "Subdivisions:"
 msgstr "Subdivisions :"
 
@@ -82800,6 +82969,10 @@ msgstr "Taux de découpage en dés final :"
 
 msgid "Render %.2f px, Preview %.2f px"
 msgstr "Rendu %.2f px, Prévisualisation %.2f px"
+
+
+msgid "Built without Remesh modifier"
+msgstr "Compilé sans le modificateur Remesh"
 
 
 msgid "Vertex Group Mask:"
@@ -84366,6 +84539,10 @@ msgstr "Débug :"
 
 msgid "Color Mapping:"
 msgstr "Conversion de couleur :"
+
+
+msgid "Built without Smoke modifier"
+msgstr "Compilé sans le modificateur Fumée"
 
 
 msgid "Border Collisions:"
@@ -87107,6 +87284,11 @@ msgstr "Supprimer os"
 
 msgid "Sculpt Brush"
 msgstr "Brosse de sculpture"
+
+
+msgctxt "Operator"
+msgid "Join..."
+msgstr "Joindre…"
 
 
 msgid "Lock to Object:"
@@ -89928,6 +90110,16 @@ msgstr "Raccourci non-clavier"
 
 msgid "Only keyboard shortcuts can be edited that way, please use User Preferences otherwise"
 msgstr "Seuls les raccourcis clavier peuvent être édités de cette façon, utilisez les préférences utilisateurs sinon"
+
+
+msgctxt "Operator"
+msgid "Open File Externally"
+msgstr "Ouvrir le fichier à l’extérieur"
+
+
+msgctxt "Operator"
+msgid "Open Location Externally"
+msgstr "Ouvrir l’emplacement à l’extérieur"
 
 
 msgctxt "Operator"
@@ -95338,6 +95530,10 @@ msgstr "Vertices de la cage changés de %d à %d"
 
 msgid "Bind data missing"
 msgstr "Données de liaison manquantes"
+
+
+msgid "Could not create Alembic reader for file %s"
+msgstr "Impossible de créer un lecteur Alembic pour le fichier %s"
 
 
 msgid "Invalid target settings"
