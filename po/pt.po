@@ -1,10 +1,10 @@
 
 msgid ""
 msgstr ""
-"Project-Id-Version: Blender 2.78 (sub 4) (b'd5c7d22bc2')\n"
+"Project-Id-Version: Blender 2.78 (sub 4) (b'd2f4900d1a9')\n"
 "Report-Msgid-Bugs-To: Ivan Paulos Tomé <greylica@gmail.com>\n"
-"POT-Creation-Date: 2017-01-23 21:33:49\n"
-"PO-Revision-Date: 2017-01-22 12:09-0300\n"
+"POT-Creation-Date: 2017-02-09 11:55:44\n"
+"PO-Revision-Date: 2017-01-25 19:37-0300\n"
 "Last-Translator: Ivan Paulos Tomé <greylica@gmail.com>\n"
 "Language-Team: Ivan Paulos Tomé, Inês Almeida, João Brandão (ULISBOA), Paulo Martins <greylica@gmail.com>\n"
 "Language: pt\n"
@@ -13060,6 +13060,14 @@ msgid "Collection of grease pencil frames"
 msgstr "Coleção de fotogramas de lápis de cera."
 
 
+msgid "Grease Pencil Interpolate Settings"
+msgstr "Definições de interpolação de lápis de cera"
+
+
+msgid "Settings for Grease Pencil interpolation tools"
+msgstr "Definições para as ferramentas de interpolação de lápis de cera."
+
+
 msgid "Amount to boost elastic bounces for 'elastic' easing"
 msgstr "Quantidade de amplificação de rebatimentos elásticos para uma facilitação tipo elástica"
 
@@ -13070,6 +13078,10 @@ msgstr "Quantidade de ajuste \"além dos valores\" para adicionar anteriormente 
 
 msgid "Easing"
 msgstr "Facilitação"
+
+
+msgid "Which ends of the segment between the preceding and following grease pencil frames easing interpolation is applied to"
+msgstr "Quais terminações do segmento entre os fotogramas de lápis de cera anteriores e o posteriores a facilitação de interpolação será aplicada."
 
 
 msgid "Automatic Easing"
@@ -13120,6 +13132,14 @@ msgid "Interpolate only selected strokes in the original frame"
 msgstr "Interpola somente os traços selecionados dentro dos fotogramas originais."
 
 
+msgid "Interpolation Curve"
+msgstr "Curva de interpolação"
+
+
+msgid "Custom curve to control 'sequence' interpolation between Grease Pencil frames"
+msgstr "Curva personalizada para controlar a interpolação da \"sequência\" entre os fotogramas de lápis de cera."
+
+
 msgid "Period"
 msgstr "Período"
 
@@ -13128,12 +13148,20 @@ msgid "Time between bounces for elastic easing"
 msgstr "Tempo entre rebatimentos para uma facilitação elástica."
 
 
+msgid "Interpolation method to use the next time 'Interpolate Sequence' is run"
+msgstr "O método de interpolação a ser usado na próxima vez que a \"Sequência interpolada\" é executada."
+
+
 msgid "Straight-line interpolation between A and B (i.e. no ease in/out)"
 msgstr "Interpolação em linha-reta entre A e B (ex: sem facilitação de entrada ou saída)"
 
 
 msgid "Custom"
 msgstr "Personalizar"
+
+
+msgid "Custom interpolation defined using a curvemap"
+msgstr "Uma interpolação personalizada definida usando um mapa de curva."
 
 
 msgid "Sinusoidal"
@@ -33011,6 +33039,10 @@ msgid "Cache of the worldspace positions of an element over a frame range"
 msgstr "Cache das posições do espaço de ambiente (mundo) de um elemento sobre um intervalo de fotogramas."
 
 
+msgid "Custom color for motion path"
+msgstr "Cor personalizada para o caminho de movimento."
+
+
 msgid "End frame of the stored range"
 msgstr "Fotograma final da faixa de intervalo guardada."
 
@@ -33031,6 +33063,18 @@ msgid "Number of frames cached"
 msgstr "Número de fotogramas em cache."
 
 
+msgid "Line thickness"
+msgstr "Espessura da linha"
+
+
+msgid "Line thickness for drawing path"
+msgstr "Espessura de linha para o desenho do caminho."
+
+
+msgid "Draw straight lines between keyframe points"
+msgstr "Desenha linhas retas entre os pontos dos fotogramas chave."
+
+
 msgid "Motion Path Points"
 msgstr "Pontos de caminho de movimento"
 
@@ -33045,6 +33089,14 @@ msgstr "Usar as cabeças dos ossos"
 
 msgid "For PoseBone paths, use the bone head location when calculating this path"
 msgstr "Para os caminhos de pose de ossos, usar a localização da cabeça do osso enquanto calcula este caminho."
+
+
+msgid "Custom colors"
+msgstr "Cores personalizadas"
+
+
+msgid "Use custom color for this motion path"
+msgstr "Usar uma cor personalizada para este caminho de movimento."
 
 
 msgid "Motion Path Cache Point"
@@ -35460,7 +35512,7 @@ msgstr "Distância de cores abaixo da qual este ajuste estará chaveado."
 
 
 msgid "Dilate/Erode"
-msgstr "Dilatar e erodir"
+msgstr "Dilatar ou erodir"
 
 
 msgid "Distance to grow/shrink (number of iterations)"
@@ -42500,6 +42552,14 @@ msgid "Apply modifiers to mesh objects (except Armature ones) - WARNING: prevent
 msgstr "Aplica os modificadores para os objetos de malha (exceto as armações de ossos) - AVISO: impede a exportação de chaves de formato."
 
 
+msgid "Use Modifiers Render Setting"
+msgstr "Usar definições de renderização dos modificadores"
+
+
+msgid "Use render settings when applying modifiers to mesh objects"
+msgstr "Utiliza as definições de renderização durante a aplicação dos modificadores aos objetos de malha."
+
+
 msgid "Use Metadata"
 msgstr "Usar Meta-Dados"
 
@@ -42575,6 +42635,14 @@ msgstr "Escrever materiais"
 
 msgid "Write out the MTL file"
 msgstr "Escreve a saída para o ficheiro MTL"
+
+
+msgid "Apply modifiers"
+msgstr "Aplicar modificadores"
+
+
+msgid "Use Modifiers Render Settings"
+msgstr "Usar as configurações de renderização dos modificadores"
 
 
 msgid "Write Normals"
@@ -43443,6 +43511,19 @@ msgid "Delete the active frame(s) of all editable Grease Pencil layers"
 msgstr "Apaga os fotogramas ativos de todas as camadas editáveis de lápis de cera."
 
 
+msgctxt "Operator"
+msgid "Add Blank Frame"
+msgstr "Adicionar um fotograma em branco"
+
+
+msgid "Add a new frame with nothing in it on the current frame. If there is already a frame, all existing frames are shifted one frame later"
+msgstr "Adiciona um novo fotograma sem nenhum conteúdo em si no quadro atual. Caso já exista um quadro, todos os quadros existentes serão deslocados (alterados) um quadro adiante."
+
+
+msgid "Create blank frame in all layers, not only active"
+msgstr "Cria um fotograma em branco em todas as camadas, e não somente na ativa."
+
+
 msgid "Add new Grease Pencil drawing brush for the active Grease Pencil data-block"
 msgstr "Adiciona um novo pincel de desenho de lápis de cera para o bloco de dados de lápis de cera ativo."
 
@@ -43804,6 +43885,28 @@ msgid "Interpolate grease pencil strokes between frames"
 msgstr "Interpola os traços de lápis de cera entre os fotogramas."
 
 
+msgid "Bias factor for which frame has more influence on the interpolated strokes"
+msgstr "Um fator de ajuste fino (afinidade) para o qual o fotograma terá mais influência nos traços interpolados."
+
+
+msgctxt "Operator"
+msgid "Remove Breakdowns"
+msgstr "Remover interruptividades"
+
+
+msgid "Remove breakdown frames generated by interpolating between two Grease Pencil frames"
+msgstr "Remove os fotograma de interruptividade gerados pelas interpolações entre dois quadros de lápis de cera."
+
+
+msgctxt "Operator"
+msgid "Interpolate Sequence"
+msgstr "Sequência de interpolação"
+
+
+msgid "Generate 'in-betweens' to smoothly interpolate between Grease Pencil frames"
+msgstr "Gera valores de inserção intra-fotogramas para interpolação suavizada entre os quadros de lápis de cera."
+
+
 msgctxt "Operator"
 msgid "Add New Layer"
 msgstr "Adicionar nova camada"
@@ -44034,6 +44137,22 @@ msgstr "Fundir"
 msgctxt "Operator"
 msgid "Reproject Strokes"
 msgstr "Reprojetar traços"
+
+
+msgid "Reproject the selected strokes from the current viewpoint as if they had been newly drawn (e.g. to fix problems from accidental 3D cursor movement or accidental viewport changes, or for matching deforming geometry)"
+msgstr "Reprojeta os traços selecionados a partir da porta de visão atual como se eles fossem recém desenhados (por exemplo, para consertos de problemas gerados por movimentos acidentais do cursor 3D ou alterações acidentais da porta de visão, ou para combinação com geometrias deformantes)"
+
+
+msgid "Projection Type"
+msgstr "Tipo de projeção"
+
+
+msgid "Reproject the strokes to end up on the same plane, as if drawn from the current viewpoint using 'Cursor' Stroke Placement"
+msgstr "Reprojeta os trações para que sejam encerrados dentro do mesmo plano, como se fossem desenhados a partir da porta de visão atual usando o posicionamento dos traços no cursor."
+
+
+msgid "Reproject the strokes on to the scene geometry, as if drawn using 'Surface' placement"
+msgstr "Reprojeta os traços dentro da geometria da cena, como se fossem desenhados usando o posicionamento na superfície."
 
 
 msgid "Show all Grease Pencil layers"
@@ -62596,6 +62715,10 @@ msgid "Level of Detail"
 msgstr "Nível de detalhes"
 
 
+msgid "Obstacle Simulation"
+msgstr "Simulação de obstáculo"
+
+
 msgid "Rigid Body Cache"
 msgstr "Corpo rígido - Cache"
 
@@ -62790,6 +62913,10 @@ msgstr "Iluminação indireta"
 
 msgid "Math Vis"
 msgstr "Visualização matemática"
+
+
+msgid "Math Vis Console"
+msgstr "Consola de visualização matemática"
 
 
 msgid "Particle in a particle system"
@@ -64692,6 +64819,14 @@ msgid "Use refractive caustics, resulting in a brighter image (more noise but ad
 msgstr "Usa cáustica refrativa, resultando em uma imagem mais brilhante (mais realista, mas com mais ruido)."
 
 
+msgid "BVH Time Steps"
+msgstr "Passos de tempo BVH"
+
+
+msgid "Split BVH primitives by this number of time steps to speed up render time in cost of memory"
+msgstr "Divide as primitivas de hierarquias de volume circundante (BVH) por este número de passos de tempo para acelerar o tempo de renderização ao custo de mais consumo de memória."
+
+
 msgid "Viewport BVH Type"
 msgstr "Tipo de BVH para porta de visão"
 
@@ -66232,12 +66367,36 @@ msgid "Render Pass"
 msgstr "Passo de renderização"
 
 
+msgid "BVH Traversed Nodes"
+msgstr "Instâncias trafegadas BVH"
+
+
+msgid "Number of nodes traversed in BVH for the camera rays"
+msgstr "O número de nós percorridos dentro da hierarquia de volume circundante (BVH) para os raios da câmera."
+
+
 msgid "BVH Traversed Instances"
 msgstr "Instâncias BVH transversais"
 
 
+msgid "Number of BVH instances traversed by camera rays"
+msgstr "O número de instâncias de hierarquia de volume circundante (BVH) percorridos pelos raios da câmera."
+
+
+msgid "BVH Intersections"
+msgstr "Intersecções BVH"
+
+
+msgid "Number of primitive intersections performed by the camera rays"
+msgstr "O número de intersecções primitivas realizados pelos raios da câmera."
+
+
 msgid "Ray Steps"
 msgstr "Passos dos raios"
+
+
+msgid "Number of bounces done by the main integration loop"
+msgstr "O número de rebatimentos feitos pelo ciclo do integrador principal."
 
 
 msgid "Render Passes"
@@ -77277,6 +77436,18 @@ msgid "Grease Pencil drawing brushes"
 msgstr "Pincéis de desenho do lápis de cera"
 
 
+msgid "Grease Pencil Interpolate"
+msgstr "Interpolação de lápis de cera"
+
+
+msgid "Settings for Grease Pencil Interpolation tools"
+msgstr "Definições para as ferramentas de interpolação de lápis de cera."
+
+
+msgid "Settings for stroke sculpting tools and brushes"
+msgstr "Definições para as ferramentas de escultura de traços e pincéis."
+
+
 msgid "Stroke Placement (Image Editor)"
 msgstr "Posicionamento dos traços (Editor de imagens e UVs)"
 
@@ -80126,7 +80297,7 @@ msgstr "Reverter o rato"
 
 
 msgid "Reverse the vertical movement of the mouse"
-msgstr "Reverte o movimento vertical do mouse."
+msgstr "Reverte o movimento vertical do rato."
 
 
 msgid "View Height"
@@ -80382,8 +80553,28 @@ msgstr "Calcula a oclusão dos objetos com a cor do ambiente, como se eles estiv
 
 
 msgctxt "Operator"
-msgid "Material:"
-msgstr "Materiais:"
+msgid "Time:"
+msgstr "Tempo:"
+
+
+msgctxt "Operator"
+msgid "Gpencil:"
+msgstr "Lápis de cera:"
+
+
+msgctxt "Operator"
+msgid "Cycles:"
+msgstr "Rend. Cycles:"
+
+
+msgctxt "Operator"
+msgid "Render:"
+msgstr "Renderização:"
+
+
+msgctxt "Operator"
+msgid "Particle:"
+msgstr "Partículas:"
 
 
 msgctxt "Operator"
@@ -80392,68 +80583,18 @@ msgstr "Nós:"
 
 
 msgctxt "Operator"
-msgid "Export_shape:"
-msgstr "Exportar formatos:"
-
-
-msgctxt "Operator"
-msgid "Group:"
-msgstr "Grupo:"
-
-
-msgctxt "Operator"
-msgid "Transform:"
-msgstr "Transformações:"
-
-
-msgctxt "Operator"
-msgid "Mesh:"
-msgstr "Malhas:"
-
-
-msgctxt "Operator"
 msgid "Rigidbody:"
 msgstr "Corpos rígidos:"
 
 
 msgctxt "Operator"
-msgid "Pose:"
-msgstr "Poses:"
+msgid "Buttons:"
+msgstr "Botões:"
 
 
 msgctxt "Operator"
-msgid "Ed:"
-msgstr "Edição:"
-
-
-msgctxt "Operator"
-msgid "Font:"
-msgstr "Fontes:"
-
-
-msgctxt "Operator"
-msgid "Brush:"
-msgstr "Pincéis:"
-
-
-msgctxt "Operator"
-msgid "Palette:"
-msgstr "Paletas:"
-
-
-msgctxt "Operator"
-msgid "Marker:"
-msgstr "Marcadores:"
-
-
-msgctxt "Operator"
-msgid "Object:"
-msgstr "Objetos:"
-
-
-msgctxt "Operator"
-msgid "Sound:"
-msgstr "Sons:"
+msgid "Safe_areas:"
+msgstr "Áreas de segurança:"
 
 
 msgctxt "Operator"
@@ -80467,88 +80608,8 @@ msgstr "Telas:"
 
 
 msgctxt "Operator"
-msgid "Mask:"
-msgstr "Máscaras:"
-
-
-msgctxt "Operator"
-msgid "Buttons:"
-msgstr "Botões:"
-
-
-msgctxt "Operator"
-msgid "Render:"
-msgstr "Renderização:"
-
-
-msgctxt "Operator"
-msgid "Mball:"
-msgstr "Esferas-meta:"
-
-
-msgctxt "Operator"
-msgid "Fluid:"
-msgstr "Fluidos:"
-
-
-msgctxt "Operator"
-msgid "Text:"
-msgstr "Textos:"
-
-
-msgctxt "Operator"
-msgid "Constraint:"
-msgstr "Restrições:"
-
-
-msgctxt "Operator"
-msgid "Import_mesh:"
-msgstr "Importar malhas:"
-
-
-msgctxt "Operator"
-msgid "Clip:"
-msgstr "Clipes:"
-
-
-msgctxt "Operator"
-msgid "Uv:"
-msgstr "UVs:"
-
-
-msgctxt "Operator"
-msgid "Cloth:"
-msgstr "Tecidos:"
-
-
-msgctxt "Operator"
-msgid "Import_anim:"
-msgstr "Importar animações:"
-
-
-msgctxt "Operator"
-msgid "Outliner:"
-msgstr "Organizador:"
-
-
-msgctxt "Operator"
-msgid "Image:"
-msgstr "Imagens:"
-
-
-msgctxt "Operator"
-msgid "Surface:"
-msgstr "Superfícies:"
-
-
-msgctxt "Operator"
-msgid "Nla:"
-msgstr "Anim. não linear:"
-
-
-msgctxt "Operator"
-msgid "Logic:"
-msgstr "Lógica:"
+msgid "Camera:"
+msgstr "Câmaras:"
 
 
 msgctxt "Operator"
@@ -80557,13 +80618,8 @@ msgstr "Exportar animações:"
 
 
 msgctxt "Operator"
-msgid "Scene:"
-msgstr "Cenas:"
-
-
-msgctxt "Operator"
-msgid "File:"
-msgstr "Ficheiros:"
+msgid "Transform:"
+msgstr "Transformações:"
 
 
 msgctxt "Operator"
@@ -80572,38 +80628,23 @@ msgstr "Curvas:"
 
 
 msgctxt "Operator"
-msgid "Time:"
-msgstr "Tempo:"
+msgid "Mathvis:"
+msgstr "Visualização matemática:"
 
 
 msgctxt "Operator"
-msgid "Boid:"
-msgstr "Revoadas:"
+msgid "Group:"
+msgstr "Grupo:"
 
 
 msgctxt "Operator"
-msgid "World:"
-msgstr "Ambiente:"
+msgid "Cloth:"
+msgstr "Tecidos:"
 
 
 msgctxt "Operator"
-msgid "Blender_id:"
-msgstr "Identif. Blender:"
-
-
-msgctxt "Operator"
-msgid "Armature:"
-msgstr "Armações:"
-
-
-msgctxt "Operator"
-msgid "Wm:"
-msgstr "Gerenc. de janelas :"
-
-
-msgctxt "Operator"
-msgid "Console:"
-msgstr "Linha de comando:"
+msgid "Sound:"
+msgstr "Sons:"
 
 
 msgctxt "Operator"
@@ -80612,113 +80653,8 @@ msgstr "Exportar malhas:"
 
 
 msgctxt "Operator"
-msgid "Paintcurve:"
-msgstr "Curvas de pintura:"
-
-
-msgctxt "Operator"
-msgid "Ptcache:"
-msgstr "Cache de pontos:"
-
-
-msgctxt "Operator"
-msgid "Gpencil:"
-msgstr "Lápis de cera:"
-
-
-msgctxt "Operator"
-msgid "Script:"
-msgstr "Scripts:"
-
-
-msgctxt "Operator"
-msgid "Lamp:"
-msgstr "Lâmpadas:"
-
-
-msgctxt "Operator"
-msgid "Info:"
-msgstr "Informações:"
-
-
-msgctxt "Operator"
-msgid "Lattice:"
-msgstr "Treliças:"
-
-
-msgctxt "Operator"
-msgid "View3d:"
-msgstr "Visualização 3D:"
-
-
-msgctxt "Operator"
-msgid "Import_shape:"
-msgstr "Importar formatos:"
-
-
-msgctxt "Operator"
-msgid "Mathvis:"
-msgstr "Visualização matemática:"
-
-
-msgctxt "Operator"
-msgid "Export_blend:"
-msgstr "Exportar arq. Blender:"
-
-
-msgctxt "Operator"
-msgid "Graph:"
-msgstr "Gráfico:"
-
-
-msgctxt "Operator"
-msgid "Particle:"
-msgstr "Partículas:"
-
-
-msgctxt "Operator"
-msgid "Ui:"
-msgstr "Interf. de utilizador:"
-
-
-msgctxt "Operator"
-msgid "Camera:"
-msgstr "Câmaras:"
-
-
-msgctxt "Operator"
-msgid "Sequencer:"
-msgstr "Edit. de sequências:"
-
-
-msgctxt "Operator"
-msgid "Cycles:"
-msgstr "Rend. Cycles:"
-
-
-msgctxt "Operator"
-msgid "Safe_areas:"
-msgstr "Áreas de segurança:"
-
-
-msgctxt "Operator"
-msgid "Import_curve:"
-msgstr "Importar curvas:"
-
-
-msgctxt "Operator"
-msgid "Sketch:"
-msgstr "Esboços:"
-
-
-msgctxt "Operator"
-msgid "Sculpt:"
-msgstr "Escultura:"
-
-
-msgctxt "Operator"
-msgid "View2d:"
-msgstr "Visualização 2D:"
+msgid "Export_anim:"
+msgstr "Exportar animações:"
 
 
 msgctxt "Operator"
@@ -80727,28 +80663,23 @@ msgstr "Ação:"
 
 
 msgctxt "Operator"
-msgid "Poselib:"
-msgstr "Bibl. de poses:"
+msgid "Sculpt:"
+msgstr "Escultura:"
 
 
 msgctxt "Operator"
-msgid "Dpaint:"
-msgstr "Pintura dinâmica:"
+msgid "Object:"
+msgstr "Objetos:"
 
 
 msgctxt "Operator"
-msgid "Mocap:"
-msgstr "Cap. de movimentos:"
+msgid "Info:"
+msgstr "Informações:"
 
 
 msgctxt "Operator"
-msgid "Cachefile:"
-msgstr "Ficheiros de cache:"
-
-
-msgctxt "Operator"
-msgid "Export_scene:"
-msgstr "Exportar cenas:"
+msgid "Palette:"
+msgstr "Paletas:"
 
 
 msgctxt "Operator"
@@ -80757,8 +80688,178 @@ msgstr "Importar cena:"
 
 
 msgctxt "Operator"
-msgid "Export_anim:"
-msgstr "Exportar animações:"
+msgid "Nla:"
+msgstr "Anim. não linear:"
+
+
+msgctxt "Operator"
+msgid "Export_shape:"
+msgstr "Exportar formatos:"
+
+
+msgctxt "Operator"
+msgid "View3d:"
+msgstr "Visualização 3D:"
+
+
+msgctxt "Operator"
+msgid "Mball:"
+msgstr "Esferas-meta:"
+
+
+msgctxt "Operator"
+msgid "Mocap:"
+msgstr "Cap. de movimentos:"
+
+
+msgctxt "Operator"
+msgid "Paintcurve:"
+msgstr "Curvas de pintura:"
+
+
+msgctxt "Operator"
+msgid "Export_scene:"
+msgstr "Exportar cenas:"
+
+
+msgctxt "Operator"
+msgid "File:"
+msgstr "Ficheiros:"
+
+
+msgctxt "Operator"
+msgid "Text:"
+msgstr "Textos:"
+
+
+msgctxt "Operator"
+msgid "Outliner:"
+msgstr "Organizador:"
+
+
+msgctxt "Operator"
+msgid "Mesh:"
+msgstr "Malhas:"
+
+
+msgctxt "Operator"
+msgid "Export_blend:"
+msgstr "Exportar arq. Blender:"
+
+
+msgctxt "Operator"
+msgid "Clip:"
+msgstr "Clipes:"
+
+
+msgctxt "Operator"
+msgid "Constraint:"
+msgstr "Restrições:"
+
+
+msgctxt "Operator"
+msgid "Poselib:"
+msgstr "Bibl. de poses:"
+
+
+msgctxt "Operator"
+msgid "Material:"
+msgstr "Materiais:"
+
+
+msgctxt "Operator"
+msgid "Ed:"
+msgstr "Edição:"
+
+
+msgctxt "Operator"
+msgid "Ptcache:"
+msgstr "Cache de pontos:"
+
+
+msgctxt "Operator"
+msgid "Boid:"
+msgstr "Revoadas:"
+
+
+msgctxt "Operator"
+msgid "Script:"
+msgstr "Scripts:"
+
+
+msgctxt "Operator"
+msgid "Marker:"
+msgstr "Marcadores:"
+
+
+msgctxt "Operator"
+msgid "Console:"
+msgstr "Linha de comando:"
+
+
+msgctxt "Operator"
+msgid "Texture:"
+msgstr "Texturas:"
+
+
+msgctxt "Operator"
+msgid "Scene:"
+msgstr "Cenas:"
+
+
+msgctxt "Operator"
+msgid "Logic:"
+msgstr "Lógica:"
+
+
+msgctxt "Operator"
+msgid "Cachefile:"
+msgstr "Ficheiros de cache:"
+
+
+msgctxt "Operator"
+msgid "World:"
+msgstr "Ambiente:"
+
+
+msgctxt "Operator"
+msgid "Image:"
+msgstr "Imagens:"
+
+
+msgctxt "Operator"
+msgid "Import_mesh:"
+msgstr "Importar malhas:"
+
+
+msgctxt "Operator"
+msgid "Pose:"
+msgstr "Poses:"
+
+
+msgctxt "Operator"
+msgid "Dpaint:"
+msgstr "Pintura dinâmica:"
+
+
+msgctxt "Operator"
+msgid "Mask:"
+msgstr "Máscaras:"
+
+
+msgctxt "Operator"
+msgid "Sketch:"
+msgstr "Esboços:"
+
+
+msgctxt "Operator"
+msgid "Sequencer:"
+msgstr "Edit. de sequências:"
+
+
+msgctxt "Operator"
+msgid "Graph:"
+msgstr "Gráfico:"
 
 
 msgctxt "Operator"
@@ -80767,8 +80868,78 @@ msgstr "Animações:"
 
 
 msgctxt "Operator"
-msgid "Texture:"
-msgstr "Texturas:"
+msgid "Lamp:"
+msgstr "Lâmpadas:"
+
+
+msgctxt "Operator"
+msgid "Import_curve:"
+msgstr "Importar curvas:"
+
+
+msgctxt "Operator"
+msgid "Uv:"
+msgstr "UVs:"
+
+
+msgctxt "Operator"
+msgid "Lattice:"
+msgstr "Treliças:"
+
+
+msgctxt "Operator"
+msgid "Import_shape:"
+msgstr "Importar formatos:"
+
+
+msgctxt "Operator"
+msgid "Armature:"
+msgstr "Armações:"
+
+
+msgctxt "Operator"
+msgid "Fluid:"
+msgstr "Fluidos:"
+
+
+msgctxt "Operator"
+msgid "Wm:"
+msgstr "Gerenc. de janelas :"
+
+
+msgctxt "Operator"
+msgid "View2d:"
+msgstr "Visualização 2D:"
+
+
+msgctxt "Operator"
+msgid "Font:"
+msgstr "Fontes:"
+
+
+msgctxt "Operator"
+msgid "Surface:"
+msgstr "Superfícies:"
+
+
+msgctxt "Operator"
+msgid "Import_anim:"
+msgstr "Importar animações:"
+
+
+msgctxt "Operator"
+msgid "Blender_id:"
+msgstr "Identif. Blender:"
+
+
+msgctxt "Operator"
+msgid "Ui:"
+msgstr "Interf. de utilizador:"
+
+
+msgctxt "Operator"
+msgid "Brush:"
+msgstr "Pincéis:"
 
 
 msgctxt "WindowManager"
@@ -83167,11 +83338,6 @@ msgid "Framing:"
 msgstr "Arranjo:"
 
 
-msgctxt "Operator"
-msgid "Build navigation mesh"
-msgstr "Construir uma malha de navegação"
-
-
 msgid "Rasterization:"
 msgstr "Rasterização"
 
@@ -83315,6 +83481,11 @@ msgid "Draw:"
 msgstr "Desenhar:"
 
 
+msgctxt "Operator"
+msgid "Delete Frame(s)"
+msgstr "Apagar fotograma(s)"
+
+
 msgid "Additive Drawing"
 msgstr "Modo de desenho aditivo"
 
@@ -83354,6 +83525,10 @@ msgstr "Interpolar"
 msgctxt "Operator"
 msgid "Sequence"
 msgstr "Sequências"
+
+
+msgid "Sequence Options:"
+msgstr "Opções para sequências:"
 
 
 msgid "Active Layer:      "
@@ -83483,6 +83658,11 @@ msgstr "Juntar e copiar"
 
 msgid "Show Directions"
 msgstr "Mostrar as direções"
+
+
+msgctxt "Operator"
+msgid "Reproject Strokes..."
+msgstr "Reprojetar traços..."
 
 
 msgid "Stroke Quality:"
@@ -84702,6 +84882,10 @@ msgid "Instances"
 msgstr "Instâncias"
 
 
+msgid "Sequencer:"
+msgstr "Editor de sequências:"
+
+
 msgid "Video Codec"
 msgstr "Codificador de vídeo"
 
@@ -84724,10 +84908,6 @@ msgstr "Escala das unidades:"
 
 msgid "Paths:"
 msgstr "Caminhos:"
-
-
-msgid "Sequencer:"
-msgstr "Editor de sequências:"
 
 
 msgid "Distance Model:"
@@ -87005,16 +87185,6 @@ msgstr "Gerar e gravar ação..."
 
 
 msgctxt "Operator"
-msgid "Location"
-msgstr "Localização"
-
-
-msgctxt "Operator"
-msgid "Rotation"
-msgstr "Rotação"
-
-
-msgctxt "Operator"
 msgid "Origin"
 msgstr "Origem"
 
@@ -87183,6 +87353,16 @@ msgstr "Definições de ossos"
 msgctxt "Operator"
 msgid "All"
 msgstr "Todos"
+
+
+msgctxt "Operator"
+msgid "Location"
+msgstr "Localização"
+
+
+msgctxt "Operator"
+msgid "Rotation"
+msgstr "Rotação"
 
 
 msgctxt "Operator"
@@ -90033,6 +90213,30 @@ msgstr "Falha ao encontrar dados de lápis de cera nos quais desenhar."
 
 msgid "Active region not set"
 msgstr "Região ativa não definida."
+
+
+msgid "GPencil Interpolation: ESC/RMB to cancel, Enter/LMB to confirm, WHEEL/MOVE to adjust factor"
+msgstr "Interpolação de lápis de cera: ESC/RMB para cancelar, Enter/BEM para confirmar, Rodar a esfera ou mover o rato para ajustes de fator."
+
+
+msgid "Cannot find a pair of grease pencil frames to interpolate between in active layer"
+msgstr "Não é possível encontrar um par de fotogramas de lápis de cera para a interpolação entre os mesmos na camada ativa."
+
+
+msgid "Cannot interpolate as current frame already has existing grease pencil frames"
+msgstr "Não é possível interpolar pois o fotograma atual já possui camadas existentes de lápis de cera."
+
+
+msgid "Interpolation requires some editable strokes"
+msgstr "A interpolação requer alguns traços editáveis."
+
+
+msgid "Custom interpolation curve does not exist"
+msgstr "A curva de interpolação personalizada não existe."
+
+
+msgid "Expected current frame to be a breakdown"
+msgstr "Esperava-se que o fotograma atual fosse referente a interruptividade."
 
 
 msgid "Grease Pencil: Drawing/erasing stroke... Release to end stroke"
@@ -95459,6 +95663,10 @@ msgid "Original vertex count mismatch: %u to %u"
 msgstr "A contagem de vértices originais não combina: %u para %u."
 
 
+msgid "Enable 'Auto Smooth' option in mesh settings"
+msgstr "Por favor, ative a opção \"Suavizar automaticamente\" no contexto de dados do objeto."
+
+
 msgid "You are using a rather high poly as source or destination, computation might be slow"
 msgstr "Talvez você esteja utilizando um objeto com uma quantidade alta de polígonos como fonte ou destinação, a computação desses dados pode ser lenta."
 
@@ -95517,10 +95725,6 @@ msgstr "Não é possível criar leitor de ficheiros recipientes Alembic para o f
 
 msgid "Invalid target settings"
 msgstr "Definições inválidas de alvo."
-
-
-msgid "Enable 'Auto Smooth' option in mesh settings"
-msgstr "Por favor, ative a opção \"Suavizar automaticamente\" no contexto de dados do objeto."
 
 
 msgid "Hull error"
@@ -95789,6 +95993,14 @@ msgstr "São raios para a transmissão"
 
 msgid "Ray Depth"
 msgstr "Profundidade dos raios"
+
+
+msgid "Diffuse Depth"
+msgstr "Profundidade difusa"
+
+
+msgid "Glossy Depth"
+msgstr "Profundidade de polimento"
 
 
 msgid "Transparent Depth"

@@ -1,9 +1,9 @@
 
 msgid ""
 msgstr ""
-"Project-Id-Version: Blender 2.78 (sub 4) (b'd5c7d22bc2')\n"
+"Project-Id-Version: Blender 2.78 (sub 4) (b'd2f4900d1a9')\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-01-23 21:33:49\n"
+"POT-Creation-Date: 2017-02-09 11:55:44\n"
 "PO-Revision-Date: \n"
 "Last-Translator: blend-it <https://developer.blender.org/T42765>\n"
 "Language-Team: blend-it <https://developer.blender.org/T42765>\n"
@@ -3929,7 +3929,7 @@ msgstr "Posizione della fine della coda dell'osso"
 
 
 msgid "Armature-Relative Tail"
-msgstr "Coda Relativa-Armatura"
+msgstr "Coda Armatura-Correlata"
 
 
 msgid "Location of tail end of the bone relative to armature"
@@ -4285,7 +4285,7 @@ msgstr "Massima densità dei capelli"
 
 
 msgid "Effector Weights"
-msgstr "Peso Effettore"
+msgstr "Pesi Effettore"
 
 
 msgid "Goal Default"
@@ -4922,7 +4922,7 @@ msgstr "Quantità di errore residuo in radianti per i vincoli che lavorano sull'
 
 
 msgid "Amount of influence constraint will have on the final solution"
-msgstr "Entità dell'influenza che il vincolo avrà sulla soluzione finale"
+msgstr "Ammontare dell'influenza che il vincolo avrà sulla soluzione finale"
 
 
 msgid "Proxy Local"
@@ -5033,16 +5033,32 @@ msgid "Copy Location"
 msgstr "Copia Posizione"
 
 
+msgid "Copy the location of a target (with an optional offset), so that they move together"
+msgstr "Copia la posizione di un obiettivo (con uno scostamento opzionale), cosicchè si muovano insieme"
+
+
 msgid "Copy Rotation"
 msgstr "Copia Rotazione"
+
+
+msgid "Copy the rotation of a target (with an optional offset), so that they rotate together"
+msgstr "Copia la rotazione di un obiettivo (con uno scostamento opzionale), cosicchè ruotino insieme"
 
 
 msgid "Copy Scale"
 msgstr "Copia Scala"
 
 
+msgid "Copy the scale factors of a target (with an optional offset), so that they are scaled by the same amount"
+msgstr "Copia i fattori di scala di un obiettivo (con uno scostamento opzionale), cosicchè siano scalati dello stesso ammontare"
+
+
 msgid "Copy Transforms"
 msgstr "Copia Trasformazioni"
+
+
+msgid "Copy all the transformations of a target, so that they move together"
+msgstr "Copia tutte le trasformazioni di un obiettivo, cosicchè si muovano insieme"
 
 
 msgid "Limit Distance"
@@ -5053,20 +5069,40 @@ msgid "Limit Location"
 msgstr "Limita Posizione"
 
 
+msgid "Restrict movement along each axis within given ranges"
+msgstr "Limita il movimento lungo ciascun asse all'interno di intervalli dati"
+
+
 msgid "Limit Rotation"
 msgstr "Limita Rotazione"
+
+
+msgid "Restrict rotation along each axis within given ranges"
+msgstr "Limita la rotazione attorno a ciascun asse all'interno di intervalli dati"
 
 
 msgid "Limit Scale"
 msgstr "Limita Scala"
 
 
+msgid "Restrict scaling along each axis with given ranges"
+msgstr "Limita la scalatura lungo ciascun asse all'interno di intervalli dati"
+
+
 msgid "Maintain Volume"
 msgstr "Mantieni Volume"
 
 
+msgid "Compensate for scaling one axis by applying suitable scaling to the other two axes"
+msgstr "Compensa la scalatura lungo un asse applicando un'adeguata scalatura lungo gli altri due"
+
+
 msgid "Transformation"
 msgstr "Trasformazione"
+
+
+msgid "Use one transform property from target to control another (or same) property on owner"
+msgstr "Usa una proprietà di trasformazione dell'obiettivo per controllare un'altra (o la stessa) proprietà del destinatario"
 
 
 msgid "Transform Cache"
@@ -5081,28 +5117,52 @@ msgid "Clamp To"
 msgstr "Aggancia A"
 
 
+msgid "Restrict movements to lie along a curve by remapping location along curve's longest axis"
+msgstr "Limita i movimenti a giacere lungo una curva rimappando la posizione lungo l'asse più lungo della curva"
+
+
 msgid "Damped Track"
 msgstr "Traccia Smorzata"
+
+
+msgid "Point towards a target by performing the smallest rotation necessary"
+msgstr "Punta verso un obiettivo realizzando la minima rotazione necessaria"
 
 
 msgid "Inverse Kinematics"
 msgstr "Cinematica Inversa (IK)"
 
 
+msgid "Control a chain of bones by specifying the endpoint target (Bones only)"
+msgstr "Controlla una catena di ossa specificando il punto obiettivo finale (solo Ossa)"
+
+
 msgid "Locked Track"
 msgstr "Traccia Bloccata"
+
+
+msgid "Rotate around the specified ('locked') axis to point towards a target"
+msgstr "Ruota attorno all'asse specificato ('bloccato') per puntare verso l'obiettivo"
 
 
 msgid "Spline IK"
 msgstr "IK Spline"
 
 
+msgid "Align chain of bones along a curve (Bones only)"
+msgstr "Allinea una catena di ossa lungo una curva (solo Ossa)"
+
+
 msgid "Stretch To"
-msgstr "Restringi A"
+msgstr "Stira A"
+
+
+msgid "Stretch along Y-Axis to point towards a target"
+msgstr "Stira lungo l'asse Y per puntare verso l'obiettivo"
 
 
 msgid "Track To"
-msgstr "Traccia Fino A"
+msgstr "Traccia A"
 
 
 msgid "Legacy tracking constraint prone to twisting artifacts"
@@ -5110,19 +5170,39 @@ msgstr "Il vecchio vincolo di tracciamento che tende a torcere gli artefatti"
 
 
 msgid "Child Of"
-msgstr "Figlio di"
+msgstr "Figlio Di"
+
+
+msgid "Make target the 'detachable' parent of owner"
+msgstr "Rende l'Obiettivo il genitore 'distaccabile' del destinatario"
 
 
 msgid "Floor"
 msgstr "Pavimento"
 
 
+msgid "Use position (and optionally rotation) of target to define a 'wall' or 'floor' that the owner can not cross"
+msgstr "Usa la posizione (e opzionalmente la rotazione) dell'obiettivo per definire una 'parete' che il destinatario non può superare"
+
+
 msgid "Follow Path"
 msgstr "Segui Percorso"
 
 
+msgid "Use to animate an object/bone following a path"
+msgstr "Utilizzare per animare un oggetto/osso a seguire un percorso"
+
+
+msgid "Change pivot point for transforms (buggy)"
+msgstr "Cambia il punto di perno per le trasformazioni (buggato)"
+
+
 msgid "Rigid Body Joint"
 msgstr "Giunto Corpo Rigido"
+
+
+msgid "Use to define a Rigid Body Constraint (for Game Engine use only)"
+msgstr "Utilizzare per definire un Vincolo Corpo Rigido (solo per il Motore Gioco)"
 
 
 msgid "Shrinkwrap"
@@ -5130,7 +5210,7 @@ msgstr "Stringi e Avvolgi"
 
 
 msgid "Restrict movements to surface of target mesh"
-msgstr "Restringe i movimenti alla superficie della mesh obiettivo"
+msgstr "Limita i movimenti alla superficie della mesh obiettivo"
 
 
 msgid "Action Constraint"
@@ -5170,7 +5250,7 @@ msgstr "Valore minimo per l'intervallo del canale obiettivo"
 
 
 msgid "Sub-Target"
-msgstr "Sotto-Bersaglio"
+msgstr "Sotto-Obiettivo"
 
 
 msgid "Transform Channel"
@@ -5346,7 +5426,7 @@ msgstr "Asse principale di movimento"
 
 
 msgid "Target Object (Curves only)"
-msgstr "Oggetti Obiettivo"
+msgstr "Oggetto Obiettivo (solo Curve)"
 
 
 msgid "Cyclic"
@@ -5354,7 +5434,7 @@ msgstr "Ciclico"
 
 
 msgid "Treat curve as cyclic curve (no clamping to curve bounding box)"
-msgstr "Tratta la curva come ciclica (nessun blocco alla inviluppo limite della curva)"
+msgstr "Tratta la curva come ciclica (nessun blocco all'inviluppo limite della curva)"
 
 
 msgid "Copy Location Constraint"
@@ -5370,7 +5450,7 @@ msgstr "Testa/Coda"
 
 
 msgid "Target along length of bone: Head=0, Tail=1"
-msgstr "Obiettivo su tutta la lunghezza dell'osso: Testa=0, Coda=1"
+msgstr "Posizione dell'obiettivo lungo l'estensione dell'osso: Testa=0, Coda=1"
 
 
 msgid "Invert X"
@@ -5402,7 +5482,7 @@ msgstr "Segui Ossa Curve"
 
 
 msgid "Follow shape of B-Bone segments when calculating Head/Tail position"
-msgstr "Segue la forma dei segmenti della B-Bone quando calcola la posizione di Testa/Coda"
+msgstr "Segue la forma dei segmenti dell'osso curvo quando calcola la posizione di Testa/Coda"
 
 
 msgid "Offset"
@@ -5458,7 +5538,7 @@ msgstr "Inverti la rotazione Z"
 
 
 msgid "Add original rotation into copied rotation"
-msgstr "Aggiunge la rotazione originaria in quella copiata"
+msgstr "Aggiunge la rotazione originaria a quella copiata"
 
 
 msgid "Copy the target's X rotation"
@@ -5482,7 +5562,7 @@ msgstr "Copia la scala dell'obiettivo"
 
 
 msgid "Add original scale into copied scale"
-msgstr "Aggiunge la scala originaria in quella copiata"
+msgstr "Aggiunge la scala originaria a quella copiata"
 
 
 msgid "Copy the target's X scale"
@@ -5507,6 +5587,10 @@ msgstr "Copia tutte le trasformazioni dell'obiettivo"
 
 msgid "Damped Track Constraint"
 msgstr "Vincolo Traccia Smorzata"
+
+
+msgid "Point toward target by taking the shortest rotation path"
+msgstr "Punta verso l'obiettivo prendendo il percorso di rotazione più breve"
 
 
 msgid "Axis that points to the target object"
@@ -5598,7 +5682,7 @@ msgstr "Scala l'oggetto in base al raggio della curva"
 
 
 msgid "Fixed Position"
-msgstr "Posizione Fissata"
+msgstr "Posizione Fissa"
 
 
 msgid "Object will stay locked to a single point somewhere along the length of the curve regardless of time"
@@ -5958,11 +6042,11 @@ msgstr "Mantiene un volume costante lungo un singolo asse di scalatura"
 
 
 msgid "Free Axis"
-msgstr "Assi Liberi"
+msgstr "Asse Libero"
 
 
 msgid "The free scaling axis of the object"
-msgstr "Gli assi liberi dell'oggetto"
+msgstr "L'asse di scalatura libera dell'oggetto"
 
 
 msgid "Volume of the bone at rest"
@@ -6074,7 +6158,7 @@ msgstr "Vincolo Python"
 
 
 msgid "Use Python script for constraint evaluation"
-msgstr "Usa lo script Python per la valutazione del vincolo"
+msgstr "Usa uno script Python per la valutazione del vincolo"
 
 
 msgid "Script Error"
@@ -6202,7 +6286,7 @@ msgstr "Limite Z Minimo"
 
 
 msgid "Pivot Type"
-msgstr "Tipo Pivot"
+msgstr "Tipo Perno"
 
 
 msgid "Ball"
@@ -6426,7 +6510,7 @@ msgstr "Usa Raggio Curva"
 
 
 msgid "Average radius of the endpoints is used to tweak the X and Z Scaling of the bones, on top of XZ Scale mode"
-msgstr "Il raggio medio dei punti finali viene usato per ottimizzare la scala X e Z delle ossa, in cima alla mdalità Scala XZ"
+msgstr "Il raggio medio dei punti finali viene usato per ottimizzare la scala X e Z delle ossa, in cima alla modalità Scala XZ"
 
 
 msgid "Even Divisions"
@@ -6494,7 +6578,7 @@ msgstr "Mantieni Asse"
 
 
 msgid "Axis to maintain during stretch"
-msgstr "Asse da mantenere durante l'allungamento"
+msgstr "Asse da mantenere durante lo stiramento"
 
 
 msgid "Keep X Axis"
@@ -6514,7 +6598,7 @@ msgstr "Lunghezza in posizione di riposo"
 
 
 msgid "Maintain the object's volume as it stretches"
-msgstr "Mantiene il volume dell'oggetto quando lo si allunga"
+msgstr "Mantiene il volume dell'oggetto quando lo si stira"
 
 
 msgid "XZ"
@@ -7134,7 +7218,7 @@ msgstr "Impostazioni per il filtraggio dei canali mostrati negli Editor di Anima
 
 
 msgid "F-Curve Name Filter"
-msgstr "Filtro Nome F-Curve"
+msgstr "Filtro Nome Curve-F"
 
 
 msgid "F-Curve live filtering string"
@@ -8255,6 +8339,14 @@ msgstr "Linea Temporale"
 
 msgid "Wave time scaling factor"
 msgstr "Fattore di scala del tempo dell'onda"
+
+
+msgid "Canvas Surfaces"
+msgstr "Superfici Tavolozza"
+
+
+msgid "Active Surface"
+msgstr "Superficie Attiva"
 
 
 msgid "Edit Bone"
@@ -9422,7 +9514,7 @@ msgstr "Distanza radiale minima a cui per il decadimento del campo"
 
 
 msgid "Rest Length"
-msgstr "Lunghezza di Riposo"
+msgstr "Lunghezza a Riposo"
 
 
 msgid "Rest length of the harmonic force"
@@ -11638,7 +11730,11 @@ msgstr "Fissa velocità a questa velocità minima (tranne quando tutto è ancora
 
 
 msgid "Collision Shape"
-msgstr "Tipo Collisione"
+msgstr "Forma Collisione"
+
+
+msgid "Select the collision shape that better fits the object"
+msgstr "Seleziona la forma di collisione che si adatta meglio all'oggetto"
 
 
 msgid "Box"
@@ -11670,7 +11766,7 @@ msgstr "Margine Collisione"
 
 
 msgid "Extra margin around object for collision detection, small amount required for stability"
-msgstr "Margine extra intorno all'oggetto per il rilevamento di collisione, piccola quantità necessaria per la stabilità"
+msgstr "Margine extra intorno all'oggetto per il rilevamento di collisione; una piccola quantità è necessaria per la stabilità"
 
 
 msgid "Collision Mask"
@@ -22622,19 +22718,19 @@ msgstr "Impostazioni riflessioni raytraced per un blocco-dati Materiale"
 
 
 msgid "Maximum allowed number of light inter-reflections"
-msgstr "Numero massimo di inter-riflessioni luce permesse"
+msgstr "Numero massimo permesso di inter-riflessioni luce"
 
 
 msgid "Maximum distance of reflected rays (reflections further than this range fade to sky color or material color)"
-msgstr "Lunghezza massima dei raggi riflessi (ulteriori riflessioni sfumano verso il colore del cielo o del materiale)"
+msgstr "Lunghezza massima dei raggi riflessi (ulteriori riflessioni oltre questa distanza sfumano verso il colore del cielo o del materiale)"
 
 
 msgid "Fade-out Color"
-msgstr "Colore Dissolvenza Uscita"
+msgstr "Colore Dissolvenza"
 
 
 msgid "The color that rays with no intersection within the Max Distance take (material color can be best for indoor scenes, sky color for outdoor)"
-msgstr "Il colore che i raggi non intersecano entro la Distanza Massima (il colore del materiale può essere meglio per l'interno, il colore del cielo può essere meglio per l'esterrno)"
+msgstr "Il colore che prendono i raggi senza intersezioni entro la Distanza Massima (Materiale può essere meglio per una scena d'interni, Cielo per un esterno)"
 
 
 msgid "Power of Fresnel for mirror reflection"
@@ -25362,8 +25458,16 @@ msgid "Evaluation Factor"
 msgstr "Fattore Valutazione"
 
 
+msgid "Evaluation time in seconds"
+msgstr "Tempo di valutazione in secondi"
+
+
 msgid "Evaluation Frame"
 msgstr "Fotogramma Valutazione"
+
+
+msgid "Influence of the deformation"
+msgstr "Influenza della deformazione"
 
 
 msgid "Frame Scale"
@@ -30770,6 +30874,14 @@ msgid "Match Indices"
 msgstr "Corrispondenza Indici"
 
 
+msgid "Manually Create Later"
+msgstr "Crea Manualmente Dopo"
+
+
+msgid "Manually Create Later (Single)"
+msgstr "Crea Manualmente Dopo (Singolo)"
+
+
 msgctxt "Operator"
 msgid "Remove Driver"
 msgstr "Rimuove Driver"
@@ -31423,9 +31535,17 @@ msgid "Only operate on the active bone"
 msgstr "Opera solo sull'osso attivo"
 
 
+msgid "Select those bones connected to the initial selection"
+msgstr "Seleziona le ossa connesse alla selezione iniziale"
+
+
 msgctxt "Operator"
 msgid "Select Similar"
 msgstr "Seleziona Simili"
+
+
+msgid "Select similar bones by property types"
+msgstr "Seleziona ossa simili per tipo proprietà"
 
 
 msgid "Immediate children"
@@ -31824,7 +31944,7 @@ msgstr "Percorso del file"
 
 msgctxt "Operator"
 msgid "Toolbox"
-msgstr "Set attrezzi"
+msgstr "Set Attrezzi"
 
 
 msgctxt "Operator"
@@ -32276,6 +32396,10 @@ msgid "Files"
 msgstr "Files"
 
 
+msgid "Enable Multi-View"
+msgstr "Abilita Multi-Vista"
+
+
 msgctxt "Operator"
 msgid "Paste Tracks"
 msgstr "Incolla Tracce"
@@ -32424,11 +32548,15 @@ msgstr "Piano da usare per l'orientamento"
 
 
 msgid "Set floor plane"
-msgstr "Imposta Pavimento"
+msgstr "Imposta piano pavimento"
 
 
 msgid "Wall"
 msgstr "Muro"
+
+
+msgid "Set wall plane"
+msgstr "Imposta piano muro"
 
 
 msgctxt "Operator"
@@ -32905,7 +33033,7 @@ msgstr "Pulisci Inverso"
 
 
 msgid "Clear inverse correction for ChildOf constraint"
-msgstr "Annulla la correzione inversa per il vincolo ChildOf"
+msgstr "Annulla la correzione inversa per il vincolo Figlio Di"
 
 
 msgid "Name of the constraint to edit"
@@ -32934,12 +33062,12 @@ msgstr "Imposta Inverso"
 
 
 msgid "Set inverse correction for ChildOf constraint"
-msgstr "Imposta la correzione inversa per il vincolo ChildOf"
+msgstr "Imposta la correzione inversa per il vincolo Figlio Di"
 
 
 msgctxt "Operator"
 msgid "Delete Constraint"
-msgstr "Cancella vincolo"
+msgstr "Cancella Vincolo"
 
 
 msgid "Remove constraint from constraint stack"
@@ -32987,11 +33115,11 @@ msgstr "Sposta il vincolo verso l'alto nella lista dei vincoli"
 
 
 msgid "Clear inverse correction for ObjectSolver constraint"
-msgstr "Annulla la correzione inversa per il vincolo ChildOf"
+msgstr "Annulla la correzione inversa per il vincolo Risolutore Oggetto"
 
 
 msgid "Set inverse correction for ObjectSolver constraint"
-msgstr "Imposta la correzione inversa per il vincolo ChildOf"
+msgstr "Imposta la correzione inversa per il vincolo Risolutore Oggetto"
 
 
 msgctxt "Operator"
@@ -33000,7 +33128,7 @@ msgstr "Ripristina Lunghezza Originale"
 
 
 msgid "Reset original length of bone for Stretch To Constraint"
-msgstr "Ripristina la lunghezza originale dell'osso per Stira Al Vincolo"
+msgstr "Ripristina la lunghezza originale dell'osso per il vincolo Stira A"
 
 
 msgctxt "Operator"
@@ -33120,6 +33248,10 @@ msgstr "Restringi/Allarga"
 
 msgid "Trackball"
 msgstr "Trackball"
+
+
+msgid "Pushpull"
+msgstr "SpingiTira"
 
 
 msgid "Bonesize"
@@ -33569,6 +33701,10 @@ msgid "Toggle Output Layer"
 msgstr "Alterna Livello Uscita"
 
 
+msgid "Output Toggle"
+msgstr "Alterna Uscita"
+
+
 msgid "Output A"
 msgstr "Uscita A"
 
@@ -33579,7 +33715,7 @@ msgstr "Uscita B"
 
 msgctxt "Operator"
 msgid "Add Surface Slot"
-msgstr "Aggiunge Superficie Superficie"
+msgstr "Aggiungi Slot Superficie"
 
 
 msgctxt "Operator"
@@ -33907,7 +34043,7 @@ msgstr "Tutte le Azioni"
 
 
 msgid "!EXPERIMENTAL! Apply Transform"
-msgstr "!SPERIMENTALE! Applica Trasformazione"
+msgstr "SPERIMENTALE! Applica Trasformazione"
 
 
 msgid "Active scene to file"
@@ -37096,6 +37232,10 @@ msgstr "Direzione in cui muovere il livello attivo"
 msgctxt "Operator"
 msgid "Add Mask Layer"
 msgstr "Aggiungi Livello Maschera"
+
+
+msgid "Add new mask layer for masking"
+msgstr "Aggiunge un nuovo livello maschera per il mascheramento"
 
 
 msgctxt "Operator"
@@ -43216,6 +43356,11 @@ msgid "Select linked faces"
 msgstr "Seleziona facce collegate"
 
 
+msgctxt "Operator"
+msgid "Select Linked Pick"
+msgstr "Seleziona Collegate (prendi)"
+
+
 msgid "Select linked faces under the cursor"
 msgstr "Seleziona facce connesse sotto il cursore"
 
@@ -44577,6 +44722,10 @@ msgid "Connect Rigid Bodies"
 msgstr "Connetti Corpi Rigidi"
 
 
+msgid "Create rigid body constraints between selected rigid bodies"
+msgstr "Crea vincoli corpo rigido fra i corpi rigidi selezionati"
+
+
 msgid "Type of generated constraint"
 msgstr "Tipo di vincolo generato"
 
@@ -44607,6 +44756,10 @@ msgstr "Motivo Correzione"
 
 msgid "Connect selected objects to the active object"
 msgstr "Connette gli oggetti selezionati all'oggetto attivo"
+
+
+msgid "Chain by Distance"
+msgstr "Catena per Distanza"
 
 
 msgctxt "Operator"
@@ -44687,6 +44840,10 @@ msgid "Copy Rigid Body Settings"
 msgstr "Copia Impostazioni Corpo Rigido"
 
 
+msgid "Copy Rigid Body settings from active object to selected"
+msgstr "Copia le impostazioni Corpo Rigido dall'oggetto attivo al selezionato"
+
+
 msgctxt "Operator"
 msgid "Add Rigid Bodies"
 msgstr "Aggiungi Corpi Rigidi"
@@ -44708,6 +44865,10 @@ msgstr "Rimuove gli oggetti selezionati dalla simulazione Corpo Rigido"
 msgctxt "Operator"
 msgid "Change Collision Shape"
 msgstr "Cambia Forma Collisione"
+
+
+msgid "Change collision shapes for selected Rigid Body Objects"
+msgstr "Cambia le forme di collisione per gli Oggetti Corpo Rigido selezionati"
 
 
 msgid "Rigid Body Shape"
@@ -46024,7 +46185,7 @@ msgstr "Seleziona tutti gli spezzoni adiacenti alla selezione corrente"
 
 msgctxt "Operator"
 msgid "Select Pick Linked"
-msgstr "Seleziona collegati pick"
+msgstr "Prendi e Seleziona Collegati"
 
 
 msgid "Select a chain of linked strips nearest to the mouse pointer"
@@ -46493,11 +46654,11 @@ msgstr "Crea una superficie Sfera NURBS"
 
 msgctxt "Operator"
 msgid "Add Surface Patch"
-msgstr "Aggiunge Superficie Superficie"
+msgstr "Aggiunge Superficie Pezza"
 
 
 msgid "Construct a Nurbs surface Patch"
-msgstr "Crea una superficie Superficie NURBS"
+msgstr "Crea una superficie Pezza NURBS"
 
 
 msgctxt "Operator"
@@ -54554,6 +54715,14 @@ msgid "Use textures to affect material properties"
 msgstr "Utilizzare le texture per influenzare le proprietà del materiale"
 
 
+msgid "World Space Shading"
+msgstr "Ombreggiatura Spazio Mondo"
+
+
+msgid "Use world space interpretation of lighting data for node materials"
+msgstr "Usa l'interpretazione dei dati luce in spazio mondo per i materiali nodali"
+
+
 msgid "Single stereo camera system, adjust the stereo settings in the camera panel"
 msgstr "Sistema stereoscopico a camera singola. Aggiusta le impostazioni stereoscopiche nel pannello Camera"
 
@@ -54718,8 +54887,16 @@ msgid "Collision Groups"
 msgstr "Gruppo Collisione"
 
 
+msgid "Rigid Body actively participates to the simulation"
+msgstr "Il Corpo Rigido partecipa attivamente alla simulazione"
+
+
 msgid "Kinematic"
 msgstr "Cinematica"
+
+
+msgid "Allow rigid body to be controlled by the animation system"
+msgstr "Permette che il corpo rigido sia controllato dal sistema di animazione"
 
 
 msgid "Linear Damping"
@@ -54730,16 +54907,40 @@ msgid "Mesh Source"
 msgstr "Origine Mesh"
 
 
+msgid "Source of the mesh used to create collision shape"
+msgstr "Origine della mesh usata per creare la forma di collisione"
+
+
 msgid "Base"
 msgstr "Base"
 
 
+msgid "Base mesh"
+msgstr "Mesh base"
+
+
+msgid "Deformations (shape keys, deform modifiers)"
+msgstr "Deformazioni (chiavi forma, modificatori di deformazione)"
+
+
 msgid "All modifiers"
-msgstr "Titti i Modificatori"
+msgstr "Tutti i Modificatori"
+
+
+msgid "Role of object in Rigid Body Simulations"
+msgstr "Ruolo dell'oggetto nelle Simulazioni Corpo Rigido"
+
+
+msgid "Enable Deactivation"
+msgstr "Abilita Disattivazione"
 
 
 msgid "Deforming"
 msgstr "Deforma"
+
+
+msgid "Start Deactivated"
+msgstr "Avvia Disattivato"
 
 
 msgid "Steps Per Second"
@@ -55359,6 +55560,14 @@ msgid "Max Edge Length"
 msgstr "Max Lunghezza Spigolo"
 
 
+msgid "Partitioning"
+msgstr "Suddivisione"
+
+
+msgid "Choose partitioning method"
+msgstr "Scegli un metodo di suddivisione"
+
+
 msgid "Monotone"
 msgstr "Monotono"
 
@@ -55405,6 +55614,10 @@ msgstr "Massimo numero di vertici per poligono"
 
 msgid "Scene Objects"
 msgstr "Oggetti Scena"
+
+
+msgid "Active object for this scene"
+msgstr "Oggetto attivo per questa scena"
 
 
 msgid "Scene Render Layer"
@@ -57747,7 +57960,7 @@ msgstr "Aggiustamento manuale"
 
 
 msgid "Average Spring length * Ball Size"
-msgstr "Lunghezza Media della Molla * Dimensione Palla"
+msgstr "Lunghezza Media della Molla * Dimensione Sfera"
 
 
 msgid "Minimal"
@@ -57755,7 +57968,7 @@ msgstr "Minimale"
 
 
 msgid "Minimal Spring length * Ball Size"
-msgstr "Lunghezza Minima della Molla * Dimensione Palla"
+msgstr "Lunghezza Minima della Molla * Dimensione Sfera"
 
 
 msgid "Maximal"
@@ -57763,7 +57976,7 @@ msgstr "Massimale"
 
 
 msgid "Maximal Spring length * Ball Size"
-msgstr "Lunghezza Massima della Molla * Dimensione Palla"
+msgstr "Lunghezza Massima della Molla * Dimensione Sfera"
 
 
 msgid "AvMinMax"
@@ -64428,8 +64641,28 @@ msgstr "Occlude gli oggetti con il colore dell'ambiente tanto più sono distanti
 
 
 msgctxt "Operator"
-msgid "Material:"
-msgstr "Materiale:"
+msgid "Time:"
+msgstr "Tempo:"
+
+
+msgctxt "Operator"
+msgid "Gpencil:"
+msgstr "Matita:"
+
+
+msgctxt "Operator"
+msgid "Cycles:"
+msgstr "Cycles:"
+
+
+msgctxt "Operator"
+msgid "Render:"
+msgstr "Render:"
+
+
+msgctxt "Operator"
+msgid "Particle:"
+msgstr "Particella:"
 
 
 msgctxt "Operator"
@@ -64438,68 +64671,18 @@ msgstr "Nodo:"
 
 
 msgctxt "Operator"
-msgid "Export_shape:"
-msgstr "Esporta_forma:"
-
-
-msgctxt "Operator"
-msgid "Group:"
-msgstr "Gruppo:"
-
-
-msgctxt "Operator"
-msgid "Transform:"
-msgstr "Trasformaz:"
-
-
-msgctxt "Operator"
-msgid "Mesh:"
-msgstr "Mesh:"
-
-
-msgctxt "Operator"
 msgid "Rigidbody:"
 msgstr "Corpo Rigido:"
 
 
 msgctxt "Operator"
-msgid "Pose:"
-msgstr "Posa:"
+msgid "Buttons:"
+msgstr "Bottoni:"
 
 
 msgctxt "Operator"
-msgid "Ed:"
-msgstr "Ed:"
-
-
-msgctxt "Operator"
-msgid "Font:"
-msgstr "Carattere:"
-
-
-msgctxt "Operator"
-msgid "Brush:"
-msgstr "Pennello:"
-
-
-msgctxt "Operator"
-msgid "Palette:"
-msgstr "Tavolozza:"
-
-
-msgctxt "Operator"
-msgid "Marker:"
-msgstr "Marcatore:"
-
-
-msgctxt "Operator"
-msgid "Object:"
-msgstr "Oggetto:"
-
-
-msgctxt "Operator"
-msgid "Sound:"
-msgstr "Suono:"
+msgid "Safe_areas:"
+msgstr "Aree_sicure:"
 
 
 msgctxt "Operator"
@@ -64513,88 +64696,8 @@ msgstr "Schermo:"
 
 
 msgctxt "Operator"
-msgid "Mask:"
-msgstr "Maschera:"
-
-
-msgctxt "Operator"
-msgid "Buttons:"
-msgstr "Bottoni:"
-
-
-msgctxt "Operator"
-msgid "Render:"
-msgstr "Render:"
-
-
-msgctxt "Operator"
-msgid "Mball:"
-msgstr "Mball:"
-
-
-msgctxt "Operator"
-msgid "Fluid:"
-msgstr "Fluido:"
-
-
-msgctxt "Operator"
-msgid "Text:"
-msgstr "Testo:"
-
-
-msgctxt "Operator"
-msgid "Constraint:"
-msgstr "Vincolo:"
-
-
-msgctxt "Operator"
-msgid "Import_mesh:"
-msgstr "Importa_mesh:"
-
-
-msgctxt "Operator"
-msgid "Clip:"
-msgstr "Filmato:"
-
-
-msgctxt "Operator"
-msgid "Uv:"
-msgstr "Uv:"
-
-
-msgctxt "Operator"
-msgid "Cloth:"
-msgstr "Stoffa:"
-
-
-msgctxt "Operator"
-msgid "Import_anim:"
-msgstr "Importa_anim:"
-
-
-msgctxt "Operator"
-msgid "Outliner:"
-msgstr "Struttura:"
-
-
-msgctxt "Operator"
-msgid "Image:"
-msgstr "Immagine:"
-
-
-msgctxt "Operator"
-msgid "Surface:"
-msgstr "Superficie:"
-
-
-msgctxt "Operator"
-msgid "Nla:"
-msgstr "Nla:"
-
-
-msgctxt "Operator"
-msgid "Logic:"
-msgstr "Logica:"
+msgid "Camera:"
+msgstr "Camera:"
 
 
 msgctxt "Operator"
@@ -64603,13 +64706,8 @@ msgstr "Esporta_Animazione:"
 
 
 msgctxt "Operator"
-msgid "Scene:"
-msgstr "Scena:"
-
-
-msgctxt "Operator"
-msgid "File:"
-msgstr "File:"
+msgid "Transform:"
+msgstr "Trasformaz:"
 
 
 msgctxt "Operator"
@@ -64618,38 +64716,18 @@ msgstr "Curva:"
 
 
 msgctxt "Operator"
-msgid "Time:"
-msgstr "Tempo:"
+msgid "Group:"
+msgstr "Gruppo:"
 
 
 msgctxt "Operator"
-msgid "Boid:"
-msgstr "Stormo:"
+msgid "Cloth:"
+msgstr "Stoffa:"
 
 
 msgctxt "Operator"
-msgid "World:"
-msgstr "Mondo:"
-
-
-msgctxt "Operator"
-msgid "Blender_id:"
-msgstr "Blender_id:"
-
-
-msgctxt "Operator"
-msgid "Armature:"
-msgstr "Armatura:"
-
-
-msgctxt "Operator"
-msgid "Wm:"
-msgstr "Wm:"
-
-
-msgctxt "Operator"
-msgid "Console:"
-msgstr "Console:"
+msgid "Sound:"
+msgstr "Suono:"
 
 
 msgctxt "Operator"
@@ -64658,108 +64736,8 @@ msgstr "Esporta_mesh:"
 
 
 msgctxt "Operator"
-msgid "Paintcurve:"
-msgstr "Paintcurve:"
-
-
-msgctxt "Operator"
-msgid "Ptcache:"
-msgstr "Ptcache:"
-
-
-msgctxt "Operator"
-msgid "Gpencil:"
-msgstr "Matita:"
-
-
-msgctxt "Operator"
-msgid "Script:"
-msgstr "Script:"
-
-
-msgctxt "Operator"
-msgid "Lamp:"
-msgstr "Luce:"
-
-
-msgctxt "Operator"
-msgid "Info:"
-msgstr "Info:"
-
-
-msgctxt "Operator"
-msgid "Lattice:"
-msgstr "Lattice:"
-
-
-msgctxt "Operator"
-msgid "View3d:"
-msgstr "Vista 3D:"
-
-
-msgctxt "Operator"
-msgid "Import_shape:"
-msgstr "Importa_forma:"
-
-
-msgctxt "Operator"
-msgid "Export_blend:"
-msgstr "Esporta_blend:"
-
-
-msgctxt "Operator"
-msgid "Graph:"
-msgstr "Grafico:"
-
-
-msgctxt "Operator"
-msgid "Particle:"
-msgstr "Particella:"
-
-
-msgctxt "Operator"
-msgid "Ui:"
-msgstr "Ui:"
-
-
-msgctxt "Operator"
-msgid "Camera:"
-msgstr "Camera:"
-
-
-msgctxt "Operator"
-msgid "Sequencer:"
-msgstr "Sequenziatore:"
-
-
-msgctxt "Operator"
-msgid "Cycles:"
-msgstr "Cycles:"
-
-
-msgctxt "Operator"
-msgid "Safe_areas:"
-msgstr "Aree_sicure:"
-
-
-msgctxt "Operator"
-msgid "Import_curve:"
-msgstr "Importa_curva:"
-
-
-msgctxt "Operator"
-msgid "Sketch:"
-msgstr "Schizzo:"
-
-
-msgctxt "Operator"
-msgid "Sculpt:"
-msgstr "Scultura:"
-
-
-msgctxt "Operator"
-msgid "View2d:"
-msgstr "Vista 2D:"
+msgid "Export_anim:"
+msgstr "Esporta_anim:"
 
 
 msgctxt "Operator"
@@ -64768,28 +64746,23 @@ msgstr "Azione:"
 
 
 msgctxt "Operator"
-msgid "Poselib:"
-msgstr "LibPosa:"
+msgid "Sculpt:"
+msgstr "Scultura:"
 
 
 msgctxt "Operator"
-msgid "Dpaint:"
-msgstr "PitturaDin:"
+msgid "Object:"
+msgstr "Oggetto:"
 
 
 msgctxt "Operator"
-msgid "Mocap:"
-msgstr "Mocap:"
+msgid "Info:"
+msgstr "Info:"
 
 
 msgctxt "Operator"
-msgid "Cachefile:"
-msgstr "CacheFile:"
-
-
-msgctxt "Operator"
-msgid "Export_scene:"
-msgstr "Esporta_scena:"
+msgid "Palette:"
+msgstr "Tavolozza:"
 
 
 msgctxt "Operator"
@@ -64798,8 +64771,178 @@ msgstr "Importa_scena:"
 
 
 msgctxt "Operator"
-msgid "Export_anim:"
-msgstr "Esporta_anim:"
+msgid "Nla:"
+msgstr "Nla:"
+
+
+msgctxt "Operator"
+msgid "Export_shape:"
+msgstr "Esporta_forma:"
+
+
+msgctxt "Operator"
+msgid "View3d:"
+msgstr "Vista 3D:"
+
+
+msgctxt "Operator"
+msgid "Mball:"
+msgstr "Mball:"
+
+
+msgctxt "Operator"
+msgid "Mocap:"
+msgstr "Mocap:"
+
+
+msgctxt "Operator"
+msgid "Paintcurve:"
+msgstr "Paintcurve:"
+
+
+msgctxt "Operator"
+msgid "Export_scene:"
+msgstr "Esporta_scena:"
+
+
+msgctxt "Operator"
+msgid "File:"
+msgstr "File:"
+
+
+msgctxt "Operator"
+msgid "Text:"
+msgstr "Testo:"
+
+
+msgctxt "Operator"
+msgid "Outliner:"
+msgstr "Struttura:"
+
+
+msgctxt "Operator"
+msgid "Mesh:"
+msgstr "Mesh:"
+
+
+msgctxt "Operator"
+msgid "Export_blend:"
+msgstr "Esporta_blend:"
+
+
+msgctxt "Operator"
+msgid "Clip:"
+msgstr "Filmato:"
+
+
+msgctxt "Operator"
+msgid "Constraint:"
+msgstr "Vincolo:"
+
+
+msgctxt "Operator"
+msgid "Poselib:"
+msgstr "LibPosa:"
+
+
+msgctxt "Operator"
+msgid "Material:"
+msgstr "Materiale:"
+
+
+msgctxt "Operator"
+msgid "Ed:"
+msgstr "Ed:"
+
+
+msgctxt "Operator"
+msgid "Ptcache:"
+msgstr "Ptcache:"
+
+
+msgctxt "Operator"
+msgid "Boid:"
+msgstr "Stormo:"
+
+
+msgctxt "Operator"
+msgid "Script:"
+msgstr "Script:"
+
+
+msgctxt "Operator"
+msgid "Marker:"
+msgstr "Marcatore:"
+
+
+msgctxt "Operator"
+msgid "Console:"
+msgstr "Console:"
+
+
+msgctxt "Operator"
+msgid "Texture:"
+msgstr "Texture:"
+
+
+msgctxt "Operator"
+msgid "Scene:"
+msgstr "Scena:"
+
+
+msgctxt "Operator"
+msgid "Logic:"
+msgstr "Logica:"
+
+
+msgctxt "Operator"
+msgid "Cachefile:"
+msgstr "CacheFile:"
+
+
+msgctxt "Operator"
+msgid "World:"
+msgstr "Mondo:"
+
+
+msgctxt "Operator"
+msgid "Image:"
+msgstr "Immagine:"
+
+
+msgctxt "Operator"
+msgid "Import_mesh:"
+msgstr "Importa_mesh:"
+
+
+msgctxt "Operator"
+msgid "Pose:"
+msgstr "Posa:"
+
+
+msgctxt "Operator"
+msgid "Dpaint:"
+msgstr "PitturaDin:"
+
+
+msgctxt "Operator"
+msgid "Mask:"
+msgstr "Maschera:"
+
+
+msgctxt "Operator"
+msgid "Sketch:"
+msgstr "Schizzo:"
+
+
+msgctxt "Operator"
+msgid "Sequencer:"
+msgstr "Sequenziatore:"
+
+
+msgctxt "Operator"
+msgid "Graph:"
+msgstr "Grafico:"
 
 
 msgctxt "Operator"
@@ -64808,8 +64951,78 @@ msgstr "Anim:"
 
 
 msgctxt "Operator"
-msgid "Texture:"
-msgstr "Texture:"
+msgid "Lamp:"
+msgstr "Luce:"
+
+
+msgctxt "Operator"
+msgid "Import_curve:"
+msgstr "Importa_curva:"
+
+
+msgctxt "Operator"
+msgid "Uv:"
+msgstr "Uv:"
+
+
+msgctxt "Operator"
+msgid "Lattice:"
+msgstr "Lattice:"
+
+
+msgctxt "Operator"
+msgid "Import_shape:"
+msgstr "Importa_forma:"
+
+
+msgctxt "Operator"
+msgid "Armature:"
+msgstr "Armatura:"
+
+
+msgctxt "Operator"
+msgid "Fluid:"
+msgstr "Fluido:"
+
+
+msgctxt "Operator"
+msgid "Wm:"
+msgstr "Wm:"
+
+
+msgctxt "Operator"
+msgid "View2d:"
+msgstr "Vista 2D:"
+
+
+msgctxt "Operator"
+msgid "Font:"
+msgstr "Carattere:"
+
+
+msgctxt "Operator"
+msgid "Surface:"
+msgstr "Superficie:"
+
+
+msgctxt "Operator"
+msgid "Import_anim:"
+msgstr "Importa_anim:"
+
+
+msgctxt "Operator"
+msgid "Blender_id:"
+msgstr "Blender_id:"
+
+
+msgctxt "Operator"
+msgid "Ui:"
+msgstr "Ui:"
+
+
+msgctxt "Operator"
+msgid "Brush:"
+msgstr "Pennello:"
 
 
 msgctxt "WindowManager"
@@ -66923,11 +67136,6 @@ msgid "Framing:"
 msgstr "Inquadratura:"
 
 
-msgctxt "Operator"
-msgid "Build navigation mesh"
-msgstr "Costruisci Mesh di Navigazione"
-
-
 msgid "Rasterization:"
 msgstr "Rasterizzazione:"
 
@@ -68353,6 +68561,10 @@ msgid "Instances"
 msgstr "Istanze"
 
 
+msgid "Sequencer:"
+msgstr "Sequenziatore:"
+
+
 msgid "Video Codec"
 msgstr "Codec Video"
 
@@ -68375,10 +68587,6 @@ msgstr "Unità Scala:"
 
 msgid "Paths:"
 msgstr "Percorsi:"
-
-
-msgid "Sequencer:"
-msgstr "Sequenziatore:"
 
 
 msgid "Distance Model:"
@@ -70609,16 +70817,6 @@ msgstr "Precalcola Azione..."
 
 
 msgctxt "Operator"
-msgid "Location"
-msgstr "Posizione"
-
-
-msgctxt "Operator"
-msgid "Rotation"
-msgstr "Rotazione"
-
-
-msgctxt "Operator"
 msgid "Origin"
 msgstr "Origine"
 
@@ -70787,6 +70985,16 @@ msgstr "Impostazioni Osso"
 msgctxt "Operator"
 msgid "All"
 msgstr "Tutti"
+
+
+msgctxt "Operator"
+msgid "Location"
+msgstr "Posizione"
+
+
+msgctxt "Operator"
+msgid "Rotation"
+msgstr "Rotazione"
 
 
 msgctxt "Operator"
@@ -71432,7 +71640,7 @@ msgstr "Scala Osso-B"
 
 msgctxt "Operator"
 msgid "DOF Distance (Pick)"
-msgstr "Distanza PdC (pick)"
+msgstr "Distanza PdC (Prendi)"
 
 
 msgctxt "Operator"
@@ -71741,6 +71949,14 @@ msgstr "Maniglie:"
 
 msgid "Modeling:"
 msgstr "Modellazione:"
+
+
+msgid "Pressure Radius:"
+msgstr "Raggio Pressione:"
+
+
+msgid "Taper Radius:"
+msgstr "Raggio Assottigliamento:"
 
 
 msgid "Projection Depth:"
@@ -72727,22 +72943,26 @@ msgstr "Percorso Curva"
 
 msgctxt "Curve"
 msgid "NurbsCurve"
-msgstr "Curva NURBS"
+msgstr "CurvaNURBS"
 
 
 msgctxt "Curve"
 msgid "NurbsCircle"
-msgstr "Cerchio NURBS"
+msgstr "CerchioNURBS"
 
 
 msgctxt "Curve"
 msgid "NurbsPath"
-msgstr "Percorso Nurbs"
+msgstr "PercorsoNURBS"
 
 
 msgctxt "Curve"
 msgid "Surface"
 msgstr "Superfice"
+
+
+msgid "Unable to access 3D viewport"
+msgstr "Impossibile accedere alla Vista 3D"
 
 
 msgid "Text too long"
@@ -74026,6 +74246,10 @@ msgstr "L'operazione non può essere effettuata in Modalità Modifica"
 
 msgid "Could not find scene"
 msgstr "Impossibile trovare scena"
+
+
+msgid "Cannot link objects into the same scene"
+msgstr "Impossibile collegare gli oggetti nella medesima scena"
 
 
 msgid "Select Group"
@@ -76227,6 +76451,10 @@ msgid "Object is not a mesh"
 msgstr "L'oggetto non è una mesh"
 
 
+msgid "Enable 'Auto Smooth' option in mesh settings"
+msgstr "Attiva l'opzione 'Leviga Automaticamente' nelle impostazioni mesh"
+
+
 msgid "Vertices changed from %d to %d"
 msgstr "Vertici cambiati da %d a %d"
 
@@ -76245,10 +76473,6 @@ msgstr "Vertici cambiati da %d a %d"
 
 msgid "Invalid target settings"
 msgstr "Impostazioni obiettivo errate"
-
-
-msgid "Enable 'Auto Smooth' option in mesh settings"
-msgstr "Attiva l'opzione 'Leviga Automaticamente' nelle impostazioni mesh"
 
 
 msgid "Hull error"
