@@ -1,10 +1,10 @@
 
 msgid ""
 msgstr ""
-"Project-Id-Version: Blender 2.78 (sub 4) (b'6a249bb0008')\n"
+"Project-Id-Version: Blender 2.78 (sub 4) (b'df76616d745')\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-02-23 21:11:28\n"
-"PO-Revision-Date: 2016-11-22 23:50+0000\n"
+"POT-Creation-Date: 2017-03-19 17:51:12\n"
+"PO-Revision-Date: 2017-03-01 21:50+0000\n"
 "Last-Translator: lxlalexlxl <pilipchukap@rambler.ru>\n"
 "Language-Team: Ukrainian (Ukraine) (http://www.transifex.com/lxlalexlxl/blender/language/uk_UA/)\n"
 "MIME-Version: 1.0\n"
@@ -3592,6 +3592,10 @@ msgid "Version"
 msgstr "Версія"
 
 
+msgid "Version of Blender the .blend was saved with"
+msgstr "Версія Blender, якою було збережено файл .blend"
+
+
 msgid "Window Managers"
 msgstr "Віконні менеджери"
 
@@ -4941,7 +4945,7 @@ msgstr "Зсасання руху згину"
 
 
 msgid "Bending Stiffness"
-msgstr "Тугість ребер по умовному згину між вершиною та вершинами через ребра сусідніх з нею вершин"
+msgstr "Жорсткість на згин"
 
 
 msgid "Wrinkle coefficient (higher = less smaller but more big wrinkles)"
@@ -4949,11 +4953,11 @@ msgstr "Коефіцієнт зморшок  (вище = менше зморшо
 
 
 msgid "Bending Stiffness Maximum"
-msgstr "Максимум тугості згину"
+msgstr "Максимум жорсткості на згин"
 
 
 msgid "Maximum bending stiffness value"
-msgstr "Максимум тугості ребер по умовному згину між вершиною та вершинами через ребра сусідніх з нею вершин"
+msgstr "Найбільше значення жорсткості на згин"
 
 
 msgid "Collider Friction"
@@ -5093,19 +5097,19 @@ msgstr "Згасання швидкості тканини (вище = біль�
 
 
 msgid "Structural Stiffness"
-msgstr "Структурна тугість"
+msgstr "Структурна жорсткість"
 
 
 msgid "Overall stiffness of structure"
-msgstr "Загальна тугість структури"
+msgstr "Загальна жорсткість структури"
 
 
 msgid "Structural Stiffness Maximum"
-msgstr "Максимум тугості структури"
+msgstr "Максимум жорсткості структури"
 
 
 msgid "Maximum structural stiffness value"
-msgstr "Найбільше значення тугості структури"
+msgstr "Найбільше значення жорсткості структури"
 
 
 msgid "Cloth speed is multiplied by this value"
@@ -10881,10 +10885,6 @@ msgid "Falloff Power"
 msgstr "Сила спаду"
 
 
-msgid "Falloff power (real gravitational falloff = 2)"
-msgstr "Сила спаду (реальний гравітаційний спад = 2)"
-
-
 msgid "Fall-Off"
 msgstr "Зменшення"
 
@@ -13053,6 +13053,14 @@ msgid "Collection of grease pencil frames"
 msgstr "Колекція кадрів нарисних олівців"
 
 
+msgid "Grease Pencil Interpolate Settings"
+msgstr "Параметри інтерполяції Нарисного олівця"
+
+
+msgid "Settings for Grease Pencil interpolation tools"
+msgstr "Параметри для інструментів інтерполяції Нарисного олівця"
+
+
 msgid "Amount to boost elastic bounces for 'elastic' easing"
 msgstr "Рівень підсилення пружних відскоків для «пружного» ослаблення"
 
@@ -13063,6 +13071,10 @@ msgstr "Величина перевищення для зворотного ос
 
 msgid "Easing"
 msgstr "Ослаблення"
+
+
+msgid "Which ends of the segment between the preceding and following grease pencil frames easing interpolation is applied to"
+msgstr "Кінці сегмента між попереднім і наступним ключовими кадрами, до яких застосовується ослаблення"
 
 
 msgid "Automatic Easing"
@@ -13113,6 +13125,14 @@ msgid "Interpolate only selected strokes in the original frame"
 msgstr "Інтерполювати лише вибрані штрихи з початкового кадру"
 
 
+msgid "Interpolation Curve"
+msgstr "Крива інтерполяції"
+
+
+msgid "Custom curve to control 'sequence' interpolation between Grease Pencil frames"
+msgstr "Власна крива для керування інтерполяцією 'відеоряду' між кадрами Нарисного олівця"
+
+
 msgid "Period"
 msgstr "Період"
 
@@ -13121,12 +13141,20 @@ msgid "Time between bounces for elastic easing"
 msgstr "Час між відбиттями при еластичному ослабленні"
 
 
+msgid "Interpolation method to use the next time 'Interpolate Sequence' is run"
+msgstr "Метод інтерполяції для використання при наступному запуску 'Інтерполювати відеоряд'"
+
+
 msgid "Straight-line interpolation between A and B (i.e. no ease in/out)"
 msgstr "Лінійна інтерполяція між А та В (тобто без плавного входу/виходу)"
 
 
 msgid "Custom"
 msgstr "Власна"
+
+
+msgid "Custom interpolation defined using a curve map"
+msgstr "Власна інтерполяція, визначена картою кривої"
 
 
 msgid "Sinusoidal"
@@ -13377,6 +13405,14 @@ msgid "Use custom colors for ghost frames"
 msgstr "Використати власні задані користувачем кольори для кадрів привидів"
 
 
+msgid "Always Show Ghosts"
+msgstr "Завжди показувати привиди"
+
+
+msgid "Ghosts are shown in renders and animation playback. Useful for special effects (e.g. motion blur)"
+msgstr "Привиди показуються у зображуваннях та відтворенні анімації. Корисно для спеціальних ефектів (наприклад, розмиву рухом)"
+
+
 msgid "Ghost frames on either side of frame"
 msgstr "Кадри-привиди з обох сторін кадру"
 
@@ -13435,6 +13471,14 @@ msgstr "Колір заливки"
 
 msgid "Color for filling region bounded by each stroke"
 msgstr "Колір для заливки області, обведененої кожним штрихом"
+
+
+msgid "Show in Ghosts"
+msgstr "Показувати в привидах"
+
+
+msgid "Display strokes using this color when showing onion skins"
+msgstr "При показі кальки показувати штрихи цим кольором"
 
 
 msgid "Set color Visibility"
@@ -14390,11 +14434,11 @@ msgstr "Динамічне тертя"
 
 
 msgid "Linear Stiffness"
-msgstr "Лінеарна тугість"
+msgstr "Лінійна жорсткість"
 
 
 msgid "Linear stiffness of the soft body links"
-msgstr "Прямолінійна тугість зв'язків м'якого тіла"
+msgstr "Лінійна жорсткість зв'язків м'якого тіла"
 
 
 msgid "Position Iterations"
@@ -19439,6 +19483,10 @@ msgid "Draw Creases"
 msgstr "Показати складки"
 
 
+msgid "Display creases created for Subdivision Surface modifier"
+msgstr "Показати складки, створені для модифікатора поділу поверхні"
+
+
 msgid "Draw Seams"
 msgstr "Показати шви"
 
@@ -19449,6 +19497,10 @@ msgstr "Показати шви UV-розгортки"
 
 msgid "Draw Sharp"
 msgstr "Показати гострі"
+
+
+msgid "Display sharp edges, used with the Edge Split modifier"
+msgstr "Показати гострі ребра, використані модифікатором Поділ ребром"
 
 
 msgid "Draw Edges"
@@ -21004,11 +21056,11 @@ msgstr "Застосувати ефектори до нащадків"
 
 
 msgid "Random Bending Stiffness"
-msgstr "Випадкова тугість згину"
+msgstr "Випадкова жорсткість на згин"
 
 
 msgid "Random stiffness of hairs"
-msgstr "Випадкове значення тугості волосинок"
+msgstr "Випадкове значення жорсткості волосинок"
 
 
 msgid "Align to"
@@ -21336,11 +21388,11 @@ msgstr "Вагомості для всіх об'єктів в групі для 
 
 
 msgid "Stiffness"
-msgstr "Тугість"
+msgstr "Жорсткість"
 
 
 msgid "Hair stiffness for effectors"
-msgstr "Тугість волосся для ефекторів"
+msgstr "Жорсткість волосся для ефекторів"
 
 
 msgid "Effector Number"
@@ -22417,6 +22469,14 @@ msgstr "Лише ключові кадри з вибраних каналів"
 
 msgid "Consider keyframes for active Object and/or its selected bones only (in timeline and when jumping between keyframes)"
 msgstr "Розглядати ключові кадри лише для активного об'єкта і/або вибраних кісток (на шкалі часу та при перемиканні між ключовими кадрами)"
+
+
+msgid "Show Subframe"
+msgstr "Показати підкадр"
+
+
+msgid "Show current scene subframe and allow set it using interface tools"
+msgstr "Показати підкадр поточної сцени і дозволити задавати його засобами інтерфейсу"
 
 
 msgid "Sync Mode"
@@ -24278,10 +24338,6 @@ msgstr "DWAB (з втратами)"
 
 msgid "File format to save the rendered images as"
 msgstr "Формат файлу для збереження вималюваного зображення"
-
-
-msgid "Codec settings for Jpek2000"
-msgstr "Параметри кодеку для Jpek2000"
 
 
 msgid "Quality for image formats that support lossy compression"
@@ -28869,6 +28925,10 @@ msgid "Weight used by the Bevel modifier"
 msgstr "Вагомість, використовувана модифікатором Скіс"
 
 
+msgid "Weight used by the Subdivision Surface modifier for creasing"
+msgstr "Вагомість, використовувана модифікатором поділу поверхні для загинання"
+
+
 msgid "Index of this edge"
 msgstr "Індекс цього ребра"
 
@@ -28879,6 +28939,10 @@ msgstr "Виокремлене"
 
 msgid "Loose edge"
 msgstr "Окреме ребро"
+
+
+msgid "Sharp edge for the Edge Split modifier"
+msgstr "Гостре ребро для модифікатора поділу ребром"
 
 
 msgid "Freestyle Edge Mark"
@@ -32972,6 +33036,10 @@ msgid "Cache of the worldspace positions of an element over a frame range"
 msgstr "Кеш положень елемента у просторі світу на діапазоні кадрів"
 
 
+msgid "Custom color for motion path"
+msgstr "Власний колір для шляху руху"
+
+
 msgid "End frame of the stored range"
 msgstr "Кінцевий кадр збереженого діапазону"
 
@@ -32992,6 +33060,18 @@ msgid "Number of frames cached"
 msgstr "Кількість кешованих кадрів"
 
 
+msgid "Line thickness"
+msgstr "Товщина лінії"
+
+
+msgid "Line thickness for drawing path"
+msgstr "Товщина лінії для шляху рисування"
+
+
+msgid "Draw straight lines between keyframe points"
+msgstr "Рисувати прямі лінії між точками ключкадрів"
+
+
 msgid "Motion Path Points"
 msgstr "Точки шляху руху"
 
@@ -33006,6 +33086,14 @@ msgstr "Використовувати початки кісток"
 
 msgid "For PoseBone paths, use the bone head location when calculating this path"
 msgstr "Використовувати розташування початку кістки при розрахунку шляху позової кістки"
+
+
+msgid "Custom colors"
+msgstr "Власні кольори"
+
+
+msgid "Use custom color for this motion path"
+msgstr "Використати власний колір для цього шляху руху"
 
 
 msgid "Motion Path Cache Point"
@@ -41870,6 +41958,15 @@ msgstr "Повідомлення скасування"
 
 
 msgctxt "Operator"
+msgid "Undo and Redo"
+msgstr "Скасувати та повторити"
+
+
+msgid "Undo and redo previous action"
+msgstr "Скасувати та повторити попередню дію"
+
+
+msgctxt "Operator"
 msgid "Export Camera & Markers"
 msgstr "Експорт камери та міток"
 
@@ -42452,6 +42549,14 @@ msgid "Apply modifiers to mesh objects (except Armature ones) - WARNING: prevent
 msgstr "Застосувати модифікатори до каркасних об'єктів (за винятком Арматурних) - УВАГА: пропускає експортування ключів форм"
 
 
+msgid "Use Modifiers Render Setting"
+msgstr "Використати параметр зображування для модифікаторів"
+
+
+msgid "Use render settings when applying modifiers to mesh objects"
+msgstr "Використати параметри зображування при застосуванні модифікаторів доя сітьових об'єктів"
+
+
 msgid "Use Metadata"
 msgstr "Використати метадані"
 
@@ -42527,6 +42632,14 @@ msgstr "Записати матеріали"
 
 msgid "Write out the MTL file"
 msgstr "Записати файл MTL"
+
+
+msgid "Apply modifiers"
+msgstr "Застосувати модифікатори"
+
+
+msgid "Use Modifiers Render Settings"
+msgstr "Використати параметри зображування для модифікаторів"
 
 
 msgid "Write Normals"
@@ -43395,6 +43508,19 @@ msgid "Delete the active frame(s) of all editable Grease Pencil layers"
 msgstr "Видалити активний кадр(и) на всіх редагованоздатних, увімкнених для редагування шарах Нарисного Олівця"
 
 
+msgctxt "Operator"
+msgid "Add Blank Frame"
+msgstr "Додати порожній кадр"
+
+
+msgid "Add a new frame with nothing in it on the current frame. If there is already a frame, all existing frames are shifted one frame later"
+msgstr "Додати новий порожній кадр. Якщо наявні інші кадри, то всі існуючі кадри зсуваються на один кадр далі"
+
+
+msgid "Create blank frame in all layers, not only active"
+msgstr "Створити порожній кадр на всіх шарах, а не тільки активному"
+
+
 msgid "Add new Grease Pencil drawing brush for the active Grease Pencil data-block"
 msgstr "Додати новий рисувальний пензель нарисного олівця в активний блок даних нарисного олівця"
 
@@ -43756,6 +43882,28 @@ msgid "Interpolate grease pencil strokes between frames"
 msgstr "Інтерполювати штрихи Нарисного олівця між кадрами"
 
 
+msgid "Bias factor for which frame has more influence on the interpolated strokes"
+msgstr "Фактор відхилу, на який кадр має більший вплив на інтерпольовані штрихи"
+
+
+msgctxt "Operator"
+msgid "Remove Breakdowns"
+msgstr "Вилучити розбивки"
+
+
+msgid "Remove breakdown frames generated by interpolating between two Grease Pencil frames"
+msgstr "Вилучити кадри розбивок, генеровані інтерполювання між двома кадрами Нарисного олівця"
+
+
+msgctxt "Operator"
+msgid "Interpolate Sequence"
+msgstr "Інтерполювати відеоряд"
+
+
+msgid "Generate 'in-betweens' to smoothly interpolate between Grease Pencil frames"
+msgstr "Генерувати 'між-кадри' для згладженого інтерполювання між кадрами Нарисного олівця"
+
+
 msgctxt "Operator"
 msgid "Add New Layer"
 msgstr "Додати новий шар"
@@ -43986,6 +44134,22 @@ msgstr "Злиття"
 msgctxt "Operator"
 msgid "Reproject Strokes"
 msgstr "Перепроектувати штрихи"
+
+
+msgid "Reproject the selected strokes from the current viewpoint as if they had been newly drawn (e.g. to fix problems from accidental 3D cursor movement or accidental viewport changes, or for matching deforming geometry)"
+msgstr "Перепроектувати виділені штрихи із поточного вигляду, ніби вони щойно нарисовані (наприклад, для виправлення пробленм з випадковим переміщенням 3D-курсора, з випадковими змінами вигляду або для відповідності деформуючій геометрії)"
+
+
+msgid "Projection Type"
+msgstr "Тип проекції"
+
+
+msgid "Reproject the strokes to end up on the same plane, as if drawn from the current viewpoint using 'Cursor' Stroke Placement"
+msgstr "Перепроектувати штрихи, що вони завершувалися на одній і тій же площині, ніби нарисовані з поточного вигляду за допомогою розміщення штриха 'Курсор'"
+
+
+msgid "Reproject the strokes on to the scene geometry, as if drawn using 'Surface' placement"
+msgstr "Перепроектувати штрихи на геометрії сцени, ніби нарисовані за допомогою розміщення 'Поверхня'"
 
 
 msgid "Show all Grease Pencil layers"
@@ -46256,6 +46420,51 @@ msgid "Add or remove a Subsurface Scattering Preset"
 msgstr "Додати або вилучити передустановку підповерхневого розсіювання"
 
 
+msgctxt "Operator"
+msgid "Cleanup Math Vis Console"
+msgstr "Очистити консоль Математика"
+
+
+msgid "Remove all visualized variables from the Console"
+msgstr "Вилучити з консолі всі показані змінні"
+
+
+msgctxt "Operator"
+msgid "Delete Var"
+msgstr "Видалити змінну"
+
+
+msgid "Remove the variable from the Console"
+msgstr "Вилучити змінну з консолі"
+
+
+msgctxt "Operator"
+msgid "Show BBox"
+msgstr "Показати габаритну коробку"
+
+
+msgid "Show/Hide the BBox of Matrix items"
+msgstr "Показати/сховати габаритні коробки елементів Matrix"
+
+
+msgctxt "Operator"
+msgid "Hide/Unhide"
+msgstr "Приховати/показати"
+
+
+msgid "Change the display state of the var"
+msgstr "Змінити стан видимості змінної"
+
+
+msgctxt "Operator"
+msgid "Lock/Unlock"
+msgstr "Замкнути/відімкнути"
+
+
+msgid "Lock the var from being deleted"
+msgstr "Захистити змінну від випадкового видалення"
+
+
 msgid "Delete selected metaelement(s)"
 msgstr "Видалити вибрані метаелемент(и)"
 
@@ -47222,13 +47431,17 @@ msgid "Intersect selected with unselected faces"
 msgstr "Перетнути вибрані грані з не вибраними"
 
 
+msgid "Cut"
+msgstr "Стрижка"
+
+
 msgid "Merge threshold"
 msgstr "Поріг об'єднання"
 
 
 msgctxt "Operator"
 msgid "Intersect (Boolean)"
-msgstr "Перетин (булівський)"
+msgstr "Перетин (булів)"
 
 
 msgid "Cut solid geometry from selected to unselected"
@@ -54139,10 +54352,6 @@ msgid "Percentage"
 msgstr "Відсоток"
 
 
-msgid "Weighting factor for the sliding operation"
-msgstr "Ваговий коефіцієнт для операції переходу"
-
-
 msgid "Previous Keyframe"
 msgstr "Попередній ключовий кадр"
 
@@ -58980,6 +59189,10 @@ msgid "Use Subsurf Modifier"
 msgstr "Використати модифікатор поділу"
 
 
+msgid "Map UVs taking vertex position after Subdivision Surface modifier has been applied"
+msgstr "Розкласти UV, враховуючи позиції вершин після застосування модифікатора Підподіл Поверхні"
+
+
 msgctxt "Operator"
 msgid "Weld"
 msgstr "Зчепити"
@@ -59279,6 +59492,14 @@ msgstr "3D-маніпулятор"
 
 msgid "Manipulate selected item by axis"
 msgstr "Маніпулювання вибраним елементом  по осях"
+
+
+msgid "Planar Constraint"
+msgstr "Планарне обмеження"
+
+
+msgid "Limit the transformation to the two axes that have not been clicked (translate/scale only)"
+msgstr "Обмежує перетворення двома осями, які не було клацнуто (лише переміщення/масштаб)"
 
 
 msgctxt "Operator"
@@ -62491,6 +62712,10 @@ msgid "Level of Detail"
 msgstr "Рівень деталізації"
 
 
+msgid "Obstacle Simulation"
+msgstr "Імітація перешкоди"
+
+
 msgid "Rigid Body Cache"
 msgstr "Кеш твердого тіла"
 
@@ -62681,6 +62906,14 @@ msgstr "Зібрати"
 
 msgid "Indirect Lighting"
 msgstr "Відбите світло"
+
+
+msgid "Math Vis"
+msgstr "Математик"
+
+
+msgid "Math Vis Console"
+msgstr "Консоль Математика"
 
 
 msgid "Particle in a particle system"
@@ -62917,10 +63150,6 @@ msgstr "Розпушення"
 
 msgid "Make hairs stand up"
 msgstr "Зробити волосинки розпушеними і піднятими"
-
-
-msgid "Cut"
-msgstr "Стрижка"
 
 
 msgid "Cut hairs"
@@ -64511,6 +64740,14 @@ msgid "Use deformation motion blur for this object"
 msgstr "Використати розмиття руху від деформації для цього об'єкта"
 
 
+msgid "Use Distance Cull"
+msgstr "Використати відкид за відстанню"
+
+
+msgid "Allow this object and its duplicators to be culled by distance from camera"
+msgstr "Дозволити цьому об'єкту та його дубікатам бути відкинутими за відстанню від камери"
+
+
 msgid "Use Motion Blur"
 msgstr "Використати розмив рухом"
 
@@ -64525,6 +64762,18 @@ msgstr "Вибірки згладж."
 
 msgid "Number of antialiasing samples to render for each pixel"
 msgstr "Кількість вибірок згладжування, що вимальовуються для кожного пікселя"
+
+
+msgid "AO Bounces"
+msgstr "Відскоки Навколишнього Перекриття"
+
+
+msgid "Approximate indirect light with background tinted ambient occlusion at the specified bounce, 0 disables this feature"
+msgstr "Прибличне побічне освітлення з фоном підбіленим навколишнім перекриттям з визначеним значенням відскоків, 0 вимикає цю опцію"
+
+
+msgid "AO Bounces Render"
+msgstr "Зображування з Відскоками Навколишнього Перекриття"
 
 
 msgid "Ambient Occlusion Samples"
@@ -64573,6 +64822,14 @@ msgstr "Каустики заломлень"
 
 msgid "Use refractive caustics, resulting in a brighter image (more noise but added realism)"
 msgstr "Використати каустики заломлень світла, щоб зробити зображення яскравішим (більше шуму, але додає реалістичності)"
+
+
+msgid "BVH Time Steps"
+msgstr "Кроки часу BVH"
+
+
+msgid "Split BVH primitives by this number of time steps to speed up render time in cost of memory"
+msgstr "Розділити примітиви BVH за кількістю кроків часу для пришвидшення часу на зображування за рахунок пам'яті"
 
 
 msgid "Viewport BVH Type"
@@ -64695,6 +64952,10 @@ msgid "GPU Compute"
 msgstr "Обчислення ГП"
 
 
+msgid "Use GPU compute device for rendering, configured in the system tab in the user preferences"
+msgstr "Використати для зображування графічний процесор, налаштований у вкладці Система вікна Налаштунки користувача"
+
+
 msgid "Dicing Rate"
 msgstr "Рівень нарізання"
 
@@ -64717,6 +64978,14 @@ msgstr "Дифузних вибірок"
 
 msgid "Number of diffuse bounce samples to render for each AA sample"
 msgstr "Кількість вибірок дифузного відбивання, що вимальовуються для кожної вибірки згладжування"
+
+
+msgid "Cull Distance"
+msgstr "Відкид за відстанню"
+
+
+msgid "Cull objects which are further away from camera than this distance"
+msgstr "Відкидати об'єкти, які знаходяться від камери на більшій відстані, ніж ця"
 
 
 msgid "Feature Set"
@@ -65035,6 +65304,58 @@ msgid "Number of subsurface scattering samples to render for each AA sample"
 msgstr "Кількість вибірок підповерхневого розсіювання, що вимальовуються для кожної вибірки згладжування"
 
 
+msgid "Viewport Texture Limit"
+msgstr "Межа текстур для перегляду"
+
+
+msgid "Limit texture size used by viewport rendering"
+msgstr "Граничний розмір текстур при перегляді"
+
+
+msgid "No Limit"
+msgstr "Без обмежень"
+
+
+msgid "No texture size limit"
+msgstr "Не обмежувати розмір текстур"
+
+
+msgid "Limit texture size to 128 pixels"
+msgstr "Обмежити розмір текстури 128 пікселями"
+
+
+msgid "Limit texture size to 256 pixels"
+msgstr "Обмежити розмір текстури 256 пікселями"
+
+
+msgid "Limit texture size to 512 pixels"
+msgstr "Обмежити розмір текстури 512 пікселями"
+
+
+msgid "Limit texture size to 1024 pixels"
+msgstr "Обмежити розмір текстури 1024 пікселями"
+
+
+msgid "Limit texture size to 2048 pixels"
+msgstr "Обмежити розмір текстури 2048 пікселями"
+
+
+msgid "Limit texture size to 4096 pixels"
+msgstr "Обмежити розмір текстури 4096 пікселями"
+
+
+msgid "Limit texture size to 8192 pixels"
+msgstr "Обмежити розмір текстури 8192 пікселями"
+
+
+msgid "Render Texture Limit"
+msgstr "Межа текстур для вимальовування"
+
+
+msgid "Limit texture size used by final rendering"
+msgstr "Граничний розмір текстур при кінцевому вимальовуванні"
+
+
 msgid "Tile Order"
 msgstr "Порядок плиток"
 
@@ -65128,7 +65449,11 @@ msgstr "Застосувати на різних кадрах різні баз�
 
 
 msgid "Allow objects to be culled based on the camera frustum"
-msgstr "Дозволити об'єктам бути відкинутими на основі піраміти охвату камерою, за її межами"
+msgstr "Дозволити об'єктам бути відкинутими на основі піраміди охоплення камери"
+
+
+msgid "Allow objects to be culled based on the distance from camera"
+msgstr "Дозволити об'єктам бути відкинутим на основі відстані від камери"
 
 
 msgid "Layer Samples"
@@ -65341,6 +65666,30 @@ msgstr "Шлях до файлу POT"
 
 msgid "Path to the pot template file"
 msgstr "Шлях до POT-файлу з шаблоном"
+
+
+msgid "Hide BBoxes"
+msgstr "Сховати габаритні коробки"
+
+
+msgid "Hide the bounding boxes rendered for Matrix like items"
+msgstr "Сховати габаритні коробки, відзображені як елементи Matrix"
+
+
+msgid "Scale factor"
+msgstr "Коефіцієнт масштабування"
+
+
+msgid "Resize the Bounding Box and the coordinate lines for the display of Matrix items"
+msgstr "Змінити розмір габаратної коробки та координатні лінії для показу елементів Matrix"
+
+
+msgid "Hide Names"
+msgstr "Приховати назви"
+
+
+msgid "Hide the names of the rendered items"
+msgstr "Приховати назви вималюваних елементів"
 
 
 msgid "Fix is active"
@@ -66023,12 +66372,36 @@ msgid "Render Pass"
 msgstr "Прохід вимальовування"
 
 
+msgid "BVH Traversed Nodes"
+msgstr "Простежені вузли BVH"
+
+
+msgid "Number of nodes traversed in BVH for the camera rays"
+msgstr "Кількість вузлів, простежених у BVH для променів камери"
+
+
 msgid "BVH Traversed Instances"
 msgstr "Простежені примірники BVH"
 
 
+msgid "Number of BVH instances traversed by camera rays"
+msgstr "Кількість примірників BVH, простежених променями камери"
+
+
+msgid "BVH Intersections"
+msgstr "Перетини BVH"
+
+
+msgid "Number of primitive intersections performed by the camera rays"
+msgstr "Кількість перетинів примітивів, здійснених променями камери"
+
+
 msgid "Ray Steps"
 msgstr "Кроки променя"
+
+
+msgid "Number of bounces done by the main integration loop"
+msgstr "Кількість відскоків, зроблених головною петлею інтеграції"
 
 
 msgid "Render Passes"
@@ -70243,6 +70616,10 @@ msgid "Crop image before processing"
 msgstr "Обрізати зображення до обробки"
 
 
+msgid "Remove fields from video movies"
+msgstr "Вилучити поля з відеофільмів"
+
+
 msgid "Flip on the X axis"
 msgstr "Перевернути по осі X"
 
@@ -71920,7 +72297,7 @@ msgstr "Виштовх"
 
 
 msgid "Edge spring stiffness when longer than rest length"
-msgstr "Пружна тугість ребер, з довжиною більшою за довжину спокою"
+msgstr "Пружна жорсткість ребер, з довжиною більшою за довжину спокою"
 
 
 msgid "Edge spring stiffness when shorter than rest length"
@@ -71944,7 +72321,7 @@ msgstr "Орієнтовна матриця масштабу"
 
 
 msgid "Shear Stiffness"
-msgstr "Тугість зрізу"
+msgstr "Жорсткість на зріз"
 
 
 msgid "Tweak timing for physics to control frequency and speed"
@@ -74242,6 +74619,10 @@ msgstr "Малювати активний об'єкт з зображенням,
 
 msgid "Limit selection to visible (clipped with depth buffer)"
 msgstr "Обмежити вибір видимим (обрізати за буфером глибини)"
+
+
+msgid "Manipulate center points (object, pose and weight paint mode only)"
+msgstr "Маніпулювати центральними точками (лише у режимах Об'єкт, Поза та Малювання Вагомостей)"
 
 
 msgid "Render Border"
@@ -77060,6 +77441,18 @@ msgid "Grease Pencil drawing brushes"
 msgstr "Рисувальні пензлі нарисного олівця"
 
 
+msgid "Grease Pencil Interpolate"
+msgstr "Інтерполювати Нарисний олівець"
+
+
+msgid "Settings for Grease Pencil Interpolation tools"
+msgstr "Параметри для інструментів інтерполяції Нарисного олівця"
+
+
+msgid "Settings for stroke sculpting tools and brushes"
+msgstr "Параметри для пензлів та інструментів ліплення штрихів"
+
+
 msgid "Stroke Placement (Image Editor)"
 msgstr "Розмішення штрихів (Редактор зображень)"
 
@@ -77796,6 +78189,10 @@ msgid "Styles"
 msgstr "Стилі"
 
 
+msgid "Version of Blender the userpref.blend was saved with"
+msgstr "Версія Blender, якою було збережено файл userpref.blend"
+
+
 msgid "View & Controls"
 msgstr "Вигляд і керування"
 
@@ -78408,6 +78805,10 @@ msgid "Deadzone"
 msgstr "Мертва зона"
 
 
+msgid "Threshold of initial movement needed from the device's rest position"
+msgstr "Поріг початкового руху, потрібний від позиції спокою пристрою"
+
+
 msgid "Helicopter Mode"
 msgstr "Режим гелікоптера"
 
@@ -78946,6 +79347,14 @@ msgstr "Мова перекладу"
 
 msgid "Default (Default)"
 msgstr "Стандартно (Default)"
+
+
+msgid "Legacy Compute Device Type"
+msgstr "Тип старішого пристрою обчислення"
+
+
+msgid "For backwards compatibility only"
+msgstr "Лише для зворотної сумісності"
 
 
 msgid "Memory Cache Limit"
@@ -79892,6 +80301,10 @@ msgid "Reverse Mouse"
 msgstr "Обернена миша"
 
 
+msgid "Reverse the vertical movement of the mouse"
+msgstr "Розвернути вертикальне рухання мишкою"
+
+
 msgid "View Height"
 msgstr "Висота погляду"
 
@@ -80145,18 +80558,8 @@ msgstr "Закрити об'єкти кольором навколишнього
 
 
 msgctxt "Operator"
-msgid "Wm:"
-msgstr "Wm:"
-
-
-msgctxt "Operator"
-msgid "Sculpt:"
-msgstr "Sculpt:"
-
-
-msgctxt "Operator"
-msgid "Anim:"
-msgstr "Anim:"
+msgid "Info:"
+msgstr "Info:"
 
 
 msgctxt "Operator"
@@ -80165,48 +80568,13 @@ msgstr "Dpaint:"
 
 
 msgctxt "Operator"
-msgid "Export_anim:"
-msgstr "Export_anim:"
+msgid "Scene:"
+msgstr "Сцена:"
 
 
 msgctxt "Operator"
-msgid "Script:"
-msgstr "Script:"
-
-
-msgctxt "Operator"
-msgid "Surface:"
-msgstr "Поверхня:"
-
-
-msgctxt "Operator"
-msgid "Export_animation:"
-msgstr "Export_animation:"
-
-
-msgctxt "Operator"
-msgid "Outliner:"
-msgstr "Outliner:"
-
-
-msgctxt "Operator"
-msgid "Cloth:"
-msgstr "Тканина:"
-
-
-msgctxt "Operator"
-msgid "Export_mesh:"
-msgstr "Export_mesh:"
-
-
-msgctxt "Operator"
-msgid "Lattice:"
-msgstr "Lattice:"
-
-
-msgctxt "Operator"
-msgid "Console:"
-msgstr "Консоль:"
+msgid "Texture:"
+msgstr "Текстура:"
 
 
 msgctxt "Operator"
@@ -80215,123 +80583,8 @@ msgstr "Export_scene:"
 
 
 msgctxt "Operator"
-msgid "Clip:"
-msgstr "Clip:"
-
-
-msgctxt "Operator"
-msgid "Transform:"
-msgstr "Transform:"
-
-
-msgctxt "Operator"
-msgid "Import_curve:"
-msgstr "Import_curve:"
-
-
-msgctxt "Operator"
-msgid "Paintcurve:"
-msgstr "Paintcurve:"
-
-
-msgctxt "Operator"
-msgid "Cycles:"
-msgstr "Cycles:"
-
-
-msgctxt "Operator"
-msgid "Ui:"
-msgstr "Ui:"
-
-
-msgctxt "Operator"
-msgid "Render:"
-msgstr "Render:"
-
-
-msgctxt "Operator"
-msgid "Curve:"
-msgstr "Крива:"
-
-
-msgctxt "Operator"
-msgid "Mball:"
-msgstr "Mball:"
-
-
-msgctxt "Operator"
-msgid "Cachefile:"
-msgstr "Cachefile:"
-
-
-msgctxt "Operator"
-msgid "Ed:"
-msgstr "Ed:"
-
-
-msgctxt "Operator"
-msgid "Material:"
-msgstr "Матеріал:"
-
-
-msgctxt "Operator"
-msgid "Armature:"
-msgstr "Арматура:"
-
-
-msgctxt "Operator"
-msgid "Poselib:"
-msgstr "Poselib:"
-
-
-msgctxt "Operator"
-msgid "Constraint:"
-msgstr "Обмеження:"
-
-
-msgctxt "Operator"
-msgid "Sketch:"
-msgstr "Sketch:"
-
-
-msgctxt "Operator"
-msgid "Logic:"
-msgstr "Logic:"
-
-
-msgctxt "Operator"
-msgid "Text:"
-msgstr "Текст:"
-
-
-msgctxt "Operator"
-msgid "Nla:"
-msgstr "НЛА:"
-
-
-msgctxt "Operator"
-msgid "Import_scene:"
-msgstr "Import_scene:"
-
-
-msgctxt "Operator"
-msgid "Particle:"
-msgstr "Частинка:"
-
-
-msgctxt "Operator"
-msgid "Buttons:"
-msgstr "Кнопки:"
-
-
-msgctxt "Operator"
-msgid "Node:"
-msgstr "Вузол:"
-
-
-msgctxt "Operator"
-msgid "Sequencer:"
-msgstr "Sequencer:"
+msgid "Export_shape:"
+msgstr "Export_shape:"
 
 
 msgctxt "Operator"
@@ -80340,88 +80593,48 @@ msgstr "Import_anim:"
 
 
 msgctxt "Operator"
-msgid "Brush:"
-msgstr "Пензель:"
+msgid "Paintcurve:"
+msgstr "Paintcurve:"
 
 
 msgctxt "Operator"
-msgid "Lamp:"
-msgstr "Лампа:"
+msgid "Ed:"
+msgstr "Ed:"
 
 
 msgctxt "Operator"
-msgid "Blender_id:"
-msgstr "Blender_id:"
+msgid "Node:"
+msgstr "Вузол:"
 
 
 msgctxt "Operator"
-msgid "Info:"
-msgstr "Info:"
+msgid "Mball:"
+msgstr "Mball:"
 
 
 msgctxt "Operator"
-msgid "Pose:"
-msgstr "Поза:"
+msgid "Surface:"
+msgstr "Поверхня:"
 
 
 msgctxt "Operator"
-msgid "Group:"
-msgstr "Група:"
+msgid "Text:"
+msgstr "Текст:"
 
 
 msgctxt "Operator"
-msgid "Export_blend:"
-msgstr "Export_blend:"
+msgid "Poselib:"
+msgstr "Poselib:"
 
 
 msgctxt "Operator"
-msgid "Ptcache:"
-msgstr "Ptcache:"
+msgid "Wm:"
+msgstr "Wm:"
 
 
 msgctxt "Operator"
-msgid "Rigidbody:"
-msgstr "Rigidbody:"
-
-
-msgctxt "Operator"
-msgid "Mesh:"
-msgstr "Каркас:"
-
-
-msgctxt "Operator"
-msgid "Scene:"
-msgstr "Сцена:"
-
-
-msgctxt "Operator"
-msgid "View2d:"
-msgstr "View2d:"
-
-
-msgctxt "Operator"
-msgid "Palette:"
-msgstr "Палітра:"
-
-
-msgctxt "Operator"
-msgid "Boid:"
-msgstr "Рій:"
-
-
-msgctxt "Operator"
-msgid "File:"
-msgstr "Файл:"
-
-
-msgctxt "Operator"
-msgid "Camera:"
-msgstr "Камера:"
-
-
-msgctxt "Operator"
-msgid "Fluid:"
-msgstr "Рідина:"
+msgid "Render:"
+msgstr "Render:"
 
 
 msgctxt "Operator"
@@ -80430,43 +80643,83 @@ msgstr "Safe_areas:"
 
 
 msgctxt "Operator"
-msgid "Gpencil:"
-msgstr "Gpencil:"
+msgid "Nla:"
+msgstr "НЛА:"
 
 
 msgctxt "Operator"
-msgid "Action:"
-msgstr "Дія:"
+msgid "Outliner:"
+msgstr "Outliner:"
 
 
 msgctxt "Operator"
-msgid "Uv:"
-msgstr "Uv:"
+msgid "Mathvis:"
+msgstr "Математик:"
 
 
 msgctxt "Operator"
-msgid "World:"
-msgstr "Світ:"
+msgid "Object:"
+msgstr "Об'єкт:"
 
 
 msgctxt "Operator"
-msgid "Graph:"
-msgstr "Graph:"
+msgid "Sound:"
+msgstr "Звук:"
 
 
 msgctxt "Operator"
-msgid "Mask:"
-msgstr "Маска:"
+msgid "Brush:"
+msgstr "Пензель:"
 
 
 msgctxt "Operator"
-msgid "Font:"
-msgstr "Шрифт:"
+msgid "Sequencer:"
+msgstr "Sequencer:"
 
 
 msgctxt "Operator"
-msgid "Paint:"
-msgstr "Paint:"
+msgid "Import_curve:"
+msgstr "Import_curve:"
+
+
+msgctxt "Operator"
+msgid "Console:"
+msgstr "Консоль:"
+
+
+msgctxt "Operator"
+msgid "Import_shape:"
+msgstr "Import_shape:"
+
+
+msgctxt "Operator"
+msgid "View3d:"
+msgstr "View3d:"
+
+
+msgctxt "Operator"
+msgid "Lamp:"
+msgstr "Лампа:"
+
+
+msgctxt "Operator"
+msgid "Export_blend:"
+msgstr "Export_blend:"
+
+
+msgctxt "Operator"
+msgid "Import_scene:"
+msgstr "Import_scene:"
+
+
+msgctxt "Operator"
+msgid "Cachefile:"
+msgstr "Cachefile:"
+
+
+msgctxt "Operator"
+msgid "Transform:"
+msgstr "Transform:"
 
 
 msgctxt "Operator"
@@ -80475,8 +80728,153 @@ msgstr "Час:"
 
 
 msgctxt "Operator"
-msgid "Export_shape:"
-msgstr "Export_shape:"
+msgid "Paint:"
+msgstr "Paint:"
+
+
+msgctxt "Operator"
+msgid "World:"
+msgstr "Світ:"
+
+
+msgctxt "Operator"
+msgid "Mesh:"
+msgstr "Каркас:"
+
+
+msgctxt "Operator"
+msgid "Import_mesh:"
+msgstr "Import_mesh:"
+
+
+msgctxt "Operator"
+msgid "Ptcache:"
+msgstr "Ptcache:"
+
+
+msgctxt "Operator"
+msgid "Armature:"
+msgstr "Арматура:"
+
+
+msgctxt "Operator"
+msgid "Cycles:"
+msgstr "Cycles:"
+
+
+msgctxt "Operator"
+msgid "Font:"
+msgstr "Шрифт:"
+
+
+msgctxt "Operator"
+msgid "Palette:"
+msgstr "Палітра:"
+
+
+msgctxt "Operator"
+msgid "Buttons:"
+msgstr "Кнопки:"
+
+
+msgctxt "Operator"
+msgid "Export_mesh:"
+msgstr "Export_mesh:"
+
+
+msgctxt "Operator"
+msgid "Group:"
+msgstr "Група:"
+
+
+msgctxt "Operator"
+msgid "Export_anim:"
+msgstr "Export_anim:"
+
+
+msgctxt "Operator"
+msgid "Sketch:"
+msgstr "Sketch:"
+
+
+msgctxt "Operator"
+msgid "Curve:"
+msgstr "Крива:"
+
+
+msgctxt "Operator"
+msgid "Blender_id:"
+msgstr "Blender_id:"
+
+
+msgctxt "Operator"
+msgid "View2d:"
+msgstr "View2d:"
+
+
+msgctxt "Operator"
+msgid "Anim:"
+msgstr "Anim:"
+
+
+msgctxt "Operator"
+msgid "Ui:"
+msgstr "Ui:"
+
+
+msgctxt "Operator"
+msgid "Pose:"
+msgstr "Поза:"
+
+
+msgctxt "Operator"
+msgid "Screen:"
+msgstr "Екран:"
+
+
+msgctxt "Operator"
+msgid "Fluid:"
+msgstr "Рідина:"
+
+
+msgctxt "Operator"
+msgid "Lattice:"
+msgstr "Lattice:"
+
+
+msgctxt "Operator"
+msgid "Cloth:"
+msgstr "Тканина:"
+
+
+msgctxt "Operator"
+msgid "Sculpt:"
+msgstr "Sculpt:"
+
+
+msgctxt "Operator"
+msgid "Constraint:"
+msgstr "Обмеження:"
+
+
+msgctxt "Operator"
+msgid "Script:"
+msgstr "Script:"
+
+
+msgctxt "Operator"
+msgid "Action:"
+msgstr "Дія:"
+
+
+msgctxt "Operator"
+msgid "Camera:"
+msgstr "Камера:"
+
+
+msgctxt "Operator"
+msgid "Logic:"
+msgstr "Logic:"
 
 
 msgctxt "Operator"
@@ -80490,23 +80888,48 @@ msgstr "Mocap:"
 
 
 msgctxt "Operator"
-msgid "Texture:"
-msgstr "Текстура:"
+msgid "Particle:"
+msgstr "Частинка:"
 
 
 msgctxt "Operator"
-msgid "View3d:"
-msgstr "View3d:"
+msgid "File:"
+msgstr "Файл:"
 
 
 msgctxt "Operator"
-msgid "Import_shape:"
-msgstr "Import_shape:"
+msgid "Clip:"
+msgstr "Clip:"
 
 
 msgctxt "Operator"
-msgid "Object:"
-msgstr "Об'єкт:"
+msgid "Mask:"
+msgstr "Маска:"
+
+
+msgctxt "Operator"
+msgid "Rigidbody:"
+msgstr "Rigidbody:"
+
+
+msgctxt "Operator"
+msgid "Uv:"
+msgstr "Uv:"
+
+
+msgctxt "Operator"
+msgid "Gpencil:"
+msgstr "Gpencil:"
+
+
+msgctxt "Operator"
+msgid "Graph:"
+msgstr "Graph:"
+
+
+msgctxt "Operator"
+msgid "Material:"
+msgstr "Матеріал:"
 
 
 msgctxt "Operator"
@@ -80515,18 +80938,13 @@ msgstr "Мітка:"
 
 
 msgctxt "Operator"
-msgid "Screen:"
-msgstr "Екран:"
+msgid "Boid:"
+msgstr "Рій:"
 
 
 msgctxt "Operator"
-msgid "Import_mesh:"
-msgstr "Import_mesh:"
-
-
-msgctxt "Operator"
-msgid "Sound:"
-msgstr "Звук:"
+msgid "Export_animation:"
+msgstr "Export_animation:"
 
 
 msgctxt "WindowManager"
@@ -80956,6 +81374,10 @@ msgid "Failed to write .oso file next to external .osl file at "
 msgstr "Помилка запису файлу .oso поряд з зовнішнім файлом .osl в "
 
 
+msgid "Cycles Compute Device:"
+msgstr "Обчислювальний пристрій для Cycles:"
+
+
 msgid "Total Samples:"
 msgstr "Всього вибірок:"
 
@@ -81130,6 +81552,14 @@ msgstr "Товщина:"
 
 msgid "Subdivision"
 msgstr "Поділ"
+
+
+msgid "Texture Limit Viewport"
+msgstr "Межа текстур для перегляду"
+
+
+msgid "Texture Limit Render"
+msgstr "Межа текстур для вимальовування"
 
 
 msgid "Device:"
@@ -82653,6 +83083,10 @@ msgid "Generate Data Layers"
 msgstr "Згенерувати шари даних"
 
 
+msgid "Built without Boolean modifier"
+msgstr "Побудовано без Булевого модифікатора"
+
+
 msgid "Bone:"
 msgstr "Кістка:"
 
@@ -82702,6 +83136,10 @@ msgstr "Результатний рівень нарізання:"
 
 msgid "Render %.2f px, Preview %.2f px"
 msgstr "Зображування %.2f px, Передогляд %.2f px"
+
+
+msgid "Built without Remesh modifier"
+msgstr "Побудовано без модифікатора Перебудова"
 
 
 msgid "Vertex Group Mask:"
@@ -82905,6 +83343,11 @@ msgid "Framing:"
 msgstr "Обрамлення:"
 
 
+msgctxt "Operator"
+msgid "Build Navigation Mesh"
+msgstr "Побудувати навігаційну сіть"
+
+
 msgid "Rasterization:"
 msgstr "Растрування:"
 
@@ -83001,7 +83444,7 @@ msgstr "Атрибути:"
 
 
 msgid "Linear velocity:"
-msgstr "Лінеарна швидкість:"
+msgstr "Лінійна швидкість:"
 
 
 msgid "Angular velocity:"
@@ -83048,6 +83491,11 @@ msgid "Draw:"
 msgstr "Малювати:"
 
 
+msgctxt "Operator"
+msgid "Delete Frame(s)"
+msgstr "Видалити кадр(и)"
+
+
 msgid "Additive Drawing"
 msgstr "Докладальне рисування"
 
@@ -83087,6 +83535,10 @@ msgstr "Інтерполювати"
 msgctxt "Operator"
 msgid "Sequence"
 msgstr "Послідовність"
+
+
+msgid "Sequence Options:"
+msgstr "Опції відеоряду:"
 
 
 msgid "Active Layer:      "
@@ -83216,6 +83668,11 @@ msgstr "Об'єднати і копіювати"
 
 msgid "Show Directions"
 msgstr "Показати напрями"
+
+
+msgctxt "Operator"
+msgid "Reproject Strokes..."
+msgstr "Перепроектувати штрихи..."
 
 
 msgid "Stroke Quality:"
@@ -83892,11 +84349,11 @@ msgstr "Відстань відштовхування"
 
 
 msgid "Structural Stiffness:"
-msgstr "Структурна тугість:"
+msgstr "Структурна жорсткість:"
 
 
 msgid "Bending Stiffness:"
-msgstr "Тугість згину:"
+msgstr "Жорсткість на згин:"
 
 
 msgid "Sewing Force"
@@ -84263,6 +84720,10 @@ msgstr "Налагодження:"
 
 msgid "Color Mapping:"
 msgstr "Розкладка кольору:"
+
+
+msgid "Built without Smoke modifier"
+msgstr "Побудовано без модифікатора Дим"
 
 
 msgid "Border Collisions:"
@@ -85453,6 +85914,16 @@ msgid "Backdrop zoom out"
 msgstr "Віддалити тло"
 
 
+msgctxt "Operator"
+msgid "Show One Level"
+msgstr "Показати один рівень"
+
+
+msgctxt "Operator"
+msgid "Hide One Level"
+msgstr "Приховати один рівень"
+
+
 msgid "No Keying Set active"
 msgstr "Немає активного набору ключів"
 
@@ -85805,6 +86276,18 @@ msgstr "Розтягти до довжини ввідної смужки"
 
 msgid "Frame number"
 msgstr "Номер кадру"
+
+
+msgid "Source Channel"
+msgstr "Джерельний канал"
+
+
+msgid "Cut To:"
+msgstr "Різати за:"
+
+
+msgid "Two or more channels are needed below this strip"
+msgstr "Під цією смужкою потрібно два або більше каналів"
 
 
 msgctxt "Operator"
@@ -86346,6 +86829,18 @@ msgstr "Природний напрям трекпаду"
 
 msgid "NDOF Device:"
 msgstr "Пристрій 3D-маніп.:"
+
+
+msgid "Pan Sensitivity"
+msgstr "Чутливість панорамування"
+
+
+msgid "Navigation Style:"
+msgstr "Стиль навігації:"
+
+
+msgid "Rotation Style:"
+msgstr "Стиль обертання:"
 
 
 msgctxt "Operator"
@@ -86984,6 +87479,11 @@ msgstr "Вилучити кістки"
 
 msgid "Sculpt Brush"
 msgstr "Пензель ліпки"
+
+
+msgctxt "Operator"
+msgid "Join..."
+msgstr "Об'єднання..."
 
 
 msgid "Lock to Object:"
@@ -88293,6 +88793,14 @@ msgid "Source and destination meshes do not have the same amount of vertices, 'T
 msgstr "Джерельний та цільовий каркаси відрізняються кількістю вершин. В цьому випадку неможливо використати розкладку «Топологія»"
 
 
+msgid "Source mesh doesn't have any edges, None of the 'Edge' mappings can be used in this case"
+msgstr "Джерельна сіть не має жодних ребер, у цьому випадку буде використано розкладання None of the 'Edge'"
+
+
+msgid "Source mesh doesn't have any faces, None of the 'Face' mappings can be used in this case"
+msgstr "Джерельна сіть не має жодних граней, у цьому випадку буде використано розкладання None of the 'Face'"
+
+
 msgid "Source or destination meshes do not have any vertices, cannot transfer vertex data"
 msgstr "Неможливо перенести дані вершин, оскільки джерельний або цільовий каркас не має жодної вершини"
 
@@ -88309,8 +88817,16 @@ msgid "Source and destination meshes do not have the same amount of face corners
 msgstr "Джерельний та цільовий каркаси відрізняються кількістю кутів граней. В цьому випадку неможливо використати розкладку «Топологія»"
 
 
+msgid "Source or destination meshes do not have any faces, cannot transfer corner data"
+msgstr "Неможливо перенести дані кутів, оскільки джерельний або цільовий каркас не має жодної грані"
+
+
 msgid "Source and destination meshes do not have the same amount of faces, 'Topology' mapping cannot be used in this case"
 msgstr "Джерельний та цільовий каркаси відрізняються кількістю граней. В цьому випадку неможливо використати розкладку «Топологія»"
+
+
+msgid "Source or destination meshes do not have any faces, cannot transfer face data"
+msgstr "Неможливо перенести дані граней, оскільки джерельний або цільовий каркас не має жодної грані"
 
 
 msgid "Not enough free memory"
@@ -89727,6 +90243,30 @@ msgid "Active region not set"
 msgstr "Активну область не задано"
 
 
+msgid "GPencil Interpolation: ESC/RMB to cancel, Enter/LMB to confirm, WHEEL/MOVE to adjust factor"
+msgstr "Інтерполяція НарОлівця: ESC/RMB для скасування, Enter/LMB для підтвердження, WHEEL/MOVE для коригування фактора"
+
+
+msgid "Cannot find a pair of grease pencil frames to interpolate between in active layer"
+msgstr "Не можу знайти пару кадрів Нарисного олівця для інтерполювання між ними на активному шарі"
+
+
+msgid "Cannot interpolate as current frame already has existing grease pencil frames"
+msgstr "Не можу інтерполювати, оскільки поточний кадр вже має наявні кадри Нарисного олівця"
+
+
+msgid "Interpolation requires some editable strokes"
+msgstr "Інтерполяція вимагає кілька придатних для редагування штрихів"
+
+
+msgid "Custom interpolation curve does not exist"
+msgstr "Власна крива інтерполяції не існує"
+
+
+msgid "Expected current frame to be a breakdown"
+msgstr "Очікується, що поточний кадр буде розбивкою"
+
+
 msgid "Grease Pencil: Drawing/erasing stroke... Release to end stroke"
 msgstr "Нарисний олівець: рисування/стирання штрихів... Відпустити кнопку - кінець штриха"
 
@@ -89781,6 +90321,16 @@ msgstr "Не-клавіатурна швидка клавіша"
 
 msgid "Only keyboard shortcuts can be edited that way, please use User Preferences otherwise"
 msgstr "Лише клавіатурні швидкі клавіші можуть таким чином редагуватися, для усіх інших випадків скористайтесь вікном Налаштунки Користувача"
+
+
+msgctxt "Operator"
+msgid "Open File Externally"
+msgstr "Відкрити файл зовні"
+
+
+msgctxt "Operator"
+msgid "Open Location Externally"
+msgstr "Відкрити розташування зовні"
 
 
 msgctxt "Operator"
@@ -92466,14 +93016,6 @@ msgid "Prop:"
 msgstr "Властивість:"
 
 
-msgid "Bone 1"
-msgstr "Кість 1"
-
-
-msgid "Bone 2"
-msgstr "Кість 2"
-
-
 msgid "Update Dependencies"
 msgstr "Поновити залежності"
 
@@ -93320,16 +93862,16 @@ msgid "Can't edit library linked object"
 msgstr "Неможливо змінити зв'язаний бібліотечний об'єкт"
 
 
+msgid "Cannot delete indirectly linked library '%s'"
+msgstr "Неможливо видалити непрямо прив'язану бібліотеку '%s' "
+
+
 msgid "Cannot delete indirectly linked id '%s'"
 msgstr "Неможу видалити непрямо прив'язаний ІД '%s'"
 
 
 msgid "Cannot delete id '%s', indirectly used data-blocks need at least one user"
 msgstr "Не можу видалити ІД '%s', непрямо використані блоки даних повинні мати хоча б одного користувача"
-
-
-msgid "Cannot delete indirectly linked library '%s'"
-msgstr "Неможливо видалити непрямо прив'язану бібліотеку '%s' "
 
 
 msgid "Invalid old/new ID pair ('%s' / '%s')"
@@ -93658,6 +94200,14 @@ msgid "Edge weight used by Bevel modifier"
 msgstr "Вагомість ребер для модифікатора Скіс"
 
 
+msgid "Weight used by the Subdivision Surface modifier"
+msgstr "Вагомість, використовувана модифікатором поділу поверхні"
+
+
+msgid "Weight used for Soft Body Goal"
+msgstr "Вагомість, використовувана для цілі М'якого тіла"
+
+
 msgid "Radius of curve control points"
 msgstr "Радіус керувальної точки кривої"
 
@@ -93760,6 +94310,10 @@ msgstr "к/сек: %.2f"
 
 msgid "fps: %i"
 msgstr "к/сек: %i"
+
+
+msgid "Cannot dolly when the view offset is locked"
+msgstr "Операторський візок не діє, коли зсув вигляду заблоковано"
 
 
 msgid "Depth too large"
@@ -94321,6 +94875,10 @@ msgstr "Об'єкт масштабований непропорційно; пр�
 
 msgid "Object has negative scale, unwrap will operate on a non-flipped version of the mesh"
 msgstr "Об'єкт має від'ємний масштаб; при розгортанні буде використано не віддзеркалену версію каркаса"
+
+
+msgid "Subdivision Surface modifier needs to be first to work with unwrap"
+msgstr "Для роботи з розгорткою модифікатор поділу поверхні має бути першим"
 
 
 msgid "Freestyle: Mesh loading"
@@ -95181,6 +95739,10 @@ msgid "Bind data missing"
 msgstr "Відсутні дані зв'язування"
 
 
+msgid "Could not create Alembic reader for file %s"
+msgstr "Неможливо створити зчитувач Alembic для файлу %s"
+
+
 msgid "Invalid target settings"
 msgstr "Недійсні параметри цілі"
 
@@ -95453,6 +96015,14 @@ msgid "Ray Depth"
 msgstr "Глибина променя"
 
 
+msgid "Diffuse Depth"
+msgstr "Глибина розсіяння"
+
+
+msgid "Glossy Depth"
+msgstr "Глибина глянцю"
+
+
 msgid "Transparent Depth"
 msgstr "Глибина прозорості"
 
@@ -95563,6 +96133,10 @@ msgstr "W4"
 
 msgid "iScale"
 msgstr "Сила"
+
+
+msgid "Could not resolve path (%s)"
+msgstr "Неможливо переобчислити шлях (%s)"
 
 
 msgid ""

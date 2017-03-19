@@ -1,9 +1,9 @@
 
 msgid ""
 msgstr ""
-"Project-Id-Version: Blender 2.78 (sub 4) (b'6a249bb0008')\n"
+"Project-Id-Version: Blender 2.78 (sub 4) (b'df76616d745')\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-02-23 21:11:28\n"
+"POT-Creation-Date: 2017-03-19 17:51:12\n"
 "PO-Revision-Date: \n"
 "Last-Translator: Bastien Montagne <montagne29@wanadoo.fr>\n"
 "Language-Team: \n"
@@ -10885,10 +10885,6 @@ msgid "Falloff Power"
 msgstr "Puissance d’atténuation"
 
 
-msgid "Falloff power (real gravitational falloff = 2)"
-msgstr "Puissance d’atténuation (atténuation gravitationnelle réelle : 2)"
-
-
 msgid "Fall-Off"
 msgstr "Atténuation"
 
@@ -11171,6 +11167,14 @@ msgstr "Utiliser coordonnées locales"
 
 msgid "Use effector/global coordinates for turbulence"
 msgstr "Utiliser les coordonnées de l’effecteur/globales pour la turbulence"
+
+
+msgid "Gravity Falloff"
+msgstr "Atténuation de gravité"
+
+
+msgid "Multiply force by 1/distance²"
+msgstr "Multiplier la force par 1/distance²"
 
 
 msgid "Based on distance/falloff it adds a portion of the entire path"
@@ -24344,8 +24348,8 @@ msgid "File format to save the rendered images as"
 msgstr "Format de fichier dans lequel enregistrer l’image"
 
 
-msgid "Codec settings for Jpek2000"
-msgstr "Réglages de codec pour le Jpek2000"
+msgid "Codec settings for Jpeg2000"
+msgstr "Réglages de codec Jpeg2000"
 
 
 msgid "Quality for image formats that support lossy compression"
@@ -29681,6 +29685,10 @@ msgid "Simple Deform"
 msgstr "Déformer simple"
 
 
+msgid "Surface Deform"
+msgstr "Déformation de surface"
+
+
 msgid "Warp"
 msgstr "Déformer (gauchir) (?)"
 
@@ -32339,6 +32347,22 @@ msgstr "Utiliser OpenSubdiv"
 
 msgid "Use OpenSubdiv for the subdivisions (viewport only)"
 msgstr "Utiliser OpenSubdiv pour la subdivision (vues 3D uniquement)"
+
+
+msgid "SurfaceDeform Modifier"
+msgstr "Modificateur déformation de surface"
+
+
+msgid "Interpolation falloff"
+msgstr "Atténuation d’interpolation"
+
+
+msgid "Controls how much nearby polygons influence deformation"
+msgstr "Contrôle à quel point les polygones voisins influencent la déformation"
+
+
+msgid "Whether geometry has been bound to target mesh"
+msgstr "Si la géométrie a été liée au mesh cible"
 
 
 msgid "Surface Modifier"
@@ -47439,6 +47463,26 @@ msgid "Intersect selected with unselected faces"
 msgstr "Intersecter les faces sélectionnées avec celles non-sélectionnées"
 
 
+msgid "Separate Mode"
+msgstr "Mode de séparation"
+
+
+msgid "Separate all geometry from intersections"
+msgstr "Séparer toute géométrie des intersections"
+
+
+msgid "Cut"
+msgstr "Couper"
+
+
+msgid "Cut into geometry keeping each side separate (Selected/Unselected only)"
+msgstr "Couper dans la géométrie en conservant chaque côté séparé ((Dé)sélectionnés uniquement)"
+
+
+msgid "Merge all geometry from the intersection"
+msgstr "Fusionner toute la géométrie de l’intersection"
+
+
 msgid "Merge threshold"
 msgstr "Seuil de fusion"
 
@@ -48235,6 +48279,14 @@ msgstr "Confirmer au relâché"
 
 msgid "Always confirm operation when releasing button"
 msgstr "Toujours confirmer l’opération quand le bouton est relâché"
+
+
+msgid "Accurate"
+msgstr "Précis"
+
+
+msgid "Use accurate transformation"
+msgstr "Utiliser une transformation précise"
 
 
 msgid "Fill the ripped region"
@@ -52188,6 +52240,15 @@ msgstr "Appliquer le niveau de subdivision comme relatif au niveau actuel"
 
 
 msgctxt "Operator"
+msgid "Surface Deform Bind"
+msgstr "Lier déformation de surface"
+
+
+msgid "Bind mesh to target in surface deform modifier"
+msgstr "Lier le mesh à la cible, dans le modificateur Déformation de surface"
+
+
+msgctxt "Operator"
 msgid "Add Text"
 msgstr "Ajouter texte"
 
@@ -54344,6 +54405,66 @@ msgid "Create a suitable breakdown pose on the current frame"
 msgstr "Créer une pose de rupture valable à la frame courante"
 
 
+msgid "Axis Lock"
+msgstr "Verrouillage d’axe"
+
+
+msgid "Transform axis to restrict effects to"
+msgstr "Axe de transformation auquel limiter les effets"
+
+
+msgid "All axes are affected"
+msgstr "Tous les axes sont affectés"
+
+
+msgid "Only X-axis transforms are affected"
+msgstr "Seules les transformations sur l’axe X sont affectées"
+
+
+msgid "Only Y-axis transforms are affected"
+msgstr "Seules les transformations sur l’axe Y sont affectées"
+
+
+msgid "Only Z-axis transforms are affected"
+msgstr "Seules les transformations sur l’axe Z sont affectées"
+
+
+msgid "Set of properties that are affected"
+msgstr "Ensemble de propriétés affectées"
+
+
+msgid "All Properties"
+msgstr "Toutes les propriétés"
+
+
+msgid "All properties, including transforms, bendy bone shape, and custom properties"
+msgstr "Toutes les propriétés, y compris de transformation, la forme des os souples, et les propriétés personnalisées"
+
+
+msgid "Location only"
+msgstr "Position uniquement"
+
+
+msgid "Rotation only"
+msgstr "Rotation uniquement"
+
+
+msgid "Scale only"
+msgstr "Échelle uniquement"
+
+
+msgid "Bendy Bone"
+msgstr "Os souple"
+
+
+msgid "Bendy Bone shape properties"
+msgstr "Propriétés de forme d’os souple"
+
+
+msgid "Custom properties"
+msgstr "Propriétés personnalisées"
+
+
 msgid "Next Keyframe"
 msgstr "Image clé suivante"
 
@@ -54356,8 +54477,8 @@ msgid "Percentage"
 msgstr "Pourcentage"
 
 
-msgid "Weighting factor for the sliding operation"
-msgstr "Pondération pour l’opération de glissement"
+msgid "Weighting factor for which keyframe is favored more"
+msgstr "Facteur pondéré pour choisir quelles frame est la plus favorisée"
 
 
 msgid "Previous Keyframe"
@@ -63160,10 +63281,6 @@ msgid "Make hairs stand up"
 msgstr "Rendre les cheveux “rigides”"
 
 
-msgid "Cut"
-msgstr "Couper"
-
-
 msgid "Cut hairs"
 msgstr "Couper cheveux"
 
@@ -64880,6 +64997,10 @@ msgid "Accelerator"
 msgstr "Accélérateur"
 
 
+msgid "Single Program"
+msgstr "Programme unique"
+
+
 msgid "OpenCL Kernel Type"
 msgstr "Type de noyau OpenCL"
 
@@ -64906,6 +65027,10 @@ msgstr "AVX"
 
 msgid "AVX2"
 msgstr "AVX2"
+
+
+msgid "Split Kernel"
+msgstr "Noyau divisé"
 
 
 msgid "SSE2"
@@ -79565,6 +79690,14 @@ msgid "Allow any .blend file to run scripts automatically (unsafe with blend fil
 msgstr "Permettre à n’importe quel fichier .blend de lancer automatiquement des scripts (risqué avec des fichiers .blend provenant de sources non fiables)"
 
 
+msgid "OpenGL Depth Picking"
+msgstr "Depth Picking OpenGL"
+
+
+msgid "Use the depth buffer for picking 3D View selection"
+msgstr "Utiliser le tampon de profondeur pour la sélection dans la vue 3D"
+
+
 msgid "Automatically convert all new tabs into spaces for new and loaded text files"
 msgstr "Convertir automatiquement toutes les nouvelles tabulations en espaces, pour les fichiers textes nouveaux ou chargés"
 
@@ -80570,18 +80703,8 @@ msgstr "Occlure les objets avec la couleur d’environnement à mesure qu’ils 
 
 
 msgctxt "Operator"
-msgid "Wm:"
-msgstr "Wm :"
-
-
-msgctxt "Operator"
-msgid "Sculpt:"
-msgstr "Sculpture :"
-
-
-msgctxt "Operator"
-msgid "Anim:"
-msgstr "Anim :"
+msgid "Info:"
+msgstr "Info :"
 
 
 msgctxt "Operator"
@@ -80590,48 +80713,13 @@ msgstr "Peinture dyn :"
 
 
 msgctxt "Operator"
-msgid "Export_anim:"
-msgstr "Export anim :"
+msgid "Scene:"
+msgstr "Scène :"
 
 
 msgctxt "Operator"
-msgid "Script:"
-msgstr "Script :"
-
-
-msgctxt "Operator"
-msgid "Surface:"
-msgstr "Surface :"
-
-
-msgctxt "Operator"
-msgid "Export_animation:"
-msgstr "Export animation :"
-
-
-msgctxt "Operator"
-msgid "Outliner:"
-msgstr "Outliner :"
-
-
-msgctxt "Operator"
-msgid "Cloth:"
-msgstr "Tissu :"
-
-
-msgctxt "Operator"
-msgid "Export_mesh:"
-msgstr "Export mesh :"
-
-
-msgctxt "Operator"
-msgid "Lattice:"
-msgstr "Lattice :"
-
-
-msgctxt "Operator"
-msgid "Console:"
-msgstr "Console :"
+msgid "Texture:"
+msgstr "Texture :"
 
 
 msgctxt "Operator"
@@ -80640,128 +80728,8 @@ msgstr "Export scène :"
 
 
 msgctxt "Operator"
-msgid "Clip:"
-msgstr "Clip :"
-
-
-msgctxt "Operator"
-msgid "Transform:"
-msgstr "Transformation :"
-
-
-msgctxt "Operator"
-msgid "Import_curve:"
-msgstr "Import courbe :"
-
-
-msgctxt "Operator"
-msgid "Paintcurve:"
-msgstr "Courbe peinture :"
-
-
-msgctxt "Operator"
-msgid "Cycles:"
-msgstr "Cycles :"
-
-
-msgctxt "Operator"
-msgid "Ui:"
-msgstr "Ui :"
-
-
-msgctxt "Operator"
-msgid "Render:"
-msgstr "Rendu :"
-
-
-msgctxt "Operator"
-msgid "Curve:"
-msgstr "Courbe :"
-
-
-msgctxt "Operator"
-msgid "Mball:"
-msgstr "Mballe :"
-
-
-msgctxt "Operator"
-msgid "Cachefile:"
-msgstr "Fichier cache :"
-
-
-msgctxt "Operator"
-msgid "Ed:"
-msgstr "Éditeur :"
-
-
-msgctxt "Operator"
-msgid "Material:"
-msgstr "Matériau :"
-
-
-msgctxt "Operator"
-msgid "Armature:"
-msgstr "Armature :"
-
-
-msgctxt "Operator"
-msgid "Poselib:"
-msgstr "Pose biblio :"
-
-
-msgctxt "Operator"
-msgid "Constraint:"
-msgstr "Contrainte :"
-
-
-msgctxt "Operator"
-msgid "Sketch:"
-msgstr "Esquisse :"
-
-
-msgctxt "Operator"
-msgid "Logic:"
-msgstr "Logique :"
-
-
-msgctxt "Operator"
-msgid "Text:"
-msgstr "Texte :"
-
-
-msgctxt "Operator"
-msgid "Mathvis:"
-msgstr "Mathvis :"
-
-
-msgctxt "Operator"
-msgid "Nla:"
-msgstr "Nla :"
-
-
-msgctxt "Operator"
-msgid "Import_scene:"
-msgstr "Import scène :"
-
-
-msgctxt "Operator"
-msgid "Particle:"
-msgstr "Particule :"
-
-
-msgctxt "Operator"
-msgid "Buttons:"
-msgstr "Boutons :"
-
-
-msgctxt "Operator"
-msgid "Node:"
-msgstr "Nœud :"
-
-
-msgctxt "Operator"
-msgid "Sequencer:"
-msgstr "Séquenceur :"
+msgid "Export_shape:"
+msgstr "Export forme :"
 
 
 msgctxt "Operator"
@@ -80770,88 +80738,48 @@ msgstr "Import anim :"
 
 
 msgctxt "Operator"
-msgid "Brush:"
-msgstr "Brosse :"
+msgid "Paintcurve:"
+msgstr "Courbe peinture :"
 
 
 msgctxt "Operator"
-msgid "Lamp:"
-msgstr "Lampe :"
+msgid "Ed:"
+msgstr "Éditeur :"
 
 
 msgctxt "Operator"
-msgid "Blender_id:"
-msgstr "Blender id :"
+msgid "Node:"
+msgstr "Nœud :"
 
 
 msgctxt "Operator"
-msgid "Info:"
-msgstr "Info :"
+msgid "Mball:"
+msgstr "Mballe :"
 
 
 msgctxt "Operator"
-msgid "Pose:"
-msgstr "Pose :"
+msgid "Surface:"
+msgstr "Surface :"
 
 
 msgctxt "Operator"
-msgid "Group:"
-msgstr "Groupe :"
+msgid "Text:"
+msgstr "Texte :"
 
 
 msgctxt "Operator"
-msgid "Export_blend:"
-msgstr "Export blend :"
+msgid "Poselib:"
+msgstr "Pose biblio :"
 
 
 msgctxt "Operator"
-msgid "Ptcache:"
-msgstr "Cache point :"
+msgid "Wm:"
+msgstr "Wm :"
 
 
 msgctxt "Operator"
-msgid "Rigidbody:"
-msgstr "Corps rigide :"
-
-
-msgctxt "Operator"
-msgid "Mesh:"
-msgstr "Mesh :"
-
-
-msgctxt "Operator"
-msgid "Scene:"
-msgstr "Scène :"
-
-
-msgctxt "Operator"
-msgid "View2d:"
-msgstr "Vue 2D :"
-
-
-msgctxt "Operator"
-msgid "Palette:"
-msgstr "Palette :"
-
-
-msgctxt "Operator"
-msgid "Boid:"
-msgstr "Boïd :"
-
-
-msgctxt "Operator"
-msgid "File:"
-msgstr "Fichier :"
-
-
-msgctxt "Operator"
-msgid "Camera:"
-msgstr "Caméra :"
-
-
-msgctxt "Operator"
-msgid "Fluid:"
-msgstr "Fluide :"
+msgid "Render:"
+msgstr "Rendu :"
 
 
 msgctxt "Operator"
@@ -80860,43 +80788,83 @@ msgstr "Zones sûres :"
 
 
 msgctxt "Operator"
-msgid "Gpencil:"
-msgstr "CrayonG :"
+msgid "Nla:"
+msgstr "Nla :"
 
 
 msgctxt "Operator"
-msgid "Action:"
-msgstr "Action :"
+msgid "Outliner:"
+msgstr "Outliner :"
 
 
 msgctxt "Operator"
-msgid "Uv:"
-msgstr "Uv :"
+msgid "Mathvis:"
+msgstr "Mathvis :"
 
 
 msgctxt "Operator"
-msgid "World:"
-msgstr "Monde :"
+msgid "Object:"
+msgstr "Objet :"
 
 
 msgctxt "Operator"
-msgid "Graph:"
-msgstr "Graphe :"
+msgid "Sound:"
+msgstr "Audio :"
 
 
 msgctxt "Operator"
-msgid "Mask:"
-msgstr "Masque :"
+msgid "Brush:"
+msgstr "Brosse :"
 
 
 msgctxt "Operator"
-msgid "Font:"
-msgstr "Polices :"
+msgid "Sequencer:"
+msgstr "Séquenceur :"
 
 
 msgctxt "Operator"
-msgid "Paint:"
-msgstr "Peinture :"
+msgid "Import_curve:"
+msgstr "Import courbe :"
+
+
+msgctxt "Operator"
+msgid "Console:"
+msgstr "Console :"
+
+
+msgctxt "Operator"
+msgid "Import_shape:"
+msgstr "Import forme :"
+
+
+msgctxt "Operator"
+msgid "View3d:"
+msgstr "Vue 3D :"
+
+
+msgctxt "Operator"
+msgid "Lamp:"
+msgstr "Lampe :"
+
+
+msgctxt "Operator"
+msgid "Export_blend:"
+msgstr "Export blend :"
+
+
+msgctxt "Operator"
+msgid "Import_scene:"
+msgstr "Import scène :"
+
+
+msgctxt "Operator"
+msgid "Cachefile:"
+msgstr "Fichier cache :"
+
+
+msgctxt "Operator"
+msgid "Transform:"
+msgstr "Transformation :"
 
 
 msgctxt "Operator"
@@ -80905,8 +80873,153 @@ msgstr "Temps :"
 
 
 msgctxt "Operator"
-msgid "Export_shape:"
-msgstr "Export forme :"
+msgid "Paint:"
+msgstr "Peinture :"
+
+
+msgctxt "Operator"
+msgid "World:"
+msgstr "Monde :"
+
+
+msgctxt "Operator"
+msgid "Mesh:"
+msgstr "Mesh :"
+
+
+msgctxt "Operator"
+msgid "Import_mesh:"
+msgstr "Import mesh :"
+
+
+msgctxt "Operator"
+msgid "Ptcache:"
+msgstr "Cache point :"
+
+
+msgctxt "Operator"
+msgid "Armature:"
+msgstr "Armature :"
+
+
+msgctxt "Operator"
+msgid "Cycles:"
+msgstr "Cycles :"
+
+
+msgctxt "Operator"
+msgid "Font:"
+msgstr "Polices :"
+
+
+msgctxt "Operator"
+msgid "Palette:"
+msgstr "Palette :"
+
+
+msgctxt "Operator"
+msgid "Buttons:"
+msgstr "Boutons :"
+
+
+msgctxt "Operator"
+msgid "Export_mesh:"
+msgstr "Export mesh :"
+
+
+msgctxt "Operator"
+msgid "Group:"
+msgstr "Groupe :"
+
+
+msgctxt "Operator"
+msgid "Export_anim:"
+msgstr "Export anim :"
+
+
+msgctxt "Operator"
+msgid "Sketch:"
+msgstr "Esquisse :"
+
+
+msgctxt "Operator"
+msgid "Curve:"
+msgstr "Courbe :"
+
+
+msgctxt "Operator"
+msgid "Blender_id:"
+msgstr "Blender id :"
+
+
+msgctxt "Operator"
+msgid "View2d:"
+msgstr "Vue 2D :"
+
+
+msgctxt "Operator"
+msgid "Anim:"
+msgstr "Anim :"
+
+
+msgctxt "Operator"
+msgid "Ui:"
+msgstr "Ui :"
+
+
+msgctxt "Operator"
+msgid "Pose:"
+msgstr "Pose :"
+
+
+msgctxt "Operator"
+msgid "Screen:"
+msgstr "Écran :"
+
+
+msgctxt "Operator"
+msgid "Fluid:"
+msgstr "Fluide :"
+
+
+msgctxt "Operator"
+msgid "Lattice:"
+msgstr "Lattice :"
+
+
+msgctxt "Operator"
+msgid "Cloth:"
+msgstr "Tissu :"
+
+
+msgctxt "Operator"
+msgid "Sculpt:"
+msgstr "Sculpture :"
+
+
+msgctxt "Operator"
+msgid "Constraint:"
+msgstr "Contrainte :"
+
+
+msgctxt "Operator"
+msgid "Script:"
+msgstr "Script :"
+
+
+msgctxt "Operator"
+msgid "Action:"
+msgstr "Action :"
+
+
+msgctxt "Operator"
+msgid "Camera:"
+msgstr "Caméra :"
+
+
+msgctxt "Operator"
+msgid "Logic:"
+msgstr "Logique :"
 
 
 msgctxt "Operator"
@@ -80920,23 +81033,48 @@ msgstr "Mocap :"
 
 
 msgctxt "Operator"
-msgid "Texture:"
-msgstr "Texture :"
+msgid "Particle:"
+msgstr "Particule :"
 
 
 msgctxt "Operator"
-msgid "View3d:"
-msgstr "Vue 3D :"
+msgid "File:"
+msgstr "Fichier :"
 
 
 msgctxt "Operator"
-msgid "Import_shape:"
-msgstr "Import forme :"
+msgid "Clip:"
+msgstr "Clip :"
 
 
 msgctxt "Operator"
-msgid "Object:"
-msgstr "Objet :"
+msgid "Mask:"
+msgstr "Masque :"
+
+
+msgctxt "Operator"
+msgid "Rigidbody:"
+msgstr "Corps rigide :"
+
+
+msgctxt "Operator"
+msgid "Uv:"
+msgstr "Uv :"
+
+
+msgctxt "Operator"
+msgid "Gpencil:"
+msgstr "CrayonG :"
+
+
+msgctxt "Operator"
+msgid "Graph:"
+msgstr "Graphe :"
+
+
+msgctxt "Operator"
+msgid "Material:"
+msgstr "Matériau :"
 
 
 msgctxt "Operator"
@@ -80945,18 +81083,13 @@ msgstr "Marqueur :"
 
 
 msgctxt "Operator"
-msgid "Screen:"
-msgstr "Écran :"
+msgid "Boid:"
+msgstr "Boïd :"
 
 
 msgctxt "Operator"
-msgid "Import_mesh:"
-msgstr "Import mesh :"
-
-
-msgctxt "Operator"
-msgid "Sound:"
-msgstr "Audio :"
+msgid "Export_animation:"
+msgstr "Export animation :"
 
 
 msgctxt "WindowManager"
@@ -86880,6 +87013,14 @@ msgid "Add-on Tutorial"
 msgstr "Tutoriel d’addon"
 
 
+msgid "Multiple add-ons with the same name found!"
+msgstr "Il y a plusieurs add-ons du même nom !"
+
+
+msgid "Please delete one of each pair:"
+msgstr "Merci de supprimer l’un de chaque paire :"
+
+
 msgid "Missing script files"
 msgstr "Fichiers de script manquants"
 
@@ -86891,6 +87032,10 @@ msgstr "Traduire :"
 
 msgid "New Data"
 msgstr "Nouvelles données"
+
+
+msgid ":"
+msgstr ":"
 
 
 msgid "%s: %s"
@@ -87710,6 +87855,10 @@ msgstr "Échelle vers delta"
 
 msgid "All Transforms to Deltas"
 msgstr "Toutes les transformations vers delta"
+
+
+msgid "Visual Geometry to Mesh"
+msgstr "Géométrie visuelle vers mesh"
 
 
 msgctxt "Operator"
@@ -91616,6 +91765,10 @@ msgid "Baking map saved to internal image, save it externally or pack it"
 msgstr "Carte de pré-calcul enregistrée dans une image interne, enregistrez-la ou empaquetez-la"
 
 
+msgid "Object \"%s\" is not on a scene layer"
+msgstr "L’objet “%s” n’est pas sur un calque de scène"
+
+
 msgid "Object \"%s\" is not a mesh"
 msgstr "L’objet “%s” n’est pas un mesh"
 
@@ -93032,14 +93185,6 @@ msgid "Prop:"
 msgstr "Prop :"
 
 
-msgid "Bone 1"
-msgstr "Os 1"
-
-
-msgid "Bone 2"
-msgstr "Os 2"
-
-
 msgid "Update Dependencies"
 msgstr "Mettre à jour dépendances"
 
@@ -93886,16 +94031,16 @@ msgid "Can't edit library linked object"
 msgstr "Impossible d’éditer un objet de bibliothèque lié"
 
 
+msgid "Cannot delete indirectly linked library '%s'"
+msgstr "Impossible de supprimer la bibliothèque liée indirectement “%s”"
+
+
 msgid "Cannot delete indirectly linked id '%s'"
 msgstr "Impossible de supprimer l’id lié indirectement “%s”"
 
 
 msgid "Cannot delete id '%s', indirectly used data-blocks need at least one user"
 msgstr "Impossible de supprimer l’id “%s”, les blocs de données utilisés indirectement doivent avoir au moins un utilisateur"
-
-
-msgid "Cannot delete indirectly linked library '%s'"
-msgstr "Impossible de supprimer la bibliothèque liée indirectement “%s”"
 
 
 msgid "Invalid old/new ID pair ('%s' / '%s')"
@@ -95797,6 +95942,34 @@ msgstr "OpenSubdiv est désactivé à cause de dépendances"
 
 msgid "OpenSubdiv is not supported in edit mode"
 msgstr "OpenSubDiv n’est pas supporté en mode Edit"
+
+
+msgid "Out of memory"
+msgstr "Pas assez de mémoire"
+
+
+msgid "Target has edges with more than two polygons"
+msgstr "La cible a des arrêtes avec plus de deux polygones"
+
+
+msgid "Target contains concave polygons"
+msgstr "La cible a des polygones concaves"
+
+
+msgid "Target contains overlapping verts"
+msgstr "La cible a des vertices superposés"
+
+
+msgid "Target contains invalid polygons"
+msgstr "La cible a des polygones non valides"
+
+
+msgid "Verts changed from %u to %u"
+msgstr "Vertices changés de %u à %u"
+
+
+msgid "Target polygons changed from %u to %u"
+msgstr "Les polygones cible ont changé de %u à %u"
 
 
 msgid "From/To objects must be set"
