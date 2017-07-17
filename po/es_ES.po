@@ -1,9 +1,9 @@
 
 msgid ""
 msgstr ""
-"Project-Id-Version: Blender 2.78 (sub 5) (b'794311c92bb')\n"
+"Project-Id-Version: Blender 2.78 (sub 5) (b'bc8a9c47c68')\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-06-16 12:51:46\n"
+"POT-Creation-Date: 2017-07-17 09:21:13\n"
 "PO-Revision-Date: \n"
 "Last-Translator: Gabriel Gazzan <gabcorreo@gmail.com>\n"
 "Language-Team: Español <gabcorreo@gmail.com>\n"
@@ -3069,7 +3069,7 @@ msgstr "Difusión"
 
 
 msgid "Glossy"
-msgstr "Reflexión"
+msgstr "Reflectividad"
 
 
 msgid "Transmission"
@@ -5401,7 +5401,7 @@ msgstr "Dispositivo de visualización"
 
 
 msgid "Display device name"
-msgstr "Nombre del dispositivo de visualización"
+msgstr "Tipo de dispositivo de visualización"
 
 
 msgid "Default"
@@ -5418,6 +5418,10 @@ msgstr "Espacio de color de origen"
 
 msgid "Color space of the image or movie on disk"
 msgstr "Espacio de color de la imagen o película en el disco"
+
+
+msgid "Log based filmic shaper with 16.5 stops of latitude, and 25 stops of dynamic range"
+msgstr "Espacio de color fílmico logarítmico, con una latitud de 16,5 paradas y un rango dinámico de 25 paradas."
 
 
 msgid "Rec. 709 (Full Range), Blender native linear space"
@@ -5441,7 +5445,7 @@ msgstr "Conversión simple de video desde un espacio sRGB con gama 2.2"
 
 
 msgid "Do not perform any color transform on load, treat colors as in scene linear space already"
-msgstr "No realizar ninguna transformación de color al cargar, tratar a los colores como si ya se encontraran en el espacio lineal de la escena"
+msgstr "No realizar ninguna transformación de color al cargar, y tratar a los colores como si ya se encontraran en el espacio lineal de la escena"
 
 
 msgid "Color Space"
@@ -5449,11 +5453,11 @@ msgstr "Espacio de color"
 
 
 msgid "Color space that the sequencer operates in"
-msgstr "Espacio de color en que opera el secuenciador"
+msgstr "Espacio de color en el que opera el secuenciador"
 
 
 msgid "Color management settings used for displaying images on the display"
-msgstr "Opciones de administración de color usadas para visualizar imágenes en pantalla"
+msgstr "Opciones de administración de color, usadas para visualizar imágenes en pantalla"
 
 
 msgid "Curve"
@@ -5461,7 +5465,7 @@ msgstr "Curva"
 
 
 msgid "Color curve mapping applied before display transform"
-msgstr "Curva de mapeo de colores aplicada antes del procesamiento final"
+msgstr "Curva de mapeo de colores aplicada antes de la transformación de visualización"
 
 
 msgid "Exposure"
@@ -5469,7 +5473,7 @@ msgstr "Exposición"
 
 
 msgid "Exposure (stops) applied before display transform"
-msgstr "Exposición (paradas de obturación) aplicada antes del procesamiento final"
+msgstr "Exposición (paradas de obturación) aplicada antes de la transformación de visualización"
 
 
 msgid "Gamma"
@@ -5477,11 +5481,11 @@ msgstr "Gama"
 
 
 msgid "Amount of gamma modification applied after display transform"
-msgstr "Cantidad de modificación gama aplicada luego del procesamiento final"
+msgstr "Cantidad de modificación gama aplicada luego de la transformación de visualización"
 
 
 msgid "Additional transform applied before view transform for an artistic needs"
-msgstr "Transformación artística adicional aplicada antes de la transformación en la vista"
+msgstr "Transformación adicional aplicada con fines artísticos, antes de la transformación de visualización"
 
 
 msgid "Do not modify image in an artistic manner"
@@ -5493,19 +5497,19 @@ msgstr "Usar curvas"
 
 
 msgid "Use RGB curved for pre-display transformation"
-msgstr "Usar curvas RVA antes del procesamiento final"
+msgstr "Usar curvas RVA antes de la transformación de visualización"
 
 
 msgid "View Transform"
-msgstr "Transformación de vista"
+msgstr "Transformación de visualización"
 
 
 msgid "View used when converting image to a display space"
-msgstr "Vista usada al convertir la imagen a un espacio de visualización"
+msgstr "Transformación usada para convertir la imagen a un espacio de visualización"
 
 
 msgid "Do not perform any color transform on display, use old non-color managed technique for display"
-msgstr "No realizar ninguna transformación de color al visualizar, usando la antigua técnica sin administración de color"
+msgstr "No realizar ninguna transformación de visualización de color, usando en cambio la antigua técnica sin administración de color"
 
 
 msgid "Color Mapping"
@@ -8205,10 +8209,6 @@ msgid "Safe area for general elements in a different aspect ratio"
 msgstr "Área de seguridad para elementos generales, al utilizar otra proporción de imagen"
 
 
-msgid "Title Safe margins"
-msgstr "Margen de títulos"
-
-
 msgid "Safe area for text and graphics"
 msgstr "Área de seguridad para textos y gráficos"
 
@@ -9912,7 +9912,7 @@ msgstr "Los objetos más cercanos que este valor no son visibles en el mapa"
 
 
 msgid "Number of times a map will be rendered recursively (mirror effects)"
-msgstr "Cantidad de veces que un mapa será procesado recursivamente (efectos de reflexión)"
+msgstr "Cantidad de veces que un mapa será procesado recursivamente (en efectos de reflectividad)"
 
 
 msgid "Validity"
@@ -17753,11 +17753,11 @@ msgstr "Usar coordenadas UV para mapear la imagen"
 
 
 msgid "Reflection"
-msgstr "Reflexión"
+msgstr "Reflectividad"
 
 
 msgid "Use reflection mapping for mapping the image"
-msgstr "Usar mapeo de reflexión para mapear la imagen"
+msgstr "Usar mapeo de reflectividad para mapear la imagen"
 
 
 msgid "Packed File"
@@ -17957,7 +17957,7 @@ msgstr "Ver ya procesada"
 
 
 msgid "Apply render part of display transformation when displaying this image on the screen"
-msgstr "Muestra esta imagen con la transformación de color ya aplicada"
+msgstr "Muestra esta imagen con la transformación de visualización de color ya aplicada"
 
 
 msgid "Views Format"
@@ -18811,7 +18811,7 @@ msgstr "Intensidad difusión"
 
 
 msgid "Amount of diffuse reflection"
-msgstr "Cantidad de reflexión difusa"
+msgstr "Cantidad de reflectividad difusa"
 
 
 msgid "Diffuse Ramp"
@@ -18971,11 +18971,11 @@ msgstr "El color de la línea de mayor prioridad será el usado en los límites 
 
 
 msgid "Mirror Color"
-msgstr "Color reflexión"
+msgstr "Color reflectividad"
 
 
 msgid "Mirror color of the material"
-msgstr "Color de reflexión del material"
+msgstr "Color de reflectividad del material"
 
 
 msgid "Node tree for node based materials"
@@ -19059,11 +19059,11 @@ msgstr "Gran esfera con entorno de cielo"
 
 
 msgid "Raytrace Mirror"
-msgstr "Reflexión por trazado de rayos"
+msgstr "Reflectividad por trazado de rayos"
 
 
 msgid "Raytraced reflection settings for the material"
-msgstr "Opciones de reflexión por trazado de rayos del material"
+msgstr "Opciones de reflectividad por trazado de rayos del material"
 
 
 msgid "Raytrace Transparency"
@@ -19155,7 +19155,7 @@ msgstr "Definición especularidad"
 
 
 msgid "How hard (sharp) the specular reflection is"
-msgstr "Qué tan definida (dura) es la reflexión especular"
+msgstr "Qué tan definida es la reflectividad"
 
 
 msgid "Specular Intensity"
@@ -19163,7 +19163,7 @@ msgstr "Intensidad especularidad"
 
 
 msgid "How intense (bright) the specular reflection is"
-msgstr "Qué tan intensa (brillante) es la reflexión especular"
+msgstr "Qué tan intensa es la reflectividad"
 
 
 msgid "Specular IOR"
@@ -28107,19 +28107,19 @@ msgstr "Alínea los objetos dinámicos del juego a lo largo de la normal de la s
 
 
 msgid "Material Raytrace Mirror"
-msgstr "Reflexión por trazado de rayos del material"
+msgstr "Reflectividad por trazado de rayos del material"
 
 
 msgid "Raytraced reflection settings for a Material data-block"
-msgstr "Opciones de reflexión por trazado de rayos para el bloque de datos de Material"
+msgstr "Opciones de reflectividad por trazado de rayos para el bloque de datos de material"
 
 
 msgid "Maximum allowed number of light inter-reflections"
-msgstr "Cantidad máxima permitida de inter reflexiones de la luz"
+msgstr "Cantidad máxima permitida de inter reflejos de la luz"
 
 
 msgid "Maximum distance of reflected rays (reflections further than this range fade to sky color or material color)"
-msgstr "Distancia máxima de los rayos reflejados (las reflexiones sucesivas se fundirán al color del cielo o del material)"
+msgstr "Distancia máxima de los rayos reflejados (los reflejos sucesivos se fundirán al color del cielo o del material)"
 
 
 msgid "Fade-out Color"
@@ -28131,7 +28131,7 @@ msgstr "El color que toman los rayos que no impactan dentro de la distancia máx
 
 
 msgid "Power of Fresnel for mirror reflection"
-msgstr "Potencia del método Fresnel para las reflexiones"
+msgstr "Potencia del método Fresnel para los reflejos"
 
 
 msgid "Fresnel Factor"
@@ -28147,19 +28147,19 @@ msgstr "Anisotropía"
 
 
 msgid "The shape of the reflection, from 0.0 (circular) to 1.0 (fully stretched along the tangent"
-msgstr "La forma de la reflexión, de 0.0 (circular) a 1.0 (estirada a lo largo de la tangente)"
+msgstr "La forma de los reflejos, de 0.0 (circular) a 1.0 (estirados a lo largo de la tangente)"
 
 
 msgid "Gloss Amount"
-msgstr "Intensidad pulido"
+msgstr "Definición"
 
 
 msgid "The shininess of the reflection (values < 1.0 give diffuse, blurry reflections)"
-msgstr "El pulido de la reflexión (con valores < 1.0 se obtienen reflexiones desenfocadas)"
+msgstr "La definición de la reflectividad (con valores < 1.0 se obtienen reflejos desenfocados)"
 
 
 msgid "Gloss Samples"
-msgstr "Muestras reflexión"
+msgstr "Muestras reflectividad"
 
 
 msgid "Number of cone samples averaged for blurry reflections"
@@ -28167,7 +28167,7 @@ msgstr "Cantidad de muestras cónicas promediadas para obtener el reflejo desenf
 
 
 msgid "Gloss Threshold"
-msgstr "Umbral reflexión"
+msgstr "Umbral reflectividad"
 
 
 msgid "Threshold for adaptive sampling (if a sample contributes less than this amount [as a percentage], sampling is stopped)"
@@ -28179,11 +28179,11 @@ msgstr "Reflectividad"
 
 
 msgid "Amount of mirror reflection for raytrace"
-msgstr "Intensidad de la reflexión por trazado de rayos"
+msgstr "Intensidad de la reflectividad por trazado de rayos"
 
 
 msgid "Enable raytraced reflections"
-msgstr "Habilitar reflexiones por trazado de rayos"
+msgstr "Habilitar reflectividad por trazado de rayos"
 
 
 msgid "Material Raytrace Transparency"
@@ -28239,7 +28239,7 @@ msgstr "Contenedor de material de un objeto"
 
 
 msgid "Link"
-msgstr "VincularRRR"
+msgstr "Vincular"
 
 
 msgid "Link material to object or the object's data"
@@ -28713,7 +28713,7 @@ msgstr "UVs"
 
 
 msgid "Mirror"
-msgstr "Reflexión"
+msgstr "Reflectividad"
 
 
 msgid "Proportional Editing"
@@ -36489,7 +36489,7 @@ msgstr "Devuelve la posición del marcador, relativa al primer marcador del rast
 
 
 msgid "Relative Frame"
-msgstr "Relativa a fotograma"
+msgstr "Fotograma relativo"
 
 
 msgid "Output position of a marker relative to marker at given frame number"
@@ -36706,7 +36706,7 @@ msgstr "Beckmann"
 
 
 msgid "Multiscatter GGX"
-msgstr "GGX Dispersión múltiple"
+msgstr "GGX con dispersión múltiple"
 
 
 msgid "Ashikhmin-Shirley"
@@ -42485,10 +42485,6 @@ msgid "Apply Unit"
 msgstr "Aplicar unidad"
 
 
-msgid "Scale all data according to current Blender size, to match default FBX unit (centimeter, some importers do not handle UnitScaleFactor properly)"
-msgstr "Escala todos los datos para que concuerden con la unidad predefinida de FBX (el centímetro, algunos importadores no son capaces de manipular apropiadamente el atributo UnitScaleFactor)"
-
-
 msgid "Armature FBXNode Type"
 msgstr "Tipo de nodo FBX"
 
@@ -43746,6 +43742,15 @@ msgstr "Borrar todos los fotogramas activos"
 
 msgid "Delete the active frame(s) of all editable Grease Pencil layers"
 msgstr "Borra los fotogramas activos de todas las capas editables de lápiz de cera"
+
+
+msgctxt "Operator"
+msgid "Insert Blank Frame"
+msgstr "Insertar fotograma en blanco"
+
+
+msgid "Insert a blank frame on the current frame (all subsequently existing frames, if any, are shifted right by one frame)"
+msgstr "Insertar un fotograma en blanco en el fotograma actual (si existieran, todos los fotogramas subsiguientes serán desplazados un fotograma hacia la derecha)"
 
 
 msgid "Create blank frame in all layers, not only active"
@@ -45345,7 +45350,7 @@ msgstr "Guardar como procesada"
 
 
 msgid "Apply render part of display transform when saving byte image"
-msgstr "Aplicar transformación de color al guardar como imagen de 8 bits"
+msgstr "Aplicar transformación de visualización de color al guardar como imagen de 8 bits"
 
 
 msgctxt "Operator"
@@ -50604,7 +50609,7 @@ msgstr "Dimensión vertical del mapa capturado (solo externo)"
 
 
 msgid "Filter to combined, diffuse, glossy, transmission and subsurface passes"
-msgstr "Filtrar a las pasadas combinada, de difusión, reflexión, transmisión y transluminiscencia"
+msgstr "Filtrar a las pasadas combinada, de difusión, reflectividad, transmisión y transluminiscencia"
 
 
 msgid "Type of pass to bake, some of them may not be supported by the current render engine"
@@ -53387,10 +53392,6 @@ msgid "Purge All"
 msgstr "Purgar todo"
 
 
-msgid "Clear all orphaned data-blocks without any users from the file (cannot be undone)"
-msgstr "Elimina todos los bloques de datos huérfanos (sin usuarios) del archivo (no puede ser deshecho)"
-
-
 msgctxt "Operator"
 msgid "Drop to Clear Parent"
 msgstr "Soltar para eliminar superior"
@@ -53629,7 +53630,7 @@ msgstr "Permite agregar un contenedor donde pintar una textura"
 
 
 msgid "Ray Mirror"
-msgstr "Reflexión por rayos"
+msgstr "Reflectividad por rayos"
 
 
 msgctxt "Operator"
@@ -56704,10 +56705,6 @@ msgstr "Definir reemplazos en clips seleccionados"
 
 msgid "Enable selected proxies on all selected Movie strips"
 msgstr "Habilita los reemplazos en los clips de película seleccionados"
-
-
-msgid "Override"
-msgstr "Sobrescribir"
 
 
 msgctxt "Operator"
@@ -59845,7 +59842,7 @@ msgstr "Navegación de la vista"
 
 
 msgid "Interactively navigate around the scene (uses the mode (walk/fly) preference)"
-msgstr "Permite navegar interactivamente por la escena (usa la preferencia de modo (caminar/volar))"
+msgstr "Permite navegar interactivamente por la escena (usa la preferencia del modo (transitar/volar))"
 
 
 msgctxt "Operator"
@@ -60326,11 +60323,11 @@ msgstr "Ver desde la cámara activa"
 
 msgctxt "Operator"
 msgid "Walk Navigation"
-msgstr "Caminar"
+msgstr "Transitar"
 
 
 msgid "Interactively walk around the scene"
-msgstr "Caminar interactivamente por la escena"
+msgstr "Transitar interactivamente por la escena"
 
 
 msgctxt "Operator"
@@ -60465,6 +60462,10 @@ msgid "Ogawa"
 msgstr "Ogawa"
 
 
+msgid "End frame of the export, use the default value to take the end frame of the current scene"
+msgstr "Fotograma final de la exportación, usar el valor predefinido para tomar el fotograma final de la escena actual"
+
+
 msgid "Export Hair"
 msgstr "Exportar pelo"
 
@@ -60551,6 +60552,10 @@ msgstr "Apertura de obturador"
 
 msgid "Time at which the shutter is open"
 msgstr "Momento en que se abrirá el obturador"
+
+
+msgid "Start frame of the export, use the default value to take the start frame of the current scene"
+msgstr "Fotograma inicial de la exportación, usar el valor predefinido para tomar el fotograma inicial de la escena actual"
 
 
 msgid "Use Subdivision Schema"
@@ -60766,6 +60771,10 @@ msgid "Apply modifier's render settings"
 msgstr "Aplica las opciones de procesamiento del modificador"
 
 
+msgid "Texture Type"
+msgstr "Tipo de textura"
+
+
 msgid "Transformation type for translation, scale and rotation"
 msgstr "Tipo de transformación para traslación, escala y rotación"
 
@@ -60798,28 +60807,12 @@ msgid "Export all children of selected objects (even if not selected)"
 msgstr "Exporta todos los subordinados a los objetos seleccionados (aunque no estén seleccionados)"
 
 
-msgid "Include Material Textures"
-msgstr "Incluir texturas del material"
-
-
-msgid "Export textures assigned to the object Materials"
-msgstr "Exporta las texturas asignadas a los materiales del objeto"
-
-
 msgid "Include Shape Keys"
 msgstr "Incluir Formas clave"
 
 
 msgid "Export all Shape Keys from Mesh Objects"
 msgstr "Exportar todas las Formas clave de objetos poligonales"
-
-
-msgid "Include UV Textures"
-msgstr "Incluir texturas UV"
-
-
-msgid "Export textures assigned to the object UV Maps"
-msgstr "Exporta las texturas asignadas a los mapas UV del objeto"
 
 
 msgid "Keep Bind Info"
@@ -61325,11 +61318,11 @@ msgstr "Importa la configuración del teclado desde un script Python"
 
 
 msgid "Keep original"
-msgstr "Mantener original"
+msgstr "Conservar original"
 
 
 msgid "Keep original file after copying to configuration folder"
-msgstr "Mantener archivo original luego de copiar a carpeta de configuración"
+msgstr "Conservar el archivo original luego de copiar a carpeta de configuración"
 
 
 msgctxt "Operator"
@@ -65190,7 +65183,7 @@ msgstr "Permite controlar la intensidad de cada pasada de reducción de ruidos (
 
 
 msgid "Glossy Direct"
-msgstr "Reflexión directa"
+msgstr "Reflectividad directa"
 
 
 msgid "Denoise the direct glossy lighting"
@@ -65198,7 +65191,7 @@ msgstr "Reducir ruidos en la iluminación reflejada directa"
 
 
 msgid "Glossy Indirect"
-msgstr "Reflexión indirecta"
+msgstr "Reflectividad indirecta"
 
 
 msgid "Denoise the indirect glossy lighting"
@@ -65234,7 +65227,7 @@ msgstr "Intensidad de la reducción"
 
 
 msgid "Controls neighbor pixel weighting for the denoising filter (lower values preserve more detail, but aren't as smooth)"
-msgstr "Controla la influencia de los píxeles cercanos en el filtro de reducción de ruidos (valores menores preservarán más detalles, pero no ser;an tan suaves)"
+msgstr "Controla la influencia de los píxeles cercanos en el filtro de reducción de ruidos (valores menores preservarán más detalles, pero no serán tan suaves)"
 
 
 msgid "Subsurface Direct"
@@ -65530,7 +65523,7 @@ msgstr "Rebotes de difusión"
 
 
 msgid "Maximum number of diffuse reflection bounces, bounded by total maximum"
-msgstr "Cantidad máxima de rebotes de reflexión difusa, restringida por el máximo total"
+msgstr "Cantidad máxima de rebotes de reflectividad difusa, restringida por el máximo total"
 
 
 msgid "Diffuse Samples"
@@ -65614,19 +65607,19 @@ msgstr "Ancho del filtro de píxeles"
 
 
 msgid "Glossy Bounces"
-msgstr "Rebotes de reflexión"
+msgstr "Rebotes de reflectividad"
 
 
 msgid "Maximum number of glossy reflection bounces, bounded by total maximum"
-msgstr "Cantidad máxima de rebotes de reflexión, restringida por el máximo total"
+msgstr "Cantidad máxima de rebotes de reflectividad, restringida por el máximo total"
 
 
 msgid "Glossy Samples"
-msgstr "Muestras de reflexión"
+msgstr "Muestras de reflectividad"
 
 
 msgid "Number of glossy bounce samples to render for each AA sample"
-msgstr "Reflexión, cantidad de muestras por cada muestra de suavizado de bordes"
+msgstr "Cantidad de muestras de reflectividad por cada muestra de suavizado de bordes"
 
 
 msgid "Light Sampling Threshold"
@@ -66094,11 +66087,11 @@ msgstr "Visibilidad del objeto a los rayos de la cámara"
 
 
 msgid "Object visibility for diffuse reflection rays"
-msgstr "Visibilidad del objeto a los rayos de reflexión difusa"
+msgstr "Visibilidad del objeto a los rayos de reflectividad difusa"
 
 
 msgid "Object visibility for glossy reflection rays"
-msgstr "Visibilidad del objeto a los rayos de reflexión"
+msgstr "Visibilidad del objeto a los rayos de reflectividad"
 
 
 msgid "Object visibility for volume scatter rays"
@@ -66614,11 +66607,11 @@ msgstr "Excluir iluminación indirecta de la imagen Combinada"
 
 
 msgid "Reflection Exclude"
-msgstr "Excluir reflexión"
+msgstr "Excluir reflectividad"
 
 
 msgid "Exclude raytraced reflection pass from combined"
-msgstr "Excluir reflexión de la imagen Combinada"
+msgstr "Excluir reflectividad de la imagen Combinada"
 
 
 msgid "Refraction Exclude"
@@ -66758,19 +66751,19 @@ msgstr "Produce una pasada de iluminación ambiental"
 
 
 msgid "Glossy Color"
-msgstr "Color de reflexión"
+msgstr "Color de reflectividad"
 
 
 msgid "Deliver glossy color pass"
-msgstr "Produce una pasada de color de reflexión"
+msgstr "Produce una pasada de color de reflectividad"
 
 
 msgid "Deliver glossy direct pass"
-msgstr "Produce una pasada de reflexión directa"
+msgstr "Produce una pasada de reflectividad directa"
 
 
 msgid "Deliver glossy indirect pass"
-msgstr "Produce una pasada de reflexión indirecta"
+msgstr "Produce una pasada de reflectividad indirecta"
 
 
 msgid "Deliver indirect lighting pass"
@@ -66798,7 +66791,7 @@ msgstr "Produce una pasada con un índice de objetos"
 
 
 msgid "Deliver raytraced reflection pass"
-msgstr "Produce una pasada de reflexión por trazado de rayos"
+msgstr "Produce una pasada de reflectividad por trazado de rayos"
 
 
 msgid "Refraction"
@@ -66818,7 +66811,7 @@ msgstr "Produce una pasada de especularidad"
 
 
 msgid "Subsurface Color"
-msgstr "Color transluminiscencia"
+msgstr "Color de transluminiscencia"
 
 
 msgid "Deliver subsurface color pass"
@@ -67034,19 +67027,19 @@ msgstr "Capturar valores de alfa (transparencia)"
 
 
 msgid "Mirror Intensity"
-msgstr "Intensidad de reflexión"
+msgstr "Intensidad de reflectividad"
 
 
 msgid "Bake Mirror values"
-msgstr "Capturar valores de reflexión"
+msgstr "Capturar valores de reflectividad"
 
 
 msgid "Mirror Colors"
-msgstr "Colores de reflexión"
+msgstr "Colores de reflectividad"
 
 
 msgid "Bake Mirror colors"
-msgstr "Capturar colores de reflexión"
+msgstr "Capturar colores de reflectividad"
 
 
 msgid "Bake Specular values"
@@ -69367,7 +69360,7 @@ msgstr "Altura del agente"
 
 
 msgid "Minimum height where the agent can still walk"
-msgstr "Altura mínima donde el agente aún puede caminar"
+msgstr "Altura mínima donde el agente aún puede transitar"
 
 
 msgid "Agent Radius"
@@ -70872,6 +70865,14 @@ msgid "Blend Opacity"
 msgstr "Opacidad fundido"
 
 
+msgid "Percentage of how much the strip's colors affect other strips"
+msgstr "Define en qué porcentaje los colores del clip afectan a otros clips"
+
+
+msgid "Method for controlling how the strip combines with other strips"
+msgstr "Método para controlar cómo se combina el clip con otros clips"
+
+
 msgid "Over Drop"
 msgstr "Soltar encima"
 
@@ -70882,6 +70883,10 @@ msgstr "Posición Y del clip de la secuencia"
 
 msgid "Effect fader position"
 msgstr "Posición del efecto de desvanecimiento"
+
+
+msgid "Custom fade value"
+msgstr "Valor de fundido personalizado"
 
 
 msgid "The length of the contents of this strip before the handles are applied"
@@ -70908,6 +70913,10 @@ msgid "Start Offset"
 msgstr "Inicio desplazamiento"
 
 
+msgid "X position where the strip begins"
+msgstr "Posición X donde comienza el clip"
+
+
 msgid "End Still"
 msgstr "Final imagen"
 
@@ -70916,8 +70925,16 @@ msgid "Start Still"
 msgstr "Inicio imagen"
 
 
+msgid "Lock strip so that it cannot be transformed"
+msgstr "Permite bloquear el clip para que no pueda ser transformado"
+
+
 msgid "Modifiers affecting this strip"
 msgstr "Modificadores que afectan a este clip"
+
+
+msgid "Disable strip so that it cannot be viewed in the output"
+msgstr "Permite deshabilitar el clip para que no sea visto en la salida"
 
 
 msgid "Left Handle Selected"
@@ -71097,6 +71114,10 @@ msgid "Multiply Colors"
 msgstr "Multiplicar colores"
 
 
+msgid "Adjust the intensity of the input's color"
+msgstr "Permite ajustar la intensidad del color de origen"
+
+
 msgid "Strobe"
 msgstr "Estrobo"
 
@@ -71211,6 +71232,10 @@ msgstr "Color"
 
 msgid "Sequence strip creating an image filled with a single color"
 msgstr "Clip de la secuencia para crear una imagen de un único color"
+
+
+msgid "Effect Strip color"
+msgstr "Color del clip de efecto"
 
 
 msgid "Cross Sequence"
@@ -71345,6 +71370,18 @@ msgid "Sequence strip creating text"
 msgstr "Clip de la secuencia para crear un texto"
 
 
+msgid "Align the text along the X axis"
+msgstr "Alinear el texto a lo largo del eje X"
+
+
+msgid "Align the image along the Y axis"
+msgstr "Alinear la imagen a lo largo del eje Y"
+
+
+msgid "Text color"
+msgstr "Color del texto"
+
+
 msgid "Size of the text"
 msgstr "Tamaño del texto"
 
@@ -71377,6 +71414,10 @@ msgid "Sequence strip applying affine transformations to other strips"
 msgstr "Clip de secuencia que aplica transformaciones afines a otros clips "
 
 
+msgid "Method to determine how missing pixels are created"
+msgstr "Método para determinar cómo se crearán los píxeles faltantes"
+
+
 msgid "No interpolation"
 msgstr "Sin interpolación"
 
@@ -71389,16 +71430,40 @@ msgid "Bicubic interpolation"
 msgstr "Interpolación bicúbica"
 
 
+msgid "Degrees to rotate the input"
+msgstr "Grados a rotar el origen"
+
+
+msgid "Amount to scale the input in the X axis"
+msgstr "Cantidad a escalar el origen en el eje X"
+
+
+msgid "Amount to scale the input in the Y axis"
+msgstr "Cantidad a escalar el origen en el eje Y"
+
+
 msgid "Translate X"
 msgstr "Traslación X"
+
+
+msgid "Amount to move the input on the X axis"
+msgstr "Cantidad a mover el origen en el eje X"
 
 
 msgid "Translate Y"
 msgstr "Traslación Y"
 
 
+msgid "Amount to move the input on the Y axis"
+msgstr "Cantidad a mover el origen en el eje Y"
+
+
 msgid "Translation Unit"
 msgstr "Unidad de traslación"
+
+
+msgid "Unit of measure to translate the input"
+msgstr "Unidad de medida para trasladar el origen"
 
 
 msgid "Uniform Scale"
@@ -71605,12 +71670,24 @@ msgid "Inverse Gain"
 msgstr "Invertir ganancia"
 
 
+msgid "Invert the gain color`"
+msgstr "Invertir el color de ganancia"
+
+
 msgid "Inverse Gamma"
 msgstr "Invertir gama"
 
 
+msgid "Invert the gamma color"
+msgstr "Invertir el color de gama"
+
+
 msgid "Inverse Lift"
 msgstr "Invertir realce"
+
+
+msgid "Invert the lift color"
+msgstr "Invertir el color de realce"
 
 
 msgid "Color balance lift (shadows)"
@@ -71631,6 +71708,22 @@ msgstr "Recortar"
 
 msgid "Cropping parameters for a sequence strip"
 msgstr "Parámetros de recorte para un clip de la secuencia"
+
+
+msgid "Number of pixels to crop from the right side"
+msgstr "Cantidad de píxeles a recortar del lado derecho"
+
+
+msgid "Number of pixels to crop from the top"
+msgstr "Cantidad de píxeles a recortar del lado superior"
+
+
+msgid "Number of pixels to crop from the left side"
+msgstr "Cantidad de píxeles a recortar del lado izquierdo"
+
+
+msgid "Number of pixels to crop from the bottom"
+msgstr "Cantidad de píxeles a recortar del lado inferior"
 
 
 msgid "Sequence editing data for a Scene data-block"
@@ -71707,6 +71800,10 @@ msgstr "Elemento de secuencia"
 
 msgid "Sequence strip data for a single frame"
 msgstr "Datos de clip de secuencia en un fotograma individual"
+
+
+msgid "Name of the source file"
+msgstr "Nombre del archivo de origen"
 
 
 msgid "Orig Height"
@@ -71793,8 +71890,20 @@ msgid "Bright"
 msgstr "Brillo"
 
 
+msgid "Adjust the luminosity of the colors"
+msgstr "Permite ajustar la luminosidad de los colores"
+
+
+msgid "Adjust the difference in luminosity between pixels"
+msgstr "Permite ajustar la diferencia de luminosidad entre píxeles"
+
+
 msgid "Color balance modifier for sequence strip"
 msgstr "Modificador de balance de color del clip de la secuencia"
+
+
+msgid "Multiply the intensity of each pixel"
+msgstr "Permite multiplicar la intensidad de cada píxel"
 
 
 msgid "RGB curves modifier for sequence strip"
@@ -71811,6 +71920,10 @@ msgstr "Modificador Corrección de tono del clip de la secuencia"
 
 msgid "Tone mapping modifier"
 msgstr "Modificador de mapeo tonal"
+
+
+msgid "Tone mapping algorithm"
+msgstr "Algoritmo de mapeo tonal"
 
 
 msgid "White balance modifier for sequence strip"
@@ -71865,6 +71978,10 @@ msgid "JPEG Quality of proxies to build"
 msgstr "Calidad JPEG de los reemplazos a construir"
 
 
+msgid "Method for reading the inputs timecode"
+msgstr "Método para leer el código de tiempo del origen"
+
+
 msgid "Use images in the order as they are recorded"
 msgstr "Usa la imágenes en el orden en que son grabadas"
 
@@ -71905,8 +72022,16 @@ msgid "Offset X"
 msgstr "Desplazamiento X"
 
 
+msgid "Amount to move the input on the X axis within its boundaries"
+msgstr "Cantidad a mover el origen en el eje X, dentro de los límites"
+
+
 msgid "Offset Y"
 msgstr "Desplazamiento Y"
+
+
+msgid "Amount to move the input on the Y axis within its boundaries"
+msgstr "Cantidad a mover el origen en el eje Y, dentro de los límites"
 
 
 msgid "Collection of Sequences"
@@ -74078,10 +74203,6 @@ msgid "Use active Viewer Node output as backdrop for compositing nodes"
 msgstr "Usar la salida del nodo de visualización activo como fondo para los nodos de composición"
 
 
-msgid "Texture Type"
-msgstr "Tipo de textura"
-
-
 msgid "Type of data to take texture from"
 msgstr "Tipo de dato de donde tomar la textura"
 
@@ -75575,7 +75696,7 @@ msgstr "Color predefinido para texturas que no producen RVA o cuando está habil
 
 
 msgid "Value to use for Ref, Spec, Amb, Emit, Alpha, RayMir, TransLu and Hard"
-msgstr "Valor predefinido a usar para Reflexión, Especularidad, Ambiente, Emisión, Alfa, Reflexión por rayos, Translucidez y Definición"
+msgstr "Valor predefinido a usar para Reflectividad, Especularidad, Ambiente, Emisión, Alfa, Reflectividad por rayos, Translucidez y Definición"
 
 
 msgid "Negate"
@@ -75875,11 +75996,11 @@ msgstr "Cuánto afecta la textura a la dureza"
 
 
 msgid "Mirror Factor"
-msgstr "Factor reflexión"
+msgstr "Factor reflectividad"
 
 
 msgid "Amount texture affects mirror color"
-msgstr "Cuánto afecta la textura al color de reflexión"
+msgstr "Cuánto afecta la textura al color de reflectividad"
 
 
 msgid "Normal Factor"
@@ -75899,15 +76020,15 @@ msgstr "Define el espacio de la imagen del mapa de normales"
 
 
 msgid "Ray Mirror Factor"
-msgstr "Factor reflexión por rayos"
+msgstr "Factor reflectividad por rayos"
 
 
 msgid "Amount texture affects ray mirror"
-msgstr "Cuánto afecta la textura a la reflexión por trazado de rayos"
+msgstr "Cuánto afecta la textura a la reflectividad por trazado de rayos"
 
 
 msgid "Reflection Color Factor"
-msgstr "Factor color de reflexión"
+msgstr "Factor color de reflectividad"
 
 
 msgid "Amount texture affects color of out-scattered light"
@@ -75915,7 +76036,7 @@ msgstr "Cuánto afecta la textura al color de la luz dispersada"
 
 
 msgid "Reflection Factor"
-msgstr "Factor de reflexión"
+msgstr "Factor de reflectividad"
 
 
 msgid "Amount texture affects brightness of out-scattered light"
@@ -75963,7 +76084,7 @@ msgstr "Usar el vector normal como coordenadas de texturizado"
 
 
 msgid "Use reflection vector as texture coordinates"
-msgstr "Usar el vector de reflexión como coordenadas de texturizado"
+msgstr "Usar el vector de reflectividad como coordenadas de texturizado"
 
 
 msgid "Stress"
@@ -76059,7 +76180,7 @@ msgstr "La textura afecta al valor de dureza"
 
 
 msgid "The texture affects the mirror color"
-msgstr "La textura afecta al color de reflexión"
+msgstr "La textura afecta al color de reflectividad"
 
 
 msgid "The texture affects the rendered normal"
@@ -76067,11 +76188,11 @@ msgstr "La textura afecta al procesamiento de las normales"
 
 
 msgid "Ray-Mirror"
-msgstr "Reflexión por rayos"
+msgstr "Reflectividad por rayos"
 
 
 msgid "The texture affects the ray-mirror value"
-msgstr "La textura afecta al valor de reflexión por trazado de rayos"
+msgstr "La textura afecta al valor de reflectividad por trazado de rayos"
 
 
 msgid "The texture affects the reflected light's brightness"
@@ -76878,12 +76999,16 @@ msgid "Last selected point"
 msgstr "Último punto seleccionado"
 
 
+msgid "Vertex Bevel"
+msgstr "Biselar vértices"
+
+
 msgid "Vertex Select"
-msgstr "Vértice seleccionado"
+msgstr "Selección de vértices"
 
 
 msgid "Vertex Size"
-msgstr "Tamaño vértices"
+msgstr "Tamaño de vértices"
 
 
 msgid "Vertex Group Unreferenced"
@@ -79275,11 +79400,11 @@ msgstr "Qué método usar para la navegación de las vistas"
 
 
 msgid "Walk"
-msgstr "Caminar"
+msgstr "Transitar"
 
 
 msgid "Interactively walk or free navigate around the scene"
-msgstr "Permite caminar o navegar libremente por la escena de forma interactiva"
+msgstr "Permite transitar o navegar libremente por la escena de forma interactiva"
 
 
 msgid "Fly"
@@ -79292,6 +79417,10 @@ msgstr "Usa dinámicas de vuelo para navegar la escena"
 
 msgid "Deadzone"
 msgstr "Zona muerta"
+
+
+msgid "Threshold of initial movement needed from the device's rest position"
+msgstr "Umbral inicial de movimiento necesario, a partir de la posición de reposo del dispositivo"
 
 
 msgid "Helicopter Mode"
@@ -79507,11 +79636,11 @@ msgstr "Acerca o aleja como si se estuviera escalando la vista, los movimientos 
 
 
 msgid "Walk Navigation"
-msgstr "Caminar"
+msgstr "Transitar"
 
 
 msgid "Settings for walk navigation mode"
-msgstr "Opciones del modo de navegación Caminar"
+msgstr "Opciones del modo de navegación Transitar"
 
 
 msgid "Wheel Scroll Lines"
@@ -79811,11 +79940,11 @@ msgstr "Textura 2D"
 
 
 msgid "Use CPU for display transform and draw image with 2D texture"
-msgstr "Usa el procesador del equipo para mostrar las tranformaciones y visualiza la imagen mediante una textura 2D"
+msgstr "Usa el procesador del equipo para mostrar las transformaciones de visualización y muestra la imagen mediante una textura 2D"
 
 
 msgid "Use GLSL shaders for display transform and draw image with 2D texture"
-msgstr "Usa sombreadores GLSL para mostrar las tranformaciones y visualiza la imagen mediante una textura 2D"
+msgstr "Usa sombreadores GLSL para mostrar las transformaciones de visualización y muestra la imagen mediante una textura 2D"
 
 
 msgid "DrawPixels"
@@ -79823,7 +79952,7 @@ msgstr "DrawPixels"
 
 
 msgid "Use CPU for display transform and draw image using DrawPixels"
-msgstr "Usa el procesador del equipo para mostrar las tranformaciones y visualiza la imagen mediante la función DrawPixels"
+msgstr "Usa el procesador del equipo para mostrar las transformaciones de visualización y muestra la imagen mediante la función DrawPixels"
 
 
 msgid "Language used for translation"
@@ -80747,7 +80876,7 @@ msgstr "Siempre procesar una imagen fija a partir de la secuencia de datos de v�
 
 
 msgid "Walk navigation settings"
-msgstr "Opciones de navegación Caminar"
+msgstr "Opciones de navegación al transitar"
 
 
 msgid "Jump Height"
@@ -80775,7 +80904,7 @@ msgstr "Intervalo de deformación de tiempo al teletransportar en modo de navega
 
 
 msgid "Walk with gravity, or free navigate"
-msgstr "Caminar usando gravedad o libremente"
+msgstr "Transitar usando gravedad o libremente"
 
 
 msgid "Reverse Mouse"
@@ -80791,15 +80920,15 @@ msgstr "Altura de la vista"
 
 
 msgid "View distance from the floor when walking"
-msgstr "Distancia de la vista al piso, al caminar"
+msgstr "Distancia de la vista al piso, al transitar"
 
 
 msgid "Walk Speed"
-msgstr "Velocidad al caminar"
+msgstr "Velocidad al transitar"
 
 
 msgid "Base speed for walking and flying"
-msgstr "Velocidad de base al caminar o volar"
+msgstr "Velocidad de base al transitar o volar"
 
 
 msgid "Speed Factor"
@@ -81039,138 +81168,8 @@ msgstr "Ocluír objetos con el color de ambiente cuando estén muy lejos"
 
 
 msgctxt "Operator"
-msgid "Export_blend:"
-msgstr "Blend_exp:"
-
-
-msgctxt "Operator"
-msgid "Scene:"
-msgstr "Escena:"
-
-
-msgctxt "Operator"
-msgid "Cloth:"
-msgstr "Ropa:"
-
-
-msgctxt "Operator"
-msgid "Cachefile:"
-msgstr "Arch_caché:"
-
-
-msgctxt "Operator"
-msgid "Mathvis:"
-msgstr "Mathvis:"
-
-
-msgctxt "Operator"
-msgid "Export_animation:"
-msgstr "Animación_exp:"
-
-
-msgctxt "Operator"
-msgid "Sculpt:"
-msgstr "Escultura:"
-
-
-msgctxt "Operator"
-msgid "Curve:"
-msgstr "Curva:"
-
-
-msgctxt "Operator"
-msgid "Armature:"
-msgstr "Esqueleto:"
-
-
-msgctxt "Operator"
-msgid "Info:"
-msgstr "Info:"
-
-
-msgctxt "Operator"
-msgid "Import_scene:"
-msgstr "Importar_escena:"
-
-
-msgctxt "Operator"
-msgid "File:"
-msgstr "Archivo:"
-
-
-msgctxt "Operator"
-msgid "Transform:"
-msgstr "Transformación:"
-
-
-msgctxt "Operator"
-msgid "Camera:"
-msgstr "Cámara:"
-
-
-msgctxt "Operator"
-msgid "Nla:"
-msgstr "ANL:"
-
-
-msgctxt "Operator"
-msgid "Graph:"
-msgstr "Gráfica:"
-
-
-msgctxt "Operator"
-msgid "Export_mesh:"
-msgstr "Malla_exp:"
-
-
-msgctxt "Operator"
-msgid "Console:"
-msgstr "Consola:"
-
-
-msgctxt "Operator"
-msgid "View3d:"
-msgstr "Vista3D:"
-
-
-msgctxt "Operator"
-msgid "Lattice:"
-msgstr "Jaula:"
-
-
-msgctxt "Operator"
-msgid "Dpaint:"
-msgstr "PinturaD:"
-
-
-msgctxt "Operator"
-msgid "Render:"
-msgstr "Procesamiento:"
-
-
-msgctxt "Operator"
-msgid "Particle:"
-msgstr "Partícula:"
-
-
-msgctxt "Operator"
-msgid "Group:"
-msgstr "Grupo:"
-
-
-msgctxt "Operator"
-msgid "Sequencer:"
-msgstr "Secuenciador:"
-
-
-msgctxt "Operator"
-msgid "Import_mesh:"
-msgstr "Malla_imp:"
-
-
-msgctxt "Operator"
-msgid "Export_scene:"
-msgstr "Escena_exp:"
+msgid "Clip:"
+msgstr "Clip:"
 
 
 msgctxt "Operator"
@@ -81179,8 +81178,13 @@ msgstr "Boceto:"
 
 
 msgctxt "Operator"
-msgid "Constraint:"
-msgstr "Restricción:"
+msgid "Anim:"
+msgstr "Anim:"
+
+
+msgctxt "Operator"
+msgid "Font:"
+msgstr "Tipografía:"
 
 
 msgctxt "Operator"
@@ -81189,13 +81193,8 @@ msgstr "Boid:"
 
 
 msgctxt "Operator"
-msgid "Uv:"
-msgstr "UV:"
-
-
-msgctxt "Operator"
-msgid "Marker:"
-msgstr "Marcador:"
+msgid "Sequencer:"
+msgstr "Secuenciador:"
 
 
 msgctxt "Operator"
@@ -81204,63 +81203,28 @@ msgstr "BiblPoses:"
 
 
 msgctxt "Operator"
-msgid "Action:"
-msgstr "Acción:"
-
-
-msgctxt "Operator"
-msgid "Clip:"
-msgstr "Clip:"
-
-
-msgctxt "Operator"
 msgid "Ptcache:"
 msgstr "CachéPts:"
 
 
 msgctxt "Operator"
-msgid "Safe_areas:"
-msgstr "Áreas seguridad:"
+msgid "Outliner:"
+msgstr "Listado:"
 
 
 msgctxt "Operator"
-msgid "Mball:"
-msgstr "Mbola:"
+msgid "Camera:"
+msgstr "Cámara:"
 
 
 msgctxt "Operator"
-msgid "Script:"
-msgstr "Script:"
+msgid "Graph:"
+msgstr "Gráfica:"
 
 
 msgctxt "Operator"
-msgid "Fluid:"
-msgstr "Fluido:"
-
-
-msgctxt "Operator"
-msgid "Ed:"
-msgstr "Ed:"
-
-
-msgctxt "Operator"
-msgid "Cycles:"
-msgstr "Cycles:"
-
-
-msgctxt "Operator"
-msgid "Lamp:"
-msgstr "Lámpara:"
-
-
-msgctxt "Operator"
-msgid "Mask:"
-msgstr "Máscara:"
-
-
-msgctxt "Operator"
-msgid "Rigidbody:"
-msgstr "CuerpoRígido:"
+msgid "Export_anim:"
+msgstr "Animación_exp:"
 
 
 msgctxt "Operator"
@@ -81274,28 +81238,28 @@ msgstr "Vista2D:"
 
 
 msgctxt "Operator"
-msgid "Pose:"
-msgstr "Pose:"
+msgid "Console:"
+msgstr "Consola:"
 
 
 msgctxt "Operator"
-msgid "Sound:"
-msgstr "Sonido:"
+msgid "Mathvis:"
+msgstr "Mathvis:"
 
 
 msgctxt "Operator"
-msgid "Font:"
-msgstr "Tipografía:"
+msgid "Scene:"
+msgstr "Escena:"
 
 
 msgctxt "Operator"
-msgid "Logic:"
-msgstr "Lógica:"
+msgid "Group:"
+msgstr "Grupo:"
 
 
 msgctxt "Operator"
-msgid "Export_anim:"
-msgstr "Animación_exp:"
+msgid "Safe_areas:"
+msgstr "Áreas seguridad:"
 
 
 msgctxt "Operator"
@@ -81304,13 +81268,8 @@ msgstr "Curva de pintura:"
 
 
 msgctxt "Operator"
-msgid "Mocap:"
-msgstr "CaptMov:"
-
-
-msgctxt "Operator"
-msgid "Palette:"
-msgstr "Paleta:"
+msgid "Particle:"
+msgstr "Partícula:"
 
 
 msgctxt "Operator"
@@ -81319,23 +81278,13 @@ msgstr "Pintar:"
 
 
 msgctxt "Operator"
-msgid "Import_curve:"
-msgstr "Curva_imp:"
+msgid "Ui:"
+msgstr "IU:"
 
 
 msgctxt "Operator"
-msgid "Blender_id:"
-msgstr "ID_Blender:"
-
-
-msgctxt "Operator"
-msgid "Time:"
-msgstr "Tiempo:"
-
-
-msgctxt "Operator"
-msgid "Export_shape:"
-msgstr "Forma_exp:"
+msgid "Rigidbody:"
+msgstr "CuerpoRígido:"
 
 
 msgctxt "Operator"
@@ -81344,63 +81293,13 @@ msgstr "Malla:"
 
 
 msgctxt "Operator"
-msgid "Buttons:"
-msgstr "Botones:"
+msgid "Cycles:"
+msgstr "Cycles:"
 
 
 msgctxt "Operator"
-msgid "World:"
-msgstr "Universo:"
-
-
-msgctxt "Operator"
-msgid "Brush:"
-msgstr "Pincel:"
-
-
-msgctxt "Operator"
-msgid "Surface:"
-msgstr "Superficie:"
-
-
-msgctxt "Operator"
-msgid "Screen:"
-msgstr "Pantalla:"
-
-
-msgctxt "Operator"
-msgid "Texture:"
-msgstr "Textura:"
-
-
-msgctxt "Operator"
-msgid "Outliner:"
-msgstr "Listado:"
-
-
-msgctxt "Operator"
-msgid "Ui:"
-msgstr "IU:"
-
-
-msgctxt "Operator"
-msgid "Text:"
-msgstr "Texto:"
-
-
-msgctxt "Operator"
-msgid "Node:"
-msgstr "Nodo:"
-
-
-msgctxt "Operator"
-msgid "Object:"
-msgstr "Objeto:"
-
-
-msgctxt "Operator"
-msgid "Import_anim:"
-msgstr "Amimación_imp:"
+msgid "Cloth:"
+msgstr "Ropa:"
 
 
 msgctxt "Operator"
@@ -81409,8 +81308,8 @@ msgstr "LCera:"
 
 
 msgctxt "Operator"
-msgid "Image:"
-msgstr "Imagen:"
+msgid "Curve:"
+msgstr "Curva:"
 
 
 msgctxt "Operator"
@@ -81419,13 +81318,243 @@ msgstr "Forma_imp:"
 
 
 msgctxt "Operator"
-msgid "Anim:"
-msgstr "Anim:"
+msgid "Ed:"
+msgstr "Ed:"
+
+
+msgctxt "Operator"
+msgid "Surface:"
+msgstr "Superficie:"
+
+
+msgctxt "Operator"
+msgid "Import_curve:"
+msgstr "Curva_imp:"
+
+
+msgctxt "Operator"
+msgid "Export_mesh:"
+msgstr "Malla_exp:"
+
+
+msgctxt "Operator"
+msgid "Cachefile:"
+msgstr "Arch_caché:"
+
+
+msgctxt "Operator"
+msgid "Mball:"
+msgstr "Mbola:"
+
+
+msgctxt "Operator"
+msgid "Node:"
+msgstr "Nodo:"
+
+
+msgctxt "Operator"
+msgid "Info:"
+msgstr "Info:"
+
+
+msgctxt "Operator"
+msgid "Palette:"
+msgstr "Paleta:"
+
+
+msgctxt "Operator"
+msgid "Import_anim:"
+msgstr "Amimación_imp:"
+
+
+msgctxt "Operator"
+msgid "Dpaint:"
+msgstr "PinturaD:"
+
+
+msgctxt "Operator"
+msgid "Import_mesh:"
+msgstr "Malla_imp:"
+
+
+msgctxt "Operator"
+msgid "Text:"
+msgstr "Texto:"
+
+
+msgctxt "Operator"
+msgid "Screen:"
+msgstr "Pantalla:"
+
+
+msgctxt "Operator"
+msgid "Script:"
+msgstr "Script:"
+
+
+msgctxt "Operator"
+msgid "Marker:"
+msgstr "Marcador:"
+
+
+msgctxt "Operator"
+msgid "Object:"
+msgstr "Objeto:"
+
+
+msgctxt "Operator"
+msgid "Nla:"
+msgstr "ANL:"
+
+
+msgctxt "Operator"
+msgid "Action:"
+msgstr "Acción:"
+
+
+msgctxt "Operator"
+msgid "Brush:"
+msgstr "Pincel:"
+
+
+msgctxt "Operator"
+msgid "Uv:"
+msgstr "UV:"
+
+
+msgctxt "Operator"
+msgid "Export_blend:"
+msgstr "Blend_exp:"
+
+
+msgctxt "Operator"
+msgid "Transform:"
+msgstr "Transformación:"
+
+
+msgctxt "Operator"
+msgid "Lamp:"
+msgstr "Lámpara:"
+
+
+msgctxt "Operator"
+msgid "Export_animation:"
+msgstr "Animación_exp:"
+
+
+msgctxt "Operator"
+msgid "Constraint:"
+msgstr "Restricción:"
+
+
+msgctxt "Operator"
+msgid "Mask:"
+msgstr "Máscara:"
+
+
+msgctxt "Operator"
+msgid "Sound:"
+msgstr "Sonido:"
+
+
+msgctxt "Operator"
+msgid "Sculpt:"
+msgstr "Escultura:"
 
 
 msgctxt "Operator"
 msgid "Material:"
 msgstr "Material:"
+
+
+msgctxt "Operator"
+msgid "Texture:"
+msgstr "Textura:"
+
+
+msgctxt "Operator"
+msgid "Blender_id:"
+msgstr "ID_Blender:"
+
+
+msgctxt "Operator"
+msgid "Armature:"
+msgstr "Esqueleto:"
+
+
+msgctxt "Operator"
+msgid "Render:"
+msgstr "Procesamiento:"
+
+
+msgctxt "Operator"
+msgid "Buttons:"
+msgstr "Botones:"
+
+
+msgctxt "Operator"
+msgid "Logic:"
+msgstr "Lógica:"
+
+
+msgctxt "Operator"
+msgid "Mocap:"
+msgstr "CaptMov:"
+
+
+msgctxt "Operator"
+msgid "File:"
+msgstr "Archivo:"
+
+
+msgctxt "Operator"
+msgid "Export_scene:"
+msgstr "Escena_exp:"
+
+
+msgctxt "Operator"
+msgid "Export_shape:"
+msgstr "Forma_exp:"
+
+
+msgctxt "Operator"
+msgid "Fluid:"
+msgstr "Fluido:"
+
+
+msgctxt "Operator"
+msgid "Lattice:"
+msgstr "Jaula:"
+
+
+msgctxt "Operator"
+msgid "Pose:"
+msgstr "Pose:"
+
+
+msgctxt "Operator"
+msgid "View3d:"
+msgstr "Vista3D:"
+
+
+msgctxt "Operator"
+msgid "Time:"
+msgstr "Tiempo:"
+
+
+msgctxt "Operator"
+msgid "Image:"
+msgstr "Imagen:"
+
+
+msgctxt "Operator"
+msgid "World:"
+msgstr "Universo:"
+
+
+msgctxt "Operator"
+msgid "Import_scene:"
+msgstr "Importar_escena:"
 
 
 msgctxt "WindowManager"
@@ -81565,7 +81694,7 @@ msgstr "Objeto no modal"
 
 msgctxt "WindowManager"
 msgid "View3D Walk Modal"
-msgstr "Vista 3D Caminar modal"
+msgstr "Vista 3D Transitar modal"
 
 
 msgctxt "WindowManager"
@@ -81952,7 +82081,7 @@ msgstr "Transluminiscencia:"
 
 
 msgid "Feature Strength"
-msgstr "Intensidad de característica"
+msgstr "Intensidad de reducción"
 
 
 msgid "Focus:"
@@ -82056,7 +82185,7 @@ msgstr "%s SB"
 
 
 msgid "%s AA, %s Diffuse, %s Glossy, %s Transmission"
-msgstr "%s SB, %s Difusión, %s Reflexión, %s Transmisión"
+msgstr "%s SB, %s Difusión, %s Reflectividad, %s Transmisión"
 
 
 msgid "%s AO, %s Mesh Light, %s Subsurface, %s Volume"
@@ -82337,6 +82466,11 @@ msgstr "Exportar"
 
 msgid "Output:"
 msgstr "Salida:"
+
+
+msgctxt "Operator"
+msgid "Non Manifold Extended"
+msgstr "No desplegable extendido"
 
 
 msgid "Demo Mode:"
@@ -84376,7 +84510,7 @@ msgstr "Fundir a:"
 
 
 msgid "Gloss:"
-msgstr "Reflectividad:"
+msgstr "Definición:"
 
 
 msgid "Anisotropic"
@@ -86646,13 +86780,28 @@ msgstr "Escena..."
 
 
 msgctxt "Operator"
+msgid "Scene"
+msgstr "Escena"
+
+
+msgctxt "Operator"
 msgid "Clips..."
 msgstr "Clips..."
 
 
 msgctxt "Operator"
+msgid "Clip"
+msgstr "Clip"
+
+
+msgctxt "Operator"
 msgid "Masks..."
 msgstr "Máscaras..."
+
+
+msgctxt "Operator"
+msgid "Mask"
+msgstr "Máscara"
 
 
 msgctxt "Operator"
@@ -86896,6 +87045,11 @@ msgstr "Duplicar marcador a escena..."
 
 
 msgctxt "Operator"
+msgid "Duplicate Marker to Scene"
+msgstr "Duplicar marcador a escena"
+
+
+msgctxt "Operator"
 msgid "Jump to Next Marker"
 msgstr "Saltar al marcador siguiente"
 
@@ -87114,6 +87268,10 @@ msgid "Sequencer/Clip Editor:"
 msgstr "Editor de secuencias y clips:"
 
 
+msgid "Solid OpenGL Lights:"
+msgstr "Luces en OpenGL sólido:"
+
+
 msgid "Colors:"
 msgstr "Colores:"
 
@@ -87232,6 +87390,10 @@ msgstr "Invertir dirección de rueda de ratón"
 
 msgid "View Navigation:"
 msgstr "Navegación de vista:"
+
+
+msgid "Walk Navigation:"
+msgstr "Transitar:"
 
 
 msgid "Supported Level"
@@ -87360,7 +87522,7 @@ msgstr "Opciones de órbita"
 
 
 msgid "Fly/Walk options"
-msgstr "Opciones de volar/caminar"
+msgstr "Opciones de volar/transitar"
 
 
 msgid "Invert Mouse Zoom Direction"
@@ -87373,6 +87535,10 @@ msgstr "Dirección disp. táctil natural"
 
 msgid "NDOF Device:"
 msgstr "Ratón 3D o dispositivo NDOF:"
+
+
+msgid "Pan Sensitivity"
+msgstr "Sensibilidad de desplazamiento"
 
 
 msgid "Navigation Style:"
@@ -88037,6 +88203,11 @@ msgid "Sculpt Brush"
 msgstr "Pincel de escultura"
 
 
+msgctxt "Operator"
+msgid "Join..."
+msgstr "Unir..."
+
+
 msgid "Lock to Object:"
 msgstr "Fijar a objeto:"
 
@@ -88254,6 +88425,11 @@ msgstr "Geometría visual a malla"
 msgctxt "Operator"
 msgid "Objects to Scene..."
 msgstr "Objetos a escena..."
+
+
+msgctxt "Operator"
+msgid "Objects to Scene"
+msgstr "Objetos a escena"
 
 
 msgctxt "Operator"
@@ -88892,6 +89068,11 @@ msgid "Recalculate"
 msgstr "Recalcular"
 
 
+msgctxt "Operator"
+msgid "Set From Faces"
+msgstr "Definir a partir de caras"
+
+
 msgid "UV Mapping:"
 msgstr "Mapeo UV:"
 
@@ -89347,8 +89528,16 @@ msgid "Source and destination meshes do not have the same amount of vertices, 'T
 msgstr "Las mallas de origen y destino no contienen la misma cantidad de vértices, no es posible usar el mapeo por 'Topología' en este caso"
 
 
+msgid "Source mesh doesn't have any edges, None of the 'Edge' mappings can be used in this case"
+msgstr "La malla de origen no tiene ningún borde, Ninguno de los mapeos de 'Borde' podrán ser usados en este caso"
+
+
+msgid "Source mesh doesn't have any faces, None of the 'Face' mappings can be used in this case"
+msgstr "La malla de origen no tiene ninguna cara, Ninguno de los mapeos de 'Cara' podrán ser usados en este caso"
+
+
 msgid "Source or destination meshes do not have any vertices, cannot transfer vertex data"
-msgstr "Las mallas de origen o destino no contienen vértices, no es posible transferir datos de vértices"
+msgstr "Las mallas de origen o destino no contienen ningún vértice, no es posible transferir datos de vértices"
 
 
 msgid "Source and destination meshes do not have the same amount of edges, 'Topology' mapping cannot be used in this case"
@@ -89356,15 +89545,23 @@ msgstr "Las mallas de origen y destino no contienen la misma cantidad de bordes,
 
 
 msgid "Source or destination meshes do not have any edges, cannot transfer edge data"
-msgstr "Las mallas de origen o destino no contienen bordes, no es posible transferir datos de bordes"
+msgstr "Las mallas de origen o destino no contienen ningún borde, no es posible transferir datos de bordes"
 
 
 msgid "Source and destination meshes do not have the same amount of face corners, 'Topology' mapping cannot be used in this case"
 msgstr "Las mallas de origen y destino no contienen la misma cantidad de esquinas de caras, no es posible usar el mapeo por 'Topología' en este caso"
 
 
+msgid "Source or destination meshes do not have any faces, cannot transfer corner data"
+msgstr "Las mallas de origen o destino no contienen ninguna cara, no es posible transferir datos de esquinas"
+
+
 msgid "Source and destination meshes do not have the same amount of faces, 'Topology' mapping cannot be used in this case"
 msgstr "Las mallas de origen y destino no contienen la misma cantidad de caras, no es posible usar el mapeo por 'Topología' en este caso"
+
+
+msgid "Source or destination meshes do not have any faces, cannot transfer face data"
+msgstr "Las mallas de origen o destino no contienen ninguna cara, no es posible transferir datos de caras"
 
 
 msgid "Not enough free memory"
@@ -89979,6 +90176,10 @@ msgstr "Los modificadores de curvas-f están desabilitados"
 
 msgid "Make channels grouped under this channel visible"
 msgstr "Hace visibles a los canales agrupados bajo este canal"
+
+
+msgid "NLA Track is the only one evaluated in this animation data-block, with all others muted"
+msgstr "La pista de ANL es la única evaluada en este bloque de datos de animación, todas las demás se encuentran silenciadas"
 
 
 msgid "Editability of keyframes for this channel"
@@ -90733,6 +90934,10 @@ msgid "Cannot change to non-existent palette (index = %d)"
 msgstr "No es posible cambiar a una paleta no existente (índice = %d)"
 
 
+msgid "GP Color"
+msgstr "Color de lápiz de cera"
+
+
 msgid "No Grease Pencil data"
 msgstr "No hay datos de lápiz de cera"
 
@@ -90775,6 +90980,30 @@ msgstr "No fue posible encontrar datos de lápiz de cera dónde dibujar"
 
 msgid "Active region not set"
 msgstr "Región activa no definida"
+
+
+msgid "GPencil Interpolation: ESC/RMB to cancel, Enter/LMB to confirm, WHEEL/MOVE to adjust factor"
+msgstr "Interpolación Láp.Cera: ESC/clic Der. para cancelar, Intro/clic Izq. para confirmar, RUEDA/MOVER para ajustar el factor"
+
+
+msgid "Cannot find a pair of grease pencil frames to interpolate between in active layer"
+msgstr "No es posible encontrar un par de fotogramas de lápiz de cera, en la capa activa, entre los cuales interpolar"
+
+
+msgid "Cannot interpolate as current frame already has existing grease pencil frames"
+msgstr "No es posible interpolar ya que en el fotograma actual ya existen fotogramas de lápiz de cera"
+
+
+msgid "Interpolation requires some editable strokes"
+msgstr "La interpolación requiere que existan algunos trazos editables"
+
+
+msgid "Custom interpolation curve does not exist"
+msgstr "No existe una curva personalizada de interpolación"
+
+
+msgid "Expected current frame to be a breakdown"
+msgstr "Se esperaba que el fotograma actual fuera un intermedio"
 
 
 msgid "Grease Pencil: Drawing/erasing stroke... Release to end stroke"
@@ -91186,12 +91415,24 @@ msgid "Manual Transform:"
 msgstr "Transformación manual:"
 
 
+msgid "Indirect library data-block, cannot change"
+msgstr "Bloque de datos indirecto de una biblioteca, no es posible cambiarlo"
+
+
+msgid "Direct linked library data-block, click to make local"
+msgstr "Bloque de datos de una biblioteca vinculada directamente, clic para hacer local"
+
+
 msgid "Display number of users of this data (click to make a single-user copy)"
 msgstr "Muestra la cantidad de usuarios de estos datos (clic para hacer una copia de un solo usuario)"
 
 
 msgid "Packed File, click to unpack"
 msgstr "Archivo empacado, hacer clic para desempacar"
+
+
+msgid "Unlink data-block (Shift + Click to set users to zero, data will then not be saved)"
+msgstr "Desvincular bloque de datos. Mayúsculas + clic para eliminar usuarios (los datos no serán guardados)"
 
 
 msgid "Convert virtual modifier to a real modifier"
@@ -91791,6 +92032,10 @@ msgid "Removed: %d vertices, %d edges, %d faces"
 msgstr "Removidos: %d vértices, %d bordes, %d caras"
 
 
+msgid "Unable to rotate %d edge(s)"
+msgstr "No es posible rotar borde(s) %d"
+
+
 msgid "Removed %d vertices"
 msgstr "%d vértices removidos"
 
@@ -92006,6 +92251,10 @@ msgid "Cannot delete object '%s' from scene '%s', indirectly used objects need a
 msgstr "No es posible borrar el objeto '%s' de la escena '%s', los objetos usados indirectamente necesitan al menos un usuario"
 
 
+msgid "Converting some linked object/object data, enforcing 'Keep Original' option to True"
+msgstr "Convirtiendo algunos objetos o datos de objetos vinculados, imponiendo la activación de la opción \"Conservar original\""
+
+
 msgid "Baking of multires data only works with an active mesh object"
 msgstr "La captura de datos de multi-resolución solo funciona con un objeto poligonal activo"
 
@@ -92098,6 +92347,10 @@ msgid "Baking map saved to internal image, save it externally or pack it"
 msgstr "Mapa capturado guardado a una imagen interna, guardarla de forma externa o empacarla en la escena"
 
 
+msgid "Object \"%s\" is not on a scene layer"
+msgstr "El objeto \"%s\" no se encuentra en ninguna capa de esta escena"
+
+
 msgid "Object \"%s\" is not a mesh"
 msgstr "El objeto \"%s\" no es una malla"
 
@@ -92116,6 +92369,10 @@ msgstr "Imagen \"%s\" del objeto \"%s\" no inicializada"
 
 msgid "No active image found in material \"%s\" (%d) for object \"%s\""
 msgstr "No se encontró una imagen activa en el material \"%s\" (%d) del objeto \"%s\""
+
+
+msgid "No active image found in material slot (%d) for object \"%s\""
+msgstr "No se encontró ninguna imagen activa en el contenedor de material (%d) del objeto \"%s\""
 
 
 msgid "Object \"%s\" is not a mesh or can't be converted to a mesh (Curve, Text, Surface or Metaball)"
@@ -92559,7 +92816,7 @@ msgstr "Debería haber solo un objeto de dominio"
 
 
 msgid "No domain object found"
-msgstr "No se encontró objeto de dominio"
+msgstr "No se encontró ningún objeto de dominio"
 
 
 msgid "Cannot bake with more than 256 objects"
@@ -92576,6 +92833,22 @@ msgstr "No hay fotogramas qué exportar (comprobar las opciones de rango de anim
 
 msgid "Invalid object matrix"
 msgstr "Matriz de objeto inválida"
+
+
+msgid "Fluidsim: empty cache path, reset to default '%s'"
+msgstr "SimFluidos: ruta de caché vacía, restableciéndola a la predefinida: '%s'"
+
+
+msgid "Fluidsim: could not create cache directory '%s', reset to default '%s'"
+msgstr "SimFluidos: no fue posible crear el directorio de caché '%s', restableciéndolo al predefinido: '%s'"
+
+
+msgid "Fluidsim: cache directory '%s' is not writable, reset to default '%s'"
+msgstr "SimFluidos: el directorio de caché '%s' no es escribible, restableciéndolo al predefinido: '%s'"
+
+
+msgid "Fluidsim: could not use default cache directory '%s', please define a valid cache path manually"
+msgstr "SimFluidos: no fue posible usar el directorio de caché predefinido '%s', por favor definir manualmente una ruta de caché válida"
 
 
 msgid "No Rigid Body World to add Rigid Body Constraint to"
@@ -93196,6 +93469,10 @@ msgstr "No implementado"
 
 msgid "Not implemented for Masks"
 msgstr "No implementado para máscaras"
+
+
+msgid "Follow context or keep fixed data-block displayed"
+msgstr "Visualizar según el contexto o mantenerla fija en este bloque de datos"
 
 
 msgid "Cannot activate a file selector, one already open"
@@ -94020,6 +94297,10 @@ msgid "Evaluation"
 msgstr "Evaluación"
 
 
+msgid "No active AnimData block to use (select a data-block expander first or set the appropriate flags on an AnimData block)"
+msgstr "Ningún bloque de datos de animación que usar (seleccionar antes un expansor de bloque de datos o definir los indicadores apropiados en un bloque de datos de animación)"
+
+
 msgid "Internal Error - AnimData block is not valid"
 msgstr "Error interno - el bloque de datos de animación no es válido"
 
@@ -94070,6 +94351,10 @@ msgstr "Se necesita tener seleccionado al menos un par de clips adyacentes con u
 
 msgid "Cannot swap selected strips as they will not be able to fit in their new places"
 msgstr "No es posible intercambiar los clips seleccionados porque no entrarán en sus nuevos lugares"
+
+
+msgid "Action '%s' does not specify what data-blocks it can be used on (try setting the 'ID Root Type' setting from the data-blocks editor for this action to avoid future problems)"
+msgstr "La acción '%s' no especifica en qué bloques de datos puede ser usada (intentar especificar la opción 'Tipo de ID base' para esta acción, en el editor de bloques de datos, para evitar futuros problemas)"
 
 
 msgid "Could not add action '%s' as it cannot be used relative to ID-blocks of type '%s'"
@@ -94300,6 +94585,22 @@ msgid "Restrict/Allow editing of strokes and keyframes in this layer"
 msgstr "Restringir/Permitir la edición de trazos y fotogramas clave en esta capa"
 
 
+msgid "Data-block will be retained using a fake user"
+msgstr "El bloque de datos será retenido usando un usuario ficticio"
+
+
+msgid "Data-block has no users and will be deleted"
+msgstr "El bloque de datos no tiene usuarios y será eliminado"
+
+
+msgid "Number of users of this data-block"
+msgstr "Cantidad de usuarios de este bloque de datos"
+
+
+msgid "Data-block has a 'fake' user which will keep it in the file even if nothing else uses it"
+msgstr "El bloque de datos tiene un usuario 'ficticio' que lo mantendrá en el archivo, aunque ningún elemento esté haciendo uso de él"
+
+
 msgid "Library path '%s' does not exist, correct this before saving"
 msgstr "La ruta '%s' de la biblioteca no existe, corregirla antes de guardar"
 
@@ -94336,8 +94637,16 @@ msgid "Cannot delete indirectly linked id '%s'"
 msgstr "No es posible borrar el ID '%s' vinculado indirectamente"
 
 
+msgid "Cannot delete id '%s', indirectly used data-blocks need at least one user"
+msgstr "No es posible borrar el ID '%s', los bloques de datos usados indirectamente necesitan al menos un usuario"
+
+
 msgid "Invalid old/new ID pair ('%s' / '%s')"
 msgstr "Par inválido de IDs nueva/antigua ('%s' / '%s')"
+
+
+msgid "Old ID '%s' is linked from a library, indirect usages of this data-block will not be remapped"
+msgstr "La ID antigua '%s' se encuentra vinculada desde una biblioteca, los usos indirectos de este bloque de datos no serán remapeados"
 
 
 msgid "Cannot relocate indirectly linked library '%s'"
@@ -94658,6 +94967,14 @@ msgid "Edge weight used by Bevel modifier"
 msgstr "Influencia de borde usada por el modificador Biselar"
 
 
+msgid "Weight used by the Subdivision Surface modifier"
+msgstr "Influencia usada por el modificador Subdividir superficie"
+
+
+msgid "Weight used for Soft Body Goal"
+msgstr "Influencia usada para el objetivo de un Cuerpo blando"
+
+
 msgid "Radius of curve control points"
 msgstr "Radio de los puntos de control de la curva"
 
@@ -94760,6 +95077,10 @@ msgstr "fps: %.2f"
 
 msgid "fps: %i"
 msgstr "fps: %i"
+
+
+msgid "Cannot dolly when the view offset is locked"
+msgstr "No es posible avanzar cuando el desplazamiento de la vista se encuentra bloqueado"
 
 
 msgid "Depth too large"
@@ -95321,6 +95642,10 @@ msgstr "El objeto tiene una escala no unifiorme, el despliegue operará sobre un
 
 msgid "Object has negative scale, unwrap will operate on a non-flipped version of the mesh"
 msgstr "El objeto tiene una escala negativa, el despliegue operará sobre una versión no invertida de la malla"
+
+
+msgid "Subdivision Surface modifier needs to be first to work with unwrap"
+msgstr "El modificador Subdividir superficie necesita estar antes, para poder funcionar con el despliegue de UV"
 
 
 msgid "Freestyle: Mesh loading"
@@ -96177,6 +96502,10 @@ msgid "Bind data missing"
 msgstr "Datos de enlace faltantes"
 
 
+msgid "Could not create Alembic reader for file %s"
+msgstr "No se pudo crear el lector de Alembic para el archivo %s"
+
+
 msgid "Invalid target settings"
 msgstr "Opciones de objetivo inválidas"
 
@@ -96211,6 +96540,34 @@ msgstr "OpenSubdiv no es soportado en modo edición"
 
 msgid "Out of memory"
 msgstr "Sin memoria"
+
+
+msgid "Target has edges with more than two polygons"
+msgstr "El objetivo contiene bordes con más de dos polígonos"
+
+
+msgid "Target contains concave polygons"
+msgstr "El objetivo contiene polígonos cóncavos"
+
+
+msgid "Target contains overlapping verts"
+msgstr "El objetivo contiene vértices solapados"
+
+
+msgid "Target contains invalid polygons"
+msgstr "El objetivo contiene polígonos inválidos"
+
+
+msgid "No valid target mesh"
+msgstr "Ninguna malla válida como objetivo"
+
+
+msgid "Verts changed from %u to %u"
+msgstr "Vértices cambiados de %u a %u"
+
+
+msgid "Target polygons changed from %u to %u"
+msgstr "Polígonos objetivo cambiados de %u a %u"
 
 
 msgid "From/To objects must be set"
@@ -96346,7 +96703,7 @@ msgstr "Color base"
 
 
 msgid "Subsurface Radius"
-msgstr "Radio transluminiscencia"
+msgstr "Radio de transluminiscencia"
 
 
 msgid "Metallic"
@@ -96354,11 +96711,31 @@ msgstr "Metálico"
 
 
 msgid "Specular Tint"
-msgstr "Tinte especularidad"
+msgstr "Tinte de especularidad"
 
 
 msgid "Anisotropic Rotation"
-msgstr "Rotación anisótropa"
+msgstr "Rotación de anisotropía"
+
+
+msgid "Sheen"
+msgstr "Brillo"
+
+
+msgid "Sheen Tint"
+msgstr "Tinte del brillo"
+
+
+msgid "Clearcoat"
+msgstr "Barniz"
+
+
+msgid "Transmission Roughness"
+msgstr "Rugosidad de transmisión"
+
+
+msgid "Clearcoat Normal"
+msgstr "Normal barniz"
 
 
 msgid "Sigma"
@@ -96438,7 +96815,7 @@ msgstr "Es rayo de difusión"
 
 
 msgid "Is Glossy Ray"
-msgstr "Es rayo de reflexión"
+msgstr "Es rayo de reflectividad"
 
 
 msgid "Is Singular Ray"
@@ -96462,7 +96839,7 @@ msgstr "Profundidad de difusión"
 
 
 msgid "Glossy Depth"
-msgstr "Profundidad de reflexión"
+msgstr "Profundidad de reflectividad"
 
 
 msgid "Transparent Depth"
@@ -96817,6 +97194,18 @@ msgid "Path too long, cannot save"
 msgstr "Ruta demasiado larga, no es posible guardar"
 
 
+msgid "Unable to create user config path"
+msgstr "No es posible crear la ruta para la configuración de usuario"
+
+
+msgid "Unable to create userpref path"
+msgstr "No es posible crear la ruta para las preferencias de usuario"
+
+
+msgid "Unable to create app-template userpref path"
+msgstr "No es posible crear la ruta para las preferencias de usuario de plantillas de aplicación"
+
+
 msgid "Context window not set"
 msgstr "Ventana del contexto no definida"
 
@@ -96883,6 +97272,10 @@ msgstr "'%s': no es posible usar el archivo actual como una biblioteca"
 
 msgid "Scene '%s' is linked, instantiation of objects & groups is disabled"
 msgstr "La escena '%s' se encuentra vinculada, se ha deshabilitado el instanciado de objetos y grupos"
+
+
+msgid "Lib Reload: Replacing all references to old data-block '%s' by reloaded one failed, old one (%d remaining users) had to be kept and was renamed to '%s'"
+msgstr "Recargar biblioteca: Falló el reemplazo de todas las referencias al antiguo bloque de datos '%s' por el bloque recién cargado, se ha debido mantener el anterior (con %d usuarios restantes) renombrándolo como '%s'"
 
 
 msgid "'%s' is not a valid library filepath"

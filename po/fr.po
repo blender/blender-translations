@@ -1,9 +1,9 @@
 
 msgid ""
 msgstr ""
-"Project-Id-Version: Blender 2.78 (sub 5) (b'794311c92bb')\n"
+"Project-Id-Version: Blender 2.78 (sub 5) (b'bc8a9c47c68')\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-06-16 12:51:46\n"
+"POT-Creation-Date: 2017-07-17 09:21:13\n"
 "PO-Revision-Date: \n"
 "Last-Translator: Bastien Montagne <montagne29@wanadoo.fr>\n"
 "Language-Team: \n"
@@ -11,7 +11,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 1.8.11"
+"X-Generator: Poedit 2.0.2"
 
 
 msgid "Action F-Curves"
@@ -8209,7 +8209,7 @@ msgid "Safe area for general elements in a different aspect ratio"
 msgstr "Zone de sécurité pour les éléments généraux dans des proportions différentes"
 
 
-msgid "Title Safe margins"
+msgid "Title Safe Margins"
 msgstr "Marges de sécurité titre"
 
 
@@ -42485,12 +42485,52 @@ msgid "Tolerance for comparing double keyframes (higher for greater accuracy)"
 msgstr "Tolérance pour comparer les images clé en double (plus haut pour une meilleure précision)"
 
 
+msgid "Apply Scalings"
+msgstr "Appliquer échelles"
+
+
+msgid "How to apply custom and units scalings in generated FBX file (Blender uses FBX scale to detect units on import, but many other applications do not handle the same way)"
+msgstr "Comment appliquer les redimensionnements personnalisés et dus aux unités, dans le ficher FBX généré (Blender utilise l’échelle FBX pour détecter l’unité à l’import, mais beaucoup d’autres applications ne la gère pas de la même façon)"
+
+
+msgid "All Local"
+msgstr "Tout local"
+
+
+msgid "Apply custom scaling and units scaling to each object transformation, FBX scale remains at 1.0"
+msgstr "Appliquer les redimensionnements personnalisé et d’unité à la transformation de chaque objet, l’échelle FBX reste à 1.0"
+
+
+msgid "FBX Units Scale"
+msgstr "Échelle d’unité FBX"
+
+
+msgid "Apply custom scaling to each object transformation, and units scaling to FBX scale"
+msgstr "Appliquer le redimensionnement personnalisé à la transformation de chaque objet, et le redimensionnement d’unité à l’échelle FBX"
+
+
+msgid "FBX Custom Scale"
+msgstr "Échelle FBX personnalisée"
+
+
+msgid "Apply custom scaling to FBX scale, and units scaling to each object transformation"
+msgstr "Appliquer le redimensionnement personnalisé à l’échelle FBX, et le redimensionnement d’unité à la transformation de chaque objet"
+
+
+msgid "FBX All"
+msgstr "Tout FBX"
+
+
+msgid "Apply custom scaling and units scaling to FBX scale"
+msgstr "Appliquer les redimensionnements personnalisé et d’unité à l’échelle FBX"
+
+
 msgid "Apply Unit"
 msgstr "Appliquer unité"
 
 
-msgid "Scale all data according to current Blender size, to match default FBX unit (centimeter, some importers do not handle UnitScaleFactor properly)"
-msgstr "Redimensionner toutes les données en fonction de leur taille actuelle dans Blender, pour correspondre à l’unité FBX par défaut (le centimètre, certains importateurs ne gèrent pas l’UnitScaleFactor correctement)"
+msgid "Take into account current Blender units settings (if unset, raw Blender Units values are used as-is)"
+msgstr "Prendre en compte les réglages d’unité actuels de Blender (sinon, les valeurs en Unités Blender sont utilisée telles quelles"
 
 
 msgid "Armature FBXNode Type"
@@ -45220,6 +45260,14 @@ msgstr "Ouvrir image"
 
 msgid "Open image"
 msgstr "Ouvrir une image"
+
+
+msgid "Detect Sequences"
+msgstr "Détecter séquences"
+
+
+msgid "Automatically detect animated sequences in selected images (based on file names)"
+msgstr "Détecter automatiquement les séquences animées dans les images sélectionnées (d’après les noms de fichier)"
 
 
 msgctxt "Operator"
@@ -53400,8 +53448,8 @@ msgid "Purge All"
 msgstr "Purger tous"
 
 
-msgid "Clear all orphaned data-blocks without any users from the file (cannot be undone)"
-msgstr "Supprimer tous les blocs de données orphelins (sans utilisateur) du fichier (ne peut être annulé)"
+msgid "Clear all orphaned data-blocks without any users from the file (cannot be undone, saves to current .blend file)"
+msgstr "Supprimer tous les blocs de données orphelins (sans utilisateur) du fichier (ne peut être annulé, enregistre le fichier .blend actuel)"
 
 
 msgctxt "Operator"
@@ -56717,10 +56765,6 @@ msgstr "Définir proxies des bandes sélectionnées"
 
 msgid "Enable selected proxies on all selected Movie strips"
 msgstr "Activer les proxies sélectionnés pour toutes les bandes vidéo sélectionnées"
-
-
-msgid "Override"
-msgstr "Écraser"
 
 
 msgctxt "Operator"
@@ -60787,6 +60831,26 @@ msgid "Apply modifier's render settings"
 msgstr "Appliquer les réglages de rendu des modificateurs"
 
 
+msgid "Texture Type"
+msgstr "Type de texture"
+
+
+msgid "Type for exported Textures (UV or MAT)"
+msgstr "Type de textures exportées (UV ou MAT)"
+
+
+msgid "Export Materials"
+msgstr "Exporter matériaux"
+
+
+msgid "UV Textures"
+msgstr "Textures UV"
+
+
+msgid "Export UV Textures (Face textures) as materials"
+msgstr "Exporter les textures UV (de faces) comme matériaux"
+
+
 msgid "Transformation type for translation, scale and rotation"
 msgstr "Type de transformation pour les translation, redimensionnement et rotation"
 
@@ -60819,28 +60883,12 @@ msgid "Export all children of selected objects (even if not selected)"
 msgstr "Exporter tous les enfants des objets sélectionnés (même si non-sélectionnés)"
 
 
-msgid "Include Material Textures"
-msgstr "Inclure textures de matériaux"
-
-
-msgid "Export textures assigned to the object Materials"
-msgstr "Exporter les textures assignées aux matériaux de l’objet"
-
-
 msgid "Include Shape Keys"
 msgstr "Inclure clés de forme"
 
 
 msgid "Export all Shape Keys from Mesh Objects"
 msgstr "Exporter toutes les clés de forme des objets mesh"
-
-
-msgid "Include UV Textures"
-msgstr "Inclure textures UV"
-
-
-msgid "Export textures assigned to the object UV Maps"
-msgstr "Exporter les textures assignées aux cartes UV de l’objet"
 
 
 msgid "Keep Bind Info"
@@ -65452,6 +65500,14 @@ msgstr "Type de noyau OpenCL"
 
 msgid "Mega"
 msgstr "Méga"
+
+
+msgid "Memory limit"
+msgstr "Limite mémoire"
+
+
+msgid "Artificial limit on OpenCL memory usage in MB (0 to disable limit)"
+msgstr "Limite artificielle à l’utilisation mémoire d’OpenCL (0 pour désactiver la limite)"
 
 
 msgid "Reset timeout"
@@ -74231,10 +74287,6 @@ msgid "Use active Viewer Node output as backdrop for compositing nodes"
 msgstr "Utiliser la sortie du nœud de visualisation actif comme fond pour les nœuds de compositing"
 
 
-msgid "Texture Type"
-msgstr "Type de texture"
-
-
 msgid "Type of data to take texture from"
 msgstr "Type de données d’où récupérer la texture"
 
@@ -81200,138 +81252,8 @@ msgstr "Occlure les objets avec la couleur d’environnement à mesure qu’ils 
 
 
 msgctxt "Operator"
-msgid "Export_blend:"
-msgstr "Export blend :"
-
-
-msgctxt "Operator"
-msgid "Scene:"
-msgstr "Scène :"
-
-
-msgctxt "Operator"
-msgid "Cloth:"
-msgstr "Tissu :"
-
-
-msgctxt "Operator"
-msgid "Cachefile:"
-msgstr "Fichier cache :"
-
-
-msgctxt "Operator"
-msgid "Mathvis:"
-msgstr "Mathvis :"
-
-
-msgctxt "Operator"
-msgid "Export_animation:"
-msgstr "Export animation :"
-
-
-msgctxt "Operator"
-msgid "Sculpt:"
-msgstr "Sculpture :"
-
-
-msgctxt "Operator"
-msgid "Curve:"
-msgstr "Courbe :"
-
-
-msgctxt "Operator"
-msgid "Armature:"
-msgstr "Armature :"
-
-
-msgctxt "Operator"
-msgid "Info:"
-msgstr "Info :"
-
-
-msgctxt "Operator"
-msgid "Import_scene:"
-msgstr "Import scène :"
-
-
-msgctxt "Operator"
-msgid "File:"
-msgstr "Fichier :"
-
-
-msgctxt "Operator"
-msgid "Transform:"
-msgstr "Transformation :"
-
-
-msgctxt "Operator"
-msgid "Camera:"
-msgstr "Caméra :"
-
-
-msgctxt "Operator"
-msgid "Nla:"
-msgstr "Nla :"
-
-
-msgctxt "Operator"
-msgid "Graph:"
-msgstr "Graphe :"
-
-
-msgctxt "Operator"
-msgid "Export_mesh:"
-msgstr "Export mesh :"
-
-
-msgctxt "Operator"
-msgid "Console:"
-msgstr "Console :"
-
-
-msgctxt "Operator"
-msgid "View3d:"
-msgstr "Vue 3D :"
-
-
-msgctxt "Operator"
-msgid "Lattice:"
-msgstr "Lattice :"
-
-
-msgctxt "Operator"
-msgid "Dpaint:"
-msgstr "Peinture dyn :"
-
-
-msgctxt "Operator"
-msgid "Render:"
-msgstr "Rendu :"
-
-
-msgctxt "Operator"
-msgid "Particle:"
-msgstr "Particule :"
-
-
-msgctxt "Operator"
-msgid "Group:"
-msgstr "Groupe :"
-
-
-msgctxt "Operator"
-msgid "Sequencer:"
-msgstr "Séquenceur :"
-
-
-msgctxt "Operator"
-msgid "Import_mesh:"
-msgstr "Import mesh :"
-
-
-msgctxt "Operator"
-msgid "Export_scene:"
-msgstr "Export scène :"
+msgid "Clip:"
+msgstr "Clip :"
 
 
 msgctxt "Operator"
@@ -81340,8 +81262,13 @@ msgstr "Esquisse :"
 
 
 msgctxt "Operator"
-msgid "Constraint:"
-msgstr "Contrainte :"
+msgid "Anim:"
+msgstr "Anim :"
+
+
+msgctxt "Operator"
+msgid "Font:"
+msgstr "Polices :"
 
 
 msgctxt "Operator"
@@ -81350,13 +81277,8 @@ msgstr "Boïd :"
 
 
 msgctxt "Operator"
-msgid "Uv:"
-msgstr "Uv :"
-
-
-msgctxt "Operator"
-msgid "Marker:"
-msgstr "Marqueur :"
+msgid "Sequencer:"
+msgstr "Séquenceur :"
 
 
 msgctxt "Operator"
@@ -81365,63 +81287,28 @@ msgstr "Pose biblio :"
 
 
 msgctxt "Operator"
-msgid "Action:"
-msgstr "Action :"
-
-
-msgctxt "Operator"
-msgid "Clip:"
-msgstr "Clip :"
-
-
-msgctxt "Operator"
 msgid "Ptcache:"
 msgstr "Cache point :"
 
 
 msgctxt "Operator"
-msgid "Safe_areas:"
-msgstr "Zones sûres :"
+msgid "Outliner:"
+msgstr "Outliner :"
 
 
 msgctxt "Operator"
-msgid "Mball:"
-msgstr "Mballe :"
+msgid "Camera:"
+msgstr "Caméra :"
 
 
 msgctxt "Operator"
-msgid "Script:"
-msgstr "Script :"
+msgid "Graph:"
+msgstr "Graphe :"
 
 
 msgctxt "Operator"
-msgid "Fluid:"
-msgstr "Fluide :"
-
-
-msgctxt "Operator"
-msgid "Ed:"
-msgstr "Éditeur :"
-
-
-msgctxt "Operator"
-msgid "Cycles:"
-msgstr "Cycles :"
-
-
-msgctxt "Operator"
-msgid "Lamp:"
-msgstr "Lampe :"
-
-
-msgctxt "Operator"
-msgid "Mask:"
-msgstr "Masque :"
-
-
-msgctxt "Operator"
-msgid "Rigidbody:"
-msgstr "Corps rigide :"
+msgid "Export_anim:"
+msgstr "Export anim :"
 
 
 msgctxt "Operator"
@@ -81435,28 +81322,28 @@ msgstr "Vue 2D :"
 
 
 msgctxt "Operator"
-msgid "Pose:"
-msgstr "Pose :"
+msgid "Console:"
+msgstr "Console :"
 
 
 msgctxt "Operator"
-msgid "Sound:"
-msgstr "Audio :"
+msgid "Mathvis:"
+msgstr "Mathvis :"
 
 
 msgctxt "Operator"
-msgid "Font:"
-msgstr "Polices :"
+msgid "Scene:"
+msgstr "Scène :"
 
 
 msgctxt "Operator"
-msgid "Logic:"
-msgstr "Logique :"
+msgid "Group:"
+msgstr "Groupe :"
 
 
 msgctxt "Operator"
-msgid "Export_anim:"
-msgstr "Export anim :"
+msgid "Safe_areas:"
+msgstr "Zones sûres :"
 
 
 msgctxt "Operator"
@@ -81465,13 +81352,8 @@ msgstr "Courbe peinture :"
 
 
 msgctxt "Operator"
-msgid "Mocap:"
-msgstr "Mocap :"
-
-
-msgctxt "Operator"
-msgid "Palette:"
-msgstr "Palette :"
+msgid "Particle:"
+msgstr "Particule :"
 
 
 msgctxt "Operator"
@@ -81480,23 +81362,13 @@ msgstr "Peinture :"
 
 
 msgctxt "Operator"
-msgid "Import_curve:"
-msgstr "Import courbe :"
+msgid "Ui:"
+msgstr "Ui :"
 
 
 msgctxt "Operator"
-msgid "Blender_id:"
-msgstr "Blender id :"
-
-
-msgctxt "Operator"
-msgid "Time:"
-msgstr "Temps :"
-
-
-msgctxt "Operator"
-msgid "Export_shape:"
-msgstr "Export forme :"
+msgid "Rigidbody:"
+msgstr "Corps rigide :"
 
 
 msgctxt "Operator"
@@ -81505,63 +81377,13 @@ msgstr "Mesh :"
 
 
 msgctxt "Operator"
-msgid "Buttons:"
-msgstr "Boutons :"
+msgid "Cycles:"
+msgstr "Cycles :"
 
 
 msgctxt "Operator"
-msgid "World:"
-msgstr "Monde :"
-
-
-msgctxt "Operator"
-msgid "Brush:"
-msgstr "Brosse :"
-
-
-msgctxt "Operator"
-msgid "Surface:"
-msgstr "Surface :"
-
-
-msgctxt "Operator"
-msgid "Screen:"
-msgstr "Écran :"
-
-
-msgctxt "Operator"
-msgid "Texture:"
-msgstr "Texture :"
-
-
-msgctxt "Operator"
-msgid "Outliner:"
-msgstr "Outliner :"
-
-
-msgctxt "Operator"
-msgid "Ui:"
-msgstr "Ui :"
-
-
-msgctxt "Operator"
-msgid "Text:"
-msgstr "Texte :"
-
-
-msgctxt "Operator"
-msgid "Node:"
-msgstr "Nœud :"
-
-
-msgctxt "Operator"
-msgid "Object:"
-msgstr "Objet :"
-
-
-msgctxt "Operator"
-msgid "Import_anim:"
-msgstr "Import anim :"
+msgid "Cloth:"
+msgstr "Tissu :"
 
 
 msgctxt "Operator"
@@ -81570,8 +81392,8 @@ msgstr "CrayonG :"
 
 
 msgctxt "Operator"
-msgid "Image:"
-msgstr "Image :"
+msgid "Curve:"
+msgstr "Courbe :"
 
 
 msgctxt "Operator"
@@ -81580,13 +81402,243 @@ msgstr "Import forme :"
 
 
 msgctxt "Operator"
-msgid "Anim:"
-msgstr "Anim :"
+msgid "Ed:"
+msgstr "Éditeur :"
+
+
+msgctxt "Operator"
+msgid "Surface:"
+msgstr "Surface :"
+
+
+msgctxt "Operator"
+msgid "Import_curve:"
+msgstr "Import courbe :"
+
+
+msgctxt "Operator"
+msgid "Export_mesh:"
+msgstr "Export mesh :"
+
+
+msgctxt "Operator"
+msgid "Cachefile:"
+msgstr "Fichier cache :"
+
+
+msgctxt "Operator"
+msgid "Mball:"
+msgstr "Mballe :"
+
+
+msgctxt "Operator"
+msgid "Node:"
+msgstr "Nœud :"
+
+
+msgctxt "Operator"
+msgid "Info:"
+msgstr "Info :"
+
+
+msgctxt "Operator"
+msgid "Palette:"
+msgstr "Palette :"
+
+
+msgctxt "Operator"
+msgid "Import_anim:"
+msgstr "Import anim :"
+
+
+msgctxt "Operator"
+msgid "Dpaint:"
+msgstr "Peinture dyn :"
+
+
+msgctxt "Operator"
+msgid "Import_mesh:"
+msgstr "Import mesh :"
+
+
+msgctxt "Operator"
+msgid "Text:"
+msgstr "Texte :"
+
+
+msgctxt "Operator"
+msgid "Screen:"
+msgstr "Écran :"
+
+
+msgctxt "Operator"
+msgid "Script:"
+msgstr "Script :"
+
+
+msgctxt "Operator"
+msgid "Marker:"
+msgstr "Marqueur :"
+
+
+msgctxt "Operator"
+msgid "Object:"
+msgstr "Objet :"
+
+
+msgctxt "Operator"
+msgid "Nla:"
+msgstr "Nla :"
+
+
+msgctxt "Operator"
+msgid "Action:"
+msgstr "Action :"
+
+
+msgctxt "Operator"
+msgid "Brush:"
+msgstr "Brosse :"
+
+
+msgctxt "Operator"
+msgid "Uv:"
+msgstr "Uv :"
+
+
+msgctxt "Operator"
+msgid "Export_blend:"
+msgstr "Export blend :"
+
+
+msgctxt "Operator"
+msgid "Transform:"
+msgstr "Transformation :"
+
+
+msgctxt "Operator"
+msgid "Lamp:"
+msgstr "Lampe :"
+
+
+msgctxt "Operator"
+msgid "Export_animation:"
+msgstr "Export animation :"
+
+
+msgctxt "Operator"
+msgid "Constraint:"
+msgstr "Contrainte :"
+
+
+msgctxt "Operator"
+msgid "Mask:"
+msgstr "Masque :"
+
+
+msgctxt "Operator"
+msgid "Sound:"
+msgstr "Audio :"
+
+
+msgctxt "Operator"
+msgid "Sculpt:"
+msgstr "Sculpture :"
 
 
 msgctxt "Operator"
 msgid "Material:"
 msgstr "Matériau :"
+
+
+msgctxt "Operator"
+msgid "Texture:"
+msgstr "Texture :"
+
+
+msgctxt "Operator"
+msgid "Blender_id:"
+msgstr "Blender id :"
+
+
+msgctxt "Operator"
+msgid "Armature:"
+msgstr "Armature :"
+
+
+msgctxt "Operator"
+msgid "Render:"
+msgstr "Rendu :"
+
+
+msgctxt "Operator"
+msgid "Buttons:"
+msgstr "Boutons :"
+
+
+msgctxt "Operator"
+msgid "Logic:"
+msgstr "Logique :"
+
+
+msgctxt "Operator"
+msgid "Mocap:"
+msgstr "Mocap :"
+
+
+msgctxt "Operator"
+msgid "File:"
+msgstr "Fichier :"
+
+
+msgctxt "Operator"
+msgid "Export_scene:"
+msgstr "Export scène :"
+
+
+msgctxt "Operator"
+msgid "Export_shape:"
+msgstr "Export forme :"
+
+
+msgctxt "Operator"
+msgid "Fluid:"
+msgstr "Fluide :"
+
+
+msgctxt "Operator"
+msgid "Lattice:"
+msgstr "Lattice :"
+
+
+msgctxt "Operator"
+msgid "Pose:"
+msgstr "Pose :"
+
+
+msgctxt "Operator"
+msgid "View3d:"
+msgstr "Vue 3D :"
+
+
+msgctxt "Operator"
+msgid "Time:"
+msgstr "Temps :"
+
+
+msgctxt "Operator"
+msgid "Image:"
+msgstr "Image :"
+
+
+msgctxt "Operator"
+msgid "World:"
+msgstr "Monde :"
+
+
+msgctxt "Operator"
+msgid "Import_scene:"
+msgstr "Import scène :"
 
 
 msgctxt "WindowManager"
@@ -82996,6 +83048,10 @@ msgstr "Enlever"
 
 msgid "Deform:"
 msgstr "Déformer :"
+
+
+msgid "Error: Potentially corrupt library, run 'Sanitize' operator to fix"
+msgstr "Erreur : bibliothèque potentiellement corrompue, lancer l’opérateur “Assainir” pour régler le problème"
 
 
 msgid "Reiteration:"
@@ -91799,6 +91855,10 @@ msgid "No filename given"
 msgstr "Aucun nom de fichier donné"
 
 
+msgid "Unable to determine ABC sequence length"
+msgstr "Impossible de déterminer la longueur de la séquence ABC"
+
+
 msgid "Export Data Options:"
 msgstr "Options d’export de données :"
 
@@ -96766,8 +96826,8 @@ msgid "Clearcoat"
 msgstr "Vernis"
 
 
-msgid "Clearcoat Gloss"
-msgstr "Brillance de vernis"
+msgid "Clearcoat Roughness"
+msgstr "Rugosité de vernis"
 
 
 msgid "Transmission Roughness"
