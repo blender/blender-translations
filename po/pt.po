@@ -1,10 +1,10 @@
 
 msgid ""
 msgstr ""
-"Project-Id-Version: Blender 2.79 (sub 0) (b'6e7d9621180')\n"
+"Project-Id-Version: Blender 2.79 (sub 0) (b'9b7d5067795')\n"
 "Report-Msgid-Bugs-To: Ivan Paulos Tomé <ivan.paulos.tome@yandex.com>\n"
-"POT-Creation-Date: 2017-08-17 15:17:11\n"
-"PO-Revision-Date: 2017-07-20 15:41-0300\n"
+"POT-Creation-Date: 2017-09-04 17:20:25\n"
+"PO-Revision-Date: 2017-08-31 21:37-0300\n"
 "Last-Translator: Ivan Paulos Tomé <greylica@gmail.com>\n"
 "Language-Team: Ivan Paulos Tomé, Inês Almeida, João Brandão (ULISBOA), Paulo Martins <ivan.paulos.tome@yandex.com>\n"
 "Language: pt\n"
@@ -13763,15 +13763,15 @@ msgstr "Pincel"
 
 
 msgid "Project strokes to plane locked to X"
-msgstr "Os traços de projeção localizados no plano bloqueado no eixo X."
+msgstr "A projeção dos traços será bloqueada no eixo X do plano."
 
 
 msgid "Project strokes to plane locked to Y"
-msgstr "Os traços de projeção localizados no plano bloqueado no eixo Y."
+msgstr "A projeção dos traços será bloqueada no eixo Y do plano."
 
 
 msgid "Project strokes to plane locked to Z"
-msgstr "Os traços de projeção localizados no plano bloqueado no eixo Z."
+msgstr "A projeção dos traços será bloqueada no eixo Z do plano."
 
 
 msgid "Alpha value for selected vertices"
@@ -17720,7 +17720,7 @@ msgstr "Verdadeiro caso os dados da imagem estejam carregados na memória."
 
 
 msgid "Dirty"
-msgstr "Sujo"
+msgstr "Incongruência(s)"
 
 
 msgid "Image has changed and is not saved"
@@ -45414,7 +45414,7 @@ msgstr "Aplica a parte renderizada do mostrador de transformação ao guardar a 
 
 msgctxt "Operator"
 msgid "Save Dirty"
-msgstr "Guardar sujo"
+msgstr "Guardar incongruentes"
 
 
 msgid "Save all modified textures"
@@ -51743,24 +51743,12 @@ msgid "Origin to Geometry"
 msgstr "Origem para a geometria"
 
 
-msgid "Move object origin to center of object geometry"
-msgstr "Move a origem do objeto para o centro da geometria do objeto."
-
-
 msgid "Origin to 3D Cursor"
 msgstr "Origem para o cursor 3D"
 
 
 msgid "Move object origin to position of the 3D cursor"
 msgstr "Move a origem do objeto para a posição do cursor 3D."
-
-
-msgid "Origin to Center of Mass"
-msgstr "Origem para o centro da massa"
-
-
-msgid "Move object origin to the object center of mass (assuming uniform density)"
-msgstr "Move a origem do objeto para o centro da massa do objeto (assumindo uma densidade uniforme)."
 
 
 msgid "Clear the object's parenting"
@@ -53452,7 +53440,7 @@ msgstr "Expurgar tudo"
 
 
 msgid "Clear all orphaned data-blocks without any users from the file (cannot be undone, saves to current .blend file)"
-msgstr "Limpa todos os blocos de dados órfãos sem quaisquer usuários a partir do ficheiro (após acionado, não poderá mais ser desfeito, pois as mudanças são salvas no ficheiro Blender atual)."
+msgstr "Limpa todos os blocos de dados órfãos sem quaisquer utilizadores a partir do ficheiro (após acionado, não poderá mais ser desfeito, pois as mudanças são guardadas no ficheiro Blender atual)."
 
 
 msgctxt "Operator"
@@ -53985,7 +53973,7 @@ msgstr "Permite ajustar o brilho e contraste das cores dos vértices."
 
 msgctxt "Operator"
 msgid "Dirty Vertex Colors"
-msgstr "Cores sujas de vértices"
+msgstr "Escurecer cores dos vértices"
 
 
 msgid "Blur Iterations"
@@ -54013,11 +54001,11 @@ msgstr "Menos que 90 limita o ângulo usado dentro da faixa tonal."
 
 
 msgid "Dirt Angle"
-msgstr "Ângulo sem adequação"
+msgstr "Ângulo incongruente"
 
 
 msgid "Dirt Only"
-msgstr "Somente sem adequação"
+msgstr "Somente incongruências"
 
 
 msgid "Don't calculate cleans for convex areas"
@@ -79966,6 +79954,10 @@ msgid "DPI"
 msgstr "PPP"
 
 
+msgid "DPI for add-ons to use when drawing custom user interface elements, controlled by operating system settings and Blender UI scale, with a reference value of 72 DPI (note that since this value includes a user defined scale, it is not always the actual monitor DPI)"
+msgstr "Pixeis por polegada (PPP) a ser usados durante os desenhos dos elementos personalizados na interface, controlados pelas definições do sistema operacional e escalonamento dos itens da interface de utilizador do Blender, usando como referência um valor de 72 PPP (note que pelo fato deste valor incluir uma escala definida pelo utilizador, nem sempre será correspondente a resolução em PPPs do monitor em utilização)."
+
+
 msgid "Interface Font"
 msgstr "Fonte da interface"
 
@@ -80126,8 +80118,12 @@ msgid "GLSL Compute"
 msgstr "Computação GLSL"
 
 
+msgid "Suggested line thickness and point size in pixels, for add-ons drawing custom user interface elements, controlled by operating system settings and Blender UI scale"
+msgstr "Espessura de linha sugerida e tamanho dos pontos em pixeis, para complementos que desenham elementos personalizados de interface, controlados pelas definições do sistema operacional e escala da interface de utilizador do Blender."
+
+
 msgid "Prefetch Frames"
-msgstr "Carregar fotogramas previamente"
+msgstr "Carregar previamente os fotogramas"
 
 
 msgid "Number of frames to render ahead during playback (sequencer only)"
@@ -80590,8 +80586,28 @@ msgid "Direct conversion of frame numbers to seconds"
 msgstr "Conversão direta de números de fotogramas para segundos."
 
 
+msgid "UI Line Width"
+msgstr "Largura das linhas na interface de utilizador"
+
+
+msgid "Changes the thickness of lines and points in the interface"
+msgstr "Altera a espessura das linhas e pontos presentes na interface de utilizador."
+
+
 msgid "Thin"
 msgstr "Reduzir"
+
+
+msgid "Thinner lines than the default"
+msgstr "Linhas mais finas que o padrão."
+
+
+msgid "Automatic line width based on UI scale"
+msgstr "Largura automática das linhas com base na escala usada na interface de utilizador."
+
+
+msgid "Thicker lines than the default"
+msgstr "Linhas mais espessas que o padrão."
 
 
 msgid "UI Scale"
@@ -80616,6 +80632,14 @@ msgstr "Travar câmara ao parente"
 
 msgid "When the camera is locked to the view and in fly mode, transform the parent rather than the camera"
 msgstr "Quando a câmara está travada para a visão e em modo de voo, transforma o parente ao invés da câmara."
+
+
+msgid "Cursor Lock Adjust"
+msgstr "Ajuste de bloqueio do cursor"
+
+
+msgid "Place the cursor without 'jumping' to the new location (when lock-to-cursor is used)"
+msgstr "Posiciona o cursor sem o uso de saltos para a nova localização (quando a opção \"Bloquear no cursor\" está sendo usada)."
 
 
 msgid "Contents Follow Opening Direction"
@@ -81243,138 +81267,13 @@ msgstr "Calcula a oclusão dos objetos com a cor do ambiente, como se eles estiv
 
 
 msgctxt "Operator"
-msgid "Cloth:"
-msgstr "Tecidos:"
+msgid "Armature:"
+msgstr "Armações:"
 
 
 msgctxt "Operator"
-msgid "Export_animation:"
-msgstr "Exportar animações:"
-
-
-msgctxt "Operator"
-msgid "Sound:"
-msgstr "Sons:"
-
-
-msgctxt "Operator"
-msgid "Sequencer:"
-msgstr "Edit. de sequências:"
-
-
-msgctxt "Operator"
-msgid "Sketch:"
-msgstr "Esboços:"
-
-
-msgctxt "Operator"
-msgid "Mask:"
-msgstr "Máscaras:"
-
-
-msgctxt "Operator"
-msgid "Action:"
-msgstr "Ação:"
-
-
-msgctxt "Operator"
-msgid "Export_scene:"
-msgstr "Exportar cenas:"
-
-
-msgctxt "Operator"
-msgid "Import_shape:"
-msgstr "Importar formatos:"
-
-
-msgctxt "Operator"
-msgid "Image:"
-msgstr "Imagens:"
-
-
-msgctxt "Operator"
-msgid "Import_scene:"
-msgstr "Importar cena:"
-
-
-msgctxt "Operator"
-msgid "Curve:"
-msgstr "Curvas:"
-
-
-msgctxt "Operator"
-msgid "File:"
-msgstr "Ficheiros:"
-
-
-msgctxt "Operator"
-msgid "Graph:"
-msgstr "Gráfico:"
-
-
-msgctxt "Operator"
-msgid "Text:"
-msgstr "Textos:"
-
-
-msgctxt "Operator"
-msgid "Boid:"
-msgstr "Revoadas:"
-
-
-msgctxt "Operator"
-msgid "Node:"
-msgstr "Nós:"
-
-
-msgctxt "Operator"
-msgid "Fluid:"
-msgstr "Fluidos:"
-
-
-msgctxt "Operator"
-msgid "Font:"
-msgstr "Fontes:"
-
-
-msgctxt "Operator"
-msgid "Mesh:"
-msgstr "Malhas:"
-
-
-msgctxt "Operator"
-msgid "Constraint:"
-msgstr "Restrições:"
-
-
-msgctxt "Operator"
-msgid "Cycles:"
-msgstr "Rend. Cycles:"
-
-
-msgctxt "Operator"
-msgid "Logic:"
-msgstr "Lógica:"
-
-
-msgctxt "Operator"
-msgid "Dpaint:"
-msgstr "Pintura dinâmica:"
-
-
-msgctxt "Operator"
-msgid "Blender_id:"
-msgstr "Identif. Blender:"
-
-
-msgctxt "Operator"
-msgid "Import_curve:"
-msgstr "Importar curvas:"
-
-
-msgctxt "Operator"
-msgid "Safe_areas:"
-msgstr "Áreas de segurança:"
+msgid "Rigidbody:"
+msgstr "Corpos rígidos:"
 
 
 msgctxt "Operator"
@@ -81383,28 +81282,38 @@ msgstr "Renderização:"
 
 
 msgctxt "Operator"
-msgid "Marker:"
-msgstr "Marcadores:"
+msgid "Sound:"
+msgstr "Sons:"
 
 
 msgctxt "Operator"
-msgid "Clip:"
-msgstr "Clipes:"
+msgid "Constraint:"
+msgstr "Restrições:"
 
 
 msgctxt "Operator"
-msgid "Particle:"
-msgstr "Partículas:"
+msgid "Paintcurve:"
+msgstr "Curvas de pintura:"
 
 
 msgctxt "Operator"
-msgid "Group:"
-msgstr "Grupo:"
+msgid "Sketch:"
+msgstr "Esboços:"
 
 
 msgctxt "Operator"
-msgid "Ed:"
-msgstr "Edição:"
+msgid "Node:"
+msgstr "Nós:"
+
+
+msgctxt "Operator"
+msgid "Cycles:"
+msgstr "Rend. Cycles:"
+
+
+msgctxt "Operator"
+msgid "Image:"
+msgstr "Imagens:"
 
 
 msgctxt "Operator"
@@ -81413,28 +81322,28 @@ msgstr "Ficheiros de cache:"
 
 
 msgctxt "Operator"
-msgid "Uv:"
-msgstr "UVs:"
+msgid "Export_scene:"
+msgstr "Exportar cenas:"
 
 
 msgctxt "Operator"
-msgid "Time:"
-msgstr "Tempo:"
+msgid "Export_mesh:"
+msgstr "Exportar malhas:"
 
 
 msgctxt "Operator"
-msgid "Import_mesh:"
-msgstr "Importar malhas:"
+msgid "Import_curve:"
+msgstr "Importar curvas:"
 
 
 msgctxt "Operator"
-msgid "View3d:"
-msgstr "Visualização 3D:"
+msgid "View2d:"
+msgstr "Visualização 2D:"
 
 
 msgctxt "Operator"
-msgid "Export_anim:"
-msgstr "Exportar animações:"
+msgid "Sculpt:"
+msgstr "Escultura:"
 
 
 msgctxt "Operator"
@@ -81443,13 +81352,103 @@ msgstr "Exportar formatos:"
 
 
 msgctxt "Operator"
-msgid "Export_blend:"
-msgstr "Exportar arq. Blender:"
+msgid "Wm:"
+msgstr "Gerenc. de janelas :"
 
 
 msgctxt "Operator"
-msgid "Surface:"
-msgstr "Superfícies:"
+msgid "Dpaint:"
+msgstr "Pintura dinâmica:"
+
+
+msgctxt "Operator"
+msgid "Safe_areas:"
+msgstr "Áreas de segurança:"
+
+
+msgctxt "Operator"
+msgid "Time:"
+msgstr "Tempo:"
+
+
+msgctxt "Operator"
+msgid "Sequencer:"
+msgstr "Edit. de sequências:"
+
+
+msgctxt "Operator"
+msgid "File:"
+msgstr "Ficheiros:"
+
+
+msgctxt "Operator"
+msgid "Uv:"
+msgstr "UVs:"
+
+
+msgctxt "Operator"
+msgid "Particle:"
+msgstr "Partículas:"
+
+
+msgctxt "Operator"
+msgid "Import_anim:"
+msgstr "Importar animações:"
+
+
+msgctxt "Operator"
+msgid "World:"
+msgstr "Ambiente:"
+
+
+msgctxt "Operator"
+msgid "Gpencil:"
+msgstr "Lápis de cera:"
+
+
+msgctxt "Operator"
+msgid "Mball:"
+msgstr "Esferas-meta:"
+
+
+msgctxt "Operator"
+msgid "Object:"
+msgstr "Objetos:"
+
+
+msgctxt "Operator"
+msgid "Screen:"
+msgstr "Telas:"
+
+
+msgctxt "Operator"
+msgid "Text:"
+msgstr "Textos:"
+
+
+msgctxt "Operator"
+msgid "Mesh:"
+msgstr "Malhas:"
+
+
+msgctxt "Operator"
+msgid "View3d:"
+msgstr "Visualização 3D:"
+
+
+msgctxt "Operator"
+msgid "Mathvis:"
+msgstr "Visualização matemática:"
+
+
+msgctxt "Operator"
+msgid "Lamp:"
+msgstr "Lâmpadas:"
+
+
+msgctxt "Operator"
+msgid "Texture:"
+msgstr "Texturas:"
 
 
 msgctxt "Operator"
@@ -81463,93 +81462,8 @@ msgstr "Organizador:"
 
 
 msgctxt "Operator"
-msgid "Transform:"
-msgstr "Transformações:"
-
-
-msgctxt "Operator"
-msgid "Armature:"
-msgstr "Armações:"
-
-
-msgctxt "Operator"
-msgid "Info:"
-msgstr "Informações:"
-
-
-msgctxt "Operator"
-msgid "Lamp:"
-msgstr "Lâmpadas:"
-
-
-msgctxt "Operator"
-msgid "Screen:"
-msgstr "Telas:"
-
-
-msgctxt "Operator"
-msgid "Rigidbody:"
-msgstr "Corpos rígidos:"
-
-
-msgctxt "Operator"
-msgid "Mathvis:"
-msgstr "Visualização matemática:"
-
-
-msgctxt "Operator"
-msgid "Buttons:"
-msgstr "Botões:"
-
-
-msgctxt "Operator"
-msgid "Pose:"
-msgstr "Poses:"
-
-
-msgctxt "Operator"
-msgid "Paint:"
-msgstr "Pintura:"
-
-
-msgctxt "Operator"
-msgid "World:"
-msgstr "Ambiente:"
-
-
-msgctxt "Operator"
-msgid "Nla:"
-msgstr "Anim. não linear:"
-
-
-msgctxt "Operator"
-msgid "Texture:"
-msgstr "Texturas:"
-
-
-msgctxt "Operator"
-msgid "Paintcurve:"
-msgstr "Curvas de pintura:"
-
-
-msgctxt "Operator"
-msgid "Poselib:"
-msgstr "Bibl. de poses:"
-
-
-msgctxt "Operator"
-msgid "View2d:"
-msgstr "Visualização 2D:"
-
-
-msgctxt "Operator"
-msgid "Material:"
-msgstr "Materiais:"
-
-
-msgctxt "Operator"
-msgid "Sculpt:"
-msgstr "Escultura:"
+msgid "Curve:"
+msgstr "Curvas:"
 
 
 msgctxt "Operator"
@@ -81558,38 +81472,43 @@ msgstr "Cache de pontos:"
 
 
 msgctxt "Operator"
-msgid "Mocap:"
-msgstr "Cap. de movimentos:"
+msgid "Import_scene:"
+msgstr "Importar cena:"
 
 
 msgctxt "Operator"
-msgid "Brush:"
-msgstr "Pincéis:"
+msgid "Font:"
+msgstr "Fontes:"
 
 
 msgctxt "Operator"
-msgid "Mball:"
-msgstr "Esferas-meta:"
+msgid "Marker:"
+msgstr "Marcadores:"
 
 
 msgctxt "Operator"
-msgid "Script:"
-msgstr "Scripts:"
+msgid "Info:"
+msgstr "Informações:"
 
 
 msgctxt "Operator"
-msgid "Object:"
-msgstr "Objetos:"
+msgid "Action:"
+msgstr "Ação:"
 
 
 msgctxt "Operator"
-msgid "Gpencil:"
-msgstr "Lápis de cera:"
+msgid "Cloth:"
+msgstr "Tecidos:"
 
 
 msgctxt "Operator"
-msgid "Scene:"
-msgstr "Cenas:"
+msgid "Logic:"
+msgstr "Lógica:"
+
+
+msgctxt "Operator"
+msgid "Surface:"
+msgstr "Superfícies:"
 
 
 msgctxt "Operator"
@@ -81598,28 +81517,18 @@ msgstr "Linha de comando:"
 
 
 msgctxt "Operator"
-msgid "Export_mesh:"
-msgstr "Exportar malhas:"
+msgid "Fluid:"
+msgstr "Fluidos:"
 
 
 msgctxt "Operator"
-msgid "Wm:"
-msgstr "Gerenc. de janelas :"
+msgid "Transform:"
+msgstr "Transformações:"
 
 
 msgctxt "Operator"
-msgid "Ui:"
-msgstr "Interf. de utilizador:"
-
-
-msgctxt "Operator"
-msgid "Import_anim:"
-msgstr "Importar animações:"
-
-
-msgctxt "Operator"
-msgid "Lattice:"
-msgstr "Treliças:"
+msgid "Palette:"
+msgstr "Paletas:"
 
 
 msgctxt "Operator"
@@ -81628,8 +81537,123 @@ msgstr "Câmaras:"
 
 
 msgctxt "Operator"
-msgid "Palette:"
-msgstr "Paletas:"
+msgid "Material:"
+msgstr "Materiais:"
+
+
+msgctxt "Operator"
+msgid "Clip:"
+msgstr "Clipes:"
+
+
+msgctxt "Operator"
+msgid "Mask:"
+msgstr "Máscaras:"
+
+
+msgctxt "Operator"
+msgid "Scene:"
+msgstr "Cenas:"
+
+
+msgctxt "Operator"
+msgid "Export_animation:"
+msgstr "Exportar animações:"
+
+
+msgctxt "Operator"
+msgid "Boid:"
+msgstr "Revoadas:"
+
+
+msgctxt "Operator"
+msgid "Brush:"
+msgstr "Pincéis:"
+
+
+msgctxt "Operator"
+msgid "Lattice:"
+msgstr "Treliças:"
+
+
+msgctxt "Operator"
+msgid "Ed:"
+msgstr "Edição:"
+
+
+msgctxt "Operator"
+msgid "Blender_id:"
+msgstr "Identif. Blender:"
+
+
+msgctxt "Operator"
+msgid "Ui:"
+msgstr "Interf. de utilizador:"
+
+
+msgctxt "Operator"
+msgid "Export_blend:"
+msgstr "Exportar arq. Blender:"
+
+
+msgctxt "Operator"
+msgid "Nla:"
+msgstr "Anim. não linear:"
+
+
+msgctxt "Operator"
+msgid "Script:"
+msgstr "Scripts:"
+
+
+msgctxt "Operator"
+msgid "Group:"
+msgstr "Grupo:"
+
+
+msgctxt "Operator"
+msgid "Paint:"
+msgstr "Pintura:"
+
+
+msgctxt "Operator"
+msgid "Export_anim:"
+msgstr "Exportar animações:"
+
+
+msgctxt "Operator"
+msgid "Buttons:"
+msgstr "Botões:"
+
+
+msgctxt "Operator"
+msgid "Mocap:"
+msgstr "Cap. de movimentos:"
+
+
+msgctxt "Operator"
+msgid "Import_shape:"
+msgstr "Importar formatos:"
+
+
+msgctxt "Operator"
+msgid "Import_mesh:"
+msgstr "Importar malhas:"
+
+
+msgctxt "Operator"
+msgid "Pose:"
+msgstr "Poses:"
+
+
+msgctxt "Operator"
+msgid "Poselib:"
+msgstr "Bibl. de poses:"
+
+
+msgctxt "Operator"
+msgid "Graph:"
+msgstr "Gráfico:"
 
 
 msgctxt "WindowManager"
@@ -87135,6 +87159,10 @@ msgid "Interaction:"
 msgstr "Interação:"
 
 
+msgid "Line Width"
+msgstr "Espessura da linha"
+
+
 msgid "View Name"
 msgstr "Visualizar nomes"
 
@@ -88370,11 +88398,6 @@ msgstr "Origem para o cursor 3D"
 
 
 msgctxt "Operator"
-msgid "Origin to Center of Mass"
-msgstr "Origem para o centro da massa"
-
-
-msgctxt "Operator"
 msgid "X Local"
 msgstr "X Local"
 
@@ -89221,6 +89244,18 @@ msgid "Add To Library"
 msgstr "Adicionar para biblioteca"
 
 
+msgid "Painting Mode:"
+msgstr "Modo de pintura:"
+
+
+msgid "Stencil Image:"
+msgstr "Imagem estêncil:"
+
+
+msgid "Visualization:"
+msgstr "Visualização:"
+
+
 msgid "Tiling:"
 msgstr "Ladrilhamento:"
 
@@ -89385,6 +89420,18 @@ msgstr "Adicionar compartimento de pintura"
 
 msgid "Front Faces Only"
 msgstr "Somente as faces frontais"
+
+
+msgid "Materials:"
+msgstr "Materiais:"
+
+
+msgid "Available Paint Slots:"
+msgstr "Compartimentos de pintura disponíveis:"
+
+
+msgid "Canvas Image:"
+msgstr "Imagem de lona:"
 
 
 msgid "Missing Canvas"
