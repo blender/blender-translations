@@ -1,9 +1,9 @@
 
 msgid ""
 msgstr ""
-"Project-Id-Version: Blender 2.79 (sub 1) (b'a22af1a84b3')\n"
+"Project-Id-Version: Blender 2.79 (sub 1) (b'5fc1faa737c')\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-10-04 12:40:08\n"
+"POT-Creation-Date: 2017-11-08 10:52:51\n"
 "PO-Revision-Date: \n"
 "Last-Translator: Bastien Montagne <montagne29@wanadoo.fr>\n"
 "Language-Team: \n"
@@ -10007,6 +10007,26 @@ msgid "Index to the specific property affected by F-Curve if applicable"
 msgstr "Indice de la propriété particulière affectée par la F-courbe, si applicable"
 
 
+msgid "Auto Handle Smoothing"
+msgstr "Adoucissement automatique aux poignées"
+
+
+msgid "Algorithm used to compute automatic handles"
+msgstr "Algorithme utilisé pour calculer automatiquement les poignées"
+
+
+msgid "Auto handles only take adjacent keys into account (legacy mode)"
+msgstr "Les poignées automatiques ne prennent en compte que les images-clés adjacentes (ancien mode)"
+
+
+msgid "Continuous Acceleration"
+msgstr "Accélération continue"
+
+
+msgid "Auto handles are placed to avoid jumps in acceleration"
+msgstr "Les poignées automatiques sont définies de façon à éviter les variations d’accélération"
+
+
 msgid "Color of the F-Curve in the Graph Editor"
 msgstr "Couleur de la F-courbe dans l’éditeur de graphes"
 
@@ -15324,6 +15344,14 @@ msgid "Editable falloff curve"
 msgstr "Courbe d’atténuation éditable"
 
 
+msgid "Falloff Angle"
+msgstr "Angle d’affaiblissement"
+
+
+msgid "Paint most on faces pointing towards the view according to this angle"
+msgstr "Peindre le plus sur les faces dirigées vers la vue, d’après cet angle"
+
+
 msgid "Fill Threshold"
 msgstr "Limite de remplissage"
 
@@ -15764,6 +15792,14 @@ msgid "Brush only affects vertexes that face the viewer"
 msgstr "La brosse n’affecte que les vertices faisant face à l’utilisateur"
 
 
+msgid "Use Front-Face Falloff"
+msgstr "Utiliser atténuation de face"
+
+
+msgid "Blend brush influence by how much they face the front"
+msgstr "Affecter l’influence de la brosse par leur angle avec l’écran"
+
+
 msgid "Use Gradient"
 msgstr "Utiliser dégradé"
 
@@ -15904,6 +15940,14 @@ msgid "Show texture in viewport"
 msgstr "Afficher la texture dans la vue 3D"
 
 
+msgid "2D Falloff"
+msgstr "Atténuation 2D"
+
+
+msgid "Apply brush influence in 2D circle instead of a sphere"
+msgstr "Appliquer l’influence de la brosse dans un cercle 2D au lieu d’une sphère"
+
+
 msgid "Absolute Jitter"
 msgstr "Bruitage absolu"
 
@@ -15986,6 +16030,14 @@ msgstr "Vers l’avant"
 
 msgid "The time to use for looking up the data in the cache file, or to determine which file to use in a file sequence"
 msgstr "Le temps à utiliser pour chercher les données dans le fichier cache, ou pour déterminer quel fichier utiliser dans une séquence de fichiers"
+
+
+msgid "Frame Offset"
+msgstr "Décalage de frame"
+
+
+msgid "Subtracted from the current frame to use for looking up the data in the cache file, or to determine which file to use in a file sequence"
+msgstr "Soustrait de la frame courante, utilisé pour chercher les données dans le fichier cache, ou pour déterminer quel fichier utiliser dans une séquence de fichiers"
 
 
 msgid "Sequence"
@@ -17554,14 +17606,6 @@ msgstr "Enregistrer l’image au format PNG"
 
 msgid "Output image in JPEG format"
 msgstr "Enregistrer l’image au format JPEG"
-
-
-msgid "JPEG 2000"
-msgstr "JPEG 2000"
-
-
-msgid "Output image in JPEG 2000 format"
-msgstr "Enregistrer l’image au format JPEG 2000"
 
 
 msgid "Targa"
@@ -20096,10 +20140,6 @@ msgstr "Nom du fichier vidéo ou séquence d’images"
 
 msgid "Detected duration of movie clip in frames"
 msgstr "Durée détectée du clip vidéo, en frames"
-
-
-msgid "Frame Offset"
-msgstr "Décalage de frame"
 
 
 msgid "Offset of footage first frame relative to it's file name (affects only how footage is loading, does not change data associated with a clip)"
@@ -24543,10 +24583,6 @@ msgid "File format to save the rendered images as"
 msgstr "Format de fichier dans lequel enregistrer l’image"
 
 
-msgid "Codec settings for Jpeg2000"
-msgstr "Réglages de codec Jpeg2000"
-
-
 msgid "Quality for image formats that support lossy compression"
 msgstr "Qualité, pour les formats d’image supportant la compression destructive"
 
@@ -24569,30 +24605,6 @@ msgstr "Log"
 
 msgid "Convert to logarithmic color space"
 msgstr "Convertir l’espace de couleur logarithmique"
-
-
-msgid "Cinema (48)"
-msgstr "Cinéma (48)"
-
-
-msgid "Use Openjpeg Cinema Preset (48fps)"
-msgstr "Utiliser le pré-réglage cinéma Openjpeg (48fps)"
-
-
-msgid "Cinema"
-msgstr "Cinema"
-
-
-msgid "Use Openjpeg Cinema Preset"
-msgstr "Utiliser le pré-réglage cinéma Openjpeg"
-
-
-msgid "YCC"
-msgstr "YCC"
-
-
-msgid "Save luminance-chrominance-chrominance channels instead of RGB colors"
-msgstr "Enregistrer les canaux luminance-chrominance-chrominance au lieu des couleurs RGB"
 
 
 msgid "When rendering animations, save JPG preview images in same directory"
@@ -28888,12 +28900,12 @@ msgid "Effect Strip"
 msgstr "Bande d’effet"
 
 
-msgid "Change"
-msgstr "Changer"
-
-
 msgid "Strip"
 msgstr "Bande"
+
+
+msgid "Lock/Mute"
+msgstr "Verrouiller/rendre muet"
 
 
 msgid "View Type"
@@ -28988,6 +29000,10 @@ msgid "Bone Roll"
 msgstr "Roulis d’os"
 
 
+msgid "Clean Up"
+msgstr "Nettoyer"
+
+
 msgid "GPencil"
 msgstr "CrayonG"
 
@@ -28996,16 +29012,20 @@ msgid "Interpolate"
 msgstr "Interpoler"
 
 
-msgid "Clean up"
-msgstr "Nettoyer"
-
-
 msgid "Normals"
 msgstr "Normales"
 
 
 msgid "Select All by Trait"
 msgstr "Tout sélectionner par caractéristiques"
+
+
+msgid "Select Linked"
+msgstr "Sélectionner liés"
+
+
+msgid "Select Loops"
+msgstr "Sélectionner Boucles"
 
 
 msgid "Mesh Select Mode"
@@ -29048,6 +29068,10 @@ msgid "Quick Effects"
 msgstr "Effets rapides"
 
 
+msgid "Relations"
+msgstr "Relations"
+
+
 msgid "Propagate"
 msgstr "Propager"
 
@@ -29068,6 +29092,10 @@ msgid "Clone Layer"
 msgstr "Calque de clonage"
 
 
+msgid "Undo/Redo"
+msgstr "Annuler/refaire"
+
+
 msgid "UV Mapping"
 msgstr "Placage UV"
 
@@ -29080,8 +29108,16 @@ msgid "Align View to Active"
 msgstr "Aligner vue sur actif"
 
 
+msgid "View Borders"
+msgstr "Limites de vue"
+
+
 msgid "Navigation"
 msgstr "Navigation"
+
+
+msgid "Viewpoint"
+msgstr "Point de vue"
 
 
 msgid "Operator Presets"
@@ -36757,6 +36793,10 @@ msgid "Background"
 msgstr "Arrière-plan"
 
 
+msgid "Number of rays to trace per shader evaluation"
+msgstr "Nombre de rayons à tracer par évaluation de shader"
+
+
 msgid "Blackbody"
 msgstr "Corps noir"
 
@@ -37205,8 +37245,8 @@ msgid "No interpolation (sample closest texel)"
 msgstr "Pas d’interpolation (échantillonner le texel le plus proche)"
 
 
-msgid "Cubic interpolation (CPU only)"
-msgstr "Interpolation cubique (CPU uniquement)"
+msgid "Cubic interpolation"
+msgstr "Interpolation cubique"
 
 
 msgid "Bicubic when magnifying, else bilinear (OSL only)"
@@ -38409,12 +38449,16 @@ msgid "Axis Range"
 msgstr "Intervalle d’axe"
 
 
+msgid "Deselect"
+msgstr "Désélectionner"
+
+
+msgid "Deselect rather than select items"
+msgstr "Désélectionner plutôt que sélectionner les éléments"
+
+
 msgid "Extend selection instead of deselecting everything first"
 msgstr "Etendre la slection au lieu de tout désélectionner"
-
-
-msgid "Gesture Mode"
-msgstr "Mode de gestuelle"
 
 
 msgid "X Max"
@@ -38440,10 +38484,6 @@ msgstr "Sélectionner par cercle"
 
 msgid "Select keyframe points using circle selection"
 msgstr "Sélectionner des points d’image clé avec la sélection par cercle"
-
-
-msgid "Event Type"
-msgstr "Type d’événement"
 
 
 msgid "Select all keyframes on the specified frame(s)"
@@ -38473,14 +38513,6 @@ msgstr "Sélectionner par lasso"
 
 msgid "Select keyframe points using lasso selection"
 msgstr "Sélectionner des points d’image clé avec la sélection par lasso"
-
-
-msgid "Deselect"
-msgstr "Désélectionner"
-
-
-msgid "Deselect rather than select items"
-msgstr "Désélectionner plutôt que sélectionner les éléments"
 
 
 msgctxt "Operator"
@@ -41576,6 +41608,15 @@ msgstr "(Dé)sélectionner dernier"
 
 msgid "(De)select last of visible part of each NURBS"
 msgstr "(Dé)sélectionner la dernière des parties visibles de chaque NURBS"
+
+
+msgctxt "Operator"
+msgid "Decimate Curve"
+msgstr "Décimer courbe"
+
+
+msgid "Simplify selected curves"
+msgstr "Simplifier les courbes sélectionnées"
 
 
 msgid "Delete selected control points or segments"
@@ -45567,6 +45608,10 @@ msgid "Zoom in the view to the nearest item contained in the border"
 msgstr "Zoomer dans la vue vers l’élément le plus proche contenu dans la boîte"
 
 
+msgid "Zoom Out"
+msgstr "Zoom arrière"
+
+
 msgid "Zoom in the image (centered around 2D cursor)"
 msgstr "Zoomer dans l’image (centré autour du curseur 2D)"
 
@@ -48755,8 +48800,8 @@ msgid "Connected faces (instead of edges)"
 msgstr "Faces connectées (au lieu des arêtes)"
 
 
-msgid "Select all vertices linked to the active mesh"
-msgstr "Sélectionner tous les vertices liés au mesh actif"
+msgid "Select all vertices connected to the current selection"
+msgstr "Sélectionner tous les vertices connectés à la sélection courante"
 
 
 msgid "Delimit selected region"
@@ -48858,6 +48903,10 @@ msgstr "Désélectionner chaque Nième élément, en partant du(de la) vertex, a
 msgctxt "Operator"
 msgid "Select Previous Element"
 msgstr "Sélectionner élément précédent"
+
+
+msgid "Select the previous element (using selection order)"
+msgstr "Sélectionner l’élément précédent (selon l’ordre de sélection)"
 
 
 msgid "Randomly select vertices"
@@ -48972,8 +49021,8 @@ msgid "Select Shortest Path"
 msgstr "Sélectionner chemin le plus court"
 
 
-msgid "Selected vertex path between two vertices"
-msgstr "Chemin de vertices sélectionnés entre deux vertices"
+msgid "Selected shortest path between two vertices/edges/faces"
+msgstr "Sélectionner le chemin le plus court entre deux vertices/arêtes/faces"
 
 
 msgctxt "Operator"
@@ -53208,10 +53257,6 @@ msgid "Unhide"
 msgstr "Révéler"
 
 
-msgid "Select Linked"
-msgstr "Sélectionner liés"
-
-
 msgctxt "Operator"
 msgid "Add Drivers for Selected"
 msgstr "Ajouter contrôleurs aux sélectionnés"
@@ -54110,8 +54155,8 @@ msgid "Vertex Color from Weight"
 msgstr "Poids vers couleurs de vertices"
 
 
-msgid "Convert active weight into grey scale vertex colors"
-msgstr "Convertir les poids actifs en couleurs de vertices en niveaux de gris"
+msgid "Convert active weight into gray scale vertex colors"
+msgstr "Convertir le poids actif en couleurs de vertices en niveaux de gris"
 
 
 msgctxt "Operator"
@@ -56253,15 +56298,6 @@ msgstr "(Dés)activer l’affichage de l’en-tête"
 
 
 msgctxt "Operator"
-msgid "Flip Header Region"
-msgstr "Retourner en-tête de région"
-
-
-msgid "Toggle the header over/below the main window area"
-msgstr "Faire passer l’en-tête au-dessus/au-dessous de la zone principale de la fenêtre"
-
-
-msgctxt "Operator"
 msgid "Expand/Collapse Header Menus"
 msgstr "Déployer/refermer les menus d’en-tête"
 
@@ -57247,6 +57283,11 @@ msgstr "Rogner le contenu de la bande active"
 
 msgid "Offset to the data of the strip"
 msgstr "Décalage aux données de la bande"
+
+
+msgctxt "Operator"
+msgid "Snap Strips to Frame"
+msgstr "Coller les bandes à la frame"
 
 
 msgid "Frame where selected strips will be snapped"
@@ -62056,10 +62097,6 @@ msgid "Animation Playback"
 msgstr "Lecture de l’animation"
 
 
-msgid "Undo/Redo"
-msgstr "Annuler/refaire"
-
-
 msgctxt "Operator"
 msgid "Revert"
 msgstr "Recharger"
@@ -62520,10 +62557,6 @@ msgid "Set image for texture painting directly"
 msgstr "Définir directement l’image pour la peinture de texture"
 
 
-msgid "Paint most on faces pointing towards the view according to this angle"
-msgstr "Peindre le plus sur les faces dirigées vers la vue, d’après cet angle"
-
-
 msgid "Size to capture the image for re-projecting"
 msgstr "Taille de capture de l’image, pour la reprojection"
 
@@ -62752,18 +62785,6 @@ msgid "Properties of vertex and weight paint mode"
 msgstr "Propriétés des modes de peinture de vertices et de poids"
 
 
-msgid "Spherical falloff from the brush"
-msgstr "Atténuation sphérique de la brosse"
-
-
-msgid "Circular falloff from the brush along the view"
-msgstr "Atténuation circulaire de la brosse alignée sur la vue"
-
-
-msgid "Ignore vertices pointing away from the view (faster)"
-msgstr "Ignorer les vertices dirigés à l’opposé de la vue (plus rapide)"
-
-
 msgid "Restrict"
 msgstr "Restreindre"
 
@@ -62782,10 +62803,6 @@ msgstr "Contrainte os"
 
 msgid "Bendy Bones"
 msgstr "Os Bendy"
-
-
-msgid "Relations"
-msgstr "Relations"
 
 
 msgid "Transform Locks"
@@ -62834,6 +62851,10 @@ msgstr "Stabilisation 2D"
 
 msgid "Solve"
 msgstr "Résoudre"
+
+
+msgid "Clean up"
+msgstr "Nettoyer"
 
 
 msgctxt "MovieClip"
@@ -86854,11 +86875,6 @@ msgstr "Groupé"
 
 
 msgctxt "Operator"
-msgid "Path/Files"
-msgstr "Chemin/fichiers"
-
-
-msgctxt "Operator"
 msgid "Jump to Previous Strip"
 msgstr "Aller à la bande précédente"
 
@@ -86896,6 +86912,16 @@ msgstr "Son"
 msgctxt "Operator"
 msgid "Slip Strip Contents"
 msgstr "Faire glisser contenu de bande"
+
+
+msgctxt "Operator"
+msgid "Change Path/Files"
+msgstr "Changer chemin/fichiers"
+
+
+msgctxt "Operator"
+msgid "Swap Data"
+msgstr "Interchanger données"
 
 
 msgid "Name:"
@@ -86956,7 +86982,7 @@ msgstr "Afficher toutes les séquences"
 
 
 msgctxt "Operator"
-msgid "Fit Preview in Window"
+msgid "Fit Preview in window"
 msgstr "Ajuster prévis. dans fenêtre"
 
 
@@ -87096,16 +87122,6 @@ msgstr "Déplacer/étendre depuis frame"
 
 
 msgctxt "Operator"
-msgid "Cut (Hard) at Frame"
-msgstr "Couper (dur) à la frame"
-
-
-msgctxt "Operator"
-msgid "Cut (Soft) at Frame"
-msgstr "Couper (doux) à la frame"
-
-
-msgctxt "Operator"
 msgid "Reload Strips and Adjust Length"
 msgstr "Recharger bandes et ajuster longueurs"
 
@@ -87113,6 +87129,16 @@ msgstr "Recharger bandes et ajuster longueurs"
 msgctxt "Operator"
 msgid "Mute Deselected Strips"
 msgstr "Désactiver bandes non-sélectionnées"
+
+
+msgctxt "Operator"
+msgid "Cut (Hard) at frame"
+msgstr "Couper (dur) à la frame"
+
+
+msgctxt "Operator"
+msgid "Cut (Soft) at frame"
+msgstr "Couper (doux) à la frame"
 
 
 msgid "Original Dimension: %dx%d"
@@ -87911,16 +87937,6 @@ msgstr "Curseur vers actif"
 
 
 msgctxt "Operator"
-msgid "Clipping Border..."
-msgstr "Découpe par boîte…"
-
-
-msgctxt "Operator"
-msgid "Zoom Border..."
-msgstr "Zoom par boîte…"
-
-
-msgctxt "Operator"
 msgid "View Global/Local"
 msgstr "Vue globale/locale"
 
@@ -87933,6 +87949,11 @@ msgstr "Jouer l’animation"
 msgctxt "Operator"
 msgid "Orbit Opposite"
 msgstr "Orbiter en sens opposé"
+
+
+msgctxt "Operator"
+msgid "Zoom Border..."
+msgstr "Zoom par boîte…"
 
 
 msgctxt "Operator"
@@ -87973,6 +87994,11 @@ msgstr "Droite"
 msgctxt "Operator"
 msgid "Left"
 msgstr "Gauche"
+
+
+msgctxt "Operator"
+msgid "Clipping Border..."
+msgstr "Découpe par boîte…"
 
 
 msgctxt "Operator"
@@ -88051,6 +88077,11 @@ msgstr "Faces internes"
 
 
 msgctxt "Operator"
+msgid "Faces by Sides"
+msgstr "Faces par côtés"
+
+
+msgctxt "Operator"
 msgid "Ungrouped Verts"
 msgstr "Dégrouper vertices"
 
@@ -88066,8 +88097,8 @@ msgstr "Actif précédent"
 
 
 msgctxt "Operator"
-msgid "Sharp Edges"
-msgstr "Arêtes dures"
+msgid "Shortest Path"
+msgstr "Chemin le plus court"
 
 
 msgctxt "Operator"
@@ -88076,13 +88107,13 @@ msgstr "Faces plates liées"
 
 
 msgctxt "Operator"
-msgid "Side of Active"
-msgstr "Aux côtés de l’actif"
+msgid "Sharp Edges"
+msgstr "Arêtes dures"
 
 
 msgctxt "Operator"
-msgid "Shortest Path"
-msgstr "Chemin le plus court"
+msgid "Side of Active"
+msgstr "Aux côtés de l’actif"
 
 
 msgctxt "Operator"
@@ -88115,13 +88146,13 @@ msgid "Make Proxy..."
 msgstr "Créer proxy…"
 
 
-msgid "Make Links..."
-msgstr "Créer liens…"
-
-
 msgctxt "Operator"
 msgid "Make Local..."
 msgstr "Rendre local…"
+
+
+msgid "Make Links..."
+msgstr "Créer liens…"
 
 
 msgctxt "Operator"
@@ -88548,8 +88579,8 @@ msgstr "Projeter depuis la vue (limites)"
 
 
 msgctxt "Operator"
-msgid "Render Border..."
-msgstr "Rendu partiel…"
+msgid "Active Camera"
+msgstr "Caméra active"
 
 
 msgctxt "Operator"
@@ -88568,8 +88599,8 @@ msgstr "Centrer curseur et tout voir"
 
 
 msgctxt "Operator"
-msgid "Active Camera"
-msgstr "Caméra active"
+msgid "Render Border..."
+msgstr "Rendu partiel…"
 
 
 msgctxt "Operator"
@@ -88937,6 +88968,11 @@ msgstr "Coutures (UV)"
 
 msgid "Edge Marks"
 msgstr "Marques d’arête"
+
+
+msgctxt "Operator"
+msgid "View Selected (Quad View)"
+msgstr "Voir sélectionnés (vue quad)"
 
 
 msgctxt "Operator"
@@ -90642,6 +90678,10 @@ msgid "Keying set failed to remove any keyframes"
 msgstr "L’ensemble de clés n’a pu enlever aucune image clé"
 
 
+msgid "This property cannot be animated as it will not get updated correctly"
+msgstr "Cette propriété ne peut être animée, car elle ne serait pas mise à jour correctement"
+
+
 msgid "Failed to resolve path to property, try manually specifying this using a Keying Set instead"
 msgstr "La résolution du chemin vers la propriété a échoué, essayez de spécifier cela manuellement à l’aide d’un ensemble d’images clé à la place"
 
@@ -90980,6 +91020,10 @@ msgstr "Impossible de tourner"
 
 msgid "Cannot duplicate current selection"
 msgstr "Impossible de dupliquer la sélection actuelle"
+
+
+msgid "Only bezier curves are supported"
+msgstr "Seules les courbes de Bézier sont supportées"
 
 
 msgid "Active object is not a selected curve"
@@ -91415,18 +91459,6 @@ msgid "Online Python Reference"
 msgstr "Référence Python en ligne (en)"
 
 
-msgid "* Redo Unsupported *"
-msgstr "* Refaire non-supporté *"
-
-
-msgid "No Properties"
-msgstr "Pas de propriétés"
-
-
-msgid "Reset operator defaults"
-msgstr "Réinitialiser opérateur aux valeurs par défaut"
-
-
 msgid "Active button is not from a script, cannot edit source"
 msgstr "Le bouton actif n’est pas défini par un script, impossible d’éditer le code source"
 
@@ -91457,10 +91489,6 @@ msgstr "Impossible de trouver l’opérateur “%s” ! Veuillez activer l’ad
 
 msgid "No valid po found for language '%s' under %s"
 msgstr "Pas de po valide trouvé pour le langage “%s” dans %s"
-
-
-msgid "(Shift-Click/Drag to select multiple)"
-msgstr "(Maj-cliquer/tirer pour en sélectionner plusieurs)"
 
 
 msgid "HSL"
@@ -91515,6 +91543,30 @@ msgid "(Gamma Corrected)"
 msgstr "(Gamma-corrigée)"
 
 
+msgid "Lightness"
+msgstr "Luminosité"
+
+
+msgid "Hex triplet for color (#RRGGBB)"
+msgstr "Triplet hexagésimal de couleur (#RRVVBB)"
+
+
+msgid "Value in Display Color Space"
+msgstr "Valeur en espace de couleur de l’écran"
+
+
+msgid "Value in Linear RGB Color Space"
+msgstr "Valeur en espace de couleur RGB linéaire"
+
+
+msgid "Menu \"%s\" not found"
+msgstr "Menu “%s” introuvable"
+
+
+msgid "(Shift-Click/Drag to select multiple)"
+msgstr "(Maj-cliquer/tirer pour en sélectionner plusieurs)"
+
+
 msgid "Shortcut: %s"
 msgstr "Raccourcis : %s"
 
@@ -91545,26 +91597,6 @@ msgstr "Désactivé : %s"
 
 msgid "Python: %s.%s"
 msgstr "Python: %s.%s"
-
-
-msgid "Lightness"
-msgstr "Luminosité"
-
-
-msgid "Hex triplet for color (#RRGGBB)"
-msgstr "Triplet hexagésimal de couleur (#RRVVBB)"
-
-
-msgid "Value in Display Color Space"
-msgstr "Valeur en espace de couleur de l’écran"
-
-
-msgid "Value in Linear RGB Color Space"
-msgstr "Valeur en espace de couleur RGB linéaire"
-
-
-msgid "Menu \"%s\" not found"
-msgstr "Menu “%s” introuvable"
 
 
 msgid "ID-Block:"
@@ -91629,6 +91661,14 @@ msgstr "Étendre extrapolé"
 
 msgid "Reset Curve"
 msgstr "Réinitialiser courbe"
+
+
+msgid "* Redo Unsupported *"
+msgstr "* Refaire non-supporté *"
+
+
+msgid "No Properties"
+msgstr "Pas de propriétés"
 
 
 msgid "Capture"
@@ -91717,6 +91757,10 @@ msgstr "Double-cliquer pour renommer"
 
 msgid "Hide filtering options"
 msgstr "Cacher les options de filtrage"
+
+
+msgid "Reset operator defaults"
+msgstr "Réinitialiser opérateur aux valeurs par défaut"
 
 
 msgid "Stop this job"
@@ -93971,6 +94015,10 @@ msgid "Display Color:"
 msgstr "Couleur d’affichage :"
 
 
+msgid "Auto Handle Smoothing:"
+msgstr "Adoucissement poignées auto :"
+
+
 msgid "None for Enum/Boolean"
 msgstr "None for Enum/Boolean"
 
@@ -96076,10 +96124,6 @@ msgid "Curve '%s' does not contain spline given"
 msgstr "La courbe “%s” ne contient pas la courbe (spline) donnée"
 
 
-msgid "Approx. %lu Operations, %lu Relations, %lu Outer Nodes"
-msgstr "Approx. %lu opérations, %lu relations, %lu nœuds extérieurs"
-
-
 msgid "Variable does not exist in this driver"
 msgstr "Cette variable n’existe pas dans ce contrôleur"
 
@@ -97913,6 +97957,10 @@ msgstr "Vietnamien (tiếng Việt)"
 
 msgid "Basque (Euskara)"
 msgstr "Basque (Euskara)"
+
+
+msgid "Hausa (Hausa)"
+msgstr "Haoussa (Hausa)"
 
 
 msgid "Complete"
