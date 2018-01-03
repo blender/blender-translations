@@ -1,9 +1,9 @@
 
 msgid ""
 msgstr ""
-"Project-Id-Version: Blender 2.79 (sub 1) (b'f34e03d34d7')\n"
+"Project-Id-Version: Blender 2.79 (sub 1) (b'e981a7de31d')\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-11-20 10:44:25\n"
+"POT-Creation-Date: 2018-01-03 12:58:53\n"
 "PO-Revision-Date: \n"
 "Last-Translator: Gabriel Gazzan <gabcorreo@gmail.com>\n"
 "Language-Team: Español <gabcorreo@gmail.com>\n"
@@ -4364,16 +4364,16 @@ msgid "Y-axis handle offset for end of the B-Bone's curve, adjusts curvature"
 msgstr "Desplazamiento del asa en el eje Y para el extremo final de la curva del hueso flexible, ajusta la curvatura"
 
 
-msgid "B-Bone Ease In"
-msgstr "Relajación inicial hueso flexible"
+msgid "Ease In"
+msgstr "Relajación de entrada"
 
 
 msgid "Length of first Bezier Handle (for B-Bones only)"
 msgstr "Longitud de la primera asa Bézier (solo para huesos flexibles)"
 
 
-msgid "B-Bone Ease Out"
-msgstr "Relajación final hueso flexible"
+msgid "Ease Out"
+msgstr "Relajación de salida"
 
 
 msgid "Length of second Bezier Handle (for B-Bones only)"
@@ -10315,10 +10315,6 @@ msgid "Constant Rate Factor (CRF); tradeoff between video quality and file size"
 msgstr "Factor de tasa constante (CRF); balance entre calidad del video y tamaño del archivo"
 
 
-msgid "None; use constant bit-rate"
-msgstr "Ninguna; usar una tasa de bits constante"
-
-
 msgid "Use constant bit rate, rather than constant output quality"
 msgstr "Usar una tasa de bits constante, en vez de una calidad de video constante"
 
@@ -13215,16 +13211,8 @@ msgid "Easing type is chosen automatically based on what the type of interpolati
 msgstr "El método de relajación será escogido automáticamente, basándose en el tipo de interpolación usado (p.ej: 'Relajación de entrada' para tipos de transición y 'Relajación de salida' para efectos dinámicos)"
 
 
-msgid "Ease In"
-msgstr "Relajación de entrada"
-
-
 msgid "Only on the end closest to the next keyframe"
 msgstr "Solo en el extremo izquierdo del fotograma clave."
-
-
-msgid "Ease Out"
-msgstr "Relajación de salida"
 
 
 msgid "Only on the end closest to the first keyframe"
@@ -30020,6 +30008,14 @@ msgid "Use the location and rotation of another object to determine the distance
 msgstr "Utiliza la posición y rotación de otro objeto para determinar la distancia y cambio rotacional entre los elementos de la serie"
 
 
+msgid "U Offset"
+msgstr "Desplazamiento U"
+
+
+msgid "V Offset"
+msgstr "Desplazamiento V"
+
+
 msgid "Relative Offset Displacement"
 msgstr "Desplazamiento relativo"
 
@@ -31562,14 +31558,6 @@ msgstr "Objeto espejo"
 
 msgid "Object to use as mirror"
 msgstr "Objeto a usar como espejo"
-
-
-msgid "U Offset"
-msgstr "Desplazamiento U"
-
-
-msgid "V Offset"
-msgstr "Desplazamiento V"
 
 
 msgid "Prevent vertices from going through the mirror during transform"
@@ -72153,14 +72141,6 @@ msgid "Blender specific point cache file format"
 msgstr "Formato de archivo de caché de puntos específico de Blender"
 
 
-msgid "OpenVDB"
-msgstr "OpenVDB"
-
-
-msgid "OpenVDB file format"
-msgstr "Formato de archivo OpenVDB"
-
-
 msgid "Field"
 msgstr "Campo"
 
@@ -72399,14 +72379,6 @@ msgstr "TRF"
 
 msgid "Zip"
 msgstr "Zip"
-
-
-msgid "Blosc"
-msgstr "Blosc"
-
-
-msgid "Multithreaded compression, similar in size and quality as 'Zip'"
-msgstr "Compresión que usa múltiples hilos, similar en tamaño y calidad a la 'Zip'"
 
 
 msgid "Do not use any compression"
@@ -83336,6 +83308,10 @@ msgid "First Last"
 msgstr "Primero y último"
 
 
+msgid "UVs:"
+msgstr "UVs:"
+
+
 msgid "Limit Method:"
 msgstr "Método de limitación:"
 
@@ -85378,6 +85354,19 @@ msgid "Note"
 msgstr "Nota"
 
 
+msgctxt "Operator"
+msgid "Animation"
+msgstr "Animación"
+
+
+msgid "Instances"
+msgstr "Instancias"
+
+
+msgid "Sequencer:"
+msgstr "Secuenciador:"
+
+
 msgid "Rate:"
 msgstr "Frecuencia:"
 
@@ -85392,19 +85381,6 @@ msgstr "Mplex:"
 
 msgid "Packet Size"
 msgstr "Tamaño paquete"
-
-
-msgctxt "Operator"
-msgid "Animation"
-msgstr "Animación"
-
-
-msgid "Instances"
-msgstr "Instancias"
-
-
-msgid "Sequencer:"
-msgstr "Secuenciador:"
 
 
 msgid "User Scale"
@@ -86103,10 +86079,6 @@ msgstr "Proporción"
 
 msgid "Cursor Location:"
 msgstr "Posición del cursor:"
-
-
-msgid "UVs:"
-msgstr "UVs:"
 
 
 msgid "Slot Name"
@@ -89910,10 +89882,6 @@ msgstr "El par de anillos de bordes no está conectado"
 
 msgid "Edge-rings are not connected"
 msgstr "Los anillos de bordes no están conectados"
-
-
-msgid "Could not rotate edge"
-msgstr "No fue posible rotar el borde"
 
 
 msgctxt "Action"
@@ -96729,10 +96697,6 @@ msgid "iScale"
 msgstr "Escala intensidad"
 
 
-msgid "Could not resolve path (%s)"
-msgstr "No fue posible resolver la ruta (%s)"
-
-
 msgid ""
 "%s\n"
 "location: %s:%d"
@@ -96743,6 +96707,10 @@ msgstr ""
 
 msgid "Unknown py-exception, could not convert"
 msgstr "No fue posible convertir la excepción-py desconocida"
+
+
+msgid "Could not resolve path (%s)"
+msgstr "No fue posible resolver la ruta (%s)"
 
 
 msgid "Creating Shadowbuffers"

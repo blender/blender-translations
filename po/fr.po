@@ -1,9 +1,9 @@
 
 msgid ""
 msgstr ""
-"Project-Id-Version: Blender 2.79 (sub 1) (b'f34e03d34d7')\n"
+"Project-Id-Version: Blender 2.79 (sub 1) (b'e981a7de31d')\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-11-20 10:44:25\n"
+"POT-Creation-Date: 2018-01-03 12:58:53\n"
 "PO-Revision-Date: \n"
 "Last-Translator: Bastien Montagne <montagne29@wanadoo.fr>\n"
 "Language-Team: \n"
@@ -11,7 +11,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 2.0.4"
+"X-Generator: Poedit 2.0.5"
 
 
 msgid "Action F-Curves"
@@ -4372,16 +4372,16 @@ msgid "Y-axis handle offset for end of the B-Bone's curve, adjusts curvature"
 msgstr "Décalage final en Y de la poignée pour la courbe du B-os, ajuste la courbure"
 
 
-msgid "B-Bone Ease In"
-msgstr "Fondu en entrée de B-os"
+msgid "Ease In"
+msgstr "Fondu en ouverture"
 
 
 msgid "Length of first Bezier Handle (for B-Bones only)"
 msgstr "Longueur de la première poignée de Bézier (pour les B-os uniquement)"
 
 
-msgid "B-Bone Ease Out"
-msgstr "Fondu sortie de B-os"
+msgid "Ease Out"
+msgstr "Fondu en sortie"
 
 
 msgid "Length of second Bezier Handle (for B-Bones only)"
@@ -10343,8 +10343,8 @@ msgid "Constant Rate Factor (CRF); tradeoff between video quality and file size"
 msgstr "Facteur de débit constant (CRF), compromis entre la qualité vidéo et la taille du fichier"
 
 
-msgid "None; use constant bit-rate"
-msgstr "Aucun, utiliser un débit constant"
+msgid "None; use custom bitrate"
+msgstr "Aucun; utiliser un débit personnalisé"
 
 
 msgid "Use constant bit rate, rather than constant output quality"
@@ -13243,16 +13243,8 @@ msgid "Easing type is chosen automatically based on what the type of interpolati
 msgstr "Le type de fondu est choisi automatiquement en fonction du type d’interpolation utilisé (par ex. “Fondu en ouverture” pour des types transitionnels, et “Fondu en fermeture” pour des effets dynamiques)"
 
 
-msgid "Ease In"
-msgstr "Fondu en ouverture"
-
-
 msgid "Only on the end closest to the next keyframe"
 msgstr "Uniquement à l’extrémité la plus proche de l’image clé suivante"
-
-
-msgid "Ease Out"
-msgstr "Fondu en sortie"
 
 
 msgid "Only on the end closest to the first keyframe"
@@ -30124,6 +30116,22 @@ msgid "Use the location and rotation of another object to determine the distance
 msgstr "Utiliser les position et rotation d’un autre objet pour déterminer les changements de distance et rotation entre les éléments du tableau"
 
 
+msgid "U Offset"
+msgstr "Décalage U"
+
+
+msgid "Amount to offset array UVs on the U axis"
+msgstr "Quantité de décalage des UVs tableau le long de l’axe U"
+
+
+msgid "V Offset"
+msgstr "Décalage V"
+
+
+msgid "Amount to offset array UVs on the V axis"
+msgstr "Quantité de décalage des UVs tableau le long de l’axe V"
+
+
 msgid "Relative Offset Displacement"
 msgstr "Déplacement de décalage relatif"
 
@@ -31696,16 +31704,8 @@ msgid "Amount to offset mirrored UVs flipping point from the 0.5 point on the V 
 msgstr "De combien décaler le point d’inversion des UVs miroir depuis le 0.5 sur l’axe V"
 
 
-msgid "U Offset"
-msgstr "Décalage U"
-
-
 msgid "Mirrored UV offset on the U axis"
 msgstr "UV miroir décalé sur l’axe U"
-
-
-msgid "V Offset"
-msgstr "Décalage V"
 
 
 msgid "Mirrored UV offset on the V axis"
@@ -56759,6 +56759,10 @@ msgid "Gaussian Blur"
 msgstr "Flou gaussien"
 
 
+msgid "Color Mix"
+msgstr "Mix couleur"
+
+
 msgctxt "Operator"
 msgid "Change Data/Files"
 msgstr "Changer données/fichiers"
@@ -58759,6 +58763,24 @@ msgstr "Pipette"
 
 msgid "Sample a color from the Blender Window to store in a property"
 msgstr "Échantillonner une couleur depuis la fenêtre de Blender, à stocker dans une propriété"
+
+
+msgctxt "Operator"
+msgid "Eyedropper colorband"
+msgstr "Pipette dégradé"
+
+
+msgid "Sample a color band"
+msgstr "Échantillonner une bande couleur"
+
+
+msgctxt "Operator"
+msgid "Eyedropper colorband (points)"
+msgstr "Pipette dégradé (ponctuelle)"
+
+
+msgid "Pointsample a color band"
+msgstr "Échantillonner ponctuellement une bande couleur"
 
 
 msgctxt "Operator"
@@ -65308,6 +65330,10 @@ msgid "Multiplier for scene dicing rate (located in the Geometry Panel)"
 msgstr "Multiplicateur pour le taux de découpage en dés (dans le panneau Géométrie)"
 
 
+msgid "Render objects as a holdout or matte, creating a hole in the image with zero alpha, to fill out in compositing with real footange or another render"
+msgstr "Rendre les objets comme cache, qui créent un trou dans l’image avec un alpha nul, à remplir en compositing avec des vidéos ou un autre rendu"
+
+
 msgid "Shadow Catcher"
 msgstr "Attrapeur d’ombres"
 
@@ -68010,6 +68036,10 @@ msgstr "Enregistrer les parties de rendu pour tous les claques de rendu et nœud
 
 msgid "Process the render (and composited) result through the video sequence editor pipeline, if sequencer strips exist"
 msgstr "Faire passer le résultat du rendu (et du compositing) dans le pipeline de l’éditeur de séquences vidéo, si des bandes de séquence existent"
+
+
+msgid "Use depth of field using the values from scene strip active camera"
+msgstr "Utiliser la profondeur de champ en utilisant les valeurs de la caméra active de la piste"
 
 
 msgid "Textured Solid"
@@ -71127,6 +71157,22 @@ msgid "Over Drop"
 msgstr "Par dessus"
 
 
+msgid "Linear Burn"
+msgstr "Brûler linéaire"
+
+
+msgid "Hard Light"
+msgstr "Lumière dure"
+
+
+msgid "Pin Light"
+msgstr "Lumière ponctuelle"
+
+
+msgid "Vivid Light"
+msgstr "Lumière vive"
+
+
 msgid "Y position of the sequence strip"
 msgstr "Position Y de la bande de séquence"
 
@@ -71328,6 +71374,11 @@ msgid "Text"
 msgstr "Texte"
 
 
+msgctxt "Sequence"
+msgid "Color Mix"
+msgstr "Mix couleur"
+
+
 msgid "Use Default Fade"
 msgstr "Utiliser fondu par défaut"
 
@@ -71474,6 +71525,14 @@ msgstr "Séquence alpha par-dessus"
 
 msgid "Alpha Under Sequence"
 msgstr "Séquence alpha par-dessous"
+
+
+msgid "Color Mix Sequence"
+msgstr "Séquence de mix couleur"
+
+
+msgid "Blend Effect"
+msgstr "Effet de fondu"
 
 
 msgid "Color Sequence"
@@ -72460,14 +72519,6 @@ msgid "Blender specific point cache file format"
 msgstr "Format de fichier de cache de points spécifique à Blender"
 
 
-msgid "OpenVDB"
-msgstr "OpenVDB"
-
-
-msgid "OpenVDB file format"
-msgstr "Format du fichier OpenVDB"
-
-
 msgid "Field"
 msgstr "Champ"
 
@@ -72706,14 +72757,6 @@ msgstr "FFT"
 
 msgid "Zip"
 msgstr "Zip"
-
-
-msgid "Blosc"
-msgstr "Blosc"
-
-
-msgid "Multithreaded compression, similar in size and quality as 'Zip'"
-msgstr "Compression multi-threadée, similaire en taille et qualité à “Zip”"
 
 
 msgid "Do not use any compression"
@@ -82230,6 +82273,11 @@ msgid "Eyedropper Modal Map"
 msgstr "Carte modale de la pipette"
 
 
+msgctxt "WindowManager"
+msgid "Eyedropper ColorBand PointSampling Map"
+msgstr "Carte d’échantillonnage ponctuel de dégradé par pipette (???)"
+
+
 msgid "DEM data (.hgt) as Mesh and/or Image"
 msgstr "Données DEM (.hgt) vers mesh et/ou image"
 
@@ -83649,6 +83697,10 @@ msgstr "Enveloppes des os"
 
 msgid "First Last"
 msgstr "Premier en dernier"
+
+
+msgid "UVs:"
+msgstr "UVs :"
 
 
 msgid "Limit Method:"
@@ -85767,6 +85819,19 @@ msgid "Note"
 msgstr "Note"
 
 
+msgctxt "Operator"
+msgid "Animation"
+msgstr "Animation"
+
+
+msgid "Instances"
+msgstr "Instances"
+
+
+msgid "Sequencer:"
+msgstr "Séquenceur :"
+
+
 msgid "Rate:"
 msgstr "Débit :"
 
@@ -85781,19 +85846,6 @@ msgstr "Mux :"
 
 msgid "Packet Size"
 msgstr "Taille de paquet"
-
-
-msgctxt "Operator"
-msgid "Animation"
-msgstr "Animation"
-
-
-msgid "Instances"
-msgstr "Instances"
-
-
-msgid "Sequencer:"
-msgstr "Séquenceur :"
 
 
 msgid "User Scale"
@@ -86502,10 +86554,6 @@ msgid "Cursor Location:"
 msgstr "Position du curseur :"
 
 
-msgid "UVs:"
-msgstr "UVs :"
-
-
 msgid "Slot Name"
 msgstr "Nom d’emplacement"
 
@@ -87129,6 +87177,11 @@ msgstr "Texte"
 
 
 msgctxt "Operator"
+msgid "Color Mix"
+msgstr "Mix couleur"
+
+
+msgctxt "Operator"
 msgid "Color"
 msgstr "Couleur"
 
@@ -87233,6 +87286,10 @@ msgstr "Effet de fondu"
 
 msgid "Stretch to input strip length"
 msgstr "Étirer à la longueur de la bande source"
+
+
+msgid "Blend Mode:"
+msgstr "Mode de mélange :"
 
 
 msgid "Source Channel"
@@ -90419,10 +90476,6 @@ msgstr "La paire d’anneaux d’arêtes n’est pas connectée"
 
 msgid "Edge-rings are not connected"
 msgstr "Les anneaux d’arêtes ne sont pas connectés"
-
-
-msgid "Could not rotate edge"
-msgstr "Impossible de faire tourner l’arête"
 
 
 msgctxt "Action"
@@ -97270,10 +97323,6 @@ msgid "iScale"
 msgstr "iÉchelle"
 
 
-msgid "Could not resolve path (%s)"
-msgstr "Impossible de résoudre le chemin (%s)"
-
-
 msgid ""
 "%s\n"
 "location: %s:%d"
@@ -97284,6 +97333,10 @@ msgstr ""
 
 msgid "Unknown py-exception, could not convert"
 msgstr "Exception python inconnue, impossible à convertir"
+
+
+msgid "Could not resolve path (%s)"
+msgstr "Impossible de résoudre le chemin (%s)"
 
 
 msgid "Creating Shadowbuffers"

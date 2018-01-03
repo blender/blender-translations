@@ -1,10 +1,10 @@
 
 msgid ""
 msgstr ""
-"Project-Id-Version: Blender 2.79 (sub 1) (b'f34e03d34d7')\n"
+"Project-Id-Version: Blender 2.79 (sub 1) (b'e981a7de31d')\n"
 "Report-Msgid-Bugs-To: Ivan Paulos Tomé <ivan.paulos.tome@yandex.com>\n"
-"POT-Creation-Date: 2017-11-20 10:44:25\n"
-"PO-Revision-Date: 2017-10-24 21:29-0300\n"
+"POT-Creation-Date: 2018-01-03 12:58:53\n"
+"PO-Revision-Date: 2018-01-01 19:36-0300\n"
 "Last-Translator: Ivan Paulos Tomé <greylica@gmail.com>\n"
 "Language-Team: Ivan Paulos Tomé, Dalai Felinto, Bruno Gonçalves Pirajá, Samuel Arataca, Daniel Tavares, Moraes Junior <ivan.paulos.tome@yandex.com>\n"
 "Language: pt_BR\n"
@@ -2339,6 +2339,14 @@ msgid "Number of frames between paths shown (not for 'On Keyframes' Onion-skinni
 msgstr "O passo do número de quadros exibidos no caminho de movimento gerado. A divisão em passos não é usada na marcação dos quadros-chave nos fantasmas ou caminhos de movimento."
 
 
+msgid "Has Motion Paths"
+msgstr "Possui caminhos de movimento"
+
+
+msgid "Are there any bone paths that will need updating (read-only)"
+msgstr "Existem ainda alguns caminhos de ossos que necessitam atualização (modo de somente leitura)."
+
+
 msgid "Show Frame Numbers"
 msgstr "Mostrar número dos quadros"
 
@@ -3300,7 +3308,7 @@ msgstr "Inclinação na janela de visualização 3D."
 
 
 msgid "Softbody goal weight"
-msgstr "Peso de objetivo de corpo macio."
+msgstr "Peso de objetivo de corpo maleável."
 
 
 msgid "Blendfile Data"
@@ -4367,16 +4375,16 @@ msgid "Y-axis handle offset for end of the B-Bone's curve, adjusts curvature"
 msgstr "O deslocamento do manípulo da haste em Y para o final da curva do osso maleável, ajustando a curvatura."
 
 
-msgid "B-Bone Ease In"
-msgstr "Facilitação de entrada para ossos maleáveis."
+msgid "Ease In"
+msgstr "Facilitar entrada"
 
 
 msgid "Length of first Bezier Handle (for B-Bones only)"
 msgstr "Comprimento do primeiro manípulo de curva Bézier (somente para ossos maleáveis)."
 
 
-msgid "B-Bone Ease Out"
-msgstr "Facilitação de saída para ossos  maleáveis."
+msgid "Ease Out"
+msgstr "Facilitar saída"
 
 
 msgid "Length of second Bezier Handle (for B-Bones only)"
@@ -5368,7 +5376,7 @@ msgstr "Espessura interna"
 
 
 msgid "Inner face thickness (only used by softbodies)"
-msgstr "Espessura da face interna (utilizada somente para corpo macio)."
+msgstr "Espessura da face interna (utilizada somente para corpo maleável)."
 
 
 msgid "Outer Thickness"
@@ -10010,6 +10018,26 @@ msgid "Index to the specific property affected by F-Curve if applicable"
 msgstr "Índice para a propriedade especifica afetada pela curva-f caso aplicável."
 
 
+msgid "Auto Handle Smoothing"
+msgstr "Suavização automática de manípulos"
+
+
+msgid "Algorithm used to compute automatic handles"
+msgstr "Algoritmo usado para computar automaticamente os manípulos."
+
+
+msgid "Auto handles only take adjacent keys into account (legacy mode)"
+msgstr "Os manípulos automáticos levam em consideração somente as chaves adjacentes (modo antigo)."
+
+
+msgid "Continuous Acceleration"
+msgstr "Aceleração contínua"
+
+
+msgid "Auto handles are placed to avoid jumps in acceleration"
+msgstr "Os manípulos automáticos são posicionados para evitar saltos na aceleração."
+
+
 msgid "Color of the F-Curve in the Graph Editor"
 msgstr "Cor da curva-f dentro do editor gráfico"
 
@@ -10316,10 +10344,6 @@ msgstr "Qualidade de saída"
 
 msgid "Constant Rate Factor (CRF); tradeoff between video quality and file size"
 msgstr "Taxa de constância de erro (CRF), como um equilíbrio entre a qualidade do vídeo e o tamanho do arquivo exportado."
-
-
-msgid "None; use constant bit-rate"
-msgstr "Nenhum, usando uma taxa de bits por segundo constante."
 
 
 msgid "Use constant bit rate, rather than constant output quality"
@@ -13218,16 +13242,8 @@ msgid "Easing type is chosen automatically based on what the type of interpolati
 msgstr "O tipo de facilitação é escolhido automaticamente com base no tipo de interpolação utilizada (exemplo: 'facilitação de entrada' para tipos transacionais, e 'facilitação de saída' para efeitos dinâmicos)."
 
 
-msgid "Ease In"
-msgstr "Facilitar entrada"
-
-
 msgid "Only on the end closest to the next keyframe"
 msgstr "Somente na terminação mais próxima ao próximo quadro-chave."
-
-
-msgid "Ease Out"
-msgstr "Facilitar saída"
 
 
 msgid "Only on the end closest to the first keyframe"
@@ -14215,11 +14231,11 @@ msgstr "Físicas lineares e angulares."
 
 
 msgid "Soft Body"
-msgstr "Corpo macio"
+msgstr "Corpo maleável"
 
 
 msgid "Soft body"
-msgstr "O corpo macio"
+msgstr "O corpo maleável"
 
 
 msgid "Occluder"
@@ -14311,11 +14327,11 @@ msgstr "Mostra o painel de estados."
 
 
 msgid "Soft Body Settings"
-msgstr "Configurações de corpos macios"
+msgstr "Configurações para corpos maleáveis"
 
 
 msgid "Settings for Bullet soft body simulation"
-msgstr "Configurações para a simulação de corpo macio usando o a biblioteca Bullet."
+msgstr "Configurações para a simulação de corpos maleáveis usando o a biblioteca Bullet."
 
 
 msgid "Initial State"
@@ -14547,11 +14563,11 @@ msgstr "Uma propriedade de temporizador para o motor de jogo - definida pelo usu
 
 
 msgid "Game Soft Body Settings"
-msgstr "Configurações de jogo - Corpo macio"
+msgstr "Configurações de jogo - Corpo maleável"
 
 
 msgid "Soft body simulation settings for an object in the game engine"
-msgstr "As configurações de simulação de corpos macios para o motor de jogo."
+msgstr "As configurações de simulação de corpos maleáveis para o motor de jogo."
 
 
 msgid "Cluster Iterations"
@@ -14563,7 +14579,7 @@ msgstr "Número de interações de célula"
 
 
 msgid "Collision margin for soft body. Small value makes the algorithm unstable"
-msgstr "Margem de colisão para o corpo macio. Valores menores fazem com que o algoritmo seja instável."
+msgstr "Margem de colisão para o corpo maleável. Valores menores fazem com que o algoritmo seja instável."
 
 
 msgid "Dynamic Friction"
@@ -14575,7 +14591,7 @@ msgstr "Rigidez linear"
 
 
 msgid "Linear stiffness of the soft body links"
-msgstr "A rigidez linear das conexões do corpo macio."
+msgstr "A rigidez linear das conexões do corpo maleável."
 
 
 msgid "Position Iterations"
@@ -14599,19 +14615,19 @@ msgstr "Habilita restrições de conformação"
 
 
 msgid "Rigid to Soft Body"
-msgstr "Corpo rígido para corpo macio"
+msgstr "Corpo rígido para corpo maleável"
 
 
 msgid "Enable cluster collision between soft and rigid body"
-msgstr "Habilita colisões do tipo celular entre corpos macios e rígidos."
+msgstr "Habilita colisões em modo celular entre os corpos maleáveis e rígidos."
 
 
 msgid "Soft to Soft Body"
-msgstr "Macies para corpo macio"
+msgstr "Macies para corpo maleável"
 
 
 msgid "Enable cluster collision between soft and soft body"
-msgstr "Habilita colisões do tipo celular entre corpos macios e rígidos."
+msgstr "Habilita colisões em modo celular entre corpos maleáveis e rígidos."
 
 
 msgid "Shape Match"
@@ -14619,7 +14635,7 @@ msgstr "Combinar formato"
 
 
 msgid "Enable soft body shape matching goal"
-msgstr "Habilita o corpo macio a buscar uma combinação de formato com o objetivo."
+msgstr "Habilita o corpo maleável a buscar uma combinação de formato com o objetivo."
 
 
 msgid "Welding"
@@ -15327,6 +15343,10 @@ msgid "Editable falloff curve"
 msgstr "Curva de decaimento editável."
 
 
+msgid "Falloff Angle"
+msgstr "Ângulo de decaimento"
+
+
 msgid "Paint most on faces pointing towards the view according to this angle"
 msgstr "Executa a pintura com mais potência nas faces que apontam na direção da visualização, de acordo com este ângulo."
 
@@ -15771,6 +15791,14 @@ msgid "Brush only affects vertexes that face the viewer"
 msgstr "Pincel somente afeta os vértices que faceiam com a visualização."
 
 
+msgid "Use Front-Face Falloff"
+msgstr "Usar o decaimento para faces frontais"
+
+
+msgid "Blend brush influence by how much they face the front"
+msgstr "Mesclagem da influência do pincel pela quantidade de faceamento frontal."
+
+
 msgid "Use Gradient"
 msgstr "Usar gradiente"
 
@@ -15911,6 +15939,14 @@ msgid "Show texture in viewport"
 msgstr "Mostra a textura na porta de visão."
 
 
+msgid "2D Falloff"
+msgstr "Decaimento 2D"
+
+
+msgid "Apply brush influence in 2D circle instead of a sphere"
+msgstr "Aplica a influência do pincel em um círculo 2D ao invés de uma esfera."
+
+
 msgid "Absolute Jitter"
 msgstr "Tremulação absoluta"
 
@@ -15997,6 +16033,10 @@ msgstr "O tempo a ser usado para a pesquisa dos dados nos arquivos de cache, ou 
 
 msgid "Frame Offset"
 msgstr "Deslocamento de quadro"
+
+
+msgid "Subtracted from the current frame to use for looking up the data in the cache file, or to determine which file to use in a file sequence"
+msgstr "Subtraído a partir do quadro atual para ser usado na pesquisa dos dados nos arquivos de cache, ou para determinar qual arquivo será utilizado em uma sequência de arquivos."
 
 
 msgid "Sequence"
@@ -16296,7 +16336,7 @@ msgstr "Perspectiva"
 
 
 msgid "Orthographic"
-msgstr "Ortografica"
+msgstr "Ortográfica"
 
 
 msgid "Panoramic"
@@ -16748,7 +16788,7 @@ msgstr "Objeto fonte"
 
 
 msgid "Use Objects as font characters (give font objects a common name followed by the character they represent, eg. 'family-a', 'family-b', etc, set this setting to 'family-', and turn on Vertex Duplication)"
-msgstr "Usa objetos como fontes de caracteres (fornece aos objetos de fonte um nome comum seguido pelo caractere que eles representam, ex: 'família_a', 'família_b', etc. Defina esta configuração como 'família_', e habilita a duplicação por vértices )."
+msgstr "Usa objetos como fontes de caracteres (fornece aos objetos de fonte um nome comum seguido pelo caractere que eles representam, ex: 'família_a', 'família_b', etc. Defina esta configuração como 'família_*', e habilite a duplicação por vértices)."
 
 
 msgid "Text on Curve"
@@ -21094,7 +21134,7 @@ msgstr "Permite definir um atraso no relacionamento de parentesco."
 
 
 msgid "Settings for soft body simulation"
-msgstr "Configurações para simulação de corpos macios."
+msgstr "Configurações para simulação de corpos maleáveis."
 
 
 msgid "Axis that points in 'forward' direction (applies to DupliFrame when parent 'Follow' is enabled)"
@@ -28863,6 +28903,10 @@ msgid "Strip"
 msgstr "Faixa"
 
 
+msgid "Lock/Mute"
+msgstr "Bloquear ou tornar mudo"
+
+
 msgid "View Type"
 msgstr "Ver Tipos"
 
@@ -28955,6 +28999,10 @@ msgid "Bone Roll"
 msgstr "Rolagem dos ossos"
 
 
+msgid "Clean Up"
+msgstr "Limpeza"
+
+
 msgid "GPencil"
 msgstr "Lápis de cera"
 
@@ -28973,6 +29021,10 @@ msgstr "Selecionar todos por características..."
 
 msgid "Select Linked"
 msgstr "Selecionar vinculados(as)"
+
+
+msgid "Select Loops"
+msgstr "Selecionar anéis"
 
 
 msgid "Mesh Select Mode"
@@ -29055,8 +29107,16 @@ msgid "Align View to Active"
 msgstr "Alinhar vista para o ativo"
 
 
+msgid "View Borders"
+msgstr "Visualizar margens"
+
+
 msgid "Navigation"
 msgstr "Navegação"
+
+
+msgid "Viewpoint"
+msgstr "Ponto de visualização"
 
 
 msgid "Operator Presets"
@@ -30053,6 +30113,14 @@ msgstr "Deslocamento por objeto"
 
 msgid "Use the location and rotation of another object to determine the distance and rotational change between arrayed items"
 msgstr "Usa a localização e rotação de outro objeto para determinar a distância e alteração rotacional entre os itens que estão na matriz."
+
+
+msgid "U Offset"
+msgstr "Deslocamento U"
+
+
+msgid "V Offset"
+msgstr "Deslocamento V"
 
 
 msgid "Relative Offset Displacement"
@@ -31627,16 +31695,8 @@ msgid "Amount to offset mirrored UVs flipping point from the 0.5 point on the V 
 msgstr "Quantidade para deslocar o ponto de inversão das UVs espelhadas a partir do ponto mediano (0.5) no eixo V."
 
 
-msgid "U Offset"
-msgstr "Deslocamento U"
-
-
 msgid "Mirrored UV offset on the U axis"
 msgstr "Deslocamento UV espelhado no eixo U"
-
-
-msgid "V Offset"
-msgstr "Deslocamento V"
 
 
 msgid "Mirrored UV offset on the V axis"
@@ -32436,15 +32496,15 @@ msgstr "Modificador - Suavizar"
 
 
 msgid "Soft Body Modifier"
-msgstr "Modificador - Corpo macio"
+msgstr "Modificador - Corpo maleável"
 
 
 msgid "Soft body simulation modifier"
-msgstr "Modificador para simulação de corpos macios."
+msgstr "Modificador para simulação de corpos maleáveis."
 
 
 msgid "Soft Body Point Cache"
-msgstr "Cache de pontos de corpo macio"
+msgstr "Cache de pontos para corpo maleável"
 
 
 msgid "Solidify Modifier"
@@ -36732,6 +36792,10 @@ msgid "Background"
 msgstr "Plano de fundo"
 
 
+msgid "Number of rays to trace per shader evaluation"
+msgstr "Número de raios a ser traçados por avaliação de sombreador."
+
+
 msgid "Blackbody"
 msgstr "Matéria escura"
 
@@ -37178,6 +37242,10 @@ msgstr "Interpolação linear"
 
 msgid "No interpolation (sample closest texel)"
 msgstr "Sem interpolação (usa as amostras do texel mais próximo)."
+
+
+msgid "Cubic interpolation"
+msgstr "Interpolação cúbica"
 
 
 msgid "Bicubic when magnifying, else bilinear (OSL only)"
@@ -39461,6 +39529,10 @@ msgid "Reveal Bones"
 msgstr "Revelar ossos"
 
 
+msgid "Reveal all bones hidden in Edit Mode"
+msgstr "Revela todos os ossos ocultos no modo de edição."
+
+
 msgctxt "Operator"
 msgid "Clear Roll"
 msgstr "Limpar a rolagem"
@@ -41537,6 +41609,15 @@ msgid "(De)select last of visible part of each NURBS"
 msgstr "(De)seleciona a última das partes visíveis de cada NURBS."
 
 
+msgctxt "Operator"
+msgid "Decimate Curve"
+msgstr "Decimar curva"
+
+
+msgid "Simplify selected curves"
+msgstr "Simplifica as curvas selecionadas."
+
+
 msgid "Delete selected control points or segments"
 msgstr "Apaga os pontos de controle selecionados ou segmentos."
 
@@ -41846,6 +41927,10 @@ msgid "Reveal Hidden"
 msgstr "Revelar ocultos"
 
 
+msgid "Reveal hidden control points"
+msgstr "Revela os pontos de controle ocultados"
+
+
 msgid "(De)select all control points"
 msgstr "(De)seleciona todos os pontos de controle."
 
@@ -42063,7 +42148,7 @@ msgstr "Ajuste de pesos de objetivo"
 
 
 msgid "Set softbody goal weight for selected points"
-msgstr "Ajusta os pesos de influência de objetivo do corpo macio para os pontos selecionados."
+msgstr "Ajusta os pesos de influência de objetivo do corpo maleável para os pontos selecionados."
 
 
 msgid "Split off selected points from connected unselected points"
@@ -45522,6 +45607,10 @@ msgid "Zoom in the view to the nearest item contained in the border"
 msgstr "Amplia a visualização até o item mais próximo que esteja contido nas margens."
 
 
+msgid "Zoom Out"
+msgstr "Reduzir visualização"
+
+
 msgid "Zoom in the image (centered around 2D cursor)"
 msgstr "Amplia a imagem (centrada no cursor 2D)."
 
@@ -48710,6 +48799,10 @@ msgid "Connected faces (instead of edges)"
 msgstr "Faces conectadas (ao invés de arestas)"
 
 
+msgid "Select all vertices connected to the current selection"
+msgstr "Seleciona todos os vértices conectados a seleção atual."
+
+
 msgid "Delimit selected region"
 msgstr "Delimita a região selecionada"
 
@@ -48809,6 +48902,10 @@ msgstr "De-seleciona qualquer enésimo elemento iniciando a partir de um vértic
 msgctxt "Operator"
 msgid "Select Previous Element"
 msgstr "Selecionar os elementos anteriores"
+
+
+msgid "Select the previous element (using selection order)"
+msgstr "Seleciona os elementos anteriores (usando a ordem de seleção)."
 
 
 msgid "Randomly select vertices"
@@ -48921,6 +49018,10 @@ msgstr "Encontra o número mínimo de passos, ignorando a distância espacial."
 msgctxt "Operator"
 msgid "Select Shortest Path"
 msgstr "Selecionar o caminho mais curto"
+
+
+msgid "Selected shortest path between two vertices/edges/faces"
+msgstr "Seleciona o caminho de interconexão mais curto entre vértices, arestas e faces."
 
 
 msgctxt "Operator"
@@ -54053,6 +54154,10 @@ msgid "Vertex Color from Weight"
 msgstr "Cores dos vértices a partir dos pesos"
 
 
+msgid "Convert active weight into gray scale vertex colors"
+msgstr "Converte os pesos de influência ativos para uma gradiente de cores de vértices em escala de cinza."
+
+
 msgctxt "Operator"
 msgid "Vertex Paint Hue Saturation Value"
 msgstr "Matiz, saturação e valor para pintura de vértices"
@@ -55102,6 +55207,10 @@ msgstr "Faz com que a pose atual se torne mais similar àquelas que a circundam.
 msgctxt "Operator"
 msgid "Reveal Selected"
 msgstr "Revelar selecionado"
+
+
+msgid "Reveal all bones hidden in Pose Mode"
+msgstr "Revela todos os ossos ocultos no modo de pose."
 
 
 msgctxt "Operator"
@@ -57173,6 +57282,11 @@ msgstr "Recorta os conteúdos da faixa ativa."
 
 msgid "Offset to the data of the strip"
 msgstr "Deslocamento dos dados da faixa."
+
+
+msgctxt "Operator"
+msgid "Snap Strips to Frame"
+msgstr "Atrair as faixas ao quadro"
 
 
 msgid "Frame where selected strips will be snapped"
@@ -63126,27 +63240,27 @@ msgstr "Fumaça - Alta resolução"
 
 
 msgid "Soft Body Cache"
-msgstr "Corpo macio - Cache"
+msgstr "Corpo maleável - Cache"
 
 
 msgid "Soft Body Self Collision"
-msgstr "Corpo macio - Colisões internas"
+msgstr "Corpo maleável - Colisões internas"
 
 
 msgid "Soft Body Edges"
-msgstr "Corpo macio - Arestas"
+msgstr "Corpo maleável - Arestas"
 
 
 msgid "Soft Body Field Weights"
-msgstr "Corpo macio - Controles de campos de força"
+msgstr "Corpo maleável - Controles de campos de força"
 
 
 msgid "Soft Body Goal"
-msgstr "Corpo macio - Objetivo"
+msgstr "Corpo maleável - Objetivo"
 
 
 msgid "Soft Body Solver"
-msgstr "Corpo macio - Solucionador"
+msgstr "Corpo maleável - Solucionador"
 
 
 msgid "Freestyle"
@@ -65377,12 +65491,36 @@ msgid "Store Debug Ray Bounces pass"
 msgstr "Armazena o passo de rebatimentos dos raios previamente depurado."
 
 
+msgid "Debug Render Time"
+msgstr "Depurar tempo de renderização"
+
+
+msgid "Render time in milliseconds per sample and pixel"
+msgstr "Tempo de renderização em milissegundos por amostras e pixeis."
+
+
 msgid "Use Denoising"
 msgstr "Usar redução de ruídos"
 
 
 msgid "Denoise the rendered image"
 msgstr "Reduz os ruídos na imagem renderizada."
+
+
+msgid "Volume Direct"
+msgstr "Volume direto"
+
+
+msgid "Deliver direct volumetric scattering pass"
+msgstr "Fornece o passo de espalhamento volumétrico direto."
+
+
+msgid "Volume Indirect"
+msgstr "Volume indireto"
+
+
+msgid "Deliver indirect volumetric scattering pass"
+msgstr "Fornece o passo de espalhamento de volume indireto."
 
 
 msgid "AA Samples"
@@ -72313,14 +72451,6 @@ msgid "Blender specific point cache file format"
 msgstr "O formato específico de arquivos de cache de pontos Blender."
 
 
-msgid "OpenVDB"
-msgstr "OpenVDB"
-
-
-msgid "OpenVDB file format"
-msgstr "Formato de arquivo OpenVDB"
-
-
 msgid "Field"
 msgstr "Espaço"
 
@@ -72559,14 +72689,6 @@ msgstr "Transformada rápida de Fourier"
 
 msgid "Zip"
 msgstr "Zip"
-
-
-msgid "Blosc"
-msgstr "Blosc"
-
-
-msgid "Multithreaded compression, similar in size and quality as 'Zip'"
-msgstr "Utiliza um formato de compressão otimizado para multitarefas, similar em tamanho e qualidade ao formato \"ZIP\"."
 
 
 msgid "Do not use any compression"
@@ -72858,7 +72980,7 @@ msgstr "Fator para fumaça emitida a partir de dentro do volume de malha."
 
 
 msgid "Soft body simulation settings for an object"
-msgstr "Configurações de simulação de corpo macio para um objeto."
+msgstr "Configurações de simulação de corpo maleável para um objeto."
 
 
 msgid "Aero"
@@ -73086,7 +73208,7 @@ msgstr "Imprimir a performance no console"
 
 
 msgid "Turn on SB diagnose console prints"
-msgstr "Habilita a saída das impressões de diagnóstico para corpos macios."
+msgstr "Habilita impressões dos diagnóstico para corpo maleável."
 
 
 msgid "Edge Collision"
@@ -74867,11 +74989,11 @@ msgstr "Mostra o cache de pontos do objeto ativo de fumaça."
 
 
 msgid "Softbody"
-msgstr "Corpo macio"
+msgstr "Corpo maleável"
 
 
 msgid "Show the active object's softbody point cache"
-msgstr "Mostra o cache de pontos do objeto ativo de corpo macio."
+msgstr "Mostra o cache de pontos do objeto ativo de corpo maleável."
 
 
 msgid "Show Cache"
@@ -75051,7 +75173,7 @@ msgstr "Bloquear no cursor"
 
 
 msgid "3D View center is locked to the cursor's position"
-msgstr "O centro da janela de visualização 3D é bloqeuado para a localização do cursor."
+msgstr "O centro da janela de visualização 3D é bloqueado para a localização do cursor."
 
 
 msgid "Lock to Object"
@@ -83504,6 +83626,10 @@ msgid "First Last"
 msgstr "Primeiro e último"
 
 
+msgid "UVs:"
+msgstr "UVs:"
+
+
 msgid "Limit Method:"
 msgstr "Método de limitação:"
 
@@ -85287,11 +85413,11 @@ msgstr "Fricção das partículas:"
 
 
 msgid "Soft Body and Cloth:"
-msgstr "Corpo macio e tecido:"
+msgstr "Corpo maleável e tecido:"
 
 
 msgid "Soft Body Damping:"
-msgstr "Amortecimento de corpo macio:"
+msgstr "Amortecimento de corpo maleável:"
 
 
 msgid "Force Fields:"
@@ -85620,6 +85746,19 @@ msgid "Note"
 msgstr "Nota"
 
 
+msgctxt "Operator"
+msgid "Animation"
+msgstr "Animação"
+
+
+msgid "Instances"
+msgstr "Instâncias"
+
+
+msgid "Sequencer:"
+msgstr "Editor de sequências:"
+
+
 msgid "Rate:"
 msgstr "Taxa:"
 
@@ -85634,19 +85773,6 @@ msgstr "Multiplexador:"
 
 msgid "Packet Size"
 msgstr "Tamanho do pacote"
-
-
-msgctxt "Operator"
-msgid "Animation"
-msgstr "Animação"
-
-
-msgid "Instances"
-msgstr "Instâncias"
-
-
-msgid "Sequencer:"
-msgstr "Editor de sequências:"
 
 
 msgid "User Scale"
@@ -86351,10 +86477,6 @@ msgid "Cursor Location:"
 msgstr "Localização do cursor:"
 
 
-msgid "UVs:"
-msgstr "UVs:"
-
-
 msgid "Slot Name"
 msgstr "Nome do compartimento"
 
@@ -86795,6 +86917,16 @@ msgid "Slip Strip Contents"
 msgstr "Deslizar os conteúdos da faixa"
 
 
+msgctxt "Operator"
+msgid "Change Path/Files"
+msgstr "Alterar caminhos e / ou arquivos"
+
+
+msgctxt "Operator"
+msgid "Swap Data"
+msgstr "Trocar dados"
+
+
 msgid "Name:"
 msgstr "Nome:"
 
@@ -86850,6 +86982,11 @@ msgstr "Converter para ponto flutuante"
 msgctxt "Operator"
 msgid "View all Sequences"
 msgstr "Visualizar todas as sequências"
+
+
+msgctxt "Operator"
+msgid "Fit Preview in window"
+msgstr "Encaixar previsão na janela"
 
 
 msgctxt "Operator"
@@ -86995,6 +87132,16 @@ msgstr "Recarregar as faixas e ajustar comprimento"
 msgctxt "Operator"
 msgid "Mute Deselected Strips"
 msgstr "Tornar mudas as faixas não selecionadas"
+
+
+msgctxt "Operator"
+msgid "Cut (Hard) at frame"
+msgstr "Corte (seco) no quadro"
+
+
+msgctxt "Operator"
+msgid "Cut (Soft) at frame"
+msgstr "Corte (suave) no quadro"
 
 
 msgid "Original Dimension: %dx%d"
@@ -87933,6 +88080,11 @@ msgstr "Faces interiores"
 
 
 msgctxt "Operator"
+msgid "Faces by Sides"
+msgstr "Faces pelo número de lados"
+
+
+msgctxt "Operator"
 msgid "Ungrouped Verts"
 msgstr "Vértices desagrupados"
 
@@ -88819,6 +88971,11 @@ msgstr "Costuras"
 
 msgid "Edge Marks"
 msgstr "Marcações de arestas"
+
+
+msgctxt "Operator"
+msgid "View Selected (Quad View)"
+msgstr "Visualizar seleção (Quatro vistas)"
 
 
 msgctxt "Operator"
@@ -90235,10 +90392,6 @@ msgid "Edge-rings are not connected"
 msgstr "Anéis de arestas não estão conectados."
 
 
-msgid "Could not rotate edge"
-msgstr "Não é possível rotacionar aresta."
-
-
 msgctxt "Action"
 msgid "Group"
 msgstr "Grupo"
@@ -90522,6 +90675,10 @@ msgstr "Sem conjunto de inserção de chaves ativo"
 
 msgid "Keying set failed to remove any keyframes"
 msgstr "Conjunto de inserção de chaves falhou ao remover quaisquer quadros-chave."
+
+
+msgid "This property cannot be animated as it will not get updated correctly"
+msgstr "Esta propriedade não pode ser animada devido ao fato de não ser atualizada de maneira adequada."
 
 
 msgid "Failed to resolve path to property, try manually specifying this using a Keying Set instead"
@@ -90862,6 +91019,10 @@ msgstr "Não é possível girar"
 
 msgid "Cannot duplicate current selection"
 msgstr "Não é possível duplicar a seleção atual."
+
+
+msgid "Only bezier curves are supported"
+msgstr "Somente as curvas bézier são suportadas."
 
 
 msgid "Active object is not a selected curve"
@@ -93853,6 +94014,10 @@ msgid "Display Color:"
 msgstr "Cores para exibição:"
 
 
+msgid "Auto Handle Smoothing:"
+msgstr "Suavização automática de manípulos:"
+
+
 msgid "None for Enum/Boolean"
 msgstr "Referencial nulo para enumeradores ou booleanos"
 
@@ -95086,7 +95251,7 @@ msgstr "Influência usada pelo modificador de subdivisão de superfície."
 
 
 msgid "Weight used for Soft Body Goal"
-msgstr "Influência usada para objetivo de corpo macio."
+msgstr "Influência usada para objetivo de corpo maleável."
 
 
 msgid "Radius of curve control points"
@@ -97072,10 +97237,6 @@ msgid "iScale"
 msgstr "Escala de intensidade"
 
 
-msgid "Could not resolve path (%s)"
-msgstr "Não é possível resolver o caminho (%s)"
-
-
 msgid ""
 "%s\n"
 "location: %s:%d"
@@ -97086,6 +97247,10 @@ msgstr ""
 
 msgid "Unknown py-exception, could not convert"
 msgstr "Exceção Python desconhecida, não é possível converter."
+
+
+msgid "Could not resolve path (%s)"
+msgstr "Não é possível resolver o caminho (%s)"
 
 
 msgid "Creating Shadowbuffers"
@@ -97791,6 +97956,10 @@ msgstr "Vietnamita (tiếng Việt)"
 
 msgid "Basque (Euskara)"
 msgstr "Basco (Idioma Vasco ou Euskara)"
+
+
+msgid "Hausa (Hausa)"
+msgstr "Hausa (Hausa)"
 
 
 msgid "Complete"
