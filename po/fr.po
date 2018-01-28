@@ -1,9 +1,9 @@
 
 msgid ""
 msgstr ""
-"Project-Id-Version: Blender 2.79 (sub 1) (b'e981a7de31d')\n"
+"Project-Id-Version: Blender 2.79 (sub 2) (b'd099b1073ba')\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-01-03 12:58:53\n"
+"POT-Creation-Date: 2018-01-28 17:28:18\n"
 "PO-Revision-Date: \n"
 "Last-Translator: Bastien Montagne <montagne29@wanadoo.fr>\n"
 "Language-Team: \n"
@@ -32404,6 +32404,10 @@ msgid "Angle of deformation"
 msgstr "Angle de déformation"
 
 
+msgid "Deform around local axis"
+msgstr "Déformer autour d’un axe local"
+
+
 msgid "Rotate around the Z axis of the modifier space"
 msgstr "Tourner autour de l’axe Z dans l’espace du modificateur"
 
@@ -32442,6 +32446,10 @@ msgstr "Interdire toute déformation le long de l’axe X"
 
 msgid "Do not allow deformation along the Y axis"
 msgstr "Interdire toute déformation le long de l’axe Y"
+
+
+msgid "Do not allow deformation along the Z axis"
+msgstr "Interdire toute déformation le long de l’axe Z"
 
 
 msgid "Origin"
@@ -38047,6 +38055,10 @@ msgstr "Invoqué"
 
 msgid "True when invoked (even if only the execute callbacks available)"
 msgstr "Vrai si invoqué (même si le seul appel d’exécution est disponible)"
+
+
+msgid "True when run from the redo panel"
+msgstr "Vrai quand exécuté depuis le panneau de redo"
 
 
 msgid "Focus Region"
@@ -44879,6 +44891,15 @@ msgstr "Définir curseur"
 
 msgid "Interactively set the current frame and value cursor"
 msgstr "Définir interactivement les frame et valeur courantes du curseur"
+
+
+msgctxt "Operator"
+msgid "Delete Invalid Drivers"
+msgstr "Supprimer contrôleurs non valides"
+
+
+msgid "Delete all visible drivers considered invalid"
+msgstr "Supprimer tous les contrôleurs considérés comme non valides"
 
 
 msgctxt "Operator"
@@ -62783,6 +62804,14 @@ msgid "Show diffuse color of object and overlay sculpt mask on top of it"
 msgstr "Afficher la couleur diffuse de l’objet et y superposer le masque de sculpture"
 
 
+msgid "Show Mask"
+msgstr "Afficher masque"
+
+
+msgid "Show mask as overlay on object"
+msgstr "Afficher le masque en sur-impression sur l’objet"
+
+
 msgid "Source and destination for symmetrize operator"
 msgstr "Source et destination de l’opérateur symétrie"
 
@@ -65774,6 +65803,14 @@ msgid "Use GPU compute device for rendering, configured in the system tab in the
 msgstr "Utiliser un périphérique de calculs GPU pour le rendu, configuré dans l’onglet système des préférences utilisateurs"
 
 
+msgid "Dicing Camera"
+msgstr "Caméra de découpage"
+
+
+msgid "Camera to use as reference point when subdividing geometry, useful to avoid crawling artifacts in animations when the scene camera is moving"
+msgstr "Caméra à utiliser comme point de référence pour la subdivision de géométrie, utile pour éviter les artefacts rampants dans les animations quand la caméra de la scène bouge."
+
+
 msgid "Dicing Rate"
 msgstr "Taux de découpage en dés"
 
@@ -65838,8 +65875,24 @@ msgid "Transparent"
 msgstr "Transparent"
 
 
-msgid "World background is transparent with premultiplied alpha"
-msgstr "L’arrière-plan de monde est transparent avec un alpha pré-multiplié"
+msgid "World background is transparent, for compositing the render over another background"
+msgstr "L’arrière-plan du monde est transparent, pour compositer le rendu par-dessus un autre arrière-plan"
+
+
+msgid "Transparent Glass"
+msgstr "Verre transparent"
+
+
+msgid "Render transmissive surfaces as transparent, for compositing glass over another background"
+msgstr "Rendre les surfaces transmissives comme transparentes, pour compositer du verre par-dessus un autre arrière-plan."
+
+
+msgid "Transparent Roughness Threshold"
+msgstr "Seuil de rugosité transparente"
+
+
+msgid "For transparent transmission, keep surfaces with roughness above the threshold opaque"
+msgstr "La transmission transparente, conserver les surfaces ayant une rugosité au-dessus du seuil opaques."
 
 
 msgid "Pixel filter type"
@@ -65944,6 +65997,14 @@ msgstr "Terminer à la frame"
 
 msgid "The shutter closes at the current frame"
 msgstr "L’obturateur est fermé à la frame courante"
+
+
+msgid "Offscreen Dicing Scale"
+msgstr "Échelle de découpage en dés hors-écran."
+
+
+msgid "Multiplier for dicing rate of geometry outside of the camera view. The dicing rate of objects is gradually increased the further they are outside the camera view. Lower values provide higher quality reflections and shadows for off screen objects, while higher values use less memory"
+msgstr "Multiplicateur pour le taux de découpage de la géométrie hors de la vue caméra. Le taux de découpage des objets est graduellement augmenté à mesure qu’ils s’éloignent de la vue caméra. De plus faibles valeurs donnent une meilleure qualité de réflexions et d’ombres pour les objets hors caméra, alors que de plus fortes valeurs réduisent l’utilisation mémoire."
 
 
 msgid "Number of antialiasing samples to render in the viewport, unlimited if 0"
@@ -67164,6 +67225,10 @@ msgstr "Réglages de rendu pour un bloc de données scène"
 
 msgid "Transparent pixels are filled with sky color"
 msgstr "Les pixels transparents sont remplis avec la couleur du ciel"
+
+
+msgid "World background is transparent with premultiplied alpha"
+msgstr "L’arrière-plan de monde est transparent avec un alpha pré-multiplié"
 
 
 msgid "Anti-Aliasing Samples"
@@ -72519,6 +72584,14 @@ msgid "Blender specific point cache file format"
 msgstr "Format de fichier de cache de points spécifique à Blender"
 
 
+msgid "OpenVDB"
+msgstr "OpenVDB"
+
+
+msgid "OpenVDB file format"
+msgstr "Format de fichier OpenVDB"
+
+
 msgid "Field"
 msgstr "Champ"
 
@@ -72757,6 +72830,14 @@ msgstr "FFT"
 
 msgid "Zip"
 msgstr "Zip"
+
+
+msgid "Blosc"
+msgstr "Blosc"
+
+
+msgid "Multithreaded compression, similar in size and quality as 'Zip'"
+msgstr "Compression multi-threadée, similaire en taille et qualité à “Zip”"
 
 
 msgid "Do not use any compression"
@@ -80692,6 +80773,14 @@ msgid "Use large mouse cursors when available"
 msgstr "Utiliser les grands curseurs de souris si disponibles"
 
 
+msgid "Show Layout Widgets"
+msgstr "Afficher widgets de disposition"
+
+
+msgid "Show screen layout editing UI"
+msgstr "Afficher l’UI d’édition de la disposition d’écran"
+
+
 msgid "Use 3D transform manipulator"
 msgstr "Utiliser manipulateur 3D"
 
@@ -80742,6 +80831,10 @@ msgstr "Infobulles Python"
 
 msgid "Show Python references in tooltips"
 msgstr "Afficher les références Python dans les infobulles"
+
+
+msgid "Show 3D View Cursor"
+msgstr "Afficher curseur de la vue 3D"
 
 
 msgid "Show View Name"
@@ -82322,6 +82415,14 @@ msgid "Settings:"
 msgstr "Réglages :"
 
 
+msgid "Volume Sampling:"
+msgstr "Échantillonnage volumique :"
+
+
+msgid "Hair:"
+msgstr "Cheveux :"
+
+
 msgid "Use Hair"
 msgstr "Utiliser cheveux"
 
@@ -82344,6 +82445,10 @@ msgstr "Rebondissements :"
 
 msgid "Shutter curve:"
 msgstr "Courbe d’obturateur :"
+
+
+msgid "Roughness Threshold"
+msgstr "Seuil de rugosité"
 
 
 msgid "Threads:"
@@ -82534,12 +82639,12 @@ msgid "Mesh Light"
 msgstr "Lumière mesh"
 
 
-msgid "Volume Sampling:"
-msgstr "Échantillonnage volumique :"
-
-
 msgid "Subdivision Rate:"
 msgstr "Taux de subdivision :"
+
+
+msgid "Offscreen Scale"
+msgstr "Échelle hors-écran"
 
 
 msgid "File Suffix:"
@@ -86025,10 +86130,6 @@ msgid "Physics:"
 msgstr "Physiques :"
 
 
-msgid "Hair:"
-msgstr "Cheveux :"
-
-
 msgid "Use Tips:"
 msgstr "Utiliser extrémités :"
 
@@ -87444,6 +87545,14 @@ msgstr "Niveau inférieur"
 
 msgid "Pie Menus:"
 msgstr "Menus camembert :"
+
+
+msgid "App Template:"
+msgstr "Patron d’application :"
+
+
+msgid "Options intended for use with app-templates only."
+msgstr "Options conçues pour être utilisées avec les patrons d’application uniquement."
 
 
 msgid "Link Materials To:"
