@@ -1,9 +1,9 @@
 
 msgid ""
 msgstr ""
-"Project-Id-Version: Blender 2.79 (sub 2) (b'd099b1073ba')\n"
+"Project-Id-Version: Blender 2.79 (sub 2) (b'6618852b7f1')\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-01-28 17:28:18\n"
+"POT-Creation-Date: 2018-02-23 10:49:02\n"
 "PO-Revision-Date: \n"
 "Last-Translator: Bastien Montagne <montagne29@wanadoo.fr>\n"
 "Language-Team: \n"
@@ -11,7 +11,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 2.0.5"
+"X-Generator: Poedit 2.0.6"
 
 
 msgid "Action F-Curves"
@@ -22194,6 +22194,18 @@ msgid "Number of trail particles"
 msgstr "Nombre de particules de traînée"
 
 
+msgid "Number of turns around parent allong the strand"
+msgstr "Nombre de tours autour du parent le long de la fibre"
+
+
+msgid "Twist Curve"
+msgstr "Courbe de vrille"
+
+
+msgid "Curve defining twist"
+msgstr "Courbe définissant le vrillement"
+
+
 msgid "Particle Type"
 msgstr "Type de particule"
 
@@ -22412,6 +22424,14 @@ msgstr "Rendu fibre"
 
 msgid "Use the strand primitive for rendering"
 msgstr "Utiliser la primitive fibre pour le rendu"
+
+
+msgid "Use Twist Curve"
+msgstr "Utiliser courbe de vrille"
+
+
+msgid "Use a curve to define twist"
+msgstr "Utiliser une courbe pour définir le vrillement"
 
 
 msgid "Multiply line length by particle speed"
@@ -30352,22 +30372,6 @@ msgid "Combine two meshes in a subtractive way"
 msgstr "Combiner deux meshes de façon soustractive"
 
 
-msgid "BMesh"
-msgstr "BMesh"
-
-
-msgid "Use the BMesh boolean solver"
-msgstr "Utiliser le solveur booléen BMesh"
-
-
-msgid "Carve"
-msgstr "Carve"
-
-
-msgid "Use the Carve boolean solver"
-msgstr "Utiliser le solveur booléen Carve"
-
-
 msgid "Build Modifier"
 msgstr "Modificateur construction"
 
@@ -36861,6 +36865,30 @@ msgid "Principled BSDF"
 msgstr "BSDF guidé"
 
 
+msgid "Subsurface Method"
+msgstr "Méthode Sub-surfacique"
+
+
+msgid "Method for rendering subsurface scattering"
+msgstr "Méthode de rendu de la diffusion sub-surfacique"
+
+
+msgid "Christensen-Burley"
+msgstr "Christensen-Burley"
+
+
+msgid "Approximation to physically based volume scattering"
+msgstr "Approximation de diffusion volumétrique physique"
+
+
+msgid "Random Walk"
+msgstr "Cheminement aléatoire"
+
+
+msgid "Volumetric approximation to physically based volume scattering"
+msgstr "Approximation volumétrique de la diffusion volumétrique physique"
+
+
 msgid "Refraction BSDF"
 msgstr "BSDF réfraction"
 
@@ -36903,6 +36931,22 @@ msgstr "Combiner RGB"
 
 msgid "Combine XYZ"
 msgstr "Combiner XYZ"
+
+
+msgid "Space of the input height"
+msgstr "Espace de la hauteur d’entrée"
+
+
+msgid "Object Space"
+msgstr "Espace objet"
+
+
+msgid "Displacement is in object space, affected by object scale"
+msgstr "Le déplacement est en espace objet, affecté par la taille de l’objet"
+
+
+msgid "Displacement is in world space, not affected by object scale"
+msgstr "Le déplacement est en espace monde, non affecté par la taille de l’objet"
 
 
 msgid "Extended Material"
@@ -37019,10 +37063,6 @@ msgstr "Espace tangent"
 
 msgid "Tangent space normal mapping"
 msgstr "Placage des normales en espace tangent"
-
-
-msgid "Object Space"
-msgstr "Espace objet"
 
 
 msgid "Object space normal mapping"
@@ -37151,14 +37191,6 @@ msgstr "Fonction d’atténuation cubique simple"
 
 msgid "Normal distribution, multiple can be combined to fit more complex profiles"
 msgstr "Distribution normale, plusieurs peuvent être combinées pour correspondre à des profils plus complexes"
-
-
-msgid "Christensen-Burley"
-msgstr "Christensen-Burley"
-
-
-msgid "Approximation to physically based volume scattering"
-msgstr "Approximation de diffusion volumétrique physique"
 
 
 msgid "Axis for radial tangents"
@@ -37519,6 +37551,22 @@ msgstr "La moitié inférieure des textures est pour les extrémités des traits
 
 msgid "UV coordinates to be used for mapping"
 msgstr "Coordonnées UV à utiliser pour le placage"
+
+
+msgid "Vector Displacement"
+msgstr "Déplacement vectoriel"
+
+
+msgid "Tagent space vector displacement mapping"
+msgstr "Placage de déplacement vectoriel en espace tangentiel"
+
+
+msgid "Object space vector displacement mapping"
+msgstr "Placage de déplacement vectoriel en espace objet"
+
+
+msgid "World space vector displacement mapping"
+msgstr "Placage de déplacement vectoriel en espace monde"
 
 
 msgid "Vector Math"
@@ -59959,12 +60007,20 @@ msgid "Dolly in/out in the view"
 msgstr "Travelling (longitudinal) de la vue"
 
 
-msgid "Zoom Position X"
-msgstr "Position de zoom X"
+msgid "Region Position X"
+msgstr "Position de région X"
 
 
-msgid "Zoom Position Y"
-msgstr "Position de zoom Y"
+msgid "Region Position Y"
+msgstr "Position de région Y"
+
+
+msgid "Mouse Init"
+msgstr "Initialisation de la souris"
+
+
+msgid "Use initial mouse position"
+msgstr "Utiliser la position initiale de la souris"
 
 
 msgctxt "Operator"
@@ -64071,6 +64127,14 @@ msgid "Negate the effect of the tangent vertex group"
 msgstr "Inverser l’effet du groupe de vertices de tangente"
 
 
+msgid "Vertex Group Twist Negate"
+msgstr "Inverser groupe de vertices vrille"
+
+
+msgid "Negate the effect of the twist vertex group"
+msgstr "Inverser l’effet du groupe de vertices de vrillement"
+
+
 msgid "Vertex Group Velocity Negate"
 msgstr "Inverser groupe de vertices vitesse"
 
@@ -64237,6 +64301,14 @@ msgstr "Groupe de vertices tangente"
 
 msgid "Vertex group to control tangent"
 msgstr "Groupe de vertices pour contrôler la tangente"
+
+
+msgid "Vertex Group Twist"
+msgstr "Groupes de vertices vrille"
+
+
+msgid "Vertex group to control twist"
+msgstr "Groupe de vertices pour contrôler le vrillement"
 
 
 msgid "Vertex Group Velocity"
@@ -65271,20 +65343,28 @@ msgid "Method to use for the displacement"
 msgstr "Méthode à utiliser pour le déplacement"
 
 
+msgid "Bump Only"
+msgstr "Bump uniquement"
+
+
 msgid "Bump mapping to simulate the appearance of displacement"
 msgstr "Bump mapping pour simuler l’apparence d’un déplacement"
 
 
-msgid "True"
-msgstr "Vrai"
+msgid "Displacement Only"
+msgstr "Déplacement uniquement"
 
 
-msgid "Use true displacement only, requires fine subdivision"
-msgstr "N’utiliser que le vrai déplacement, requiert une subdivision fine"
+msgid "Use true displacement of surface only, requires fine subdivision"
+msgstr "N’utiliser que le vrai déplacement de surface, requiert une subdivision fine"
 
 
-msgid "Combination of displacement and bump mapping"
-msgstr "Combinaison de déplacement et de bump mapping"
+msgid "Displacement and Bump"
+msgstr "Déplacement et bump"
+
+
+msgid "Combination of true displacement and bump mapping for finer detail"
+msgstr "Combinaison de déplacement réel et de bump mapping pour plus de détails"
 
 
 msgid "Homogeneous Volume"
@@ -65655,6 +65735,10 @@ msgid "Use refractive caustics, resulting in a brighter image (more noise but ad
 msgstr "Utiliser les caustiques réfractives, donnant une image plus lumineuse (plus de bruit, mais plus de réalisme)"
 
 
+msgid "BVH Layout"
+msgstr "Disposition BVH"
+
+
 msgid "BVH Time Steps"
 msgstr "Étape de temps BVH"
 
@@ -65769,10 +65853,6 @@ msgstr "Utiliser un type de BVH spécial optimisé pour les cheveux (utilise plu
 
 msgid "Debug OpenCL"
 msgstr "Debug OpenCL"
-
-
-msgid "QBVH"
-msgstr "QBVH"
 
 
 msgid "Use Spatial Splits"
@@ -71872,10 +71952,27 @@ msgid "Wipe direction"
 msgstr "Direction du volet"
 
 
+msgctxt "Sequence"
 msgid "Transition Type"
 msgstr "Type de transition"
 
 
+msgctxt "Sequence"
+msgid "Single"
+msgstr "Unique"
+
+
+msgctxt "Sequence"
+msgid "Double"
+msgstr "Double"
+
+
+msgctxt "Sequence"
+msgid "Iris"
+msgstr "Iris"
+
+
+msgctxt "Sequence"
 msgid "Clock"
 msgstr "Horloge"
 
@@ -76709,6 +76806,14 @@ msgid "Amount texture affects particle emission time"
 msgstr "À quel point la texture affecte le temps d’émission des particules"
 
 
+msgid "Twist Factor"
+msgstr "Facteur de vrillement"
+
+
+msgid "Amount texture affects child twist"
+msgstr "À quel point la texture affecte le vrillement des enfants"
+
+
 msgid "Affect the child clumping"
 msgstr "Affecter l’agglutination des enfants"
 
@@ -76779,6 +76884,10 @@ msgstr "Temps d’émission"
 
 msgid "Affect the emission time of the particles"
 msgstr "Affecter le temps d’émission des particules"
+
+
+msgid "Affect the child twist"
+msgstr "Affecte le vrillement des enfants"
 
 
 msgid "Affect the particle initial velocity"
@@ -82555,16 +82664,20 @@ msgid "Homogeneous"
 msgstr "Homogène"
 
 
-msgid "Viewport Color:"
-msgstr "Couleur de la vue :"
+msgid "Geometry:"
+msgstr "Géométrie :"
 
 
-msgid "Viewport Alpha:"
-msgstr "Transparence vue 3D :"
+msgid "Color:"
+msgstr "Couleur :"
 
 
-msgid "Viewport Specular:"
-msgstr "Spéculaire de la vue :"
+msgid "Alpha:"
+msgstr "Alpha :"
+
+
+msgid "Specular:"
+msgstr "Spéculaire :"
 
 
 msgid "Projection:"
@@ -82647,6 +82760,10 @@ msgid "Offscreen Scale"
 msgstr "Échelle hors-écran"
 
 
+msgid "Use Freestyle"
+msgstr "Utiliser Freestyle"
+
+
 msgid "File Suffix:"
 msgstr "Suffixe de fichier :"
 
@@ -82661,10 +82778,6 @@ msgstr "Portail"
 
 msgid "Not supported, interpreted as sun lamp"
 msgstr "Non supportée, interprétée comme une lampe soleil"
-
-
-msgid "Displacement:"
-msgstr "Déplacement :"
 
 
 msgid "Swizzle:"
@@ -83820,10 +83933,6 @@ msgid "Operation:"
 msgstr "Opération :"
 
 
-msgid "Solver:"
-msgstr "Solveur :"
-
-
 msgid "Evaluation:"
 msgstr "Évaluation :"
 
@@ -84220,10 +84329,6 @@ msgstr "Marquer isolé"
 msgctxt "Operator"
 msgid "Clear Loose"
 msgstr "Effacer isolé"
-
-
-msgid "Built without Carve solver"
-msgstr "Compilé sans le solveur Carve"
 
 
 msgid "Delimit:"
@@ -85165,10 +85270,6 @@ msgid "Initial Orientation:"
 msgstr "Orientation initiale :"
 
 
-msgid "Color:"
-msgstr "Couleur :"
-
-
 msgid "Effects:"
 msgstr "Effets :"
 
@@ -86026,10 +86127,6 @@ msgid "Noise:"
 msgstr "Bruit :"
 
 
-msgid "Alpha:"
-msgstr "Alpha :"
-
-
 msgid "Calculate"
 msgstr "Calculer"
 
@@ -86104,14 +86201,6 @@ msgstr "Impair"
 
 msgid "System:"
 msgstr "Système :"
-
-
-msgid "Specular:"
-msgstr "Spéculaire :"
-
-
-msgid "Geometry:"
-msgstr "Géométrie :"
 
 
 msgid "Map:"

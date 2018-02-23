@@ -1,10 +1,10 @@
 
 msgid ""
 msgstr ""
-"Project-Id-Version: Blender 2.79 (sub 2) (b'd099b1073ba')\n"
+"Project-Id-Version: Blender 2.79 (sub 2) (b'6618852b7f1')\n"
 "Report-Msgid-Bugs-To: Ivan Paulos Tomé <ivan.paulos.tome@yandex.com>\n"
-"POT-Creation-Date: 2018-01-28 17:28:18\n"
-"PO-Revision-Date: 2018-01-09 15:47-0300\n"
+"POT-Creation-Date: 2018-02-23 10:49:02\n"
+"PO-Revision-Date: 2018-01-29 16:06-0300\n"
 "Last-Translator: Ivan Paulos Tomé <greylica@gmail.com>\n"
 "Language-Team: Ivan Paulos Tomé, Dalai Felinto, Bruno Gonçalves Pirajá, Samuel Arataca, Daniel Tavares, Moraes Junior <ivan.paulos.tome@yandex.com>\n"
 "Language: pt_BR\n"
@@ -8581,7 +8581,7 @@ msgstr "Usar nomes próprios"
 
 
 msgid "Include a 'self' variable in the name-space, so drivers can easily reference the data being modified (object, bone, etc...)"
-msgstr "Inclui uma variável especial com nome próprio dentro do espaço de nomes, de maneira que os controladores possam facilmente referenciar os dados sendo modificados (como objetos, ossos, etc...)."
+msgstr "Inclui uma variável especial com nome próprio dentro do espaço de nomes, de maneira que os controladores possam facilmente referenciar os dados sendo modificados (como objetos, ossos, etc.)."
 
 
 msgid "Variables"
@@ -30355,22 +30355,6 @@ msgid "Combine two meshes in a subtractive way"
 msgstr "Combina as duas malhas de maneira subtrativa."
 
 
-msgid "BMesh"
-msgstr "Malhas Blender"
-
-
-msgid "Use the BMesh boolean solver"
-msgstr "Usa o solucionador de operações boolianas via cálculo de malhas Blender."
-
-
-msgid "Carve"
-msgstr "Carve"
-
-
-msgid "Use the Carve boolean solver"
-msgstr "Usa o solucionador de operações boolianas via biblioteca dinâmica Carve."
-
-
 msgid "Build Modifier"
 msgstr "Modificador - Construir"
 
@@ -32407,6 +32391,10 @@ msgid "Angle of deformation"
 msgstr "Ângulo de deformação"
 
 
+msgid "Deform around local axis"
+msgstr "Deforma em torno do eixo local."
+
+
 msgid "Rotate around the Z axis of the modifier space"
 msgstr "Rotaciona em torno do eixo Z do espaço do modificador."
 
@@ -32445,6 +32433,10 @@ msgstr "Não permite a deformação ao longo do eixo X."
 
 msgid "Do not allow deformation along the Y axis"
 msgstr "Não permite a deformação ao longo do eixo Y."
+
+
+msgid "Do not allow deformation along the Z axis"
+msgstr "Não permite a deformação ao longo do eixo Z."
 
 
 msgid "Origin"
@@ -36856,6 +36848,14 @@ msgid "Principled BSDF"
 msgstr "BSDF - Pré-fundamentado"
 
 
+msgid "Christensen-Burley"
+msgstr "Christensen e Burley"
+
+
+msgid "Approximation to physically based volume scattering"
+msgstr "Uma aproximação física do espalhamento de sub-superfície no volume (usando o método proposto por Per H. Christensen e Brent Burley )."
+
+
 msgid "Refraction BSDF"
 msgstr "BSDF - Refração"
 
@@ -36898,6 +36898,10 @@ msgstr "Combinar RGB"
 
 msgid "Combine XYZ"
 msgstr "Combinar XYZ"
+
+
+msgid "Object Space"
+msgstr "Espaço de objeto"
 
 
 msgid "Extended Material"
@@ -37014,10 +37018,6 @@ msgstr "Espaço tangente"
 
 msgid "Tangent space normal mapping"
 msgstr "Mapeamento das normais no espaço de tangente."
-
-
-msgid "Object Space"
-msgstr "Espaço de objeto"
 
 
 msgid "Object space normal mapping"
@@ -37146,14 +37146,6 @@ msgstr "Simples função de decaimento cúbico."
 
 msgid "Normal distribution, multiple can be combined to fit more complex profiles"
 msgstr "Distribuição normal, múltiplos podem ser combinados para se encaixar em perfis mais complexos."
-
-
-msgid "Christensen-Burley"
-msgstr "Christensen e Burley"
-
-
-msgid "Approximation to physically based volume scattering"
-msgstr "Uma aproximação física do espalhamento de sub-superfície no volume (usando o método proposto por Per H. Christensen e Brent Burley )."
 
 
 msgid "Axis for radial tangents"
@@ -38050,6 +38042,10 @@ msgstr "Invocar"
 
 msgid "True when invoked (even if only the execute callbacks available)"
 msgstr "Verdadeiro quando invocado (mesmo no caso de somente executar as chamadas de função disponíveis)."
+
+
+msgid "True when run from the redo panel"
+msgstr "Verdadeiro quando executado a partir do painel de refazer."
 
 
 msgid "Focus Region"
@@ -44882,6 +44878,15 @@ msgstr "Definir cursor"
 
 msgid "Interactively set the current frame and value cursor"
 msgstr "Permite definir interativamente o quadro atual e o valor do cursor."
+
+
+msgctxt "Operator"
+msgid "Delete Invalid Drivers"
+msgstr "Apagar controladores inválidos"
+
+
+msgid "Delete all visible drivers considered invalid"
+msgstr "Apaga todos os controladores visíveis que forem considerados inválidos."
 
 
 msgctxt "Operator"
@@ -59941,14 +59946,6 @@ msgid "Dolly in/out in the view"
 msgstr "Usa o método de carrinho de filmagem para ampliar ou reduzir a visualização."
 
 
-msgid "Zoom Position X"
-msgstr "Ampliar posição em X"
-
-
-msgid "Zoom Position Y"
-msgstr "Ampliar posição em Y "
-
-
 msgctxt "Operator"
 msgid "Extrude Individual and Move"
 msgstr "Executar extrusão individual e mover"
@@ -61107,7 +61104,7 @@ msgstr "Usar o perfil do Blender."
 
 
 msgid "Export additional Blender specific information (for material, shaders, bones, etc.)"
-msgstr "Exporta informações adicionais específicas do Blender. (para materiais, sombreadores, ossos, etc...)"
+msgstr "Exporta informações adicionais específicas do Blender. (para materiais, sombreadores, ossos, etc.)."
 
 
 msgid "Use Object Instances"
@@ -62784,6 +62781,14 @@ msgstr "Mostrar a cor difusa"
 
 msgid "Show diffuse color of object and overlay sculpt mask on top of it"
 msgstr "Mostra a cor difusa do objeto e máscara de escultura de sobreposição em cima desta."
+
+
+msgid "Show Mask"
+msgstr "Mostrar máscara"
+
+
+msgid "Show mask as overlay on object"
+msgstr "Mostra a máscara como uma sobreposição no objeto."
 
 
 msgid "Source and destination for symmetrize operator"
@@ -65249,18 +65254,6 @@ msgid "Bump mapping to simulate the appearance of displacement"
 msgstr "Mapa de relevos, para simular a aparência de deslocamento."
 
 
-msgid "True"
-msgstr "Verdadeiro"
-
-
-msgid "Use true displacement only, requires fine subdivision"
-msgstr "Usa somente o deslocamento verdadeiro, requer uma subdivisão fina."
-
-
-msgid "Combination of displacement and bump mapping"
-msgstr "Combinação de deslocamento e mapa de relevos."
-
-
 msgid "Homogeneous Volume"
 msgstr "Volume homogêneo"
 
@@ -65745,10 +65738,6 @@ msgid "Debug OpenCL"
 msgstr "Depurar OpenCL"
 
 
-msgid "QBVH"
-msgstr "QBVH"
-
-
 msgid "Use Spatial Splits"
 msgstr "Usar divisões espaciais"
 
@@ -65775,6 +65764,14 @@ msgstr "Computação por GPU"
 
 msgid "Use GPU compute device for rendering, configured in the system tab in the user preferences"
 msgstr "Usa o dispositivo de computação GPU para renderização, configurado na aba \"Sistema\" das preferências de usuário."
+
+
+msgid "Dicing Camera"
+msgstr "Compartimentalização de câmera"
+
+
+msgid "Camera to use as reference point when subdividing geometry, useful to avoid crawling artifacts in animations when the scene camera is moving"
+msgstr "A câmera a ser usada como o ponto de referência durante a subdivisão da geometria. Útil para evitar artefatos de relevo nas animações quando a câmera da cena está se movendo. "
 
 
 msgid "Dicing Rate"
@@ -65839,6 +65836,26 @@ msgstr "Escala de brilho da imagem"
 
 msgid "Transparent"
 msgstr "Transparente"
+
+
+msgid "World background is transparent, for compositing the render over another background"
+msgstr "O plano de fundo do ambiente é transparente, para a composição da renderização sobre outro plano de fundo."
+
+
+msgid "Transparent Glass"
+msgstr "Vidro transparente"
+
+
+msgid "Render transmissive surfaces as transparent, for compositing glass over another background"
+msgstr "Renderiza as superfícies transmissivas como transparentes, para a composição de vidros sobre outro plano de fundo."
+
+
+msgid "Transparent Roughness Threshold"
+msgstr "Ajuste de rugosidade da transparência"
+
+
+msgid "For transparent transmission, keep surfaces with roughness above the threshold opaque"
+msgstr "Para as transmissões transparentes, mantém as superfícies com rugosidade acima do ajuste opacas."
 
 
 msgid "Pixel filter type"
@@ -65943,6 +65960,14 @@ msgstr "Finalizar no quadro"
 
 msgid "The shutter closes at the current frame"
 msgstr "O obturador fecha no quadro atual"
+
+
+msgid "Offscreen Dicing Scale"
+msgstr "Escala de compartimentalização fora de tela"
+
+
+msgid "Multiplier for dicing rate of geometry outside of the camera view. The dicing rate of objects is gradually increased the further they are outside the camera view. Lower values provide higher quality reflections and shadows for off screen objects, while higher values use less memory"
+msgstr "Um multiplicador para a taxa de compartimentalização da geometria que está fora da visão de câmera. A taxa de compartimentalização do objeto é gradualmente aumentada quanto mais eles estiverem fora da visão de câmera. Valores mais baixos provêm reflexões e sombras de maior qualidade para os objetos que estão fora de tela, enquanto valores mais altos usam menos memória."
 
 
 msgid "Number of antialiasing samples to render in the viewport, unlimited if 0"
@@ -68146,7 +68171,7 @@ msgstr "Estampar rótulos"
 
 
 msgid "Draw stamp labels (\"Camera\" in front of camera name, etc.)"
-msgstr "Desenha os rótulos nas estampas (Por exemplo \"Câmera\" em frente ao nome da câmera, etc...)."
+msgstr "Desenha os rótulos nas estampas (Por exemplo \"Câmera\" em frente ao nome da câmera, etc.)."
 
 
 msgid "Stamp Lens"
@@ -71810,14 +71835,6 @@ msgid "Wipe direction"
 msgstr "Direção da varredura"
 
 
-msgid "Transition Type"
-msgstr "Tipo de transição"
-
-
-msgid "Clock"
-msgstr "Relógio"
-
-
 msgid "Sequence strip to load one or more images"
 msgstr "Faixa de sequência para carregar uma ou mais imagens."
 
@@ -73992,7 +74009,7 @@ msgstr "Pastas de sistema"
 
 
 msgid "System's folders (usually root, available hard drives, etc)"
-msgstr "Pastas de sistema (usualmente a raiz, discos rígidos disponíveis, etc...)."
+msgstr "Pastas de sistema (usualmente a raiz, discos rígidos disponíveis, etc.)."
 
 
 msgid "Active System Folder"
@@ -80711,6 +80728,14 @@ msgid "Use large mouse cursors when available"
 msgstr "Usa cursores grandes, quando disponíveis pelo sistema operacional."
 
 
+msgid "Show Layout Widgets"
+msgstr "Mostrar os assistentes de esquema"
+
+
+msgid "Show screen layout editing UI"
+msgstr "Mostrar a interface de usuário para edição de esquema de tela"
+
+
 msgid "Use 3D transform manipulator"
 msgstr "Usa o manipulador de transformação 3D."
 
@@ -80761,6 +80786,10 @@ msgstr "Dicas de ferramentas em Python"
 
 msgid "Show Python references in tooltips"
 msgstr "Mostra as referências Python dentro das dicas de ferramenta."
+
+
+msgid "Show 3D View Cursor"
+msgstr "Mostrar o cursor na janela de visualização 3D"
 
 
 msgid "Show View Name"
@@ -82373,6 +82402,10 @@ msgid "Shutter curve:"
 msgstr "Curva do obturador:"
 
 
+msgid "Roughness Threshold"
+msgstr "Ajuste de rugosidade"
+
+
 msgid "Threads:"
 msgstr "Número de tarefas:"
 
@@ -82477,16 +82510,20 @@ msgid "Homogeneous"
 msgstr "Homogeneizar"
 
 
-msgid "Viewport Color:"
-msgstr "Cor na porta de visão:"
+msgid "Geometry:"
+msgstr "Geometria:"
 
 
-msgid "Viewport Alpha:"
-msgstr "Alfa na porta de visão:"
+msgid "Color:"
+msgstr "Cor:"
 
 
-msgid "Viewport Specular:"
-msgstr "Especularidade na porta de visão:"
+msgid "Alpha:"
+msgstr "Alfa:"
+
+
+msgid "Specular:"
+msgstr "Especular:"
 
 
 msgid "Projection:"
@@ -82565,6 +82602,10 @@ msgid "Subdivision Rate:"
 msgstr "Passos de subdivisão:"
 
 
+msgid "Offscreen Scale"
+msgstr "Escalonamento fora de tela"
+
+
 msgid "File Suffix:"
 msgstr "Sufixo do arquivo:"
 
@@ -82579,10 +82620,6 @@ msgstr "Portal"
 
 msgid "Not supported, interpreted as sun lamp"
 msgstr "Não suportado, interpretado como lâmpada tipo sol."
-
-
-msgid "Displacement:"
-msgstr "Deslocamento:"
 
 
 msgid "Swizzle:"
@@ -83738,10 +83775,6 @@ msgid "Operation:"
 msgstr "Operação:"
 
 
-msgid "Solver:"
-msgstr "Solucionador:"
-
-
 msgid "Evaluation:"
 msgstr "Avaliação:"
 
@@ -84138,10 +84171,6 @@ msgstr "Marcar como soltos"
 msgctxt "Operator"
 msgid "Clear Loose"
 msgstr "Limpar soltos marcados"
-
-
-msgid "Built without Carve solver"
-msgstr "Construído sem o solucionador de operações boolianas Carve."
 
 
 msgid "Delimit:"
@@ -85083,10 +85112,6 @@ msgid "Initial Orientation:"
 msgstr "Orientação inicial:"
 
 
-msgid "Color:"
-msgstr "Cor:"
-
-
 msgid "Effects:"
 msgstr "Efeitos:"
 
@@ -85944,10 +85969,6 @@ msgid "Noise:"
 msgstr "Ruído:"
 
 
-msgid "Alpha:"
-msgstr "Alfa:"
-
-
 msgid "Calculate"
 msgstr "Calcular"
 
@@ -86022,14 +86043,6 @@ msgstr "Ímpar"
 
 msgid "System:"
 msgstr "Sistema:"
-
-
-msgid "Specular:"
-msgstr "Especular:"
-
-
-msgid "Geometry:"
-msgstr "Geometria:"
 
 
 msgid "Map:"
@@ -87459,6 +87472,14 @@ msgstr "Nível inferior"
 
 msgid "Pie Menus:"
 msgstr "Menus setorizados:"
+
+
+msgid "App Template:"
+msgstr "Modelo de aplicação:"
+
+
+msgid "Options intended for use with app-templates only."
+msgstr "Opções projetadas para ser usadas somente com os modelos de aplicação."
 
 
 msgid "Link Materials To:"
