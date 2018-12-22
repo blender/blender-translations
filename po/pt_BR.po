@@ -4,7 +4,7 @@ msgstr ""
 "Project-Id-Version: Blender 2.79 (sub 2) (b'6618852b7f1')\n"
 "Report-Msgid-Bugs-To: Ivan Paulos Tomé <ivan.paulos.tome@yandex.com>\n"
 "POT-Creation-Date: 2018-02-23 10:49:02\n"
-"PO-Revision-Date: 2018-01-29 16:06-0300\n"
+"PO-Revision-Date: 2018-03-25 23:41-0300\n"
 "Last-Translator: Ivan Paulos Tomé <greylica@gmail.com>\n"
 "Language-Team: Ivan Paulos Tomé, Dalai Felinto, Bruno Gonçalves Pirajá, Samuel Arataca, Daniel Tavares, Moraes Junior <ivan.paulos.tome@yandex.com>\n"
 "Language: pt_BR\n"
@@ -10503,7 +10503,7 @@ msgstr "Dividir automaticamente a saída"
 
 
 msgid "Autosplit output at 2GB boundary"
-msgstr "Divide a saída no limite de 2GB automaticamente. Útil para resolução de problemas com alguns sistemas de arquivos e aparelhor reprodutores."
+msgstr "Divide a saída no limite de 2GB automaticamente. Útil para resolução de problemas com alguns sistemas de arquivos e aparelhos reprodutores."
 
 
 msgid "Lossless Output"
@@ -11991,7 +11991,7 @@ msgstr "Tempo quando as partículas de controle são desativadas."
 
 
 msgid "Quality which is used for object sampling (higher = better but slower)"
-msgstr "Qualidade usada para amostragem de objeto (mais alto = melhor, mas lento)."
+msgstr "Qualidade usada para amostragem de objeto (quanto mais alto melhor, mas, mais lento)."
 
 
 msgid "Start Time"
@@ -22197,6 +22197,18 @@ msgid "Number of trail particles"
 msgstr "Permite definir um número de partículas para a criação de rastros."
 
 
+msgid "Number of turns around parent allong the strand"
+msgstr "O número de voltas em torno do parente ao longo da vertente."
+
+
+msgid "Twist Curve"
+msgstr "Curva de torção"
+
+
+msgid "Curve defining twist"
+msgstr "A curva usada para definir a torção."
+
+
 msgid "Particle Type"
 msgstr "Tipo de partículas"
 
@@ -22415,6 +22427,14 @@ msgstr "Renderização de vertentes"
 
 msgid "Use the strand primitive for rendering"
 msgstr "Usa as primitivas das vertentes para renderização."
+
+
+msgid "Use Twist Curve"
+msgstr "Usar uma curva de torção"
+
+
+msgid "Use a curve to define twist"
+msgstr "Permite usar uma curva para definir a torção."
 
 
 msgid "Multiply line length by particle speed"
@@ -36848,12 +36868,28 @@ msgid "Principled BSDF"
 msgstr "BSDF - Pré-fundamentado"
 
 
+msgid "Subsurface Method"
+msgstr "Método para sub-superfícies"
+
+
+msgid "Method for rendering subsurface scattering"
+msgstr "O método para renderizar o espalhamento de sub-superfície."
+
+
 msgid "Christensen-Burley"
 msgstr "Christensen e Burley"
 
 
 msgid "Approximation to physically based volume scattering"
 msgstr "Uma aproximação física do espalhamento de sub-superfície no volume (usando o método proposto por Per H. Christensen e Brent Burley )."
+
+
+msgid "Random Walk"
+msgstr "Caminhada aleatória"
+
+
+msgid "Volumetric approximation to physically based volume scattering"
+msgstr "Uma aproximação volumétrica para o espalhamento físico com base no volume."
 
 
 msgid "Refraction BSDF"
@@ -36900,8 +36936,20 @@ msgid "Combine XYZ"
 msgstr "Combinar XYZ"
 
 
+msgid "Space of the input height"
+msgstr "O espaço para a entrada de altura."
+
+
 msgid "Object Space"
 msgstr "Espaço de objeto"
+
+
+msgid "Displacement is in object space, affected by object scale"
+msgstr "O deslocamento está no espaço do objeto, afetado pela escala do objeto."
+
+
+msgid "Displacement is in world space, not affected by object scale"
+msgstr "O deslocamento está no espaço do ambiente, e não é afetado pela escala do objeto."
 
 
 msgid "Extended Material"
@@ -37265,11 +37313,11 @@ msgstr "Projeção da imagem de entrada."
 
 
 msgid "Equirectangular"
-msgstr "Equiretangular"
+msgstr "Projeção cilíndrica equidistante"
 
 
 msgid "Equirectangular or latitude-longitude projection"
-msgstr "Projeção de latitude-longitude ou equiretangular."
+msgstr "Projeção do tipo latitude-longitude ou de projeção cilíndrica equidistante."
 
 
 msgid "Mirror Ball"
@@ -37506,6 +37554,22 @@ msgstr "A metade inferior da textura é para as pontas dos traços."
 
 msgid "UV coordinates to be used for mapping"
 msgstr "Quais coordenadas UV serão usadas para mapeamento."
+
+
+msgid "Vector Displacement"
+msgstr "Deslocamento por vetor"
+
+
+msgid "Tagent space vector displacement mapping"
+msgstr "Vetor de mapa de deslocamento no espaço tangente."
+
+
+msgid "Object space vector displacement mapping"
+msgstr "Vetor de mapa de deslocamento no espaço do objeto."
+
+
+msgid "World space vector displacement mapping"
+msgstr "Vetor de mapa de deslocamento no espaço do ambiente."
 
 
 msgid "Vector Math"
@@ -59946,6 +60010,22 @@ msgid "Dolly in/out in the view"
 msgstr "Usa o método de carrinho de filmagem para ampliar ou reduzir a visualização."
 
 
+msgid "Region Position X"
+msgstr "Posição da região em X"
+
+
+msgid "Region Position Y"
+msgstr "Posição da região em Y "
+
+
+msgid "Mouse Init"
+msgstr "Inicialização do mouse"
+
+
+msgid "Use initial mouse position"
+msgstr "Usa a posição inicial do mouse."
+
+
 msgctxt "Operator"
 msgid "Extrude Individual and Move"
 msgstr "Executar extrusão individual e mover"
@@ -64050,6 +64130,14 @@ msgid "Negate the effect of the tangent vertex group"
 msgstr "Nega o efeito do grupo de vértices de tangente."
 
 
+msgid "Vertex Group Twist Negate"
+msgstr "Negar grupo de vértices de torção"
+
+
+msgid "Negate the effect of the twist vertex group"
+msgstr "Nega o efeito do grupo de vértices de torção."
+
+
 msgid "Vertex Group Velocity Negate"
 msgstr "Negar grupo de vértices de velocidade"
 
@@ -64216,6 +64304,14 @@ msgstr "Grupo de vértices de tangente"
 
 msgid "Vertex group to control tangent"
 msgstr "Grupo de vértices para controlar a tangente."
+
+
+msgid "Vertex Group Twist"
+msgstr "Grupos de vértices de torção"
+
+
+msgid "Vertex group to control twist"
+msgstr "Grupo de vértices para controlar a torção."
 
 
 msgid "Vertex Group Velocity"
@@ -65019,7 +65115,7 @@ msgstr "Latitude máxima"
 
 
 msgid "Maximum latitude (vertical angle) for the equirectangular lens"
-msgstr "Latitude máxima (ângulo vertical) para as lentes equiretangulares."
+msgstr "Latitude máxima (ângulo vertical) para as lentes de projeção cilíndrica equidistantes."
 
 
 msgid "Min Latitude"
@@ -65027,7 +65123,7 @@ msgstr "Latitude mínima"
 
 
 msgid "Minimum latitude (vertical angle) for the equirectangular lens"
-msgstr "Latitude mínima (ângulo vertical) para as lentes equiretangulares."
+msgstr "Latitude mínima (ângulo vertical) para as lentes de projeção cilíndrica equidistantes."
 
 
 msgid "Max Longitude"
@@ -65035,7 +65131,7 @@ msgstr "Longitude máxima"
 
 
 msgid "Maximum longitude (horizontal angle) for the equirectangular lens"
-msgstr "Longitude máxima (ângulo horizontal) para as lentes equiretangulares."
+msgstr "Longitude máxima (ângulo horizontal) para as lentes de projeção cilíndrica equidistantes."
 
 
 msgid "Min Longitude"
@@ -65043,7 +65139,7 @@ msgstr "Longitude mínima"
 
 
 msgid "Minimum longitude (horizontal angle) for the equirectangular lens"
-msgstr "Longitude mínima (ângulo horizontal) para as lentes equiretangulares."
+msgstr "Longitude mínima (ângulo horizontal) para as lentes de projeção cilíndrica equidistante."
 
 
 msgid "Panorama Type"
@@ -65250,8 +65346,28 @@ msgid "Method to use for the displacement"
 msgstr "Método para usar para deslocamento."
 
 
+msgid "Bump Only"
+msgstr "Somente resaltos"
+
+
 msgid "Bump mapping to simulate the appearance of displacement"
 msgstr "Mapa de relevos, para simular a aparência de deslocamento."
+
+
+msgid "Displacement Only"
+msgstr "Somente deslocamento"
+
+
+msgid "Use true displacement of surface only, requires fine subdivision"
+msgstr "Usa o deslocamento verdadeiro somente para a superfície, requer uma subdivisão fina."
+
+
+msgid "Displacement and Bump"
+msgstr "Deslocamento e ressaltos"
+
+
+msgid "Combination of true displacement and bump mapping for finer detail"
+msgstr "Combinação de deslocamento verdadeiro e mapa de relevos, pra detalhes mais refinados."
 
 
 msgid "Homogeneous Volume"
@@ -65620,6 +65736,10 @@ msgstr "Cáustica refrativa"
 
 msgid "Use refractive caustics, resulting in a brighter image (more noise but added realism)"
 msgstr "Usa cáustica refrativa, resultando em uma imagem mais brilhante (mais realista, mas com mais ruido)."
+
+
+msgid "BVH Layout"
+msgstr "Esquema de BVH"
 
 
 msgid "BVH Time Steps"
@@ -71835,6 +71955,31 @@ msgid "Wipe direction"
 msgstr "Direção da varredura"
 
 
+msgctxt "Sequence"
+msgid "Transition Type"
+msgstr "Tipo de transição"
+
+
+msgctxt "Sequence"
+msgid "Single"
+msgstr "Único"
+
+
+msgctxt "Sequence"
+msgid "Double"
+msgstr "Duplo"
+
+
+msgctxt "Sequence"
+msgid "Iris"
+msgstr "Iris"
+
+
+msgctxt "Sequence"
+msgid "Clock"
+msgstr "Relógio"
+
+
 msgid "Sequence strip to load one or more images"
 msgstr "Faixa de sequência para carregar uma ou mais imagens."
 
@@ -76664,6 +76809,14 @@ msgid "Amount texture affects particle emission time"
 msgstr "Define quanto a textura afeta o tempo de emissão das partículas."
 
 
+msgid "Twist Factor"
+msgstr "Fator de torção"
+
+
+msgid "Amount texture affects child twist"
+msgstr "Define quanto a textura afeta a torção das crianças."
+
+
 msgid "Affect the child clumping"
 msgstr "Afeta a aglomeração das crianças"
 
@@ -76736,6 +76889,10 @@ msgid "Affect the emission time of the particles"
 msgstr "Afeta o tempo de emissão das partículas."
 
 
+msgid "Affect the child twist"
+msgstr "Afeta a torção das crianças."
+
+
 msgid "Affect the particle initial velocity"
 msgstr "Afeta a velocidade inicial das partículas."
 
@@ -76789,7 +76946,7 @@ msgstr "Para céus em panoramas de 360 graus mapeados em esferas, somente a meta
 
 
 msgid "For 360 degree panorama sky, equirectangular mapping"
-msgstr "Para céus em panoramas de 360 graus, usar mapeamento retangular equânime."
+msgstr "Para céus em panoramas de 360 graus, usa um mapeamento de projeção cilíndrica equidistante."
 
 
 msgid "For 360 degree panorama sky, cylindrical mapped, only top half"
@@ -82604,6 +82761,10 @@ msgstr "Passos de subdivisão:"
 
 msgid "Offscreen Scale"
 msgstr "Escalonamento fora de tela"
+
+
+msgid "Use Freestyle"
+msgstr "Usar Freestyle"
 
 
 msgid "File Suffix:"
