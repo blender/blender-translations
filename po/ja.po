@@ -1,9 +1,9 @@
 
 msgid ""
 msgstr ""
-"Project-Id-Version: Blender 2.80 (sub 57) (b'bcefceb20058')\n"
+"Project-Id-Version: Blender 2.80 (sub 60) (b'1c5860407068')\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-04-15 15:28:38\n"
+"POT-Creation-Date: 2019-05-05 00:00:00\n"
 "PO-Revision-Date: 2016-10-13 03:05+0900\n"
 "Last-Translator: \n"
 "Language-Team: Japanese Translation Team (https://sites.google.com/site/blugjp/blender-translators)\n"
@@ -169,10 +169,6 @@ msgstr "アクショングループが選択中です"
 
 msgid "Expanded"
 msgstr "展開"
-
-
-msgid "Action group is expanded"
-msgstr "アクショングループが展開中です"
 
 
 msgid "Action Groups"
@@ -777,10 +773,6 @@ msgstr "高度な編集やスクリプト開発用の、インタラクティブ
 
 msgid "Info"
 msgstr "情報"
-
-
-msgid "Main menu bar and list of error messages (drag down to expand and display)"
-msgstr "メインメニューバーとエラーメッセージのリスト（下にドラッグすると表示されます）"
 
 
 msgid "Top Bar"
@@ -2507,22 +2499,6 @@ msgid "Roll offset for the end of the B-Bone, adjusts twist"
 msgstr "Bボーン終端のロールのオフセット。ねじれの調整用"
 
 
-msgid "Scale In"
-msgstr "スケールイン"
-
-
-msgid "Scale factor for start of the B-Bone, adjusts thickness (for tapering effects)"
-msgstr "Bボーン始点のスケール要素。厚さの調整（テーパリングエフェクト）用"
-
-
-msgid "Scale Out"
-msgstr "スケールアウト"
-
-
-msgid "Scale factor for end of the B-Bone, adjusts thickness (for tapering effects)"
-msgstr "Bボーン終点のスケール要素。厚さの調整（テーパリングエフェクト）用"
-
-
 msgid "B-Bone Segments"
 msgstr "Bボーンセグメント"
 
@@ -3109,6 +3085,10 @@ msgstr "ハード消しゴム"
 
 msgid "Eraser Stroke"
 msgstr "ストローク消しゴム"
+
+
+msgid "Border Opacity Factor"
+msgstr "ボーダーの不透明度"
 
 
 msgid "Aspect Ratio"
@@ -4666,6 +4646,10 @@ msgid "Active"
 msgstr "アクティブ"
 
 
+msgid "Constraint is the one being edited"
+msgstr "編集中のコンストレイント"
+
+
 msgid "Lin error"
 msgstr "線形誤差"
 
@@ -4746,6 +4730,10 @@ msgid "Local With Parent"
 msgstr "親付きローカル"
 
 
+msgid "The constraint is applied relative to the rest pose local coordinate system of the bone, thus including the parent-induced transformation"
+msgstr "コンストレイントがレストポーズでのボーンのローカル座標系に対して適用されるため、親の影響によるトランスフォームが含まれます"
+
+
 msgid "Local Space"
 msgstr "ローカル空間"
 
@@ -4767,11 +4755,15 @@ msgstr "ターゲットが評価される座標系"
 
 
 msgid "The transformation of the target is evaluated relative to the world coordinate system"
-msgstr "ターゲットのトランフォームがワールド座標系と相対的に評価されます"
+msgstr "ターゲットのトランフォームがワールド座標系に対して評価されます"
 
 
 msgid "The transformation of the target is only evaluated in the Pose Space, the target armature object transformation is ignored"
 msgstr "ターゲットのトランスフォームがポーズ空間でのみ評価され、アーマチュアオブジェクトのトランスフォームは無視されます"
+
+
+msgid "The transformation of the target bone is evaluated relative to its rest pose local coordinate system, thus including the parent-induced transformation"
+msgstr "ターゲットボーンのトランスフォームが、レストポーズでのボーンのローカル座標系に対して評価されるため、親の影響によるトランスフォームが含まれます"
 
 
 msgid "The transformation of the target is evaluated relative to its local coordinate system"
@@ -6339,14 +6331,6 @@ msgid "Ignore the relative lengths of the bones when fitting to the curve"
 msgstr "カーブに合わせる時、各ボーンの相対的な長さを無視します"
 
 
-msgid "Y Stretch"
-msgstr "Yストレッチ"
-
-
-msgid "Stretch the Y axis of the bones to fit the curve"
-msgstr "ボーンのY軸をストレッチし、カーブに合わせます"
-
-
 msgid "XZ Scale Mode"
 msgstr "XZスケールモード"
 
@@ -6381,6 +6365,10 @@ msgstr "体積の維持"
 
 msgid "Scale of the X and Z axes are adjusted to preserve the volume of the bones"
 msgstr "X、Z軸のスケールがボーンの体積を維持するよう調節されます"
+
+
+msgid "Fit Curve"
+msgstr "カーブに合わせる"
 
 
 msgid "Stretch To Constraint"
@@ -8288,26 +8276,6 @@ msgid "Point Cache"
 msgstr "ポイントキャッシュ"
 
 
-msgid "Preview"
-msgstr "プレビュー"
-
-
-msgid "Paint"
-msgstr "ペイント"
-
-
-msgid "Wetmap"
-msgstr "ウェットマップ"
-
-
-msgid "Show Preview"
-msgstr "プレビューを表示"
-
-
-msgid "Display surface preview in 3D-views"
-msgstr "サーフェスのプレビューを3Dビューに表示します"
-
-
 msgid "Shrink Speed"
 msgstr "収縮速度"
 
@@ -8344,20 +8312,16 @@ msgid "Surface Type"
 msgstr "サーフェスタイプ"
 
 
+msgid "Paint"
+msgstr "ペイント"
+
+
 msgid "Anti-aliasing"
 msgstr "アンチエイリアシング"
 
 
 msgid "Use 5x multisampling to smooth paint edges"
 msgstr "5xマルチランプリングを使用しペイント縁をスムーズにします"
-
-
-msgid "Use Color Preview"
-msgstr "カラープレビューを使用"
-
-
-msgid "Whether this surface has some color preview for 3D view"
-msgstr "3Dビューでこの表面の色のプレビューを行うかどうか"
 
 
 msgid "Dissolve"
@@ -10955,6 +10919,10 @@ msgid "Display geometry"
 msgstr "ジオメトリを表示します"
 
 
+msgid "Preview"
+msgstr "プレビュー"
+
+
 msgid "Display preview quality results"
 msgstr "プレビュー品質の結果を表示します"
 
@@ -12143,6 +12111,14 @@ msgid "Blend mode"
 msgstr "ブレンドモード"
 
 
+msgid "Custom Channel Color"
+msgstr "カスタムチャンネルカラー"
+
+
+msgid "Custom color for animation channel in Dopesheet"
+msgstr "ドープシートでのアニメーションチャンネル用のカスタムカラー"
+
+
 msgid "Clamp Layer"
 msgstr "レイヤーをクリップ"
 
@@ -12759,6 +12735,10 @@ msgid "Flat"
 msgstr "フラット"
 
 
+msgid "Amount of gradient along section of stroke"
+msgstr "ストロークの節に沿ったグラデーションの量"
+
+
 msgid "Groups"
 msgstr "グループ"
 
@@ -13099,6 +13079,10 @@ msgstr "ナビゲーションバー"
 
 msgid "Execute Buttons"
 msgstr "実行ボタン"
+
+
+msgid "Footer"
+msgstr "フッター"
 
 
 msgid "Space type"
@@ -15301,6 +15285,22 @@ msgid "Automatically adjust strength to give consistent results for different sp
 msgstr "自動的に強さを調整し、違う間隔でも同じ結果にします"
 
 
+msgid "Grab UVs"
+msgstr "UVを移動"
+
+
+msgid "Relax"
+msgstr "リラックス"
+
+
+msgid "Relax UVs"
+msgstr "UVをリラックスします"
+
+
+msgid "Pinch UVs"
+msgstr "UVをつまみます"
+
+
 msgid "Vertex Paint Tool"
 msgstr "頂点ペイントツール"
 
@@ -16921,6 +16921,10 @@ msgid "Settings for grid and canvas in the 3D viewport"
 msgstr "3Dビューポートのグリッドとキャンバスの設定"
 
 
+msgid "Annotation"
+msgstr "アノテーション"
+
+
 msgid "Stroke Paint Mode"
 msgstr "ストロークペイントモード"
 
@@ -18397,6 +18401,10 @@ msgid "Index number for the \"Material Index\" render pass"
 msgstr "「マテリアルインデックス」レンダーパス用のインデックス番号"
 
 
+msgid "Preview Render Type"
+msgstr "プレビューレンダータイプ"
+
+
 msgid "Type of preview render"
 msgstr "プレビューレンダーの種類"
 
@@ -18415,6 +18423,10 @@ msgstr "ヘアー"
 
 msgid "Hair strands"
 msgstr "ヘアー(ストランド)"
+
+
+msgid "Shader Ball"
+msgstr "シェーダーボール"
 
 
 msgid "Cloth"
@@ -18495,6 +18507,14 @@ msgstr "テクスチャスロット"
 
 msgid "Use shader nodes to render the material"
 msgstr "マテリアルをレンダーするのにシェーダーノードを使用します"
+
+
+msgid "Preview World"
+msgstr "プレビューワールド"
+
+
+msgid "Use the current world background to light the preview render"
+msgstr "現在のワールド背景をプレビューレンダーの光源に使用します"
 
 
 msgid "Screen Space Refraction"
@@ -21548,14 +21568,6 @@ msgid "Show status bar"
 msgstr "ステータスバーを表示します"
 
 
-msgid "Show Top Bar"
-msgstr "トップバーを表示"
-
-
-msgid "Show top bar with tool settings"
-msgstr "ツール設定とともにトップバーを表示します"
-
-
 msgid "Follow current frame in editors"
 msgstr "エディター内の現在のフレームに追従します"
 
@@ -21780,10 +21792,6 @@ msgstr "選択の最終行"
 
 msgid "Register"
 msgstr "登録"
-
-
-msgid "Register this text as a module on loading, Text name must end with \".py\""
-msgstr "このテキストを読み込み時にモジュールとして登録します。テキスト名は\".py\"で終わる必要があります"
 
 
 msgid "Tabs as Spaces"
@@ -22864,14 +22872,6 @@ msgstr "UIタグ"
 
 msgid "Screen layouts of a workspace"
 msgstr "ワークスペースのスクリーンレイアウト"
-
-
-msgid "Active Tool Mode"
-msgstr "アクティブツールモード"
-
-
-msgid "Active Tool Space"
-msgstr "アクティブツールスペース"
 
 
 msgid "Use UI Tags"
@@ -26752,14 +26752,6 @@ msgid "Do not repeat texture and clamp to one instance only"
 msgstr "テクスチャをリピートせず、一つのインスタンスのみに制限します"
 
 
-msgid "Mix Texture"
-msgstr "テクスチャをミックス"
-
-
-msgid "Mix texture image with filling colors"
-msgstr "フィルカラーとテクスチャ画像をミックスします"
-
-
 msgid "Shift Texture in 2d Space"
 msgstr "テクスチャを2D空間でずらす"
 
@@ -26774,6 +26766,14 @@ msgstr "テクスチャのスケール係数"
 
 msgid "Use Fill Texture as a pattern to apply color"
 msgstr "フィルテクスチャをパターンとして使用します"
+
+
+msgid "Mix Texture"
+msgstr "テクスチャをミックス"
+
+
+msgid "Keep Dots and Boxes aligned to drawing path"
+msgstr "ドットとボックスをドローイングパスに揃えたままにします"
 
 
 msgid "Use Stroke Texture as a pattern to apply color"
@@ -26856,6 +26856,10 @@ msgstr "表示/隠す"
 
 msgid "Specials"
 msgstr "スペシャル"
+
+
+msgid "Tracking"
+msgstr "トラッキング"
 
 
 msgid "Collection Specials"
@@ -26958,10 +26962,6 @@ msgid "UV Context Menu"
 msgstr "UVコンテクストメニュー"
 
 
-msgid "Proportional Editing"
-msgstr "プロポーショナル編集"
-
-
 msgid "UV Select Mode"
 msgstr "UV選択モード"
 
@@ -27050,6 +27050,10 @@ msgid "Lock/Mute"
 msgstr "ロック/無効化"
 
 
+msgid "Cache"
+msgstr "キャッシュ"
+
+
 msgid "View Type"
 msgstr "ビュータイプ"
 
@@ -27076,10 +27080,6 @@ msgstr "Python"
 
 msgid "Text"
 msgstr "テキスト"
-
-
-msgid "Cache"
-msgstr "キャッシュ"
 
 
 msgid "File"
@@ -28236,10 +28236,6 @@ msgstr "長さに合わせる"
 
 msgid "Duplicate the object as many times as fits in a certain length"
 msgstr "オブジェクトを長さに合うまでコピーを繰り返します"
-
-
-msgid "Fit Curve"
-msgstr "カーブに合わせる"
 
 
 msgid "Fit the duplicated objects to a curve"
@@ -29968,6 +29964,14 @@ msgstr "トータルレベル"
 
 msgid "Number of subdivisions for which displacements are stored"
 msgstr "変位が保存される細分化の数です"
+
+
+msgid "Use Creases"
+msgstr "クリースを使用"
+
+
+msgid "Use mesh edge crease information to sharpen edges"
+msgstr "辺をシャープにするのに、メッシュの辺のクリース情報を使用します"
 
 
 msgid "UV Smooth"
@@ -33215,6 +33219,10 @@ msgstr "ノード選択状態"
 
 msgid "Show Options"
 msgstr "オプション表示"
+
+
+msgid "Show Preview"
+msgstr "プレビューを表示"
 
 
 msgid "Show Texture"
@@ -36573,6 +36581,10 @@ msgid "Select all keyframes that occur on the same frame as the one under the mo
 msgstr "マウス下の同じフレームのすべてのキーフレーム"
 
 
+msgid "Deselect all when nothing under the cursor"
+msgstr "カーソルの下に何もなければ全選択解除します"
+
+
 msgid "Extend Select"
 msgstr "拡張選択"
 
@@ -36880,15 +36892,6 @@ msgstr "プレビュー範囲を自動設定"
 
 msgid "Set Preview Range based on extents of selected Keyframes"
 msgstr "選択したキーフレームの範囲を元にプレビュー範囲設定"
-
-
-msgctxt "Operator"
-msgid "Toggle Sidebar"
-msgstr "サイドバー切替え"
-
-
-msgid "Toggle the properties region visibility"
-msgstr "プロパティ領域の表示を切り替えます"
 
 
 msgctxt "Operator"
@@ -37503,6 +37506,15 @@ msgstr "配列のすべての要素からキーフレームを削除します"
 
 
 msgctxt "Operator"
+msgid "Delete Keying-Set Keyframe (by name)"
+msgstr "キーイングセットのキーフレームを削除（名前で）"
+
+
+msgid "Alternate access to 'Delete Keyframe' for keymaps to use"
+msgstr "キーマップ用の「キーフレームを削除」の代替アクセス"
+
+
+msgctxt "Operator"
 msgid "Delete Keyframe"
 msgstr "キーフレームを削除"
 
@@ -37541,6 +37553,15 @@ msgstr "現在アクティブなUIのプロパティのキーフレームを挿�
 
 msgid "Insert a keyframe for all element of the array"
 msgstr "配列のすべての要素のキーフレームを挿入します"
+
+
+msgctxt "Operator"
+msgid "Insert Keyframe (by name)"
+msgstr "キーフレームを挿入（名前）"
+
+
+msgid "Alternate access to 'Insert Keyframe' for keymaps to use"
+msgstr "キーマップ用の「キーフレームを挿入」の代替アクセス"
 
 
 msgctxt "Operator"
@@ -38449,31 +38470,6 @@ msgstr "ステンシルのトランスフォームをデフォルトにリセッ
 
 
 msgctxt "Operator"
-msgid "UV Sculpt Tool Set"
-msgstr "UVスカルプトツールのセット"
-
-
-msgid "Set the UV sculpt tool"
-msgstr "UVスカルプトツールを設定"
-
-
-msgid "Pinch UVs"
-msgstr "UVをつまみます"
-
-
-msgid "Relax"
-msgstr "リラックス"
-
-
-msgid "Relax UVs"
-msgstr "UVをリラックスします"
-
-
-msgid "Grab UVs"
-msgstr "UVを移動"
-
-
-msgctxt "Operator"
 msgid "Context Menu"
 msgstr "コンテクストメニュー"
 
@@ -39119,10 +39115,6 @@ msgid "Set the clip interaction mode"
 msgstr "クリップの対話モードを設定します"
 
 
-msgid "Tracking"
-msgstr "トラッキング"
-
-
 msgid "Show tracking and solving tools"
 msgstr "トラッキングとソルバーツールを表示"
 
@@ -39508,15 +39500,6 @@ msgstr "スタビライゼーショントラックを選択"
 
 msgid "Select tracks which are used for translation stabilization"
 msgstr "移動スタビライゼーションに使用されるトラックを選択します"
-
-
-msgctxt "Operator"
-msgid "Toggle Toolbar"
-msgstr "ツールバー切替え"
-
-
-msgid "Toggle clip tools panel"
-msgstr "クリップツールパネルを切り替えます"
 
 
 msgctxt "Operator"
@@ -40348,6 +40331,10 @@ msgstr "辺をスライド"
 
 msgid "Sequence Slide"
 msgstr "シーケンスを移動"
+
+
+msgid "GPencil_Opacity"
+msgstr "グリペン不透明度"
 
 
 msgctxt "Operator"
@@ -41646,6 +41633,46 @@ msgid "EXPERIMENTAL: Export displacement textures. Uses incomplete \"KHR_materia
 msgstr "実験的機能：ディスプレイメントテクスチャをエクスポートします（未完成の「KHR_materials_displacement」glTF エクステンションを使用）"
 
 
+msgid "Draco mesh compression"
+msgstr "Dracoメッシュ圧縮"
+
+
+msgid "Compress mesh using Draco"
+msgstr "Draco を使用したメッシュ圧縮"
+
+
+msgid "Compression level"
+msgstr "圧縮レベル"
+
+
+msgid "Compression level (0 = most speed, 6 = most compression, higher values currently not supported)"
+msgstr "圧縮レベル（0で最速、6で最高圧縮率、7以上は現在未対応）"
+
+
+msgid "Normal quantization bits"
+msgstr "法線のクオンタイズビット"
+
+
+msgid "Quantization bits for normal values (0 = no quantization)"
+msgstr "法線値用のクオンタイゼーションビット（0でクオンタイゼーションなし）"
+
+
+msgid "Position quantization bits"
+msgstr "位置のクオンタイゼーションビット"
+
+
+msgid "Quantization bits for position values (0 = no quantization)"
+msgstr "位置の値用のクオンタイゼーションビット（0でクオンタイゼーションなし）"
+
+
+msgid "Texcoord quantization bits"
+msgstr "テクスチャ座標のクオンタイゼーションビット"
+
+
+msgid "Quantization bits for texture coordinate values (0 = no quantization)"
+msgstr "テクスチャ座標用のクオンタイゼーションビット（0でクオンタイゼーションなし）"
+
+
 msgid "Export custom properties as glTF extras"
 msgstr "glTF extras としてカスタムプロパティをエクスポートします"
 
@@ -41696,6 +41723,32 @@ msgstr "再生範囲に限定"
 
 msgid "Clips animations to selected playback range"
 msgstr "アニメーションを選択中の再生範囲でクリッピングします"
+
+
+msgid "Output format for images. PNG is lossless and generally preferred, but JPEG might be preferable for web applications due to the smaller file size"
+msgstr ""
+"画像用の出力フォーマット。PNG はロスレスで一般的に好まれ、\n"
+"JPEG はファイルサイズが小さめで、Web 用途に適しているでしょう"
+
+
+msgid "Determine the image format from the blender image name"
+msgstr "画像フォーマットを画像の名前で決定します"
+
+
+msgid "JPEG Format (.jpg)"
+msgstr "JPEGフォーマット(.jpg)"
+
+
+msgid "Encode and save textures as .jpg files. Be aware of a possible loss in quality"
+msgstr "テクスチャを .jpg ファイルとしてエンコード・保存します。品質が低下する可能性があることに注意してください"
+
+
+msgid "PNG Format (.png)"
+msgstr "PNG画像 (.png)"
+
+
+msgid "Encode and save textures as .png files"
+msgstr "テクスチャを .png ファイルとしてエンコード・保存します"
 
 
 msgid "Punctual Lights"
@@ -42989,8 +43042,12 @@ msgid "Whether the converted Grease Pencil layer has valid timing data (internal
 msgstr "変換後のグリースペンシルレイヤーのタイミングデータが有効かどうか（内部使用）"
 
 
-msgid "Annotation"
-msgstr "アノテーション"
+msgid "Convert 2.7x grease pencil files to 2.80"
+msgstr "2.7x のグリースペンシルファイルを2.8用に変換します"
+
+
+msgid "Convert to Annotations"
+msgstr "アノテーションに変換"
 
 
 msgctxt "Operator"
@@ -44011,6 +44068,23 @@ msgstr "アクティブ頂点グループのウェイトを反転します"
 
 
 msgctxt "Operator"
+msgid "Normalize Vertex Group"
+msgstr "頂点グループを正規化"
+
+
+msgid "Normalize all weights of all vertex groups, so that for each vertex, the sum of all weights is 1.0"
+msgstr "すべての頂点グループのウェイトを、頂点毎のウェイト合計を1.0に正規化します"
+
+
+msgid "Lock Active"
+msgstr "アクティブをロック"
+
+
+msgid "Keep the values of the active group while normalizing others"
+msgstr "他のグループの正規化中、アクティブグループの値のみ保持します"
+
+
+msgctxt "Operator"
 msgid "Remove from Vertex Group"
 msgstr "頂点グループから除外"
 
@@ -44431,6 +44505,10 @@ msgid "White Point"
 msgstr "ホワイトポイント"
 
 
+msgid "Sample Size"
+msgstr "サンプルサイズ"
+
+
 msgctxt "Operator"
 msgid "Cycle Render Slot"
 msgstr "レンダースロットを循環"
@@ -44558,14 +44636,6 @@ msgid "Pack an image as embedded data into the .blend file"
 msgstr ".blendファイルへの添付データとして画像をパック"
 
 
-msgid "Pack As PNG"
-msgstr "PNGとしてパック"
-
-
-msgid "Pack image as lossless PNG"
-msgstr "ロスレスPNGで画像をパックします"
-
-
 msgctxt "Operator"
 msgid "Project Apply"
 msgstr "投影の適用"
@@ -44636,10 +44706,6 @@ msgstr "色を採取"
 
 msgid "Use mouse to sample a color in current image"
 msgstr "マウスを使用し現在の画像内の色を拾います"
-
-
-msgid "Sample Size"
-msgstr "サンプルサイズ"
 
 
 msgctxt "Operator"
@@ -44717,10 +44783,6 @@ msgstr "シーケンスを保存"
 
 msgid "Save a sequence of images"
 msgstr "連番画像を保存"
-
-
-msgid "Toggles tool shelf display"
-msgstr "ツールシェルフの表示を切り替えます"
 
 
 msgctxt "Operator"
@@ -47182,11 +47244,6 @@ msgid "Merge custom normals of selected vertices"
 msgstr "選択中の頂点のカスタム法線を結合します"
 
 
-msgctxt "Operator"
-msgid "Face Strength"
-msgstr "面の強さ"
-
-
 msgid "Set/Get strength of face (used in Weighted Normal modifier)"
 msgstr "面の強さの設定・取得（重み付き法線モディファイアーで使用）"
 
@@ -47197,11 +47254,6 @@ msgstr "値を設定"
 
 msgid "Set Value of faces"
 msgstr "面の値を設定します"
-
-
-msgctxt "Operator"
-msgid "Make Normals Consistent"
-msgstr "法線を一様に"
 
 
 msgid "Make face and vertex normals point either outside or inside the mesh"
@@ -47399,26 +47451,6 @@ msgid "Poly Build Face at Cursor"
 msgstr "カーソル位置でポリビルド面作成"
 
 
-msgid "Proportional Editing disabled"
-msgstr "プロポーショナル編集は無効です"
-
-
-msgid "Proportional Editing enabled"
-msgstr "プロポーショナル編集は有効です"
-
-
-msgid "Projected (2D)"
-msgstr "投影(2D)"
-
-
-msgid "Proportional Editing using screen space locations"
-msgstr "スクリーン空間の位置を使用したプロポーショナル編集を行います"
-
-
-msgid "Proportional Editing using connected geometry only"
-msgstr "つながっている形状にのみプロポーショナル編集を行います"
-
-
 msgctxt "Curve"
 msgid "Proportional Falloff"
 msgstr "プロポーショナル減衰"
@@ -47450,6 +47482,14 @@ msgstr "高精度"
 
 msgid "Use accurate transformation"
 msgstr "高精度なトランスフォームを使用します"
+
+
+msgid "Proportional Editing"
+msgstr "プロポーショナル編集"
+
+
+msgid "Projected (2D)"
+msgstr "投影(2D)"
 
 
 msgctxt "Operator"
@@ -47867,15 +47907,6 @@ msgid "Select boundary edges around the selected faces"
 msgstr "選択中の面の周囲の境界部分の辺を選択します"
 
 
-msgctxt "Operator"
-msgid "Remove Doubles"
-msgstr "重複頂点を削除"
-
-
-msgid "Remove duplicate vertices"
-msgstr "重複している頂点を削除します"
-
-
 msgid "Merge selected to other unselected vertices"
 msgstr "選択中の頂点を他の非選択頂点と結合します"
 
@@ -48232,10 +48263,6 @@ msgid "By Material"
 msgstr "マテリアルで"
 
 
-msgid "By loose parts"
-msgstr "構造的に分離したパーツで"
-
-
 msgctxt "Operator"
 msgid "Set Normals From Faces"
 msgstr "面から法線を設定"
@@ -48293,11 +48320,6 @@ msgstr "最短パスを選択"
 
 msgid "Selected shortest path between two vertices/edges/faces"
 msgstr "2つの頂点・辺・面の間の最短経路を選択します"
-
-
-msgctxt "Operator"
-msgid "Smoothen Normals"
-msgstr "法線をスムージング"
 
 
 msgid "Smoothen custom normals based on adjacent vertex normals"
@@ -49704,11 +49726,6 @@ msgstr "ビューの更新"
 
 msgid "Update views of selected node"
 msgstr "選択中のノードでビューを更新します"
-
-
-msgctxt "Operator"
-msgid "Tool Shelf"
-msgstr "ツールシェルフ"
 
 
 msgctxt "Operator"
@@ -52238,11 +52255,6 @@ msgid "Direction to move the active vertex group towards"
 msgstr "アクティブ頂点グループの移動方向"
 
 
-msgctxt "Operator"
-msgid "Normalize Vertex Group"
-msgstr "頂点グループを正規化"
-
-
 msgid "Normalize weights of the active vertex group, so that the highest ones are now 1.0"
 msgstr "アクティブ頂点グループのウェイトを、一番高い物を1.0として正規化します"
 
@@ -52250,18 +52262,6 @@ msgstr "アクティブ頂点グループのウェイトを、一番高い物を
 msgctxt "Operator"
 msgid "Normalize All Vertex Groups"
 msgstr "全頂点グループを正規化"
-
-
-msgid "Normalize all weights of all vertex groups, so that for each vertex, the sum of all weights is 1.0"
-msgstr "すべての頂点グループのウェイトを、頂点毎のウェイト合計を1.0に正規化します"
-
-
-msgid "Lock Active"
-msgstr "アクティブをロック"
-
-
-msgid "Keep the values of the active group while normalizing others"
-msgstr "他のグループの正規化中、アクティブグループの値のみ保持します"
 
 
 msgctxt "Operator"
@@ -53947,6 +53947,11 @@ msgstr "選択中のパーティクルの分割数を変更(根元と先端を�
 
 msgid "Number of Keys"
 msgstr "キーの番号"
+
+
+msgctxt "Operator"
+msgid "Remove Doubles"
+msgstr "重複頂点を削除"
 
 
 msgid "Remove selected particles close enough of others"
@@ -55775,16 +55780,32 @@ msgid "Add new scene by type"
 msgstr "新しいシーンをタイプ別に作成します"
 
 
+msgid "Add a new, empty scene with default settings"
+msgstr "新規の空のシーンをデフォルト設定で追加します"
+
+
 msgid "Copy Settings"
 msgstr "設定をコピー"
 
 
+msgid "Add a new, empty scene, and copy settings from the current scene"
+msgstr "新規の空のシーンを、現在のシーンの設定をコピーして追加します"
+
+
+msgid "Linked Copy"
+msgstr "リンクコピー"
+
+
+msgid "Link in the collections from the current scene (shallow copy)"
+msgstr "現在のシーンのコレクションをリンクします（浅いコピー）"
+
+
 msgid "Full Copy"
-msgstr "フル コピー"
+msgstr "フルコピー"
 
 
 msgid "Make a full copy of the current scene"
-msgstr "現在のシーンをコピー"
+msgstr "現在のシーンを完全なコピーを作成します"
 
 
 msgctxt "Operator"
@@ -55985,6 +56006,24 @@ msgstr "ドライバーエディターを分割ウィンドウに表示します
 
 
 msgctxt "Operator"
+msgid "Toggle Footer"
+msgstr "フッターを切替え"
+
+
+msgid "Toggle footer display"
+msgstr "フッター表示を切り替えます"
+
+
+msgctxt "Operator"
+msgid "Footer Context Menu"
+msgstr "フッターコンテクストメニュー"
+
+
+msgid "Display footer region context menu"
+msgstr "フッター領域のコンテクストメニューを表示します"
+
+
+msgctxt "Operator"
 msgid "Jump to Endpoint"
 msgstr "末端へジャンプ"
 
@@ -56008,15 +56047,6 @@ msgstr "フレームオフセット"
 
 msgid "Move current frame forward/backward by a given number"
 msgstr "数値により現在のフレームを前後に移動"
-
-
-msgctxt "Operator"
-msgid "Toggle Header"
-msgstr "ヘッダー切替え"
-
-
-msgid "Toggle header display"
-msgstr "ヘッダー表示を切り替えます"
 
 
 msgctxt "Operator"
@@ -56783,11 +56813,6 @@ msgstr "開始・終了フレームのストリップオフセットをクリア
 msgctxt "Operator"
 msgid "Paste"
 msgstr "貼り付け"
-
-
-msgctxt "Operator"
-msgid "Properties"
-msgstr "プロパティ"
 
 
 msgctxt "Operator"
@@ -58008,11 +58033,6 @@ msgid "Rotate selected items"
 msgstr "選択したアイテムを回転します"
 
 
-msgctxt "Operator"
-msgid "Normal Rotate"
-msgstr "法線を回転"
-
-
 msgid "Rotate split normal of selected items"
 msgstr "選択したアイテムの分割法線を回転します"
 
@@ -59170,11 +59190,6 @@ msgid "Use orthographic projection"
 msgstr "平行投影を使用"
 
 
-msgctxt "Operator"
-msgid "Remove Doubles UV"
-msgstr "重複UV頂点を削除"
-
-
 msgid "Selected UV vertices that are within a radius of each other are welded together"
 msgstr "それぞれの範囲内にある選択中のUV頂点を、お互い一緒に統合します"
 
@@ -59871,10 +59886,6 @@ msgstr "アイテムを選択・アクティブ化します"
 
 msgid "Use the object center when selecting, in editmode used to extend object selection"
 msgstr "選択時にオブジェクト原点を使用します。編集モード中ではオブジェクトの選択を拡大するのに使用します"
-
-
-msgid "Deselect all when nothing under the cursor"
-msgstr "カーソルの下に何もなければ全選択解除します"
 
 
 msgid "Enumerate"
@@ -63042,6 +63053,10 @@ msgid "Fluid Presets"
 msgstr "流体のプリセット"
 
 
+msgid "Active Tool"
+msgstr "アクティブツール"
+
+
 msgid "Clone from Image/UV Map"
 msgstr "画像/UVマップからクローン"
 
@@ -63120,8 +63135,8 @@ msgstr "移動、回転、拡大縮小のすべての組み合わせに対応し
 
 
 msgctxt "Operator"
-msgid "Pinch"
-msgstr "ピンチ"
+msgid "Grab"
+msgstr "グラブ"
 
 
 msgctxt "Operator"
@@ -63130,8 +63145,8 @@ msgstr "リラックス"
 
 
 msgctxt "Operator"
-msgid "Grab"
-msgstr "グラブ"
+msgid "Pinch"
+msgstr "ピンチ"
 
 
 msgctxt "Operator"
@@ -63169,14 +63184,6 @@ msgstr "テクスチャマスク"
 
 msgid "2D Cursor"
 msgstr "2Dカーソル"
-
-
-msgid "UV Sculpt"
-msgstr "UVスカルプト"
-
-
-msgid "UV Sculpt Curve"
-msgstr "UVスカルプトカーブ"
 
 
 msgid "Overlays"
@@ -63536,18 +63543,6 @@ msgid "Strip Input"
 msgstr "ストリップ入力"
 
 
-msgid "Scene Preview/Render"
-msgstr "シーンプレビュー/レンダー"
-
-
-msgid "Proxy settings"
-msgstr "プロキシ設定"
-
-
-msgid "Strip Proxy/Timecode"
-msgstr "ストリップのプロキシ/タイムコード"
-
-
 msgid "Feature Weights"
 msgstr "特性のウェイト"
 
@@ -63558,10 +63553,6 @@ msgstr "検索"
 
 msgid "Playback"
 msgstr "再生"
-
-
-msgid "Active Tool"
-msgstr "アクティブツール"
 
 
 msgid "Primitives"
@@ -63802,10 +63793,6 @@ msgstr "3Dビュー"
 
 msgid "Gradient Colors"
 msgstr "グラデーションカラー"
-
-
-msgid "Collections Visibility"
-msgstr "コレクションの表示設定"
 
 
 msgid "Gizmo"
@@ -65890,7 +65877,7 @@ msgstr "UIから翻訳できるようにするための、ローカルの svn-tr
 
 
 msgid "Image Editor"
-msgstr "UV画像エディター"
+msgstr "画像エディター"
 
 
 msgid "Path to an image editor"
@@ -66691,14 +66678,6 @@ msgid "Use GLSL shaders for display transform and draw image with 2D texture"
 msgstr "GLSLシェーダーを2Dテクスチャによる画像の変換と描画に使用します"
 
 
-msgid "DrawPixels"
-msgstr "DrawPixels"
-
-
-msgid "Use CPU for display transform and draw image using DrawPixels"
-msgstr "CPUをDrawPixelsによる画像の変換と描画に使用します"
-
-
 msgid "Legacy Compute Device Type"
 msgstr "旧演算デバイスタイプ"
 
@@ -66989,14 +66968,6 @@ msgstr "シンプルな軸"
 
 msgid "Interactive Navigation"
 msgstr "インタラクティブナビゲーション"
-
-
-msgid "Object Origin Size"
-msgstr "オブジェクトの原点の大きさ"
-
-
-msgid "Diameter in Pixels for Object/Light origin display"
-msgstr "オブジェクトやライトなどの原点を表すピクセルの直径"
 
 
 msgid "Sub Level Menu Open Delay"
@@ -67499,22 +67470,6 @@ msgstr "背面を間引く"
 
 msgid "Do not test the back-face of each strand"
 msgstr "各ストランドの背面テストを行いません"
-
-
-msgid "Maximal width"
-msgstr "最大幅"
-
-
-msgid "Maximum extension that strand radius can be increased by"
-msgstr "ストランド半径を拡張できる最大値"
-
-
-msgid "Minimal width"
-msgstr "最小幅"
-
-
-msgid "Minimal pixel width for strands (0 - deactivated)"
-msgstr "ストランドの最小ピクセル幅(0で無効)"
 
 
 msgid "Type of primitive used for hair rendering"
@@ -69450,14 +69405,6 @@ msgid "World background is transparent with premultiplied alpha"
 msgstr "ワールド背景をプリマルチプライアルファで透過します"
 
 
-msgid "Anti-Aliasing Samples"
-msgstr "アンチエリアスのサンプル"
-
-
-msgid "Amount of anti-aliasing samples per pixel"
-msgstr "ピクセル毎のアンチエイリアシングサンプル数"
-
-
 msgid "Bias"
 msgstr "バイアス"
 
@@ -69894,10 +69841,6 @@ msgid "Vertical tile size to use while rendering"
 msgstr "レンダリング中に使用される縦のタイルサイズ"
 
 
-msgid "Render and combine multiple samples per pixel to prevent jagged edges"
-msgstr "縁のジャギーを防ぐため、ピクセル毎に複数のサンプルをレンダリングし組み合わせます"
-
-
 msgid "Clear Images before baking"
 msgstr "ベイクする前に画像をクリアします"
 
@@ -70020,20 +69963,6 @@ msgstr "全レンダーレイヤーとシーンノードのタイルをTempデ�
 
 msgid "Process the render (and composited) result through the video sequence editor pipeline, if sequencer strips exist"
 msgstr "レンダリング（とコンポジット）結果を、ビデオシーケンスエディターパイプラインを通じて処理（シーケンサーストリップがある場合）"
-
-
-msgid "Use depth of field using the values from scene strip active camera"
-msgstr ""
-"シーンストリップのアクティブカメラの値を使い\n"
-"被写界深度を使用します"
-
-
-msgid "Textured Solid"
-msgstr "テクスチャソリッド"
-
-
-msgid "Display face-assigned textures in solid draw method"
-msgstr "ソリッド描画で面に割り当てられたテクスチャを表示します"
 
 
 msgid "Use Simplify"
@@ -72571,6 +72500,10 @@ msgid "All strips, recursively including those inside metastrips"
 msgstr "メタストリップ内に再帰的に含まれる全ストリップ"
 
 
+msgid "Show Cache"
+msgstr "キャッシュを表示"
+
+
 msgid "Draw Axes"
 msgstr "軸を描画"
 
@@ -74710,10 +74643,6 @@ msgid "Edit timings for Cache File data-blocks"
 msgstr "キャッシュファイルデータブロックのタイミングを編集します"
 
 
-msgid "Show Cache"
-msgstr "キャッシュを表示"
-
-
 msgid "Show the status of cached frames in the timeline"
 msgstr "タイムライン内のフレームのキャッシュ状況を表示"
 
@@ -76051,6 +75980,22 @@ msgid "Show gizmos of all types"
 msgstr "全タイプのギズモを表示します"
 
 
+msgid "Show Camera Focus Distance"
+msgstr "カメラの焦点距離を表示"
+
+
+msgid "Gizmo to adjust camera focus distance (depends on limits display)"
+msgstr "カメラの焦点距離を調整するギズモ（リミット表示に依存）"
+
+
+msgid "Show Camera Lens"
+msgstr "カメラレンズを表示"
+
+
+msgid "Gizmo to adjust camera lens & ortho size"
+msgstr "カメラレンズと平行投影サイズを調整するギズモ"
+
+
 msgid "Context Gizmo"
 msgstr "コンテクストギズモ"
 
@@ -76059,8 +76004,60 @@ msgid "Context sensitive gizmos for the active item"
 msgstr "アクティブアイテムでコンテクストに対応するギズモ"
 
 
+msgid "Show Empty Force Field"
+msgstr "フォースフィールドエンプティを表示"
+
+
+msgid "Gizmo to adjust the force field"
+msgstr "フォースフィールドを調整するギズモ"
+
+
+msgid "Show Empty Image"
+msgstr "画像エンプティを表示"
+
+
+msgid "Gizmo to adjust image size and position"
+msgstr "画像サイズと位置を調整するギズモ"
+
+
+msgid "Show Light Look-At"
+msgstr "ライトルックアットを表示"
+
+
+msgid "Gizmo to adjust spot and area size"
+msgstr "スポットとエリアサイズを調整するギズモ"
+
+
+msgid "Show Light Size"
+msgstr "ライトサイズを表示"
+
+
 msgid "Navigate Gizmo"
 msgstr "ナビゲーションギズモ"
+
+
+msgid "Show Object Rotation"
+msgstr "オブジェクト回転を表示"
+
+
+msgid "Gizmo to adjust rotation"
+msgstr "回転を調整するギズモ"
+
+
+msgid "Show Object Scale"
+msgstr "オブジェクト拡大縮小を表示"
+
+
+msgid "Gizmo to adjust scale"
+msgstr "拡大縮小を調整するギズモ"
+
+
+msgid "Show Object Location"
+msgstr "オブジェクト位置を表示"
+
+
+msgid "Gizmo to adjust location"
+msgstr "位置を調整するギズモ"
 
 
 msgid "Tool Gizmo"
@@ -76189,10 +76186,6 @@ msgstr "UVと3Dの角度との間の角度の歪み"
 
 msgid "Area distortion between UV and 3D faces"
 msgstr "UVと3Dの面との間の領域の歪み"
-
-
-msgid "Display type for drawing UV edges"
-msgstr "UVの辺描画用の表示タイプ"
 
 
 msgid "Constrain to Image Bounds"
@@ -76603,6 +76596,14 @@ msgstr "テキスト文字形式"
 
 msgid "Text character formatting settings"
 msgstr "テキスト文字の形式設定"
+
+
+msgid "Kerning"
+msgstr "カーニング"
+
+
+msgid "Spacing between characters"
+msgstr "文字の間隔"
 
 
 msgid "Text Line"
@@ -78289,6 +78290,14 @@ msgid "NURBS V-lines"
 msgstr "NURBS V行"
 
 
+msgid "Object Origin Size"
+msgstr "オブジェクトの原点の大きさ"
+
+
+msgid "Diameter in Pixels for Object/Light origin display"
+msgstr "オブジェクトやライトなどの原点を表すピクセルの直径"
+
+
 msgid "Object Selected"
 msgstr "選択されたオブジェクト"
 
@@ -78637,10 +78646,6 @@ msgid "Normal Vector used to copy, add or multiply"
 msgstr "コピー、加算、乗算に使用される法線ベクトル"
 
 
-msgid "Proportional Editing mode, allows transforms with distance fall-off"
-msgstr "プロポーショナル編集モード。距離と減衰タイプを指定しトランスフォームを行えます"
-
-
 msgid "Display size for proportional editing circle"
 msgstr "プロポーション編集の円のサイズを表示"
 
@@ -78835,6 +78840,10 @@ msgid "Proportional editing in action editor"
 msgstr "アクションエディターでのプロポーショナル編集"
 
 
+msgid "Proportional Editing using connected geometry only"
+msgstr "つながっている形状にのみプロポーショナル編集を行います"
+
+
 msgid "Proportional Editing Objects"
 msgstr "プロポーショナル編集：オブジェクト"
 
@@ -78853,6 +78862,10 @@ msgstr "プロポーショナル編集：Fカーブ"
 
 msgid "Proportional editing in FCurve editor"
 msgstr "Fカーブエディターでのプロポーショナル編集"
+
+
+msgid "Proportional Editing using screen space locations"
+msgstr "スクリーン空間の位置を使用したプロポーショナル編集を行います"
 
 
 msgid "Layered"
@@ -78939,10 +78952,6 @@ msgid "Manipulate center points (object, pose and weight paint mode only)"
 msgstr "原点の操作(オブジェクト、ポーズ、ウェイトペイントモードのみ)"
 
 
-msgid "Enable brush for UV sculpting"
-msgstr "UVスカルプト用にブラシを有効化"
-
-
 msgid "UV Sync Selection"
 msgstr "UV同期選択"
 
@@ -78971,6 +78980,10 @@ msgid "Use HC method for relaxation"
 msgstr "リラックスにHC法を使用します"
 
 
+msgid "UV Sculpt"
+msgstr "UVスカルプト"
+
+
 msgid "Sculpt All Islands"
 msgstr "すべてのアイランドをスカルプト"
 
@@ -78985,14 +78998,6 @@ msgstr "境界を固定"
 
 msgid "Disable editing of boundary edges"
 msgstr "境界辺の編集を無効にします"
-
-
-msgid "UV Sculpt Tools"
-msgstr "UVスカルプトツール"
-
-
-msgid "Select Tools for the UV sculpt brushes"
-msgstr "UVスカルプトブラシ用ツール"
 
 
 msgid "UV Selection Mode"
@@ -80695,6 +80700,11 @@ msgstr "ヘッダー"
 
 
 msgctxt "WindowManager"
+msgid "Footer"
+msgstr "フッター"
+
+
+msgctxt "WindowManager"
 msgid "View2D"
 msgstr "2Dビュー"
 
@@ -81178,34 +81188,6 @@ msgid "DEM data (.hgt) as Mesh and/or Image"
 msgstr "DEMデータ(.hgt)をメッシュや画像として"
 
 
-msgid "Current directory is already an Amber repository, '%s'"
-msgstr "カレントディレクトリはすでに Amber リポジトリです「%s」"
-
-
-msgid "Current directory is already an Amber repository"
-msgstr "カレントディレクトリはすでに Amber リポジトリです"
-
-
-msgid "No suitable active datablock found to create a new asset"
-msgstr "新規アセット作成に適したアクティブデータブロックがありません"
-
-
-msgid "Current .blend file not saved on disk, enforcing copying data into local repository storage"
-msgstr "現在の .blend ファイルがディスクに保存されておらず、データを強制的にローカルのリポジトリストレージへコピーします"
-
-
-msgid "No Amber repository found at '%s'"
-msgstr "Amberリポジトリが「%s」にありません"
-
-
-msgid "Active datablock is a linked one, this is not supported currently"
-msgstr "アクティブデータブロックはリンクされており、これは現在未対応です。"
-
-
-msgid "Order by:"
-msgstr "ソート方法:"
-
-
 msgid "Denoising completed."
 msgstr "デノイズが完了しました"
 
@@ -81242,10 +81224,6 @@ msgid "Failed to write .oso file next to external .osl file at "
 msgstr "外部.oslファイルのあるこの場所に.osoファイルを保存できません："
 
 
-msgid "No compatible GPUs found"
-msgstr "互換性のある GPU が見つかりません"
-
-
 msgid "Total Samples:"
 msgstr "サンプル総数:"
 
@@ -81264,14 +81242,6 @@ msgstr "レンダーのダイシング率"
 
 msgid "Offscreen Scale"
 msgstr "オフスクリーンスケール"
-
-
-msgid "Min Pixels"
-msgstr "最小ピクセル"
-
-
-msgid "Max Extension"
-msgstr "最大幅"
 
 
 msgid "Direct Light"
@@ -83482,6 +83452,10 @@ msgid "Use As Pattern"
 msgstr "パターンとして使用"
 
 
+msgid "Follow Drawing Path"
+msgstr "ドローパスに追従"
+
+
 msgid "Flip Colors"
 msgstr "色を反転"
 
@@ -84444,6 +84418,11 @@ msgid "Show Tracks"
 msgstr "トラックを表示"
 
 
+msgctxt "Operator"
+msgid "Set Floor"
+msgstr "床を設定"
+
+
 msgid "3D Markers"
 msgstr "3Dマーカー"
 
@@ -84494,11 +84473,6 @@ msgstr "タイムコードインデックス"
 
 msgid "Zoom %d:%d"
 msgstr "ズーム %d:%d"
-
-
-msgctxt "Operator"
-msgid "Set Floor"
-msgstr "床を設定"
 
 
 msgctxt "Operator"
@@ -84594,11 +84568,6 @@ msgstr "ハンドルタイプ"
 msgctxt "Operator"
 msgid "Interpolation Mode"
 msgstr "補間モード"
-
-
-msgctxt "Operator"
-msgid "Easing Type"
-msgstr "イージングタイプ"
 
 
 msgid "In Collection:"
@@ -84720,6 +84689,11 @@ msgstr "ボックス選択(ハンドルを含む)"
 
 
 msgctxt "Operator"
+msgid "Easing Type"
+msgstr "イージングタイプ"
+
+
+msgctxt "Operator"
 msgid "Discontinuity (Euler) Filter"
 msgstr "不連続(オイラー)フィルター"
 
@@ -84784,10 +84758,6 @@ msgstr "画像をすべて保存"
 msgctxt "Operator"
 msgid "Invert Image Colors"
 msgstr "画像の色を反転"
-
-
-msgid "Falloff:"
-msgstr "減衰:"
 
 
 msgid "Curve Alpha"
@@ -84965,11 +84935,6 @@ msgstr "ミラーY"
 
 msgid "Zoom d:d"
 msgstr "ズーム d:d"
-
-
-msgctxt "Operator"
-msgid "Pack As PNG"
-msgstr "PNGとしてパック"
 
 
 msgctxt "Operator"
@@ -85955,17 +85920,13 @@ msgid "No active item"
 msgstr "アクティブアイテムがありません"
 
 
-msgid "Thickness Profile"
-msgstr "幅のプロファイル"
-
-
-msgid "Fill Options"
-msgstr "フィルオプション"
-
-
 msgctxt "Operator"
 msgid "Python API Reference"
-msgstr "PythonAPIリファレンス"
+msgstr "Python APIリファレンス"
+
+
+msgid "Node Label"
+msgstr "ノードラベル"
 
 
 msgid "Resolution Scale"
@@ -86906,6 +86867,11 @@ msgstr "要素をソート..."
 
 
 msgctxt "Operator"
+msgid "Extrude Vertices"
+msgstr "頂点を押し出し"
+
+
+msgctxt "Operator"
 msgid "New Edge/Face from Vertices"
 msgstr "頂点からの新規辺/面"
 
@@ -86961,6 +86927,21 @@ msgstr "頂点からシャープをクリア"
 
 
 msgctxt "Operator"
+msgid "Extrude Edges"
+msgstr "辺を押し出し"
+
+
+msgctxt "Operator"
+msgid "Extrude Faces"
+msgstr "面を押し出し"
+
+
+msgctxt "Operator"
+msgid "Extrude Faces Along Normals"
+msgstr "法線に沿って面を押し出し"
+
+
+msgctxt "Operator"
 msgid "Solidify Faces"
 msgstr "面をソリッド化"
 
@@ -86968,21 +86949,6 @@ msgstr "面をソリッド化"
 msgctxt "Operator"
 msgid "Set From Faces"
 msgstr "面から設定"
-
-
-msgctxt "Operator"
-msgid "Rotate Normal"
-msgstr "法線を回転"
-
-
-msgctxt "Operator"
-msgid "Point normals to target"
-msgstr "法線をターゲットに向ける"
-
-
-msgctxt "Operator"
-msgid "Smoothen"
-msgstr "スムージング"
 
 
 msgctxt "Operator"
@@ -87062,12 +87028,28 @@ msgid "Object Types Visibility"
 msgstr "オブジェクトタイプの可視性"
 
 
+msgid "Viewport Gizmos"
+msgstr "ビューポートギズモ"
+
+
 msgid "Navigate"
 msgstr "ナビゲート"
 
 
 msgid "Active Tools"
 msgstr "アクティブツール"
+
+
+msgid "Object Gizmos"
+msgstr "オブジェクトギズモ"
+
+
+msgid "Look At"
+msgstr "ルックアット"
+
+
+msgid "Viewport Overlays"
+msgstr "ビューポートオーバーレイ"
 
 
 msgid "Text Info"
@@ -87159,6 +87141,14 @@ msgstr "アクションを複製"
 msgctxt "Operator"
 msgid "Delete All Active Layers"
 msgstr "全アクティブレイヤーを削除"
+
+
+msgid "Thickness Profile"
+msgstr "幅のプロファイル"
+
+
+msgid "Fill Options"
+msgstr "フィルオプション"
 
 
 msgctxt "Operator"
@@ -87395,26 +87385,6 @@ msgstr "面のUV展開"
 
 
 msgctxt "Operator"
-msgid "Extrude Vertices"
-msgstr "頂点を押し出し"
-
-
-msgctxt "Operator"
-msgid "Extrude Edges"
-msgstr "辺を押し出し"
-
-
-msgctxt "Operator"
-msgid "Extrude Faces"
-msgstr "面を押し出し"
-
-
-msgctxt "Operator"
-msgid "Extrude Faces Along Normals"
-msgstr "法線に沿って面を押し出し"
-
-
-msgctxt "Operator"
 msgid "Bevel Vertices"
 msgstr "頂点をべベル"
 
@@ -87452,16 +87422,6 @@ msgstr "面の向きを外側に揃える"
 msgctxt "Operator"
 msgid "Recalculate Inside"
 msgstr "面の向きを内側に揃える"
-
-
-msgctxt "Operator"
-msgid "Face Select"
-msgstr "面を選択"
-
-
-msgctxt "Operator"
-msgid "Set Strength"
-msgstr "強さを設定"
 
 
 msgctxt "Operator"
@@ -87846,10 +87806,6 @@ msgid "Size Y"
 msgstr "サイズY"
 
 
-msgid "Keyframes:"
-msgstr "キーフレーム:"
-
-
 msgid "Pressure Radius:"
 msgstr "筆圧範囲:"
 
@@ -88223,6 +88179,22 @@ msgstr "GPレイヤー"
 
 msgid "Cannot pack multiview images from raw data currently..."
 msgstr "現時点ではrawデータからマルチビュー画像をパックできません…"
+
+
+msgid "Did not write, no Multilayer Image"
+msgstr "マルチレイヤー画像がないため保存していません"
+
+
+msgid "Did not write, unexpected error when saving stereo image"
+msgstr "ステレオ画像保存時、予期せぬエラーにより書き込みしませんでした。"
+
+
+msgid "Could not write image: %s"
+msgstr "画像「%s」が書き込みできません"
+
+
+msgid "Did not write, the image doesn't have a \"%s\" and \"%s\" views"
+msgstr "書き込み失敗、画像に「%s」と「%s」ビューがありません"
 
 
 msgid "Key %d"
@@ -89173,6 +89145,10 @@ msgid "Successfully added %d keyframes for keying set '%s'"
 msgstr "%d個のキーフレームをキーイングセット「%s」へ追加しました"
 
 
+msgid "No active keying set '%s' not found"
+msgstr "アクティブキーイングセット「%s」がありません"
+
+
 msgid "Successfully removed %d keyframes for keying set '%s'"
 msgstr "%d個のキーフレームをキーイングセット「%s」から削除しました"
 
@@ -89199,6 +89175,10 @@ msgstr "ボタンが何もプロパティ情報を持っていないようです
 
 msgid "Not deleting keyframe for locked F-Curve for NLA Strip influence on %s - %s '%s'"
 msgstr "NLAストリップのロック中のFカーブ「%s」(%s「%s」)のキーフレームは削除しません"
+
+
+msgid "Keying set '%s' not found"
+msgstr "キーイングセット「%s」がありません"
 
 
 msgid "No active keying set to remove"
@@ -90275,15 +90255,19 @@ msgstr "手動トランスフォーム:"
 
 
 msgid "Indirect library data-block, cannot change"
-msgstr "間接ライブラリデータブロック、変更できません"
+msgstr "間接ライブラリデータブロック。変更できません"
 
 
 msgid "Direct linked library data-block, click to make local, Shift + Click to create a static override"
-msgstr "直接リンクライブラリデータブロック、クリックでローカル化、[Shift]＋クリックでスタティックオーバーライド作成"
+msgstr "直接リンクライブラリデータブロック。クリックでローカル化、[Shift]＋クリックでスタティックオーバーライド作成"
+
+
+msgid "Direct linked library data-block, click to make local"
+msgstr "直接リンクライブラリデータブロック。クリックでローカル化"
 
 
 msgid "Static override of linked library data-block, click to make fully local"
-msgstr "リンクライブラリデータブロックのスタティックオーバーライド、クリックで完全にローカル化"
+msgstr "リンクライブラリデータブロックのスタティックオーバーライド。クリックで完全にローカル化"
 
 
 msgid "Display number of users of this data (click to make a single-user copy)"
@@ -91310,14 +91294,6 @@ msgid "No active pose bone to add a constraint to"
 msgstr "コンストレイントを追加するアクティブポーズボーンがありません"
 
 
-msgid "IK constraint can only be added to bones"
-msgstr "IKコンストレイントはボーンにのみ追加可能です"
-
-
-msgid "Spline IK constraint can only be added to bones"
-msgstr "スプラインIKコンストレイントはボーンにのみ追加可能です"
-
-
 msgid "No active object to add constraint to"
 msgstr "コンストレイントを追加するアクティブオブジェクトがありません"
 
@@ -92130,20 +92106,16 @@ msgid "Flip to Top"
 msgstr "上に移動"
 
 
-msgid "Toggle Header"
-msgstr "ヘッダー切替え"
-
-
-msgid "Collapse Menus"
-msgstr "メニュー非表示"
-
-
 msgid "Tile Area"
 msgstr "タイル化"
 
 
 msgid "Maximize Area"
 msgstr "最大化"
+
+
+msgid "Toggle Footer"
+msgstr "フッターを切替え"
 
 
 msgid "Flip to Right"
@@ -92214,8 +92186,9 @@ msgid "Right click on buttons to add them to this menu"
 msgstr "ボタン上右クリックでこのメニューにアイテムを追加できます"
 
 
-msgid "Could not write image: %s"
-msgstr "画像「%s」が書き込みできません"
+msgctxt "Operator"
+msgid "Duplicate Current"
+msgstr "現在の物を複製"
 
 
 msgid "Sample color for %s"
@@ -92364,10 +92337,6 @@ msgstr "オブジェクトに負のスケールがあり、スカルプトが正
 
 msgid "Dynamic Topology found: %s, disabled"
 msgstr "ダイナミックトポロジー発見: %s、無効にしました"
-
-
-msgid "Unsupported audio format"
-msgstr "未対応の音声フォーマットです"
 
 
 msgid "Compiled without sound support"
@@ -92891,6 +92860,10 @@ msgid "Remove F-Modifiers from F-Curve to add keyframes"
 msgstr "FカーブからFモディファイアーを削除しキーフレームを追加します"
 
 
+msgid "Unsupported audio format"
+msgstr "未対応の音声フォーマットです"
+
+
 msgid "No Euler Rotation F-Curves to fix up"
 msgstr "Fカーブに修正するオイラー回転がありません"
 
@@ -92995,20 +92968,8 @@ msgid "Select View"
 msgstr "ビューを選択"
 
 
-msgid "Can't pack edited image from disk, pack as internal PNG?"
-msgstr "ディスクから編集した画像はパックできません。内部PNG形式でパックしますか？"
-
-
 msgid "unsupported image format"
 msgstr "未対応の画像フォーマット"
-
-
-msgid "Did not write, no Multilayer Image"
-msgstr "マルチレイヤー画像がないため保存していません"
-
-
-msgid "Did not write, unexpected error when saving stereo image"
-msgstr "ステレオ画像保存時、予期せぬエラーにより書き込みしませんでした。"
 
 
 msgid "Can only save sequence on image sequences"
@@ -93027,20 +92988,12 @@ msgid "Packing movies or image sequences not supported"
 msgstr "動画や連番画像のパックは未対応です"
 
 
-msgid "Cannot pack edited image from disk, only as internal PNG"
-msgstr "ディスクから編集した画像は内部PNG形式としてのみパック可能です"
-
-
 msgid "Unpacking movies or image sequences not supported"
 msgstr "動画や連番画像のパック解除は未対応です"
 
 
 msgid "Can not set border from a cropped render"
 msgstr "トリムしたレンダリング画像へのボーダーの設定はできません"
-
-
-msgid "Did not write, the image doesn't have a \"%s\" and \"%s\" views"
-msgstr "書き込み失敗、画像に「%s」と「%s」ビューがありません"
 
 
 msgid "Saved Image '%s'"
@@ -94297,6 +94250,14 @@ msgstr "フェザー収縮/膨張：%s"
 
 msgid "Feather Shrink/Fatten: %3f"
 msgstr "フェザー収縮/膨張：%3f"
+
+
+msgid "Opacity: %s"
+msgstr "不透明度：%s"
+
+
+msgid "Opacity: %3f"
+msgstr "不透明度：%3f"
 
 
 msgid "Push/Pull: %s%s %s"
@@ -95580,6 +95541,10 @@ msgid "Cannot execute boolean operation"
 msgstr "ブーリアン演算が実行できません"
 
 
+msgid "Attempt to bind from inactive dependency graph"
+msgstr "非アクティブな依存グラフからバインドしようとしています"
+
+
 msgid "Bind data required"
 msgstr "データをバインドしてください"
 
@@ -95694,6 +95659,10 @@ msgstr "ターゲットに異常なポリゴンがあります"
 
 msgid "No valid target mesh"
 msgstr "有効なターゲットメッシュがありません"
+
+
+msgid "Attempt to unbind from inactive dependency graph"
+msgstr "非アクティブな依存グラフからバインド解除しようとしています"
 
 
 msgid "Verts changed from %u to %u"
