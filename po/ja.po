@@ -1,9 +1,9 @@
 
 msgid ""
 msgstr ""
-"Project-Id-Version: Blender 2.80 (sub 74) (b'516afd0162cd')\n"
+"Project-Id-Version: Blender 2.80 (sub 74) (b'91d3b00395ec')\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-07-09 00:00:00\n"
+"POT-Creation-Date: 2019-07-10 00:00:00\n"
 "PO-Revision-Date: 2016-10-13 03:05+0900\n"
 "Last-Translator: \n"
 "Language-Team: Japanese Translation Team (https://sites.google.com/site/blugjp/blender-translators)\n"
@@ -7503,6 +7503,14 @@ msgid "Include visualization of animation data related to data-blocks linked to 
 msgstr "モディファイアーにリンクするデータブロックに関するアニメーションデータを表示します"
 
 
+msgid "Display Movie Clips"
+msgstr "動画クリップ表示"
+
+
+msgid "Include visualization of movie clip related animation data"
+msgstr "動画クリップに関するアニメーションデータを表示します"
+
+
 msgid "Display Node"
 msgstr "表示モード"
 
@@ -13958,10 +13966,6 @@ msgid "Factor of Simplify"
 msgstr "簡略化の係数"
 
 
-msgid "How simplify the stroke"
-msgstr "ストロークを簡略化する方法"
-
-
 msgid "Fixed"
 msgstr "固定"
 
@@ -15143,6 +15147,13 @@ msgstr "テクスチャスロット"
 
 msgid "Topology Rake"
 msgstr "トポロジーレーキ"
+
+
+msgid "Automatically align edges to the brush direction to generate cleaner topology and define sharp features. Best used on low-poly meshes as it has a performance impact"
+msgstr ""
+"自動的に辺をブラシ方向に揃えて綺麗なトポロジーを生成し、\n"
+"メリハリのある形状にします。パフォーマンスインパクトを持つ\n"
+"ローポリメッシュでの使用に最適です"
 
 
 msgid "Unprojected Radius"
@@ -18886,11 +18897,15 @@ msgstr "ペイントマスク"
 
 
 msgid "Face selection masking for painting"
-msgstr "ペイントマスク用の面選択モード"
+msgstr "面で選択した部分のみペイント可能になります"
 
 
 msgid "Vertex Selection"
-msgstr "頂点での選択"
+msgstr "頂点で選択"
+
+
+msgid "Vertex selection masking for painting"
+msgstr "頂点で選択した部分のみペイント可能になります"
 
 
 msgid "Clone UV loop layer"
@@ -26761,6 +26776,10 @@ msgid "Checker Board"
 msgstr "チェッカーボード"
 
 
+msgid "Fill area with checkerboard pattern"
+msgstr "チェッカーボードの模様でフィルします"
+
+
 msgid "Fill area with image texture"
 msgstr "画像テクスチャでフィルします"
 
@@ -27145,6 +27164,11 @@ msgstr "溶接/整列"
 
 msgid "Fractional Zoom"
 msgstr "フラクタルズーム"
+
+
+msgctxt "Operator"
+msgid "MASK_MT_add"
+msgstr "MASK_MT_add"
 
 
 msgctxt "Operator"
@@ -61112,6 +61136,12 @@ msgid "Apply Global Orientation"
 msgstr "グローバル方向を適用"
 
 
+msgid "Rotate all root objects to match the global orientation settings otherwise set the global orientation per Collada asset"
+msgstr ""
+"有効時：全ルートオブジェクトを回転し、グローバル方向設定に合わせます\n"
+"無効時：Collada アセット毎にグローバル方向を設定します"
+
+
 msgid "Apply modifiers to exported mesh (non destructive))"
 msgstr "エクスポートするメッシュにモディファイアーを適用します(データ非破壊)"
 
@@ -61122,6 +61152,10 @@ msgstr "デフォームボーンのみ"
 
 msgid "Only export deforming bones with armatures"
 msgstr "アーマチュアと変形ボーンのみエクスポートします"
+
+
+msgid "Transformation type for translation, scale and rotation. Note: The Animation transformation type in the Anim Tab is always equal to the Object transformation type in the Geom tab"
+msgstr "移動、回転、拡大縮小のトランスフォームタイプ（注意：Anim（アニメ）タブのアニメーションのトランスフォームタイプは、常に Geom（形状）タブのオブジェクトトランスフォームと同じです）。"
 
 
 msgid "Use <matrix> representation for exported transformations"
@@ -80654,6 +80688,14 @@ msgid "Show the bone selection overlay"
 msgstr "ボーン選択オーバーレイを表示します"
 
 
+msgid "Stencil Opacity"
+msgstr "ステンシル不透明度"
+
+
+msgid "Opacity of the texture paint mode stencil mask overlay"
+msgstr "テクスチャペイントモードのステンシルマスクオーバーレイの不透明度"
+
+
 msgid "Show Edit Lines"
 msgstr "編集ラインを表示"
 
@@ -88107,6 +88149,14 @@ msgid "Edge Marks"
 msgstr "辺マーク"
 
 
+msgid "PAINT_TEXTUREPAINT_VERTEXPAINT_WEIGHTTexture PaintVertex PaintWeight Paint"
+msgstr "PAINT_TEXTUREPAINT_VERTEXPAINT_WEIGHTTexture PaintVertex PaintWeight Paint"
+
+
+msgid "PAINT_GPENCILEDIT_GPENCILSCULPT_GPENCILWEIGHT_GPENCILOBJECTDraw Grease PencilEdit Grease PencilSculpt Grease PencilWeight Grease PencilGrease Pencil"
+msgstr "PAINT_GPENCILEDIT_GPENCILSCULPT_GPENCILWEIGHT_GPENCILOBJECTDraw Grease PencilEdit Grease PencilSculpt Grease PencilWeight Grease PencilGrease Pencil"
+
+
 msgid "Fade 3D Objects"
 msgstr "3Dオブジェクトのフェード"
 
@@ -93339,6 +93389,10 @@ msgid "Right click on buttons to add them to this menu"
 msgstr "ボタン上右クリックでこのメニューにアイテムを追加できます"
 
 
+msgid "Quick Favorites"
+msgstr "お気に入りツール"
+
+
 msgctxt "Operator"
 msgid "Duplicate Current"
 msgstr "現在の物を複製"
@@ -94573,10 +94627,6 @@ msgstr "masterコレクションは複製できません"
 
 msgid "Could not find a valid parent collection for the new duplicate, it won't be linked to any view layer"
 msgstr "正常な親コレクションが見つからないため、新規複製はどのビューポートにもリンクされません"
-
-
-msgid "Cannot add a colection to a linked collection/scene"
-msgstr "コレクションやシーンにコレクションが追加できません"
 
 
 msgid "Cannot delete linked collection '%s', it is used by other linked scenes/collections"
@@ -96389,10 +96439,6 @@ msgstr "ノードソケットクラス登録:「%s」が長すぎです（最大
 
 msgid "Can only assign evaluated data to evaluated object, or original data to original object"
 msgstr "評価済データを評価済オブジェクトに、もしくは元データを元オブジェクトにのみ割り当て可能です"
-
-
-msgid "Only empty objects support group instances"
-msgstr "エンプティオブジェクトのみコレクションインスタンスに対応しています"
 
 
 msgid "Cannot set instance-collection as object belongs in group being instanced, thus causing a cycle"
