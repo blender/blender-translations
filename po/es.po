@@ -1,9 +1,9 @@
 
 msgid ""
 msgstr ""
-"Project-Id-Version: Blender 2.80 (sub 74) (b'06312c6d2db8')\n"
+"Project-Id-Version: Blender 2.80 (sub 74) (b'38d4483c6a51')\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-07-18 00:00:00\n"
+"POT-Creation-Date: 2019-07-24 00:00:00\n"
 "PO-Revision-Date: \n"
 "Last-Translator: Gabriel Gazzan <gabcorreo@gmail.com>\n"
 "Language-Team: Español <gabcorreo@gmail.com>\n"
@@ -9541,7 +9541,7 @@ msgstr "Repite los valores de la curva-f modificada"
 
 
 msgid "After Cycles"
-msgstr "Repeticiones"
+msgstr "Repeticiones finales"
 
 
 msgid "Maximum number of cycles to allow after last keyframe (0 = infinite)"
@@ -9549,7 +9549,7 @@ msgstr "Cantidad máxima de repeticiones permitidas luego del último fotograma 
 
 
 msgid "Before Cycles"
-msgstr "Repeticiones"
+msgstr "Repeticiones iniciales"
 
 
 msgid "Maximum number of cycles to allow before first keyframe (0 = infinite)"
@@ -9557,7 +9557,7 @@ msgstr "Cantidad máxima de repeticiones permitidas antes del primer fotograma c
 
 
 msgid "After Mode"
-msgstr "Modo después"
+msgstr "Modo final"
 
 
 msgid "Cycling mode to use after last keyframe"
@@ -9569,11 +9569,11 @@ msgstr "No repetir"
 
 
 msgid "Don't do anything"
-msgstr "No hace nada"
+msgstr "No hacer nada"
 
 
 msgid "Repeat Motion"
-msgstr "Repetir"
+msgstr "Repetir movimiento"
 
 
 msgid "Repeat keyframe range as-is"
@@ -9597,7 +9597,7 @@ msgstr "Alternancia entre una reproducción normal e inversa del rango de fotogr
 
 
 msgid "Before Mode"
-msgstr "Modo antes"
+msgstr "Modo inicial"
 
 
 msgid "Cycling mode to use before first keyframe"
@@ -16809,6 +16809,34 @@ msgid "Curvilinear 2D length for chain splitting"
 msgstr "Longitud curvilínea 2D para la división de cadenas"
 
 
+msgid "Stroke Color Mode"
+msgstr "Modo de color del trazo"
+
+
+msgid "Base Color"
+msgstr "Color base"
+
+
+msgid "Use the linestyle's base color"
+msgstr "Usa el color base del estilo de línea"
+
+
+msgid "First Vertex"
+msgstr "Vértice inicial"
+
+
+msgid "Use the color of a stroke's first vertex"
+msgstr "Usa el color del primer vértice del trazo"
+
+
+msgid "Final Vertex"
+msgstr "Vértice final"
+
+
+msgid "Use the color of a stroke's final vertex"
+msgstr "Usa el color del último vértice del trazo"
+
+
 msgid "Texture slots defining the mapping and influence of textures"
 msgstr "Contenedores de textura que definen el mapeo e influencia de las texturas"
 
@@ -16903,6 +16931,22 @@ msgstr "Línea discontinua"
 
 msgid "Enable or disable dashed line"
 msgstr "Habilita o deshabilita la línea discontinua"
+
+
+msgid "Export Fills"
+msgstr "Exportar rellenos"
+
+
+msgid "Export fills for this Line Style"
+msgstr "Exportar rellenos para este estilo de línea"
+
+
+msgid "Export Strokes"
+msgstr "Exportar trazos"
+
+
+msgid "Export strokes for this Line Style"
+msgstr "Exportar trazos para este estilo de línea"
 
 
 msgid "Use Max 2D Length"
@@ -35668,7 +35712,7 @@ msgstr "Usar sombreadores para Eevee"
 
 
 msgid "Cycles"
-msgstr "Repetición"
+msgstr "Cycles"
 
 
 msgid "Use shaders for Cycles renderer"
@@ -53561,10 +53605,6 @@ msgid "Add a texture paint slot"
 msgstr "Permite agregar un contenedor donde pintar una textura"
 
 
-msgid "Base Color"
-msgstr "Color base"
-
-
 msgctxt "Operator"
 msgid "Brush Colors Flip"
 msgstr "Invertir colores pincel"
@@ -62099,17 +62139,17 @@ msgid "Load Factory Settings"
 msgstr "Cargar opciones predefinidas"
 
 
-msgid "Load default file and preferences"
-msgstr "Carga el archivo y preferencias de usuario predefinidos"
+msgid "Load factory default startup file and preferences. To make changes permanent, use \"Save Startup File\" and \"Save Preferences\""
+msgstr "Carga el archivo de inicio y las preferencias predefinidas de fábrica. Para hacer los cambios permanentes, usar \"Guardar archivo de inicio\" y \"Guardar preferencias\""
 
 
 msgctxt "Operator"
 msgid "Load Factory Preferences"
-msgstr "Cargar preferencias de fábrica"
+msgstr "Cargar preferencias predefinidas"
 
 
-msgid "Load default preferences"
-msgstr "Carga las preferencias predefinidas"
+msgid "Load factory default preferences. To make changes to preferences permanent, use \"Save Preferences\""
+msgstr "Carga las preferencias predefinidas de fábrica. Para hacer los cambios permanentes, usar \"Guardar preferencias\""
 
 
 msgctxt "Operator"
@@ -63900,6 +63940,22 @@ msgstr "Diagnósticos"
 
 msgid "Helpers"
 msgstr "Ayudantes"
+
+
+msgid "Creates a Panel in the Render Layers context of the properties editor"
+msgstr "Crea un panel en el contexto de Capas de procesamiento del editor de propiedades"
+
+
+msgid "Freestyle Line Style SVG Export"
+msgstr "Freestyle - Exportar a SVG estilos de línea "
+
+
+msgid "Creates a Panel in the render context of the properties editor"
+msgstr "Crea un panel en el contexto de Procesamiento del editor de propiedades"
+
+
+msgid "Freestyle SVG Export"
+msgstr "Freestyle - Exportar a SVG"
 
 
 msgid "Color Management"
@@ -68888,8 +68944,8 @@ msgid "Min Transparent Bounces"
 msgstr "Rebotes de transparencia mín"
 
 
-msgid "Minimum number of transparnet bounces. Setting this higher reduces noise in the first bounces, but can also be less efficient for more complex geometry like hair and volumes"
-msgstr "Cantidad mínima de rebotes de transparencia. Valores más altos reducen el ruido de los primeros rebotes, pero también puede resultar más ineficiente con geometría compleja como pelo o volúmenes"
+msgid "Minimum number of transparent bounces. Setting this higher reduces noise in the first bounces, but can also be less efficient for more complex geometry like hair and volumes"
+msgstr "Cantidad mínima de rebotes de transparencia. Valores más altos reducen el ruido de los primeros rebotes, pero también puede resultar menos eficiente con geometrías complejas como pelo o volúmenes"
 
 
 msgid "Motion Blur Position"
@@ -69554,6 +69610,62 @@ msgstr "Copiar texturas"
 
 msgid "Copy textures on export to the output path"
 msgstr "Al exportar copia las texturas a la ruta de destino"
+
+
+msgid "Implements the properties for the SVG exporter"
+msgstr "Implementa las propiedades para el exportador a SVG"
+
+
+msgid "Linejoin"
+msgstr "Unir líneas"
+
+
+msgid "Miter"
+msgstr "Inglete"
+
+
+msgid "Corners are sharp"
+msgstr "Esquinas definidas"
+
+
+msgid "Corners are smoothed"
+msgstr "Esquinas suavizadas"
+
+
+msgid "Corners are bevelled"
+msgstr "Esquinas biseladas"
+
+
+msgid "Export a single frame"
+msgstr "Exportar fotograma"
+
+
+msgid "Export an animation"
+msgstr "Exportar animación"
+
+
+msgid "Fill Contours"
+msgstr "Rellenar contronos"
+
+
+msgid "Fill the contour with the object's material color"
+msgstr "Rellena el contorno con el color del material del objeto"
+
+
+msgid "Split at Invisible"
+msgstr "Dividir en invisibles"
+
+
+msgid "Split the stroke at an invisible vertex"
+msgstr "Divide el trazo en los vértices invisibles"
+
+
+msgid "SVG Export"
+msgstr "Exportar a SVG"
+
+
+msgid "Export Freestyle edges to an .svg format"
+msgstr "Exporta los bordes de Freestyle a formato .svg"
 
 
 msgid "Selected UV Element"
@@ -81654,8 +81766,33 @@ msgstr "UV - Editor"
 
 
 msgctxt "WindowManager"
+msgid "Image Editor Tool: Uv, Move"
+msgstr "Editor de imágenes: UV, Mover"
+
+
+msgctxt "WindowManager"
+msgid "Image Editor Tool: Uv, Rotate"
+msgstr "Editor de imágenes: UV, Rotar"
+
+
+msgctxt "WindowManager"
+msgid "Image Editor Tool: Uv, Scale"
+msgstr "Editor de imágenes: UV, Escalar"
+
+
+msgctxt "WindowManager"
 msgid "UV Sculpt"
 msgstr "UV - Escultura"
+
+
+msgctxt "WindowManager"
+msgid "Image View"
+msgstr "Visor de imágenes"
+
+
+msgctxt "WindowManager"
+msgid "Image Editor Tool: Sample"
+msgstr "Editor de imágenes: Muestra"
 
 
 msgctxt "WindowManager"
@@ -86682,8 +86819,8 @@ msgstr "Auto-guardar preferencias"
 
 
 msgctxt "Operator"
-msgid "Revert to Saved"
-msgstr "Recuperar guardadas"
+msgid "Revert to Saved Preferences"
+msgstr "Revertir a preferencias guardadas"
 
 
 msgid "Resolution Scale"
@@ -86924,11 +87061,6 @@ msgid "Save as Studio light"
 msgstr "Guardar como iluminación de estudio"
 
 
-msgctxt "Operator"
-msgid "Save Current State"
-msgstr "Guardar estado actual"
-
-
 msgid "Color Set d"
 msgstr "Conjunto de colores d"
 
@@ -86971,11 +87103,6 @@ msgstr "Archivos de script faltantes"
 
 msgid "No custom {} configured"
 msgstr "No hay un {} personalizado configurado"
-
-
-msgctxt "Operator"
-msgid "Skip Auto-Save"
-msgstr "Omitir guardado automático"
 
 
 msgid ":"
@@ -96241,8 +96368,12 @@ msgid "Bad vertex index in list"
 msgstr "Índice de vértices en lista incorrecto"
 
 
-msgid "Object '%s' not in View Layer '%s'!"
-msgstr "¡El objeto '%s' no está en la capa de visualización '%s'!"
+msgid "Object '%s' can't be selected because it is not in View Layer '%s'!"
+msgstr "El objeto '%s' no puede ser seleccionado porque no se encuentra en la Capa de visualización '%s'!"
+
+
+msgid "Object '%s' can't be hidden because it is not in View Layer '%s'!"
+msgstr "El objeto '%s' no puede ser ocultado porque no se encuentra en la Capa de visualización '%s'!"
 
 
 msgid "Object %s not in view layer %s"
