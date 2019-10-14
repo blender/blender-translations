@@ -1,9 +1,9 @@
 
 msgid ""
 msgstr ""
-"Project-Id-Version: Blender 2.81 (sub 13) (b'f6a90f018cfa')\n"
+"Project-Id-Version: Blender 2.81 (sub 15) (b'80fe0ac7ff8c')\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-10-03 09:27:21\n"
+"POT-Creation-Date: 2019-10-14 13:06:27\n"
 "PO-Revision-Date: 2019-07-02 15:57+0000\n"
 "Last-Translator: lxlalexlxl <pilipchukap@rambler.ru>\n"
 "Language-Team: Ukrainian (Ukraine) (http://www.transifex.com/lxlalexlxl/blender/language/uk_UA/)\n"
@@ -25147,10 +25147,6 @@ msgid "Objects in collection only contribute indirectly (through shadows and ref
 msgstr "Об'єкти з колекції лише побічно беруть участь (через тіні та відбиття) у цьому шарі огляду"
 
 
-msgid "Whether this collection is visible, take into account the collection parent"
-msgstr "Чи ця колекція є видимою, враховувати приріднення колекції"
-
-
 msgid "Name of this view layer (same as its collection one)"
 msgstr "Ім'я цього шару огляду (таке ж як і в його колекції)"
 
@@ -36276,6 +36272,14 @@ msgid "Toggle keyframe selection instead of leaving newly selected keyframes onl
 msgstr "Перемкнути вибір ключового кадру, замість того, щоб залишати лише новообрані ключові кадри"
 
 
+msgid "Mouse X"
+msgstr "X миші"
+
+
+msgid "Mouse Y"
+msgstr "Y миші"
+
+
 msgctxt "Operator"
 msgid "Copy Keyframes"
 msgstr "Копіювати ключові кадри"
@@ -41653,10 +41657,6 @@ msgstr "Скасувати завантаження вибраного файл�
 
 msgctxt "Operator"
 msgid "Delete Selected Files"
-msgstr "Видалити вибрані файли"
-
-
-msgid "Delete selected files"
 msgstr "Видалити вибрані файли"
 
 
@@ -47290,134 +47290,48 @@ msgid "Construct a UV sphere mesh"
 msgstr "Побудувати сіть UV-сфери"
 
 
-msgctxt "Operator"
-msgid "Print3D Check All"
-msgstr "Перевірити все для 3D-друку"
-
-
 msgid "Run all checks"
 msgstr "Виконати всі перевірки"
-
-
-msgctxt "Operator"
-msgid "Print3D Check Degenerate"
-msgstr "Перевірити Виродженість для 3D Друку"
 
 
 msgid "Check for degenerate geometry that may not print properly (zero area faces, zero length edges)"
 msgstr "Перевірити наявність виродженої геометрії, яка може надрукуватись неправильно (грані нульової площі, ребра нульової довжини)"
 
 
-msgctxt "Operator"
-msgid "Print3D Check Distorted Faces"
-msgstr "Перевірити спотвореність граней для 3D-друку"
-
-
-msgid "Check for non-flat faces "
-msgstr "Перевірити наявність не плоских граней"
-
-
-msgctxt "Operator"
-msgid "Print3D Check Intersections"
-msgstr "Перевірити перетини для 3D-друку"
-
-
 msgid "Check geometry for self intersections"
 msgstr "Перевірити, чи немає самоперетинів"
-
-
-msgctxt "Operator"
-msgid "Print3D Check Overhang"
-msgstr "Перевірити звисання для 3D-друку"
 
 
 msgid "Check faces don't overhang past a certain angle"
 msgstr "Перевірити, чи грані не звисають за певним кутом"
 
 
-msgctxt "Operator"
-msgid "Print3D Check Sharp"
-msgstr "Перевірити гостроту для 3D-друку"
-
-
 msgid "Check edges are below the sharpness preference"
 msgstr "Перевірити, чи гострота ребер менша від заданого значення"
-
-
-msgctxt "Operator"
-msgid "Print3D Check Solid"
-msgstr "Перевірити суцільність для 3D-друку"
 
 
 msgid "Check for geometry is solid (has valid inside/outside) and correct normals"
 msgstr "Перевірити, чи є сіть суцільною (має внутрішній та зовнішній боки) та правильність нормалей"
 
 
-msgctxt "Operator"
-msgid "Print3D Check Thickness"
-msgstr "Перевірити товщину для 3D-друку"
-
-
 msgid "Check geometry is above the minimum thickness preference (relies on correct normals)"
 msgstr "Перевірити, чи найменша товщина перевищує задане мінімальне значення (залежить від правильності нормалей)"
-
-
-msgctxt "Operator"
-msgid "Print3D Clean Distorted"
-msgstr "Очистити спотворення для 3D-друку"
 
 
 msgid "Tessellate distorted faces"
 msgstr "Поділити спотворені грані"
 
 
-msgctxt "Operator"
-msgid "Print3D Clean Isolated "
-msgstr "Вилучити ізольоване для 3D-друку"
-
-
-msgid "Cleanup isolated vertices and edges"
-msgstr "Вичистити ізольовані вершини та ребра"
-
-
-msgctxt "Operator"
-msgid "Print3D Clean Non-Manifold and Inverted"
-msgstr "Очистити немноговидове та інвертоване для 3D-друку"
-
-
-msgid "Cleanup problems, like holes, non-manifold vertices, and inverted normals"
-msgstr "Вичистити проблеми моделювання, такі як отвори, немноговидові вершини та інвертовані нормалі"
-
-
-msgid "Number of sides in hole required to fill"
-msgstr "Кількість сторін, які слід заповнити в отворі"
+msgid "Limit for checking distorted faces"
+msgstr "Межа для перевірки викривлення граней"
 
 
 msgid "Minimum distance between elements to merge"
 msgstr "Найменша відстань між елементами для об'єднання"
 
 
-msgctxt "Operator"
-msgid "Print3D Export"
-msgstr "Експорт для 3D-друку"
-
-
-msgid "Export active object using print3d settings"
-msgstr "Експортувати активний об'єкт з використанням параметрів для 3D-друку"
-
-
-msgctxt "Operator"
-msgid "Print3D Info Area"
-msgstr "Площа для 3D-друку"
-
-
 msgid "Report the surface area of the active mesh"
 msgstr "Повідомити площу поверхні активної сіті"
-
-
-msgctxt "Operator"
-msgid "Print3D Info Volume"
-msgstr "Об'єм для 3D-друку"
 
 
 msgid "Report the volume of the active mesh"
@@ -47444,11 +47358,6 @@ msgstr "Масштабувати до об'єму"
 
 msgid "Scale edit-mesh or selected-objects to a set volume"
 msgstr "Масштабувати редаговану сіть або виділені об'єкти до заданого об'єму"
-
-
-msgctxt "Operator"
-msgid "Print3D Select Report"
-msgstr "Вибрати звіт 3D-друку"
 
 
 msgid "Select the data associated with this report"
@@ -49245,14 +49154,6 @@ msgstr "Змінити розмір вузла"
 
 msgid "Select the node under the cursor"
 msgstr "Вибрати вузол під курсором"
-
-
-msgid "Mouse X"
-msgstr "X миші"
-
-
-msgid "Mouse Y"
-msgstr "Y миші"
 
 
 msgid "Socket Select"
@@ -63463,10 +63364,6 @@ msgid "Weights Context Menu"
 msgstr "Контекстне Меню Вагомостей"
 
 
-msgid "Print3D"
-msgstr "3D-друк"
-
-
 msgid "Quad View"
 msgstr "Чотирибічний Огляд"
 
@@ -68605,10 +68502,6 @@ msgstr "Планшетний тиск"
 
 msgid "Brush Size"
 msgstr "Розмір пензля"
-
-
-msgid "Limit for checking distorted faces"
-msgstr "Межа для перевірки викривлення граней"
 
 
 msgid "Format type to export to"
@@ -81068,11 +80961,6 @@ msgstr "Перевірити все"
 
 
 msgctxt "Operator"
-msgid "Isolated"
-msgstr "Ізольовані"
-
-
-msgctxt "Operator"
 msgid "Make Manifold"
 msgstr "Зробити многовидом"
 
@@ -86174,13 +86062,13 @@ msgstr "Виправити деформації"
 
 
 msgctxt "Operator"
-msgid "Hide Bounding Box"
-msgstr "Схов габаритною коробкою"
+msgid "Show Bounding Box"
+msgstr "Показ габаритною коробкою"
 
 
 msgctxt "Operator"
-msgid "Show Bounding Box"
-msgstr "Показ габаритною коробкою"
+msgid "Hide Bounding Box"
+msgstr "Схов габаритною коробкою"
 
 
 msgctxt "Operator"
@@ -92065,10 +91953,6 @@ msgstr "заданий шлях '%s'  є хибним, створиться шл
 
 msgid "Could not create new folder: %s"
 msgstr "Неможливо створити нову теку: %s"
-
-
-msgid "Could not delete file: %s"
-msgstr "Неможливо видалити файл: %s"
 
 
 msgid "Cancel"

@@ -1,9 +1,9 @@
 
 msgid ""
 msgstr ""
-"Project-Id-Version: Blender 2.81 (sub 13) (b'f6a90f018cfa')\n"
+"Project-Id-Version: Blender 2.81 (sub 15) (b'80fe0ac7ff8c')\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-10-03 09:27:21\n"
+"POT-Creation-Date: 2019-10-14 13:06:27\n"
 "PO-Revision-Date: \n"
 "Last-Translator: DeathBlood\n"
 "Language-Team: \n"
@@ -8989,8 +8989,16 @@ msgid "Algorithm used to compute automatic handles"
 msgstr "用于计算机自动操作的算法"
 
 
+msgid "Automatic handles only take immediately adjacent keys into account"
+msgstr "自动控制柄仅考虑相邻帧"
+
+
 msgid "Continuous Acceleration"
 msgstr "持续加速度"
+
+
+msgid "Automatic handles are adjusted to avoid jumps in acceleration, resulting in smoother curves. However, key changes may affect interpolation over a larger stretch of the curve"
+msgstr "调整自动控柄，以避免加速时跳跃，从而形成更平滑的曲线。但是，修改关键帧可能会影响较大范围内的曲线插值"
 
 
 msgid "Color of the F-Curve in the Graph Editor"
@@ -14616,28 +14624,120 @@ msgid "Brush blending mode"
 msgstr "笔刷混合模式"
 
 
+msgid "Use Mix blending mode while painting"
+msgstr "在绘制时使用 '混合' 混合模式"
+
+
+msgid "Use Darken blending mode while painting"
+msgstr "在绘制时使用 '变暗' 混合模式"
+
+
+msgid "Use Multiply blending mode while painting"
+msgstr "在绘制时使用 '相乘' 混合模式"
+
+
 msgid "Color Burn"
 msgstr "颜色加深"
+
+
+msgid "Use Color Burn blending mode while painting"
+msgstr "在绘制时使用加深混合模式"
 
 
 msgid "Linear Burn"
 msgstr "线性加深(A+B-1)"
 
 
+msgid "Use Linear Burn blending mode while painting"
+msgstr "在绘制时使用线性加深混合模式"
+
+
+msgid "Use Lighten blending mode while painting"
+msgstr "在绘制时使用 '变亮' 混合模式"
+
+
+msgid "Use Screen blending mode while painting"
+msgstr "在绘制时使用滤色混合模式"
+
+
+msgid "Color Dodge"
+msgstr "颜色减淡"
+
+
+msgid "Use Color Dodge blending mode while painting"
+msgstr "在绘制时使用颜色减淡混合模式"
+
+
+msgid "Use Add blending mode while painting"
+msgstr "在绘制时使用 '相加' 混合模式"
+
+
+msgid "Use Overlay blending mode while painting"
+msgstr "在绘制时使用 '叠加' 混合模式"
+
+
+msgid "Use Soft Light blending mode while painting"
+msgstr "在绘制时使用柔光混合模式"
+
+
 msgid "Hard Light"
 msgstr "硬光"
+
+
+msgid "Use Hard Light blending mode while painting"
+msgstr "在绘制时使用强光混合模式"
 
 
 msgid "Vivid Light"
 msgstr "亮光"
 
 
+msgid "Use Vivid Light blending mode while painting"
+msgstr "在绘制时使用动态光混合模式"
+
+
+msgid "Use Linear Light blending mode while painting"
+msgstr "在绘制时使用线性光混合模式"
+
+
 msgid "Pin Light"
 msgstr "点光"
 
 
+msgid "Use Pin Light blending mode while painting"
+msgstr "在绘制时使用点光混合模式"
+
+
+msgid "Use Difference blending mode while painting"
+msgstr "在绘制时使用差值混合混合模式"
+
+
 msgid "Exclusion"
 msgstr "排除"
+
+
+msgid "Use Exclusion blending mode while painting"
+msgstr "在绘制时使用排斥混合模式"
+
+
+msgid "Use Subtract blending mode while painting"
+msgstr "在绘制时使用 '相减' 混合模式"
+
+
+msgid "Use Hue blending mode while painting"
+msgstr "在绘制时使用色调混合模式"
+
+
+msgid "Use Saturation blending mode while painting"
+msgstr "在绘制时使用饱和度混合模式"
+
+
+msgid "Use Color blending mode while painting"
+msgstr "在绘制时使用色彩混合模式"
+
+
+msgid "Use Value blending mode while painting"
+msgstr "在绘制时使用亮度混合模式"
 
 
 msgid "Erase Alpha"
@@ -34479,7 +34579,7 @@ msgstr "使用四维矢量(x、y、z、w)作为输入"
 
 
 msgid "The dimensions of the space to evaluate the noise in"
-msgstr "用于计算噪波的空间的尺寸"
+msgstr "用于计算噪波的空间维度"
 
 
 msgid "Point Density"
@@ -34700,6 +34800,10 @@ msgstr "使用标准的斜纹波纹理"
 
 msgid "Use wave texture in rings"
 msgstr "使用环状波纹理"
+
+
+msgid "White Noise"
+msgstr "白噪波"
 
 
 msgid "UV Along Stroke"
@@ -35382,6 +35486,14 @@ msgstr "当游标下方没有物体时全部取消选择"
 
 msgid "Extend Select"
 msgstr "扩展选择"
+
+
+msgid "Mouse X"
+msgstr "鼠标 X 向"
+
+
+msgid "Mouse Y"
+msgstr "鼠标 Y 向"
 
 
 msgctxt "Operator"
@@ -40693,10 +40805,6 @@ msgid "Delete Selected Files"
 msgstr "删除选中的文件"
 
 
-msgid "Delete selected files"
-msgstr "删除选中的文件"
-
-
 msgctxt "Operator"
 msgid "Create New Directory"
 msgstr "新建文件夹"
@@ -43246,6 +43354,15 @@ msgstr "替换图像"
 
 msgid "Replace current image by another one from disk"
 msgstr "选用磁盘中的其他图像替换当前图像"
+
+
+msgctxt "Operator"
+msgid "Resize Image"
+msgstr "调整图像大小"
+
+
+msgid "Resize the image"
+msgstr "调整图像大小"
 
 
 msgctxt "Operator"
@@ -46241,134 +46358,48 @@ msgid "Construct a UV sphere mesh"
 msgstr "创建一个 UV 球体网格"
 
 
-msgctxt "Operator"
-msgid "Print3D Check All"
-msgstr "3D 打印 - 全部检查"
-
-
 msgid "Run all checks"
 msgstr "运行所有的选项"
-
-
-msgctxt "Operator"
-msgid "Print3D Check Degenerate"
-msgstr "3D 打印 - 检查反生成状况"
 
 
 msgid "Check for degenerate geometry that may not print properly (zero area faces, zero length edges)"
 msgstr "检查可能无法正确打印的反生成型几何体(即面积为零的面、长度为零的边)"
 
 
-msgctxt "Operator"
-msgid "Print3D Check Distorted Faces"
-msgstr "3D 打印 - 检查畸形面"
-
-
-msgid "Check for non-flat faces "
-msgstr "检查不平面"
-
-
-msgctxt "Operator"
-msgid "Print3D Check Intersections"
-msgstr "3D 打印 - 检查交叉性"
-
-
 msgid "Check geometry for self intersections"
 msgstr "检查几何体的自交叉"
-
-
-msgctxt "Operator"
-msgid "Print3D Check Overhang"
-msgstr "3D 打印 - 检查悬垂"
 
 
 msgid "Check faces don't overhang past a certain angle"
 msgstr "检查未悬垂在指定角度以外的面"
 
 
-msgctxt "Operator"
-msgid "Print3D Check Sharp"
-msgstr "3D 打印 - 检查锐边"
-
-
 msgid "Check edges are below the sharpness preference"
 msgstr "检查边线的锐度是否低于设置值"
-
-
-msgctxt "Operator"
-msgid "Print3D Check Solid"
-msgstr "3D 打印 - 检查实体性"
 
 
 msgid "Check for geometry is solid (has valid inside/outside) and correct normals"
 msgstr "检查物体"
 
 
-msgctxt "Operator"
-msgid "Print3D Check Thickness"
-msgstr "3D 打印 - 检查厚度"
-
-
 msgid "Check geometry is above the minimum thickness preference (relies on correct normals)"
 msgstr "检查几何体厚度是否高于最低设置值"
-
-
-msgctxt "Operator"
-msgid "Print3D Clean Distorted"
-msgstr "3D 打印 - 清除畸形元素"
 
 
 msgid "Tessellate distorted faces"
 msgstr "经过细分畸变的面"
 
 
-msgctxt "Operator"
-msgid "Print3D Clean Isolated "
-msgstr "3D 打印 - 清理孤立元素"
-
-
-msgid "Cleanup isolated vertices and edges"
-msgstr "清理独立的顶点或边线"
-
-
-msgctxt "Operator"
-msgid "Print3D Clean Non-Manifold and Inverted"
-msgstr "3D 打印 - 清除非流形并反转"
-
-
-msgid "Cleanup problems, like holes, non-manifold vertices, and inverted normals"
-msgstr "清理问题, 如洞, 非流形顶点, 和倒置法向"
-
-
-msgid "Number of sides in hole required to fill"
-msgstr "需要填补的洞面边数"
+msgid "Limit for checking distorted faces"
+msgstr "用于检查畸形面的限值"
 
 
 msgid "Minimum distance between elements to merge"
 msgstr "合并元素之间的最小间隔"
 
 
-msgctxt "Operator"
-msgid "Print3D Export"
-msgstr "3D 打印 - 导出"
-
-
-msgid "Export active object using print3d settings"
-msgstr "用 3D 打印选项导出活动的物体"
-
-
-msgctxt "Operator"
-msgid "Print3D Info Area"
-msgstr "3D 打印 - 面积信息"
-
-
 msgid "Report the surface area of the active mesh"
 msgstr "反馈活动网格的表面积"
-
-
-msgctxt "Operator"
-msgid "Print3D Info Volume"
-msgstr "3D 打印 - 体积信息"
 
 
 msgid "Report the volume of the active mesh"
@@ -46387,11 +46418,6 @@ msgstr "长度限值"
 msgctxt "Operator"
 msgid "Scale to Volume"
 msgstr "缩放至空间体积"
-
-
-msgctxt "Operator"
-msgid "Print3D Select Report"
-msgstr "3D 打印 - 选择反馈信息"
 
 
 msgid "Select the data associated with this report"
@@ -48096,14 +48122,6 @@ msgstr "缩放节点"
 
 msgid "Select the node under the cursor"
 msgstr "选择光标下的节点"
-
-
-msgid "Mouse X"
-msgstr "鼠标 X 向"
-
-
-msgid "Mouse Y"
-msgstr "鼠标 Y 向"
 
 
 msgid "Socket Select"
@@ -62484,14 +62502,6 @@ msgid "3D-Print"
 msgstr "3D 打印"
 
 
-msgid "Print3D"
-msgstr "3D 打印"
-
-
-msgid "Cleanup & Modify"
-msgstr "清理和修改"
-
-
 msgid "Quad View"
 msgstr "四格视图"
 
@@ -64128,6 +64138,14 @@ msgid "Add/Replace"
 msgstr "添加 / 替换"
 
 
+msgid "New Curve Smoothing Mode"
+msgstr "新曲线平滑模式"
+
+
+msgid "Auto Handle Smoothing mode used for newly added F-Curves"
+msgstr "用于新添加的函数曲线的自动控制柄平滑模式"
+
+
 msgid "Unselected F-Curve Visibility"
 msgstr "未选中的函数曲线的可见性"
 
@@ -64698,6 +64716,18 @@ msgstr "双击超时"
 
 msgid "Time/delay (in ms) for a double click"
 msgstr "双击的间隔时间(毫秒)"
+
+
+msgid "Emulate 3 Button Modifier"
+msgstr "模拟 3 键鼠标"
+
+
+msgid "Hold this modifier to emulate the middle mouse button"
+msgstr "按下此修饰键模拟鼠标中键"
+
+
+msgid "OS-Key"
+msgstr "系统键"
 
 
 msgid "Motion Threshold"
@@ -67718,6 +67748,10 @@ msgid "Brush Size"
 msgstr "笔刷大小"
 
 
+msgid "Brush size in screen space"
+msgstr "屏幕空间中的笔刷尺寸"
+
+
 msgid "Miter"
 msgstr "斜接"
 
@@ -67732,10 +67766,6 @@ msgstr "填充色"
 
 msgid "SVG Export"
 msgstr "SVG导出"
-
-
-msgid "Limit for checking distorted faces"
-msgstr "用于检查畸形面的限值"
 
 
 msgid "Format type to export to"
@@ -76319,6 +76349,10 @@ msgid "Animation data-block doesn't have active action"
 msgstr "动画数据块中不包含活动的动作"
 
 
+msgid "Nonlinear Animation Channel"
+msgstr "非线性动画通道"
+
+
 msgid "Meta Strips"
 msgstr "复合片段"
 
@@ -76333,6 +76367,10 @@ msgstr "已选中的复合片段"
 
 msgid "Meta Strip - Selected (for grouping related strips)"
 msgstr "已选中的复合片段 (用于片段归组)"
+
+
+msgid "Nonlinear Animation Track"
+msgstr "非线性动画轨道"
 
 
 msgid "Sound Strips"
@@ -80264,18 +80302,6 @@ msgid "Multiple selected objects. Only the active one will be evaluated"
 msgstr "多选物体，仅活动物体被计算"
 
 
-msgid "Removed Verts: , Edges: , Faces: "
-msgstr "已移除顶点: , 边: , 面: "
-
-
-msgid "Triangulated Faces: "
-msgstr "已三角化面: "
-
-
-msgid "Modified Verts:+, Edges:+, Faces:+"
-msgstr "已修改顶点:+,, 边:+ , 面:+"
-
-
 msgid "Scaled by "
 msgstr "已缩放 "
 
@@ -80345,15 +80371,6 @@ msgid "Check All"
 msgstr "检查全部"
 
 
-msgid "Cleanup"
-msgstr "清理"
-
-
-msgctxt "Operator"
-msgid "Isolated"
-msgstr "孤立项"
-
-
 msgctxt "Operator"
 msgid "Make Manifold"
 msgstr "制造流形"
@@ -80371,6 +80388,10 @@ msgstr "边界"
 msgctxt "Operator"
 msgid "Export"
 msgstr "导出"
+
+
+msgid "Result"
+msgstr "结果"
 
 
 msgid "Select objects to scatter and a target object."
@@ -85071,6 +85092,10 @@ msgid "F-Curve Visibility"
 msgstr "函数曲线的可见性"
 
 
+msgid "Default Smoothing Mode"
+msgstr "默认平滑模式"
+
+
 msgid "Default Interpolation"
 msgstr "默认插值"
 
@@ -85782,18 +85807,22 @@ msgstr "修正形变"
 
 
 msgctxt "Operator"
-msgid "Hide Bounding Box"
-msgstr "隐藏框选"
-
-
-msgctxt "Operator"
 msgid "Show Bounding Box"
 msgstr "显示框选"
 
 
 msgctxt "Operator"
+msgid "Hide Bounding Box"
+msgstr "隐藏框选"
+
+
+msgctxt "Operator"
 msgid "Hide Masked"
 msgstr "隐藏遮罩作用项"
+
+
+msgid "Set Pivot"
+msgstr "设置轴心点"
 
 
 msgctxt "Operator"
@@ -85849,10 +85878,6 @@ msgstr "按拓扑展开遮罩"
 msgctxt "Operator"
 msgid "Expand Mask By Curvature"
 msgstr "按曲率展开遮罩"
-
-
-msgid "Set Pivot"
-msgstr "设置轴心点"
 
 
 msgctxt "Operator"
@@ -90187,6 +90212,18 @@ msgid "Unable to rotate %d edge(s)"
 msgstr "不能旋转 %d 边"
 
 
+msgid "Removed %d vertice(s)"
+msgstr "移除了 %d 个顶点"
+
+
+msgid "%d already symmetrical, %d pairs mirrored, %d failed"
+msgstr "%d 本为对称, %d 对已镜像, %d 失败"
+
+
+msgid "%d already symmetrical, %d pairs mirrored"
+msgstr "%d 本为对称, %d 对已镜像"
+
+
 msgid "Parse error in %s"
 msgstr "语法错误位于 %s"
 
@@ -90883,6 +90920,10 @@ msgstr "动态绘画修改器"
 
 msgid "Bake failed: invalid canvas"
 msgstr "烘焙失败：非法绘制"
+
+
+msgid "Removed %d double particle(s)"
+msgstr "移除了 %d 个重叠粒子"
 
 
 msgid "No hair connected (can't connect hair if particle system modifier is disabled)"
@@ -91848,10 +91889,6 @@ msgstr "'%s' 给定路径 OS-无效, 创建 '%s' 路径代替"
 
 msgid "Could not create new folder: %s"
 msgstr "无法创建新文件夹: %s"
-
-
-msgid "Could not delete file: %s"
-msgstr "无法删除文件: %s"
 
 
 msgid "Cancel"
@@ -92835,12 +92872,24 @@ msgid "Invalid old/new ID pair ('%s' / '%s')"
 msgstr "无效的 旧的/n新的 ID 对 ('%s' / '%s')"
 
 
+msgid "Copied %d selected data-block(s)"
+msgstr "拷贝 %d 个选中数据块"
+
+
+msgid "%d data-block(s) pasted"
+msgstr "已粘贴 %d 个数据块"
+
+
 msgid "Cannot relocate indirectly linked library '%s'"
 msgstr "无法直接重定位关联库 '%s'"
 
 
 msgid "Not found: %s"
 msgstr "未找到项: %s"
+
+
+msgid "Deleted %d data-block(s)"
+msgstr "已删除 %d 数据块"
 
 
 msgid "Mixed selection"
@@ -93329,6 +93378,14 @@ msgstr "面选择模式 - Shift+单击选择多重模式，Ctrl+单击扩展选�
 
 msgid "No objects to paste"
 msgstr "无可供粘贴的物体"
+
+
+msgid "Copied %d selected object(s)"
+msgstr "已复制 %d 选中物体"
+
+
+msgid "%d object(s) pasted"
+msgstr "已粘贴 %d 物体"
 
 
 msgid "No active element found!"
@@ -95074,10 +95131,6 @@ msgid "View Distance"
 msgstr "视图距离"
 
 
-msgid "Result"
-msgstr "结果"
-
-
 msgid "Emissive Color"
 msgstr "自发光颜色"
 
@@ -95909,6 +95962,10 @@ msgstr "阿伯卡茨语 (Аԥсуа бызшәа)"
 
 msgid "Thai (ภาษาไทย)"
 msgstr "泰语 (ภาษาไทย)"
+
+
+msgid "Slovak (Slovenčina)"
+msgstr "斯洛伐克语 (Slovenčina)"
 
 
 msgid "Complete"
