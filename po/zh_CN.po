@@ -1,9 +1,9 @@
 
 msgid ""
 msgstr ""
-"Project-Id-Version: Blender 2.81 (sub 15) (b'80fe0ac7ff8c')\n"
+"Project-Id-Version: Blender 2.81 (sub 15) (b'41ec25d27bac')\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-10-14 13:06:27\n"
+"POT-Creation-Date: 2019-10-21 08:03:35\n"
 "PO-Revision-Date: \n"
 "Last-Translator: DeathBlood\n"
 "Language-Team: \n"
@@ -12011,62 +12011,6 @@ msgid "View Map Cache"
 msgstr "视图映射缓存"
 
 
-msgid "GPU FX Settings"
-msgstr "GPU的特效设置"
-
-
-msgid "Settings for GPU based compositing"
-msgstr "基于GPU合成的设置"
-
-
-msgid "Screen Space Ambient Occlusion settings"
-msgstr "屏幕空间环境光遮蔽(AO)设置"
-
-
-msgid "SSAO"
-msgstr "SSAO"
-
-
-msgid "Use screen space ambient occlusion of field on viewport"
-msgstr "在视图上使用屏幕空间环境光遮蔽(AO)区域"
-
-
-msgid "GPU SSAO"
-msgstr "GPU SSAO"
-
-
-msgid "Settings for GPU based screen space ambient occlusion"
-msgstr "基于屏幕空间环境光遮蔽(AO)的GPU设置"
-
-
-msgid "Attenuation"
-msgstr "衰减量"
-
-
-msgid "Attenuation constant"
-msgstr "衰减常数"
-
-
-msgid "Color for screen space ambient occlusion effect"
-msgstr "屏幕空间环境光遮蔽(AO)的颜色影响"
-
-
-msgid "Distance of object that contribute to the SSAO effect"
-msgstr "有助于屏幕空间环境光遮蔽 (SSAO) 效果的物体距离"
-
-
-msgid "Strength of the SSAO effect"
-msgstr "SSAO效果的强度"
-
-
-msgid "Samples"
-msgstr "采样"
-
-
-msgid "Number of samples"
-msgstr "采样数"
-
-
 msgid "Grease Pencil Frame"
 msgstr "蜡笔帧"
 
@@ -12365,6 +12309,14 @@ msgstr "是父子关系"
 
 msgid "True when the layer parent object is set"
 msgstr "当图层父设置了对象时为真"
+
+
+msgid "Ruler"
+msgstr "量尺"
+
+
+msgid "This is a special ruler layer"
+msgstr "这是一个特殊的量尺图层"
 
 
 msgid "Thickness Change"
@@ -17842,6 +17794,10 @@ msgid "Shadow map clip start, below which objects will not generate shadows"
 msgstr "阴影映射区裁剪起始点, 越过此点的物体将不产生阴影"
 
 
+msgid "Samples"
+msgstr "采样"
+
+
 msgid "Number of shadow buffer samples"
 msgstr "阴影缓冲采样次数"
 
@@ -21296,6 +21252,10 @@ msgid "Speaker data-block for 3D audio speaker objects"
 msgstr "用于 3D 音频扬声器物体的扬声器数据块"
 
 
+msgid "Attenuation"
+msgstr "衰减量"
+
+
 msgid "How strong the distance affects volume, depending on distance model"
 msgstr "距离对音量的影响强度, 视距离模式而定"
 
@@ -21476,6 +21436,14 @@ msgstr "选区末尾行"
 
 msgid "End line of selection"
 msgstr "所选内容末尾行"
+
+
+msgid "Select End Line Index"
+msgstr "选择末尾行编号"
+
+
+msgid "Index of last TextLine in selection"
+msgstr "所选内容最后一行文本的编号"
 
 
 msgid "Register"
@@ -35496,6 +35464,10 @@ msgid "Mouse Y"
 msgstr "鼠标 Y 向"
 
 
+msgid "Wait to Deselect Others"
+msgstr "等待取消选择其他"
+
+
 msgctxt "Operator"
 msgid "Copy Keyframes"
 msgstr "拷贝关键帧"
@@ -40070,10 +40042,6 @@ msgid "Key All Bones"
 msgstr "对所有骨骼插帧"
 
 
-msgid "Apply Transform"
-msgstr "应用变换"
-
-
 msgid "Active scene to file"
 msgstr "激活场景至文件"
 
@@ -40803,6 +40771,10 @@ msgstr "取消加载选择的文件"
 msgctxt "Operator"
 msgid "Delete Selected Files"
 msgstr "删除选中的文件"
+
+
+msgid "Move selected files to the trash or recycle bin"
+msgstr "将选中的文件移到回收站"
 
 
 msgctxt "Operator"
@@ -46358,32 +46330,81 @@ msgid "Construct a UV sphere mesh"
 msgstr "创建一个 UV 球体网格"
 
 
+msgctxt "Operator"
+msgid "3D-Print Check All"
+msgstr "3D 打印 - 全部检查"
+
+
 msgid "Run all checks"
 msgstr "运行所有的选项"
+
+
+msgctxt "Operator"
+msgid "3D-Print Check Degenerate"
+msgstr "3D 打印 - 检查反生成状况"
 
 
 msgid "Check for degenerate geometry that may not print properly (zero area faces, zero length edges)"
 msgstr "检查可能无法正确打印的反生成型几何体(即面积为零的面、长度为零的边)"
 
 
+msgctxt "Operator"
+msgid "3D-Print Check Distorted Faces"
+msgstr "3D 打印 - 检查畸形面"
+
+
+msgid "Check for non-flat faces"
+msgstr "检查不平面"
+
+
+msgctxt "Operator"
+msgid "3D-Print Check Intersections"
+msgstr "3D 打印 - 检查交叉性"
+
+
 msgid "Check geometry for self intersections"
 msgstr "检查几何体的自交叉"
+
+
+msgctxt "Operator"
+msgid "3D-Print Check Overhang"
+msgstr "3D 打印 - 检查悬垂"
 
 
 msgid "Check faces don't overhang past a certain angle"
 msgstr "检查未悬垂在指定角度以外的面"
 
 
+msgctxt "Operator"
+msgid "3D-Print Check Sharp"
+msgstr "3D 打印 - 检查锐边"
+
+
 msgid "Check edges are below the sharpness preference"
 msgstr "检查边线的锐度是否低于设置值"
+
+
+msgctxt "Operator"
+msgid "3D-Print Check Solid"
+msgstr "3D 打印 - 检查实体性"
 
 
 msgid "Check for geometry is solid (has valid inside/outside) and correct normals"
 msgstr "检查物体"
 
 
+msgctxt "Operator"
+msgid "3D-Print Check Thickness"
+msgstr "3D 打印 - 检查厚度"
+
+
 msgid "Check geometry is above the minimum thickness preference (relies on correct normals)"
 msgstr "检查几何体厚度是否高于最低设置值"
+
+
+msgctxt "Operator"
+msgid "3D-Print Clean Distorted"
+msgstr "3D 打印 - 清除畸形元素"
 
 
 msgid "Tessellate distorted faces"
@@ -46394,12 +46415,40 @@ msgid "Limit for checking distorted faces"
 msgstr "用于检查畸形面的限值"
 
 
+msgctxt "Operator"
+msgid "3D-Print Clean Non-Manifold"
+msgstr "3D 打印 - 清除非流形"
+
+
+msgid "Cleanup problems, like holes, non-manifold vertices and inverted normals"
+msgstr "清理问题, 如洞, 非流形顶点, 和倒置法向"
+
+
 msgid "Minimum distance between elements to merge"
 msgstr "合并元素之间的最小间隔"
 
 
+msgctxt "Operator"
+msgid "3D-Print Export"
+msgstr "3D 打印 - 导出"
+
+
+msgid "Export selected objects using 3D-Print settings"
+msgstr "用 3D 打印选项导出选中的物体"
+
+
+msgctxt "Operator"
+msgid "3D-Print Info Area"
+msgstr "3D 打印 - 面积信息"
+
+
 msgid "Report the surface area of the active mesh"
 msgstr "反馈活动网格的表面积"
+
+
+msgctxt "Operator"
+msgid "3D-Print Info Volume"
+msgstr "3D 打印 - 体积信息"
 
 
 msgid "Report the volume of the active mesh"
@@ -46411,6 +46460,10 @@ msgid "Scale to Bounds"
 msgstr "缩放至边界框"
 
 
+msgid "Scale edit-mesh or selected-objects to fit within a maximum length"
+msgstr "缩放编辑网格或选中物体以适合最大长度"
+
+
 msgid "Length Limit"
 msgstr "长度限值"
 
@@ -46418,6 +46471,15 @@ msgstr "长度限值"
 msgctxt "Operator"
 msgid "Scale to Volume"
 msgstr "缩放至空间体积"
+
+
+msgid "Scale edit-mesh or selected-objects to a set volume"
+msgstr "缩放编辑网格或选中物体至设定体积"
+
+
+msgctxt "Operator"
+msgid "3D-Print Select Report"
+msgstr "3D 打印 - 选择反馈信息"
 
 
 msgid "Select the data associated with this report"
@@ -62502,6 +62564,10 @@ msgid "3D-Print"
 msgstr "3D 打印"
 
 
+msgid "Analyze"
+msgstr "分析"
+
+
 msgid "Quad View"
 msgstr "四格视图"
 
@@ -69660,6 +69726,14 @@ msgid "Direction of the light for shadows and highlights"
 msgstr "用于阴影和高光的光照方向"
 
 
+msgid "Attenuation constant"
+msgstr "衰减常数"
+
+
+msgid "Number of samples"
+msgstr "采样数"
+
+
 msgid "Render Anti-Aliasing"
 msgstr "渲染抗锯齿"
 
@@ -74571,14 +74645,6 @@ msgstr "3D视图最远钳制距离"
 
 msgid "3D View near clipping distance (perspective view only)"
 msgstr "3D视图最近钳制距离(仅透视图)"
-
-
-msgid "FX Options"
-msgstr "效果选项"
-
-
-msgid "Options used for real time compositing"
-msgstr "用于实时合成的选项"
 
 
 msgid "Visibility Icon"
@@ -80302,6 +80368,14 @@ msgid "Multiple selected objects. Only the active one will be evaluated"
 msgstr "多选物体，仅活动物体被计算"
 
 
+msgid "Triangulated  faces"
+msgstr "已三角化面"
+
+
+msgid "Modified: + vertices, + edges, + faces"
+msgstr "已修改: + 顶点, + 边, + 面"
+
+
 msgid "Scaled by "
 msgstr "已缩放 "
 
@@ -85808,12 +85882,12 @@ msgstr "修正形变"
 
 msgctxt "Operator"
 msgid "Show Bounding Box"
-msgstr "显示框选"
+msgstr "显示边界盒"
 
 
 msgctxt "Operator"
 msgid "Hide Bounding Box"
-msgstr "隐藏框选"
+msgstr "隐藏边界盒"
 
 
 msgctxt "Operator"
@@ -90228,24 +90302,20 @@ msgid "Parse error in %s"
 msgstr "语法错误位于 %s"
 
 
-msgid "Cannot add geometry in edit mode"
-msgstr "编辑模式下所选边线的计数"
+msgid "Cannot add vertices in edit mode"
+msgstr "编辑模式下所选顶点的计数值"
 
 
 msgid "Cannot add edges in edit mode"
 msgstr "编辑模式下所选边线的计数"
 
 
-msgid "Cannot add vertices in edit mode"
-msgstr "编辑模式下所选顶点的计数值"
+msgid "Cannot add loops in edit mode"
+msgstr "无法在编辑模式下添加环切"
 
 
-msgid "Cannot remove edges in edit mode"
-msgstr "在编辑模式中显示贝塞尔控制柄"
-
-
-msgid "Cannot remove more edges than the mesh contains"
-msgstr "在编辑模式中显示贝塞尔控制柄"
+msgid "Cannot add polygons in edit mode"
+msgstr "无法在编辑模式下添加多边形"
 
 
 msgid "Cannot remove vertices in edit mode"
@@ -90256,12 +90326,12 @@ msgid "Cannot remove more vertices than the mesh contains"
 msgstr "切换粒子编辑模式"
 
 
-msgid "Cannot add loops in edit mode"
-msgstr "无法在编辑模式下添加环切"
+msgid "Cannot remove edges in edit mode"
+msgstr "在编辑模式中显示贝塞尔控制柄"
 
 
-msgid "Cannot add polygons in edit mode"
-msgstr "无法在编辑模式下添加多边形"
+msgid "Cannot remove more edges than the mesh contains"
+msgstr "在编辑模式中显示贝塞尔控制柄"
 
 
 msgid "%d %s mirrored, %d failed"
@@ -90784,6 +90854,10 @@ msgstr "不能从编辑模式运行网格重构."
 
 msgid "The remesher cannot run with dyntopo activated."
 msgstr "不能激活动态拓扑时运行网格重构."
+
+
+msgid "The remesher cannot run with a Multires modifier in the modifier stack."
+msgstr "网格重构不能与多级精度修改器同时使用。"
 
 
 msgid "Select Collection"
@@ -91889,6 +91963,10 @@ msgstr "'%s' 给定路径 OS-无效, 创建 '%s' 路径代替"
 
 msgid "Could not create new folder: %s"
 msgstr "无法创建新文件夹: %s"
+
+
+msgid "Could not delete file or directory: %s"
+msgstr "无法删除文件或目录: %s"
 
 
 msgid "Cancel"
@@ -94165,6 +94243,10 @@ msgid "Curve '%s' does not contain spline given"
 msgstr "曲线 '%s' 不包含放样"
 
 
+msgid "Dependency graph update requested during evaluation"
+msgstr "解算期间需更新依赖关系图"
+
+
 msgid "Variable does not exist in this driver"
 msgstr "驱动中无此变量"
 
@@ -95726,6 +95808,53 @@ msgstr "路径 '%s' 中的属性不是浮点型"
 
 msgid "Property from path '%s' has length %d instead of %d"
 msgstr "路径 '%s' 的属性长度为 %d 而非 %d"
+
+
+msgid "%d x %s: %.4f ms, average: %.8f ms"
+msgstr "%d x %s: %.4f ms, 平均: %.8f ms"
+
+
+msgctxt "WindowManager"
+msgid "Limited Platform Support"
+msgstr "有限平台支持"
+
+
+msgctxt "WindowManager"
+msgid "Your graphics card or driver has limited support. It may work, but with issues."
+msgstr "您的显卡或驱动程序的支持有限. 也许可以运行，但存在问题."
+
+
+msgctxt "WindowManager"
+msgid "Newer graphics drivers may be available to improve Blender support."
+msgstr "可使用新的显卡驱动程序改进 Blender 支持."
+
+
+msgctxt "WindowManager"
+msgid "Graphics card:"
+msgstr "显卡:"
+
+
+msgctxt "WindowManager"
+msgid "Platform Unsupported"
+msgstr "不受支持的平台"
+
+
+msgctxt "WindowManager"
+msgid "Your graphics card or driver is not supported."
+msgstr "不支持您的显卡或驱动程序."
+
+
+msgctxt "WindowManager"
+msgid "The program will now close."
+msgstr "程序现在将关闭。"
+
+
+msgid "Failed to create a window without quad-buffer support, you may experience flickering"
+msgstr "无四缓冲支持, 创建窗口失败, 您可能会看到闪烁"
+
+
+msgid "Failed to switch to Time Sequential mode when in fullscreen"
+msgstr "全屏时切换时间序列模式失败"
 
 
 msgid "Quad-buffer window successfully created"
