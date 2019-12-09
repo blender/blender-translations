@@ -1,9 +1,9 @@
 
 msgid ""
 msgstr ""
-"Project-Id-Version: Blender 2.82 (sub 3) (b'7868db9343d5')\n"
+"Project-Id-Version: Blender 2.82 (sub 4) (b'312b6fd713f6')\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-12-04 15:50:16\n"
+"POT-Creation-Date: 2019-12-09 14:05:50\n"
 "PO-Revision-Date: \n"
 "Last-Translator: DeathBlood\n"
 "Language-Team: \n"
@@ -4013,6 +4013,14 @@ msgid "Pin (vertex target position) spring stiffness"
 msgstr "钉固(顶点位置)弹簧刚度"
 
 
+msgid "Pressure Scale"
+msgstr "压力缩放"
+
+
+msgid "Air pressure scaling factor"
+msgstr "气压缩放系数"
+
+
 msgid "Quality"
 msgstr "品质"
 
@@ -4077,6 +4085,14 @@ msgid "Factor by which to shrink cloth"
 msgstr "布料收缩量"
 
 
+msgid "Target Volume"
+msgstr "目标体积"
+
+
+msgid "The mesh volume where the inner/outer pressure will be the same. If set to zero the volume will not contribute to the total pressure"
+msgstr "内/外压力相同时的网格体积。如果设置为零，则体积不会增加总压力"
+
+
 msgid "Tension Spring Damping"
 msgstr "绷紧弹性阻尼"
 
@@ -4106,7 +4122,11 @@ msgstr "布料速率与该值相乘"
 
 
 msgid "Pressure"
-msgstr "压感"
+msgstr "压力"
+
+
+msgid "The uniform pressure that is constanty applied to the mesh. Can be negative"
+msgstr "持续施加到网格上的均匀压力。可以是负数"
 
 
 msgid "Dynamic Base Mesh"
@@ -4115,6 +4135,18 @@ msgstr "动态基础网格"
 
 msgid "Make simulation respect deformations in the base mesh"
 msgstr "使模拟维持基础网格物体外形的变形"
+
+
+msgid "Simulate pressure inside a closed cloth mesh"
+msgstr "模拟封闭布料网格内的压力"
+
+
+msgid "Use Custom Volume"
+msgstr "使用自定义体积"
+
+
+msgid "Use the Volume parameter as the initial volume"
+msgstr "使用自定义体积参数作为初始体积"
 
 
 msgid "Sew Cloth"
@@ -4139,6 +4171,14 @@ msgstr "质量顶点组"
 
 msgid "Vertex Group for pinning of vertices"
 msgstr "用于钉固顶点的顶点组"
+
+
+msgid "Pressure Vertex Group"
+msgstr "压力顶点组"
+
+
+msgid "Vertex Group for where to apply pressure. Zero weight means no pressure while a weight of one means full pressure. Faces with a vertex that has zero weight will be excluded from the volume calculation"
+msgstr "用于定义何处施加压力的顶点组。零权重意味着没有压力，而重量为 1 表示满压。零权重顶点所在的面将从体积计算中排除"
 
 
 msgid "Shear Stiffness Vertex Group"
@@ -19131,7 +19171,7 @@ msgstr "编辑时使用双传递执行: 先计算快速节点, 再传递计算�
 
 
 msgid "Viewer Border"
-msgstr "视图边界"
+msgstr "预览框选"
 
 
 msgid "Use boundaries for viewer nodes and composite backdrop"
@@ -27512,6 +27552,10 @@ msgid "Vertex Weight Mix"
 msgstr "顶点权重混合"
 
 
+msgid "Mix the weights of two vertex groups"
+msgstr "混合两个顶点组的权重"
+
+
 msgid "Vertex Weight Proximity"
 msgstr "顶点权重邻近"
 
@@ -27562,10 +27606,6 @@ msgstr "三角化"
 
 msgid "Wireframe"
 msgstr "线框"
-
-
-msgid "Generate a wireframe on the edges of a mesh"
-msgstr "在网格边线上生成线框"
 
 
 msgid "Cast"
@@ -30490,10 +30530,6 @@ msgstr "从顶点组中移除权重值低于阈值的顶点"
 
 msgid "WeightVG Mix Modifier"
 msgstr "权重顶点组混合修改器"
-
-
-msgid "Mix the weights of two vertex groups"
-msgstr "混合两个顶点组的权重"
 
 
 msgid "Default Weight A"
@@ -33881,6 +33917,10 @@ msgid "1 if A > B else 0"
 msgstr "A > B则取1，否则取0"
 
 
+msgid "Compare"
+msgstr "比较"
+
+
 msgid "Ceil"
 msgstr "向上取整"
 
@@ -36173,11 +36213,11 @@ msgstr "全选"
 
 
 msgid "Deselect"
-msgstr "取消选择"
+msgstr "弃选"
 
 
 msgid "Deselect all elements"
-msgstr "删除选定的物体"
+msgstr "弃选全部元素"
 
 
 msgid "Invert selection of all elements"
@@ -38957,7 +38997,7 @@ msgstr "将选中物体从所有场景中未使用的集合中移除"
 
 msgctxt "Operator"
 msgid "Console Autocomplete"
-msgstr "控制台自动完成"
+msgstr "控制台自动补全"
 
 
 msgid "Evaluate the namespace up until the cursor and give a list of options or complete the name if there is only one"
@@ -39794,10 +39834,6 @@ msgstr "选择一排控制点, 包括活动的"
 
 msgid "Select similar curve points by property type"
 msgstr "根据属性类型选择相似的曲线控制点"
-
-
-msgid "Compare"
-msgstr "比较"
 
 
 msgid "Equal"
@@ -41403,7 +41439,11 @@ msgstr "激活 / 选择边框中的文件"
 
 msgctxt "Operator"
 msgid "Walk Select/Deselect File"
-msgstr "漫游选择/取消选择文件"
+msgstr "漫游选择/弃选文件"
+
+
+msgid "Select/Deselect files by walking through them"
+msgstr "通过遍历来选择 / 弃选文件"
 
 
 msgid "Walk Direction"
@@ -41411,7 +41451,7 @@ msgstr "行走方向"
 
 
 msgid "Select/Deselect file in this direction"
-msgstr "在该方向上选择或取消选择文件"
+msgstr "在该方向上选择或弃选文件"
 
 
 msgid "Prev"
@@ -43096,7 +43136,7 @@ msgstr "将选中的顶点指定到活动顶点组"
 
 msgctxt "Operator"
 msgid "Deselect Vertex Group"
-msgstr "取消选择顶点组"
+msgstr "弃选顶点组"
 
 
 msgid "Deselect all selected vertices assigned to the active vertex group"
@@ -43224,6 +43264,30 @@ msgstr "精简关键帧"
 
 msgid "Decimate F-Curves by removing keyframes that influence the curve shape the least"
 msgstr "通过删除影响曲线形状最少的关键帧来精简函数曲线"
+
+
+msgid "Which mode to use for decimation"
+msgstr "用于精简的模式"
+
+
+msgid "Use a percentage to specify how many keyframes you want to remove"
+msgstr "使用百分比指定要删除的关键帧数"
+
+
+msgid "Error Margin"
+msgstr "边际误差"
+
+
+msgid "Use an error margin to specify how much the curve is allowed to deviate from the original path"
+msgstr "使用边际误差指定允许曲线偏离原始路径的幅度"
+
+
+msgid "Max Error Margin"
+msgstr "最大边际误差"
+
+
+msgid "How much the new decimated curve is allowed to deviate from the original"
+msgstr "精简后的新曲线相对原始曲线允许的偏移量"
 
 
 msgid "The percentage of keyframes to remove"
@@ -49716,7 +49780,7 @@ msgstr "将材质复制到所选物体"
 
 msgctxt "Operator"
 msgid "Deselect Material Slot"
-msgstr "取消材质槽选择"
+msgstr "弃选材质槽"
 
 
 msgid "Deselect by active material slot"
@@ -51538,11 +51602,11 @@ msgstr "添加为所选集合的子级"
 
 msgctxt "Operator"
 msgid "Deselect Objects"
-msgstr "取消物体全选"
+msgstr "弃选物体"
 
 
 msgid "Deselect objects in collection"
-msgstr "物体集合"
+msgstr "弃选集合中的物体"
 
 
 msgctxt "Operator"
@@ -53199,7 +53263,7 @@ msgstr "骨骼组编号"
 
 msgctxt "Operator"
 msgid "Deselect Bone Group"
-msgstr "取消选择骨骼组"
+msgstr "弃选骨骼组"
 
 
 msgid "Deselect bones of active Bone Group"
@@ -55341,8 +55405,24 @@ msgid "Screen Coordinates of sampling"
 msgstr "屏幕坐标系中的光标位置"
 
 
+msgid "Detail Mode"
+msgstr "细节模式"
+
+
+msgid "Target sculpting workflow that is going to use the sampled size"
+msgstr "将使用采样大小的目标雕刻工作流"
+
+
 msgid "Dyntopo"
 msgstr "动态拓扑"
+
+
+msgid "Sample dyntopo detail"
+msgstr "采样动态拓扑细节"
+
+
+msgid "Sample mesh voxel size"
+msgstr "采样网格体素大小"
 
 
 msgctxt "Operator"
@@ -55370,6 +55450,19 @@ msgstr "沿用基底设置"
 
 msgid "Reset the copy of the mesh that is being sculpted on"
 msgstr "重置选中物体网格的雕刻副本"
+
+
+msgctxt "Operator"
+msgid "Set Pivot Position"
+msgstr "设置轴心位置"
+
+
+msgid "Mask border"
+msgstr "遮罩边框"
+
+
+msgid "Active vertex"
+msgstr "活动顶点"
 
 
 msgid "Symmetrize the topology modifications"
@@ -56585,7 +56678,7 @@ msgstr "复制纹理设置与节点"
 
 msgctxt "Operator"
 msgid "Text Auto Complete"
-msgstr "文本自动完成"
+msgstr "文本自动补全"
 
 
 msgid "Show a list of used text in the open document"
@@ -59524,6 +59617,14 @@ msgstr "导出UV"
 
 msgid "Export vertex colors"
 msgstr "导出顶点色"
+
+
+msgid "Visible Objects Only"
+msgstr "仅可见物体"
+
+
+msgid "Export only objects that are visible"
+msgstr "仅导出可见的物体"
 
 
 msgid "Transform Samples"
@@ -62724,6 +62825,10 @@ msgid "New Objects"
 msgstr "新建物体"
 
 
+msgid "User Interface"
+msgstr "用户界面"
+
+
 msgid "Applications"
 msgstr "应用"
 
@@ -62936,10 +63041,6 @@ msgstr "视频序列编辑器"
 
 msgid "Text Style"
 msgstr "字体样式"
-
-
-msgid "User Interface"
-msgstr "用户界面"
 
 
 msgid "3D View"
@@ -65919,14 +66020,6 @@ msgstr "内存缓存限值"
 
 msgid "Memory cache limit (in megabytes)"
 msgstr "内存缓存限值(MB)"
-
-
-msgid "MultiSample"
-msgstr "多重采样"
-
-
-msgid "Enable OpenGL multi-sampling, only for systems that support it"
-msgstr "启用OpenGL多重采样，仅适用于支持它的系统"
 
 
 msgid "OpenSubdiv Compute Type"
@@ -73911,6 +74004,14 @@ msgid "Show Handles And Interpolation"
 msgstr "显示控制柄与插值"
 
 
+msgid "Show Markers"
+msgstr "显示标记"
+
+
+msgid "If any exists, show markers in a separate row at the bottom of the editor"
+msgstr "如果存在标记，则在编辑器底部的显示标记为单独一行"
+
+
 msgid "Show Pose Markers"
 msgstr "显示姿态标记"
 
@@ -77484,6 +77585,14 @@ msgid "Color of the 1px shadow line underlying widgets"
 msgstr "小部件底部 1 像素阴影线的颜色"
 
 
+msgid "Text Cursor"
+msgstr "文本光标"
+
+
+msgid "Color of the interface widgets text insertion cursor (caret)"
+msgstr "文本插入光标界面小部件的颜色"
+
+
 msgid "Theme 3D View"
 msgstr "3D 视图主题"
 
@@ -79289,6 +79398,10 @@ msgid "Color for object outline"
 msgstr "物体轮廓的颜色"
 
 
+msgid "Render Pass to show in the viewport"
+msgstr "在视图中显示的渲染通道"
+
+
 msgid "Selected StudioLight"
 msgstr "选中棚灯"
 
@@ -80766,7 +80879,7 @@ msgstr "指定"
 
 msgctxt "Operator"
 msgid "Deselect"
-msgstr "取消选择"
+msgstr "弃选"
 
 
 msgid "The BVH file does not contain frame duration in its MOTION section, assuming the BVH and Blender scene have the same frame rate"
@@ -81099,7 +81212,7 @@ msgstr "保存用户设置"
 
 msgctxt "Operator"
 msgid "Deselect All"
-msgstr "全选 / 取消全选"
+msgstr "全部弃选"
 
 
 msgctxt "Operator"
@@ -81665,7 +81778,7 @@ msgstr "选择点"
 
 msgctxt "Operator"
 msgid "Deselect Points"
-msgstr "取消选择点"
+msgstr "弃选点"
 
 
 msgid "Show Stroke Directions"
@@ -83150,6 +83263,10 @@ msgid "Air Viscosity"
 msgstr "空气粘度"
 
 
+msgid "Custom volume"
+msgstr "自定义体积"
+
+
 msgid "Pin Group"
 msgstr "钉固顶点组"
 
@@ -84266,6 +84383,16 @@ msgstr "隐藏未选中曲线"
 
 
 msgctxt "Operator"
+msgid "Decimate (Ratio)"
+msgstr "精简(比例)"
+
+
+msgctxt "Operator"
+msgid "Decimate (Allowed Change)"
+msgstr "精简(受允许修改)"
+
+
+msgctxt "Operator"
 msgid "Cursor Value"
 msgstr "游标值"
 
@@ -85066,7 +85193,7 @@ msgstr "屏蔽未选择的片段"
 
 msgctxt "Operator"
 msgid "Unmute Deselected Strips"
-msgstr "取消屏蔽未选择的片段"
+msgstr "取消屏蔽弃选片段"
 
 
 msgctxt "Operator"
@@ -85735,10 +85862,6 @@ msgid "3D Viewport Axis"
 msgstr "3D 视图轴向"
 
 
-msgid "Multisampling"
-msgstr "多重采样"
-
-
 msgid "Grease Pencil Multisampling"
 msgstr "蜡笔多重采样"
 
@@ -85818,6 +85941,10 @@ msgstr "间隔(分钟)"
 
 msgid "Pan Options"
 msgstr "平移选项"
+
+
+msgid "Invert Axis"
+msgstr "反转轴向"
 
 
 msgid "Zoom Options"
@@ -92686,6 +92813,10 @@ msgid "Invalid Variable Name"
 msgstr "无效的变量名"
 
 
+msgid "Decimate Keyframes"
+msgstr "精简关键帧"
+
+
 msgid "<No ID>"
 msgstr "<无 ID>"
 
@@ -95581,6 +95712,10 @@ msgid "Pick"
 msgstr "拾取"
 
 
+msgid "Albedo"
+msgstr "反照率"
+
+
 msgid "Image 1"
 msgstr "图像 1"
 
@@ -95807,6 +95942,10 @@ msgstr "背面"
 
 msgid "Pointiness"
 msgstr "尖锐度"
+
+
+msgid "Random Per Island"
+msgstr "各孤岛随机"
 
 
 msgid "Is Strand"
