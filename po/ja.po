@@ -1,9 +1,9 @@
 
 msgid ""
 msgstr ""
-"Project-Id-Version: Blender 2.82 (sub 4) (b'312b6fd713f6')\n"
+"Project-Id-Version: Blender 2.82 (sub 6) (b'708045eb40b9')\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-12-09 14:05:50\n"
+"POT-Creation-Date: 2019-12-23 12:39:57\n"
 "PO-Revision-Date: 2016-10-13 03:05+0900\n"
 "Last-Translator: \n"
 "Language-Team: Japanese Translation Team (https://sites.google.com/site/blugjp/blender-translators)\n"
@@ -4031,6 +4031,22 @@ msgid "Internal Friction"
 msgstr "内部摩擦"
 
 
+msgid "Tension Stiffness"
+msgstr "引張剛性"
+
+
+msgid "How much the material resists stretching"
+msgstr "材質が引っ張られるのにどれぐらい抵抗するか"
+
+
+msgid "Tension Stiffness Maximum"
+msgstr "最大引張剛性"
+
+
+msgid "Maximum tension stiffness value"
+msgstr "引っ張られにくさの最大値"
+
+
 msgid "Pin Stiffness"
 msgstr "ピン止めの剛性"
 
@@ -4109,22 +4125,6 @@ msgstr "引張ばねの減速"
 
 msgid "Amount of damping in stretching behavior"
 msgstr "引っ張られる時の減速量"
-
-
-msgid "Tension Stiffness"
-msgstr "引張剛性"
-
-
-msgid "How much the material resists stretching"
-msgstr "材質が引っ張られるのにどれぐらい抵抗するか"
-
-
-msgid "Tension Stiffness Maximum"
-msgstr "最大引張剛性"
-
-
-msgid "Maximum tension stiffness value"
-msgstr "引っ張られにくさの最大値"
 
 
 msgid "Cloth speed is multiplied by this value"
@@ -11238,156 +11238,338 @@ msgid "Sort items descending, from highest value to lowest"
 msgstr "アイテムを高い方から低い方に降順で並べ替えます"
 
 
-msgid "Fluid Simulation Settings"
-msgstr "流体シミュレーション設定"
+msgid "Domain Settings"
+msgstr "ドメイン設定"
 
 
-msgid "Fluid simulation settings for an object taking part in the simulation"
-msgstr "シミュレーションに参加しているオブジェクトの流体シミュレーション設定"
+msgid "Margin added around fluid to minimize boundary interference"
+msgstr "衝突境界を最小限に留める、流体の周囲に追加されるマージン"
 
 
-msgid "Type of participation in the fluid simulation"
-msgstr "流体シミュレーションへの関与タイプ"
+msgid "Maximum amount of fluid cell can contain before it is considered empty"
+msgstr "流体セルが空と見なされる前に収容できる最大量"
+
+
+msgid "Additional"
+msgstr "追加"
+
+
+msgid "Maximum number of additional cells"
+msgstr "追加するセルの最大数"
+
+
+msgid "Density"
+msgstr "密度"
+
+
+msgid "How much density affects smoke motion (higher value results in faster rising smoke)"
+msgstr "煙の動きに密度が影響する量（高い値で速く煙が上昇）"
+
+
+msgid "Slice the whole domain object"
+msgstr "ドメインオブジェクト全体をスライスします"
+
+
+msgid "Single"
+msgstr "シングル"
+
+
+msgid "Perform a single slice of the domain object"
+msgstr "ドメインオブジェクトのスライスを一回だけ実行します"
+
+
+msgid "Heat"
+msgstr "ヒート"
+
+
+msgid "How much heat affects smoke motion (higher value results in faster rising smoke)"
+msgstr "煙の動きにヒートが影響する量（高い値で速く煙が上昇）"
+
+
+msgid "Speed of the burning reaction (use larger values for smaller flame)"
+msgstr "燃焼反応の早さ（大きい値で小さな炎になります）"
+
+
+msgid "End"
+msgstr "終了"
+
+
+msgid "Frame on which the simulation stops"
+msgstr "シミュレーション終了フレームを指定します"
+
+
+msgid "Start"
+msgstr "開始"
+
+
+msgid "Frame on which the simulation starts"
+msgstr "シミュレーション開始フレームを指定します"
+
+
+msgid "Final"
+msgstr "最終結果"
+
+
+msgid "Cell Size"
+msgstr "セルサイズ"
+
+
+msgid "Clipping"
+msgstr "クリッピング"
+
+
+msgid "Value under which voxels are considered empty space to optimize caching and rendering"
+msgstr ""
+"キャッシュやレンダリングを最適化するため\n"
+"値より下のボクセルを空の空間と見なします"
+
+
+msgid "Field"
+msgstr "フィールド"
+
+
+msgid "Simulation field to color map"
+msgstr "カラーマップするシミュレーションフィールド"
+
+
+msgid "Red"
+msgstr "赤"
+
+
+msgid "Red component of the color field"
+msgstr "カラーフィールドの赤成分"
+
+
+msgid "Green"
+msgstr "緑"
+
+
+msgid "Green component of the color field"
+msgstr "カラーフィールドの緑成分"
+
+
+msgid "Blue"
+msgstr "青"
+
+
+msgid "Blue component of the color field"
+msgstr "カラーフィールドの青成分"
+
+
+msgid "Quantity of soot in the fluid"
+msgstr "流体中の煤煙の量"
+
+
+msgid "Flame"
+msgstr "炎"
+
+
+msgid "Flame field"
+msgstr "炎フィールド"
+
+
+msgid "Fuel"
+msgstr "燃料"
+
+
+msgid "Fuel field"
+msgstr "燃料フィールド"
+
+
+msgid "Temperature of the fluid"
+msgstr "流体の温度"
+
+
+msgid "X Velocity"
+msgstr "X速度"
+
+
+msgid "X component of the velocity field"
+msgstr "速度フィールドの X 成分"
+
+
+msgid "Y Velocity"
+msgstr "Y速度"
+
+
+msgid "Y component of the velocity field"
+msgstr "速度フィールドの Y 成分"
+
+
+msgid "Z Velocity"
+msgstr "Z速度"
+
+
+msgid "Z component of the velocity field"
+msgstr "速度フィールドの Z 成分"
+
+
+msgid "Color Grid"
+msgstr "カラーグリッド"
+
+
+msgid "Smoke color grid"
+msgstr "煙の色グリッド"
+
+
+msgid "Data Depth"
+msgstr "データ深度"
+
+
+msgid "Bit depth for writing all scalar (including vector) lower values reduce file size"
+msgstr "全スカラー（ベクトルを含む）出力用のビット深度。低い値でファイルサイズを低減できます"
+
+
+msgid "Float (Half)"
+msgstr "Float型（ハーフ）"
+
+
+msgid "Half float (16 bit data)"
+msgstr "ハーフ浮動小数点数（16ビットデータ）"
+
+
+msgid "Float (Full)"
+msgstr "Float型（フル）"
+
+
+msgid "Full float (32 bit data)"
+msgstr "フル浮動小数点数（32ビットデータ）"
+
+
+msgid "Density Grid"
+msgstr "密度グリッド"
+
+
+msgid "Smoke density grid"
+msgstr "煙の密度グリッド"
+
+
+msgid "Interpolation method to use for smoke/fire volumes in solid mode"
+msgstr "ソリッドモードで煙・火炎のボリュームに使用される補間方法"
+
+
+msgid "Good smoothness and speed"
+msgstr "スムーズさと速度のバランスが良好"
+
+
+msgid "Cubic"
+msgstr "三次式"
+
+
+msgid "Smoothed high quality interpolation, but slower"
+msgstr "低速だがスムーズで高品質な補間"
+
+
+msgid "Thickness"
+msgstr "幅"
+
+
+msgid "Thickness of smoke drawing in the viewport"
+msgstr "ビューに描く煙の厚さ"
+
+
+msgid "Dissolve Speed"
+msgstr "消滅速度"
+
+
+msgid "res"
+msgstr "解像度"
+
+
+msgid "Smoke Grid Resolution"
+msgstr "煙のグリッドの解像度"
+
+
+msgid "Flame Grid"
+msgstr "炎グリッド"
+
+
+msgid "Smoke flame grid"
+msgstr "煙の炎グリッド"
+
+
+msgid "Ignition"
+msgstr "発火点"
+
+
+msgid "Minimum temperature of flames"
+msgstr "炎の最小温度"
+
+
+msgid "Maximum temperature of flames"
+msgstr "炎の最大温度"
+
+
+msgid "Smoke"
+msgstr "煙"
+
+
+msgid "Amount of smoke created by burning fuel"
+msgstr "燃える燃料によって作り出される煙の量"
+
+
+msgid "Smoke Color"
+msgstr "煙の色"
+
+
+msgid "Color of smoke emitted from burning fuel"
+msgstr "燃える燃料からの発生する煙の色"
+
+
+msgid "Vorticity"
+msgstr "渦度"
+
+
+msgid "Additional vorticity for the flames"
+msgstr "炎の追加の渦"
+
+
+msgid "Fluid Collection"
+msgstr "流体のコレクション"
+
+
+msgid "Limit fluid objects to this collection"
+msgstr "流体オブジェクトをコレクションに限定します"
+
+
+msgid "Gravity in X, Y and Z direction"
+msgstr "X,YおよびZ方向の重力"
 
 
 msgid "Domain"
 msgstr "ドメイン"
 
 
-msgid "Bounding box of this object represents the computational domain of the fluid simulation"
-msgstr "このオブジェクトのバウンディングボックスが、流体シミュレーションの計算領域を表します"
+msgid "Heat Grid"
+msgstr "ヒートグリッド"
 
 
-msgid "Fluid"
-msgstr "流体"
+msgid "Smoke heat grid"
+msgstr "煙の温度グリッド"
 
 
-msgid "Object represents a volume of fluid in the simulation"
-msgstr "シミュレーションで流体のボリュームを表すオブジェクト"
+msgid "Emitter"
+msgstr "エミッター"
 
 
-msgid "Object is a fixed obstacle"
-msgstr "オブジェクトが固定の障害物になります"
+msgid "Method for sampling the high resolution flow"
+msgstr "高解像のフローをサンプリングする方法"
 
 
-msgid "Object adds fluid to the simulation"
-msgstr "このオブジェクトがシミュレーションへ流体を追加します"
+msgid "Full Sample"
+msgstr "フルサンプル"
 
 
-msgid "Outflow"
-msgstr "流出口"
+msgid "Nearest"
+msgstr "最も近い"
 
 
-msgid "Object removes fluid from the simulation"
-msgstr "このオブジェクトがシミュレーションから流体を除去します"
+msgid "Preview"
+msgstr "プレビュー"
 
 
-msgid "Particle"
-msgstr "パーティクル"
-
-
-msgid "Object is made a particle system to display particles generated by a fluidsim domain object"
-msgstr "流体シミュのドメインオブジェクトで生成されたパーティクルを表示するためのパーティクルシステムを追加されたオブジェクト"
-
-
-msgid "Control"
-msgstr "コントロール"
-
-
-msgid "Object is made a fluid control mesh, which influences the fluid"
-msgstr "オブジェクトは流体に影響を与えるコントロールメッシュになります"
-
-
-msgid "Control Fluid Simulation Settings"
-msgstr "流体シミュレーションをコントロールする設定"
-
-
-msgid "Fluid simulation settings for objects controlling the motion of fluid in the simulation"
-msgstr "シミュレーション中の流体の動きをコントロールするオブジェクトのための流体シミュレーション設定"
-
-
-msgid "Attraction Radius"
-msgstr "引力の半径"
-
-
-msgid "Force field radius around the control object"
-msgstr "コントロールオブジェクトの周囲のフォースフィールドの半径"
-
-
-msgid "Attraction Strength"
-msgstr "引力の強さ"
-
-
-msgid "Force strength for directional attraction towards the control object"
-msgstr "コントロールオブジェクトの方向へ引きつける力の強さ"
-
-
-msgid "End Time"
-msgstr "終了時刻"
-
-
-msgid "Time when the control particles are deactivated"
-msgstr "制御パーティクルが非アクティブにされる時刻"
-
-
-msgid "Quality which is used for object sampling (higher = better but slower)"
-msgstr "オブジェクトのサンプリングに使用される品質 (高い値でより良い結果が出ますが計算は遅くなります)"
-
-
-msgid "Start Time"
-msgstr "開始時刻"
-
-
-msgid "Time when the control particles are activated"
-msgstr "制御パーティクルがアクティブにされる時刻"
-
-
-msgid "Object contributes to the fluid simulation"
-msgstr "オブジェクトは流体シミュレーションに寄与します"
-
-
-msgid "Reverse Frames"
-msgstr "フレームを反転"
-
-
-msgid "Reverse control object movement"
-msgstr "コントロールオブジェクトの動きを反転します"
-
-
-msgid "Velocity Radius"
-msgstr "速度の影響の半径"
-
-
-msgid "Velocity Strength"
-msgstr "速度の影響の強さ"
-
-
-msgid "Force strength of how much of the control object's velocity is influencing the fluid velocity"
-msgstr "コントロールオブジェクトの速度が流体の速度に与える影響力の強さ"
-
-
-msgid "Domain Fluid Simulation Settings"
-msgstr "ドメイン流体シミュレーションの設定"
-
-
-msgid "Fluid simulation settings for the domain of a fluid simulation"
-msgstr "流体シミュレーション内での、ドメインの流体シミュレーション設定"
-
-
-msgid "Compressibility"
-msgstr "圧縮率"
-
-
-msgid "Allowed compressibility due to gravitational force for standing fluid (directly affects simulation step size)"
-msgstr "重力による流体の圧縮度(直接シミュレーションのステップサイズに影響します)"
-
-
-msgid "Simulation time of the last blender frame (in seconds)"
-msgstr "最終blenderフレームのシミュレーション時間(秒)"
-
-
-msgid "Directory (and/or filename prefix) to store baked fluid simulation files in"
-msgstr "ベイクした流体シミュレーションファイルを格納するディレクトリ(および/または ファイル名の接頭辞)"
+msgid "Radius"
+msgstr "半径"
 
 
 msgid "Fluid Mesh Vertices"
@@ -11398,206 +11580,236 @@ msgid "Vertices of the fluid mesh generated by simulation"
 msgstr "シミュレーションで生成された流体メッシュの頂点"
 
 
-msgid "Cache Offset"
-msgstr "キャッシュオフセット"
+msgid "Strength of noise"
+msgstr "ノイズ強度"
 
 
-msgid "Offset when reading baked cache"
-msgstr "ベイクしたキャッシュを読み込む際のオフセット"
+msgid "Time"
+msgstr "時間"
 
 
-msgid "Generate Particles"
-msgstr "パーティクルを生成"
+msgid "Noise Method"
+msgstr "ノイズの方法"
 
 
-msgid "Amount of particles to generate (0=off, 1=normal, >1=more)"
-msgstr "生成するパーティクルの量(0:無し、1:通常、>1:さらに追加)"
+msgid "Noise method which is used for creating the high resolution"
+msgstr "高解像の煙を作成するのに使用するノイズメソッド"
 
 
-msgid "Gravity in X, Y and Z direction"
-msgstr "X,YおよびZ方向の重力"
+msgid "Wavelet"
+msgstr "Wavelet"
 
 
-msgid "Grid Levels"
-msgstr "グリッドレベル"
+msgid "Compression"
+msgstr "圧縮"
 
 
-msgid "Number of coarsened grids to use (-1 for automatic)"
-msgstr "使用する粗目グリッドの数(-1で自動)"
+msgid "Compression method to be used"
+msgstr "使用される圧縮方法"
 
 
-msgid "Memory Estimate"
-msgstr "メモリー評価"
+msgid "Zip"
+msgstr "Zip"
 
 
-msgid "Estimated amount of memory needed for baking the domain"
-msgstr "ドメインをベイクするのに必要なメモリの推定量"
+msgid "Effective but slow compression"
+msgstr "高効率で遅い圧縮"
 
 
-msgid "Partial Slip Amount"
-msgstr "パーティクルのスリップ量"
+msgid "Blosc"
+msgstr "Blosc"
 
 
-msgid "Amount of mixing between no- and free-slip, 0 is no slip and 1 is free slip"
-msgstr "吸着と解放の混合率。0で滑らず、1で自由に滑ります"
+msgid "Multithreaded compression, similar in size and quality as 'Zip'"
+msgstr "マルチスレッド圧縮。サイズと品質はZIPと同等です"
 
 
-msgid "Preview Resolution"
-msgstr "プレビュー解像度"
+msgid "Do not use any compression"
+msgstr "圧縮なし"
 
 
-msgid "Preview resolution in X,Y and Z direction"
-msgstr "X,YおよびZ方向のプレビュー解像度"
+msgid "Number"
+msgstr "数"
 
 
-msgid "Render Display Mode"
-msgstr "レンダー表示モード"
+msgid "Randomness"
+msgstr "ランダムさ"
 
 
-msgid "How to display the mesh for rendering"
-msgstr "メッシュのレンダリング方法"
+msgid "Cache Compression"
+msgstr "キャッシュを圧縮"
 
 
-msgid "Display geometry"
-msgstr "ジオメトリを表示します"
+msgid "Lite"
+msgstr "軽量"
 
 
-msgid "Preview"
-msgstr "プレビュー"
+msgid "Fast but not so effective compression"
+msgstr "高速ですが圧縮が効率的ではありません"
 
 
-msgid "Display preview quality results"
-msgstr "プレビュー品質の結果を表示します"
+msgid "Heavy"
+msgstr "ヘビー"
 
 
-msgid "Final"
-msgstr "最終結果"
+msgid "Max Res"
+msgstr "最大解像度"
 
 
-msgid "Display final quality results"
-msgstr "最終品質の結果を表示"
+msgid "Display Velocity"
+msgstr "速度を視覚化"
 
 
-msgid "Domain resolution in X,Y and Z direction"
-msgstr "X,YおよびZ方向のドメイン解像度"
+msgid "Toggle visualization of the velocity field as needles"
+msgstr "速度フィールドをとげで視覚化します"
 
 
-msgid "Simulation Speed"
-msgstr "シミュレーション速度"
+msgid "Adjust slice direction according to the view direction"
+msgstr "ビュー方向に追従してスライス方向を調整します"
 
 
-msgid "Fluid motion rate (0 = stationary, 1 = normal speed)"
-msgstr "流体の運動速度(0=静止、1=通常速度)"
+msgid "Slice along the X axis"
+msgstr "X軸に沿ってスライスします"
 
 
-msgid "Real World Size"
-msgstr "現実世界の大きさ"
+msgid "Slice along the Y axis"
+msgstr "Y軸に沿ってスライスします"
 
 
-msgid "Size of the simulation domain in meters"
-msgstr "シミュレーションのドメインサイズ(メートル)"
+msgid "Slice along the Z axis"
+msgstr "Z軸に沿ってスライスします"
 
 
-msgid "Slip Type"
-msgstr "スリップタイプ"
+msgid "Position of the slice"
+msgstr "スライスの位置"
 
 
-msgid "No Slip"
-msgstr "全く滑らない"
+msgid "View Method"
+msgstr "表示方法"
 
 
-msgid "Obstacle causes zero normal and tangential velocity (=sticky), default for all (only option for moving objects)"
-msgstr "障害物が流体の法線と接線速度をゼロにします(＝吸着)。デフォルト設定。(移動するオブジェクトのみ)"
+msgid "How to slice the volume for viewport rendering"
+msgstr "ビューポートレンダリングでボリュームをスライスする方法"
 
 
-msgid "Partial Slip"
-msgstr "部分的なスリップ"
+msgid "Slice volume parallel to the view plane"
+msgstr "ビュー平面に平行にボリュームをスライスします"
 
 
-msgid "Mix between no-slip and free-slip (non moving objects only!)"
-msgstr "スリップなしと自由スリップ間で混ぜます(動かないオブジェクト限定!)"
+msgid "Slice volume parallel to the major axis"
+msgstr "軸に平行にボリュームをスライスします"
 
 
-msgid "Free Slip"
-msgstr "自由スリップ"
+msgid "Slice Per Voxel"
+msgstr "ボクセル毎のスライス数"
 
 
-msgid "Obstacle only causes zero normal velocity (=not sticky, non moving objects only!)"
-msgstr "障害物が流体の法線方向の速度のみゼロにします(＝吸着ではありません。動かないオブジェクト限定!)"
+msgid "How many slices per voxel should be generated"
+msgstr "ボクセルごとに生成するスライスの数"
 
 
-msgid "Simulation time of the first blender frame (in seconds)"
-msgstr "開始フレーム時点のシミュレーション内時間(秒)"
+msgid "Delete"
+msgstr "削除"
 
 
-msgid "Surface Smoothing"
-msgstr "表面スムージング"
+msgid "Buoyancy"
+msgstr "浮力"
 
 
-msgid "Amount of surface smoothing (a value of 0 is off, 1 is normal smoothing and more than 1 is extra smoothing)"
-msgstr "サーフェススムージングの量(値が0でオフ、1で通常のスムージング、1より上で追加スムージング)"
+msgid "p0"
+msgstr "p0"
 
 
-msgid "Surface Subdivisions"
-msgstr "表面分割"
+msgid "Start point"
+msgstr "開始地点"
 
 
-msgid "Number of isosurface subdivisions (this is necessary for the inclusion of particles into the surface generation - WARNING: can lead to longer computation times !)"
-msgstr "等値サーフェスの分割数(これは表面生成にパーティクルを組み込むのに必要です - 警告: 計算時間が長くなることがあります!)"
+msgid "Tension"
+msgstr "引張"
 
 
-msgid "Simulation Threads"
-msgstr "計算スレッド数"
+msgid "Temperature Grid"
+msgstr "温度グリッド"
 
 
-msgid "Override number of threads for the simulation, 0 is automatic"
-msgstr "シミュレーションのスレッド数を置き換えます。0で自動"
+msgid "Smoke temperature grid, range 0..1 represents 0..1000K"
+msgstr "煙の温度グリッド。範囲は0..1で、0..1000Kを表します"
 
 
-msgid "Tracer Particles"
-msgstr "トレーサーパーティクル"
+msgid "Time Scale"
+msgstr "タイムスケール"
 
 
-msgid "Number of tracer particles to generate"
-msgstr "生成するトレーサーパーティクル数"
+msgid "Adjust simulation speed"
+msgstr "シミュレーション速度を調整します"
 
 
-msgid "Reverse fluid frames"
-msgstr "流体フレームを反転"
+msgid "Adaptive Domain"
+msgstr "適応ドメイン"
 
 
-msgid "Generate Speed Vectors"
-msgstr "速度ベクトルを生成"
+msgid "Adapt simulation resolution and size to fluid"
+msgstr "シミュレーション解像度とサイズを流体に適応させます"
 
 
-msgid "Generate speed vectors for vector blur"
-msgstr "ベクトルブラーのための速度ベクトルを生成"
+msgid "Bottom"
+msgstr "下"
 
 
-msgid "Remove Air Bubbles"
-msgstr "気泡を除去"
+msgid "Top"
+msgstr "上"
 
 
-msgid "Removes the air gap between fluid surface and obstacles - WARNING: Can result in a dissolving surface in other areas"
-msgstr ""
-"流体の表面と障害物の間のエアギャップを除去します\n"
-"（注意:他の領域で表面が消えることがあります）"
+msgid "Render a simulation field while mapping its voxels values to the colors of a ramp"
+msgstr "ボクセル値をカラーランプにマッピングし、シミュレーションフィールドをレンダリングします"
 
 
-msgid "Override Time"
-msgstr "上書き時間"
+msgid "Dissolve Smoke"
+msgstr "煙の消失"
 
 
-msgid "Use a custom start and end time (in seconds) instead of the scene's timeline"
-msgstr "シーンのタイムラインの代わりに、カスタムの開始/終了時間(秒単位)を使用します"
+msgid "Enable smoke to disappear over time"
+msgstr "時間とともに煙が消えるようにします"
 
 
-msgid "Viewport Display Mode"
-msgstr "ビュー表示モード"
+msgid "Using 1/x "
+msgstr "1/x を使用"
 
 
-msgid "How to display the mesh in the viewport"
-msgstr "ビューポートでのメッシュの表示方法"
+msgid "Tracer"
+msgstr "トレーサー"
+
+
+msgid "Display Type"
+msgstr "表示タイプ"
+
+
+msgid "Needle"
+msgstr "ニードル"
+
+
+msgid "Display vectors as needles"
+msgstr "ベクトルをトゲで表示します"
+
+
+msgid "Streamlines"
+msgstr "流線"
+
+
+msgid "Display vectors as streamlines"
+msgstr "ベクトルを流線で表示します"
+
+
+msgid "Multiplier for scaling the vectors"
+msgstr "ベクトルをスケーリングする乗数"
+
+
+msgid "Velocity Grid"
+msgstr "速度グリッド"
+
+
+msgid "Smoke velocity grid"
+msgstr "煙の速度グリッド"
 
 
 msgid "Viscosity Base"
@@ -11616,152 +11828,8 @@ msgid "Negative exponent for the viscosity value (to simplify entering small val
 msgstr "粘度値の負の指数( 5*10^-6 などの小さい値を入れて簡素化)"
 
 
-msgid "Fluid Fluid Simulation Settings"
-msgstr "流体の流体シミュレーション設定"
-
-
-msgid "Fluid simulation settings for the fluid in the simulation"
-msgstr "シミュレーション中の流体の流体シミュレーション設定"
-
-
-msgid "Initial Velocity"
-msgstr "初期速度"
-
-
-msgid "Initial velocity of fluid"
-msgstr "流体の初期速度"
-
-
-msgid "Export Animated Mesh"
-msgstr "動くメッシュを使用"
-
-
-msgid "Export this mesh as an animated one (slower and enforces No Slip, only use if really necessary [e.g. armatures or parented objects], animated pos/rot/scale F-Curves do not require it)"
-msgstr "このメッシュをアニメーションする物として出力(低速かつ強制的にスリップなしになるため、アーマチュアや親子オブジェクトなど必要な時のみ使用を推奨。Fカーブによる移動/回転/サイズ変更では不要)"
-
-
-msgid "Volume Initialization"
-msgstr "ボリュームの初期化"
-
-
-msgid "Volume initialization type (WARNING: complex volumes might require too much memory and break simulation)"
-msgstr "ボリューム初期化タイプ（注：複雑なボリュームでは大量のメモリを必要とし、シミュレーションが中断する可能性があります）"
-
-
-msgid "Use only the inner volume of the mesh"
-msgstr "メッシュの内部ボリュームのみ使用"
-
-
-msgid "Shell"
-msgstr "外殻"
-
-
-msgid "Use only the outer shell of the mesh"
-msgstr "メッシュの外殻のみ使用"
-
-
-msgid "Both"
-msgstr "両方"
-
-
-msgid "Use both the inner volume and the outer shell of the mesh"
-msgstr "メッシュの内部ボリュームと外殻の両方使用します"
-
-
-msgid "Inflow Fluid Simulation Settings"
-msgstr "流入体の流体シミュレーション設定"
-
-
-msgid "Fluid simulation settings for objects adding fluids in the simulation"
-msgstr "シミュレーションに流体を追加するオブジェクトの流体シミュレーション設定"
-
-
-msgid "Inflow Velocity"
-msgstr "流入速度"
-
-
-msgid "Local Coordinates"
-msgstr "ローカル座標"
-
-
-msgid "Use local coordinates for inflow (e.g. for rotating objects)"
-msgstr "流入にローカル座標を使用します (例えば、オブジェクトを回転させる場合など)"
-
-
-msgid "Obstacle Fluid Simulation Settings"
-msgstr "障害の流体シミュレーション設定"
-
-
-msgid "Fluid simulation settings for obstacles in the simulation"
-msgstr "シミュレーションでの障害物の流体シミュレーション設定"
-
-
-msgid "Impact Factor"
-msgstr "衝突係数"
-
-
-msgid "This is an unphysical value for moving objects - it controls the impact an obstacle has on the fluid, =0 behaves a bit like outflow (deleting fluid), =1 is default, while >1 results in high forces (can be used to tweak total mass)"
-msgstr "移動オブジェクト用の非物理的な値で、障害物が流体に与える影響をコントロールします。＝0で吸収源の様に動作(流体を削除)、＝1がデフォルト、＞1で力が大きくなります(総質量を調整するのに利用できます)"
-
-
-msgid "Outflow Fluid Simulation Settings"
-msgstr "流出口の流体シミュレーション設定"
-
-
-msgid "Fluid simulation settings for objects removing fluids from the simulation"
-msgstr "シミュレーションの流体を除去するオブジェクトの流体シミュレーション設定"
-
-
-msgid "Particle Fluid Simulation Settings"
-msgstr "パーティクルの流体シミュレーション設定"
-
-
-msgid "Fluid simulation settings for objects storing fluid particles generated by the simulation"
-msgstr "シミュレーションで生成した流体パーティクルを格納するオブジェクトの流体シミュレーション設定"
-
-
-msgid "Alpha Influence"
-msgstr "アルファ影響力"
-
-
-msgid "Amount of particle alpha change, inverse of size influence: 0=off (all same alpha), 1=full (larger particles get lower alphas, smaller ones higher values)"
-msgstr "パーティクルアルファ変化の量。サイズ影響の逆数: 0=オフ(全て同じアルファ), 1=フル(大きなパーティクルは低アルファ、小さいものは高アルファ)"
-
-
-msgid "Directory (and/or filename prefix) to store and load particles from"
-msgstr "パーティクルを読み込み、描くためのディレクトリー(および/または ファイル名接頭辞)"
-
-
-msgid "Particle Influence"
-msgstr "パーティクルの影響"
-
-
-msgid "Amount of particle size scaling: 0=off (all same size), 1=full (range 0.2-2.0), >1=stronger"
-msgstr "パーティクルサイズのスケーリング量: 0=オフ(全て同じサイズ), 1=通常(0.2～2.0の範囲), >1=より強い"
-
-
-msgid "Tracer"
-msgstr "トレーサー"
-
-
-msgid "Show tracer particles"
-msgstr "トレーサーパーティクルを表示します"
-
-
-msgid "Drops"
-msgstr "しずく"
-
-
-msgid "Show drop particles"
-msgstr "飛沫パーティクルを表示"
-
-
-msgid "Floats"
-msgstr "浮遊物"
-
-
-msgid "Show floating foam particles"
-msgstr "浮遊する泡パーティクルを表示します"
+msgid "Amount of turbulence/rotation in fluid"
+msgstr "煙の渦/回転量"
 
 
 msgid "Fluid Mesh Velocity"
@@ -11770,6 +11838,174 @@ msgstr "流体メッシュの速度"
 
 msgid "Velocity of a simulated fluid mesh"
 msgstr "シミュレートした流体メッシュの速度"
+
+
+msgid "Smoke collision settings"
+msgstr "煙の衝突設定"
+
+
+msgid "Collision"
+msgstr "コリジョン"
+
+
+msgid "Guide"
+msgstr "ガイド"
+
+
+msgid "Maximize"
+msgstr "最大化"
+
+
+msgid "Override"
+msgstr "オーバーライド"
+
+
+msgid "Flow Settings"
+msgstr "フロー設定"
+
+
+msgid "Vertex Group"
+msgstr "頂点グループ"
+
+
+msgid "Name of vertex group which determines surface emission rate"
+msgstr "サーフェスでの発生率を決定する頂点グループ名"
+
+
+msgid "Outflow"
+msgstr "流出口"
+
+
+msgid "Flow Type"
+msgstr "フロータイプ"
+
+
+msgid "Add smoke"
+msgstr "煙を追加します"
+
+
+msgid "Fire + Smoke"
+msgstr "火炎＋煙"
+
+
+msgid "Add fire and smoke"
+msgstr "火炎と煙を追加します"
+
+
+msgid "Fire"
+msgstr "火炎"
+
+
+msgid "Add fire"
+msgstr "火炎を追加します"
+
+
+msgid "Flame Rate"
+msgstr "炎の割合"
+
+
+msgid "Texture that controls emission strength"
+msgstr "発生の強さをコントロールするテクスチャ"
+
+
+msgid "Particle size in simulation cells"
+msgstr "シミュレーションセル内のパーティクルサイズ"
+
+
+msgid "Particle systems emitted from the object"
+msgstr "このオブジェクトから発生するパーティクルのシステム"
+
+
+msgid "Color of smoke"
+msgstr "煙の色"
+
+
+msgid "Subframes"
+msgstr "サブフレーム"
+
+
+msgid "Number of additional samples to take between frames to improve quality of fast moving flows"
+msgstr "高速に動くフローの品質を改善するためにフレーム間で取得する、追加のサンプル数"
+
+
+msgid "Temp. Diff."
+msgstr "温度差"
+
+
+msgid "Temperature difference to ambient temperature"
+msgstr "周囲の温度との差"
+
+
+msgid "Mapping"
+msgstr "マッピング"
+
+
+msgid "Texture mapping type"
+msgstr "テクスチャマッピングタイプ"
+
+
+msgid "Generated"
+msgstr "生成"
+
+
+msgid "Generated coordinates centered to flow object"
+msgstr "フローオブジェクトを中心とした生成座標"
+
+
+msgid "Use UV layer for texture coordinates"
+msgstr "テクスチャ座標にUVレイヤーを使用します"
+
+
+msgid "Z-offset of texture mapping"
+msgstr "テクスチャマッピングのZオフセット"
+
+
+msgid "Size of texture mapping"
+msgstr "テクスチャマッピングサイズ"
+
+
+msgid "Absolute Density"
+msgstr "絶対密度"
+
+
+msgid "Initial Velocity"
+msgstr "初期速度"
+
+
+msgid "Set Size"
+msgstr "サイズを設定"
+
+
+msgid "Set particle size in simulation cells or use nearest cell"
+msgstr "シミュレーションセル内のパーティクルサイズを設定、または最も近いセルを使用します"
+
+
+msgid "Use Texture"
+msgstr "テクスチャで使用"
+
+
+msgid "Use a texture to control emission strength"
+msgstr "発生の強さをコントロールするのにテクスチャを使用します"
+
+
+msgid "Initial"
+msgstr "初期"
+
+
+msgid "Normal"
+msgstr "ノーマル"
+
+
+msgid "Amount of normal directional velocity"
+msgstr "法線方向の速度の量"
+
+
+msgid "Amount of random velocity"
+msgstr "ランダム速度の量"
+
+
+msgid "Factor for smoke emitted from inside the mesh volume"
+msgstr "メッシュボリューム内部から発生した煙の係数"
 
 
 msgid "Freestyle Line Set"
@@ -11980,16 +12216,8 @@ msgid "Line set name"
 msgstr "ラインセット名"
 
 
-msgid "End"
-msgstr "終了"
-
-
 msgid "Last QI value of the QI range"
 msgstr "QI範囲の最後のQI値"
-
-
-msgid "Start"
-msgstr "開始"
 
 
 msgid "First QI value of the QI range"
@@ -12408,10 +12636,6 @@ msgid "Quadratic easing"
 msgstr "二次イージング"
 
 
-msgid "Cubic"
-msgstr "三次式"
-
-
 msgid "Cubic easing"
 msgstr "三次イージング"
 
@@ -12680,10 +12904,6 @@ msgid "Draw the points which make up the strokes (for debugging purposes)"
 msgstr "ストロークを構成する点を描画します(デバッグ用)"
 
 
-msgid "Thickness"
-msgstr "幅"
-
-
 msgid "Thickness of annotation strokes"
 msgstr "アノテーションのストロークの幅"
 
@@ -12768,10 +12988,6 @@ msgstr "ブラシにエフェクトを追加"
 
 msgid "Subtract effect of brush"
 msgstr "ブラシの効果を差し引きます"
-
-
-msgid "Radius"
-msgstr "半径"
 
 
 msgid "Radius of the brush in pixels"
@@ -12924,10 +13140,6 @@ msgstr "グリースペンシルストローク用スカルプトツールのプ
 
 msgid "Brush"
 msgstr "ブラシ"
-
-
-msgid "Guide"
-msgstr "ガイド"
 
 
 msgid "Threshold for stroke intersections"
@@ -13730,10 +13942,6 @@ msgid "Bind vertex groups to armature modifier"
 msgstr "アーマチュアモディファイアーに頂点グループを関連付けます"
 
 
-msgid "Vertex Group"
-msgstr "頂点グループ"
-
-
 msgid "Name of Vertex Group which determines influence of modifier per point"
 msgstr "ポイント毎のモディファイアーの影響を決定する頂点グループ名"
 
@@ -13990,6 +14198,10 @@ msgstr "色相"
 
 msgid "Set what colors of the stroke are affected"
 msgstr "ストロークのどの色が影響を受けるかを設定します"
+
+
+msgid "Both"
+msgstr "両方"
 
 
 msgid "Modify fill and stroke colors"
@@ -14582,18 +14794,6 @@ msgid "Red Green Blue"
 msgstr "赤緑青"
 
 
-msgid "Red"
-msgstr "赤"
-
-
-msgid "Green"
-msgstr "緑"
-
-
-msgid "Blue"
-msgstr "青"
-
-
 msgid "Show Line"
 msgstr "行を表示"
 
@@ -14741,10 +14941,6 @@ msgstr "このデータブロックのアニメーションデータ"
 
 msgid "Bones"
 msgstr "ボーン"
-
-
-msgid "Display Type"
-msgstr "表示タイプ"
 
 
 msgid "Octahedral"
@@ -15722,10 +15918,6 @@ msgid "When locked keep using the plane origin of surface where stroke was initi
 msgstr "ロック時、ストローク開始位置の表面のオリジナル平面を使用し続けます"
 
 
-msgid "Antialasing"
-msgstr "アンチエイリアシング"
-
-
 msgid "Smooths the edges of the strokes"
 msgstr "ストロークのふちをスムーズにします"
 
@@ -15736,10 +15928,6 @@ msgstr "スカルプトで使用"
 
 msgid "Use this brush in grease pencil drawing mode"
 msgstr "このブラシをグリースペンシルドローモードで使用します"
-
-
-msgid "Use Texture"
-msgstr "テクスチャで使用"
 
 
 msgid "Use this brush in texture paint mode"
@@ -15832,22 +16020,6 @@ msgstr "テクスチャのオーバーレイを使用"
 
 msgid "Show texture in viewport"
 msgstr "ビューポートにテクスチャを表示します"
-
-
-msgid "2D Falloff"
-msgstr "2Dの減衰"
-
-
-msgid "Apply brush influence in 2D circle instead of a sphere"
-msgstr "ブラシの影響度を球状ではなく、2Dの円で適用します"
-
-
-msgid "Absolute Jitter"
-msgstr "絶対ジッター"
-
-
-msgid "Jittering happens in screen space, not relative to brush size"
-msgstr "ブラシサイズの相対ではなく、スクリーン空間でずらします"
 
 
 msgid "Restore Mesh"
@@ -16710,20 +16882,12 @@ msgid "Align to top but use the base-line of the text"
 msgstr "上揃えですが、テキストのベースラインを使用します"
 
 
-msgid "Top"
-msgstr "上"
-
-
 msgid "Align text to the top"
 msgstr "テキストを上揃えします"
 
 
 msgid "Align text to the middle"
 msgstr "テキストを中揃えします"
-
-
-msgid "Bottom"
-msgstr "下"
 
 
 msgid "Align text to the bottom"
@@ -18036,10 +18200,6 @@ msgid "Generated grid to test UV mappings"
 msgstr "UVマッピングをテストする生成グリッド"
 
 
-msgid "Color Grid"
-msgstr "カラーグリッド"
-
-
 msgid "Generated improved UV grid to test UV mappings"
 msgstr "UVマッピングをテストするのに生成された改良UVグリッド"
 
@@ -18156,10 +18316,6 @@ msgid "Movie file"
 msgstr "動画ファイル"
 
 
-msgid "Generated"
-msgstr "生成"
-
-
 msgid "Generated image"
 msgstr "生成された画像"
 
@@ -18170,6 +18326,10 @@ msgstr "ビューアー"
 
 msgid "Compositing node viewer"
 msgstr "コンポジティングノードビュアー"
+
+
+msgid "Tiled"
+msgstr "タイル状"
 
 
 msgid "Stereo 3D Format"
@@ -18810,10 +18970,6 @@ msgid "Type of parallax volume"
 msgstr "視差ボリュームのタイプ"
 
 
-msgid "Clipping"
-msgstr "クリッピング"
-
-
 msgid "Show the clipping distances in the 3D view"
 msgstr "3Dビューにクリッピング距離を表示します"
 
@@ -19080,6 +19236,10 @@ msgstr "シェーダーボール"
 
 msgid "Cloth"
 msgstr "クロス"
+
+
+msgid "Fluid"
+msgstr "流体"
 
 
 msgid "Refraction Depth"
@@ -20361,10 +20521,6 @@ msgid "Indices of vertices in case of a vertex parenting relation"
 msgstr "頂点ペアレントの場合の頂点インデックス番号"
 
 
-msgid "Particle systems emitted from the object"
-msgstr "このオブジェクトから発生するパーティクルのシステム"
-
-
 msgid "Index number for the \"Object Index\" render pass"
 msgstr "「オブジェクトインデックス」レンダーパス用のインデックス番号"
 
@@ -20889,10 +21045,6 @@ msgid "Maximum length of the particle color vector"
 msgstr "パーティクルのカラーベクトルの最大長"
 
 
-msgid "Number"
-msgstr "数"
-
-
 msgid "Total number of particles"
 msgstr "パーティクルの総数"
 
@@ -21239,10 +21391,6 @@ msgid "Dummy"
 msgstr "ダミー"
 
 
-msgid "Normal"
-msgstr "ノーマル"
-
-
 msgid "Let the surface normal give the particle a starting velocity"
 msgstr "面の法線がパーティクルの初期速度に影響します"
 
@@ -21261,6 +21409,10 @@ msgstr "オブジェクトの速度"
 
 msgid "Let the object give the particle a starting velocity"
 msgstr "オブジェクトの動きがパーティクルの初期速度に影響します"
+
+
+msgid "Particle"
+msgstr "パーティクル"
 
 
 msgid "Let the target particle give the particle a starting velocity"
@@ -21329,10 +21481,6 @@ msgstr "対象パーティクルの反応するイベント"
 
 msgid "Death"
 msgstr "消滅"
-
-
-msgid "Collision"
-msgstr "コリジョン"
 
 
 msgid "Reactor"
@@ -21511,10 +21659,6 @@ msgid "Give the particle size a random variation"
 msgstr "パーティクルのサイズにランダムな変化を与えます"
 
 
-msgid "Subframes"
-msgstr "サブフレーム"
-
-
 msgid "Subframes to simulate for improved stability and finer granularity simulations (dt = timestep / (subframes + 1))"
 msgstr "安定性とシミュレーション精度を向上するシミュレーションサブフレーム（dt = タイムステップ / (サブフレーム＋1)）"
 
@@ -21573,10 +21717,6 @@ msgstr "ツイストを設定するカーブ"
 
 msgid "Particle Type"
 msgstr "パーティクルタイプ"
-
-
-msgid "Emitter"
-msgstr "エミッター"
 
 
 msgid "Absolute Path Time"
@@ -22247,10 +22387,6 @@ msgstr "アニメーション再生"
 
 msgid "Animation playback is active"
 msgstr "アニメーションの再生がアクティブ"
-
-
-msgid "Maximize"
-msgstr "最大化"
 
 
 msgid "An area is maximized, filling this screen"
@@ -23881,10 +24017,6 @@ msgid "The solver does not reiterate, not even on first frame (starts from rest 
 msgstr "ソルバーは最初のフレームで反復しません (レストポーズから始めます)"
 
 
-msgid "Initial"
-msgstr "初期"
-
-
 msgid "The solver reiterates (converges) on the first frame but not on subsequent frame"
 msgstr "ソルバーは最初のフレームで反復 (収束) し、後続のフレームでは反復 (収束) しません"
 
@@ -24013,10 +24145,6 @@ msgstr "画像を RGB で保存します"
 
 msgid "Images are saved with RGB and Alpha data (if supported)"
 msgstr "画像をRGBA で保存します (サポートされているフォーマットなら)"
-
-
-msgid "Compression"
-msgstr "圧縮"
 
 
 msgid "Amount of time to determine best compression: 0 = no compression with fast file output, 100 = maximum lossless compression with slow file output"
@@ -26227,10 +26355,6 @@ msgid "Invert the fade-out direction of the linear mapping"
 msgstr "リニアマッピングのフェードアウト方向を反転します"
 
 
-msgid "Mapping"
-msgstr "マッピング"
-
-
 msgid "Select the mapping type"
 msgstr "マッピングタイプを選択します"
 
@@ -27538,10 +27662,6 @@ msgid "Marker Settings"
 msgstr "マーカー設定"
 
 
-msgid "Set Handle Type"
-msgstr "ハンドルタイプを設定"
-
-
 msgid "Pivot Point"
 msgstr "ピボットポイント"
 
@@ -27614,10 +27734,6 @@ msgid "Dope Sheet Context Menu"
 msgstr "ドープシートコンテクストメニュー"
 
 
-msgid "Delete"
-msgstr "削除"
-
-
 msgid "Key"
 msgstr "キー"
 
@@ -27632,6 +27748,10 @@ msgstr "ブックマーク専用メニュー"
 
 msgid "Files Context Menu"
 msgstr "ファイルコンテクストメニュー"
+
+
+msgid "Fluid Presets"
+msgstr "流体のプリセット"
 
 
 msgid "Clean Up"
@@ -28965,10 +29085,6 @@ msgid "Explode"
 msgstr "爆発"
 
 
-msgid "Fluid Simulation"
-msgstr "流体シミュレーション"
-
-
 msgid "Ocean"
 msgstr "海洋"
 
@@ -28977,8 +29093,8 @@ msgid "Particle Instance"
 msgstr "パーティクルインスタンス"
 
 
-msgid "Smoke"
-msgstr "煙"
+msgid "Fluid Simulation"
+msgstr "流体シミュレーション"
 
 
 msgid "Soft Body"
@@ -30393,16 +30509,12 @@ msgid "Use particle size for the shrapnel"
 msgstr "破片のためにパーティクルの大きさを使用します"
 
 
-msgid "Fluid Simulation Modifier"
-msgstr "流体シミュレーションモディファイアー"
-
-
 msgid "Fluid simulation modifier"
 msgstr "流体シミュレーションモディファイアー"
 
 
-msgid "Settings for how this object is used in the fluid simulation"
-msgstr "このオブジェクトを流体シミュレーションでどのように使うかの設定です"
+msgid "Inflow/Outflow"
+msgstr "発生源/流出口"
 
 
 msgid "Hook modifier to modify the location of vertices"
@@ -30591,10 +30703,6 @@ msgstr "再生時間をコントロールする方法"
 
 msgid "Control playback using a frame-number (ignoring time FPS and start frame from the file)"
 msgstr "フレーム数で再生をコントロールします（FPSとファイルの開始フレームを無視します）"
-
-
-msgid "Time"
-msgstr "時間"
 
 
 msgid "Control playback using time in seconds"
@@ -31544,26 +31652,6 @@ msgstr "Y軸を通る非対称の四角形面ができるのを防ぎます"
 
 msgid "Avoid making unsymmetrical quads across the Z axis"
 msgstr "Z軸と交わる非対称の四角形ができるのを防ぎます"
-
-
-msgid "Smoke Modifier"
-msgstr "煙モディファイアー"
-
-
-msgid "Smoke simulation modifier"
-msgstr "煙をシミュレーションするモディファイアーです"
-
-
-msgid "Domain Settings"
-msgstr "ドメイン設定"
-
-
-msgid "Flow Settings"
-msgstr "フロー設定"
-
-
-msgid "Inflow/Outflow"
-msgstr "発生源/流出口"
 
 
 msgid "Soft Body Modifier"
@@ -33505,10 +33593,6 @@ msgid "Interpolation to use for sub-pixel shifts and rotations due to stabilizat
 msgstr "スタビライゼーションのためにサブピクセルのシフトと回転に使用される補間"
 
 
-msgid "Nearest"
-msgstr "最も近い"
-
-
 msgid "No interpolation, use nearest neighbor pixel"
 msgstr "補間せず、一番近いピクセルを使用します"
 
@@ -34339,10 +34423,6 @@ msgstr "アルゴリズム"
 
 msgid "Algorithm to use to limit channel"
 msgstr "チャンネルを制限するのに使うアルゴリズム"
-
-
-msgid "Single"
-msgstr "シングル"
 
 
 msgid "Limit by single channel"
@@ -36889,10 +36969,6 @@ msgstr "位置や色だけでなく、二番目に近い場所との距離も計
 
 msgid "Smooth F1"
 msgstr "F1をスムーズに"
-
-
-msgid "Smoothed version of F1. Weighted sum of neighbour voronoi cells"
-msgstr "F1のバージョンをスムージングします。近隣のボロノイセルの合計で重み付けされます"
 
 
 msgid "Distance To Edge"
@@ -41440,10 +41516,6 @@ msgid "Time Slide"
 msgstr "タイムスライド"
 
 
-msgid "Time Scale"
-msgstr "タイムスケール"
-
-
 msgid "Time Extend"
 msgstr "タイムエクステンド"
 
@@ -43581,15 +43653,6 @@ msgstr "Blenderライブラリのパック解除"
 
 msgid "Unpack all used Blender library files from this .blend file"
 msgstr "この.blendファイルで使用されているBlenderライブラリをすべてパック解除します"
-
-
-msgctxt "Operator"
-msgid "Fluid Simulation Bake"
-msgstr "流体シミュレーションのベイク"
-
-
-msgid "Bake fluid simulation"
-msgstr "流体シミュレーションをベイクします"
 
 
 msgctxt "Operator"
@@ -52816,43 +52879,6 @@ msgstr "外側への速度"
 
 
 msgctxt "Operator"
-msgid "Quick Fluid"
-msgstr "クイック流体"
-
-
-msgid "Use selected objects in a fluid simulation"
-msgstr "選択中のオブジェクトを流体シミュレーションに使用します"
-
-
-msgid "Initial velocity of the fluid"
-msgstr "流体の初期速度"
-
-
-msgid "Render Fluid Objects"
-msgstr "流体オブジェクトをレンダリング"
-
-
-msgid "Keep the fluid objects visible during rendering"
-msgstr "レンダリング中も流体オブジェクトを表示します"
-
-
-msgid "Start Fluid Bake"
-msgstr "流体のベイクを開始"
-
-
-msgid "Start baking the fluid immediately after creating the domain object"
-msgstr "ドメインオブジェクトを作成したすぐ後に流体ベイク開始"
-
-
-msgid "Fluid Style"
-msgstr "流体スタイル"
-
-
-msgid "Basic"
-msgstr "基本"
-
-
-msgctxt "Operator"
 msgid "Quick Fur"
 msgstr "クイック毛皮"
 
@@ -52863,10 +52889,6 @@ msgstr "選択中のオブジェクトに毛の設定を追加します"
 
 msgid "Fur Density"
 msgstr "毛皮の密度"
-
-
-msgid "Heavy"
-msgstr "ヘビー"
 
 
 msgid "View %"
@@ -52892,10 +52914,6 @@ msgstr "レンダリング時に煙オブジェクトを表示します"
 
 msgid "Smoke Style"
 msgstr "煙のタイプ"
-
-
-msgid "Fire"
-msgstr "火炎"
 
 
 msgid "Smoke + Fire"
@@ -56908,10 +56926,6 @@ msgstr "質量を計算"
 
 msgid "Automatically calculate mass values for Rigid Body Objects based on volume"
 msgstr "体積を元に、自動的にリジッドボディオブジェクト用の質量値を計算します"
-
-
-msgid "Density"
-msgstr "密度"
 
 
 msgid "Custom density value (kg/m^3) to use instead of material preset"
@@ -64959,10 +64973,6 @@ msgid "Shutter Curve"
 msgstr "シャッターカーブ"
 
 
-msgid "Override"
-msgstr "オーバーライド"
-
-
 msgid "Passes"
 msgstr "パス"
 
@@ -65121,10 +65131,6 @@ msgstr "属性"
 
 msgid "Directory Path"
 msgstr "ディレクトリパス"
-
-
-msgid "Fluid Presets"
-msgstr "流体のプリセット"
 
 
 msgid "Active Tool"
@@ -65444,6 +65450,10 @@ msgid "Timing"
 msgstr "タイミング"
 
 
+msgid "Border Collisions"
+msgstr "ボーダーコリジョン"
+
+
 msgid "Collisions"
 msgstr "コリジョン"
 
@@ -65466,10 +65476,6 @@ msgstr "セルフコリジョン"
 
 msgid "Softbody And Cloth"
 msgstr "ソフトボディとクロス"
-
-
-msgid "Viscosity"
-msgstr "粘度"
 
 
 msgid "Falloff Ramp"
@@ -65496,6 +65502,14 @@ msgid "Force Fields"
 msgstr "フォースフィールド"
 
 
+msgid "Flow Source"
+msgstr "フローソース"
+
+
+msgid "Guides"
+msgstr "ガイド"
+
+
 msgid "Surface Response"
 msgstr "表面の反応"
 
@@ -65510,30 +65524,6 @@ msgstr "力学処理"
 
 msgid "Deactivation"
 msgstr "非アクティブ化"
-
-
-msgid "Adaptive Domain"
-msgstr "適応ドメイン"
-
-
-msgid "Behavior"
-msgstr "挙動"
-
-
-msgid "Flames"
-msgstr "炎"
-
-
-msgid "High Resolution"
-msgstr "高解像度"
-
-
-msgid "Particle Size"
-msgstr "パーティクルサイズ"
-
-
-msgid "Debug Velocity"
-msgstr "デバッグ用速度"
 
 
 msgid "Self Collision"
@@ -65554,6 +65544,10 @@ msgstr "診断"
 
 msgid "Helpers"
 msgstr "ヘルパー"
+
+
+msgid "Debug Velocity"
+msgstr "デバッグ用速度"
 
 
 msgid "Creates a Panel in the Render Layers context of the properties editor"
@@ -65974,10 +65968,6 @@ msgid "Draw Context Menu"
 msgstr "ドローコンテクストメニュー"
 
 
-msgid "Guides"
-msgstr "ガイド"
-
-
 msgid "Drawing Plane"
 msgstr "ドロー平面"
 
@@ -66036,10 +66026,6 @@ msgstr "分析"
 
 msgid "Quad View"
 msgstr "四分割表示"
-
-
-msgid "Unified Brush"
-msgstr "ブラシ共通"
 
 
 msgid "Shadow Settings"
@@ -66362,16 +66348,8 @@ msgid "Post-Processing"
 msgstr "ポストプロセッシング"
 
 
-msgid "Stabilize"
-msgstr "安定化"
-
-
 msgid "Sculpt Strokes"
 msgstr "ストロークスカルプト"
-
-
-msgid "Particle tools"
-msgstr "パーティクルツール"
 
 
 msgid "Default tools for particle mode"
@@ -67154,40 +67132,12 @@ msgid "Active point cache for physics simulations"
 msgstr "物理シミュレーション用アクティブポイントキャッシュ"
 
 
-msgid "Cache Compression"
-msgstr "キャッシュを圧縮"
-
-
-msgid "Compression method to be used"
-msgstr "使用される圧縮方法"
-
-
 msgid "No compression"
 msgstr "圧縮なし"
 
 
-msgid "Lite"
-msgstr "軽量"
-
-
-msgid "Fast but not so effective compression"
-msgstr "高速ですが圧縮が効率的ではありません"
-
-
-msgid "Effective but slow compression"
-msgstr "高効率で遅い圧縮"
-
-
 msgid "Cache file path"
 msgstr "キャッシュのファイルパス"
-
-
-msgid "Frame on which the simulation stops"
-msgstr "シミュレーション終了フレームを指定します"
-
-
-msgid "Frame on which the simulation starts"
-msgstr "シミュレーション開始フレームを指定します"
 
 
 msgid "Cache Step"
@@ -67606,6 +67556,10 @@ msgid "File Paths"
 msgstr "ファイルパス"
 
 
+msgid "Experimental"
+msgstr "実験的"
+
+
 msgid "Application Template"
 msgstr "アプリケーションテンプレート"
 
@@ -67620,10 +67574,6 @@ msgstr "編集"
 
 msgid "Settings for interacting with Blender data"
 msgstr "Blenderデータを操作するための設定"
-
-
-msgid "Experimental"
-msgstr "実験的"
 
 
 msgid "Default paths for external files"
@@ -70051,14 +70001,6 @@ msgid "Interpolation method to use for smoke/fire volumes"
 msgstr "煙・火炎のボリュームに使用される補間方法"
 
 
-msgid "Good smoothness and speed"
-msgstr "スムーズさと速度のバランスが良好"
-
-
-msgid "Smoothed high quality interpolation, but slower"
-msgstr "低速だがスムーズで高品質な補間"
-
-
 msgid "Volume Sampling"
 msgstr "ボリュームサンプリング"
 
@@ -72328,10 +72270,6 @@ msgid "Layers Blending"
 msgstr "レイヤーのブレンド"
 
 
-msgid "Do not display blend layers"
-msgstr "ブレンドレイヤーを表示しません"
-
-
 msgid "Simplify Playback"
 msgstr "再生を簡略化"
 
@@ -72344,40 +72282,16 @@ msgid "Disable Lines"
 msgstr "ラインを無効化"
 
 
-msgid "Disable external lines of fill strokes"
-msgstr "フィルストロークの外側のラインを無効にします"
-
-
 msgid "Simplify Shaders"
 msgstr "シェーダーを簡略化"
-
-
-msgid "Do not apply shader fx"
-msgstr "シェーダーFXを適用しません"
 
 
 msgid "Layers Tinting"
 msgstr "レイヤーのチント"
 
 
-msgid "Do not display layer tint"
-msgstr "レイヤーチントを表示しません"
-
-
-msgid "Disable Fill"
-msgstr "フィルを無効化"
-
-
-msgid "Disable fill strokes in the viewport"
-msgstr "ビューポートでフィルストロークを無効にします"
-
-
 msgid "Disable Modifiers"
 msgstr "モディファイアーを無効化"
-
-
-msgid "Do not apply modifiers in the viewport"
-msgstr "ビューポートでモディファイアーを適用しません"
 
 
 msgid "Simplify Subdivision"
@@ -72514,10 +72428,6 @@ msgstr "レンダリングしたファイルの名前にファイルフォーマ
 
 msgid "Draw stylized strokes using Freestyle"
 msgstr "Freestyleを使用し、ストロークを描画します"
-
-
-msgid "Full Sample"
-msgstr "フルサンプル"
 
 
 msgid "Save for every anti-aliasing sample the entire RenderLayer results (this solves anti-aliasing issues with compositing)"
@@ -73396,10 +73306,6 @@ msgid "Settings for particle fluids physics"
 msgstr "流体物理演算のパーティクルの設定"
 
 
-msgid "Buoyancy"
-msgstr "浮力"
-
-
 msgid "Artificial buoyancy force in negative gravity direction based on pressure differences inside the fluid"
 msgstr "流体内部の圧力の違いを元にした、負の重力方向での人工の浮力"
 
@@ -73410,6 +73316,10 @@ msgstr "相互作用半径"
 
 msgid "Fluid interaction radius"
 msgstr "流体の相互作用半径"
+
+
+msgid "Viscosity"
+msgstr "粘度"
 
 
 msgid "Linear viscosity"
@@ -74452,6 +74362,10 @@ msgstr "入力を浮動小数点数データに変換します"
 
 msgid "Use a preview proxy and/or timecode index for this strip"
 msgstr "このストリップにプレビュープロキシまたはタイムコードインデックスを使用します"
+
+
+msgid "Reverse Frames"
+msgstr "フレームを反転"
 
 
 msgid "Reverse frame order"
@@ -75855,664 +75769,6 @@ msgid "Point in a shape key"
 msgstr "シェイプキーの制御点"
 
 
-msgid "Smoke collision settings"
-msgstr "煙の衝突設定"
-
-
-msgid "Collision Type"
-msgstr "コリジョンタイプ"
-
-
-msgid "Collision type"
-msgstr "コリジョンのタイプ"
-
-
-msgid "Static"
-msgstr "固定"
-
-
-msgid "Non moving obstacle"
-msgstr "移動しない障害物"
-
-
-msgid "Rigid"
-msgstr "剛体"
-
-
-msgid "Rigid obstacle"
-msgstr "リジッドボディの障害物"
-
-
-msgid "Animated"
-msgstr "アニメ"
-
-
-msgid "Animated obstacle"
-msgstr "動く障害物"
-
-
-msgid "Smoke domain settings"
-msgstr "煙のドメイン設定"
-
-
-msgid "Margin added around fluid to minimize boundary interference"
-msgstr "衝突境界を最小限に留める、流体の周囲に追加されるマージン"
-
-
-msgid "Maximum amount of fluid cell can contain before it is considered empty"
-msgstr "流体セルが空と見なされる前に収容できる最大量"
-
-
-msgid "Additional"
-msgstr "追加"
-
-
-msgid "Maximum number of additional cells"
-msgstr "追加するセルの最大数"
-
-
-msgid "How much density affects smoke motion (higher value results in faster rising smoke)"
-msgstr "煙の動きに密度が影響する量（高い値で速く煙が上昇）"
-
-
-msgid "Amplification"
-msgstr "増幅"
-
-
-msgid "Enhance the resolution of smoke by this factor using noise"
-msgstr "ノイズを使用し、この係数で煙の解像度を増加します"
-
-
-msgid "Slice the whole domain object"
-msgstr "ドメインオブジェクト全体をスライスします"
-
-
-msgid "Perform a single slice of the domain object"
-msgstr "ドメインオブジェクトのスライスを一回だけ実行します"
-
-
-msgid "Heat"
-msgstr "ヒート"
-
-
-msgid "How much heat affects smoke motion (higher value results in faster rising smoke)"
-msgstr "煙の動きにヒートが影響する量（高い値で速く煙が上昇）"
-
-
-msgid "Speed of the burning reaction (use larger values for smaller flame)"
-msgstr "燃焼反応の早さ（大きい値で小さな炎になります）"
-
-
-msgid "Select the file format to be used for caching"
-msgstr "キャッシュに使用するファイルフォーマットの選択"
-
-
-msgid "Blender specific point cache file format"
-msgstr "Blender専用のポイントキャッシュフォーマット"
-
-
-msgid "OpenVDB"
-msgstr "OpenVDB"
-
-
-msgid "OpenVDB file format"
-msgstr "OpenVDB ファイル形式"
-
-
-msgid "Cell Size"
-msgstr "セルサイズ"
-
-
-msgid "Value under which voxels are considered empty space to optimize caching and rendering"
-msgstr ""
-"キャッシュやレンダリングを最適化するため\n"
-"値より下のボクセルを空の空間と見なします"
-
-
-msgid "Field"
-msgstr "フィールド"
-
-
-msgid "Simulation field to color map"
-msgstr "カラーマップするシミュレーションフィールド"
-
-
-msgid "Red component of the color field"
-msgstr "カラーフィールドの赤成分"
-
-
-msgid "Green component of the color field"
-msgstr "カラーフィールドの緑成分"
-
-
-msgid "Blue component of the color field"
-msgstr "カラーフィールドの青成分"
-
-
-msgid "Quantity of soot in the fluid"
-msgstr "流体中の煤煙の量"
-
-
-msgid "Flame"
-msgstr "炎"
-
-
-msgid "Flame field"
-msgstr "炎フィールド"
-
-
-msgid "Fuel"
-msgstr "燃料"
-
-
-msgid "Fuel field"
-msgstr "燃料フィールド"
-
-
-msgid "Temperature of the fluid"
-msgstr "流体の温度"
-
-
-msgid "X Velocity"
-msgstr "X速度"
-
-
-msgid "X component of the velocity field"
-msgstr "速度フィールドの X 成分"
-
-
-msgid "Y Velocity"
-msgstr "Y速度"
-
-
-msgid "Y component of the velocity field"
-msgstr "速度フィールドの Y 成分"
-
-
-msgid "Z Velocity"
-msgstr "Z速度"
-
-
-msgid "Z component of the velocity field"
-msgstr "速度フィールドの Z 成分"
-
-
-msgid "Limit collisions to this collection"
-msgstr "衝突判定をこのコレクションに限定します"
-
-
-msgid "Border Collisions"
-msgstr "ボーダーコリジョン"
-
-
-msgid "Select which domain border will be treated as collision object"
-msgstr "衝突物として処理されるドメイン境界"
-
-
-msgid "Smoke doesn't collide with any border"
-msgstr "煙がどの境界とも衝突しません"
-
-
-msgid "Vertically Open"
-msgstr "上下のみ開放"
-
-
-msgid "Smoke doesn't collide with top and bottom sides"
-msgstr "領域の上下に煙が衝突しません"
-
-
-msgid "Collide All"
-msgstr "完全に閉鎖"
-
-
-msgid "Smoke collides with every side"
-msgstr "煙が全ての面と衝突します"
-
-
-msgid "Smoke color grid"
-msgstr "煙の色グリッド"
-
-
-msgid "Data Depth"
-msgstr "データ深度"
-
-
-msgid "Bit depth for writing all scalar (including vector) lower values reduce file size"
-msgstr "全スカラー（ベクトルを含む）出力用のビット深度。低い値でファイルサイズを低減できます"
-
-
-msgid "Float (Half)"
-msgstr "Float型（ハーフ）"
-
-
-msgid "Half float (16 bit data)"
-msgstr "ハーフ浮動小数点数（16ビットデータ）"
-
-
-msgid "Float (Full)"
-msgstr "Float型（フル）"
-
-
-msgid "Full float (32 bit data)"
-msgstr "フル浮動小数点数（32ビットデータ）"
-
-
-msgid "Density Grid"
-msgstr "密度グリッド"
-
-
-msgid "Smoke density grid"
-msgstr "煙の密度グリッド"
-
-
-msgid "Interpolation method to use for smoke/fire volumes in solid mode"
-msgstr "ソリッドモードで煙・火炎のボリュームに使用される補間方法"
-
-
-msgid "Thickness of smoke drawing in the viewport"
-msgstr "ビューに描く煙の厚さ"
-
-
-msgid "Dissolve Speed"
-msgstr "消滅速度"
-
-
-msgid "res"
-msgstr "解像度"
-
-
-msgid "Smoke Grid Resolution"
-msgstr "煙のグリッドの解像度"
-
-
-msgid "Flame Grid"
-msgstr "炎グリッド"
-
-
-msgid "Smoke flame grid"
-msgstr "煙の炎グリッド"
-
-
-msgid "Ignition"
-msgstr "発火点"
-
-
-msgid "Minimum temperature of flames"
-msgstr "炎の最小温度"
-
-
-msgid "Maximum temperature of flames"
-msgstr "炎の最大温度"
-
-
-msgid "Amount of smoke created by burning fuel"
-msgstr "燃える燃料によって作り出される煙の量"
-
-
-msgid "Smoke Color"
-msgstr "煙の色"
-
-
-msgid "Color of smoke emitted from burning fuel"
-msgstr "燃える燃料からの発生する煙の色"
-
-
-msgid "Vorticity"
-msgstr "渦度"
-
-
-msgid "Additional vorticity for the flames"
-msgstr "炎の追加の渦"
-
-
-msgid "Fluid Collection"
-msgstr "流体のコレクション"
-
-
-msgid "Limit fluid objects to this collection"
-msgstr "流体オブジェクトをコレクションに限定します"
-
-
-msgid "Heat Grid"
-msgstr "ヒートグリッド"
-
-
-msgid "Smoke heat grid"
-msgstr "煙の温度グリッド"
-
-
-msgid "Method for sampling the high resolution flow"
-msgstr "高解像のフローをサンプリングする方法"
-
-
-msgid "Noise Method"
-msgstr "ノイズの方法"
-
-
-msgid "Noise method which is used for creating the high resolution"
-msgstr "高解像の煙を作成するのに使用するノイズメソッド"
-
-
-msgid "Wavelet"
-msgstr "Wavelet"
-
-
-msgid "FFT"
-msgstr "FFT"
-
-
-msgid "Zip"
-msgstr "Zip"
-
-
-msgid "Blosc"
-msgstr "Blosc"
-
-
-msgid "Multithreaded compression, similar in size and quality as 'Zip'"
-msgstr "マルチスレッド圧縮。サイズと品質はZIPと同等です"
-
-
-msgid "Do not use any compression"
-msgstr "圧縮なし"
-
-
-msgid "Max Res"
-msgstr "最大解像度"
-
-
-msgid "Maximal resolution used in the fluid domain"
-msgstr "流体ドメイン内で使用される最大解像度"
-
-
-msgid "Show High Resolution"
-msgstr "高解像度を表示"
-
-
-msgid "Show high resolution (using amplification)"
-msgstr "高解像度を表示します（増幅を使用）"
-
-
-msgid "Display Velocity"
-msgstr "速度を視覚化"
-
-
-msgid "Toggle visualization of the velocity field as needles"
-msgstr "速度フィールドをとげで視覚化します"
-
-
-msgid "Adjust slice direction according to the view direction"
-msgstr "ビュー方向に追従してスライス方向を調整します"
-
-
-msgid "Slice along the X axis"
-msgstr "X軸に沿ってスライスします"
-
-
-msgid "Slice along the Y axis"
-msgstr "Y軸に沿ってスライスします"
-
-
-msgid "Slice along the Z axis"
-msgstr "Z軸に沿ってスライスします"
-
-
-msgid "Position of the slice"
-msgstr "スライスの位置"
-
-
-msgid "View Method"
-msgstr "表示方法"
-
-
-msgid "How to slice the volume for viewport rendering"
-msgstr "ビューポートレンダリングでボリュームをスライスする方法"
-
-
-msgid "Slice volume parallel to the view plane"
-msgstr "ビュー平面に平行にボリュームをスライスします"
-
-
-msgid "Slice volume parallel to the major axis"
-msgstr "軸に平行にボリュームをスライスします"
-
-
-msgid "Slice Per Voxel"
-msgstr "ボクセル毎のスライス数"
-
-
-msgid "How many slices per voxel should be generated"
-msgstr "ボクセルごとに生成するスライスの数"
-
-
-msgid "p0"
-msgstr "p0"
-
-
-msgid "Start point"
-msgstr "開始地点"
-
-
-msgid "Strength of noise"
-msgstr "ノイズ強度"
-
-
-msgid "Temperature Grid"
-msgstr "温度グリッド"
-
-
-msgid "Smoke temperature grid, range 0..1 represents 0..1000K"
-msgstr "煙の温度グリッド。範囲は0..1で、0..1000Kを表します"
-
-
-msgid "Adjust simulation speed"
-msgstr "シミュレーション速度を調整します"
-
-
-msgid "Adapt simulation resolution and size to fluid"
-msgstr "シミュレーション解像度とサイズを流体に適応させます"
-
-
-msgid "Render a simulation field while mapping its voxels values to the colors of a ramp"
-msgstr "ボクセル値をカラーランプにマッピングし、シミュレーションフィールドをレンダリングします"
-
-
-msgid "Dissolve Smoke"
-msgstr "煙の消失"
-
-
-msgid "Enable smoke to disappear over time"
-msgstr "時間とともに煙が消えるようにします"
-
-
-msgid "Logarithmic Dissolve"
-msgstr "対数的に消失"
-
-
-msgid "Using 1/x "
-msgstr "1/x を使用"
-
-
-msgid "High Res"
-msgstr "高解像度"
-
-
-msgid "Enable high resolution (using amplification)"
-msgstr "高解像度を有効化（増幅を使用）します"
-
-
-msgid "Needle"
-msgstr "ニードル"
-
-
-msgid "Display vectors as needles"
-msgstr "ベクトルをトゲで表示します"
-
-
-msgid "Streamlines"
-msgstr "流線"
-
-
-msgid "Display vectors as streamlines"
-msgstr "ベクトルを流線で表示します"
-
-
-msgid "Multiplier for scaling the vectors"
-msgstr "ベクトルをスケーリングする乗数"
-
-
-msgid "Velocity Grid"
-msgstr "速度グリッド"
-
-
-msgid "Smoke velocity grid"
-msgstr "煙の速度グリッド"
-
-
-msgid "Amount of turbulence/rotation in fluid"
-msgstr "煙の渦/回転量"
-
-
-msgid "Smoke flow settings"
-msgstr "煙の流れの設定"
-
-
-msgid "Name of vertex group which determines surface emission rate"
-msgstr "サーフェスでの発生率を決定する頂点グループ名"
-
-
-msgid "Flame Rate"
-msgstr "炎の割合"
-
-
-msgid "Texture that controls emission strength"
-msgstr "発生の強さをコントロールするテクスチャ"
-
-
-msgid "Particle size in simulation cells"
-msgstr "シミュレーションセル内のパーティクルサイズ"
-
-
-msgid "Color of smoke"
-msgstr "煙の色"
-
-
-msgid "Change how smoke is emitted"
-msgstr "煙が発生する方法"
-
-
-msgid "Emit smoke from particles"
-msgstr "パーティクルから発生します"
-
-
-msgid "Emit smoke from mesh surface or volume"
-msgstr "メッシュ表面またはボリュームから発生します"
-
-
-msgid "Flow Type"
-msgstr "フロータイプ"
-
-
-msgid "Change how flow affects the simulation"
-msgstr "フローがシミュレーションに影響を与える方法"
-
-
-msgid "Delete smoke from simulation"
-msgstr "シミュレーションから煙が出ていきます"
-
-
-msgid "Add smoke"
-msgstr "煙を追加します"
-
-
-msgid "Fire + Smoke"
-msgstr "火炎＋煙"
-
-
-msgid "Add fire and smoke"
-msgstr "火炎と煙を追加します"
-
-
-msgid "Add fire"
-msgstr "火炎を追加します"
-
-
-msgid "Number of additional samples to take between frames to improve quality of fast moving flows"
-msgstr "高速に動くフローの品質を改善するためにフレーム間で取得する、追加のサンプル数"
-
-
-msgid "Maximum distance from mesh surface to emit smoke"
-msgstr "メッシュ表面から煙の発生場所への最大距離"
-
-
-msgid "Temp. Diff."
-msgstr "温度差"
-
-
-msgid "Temperature difference to ambient temperature"
-msgstr "周囲の温度との差"
-
-
-msgid "Texture mapping type"
-msgstr "テクスチャマッピングタイプ"
-
-
-msgid "Generated coordinates centered to flow object"
-msgstr "フローオブジェクトを中心とした生成座標"
-
-
-msgid "Use UV layer for texture coordinates"
-msgstr "テクスチャ座標にUVレイヤーを使用します"
-
-
-msgid "Z-offset of texture mapping"
-msgstr "テクスチャマッピングのZオフセット"
-
-
-msgid "Size of texture mapping"
-msgstr "テクスチャマッピングサイズ"
-
-
-msgid "Absolute Density"
-msgstr "絶対密度"
-
-
-msgid "Only allow given density value in emitter area"
-msgstr "発生領域で与えられた密度の値のみ有効にします"
-
-
-msgid "Smoke has some initial velocity when it is emitted"
-msgstr "煙が発生した時に初期速度を持ちます"
-
-
-msgid "Set Size"
-msgstr "サイズを設定"
-
-
-msgid "Set particle size in simulation cells or use nearest cell"
-msgstr "シミュレーションセル内のパーティクルサイズを設定、または最も近いセルを使用します"
-
-
-msgid "Use a texture to control emission strength"
-msgstr "発生の強さをコントロールするのにテクスチャを使用します"
-
-
-msgid "Multiplier of source velocity passed to smoke"
-msgstr "ソースが煙になる速度を調整する乗数"
-
-
-msgid "Amount of normal directional velocity"
-msgstr "法線方向の速度の量"
-
-
-msgid "Amount of random velocity"
-msgstr "ランダム速度の量"
-
-
-msgid "Factor for smoke emitted from inside the mesh volume"
-msgstr "メッシュボリューム内部から発生した煙の係数"
-
-
 msgid "Soft body simulation settings for an object"
 msgstr "オブジェクト用のソフトボディシミュレーション設定"
 
@@ -76571,6 +75827,10 @@ msgstr "チョーク"
 
 msgid "'Viscosity' inside collision target"
 msgstr "コリジョンターゲット内部の'粘度'"
+
+
+msgid "Collision Type"
+msgstr "コリジョンタイプ"
 
 
 msgid "Choose Collision Type"
@@ -79447,10 +78707,6 @@ msgid "Has Texture Angle Source"
 msgstr "テクスチャ角度ソースの有無"
 
 
-msgid "Tiled"
-msgstr "タイル状"
-
-
 msgid "Stencil"
 msgstr "マスク"
 
@@ -81211,6 +80467,10 @@ msgid "Theme settings for widget state colors"
 msgstr "ウィジェットの状態ごとの色のためのテーマ設定"
 
 
+msgid "Animated"
+msgstr "アニメ"
+
+
 msgid "Animated Selected"
 msgstr "選択中のアニメ付きの物"
 
@@ -82692,14 +81952,6 @@ msgstr "頂点の不透明度"
 
 msgid "Opacity for edit vertices"
 msgstr "編集頂点の不透明度"
-
-
-msgid "Vertex Paint Opacity"
-msgstr "頂点ペイントの不透明度"
-
-
-msgid "Opacity of the vertex paint mode overlay"
-msgstr "頂点ペイントモードオーバーレイの不透明度"
 
 
 msgid "Weight Paint Opacity"
@@ -84532,10 +83784,6 @@ msgid "Select objects to scatter and a target object."
 msgstr "散乱するオブジェクトとターゲットオブジェクトを選択してください"
 
 
-msgid "Randomness"
-msgstr "ランダムさ"
-
-
 msgid "Demo Mode:"
 msgstr "デモモード:"
 
@@ -86009,35 +85257,6 @@ msgid "Delete Frame(s)"
 msgstr "フレームを削除"
 
 
-msgid "Edit:"
-msgstr "編集:"
-
-
-msgctxt "Operator"
-msgid "Arrange Strokes..."
-msgstr "ストロークの配置..."
-
-
-msgctxt "Operator"
-msgid "Assign Material"
-msgstr "マテリアルを割当"
-
-
-msgctxt "Operator"
-msgid "Adaptive"
-msgstr "適応"
-
-
-msgctxt "Operator"
-msgid "Trim"
-msgstr "トリム"
-
-
-msgctxt "Operator"
-msgid "Flip Direction"
-msgstr "方向転換"
-
-
 msgid "Active Layer:      "
 msgstr "アクティブレイヤー:"
 
@@ -86098,44 +85317,6 @@ msgid "Data Source:"
 msgstr "データソース:"
 
 
-msgid "Select:"
-msgstr "選択:"
-
-
-msgctxt "Operator"
-msgid "Paste by Layer"
-msgstr "同じレイヤーに貼り付け"
-
-
-msgctxt "Operator"
-msgid "Toggle Caps..."
-msgstr "端の処理の切替え..."
-
-
-msgctxt "Operator"
-msgid "& Copy"
-msgstr "＆コピー"
-
-
-msgctxt "Operator"
-msgid "Separate..."
-msgstr "他オブジェクトに分離..."
-
-
-msgid "Cleanup:"
-msgstr "クリーンアップ:"
-
-
-msgctxt "Operator"
-msgid "Reproject Strokes..."
-msgstr "ストロークを再投影..."
-
-
-msgctxt "Operator"
-msgid "Clean Boundary Strokes..."
-msgstr "境界ストロークをクリーン..."
-
-
 msgctxt "Operator"
 msgid "Straight Lines"
 msgstr "直線で描く"
@@ -86159,8 +85340,18 @@ msgid "Join Strokes"
 msgstr "ストロークを統合"
 
 
+msgctxt "Operator"
+msgid "Flip Direction"
+msgstr "方向転換"
+
+
 msgid "Show Drawing Direction"
 msgstr "描画方向を表示"
+
+
+msgctxt "Operator"
+msgid "Paste by Layer"
+msgstr "同じレイヤーに貼り付け"
 
 
 msgctxt "Operator"
@@ -86277,12 +85468,14 @@ msgid "Stroke Color"
 msgstr "ストロークカラー"
 
 
-msgid "CCW"
-msgstr "反時計回り"
+msgctxt "Operator"
+msgid "Re-key Shape Points"
+msgstr "シェイプポイントを再キー"
 
 
-msgid "CW"
-msgstr "時計回り"
+msgctxt "Operator"
+msgid "Reset Feather Animation"
+msgstr "フェザーアニメーションをリセット"
 
 
 msgid "Parent:"
@@ -86323,11 +85516,6 @@ msgstr "キーを挿入"
 msgctxt "Operator"
 msgid "Clear Key"
 msgstr "キーをクリア"
-
-
-msgctxt "Operator"
-msgid "Reset Feather Animation"
-msgstr "フェザーアニメーションをリセット"
 
 
 msgctxt "Operator"
@@ -86454,12 +85642,20 @@ msgid "Pressure Masking"
 msgstr "筆圧マスキング"
 
 
-msgid "Gradient Mapping"
-msgstr "グラデーションマッピング"
+msgid "Front Faces Only"
+msgstr "前面のみ"
 
 
 msgid "Sample Bias"
 msgstr "サンプルバイアス"
+
+
+msgid "Edge To Edge"
+msgstr "中間点"
+
+
+msgid "Thickness Profile"
+msgstr "幅のプロファイル"
 
 
 msgid "Source Clone Slot"
@@ -86474,20 +85670,20 @@ msgid "Source Clone UV Map"
 msgstr "クローン元UVマップ"
 
 
-msgid "Thickness Profile"
-msgstr "幅のプロファイル"
+msgid "Gradient Mapping"
+msgstr "グラデーションマッピング"
 
 
 msgid "Mask Value"
 msgstr "マスクの値"
 
 
-msgid "Fill Options"
-msgstr "フィルオプション"
+msgid "CCW"
+msgstr "反時計回り"
 
 
-msgid "Ignore Transparent Strokes"
-msgstr "透過ストロークを無視"
+msgid "CW"
+msgstr "時計回り"
 
 
 msgctxt "Operator"
@@ -86699,6 +85895,14 @@ msgid "Air Viscosity"
 msgstr "空気の粘性"
 
 
+msgid "Max Tension"
+msgstr "最大引張"
+
+
+msgid "Max Compression"
+msgstr "最大圧縮"
+
+
 msgid "Pin Group"
 msgstr "固定グループ"
 
@@ -86723,14 +85927,6 @@ msgid "Structural Group"
 msgstr "構造グループ"
 
 
-msgid "Max Tension"
-msgstr "最大引張"
-
-
-msgid "Max Compression"
-msgstr "最大圧縮"
-
-
 msgid "Shear Group"
 msgstr "せん断グループ"
 
@@ -86753,10 +85949,6 @@ msgstr "収縮グループ"
 
 msgid "Max Shrinking"
 msgstr "最大収縮"
-
-
-msgid "Tension"
-msgstr "引張"
 
 
 msgid "Structural"
@@ -86909,45 +86101,32 @@ msgid "Clumping amount"
 msgstr "集結の量"
 
 
-msgctxt "Operator"
-msgid "Bake (Req. Memory: %s)"
-msgstr "ベイク(必要メモリ量: %s)"
+msgid "Temperature Diff."
+msgstr "温度差"
 
 
-msgid "Scene Size Meters"
-msgstr "シーンサイズメーター"
+msgid "Reaction Speed"
+msgstr "反応速度"
 
 
-msgid "World Size Meters"
-msgstr "ワールドサイズメーター"
+msgid "Temperature Ignition"
+msgstr "発火温度"
 
 
-msgid "Optimization"
-msgstr "最適化"
+msgid "Add Resolution"
+msgstr "追加する解像度"
 
 
-msgid "Built without fluids"
-msgstr "流体なしでビルドされています"
+msgid "Real World Size"
+msgstr "現実世界の大きさ"
 
 
-msgid "Final Resolution"
-msgstr "最終解像度"
+msgid "Slicing"
+msgstr "スライシング"
 
 
-msgid "Render Display"
-msgstr "レンダー表示"
-
-
-msgid "Time Start"
-msgstr "開始時間"
-
-
-msgid "Bake (Req. Memory: %s)"
-msgstr "ベイク(必要メモリ量: %s)"
-
-
-msgid "Influence Size"
-msgstr "影響の規模"
+msgid "Resolution Divisions"
+msgstr "解像度の分割"
 
 
 msgid "Object does not have a Rigid Body"
@@ -86994,32 +86173,8 @@ msgid "Y Lower"
 msgstr "下限Y"
 
 
-msgid "Temperature Diff."
-msgstr "温度差"
-
-
-msgid "Reaction Speed"
-msgstr "反応速度"
-
-
-msgid "Temperature Ignition"
-msgstr "発火温度"
-
-
-msgid "Add Resolution"
-msgstr "追加する解像度"
-
-
-msgid "Resolution Divisions"
-msgstr "解像度の分割"
-
-
 msgid "Flow Sampling"
 msgstr "フローサンプリング"
-
-
-msgid "Slicing"
-msgstr "スライシング"
 
 
 msgid "Built without Smoke modifier"
@@ -87028,10 +86183,6 @@ msgstr "煙モディファイアーなしでビルドされています"
 
 msgid "Empty Space"
 msgstr "空の空間"
-
-
-msgid "Flow Source"
-msgstr "フローソース"
 
 
 msgid "Sampling Subframes"
@@ -87482,11 +86633,6 @@ msgid "Unlock Tracks"
 msgstr "トラックをロック解除"
 
 
-msgctxt "Operator"
-msgid "Re-key Shape Points"
-msgstr "シェイプポイントを再キー"
-
-
 msgid "Solve error: %.4f"
 msgstr "ソルブエラー: %.4f"
 
@@ -87839,18 +86985,6 @@ msgid "More"
 msgstr "選択を拡大"
 
 
-msgid "Unified Size"
-msgstr "共通のサイズ"
-
-
-msgid "Unified Strength"
-msgstr "共通の強度"
-
-
-msgid "Unified Color"
-msgstr "共通のカラー"
-
-
 msgctxt "Operator"
 msgid "New"
 msgstr "新規"
@@ -87873,18 +87007,6 @@ msgstr "画像の色を反転"
 
 msgid "Affect"
 msgstr "影響"
-
-
-msgid "Curve Alpha"
-msgstr "カーブアルファ"
-
-
-msgid "Texture Alpha"
-msgstr "テクスチャアルファ"
-
-
-msgid "Mask Texture Alpha"
-msgstr "マスクテクスチャアルファ"
 
 
 msgid "Show Same Material"
@@ -88007,10 +87129,6 @@ msgstr "画像*"
 
 msgid "Repeat Image"
 msgstr "画像をリピート"
-
-
-msgid "Edge To Edge"
-msgstr "中間点"
 
 
 msgctxt "Operator"
@@ -89252,26 +88370,6 @@ msgid "Sample Format"
 msgstr "サンプルフォーマット"
 
 
-msgid "View Name"
-msgstr "ビュー名"
-
-
-msgid "Playback FPS"
-msgstr "再生FPS"
-
-
-msgid "3D Viewport Axis"
-msgstr "3Dビューポートの軸"
-
-
-msgid "Grease Pencil Multisampling"
-msgstr "グリースペンシルペイントマルチサンプル"
-
-
-msgid "Limit Size"
-msgstr "制限サイズ"
-
-
 msgid "Undo Memory Limit"
 msgstr "「元に戻す」のメモリー制限"
 
@@ -89290,6 +88388,26 @@ msgstr "ガーベジコレクションレート"
 
 msgid "Vbo Time Out"
 msgstr "VBOタイムアウト"
+
+
+msgid "View Name"
+msgstr "ビュー名"
+
+
+msgid "Playback FPS"
+msgstr "再生FPS"
+
+
+msgid "3D Viewport Axis"
+msgstr "3Dビューポートの軸"
+
+
+msgid "Grease Pencil Multisampling"
+msgstr "グリースペンシルペイントマルチサンプル"
+
+
+msgid "Limit Size"
+msgstr "制限サイズ"
 
 
 msgctxt "Operator"
@@ -89341,16 +88459,12 @@ msgid "Timer (mins)"
 msgstr "タイマー(分)"
 
 
-msgid "Pan Options"
-msgstr "パンオプション"
-
-
-msgid "Zoom Options"
-msgstr "ズームオプション"
-
-
 msgid "Double Click Speed"
 msgstr "ダブルクリック速度"
+
+
+msgid "Pan Sensitivity"
+msgstr "パン感度"
 
 
 msgid "Zoom Method"
@@ -89361,8 +88475,12 @@ msgid "Invert Wheel Zoom Direction"
 msgstr "ホイールのズーム方向を逆に"
 
 
-msgid "Pan Sensitivity"
-msgstr "パン感度"
+msgid "Pan Options"
+msgstr "パンオプション"
+
+
+msgid "Zoom Options"
+msgstr "ズームオプション"
 
 
 msgid "Use Light"
@@ -89387,6 +88505,14 @@ msgid "Player"
 msgstr "プレイヤー"
 
 
+msgid "Natural Trackpad Direction"
+msgstr "ナチュラルトラックパッドの方向"
+
+
+msgid "Invert Mouse Zoom Direction"
+msgstr "マウスズームの方向を反転"
+
+
 msgid "Orbit Style"
 msgstr "周回スタイル"
 
@@ -89401,14 +88527,6 @@ msgstr "周回オプション"
 
 msgid "Fly/Walk Options"
 msgstr "フライ/ウォークオプション"
-
-
-msgid "Natural Trackpad Direction"
-msgstr "ナチュラルトラックパッドの方向"
-
-
-msgid "Invert Mouse Zoom Direction"
-msgstr "マウスズームの方向を反転"
 
 
 msgid "Multiple add-ons with the same name found!"
@@ -90273,6 +89391,16 @@ msgstr "ボーンを溶解"
 msgctxt "Operator"
 msgid "Fixed"
 msgstr "固定"
+
+
+msgctxt "Operator"
+msgid "Adaptive"
+msgstr "適応"
+
+
+msgctxt "Operator"
+msgid "Trim"
+msgstr "トリム"
 
 
 msgctxt "Operator"
@@ -91255,6 +90383,14 @@ msgid "Tile Offset"
 msgstr "タイルオフセット"
 
 
+msgid "Auto Normalize"
+msgstr "自動正規化"
+
+
+msgid "Multi-Paint"
+msgstr "マルチペイント"
+
+
 msgctxt "Operator"
 msgid "Quick Edit"
 msgstr "クイック編集"
@@ -91323,29 +90459,17 @@ msgid "Auto-Velocity"
 msgstr "自動速度"
 
 
-msgid "Front Faces Only"
-msgstr "前面のみ"
-
-
 msgid "No Textures"
 msgstr "テクスチャなし"
-
-
-msgid "Magnify"
-msgstr "膨張"
-
-
-msgid "Auto Normalize"
-msgstr "自動正規化"
-
-
-msgid "Multi-Paint"
-msgstr "マルチペイント"
 
 
 msgctxt "Operator"
 msgid "Add UVs"
 msgstr "UVを追加"
+
+
+msgid "Ignore Transparent Strokes"
+msgstr "透過ストロークを無視"
 
 
 msgid "Modifier requires original data, bad stack position"
@@ -91696,10 +90820,6 @@ msgstr "パックされた新規ファイルはありません"
 
 msgid "Unable to pack file, source path '%s' not found"
 msgstr "元ファイル「%s」が見つからないため、パックが不可能です"
-
-
-msgid "Image '%s' skipped, movies and image sequences not supported"
-msgstr "画像「%s」をスキップしました。動画と連番画像は未対応です"
 
 
 msgid "Packed %d file(s)"
@@ -92186,6 +91306,10 @@ msgstr "コンポジティング|初期化処理"
 
 msgid "Compositing | De-initializing execution"
 msgstr "コンポジティング|終了処理"
+
+
+msgid "Basic"
+msgstr "基本"
 
 
 msgid "Baking light cache"
@@ -95215,46 +94339,6 @@ msgid "Copy particle systems to selected: %d done, %d failed"
 msgstr "パーティクルシステムを選択中の物にコピーしました：%d個完了、%d個失敗"
 
 
-msgid "There should be only one domain object"
-msgstr "ドメインオブジェクトは一つだけにしてください"
-
-
-msgid "No domain object found"
-msgstr "ドメインオブジェクトがありません"
-
-
-msgid "Cannot bake with more than 256 objects"
-msgstr "257以上のオブジェクトがあるとベイクできません"
-
-
-msgid "No fluid input objects in the scene"
-msgstr "流体を入力するオブジェクトがシーンにありません"
-
-
-msgid "No frames to export (check your animation range settings)"
-msgstr "エクスポートするフレームがありません（アニメーション範囲をチェックしてください）"
-
-
-msgid "Invalid object matrix"
-msgstr "無効なオブジェクト行列"
-
-
-msgid "Fluidsim: empty cache path, reset to default '%s'"
-msgstr "流体シム：キャッシュパスなし。デフォルト（%s）にリセットします"
-
-
-msgid "Fluidsim: could not create cache directory '%s', reset to default '%s'"
-msgstr "流体シム：キャッシュディレクトリ「%s」が作成できません。デフォルト（%s）にリセットします"
-
-
-msgid "Fluidsim: cache directory '%s' is not writable, reset to default '%s'"
-msgstr "流体シム：キャッシュディレクトリ「%s」が書き込み不可です。デフォルト（%s）にリセットします"
-
-
-msgid "Fluidsim: could not use default cache directory '%s', please define a valid cache path manually"
-msgstr "流体シム：デフォルトのキャッシュディレクトリ「%s」が使用できません。利用可能なキャッシュパスを設定してください"
-
-
 msgid "No Rigid Body World to add Rigid Body Constraint to"
 msgstr "リジッドボディコンストレイントを追加するリジッドボディワールドがありません"
 
@@ -95756,12 +94840,12 @@ msgid "Packed MultiLayer files cannot be painted: %s"
 msgstr "パックされたマルチレイヤーファイルはペイントできません: %s"
 
 
-msgid "Image requires 4 color channels to paint"
-msgstr "画像のペイントには4つのカラーチャンネルが必要です"
-
-
 msgid "Packed MultiLayer files cannot be painted"
 msgstr "パックされたマルチレイヤーファイルはペイントできません"
+
+
+msgid "Image requires 4 color channels to paint"
+msgstr "画像のペイントには4つのカラーチャンネルが必要です"
 
 
 msgid "Untitled"

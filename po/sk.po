@@ -1,9 +1,9 @@
 
 msgid ""
 msgstr ""
-"Project-Id-Version: Blender 2.82 (sub 4) (b'312b6fd713f6')\n"
+"Project-Id-Version: Blender 2.82 (sub 6) (b'708045eb40b9')\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-12-09 14:05:50\n"
+"POT-Creation-Date: 2019-12-23 12:39:57\n"
 "PO-Revision-Date: 2019-09-18 15:13+0200\n"
 "Language-Team: pegas923\n"
 "MIME-Version: 1.0\n"
@@ -3949,6 +3949,22 @@ msgid "Internal Friction"
 msgstr "Vlastné trenie"
 
 
+msgid "Tension Stiffness"
+msgstr "Tuhosť napnutia"
+
+
+msgid "How much the material resists stretching"
+msgstr "Ako materiál odoláva napínaniu"
+
+
+msgid "Tension Stiffness Maximum"
+msgstr "Maximálna tuhosť napnutia"
+
+
+msgid "Maximum tension stiffness value"
+msgstr "Maximálna hodnota tuhosti napnutia"
+
+
 msgid "Pin Stiffness"
 msgstr "Tvrdosť prichytenia"
 
@@ -4027,22 +4043,6 @@ msgstr "Útlm napnutia pružiny"
 
 msgid "Amount of damping in stretching behavior"
 msgstr "Množstvo útlmu spôsobeného napnutím"
-
-
-msgid "Tension Stiffness"
-msgstr "Tuhosť napnutia"
-
-
-msgid "How much the material resists stretching"
-msgstr "Ako materiál odoláva napínaniu"
-
-
-msgid "Tension Stiffness Maximum"
-msgstr "Maximálna tuhosť napnutia"
-
-
-msgid "Maximum tension stiffness value"
-msgstr "Maximálna hodnota tuhosti napnutia"
 
 
 msgid "Cloth speed is multiplied by this value"
@@ -10823,156 +10823,336 @@ msgid "Whether we may browse blender files' content or not"
 msgstr "Možnosť prehliadania obsahu súborov Blendera"
 
 
-msgid "Fluid Simulation Settings"
-msgstr "Nastavenie simulácie kvapalín"
+msgid "Domain Settings"
+msgstr "Nastavenia oblasti"
 
 
-msgid "Fluid simulation settings for an object taking part in the simulation"
-msgstr "Nastavenie simulácie kvapalín objektu, zúčastneného simulácie"
+msgid "Margin added around fluid to minimize boundary interference"
+msgstr "Okraje pridané okolo tekutiny na minimalizáciu narušovania hraníc"
 
 
-msgid "Type of participation in the fluid simulation"
-msgstr "Typ podieľania sa na simulácii tekutín"
+msgid "Maximum amount of fluid cell can contain before it is considered empty"
+msgstr "Maximálne množstvo buniek kvapaliny, ktoré možno pojať skôr, než sa považujú za prázdne"
+
+
+msgid "Additional"
+msgstr "Prídavné"
+
+
+msgid "Maximum number of additional cells"
+msgstr "Maximálny počet prídavných buniek"
+
+
+msgid "Density"
+msgstr "Hustota"
+
+
+msgid "How much density affects smoke motion (higher value results in faster rising smoke)"
+msgstr "Ako hustota ovplyvňuje pohyb dymu (vyššie hodnoty spôsobia rýchlejšie narastajúci dym)"
+
+
+msgid "Slice the whole domain object"
+msgstr "Rozkrájať celý objekt oblasti vplyvu"
+
+
+msgid "Single"
+msgstr "Jednoduhá"
+
+
+msgid "Perform a single slice of the domain object"
+msgstr "Vytvorí jednoduché rezy oblasti vplyvu objektu"
+
+
+msgid "Heat"
+msgstr "Teplo"
+
+
+msgid "How much heat affects smoke motion (higher value results in faster rising smoke)"
+msgstr "Ako teplo ovplyvňuje pohyb dymu (vyššie hodnoty spôsobia rýchlejšie narastajúci dym)"
+
+
+msgid "Speed of the burning reaction (use larger values for smaller flame)"
+msgstr "Rýchlosť reakcie horenia (použitie vyšších hodnôt pre menší plameň)"
+
+
+msgid "End"
+msgstr "Koniec"
+
+
+msgid "Frame on which the simulation stops"
+msgstr "Snímka, na ktorej sa simulácia zastaví"
+
+
+msgid "Start"
+msgstr "Štart"
+
+
+msgid "Frame on which the simulation starts"
+msgstr "Snímka, na ktorej sa simulácia začne"
+
+
+msgid "Final"
+msgstr "Finálne"
+
+
+msgid "Cell Size"
+msgstr "Veľkosť bunky"
+
+
+msgid "Clipping"
+msgstr "Orezanie"
+
+
+msgid "Value under which voxels are considered empty space to optimize caching and rendering"
+msgstr "Hodnota, nad ktorou sa voxely považujú za prázdny priestor na optimalizáciu ukladania do zásobníka a vykresľovanie"
+
+
+msgid "Field"
+msgstr "Pole"
+
+
+msgid "Simulation field to color map"
+msgstr "Pole simulácie na mapu farby"
+
+
+msgid "Red"
+msgstr "Červená"
+
+
+msgid "Red component of the color field"
+msgstr "Červená zložka farebného poľa"
+
+
+msgid "Green"
+msgstr "Zelená"
+
+
+msgid "Green component of the color field"
+msgstr "Zelená zložka farebného poľa"
+
+
+msgid "Blue"
+msgstr "Modrá"
+
+
+msgid "Blue component of the color field"
+msgstr "Modrá zložka farebného poľa"
+
+
+msgid "Quantity of soot in the fluid"
+msgstr "Množstvo sadzí v kvapaline"
+
+
+msgid "Flame"
+msgstr "Plameň"
+
+
+msgid "Flame field"
+msgstr "Pole plameňa"
+
+
+msgid "Fuel"
+msgstr "Palivo"
+
+
+msgid "Fuel field"
+msgstr "Pole paliva"
+
+
+msgid "Temperature of the fluid"
+msgstr "Teplota kvapaliny"
+
+
+msgid "X Velocity"
+msgstr "X rýchlosť"
+
+
+msgid "X component of the velocity field"
+msgstr "X zložka rýchlosti poľa"
+
+
+msgid "Y Velocity"
+msgstr "Y rýchlosť"
+
+
+msgid "Y component of the velocity field"
+msgstr "Y súčasť poľa rýchlosti"
+
+
+msgid "Z Velocity"
+msgstr "Z rýchlosť"
+
+
+msgid "Z component of the velocity field"
+msgstr "Z zložka rýchlosti poľa"
+
+
+msgid "Color Grid"
+msgstr "Farba mriežky"
+
+
+msgid "Smoke color grid"
+msgstr "Farba mriežky dymu"
+
+
+msgid "Data Depth"
+msgstr "Údaje hĺbky"
+
+
+msgid "Bit depth for writing all scalar (including vector) lower values reduce file size"
+msgstr "Bitová hĺbka pre písanie všetkých skalárov (vrátane vektorových) nižšie hodnoty znižujú veľkosť súboru"
+
+
+msgid "Float (Half)"
+msgstr "Pohyblivá čiarka (polovičná)"
+
+
+msgid "Half float (16 bit data)"
+msgstr "Polovica pohyblivej čiarky (16 bitové údaje)"
+
+
+msgid "Float (Full)"
+msgstr "Pohyblivá čiarka (plná)"
+
+
+msgid "Full float (32 bit data)"
+msgstr "Plný pohyblivá čiarka (32 bitové údaje)"
+
+
+msgid "Density Grid"
+msgstr "Hustota mriežky"
+
+
+msgid "Smoke density grid"
+msgstr "Mriežka hustoty dymu"
+
+
+msgid "Interpolation method to use for smoke/fire volumes in solid mode"
+msgstr "Metóda interpolácie na použitie pre zväzky dymu/ohňa v plnom režime"
+
+
+msgid "Good smoothness and speed"
+msgstr "Dobré vyhladenie a rýchlosť"
+
+
+msgid "Cubic"
+msgstr "Kubické"
+
+
+msgid "Smoothed high quality interpolation, but slower"
+msgstr "Vysoko kvalitná vyhladená interpolácia, ale pomalšia"
+
+
+msgid "Thickness"
+msgstr "Hrúbka"
+
+
+msgid "Thickness of smoke drawing in the viewport"
+msgstr "Kreslenie hrúbky dymu vo výreze"
+
+
+msgid "Dissolve Speed"
+msgstr "Rýchlosť rozplynutia"
+
+
+msgid "res"
+msgstr "rozlíšenie"
+
+
+msgid "Smoke Grid Resolution"
+msgstr "Rozlíšenie mriežky dymu"
+
+
+msgid "Flame Grid"
+msgstr "Mriežka plameňa"
+
+
+msgid "Smoke flame grid"
+msgstr "Dym mriežky plameňa"
+
+
+msgid "Ignition"
+msgstr "Zapaľovanie"
+
+
+msgid "Minimum temperature of flames"
+msgstr "Minimálna teplota plameňa"
+
+
+msgid "Maximum temperature of flames"
+msgstr "Maximálna teplota plameňa"
+
+
+msgid "Smoke"
+msgstr "Dym"
+
+
+msgid "Amount of smoke created by burning fuel"
+msgstr "Množstvo dymu vytvoreného spaľovaním paliva"
+
+
+msgid "Smoke Color"
+msgstr "Farba dymu"
+
+
+msgid "Color of smoke emitted from burning fuel"
+msgstr "Farba dymu stúpajúceho z horiaceho paliva"
+
+
+msgid "Vorticity"
+msgstr "Vírivosť"
+
+
+msgid "Additional vorticity for the flames"
+msgstr "Prídavné zvírenie pre plamene"
+
+
+msgid "Fluid Collection"
+msgstr "Kolekcia kvapalín"
+
+
+msgid "Limit fluid objects to this collection"
+msgstr "Limit objektov kvapalín tejto kolekcie"
+
+
+msgid "Gravity in X, Y and Z direction"
+msgstr "Gravitácia v smere X, Y a Z"
 
 
 msgid "Domain"
 msgstr "Oblasť vplyvu"
 
 
-msgid "Bounding box of this object represents the computational domain of the fluid simulation"
-msgstr "Schránka ohraničenia tohto objektu predstavuje výpočtovú oblasť vplyvu simulácie kvapalín"
+msgid "Heat Grid"
+msgstr "Mriežka tepla"
 
 
-msgid "Fluid"
-msgstr "Kvapalina"
+msgid "Smoke heat grid"
+msgstr "Mriežka tepla dymu"
 
 
-msgid "Object represents a volume of fluid in the simulation"
-msgstr "Objekt predstavuje objem kvapaliny v simulácii"
+msgid "Emitter"
+msgstr "Emitor"
 
 
-msgid "Object is a fixed obstacle"
-msgstr "Objekt je pevnou prekážkou"
+msgid "Method for sampling the high resolution flow"
+msgstr "Metóda snímania s vysokým rozlíšením"
 
 
-msgid "Object adds fluid to the simulation"
-msgstr "Objekt pridáva kvapalinu do simulácie"
+msgid "Full Sample"
+msgstr "Úplná vzorka"
 
 
-msgid "Outflow"
-msgstr "Odtok"
+msgid "Nearest"
+msgstr "Najbližší"
 
 
-msgid "Object removes fluid from the simulation"
-msgstr "Objekt odstraňuje kvapalinu zo simulácie"
+msgid "Preview"
+msgstr "Náhľad"
 
 
-msgid "Particle"
-msgstr "Častica"
-
-
-msgid "Object is made a particle system to display particles generated by a fluidsim domain object"
-msgstr "Objekt je vyrobený systémom častíc na zobrazenie častíc generovaných objektom oblasti kvapalnosti"
-
-
-msgid "Control"
-msgstr "Ovládanie"
-
-
-msgid "Object is made a fluid control mesh, which influences the fluid"
-msgstr "Objekt je tvorený ovládaním kvapalnosti povrchovej siete, ktorá ovplyvňuje kvapaliny"
-
-
-msgid "Control Fluid Simulation Settings"
-msgstr "Ovládanie nastavenia simulácie kvapalín"
-
-
-msgid "Fluid simulation settings for objects controlling the motion of fluid in the simulation"
-msgstr "Nastavenie simulácie kvapalín pre objekty, ktoré kontrolujú pohyb kvapaliny v simulácii"
-
-
-msgid "Attraction Radius"
-msgstr "Dosah príťažlivosti"
-
-
-msgid "Force field radius around the control object"
-msgstr "Obmedzí okruh poľa okolo ovládaného objektu"
-
-
-msgid "Attraction Strength"
-msgstr "Intenzita príťažlivosti"
-
-
-msgid "Force strength for directional attraction towards the control object"
-msgstr "Vynútená intenzita pre smerovú príťažlivosť smerom k ovládanému objektu"
-
-
-msgid "End Time"
-msgstr "Čas konca"
-
-
-msgid "Time when the control particles are deactivated"
-msgstr "Čas deaktivácie ovládaných častíc"
-
-
-msgid "Quality which is used for object sampling (higher = better but slower)"
-msgstr "Kvalita použitá pre prevzorkovanie objektu (vyššia = lepšia, ale pomalšie)"
-
-
-msgid "Start Time"
-msgstr "Čas štartu"
-
-
-msgid "Time when the control particles are activated"
-msgstr "Čas aktivácie ovládaných častíc"
-
-
-msgid "Object contributes to the fluid simulation"
-msgstr "Objekt prispievajúci do simulácie kvapalín"
-
-
-msgid "Reverse Frames"
-msgstr "Preklopiť snímky"
-
-
-msgid "Reverse control object movement"
-msgstr "Obráti pohyb ovládaného objektu"
-
-
-msgid "Velocity Radius"
-msgstr "Dosah rýchlosti"
-
-
-msgid "Velocity Strength"
-msgstr "Výška rýchlosti"
-
-
-msgid "Force strength of how much of the control object's velocity is influencing the fluid velocity"
-msgstr "Vynúti výšku rýchlosti ovládaného objektu ovplyvňujúcej rýchlosť kvapaliny"
-
-
-msgid "Domain Fluid Simulation Settings"
-msgstr "Nastaví oblasť simulácie kvapalín"
-
-
-msgid "Fluid simulation settings for the domain of a fluid simulation"
-msgstr "Nastaví simuláciu kvapalín pre oblasť vplyvu simulácie kvapalín"
-
-
-msgid "Compressibility"
-msgstr "Stlačiteľnosť"
-
-
-msgid "Allowed compressibility due to gravitational force for standing fluid (directly affects simulation step size)"
-msgstr "Povolená stlačiteľnosť v dôsledku gravitačnej sily stojacej kvapaliny (priamo ovplyvňuje veľkosť kroku simulácie)"
-
-
-msgid "Simulation time of the last blender frame (in seconds)"
-msgstr "Čas simulácie poslednej snímky Blendera (v sekundách)"
-
-
-msgid "Directory (and/or filename prefix) to store baked fluid simulation files in"
-msgstr "Priečinok (a/alebo predpona názvu súboru) pre ukladanie súborov simulácie kvapaliny"
+msgid "Radius"
+msgstr "Dosah"
 
 
 msgid "Fluid Mesh Vertices"
@@ -10983,200 +11163,236 @@ msgid "Vertices of the fluid mesh generated by simulation"
 msgstr "Vrcholy povrchovej siete kvapaliny vygenerované simuláciou"
 
 
-msgid "Cache Offset"
-msgstr "Posun zásobníka"
+msgid "Strength of noise"
+msgstr "Plnosť šumu"
 
 
-msgid "Offset when reading baked cache"
-msgstr "Posun pri čítaní zapečeného zásobníka"
+msgid "Time"
+msgstr "Čas"
 
 
-msgid "Generate Particles"
-msgstr "Vygenerovanie častíc"
+msgid "Noise Method"
+msgstr "Metóda šumu"
 
 
-msgid "Amount of particles to generate (0=off, 1=normal, >1=more)"
-msgstr "Množstvo častíc na vygenerovanie (0=vypnuté, 1=normálne, >1=viac)"
+msgid "Noise method which is used for creating the high resolution"
+msgstr "Metóda šumu použitá na vytvorenie vysokého rozlíšenia"
 
 
-msgid "Gravity in X, Y and Z direction"
-msgstr "Gravitácia v smere X, Y a Z"
+msgid "Wavelet"
+msgstr "Wavelet"
 
 
-msgid "Grid Levels"
-msgstr "Úrovne mriežky"
+msgid "Compression"
+msgstr "Kompresia"
 
 
-msgid "Number of coarsened grids to use (-1 for automatic)"
-msgstr "Počet zhrubnutí mriežok na použitie (-1 pre automatické)"
+msgid "Compression method to be used"
+msgstr "Metóda použitej kompresie"
 
 
-msgid "Memory Estimate"
-msgstr "Odhad pamäte"
+msgid "Zip"
+msgstr "Zip"
 
 
-msgid "Estimated amount of memory needed for baking the domain"
-msgstr "Množstvo odhadovanej pamäte potrebnej na zapečenie oblasti vplyvu"
+msgid "Effective but slow compression"
+msgstr "Efektívna, ale pomalá kompresia"
 
 
-msgid "Partial Slip Amount"
-msgstr "Množstvo čiastkového sklzu"
+msgid "Blosc"
+msgstr "Blosc"
 
 
-msgid "Amount of mixing between no- and free-slip, 0 is no slip and 1 is free slip"
-msgstr "Množstvo zmiešania medzi bez sklzu a voľným sklzom, 0 bez sklzu a 1 je voľný sklz"
+msgid "Multithreaded compression, similar in size and quality as 'Zip'"
+msgstr "Viacvláknová kompresia, podobnej veľkosti a kvality ako 'zip'"
 
 
-msgid "Preview Resolution"
-msgstr "Rozlíšenie náhľadu"
+msgid "Do not use any compression"
+msgstr "Nepoužívať žiadne kompresie"
 
 
-msgid "Preview resolution in X,Y and Z direction"
-msgstr "Rozlíšenie náhľadu v smere osí X, Y a Z"
+msgid "Number"
+msgstr "Počet"
 
 
-msgid "Render Display Mode"
-msgstr "Režim zobrazenia vykreslenia"
+msgid "Randomness"
+msgstr "Náhodnosť"
 
 
-msgid "How to display the mesh for rendering"
-msgstr "Ako sa zobrazí povrchová sieť pre vykresľovanie"
+msgid "Cache Compression"
+msgstr "Kompresia zásobníka"
 
 
-msgid "Display geometry"
-msgstr "Zobraziť geometriu"
+msgid "Lite"
+msgstr "Odľahčená"
 
 
-msgid "Preview"
-msgstr "Náhľad"
+msgid "Fast but not so effective compression"
+msgstr "Rýchla, ale kompresia nie je efektívna"
 
 
-msgid "Display preview quality results"
-msgstr "Zobrazí výsledky náhľadu kvality"
+msgid "Heavy"
+msgstr "Ťažký"
 
 
-msgid "Final"
-msgstr "Finálne"
+msgid "Max Res"
+msgstr "Maximálne rozlíšenie"
 
 
-msgid "Display final quality results"
-msgstr "Zobrazí výsledky finálnej kvality"
+msgid "Display Velocity"
+msgstr "Rýchlosť zobrazenia"
 
 
-msgid "Domain resolution in X,Y and Z direction"
-msgstr "Rozlíšenie oblasti v smere osi X, Y a Z"
+msgid "Toggle visualization of the velocity field as needles"
+msgstr "Prepínanie vizualizácií rýchlosti poľa ako ihlíc"
 
 
-msgid "Simulation Speed"
-msgstr "Simulácia rýcholsti"
+msgid "Adjust slice direction according to the view direction"
+msgstr "Upraví smer rezu podľa smeru zobrazenia"
 
 
-msgid "Fluid motion rate (0 = stationary, 1 = normal speed)"
-msgstr "Rýchlosť pohybu kvapaliny (0=nehybná, 1=normálna rýchlosť)"
+msgid "Slice along the X axis"
+msgstr "Rez pozdĺž osi X"
 
 
-msgid "Real World Size"
-msgstr "Veľkosť reálneho sveta"
+msgid "Slice along the Y axis"
+msgstr "Rez pozdĺž osi Y"
 
 
-msgid "Size of the simulation domain in meters"
-msgstr "Veľkosť oblasti simulácie v metroch"
+msgid "Slice along the Z axis"
+msgstr "Rez pozdĺž osi Z"
 
 
-msgid "Slip Type"
-msgstr "Typ sklzu"
+msgid "Position of the slice"
+msgstr "Poloha rezu"
 
 
-msgid "No Slip"
-msgstr "Bez sklzu"
+msgid "View Method"
+msgstr "Metóda zobrazenia"
 
 
-msgid "Obstacle causes zero normal and tangential velocity (=sticky), default for all (only option for moving objects)"
-msgstr "Prekážka spôsobuje nulovú rýchlosť kolmíc a dotyčníc (= lepkavá), predvolená pre všetky (jediná možnosť pre presun objektov)"
+msgid "How to slice the volume for viewport rendering"
+msgstr "Aké je vykreslenie rozsahu rezu pre zobrazovanie"
 
 
-msgid "Partial Slip"
-msgstr "Čiastočný sklz"
+msgid "Slice volume parallel to the view plane"
+msgstr "Rozsah rezu rovnobežne s rovinou zobrazenia"
 
 
-msgid "Mix between no-slip and free-slip (non moving objects only!)"
-msgstr "Zmes medzi bez sklzu a voľným sklzom (len bez pohybu objektov!)"
+msgid "Slice volume parallel to the major axis"
+msgstr "Rozsah rezu rovnobežne s hlavnou osou"
 
 
-msgid "Free Slip"
-msgstr "Voľný sklz"
+msgid "Slice Per Voxel"
+msgstr "Rez na voxel"
 
 
-msgid "Obstacle only causes zero normal velocity (=not sticky, non moving objects only!)"
-msgstr "Prekážka iba spôsobuje nulovú rýchlosť kolmíc (=nie je lepkavá, len bez pohybu objektov!)"
+msgid "How many slices per voxel should be generated"
+msgstr "Koľko rezov na voxel by sa malo vygenerovať"
 
 
-msgid "Simulation time of the first blender frame (in seconds)"
-msgstr "Čas simulácie prvej snímky Blendera (v sekundách)"
+msgid "Delete"
+msgstr "Odstrániť"
 
 
-msgid "Surface Smoothing"
-msgstr "Vyhladenie povrchu"
+msgid "Buoyancy"
+msgstr "Vztlak"
 
 
-msgid "Amount of surface smoothing (a value of 0 is off, 1 is normal smoothing and more than 1 is extra smoothing)"
-msgstr "Počet vyhladení povrchu (hodnota 0 je vypnuté, 1 je normálne vyhladzovanie a viac ako 1 je extra vyhladzovanie)"
+msgid "p0"
+msgstr "p0"
 
 
-msgid "Surface Subdivisions"
-msgstr "Povrchové pododdiely"
+msgid "Start point"
+msgstr "Počiatočný bod"
 
 
-msgid "Number of isosurface subdivisions (this is necessary for the inclusion of particles into the surface generation - WARNING: can lead to longer computation times !)"
-msgstr "Počet delení ISO povrchov (to je potrebné na zahrnutie častíc do vytvárania povrchov - Varovanie: môže viesť k dlhším výpočtovým časom!)"
+msgid "Tension"
+msgstr "Napätie"
 
 
-msgid "Simulation Threads"
-msgstr "Vlákna simulácie"
+msgid "Temperature Grid"
+msgstr "Mriežka teploty"
 
 
-msgid "Override number of threads for the simulation, 0 is automatic"
-msgstr "Prepíše počet vlákien pre simuláciu, 0 je automaticky"
+msgid "Smoke temperature grid, range 0..1 represents 0..1000K"
+msgstr "Mriežka teploty dymu, rozsah 0 - 1 predstavuje 0 - 1000K"
 
 
-msgid "Tracer Particles"
-msgstr "Označené častice"
+msgid "Time Scale"
+msgstr "Čas zmeny veľkosti"
 
 
-msgid "Number of tracer particles to generate"
-msgstr "Počet označených častíc na vygenerovanie"
+msgid "Adjust simulation speed"
+msgstr "Nastavenie rýchlosti simulácie"
 
 
-msgid "Reverse fluid frames"
-msgstr "Reverzné snímky kvapaliny"
+msgid "Adaptive Domain"
+msgstr "Adaptívna doména"
 
 
-msgid "Generate Speed Vectors"
-msgstr "Vygenerovať vektor rýchlosti"
+msgid "Adapt simulation resolution and size to fluid"
+msgstr "Upraví rozlíšenie a veľkosť simulácie na kvapaliny"
 
 
-msgid "Generate speed vectors for vector blur"
-msgstr "Vygeneruje vektory rýchlosti pre vektorové rozmazanie"
+msgid "Bottom"
+msgstr "Zdola"
 
 
-msgid "Removes the air gap between fluid surface and obstacles - WARNING: Can result in a dissolving surface in other areas"
-msgstr "Odstráni vzduchové medzery medzi povrchom kvapaliny a prekážkami - Varovanie: môže mať za následok rozpúšťanie povrchu v iných oblastiach"
+msgid "Top"
+msgstr "Zhora"
 
 
-msgid "Override Time"
-msgstr "Nahradiť čas"
+msgid "Render a simulation field while mapping its voxels values to the colors of a ramp"
+msgstr "Vykreslí poľa simulácie pri priraďovaní hodnôt voxelov podľa poklesu farieb"
 
 
-msgid "Use a custom start and end time (in seconds) instead of the scene's timeline"
-msgstr "Použije vlastný čas štartu a konca (v sekundách) namiesto časovej osi scény"
+msgid "Dissolve Smoke"
+msgstr "Rozplynúť dym"
 
 
-msgid "Viewport Display Mode"
-msgstr "Režim zobrazenia výrezu"
+msgid "Enable smoke to disappear over time"
+msgstr "Povolí rozplynutie dymu v priebehu času"
 
 
-msgid "How to display the mesh in the viewport"
-msgstr "Ako sa zobrazí povrchová sieť vo výreze"
+msgid "Using 1/x "
+msgstr "Použiť 1/x "
+
+
+msgid "Tracer"
+msgstr "Sliedič"
+
+
+msgid "Display Type"
+msgstr "Typ zobrazenia"
+
+
+msgid "Needle"
+msgstr "Ihlice"
+
+
+msgid "Display vectors as needles"
+msgstr "Zobrazí vektory ako ihlice"
+
+
+msgid "Streamlines"
+msgstr "Prúdnicové"
+
+
+msgid "Display vectors as streamlines"
+msgstr "Zobrazí vektory ako prúdnicové"
+
+
+msgid "Multiplier for scaling the vectors"
+msgstr "Násobič pre zmenu mierky vektorov"
+
+
+msgid "Velocity Grid"
+msgstr "Mriežka rýchlosti"
+
+
+msgid "Smoke velocity grid"
+msgstr "Mriežka rýchlosti dymu"
 
 
 msgid "Viscosity Base"
@@ -11195,152 +11411,8 @@ msgid "Negative exponent for the viscosity value (to simplify entering small val
 msgstr "Záporný exponent pre hodnotu viskozity (zjednoduší zadávanie malých hodnôt napr. 5*10^-6)"
 
 
-msgid "Fluid Fluid Simulation Settings"
-msgstr "Nastavenie kvapaliny simulácie kvapalín"
-
-
-msgid "Fluid simulation settings for the fluid in the simulation"
-msgstr "Nastavenie simulácie kvapalín pre kvapalinu v simulácii"
-
-
-msgid "Initial Velocity"
-msgstr "Počiatočná rýchlosť"
-
-
-msgid "Initial velocity of fluid"
-msgstr "Počiatočná rýchlosť kvapaliny"
-
-
-msgid "Export Animated Mesh"
-msgstr "Exportovať animovanú povrchovú sieť"
-
-
-msgid "Export this mesh as an animated one (slower and enforces No Slip, only use if really necessary [e.g. armatures or parented objects], animated pos/rot/scale F-Curves do not require it)"
-msgstr "Exportuje túto povrchovú sieť ako raz animovanú (pomalšie a obmedzené Bez sklzu, použité len ak je to naozaj potrebné [napr. kostry alebo rodičovské objekty], animované pózy/rotácia/zmena veľkosti krivky funkcie to nevyžadujú)"
-
-
-msgid "Volume Initialization"
-msgstr "Inicializácia objemu"
-
-
-msgid "Volume initialization type (WARNING: complex volumes might require too much memory and break simulation)"
-msgstr "Typ inicializácie objemu (Varovania: zložité zväzky môžu vyžadovať príliš veľa pamäte a simulácia sa preruší)"
-
-
-msgid "Use only the inner volume of the mesh"
-msgstr "Používa len vnútorný objem povrchovej siete"
-
-
-msgid "Shell"
-msgstr "Schránka"
-
-
-msgid "Use only the outer shell of the mesh"
-msgstr "Používa len vonkajšiu schránku povrchovej siete"
-
-
-msgid "Both"
-msgstr "Oboje"
-
-
-msgid "Use both the inner volume and the outer shell of the mesh"
-msgstr "Použije vnútorný objem a vonkajšiu schránku povrchovej siete"
-
-
-msgid "Inflow Fluid Simulation Settings"
-msgstr "Nastavenie prítoku simulácie kvapalín"
-
-
-msgid "Fluid simulation settings for objects adding fluids in the simulation"
-msgstr "Nastavenie simulácie kvapalín pre objekty pridávajúcich kvapaliny do simulácie"
-
-
-msgid "Inflow Velocity"
-msgstr "Rýchlosť prítoku"
-
-
-msgid "Local Coordinates"
-msgstr "Lokálne súradnice"
-
-
-msgid "Use local coordinates for inflow (e.g. for rotating objects)"
-msgstr "Použije lokálne súradnice pre prítok (napr. pri otáčajúcich sa objektoch)"
-
-
-msgid "Obstacle Fluid Simulation Settings"
-msgstr "Nastavenia prekážky simulácie kvapalín"
-
-
-msgid "Fluid simulation settings for obstacles in the simulation"
-msgstr "Nastaví simuláciu kvapalín pre prekážky v simulácii"
-
-
-msgid "Impact Factor"
-msgstr "Faktor nárazu"
-
-
-msgid "This is an unphysical value for moving objects - it controls the impact an obstacle has on the fluid, =0 behaves a bit like outflow (deleting fluid), =1 is default, while >1 results in high forces (can be used to tweak total mass)"
-msgstr "Je to nefyzická hodnota pre pohybujúce sa objekty - na ovládanie vplyvu prekážky na kvapalinu, = 0 chová trochu ako odtok (mazanie kvapaliny), = 1 je predvolená, zatiaľ čo > 1 výsledky vo vysokých silách (možno použiť na vyladenie celkovej hmotnosti)"
-
-
-msgid "Outflow Fluid Simulation Settings"
-msgstr "Nastavenie odtoku simulácie kvapalín"
-
-
-msgid "Fluid simulation settings for objects removing fluids from the simulation"
-msgstr "Nastavenia simulácie kvapalín pre objekty odstraňovania kvapalín zo simulácie"
-
-
-msgid "Particle Fluid Simulation Settings"
-msgstr "Nastavenie častíc simulácie kvapalín"
-
-
-msgid "Fluid simulation settings for objects storing fluid particles generated by the simulation"
-msgstr "Nastavenia simulácie kvapalín pre objekty skladujúce častice kvapaliny generované simuláciou"
-
-
-msgid "Alpha Influence"
-msgstr "Vplyv alfy"
-
-
-msgid "Amount of particle alpha change, inverse of size influence: 0=off (all same alpha), 1=full (larger particles get lower alphas, smaller ones higher values)"
-msgstr "Množstvo zmenených častíc alfa, inverzný vplyv veľkosti: 0 = vypnuté (všetky rovnaké alfa), 1 = plný (väčšie častice dostanú nižšie alfy, menšie vyššie hodnoty)"
-
-
-msgid "Directory (and/or filename prefix) to store and load particles from"
-msgstr "Priečinok (a/alebo predpona názvu súboru) na uloženie a načítanie častíc"
-
-
-msgid "Particle Influence"
-msgstr "Vplyv častíc"
-
-
-msgid "Amount of particle size scaling: 0=off (all same size), 1=full (range 0.2-2.0), >1=stronger"
-msgstr "Množstvo zmien veľkosti častíc: 0 = vypnuté (všetky rovnakej veľkosti), 1 = plný (rozsah 0.2-2,0), > 1 = silnejší"
-
-
-msgid "Tracer"
-msgstr "Sliedič"
-
-
-msgid "Show tracer particles"
-msgstr "Zobrazí častice sliediča"
-
-
-msgid "Drops"
-msgstr "Kvapky"
-
-
-msgid "Show drop particles"
-msgstr "Zobrazí častice kvapiek"
-
-
-msgid "Floats"
-msgstr "Plávanie"
-
-
-msgid "Show floating foam particles"
-msgstr "Zobrazí plávajúce penové častice"
+msgid "Amount of turbulence/rotation in fluid"
+msgstr "Množstvo turbulencie/rotácie v kvapaline"
 
 
 msgid "Fluid Mesh Velocity"
@@ -11349,6 +11421,174 @@ msgstr "Rýchlosť kvapaliny povrchovej siete"
 
 msgid "Velocity of a simulated fluid mesh"
 msgstr "Rýchlosť simulovanej povrchovej siete kvapaliny"
+
+
+msgid "Smoke collision settings"
+msgstr "Nastavenie kolízie dymu"
+
+
+msgid "Collision"
+msgstr "Kolízia"
+
+
+msgid "Guide"
+msgstr "Vodiace"
+
+
+msgid "Maximize"
+msgstr "Maximalizovať"
+
+
+msgid "Override"
+msgstr "Prepísať"
+
+
+msgid "Flow Settings"
+msgstr "Nastavenia prúdenia"
+
+
+msgid "Vertex Group"
+msgstr "Skupina vrcholov"
+
+
+msgid "Name of vertex group which determines surface emission rate"
+msgstr "Názov skupiny vrcholov, ktorá určuje mieru emisie povrchu"
+
+
+msgid "Outflow"
+msgstr "Odtok"
+
+
+msgid "Flow Type"
+msgstr "Typ prúdenia"
+
+
+msgid "Add smoke"
+msgstr "Pridá dym"
+
+
+msgid "Fire + Smoke"
+msgstr "Oheň + dym"
+
+
+msgid "Add fire and smoke"
+msgstr "Pridá oheň a dym"
+
+
+msgid "Fire"
+msgstr "Oheň"
+
+
+msgid "Add fire"
+msgstr "Pridá oheň"
+
+
+msgid "Flame Rate"
+msgstr "Miera plameňa"
+
+
+msgid "Texture that controls emission strength"
+msgstr "Textúra ovládajúca intenzitu emisie"
+
+
+msgid "Particle size in simulation cells"
+msgstr "Veľkosť častíc v bunkách simulácie"
+
+
+msgid "Particle systems emitted from the object"
+msgstr "Systémy častíc emitované z objektu"
+
+
+msgid "Color of smoke"
+msgstr "Farba dymu"
+
+
+msgid "Subframes"
+msgstr "Medzisnímky"
+
+
+msgid "Number of additional samples to take between frames to improve quality of fast moving flows"
+msgstr "Počet pridaných vzoriek medzi snímkami na zlepšenie kvality rýchlo sa pohybujúcich prúdov"
+
+
+msgid "Temp. Diff."
+msgstr "Teplotný rozdiel"
+
+
+msgid "Temperature difference to ambient temperature"
+msgstr "Teplotný rozdiel okolitej teploty"
+
+
+msgid "Mapping"
+msgstr "Priradenie"
+
+
+msgid "Texture mapping type"
+msgstr "Typ priradenia textúry"
+
+
+msgid "Generated"
+msgstr "Vygenerované"
+
+
+msgid "Generated coordinates centered to flow object"
+msgstr "Vygenerované súradnice vystredené na objekt prúdenia"
+
+
+msgid "Use UV layer for texture coordinates"
+msgstr "Použitie UV vrstvy pre súradnice textúry"
+
+
+msgid "Z-offset of texture mapping"
+msgstr "Z posun mapovania textúry"
+
+
+msgid "Size of texture mapping"
+msgstr "Veľkosť mapovania textúry"
+
+
+msgid "Absolute Density"
+msgstr "Absolútna hustota"
+
+
+msgid "Initial Velocity"
+msgstr "Počiatočná rýchlosť"
+
+
+msgid "Set Size"
+msgstr "Nastaviť veľkosť"
+
+
+msgid "Set particle size in simulation cells or use nearest cell"
+msgstr "Nastaví veľkosť častíc v bunkách simulácie alebo použije najbližšiu bunku"
+
+
+msgid "Use Texture"
+msgstr "Použiť textúru"
+
+
+msgid "Use a texture to control emission strength"
+msgstr "Použije textúru na ovládanie intenzity emisie"
+
+
+msgid "Initial"
+msgstr "Počiatočná"
+
+
+msgid "Normal"
+msgstr "Kolmica"
+
+
+msgid "Amount of normal directional velocity"
+msgstr "Veľkosť smerovej rýchlosti kolmíc"
+
+
+msgid "Amount of random velocity"
+msgstr "Veľkosť náhodnej rýchlosti"
+
+
+msgid "Factor for smoke emitted from inside the mesh volume"
+msgstr "Faktor dymu emitovaného zvnútra objemu povrchovej siete"
 
 
 msgid "Freestyle Line Set"
@@ -11559,16 +11799,8 @@ msgid "Line set name"
 msgstr "Názov nastavenia čiary"
 
 
-msgid "End"
-msgstr "Koniec"
-
-
 msgid "Last QI value of the QI range"
 msgstr "Posledná hodnota QI rozsahu QI"
-
-
-msgid "Start"
-msgstr "Štart"
 
 
 msgid "First QI value of the QI range"
@@ -11987,10 +12219,6 @@ msgid "Quadratic easing"
 msgstr "Kvadratické uvoľnenie"
 
 
-msgid "Cubic"
-msgstr "Kubické"
-
-
 msgid "Cubic easing"
 msgstr "Kubické uvoľnenie"
 
@@ -12251,10 +12479,6 @@ msgid "Draw the points which make up the strokes (for debugging purposes)"
 msgstr "Nakreslí body, ktoré tvoria ťahy (pre účely ladenia)"
 
 
-msgid "Thickness"
-msgstr "Hrúbka"
-
-
 msgid "Thickness of annotation strokes"
 msgstr "Hrúbka komentárov ťahov"
 
@@ -12337,10 +12561,6 @@ msgstr "Pridá efekt štetca"
 
 msgid "Subtract effect of brush"
 msgstr "Odoberie efekt štetca"
-
-
-msgid "Radius"
-msgstr "Dosah"
 
 
 msgid "Radius of the brush in pixels"
@@ -12485,10 +12705,6 @@ msgstr "Vlastnosti nástrojov sochárstva pre ťahy pastelkou"
 
 msgid "Brush"
 msgstr "Štetec"
-
-
-msgid "Guide"
-msgstr "Vodiace"
 
 
 msgid "Threshold for stroke intersections"
@@ -13285,10 +13501,6 @@ msgid "Bind vertex groups to armature modifier"
 msgstr "Viaže skupinu vrcholov na modifikátor kostry"
 
 
-msgid "Vertex Group"
-msgstr "Skupina vrcholov"
-
-
 msgid "Name of Vertex Group which determines influence of modifier per point"
 msgstr "Názov skupiny vrcholov určujúca vplyv modifikátora na bod"
 
@@ -13531,6 +13743,10 @@ msgstr "Odtieň farby"
 
 msgid "Set what colors of the stroke are affected"
 msgstr "Nastaví farby ovplyvňujúce tahy"
+
+
+msgid "Both"
+msgstr "Oboje"
 
 
 msgid "Modify fill and stroke colors"
@@ -14095,18 +14311,6 @@ msgid "Red Green Blue"
 msgstr "Červená Zelená Modrá"
 
 
-msgid "Red"
-msgstr "Červená"
-
-
-msgid "Green"
-msgstr "Zelená"
-
-
-msgid "Blue"
-msgstr "Modrá"
-
-
 msgid "Show Line"
 msgstr "Zobraziť čiaru"
 
@@ -14250,10 +14454,6 @@ msgstr "Údaje animácie pre tento blok údajov"
 
 msgid "Bones"
 msgstr "Kosti"
-
-
-msgid "Display Type"
-msgstr "Typ zobrazenia"
 
 
 msgid "Octahedral"
@@ -15068,10 +15268,6 @@ msgid "Use this brush in grease pencil drawing mode"
 msgstr "Použije túto štetec v režime maľovania pastelkou"
 
 
-msgid "Use Texture"
-msgstr "Použiť textúru"
-
-
 msgid "Use this brush in texture paint mode"
 msgstr "Použije tento štetec v režime maľovania textúry"
 
@@ -15162,22 +15358,6 @@ msgstr "Použiť prekrývanie textúry"
 
 msgid "Show texture in viewport"
 msgstr "Zobrazí textúru vo výreze"
-
-
-msgid "2D Falloff"
-msgstr "2D dopad"
-
-
-msgid "Apply brush influence in 2D circle instead of a sphere"
-msgstr "Použije vplyv štetca v 2D kruhu namiesto gule"
-
-
-msgid "Absolute Jitter"
-msgstr "Absolútne chvenie"
-
-
-msgid "Jittering happens in screen space, not relative to brush size"
-msgstr "Chvenie prebieha v priestore, neúmerne veľkosti štetca"
 
 
 msgid "Restore Mesh"
@@ -16016,20 +16196,12 @@ msgid "Align to top but use the base-line of the text"
 msgstr "Zarovná nahor, ale použije základnú čiaru textu"
 
 
-msgid "Top"
-msgstr "Zhora"
-
-
 msgid "Align text to the top"
 msgstr "Zarovná text nahor"
 
 
 msgid "Align text to the middle"
 msgstr "Zarovná text na stred"
-
-
-msgid "Bottom"
-msgstr "Zdola"
 
 
 msgid "Align text to the bottom"
@@ -17324,10 +17496,6 @@ msgid "Generated grid to test UV mappings"
 msgstr "Vygenerovaná mriežka na test UV mapovania"
 
 
-msgid "Color Grid"
-msgstr "Farba mriežky"
-
-
 msgid "Generated improved UV grid to test UV mappings"
 msgstr "Vygenerovaná vylepšená UV mriežka pre test UV mapovania"
 
@@ -17444,10 +17612,6 @@ msgid "Movie file"
 msgstr "Súbor s filmom"
 
 
-msgid "Generated"
-msgstr "Vygenerované"
-
-
 msgid "Generated image"
 msgstr "Vygenerovaný obrázok"
 
@@ -17458,6 +17622,10 @@ msgstr "Prehliadač"
 
 msgid "Compositing node viewer"
 msgstr "Prehliadač uzla kompozície"
+
+
+msgid "Tiled"
+msgstr "Vydláždené"
 
 
 msgid "Stereo 3D Format"
@@ -18098,10 +18266,6 @@ msgid "Type of parallax volume"
 msgstr "Typ objemu paralaxy"
 
 
-msgid "Clipping"
-msgstr "Orezanie"
-
-
 msgid "Show the clipping distances in the 3D view"
 msgstr "Zobrazenie orezania vzdialeností v 3D zobrazení"
 
@@ -18368,6 +18532,10 @@ msgstr "Shader lopty"
 
 msgid "Cloth"
 msgstr "Odev"
+
+
+msgid "Fluid"
+msgstr "Kvapalina"
 
 
 msgid "Refraction Depth"
@@ -19542,10 +19710,6 @@ msgid "Indices of vertices in case of a vertex parenting relation"
 msgstr "Indexy vrcholov v prípade vzťahu rodičovstva vrcholov"
 
 
-msgid "Particle systems emitted from the object"
-msgstr "Systémy častíc emitované z objektu"
-
-
 msgid "Index number for the \"Object Index\" render pass"
 msgstr "Číslo indexu pre \"index objektu\" vykreslenia prechodu"
 
@@ -20060,10 +20224,6 @@ msgid "Maximum length of the particle color vector"
 msgstr "Maximálna dĺžka vektora farby častíc"
 
 
-msgid "Number"
-msgstr "Počet"
-
-
 msgid "Total number of particles"
 msgstr "Celkový počet častíc"
 
@@ -20404,10 +20564,6 @@ msgid "Dummy"
 msgstr "Figurína"
 
 
-msgid "Normal"
-msgstr "Kolmica"
-
-
 msgid "Let the surface normal give the particle a starting velocity"
 msgstr "Dovolí kolmici povrchu dať častici počiatočnú rýchlosť"
 
@@ -20426,6 +20582,10 @@ msgstr "Rýchlosť objektu"
 
 msgid "Let the object give the particle a starting velocity"
 msgstr "Dovolí objektu dať častici počiatočnú rýchlosť"
+
+
+msgid "Particle"
+msgstr "Častica"
 
 
 msgid "Let the target particle give the particle a starting velocity"
@@ -20494,10 +20654,6 @@ msgstr "Reagovať na udalosť cieľových častíc"
 
 msgid "Death"
 msgstr "Smrť"
-
-
-msgid "Collision"
-msgstr "Kolízia"
 
 
 msgid "Reactor"
@@ -20676,10 +20832,6 @@ msgid "Give the particle size a random variation"
 msgstr "Dáva náhodné variácie veľkosti častíc"
 
 
-msgid "Subframes"
-msgstr "Medzisnímky"
-
-
 msgid "Subframes to simulate for improved stability and finer granularity simulations (dt = timestep / (subframes + 1))"
 msgstr "Medzisnímky na simuláciu pre lepšiu stabilitu a jemnejšiu zrnitosť simulácie (dt = krok času / (medzisnímky + 1))"
 
@@ -20738,10 +20890,6 @@ msgstr "Krivka definujúca zakrútenie"
 
 msgid "Particle Type"
 msgstr "Typ častice"
-
-
-msgid "Emitter"
-msgstr "Emitor"
 
 
 msgid "Absolute Path Time"
@@ -21406,10 +21554,6 @@ msgstr "Prehrávanie animácie"
 
 msgid "Animation playback is active"
 msgstr "Prehrávanie animácie je aktívne"
-
-
-msgid "Maximize"
-msgstr "Maximalizovať"
 
 
 msgid "An area is maximized, filling this screen"
@@ -23022,10 +23166,6 @@ msgid "The solver does not reiterate, not even on first frame (starts from rest 
 msgstr "Riešiteľ opätovne neopakuje, a to ani na prvej snímke (začína od kľudovej pózy)"
 
 
-msgid "Initial"
-msgstr "Počiatočná"
-
-
 msgid "The solver reiterates (converges) on the first frame but not on subsequent frame"
 msgstr "Riešiteľ opätovne opakuje (zbiehavosť) na prvej snímke, ale nie na nasledujúcej snímke"
 
@@ -23144,10 +23284,6 @@ msgstr "Obrázky sa ukladajú použitím RGB (farebných) údajov"
 
 msgid "Images are saved with RGB and Alpha data (if supported)"
 msgstr "Obrázky sa ukladajú ako RGB a alfa údaje (ak sú podporované)"
-
-
-msgid "Compression"
-msgstr "Kompresia"
 
 
 msgid "Amount of time to determine best compression: 0 = no compression with fast file output, 100 = maximum lossless compression with slow file output"
@@ -25342,10 +25478,6 @@ msgid "Invert the fade-out direction of the linear mapping"
 msgstr "Invertuje smer vytrácania lineárneho mapovania"
 
 
-msgid "Mapping"
-msgstr "Priradenie"
-
-
 msgid "Select the mapping type"
 msgstr "Vyberie typ priradenia"
 
@@ -26648,10 +26780,6 @@ msgid "Marker Settings"
 msgstr "Nastavenia značky"
 
 
-msgid "Set Handle Type"
-msgstr "Nastaviť typ manipulátora"
-
-
 msgid "Pivot Point"
 msgstr "Otočný bod"
 
@@ -26724,10 +26852,6 @@ msgid "Dope Sheet Context Menu"
 msgstr "Kontextová ponuka informačného listu"
 
 
-msgid "Delete"
-msgstr "Odstrániť"
-
-
 msgid "Key"
 msgstr "Klávesa"
 
@@ -26738,6 +26862,10 @@ msgstr "Prichytiť"
 
 msgid "Bookmarks Specials"
 msgstr "Špeciálne záložky"
+
+
+msgid "Fluid Presets"
+msgstr "Predvoľby kvapalnosti"
 
 
 msgid "Clean Up"
@@ -28025,10 +28153,6 @@ msgid "Explode"
 msgstr "Explózia"
 
 
-msgid "Fluid Simulation"
-msgstr "Simulácia kvapaliny"
-
-
 msgid "Ocean"
 msgstr "Oceán"
 
@@ -28037,8 +28161,8 @@ msgid "Particle Instance"
 msgstr "Inštancia častice"
 
 
-msgid "Smoke"
-msgstr "Dym"
+msgid "Fluid Simulation"
+msgstr "Simulácia kvapaliny"
 
 
 msgid "Soft Body"
@@ -29445,16 +29569,12 @@ msgid "Use particle size for the shrapnel"
 msgstr "Použije veľkosť častíc pre črepiny"
 
 
-msgid "Fluid Simulation Modifier"
-msgstr "Modifikátor simulácie kvapaliny"
-
-
 msgid "Fluid simulation modifier"
 msgstr "Modifikátor simulácie kvapalín"
 
 
-msgid "Settings for how this object is used in the fluid simulation"
-msgstr "Nastavenie spôsobu, akým sa tento objekt používa v simulácii kvapalín"
+msgid "Inflow/Outflow"
+msgstr "Prítok/odtok"
 
 
 msgid "Hook modifier to modify the location of vertices"
@@ -29643,10 +29763,6 @@ msgstr "Metóda na ovládanie času prehrávania"
 
 msgid "Control playback using a frame-number (ignoring time FPS and start frame from the file)"
 msgstr "Ovládanie prehrávania použitím čísla snímky (ignoruje čas FPS a počiatočnej snímky zo súboru)"
-
-
-msgid "Time"
-msgstr "Čas"
 
 
 msgid "Control playback using time in seconds"
@@ -30596,26 +30712,6 @@ msgstr "Zabráni vytváraniu nesymetrických štvorcov krížom cez os Y"
 
 msgid "Avoid making unsymmetrical quads across the Z axis"
 msgstr "Zabráni vytváraniu nesymetrických štvorcov krížom cez os Z"
-
-
-msgid "Smoke Modifier"
-msgstr "Modifikátor dymu"
-
-
-msgid "Smoke simulation modifier"
-msgstr "Modifikátor simulácie dymu"
-
-
-msgid "Domain Settings"
-msgstr "Nastavenia oblasti"
-
-
-msgid "Flow Settings"
-msgstr "Nastavenia prúdenia"
-
-
-msgid "Inflow/Outflow"
-msgstr "Prítok/odtok"
 
 
 msgid "Soft Body Modifier"
@@ -32543,10 +32639,6 @@ msgid "Interpolation to use for sub-pixel shifts and rotations due to stabilizat
 msgstr "Interpolácia na použitie pre medzipixelové posuny a rotácie v dôsledku stabilizácie"
 
 
-msgid "Nearest"
-msgstr "Najbližší"
-
-
 msgid "No interpolation, use nearest neighbor pixel"
 msgstr "Bez interpolácie, použije najbližší susedný pixel"
 
@@ -33361,10 +33453,6 @@ msgstr "Algoritmus"
 
 msgid "Algorithm to use to limit channel"
 msgstr "Algoritmus použitý na limit kanála"
-
-
-msgid "Single"
-msgstr "Jednoduhá"
 
 
 msgid "Limit by single channel"
@@ -40072,10 +40160,6 @@ msgid "Bonesize"
 msgstr "Veľkosť kosti"
 
 
-msgid "Time Scale"
-msgstr "Čas zmeny veľkosti"
-
-
 msgid "Bweight"
 msgstr "vaha_ohybu"
 
@@ -42119,15 +42203,6 @@ msgstr "Rozbaliť knižnicu Blendera"
 
 msgid "Unpack all used Blender library files from this .blend file"
 msgstr "Rozbalí všetky použité súbory knižnice Blender z tohto .blend súboru"
-
-
-msgctxt "Operator"
-msgid "Fluid Simulation Bake"
-msgstr "Zapečenie simulácie kvapalnosti"
-
-
-msgid "Bake fluid simulation"
-msgstr "Zapečie simuláciu kvapalnosti"
 
 
 msgctxt "Operator"
@@ -50984,43 +51059,6 @@ msgstr "Rýchlosť smerom von"
 
 
 msgctxt "Operator"
-msgid "Quick Fluid"
-msgstr "Rýchla kvapalina"
-
-
-msgid "Use selected objects in a fluid simulation"
-msgstr "Použije vybrané objekty v simulácii kvapalín"
-
-
-msgid "Initial velocity of the fluid"
-msgstr "Počiatočná rýchlosť kvapaliny"
-
-
-msgid "Render Fluid Objects"
-msgstr "Vykreslenie kvapalných objektov"
-
-
-msgid "Keep the fluid objects visible during rendering"
-msgstr "Zachová kvapalné objekty viditeľné počas vykresľovania"
-
-
-msgid "Start Fluid Bake"
-msgstr "Štart zapečenia kvapaliny"
-
-
-msgid "Start baking the fluid immediately after creating the domain object"
-msgstr "Začne zapečenie tekutiny bezprostredne po vytvorení objektu domény"
-
-
-msgid "Fluid Style"
-msgstr "Štýl kvapaliny"
-
-
-msgid "Basic"
-msgstr "Základný"
-
-
-msgctxt "Operator"
 msgid "Quick Fur"
 msgstr "Rýchla kožušina"
 
@@ -51031,10 +51069,6 @@ msgstr "Pridá nastavenie kožušiny do vybratých objektov"
 
 msgid "Fur Density"
 msgstr "Hustota kožušiny"
-
-
-msgid "Heavy"
-msgstr "Ťažký"
 
 
 msgid "View %"
@@ -51060,10 +51094,6 @@ msgstr "Zachová dymové objekty viditeľné počas vykresľovania"
 
 msgid "Smoke Style"
 msgstr "Štýl dymu"
-
-
-msgid "Fire"
-msgstr "Oheň"
 
 
 msgid "Smoke + Fire"
@@ -54999,10 +55029,6 @@ msgstr "Vypočítať hmotnosť"
 
 msgid "Automatically calculate mass values for Rigid Body Objects based on volume"
 msgstr "Automaticky vypočíta hodnoty hmotnosti pre objekty pevného telesa na základe objemu"
-
-
-msgid "Density"
-msgstr "Hustota"
 
 
 msgid "Custom density value (kg/m^3) to use instead of material preset"
@@ -62554,10 +62580,6 @@ msgid "Shutter Curve"
 msgstr "Krivka uzávierky"
 
 
-msgid "Override"
-msgstr "Prepísať"
-
-
 msgid "Passes"
 msgstr "Prechody"
 
@@ -62700,10 +62722,6 @@ msgstr "Nedávne"
 
 msgid "System"
 msgstr "Systém"
-
-
-msgid "Fluid Presets"
-msgstr "Predvoľby kvapalnosti"
 
 
 msgid "Active Tool"
@@ -63013,6 +63031,10 @@ msgid "Timing"
 msgstr "Časovanie"
 
 
+msgid "Border Collisions"
+msgstr "Hranice kolízií"
+
+
 msgid "Collisions"
 msgstr "Kolízie"
 
@@ -63035,10 +63057,6 @@ msgstr "Vlastné kolízie"
 
 msgid "Softbody And Cloth"
 msgstr "Mäkké teleso a tkanina"
-
-
-msgid "Viscosity"
-msgstr "Viskozita"
 
 
 msgid "Falloff Ramp"
@@ -63065,6 +63083,14 @@ msgid "Force Fields"
 msgstr "Silové polia"
 
 
+msgid "Flow Source"
+msgstr "Zdroj prúdenia"
+
+
+msgid "Guides"
+msgstr "Pomôcky"
+
+
 msgid "Surface Response"
 msgstr "Povrchový účinok"
 
@@ -63079,30 +63105,6 @@ msgstr "Dynamický"
 
 msgid "Deactivation"
 msgstr "Deaktivácia"
-
-
-msgid "Adaptive Domain"
-msgstr "Adaptívna doména"
-
-
-msgid "Behavior"
-msgstr "Správanie"
-
-
-msgid "Flames"
-msgstr "Plamene"
-
-
-msgid "High Resolution"
-msgstr "Vysoké rozlíšenie"
-
-
-msgid "Particle Size"
-msgstr "Veľkosť častíc"
-
-
-msgid "Debug Velocity"
-msgstr "Rýchlosť ladenia"
 
 
 msgid "Self Collision"
@@ -63123,6 +63125,10 @@ msgstr "Diagnostika"
 
 msgid "Helpers"
 msgstr "Pomocníci"
+
+
+msgid "Debug Velocity"
+msgstr "Rýchlosť ladenia"
 
 
 msgid "Creates a Panel in the Render Layers context of the properties editor"
@@ -63534,10 +63540,6 @@ msgid "Draw Context Menu"
 msgstr "Kontextová ponuka kreslenia"
 
 
-msgid "Guides"
-msgstr "Pomôcky"
-
-
 msgid "Drawing Plane"
 msgstr "Rovina kreslenia"
 
@@ -63588,10 +63590,6 @@ msgstr "Kontextová ponuka váh"
 
 msgid "Quad View"
 msgstr "Štvornásobné zobrazenie"
-
-
-msgid "Unified Brush"
-msgstr "Nedefinovaný štetec"
 
 
 msgid "Shadow Settings"
@@ -63894,16 +63892,8 @@ msgid "Post-Processing"
 msgstr "Dodatočné spracovanie"
 
 
-msgid "Stabilize"
-msgstr "Stabilizovať"
-
-
 msgid "Sculpt Strokes"
 msgstr "Ťahy sochárstva"
-
-
-msgid "Particle tools"
-msgstr "Nástroje častíc"
 
 
 msgid "Default tools for particle mode"
@@ -64678,40 +64668,12 @@ msgid "Active point cache for physics simulations"
 msgstr "Zásobník aktívnych bodov pre simuláciu fyziky"
 
 
-msgid "Cache Compression"
-msgstr "Kompresia zásobníka"
-
-
-msgid "Compression method to be used"
-msgstr "Metóda použitej kompresie"
-
-
 msgid "No compression"
 msgstr "Bez kompresie"
 
 
-msgid "Lite"
-msgstr "Odľahčená"
-
-
-msgid "Fast but not so effective compression"
-msgstr "Rýchla, ale kompresia nie je efektívna"
-
-
-msgid "Effective but slow compression"
-msgstr "Efektívna, ale pomalá kompresia"
-
-
 msgid "Cache file path"
 msgstr "Cesta k súboru zásobníka"
-
-
-msgid "Frame on which the simulation stops"
-msgstr "Snímka, na ktorej sa simulácia zastaví"
-
-
-msgid "Frame on which the simulation starts"
-msgstr "Snímka, na ktorej sa simulácia začne"
 
 
 msgid "Cache Step"
@@ -65130,6 +65092,10 @@ msgid "File Paths"
 msgstr "Cesty súborov"
 
 
+msgid "Experimental"
+msgstr "Experimentálne"
+
+
 msgid "Application Template"
 msgstr "Šablóna aplikácie"
 
@@ -65144,10 +65110,6 @@ msgstr "Metódy úprav"
 
 msgid "Settings for interacting with Blender data"
 msgstr "Nastavenia vzájomného pôsobenia údajmi Blendera"
-
-
-msgid "Experimental"
-msgstr "Experimentálne"
 
 
 msgid "Default paths for external files"
@@ -67410,14 +67372,6 @@ msgid "Interpolation method to use for smoke/fire volumes"
 msgstr "Metóda interpolácie použitá pre objemy dymu/ohňa"
 
 
-msgid "Good smoothness and speed"
-msgstr "Dobré vyhladenie a rýchlosť"
-
-
-msgid "Smoothed high quality interpolation, but slower"
-msgstr "Vysoko kvalitná vyhladená interpolácia, ale pomalšia"
-
-
 msgid "Volume Sampling"
 msgstr "Snímanie objemu"
 
@@ -69538,10 +69492,6 @@ msgid "Layers Blending"
 msgstr "Vrstvy zmiešavania"
 
 
-msgid "Do not display blend layers"
-msgstr "Nezobrazuje vrstvy zmiešavania"
-
-
 msgid "Simplify Playback"
 msgstr "Zjednodušiť prehrávanie"
 
@@ -69554,32 +69504,12 @@ msgid "Disable Lines"
 msgstr "Zakázať čiary"
 
 
-msgid "Disable external lines of fill strokes"
-msgstr "Zakáže externé čiary ťahov výplne"
-
-
 msgid "Simplify Shaders"
 msgstr "Zjednodušiť shadery"
 
 
-msgid "Do not apply shader fx"
-msgstr "Neaplikuje FX shader"
-
-
-msgid "Disable Fill"
-msgstr "Zakázať výplň"
-
-
-msgid "Disable fill strokes in the viewport"
-msgstr "Zakáže výplň ťahov vo výreze"
-
-
 msgid "Disable Modifiers"
 msgstr "Zakázať modifikátory"
-
-
-msgid "Do not apply modifiers in the viewport"
-msgstr "Neaplikuje modifikátory vo výreze"
 
 
 msgid "Simplify Subdivision"
@@ -69712,10 +69642,6 @@ msgstr "Pridá prípony súborov do názvu vykresleného súboru (napr.: filenam
 
 msgid "Draw stylized strokes using Freestyle"
 msgstr "Nakreslí štylizované ťahy použitím Voľného štýlu"
-
-
-msgid "Full Sample"
-msgstr "Úplná vzorka"
 
 
 msgid "Save for every anti-aliasing sample the entire RenderLayer results (this solves anti-aliasing issues with compositing)"
@@ -70594,10 +70520,6 @@ msgid "Settings for particle fluids physics"
 msgstr "Nastavenia pre fyziku častíc kvapaliny"
 
 
-msgid "Buoyancy"
-msgstr "Vztlak"
-
-
 msgid "Artificial buoyancy force in negative gravity direction based on pressure differences inside the fluid"
 msgstr "Umelá sila vztlaku v smere negatívnej gravitácie založená na rozdieloch tlaku vo vnútri kvapaliny"
 
@@ -70608,6 +70530,10 @@ msgstr "Dosah vplyvu"
 
 msgid "Fluid interaction radius"
 msgstr "Dosah vplyvu kvapaliny"
+
+
+msgid "Viscosity"
+msgstr "Viskozita"
 
 
 msgid "Linear viscosity"
@@ -71638,6 +71564,10 @@ msgstr "Konvertuje vstup na pohyblivej čiarke"
 
 msgid "Use a preview proxy and/or timecode index for this strip"
 msgstr "Použije náhľad náhrady a/alebo index časového kódu pre tento pás"
+
+
+msgid "Reverse Frames"
+msgstr "Preklopiť snímky"
 
 
 msgid "Use Translation"
@@ -73005,654 +72935,6 @@ msgid "Point in a shape key"
 msgstr "Bod v kľúčovom tvare"
 
 
-msgid "Smoke collision settings"
-msgstr "Nastavenie kolízie dymu"
-
-
-msgid "Collision Type"
-msgstr "Typ kolízie"
-
-
-msgid "Collision type"
-msgstr "Typ kolízie"
-
-
-msgid "Static"
-msgstr "Statické"
-
-
-msgid "Non moving obstacle"
-msgstr "Nepohyblivá prekážka"
-
-
-msgid "Rigid"
-msgstr "Pevné"
-
-
-msgid "Rigid obstacle"
-msgstr "Pevná prekážka"
-
-
-msgid "Animated"
-msgstr "Animované"
-
-
-msgid "Animated obstacle"
-msgstr "Animovaná prekážka"
-
-
-msgid "Smoke domain settings"
-msgstr "Nastavenie oblasti vplyvu dymu"
-
-
-msgid "Margin added around fluid to minimize boundary interference"
-msgstr "Okraje pridané okolo tekutiny na minimalizáciu narušovania hraníc"
-
-
-msgid "Maximum amount of fluid cell can contain before it is considered empty"
-msgstr "Maximálne množstvo buniek kvapaliny, ktoré možno pojať skôr, než sa považujú za prázdne"
-
-
-msgid "Additional"
-msgstr "Prídavné"
-
-
-msgid "Maximum number of additional cells"
-msgstr "Maximálny počet prídavných buniek"
-
-
-msgid "How much density affects smoke motion (higher value results in faster rising smoke)"
-msgstr "Ako hustota ovplyvňuje pohyb dymu (vyššie hodnoty spôsobia rýchlejšie narastajúci dym)"
-
-
-msgid "Amplification"
-msgstr "Zosilnenie"
-
-
-msgid "Enhance the resolution of smoke by this factor using noise"
-msgstr "Tento faktor použije šum na zvýšenie rozlíšenia dymu"
-
-
-msgid "Slice the whole domain object"
-msgstr "Rozkrájať celý objekt oblasti vplyvu"
-
-
-msgid "Perform a single slice of the domain object"
-msgstr "Vytvorí jednoduché rezy oblasti vplyvu objektu"
-
-
-msgid "Heat"
-msgstr "Teplo"
-
-
-msgid "How much heat affects smoke motion (higher value results in faster rising smoke)"
-msgstr "Ako teplo ovplyvňuje pohyb dymu (vyššie hodnoty spôsobia rýchlejšie narastajúci dym)"
-
-
-msgid "Speed of the burning reaction (use larger values for smaller flame)"
-msgstr "Rýchlosť reakcie horenia (použitie vyšších hodnôt pre menší plameň)"
-
-
-msgid "Select the file format to be used for caching"
-msgstr "Vyberie formát súboru na použitie pre uloženie do zásobníka"
-
-
-msgid "Blender specific point cache file format"
-msgstr "Formát súboru zásobníka pre určený bod Blendera"
-
-
-msgid "OpenVDB"
-msgstr "OpenVDB"
-
-
-msgid "OpenVDB file format"
-msgstr "Formát súboru OpenVDB"
-
-
-msgid "Cell Size"
-msgstr "Veľkosť bunky"
-
-
-msgid "Value under which voxels are considered empty space to optimize caching and rendering"
-msgstr "Hodnota, nad ktorou sa voxely považujú za prázdny priestor na optimalizáciu ukladania do zásobníka a vykresľovanie"
-
-
-msgid "Field"
-msgstr "Pole"
-
-
-msgid "Simulation field to color map"
-msgstr "Pole simulácie na mapu farby"
-
-
-msgid "Red component of the color field"
-msgstr "Červená zložka farebného poľa"
-
-
-msgid "Green component of the color field"
-msgstr "Zelená zložka farebného poľa"
-
-
-msgid "Blue component of the color field"
-msgstr "Modrá zložka farebného poľa"
-
-
-msgid "Quantity of soot in the fluid"
-msgstr "Množstvo sadzí v kvapaline"
-
-
-msgid "Flame"
-msgstr "Plameň"
-
-
-msgid "Flame field"
-msgstr "Pole plameňa"
-
-
-msgid "Fuel"
-msgstr "Palivo"
-
-
-msgid "Fuel field"
-msgstr "Pole paliva"
-
-
-msgid "Temperature of the fluid"
-msgstr "Teplota kvapaliny"
-
-
-msgid "X Velocity"
-msgstr "X rýchlosť"
-
-
-msgid "X component of the velocity field"
-msgstr "X zložka rýchlosti poľa"
-
-
-msgid "Y Velocity"
-msgstr "Y rýchlosť"
-
-
-msgid "Y component of the velocity field"
-msgstr "Y súčasť poľa rýchlosti"
-
-
-msgid "Z Velocity"
-msgstr "Z rýchlosť"
-
-
-msgid "Z component of the velocity field"
-msgstr "Z zložka rýchlosti poľa"
-
-
-msgid "Limit collisions to this collection"
-msgstr "Limit kolízie tejto kolekcie"
-
-
-msgid "Border Collisions"
-msgstr "Hranice kolízií"
-
-
-msgid "Select which domain border will be treated as collision object"
-msgstr "Vyberie, ktoré hranice oblasti vplyvu sa budú považovať za kolízny objekt"
-
-
-msgid "Smoke doesn't collide with any border"
-msgstr "Dym nevytvorí kolíziu s akoukoľvek hranicou"
-
-
-msgid "Vertically Open"
-msgstr "Otvorené vertikálne"
-
-
-msgid "Smoke doesn't collide with top and bottom sides"
-msgstr "Dym nevytvorí kolíziu na hornej a spodnej strane"
-
-
-msgid "Collide All"
-msgstr "Kolízia so všetkými"
-
-
-msgid "Smoke collides with every side"
-msgstr "Dym vytvorí kolíziu na každej strane"
-
-
-msgid "Smoke color grid"
-msgstr "Farba mriežky dymu"
-
-
-msgid "Data Depth"
-msgstr "Údaje hĺbky"
-
-
-msgid "Bit depth for writing all scalar (including vector) lower values reduce file size"
-msgstr "Bitová hĺbka pre písanie všetkých skalárov (vrátane vektorových) nižšie hodnoty znižujú veľkosť súboru"
-
-
-msgid "Float (Half)"
-msgstr "Pohyblivá čiarka (polovičná)"
-
-
-msgid "Half float (16 bit data)"
-msgstr "Polovica pohyblivej čiarky (16 bitové údaje)"
-
-
-msgid "Float (Full)"
-msgstr "Pohyblivá čiarka (plná)"
-
-
-msgid "Full float (32 bit data)"
-msgstr "Plný pohyblivá čiarka (32 bitové údaje)"
-
-
-msgid "Density Grid"
-msgstr "Hustota mriežky"
-
-
-msgid "Smoke density grid"
-msgstr "Mriežka hustoty dymu"
-
-
-msgid "Interpolation method to use for smoke/fire volumes in solid mode"
-msgstr "Metóda interpolácie na použitie pre zväzky dymu/ohňa v plnom režime"
-
-
-msgid "Thickness of smoke drawing in the viewport"
-msgstr "Kreslenie hrúbky dymu vo výreze"
-
-
-msgid "Dissolve Speed"
-msgstr "Rýchlosť rozplynutia"
-
-
-msgid "res"
-msgstr "rozlíšenie"
-
-
-msgid "Smoke Grid Resolution"
-msgstr "Rozlíšenie mriežky dymu"
-
-
-msgid "Flame Grid"
-msgstr "Mriežka plameňa"
-
-
-msgid "Smoke flame grid"
-msgstr "Dym mriežky plameňa"
-
-
-msgid "Ignition"
-msgstr "Zapaľovanie"
-
-
-msgid "Minimum temperature of flames"
-msgstr "Minimálna teplota plameňa"
-
-
-msgid "Maximum temperature of flames"
-msgstr "Maximálna teplota plameňa"
-
-
-msgid "Amount of smoke created by burning fuel"
-msgstr "Množstvo dymu vytvoreného spaľovaním paliva"
-
-
-msgid "Smoke Color"
-msgstr "Farba dymu"
-
-
-msgid "Color of smoke emitted from burning fuel"
-msgstr "Farba dymu stúpajúceho z horiaceho paliva"
-
-
-msgid "Vorticity"
-msgstr "Vírivosť"
-
-
-msgid "Additional vorticity for the flames"
-msgstr "Prídavné zvírenie pre plamene"
-
-
-msgid "Fluid Collection"
-msgstr "Kolekcia kvapalín"
-
-
-msgid "Limit fluid objects to this collection"
-msgstr "Limit objektov kvapalín tejto kolekcie"
-
-
-msgid "Heat Grid"
-msgstr "Mriežka tepla"
-
-
-msgid "Smoke heat grid"
-msgstr "Mriežka tepla dymu"
-
-
-msgid "Method for sampling the high resolution flow"
-msgstr "Metóda snímania s vysokým rozlíšením"
-
-
-msgid "Noise Method"
-msgstr "Metóda šumu"
-
-
-msgid "Noise method which is used for creating the high resolution"
-msgstr "Metóda šumu použitá na vytvorenie vysokého rozlíšenia"
-
-
-msgid "Wavelet"
-msgstr "Wavelet"
-
-
-msgid "FFT"
-msgstr "FFT"
-
-
-msgid "Zip"
-msgstr "Zip"
-
-
-msgid "Blosc"
-msgstr "Blosc"
-
-
-msgid "Multithreaded compression, similar in size and quality as 'Zip'"
-msgstr "Viacvláknová kompresia, podobnej veľkosti a kvality ako 'zip'"
-
-
-msgid "Do not use any compression"
-msgstr "Nepoužívať žiadne kompresie"
-
-
-msgid "Max Res"
-msgstr "Maximálne rozlíšenie"
-
-
-msgid "Maximal resolution used in the fluid domain"
-msgstr "Maximálne rozlíšenie použité v oblasti vplyvu kvapalín"
-
-
-msgid "Show High Resolution"
-msgstr "Zobraziť vysoké rozlíšenie"
-
-
-msgid "Show high resolution (using amplification)"
-msgstr "Zobrazí vysoké rozlíšenie (použitím zosilnenia)"
-
-
-msgid "Display Velocity"
-msgstr "Rýchlosť zobrazenia"
-
-
-msgid "Toggle visualization of the velocity field as needles"
-msgstr "Prepínanie vizualizácií rýchlosti poľa ako ihlíc"
-
-
-msgid "Adjust slice direction according to the view direction"
-msgstr "Upraví smer rezu podľa smeru zobrazenia"
-
-
-msgid "Slice along the X axis"
-msgstr "Rez pozdĺž osi X"
-
-
-msgid "Slice along the Y axis"
-msgstr "Rez pozdĺž osi Y"
-
-
-msgid "Slice along the Z axis"
-msgstr "Rez pozdĺž osi Z"
-
-
-msgid "Position of the slice"
-msgstr "Poloha rezu"
-
-
-msgid "View Method"
-msgstr "Metóda zobrazenia"
-
-
-msgid "How to slice the volume for viewport rendering"
-msgstr "Aké je vykreslenie rozsahu rezu pre zobrazovanie"
-
-
-msgid "Slice volume parallel to the view plane"
-msgstr "Rozsah rezu rovnobežne s rovinou zobrazenia"
-
-
-msgid "Slice volume parallel to the major axis"
-msgstr "Rozsah rezu rovnobežne s hlavnou osou"
-
-
-msgid "Slice Per Voxel"
-msgstr "Rez na voxel"
-
-
-msgid "How many slices per voxel should be generated"
-msgstr "Koľko rezov na voxel by sa malo vygenerovať"
-
-
-msgid "p0"
-msgstr "p0"
-
-
-msgid "Start point"
-msgstr "Počiatočný bod"
-
-
-msgid "Strength of noise"
-msgstr "Plnosť šumu"
-
-
-msgid "Temperature Grid"
-msgstr "Mriežka teploty"
-
-
-msgid "Smoke temperature grid, range 0..1 represents 0..1000K"
-msgstr "Mriežka teploty dymu, rozsah 0 - 1 predstavuje 0 - 1000K"
-
-
-msgid "Adjust simulation speed"
-msgstr "Nastavenie rýchlosti simulácie"
-
-
-msgid "Adapt simulation resolution and size to fluid"
-msgstr "Upraví rozlíšenie a veľkosť simulácie na kvapaliny"
-
-
-msgid "Render a simulation field while mapping its voxels values to the colors of a ramp"
-msgstr "Vykreslí poľa simulácie pri priraďovaní hodnôt voxelov podľa poklesu farieb"
-
-
-msgid "Dissolve Smoke"
-msgstr "Rozplynúť dym"
-
-
-msgid "Enable smoke to disappear over time"
-msgstr "Povolí rozplynutie dymu v priebehu času"
-
-
-msgid "Using 1/x "
-msgstr "Použiť 1/x "
-
-
-msgid "Enable high resolution (using amplification)"
-msgstr "Povolí vysoké rozlíšenie (použitím zosilnenia)"
-
-
-msgid "Needle"
-msgstr "Ihlice"
-
-
-msgid "Display vectors as needles"
-msgstr "Zobrazí vektory ako ihlice"
-
-
-msgid "Streamlines"
-msgstr "Prúdnicové"
-
-
-msgid "Display vectors as streamlines"
-msgstr "Zobrazí vektory ako prúdnicové"
-
-
-msgid "Multiplier for scaling the vectors"
-msgstr "Násobič pre zmenu mierky vektorov"
-
-
-msgid "Velocity Grid"
-msgstr "Mriežka rýchlosti"
-
-
-msgid "Smoke velocity grid"
-msgstr "Mriežka rýchlosti dymu"
-
-
-msgid "Amount of turbulence/rotation in fluid"
-msgstr "Množstvo turbulencie/rotácie v kvapaline"
-
-
-msgid "Smoke flow settings"
-msgstr "Nastavenie prúdenia dymu"
-
-
-msgid "Name of vertex group which determines surface emission rate"
-msgstr "Názov skupiny vrcholov, ktorá určuje mieru emisie povrchu"
-
-
-msgid "Flame Rate"
-msgstr "Miera plameňa"
-
-
-msgid "Texture that controls emission strength"
-msgstr "Textúra ovládajúca intenzitu emisie"
-
-
-msgid "Particle size in simulation cells"
-msgstr "Veľkosť častíc v bunkách simulácie"
-
-
-msgid "Color of smoke"
-msgstr "Farba dymu"
-
-
-msgid "Change how smoke is emitted"
-msgstr "Zmení spôsob emisie dymu"
-
-
-msgid "Emit smoke from particles"
-msgstr "Vyžarovať dym z častíc"
-
-
-msgid "Emit smoke from mesh surface or volume"
-msgstr "Emituje dym z povrchovej siete alebo objemu"
-
-
-msgid "Flow Type"
-msgstr "Typ prúdenia"
-
-
-msgid "Change how flow affects the simulation"
-msgstr "Zmení spôsob, akým prúdenie ovplyvňuje simuláciu"
-
-
-msgid "Delete smoke from simulation"
-msgstr "Odstráni dym zo simulácie"
-
-
-msgid "Add smoke"
-msgstr "Pridá dym"
-
-
-msgid "Fire + Smoke"
-msgstr "Oheň + dym"
-
-
-msgid "Add fire and smoke"
-msgstr "Pridá oheň a dym"
-
-
-msgid "Add fire"
-msgstr "Pridá oheň"
-
-
-msgid "Number of additional samples to take between frames to improve quality of fast moving flows"
-msgstr "Počet pridaných vzoriek medzi snímkami na zlepšenie kvality rýchlo sa pohybujúcich prúdov"
-
-
-msgid "Maximum distance from mesh surface to emit smoke"
-msgstr "Maximálna vzdialenosť emisie dymu od povrchovej siete"
-
-
-msgid "Temp. Diff."
-msgstr "Teplotný rozdiel"
-
-
-msgid "Temperature difference to ambient temperature"
-msgstr "Teplotný rozdiel okolitej teploty"
-
-
-msgid "Texture mapping type"
-msgstr "Typ priradenia textúry"
-
-
-msgid "Generated coordinates centered to flow object"
-msgstr "Vygenerované súradnice vystredené na objekt prúdenia"
-
-
-msgid "Use UV layer for texture coordinates"
-msgstr "Použitie UV vrstvy pre súradnice textúry"
-
-
-msgid "Z-offset of texture mapping"
-msgstr "Z posun mapovania textúry"
-
-
-msgid "Size of texture mapping"
-msgstr "Veľkosť mapovania textúry"
-
-
-msgid "Absolute Density"
-msgstr "Absolútna hustota"
-
-
-msgid "Only allow given density value in emitter area"
-msgstr "Povoliť iba danú hodnotu hustoty v oblasti emitora"
-
-
-msgid "Smoke has some initial velocity when it is emitted"
-msgstr "Dym má nejakú počiatočnú rýchlosť, keď je emitovaný"
-
-
-msgid "Set Size"
-msgstr "Nastaviť veľkosť"
-
-
-msgid "Set particle size in simulation cells or use nearest cell"
-msgstr "Nastaví veľkosť častíc v bunkách simulácie alebo použije najbližšiu bunku"
-
-
-msgid "Use a texture to control emission strength"
-msgstr "Použije textúru na ovládanie intenzity emisie"
-
-
-msgid "Multiplier of source velocity passed to smoke"
-msgstr "Násobič zdrojovej rýchlosti prechodu na zadymenie"
-
-
-msgid "Amount of normal directional velocity"
-msgstr "Veľkosť smerovej rýchlosti kolmíc"
-
-
-msgid "Amount of random velocity"
-msgstr "Veľkosť náhodnej rýchlosti"
-
-
-msgid "Factor for smoke emitted from inside the mesh volume"
-msgstr "Faktor dymu emitovaného zvnútra objemu povrchovej siete"
-
-
 msgid "Soft body simulation settings for an object"
 msgstr "Nastavenie simulácií objektov mäkkého telesa"
 
@@ -73711,6 +72993,10 @@ msgstr "Upchávanie"
 
 msgid "'Viscosity' inside collision target"
 msgstr "\"Viskozita\" vnútri cieľovej kolízie"
+
+
+msgid "Collision Type"
+msgstr "Typ kolízie"
 
 
 msgid "Choose Collision Type"
@@ -76463,10 +75749,6 @@ msgid "Has Texture Angle Source"
 msgstr "Má textúra zdrojový uhol"
 
 
-msgid "Tiled"
-msgstr "Vydláždené"
-
-
 msgid "Stencil"
 msgstr "Šablóna"
 
@@ -78207,6 +77489,10 @@ msgid "Theme settings for widget state colors"
 msgstr "Nastavenie motívu farieb stavu ovládacieho prvku"
 
 
+msgid "Animated"
+msgstr "Animované"
+
+
 msgid "Animated Selected"
 msgstr "Vybrané animované"
 
@@ -79590,14 +78876,6 @@ msgstr "Nepriehľadnosť vrcholov"
 
 msgid "Opacity for edit vertices"
 msgstr "Nepriehľadnosť pre úpravy vrcholov"
-
-
-msgid "Vertex Paint Opacity"
-msgstr "Nepriehľadnosť maľby vrcholov"
-
-
-msgid "Opacity of the vertex paint mode overlay"
-msgstr "Nepriehľadnosť prekrývania v režime maľovania vrcholov"
 
 
 msgid "Weight Paint Opacity"
@@ -81278,10 +80556,6 @@ msgid "Select objects to scatter and a target object."
 msgstr "Vyberie objekty na rozptyl a cieľový objekt."
 
 
-msgid "Randomness"
-msgstr "Náhodnosť"
-
-
 msgid "Demo Mode:"
 msgstr "Režim vyskúšania:"
 
@@ -82743,35 +82017,6 @@ msgid "Delete Frame(s)"
 msgstr "Odstrániť snímku(y)"
 
 
-msgid "Edit:"
-msgstr "Úprava:"
-
-
-msgctxt "Operator"
-msgid "Arrange Strokes..."
-msgstr "Usporiadať ťahy..."
-
-
-msgctxt "Operator"
-msgid "Assign Material"
-msgstr "Priradiť materiál"
-
-
-msgctxt "Operator"
-msgid "Adaptive"
-msgstr "Prispôsobené"
-
-
-msgctxt "Operator"
-msgid "Trim"
-msgstr "Orezať"
-
-
-msgctxt "Operator"
-msgid "Flip Direction"
-msgstr "Obrátiť smer"
-
-
 msgid "Active Layer:      "
 msgstr "Aktívna vrstva:      "
 
@@ -82827,39 +82072,6 @@ msgid "Data Source:"
 msgstr "Zdroj údajov:"
 
 
-msgid "Select:"
-msgstr "Výber:"
-
-
-msgctxt "Operator"
-msgid "Toggle Caps..."
-msgstr "Prepnúť kapitálky..."
-
-
-msgctxt "Operator"
-msgid "& Copy"
-msgstr "a kopírovať"
-
-
-msgctxt "Operator"
-msgid "Separate..."
-msgstr "Oddeliť..."
-
-
-msgid "Cleanup:"
-msgstr "Vyčistenie:"
-
-
-msgctxt "Operator"
-msgid "Reproject Strokes..."
-msgstr "Znovu premietnuť ťahy..."
-
-
-msgctxt "Operator"
-msgid "Clean Boundary Strokes..."
-msgstr "Vyčistiť okraje ťahov..."
-
-
 msgctxt "Operator"
 msgid "Straight Lines"
 msgstr "Rovné čiary"
@@ -82881,6 +82093,11 @@ msgstr "Presunúť do farby"
 
 msgid "Join Strokes"
 msgstr "Spojiť ťahy"
+
+
+msgctxt "Operator"
+msgid "Flip Direction"
+msgstr "Obrátiť smer"
 
 
 msgid "Show Drawing Direction"
@@ -82992,12 +82209,14 @@ msgid "Stroke Color"
 msgstr "Farba ťahu"
 
 
-msgid "CCW"
-msgstr "Proti smeru ručičiek"
+msgctxt "Operator"
+msgid "Re-key Shape Points"
+msgstr "Prekľúčovať body tvaru"
 
 
-msgid "CW"
-msgstr "V smere ručičiek"
+msgctxt "Operator"
+msgid "Reset Feather Animation"
+msgstr "Obnoviť animáciu odľahčenia"
 
 
 msgid "Parent:"
@@ -83038,11 +82257,6 @@ msgstr "Vložiť klávesu"
 msgctxt "Operator"
 msgid "Clear Key"
 msgstr "Vymazať klávesu"
-
-
-msgctxt "Operator"
-msgid "Reset Feather Animation"
-msgstr "Obnoviť animáciu odľahčenia"
 
 
 msgctxt "Operator"
@@ -83161,8 +82375,20 @@ msgid "Pressure Masking"
 msgstr "Tlakové maskovanie"
 
 
+msgid "Front Faces Only"
+msgstr "Len predné plôšky"
+
+
 msgid "Sample Bias"
 msgstr "Ukážka sklonu"
+
+
+msgid "Edge To Edge"
+msgstr "Hrana k hrane"
+
+
+msgid "Thickness Profile"
+msgstr "Profil hrúbky"
 
 
 msgid "Source Clone Slot"
@@ -83177,20 +82403,16 @@ msgid "Source Clone UV Map"
 msgstr "UV mapa zdroja klonu"
 
 
-msgid "Thickness Profile"
-msgstr "Profil hrúbky"
-
-
 msgid "Mask Value"
 msgstr "Hodnota masky"
 
 
-msgid "Fill Options"
-msgstr "Možnosti výplne"
+msgid "CCW"
+msgstr "Proti smeru ručičiek"
 
 
-msgid "Ignore Transparent Strokes"
-msgstr "Ignorovať priehľadné ťahy"
+msgid "CW"
+msgstr "V smere ručičiek"
 
 
 msgctxt "Operator"
@@ -83402,6 +82624,14 @@ msgid "Air Viscosity"
 msgstr "Viskozita vzduchu"
 
 
+msgid "Max Tension"
+msgstr "Maximálne napätie"
+
+
+msgid "Max Compression"
+msgstr "Maximálna kompresia"
+
+
 msgid "Pin Group"
 msgstr "Pripnúť skupinu"
 
@@ -83426,14 +82656,6 @@ msgid "Structural Group"
 msgstr "Štrukturálna skupina"
 
 
-msgid "Max Tension"
-msgstr "Maximálne napätie"
-
-
-msgid "Max Compression"
-msgstr "Maximálna kompresia"
-
-
 msgid "Shear Group"
 msgstr "Skupina vytrihnutia"
 
@@ -83456,10 +82678,6 @@ msgstr "Skupina zmrštenia"
 
 msgid "Max Shrinking"
 msgstr "Maximálne zmrštenie"
-
-
-msgid "Tension"
-msgstr "Napätie"
 
 
 msgid "Structural"
@@ -83612,45 +82830,32 @@ msgid "Clumping amount"
 msgstr "Množstvo zhluku"
 
 
-msgctxt "Operator"
-msgid "Bake (Req. Memory: %s)"
-msgstr "Zapiecť (vyžadovaná pamäť: %s)"
+msgid "Temperature Diff."
+msgstr "Teplotný rozdiel"
 
 
-msgid "Scene Size Meters"
-msgstr "Metre veľkosti scény"
+msgid "Reaction Speed"
+msgstr "Rýchlosť reakcie"
 
 
-msgid "World Size Meters"
-msgstr "Metre veľkosti sveta"
+msgid "Temperature Ignition"
+msgstr "Teplota zapálenia"
 
 
-msgid "Optimization"
-msgstr "Optimalizácia"
+msgid "Add Resolution"
+msgstr "Pridať rozlíšenie"
 
 
-msgid "Built without fluids"
-msgstr "Vytvorené bez tekutín"
+msgid "Real World Size"
+msgstr "Veľkosť reálneho sveta"
 
 
-msgid "Final Resolution"
-msgstr "Finálne rozlíšenie"
+msgid "Slicing"
+msgstr "Krájanie"
 
 
-msgid "Render Display"
-msgstr "Zobrazenie vykresľovania"
-
-
-msgid "Time Start"
-msgstr "Čas štartu"
-
-
-msgid "Bake (Req. Memory: %s)"
-msgstr "Zapiecť (vyžadovaná pamäť: %s)"
-
-
-msgid "Influence Size"
-msgstr "Veľkosť vplyvu"
+msgid "Resolution Divisions"
+msgstr "Sekcie rozlíšení"
 
 
 msgid "Object does not have a Rigid Body"
@@ -83697,32 +82902,8 @@ msgid "Y Lower"
 msgstr "Dolná Y"
 
 
-msgid "Temperature Diff."
-msgstr "Teplotný rozdiel"
-
-
-msgid "Reaction Speed"
-msgstr "Rýchlosť reakcie"
-
-
-msgid "Temperature Ignition"
-msgstr "Teplota zapálenia"
-
-
-msgid "Add Resolution"
-msgstr "Pridať rozlíšenie"
-
-
-msgid "Resolution Divisions"
-msgstr "Sekcie rozlíšení"
-
-
 msgid "Flow Sampling"
 msgstr "Snímanie prúdenia"
-
-
-msgid "Slicing"
-msgstr "Krájanie"
 
 
 msgid "Built without Smoke modifier"
@@ -83731,10 +82912,6 @@ msgstr "Postavené bez modifikátora dymu"
 
 msgid "Empty Space"
 msgstr "Prázdny priestor"
-
-
-msgid "Flow Source"
-msgstr "Zdroj prúdenia"
 
 
 msgid "Sampling Subframes"
@@ -84185,11 +83362,6 @@ msgid "Unlock Tracks"
 msgstr "Odomknúť stopy"
 
 
-msgctxt "Operator"
-msgid "Re-key Shape Points"
-msgstr "Prekľúčovať body tvaru"
-
-
 msgid "Solve error: %.4f"
 msgstr "Chyba pri riešení: %.4f"
 
@@ -84465,18 +83637,6 @@ msgid "More"
 msgstr "Viac"
 
 
-msgid "Unified Size"
-msgstr "Jednotná veľkosť"
-
-
-msgid "Unified Strength"
-msgstr "Jednotná sila"
-
-
-msgid "Unified Color"
-msgstr "Jednotná farba"
-
-
 msgctxt "Operator"
 msgid "New"
 msgstr "Nový "
@@ -84499,18 +83659,6 @@ msgstr "Invertovať farby obrázka"
 
 msgid "Affect"
 msgstr "Vplyv"
-
-
-msgid "Curve Alpha"
-msgstr "Alfa krivky"
-
-
-msgid "Texture Alpha"
-msgstr "Alfa textúry"
-
-
-msgid "Mask Texture Alpha"
-msgstr "Alfa masky textúry"
 
 
 msgid "Show Same Material"
@@ -84633,10 +83781,6 @@ msgstr "Obrázok*"
 
 msgid "Repeat Image"
 msgstr "Opakovať obrázok"
-
-
-msgid "Edge To Edge"
-msgstr "Hrana k hrane"
 
 
 msgctxt "Operator"
@@ -85847,26 +84991,6 @@ msgid "Sample Format"
 msgstr "Formát vzorky"
 
 
-msgid "View Name"
-msgstr "Názov zobrazenia"
-
-
-msgid "Playback FPS"
-msgstr "Prehrávanie v snímkach za sekundu"
-
-
-msgid "3D Viewport Axis"
-msgstr "Osi 3D výrezu"
-
-
-msgid "Grease Pencil Multisampling"
-msgstr "Viacnásobné prevzorkovanie pastelky"
-
-
-msgid "Limit Size"
-msgstr "Limit veľkosti"
-
-
 msgid "Undo Memory Limit"
 msgstr "Limit pamäte krokov späť"
 
@@ -85885,6 +85009,26 @@ msgstr "Frekvencia zberu odpadu"
 
 msgid "Vbo Time Out"
 msgstr "Výstupný čas VBO"
+
+
+msgid "View Name"
+msgstr "Názov zobrazenia"
+
+
+msgid "Playback FPS"
+msgstr "Prehrávanie v snímkach za sekundu"
+
+
+msgid "3D Viewport Axis"
+msgstr "Osi 3D výrezu"
+
+
+msgid "Grease Pencil Multisampling"
+msgstr "Viacnásobné prevzorkovanie pastelky"
+
+
+msgid "Limit Size"
+msgstr "Limit veľkosti"
 
 
 msgctxt "Operator"
@@ -85936,16 +85080,12 @@ msgid "Timer (mins)"
 msgstr "Časovač (minúty)"
 
 
-msgid "Pan Options"
-msgstr "Možnosti posunu"
-
-
-msgid "Zoom Options"
-msgstr "Možnosti priblíženia"
-
-
 msgid "Double Click Speed"
 msgstr "Rýchlosť dvojitého kliknutia"
+
+
+msgid "Pan Sensitivity"
+msgstr "Citlivosť panorámy"
 
 
 msgid "Zoom Method"
@@ -85956,8 +85096,12 @@ msgid "Invert Wheel Zoom Direction"
 msgstr "Obrátený smer kolieska priblíženia"
 
 
-msgid "Pan Sensitivity"
-msgstr "Citlivosť panorámy"
+msgid "Pan Options"
+msgstr "Možnosti posunu"
+
+
+msgid "Zoom Options"
+msgstr "Možnosti priblíženia"
 
 
 msgid "Use Light"
@@ -85982,6 +85126,14 @@ msgid "Player"
 msgstr "Hráč"
 
 
+msgid "Natural Trackpad Direction"
+msgstr "Prirodzený smer trackpadu"
+
+
+msgid "Invert Mouse Zoom Direction"
+msgstr "Invertovať smer priblíženia myši"
+
+
 msgid "Orbit Style"
 msgstr "Štýl obiehania"
 
@@ -85996,14 +85148,6 @@ msgstr "Možnosti obiehania"
 
 msgid "Fly/Walk Options"
 msgstr "Voľby lietanie/chôdza"
-
-
-msgid "Natural Trackpad Direction"
-msgstr "Prirodzený smer trackpadu"
-
-
-msgid "Invert Mouse Zoom Direction"
-msgstr "Invertovať smer priblíženia myši"
 
 
 msgid "Multiple add-ons with the same name found!"
@@ -86799,6 +85943,16 @@ msgstr "Rozpustiť kosti"
 msgctxt "Operator"
 msgid "Fixed"
 msgstr "Pevné"
+
+
+msgctxt "Operator"
+msgid "Adaptive"
+msgstr "Prispôsobené"
+
+
+msgctxt "Operator"
+msgid "Trim"
+msgstr "Orezať"
 
 
 msgctxt "Operator"
@@ -87635,6 +86789,14 @@ msgid "Tile Offset"
 msgstr "Posun dlaždíc"
 
 
+msgid "Auto Normalize"
+msgstr "Automatické normalizovanie"
+
+
+msgid "Multi-Paint"
+msgstr "Viacnásobná maľba"
+
+
 msgctxt "Operator"
 msgid "Quick Edit"
 msgstr "Rýchle úpravy"
@@ -87703,25 +86865,17 @@ msgid "Auto-Velocity"
 msgstr "Automatická rýchlosť"
 
 
-msgid "Front Faces Only"
-msgstr "Len predné plôšky"
-
-
 msgid "No Textures"
 msgstr "Bez textúr"
-
-
-msgid "Auto Normalize"
-msgstr "Automatické normalizovanie"
-
-
-msgid "Multi-Paint"
-msgstr "Viacnásobná maľba"
 
 
 msgctxt "Operator"
 msgid "Add UVs"
 msgstr "Pridať UV"
+
+
+msgid "Ignore Transparent Strokes"
+msgstr "Ignorovať priehľadné ťahy"
 
 
 msgid "Modifier requires original data, bad stack position"
@@ -88068,10 +87222,6 @@ msgstr "Neboli zbalené žiadne nové súbory"
 
 msgid "Unable to pack file, source path '%s' not found"
 msgstr "Súbor nemožno zbaliť. Zdrojová cesta %s sa nenašla"
-
-
-msgid "Image '%s' skipped, movies and image sequences not supported"
-msgstr "Obrázok '%s' vynechaný. Filmy a obrazové sekvencie nie sú podporované"
 
 
 msgid "Error creating file '%s'"
@@ -88552,6 +87702,10 @@ msgstr "Kompozícia | inicializácia vykonania"
 
 msgid "Compositing | De-initializing execution"
 msgstr "Kompozícia | zrušenie inicializácie vykonania"
+
+
+msgid "Basic"
+msgstr "Základný"
 
 
 msgid "Baking light cache"
@@ -91477,46 +90631,6 @@ msgid "Copy particle systems to selected: %d done, %d failed"
 msgstr "Kopírovanie systémov častíc do vybraných: %d vykonaných, %d zlyhalo"
 
 
-msgid "There should be only one domain object"
-msgstr "Mal by existovať len jeden objekt oblasti vplyvu"
-
-
-msgid "No domain object found"
-msgstr "Nenašiel sa žiadny objekt oblasti vplyvu"
-
-
-msgid "Cannot bake with more than 256 objects"
-msgstr "Nemožno zapiecť viac ako 256 objektov"
-
-
-msgid "No fluid input objects in the scene"
-msgstr "Žiadne vstupné objekty kvapaliny na scéne"
-
-
-msgid "No frames to export (check your animation range settings)"
-msgstr "Žiadne snímky na exportovanie (skontrolujte svoje  nastavenia rozsahu animácie)"
-
-
-msgid "Invalid object matrix"
-msgstr "Neplatná matica objektu"
-
-
-msgid "Fluidsim: empty cache path, reset to default '%s'"
-msgstr "Kvapalnosť: prázdna cesta zásobníka, obnovené predvolené nastavenie '%s'"
-
-
-msgid "Fluidsim: could not create cache directory '%s', reset to default '%s'"
-msgstr "Kvapalnosť: nepodarilo sa vytvoriť priečinok zásobníka '%s', obnovené predvolené nastavenie '%s'"
-
-
-msgid "Fluidsim: cache directory '%s' is not writable, reset to default '%s'"
-msgstr "Kvapalnosť: priečinok zásobníka '%s' nie je prepisovateľný, obnovené predvolené nastavenie '%s'"
-
-
-msgid "Fluidsim: could not use default cache directory '%s', please define a valid cache path manually"
-msgstr "Kvapalnosť: nemožno použiť predvolený priečinok zásobníka '%s', definujte, prosím, platnú cestu zásobníka manuálne"
-
-
 msgid "No Rigid Body World to add Rigid Body Constraint to"
 msgstr "Žiadne pevné teleso sveta na pridanie obmedzenia pevného telesa"
 
@@ -91982,12 +91096,12 @@ msgid "Packed MultiLayer files cannot be painted: %s"
 msgstr "Zbalené viacvrstvové súbory nemožno maľovať: %s"
 
 
-msgid "Image requires 4 color channels to paint"
-msgstr "Obrázok vyžaduje 4 farebné kanály na maľovanie"
-
-
 msgid "Packed MultiLayer files cannot be painted"
 msgstr "Zbalené viacvrstvové súbory nemožno maľovať"
+
+
+msgid "Image requires 4 color channels to paint"
+msgstr "Obrázok vyžaduje 4 farebné kanály na maľovanie"
 
 
 msgid "Untitled"

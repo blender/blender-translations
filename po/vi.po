@@ -1,9 +1,9 @@
 
 msgid ""
 msgstr ""
-"Project-Id-Version: Blender 2.82 (sub 4) (b'312b6fd713f6')\n"
+"Project-Id-Version: Blender 2.82 (sub 6) (b'708045eb40b9')\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-12-09 14:05:50\n"
+"POT-Creation-Date: 2019-12-23 12:39:57\n"
 "PO-Revision-Date: 2015-04-13 10:11+0700\n"
 "Last-Translator: HỒ NHỰT CHÂU <su_huynh@yahoo.com>\n"
 "Language-Team: Tỉnh An Giang, Đình Bình Phú\n"
@@ -4018,6 +4018,22 @@ msgid "Internal Friction"
 msgstr "Ma Sát Nội Bộ"
 
 
+msgid "Tension Stiffness"
+msgstr "Độ Cứng Áp Lực"
+
+
+msgid "How much the material resists stretching"
+msgstr "Mức vải được chống lại lực kéo"
+
+
+msgid "Tension Stiffness Maximum"
+msgstr "Cực Đại Độ Cứng Áp Lực"
+
+
+msgid "Maximum tension stiffness value"
+msgstr "Giá trị cực đại của độ cứng áp lực"
+
+
 msgid "Pin Stiffness"
 msgstr "Độ Cứng Đóng Đinh"
 
@@ -4096,22 +4112,6 @@ msgstr "Tắt Dần Lò Xo Áp Lực"
 
 msgid "Amount of damping in stretching behavior"
 msgstr "Mức tắt dần khi kéo vải"
-
-
-msgid "Tension Stiffness"
-msgstr "Độ Cứng Áp Lực"
-
-
-msgid "How much the material resists stretching"
-msgstr "Mức vải được chống lại lực kéo"
-
-
-msgid "Tension Stiffness Maximum"
-msgstr "Cực Đại Độ Cứng Áp Lực"
-
-
-msgid "Maximum tension stiffness value"
-msgstr "Giá trị cực đại của độ cứng áp lực"
 
 
 msgid "Cloth speed is multiplied by this value"
@@ -11192,156 +11192,336 @@ msgid "Sort items descending, from highest value to lowest"
 msgstr "Sắp xếp mặt hàng từ giá trị lớn đến nhỏ"
 
 
-msgid "Fluid Simulation Settings"
-msgstr "Cài Đặt Mô Phỏng Chất Lỏng"
+msgid "Domain Settings"
+msgstr "Cài Đặt Phạm Vi"
 
 
-msgid "Fluid simulation settings for an object taking part in the simulation"
-msgstr "Cài đặt cho vật thể đang tham gia trong mô phỏng"
+msgid "Margin added around fluid to minimize boundary interference"
+msgstr "Thêm lề quanh chất lỏng để giảm sự ảnh hưởng của ranh giới"
 
 
-msgid "Type of participation in the fluid simulation"
-msgstr "Loại tham gia trong mô phỏng chất lỏng"
+msgid "Maximum amount of fluid cell can contain before it is considered empty"
+msgstr "Mức cực đại chât lỏng tế bào được chứa trước nó được chấp nhận là trống rỗng"
+
+
+msgid "Additional"
+msgstr "Thêm"
+
+
+msgid "Maximum number of additional cells"
+msgstr "Số lượng tế bào thêm tối đa"
+
+
+msgid "Density"
+msgstr "Tỉ Trọng"
+
+
+msgid "How much density affects smoke motion (higher value results in faster rising smoke)"
+msgstr "Mức tỉ trọng được ảnh hưởng chuyển động của khói (giá trị càng cao tốc độ bay lên càng lẹ)"
+
+
+msgid "Slice the whole domain object"
+msgstr "Cắt ngang toàn vật thể phạm vi"
+
+
+msgid "Single"
+msgstr "Một"
+
+
+msgid "Perform a single slice of the domain object"
+msgstr "Thực hành cắt ngang vật thể phạm vi một lần"
+
+
+msgid "Heat"
+msgstr "Nhiệt"
+
+
+msgid "How much heat affects smoke motion (higher value results in faster rising smoke)"
+msgstr "Mức nhiệt được ảnh hưởng chuyển động của khói (giá trị càng cao tốc độ bay lên càng lẹ) "
+
+
+msgid "Speed of the burning reaction (use larger values for smaller flame)"
+msgstr "Tốc độ của phản ứng cháy (giá trị càng lớn lửa càng nhỏ)"
+
+
+msgid "End"
+msgstr "Kết Thúc"
+
+
+msgid "Frame on which the simulation stops"
+msgstr "Số bức cho kết thúc mô phỏng"
+
+
+msgid "Start"
+msgstr "Bắt Đầu"
+
+
+msgid "Frame on which the simulation starts"
+msgstr "Số bức cho bắt đầu mô phỏng"
+
+
+msgid "Final"
+msgstr "Cuối"
+
+
+msgid "Cell Size"
+msgstr "Kích Cỡ Tế Bào"
+
+
+msgid "Clipping"
+msgstr "Cắt"
+
+
+msgid "Value under which voxels are considered empty space to optimize caching and rendering"
+msgstr "Giá trị thì thể thích tử nhỏ hơn được chấp nhận là không gian trống rỗng cho tối ưu đệm chứa và kết xuất"
+
+
+msgid "Field"
+msgstr "Trường"
+
+
+msgid "Simulation field to color map"
+msgstr "Trường mô phỏng đến ánh xạ màu"
+
+
+msgid "Red"
+msgstr "Đỏ"
+
+
+msgid "Red component of the color field"
+msgstr "Thành phần đỏ của trường màu"
+
+
+msgid "Green"
+msgstr "Lục"
+
+
+msgid "Green component of the color field"
+msgstr "Thành phần lục của trường màu"
+
+
+msgid "Blue"
+msgstr "Xanh"
+
+
+msgid "Blue component of the color field"
+msgstr "Thành phần xanh của trường màu"
+
+
+msgid "Quantity of soot in the fluid"
+msgstr "Số lượng bồ hóng trong chất lỏng"
+
+
+msgid "Flame"
+msgstr "Ngón Lửa"
+
+
+msgid "Flame field"
+msgstr "Trường Ngón Lửa"
+
+
+msgid "Fuel"
+msgstr "Nhiên liệu"
+
+
+msgid "Fuel field"
+msgstr "Trường nhiên liệu"
+
+
+msgid "Temperature of the fluid"
+msgstr "Nhiệt độ chất lỏng"
+
+
+msgid "X Velocity"
+msgstr "Vận Tốc X"
+
+
+msgid "X component of the velocity field"
+msgstr "Thành phần X của vận tốc trường"
+
+
+msgid "Y Velocity"
+msgstr "Vận Tốc Y"
+
+
+msgid "Y component of the velocity field"
+msgstr "Thành phần Y của vận tốc trường"
+
+
+msgid "Z Velocity"
+msgstr "Vận Tốc Z"
+
+
+msgid "Z component of the velocity field"
+msgstr "Thành phần Z của vận tốc trường"
+
+
+msgid "Color Grid"
+msgstr "Đồ Thị Màu"
+
+
+msgid "Smoke color grid"
+msgstr "Đồ thị màu của khói"
+
+
+msgid "Data Depth"
+msgstr "Độ Sâu Dữ Liệu"
+
+
+msgid "Bit depth for writing all scalar (including vector) lower values reduce file size"
+msgstr "Số lượng bit cho lưu hết dữ liệu số (gồm vectơ), giá trị nhỏ hơn giảm kích cữ tệp"
+
+
+msgid "Float (Half)"
+msgstr "Float (Nữa)"
+
+
+msgid "Half float (16 bit data)"
+msgstr "Float nữa (dữ liệu 16 bit)"
+
+
+msgid "Float (Full)"
+msgstr "Float (Đơn)"
+
+
+msgid "Full float (32 bit data)"
+msgstr "Float đơn (dữ liệu 32 bit)"
+
+
+msgid "Density Grid"
+msgstr "Đồ Thị Tỉ Trọng"
+
+
+msgid "Smoke density grid"
+msgstr "Đồ thị tỉ trọng của khói"
+
+
+msgid "Interpolation method to use for smoke/fire volumes in solid mode"
+msgstr "Phương pháp suy nội để sùng cho thể tích khói/lửa trong chế độ rắn"
+
+
+msgid "Good smoothness and speed"
+msgstr "Mịn và tốc độ nhiều"
+
+
+msgid "Cubic"
+msgstr "Lập Phương"
+
+
+msgid "Smoothed high quality interpolation, but slower"
+msgstr "Suy nội mịn chất lượng cao, mà chậm hơn"
+
+
+msgid "Thickness"
+msgstr "Bề Dày"
+
+
+msgid "Thickness of smoke drawing in the viewport"
+msgstr "Độ dục khi vẽ khói trong màn chiếu"
+
+
+msgid "Dissolve Speed"
+msgstr "Tốc Độ Hòa Tan"
+
+
+msgid "res"
+msgstr "Độ phân giải"
+
+
+msgid "Smoke Grid Resolution"
+msgstr "Độ Phân Giải Đồ Thị Khói"
+
+
+msgid "Flame Grid"
+msgstr "Đồ Thị Ngón Lửa"
+
+
+msgid "Smoke flame grid"
+msgstr "Đồ thị lửa khói"
+
+
+msgid "Ignition"
+msgstr "Bật Lửa"
+
+
+msgid "Minimum temperature of flames"
+msgstr "Nhiệt độ cực tiểu của lửa"
+
+
+msgid "Maximum temperature of flames"
+msgstr "Nhiệt độ cực đại của lửa"
+
+
+msgid "Smoke"
+msgstr "Khói"
+
+
+msgid "Amount of smoke created by burning fuel"
+msgstr "Mức khói nhiên liệu cháy được chế tạo bằng đốt nhiên liệu"
+
+
+msgid "Smoke Color"
+msgstr "Màu Khói"
+
+
+msgid "Color of smoke emitted from burning fuel"
+msgstr "Màu khói phát từ nhiên liệu cháy"
+
+
+msgid "Vorticity"
+msgstr "Độ Xoáy"
+
+
+msgid "Additional vorticity for the flames"
+msgstr "Thêm độ xoáy cho ngón lửa"
+
+
+msgid "Fluid Collection"
+msgstr "Sưu Tập Chất Lỏng"
+
+
+msgid "Limit fluid objects to this collection"
+msgstr "Hạn chế vật thể chất lỏng đến nhóm này"
+
+
+msgid "Gravity in X, Y and Z direction"
+msgstr "Hướng hấp dẫn X, Y, Z"
 
 
 msgid "Domain"
 msgstr "Phạm Vi"
 
 
-msgid "Bounding box of this object represents the computational domain of the fluid simulation"
-msgstr "Hợp bao bì của vật thể này được biểu diễn phạm vi tính của mô phỏng chất lỏng"
+msgid "Heat Grid"
+msgstr "Đồ Thị Nhiệt"
 
 
-msgid "Fluid"
-msgstr "Chất Lỏng"
+msgid "Smoke heat grid"
+msgstr "Đồ thị nhiệt khói"
 
 
-msgid "Object represents a volume of fluid in the simulation"
-msgstr "Vật thể được biểu diển một thể tích trong mô phỏng chất lỏng"
+msgid "Emitter"
+msgstr "Đồ Phát"
 
 
-msgid "Object is a fixed obstacle"
-msgstr "Vật thể là trở ngại tĩnh"
+msgid "Method for sampling the high resolution flow"
+msgstr "Phương pháp lấy mẫu vật từ đổi lưu độ phân giải cao"
 
 
-msgid "Object adds fluid to the simulation"
-msgstr "Vật thể sẽ nhập chất lỏng vào trong mô phỏng"
+msgid "Full Sample"
+msgstr "Mẫu Vật Toàn Bộ"
 
 
-msgid "Outflow"
-msgstr "Lưư Xuất"
+msgid "Nearest"
+msgstr "Gần Nhất"
 
 
-msgid "Object removes fluid from the simulation"
-msgstr "Vật thể sẽ rút ra chất lỏng từ mô phỏng"
+msgid "Preview"
+msgstr "Dự Khán"
 
 
-msgid "Particle"
-msgstr "Hạt"
-
-
-msgid "Object is made a particle system to display particles generated by a fluidsim domain object"
-msgstr "Vật thể được thành một hệ thống hạt để hiển thị hạt được chế tạo bởi vật thể phạm vi vật thể mô phỏng chất lỏng"
-
-
-msgid "Control"
-msgstr "Điều Khiển"
-
-
-msgid "Object is made a fluid control mesh, which influences the fluid"
-msgstr "Vật thể được thành một mạng lưới điều khiển chất lỏng, được ảnh hưởng chất lỏng"
-
-
-msgid "Control Fluid Simulation Settings"
-msgstr "Cài Đặt Điều Khiển Mô Phỏng Chất Lỏng"
-
-
-msgid "Fluid simulation settings for objects controlling the motion of fluid in the simulation"
-msgstr "Cài đặt mô phỏng chất lỏng cho vật thể đang điều khiển chuyển động của chất lỏng trong mô phỏng"
-
-
-msgid "Attraction Radius"
-msgstr "Bán Kính Hút Thu"
-
-
-msgid "Force field radius around the control object"
-msgstr "Bán kính lực trường bao quanh vật thể điều khiển"
-
-
-msgid "Attraction Strength"
-msgstr "Sức Hút Thu"
-
-
-msgid "Force strength for directional attraction towards the control object"
-msgstr "Sức lực cho hút thu hướng đến vật thể điều khiển"
-
-
-msgid "End Time"
-msgstr "Thời Gian Kết Thúc"
-
-
-msgid "Time when the control particles are deactivated"
-msgstr "Thời gian cho tắt hoạt động hạt điều khiển"
-
-
-msgid "Quality which is used for object sampling (higher = better but slower)"
-msgstr "Mức chất lượng được sử dụng cho mẫu vật vật thể (càng cao càng tốt nhưng càng chậm hơn)"
-
-
-msgid "Start Time"
-msgstr "Thời Gian Bắt Đầu"
-
-
-msgid "Time when the control particles are activated"
-msgstr "Thời gian cho hoạt động hạt điều khiển"
-
-
-msgid "Object contributes to the fluid simulation"
-msgstr "Vật thể được góp phần cho mô phỏng chất lỏng"
-
-
-msgid "Reverse Frames"
-msgstr "Trở Lui Bức"
-
-
-msgid "Reverse control object movement"
-msgstr "Trở lui di chuyển vật thể điều khiển"
-
-
-msgid "Velocity Radius"
-msgstr "Bán Kính Vận Tốc"
-
-
-msgid "Velocity Strength"
-msgstr "Sức Vận Tốc"
-
-
-msgid "Force strength of how much of the control object's velocity is influencing the fluid velocity"
-msgstr "Sức lực vật tốc của vật thể điều khiển được ảnh hưởng vận tốc của chất lỏng"
-
-
-msgid "Domain Fluid Simulation Settings"
-msgstr "Cài Đặt Phạm Vi Mô Phỏng Chất Lỏng"
-
-
-msgid "Fluid simulation settings for the domain of a fluid simulation"
-msgstr "Cài đặt cho phạm vi của mô phỏng chất lỏng"
-
-
-msgid "Compressibility"
-msgstr "Độ Nén"
-
-
-msgid "Allowed compressibility due to gravitational force for standing fluid (directly affects simulation step size)"
-msgstr "Độ nén được dùng từ lực hấp dẫn cho chất lỏng tĩnh (sẽ ảnh hưởng trực tiếp kích cỡ bước mô phỏng)"
-
-
-msgid "Simulation time of the last blender frame (in seconds)"
-msgstr "Thời gian mô phỏng của bức blender cuối (giây)"
-
-
-msgid "Directory (and/or filename prefix) to store baked fluid simulation files in"
-msgstr "Mục Thư (va/hoặc đầu tên tệp) cho giữ tệp mô phỏng nướng"
+msgid "Radius"
+msgstr "Bán Kính"
 
 
 msgid "Fluid Mesh Vertices"
@@ -11352,204 +11532,236 @@ msgid "Vertices of the fluid mesh generated by simulation"
 msgstr "Đỉnh của mạng lưới chất lỏng được chế tạo bằng mô phỏng"
 
 
-msgid "Cache Offset"
-msgstr "Dịch Đệm Chứa"
+msgid "Strength of noise"
+msgstr "Sức của huyên náo"
 
 
-msgid "Offset when reading baked cache"
-msgstr "Dịch khi đang đọc đệm chứa nướng"
+msgid "Time"
+msgstr "Thời Gian"
 
 
-msgid "Generate Particles"
-msgstr "Chế Tạo Hạt"
+msgid "Noise Method"
+msgstr "Phương Pháp Huyên Náo"
 
 
-msgid "Amount of particles to generate (0=off, 1=normal, >1=more)"
-msgstr "Số lượng hạt để chế tạo (0 = tắt, 1 = bình thường, > 1 = nhiều hơn)"
+msgid "Noise method which is used for creating the high resolution"
+msgstr "Phương pháp huyên náo cho chế tạo độ phân giải cao"
 
 
-msgid "Gravity in X, Y and Z direction"
-msgstr "Hướng hấp dẫn X, Y, Z"
+msgid "Wavelet"
+msgstr "Tiểu Sóng"
 
 
-msgid "Grid Levels"
-msgstr "Mức Độ Đồ Thị"
+msgid "Compression"
+msgstr "Nén"
 
 
-msgid "Number of coarsened grids to use (-1 for automatic)"
-msgstr "Số lượng đồ thị rộng để dùng (-1 = tự động)"
+msgid "Compression method to be used"
+msgstr "Phương pháp được dùng cho nén đệm chứa"
 
 
-msgid "Memory Estimate"
-msgstr "Dự Đoán Trí Nhớ"
+msgid "Zip"
+msgstr "Zip"
 
 
-msgid "Estimated amount of memory needed for baking the domain"
-msgstr "Dự đoán lượng trí nhớ cần cho nướng phạm vi"
+msgid "Effective but slow compression"
+msgstr "Hiệu qủa nén cao nhưng chậm"
 
 
-msgid "Partial Slip Amount"
-msgstr "Mức Phần Trượt"
+msgid "Blosc"
+msgstr "Blosc"
 
 
-msgid "Amount of mixing between no- and free-slip, 0 is no slip and 1 is free slip"
-msgstr "Mức pha trộn giữa không và trượt tự do, 0 = không trượt và 1 = trượt tự do"
+msgid "Multithreaded compression, similar in size and quality as 'Zip'"
+msgstr "Nén đa tuyến, kích cỡ và chất lượng giống 'Zip'"
 
 
-msgid "Preview Resolution"
-msgstr "Độ Phân Giải Dự Khán"
+msgid "Do not use any compression"
+msgstr "Không nén"
 
 
-msgid "Preview resolution in X,Y and Z direction"
-msgstr "Độ phân giải của dự khán cho hướng X, Y, và Z"
+msgid "Number"
+msgstr "Số"
 
 
-msgid "Render Display Mode"
-msgstr "Chế Độ Hiển Thị Kết Xuất"
+msgid "Randomness"
+msgstr "Độ Ngẫu Nhiên"
 
 
-msgid "How to display the mesh for rendering"
-msgstr "Cách hiển thị mạng lưới cho kết xuất"
+msgid "Cache Compression"
+msgstr "Nén Đệm Chứa"
 
 
-msgid "Display geometry"
-msgstr "Hiển thị hình dạng"
+msgid "Lite"
+msgstr "Nhẹ"
 
 
-msgid "Preview"
-msgstr "Dự Khán"
+msgid "Fast but not so effective compression"
+msgstr "Nhanh mà mà hiệu qủa nén không cao"
 
 
-msgid "Display preview quality results"
-msgstr "Chắt lượng hiển thị kết qủa cho dự khán"
+msgid "Heavy"
+msgstr "Nặng"
 
 
-msgid "Final"
-msgstr "Cuối"
+msgid "Max Res"
+msgstr "Độ Phân Giải Tối Đa"
 
 
-msgid "Display final quality results"
-msgstr "Chắt lượng hiển thị kết qủa cuối"
+msgid "Display Velocity"
+msgstr "Hiển Thị Vận Tốc"
 
 
-msgid "Domain resolution in X,Y and Z direction"
-msgstr "Độ phân giải của phạm vi cho hướng x, y, và z"
+msgid "Toggle visualization of the velocity field as needles"
+msgstr "Bật/tắt hiển thị vận tốc trường như cây kim"
 
 
-msgid "Simulation Speed"
-msgstr "Tốc Độ Mô Phỏng"
+msgid "Adjust slice direction according to the view direction"
+msgstr "Chỉnh hướng cắt tùy hướng nhìn của màn"
 
 
-msgid "Fluid motion rate (0 = stationary, 1 = normal speed)"
-msgstr "Tốc độ chuyển động chất lỏng (0 = đứng yên, 1 = tốc độ bình thường)"
+msgid "Slice along the X axis"
+msgstr "Cắt hướng trục X"
 
 
-msgid "Real World Size"
-msgstr "Kích Cỡ Thế Giới Thực"
+msgid "Slice along the Y axis"
+msgstr "Cắt hướng trục Y"
 
 
-msgid "Size of the simulation domain in meters"
-msgstr "Kích cỡ của phạm vi mô phỏng dùng đơn vị mét"
+msgid "Slice along the Z axis"
+msgstr "Cắt hướng trục Z"
 
 
-msgid "Slip Type"
-msgstr "Loại Trượt"
+msgid "Position of the slice"
+msgstr "Vị trí cắt"
 
 
-msgid "No Slip"
-msgstr "Không Trượt"
+msgid "View Method"
+msgstr "Phương Pháp Hiển Thị"
 
 
-msgid "Obstacle causes zero normal and tangential velocity (=sticky), default for all (only option for moving objects)"
-msgstr "Trở ngại làm vận tốc pháp tuyến và tiếp tuyến bằng 0 (=dính), mặc định cho hết (vật thể chuyển động chỉ có lựa chọn này)"
+msgid "How to slice the volume for viewport rendering"
+msgstr "Làm sao cắt thể tích cho kết xuất trong màn"
 
 
-msgid "Partial Slip"
-msgstr "Trượt Một Phần"
+msgid "Slice volume parallel to the view plane"
+msgstr "Cắt thể tích song song với mặt phẳng màn"
 
 
-msgid "Mix between no-slip and free-slip (non moving objects only!)"
-msgstr "Giữa không trượt và trượt tự do (chỉ cho vật thể không chuyển động) "
+msgid "Slice volume parallel to the major axis"
+msgstr "Cắt thể tích song song với trục chánh"
 
 
-msgid "Free Slip"
-msgstr "Trượt Tự Do"
+msgid "Slice Per Voxel"
+msgstr "Lần Cắt Mỗi Thể Tích Tử"
 
 
-msgid "Obstacle only causes zero normal velocity (=not sticky, non moving objects only!)"
-msgstr "Trở ngại chỉ làm vận tốc pháp tuyến bằng không (= không dính, chỉ cho vật thể không chuyển động)"
+msgid "How many slices per voxel should be generated"
+msgstr "Bao nhiêu lần nên chế tạo miến cắt cho mỗi thể tich tử"
 
 
-msgid "Simulation time of the first blender frame (in seconds)"
-msgstr "Thời gian mô phỏng của bức blender đầu (đơn vị giây)"
+msgid "Delete"
+msgstr "Xóa"
 
 
-msgid "Surface Smoothing"
-msgstr "Mịn Hóa Mặt"
+msgid "Buoyancy"
+msgstr "Lực Nổi"
 
 
-msgid "Amount of surface smoothing (a value of 0 is off, 1 is normal smoothing and more than 1 is extra smoothing)"
-msgstr "Lượng mịn hóa cho mặt (0 = tắt, 1 = mịn hóa bình thường, > 1 mịn hóa hơn bình thường)"
+msgid "p0"
+msgstr "đ0"
 
 
-msgid "Surface Subdivisions"
-msgstr "Phân Hóa Mặt"
+msgid "Start point"
+msgstr "Điểm bắt đầu"
 
 
-msgid "Number of isosurface subdivisions (this is necessary for the inclusion of particles into the surface generation - WARNING: can lead to longer computation times !)"
-msgstr "Số lượng phân hóa mật cùng giá trị (phải có cái này để gồm hạt vào quá trình chế tạo bề mặt - CẢNH BÁO: có thể làm thời gian tính lâu hơn !)"
+msgid "Tension"
+msgstr "Lực Căng"
 
 
-msgid "Simulation Threads"
-msgstr "Sợi Dây Mô Phỏng"
+msgid "Temperature Grid"
+msgstr "Đồ Thị Nhiệt Độ"
 
 
-msgid "Override number of threads for the simulation, 0 is automatic"
-msgstr "Thay thế số lượng sợi dây cho mô phỏng, 0 là tự động"
+msgid "Smoke temperature grid, range 0..1 represents 0..1000K"
+msgstr "Đồ thị nhiệt độ khói, pham vị 0..1 được biểu diễn 0..1000K "
 
 
-msgid "Tracer Particles"
-msgstr "Hạt Vệt"
+msgid "Time Scale"
+msgstr "Giai Điệu Thời Gian"
 
 
-msgid "Number of tracer particles to generate"
-msgstr "Số lượng hạt vệt để chế tạo"
+msgid "Adjust simulation speed"
+msgstr "Chỉnh tốc độ mô phỏng"
 
 
-msgid "Reverse fluid frames"
-msgstr "Trở lui bức chất lỏng"
+msgid "Adaptive Domain"
+msgstr "Phạm Vi Ứng Phó"
 
 
-msgid "Generate Speed Vectors"
-msgstr "Chế Tạo Vectơ Vận Tốc"
+msgid "Adapt simulation resolution and size to fluid"
+msgstr "Ứng phó độ phân giải mô phỏng và kích cỡ tùy chất lỏng"
 
 
-msgid "Generate speed vectors for vector blur"
-msgstr "Chế tạo vectơ tốc độ cho mờ hóa vectơ"
+msgid "Bottom"
+msgstr "Dưới"
 
 
-msgid "Remove Air Bubbles"
-msgstr "Xóa Bong Bóng Không kKhí"
+msgid "Top"
+msgstr "Trên"
 
 
-msgid "Removes the air gap between fluid surface and obstacles - WARNING: Can result in a dissolving surface in other areas"
-msgstr "Bỏ cách không khí giữa bề mặt chất lỏng và trở ngại - CẢNH BÁO: Có thể làm mặt hòa tan bề mặt ở khu vực khác"
+msgid "Render a simulation field while mapping its voxels values to the colors of a ramp"
+msgstr "Kết xuất trường mô phỏng khi ánh xạ giá trị thể tích tử của nó đến màu của một dốc màu"
 
 
-msgid "Override Time"
-msgstr "Thay Thế Thời Gian"
+msgid "Dissolve Smoke"
+msgstr "Tan Khói"
 
 
-msgid "Use a custom start and end time (in seconds) instead of the scene's timeline"
-msgstr "Dùng một thời gian bắt đầu và kết thúc tùy chọn (giây) thay thế thời biểu của cảnh"
+msgid "Enable smoke to disappear over time"
+msgstr "Bật để sau một giai đoạn cho khói biến mất"
 
 
-msgid "Viewport Display Mode"
-msgstr "Chế Độ Màn Hiển Thị"
+msgid "Using 1/x "
+msgstr "Dùng 1/x"
 
 
-msgid "How to display the mesh in the viewport"
-msgstr "Làm sao hiển thị mạng lưới trong màn chiếu"
+msgid "Tracer"
+msgstr "Vệt"
+
+
+msgid "Display Type"
+msgstr "Cách Hiển Thị"
+
+
+msgid "Needle"
+msgstr "Cây Kim"
+
+
+msgid "Display vectors as needles"
+msgstr "Hiện vectơ bằng cây kim"
+
+
+msgid "Streamlines"
+msgstr "Nét Dòng Lưu"
+
+
+msgid "Display vectors as streamlines"
+msgstr "Hiện vectơ bằng nét dòng lưu"
+
+
+msgid "Multiplier for scaling the vectors"
+msgstr "Hệ số nhân để phóng to vectơ"
+
+
+msgid "Velocity Grid"
+msgstr "Đồ Thị Vận Tốc"
+
+
+msgid "Smoke velocity grid"
+msgstr "Đồ thị vận tốc khói"
 
 
 msgid "Viscosity Base"
@@ -11568,152 +11780,8 @@ msgid "Negative exponent for the viscosity value (to simplify entering small val
 msgstr "Lũy thừa âm cho giá trị độ nhớt (cho đơn giản hóa nhập trị nhỏ, ví dụ 5*10^-6)"
 
 
-msgid "Fluid Fluid Simulation Settings"
-msgstr "Cài Đặt Mô Phỏng Chất Lỏng"
-
-
-msgid "Fluid simulation settings for the fluid in the simulation"
-msgstr "Cài đặt cho mô phỏng chất lỏng"
-
-
-msgid "Initial Velocity"
-msgstr "Vận Tốc Khởi Động"
-
-
-msgid "Initial velocity of fluid"
-msgstr "Vận tốc khởi động của chất lỏng"
-
-
-msgid "Export Animated Mesh"
-msgstr "Xuất Mạng Lưới Hoạt Hình"
-
-
-msgid "Export this mesh as an animated one (slower and enforces No Slip, only use if really necessary [e.g. armatures or parented objects], animated pos/rot/scale F-Curves do not require it)"
-msgstr "Xuất mạng lưới như một mạng lưới hoạt hình (chậm hơn và buộc dùng Không Trơn, chỉ dùng này nếu cần thiết [ví dụ cốt hay vật thể có phụ huynh], Cong_F hoạt hình vị trí/xoay/phóng to không yêu cầu này)"
-
-
-msgid "Volume Initialization"
-msgstr "Khởi Động Thể Tích"
-
-
-msgid "Volume initialization type (WARNING: complex volumes might require too much memory and break simulation)"
-msgstr "Loại khởi động thể thích (CẢNH BÁO: thể tích phức tạp có thể cần qúa nhiều trí nhớ và làm hư mô phỏng)"
-
-
-msgid "Use only the inner volume of the mesh"
-msgstr "Chỉ dùng thể tích nội bộ của mạng lưới"
-
-
-msgid "Shell"
-msgstr "Vỏ"
-
-
-msgid "Use only the outer shell of the mesh"
-msgstr "Chỉ dùng vỏ ngoài của mạng lưới"
-
-
-msgid "Both"
-msgstr "Cả Hai"
-
-
-msgid "Use both the inner volume and the outer shell of the mesh"
-msgstr "Dùng cả thể tích nội bộ và vỏ ngoài của mạng lưới"
-
-
-msgid "Inflow Fluid Simulation Settings"
-msgstr "Đặc Trưng Mô Phỏng Chất Lỏng Lưu Nhập"
-
-
-msgid "Fluid simulation settings for objects adding fluids in the simulation"
-msgstr "Cài đặt mô phỏng chất lỏng cho vật thể nhập chất lỏng thêm vào mô phỏng"
-
-
-msgid "Inflow Velocity"
-msgstr "Vận Tốc Lưu Nhập"
-
-
-msgid "Local Coordinates"
-msgstr "Tọa Độ Địa Phương"
-
-
-msgid "Use local coordinates for inflow (e.g. for rotating objects)"
-msgstr "Dùng tọa độ điạ phương cho lưu nhập (ví dụ cho vật thể đang xoay)"
-
-
-msgid "Obstacle Fluid Simulation Settings"
-msgstr "Cài đặt Trở Ngại Mô Phỏng Chất Lỏng"
-
-
-msgid "Fluid simulation settings for obstacles in the simulation"
-msgstr "Cài đặt cho trở ngại trong mô phỏng chất lỏng"
-
-
-msgid "Impact Factor"
-msgstr "Hệ Số Ảnh Hướng"
-
-
-msgid "This is an unphysical value for moving objects - it controls the impact an obstacle has on the fluid, =0 behaves a bit like outflow (deleting fluid), =1 is default, while >1 results in high forces (can be used to tweak total mass)"
-msgstr "Đây là giá trị không hợp vật lý cho vật thể chuyển động - nó điều khiển sự ảnh hưởng của trở ngại trong chất lỏng, = 0 làm như lưu xuất (rút chất lỏng), = 1 là mặt định, còn > 1 cho tạo lực cao (có thể dùng cho chỉnh tổng khối lượng)"
-
-
-msgid "Outflow Fluid Simulation Settings"
-msgstr "Cài đặt Mô Phỏng Chất Lỏng Lưu Xuất"
-
-
-msgid "Fluid simulation settings for objects removing fluids from the simulation"
-msgstr "Cài đặt mô phỏng cho vật thể đang rút chất lỏng ra mô phỏng"
-
-
-msgid "Particle Fluid Simulation Settings"
-msgstr "Cài Đặt Mô Phỏng Chất Lỏng Hạt"
-
-
-msgid "Fluid simulation settings for objects storing fluid particles generated by the simulation"
-msgstr "Cài đặt cho vật thể chứa hạt chất lỏng được chế tạo ra bởi mô phỏng phát"
-
-
-msgid "Alpha Influence"
-msgstr "Ảnh Hưởng Độ Đục"
-
-
-msgid "Amount of particle alpha change, inverse of size influence: 0=off (all same alpha), 1=full (larger particles get lower alphas, smaller ones higher values)"
-msgstr "Lượng ảnh hưởng đổi độ đục hạt, đảo nghịch sự ảnh hưởng kích cỡ:  0 = tắt (hết có độ đục bằng nhau), 1 = toàn phần (hạt càng lớn, độ đục càng nhỏ, hạt càng nhỏ độ đục càng lớn)"
-
-
-msgid "Directory (and/or filename prefix) to store and load particles from"
-msgstr "Thư Mục (và/hay đầu tên tệp) cho chứa và nhập hạt"
-
-
-msgid "Particle Influence"
-msgstr "Sự Ảnh Hưởng Hạt"
-
-
-msgid "Amount of particle size scaling: 0=off (all same size), 1=full (range 0.2-2.0), >1=stronger"
-msgstr "Mức phóng to hạt: 0 = tắt (hết có kích cỡ bằng nhau), 1 = toàn phần (phạm vi 0.2-2.0), > 1 = nhiều hơn"
-
-
-msgid "Tracer"
-msgstr "Vệt"
-
-
-msgid "Show tracer particles"
-msgstr "Hiện hạt vệt"
-
-
-msgid "Drops"
-msgstr "Giọt"
-
-
-msgid "Show drop particles"
-msgstr "Hiện hạt giọt"
-
-
-msgid "Floats"
-msgstr "Hạt Nổi"
-
-
-msgid "Show floating foam particles"
-msgstr "Hiện hạt bọt nổi"
+msgid "Amount of turbulence/rotation in fluid"
+msgstr "Mức nhiễu loạn/xoáy trong chất lỏng"
 
 
 msgid "Fluid Mesh Velocity"
@@ -11722,6 +11790,174 @@ msgstr "Vận Tốc Lưới Chất Lỏng"
 
 msgid "Velocity of a simulated fluid mesh"
 msgstr "Vận tốc của một mạng lưới mô phỏng chất lỏng"
+
+
+msgid "Smoke collision settings"
+msgstr "Cài đặt va chạm khói"
+
+
+msgid "Collision"
+msgstr "Va Chạm"
+
+
+msgid "Guide"
+msgstr "Đường Dẫn"
+
+
+msgid "Maximize"
+msgstr "Đầy Màn"
+
+
+msgid "Override"
+msgstr "Thay Thế"
+
+
+msgid "Flow Settings"
+msgstr "Cài Đặt Lưu"
+
+
+msgid "Vertex Group"
+msgstr "Nhóm Đỉnh"
+
+
+msgid "Name of vertex group which determines surface emission rate"
+msgstr "Tên của nhóm đỉnh được xác định lượng khói phát từ bề mặt"
+
+
+msgid "Outflow"
+msgstr "Lưư Xuất"
+
+
+msgid "Flow Type"
+msgstr "Loại Lưu"
+
+
+msgid "Add smoke"
+msgstr "Thêm khói"
+
+
+msgid "Fire + Smoke"
+msgstr "Lửa + Khói"
+
+
+msgid "Add fire and smoke"
+msgstr "Thêm lửa và khói"
+
+
+msgid "Fire"
+msgstr "Lửa"
+
+
+msgid "Add fire"
+msgstr "Thêm lửa"
+
+
+msgid "Flame Rate"
+msgstr "Tốc Độ Ngón Lửa"
+
+
+msgid "Texture that controls emission strength"
+msgstr "Họa tiết để điều khiển sức phát khói"
+
+
+msgid "Particle size in simulation cells"
+msgstr "Kích cỡ hạt trong tế bào của mô phỏng"
+
+
+msgid "Particle systems emitted from the object"
+msgstr "Hệ thống hạt được phát từ vật thể này"
+
+
+msgid "Color of smoke"
+msgstr "Màu Khói"
+
+
+msgid "Subframes"
+msgstr "Hạ Bức"
+
+
+msgid "Number of additional samples to take between frames to improve quality of fast moving flows"
+msgstr "Số lượng của mẫu vật thêm được tính giữa bức để tăng chất lượng của lưu tốc độ cao"
+
+
+msgid "Temp. Diff."
+msgstr "Chênh Lệch Nhiệt Độ"
+
+
+msgid "Temperature difference to ambient temperature"
+msgstr "Chênh lệch nhiệt độ so với nhiệt độ bao quanh"
+
+
+msgid "Mapping"
+msgstr "Ánh Xạ"
+
+
+msgid "Texture mapping type"
+msgstr "Loại ánh xạ họa tiết"
+
+
+msgid "Generated"
+msgstr "Được Chế Tạo"
+
+
+msgid "Generated coordinates centered to flow object"
+msgstr "Tọa độ được chế tạo có trung tâm tại vật thể lưu"
+
+
+msgid "Use UV layer for texture coordinates"
+msgstr "Dùng lớp UV cho tọa độ họa tiết"
+
+
+msgid "Z-offset of texture mapping"
+msgstr "Địch-Z của bản đồ họa tiết"
+
+
+msgid "Size of texture mapping"
+msgstr "Kích cỡ của bản đồ họa tiết"
+
+
+msgid "Absolute Density"
+msgstr "Tỉ Trọng Tuyệt Đối"
+
+
+msgid "Initial Velocity"
+msgstr "Vận Tốc Khởi Động"
+
+
+msgid "Set Size"
+msgstr "Đặt Kích Cỡ"
+
+
+msgid "Set particle size in simulation cells or use nearest cell"
+msgstr "Đặt kích cỡ hạt trong tế bào của mô phỏng hay dùng tế bào gần nhất"
+
+
+msgid "Use Texture"
+msgstr "Sử Dụng Họa Tiết"
+
+
+msgid "Use a texture to control emission strength"
+msgstr "Dùng một họa tiết để điều khiển sức phát khói"
+
+
+msgid "Initial"
+msgstr "Khởi Đầu"
+
+
+msgid "Normal"
+msgstr "Bình Thường"
+
+
+msgid "Amount of normal directional velocity"
+msgstr "Mức vận tốc theo hướng pháp tuyến"
+
+
+msgid "Amount of random velocity"
+msgstr "Mức vận tốc ngẫu nhiên"
+
+
+msgid "Factor for smoke emitted from inside the mesh volume"
+msgstr "Hệ số khói phát từ ở trong thể tích mạng lưới"
 
 
 msgid "Freestyle Line Set"
@@ -11932,16 +12168,8 @@ msgid "Line set name"
 msgstr "Tên tập đường"
 
 
-msgid "End"
-msgstr "Kết Thúc"
-
-
 msgid "Last QI value of the QI range"
 msgstr "Giá trị cuối cùng của phạm vi ĐLH"
-
-
-msgid "Start"
-msgstr "Bắt Đầu"
 
 
 msgid "First QI value of the QI range"
@@ -12360,10 +12588,6 @@ msgid "Quadratic easing"
 msgstr "Xoa dịu bậc hai"
 
 
-msgid "Cubic"
-msgstr "Lập Phương"
-
-
 msgid "Cubic easing"
 msgstr "Xoa dịu lập phương"
 
@@ -12632,10 +12856,6 @@ msgid "Draw the points which make up the strokes (for debugging purposes)"
 msgstr "Vẽ các điểm lắp ráp các nét (cho chỉnh sửa sai lầm)"
 
 
-msgid "Thickness"
-msgstr "Bề Dày"
-
-
 msgid "Thickness of annotation strokes"
 msgstr "Bề dày của nét lời ghi chú"
 
@@ -12718,10 +12938,6 @@ msgstr "Thêm hiệu ứng của bút"
 
 msgid "Subtract effect of brush"
 msgstr "Trừ hiệu ứng của bút"
-
-
-msgid "Radius"
-msgstr "Bán Kính"
 
 
 msgid "Radius of the brush in pixels"
@@ -12874,10 +13090,6 @@ msgstr "Đặc tính cho dụng cụ khắc nét của Bút Sáp"
 
 msgid "Brush"
 msgstr "Bút"
-
-
-msgid "Guide"
-msgstr "Đường Dẫn"
 
 
 msgid "Threshold for stroke intersections"
@@ -13674,10 +13886,6 @@ msgid "Bind vertex groups to armature modifier"
 msgstr "Trói nhóm đỉnh với cụ sửa đổi cốt"
 
 
-msgid "Vertex Group"
-msgstr "Nhóm Đỉnh"
-
-
 msgid "Name of Vertex Group which determines influence of modifier per point"
 msgstr "Tên của Nhóm Đỉnh thì được xác định sự ảnh hưởng của cụ sửa đổi tại mỗi điểm"
 
@@ -13932,6 +14140,10 @@ msgstr "Màu Sắc Màu"
 
 msgid "Set what colors of the stroke are affected"
 msgstr "Xác định màu nào của nét được ảnh hưởng"
+
+
+msgid "Both"
+msgstr "Cả Hai"
 
 
 msgid "Modify fill and stroke colors"
@@ -14520,18 +14732,6 @@ msgid "Red Green Blue"
 msgstr "Đỏ Lục Xanh"
 
 
-msgid "Red"
-msgstr "Đỏ"
-
-
-msgid "Green"
-msgstr "Lục"
-
-
-msgid "Blue"
-msgstr "Xanh"
-
-
 msgid "Show Line"
 msgstr "Hiện Nét"
 
@@ -14675,10 +14875,6 @@ msgstr "Dữ liệu hoạt hình cho cục dữ liệu này"
 
 msgid "Bones"
 msgstr "Xương"
-
-
-msgid "Display Type"
-msgstr "Cách Hiển Thị"
 
 
 msgid "Octahedral"
@@ -15653,10 +15849,6 @@ msgid "When locked keep using the plane origin of surface where stroke was initi
 msgstr "Khi bị khóa lại vẫn dùng góc tọa độ mặt phẳng của bề mặt tại chổ nét được khởi động"
 
 
-msgid "Antialasing"
-msgstr "Chống Răng Cưa"
-
-
 msgid "Smooths the edges of the strokes"
 msgstr "Mịn hóa ranh của các nét"
 
@@ -15667,10 +15859,6 @@ msgstr "Sử Dụng Khắc"
 
 msgid "Use this brush in grease pencil drawing mode"
 msgstr "Sử dụng bút này trong chế độ vẽ bút sáp"
-
-
-msgid "Use Texture"
-msgstr "Sử Dụng Họa Tiết"
 
 
 msgid "Use this brush in texture paint mode"
@@ -15763,22 +15951,6 @@ msgstr "Dùng Lớp Che Họa Tiết"
 
 msgid "Show texture in viewport"
 msgstr "Hiện họa tiết trong màn chiếu"
-
-
-msgid "2D Falloff"
-msgstr "Sự Giảm 2 Chiều"
-
-
-msgid "Apply brush influence in 2D circle instead of a sphere"
-msgstr "Áp dụng sự ảnh hưởng của bút bằng vòng tròn 2D thay thế một hình cầu"
-
-
-msgid "Absolute Jitter"
-msgstr "Hốt hoảng Tuyệt Đối"
-
-
-msgid "Jittering happens in screen space, not relative to brush size"
-msgstr "hốt hoảng trong không gian màn, không tương đối với kích cỡ bút"
 
 
 msgid "Restore Mesh"
@@ -16633,20 +16805,12 @@ msgid "Align to top but use the base-line of the text"
 msgstr "Canh lề đến trên nhưng dùng đường cơ sở của văn bản"
 
 
-msgid "Top"
-msgstr "Trên"
-
-
 msgid "Align text to the top"
 msgstr "Canh lề văn bản đến phía tren"
 
 
 msgid "Align text to the middle"
 msgstr "Canh lề văn bản ở giữa"
-
-
-msgid "Bottom"
-msgstr "Dưới"
 
 
 msgid "Align text to the bottom"
@@ -17949,10 +18113,6 @@ msgid "Generated grid to test UV mappings"
 msgstr "Chế tạo đồ thị để thử ánh xạ UV"
 
 
-msgid "Color Grid"
-msgstr "Đồ Thị Màu"
-
-
 msgid "Generated improved UV grid to test UV mappings"
 msgstr "Chế tạo đồ thị tốt hơn cho thử ánh xạ UV"
 
@@ -18069,10 +18229,6 @@ msgid "Movie file"
 msgstr "Tệp Phim"
 
 
-msgid "Generated"
-msgstr "Được Chế Tạo"
-
-
 msgid "Generated image"
 msgstr "Ảnh được chế tạo"
 
@@ -18083,6 +18239,10 @@ msgstr "Màn Chiếu"
 
 msgid "Compositing node viewer"
 msgstr "Giao điểm màu chiếu ghép ảnh"
+
+
+msgid "Tiled"
+msgstr "Ô"
 
 
 msgid "Stereo 3D Format"
@@ -18723,10 +18883,6 @@ msgid "Type of parallax volume"
 msgstr "Loại thể tích thị sai"
 
 
-msgid "Clipping"
-msgstr "Cắt"
-
-
 msgid "Show the clipping distances in the 3D view"
 msgstr "Hiện khoảng cách cắt trong màn chiếu 3D"
 
@@ -18993,6 +19149,10 @@ msgstr "Cầu Tô Sắc"
 
 msgid "Cloth"
 msgstr "Vải"
+
+
+msgid "Fluid"
+msgstr "Chất Lỏng"
 
 
 msgid "Refraction Depth"
@@ -20267,10 +20427,6 @@ msgid "Indices of vertices in case of a vertex parenting relation"
 msgstr "Chỉ số của các đỉnh cho trường hợp có liên hệ phụ huynh"
 
 
-msgid "Particle systems emitted from the object"
-msgstr "Hệ thống hạt được phát từ vật thể này"
-
-
 msgid "Index number for the \"Object Index\" render pass"
 msgstr "Chỉ số cho vòng kết xuất \"Chỉ Số Vật Liệu\""
 
@@ -20793,10 +20949,6 @@ msgid "Maximum length of the particle color vector"
 msgstr "Bề dài cực đại của vectơ màu của hạt"
 
 
-msgid "Number"
-msgstr "Số"
-
-
 msgid "Total number of particles"
 msgstr "Tổng số hạt"
 
@@ -21141,10 +21293,6 @@ msgid "Dummy"
 msgstr "Giả"
 
 
-msgid "Normal"
-msgstr "Bình Thường"
-
-
 msgid "Let the surface normal give the particle a starting velocity"
 msgstr "Cho pháp tuyến mặt đặt tốc độ bắt đầu của hạt"
 
@@ -21163,6 +21311,10 @@ msgstr "Vận Tốc Vật Thể"
 
 msgid "Let the object give the particle a starting velocity"
 msgstr "Cho vật thể được đặt tốc độ bắt đầu của hạt"
+
+
+msgid "Particle"
+msgstr "Hạt"
 
 
 msgid "Let the target particle give the particle a starting velocity"
@@ -21231,10 +21383,6 @@ msgstr "Sự Kiện nào của hạt mục tiêu để phản ứng"
 
 msgid "Death"
 msgstr "Hủy Diệt"
-
-
-msgid "Collision"
-msgstr "Va Chạm"
 
 
 msgid "Reactor"
@@ -21413,10 +21561,6 @@ msgid "Give the particle size a random variation"
 msgstr "Cho các hạt kích cỡ một lệch lạc ngẫu nhiên"
 
 
-msgid "Subframes"
-msgstr "Hạ Bức"
-
-
 msgid "Subframes to simulate for improved stability and finer granularity simulations (dt = timestep / (subframes + 1))"
 msgstr "Hạ bức để giúp làm mô phỏng ổn định hơn và mô phòng mịn hơn (dt = bức / (hạ bức + 1))"
 
@@ -21475,10 +21619,6 @@ msgstr "Đường cong chỉ định xoắn"
 
 msgid "Particle Type"
 msgstr "Loại Hạt"
-
-
-msgid "Emitter"
-msgstr "Đồ Phát"
 
 
 msgid "Absolute Path Time"
@@ -22147,10 +22287,6 @@ msgstr "Hoạt Hình Đang Hát"
 
 msgid "Animation playback is active"
 msgstr "Hát lại hoạt hình đang hoạt động"
-
-
-msgid "Maximize"
-msgstr "Đầy Màn"
 
 
 msgid "An area is maximized, filling this screen"
@@ -23779,10 +23915,6 @@ msgid "The solver does not reiterate, not even on first frame (starts from rest 
 msgstr "Bộ giải nghiệm không lặp lại, cũng một lặp lại bức đầu (bắt đầu từ dạng đứng nghỉ ngơi)"
 
 
-msgid "Initial"
-msgstr "Khởi Đầu"
-
-
 msgid "The solver reiterates (converges) on the first frame but not on subsequent frame"
 msgstr "Bộ giải nghiệm lặp lại (tính hội tụ) cho bức đầu tiên nhưng không lặp lại cho bức tiếp"
 
@@ -23909,10 +24041,6 @@ msgstr "Lưu ảnh có dữ liệu RGB (màu)"
 
 msgid "Images are saved with RGB and Alpha data (if supported)"
 msgstr "Lưu ảnh có dữ liệu RGB và độ đục (nếu được hỗ trợ)"
-
-
-msgid "Compression"
-msgstr "Nén"
 
 
 msgid "Amount of time to determine best compression: 0 = no compression with fast file output, 100 = maximum lossless compression with slow file output"
@@ -26111,10 +26239,6 @@ msgid "Invert the fade-out direction of the linear mapping"
 msgstr "Đảo nghịch hướng phai cuả ánh xạ bậc một"
 
 
-msgid "Mapping"
-msgstr "Ánh Xạ"
-
-
 msgid "Select the mapping type"
 msgstr "Chọn loại ánh xạ"
 
@@ -27422,10 +27546,6 @@ msgid "Marker Settings"
 msgstr "Cài Đặt Ký Hiệu"
 
 
-msgid "Set Handle Type"
-msgstr "Đặt Loại Tay Cầm"
-
-
 msgid "Pivot Point"
 msgstr "Điểm Tựa"
 
@@ -27498,10 +27618,6 @@ msgid "Dope Sheet Context Menu"
 msgstr "Danh Bạ Bối Cảnh Hoạt Hình"
 
 
-msgid "Delete"
-msgstr "Xóa"
-
-
 msgid "Key"
 msgstr "Bức Mẫu"
 
@@ -27516,6 +27632,10 @@ msgstr "Đặc Biệt Dấu Sách"
 
 msgid "Files Context Menu"
 msgstr "Danh Bạ Bối Cảnh Tệp"
+
+
+msgid "Fluid Presets"
+msgstr "Đặt Sẵn Chất Lỏng"
 
 
 msgid "Clean Up"
@@ -28845,10 +28965,6 @@ msgid "Explode"
 msgstr "Nổ"
 
 
-msgid "Fluid Simulation"
-msgstr "Mô Phỏng Chất Lỏng"
-
-
 msgid "Ocean"
 msgstr "Đại Dương"
 
@@ -28857,8 +28973,8 @@ msgid "Particle Instance"
 msgstr "Thực Thể Hạt"
 
 
-msgid "Smoke"
-msgstr "Khói"
+msgid "Fluid Simulation"
+msgstr "Mô Phỏng Chất Lỏng"
 
 
 msgid "Soft Body"
@@ -30273,16 +30389,12 @@ msgid "Use particle size for the shrapnel"
 msgstr "Kích cỡ hạt cho mảnh"
 
 
-msgid "Fluid Simulation Modifier"
-msgstr "Cụ Sửa Đổi Mô Phỏng Chất Lỏng"
-
-
 msgid "Fluid simulation modifier"
 msgstr "Cụ sửa đổi mô phỏng chất lỏng"
 
 
-msgid "Settings for how this object is used in the fluid simulation"
-msgstr "Cài đặt cách thức dùng vật thể này trong mô phỏng chất lỏng"
+msgid "Inflow/Outflow"
+msgstr "Lưu Nhập/Lưu Xuất"
 
 
 msgid "Hook modifier to modify the location of vertices"
@@ -30471,10 +30583,6 @@ msgstr "Phương pháp cho điều khiển thời gian hát lại"
 
 msgid "Control playback using a frame-number (ignoring time FPS and start frame from the file)"
 msgstr "Điều khiển hát lại bằng một số bức (không quan thời gian tâm bức/giây và số bức đầu trong tệp)"
-
-
-msgid "Time"
-msgstr "Thời Gian"
 
 
 msgid "Control playback using time in seconds"
@@ -31424,26 +31532,6 @@ msgstr "Tránh tạo tư giác không đôi xúng qua trục Y"
 
 msgid "Avoid making unsymmetrical quads across the Z axis"
 msgstr "Tránh tạo tư giác không đôi xúng qua trục Z"
-
-
-msgid "Smoke Modifier"
-msgstr "Cụ Sửa Đổi Khói"
-
-
-msgid "Smoke simulation modifier"
-msgstr "Cụ sửa đổi của mô phỏng khói"
-
-
-msgid "Domain Settings"
-msgstr "Cài Đặt Phạm Vi"
-
-
-msgid "Flow Settings"
-msgstr "Cài Đặt Lưu"
-
-
-msgid "Inflow/Outflow"
-msgstr "Lưu Nhập/Lưu Xuất"
 
 
 msgid "Soft Body Modifier"
@@ -33377,10 +33465,6 @@ msgid "Interpolation to use for sub-pixel shifts and rotations due to stabilizat
 msgstr "Dùng phương pháp suy nội nào cho dịch và xoay hạ điểm ảnh bởi việc ổn định hóa"
 
 
-msgid "Nearest"
-msgstr "Gần Nhất"
-
-
 msgid "No interpolation, use nearest neighbor pixel"
 msgstr "Không suy nội, dùng điểm ảnh gần nhất"
 
@@ -34207,10 +34291,6 @@ msgstr "Giải Thuật"
 
 msgid "Algorithm to use to limit channel"
 msgstr "Dùng giải thuật nào cho hạn chế kênh"
-
-
-msgid "Single"
-msgstr "Một"
 
 
 msgid "Limit by single channel"
@@ -36753,10 +36833,6 @@ msgstr "Tính khoảng cách đến điểm gần nhất thứ hai và vị trí
 
 msgid "Smooth F1"
 msgstr "Mịn Hóa F1"
-
-
-msgid "Smoothed version of F1. Weighted sum of neighbour voronoi cells"
-msgstr "Phiên bàn mịn hóa của F1. Tích quyền lượng của tế bào voroni kề nhau"
 
 
 msgid "Distance To Edge"
@@ -41296,10 +41372,6 @@ msgid "Time Slide"
 msgstr "Trượt ThờiGian"
 
 
-msgid "Time Scale"
-msgstr "Giai Điệu Thời Gian"
-
-
 msgid "Time Extend"
 msgstr "KéoDài ThờiGian"
 
@@ -43404,15 +43476,6 @@ msgstr "Gỡ Gói Thư Viện Blender "
 
 msgid "Unpack all used Blender library files from this .blend file"
 msgstr "Gỡ gói hết thư viện Blender được dùng từ tệp .blend này"
-
-
-msgctxt "Operator"
-msgid "Fluid Simulation Bake"
-msgstr "Nướng Mô Phỏng Chất Lỏng"
-
-
-msgid "Bake fluid simulation"
-msgstr "Nướng mô phỏng chất lỏng"
 
 
 msgctxt "Operator"
@@ -52619,43 +52682,6 @@ msgstr "Vận Tốc Bay Ra"
 
 
 msgctxt "Operator"
-msgid "Quick Fluid"
-msgstr "Chất Lỏng Nhanh"
-
-
-msgid "Use selected objects in a fluid simulation"
-msgstr "Dùng các vật thể được chọn trong một mô phỏng chất lỏng"
-
-
-msgid "Initial velocity of the fluid"
-msgstr "Vận tốc khởi đầu của chất lỏng"
-
-
-msgid "Render Fluid Objects"
-msgstr "Kết Xuất Vật Thể Chất Lỏng"
-
-
-msgid "Keep the fluid objects visible during rendering"
-msgstr "Hiển thị vật thể chất lỏng khi kết xuất"
-
-
-msgid "Start Fluid Bake"
-msgstr "Bắt Đầu Nướng Chất Lỏng"
-
-
-msgid "Start baking the fluid immediately after creating the domain object"
-msgstr "Bắt đầu nướng chất lỏng lập tức sau tạo vật thể phạm vi"
-
-
-msgid "Fluid Style"
-msgstr "Phong Cách Chất Lỏng"
-
-
-msgid "Basic"
-msgstr "Cơ Bản"
-
-
-msgctxt "Operator"
 msgid "Quick Fur"
 msgstr "Lông Nhanh"
 
@@ -52666,10 +52692,6 @@ msgstr "Thêm cài đặt lông cho vật thể được chọn"
 
 msgid "Fur Density"
 msgstr "Tỉ Trọng Lông"
-
-
-msgid "Heavy"
-msgstr "Nặng"
 
 
 msgid "View %"
@@ -52695,10 +52717,6 @@ msgstr "Hiển thị vật thể khói khi kết xuất"
 
 msgid "Smoke Style"
 msgstr "Phong Cách Khói"
-
-
-msgid "Fire"
-msgstr "Lửa"
 
 
 msgid "Smoke + Fire"
@@ -56699,10 +56717,6 @@ msgstr "Tính Khối Lượng"
 
 msgid "Automatically calculate mass values for Rigid Body Objects based on volume"
 msgstr "Tự động tính khối lượng cho Vật Thể Rắn Buộc tùy thể tích"
-
-
-msgid "Density"
-msgstr "Tỉ Trọng"
 
 
 msgid "Custom density value (kg/m^3) to use instead of material preset"
@@ -64724,10 +64738,6 @@ msgid "Shutter Curve"
 msgstr "Đường Cong Trập"
 
 
-msgid "Override"
-msgstr "Thay Thế"
-
-
 msgid "Passes"
 msgstr "Các Vòng"
 
@@ -64886,10 +64896,6 @@ msgstr "Các Đặc Điểm"
 
 msgid "Directory Path"
 msgstr "Đường Dẫn Thư Mục"
-
-
-msgid "Fluid Presets"
-msgstr "Đặt Sẵn Chất Lỏng"
 
 
 msgid "Active Tool"
@@ -65209,6 +65215,10 @@ msgid "Timing"
 msgstr "Thời Tự"
 
 
+msgid "Border Collisions"
+msgstr "Va Chạm Ranh Giới"
+
+
 msgid "Collisions"
 msgstr "Va Chạm"
 
@@ -65231,10 +65241,6 @@ msgstr "Tự Va Chạm"
 
 msgid "Softbody And Cloth"
 msgstr "Thân Mềm Và Vải"
-
-
-msgid "Viscosity"
-msgstr "Độ Nhớt"
 
 
 msgid "Falloff Ramp"
@@ -65261,6 +65267,14 @@ msgid "Force Fields"
 msgstr "Lực Trường"
 
 
+msgid "Flow Source"
+msgstr "Nguồn Lưu"
+
+
+msgid "Guides"
+msgstr "Đường Hướng Dẫn"
+
+
 msgid "Surface Response"
 msgstr "Phản Ứng Bề Mặt"
 
@@ -65275,30 +65289,6 @@ msgstr "Động Lý"
 
 msgid "Deactivation"
 msgstr "Tắt Hoạt Động"
-
-
-msgid "Adaptive Domain"
-msgstr "Phạm Vi Ứng Phó"
-
-
-msgid "Behavior"
-msgstr "Hành Vi"
-
-
-msgid "Flames"
-msgstr "Nóng Lửa"
-
-
-msgid "High Resolution"
-msgstr "Độ Phân Giải Cao"
-
-
-msgid "Particle Size"
-msgstr "Kích Cỡ Hạt"
-
-
-msgid "Debug Velocity"
-msgstr "Vận Tốc Sửa Sai Lầm"
 
 
 msgid "Self Collision"
@@ -65319,6 +65309,10 @@ msgstr "Khám Phá"
 
 msgid "Helpers"
 msgstr "Đồ Giúp Đỡ"
+
+
+msgid "Debug Velocity"
+msgstr "Vận Tốc Sửa Sai Lầm"
 
 
 msgid "Creates a Panel in the Render Layers context of the properties editor"
@@ -65739,10 +65733,6 @@ msgid "Draw Context Menu"
 msgstr "Vẽ Danh Bạ Bối Cảnh"
 
 
-msgid "Guides"
-msgstr "Đường Hướng Dẫn"
-
-
 msgid "Drawing Plane"
 msgstr "Mặt Phẳng Vẽ"
 
@@ -65801,10 +65791,6 @@ msgstr "Phân Tích"
 
 msgid "Quad View"
 msgstr "Tư Phân Màn"
-
-
-msgid "Unified Brush"
-msgstr "Bút Tông Nhất"
 
 
 msgid "Shadow Settings"
@@ -66127,16 +66113,8 @@ msgid "Post-Processing"
 msgstr "Qúa Trình Sau"
 
 
-msgid "Stabilize"
-msgstr "Ổn Định Hóa"
-
-
 msgid "Sculpt Strokes"
 msgstr "Khắc Nét"
-
-
-msgid "Particle tools"
-msgstr "Dụng cụ hạt"
 
 
 msgid "Default tools for particle mode"
@@ -66919,40 +66897,12 @@ msgid "Active point cache for physics simulations"
 msgstr "Đệm chứa điểm hoạt động cho mô phỏng vật lý học"
 
 
-msgid "Cache Compression"
-msgstr "Nén Đệm Chứa"
-
-
-msgid "Compression method to be used"
-msgstr "Phương pháp được dùng cho nén đệm chứa"
-
-
 msgid "No compression"
 msgstr "Không Nén"
 
 
-msgid "Lite"
-msgstr "Nhẹ"
-
-
-msgid "Fast but not so effective compression"
-msgstr "Nhanh mà mà hiệu qủa nén không cao"
-
-
-msgid "Effective but slow compression"
-msgstr "Hiệu qủa nén cao nhưng chậm"
-
-
 msgid "Cache file path"
 msgstr "Đường dẫn đệm chứa"
-
-
-msgid "Frame on which the simulation stops"
-msgstr "Số bức cho kết thúc mô phỏng"
-
-
-msgid "Frame on which the simulation starts"
-msgstr "Số bức cho bắt đầu mô phỏng"
 
 
 msgid "Cache Step"
@@ -67371,6 +67321,10 @@ msgid "File Paths"
 msgstr "Đường Dẫn Tệp"
 
 
+msgid "Experimental"
+msgstr "Thí Nghiệm"
+
+
 msgid "Application Template"
 msgstr "Bố Cục Mẫu Ứng Dụng"
 
@@ -67385,10 +67339,6 @@ msgstr "Phương Pháp Biên Tập"
 
 msgid "Settings for interacting with Blender data"
 msgstr "Cài đặt cho tương tác với thông tin Blender"
-
-
-msgid "Experimental"
-msgstr "Thí Nghiệm"
 
 
 msgid "Default paths for external files"
@@ -69787,14 +69737,6 @@ msgid "Interpolation method to use for smoke/fire volumes"
 msgstr "Phương pháp suy nội cho thể tích khói/lửa"
 
 
-msgid "Good smoothness and speed"
-msgstr "Mịn và tốc độ nhiều"
-
-
-msgid "Smoothed high quality interpolation, but slower"
-msgstr "Suy nội mịn chất lượng cao, mà chậm hơn"
-
-
 msgid "Volume Sampling"
 msgstr "Mẫu Vật Thể Tích"
 
@@ -72031,10 +71973,6 @@ msgid "Layers Blending"
 msgstr "Pha Trộn Lớp"
 
 
-msgid "Do not display blend layers"
-msgstr "Không hiển thị lớp pha trộn"
-
-
 msgid "Simplify Playback"
 msgstr "Đơn Giản Hóa Hát Lại"
 
@@ -72047,40 +71985,16 @@ msgid "Disable Lines"
 msgstr "Tắt Nét"
 
 
-msgid "Disable external lines of fill strokes"
-msgstr "Tắt nét ngoài của nét tô đầy"
-
-
 msgid "Simplify Shaders"
 msgstr "Đơn Giản Hóa Bộ Tô Sắc"
-
-
-msgid "Do not apply shader fx"
-msgstr "Không áp dụng hiệu ứng bộ tô sắc"
 
 
 msgid "Layers Tinting"
 msgstr "Nhiễm Mà Lớp"
 
 
-msgid "Do not display layer tint"
-msgstr "Không hiển thị lớp màu nhiễm"
-
-
-msgid "Disable Fill"
-msgstr "Tắt Tô Đầy"
-
-
-msgid "Disable fill strokes in the viewport"
-msgstr "Tắt tô đầy nét trong màn chiếu"
-
-
 msgid "Disable Modifiers"
 msgstr "Tắt Cụ Sửa Đổi"
-
-
-msgid "Do not apply modifiers in the viewport"
-msgstr "Không áp dụng cụ sửa đổi trong màn chiếu"
 
 
 msgid "Simplify Subdivision"
@@ -72217,10 +72131,6 @@ msgstr "Kèm đuổi định dạng tệp với tên tệp kết xuất (ví d�
 
 msgid "Draw stylized strokes using Freestyle"
 msgstr "Vẽ nét có phong cách bằng Phong Cách Tự Do"
-
-
-msgid "Full Sample"
-msgstr "Mẫu Vật Toàn Bộ"
 
 
 msgid "Save for every anti-aliasing sample the entire RenderLayer results (this solves anti-aliasing issues with compositing)"
@@ -73099,10 +73009,6 @@ msgid "Settings for particle fluids physics"
 msgstr "Cài đặt cho vật lý hạt chất lỏng"
 
 
-msgid "Buoyancy"
-msgstr "Lực Nổi"
-
-
 msgid "Artificial buoyancy force in negative gravity direction based on pressure differences inside the fluid"
 msgstr "Lực nổi giả nghịch hướng với hấp dẫn tùy chênh lẹch áp suất trong chất lỏng"
 
@@ -73113,6 +73019,10 @@ msgstr "Bán Kín Tương tác"
 
 msgid "Fluid interaction radius"
 msgstr "Bán kính tương tác cho chất lỏng"
+
+
+msgid "Viscosity"
+msgstr "Độ Nhớt"
 
 
 msgid "Linear viscosity"
@@ -74151,6 +74061,10 @@ msgstr "Biến đổi ngõ vào sang dữ liệu số thật"
 
 msgid "Use a preview proxy and/or timecode index for this strip"
 msgstr "Dùng đại lý dự khán và/hay mã thời gian cho đoạn này"
+
+
+msgid "Reverse Frames"
+msgstr "Trở Lui Bức"
 
 
 msgid "Reverse frame order"
@@ -75554,662 +75468,6 @@ msgid "Point in a shape key"
 msgstr "Điểm trong mẫu dạng"
 
 
-msgid "Smoke collision settings"
-msgstr "Cài đặt va chạm khói"
-
-
-msgid "Collision Type"
-msgstr "Loại Va Chạm"
-
-
-msgid "Collision type"
-msgstr "Loại Va Chậm"
-
-
-msgid "Static"
-msgstr "Tĩnh"
-
-
-msgid "Non moving obstacle"
-msgstr "Trở ngại không di chuyển"
-
-
-msgid "Rigid"
-msgstr "Cứng"
-
-
-msgid "Rigid obstacle"
-msgstr "Trở ngại không di chuyển"
-
-
-msgid "Animated"
-msgstr "Hoạt Động"
-
-
-msgid "Animated obstacle"
-msgstr "Trở ngại hoạt hình"
-
-
-msgid "Smoke domain settings"
-msgstr "Cài đặt phạm vi khói"
-
-
-msgid "Margin added around fluid to minimize boundary interference"
-msgstr "Thêm lề quanh chất lỏng để giảm sự ảnh hưởng của ranh giới"
-
-
-msgid "Maximum amount of fluid cell can contain before it is considered empty"
-msgstr "Mức cực đại chât lỏng tế bào được chứa trước nó được chấp nhận là trống rỗng"
-
-
-msgid "Additional"
-msgstr "Thêm"
-
-
-msgid "Maximum number of additional cells"
-msgstr "Số lượng tế bào thêm tối đa"
-
-
-msgid "How much density affects smoke motion (higher value results in faster rising smoke)"
-msgstr "Mức tỉ trọng được ảnh hưởng chuyển động của khói (giá trị càng cao tốc độ bay lên càng lẹ)"
-
-
-msgid "Amplification"
-msgstr "Tăng Độ Phân Giải"
-
-
-msgid "Enhance the resolution of smoke by this factor using noise"
-msgstr "Dùng huyên náo để tăng độ phân giải của khói bằng hệ số này"
-
-
-msgid "Slice the whole domain object"
-msgstr "Cắt ngang toàn vật thể phạm vi"
-
-
-msgid "Perform a single slice of the domain object"
-msgstr "Thực hành cắt ngang vật thể phạm vi một lần"
-
-
-msgid "Heat"
-msgstr "Nhiệt"
-
-
-msgid "How much heat affects smoke motion (higher value results in faster rising smoke)"
-msgstr "Mức nhiệt được ảnh hưởng chuyển động của khói (giá trị càng cao tốc độ bay lên càng lẹ) "
-
-
-msgid "Speed of the burning reaction (use larger values for smaller flame)"
-msgstr "Tốc độ của phản ứng cháy (giá trị càng lớn lửa càng nhỏ)"
-
-
-msgid "Select the file format to be used for caching"
-msgstr "Chọn định dạng tệp để dùng cho đệm chứa"
-
-
-msgid "Blender specific point cache file format"
-msgstr "Định dạng tệp đệm chứa điểm nhất đính của Blender"
-
-
-msgid "OpenVDB"
-msgstr "OpenVDB"
-
-
-msgid "OpenVDB file format"
-msgstr "Định dạng tệp OpenVDB"
-
-
-msgid "Cell Size"
-msgstr "Kích Cỡ Tế Bào"
-
-
-msgid "Value under which voxels are considered empty space to optimize caching and rendering"
-msgstr "Giá trị thì thể thích tử nhỏ hơn được chấp nhận là không gian trống rỗng cho tối ưu đệm chứa và kết xuất"
-
-
-msgid "Field"
-msgstr "Trường"
-
-
-msgid "Simulation field to color map"
-msgstr "Trường mô phỏng đến ánh xạ màu"
-
-
-msgid "Red component of the color field"
-msgstr "Thành phần đỏ của trường màu"
-
-
-msgid "Green component of the color field"
-msgstr "Thành phần lục của trường màu"
-
-
-msgid "Blue component of the color field"
-msgstr "Thành phần xanh của trường màu"
-
-
-msgid "Quantity of soot in the fluid"
-msgstr "Số lượng bồ hóng trong chất lỏng"
-
-
-msgid "Flame"
-msgstr "Ngón Lửa"
-
-
-msgid "Flame field"
-msgstr "Trường Ngón Lửa"
-
-
-msgid "Fuel"
-msgstr "Nhiên liệu"
-
-
-msgid "Fuel field"
-msgstr "Trường nhiên liệu"
-
-
-msgid "Temperature of the fluid"
-msgstr "Nhiệt độ chất lỏng"
-
-
-msgid "X Velocity"
-msgstr "Vận Tốc X"
-
-
-msgid "X component of the velocity field"
-msgstr "Thành phần X của vận tốc trường"
-
-
-msgid "Y Velocity"
-msgstr "Vận Tốc Y"
-
-
-msgid "Y component of the velocity field"
-msgstr "Thành phần Y của vận tốc trường"
-
-
-msgid "Z Velocity"
-msgstr "Vận Tốc Z"
-
-
-msgid "Z component of the velocity field"
-msgstr "Thành phần Z của vận tốc trường"
-
-
-msgid "Limit collisions to this collection"
-msgstr "Hạn chế va chạm đến trong sưu tập này"
-
-
-msgid "Border Collisions"
-msgstr "Va Chạm Ranh Giới"
-
-
-msgid "Select which domain border will be treated as collision object"
-msgstr "Chọn ranh giới nào của phạm vi sẽ được xử lý như vật thể va chạm"
-
-
-msgid "Smoke doesn't collide with any border"
-msgstr "Khói không va chạm với bắt cứ ranh giới nào"
-
-
-msgid "Vertically Open"
-msgstr "Mở Hướng Dọc"
-
-
-msgid "Smoke doesn't collide with top and bottom sides"
-msgstr "Khói sẽ không va chạm với ranh giới dưới và trên"
-
-
-msgid "Collide All"
-msgstr "Va Chạm Hết"
-
-
-msgid "Smoke collides with every side"
-msgstr "Khói sẽ va chạm với mỗi mặt"
-
-
-msgid "Smoke color grid"
-msgstr "Đồ thị màu của khói"
-
-
-msgid "Data Depth"
-msgstr "Độ Sâu Dữ Liệu"
-
-
-msgid "Bit depth for writing all scalar (including vector) lower values reduce file size"
-msgstr "Số lượng bit cho lưu hết dữ liệu số (gồm vectơ), giá trị nhỏ hơn giảm kích cữ tệp"
-
-
-msgid "Float (Half)"
-msgstr "Float (Nữa)"
-
-
-msgid "Half float (16 bit data)"
-msgstr "Float nữa (dữ liệu 16 bit)"
-
-
-msgid "Float (Full)"
-msgstr "Float (Đơn)"
-
-
-msgid "Full float (32 bit data)"
-msgstr "Float đơn (dữ liệu 32 bit)"
-
-
-msgid "Density Grid"
-msgstr "Đồ Thị Tỉ Trọng"
-
-
-msgid "Smoke density grid"
-msgstr "Đồ thị tỉ trọng của khói"
-
-
-msgid "Interpolation method to use for smoke/fire volumes in solid mode"
-msgstr "Phương pháp suy nội để sùng cho thể tích khói/lửa trong chế độ rắn"
-
-
-msgid "Thickness of smoke drawing in the viewport"
-msgstr "Độ dục khi vẽ khói trong màn chiếu"
-
-
-msgid "Dissolve Speed"
-msgstr "Tốc Độ Hòa Tan"
-
-
-msgid "res"
-msgstr "Độ phân giải"
-
-
-msgid "Smoke Grid Resolution"
-msgstr "Độ Phân Giải Đồ Thị Khói"
-
-
-msgid "Flame Grid"
-msgstr "Đồ Thị Ngón Lửa"
-
-
-msgid "Smoke flame grid"
-msgstr "Đồ thị lửa khói"
-
-
-msgid "Ignition"
-msgstr "Bật Lửa"
-
-
-msgid "Minimum temperature of flames"
-msgstr "Nhiệt độ cực tiểu của lửa"
-
-
-msgid "Maximum temperature of flames"
-msgstr "Nhiệt độ cực đại của lửa"
-
-
-msgid "Amount of smoke created by burning fuel"
-msgstr "Mức khói nhiên liệu cháy được chế tạo bằng đốt nhiên liệu"
-
-
-msgid "Smoke Color"
-msgstr "Màu Khói"
-
-
-msgid "Color of smoke emitted from burning fuel"
-msgstr "Màu khói phát từ nhiên liệu cháy"
-
-
-msgid "Vorticity"
-msgstr "Độ Xoáy"
-
-
-msgid "Additional vorticity for the flames"
-msgstr "Thêm độ xoáy cho ngón lửa"
-
-
-msgid "Fluid Collection"
-msgstr "Sưu Tập Chất Lỏng"
-
-
-msgid "Limit fluid objects to this collection"
-msgstr "Hạn chế vật thể chất lỏng đến nhóm này"
-
-
-msgid "Heat Grid"
-msgstr "Đồ Thị Nhiệt"
-
-
-msgid "Smoke heat grid"
-msgstr "Đồ thị nhiệt khói"
-
-
-msgid "Method for sampling the high resolution flow"
-msgstr "Phương pháp lấy mẫu vật từ đổi lưu độ phân giải cao"
-
-
-msgid "Noise Method"
-msgstr "Phương Pháp Huyên Náo"
-
-
-msgid "Noise method which is used for creating the high resolution"
-msgstr "Phương pháp huyên náo cho chế tạo độ phân giải cao"
-
-
-msgid "Wavelet"
-msgstr "Tiểu Sóng"
-
-
-msgid "FFT"
-msgstr "FFT"
-
-
-msgid "Zip"
-msgstr "Zip"
-
-
-msgid "Blosc"
-msgstr "Blosc"
-
-
-msgid "Multithreaded compression, similar in size and quality as 'Zip'"
-msgstr "Nén đa tuyến, kích cỡ và chất lượng giống 'Zip'"
-
-
-msgid "Do not use any compression"
-msgstr "Không nén"
-
-
-msgid "Max Res"
-msgstr "Độ Phân Giải Tối Đa"
-
-
-msgid "Maximal resolution used in the fluid domain"
-msgstr "Độ phân giải tối đa dùng trong phạm vi chất lỏng"
-
-
-msgid "Show High Resolution"
-msgstr "Hiện Độ Phân Giải Cao"
-
-
-msgid "Show high resolution (using amplification)"
-msgstr "Hiện phân giải cao (sử dụng tăng cường)"
-
-
-msgid "Display Velocity"
-msgstr "Hiển Thị Vận Tốc"
-
-
-msgid "Toggle visualization of the velocity field as needles"
-msgstr "Bật/tắt hiển thị vận tốc trường như cây kim"
-
-
-msgid "Adjust slice direction according to the view direction"
-msgstr "Chỉnh hướng cắt tùy hướng nhìn của màn"
-
-
-msgid "Slice along the X axis"
-msgstr "Cắt hướng trục X"
-
-
-msgid "Slice along the Y axis"
-msgstr "Cắt hướng trục Y"
-
-
-msgid "Slice along the Z axis"
-msgstr "Cắt hướng trục Z"
-
-
-msgid "Position of the slice"
-msgstr "Vị trí cắt"
-
-
-msgid "View Method"
-msgstr "Phương Pháp Hiển Thị"
-
-
-msgid "How to slice the volume for viewport rendering"
-msgstr "Làm sao cắt thể tích cho kết xuất trong màn"
-
-
-msgid "Slice volume parallel to the view plane"
-msgstr "Cắt thể tích song song với mặt phẳng màn"
-
-
-msgid "Slice volume parallel to the major axis"
-msgstr "Cắt thể tích song song với trục chánh"
-
-
-msgid "Slice Per Voxel"
-msgstr "Lần Cắt Mỗi Thể Tích Tử"
-
-
-msgid "How many slices per voxel should be generated"
-msgstr "Bao nhiêu lần nên chế tạo miến cắt cho mỗi thể tich tử"
-
-
-msgid "p0"
-msgstr "đ0"
-
-
-msgid "Start point"
-msgstr "Điểm bắt đầu"
-
-
-msgid "Strength of noise"
-msgstr "Sức của huyên náo"
-
-
-msgid "Temperature Grid"
-msgstr "Đồ Thị Nhiệt Độ"
-
-
-msgid "Smoke temperature grid, range 0..1 represents 0..1000K"
-msgstr "Đồ thị nhiệt độ khói, pham vị 0..1 được biểu diễn 0..1000K "
-
-
-msgid "Adjust simulation speed"
-msgstr "Chỉnh tốc độ mô phỏng"
-
-
-msgid "Adapt simulation resolution and size to fluid"
-msgstr "Ứng phó độ phân giải mô phỏng và kích cỡ tùy chất lỏng"
-
-
-msgid "Render a simulation field while mapping its voxels values to the colors of a ramp"
-msgstr "Kết xuất trường mô phỏng khi ánh xạ giá trị thể tích tử của nó đến màu của một dốc màu"
-
-
-msgid "Dissolve Smoke"
-msgstr "Tan Khói"
-
-
-msgid "Enable smoke to disappear over time"
-msgstr "Bật để sau một giai đoạn cho khói biến mất"
-
-
-msgid "Logarithmic Dissolve"
-msgstr "Hòa Tan Kiểu Log"
-
-
-msgid "Using 1/x "
-msgstr "Dùng 1/x"
-
-
-msgid "High Res"
-msgstr "Độ Phân Giải Cao"
-
-
-msgid "Enable high resolution (using amplification)"
-msgstr "Bật độ phân giải cao (dùng tăng cường)"
-
-
-msgid "Needle"
-msgstr "Cây Kim"
-
-
-msgid "Display vectors as needles"
-msgstr "Hiện vectơ bằng cây kim"
-
-
-msgid "Streamlines"
-msgstr "Nét Dòng Lưu"
-
-
-msgid "Display vectors as streamlines"
-msgstr "Hiện vectơ bằng nét dòng lưu"
-
-
-msgid "Multiplier for scaling the vectors"
-msgstr "Hệ số nhân để phóng to vectơ"
-
-
-msgid "Velocity Grid"
-msgstr "Đồ Thị Vận Tốc"
-
-
-msgid "Smoke velocity grid"
-msgstr "Đồ thị vận tốc khói"
-
-
-msgid "Amount of turbulence/rotation in fluid"
-msgstr "Mức nhiễu loạn/xoáy trong chất lỏng"
-
-
-msgid "Smoke flow settings"
-msgstr "Cài đặt lưu của khói"
-
-
-msgid "Name of vertex group which determines surface emission rate"
-msgstr "Tên của nhóm đỉnh được xác định lượng khói phát từ bề mặt"
-
-
-msgid "Flame Rate"
-msgstr "Tốc Độ Ngón Lửa"
-
-
-msgid "Texture that controls emission strength"
-msgstr "Họa tiết để điều khiển sức phát khói"
-
-
-msgid "Particle size in simulation cells"
-msgstr "Kích cỡ hạt trong tế bào của mô phỏng"
-
-
-msgid "Color of smoke"
-msgstr "Màu Khói"
-
-
-msgid "Change how smoke is emitted"
-msgstr "Đổi làm sao phát khói"
-
-
-msgid "Emit smoke from particles"
-msgstr "Phát khói từ hạt"
-
-
-msgid "Emit smoke from mesh surface or volume"
-msgstr "Phát khói từ bề mặt hay thể tích của mạng lưới"
-
-
-msgid "Flow Type"
-msgstr "Loại Lưu"
-
-
-msgid "Change how flow affects the simulation"
-msgstr "Đối làm sao lưu có thể ảnh hưởng mô phỏng"
-
-
-msgid "Delete smoke from simulation"
-msgstr "Xoá khói từ mô phỏng"
-
-
-msgid "Add smoke"
-msgstr "Thêm khói"
-
-
-msgid "Fire + Smoke"
-msgstr "Lửa + Khói"
-
-
-msgid "Add fire and smoke"
-msgstr "Thêm lửa và khói"
-
-
-msgid "Add fire"
-msgstr "Thêm lửa"
-
-
-msgid "Number of additional samples to take between frames to improve quality of fast moving flows"
-msgstr "Số lượng của mẫu vật thêm được tính giữa bức để tăng chất lượng của lưu tốc độ cao"
-
-
-msgid "Maximum distance from mesh surface to emit smoke"
-msgstr "Khoảng cách cực đại từ bề mặt mạng lưới được phát khói"
-
-
-msgid "Temp. Diff."
-msgstr "Chênh Lệch Nhiệt Độ"
-
-
-msgid "Temperature difference to ambient temperature"
-msgstr "Chênh lệch nhiệt độ so với nhiệt độ bao quanh"
-
-
-msgid "Texture mapping type"
-msgstr "Loại ánh xạ họa tiết"
-
-
-msgid "Generated coordinates centered to flow object"
-msgstr "Tọa độ được chế tạo có trung tâm tại vật thể lưu"
-
-
-msgid "Use UV layer for texture coordinates"
-msgstr "Dùng lớp UV cho tọa độ họa tiết"
-
-
-msgid "Z-offset of texture mapping"
-msgstr "Địch-Z của bản đồ họa tiết"
-
-
-msgid "Size of texture mapping"
-msgstr "Kích cỡ của bản đồ họa tiết"
-
-
-msgid "Absolute Density"
-msgstr "Tỉ Trọng Tuyệt Đối"
-
-
-msgid "Only allow given density value in emitter area"
-msgstr "Chỉ cho giá trị tỉ trọng được xác định trong khu vực phát khói"
-
-
-msgid "Smoke has some initial velocity when it is emitted"
-msgstr "Khói có một chút vận tốc khởi đầu khi được phát\""
-
-
-msgid "Set Size"
-msgstr "Đặt Kích Cỡ"
-
-
-msgid "Set particle size in simulation cells or use nearest cell"
-msgstr "Đặt kích cỡ hạt trong tế bào của mô phỏng hay dùng tế bào gần nhất"
-
-
-msgid "Use a texture to control emission strength"
-msgstr "Dùng một họa tiết để điều khiển sức phát khói"
-
-
-msgid "Multiplier of source velocity passed to smoke"
-msgstr "Hệ số nhân với vận tốc vật thể nguồn để tính vận tốc khói"
-
-
-msgid "Amount of normal directional velocity"
-msgstr "Mức vận tốc theo hướng pháp tuyến"
-
-
-msgid "Amount of random velocity"
-msgstr "Mức vận tốc ngẫu nhiên"
-
-
-msgid "Factor for smoke emitted from inside the mesh volume"
-msgstr "Hệ số khói phát từ ở trong thể tích mạng lưới"
-
-
 msgid "Soft body simulation settings for an object"
 msgstr "Cài đặt của mô phỏng thân mềm cho vật thể"
 
@@ -76268,6 +75526,10 @@ msgstr "Nghẹt"
 
 msgid "'Viscosity' inside collision target"
 msgstr "'Độ Nhớt' trong mục tiêu va chạm"
+
+
+msgid "Collision Type"
+msgstr "Loại Va Chạm"
 
 
 msgid "Choose Collision Type"
@@ -79136,10 +78398,6 @@ msgid "Has Texture Angle Source"
 msgstr "Có Nguồn Gốc Góc Họa Tiết"
 
 
-msgid "Tiled"
-msgstr "Ô"
-
-
 msgid "Stencil"
 msgstr "Khuôn Tô"
 
@@ -80900,6 +80158,10 @@ msgid "Theme settings for widget state colors"
 msgstr "Cài đặt phong cách cho màu trạng thái Khiển Tố"
 
 
+msgid "Animated"
+msgstr "Hoạt Động"
+
+
 msgid "Animated Selected"
 msgstr "Được Chọn Có Hoạt Hình"
 
@@ -82379,14 +81641,6 @@ msgstr "Độ Đục Đỉnh"
 
 msgid "Opacity for edit vertices"
 msgstr "Độ đục cho biên tập đỉnh"
-
-
-msgid "Vertex Paint Opacity"
-msgstr "Độ Đục Sơn Đỉnh"
-
-
-msgid "Opacity of the vertex paint mode overlay"
-msgstr "Độ đục của lớp che của chế độ sơn đỉnh"
 
 
 msgid "Weight Paint Opacity"
@@ -84213,10 +83467,6 @@ msgid "Select objects to scatter and a target object."
 msgstr "Chọn vật thể để rải ra và một vật thể mục đích"
 
 
-msgid "Randomness"
-msgstr "Độ Ngẫu Nhiên"
-
-
 msgid "Demo Mode:"
 msgstr "Chế Độ Ví Dụ:"
 
@@ -85688,35 +84938,6 @@ msgid "Delete Frame(s)"
 msgstr "Xóa Bức"
 
 
-msgid "Edit:"
-msgstr "Biên Tập:"
-
-
-msgctxt "Operator"
-msgid "Arrange Strokes..."
-msgstr "Sắp Xếp Nét..."
-
-
-msgctxt "Operator"
-msgid "Assign Material"
-msgstr "Chỉ Định Vật Liệu"
-
-
-msgctxt "Operator"
-msgid "Adaptive"
-msgstr "Ứng Phó"
-
-
-msgctxt "Operator"
-msgid "Trim"
-msgstr "Cắt Bớt"
-
-
-msgctxt "Operator"
-msgid "Flip Direction"
-msgstr "Lật Hướng"
-
-
 msgid "Active Layer:      "
 msgstr "Lớp Hoạt Động:"
 
@@ -85777,44 +84998,6 @@ msgid "Data Source:"
 msgstr "Nguồn Dữ Liệu:"
 
 
-msgid "Select:"
-msgstr "Chọn:"
-
-
-msgctxt "Operator"
-msgid "Paste by Layer"
-msgstr "Dán tùy Lớp"
-
-
-msgctxt "Operator"
-msgid "Toggle Caps..."
-msgstr "Bật/Tắt Nắp..."
-
-
-msgctxt "Operator"
-msgid "& Copy"
-msgstr "& Chép"
-
-
-msgctxt "Operator"
-msgid "Separate..."
-msgstr "Chẻ..."
-
-
-msgid "Cleanup:"
-msgstr "Dọn Dẹp:"
-
-
-msgctxt "Operator"
-msgid "Reproject Strokes..."
-msgstr "Chiếu Lại Nét..."
-
-
-msgctxt "Operator"
-msgid "Clean Boundary Strokes..."
-msgstr "Làm Sạch Nét Ranh Giới"
-
-
 msgctxt "Operator"
 msgid "Straight Lines"
 msgstr "Đường Thẳng"
@@ -85838,8 +85021,18 @@ msgid "Join Strokes"
 msgstr "Kết Nối Nét"
 
 
+msgctxt "Operator"
+msgid "Flip Direction"
+msgstr "Lật Hướng"
+
+
 msgid "Show Drawing Direction"
 msgstr "Hiện Hướng Vẽ"
+
+
+msgctxt "Operator"
+msgid "Paste by Layer"
+msgstr "Dán tùy Lớp"
 
 
 msgctxt "Operator"
@@ -85956,12 +85149,14 @@ msgid "Stroke Color"
 msgstr "Màu Nét"
 
 
-msgid "CCW"
-msgstr "Nghích Hướng Kim Đồng Hồ"
+msgctxt "Operator"
+msgid "Re-key Shape Points"
+msgstr "Đặt Lại Điểm Mẫu Dạng"
 
 
-msgid "CW"
-msgstr "Hướng Kim Đồng Hồ"
+msgctxt "Operator"
+msgid "Reset Feather Animation"
+msgstr "Đặt Lại Hoạt Hình Phe Phẩy"
 
 
 msgid "Parent:"
@@ -86002,11 +85197,6 @@ msgstr "Chèn Bức Mẫu"
 msgctxt "Operator"
 msgid "Clear Key"
 msgstr "Màu Trong Suốt"
-
-
-msgctxt "Operator"
-msgid "Reset Feather Animation"
-msgstr "Đặt Lại Hoạt Hình Phe Phẩy"
 
 
 msgctxt "Operator"
@@ -86133,12 +85323,20 @@ msgid "Pressure Masking"
 msgstr "Mặt Nạ Áp Suất"
 
 
-msgid "Gradient Mapping"
-msgstr "AÁnh Xạ Chuyển Sắc"
+msgid "Front Faces Only"
+msgstr "Chỉ Mặt Phía Trước"
 
 
 msgid "Sample Bias"
 msgstr "Thành Kiến Mẫu Vật"
+
+
+msgid "Edge To Edge"
+msgstr "Cạnh Đến Cạnh"
+
+
+msgid "Thickness Profile"
+msgstr "Trình Bày Bề Rộng"
 
 
 msgid "Source Clone Slot"
@@ -86153,20 +85351,20 @@ msgid "Source Clone UV Map"
 msgstr "Bản Đồ UV Bản Sao Nguồn"
 
 
-msgid "Thickness Profile"
-msgstr "Trình Bày Bề Rộng"
+msgid "Gradient Mapping"
+msgstr "AÁnh Xạ Chuyển Sắc"
 
 
 msgid "Mask Value"
 msgstr "Giá Trị Mặt Nạ"
 
 
-msgid "Fill Options"
-msgstr "Tùy Chọn Tô Đầy"
+msgid "CCW"
+msgstr "Nghích Hướng Kim Đồng Hồ"
 
 
-msgid "Ignore Transparent Strokes"
-msgstr "Không Quan Tâm Nét Trong Suốt"
+msgid "CW"
+msgstr "Hướng Kim Đồng Hồ"
 
 
 msgctxt "Operator"
@@ -86378,6 +85576,14 @@ msgid "Air Viscosity"
 msgstr "Độ Nhớt Không Khí"
 
 
+msgid "Max Tension"
+msgstr "Lực Căng Cực Đại"
+
+
+msgid "Max Compression"
+msgstr "Nén Cực Đại"
+
+
 msgid "Pin Group"
 msgstr "Nhóm Đinh"
 
@@ -86402,14 +85608,6 @@ msgid "Structural Group"
 msgstr "Nhóm Cấu Trúc"
 
 
-msgid "Max Tension"
-msgstr "Lực Căng Cực Đại"
-
-
-msgid "Max Compression"
-msgstr "Nén Cực Đại"
-
-
 msgid "Shear Group"
 msgstr "Nhóm Méo Hóa"
 
@@ -86432,10 +85630,6 @@ msgstr "Nhóm Thu Nhỏ"
 
 msgid "Max Shrinking"
 msgstr "Thu Nhỏ Cực Đại"
-
-
-msgid "Tension"
-msgstr "Lực Căng"
 
 
 msgid "Structural"
@@ -86588,45 +85782,32 @@ msgid "Clumping amount"
 msgstr "Mức Dính Bó"
 
 
-msgctxt "Operator"
-msgid "Bake (Req. Memory: %s)"
-msgstr "Nướng (Trí Nhớ Yêu Cầu: %s)"
+msgid "Temperature Diff."
+msgstr "Chênh Lệch Nhiệt Độ"
 
 
-msgid "Scene Size Meters"
-msgstr "Kích Cỡ Cảnh (Mét)"
+msgid "Reaction Speed"
+msgstr "Tốc Độ Phản Ứng"
 
 
-msgid "World Size Meters"
-msgstr "Kích Cỡ Thế Giới (Mét)"
+msgid "Temperature Ignition"
+msgstr "Nhiệt Độ Đốt"
 
 
-msgid "Optimization"
-msgstr "Tối Ưu Hóa"
+msgid "Add Resolution"
+msgstr "Thêm Độ Phân Giải"
 
 
-msgid "Built without fluids"
-msgstr "Được xây mà không sử dụng chất lỏng"
+msgid "Real World Size"
+msgstr "Kích Cỡ Thế Giới Thực"
 
 
-msgid "Final Resolution"
-msgstr "Độ Phân Giải Cuối"
+msgid "Slicing"
+msgstr "Chẻ Miến"
 
 
-msgid "Render Display"
-msgstr "Màn Chiếu Kết Xuất"
-
-
-msgid "Time Start"
-msgstr "Thời Gian Bắt Đầu"
-
-
-msgid "Bake (Req. Memory: %s)"
-msgstr "Nướng (Trí Nhớ Yên Cầu: %s)"
-
-
-msgid "Influence Size"
-msgstr "Kích Cỡ Ảnh Hưởng"
+msgid "Resolution Divisions"
+msgstr "Phần Độ Phân Giải"
 
 
 msgid "Object does not have a Rigid Body"
@@ -86673,32 +85854,8 @@ msgid "Y Lower"
 msgstr "Y Dưới"
 
 
-msgid "Temperature Diff."
-msgstr "Chênh Lệch Nhiệt Độ"
-
-
-msgid "Reaction Speed"
-msgstr "Tốc Độ Phản Ứng"
-
-
-msgid "Temperature Ignition"
-msgstr "Nhiệt Độ Đốt"
-
-
-msgid "Add Resolution"
-msgstr "Thêm Độ Phân Giải"
-
-
-msgid "Resolution Divisions"
-msgstr "Phần Độ Phân Giải"
-
-
 msgid "Flow Sampling"
 msgstr "Mẫu Vật Lưu"
-
-
-msgid "Slicing"
-msgstr "Chẻ Miến"
 
 
 msgid "Built without Smoke modifier"
@@ -86707,10 +85864,6 @@ msgstr "Xây mà không có cụ sửa đổi Khói"
 
 msgid "Empty Space"
 msgstr "Không Gian Rỗng"
-
-
-msgid "Flow Source"
-msgstr "Nguồn Lưu"
 
 
 msgid "Sampling Subframes"
@@ -87161,11 +86314,6 @@ msgid "Unlock Tracks"
 msgstr "Mở Theo Dõi Bị Khóa"
 
 
-msgctxt "Operator"
-msgid "Re-key Shape Points"
-msgstr "Đặt Lại Điểm Mẫu Dạng"
-
-
 msgid "Solve error: %.4f"
 msgstr "Sai lầm giải nghiệm: %.4f"
 
@@ -87518,18 +86666,6 @@ msgid "More"
 msgstr "Nhiều Hơn"
 
 
-msgid "Unified Size"
-msgstr "Kích Cỡ Thống Nhất"
-
-
-msgid "Unified Strength"
-msgstr "Sức Thống Nhất"
-
-
-msgid "Unified Color"
-msgstr "Màu Thống Nhất"
-
-
 msgctxt "Operator"
 msgid "New"
 msgstr "Mới"
@@ -87552,18 +86688,6 @@ msgstr "Đảo Nghịch Màu Ảnh"
 
 msgid "Affect"
 msgstr "Ảnh Hưởng"
-
-
-msgid "Curve Alpha"
-msgstr "Đường Cong Độ Đục"
-
-
-msgid "Texture Alpha"
-msgstr "Độ Đục Họa Tiết"
-
-
-msgid "Mask Texture Alpha"
-msgstr "Độ Đục Họa Tiết Mặt Nạ"
 
 
 msgid "Show Same Material"
@@ -87686,10 +86810,6 @@ msgstr "Ảnh*"
 
 msgid "Repeat Image"
 msgstr "Lặp Lại Ảnh"
-
-
-msgid "Edge To Edge"
-msgstr "Cạnh Đến Cạnh"
 
 
 msgctxt "Operator"
@@ -88931,26 +88051,6 @@ msgid "Sample Format"
 msgstr "Định Dạng Mẫu Vật"
 
 
-msgid "View Name"
-msgstr "Hiện Tên"
-
-
-msgid "Playback FPS"
-msgstr "Hát Lại Bức Ành/Giây"
-
-
-msgid "3D Viewport Axis"
-msgstr "Trục Màn Chiếu 3D"
-
-
-msgid "Grease Pencil Multisampling"
-msgstr "Đa Mẫu Vật Bút Sáp"
-
-
-msgid "Limit Size"
-msgstr "Hạn Chế Kích Cỡ"
-
-
 msgid "Undo Memory Limit"
 msgstr "Hủy Bước Giới Hạn Trí Nhớ"
 
@@ -88969,6 +88069,26 @@ msgstr "Tốc Độ Gồm Rác"
 
 msgid "Vbo Time Out"
 msgstr "Hết Thời Hạn Vật Thể Đệm Đỉnh"
+
+
+msgid "View Name"
+msgstr "Hiện Tên"
+
+
+msgid "Playback FPS"
+msgstr "Hát Lại Bức Ành/Giây"
+
+
+msgid "3D Viewport Axis"
+msgstr "Trục Màn Chiếu 3D"
+
+
+msgid "Grease Pencil Multisampling"
+msgstr "Đa Mẫu Vật Bút Sáp"
+
+
+msgid "Limit Size"
+msgstr "Hạn Chế Kích Cỡ"
 
 
 msgctxt "Operator"
@@ -89020,16 +88140,12 @@ msgid "Timer (mins)"
 msgstr "Đồng Hồ (phút)"
 
 
-msgid "Pan Options"
-msgstr "Tùy Chọn Dời Đi"
-
-
-msgid "Zoom Options"
-msgstr "Tùy Chọn Thu Phóng"
-
-
 msgid "Double Click Speed"
 msgstr "Tộc Độ Bấm Hai Lần"
+
+
+msgid "Pan Sensitivity"
+msgstr "Cảm Biến Dời Đi"
 
 
 msgid "Zoom Method"
@@ -89040,8 +88156,12 @@ msgid "Invert Wheel Zoom Direction"
 msgstr "Đảo Nghịch Hướng Phóng Nút Cuộn"
 
 
-msgid "Pan Sensitivity"
-msgstr "Cảm Biến Dời Đi"
+msgid "Pan Options"
+msgstr "Tùy Chọn Dời Đi"
+
+
+msgid "Zoom Options"
+msgstr "Tùy Chọn Thu Phóng"
 
 
 msgid "Use Light"
@@ -89066,6 +88186,14 @@ msgid "Player"
 msgstr "Bộ Hát Lại"
 
 
+msgid "Natural Trackpad Direction"
+msgstr "Hướng Bàn Vẽ Thiên Nhiên"
+
+
+msgid "Invert Mouse Zoom Direction"
+msgstr "Đảo Nghịch Hướng Phóng To Chuột"
+
+
 msgid "Orbit Style"
 msgstr "Phong Cách Quay"
 
@@ -89080,14 +88208,6 @@ msgstr "Tùy Chọn Quay"
 
 msgid "Fly/Walk Options"
 msgstr "Tùy Chọn Bay/Đi Bộ"
-
-
-msgid "Natural Trackpad Direction"
-msgstr "Hướng Bàn Vẽ Thiên Nhiên"
-
-
-msgid "Invert Mouse Zoom Direction"
-msgstr "Đảo Nghịch Hướng Phóng To Chuột"
 
 
 msgid "Multiple add-ons with the same name found!"
@@ -89952,6 +89072,16 @@ msgstr "Hòa Tan Xương"
 msgctxt "Operator"
 msgid "Fixed"
 msgstr "Đẳng"
+
+
+msgctxt "Operator"
+msgid "Adaptive"
+msgstr "Ứng Phó"
+
+
+msgctxt "Operator"
+msgid "Trim"
+msgstr "Cắt Bớt"
 
 
 msgctxt "Operator"
@@ -90934,6 +90064,14 @@ msgid "Tile Offset"
 msgstr "Dịch Ô"
 
 
+msgid "Auto Normalize"
+msgstr "Tự Động Đơn Vị Hóa"
+
+
+msgid "Multi-Paint"
+msgstr "Đa-Sơn"
+
+
 msgctxt "Operator"
 msgid "Quick Edit"
 msgstr "Biên Tập Lẹ"
@@ -91002,29 +90140,17 @@ msgid "Auto-Velocity"
 msgstr "Vận Tốc Tự Động"
 
 
-msgid "Front Faces Only"
-msgstr "Chỉ Mặt Phía Trước"
-
-
 msgid "No Textures"
 msgstr "Không Có Họa Tiết"
-
-
-msgid "Magnify"
-msgstr "Phóng To"
-
-
-msgid "Auto Normalize"
-msgstr "Tự Động Đơn Vị Hóa"
-
-
-msgid "Multi-Paint"
-msgstr "Đa-Sơn"
 
 
 msgctxt "Operator"
 msgid "Add UVs"
 msgstr "Thêm UV"
+
+
+msgid "Ignore Transparent Strokes"
+msgstr "Không Quan Tâm Nét Trong Suốt"
 
 
 msgid "Modifier requires original data, bad stack position"
@@ -91375,10 +90501,6 @@ msgstr "Không có tệp nào mới được gói lại"
 
 msgid "Unable to pack file, source path '%s' not found"
 msgstr "Không được gói lại tệp, không kiếm được đường dẫn nguồn '%s'"
-
-
-msgid "Image '%s' skipped, movies and image sequences not supported"
-msgstr "Đã bỏ qua ảnh '%s', vì không hỗ trợ phim và trình tứ ảnh"
 
 
 msgid "Packed %d file(s)"
@@ -91863,6 +90985,10 @@ msgstr "Đang Ghép | Đang khởi động thực hành"
 
 msgid "Compositing | De-initializing execution"
 msgstr "Đang Ghép | Nghỉ khởi động thực hành"
+
+
+msgid "Basic"
+msgstr "Cơ Bản"
 
 
 msgid "Baking light cache"
@@ -94890,46 +94016,6 @@ msgid "Copy particle systems to selected: %d done, %d failed"
 msgstr "Chép hệ thống hạt đến được chọn: %d xong, %d thất bại"
 
 
-msgid "There should be only one domain object"
-msgstr "Nên chỉ có một vật thể phạm vi"
-
-
-msgid "No domain object found"
-msgstr "Không tìm được vật thể phạm vi"
-
-
-msgid "Cannot bake with more than 256 objects"
-msgstr "Không thể nướng hơn 256 vật thể"
-
-
-msgid "No fluid input objects in the scene"
-msgstr "Không có vật thể ngõ vào chất lỏng trong cảnh"
-
-
-msgid "No frames to export (check your animation range settings)"
-msgstr "Không có bức cho xuất (xem cài đặt phạm vi hoạt hình của bạn)"
-
-
-msgid "Invalid object matrix"
-msgstr "Ma trận vật thể không hợp lệ"
-
-
-msgid "Fluidsim: empty cache path, reset to default '%s'"
-msgstr "Mô Phỏng Chất Lỏng: đường dẫn đệm chứa rỗng, đặt lại mặc định '%s'"
-
-
-msgid "Fluidsim: could not create cache directory '%s', reset to default '%s'"
-msgstr "Mô Phỏng Chất Lỏng: không thể tạo đường dẫn đệm chứa '%s', đặt lại mặc định '%s'"
-
-
-msgid "Fluidsim: cache directory '%s' is not writable, reset to default '%s'"
-msgstr "Mô Phỏng Chất Lỏng: không được ghi trong đường dẫn đệm chứa '%s', đặt lại mặc định '%s'"
-
-
-msgid "Fluidsim: could not use default cache directory '%s', please define a valid cache path manually"
-msgstr "Mô Phỏng Chất Lỏng: không được dùng đường dẫn mặc định '%s', làm ơn chỉ định một đường dẫn trực tiếp"
-
-
 msgid "No Rigid Body World to add Rigid Body Constraint to"
 msgstr "Không có Thế Giới Thân Rắn để thêm Ràng Buộc Thân Rắn"
 
@@ -95431,12 +94517,12 @@ msgid "Packed MultiLayer files cannot be painted: %s"
 msgstr "Không thể sơn tệp Đa Lớp Gói Lại: %s "
 
 
-msgid "Image requires 4 color channels to paint"
-msgstr "Ảnh cần có 4 kênh màu để sơn"
-
-
 msgid "Packed MultiLayer files cannot be painted"
 msgstr "Không thể sơn tệp Đa Lớp Gói Lại"
+
+
+msgid "Image requires 4 color channels to paint"
+msgstr "Ảnh cần có 4 kênh màu để sơn"
 
 
 msgid "Untitled"

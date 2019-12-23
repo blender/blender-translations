@@ -1,9 +1,9 @@
 
 msgid ""
 msgstr ""
-"Project-Id-Version: Blender 2.82 (sub 4) (b'312b6fd713f6')\n"
+"Project-Id-Version: Blender 2.82 (sub 6) (b'708045eb40b9')\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-12-09 14:05:50\n"
+"POT-Creation-Date: 2019-12-23 12:39:57\n"
 "PO-Revision-Date: \n"
 "Last-Translator: DeathBlood\n"
 "Language-Team: \n"
@@ -3997,6 +3997,22 @@ msgid "Internal Friction"
 msgstr "内部摩擦"
 
 
+msgid "Tension Stiffness"
+msgstr "紧绷硬度"
+
+
+msgid "How much the material resists stretching"
+msgstr "材料抵挡张力的程度"
+
+
+msgid "Tension Stiffness Maximum"
+msgstr "紧绷硬度最大值"
+
+
+msgid "Maximum tension stiffness value"
+msgstr "最大的紧绷硬度的值"
+
+
 msgid "Vertex Mass"
 msgstr "顶点质量"
 
@@ -4099,22 +4115,6 @@ msgstr "绷紧弹性阻尼"
 
 msgid "Amount of damping in stretching behavior"
 msgstr "对张力的阻尼值"
-
-
-msgid "Tension Stiffness"
-msgstr "紧绷硬度"
-
-
-msgid "How much the material resists stretching"
-msgstr "材料抵挡张力的程度"
-
-
-msgid "Tension Stiffness Maximum"
-msgstr "紧绷硬度最大值"
-
-
-msgid "Maximum tension stiffness value"
-msgstr "最大的紧绷硬度的值"
 
 
 msgid "Cloth speed is multiplied by this value"
@@ -11183,156 +11183,328 @@ msgid "Sort items descending, from highest value to lowest"
 msgstr "降序排序, 从最高到最低值"
 
 
-msgid "Fluid Simulation Settings"
-msgstr "流体模拟设置"
+msgid "Domain Settings"
+msgstr "域设置"
 
 
-msgid "Fluid simulation settings for an object taking part in the simulation"
-msgstr "流体仿真中物体的流体仿真设置"
+msgid "Margin added around fluid to minimize boundary interference"
+msgstr "添加到流体周围的边缘区, 用于将边界干预降至最低"
 
 
-msgid "Type of participation in the fluid simulation"
-msgstr "流体仿真的参与类型"
+msgid "Maximum amount of fluid cell can contain before it is considered empty"
+msgstr "在被视为空单元格之前, 它可以可容纳的最大流体量"
+
+
+msgid "Additional"
+msgstr "附加"
+
+
+msgid "Maximum number of additional cells"
+msgstr "附加单元的最大数量"
+
+
+msgid "Density"
+msgstr "密度"
+
+
+msgid "How much density affects smoke motion (higher value results in faster rising smoke)"
+msgstr "密度对烟雾运动的影响量 (值越高, 则烟雾的升腾速度越快)"
+
+
+msgid "Slice the whole domain object"
+msgstr "切割整个场物体"
+
+
+msgid "Single"
+msgstr "单一"
+
+
+msgid "Perform a single slice of the domain object"
+msgstr "执行域对象的单个切片"
+
+
+msgid "Heat"
+msgstr "热度"
+
+
+msgid "How much heat affects smoke motion (higher value results in faster rising smoke)"
+msgstr "热度对于烟雾运动的影响量 (值越高, 则升腾速度越快)"
+
+
+msgid "Speed of the burning reaction (use larger values for smaller flame)"
+msgstr "燃烧反应的速度 (使用较大值可获得较小的火焰)"
+
+
+msgid "End"
+msgstr "结束点"
+
+
+msgid "Frame on which the simulation stops"
+msgstr "仿真中的帧位置"
+
+
+msgid "Start"
+msgstr "起始"
+
+
+msgid "Frame on which the simulation starts"
+msgstr "模拟开始的帧位置"
+
+
+msgid "Final"
+msgstr "最终"
+
+
+msgid "Cell Size"
+msgstr "气泡尺寸"
+
+
+msgid "Clipping"
+msgstr "范围限制"
+
+
+msgid "Field"
+msgstr "场"
+
+
+msgid "Simulation field to color map"
+msgstr "模拟场到色彩贴图"
+
+
+msgid "Red"
+msgstr "红"
+
+
+msgid "Red component of the color field"
+msgstr "颜色场的红色分量"
+
+
+msgid "Green"
+msgstr "绿"
+
+
+msgid "Green component of the color field"
+msgstr "颜色场的绿色分量"
+
+
+msgid "Blue"
+msgstr "蓝"
+
+
+msgid "Blue component of the color field"
+msgstr "颜色场的蓝色分量"
+
+
+msgid "Quantity of soot in the fluid"
+msgstr "流体里的烟尘量"
+
+
+msgid "Flame"
+msgstr "火焰"
+
+
+msgid "Flame field"
+msgstr "火焰场"
+
+
+msgid "Fuel"
+msgstr "燃料"
+
+
+msgid "Fuel field"
+msgstr "燃料场"
+
+
+msgid "Temperature of the fluid"
+msgstr "流体的温度"
+
+
+msgid "X Velocity"
+msgstr "X向速度"
+
+
+msgid "X component of the velocity field"
+msgstr "速度场的X向分量"
+
+
+msgid "Y Velocity"
+msgstr "Y向速度"
+
+
+msgid "Y component of the velocity field"
+msgstr "速度场的Y向分量"
+
+
+msgid "Z Velocity"
+msgstr "Z向速度"
+
+
+msgid "Z component of the velocity field"
+msgstr "速度场的Y向分量"
+
+
+msgid "Color Grid"
+msgstr "彩色栅格图"
+
+
+msgid "Smoke color grid"
+msgstr "烟雾颜色栅格"
+
+
+msgid "Data Depth"
+msgstr "数据位深"
+
+
+msgid "Float (Half)"
+msgstr "浮点(半)"
+
+
+msgid "Half float (16 bit data)"
+msgstr "半浮点数(16位数据)"
+
+
+msgid "Float (Full)"
+msgstr "浮点型(整)"
+
+
+msgid "Full float (32 bit data)"
+msgstr "整浮点数(32 位数据)"
+
+
+msgid "Density Grid"
+msgstr "密度网格"
+
+
+msgid "Smoke density grid"
+msgstr "烟雾密度网格"
+
+
+msgid "Interpolation method to use for smoke/fire volumes in solid mode"
+msgstr "用于实体模式中的烟/火体积的插值模式"
+
+
+msgid "Good smoothness and speed"
+msgstr "良好的平滑度和速度"
+
+
+msgid "Cubic"
+msgstr "三次型"
+
+
+msgid "Smoothed high quality interpolation, but slower"
+msgstr "平滑的高质量插值,但是更慢"
+
+
+msgid "Thickness"
+msgstr "厚度"
+
+
+msgid "Thickness of smoke drawing in the viewport"
+msgstr "在视图中绘制的烟雾厚度"
+
+
+msgid "Dissolve Speed"
+msgstr "消融速率"
+
+
+msgid "res"
+msgstr "精度"
+
+
+msgid "Smoke Grid Resolution"
+msgstr "烟雾的网格精度"
+
+
+msgid "Flame Grid"
+msgstr "火焰网格"
+
+
+msgid "Smoke flame grid"
+msgstr "烟火网格"
+
+
+msgid "Ignition"
+msgstr "点火"
+
+
+msgid "Minimum temperature of flames"
+msgstr "火焰的最低温度"
+
+
+msgid "Maximum temperature of flames"
+msgstr "火焰的最高温度"
+
+
+msgid "Smoke"
+msgstr "烟雾"
+
+
+msgid "Amount of smoke created by burning fuel"
+msgstr "燃料产生的烟雾量"
+
+
+msgid "Smoke Color"
+msgstr "烟雾颜色"
+
+
+msgid "Color of smoke emitted from burning fuel"
+msgstr "从燃料中发射的烟雾的颜色"
+
+
+msgid "Vorticity"
+msgstr "涡量"
+
+
+msgid "Additional vorticity for the flames"
+msgstr "火焰的附加涡旋"
+
+
+msgid "Fluid Collection"
+msgstr "流体集合"
+
+
+msgid "Limit fluid objects to this collection"
+msgstr "限制流体物体于此集合"
+
+
+msgid "Gravity in X, Y and Z direction"
+msgstr "X, Y, Z方向的重力"
 
 
 msgid "Domain"
 msgstr "域"
 
 
-msgid "Bounding box of this object represents the computational domain of the fluid simulation"
-msgstr "物体用于表述计算流体仿真区域的盒形边缘"
+msgid "Heat Grid"
+msgstr "热度网格"
 
 
-msgid "Fluid"
-msgstr "流体"
+msgid "Smoke heat grid"
+msgstr "烟雾热度网格"
 
 
-msgid "Object represents a volume of fluid in the simulation"
-msgstr "用于表现仿真流量的物体"
+msgid "Emitter"
+msgstr "发射体"
 
 
-msgid "Object is a fixed obstacle"
-msgstr "物体是固定的障碍物"
+msgid "Method for sampling the high resolution flow"
+msgstr "用于创建高精度流体的采样方式"
 
 
-msgid "Object adds fluid to the simulation"
-msgstr "在仿真中添加流体的物体"
+msgid "Full Sample"
+msgstr "全采样"
 
 
-msgid "Outflow"
-msgstr "流出"
+msgid "Nearest"
+msgstr "最近"
 
 
-msgid "Object removes fluid from the simulation"
-msgstr "在仿真中移除流体的物体"
+msgid "Preview"
+msgstr "预览"
 
 
-msgid "Particle"
-msgstr "粒子"
-
-
-msgid "Object is made a particle system to display particles generated by a fluidsim domain object"
-msgstr "由粒子系统组成的物体将用于显示由流体域物体生成的粒子"
-
-
-msgid "Control"
-msgstr "控制"
-
-
-msgid "Object is made a fluid control mesh, which influences the fluid"
-msgstr "物体由流体控制网格组成, 将影响流体效果"
-
-
-msgid "Control Fluid Simulation Settings"
-msgstr "控制流体模拟的设置"
-
-
-msgid "Fluid simulation settings for objects controlling the motion of fluid in the simulation"
-msgstr "流体模拟设置项, 在模拟过程中, 用于使用物体控制流体运动的"
-
-
-msgid "Attraction Radius"
-msgstr "吸引半径"
-
-
-msgid "Force field radius around the control object"
-msgstr "所控物体周围的力场半径"
-
-
-msgid "Attraction Strength"
-msgstr "吸引强度"
-
-
-msgid "Force strength for directional attraction towards the control object"
-msgstr "朝向控制物体的的定向吸引力强度"
-
-
-msgid "End Time"
-msgstr "最终时间"
-
-
-msgid "Time when the control particles are deactivated"
-msgstr "被操控粒子的失效时间"
-
-
-msgid "Quality which is used for object sampling (higher = better but slower)"
-msgstr "物体采样的品质(值越高, 效果越好, 但速度越慢)"
-
-
-msgid "Start Time"
-msgstr "开始时间"
-
-
-msgid "Time when the control particles are activated"
-msgstr "控制粒子的激活时间点"
-
-
-msgid "Object contributes to the fluid simulation"
-msgstr "物体参与流体模拟"
-
-
-msgid "Reverse Frames"
-msgstr "反转帧序"
-
-
-msgid "Reverse control object movement"
-msgstr "反相控制物体运动"
-
-
-msgid "Velocity Radius"
-msgstr "速度半径"
-
-
-msgid "Velocity Strength"
-msgstr "速度强度"
-
-
-msgid "Force strength of how much of the control object's velocity is influencing the fluid velocity"
-msgstr "控制物体的速率对流体速率的影响力强度"
-
-
-msgid "Domain Fluid Simulation Settings"
-msgstr "域的流体模拟设置"
-
-
-msgid "Fluid simulation settings for the domain of a fluid simulation"
-msgstr "流体模拟域的流体模拟设置"
-
-
-msgid "Compressibility"
-msgstr "可压缩性"
-
-
-msgid "Allowed compressibility due to gravitational force for standing fluid (directly affects simulation step size)"
-msgstr "考虑到万有引力, 允许固定流体的压缩特性 (直接影响模拟步长)"
-
-
-msgid "Simulation time of the last blender frame (in seconds)"
-msgstr "Blender最末帧的模拟时间 (秒)"
-
-
-msgid "Directory (and/or filename prefix) to store baked fluid simulation files in"
-msgstr "用于存放已烘焙的流体模拟文件的目录 (和/或文件名前缀)"
+msgid "Radius"
+msgstr "半径"
 
 
 msgid "Fluid Mesh Vertices"
@@ -11343,204 +11515,228 @@ msgid "Vertices of the fluid mesh generated by simulation"
 msgstr "顶点"
 
 
-msgid "Cache Offset"
-msgstr "缓存偏移"
+msgid "Strength of noise"
+msgstr "噪音强度"
 
 
-msgid "Offset when reading baked cache"
-msgstr "读取已烘焙缓存时的偏移量"
+msgid "Time"
+msgstr "时间"
 
 
-msgid "Generate Particles"
-msgstr "生成粒子"
+msgid "Noise Method"
+msgstr "噪波方法"
 
 
-msgid "Amount of particles to generate (0=off, 1=normal, >1=more)"
-msgstr "粒子生成量 (0=关闭, 1=正常, >1=较多)"
+msgid "Noise method which is used for creating the high resolution"
+msgstr "用于创建高精度烟雾的噪点方式"
 
 
-msgid "Gravity in X, Y and Z direction"
-msgstr "X, Y, Z方向的重力"
+msgid "Wavelet"
+msgstr "波浪"
 
 
-msgid "Grid Levels"
-msgstr "栅格级数"
+msgid "Compression"
+msgstr "压缩"
 
 
-msgid "Number of coarsened grids to use (-1 for automatic)"
-msgstr "粗糙栅格的使用量 (-1代表自动)"
+msgid "Compression method to be used"
+msgstr "使用的压缩方法"
 
 
-msgid "Memory Estimate"
-msgstr "内存估算"
+msgid "Zip"
+msgstr "ZIP"
 
 
-msgid "Estimated amount of memory needed for baking the domain"
-msgstr "烘焙域所需内存的预估量"
+msgid "Effective but slow compression"
+msgstr "压缩效率高, 但速度慢"
 
 
-msgid "Partial Slip Amount"
-msgstr "部分滑动量"
+msgid "Blosc"
+msgstr "Blosc"
 
 
-msgid "Amount of mixing between no- and free-slip, 0 is no slip and 1 is free slip"
-msgstr "无滑动及自由滑动之间的混合量, 0为无滑动, 1为自由滑动"
+msgid "Do not use any compression"
+msgstr "不使用任何压缩"
 
 
-msgid "Preview Resolution"
-msgstr "预览精度"
+msgid "Number"
+msgstr "*Number"
 
 
-msgid "Preview resolution in X,Y and Z direction"
-msgstr "X, Y和Z方向的预览精度"
+msgid "Randomness"
+msgstr "随机性"
 
 
-msgid "Render Display Mode"
-msgstr "渲染显示模式"
+msgid "Cache Compression"
+msgstr "压缩缓存"
 
 
-msgid "How to display the mesh for rendering"
-msgstr "网格的渲染显示方式"
+msgid "Lite"
+msgstr "轻度"
 
 
-msgid "Display geometry"
-msgstr "显示几何体"
+msgid "Fast but not so effective compression"
+msgstr "速度快, 但压缩效率不高"
 
 
-msgid "Preview"
-msgstr "预览"
+msgid "Heavy"
+msgstr "重度"
 
 
-msgid "Display preview quality results"
-msgstr "显示预览级的品质结果"
+msgid "Max Res"
+msgstr "最大分辨率"
 
 
-msgid "Final"
-msgstr "最终"
+msgid "Display Velocity"
+msgstr "显示速度"
 
 
-msgid "Display final quality results"
-msgstr "显示最终品质结果"
+msgid "Adjust slice direction according to the view direction"
+msgstr "将切割方向调整为视图方向"
 
 
-msgid "Domain resolution in X,Y and Z direction"
-msgstr "X, Y和Z方向的域精度"
+msgid "Slice along the X axis"
+msgstr "沿 X 轴切割"
 
 
-msgid "Simulation Speed"
-msgstr "模拟速率"
+msgid "Slice along the Y axis"
+msgstr "沿 Y 轴切割"
 
 
-msgid "Fluid motion rate (0 = stationary, 1 = normal speed)"
-msgstr "流体运动速率 (0=静止, 1=常速)"
+msgid "Slice along the Z axis"
+msgstr "沿 Z 轴切割"
 
 
-msgid "Real World Size"
-msgstr "真实世界尺寸"
+msgid "Position of the slice"
+msgstr "切片位置"
 
 
-msgid "Size of the simulation domain in meters"
-msgstr "模拟域的尺寸 (米)"
+msgid "View Method"
+msgstr "视图方法"
 
 
-msgid "Slip Type"
-msgstr "滑动类型"
+msgid "How to slice the volume for viewport rendering"
+msgstr "视口渲染的体积切片方法"
 
 
-msgid "No Slip"
-msgstr "不滑动"
+msgid "Slice volume parallel to the view plane"
+msgstr "与视图平面平行的切片体积"
 
 
-msgid "Obstacle causes zero normal and tangential velocity (=sticky), default for all (only option for moving objects)"
-msgstr "障碍体使法线与切向速率归零 (即粘连效果), 默认对所有物体开启 (仅用于运动的物体)"
+msgid "Slice volume parallel to the major axis"
+msgstr "与主轴平行的切片体积"
 
 
-msgid "Partial Slip"
-msgstr "部分滑动"
+msgid "Slice Per Voxel"
+msgstr "每体素切片"
 
 
-msgid "Mix between no-slip and free-slip (non moving objects only!)"
-msgstr "在无滑动与自由滑动间进行混合 (仅用于静止的物体!)"
+msgid "How many slices per voxel should be generated"
+msgstr "每个体素应该生成多少片"
 
 
-msgid "Free Slip"
-msgstr "自由滑动"
+msgid "Delete"
+msgstr "删除"
 
 
-msgid "Obstacle only causes zero normal velocity (=not sticky, non moving objects only!)"
-msgstr "障碍体仅使法线速率归零 (即不粘连的效果, 仅用于静止的物体!)"
+msgid "Buoyancy"
+msgstr "浮力"
 
 
-msgid "Simulation time of the first blender frame (in seconds)"
-msgstr "Blender首帧的模拟时间 (秒)"
+msgid "p0"
+msgstr "p0"
 
 
-msgid "Surface Smoothing"
-msgstr "表面平滑"
+msgid "Start point"
+msgstr "初始点"
 
 
-msgid "Amount of surface smoothing (a value of 0 is off, 1 is normal smoothing and more than 1 is extra smoothing)"
-msgstr "表面光滑量 (0为无光滑, 1为标准光滑, 值大于1则为非常光滑)"
+msgid "Tension"
+msgstr "张力"
 
 
-msgid "Surface Subdivisions"
-msgstr "表面细分"
+msgid "Temperature Grid"
+msgstr "温度网格"
 
 
-msgid "Number of isosurface subdivisions (this is necessary for the inclusion of particles into the surface generation - WARNING: can lead to longer computation times !)"
-msgstr "等值面细分次数 (当粒子参与表面的生成过程时尤为必要 - 警告: 这将导致较长的计算时间!)"
+msgid "Smoke temperature grid, range 0..1 represents 0..1000K"
+msgstr "烟雾温度网格,范围 0..1 表示 0..1000K"
 
 
-msgid "Simulation Threads"
-msgstr "用于模拟的线程数"
+msgid "Time Scale"
+msgstr "时间比例"
 
 
-msgid "Override number of threads for the simulation, 0 is automatic"
-msgstr "覆盖模拟线程数, 若为 0, 则代表自动"
+msgid "Adjust simulation speed"
+msgstr "调节仿真速度"
 
 
-msgid "Tracer Particles"
-msgstr "显迹粒子"
+msgid "Adaptive Domain"
+msgstr "自适配域"
 
 
-msgid "Number of tracer particles to generate"
-msgstr "粒子追踪器的生成数量"
+msgid "Adapt simulation resolution and size to fluid"
+msgstr "适配流体模拟的解析度及尺寸"
 
 
-msgid "Reverse fluid frames"
-msgstr "反转流体帧"
+msgid "Bottom"
+msgstr "底"
 
 
-msgid "Generate Speed Vectors"
-msgstr "生成运动矢量"
+msgid "Top"
+msgstr "顶"
 
 
-msgid "Generate speed vectors for vector blur"
-msgstr "为矢量模糊生成运动矢量"
+msgid "Render a simulation field while mapping its voxels values to the colors of a ramp"
+msgstr "将体素值映射到渐变的颜色时渲染模拟区域"
 
 
-msgid "Remove Air Bubbles"
-msgstr "移除气泡"
+msgid "Dissolve Smoke"
+msgstr "消散烟雾"
 
 
-msgid "Removes the air gap between fluid surface and obstacles - WARNING: Can result in a dissolving surface in other areas"
-msgstr "移除流体表面与障碍体间的气隙 - 警告: 能够在其他表面上引起消融效果"
+msgid "Enable smoke to disappear over time"
+msgstr "启用烟雾随时间消逝的效果"
 
 
-msgid "Override Time"
-msgstr "覆盖时间"
+msgid "Using 1/x "
+msgstr "使用1/x "
 
 
-msgid "Use a custom start and end time (in seconds) instead of the scene's timeline"
-msgstr "使用自定义的起始与结束时间 (秒), 来代替场景时间线"
+msgid "Tracer"
+msgstr "跟踪"
 
 
-msgid "Viewport Display Mode"
-msgstr "视图显示模式"
+msgid "Display Type"
+msgstr "显示类型"
 
 
-msgid "How to display the mesh in the viewport"
-msgstr "网格的视图显示方式"
+msgid "Needle"
+msgstr "指针"
+
+
+msgid "Display vectors as needles"
+msgstr "显示矢量为细指针"
+
+
+msgid "Streamlines"
+msgstr "流线"
+
+
+msgid "Display vectors as streamlines"
+msgstr "显示矢量为流线"
+
+
+msgid "Multiplier for scaling the vectors"
+msgstr "矢量的缩放倍数"
+
+
+msgid "Velocity Grid"
+msgstr "速率栅格"
+
+
+msgid "Smoke velocity grid"
+msgstr "烟雾速率栅格"
 
 
 msgid "Viscosity Base"
@@ -11559,152 +11755,8 @@ msgid "Negative exponent for the viscosity value (to simplify entering small val
 msgstr "速率的负指数值 (用于简化输入较小的值, 如 5*10^-6)"
 
 
-msgid "Fluid Fluid Simulation Settings"
-msgstr "流体模拟设置"
-
-
-msgid "Fluid simulation settings for the fluid in the simulation"
-msgstr "在流体仿真中物体的流体仿真设置"
-
-
-msgid "Initial Velocity"
-msgstr "初始速度"
-
-
-msgid "Initial velocity of fluid"
-msgstr "流体的初速度"
-
-
-msgid "Export Animated Mesh"
-msgstr "输出动画网格"
-
-
-msgid "Export this mesh as an animated one (slower and enforces No Slip, only use if really necessary [e.g. armatures or parented objects], animated pos/rot/scale F-Curves do not require it)"
-msgstr "将网格带动画导出 (较慢, 仅供必要时使用 [如: 骨架或有层级的物体], 函数曲线中,姿态/旋转/缩放的动画无需此项)"
-
-
-msgid "Volume Initialization"
-msgstr "初始体积"
-
-
-msgid "Volume initialization type (WARNING: complex volumes might require too much memory and break simulation)"
-msgstr "体积初始化类型 (警告: 复杂体积可能需要过多内存并中断模拟)"
-
-
-msgid "Use only the inner volume of the mesh"
-msgstr "仅使用网格的内部体积"
-
-
-msgid "Shell"
-msgstr "外形"
-
-
-msgid "Use only the outer shell of the mesh"
-msgstr "仅适用外层网格"
-
-
-msgid "Both"
-msgstr "两者"
-
-
-msgid "Use both the inner volume and the outer shell of the mesh"
-msgstr "同时使用网格的内部体积与外壳"
-
-
-msgid "Inflow Fluid Simulation Settings"
-msgstr "注入流体的设置"
-
-
-msgid "Fluid simulation settings for objects adding fluids in the simulation"
-msgstr "引入流体的物体的流体模拟设置"
-
-
-msgid "Inflow Velocity"
-msgstr "注入速度"
-
-
-msgid "Local Coordinates"
-msgstr "局部坐标系"
-
-
-msgid "Use local coordinates for inflow (e.g. for rotating objects)"
-msgstr "为流入类型使用局部坐标 (如物体的旋转)"
-
-
-msgid "Obstacle Fluid Simulation Settings"
-msgstr "流体障碍物的设置"
-
-
-msgid "Fluid simulation settings for obstacles in the simulation"
-msgstr "障碍物的流体模拟设置"
-
-
-msgid "Impact Factor"
-msgstr "影响系数"
-
-
-msgid "This is an unphysical value for moving objects - it controls the impact an obstacle has on the fluid, =0 behaves a bit like outflow (deleting fluid), =1 is default, while >1 results in high forces (can be used to tweak total mass)"
-msgstr "这是一个用于运动物体的非物理值 -它用于控制障碍体对流体的影响效果, 若值为0, 则效果类似于流出体 (即删除流体); 1 为默认值; 当 >1 时, 则影响程度较大 (可用于调节总质量)"
-
-
-msgid "Outflow Fluid Simulation Settings"
-msgstr "流出类型的流体模拟设置"
-
-
-msgid "Fluid simulation settings for objects removing fluids from the simulation"
-msgstr "移除流体的物体的流体模拟设置"
-
-
-msgid "Particle Fluid Simulation Settings"
-msgstr "粒子流体模拟设置"
-
-
-msgid "Fluid simulation settings for objects storing fluid particles generated by the simulation"
-msgstr "存放由模拟生成之流体粒子的物体的流体模拟设置"
-
-
-msgid "Alpha Influence"
-msgstr "Alpha 影响"
-
-
-msgid "Amount of particle alpha change, inverse of size influence: 0=off (all same alpha), 1=full (larger particles get lower alphas, smaller ones higher values)"
-msgstr "粒子的alpha变化量, 与尺寸的影响量相反: 0=关闭 (alpha值相同), 1=全开 (较大粒子的alpha值较低, 而较小粒子的alpha值则较高)"
-
-
-msgid "Directory (and/or filename prefix) to store and load particles from"
-msgstr "粒子的存储与加载目录 (可包括文件名前缀)"
-
-
-msgid "Particle Influence"
-msgstr "粒子影响"
-
-
-msgid "Amount of particle size scaling: 0=off (all same size), 1=full (range 0.2-2.0), >1=stronger"
-msgstr "粒子尺寸的缩放量: 0=关闭 (所有粒子的尺寸相同), 1=完全开启 (可用值区间为 0.2 - 2.0), >1=缩放差异度较大"
-
-
-msgid "Tracer"
-msgstr "跟踪"
-
-
-msgid "Show tracer particles"
-msgstr "显示跟踪粒子"
-
-
-msgid "Drops"
-msgstr "滴落"
-
-
-msgid "Show drop particles"
-msgstr "显示坠落粒子"
-
-
-msgid "Floats"
-msgstr "浮点型"
-
-
-msgid "Show floating foam particles"
-msgstr "显示漂浮粒子"
+msgid "Amount of turbulence/rotation in fluid"
+msgstr "流体中的紊乱度 / 旋转度"
 
 
 msgid "Fluid Mesh Velocity"
@@ -11713,6 +11765,174 @@ msgstr "流体网格速度"
 
 msgid "Velocity of a simulated fluid mesh"
 msgstr "作为流体模拟的网格物体的速度"
+
+
+msgid "Smoke collision settings"
+msgstr "烟雾碰撞设置"
+
+
+msgid "Collision"
+msgstr "碰撞"
+
+
+msgid "Guide"
+msgstr "引导"
+
+
+msgid "Maximize"
+msgstr "最大化"
+
+
+msgid "Override"
+msgstr "覆盖"
+
+
+msgid "Flow Settings"
+msgstr "喷出设置"
+
+
+msgid "Vertex Group"
+msgstr "顶点组"
+
+
+msgid "Name of vertex group which determines surface emission rate"
+msgstr "顶点组的名称, 用于确定各点的修改器影响量"
+
+
+msgid "Outflow"
+msgstr "流出"
+
+
+msgid "Flow Type"
+msgstr "流体类型"
+
+
+msgid "Add smoke"
+msgstr "添加烟雾"
+
+
+msgid "Fire + Smoke"
+msgstr "火焰 + 烟雾"
+
+
+msgid "Add fire and smoke"
+msgstr "添加火焰及烟雾"
+
+
+msgid "Fire"
+msgstr "火焰"
+
+
+msgid "Add fire"
+msgstr "添加火焰"
+
+
+msgid "Flame Rate"
+msgstr "火焰比率"
+
+
+msgid "Texture that controls emission strength"
+msgstr "用于控制发射强度的纹理"
+
+
+msgid "Particle size in simulation cells"
+msgstr "模拟单元中的粒子尺寸"
+
+
+msgid "Particle systems emitted from the object"
+msgstr "粒子系统直接由物体发射"
+
+
+msgid "Color of smoke"
+msgstr "烟雾颜色"
+
+
+msgid "Subframes"
+msgstr "子帧"
+
+
+msgid "Number of additional samples to take between frames to improve quality of fast moving flows"
+msgstr "增加两帧之间附加采样值，提升快速移动流的模拟质量"
+
+
+msgid "Temp. Diff."
+msgstr "温差."
+
+
+msgid "Temperature difference to ambient temperature"
+msgstr "环境温差"
+
+
+msgid "Mapping"
+msgstr "映射"
+
+
+msgid "Texture mapping type"
+msgstr "纹理映射类型"
+
+
+msgid "Generated"
+msgstr "生成"
+
+
+msgid "Generated coordinates centered to flow object"
+msgstr "生成的坐标位于流物体中心"
+
+
+msgid "Use UV layer for texture coordinates"
+msgstr "为纹理坐标使用 UV 层"
+
+
+msgid "Z-offset of texture mapping"
+msgstr "纹理映射的 Z 偏移"
+
+
+msgid "Size of texture mapping"
+msgstr "纹理映射尺寸"
+
+
+msgid "Absolute Density"
+msgstr "绝对密度"
+
+
+msgid "Initial Velocity"
+msgstr "初始速度"
+
+
+msgid "Set Size"
+msgstr "设置尺寸"
+
+
+msgid "Set particle size in simulation cells or use nearest cell"
+msgstr "在模拟单元格中设置粒子大小或使用最近的单元格"
+
+
+msgid "Use Texture"
+msgstr "使用纹理"
+
+
+msgid "Use a texture to control emission strength"
+msgstr "使用纹理控制发射强度"
+
+
+msgid "Initial"
+msgstr "初始"
+
+
+msgid "Normal"
+msgstr "法向"
+
+
+msgid "Amount of normal directional velocity"
+msgstr "法向定向速度量"
+
+
+msgid "Amount of random velocity"
+msgstr "随机速度量"
+
+
+msgid "Factor for smoke emitted from inside the mesh volume"
+msgstr "调节由网格体积内部散出烟雾的系数"
 
 
 msgid "Freestyle Line Set"
@@ -11923,16 +12143,8 @@ msgid "Line set name"
 msgstr "线条集名称"
 
 
-msgid "End"
-msgstr "结束点"
-
-
 msgid "Last QI value of the QI range"
 msgstr "QI 范围的结束 QI 值"
-
-
-msgid "Start"
-msgstr "起始"
 
 
 msgid "First QI value of the QI range"
@@ -12311,10 +12523,6 @@ msgid "Quadratic easing"
 msgstr "二次型缓动"
 
 
-msgid "Cubic"
-msgstr "三次型"
-
-
 msgid "Cubic easing"
 msgstr "三次型缓动"
 
@@ -12583,10 +12791,6 @@ msgid "Draw the points which make up the strokes (for debugging purposes)"
 msgstr "绘制组成笔画的点(用于调试)"
 
 
-msgid "Thickness"
-msgstr "厚度"
-
-
 msgid "Thickness of annotation strokes"
 msgstr "标注笔画宽度"
 
@@ -12669,10 +12873,6 @@ msgstr "新增笔刷效果"
 
 msgid "Subtract effect of brush"
 msgstr "笔刷的消减效果"
-
-
-msgid "Radius"
-msgstr "半径"
 
 
 msgid "Radius of the brush in pixels"
@@ -12825,10 +13025,6 @@ msgstr "蜡笔笔画雕刻工具的属性"
 
 msgid "Brush"
 msgstr "笔刷"
-
-
-msgid "Guide"
-msgstr "引导"
 
 
 msgid "Threshold for stroke intersections"
@@ -13625,10 +13821,6 @@ msgid "Bind vertex groups to armature modifier"
 msgstr "将顶点组绑定到骨架修改器"
 
 
-msgid "Vertex Group"
-msgstr "顶点组"
-
-
 msgid "Name of Vertex Group which determines influence of modifier per point"
 msgstr "顶点组的名称, 用于确定各点的修改器影响量"
 
@@ -13863,6 +14055,10 @@ msgstr "创建材质"
 
 msgid "Color Hue"
 msgstr "色相"
+
+
+msgid "Both"
+msgstr "两者"
 
 
 msgid "Modify fill and stroke colors"
@@ -14499,18 +14695,6 @@ msgid "Red Green Blue"
 msgstr "红绿蓝"
 
 
-msgid "Red"
-msgstr "红"
-
-
-msgid "Green"
-msgstr "绿"
-
-
-msgid "Blue"
-msgstr "蓝"
-
-
 msgid "Show Line"
 msgstr "显示线型"
 
@@ -14638,10 +14822,6 @@ msgstr "数据块的动画数据"
 
 msgid "Bones"
 msgstr "骨骼"
-
-
-msgid "Display Type"
-msgstr "显示类型"
 
 
 msgid "Octahedral"
@@ -15652,10 +15832,6 @@ msgid "When locked keep using the plane origin of surface where stroke was initi
 msgstr "锁定时, 将持续使用笔画起始处的表面原点"
 
 
-msgid "Antialasing"
-msgstr "抗锯齿"
-
-
 msgid "Smooths the edges of the strokes"
 msgstr "平滑笔画的边缘"
 
@@ -15666,10 +15842,6 @@ msgstr "使用雕刻"
 
 msgid "Use this brush in grease pencil drawing mode"
 msgstr "蜡笔绘制模式下使用该笔刷"
-
-
-msgid "Use Texture"
-msgstr "使用纹理"
 
 
 msgid "Use this brush in texture paint mode"
@@ -15762,22 +15934,6 @@ msgstr "使用纹理叠加"
 
 msgid "Show texture in viewport"
 msgstr "视图中显示纹理"
-
-
-msgid "2D Falloff"
-msgstr "平面衰减"
-
-
-msgid "Apply brush influence in 2D circle instead of a sphere"
-msgstr "笔刷影响转为平面圆形而非球体。"
-
-
-msgid "Absolute Jitter"
-msgstr "绝对抖动"
-
-
-msgid "Jittering happens in screen space, not relative to brush size"
-msgstr "基于屏幕空间执行抖动, 而非笔刷大小"
 
 
 msgid "Restore Mesh"
@@ -16556,20 +16712,12 @@ msgid "Top Base-Line"
 msgstr "顶部基线"
 
 
-msgid "Top"
-msgstr "顶"
-
-
 msgid "Align text to the top"
 msgstr "文本顶部对齐"
 
 
 msgid "Align text to the middle"
 msgstr "文本居中对齐"
-
-
-msgid "Bottom"
-msgstr "底"
 
 
 msgid "Align text to the bottom"
@@ -17612,10 +17760,6 @@ msgid "Generated grid to test UV mappings"
 msgstr "为测试 UV 映射而生成的栅格图像"
 
 
-msgid "Color Grid"
-msgstr "彩色栅格图"
-
-
 msgid "Generated improved UV grid to test UV mappings"
 msgstr "为测试映射而生成的改进型 UV 栅格图像"
 
@@ -17720,10 +17864,6 @@ msgid "Movie file"
 msgstr "影片文件"
 
 
-msgid "Generated"
-msgstr "生成"
-
-
 msgid "Generated image"
 msgstr "由程序生成的图像"
 
@@ -17734,6 +17874,10 @@ msgstr "预览器"
 
 msgid "Compositing node viewer"
 msgstr "合成节点预览器"
+
+
+msgid "Tiled"
+msgstr "平铺"
 
 
 msgid "Stereo 3D Format"
@@ -18250,10 +18394,6 @@ msgid "Type of parallax volume"
 msgstr "视差"
 
 
-msgid "Clipping"
-msgstr "范围限制"
-
-
 msgid "Show the clipping distances in the 3D view"
 msgstr "3D 视图的裁切距离"
 
@@ -18468,6 +18608,10 @@ msgstr "着色球"
 
 msgid "Cloth"
 msgstr "布料"
+
+
+msgid "Fluid"
+msgstr "流体"
 
 
 msgid "Refraction Depth"
@@ -19654,10 +19798,6 @@ msgid "Indices of vertices in case of a vertex parenting relation"
 msgstr "顶点编号, 用于顶点父子关系中"
 
 
-msgid "Particle systems emitted from the object"
-msgstr "粒子系统直接由物体发射"
-
-
 msgid "Index number for the \"Object Index\" render pass"
 msgstr "用于物体编号渲染通道的编号数值"
 
@@ -20156,10 +20296,6 @@ msgid "Maximum length of the particle color vector"
 msgstr "粒子颜色矢量的最大间距"
 
 
-msgid "Number"
-msgstr "*Number"
-
-
 msgid "Total number of particles"
 msgstr "总粒子数"
 
@@ -20496,10 +20632,6 @@ msgid "Dummy"
 msgstr "伪"
 
 
-msgid "Normal"
-msgstr "法向"
-
-
 msgid "Let the surface normal give the particle a starting velocity"
 msgstr "让表面法线赋予粒子一个起始速度"
 
@@ -20518,6 +20650,10 @@ msgstr "物体速度"
 
 msgid "Let the object give the particle a starting velocity"
 msgstr "让物体赋予粒子一个初始速度"
+
+
+msgid "Particle"
+msgstr "粒子"
 
 
 msgid "Let the target particle give the particle a starting velocity"
@@ -20586,10 +20722,6 @@ msgstr "目标粒子的响应事件"
 
 msgid "Death"
 msgstr "消失"
-
-
-msgid "Collision"
-msgstr "碰撞"
 
 
 msgid "Reactor"
@@ -20768,10 +20900,6 @@ msgid "Give the particle size a random variation"
 msgstr "为粒子大小赋予一个随机变量"
 
 
-msgid "Subframes"
-msgstr "子帧"
-
-
 msgid "Subframes to simulate for improved stability and finer granularity simulations (dt = timestep / (subframes + 1))"
 msgstr "模拟所使用的副帧, 用于获得更好的稳定性, 以及更好的颗粒度模拟 (dt = 时步 / (副帧数 + 1))"
 
@@ -20826,10 +20954,6 @@ msgstr "定义扭曲的曲线"
 
 msgid "Particle Type"
 msgstr "粒子类型"
-
-
-msgid "Emitter"
-msgstr "发射体"
 
 
 msgid "Absolute Path Time"
@@ -21470,10 +21594,6 @@ msgstr "动画回放"
 
 msgid "Animation playback is active"
 msgstr "动画回放处于激活状态"
-
-
-msgid "Maximize"
-msgstr "最大化"
 
 
 msgid "An area is maximized, filling this screen"
@@ -22978,10 +23098,6 @@ msgid "The solver does not reiterate, not even on first frame (starts from rest 
 msgstr "解算器不执行重复迭代, 即使针对首帧 (从静置姿态开始)"
 
 
-msgid "Initial"
-msgstr "初始"
-
-
 msgid "The solver reiterates (converges) on the first frame but not on subsequent frame"
 msgstr "解算器对首帧执行重复迭代(聚敛), 但不针对后续帧"
 
@@ -23108,10 +23224,6 @@ msgstr "保存渲染图像的 RGB 色彩信息"
 
 msgid "Images are saved with RGB and Alpha data (if supported)"
 msgstr "保存渲染图像的 RGB 和 Alpha 数据 (需格式支持)"
-
-
-msgid "Compression"
-msgstr "压缩"
 
 
 msgid "Codec"
@@ -25190,10 +25302,6 @@ msgid "Invert the fade-out direction of the linear mapping"
 msgstr "翻转线性映射的渐隐方向"
 
 
-msgid "Mapping"
-msgstr "映射"
-
-
 msgid "Select the mapping type"
 msgstr "选择映射类型"
 
@@ -26289,10 +26397,6 @@ msgid "Marker Settings"
 msgstr "标记设置"
 
 
-msgid "Set Handle Type"
-msgstr "设置控制柄类型"
-
-
 msgid "Pivot Point"
 msgstr "轴心点"
 
@@ -26357,10 +26461,6 @@ msgid "Dope Sheet Context Menu"
 msgstr "动画摄影表上下文菜单"
 
 
-msgid "Delete"
-msgstr "删除"
-
-
 msgid "Key"
 msgstr "关键帧"
 
@@ -26375,6 +26475,10 @@ msgstr "书签专用项"
 
 msgid "Files Context Menu"
 msgstr "文件上下文菜单"
+
+
+msgid "Fluid Presets"
+msgstr "流体预设"
 
 
 msgid "Clean Up"
@@ -27520,32 +27624,64 @@ msgid "Data Transfer"
 msgstr "数据传递"
 
 
+msgid "Transfer several types of data (vertex groups, UV maps, vertex colors, custom normals) from one mesh to another"
+msgstr "将多种类型的数据(顶点组、UV 贴图、顶点颜色、自定义法向)从一个网格传递到另一个网格"
+
+
 msgid "Mesh Cache"
 msgstr "网格缓存"
+
+
+msgid "Deform the mesh using an external frame-by-frame vertex transform cache"
+msgstr "使用外部逐帧顶点变换缓存改变网格形状"
 
 
 msgid "Mesh Sequence Cache"
 msgstr "网格序列缓存"
 
 
+msgid "Deform the mesh or curve using an external mesh cache in Alembic format"
+msgstr "使用 Alembic 格式的外部网格缓存改变网格或曲线形状"
+
+
 msgid "Normal Edit"
 msgstr "法线编辑"
+
+
+msgid "Modify the direction of the surface normals"
+msgstr "修改表面法线的方向"
 
 
 msgid "Weighted Normal"
 msgstr "加权法向"
 
 
+msgid "Modify the direction of the surface normals using a weighting method"
+msgstr "使用加权方法修改表面法线的方向"
+
+
 msgid "UV Project"
 msgstr "UV 投射"
+
+
+msgid "Project the UV map coordinates from the negative Z axis of another object"
+msgstr "从另一个物体的负Z轴投影 UV 贴图坐标"
 
 
 msgid "UV Warp"
 msgstr "UV 偏移"
 
 
+msgid "Transform the UV map using the the difference between two objects"
+msgstr "使用两个物体之间的差异变换UV 贴图"
+
+
 msgid "Vertex Weight Edit"
 msgstr "顶点权重编辑"
+
+
+msgid "Modify of the weights of a vertex group"
+msgstr "修改顶点组的权重"
 
 
 msgid "Vertex Weight Mix"
@@ -27560,88 +27696,220 @@ msgid "Vertex Weight Proximity"
 msgstr "顶点权重邻近"
 
 
+msgid "Set the vertex group weights based on the distance to another target object"
+msgstr "基于与另一个目标物体的距离设置顶点组权重"
+
+
+msgid "Create copies of the shape with offsets"
+msgstr "使用偏移量创建形状的副本"
+
+
 msgid "Bevel"
 msgstr "倒角"
+
+
+msgid "Generate sloped corners by adding geometry to the mesh's edges or vertices"
+msgstr "通过向网格的边缘或顶点添加几何结构来生成倾斜的拐角"
 
 
 msgid "Boolean"
 msgstr "布尔"
 
 
+msgid "Use another shape to cut, combine or perform a difference operation"
+msgstr "使用另一个形状切除、合并或执行差值操作"
+
+
+msgid "Cause the faces of the mesh object to appear or disappear one after the other over time"
+msgstr "使网格物体的面随时间而逐个显现或消失"
+
+
 msgid "Decimate"
 msgstr "精简"
+
+
+msgid "Reduce the geometry density"
+msgstr "降低几何密度"
 
 
 msgid "Edge Split"
 msgstr "拆边"
 
 
+msgid "Split away joined faces at the edges"
+msgstr "拆分边缘处的联接面"
+
+
+msgid "Dynamically hide vertices based on a vertex group or armature"
+msgstr "基于顶点组或骨架动态隐藏顶点"
+
+
+msgid "Mirror along the local X, Y and/or Z axes, over the object origin"
+msgstr "绕物体原点，沿局部 X、Y 和/或 Z 轴镜像"
+
+
 msgid "Multiresolution"
 msgstr "多级精度"
+
+
+msgid "Subdivide the mesh in a way that allows editing the higher subdivision levels"
+msgstr "以允许编辑较高细分级别的方式细分网格"
 
 
 msgid "Remesh"
 msgstr "重构网格"
 
 
+msgid "Generate new mesh topology based on the current shape"
+msgstr "基于当前形状生成新的网格拓扑"
+
+
 msgid "Screw"
 msgstr "螺旋"
+
+
+msgid "Lathe around an axis, treating the inout mesh as a profile"
+msgstr "围绕一个轴向进行车面，将内出网格视为轮廓"
 
 
 msgid "Skin"
 msgstr "蒙皮"
 
 
+msgid "Create a solid shape from vertices and edges, using the vertex radius to define the thickness"
+msgstr "以顶点半径定义厚度，从顶点和边创建实体形状"
+
+
 msgid "Solidify"
 msgstr "实体化"
+
+
+msgid " Make the surface thick"
+msgstr "加厚表面"
 
 
 msgid "Subdivision Surface"
 msgstr "表面细分"
 
 
+msgid "Split the faces into smaller parts, giving it a smoother appearance"
+msgstr "将面分割成更小的部分，使其外观更平滑"
+
+
 msgid "Triangulate"
 msgstr "三角化"
+
+
+msgid "Convert all polygons to triangles"
+msgstr "将所有多边形转换为三角面"
 
 
 msgid "Wireframe"
 msgstr "线框"
 
 
+msgid "Convert faces into thickened edges"
+msgstr "将面转换为加厚的边"
+
+
+msgid "Deform the shape using an armature object"
+msgstr "使用骨架物体改变形状"
+
+
 msgid "Cast"
 msgstr "铸型"
+
+
+msgid "Shift the shape towards a predefined primitive"
+msgstr "使形状向预定义的基本体变化"
+
+
+msgid "Bend the mesh using a curve object"
+msgstr "使用曲线物体折弯网格"
 
 
 msgid "Displace"
 msgstr "置换"
 
 
+msgid "Offset vertices based on a texture"
+msgstr "基于纹理偏移顶点"
+
+
+msgid "Deform specific points using another object"
+msgstr "使用另一物体改变指定点的形状"
+
+
 msgid "Laplacian Deform"
 msgstr "拉普拉斯形变"
+
+
+msgid "Deform based a series of anchor points"
+msgstr "基于一系列锚点改变形状"
+
+
+msgid "Deform using the shape of a lattice object"
+msgstr "使用晶格物体的形状变形"
 
 
 msgid "Mesh Deform"
 msgstr "网格形变"
 
 
+msgid "Deform using a different mesh, which acts as a deformation cage"
+msgstr "使用不同的网格变形，充当变形罩体"
+
+
+msgid "Project the shape onto another object"
+msgstr "将形状投影到另一个物体上"
+
+
 msgid "Simple Deform"
 msgstr "简易形变"
+
+
+msgid "Deform the shape by twisting, bending, tapering or stretching"
+msgstr "通过扭曲、弯曲、锥化或拉伸改变形状"
+
+
+msgid "Smooth the mesh by flattening the angles between adjacent faces"
+msgstr "通过平展相邻面之间的角度来平滑网格"
 
 
 msgid "Smooth Corrective"
 msgstr "矫正平滑"
 
 
+msgid "Smooth the mesh while still preserving the volume"
+msgstr "平滑网格，同时保留体积"
+
+
 msgid "Smooth Laplacian"
 msgstr "拉普拉斯平滑"
+
+
+msgid "Reduce the noise on a mesh surface with minimal changes to its shape"
+msgstr "减少网格表面上的噪波，同时尽可能小地改变网格形状"
 
 
 msgid "Surface Deform"
 msgstr "表面形变"
 
 
+msgid "Transfer motion from another mesh"
+msgstr "传递来自另一个网格的运动"
+
+
 msgid "Warp"
 msgstr "弯绕"
+
+
+msgid "Warp parts of a mesh to a new location in a very flexible way thanks to 2 specified objects"
+msgstr "由于具有 2 个指定物体，以非常灵活的方式将网格的零件弯绕到新位置"
+
+
+msgid "Adds a ripple-like motion to an object’s geometry"
+msgstr "向物体的几何结构添加类似波纹的运动"
 
 
 msgid "Dynamic Paint"
@@ -27652,20 +27920,28 @@ msgid "Explode"
 msgstr "爆破"
 
 
-msgid "Fluid Simulation"
-msgstr "流体模拟"
+msgid "Break apart the mesh faces and let them follow particles"
+msgstr "分解网格面，使其跟随粒子"
 
 
 msgid "Ocean"
 msgstr "洋面"
 
 
+msgid "Generate a moving ocean surface"
+msgstr "生成移动的海洋表面"
+
+
 msgid "Particle Instance"
 msgstr "粒子实例"
 
 
-msgid "Smoke"
-msgstr "烟雾"
+msgid "Spawn particles from the shape"
+msgstr "从形状生成粒子"
+
+
+msgid "Fluid Simulation"
+msgstr "流体模拟"
 
 
 msgid "Soft Body"
@@ -28944,16 +29220,12 @@ msgid "Use particle size for the shrapnel"
 msgstr "为碎片使用粒子尺寸"
 
 
-msgid "Fluid Simulation Modifier"
-msgstr "流体模拟修改器"
-
-
 msgid "Fluid simulation modifier"
 msgstr "流体模拟修改器"
 
 
-msgid "Settings for how this object is used in the fluid simulation"
-msgstr "此物体流体模拟中的使用方式设置"
+msgid "Inflow/Outflow"
+msgstr "流入 / 流出"
 
 
 msgid "Hook modifier to modify the location of vertices"
@@ -29142,10 +29414,6 @@ msgstr "回放时间的控制方法"
 
 msgid "Control playback using a frame-number (ignoring time FPS and start frame from the file)"
 msgstr "使用某帧数值控制回放 (忽略帧速率及该文件中的起始帧)"
-
-
-msgid "Time"
-msgstr "时间"
 
 
 msgid "Control playback using time in seconds"
@@ -29983,26 +30251,6 @@ msgstr "避免在 Y 轴之间产生不对称的四边形"
 
 msgid "Avoid making unsymmetrical quads across the Z axis"
 msgstr "避免在 Z 轴之间产生不对称的四边形"
-
-
-msgid "Smoke Modifier"
-msgstr "烟雾修改器"
-
-
-msgid "Smoke simulation modifier"
-msgstr "平滑效果修改器"
-
-
-msgid "Domain Settings"
-msgstr "域设置"
-
-
-msgid "Flow Settings"
-msgstr "喷出设置"
-
-
-msgid "Inflow/Outflow"
-msgstr "流入 / 流出"
 
 
 msgid "Soft Body Modifier"
@@ -31553,7 +31801,7 @@ msgstr "平面追踪轨迹已选中"
 
 
 msgid "Auto Keyframe"
-msgstr "自动关键帧"
+msgstr "自动插帧"
 
 
 msgid "Automatic keyframe insertion when moving plane corners"
@@ -31930,10 +32178,6 @@ msgstr "平移稳像轨迹列表中的活动轨迹编号"
 
 msgid "Anchor Frame"
 msgstr "锚定帧"
-
-
-msgid "Nearest"
-msgstr "最近"
 
 
 msgid "Bilinear"
@@ -32714,10 +32958,6 @@ msgstr "算法"
 
 msgid "Algorithm to use to limit channel"
 msgstr "用于限定通道的算法"
-
-
-msgid "Single"
-msgstr "单一"
 
 
 msgid "Limit by single channel"
@@ -33633,7 +33873,7 @@ msgstr "RGB"
 
 
 msgid "Keying"
-msgstr "抠像"
+msgstr "抠像(插帧)"
 
 
 msgid "Post Blur"
@@ -33877,6 +34117,14 @@ msgid "A / B"
 msgstr "A / B"
 
 
+msgid "Multiply Add"
+msgstr "乘后再加"
+
+
+msgid "A * B + C"
+msgstr "A * B + C"
+
+
 msgid "A power B"
 msgstr "A ^ B"
 
@@ -33885,12 +34133,28 @@ msgid "Logarithm"
 msgstr "对数"
 
 
+msgid "Logarithm A base B"
+msgstr "以B为底取A的对数"
+
+
 msgid "Square root of A"
 msgstr "A的平方根"
 
 
+msgid "Inverse Square Root"
+msgstr "平方取倒"
+
+
+msgid "1 / Square root of A"
+msgstr "A的平方根的倒数"
+
+
 msgid "Magnitude of A"
 msgstr "A的绝对值"
+
+
+msgid "exp(A)"
+msgstr "exp(A)"
 
 
 msgid "The minimum from A and B"
@@ -33917,12 +34181,48 @@ msgid "1 if A > B else 0"
 msgstr "A > B则取1，否则取0"
 
 
+msgid "Sign"
+msgstr "符号"
+
+
+msgid "Returns the sign of A"
+msgstr "返回 A 的符号"
+
+
 msgid "Compare"
 msgstr "比较"
 
 
+msgid "1 if (A == B) within tolerance C else 0"
+msgstr "如果在容差 C 内(A=B)则返回1，否则返回0"
+
+
+msgid "Smooth Minimum"
+msgstr "平滑最小值"
+
+
+msgid "Smooth Maximum"
+msgstr "平滑最大值"
+
+
+msgid "Round A to the nearest integer. Round upward if the fraction part is 0.5"
+msgstr "将 A 四舍五入到最近的整数。如果分数部分为 0.5，则向上取整"
+
+
+msgid "The largest integer smaller than or equal A"
+msgstr "小于或等于 A 的最大整数"
+
+
 msgid "Ceil"
 msgstr "向上取整"
+
+
+msgid "The smallest integer greater than or equal A"
+msgstr "大于或等于 A 的最小整数"
+
+
+msgid "trunc(A)"
+msgstr "trunc(A)"
 
 
 msgid "Fraction"
@@ -33939,6 +34239,10 @@ msgstr "模数"
 
 msgid "A mod B"
 msgstr "A % B"
+
+
+msgid "Snap to increment, snap(A,B)"
+msgstr "吸附到增量，snap(A,B)"
 
 
 msgid "sin(A)"
@@ -33979,6 +34283,50 @@ msgstr "arctan(A)"
 
 msgid "Arctan2"
 msgstr "反正切2"
+
+
+msgid "The signed angle arctan(A / B)"
+msgstr "带符号角度的arctan(A / B)"
+
+
+msgid "Hyperbolic Sine"
+msgstr "双曲正弦"
+
+
+msgid "sinh(A)"
+msgstr "sinh(A)"
+
+
+msgid "Hyperbolic Cosine"
+msgstr "双曲余弦"
+
+
+msgid "cosh(A)"
+msgstr "cosh(A)"
+
+
+msgid "Hyperbolic Tangent"
+msgstr "双曲正切"
+
+
+msgid "tanh(A)"
+msgstr "tanh(A)"
+
+
+msgid "To Radians"
+msgstr "到弧度"
+
+
+msgid "Convert from degrees to radians"
+msgstr "从角度转换为弧度"
+
+
+msgid "To Degrees"
+msgstr "到角度"
+
+
+msgid "Convert from radians to degrees"
+msgstr "从弧度转换为角度"
 
 
 msgid "Include alpha of second input in this operation"
@@ -34518,6 +34866,18 @@ msgid "Camera Data"
 msgstr "相机数据"
 
 
+msgid "Clamp Type"
+msgstr "钳制类型"
+
+
+msgid "Clamp values using Min and Max values"
+msgstr "使用最小值和最大值钳制数值"
+
+
+msgid "Clamp values between Min and Max range"
+msgstr "将数值钳制在最小和最大范围之间"
+
+
 msgid "Combine HSV"
 msgstr "合并 HSV"
 
@@ -34532,6 +34892,10 @@ msgstr "合并 XYZ"
 
 msgid "Shader Custom Group"
 msgstr "着色器自定义群组"
+
+
+msgid "Custom Shader Group Node for Python nodes"
+msgstr "Python 节点的自定义着色器组节点"
 
 
 msgid "Space of the input height"
@@ -34576,6 +34940,30 @@ msgstr "光程"
 
 msgid "Clamp the result to the target range [To Min, To Max]"
 msgstr "将结果钳制在目标范围 [到最小值，到最大值]"
+
+
+msgid "Interpolation Type"
+msgstr "插值类型"
+
+
+msgid "Linear interpolation between From Min and From Max values"
+msgstr "从最小值和从最大值之间的线性插值"
+
+
+msgid "Stepped Linear"
+msgstr "阶梯线性"
+
+
+msgid "Stepped linear interpolation between From Min and From Max values"
+msgstr "从最小值和从最大值之间的步进线性插值"
+
+
+msgid "Smooth hermite edge interpolation between From Min and From Max values"
+msgstr "从最小值和从最大值之间的平滑埃尔米特边缘插值"
+
+
+msgid "Smoother hermite edge interpolation between From Min and From Max values"
+msgstr "从最小值和从最大值之间的更平滑的埃尔米特边缘插值"
 
 
 msgid "Type of vector that the mapping transforms"
@@ -35136,10 +35524,6 @@ msgstr "计算到次近点的距离及其位置和颜色"
 
 msgid "Smooth F1"
 msgstr "平滑 F1"
-
-
-msgid "Smoothed version of F1. Weighted sum of neighbour voronoi cells"
-msgstr "平滑版本的 F1。相邻沃罗诺伊单元的加权总和"
 
 
 msgid "Distance To Edge"
@@ -39555,10 +39939,6 @@ msgid "Time Slide"
 msgstr "时间滑动"
 
 
-msgid "Time Scale"
-msgstr "时间比例"
-
-
 msgid "Time Extend"
 msgstr "扩展时间"
 
@@ -40736,6 +41116,14 @@ msgid "EXPERIMENTAL: Export displacement textures. Uses incomplete \"KHR_materia
 msgstr "实验: 导出置换纹理。使用不完全 \"KHR_materials_displacement\" glTF 扩展"
 
 
+msgid "Generic quantization bits"
+msgstr "一般量化位"
+
+
+msgid "Quantization bits for generic coordinate values like weights or joints (0 = no quantization)"
+msgstr "用于一般坐标值(如权重或关节)量化位(0 = 无量化)"
+
+
 msgid "Draco mesh compression"
 msgstr "Draco网格压缩"
 
@@ -41561,15 +41949,6 @@ msgstr "打开一个 Blender 文件"
 
 msgid "Unpack all used Blender library files from this .blend file"
 msgstr "将所有使用 Blender 库文件的文件解包 .blend 文件中"
-
-
-msgctxt "Operator"
-msgid "Fluid Simulation Bake"
-msgstr "流体模拟烘焙"
-
-
-msgid "Bake fluid simulation"
-msgstr "烘焙流体模拟"
 
 
 msgctxt "Operator"
@@ -50315,43 +50694,6 @@ msgstr "朝外速度"
 
 
 msgctxt "Operator"
-msgid "Quick Fluid"
-msgstr "快速流体"
-
-
-msgid "Use selected objects in a fluid simulation"
-msgstr "在流体模拟中使用选中物体"
-
-
-msgid "Initial velocity of the fluid"
-msgstr "流体初速度"
-
-
-msgid "Render Fluid Objects"
-msgstr "渲染流体"
-
-
-msgid "Keep the fluid objects visible during rendering"
-msgstr "渲染时保持流体可见"
-
-
-msgid "Start Fluid Bake"
-msgstr "开始流体烘焙"
-
-
-msgid "Start baking the fluid immediately after creating the domain object"
-msgstr "在创建域物体后立即开始烘焙流体"
-
-
-msgid "Fluid Style"
-msgstr "流体类型"
-
-
-msgid "Basic"
-msgstr "基本"
-
-
-msgctxt "Operator"
 msgid "Quick Fur"
 msgstr "快速毛发"
 
@@ -50362,10 +50704,6 @@ msgstr "向选中物体添加毛发设定"
 
 msgid "Fur Density"
 msgstr "毛发密度"
-
-
-msgid "Heavy"
-msgstr "重度"
 
 
 msgid "View %"
@@ -50391,10 +50729,6 @@ msgstr "渲染时保持烟雾体可见"
 
 msgid "Smoke Style"
 msgstr "烟雾样式"
-
-
-msgid "Fire"
-msgstr "火焰"
 
 
 msgid "Smoke + Fire"
@@ -54214,10 +54548,6 @@ msgid "Automatically calculate mass values for Rigid Body Objects based on volum
 msgstr "根据体积自动计算刚体物体的质量值"
 
 
-msgid "Density"
-msgstr "密度"
-
-
 msgid "Custom density value (kg/m^3) to use instead of material preset"
 msgstr "自定义密度值 (kg/m3) 以替换材质预设使用"
 
@@ -54358,12 +54688,12 @@ msgstr "删除激活的场景"
 
 msgctxt "Operator"
 msgid "Add Edge Marks to Keying Set"
-msgstr "向帧配置中添加边标识"
+msgstr "向插帧集中添加边标记"
 
 
 msgctxt "Operator"
 msgid "Add Face Marks to Keying Set"
-msgstr "向帧配置中添加面标识"
+msgstr "向插帧集中添加面标记"
 
 
 msgctxt "Operator"
@@ -61172,6 +61502,14 @@ msgid "Set the tool by name (for keymaps)"
 msgstr "按名称设置工具(用于键位映射)"
 
 
+msgid "Set Fallback"
+msgstr "设置回退"
+
+
+msgid "Set the fallback tool instead of the primary tool"
+msgstr "设置回退工具替代初始工具"
+
+
 msgid "Cycle"
 msgstr "循环"
 
@@ -61193,6 +61531,10 @@ msgid "Set the tool by index (for keymaps)"
 msgstr "按索引设置工具(用于键映射)"
 
 
+msgid "Set the fallback tool instead of the primary"
+msgstr "设置回退工具替代初始工具"
+
+
 msgid "Include tool sub-groups"
 msgstr "包含工具子群组"
 
@@ -61204,6 +61546,11 @@ msgstr "工具栏上的编号"
 msgctxt "Operator"
 msgid "Toolbar"
 msgstr "工具栏"
+
+
+msgctxt "Operator"
+msgid "Fallback Tool Pie Menu"
+msgstr "回退工具饼菜单"
 
 
 msgctxt "Operator"
@@ -62052,10 +62399,6 @@ msgid "Shutter Curve"
 msgstr "快门曲线"
 
 
-msgid "Override"
-msgstr "覆盖"
-
-
 msgid "Passes"
 msgstr "通道"
 
@@ -62214,10 +62557,6 @@ msgstr "属性"
 
 msgid "Directory Path"
 msgstr "目录路径"
-
-
-msgid "Fluid Presets"
-msgstr "流体预设"
 
 
 msgid "Active Tool"
@@ -62537,6 +62876,10 @@ msgid "Timing"
 msgstr "时序"
 
 
+msgid "Border Collisions"
+msgstr "边界碰撞"
+
+
 msgid "Collisions"
 msgstr "碰撞"
 
@@ -62559,10 +62902,6 @@ msgstr "自碰撞"
 
 msgid "Softbody And Cloth"
 msgstr "软体与布料"
-
-
-msgid "Viscosity"
-msgstr "粘度"
 
 
 msgid "Falloff Ramp"
@@ -62589,6 +62928,14 @@ msgid "Force Fields"
 msgstr "力场"
 
 
+msgid "Flow Source"
+msgstr "流来源"
+
+
+msgid "Guides"
+msgstr "辅助"
+
+
 msgid "Surface Response"
 msgstr "表面响应"
 
@@ -62603,30 +62950,6 @@ msgstr "动力"
 
 msgid "Deactivation"
 msgstr "失活性"
-
-
-msgid "Adaptive Domain"
-msgstr "自适配域"
-
-
-msgid "Behavior"
-msgstr "行为"
-
-
-msgid "Flames"
-msgstr "火焰"
-
-
-msgid "High Resolution"
-msgstr "高精度"
-
-
-msgid "Particle Size"
-msgstr "粒子大小"
-
-
-msgid "Debug Velocity"
-msgstr "调试速率"
 
 
 msgid "Self Collision"
@@ -62647,6 +62970,10 @@ msgstr "诊断"
 
 msgid "Helpers"
 msgstr "辅助器"
+
+
+msgid "Debug Velocity"
+msgstr "调试速率"
 
 
 msgid "Creates a Panel in the Render Layers context of the properties editor"
@@ -63067,10 +63394,6 @@ msgid "Draw Context Menu"
 msgstr "绘制上下文菜单"
 
 
-msgid "Guides"
-msgstr "辅助"
-
-
 msgid "Drawing Plane"
 msgstr "绘制平面"
 
@@ -63129,10 +63452,6 @@ msgstr "分析"
 
 msgid "Quad View"
 msgstr "四格视图"
-
-
-msgid "Unified Brush"
-msgstr "统一笔刷"
 
 
 msgid "Shadow Settings"
@@ -63466,16 +63785,8 @@ msgid "Post-Processing"
 msgstr "后期处理"
 
 
-msgid "Stabilize"
-msgstr "稳定"
-
-
 msgid "Sculpt Strokes"
 msgstr "雕刻笔画"
-
-
-msgid "Particle tools"
-msgstr "粒子工具"
 
 
 msgid "Default tools for particle mode"
@@ -64254,40 +64565,12 @@ msgid "Active point cache for physics simulations"
 msgstr "用于物理模拟的点缓存"
 
 
-msgid "Cache Compression"
-msgstr "压缩缓存"
-
-
-msgid "Compression method to be used"
-msgstr "使用的压缩方法"
-
-
 msgid "No compression"
 msgstr "无压缩"
 
 
-msgid "Lite"
-msgstr "轻度"
-
-
-msgid "Fast but not so effective compression"
-msgstr "速度快, 但压缩效率不高"
-
-
-msgid "Effective but slow compression"
-msgstr "压缩效率高, 但速度慢"
-
-
 msgid "Cache file path"
 msgstr "缓存文件路径"
-
-
-msgid "Frame on which the simulation stops"
-msgstr "仿真中的帧位置"
-
-
-msgid "Frame on which the simulation starts"
-msgstr "模拟开始的帧位置"
 
 
 msgid "Cache Step"
@@ -64702,6 +64985,10 @@ msgid "File Paths"
 msgstr "文件路径"
 
 
+msgid "Experimental"
+msgstr "试验特性"
+
+
 msgid "Application Template"
 msgstr "应用模板"
 
@@ -64716,10 +65003,6 @@ msgstr "编辑方法"
 
 msgid "Settings for interacting with Blender data"
 msgstr "Blender 的数据交互设置"
-
-
-msgid "Experimental"
-msgstr "试验特性"
 
 
 msgid "Settings for features that are still early in their development stage"
@@ -65086,12 +65369,12 @@ msgid "Experimental features"
 msgstr "实验特性"
 
 
-msgid "All Experimental Features"
-msgstr "所有实验特性"
+msgid "Fallback Tool Support"
+msgstr "回退工具支持"
 
 
-msgid "Expose all the experimental features in the user interface"
-msgstr "在用户界面中的显示所有实验特性"
+msgid "Allow selection with an active tool"
+msgstr "允许使用活动工具进行选择"
 
 
 msgid "Animation Player"
@@ -66090,6 +66373,14 @@ msgid "Edit-Mode Smooth Wires"
 msgstr "编辑模式平滑线框"
 
 
+msgid "Overlay Smooth Wires"
+msgstr "叠加平滑线框"
+
+
+msgid "Enable overlay smooth wires, reducing aliasing"
+msgstr "启用叠加平滑线框，减少锯齿"
+
+
 msgid "Region Overlap"
 msgstr "区域重叠"
 
@@ -67054,14 +67345,6 @@ msgstr "体积插值"
 
 msgid "Interpolation method to use for smoke/fire volumes"
 msgstr "用于烟/火的插值方法"
-
-
-msgid "Good smoothness and speed"
-msgstr "良好的平滑度和速度"
-
-
-msgid "Smoothed high quality interpolation, but slower"
-msgstr "平滑的高质量插值,但是更慢"
 
 
 msgid "Volume Sampling"
@@ -69072,10 +69355,6 @@ msgid "Layers Blending"
 msgstr "图层混合"
 
 
-msgid "Do not display blend layers"
-msgstr "不显示混合图层"
-
-
 msgid "Simplify Playback"
 msgstr "简化回放"
 
@@ -69088,40 +69367,16 @@ msgid "Disable Lines"
 msgstr "禁用线条"
 
 
-msgid "Disable external lines of fill strokes"
-msgstr "禁用填充笔触的外部线条"
-
-
 msgid "Simplify Shaders"
 msgstr "简化着色器"
-
-
-msgid "Do not apply shader fx"
-msgstr "不允许应用着色器 fx"
 
 
 msgid "Layers Tinting"
 msgstr "层染色"
 
 
-msgid "Do not display layer tint"
-msgstr "不显示层染色"
-
-
-msgid "Disable Fill"
-msgstr "禁用填充"
-
-
-msgid "Disable fill strokes in the viewport"
-msgstr "视口中禁用填充笔画"
-
-
 msgid "Disable Modifiers"
 msgstr "禁用修改器"
-
-
-msgid "Do not apply modifiers in the viewport"
-msgstr "不在视图中显示修改器结果"
 
 
 msgid "Simplify Subdivision"
@@ -69258,10 +69513,6 @@ msgstr "为渲染文件添加扩展名(例如:文件名.jpg)"
 
 msgid "Draw stylized strokes using Freestyle"
 msgstr "使用Freestyle绘制样式化笔画"
-
-
-msgid "Full Sample"
-msgstr "全采样"
 
 
 msgid "Save for every anti-aliasing sample the entire RenderLayer results (this solves anti-aliasing issues with compositing)"
@@ -70124,10 +70375,6 @@ msgid "Settings for particle fluids physics"
 msgstr "物理粒子流体的设置"
 
 
-msgid "Buoyancy"
-msgstr "浮力"
-
-
 msgid "Artificial buoyancy force in negative gravity direction based on pressure differences inside the fluid"
 msgstr "在重力反方向上的仿真浮力, 基于流体内部的压力差"
 
@@ -70138,6 +70385,10 @@ msgstr "互动半径"
 
 msgid "Fluid interaction radius"
 msgstr "流体的互动半径"
+
+
+msgid "Viscosity"
+msgstr "粘度"
 
 
 msgid "Linear viscosity"
@@ -71128,6 +71379,10 @@ msgstr "将输入内容转换为浮点数据"
 
 msgid "Use a preview proxy and/or timecode index for this strip"
 msgstr "为此片段使用一个预览代理图像序列和 / 或时间码编号"
+
+
+msgid "Reverse Frames"
+msgstr "反转帧序"
 
 
 msgid "Reverse frame order"
@@ -72531,642 +72786,6 @@ msgid "Point in a shape key"
 msgstr "指向一个形态键"
 
 
-msgid "Smoke collision settings"
-msgstr "烟雾碰撞设置"
-
-
-msgid "Collision Type"
-msgstr "碰撞类型"
-
-
-msgid "Collision type"
-msgstr "碰撞类型"
-
-
-msgid "Static"
-msgstr "静态"
-
-
-msgid "Non moving obstacle"
-msgstr "静态障碍体"
-
-
-msgid "Rigid"
-msgstr "刚体"
-
-
-msgid "Rigid obstacle"
-msgstr "刚体碰撞"
-
-
-msgid "Animated"
-msgstr "播放动画"
-
-
-msgid "Animated obstacle"
-msgstr "动态障碍体"
-
-
-msgid "Smoke domain settings"
-msgstr "烟雾的域设置"
-
-
-msgid "Margin added around fluid to minimize boundary interference"
-msgstr "添加到流体周围的边缘区, 用于将边界干预降至最低"
-
-
-msgid "Maximum amount of fluid cell can contain before it is considered empty"
-msgstr "在被视为空单元格之前, 它可以可容纳的最大流体量"
-
-
-msgid "Additional"
-msgstr "附加"
-
-
-msgid "Maximum number of additional cells"
-msgstr "附加单元的最大数量"
-
-
-msgid "How much density affects smoke motion (higher value results in faster rising smoke)"
-msgstr "密度对烟雾运动的影响量 (值越高, 则烟雾的升腾速度越快)"
-
-
-msgid "Amplification"
-msgstr "扩增"
-
-
-msgid "Enhance the resolution of smoke by this factor using noise"
-msgstr "使用此噪波系数提升烟雾精度"
-
-
-msgid "Slice the whole domain object"
-msgstr "切割整个场物体"
-
-
-msgid "Perform a single slice of the domain object"
-msgstr "执行域对象的单个切片"
-
-
-msgid "Heat"
-msgstr "热度"
-
-
-msgid "How much heat affects smoke motion (higher value results in faster rising smoke)"
-msgstr "热度对于烟雾运动的影响量 (值越高, 则升腾速度越快)"
-
-
-msgid "Speed of the burning reaction (use larger values for smaller flame)"
-msgstr "燃烧反应的速度 (使用较大值可获得较小的火焰)"
-
-
-msgid "Select the file format to be used for caching"
-msgstr "选择用于缓存的文件格式"
-
-
-msgid "OpenVDB"
-msgstr "OpenVDB"
-
-
-msgid "OpenVDB file format"
-msgstr "OpenVDB文件格式"
-
-
-msgid "Cell Size"
-msgstr "气泡尺寸"
-
-
-msgid "Field"
-msgstr "场"
-
-
-msgid "Simulation field to color map"
-msgstr "模拟场到色彩贴图"
-
-
-msgid "Red component of the color field"
-msgstr "颜色场的红色分量"
-
-
-msgid "Green component of the color field"
-msgstr "颜色场的绿色分量"
-
-
-msgid "Blue component of the color field"
-msgstr "颜色场的蓝色分量"
-
-
-msgid "Quantity of soot in the fluid"
-msgstr "流体里的烟尘量"
-
-
-msgid "Flame"
-msgstr "火焰"
-
-
-msgid "Flame field"
-msgstr "火焰场"
-
-
-msgid "Fuel"
-msgstr "燃料"
-
-
-msgid "Fuel field"
-msgstr "燃料场"
-
-
-msgid "Temperature of the fluid"
-msgstr "流体的温度"
-
-
-msgid "X Velocity"
-msgstr "X向速度"
-
-
-msgid "X component of the velocity field"
-msgstr "速度场的X向分量"
-
-
-msgid "Y Velocity"
-msgstr "Y向速度"
-
-
-msgid "Y component of the velocity field"
-msgstr "速度场的Y向分量"
-
-
-msgid "Z Velocity"
-msgstr "Z向速度"
-
-
-msgid "Z component of the velocity field"
-msgstr "速度场的Y向分量"
-
-
-msgid "Limit collisions to this collection"
-msgstr "限制与该集合的碰撞"
-
-
-msgid "Border Collisions"
-msgstr "边界碰撞"
-
-
-msgid "Select which domain border will be treated as collision object"
-msgstr "选择将被视作碰撞物体的域边界"
-
-
-msgid "Smoke doesn't collide with any border"
-msgstr "烟雾不与任何边界碰撞"
-
-
-msgid "Vertically Open"
-msgstr "垂直开放"
-
-
-msgid "Smoke doesn't collide with top and bottom sides"
-msgstr "烟雾不予任何顶端和底端的边界碰撞"
-
-
-msgid "Collide All"
-msgstr "全部碰撞"
-
-
-msgid "Smoke collides with every side"
-msgstr "烟雾与各面发生碰撞"
-
-
-msgid "Smoke color grid"
-msgstr "烟雾颜色栅格"
-
-
-msgid "Data Depth"
-msgstr "数据位深"
-
-
-msgid "Float (Half)"
-msgstr "浮点(半)"
-
-
-msgid "Half float (16 bit data)"
-msgstr "半浮点数(16位数据)"
-
-
-msgid "Float (Full)"
-msgstr "浮点型(整)"
-
-
-msgid "Full float (32 bit data)"
-msgstr "整浮点数(32 位数据)"
-
-
-msgid "Density Grid"
-msgstr "密度网格"
-
-
-msgid "Smoke density grid"
-msgstr "烟雾密度网格"
-
-
-msgid "Interpolation method to use for smoke/fire volumes in solid mode"
-msgstr "用于实体模式中的烟/火体积的插值模式"
-
-
-msgid "Thickness of smoke drawing in the viewport"
-msgstr "在视图中绘制的烟雾厚度"
-
-
-msgid "Dissolve Speed"
-msgstr "消融速率"
-
-
-msgid "res"
-msgstr "精度"
-
-
-msgid "Smoke Grid Resolution"
-msgstr "烟雾的网格精度"
-
-
-msgid "Flame Grid"
-msgstr "火焰网格"
-
-
-msgid "Smoke flame grid"
-msgstr "烟火网格"
-
-
-msgid "Ignition"
-msgstr "点火"
-
-
-msgid "Minimum temperature of flames"
-msgstr "火焰的最低温度"
-
-
-msgid "Maximum temperature of flames"
-msgstr "火焰的最高温度"
-
-
-msgid "Amount of smoke created by burning fuel"
-msgstr "燃料产生的烟雾量"
-
-
-msgid "Smoke Color"
-msgstr "烟雾颜色"
-
-
-msgid "Color of smoke emitted from burning fuel"
-msgstr "从燃料中发射的烟雾的颜色"
-
-
-msgid "Vorticity"
-msgstr "涡量"
-
-
-msgid "Additional vorticity for the flames"
-msgstr "火焰的附加涡旋"
-
-
-msgid "Fluid Collection"
-msgstr "流体集合"
-
-
-msgid "Limit fluid objects to this collection"
-msgstr "限制流体物体于此集合"
-
-
-msgid "Heat Grid"
-msgstr "热度网格"
-
-
-msgid "Smoke heat grid"
-msgstr "烟雾热度网格"
-
-
-msgid "Method for sampling the high resolution flow"
-msgstr "用于创建高精度流体的采样方式"
-
-
-msgid "Noise Method"
-msgstr "噪波方法"
-
-
-msgid "Noise method which is used for creating the high resolution"
-msgstr "用于创建高精度烟雾的噪点方式"
-
-
-msgid "Wavelet"
-msgstr "波浪"
-
-
-msgid "FFT"
-msgstr "FFT"
-
-
-msgid "Zip"
-msgstr "ZIP"
-
-
-msgid "Blosc"
-msgstr "Blosc"
-
-
-msgid "Do not use any compression"
-msgstr "不使用任何压缩"
-
-
-msgid "Max Res"
-msgstr "最大分辨率"
-
-
-msgid "Maximal resolution used in the fluid domain"
-msgstr "流体域所使用的最大精度"
-
-
-msgid "Show High Resolution"
-msgstr "显示高分辨率"
-
-
-msgid "Show high resolution (using amplification)"
-msgstr "显示高精度 (使用放大机制)"
-
-
-msgid "Display Velocity"
-msgstr "显示速度"
-
-
-msgid "Adjust slice direction according to the view direction"
-msgstr "将切割方向调整为视图方向"
-
-
-msgid "Slice along the X axis"
-msgstr "沿 X 轴切割"
-
-
-msgid "Slice along the Y axis"
-msgstr "沿 Y 轴切割"
-
-
-msgid "Slice along the Z axis"
-msgstr "沿 Z 轴切割"
-
-
-msgid "Position of the slice"
-msgstr "切片位置"
-
-
-msgid "View Method"
-msgstr "视图方法"
-
-
-msgid "How to slice the volume for viewport rendering"
-msgstr "视口渲染的体积切片方法"
-
-
-msgid "Slice volume parallel to the view plane"
-msgstr "与视图平面平行的切片体积"
-
-
-msgid "Slice volume parallel to the major axis"
-msgstr "与主轴平行的切片体积"
-
-
-msgid "Slice Per Voxel"
-msgstr "每体素切片"
-
-
-msgid "How many slices per voxel should be generated"
-msgstr "每个体素应该生成多少片"
-
-
-msgid "p0"
-msgstr "p0"
-
-
-msgid "Start point"
-msgstr "初始点"
-
-
-msgid "Strength of noise"
-msgstr "噪音强度"
-
-
-msgid "Temperature Grid"
-msgstr "温度网格"
-
-
-msgid "Smoke temperature grid, range 0..1 represents 0..1000K"
-msgstr "烟雾温度网格,范围 0..1 表示 0..1000K"
-
-
-msgid "Adjust simulation speed"
-msgstr "调节仿真速度"
-
-
-msgid "Adapt simulation resolution and size to fluid"
-msgstr "适配流体模拟的解析度及尺寸"
-
-
-msgid "Render a simulation field while mapping its voxels values to the colors of a ramp"
-msgstr "将体素值映射到渐变的颜色时渲染模拟区域"
-
-
-msgid "Dissolve Smoke"
-msgstr "消散烟雾"
-
-
-msgid "Enable smoke to disappear over time"
-msgstr "启用烟雾随时间消逝的效果"
-
-
-msgid "Logarithmic Dissolve"
-msgstr "对数式消融"
-
-
-msgid "Using 1/x "
-msgstr "使用1/x "
-
-
-msgid "High Res"
-msgstr "高分辨率"
-
-
-msgid "Enable high resolution (using amplification)"
-msgstr "启用高精度 (使用放大机制)"
-
-
-msgid "Needle"
-msgstr "指针"
-
-
-msgid "Display vectors as needles"
-msgstr "显示矢量为细指针"
-
-
-msgid "Streamlines"
-msgstr "流线"
-
-
-msgid "Display vectors as streamlines"
-msgstr "显示矢量为流线"
-
-
-msgid "Multiplier for scaling the vectors"
-msgstr "矢量的缩放倍数"
-
-
-msgid "Velocity Grid"
-msgstr "速率栅格"
-
-
-msgid "Smoke velocity grid"
-msgstr "烟雾速率栅格"
-
-
-msgid "Amount of turbulence/rotation in fluid"
-msgstr "流体中的紊乱度 / 旋转度"
-
-
-msgid "Smoke flow settings"
-msgstr "烟雾喷射设置"
-
-
-msgid "Name of vertex group which determines surface emission rate"
-msgstr "顶点组的名称, 用于确定各点的修改器影响量"
-
-
-msgid "Flame Rate"
-msgstr "火焰比率"
-
-
-msgid "Texture that controls emission strength"
-msgstr "用于控制发射强度的纹理"
-
-
-msgid "Particle size in simulation cells"
-msgstr "模拟单元中的粒子尺寸"
-
-
-msgid "Color of smoke"
-msgstr "烟雾颜色"
-
-
-msgid "Change how smoke is emitted"
-msgstr "改变烟雾的发射方式"
-
-
-msgid "Emit smoke from particles"
-msgstr "以粒子为发射源"
-
-
-msgid "Emit smoke from mesh surface or volume"
-msgstr "从网格体表面或体积内部发散烟雾"
-
-
-msgid "Flow Type"
-msgstr "流体类型"
-
-
-msgid "Change how flow affects the simulation"
-msgstr "改变流体对模拟的影响方式"
-
-
-msgid "Delete smoke from simulation"
-msgstr "从仿真中删除烟雾"
-
-
-msgid "Add smoke"
-msgstr "添加烟雾"
-
-
-msgid "Fire + Smoke"
-msgstr "火焰 + 烟雾"
-
-
-msgid "Add fire and smoke"
-msgstr "添加火焰及烟雾"
-
-
-msgid "Add fire"
-msgstr "添加火焰"
-
-
-msgid "Number of additional samples to take between frames to improve quality of fast moving flows"
-msgstr "增加两帧之间附加采样值，提升快速移动流的模拟质量"
-
-
-msgid "Maximum distance from mesh surface to emit smoke"
-msgstr "从网格表面到发射烟雾的最大距离"
-
-
-msgid "Temp. Diff."
-msgstr "温差."
-
-
-msgid "Temperature difference to ambient temperature"
-msgstr "环境温差"
-
-
-msgid "Texture mapping type"
-msgstr "纹理映射类型"
-
-
-msgid "Generated coordinates centered to flow object"
-msgstr "生成的坐标位于流物体中心"
-
-
-msgid "Use UV layer for texture coordinates"
-msgstr "为纹理坐标使用 UV 层"
-
-
-msgid "Z-offset of texture mapping"
-msgstr "纹理映射的 Z 偏移"
-
-
-msgid "Size of texture mapping"
-msgstr "纹理映射尺寸"
-
-
-msgid "Absolute Density"
-msgstr "绝对密度"
-
-
-msgid "Only allow given density value in emitter area"
-msgstr "在发射器区域内, 仅允许指定的密度值"
-
-
-msgid "Smoke has some initial velocity when it is emitted"
-msgstr "当散出时, 烟雾带有部分初始速率"
-
-
-msgid "Set Size"
-msgstr "设置尺寸"
-
-
-msgid "Set particle size in simulation cells or use nearest cell"
-msgstr "在模拟单元格中设置粒子大小或使用最近的单元格"
-
-
-msgid "Use a texture to control emission strength"
-msgstr "使用纹理控制发射强度"
-
-
-msgid "Multiplier of source velocity passed to smoke"
-msgstr "调节速率传递向烟雾的速率倍增值"
-
-
-msgid "Amount of normal directional velocity"
-msgstr "法向定向速度量"
-
-
-msgid "Amount of random velocity"
-msgstr "随机速度量"
-
-
-msgid "Factor for smoke emitted from inside the mesh volume"
-msgstr "调节由网格体积内部散出烟雾的系数"
-
-
 msgid "Soft body simulation settings for an object"
 msgstr "对物体的软体模拟设置"
 
@@ -73225,6 +72844,10 @@ msgstr "阻塞"
 
 msgid "'Viscosity' inside collision target"
 msgstr "碰撞目标的内部'粘度'"
+
+
+msgid "Collision Type"
+msgstr "碰撞类型"
 
 
 msgid "Choose Collision Type"
@@ -76025,10 +75648,6 @@ msgid "Has Texture Angle Source"
 msgstr "拥有纹理的角度源"
 
 
-msgid "Tiled"
-msgstr "平铺"
-
-
 msgid "Stencil"
 msgstr "镂版"
 
@@ -76853,8 +76472,16 @@ msgid "Active Vert/Edge/Face"
 msgstr "激活的 点/边/面"
 
 
+msgid "Face Orientation Back"
+msgstr "面方向后"
+
+
 msgid "Face Dot Selected"
 msgstr "面的点选"
+
+
+msgid "Face Orientation Front"
+msgstr "面朝向前"
 
 
 msgid "Face Selected"
@@ -77789,6 +77416,10 @@ msgid "Theme settings for widget state colors"
 msgstr "设置控制器状态的色彩"
 
 
+msgid "Animated"
+msgstr "播放动画"
+
+
 msgid "Animated Selected"
 msgstr "仅播放已选择的动画"
 
@@ -78472,6 +78103,10 @@ msgstr "顶点组权重"
 
 msgid "Weight to assign in vertex groups"
 msgstr "指定给顶点组的权重"
+
+
+msgid "Action when dragging in the viewport"
+msgstr "在视口中拖动时的操作"
 
 
 msgid "Name of the custom transform orientation"
@@ -79234,14 +78869,6 @@ msgid "Opacity for edit vertices"
 msgstr "编辑状态下顶点的不透明度"
 
 
-msgid "Vertex Paint Opacity"
-msgstr "顶点绘制不透明度"
-
-
-msgid "Opacity of the vertex paint mode overlay"
-msgstr "顶点绘制模式下叠加层的不透明度"
-
-
 msgid "Weight Paint Opacity"
 msgstr "权重绘制不透明度"
 
@@ -79640,6 +79267,10 @@ msgstr "含有数据块"
 
 msgid "Tool Mode"
 msgstr "工具模式"
+
+
+msgid "Fallback"
+msgstr "回退"
 
 
 msgid "Widget"
@@ -81088,10 +80719,6 @@ msgstr "结果"
 
 msgid "Select objects to scatter and a target object."
 msgstr "选择要散列的物体和目标物体。"
-
-
-msgid "Randomness"
-msgstr "随机性"
 
 
 msgid "Demo Mode:"
@@ -82569,35 +82196,6 @@ msgid "Delete Frame(s)"
 msgstr "删除帧"
 
 
-msgid "Edit:"
-msgstr "编辑:"
-
-
-msgctxt "Operator"
-msgid "Arrange Strokes..."
-msgstr "整理笔画..."
-
-
-msgctxt "Operator"
-msgid "Assign Material"
-msgstr "指定材质"
-
-
-msgctxt "Operator"
-msgid "Adaptive"
-msgstr "自适应"
-
-
-msgctxt "Operator"
-msgid "Trim"
-msgstr "修剪"
-
-
-msgctxt "Operator"
-msgid "Flip Direction"
-msgstr "反转方向"
-
-
 msgid "Active Layer:      "
 msgstr "活动层:      "
 
@@ -82658,44 +82256,6 @@ msgid "Data Source:"
 msgstr "数据源:"
 
 
-msgid "Select:"
-msgstr "选择:"
-
-
-msgctxt "Operator"
-msgid "Paste by Layer"
-msgstr "按层粘贴"
-
-
-msgctxt "Operator"
-msgid "Toggle Caps..."
-msgstr "切换大小写..."
-
-
-msgctxt "Operator"
-msgid "& Copy"
-msgstr "& 复制"
-
-
-msgctxt "Operator"
-msgid "Separate..."
-msgstr "分离..."
-
-
-msgid "Cleanup:"
-msgstr "清理:"
-
-
-msgctxt "Operator"
-msgid "Reproject Strokes..."
-msgstr "重投影笔画..."
-
-
-msgctxt "Operator"
-msgid "Clean Boundary Strokes..."
-msgstr "清理边界笔画..."
-
-
 msgctxt "Operator"
 msgid "Straight Lines"
 msgstr "直线"
@@ -82719,8 +82279,18 @@ msgid "Join Strokes"
 msgstr "合并笔画"
 
 
+msgctxt "Operator"
+msgid "Flip Direction"
+msgstr "反转方向"
+
+
 msgid "Show Drawing Direction"
 msgstr "显示绘制方向"
+
+
+msgctxt "Operator"
+msgid "Paste by Layer"
+msgstr "按层粘贴"
 
 
 msgctxt "Operator"
@@ -82837,12 +82407,14 @@ msgid "Stroke Color"
 msgstr "笔画颜色"
 
 
-msgid "CCW"
-msgstr "逆时针"
+msgctxt "Operator"
+msgid "Re-key Shape Points"
+msgstr "重做形状点"
 
 
-msgid "CW"
-msgstr "顺时针"
+msgctxt "Operator"
+msgid "Reset Feather Animation"
+msgstr "重置羽化动画"
 
 
 msgid "Parent:"
@@ -82883,11 +82455,6 @@ msgstr "插入关键帧"
 msgctxt "Operator"
 msgid "Clear Key"
 msgstr "清除关键帧"
-
-
-msgctxt "Operator"
-msgid "Reset Feather Animation"
-msgstr "重置羽化动画"
 
 
 msgctxt "Operator"
@@ -83014,12 +82581,32 @@ msgid "Pressure Masking"
 msgstr "压力遮罩"
 
 
-msgid "Gradient Mapping"
-msgstr "渐变映射"
+msgid "Front Faces Only"
+msgstr "仅前面的面"
 
 
 msgid "Sample Bias"
 msgstr "采样偏移量"
+
+
+msgid "Edge To Edge"
+msgstr "边到边"
+
+
+msgid "Invert to Fill"
+msgstr "反转为填充"
+
+
+msgid "Invert to Scrape"
+msgstr "反转为刮削"
+
+
+msgid "Thickness Profile"
+msgstr "厚度轮廓"
+
+
+msgid "Use Thickness Profile"
+msgstr "使用厚度轮廓"
 
 
 msgid "Source Clone Slot"
@@ -83034,24 +82621,20 @@ msgid "Source Clone UV Map"
 msgstr "UV 贴图克隆源"
 
 
-msgid "Thickness Profile"
-msgstr "厚度轮廓"
-
-
-msgid "Use Thickness Profile"
-msgstr "使用厚度轮廓"
+msgid "Gradient Mapping"
+msgstr "渐变映射"
 
 
 msgid "Mask Value"
 msgstr "遮罩值"
 
 
-msgid "Fill Options"
-msgstr "填充选项"
+msgid "CCW"
+msgstr "逆时针"
 
 
-msgid "Ignore Transparent Strokes"
-msgstr "忽略透明笔画"
+msgid "CW"
+msgstr "顺时针"
 
 
 msgctxt "Operator"
@@ -83263,6 +82846,14 @@ msgid "Air Viscosity"
 msgstr "空气粘度"
 
 
+msgid "Max Tension"
+msgstr "最大张力"
+
+
+msgid "Max Compression"
+msgstr "最大压缩"
+
+
 msgid "Custom volume"
 msgstr "自定义体积"
 
@@ -83291,14 +82882,6 @@ msgid "Structural Group"
 msgstr "结构组"
 
 
-msgid "Max Tension"
-msgstr "最大张力"
-
-
-msgid "Max Compression"
-msgstr "最大压缩"
-
-
 msgid "Shear Group"
 msgstr "切变组"
 
@@ -83321,10 +82904,6 @@ msgstr "缩放组"
 
 msgid "Max Shrinking"
 msgstr "最大缩放"
-
-
-msgid "Tension"
-msgstr "张力"
 
 
 msgid "Structural"
@@ -83477,45 +83056,32 @@ msgid "Clumping amount"
 msgstr "簇集的数量"
 
 
-msgctxt "Operator"
-msgid "Bake (Req. Memory: %s)"
-msgstr "烘培 (所需内存: %s)"
+msgid "Temperature Diff."
+msgstr "温差."
 
 
-msgid "Scene Size Meters"
-msgstr "场景尺寸 (米)"
+msgid "Reaction Speed"
+msgstr "反应速度"
 
 
-msgid "World Size Meters"
-msgstr "世界尺寸 (米)"
+msgid "Temperature Ignition"
+msgstr "着火点"
 
 
-msgid "Optimization"
-msgstr "优化"
+msgid "Add Resolution"
+msgstr "添加分辨率"
 
 
-msgid "Built without fluids"
-msgstr "忽略流体构建"
+msgid "Real World Size"
+msgstr "真实世界尺寸"
 
 
-msgid "Final Resolution"
-msgstr "最终精度"
+msgid "Slicing"
+msgstr "切片"
 
 
-msgid "Render Display"
-msgstr "渲染显示"
-
-
-msgid "Time Start"
-msgstr "开始时间"
-
-
-msgid "Bake (Req. Memory: %s)"
-msgstr "烘培 (所需内存: %s)"
-
-
-msgid "Influence Size"
-msgstr "影响尺寸"
+msgid "Resolution Divisions"
+msgstr "细分精度"
 
 
 msgid "Object does not have a Rigid Body"
@@ -83562,32 +83128,8 @@ msgid "Y Lower"
 msgstr "Y 下限"
 
 
-msgid "Temperature Diff."
-msgstr "温差."
-
-
-msgid "Reaction Speed"
-msgstr "反应速度"
-
-
-msgid "Temperature Ignition"
-msgstr "着火点"
-
-
-msgid "Add Resolution"
-msgstr "添加分辨率"
-
-
-msgid "Resolution Divisions"
-msgstr "细分精度"
-
-
 msgid "Flow Sampling"
 msgstr "流动采样"
-
-
-msgid "Slicing"
-msgstr "切片"
 
 
 msgid "Built without Smoke modifier"
@@ -83596,10 +83138,6 @@ msgstr "不使用烟雾修改器进行构建"
 
 msgid "Empty Space"
 msgstr "空白空间"
-
-
-msgid "Flow Source"
-msgstr "流来源"
 
 
 msgid "Sampling Subframes"
@@ -84050,11 +83588,6 @@ msgid "Unlock Tracks"
 msgstr "轨迹解锁"
 
 
-msgctxt "Operator"
-msgid "Re-key Shape Points"
-msgstr "重做形状点"
-
-
 msgid "Solve error: %.4f"
 msgstr "解算错误: %.4f"
 
@@ -84417,18 +83950,6 @@ msgid "More"
 msgstr "扩展选区"
 
 
-msgid "Unified Size"
-msgstr "统一尺寸"
-
-
-msgid "Unified Strength"
-msgstr "统一力度"
-
-
-msgid "Unified Color"
-msgstr "统一颜色"
-
-
 msgctxt "Operator"
 msgid "New"
 msgstr "新建"
@@ -84451,18 +83972,6 @@ msgstr "反转图像颜色"
 
 msgid "Affect"
 msgstr "影响"
-
-
-msgid "Curve Alpha"
-msgstr "曲线Alpha"
-
-
-msgid "Texture Alpha"
-msgstr "纹理Alpha"
-
-
-msgid "Mask Texture Alpha"
-msgstr "遮罩纹理Alpha"
 
 
 msgid "Show Same Material"
@@ -84585,10 +84094,6 @@ msgstr "图像*"
 
 msgid "Repeat Image"
 msgstr "重复图像"
-
-
-msgid "Edge To Edge"
-msgstr "边到边"
 
 
 msgctxt "Operator"
@@ -85850,26 +85355,6 @@ msgid "Sample Format"
 msgstr "采样格式"
 
 
-msgid "View Name"
-msgstr "视图名称"
-
-
-msgid "Playback FPS"
-msgstr "播放帧率"
-
-
-msgid "3D Viewport Axis"
-msgstr "3D 视图轴向"
-
-
-msgid "Grease Pencil Multisampling"
-msgstr "蜡笔多重采样"
-
-
-msgid "Limit Size"
-msgstr "尺寸限制"
-
-
 msgid "Undo Memory Limit"
 msgstr "取消内存限制"
 
@@ -85888,6 +85373,26 @@ msgstr "垃圾回收率"
 
 msgid "Vbo Time Out"
 msgstr "Vbo超时"
+
+
+msgid "View Name"
+msgstr "视图名称"
+
+
+msgid "Playback FPS"
+msgstr "播放帧率"
+
+
+msgid "3D Viewport Axis"
+msgstr "3D 视图轴向"
+
+
+msgid "Grease Pencil Multisampling"
+msgstr "蜡笔多重采样"
+
+
+msgid "Limit Size"
+msgstr "尺寸限制"
 
 
 msgctxt "Operator"
@@ -85939,6 +85444,22 @@ msgid "Timer (mins)"
 msgstr "间隔(分钟)"
 
 
+msgid "Double Click Speed"
+msgstr "双击速度"
+
+
+msgid "Pan Sensitivity"
+msgstr "平移敏感度"
+
+
+msgid "Zoom Method"
+msgstr "视图缩放方法"
+
+
+msgid "Invert Wheel Zoom Direction"
+msgstr "反向滚轮缩放"
+
+
 msgid "Pan Options"
 msgstr "平移选项"
 
@@ -85951,22 +85472,6 @@ msgid "Zoom Options"
 msgstr "缩放选项"
 
 
-msgid "Double Click Speed"
-msgstr "双击速度"
-
-
-msgid "Zoom Method"
-msgstr "视图缩放方法"
-
-
-msgid "Invert Wheel Zoom Direction"
-msgstr "反向滚轮缩放"
-
-
-msgid "Pan Sensitivity"
-msgstr "平移敏感度"
-
-
 msgid "Use Light"
 msgstr "使用灯光"
 
@@ -85974,6 +85479,10 @@ msgstr "使用灯光"
 msgctxt "Operator"
 msgid "Save as Studio light"
 msgstr "保存为棚灯"
+
+
+msgid "Use Tool Fallback"
+msgstr "使用工具回退"
 
 
 msgctxt "Operator"
@@ -85987,6 +85496,14 @@ msgstr "色彩设置 d"
 
 msgid "Player"
 msgstr "播放器"
+
+
+msgid "Natural Trackpad Direction"
+msgstr "触控板的固有方向"
+
+
+msgid "Invert Mouse Zoom Direction"
+msgstr "反转鼠标缩放方向"
 
 
 msgid "Orbit Style"
@@ -86003,14 +85520,6 @@ msgstr "旋绕选项"
 
 msgid "Fly/Walk Options"
 msgstr "飞行/行走漫游选项"
-
-
-msgid "Natural Trackpad Direction"
-msgstr "触控板的固有方向"
-
-
-msgid "Invert Mouse Zoom Direction"
-msgstr "反转鼠标缩放方向"
 
 
 msgid "Multiple add-ons with the same name found!"
@@ -86885,6 +86394,16 @@ msgstr "融并骨骼"
 msgctxt "Operator"
 msgid "Fixed"
 msgstr "固定"
+
+
+msgctxt "Operator"
+msgid "Adaptive"
+msgstr "自适应"
+
+
+msgctxt "Operator"
+msgid "Trim"
+msgstr "修剪"
 
 
 msgctxt "Operator"
@@ -87867,6 +87386,14 @@ msgid "Tile Offset"
 msgstr "分块偏移"
 
 
+msgid "Auto Normalize"
+msgstr "自动规格化"
+
+
+msgid "Multi-Paint"
+msgstr "多次绘制"
+
+
 msgctxt "Operator"
 msgid "Quick Edit"
 msgstr "快速编辑"
@@ -87935,24 +87462,8 @@ msgid "Auto-Velocity"
 msgstr "自动速度"
 
 
-msgid "Front Faces Only"
-msgstr "仅前面的面"
-
-
 msgid "No Textures"
 msgstr "没有纹理"
-
-
-msgid "Magnify"
-msgstr "放大"
-
-
-msgid "Auto Normalize"
-msgstr "自动规格化"
-
-
-msgid "Multi-Paint"
-msgstr "多次绘制"
 
 
 msgctxt "Operator"
@@ -87960,12 +87471,8 @@ msgid "Add UVs"
 msgstr "添加UV"
 
 
-msgid "Invert to Fill"
-msgstr "反转为填充"
-
-
-msgid "Invert to Scrape"
-msgstr "反转为刮削"
+msgid "Ignore Transparent Strokes"
+msgstr "忽略透明笔画"
 
 
 msgid "Modifier requires original data, bad stack position"
@@ -88316,10 +87823,6 @@ msgstr "没有新的文件被打包"
 
 msgid "Unable to pack file, source path '%s' not found"
 msgstr "无法打包文件,找不到资源路径 '%s'"
-
-
-msgid "Image '%s' skipped, movies and image sequences not supported"
-msgstr "图像 '%s'被忽略掉,不支持电影和图像序列"
 
 
 msgid "Error creating file '%s'"
@@ -88780,6 +88283,10 @@ msgstr "合成 | 执行初始化"
 
 msgid "Compositing | De-initializing execution"
 msgstr "合成 | 执行去初始化"
+
+
+msgid "Basic"
+msgstr "基本"
 
 
 msgid "Baking light cache"
@@ -89903,7 +89410,7 @@ msgstr "打开驱动器编辑器"
 
 msgctxt "Operator"
 msgid "Add All to Keying Set"
-msgstr "将多项添加到插帧集"
+msgstr "全部添加到插帧集"
 
 
 msgctxt "Operator"
@@ -90081,6 +89588,10 @@ msgstr "未找到菜单 \"%s\""
 
 msgid "Panel \"%s\" not found"
 msgstr "未找到面板 \"%s\""
+
+
+msgid "Unsupported context"
+msgstr "不受支持的上下文"
 
 
 msgid "Internal error!"
@@ -91667,46 +91178,6 @@ msgid "Copy particle systems to selected: %d done, %d failed"
 msgstr "复制粒子系统到选中项: %d 完成, %d 失败"
 
 
-msgid "There should be only one domain object"
-msgstr "应只有一个与物体"
-
-
-msgid "No domain object found"
-msgstr "找不到域物体"
-
-
-msgid "Cannot bake with more than 256 objects"
-msgstr "无法烘焙超过 256 个物体"
-
-
-msgid "No fluid input objects in the scene"
-msgstr "场景中找不到流入型流体物体"
-
-
-msgid "No frames to export (check your animation range settings)"
-msgstr "无导出帧(请检查你的动画区间设置)"
-
-
-msgid "Invalid object matrix"
-msgstr "物体矩阵无效"
-
-
-msgid "Fluidsim: empty cache path, reset to default '%s'"
-msgstr "流体模拟: 缓存路径为空, 重设为默认 '%s'"
-
-
-msgid "Fluidsim: could not create cache directory '%s', reset to default '%s'"
-msgstr "流体模拟: 无法创建缓存目录 '%s', 重设为默认 '%s'"
-
-
-msgid "Fluidsim: cache directory '%s' is not writable, reset to default '%s'"
-msgstr "流体模拟: 缓存目录 '%s' 无法写入, 重设为默认 '%s'"
-
-
-msgid "Fluidsim: could not use default cache directory '%s', please define a valid cache path manually"
-msgstr "流体模拟: 无法使用默认缓存目录 '%s', 请手动指定一个有效缓存路径"
-
-
 msgid "No Rigid Body World to add Rigid Body Constraint to"
 msgstr "无可供添加刚体约束的刚体世界环境"
 
@@ -92208,12 +91679,12 @@ msgid "Packed MultiLayer files cannot be painted: %s"
 msgstr "无法绘制打包的多图层文件: %s"
 
 
-msgid "Image requires 4 color channels to paint"
-msgstr "图像需要四色通道进行绘制"
-
-
 msgid "Packed MultiLayer files cannot be painted"
 msgstr "打包的多图层文件无法被绘制"
+
+
+msgid "Image requires 4 color channels to paint"
+msgstr "图像需要四色通道进行绘制"
 
 
 msgid "Untitled"
@@ -95165,6 +94636,22 @@ msgstr "无法添加片段 ( 轨道上没有足够的空间来添加新的片段
 
 msgid "NLA strip '%s' not found in track '%s'"
 msgstr "NLA 片段 '%s' 未在轨道 '%s' 中找到"
+
+
+msgid "Functions"
+msgstr "函数"
+
+
+msgid "Comparison"
+msgstr "比较"
+
+
+msgid "Trigonometric"
+msgstr "三角函数"
+
+
+msgid "Conversion"
+msgstr "转换"
 
 
 msgid "Same input/output direction of sockets"

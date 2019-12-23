@@ -1,9 +1,9 @@
 
 msgid ""
 msgstr ""
-"Project-Id-Version: Blender 2.82 (sub 4) (b'312b6fd713f6')\n"
+"Project-Id-Version: Blender 2.82 (sub 6) (b'708045eb40b9')\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-12-09 14:05:50\n"
+"POT-Creation-Date: 2019-12-23 12:39:57\n"
 "PO-Revision-Date: \n"
 "Last-Translator: Gabriel Gazzan <gabcorreo@gmail.com>\n"
 "Language-Team: Español <gabcorreo@gmail.com>\n"
@@ -4022,6 +4022,22 @@ msgid "Internal Friction"
 msgstr "Fricción interna"
 
 
+msgid "Tension Stiffness"
+msgstr "Resistencia al estiramiento"
+
+
+msgid "How much the material resists stretching"
+msgstr "Qué tanta resistencia al estiramiento presenta el material"
+
+
+msgid "Tension Stiffness Maximum"
+msgstr "Resistencia máxima estiramiento"
+
+
+msgid "Maximum tension stiffness value"
+msgstr "Valor máximo de resistencia al estiramiento"
+
+
 msgid "Vertex Mass"
 msgstr "Masa de vértices"
 
@@ -4124,22 +4140,6 @@ msgstr "Amortiguación estiramiento tensores"
 
 msgid "Amount of damping in stretching behavior"
 msgstr "Cantidad de amortiguación en el estiramiento de los tensores"
-
-
-msgid "Tension Stiffness"
-msgstr "Resistencia al estiramiento"
-
-
-msgid "How much the material resists stretching"
-msgstr "Qué tanta resistencia al estiramiento presenta el material"
-
-
-msgid "Tension Stiffness Maximum"
-msgstr "Resistencia máxima estiramiento"
-
-
-msgid "Maximum tension stiffness value"
-msgstr "Valor máximo de resistencia al estiramiento"
 
 
 msgid "Cloth speed is multiplied by this value"
@@ -11356,156 +11356,336 @@ msgid "Sort items descending, from highest value to lowest"
 msgstr "Ordenar elementos en forma descendente, de mayor a menor"
 
 
-msgid "Fluid Simulation Settings"
-msgstr "Opciones simulación fluidos"
+msgid "Domain Settings"
+msgstr "Opciones dominio"
 
 
-msgid "Fluid simulation settings for an object taking part in the simulation"
-msgstr "Opciones de simulación de fluidos de un objeto participante en la simulación"
+msgid "Margin added around fluid to minimize boundary interference"
+msgstr "Margen agregado alrededor del fluido para minimizar la interferencia de los límites"
 
 
-msgid "Type of participation in the fluid simulation"
-msgstr "Tipo de participación en la simulación de fluido"
+msgid "Maximum amount of fluid cell can contain before it is considered empty"
+msgstr "Cantidad máxima de fluido que puede contener la celda antes de ser considerada vacía"
+
+
+msgid "Additional"
+msgstr "Adicionales"
+
+
+msgid "Maximum number of additional cells"
+msgstr "Cantidad máxima de celdas adicionales"
+
+
+msgid "Density"
+msgstr "Densidad"
+
+
+msgid "How much density affects smoke motion (higher value results in faster rising smoke)"
+msgstr "Qué tanto afecta la densidad al movimiento del humo (valores mayores logran un humo de ascenso más rápido)"
+
+
+msgid "Slice the whole domain object"
+msgstr "Rebanar el objeto de dominio por completo"
+
+
+msgid "Single"
+msgstr "Individual"
+
+
+msgid "Perform a single slice of the domain object"
+msgstr "Rebanar el objeto de dominio una única vez"
+
+
+msgid "Heat"
+msgstr "Calor"
+
+
+msgid "How much heat affects smoke motion (higher value results in faster rising smoke)"
+msgstr "Qué tanto afecta el calor al movimiento del humo (valores mayores logran un humo de ascenso más rápido)"
+
+
+msgid "Speed of the burning reaction (use larger values for smaller flame)"
+msgstr "Velocidad de la reacción combustible (usar valores mayores para una llama más pequeña)"
+
+
+msgid "End"
+msgstr "Fin"
+
+
+msgid "Frame on which the simulation stops"
+msgstr "Fotograma en el que finaliza la simulación"
+
+
+msgid "Start"
+msgstr "Inicio"
+
+
+msgid "Frame on which the simulation starts"
+msgstr "Fotograma donde comienza la simulación"
+
+
+msgid "Final"
+msgstr "Final"
+
+
+msgid "Cell Size"
+msgstr "Tamaño de celdas"
+
+
+msgid "Clipping"
+msgstr "Recortar"
+
+
+msgid "Value under which voxels are considered empty space to optimize caching and rendering"
+msgstr "Valor por debajo del cual los vóxeles son considerados como un espacio vacío, para optimizar la generación de cachés y el procesamiento"
+
+
+msgid "Field"
+msgstr "Campo"
+
+
+msgid "Simulation field to color map"
+msgstr "Campo de simulación a mapa de color"
+
+
+msgid "Red"
+msgstr "Rojo"
+
+
+msgid "Red component of the color field"
+msgstr "Componente rojo del campo de color"
+
+
+msgid "Green"
+msgstr "Verde"
+
+
+msgid "Green component of the color field"
+msgstr "Componente verde del campo de color"
+
+
+msgid "Blue"
+msgstr "Azul"
+
+
+msgid "Blue component of the color field"
+msgstr "Componente azul del campo de color"
+
+
+msgid "Quantity of soot in the fluid"
+msgstr "Cantidad de hollín en el fluido"
+
+
+msgid "Flame"
+msgstr "Llama"
+
+
+msgid "Flame field"
+msgstr "Campo de llamas"
+
+
+msgid "Fuel"
+msgstr "Combustible"
+
+
+msgid "Fuel field"
+msgstr "Campo de combustible"
+
+
+msgid "Temperature of the fluid"
+msgstr "Temperatura del fluido"
+
+
+msgid "X Velocity"
+msgstr "Velocidad en X"
+
+
+msgid "X component of the velocity field"
+msgstr "Componente X del campo de velocidad"
+
+
+msgid "Y Velocity"
+msgstr "Velocidad en Y"
+
+
+msgid "Y component of the velocity field"
+msgstr "Componente Y del campo de velocidad"
+
+
+msgid "Z Velocity"
+msgstr "Velocidad en Z"
+
+
+msgid "Z component of the velocity field"
+msgstr "Componente Z del campo de velocidad"
+
+
+msgid "Color Grid"
+msgstr "Cuadrícula de colores"
+
+
+msgid "Smoke color grid"
+msgstr "Cuadrícula de color del humo"
+
+
+msgid "Data Depth"
+msgstr "Profundidad de datos"
+
+
+msgid "Bit depth for writing all scalar (including vector) lower values reduce file size"
+msgstr "Profundidad de bits a ser usada para guardar todos los valores escalares (incluyendo a los vectoriales), valores más bajos reducen el tamaño del archivo"
+
+
+msgid "Float (Half)"
+msgstr "Decimal (mitad)"
+
+
+msgid "Half float (16 bit data)"
+msgstr "Decimal a mitad de resolución (datos de 16 bits)"
+
+
+msgid "Float (Full)"
+msgstr "Decimal (completo)"
+
+
+msgid "Full float (32 bit data)"
+msgstr "Decimal a resolución completa (datos de 32 bits)"
+
+
+msgid "Density Grid"
+msgstr "Cuadrícula de densidad"
+
+
+msgid "Smoke density grid"
+msgstr "Cuadrícula de densidad del humo"
+
+
+msgid "Interpolation method to use for smoke/fire volumes in solid mode"
+msgstr "Método de interpolación a usar para volúmenes de humo o fuego en modo sólido"
+
+
+msgid "Good smoothness and speed"
+msgstr "Buena suavidad y velocidad"
+
+
+msgid "Cubic"
+msgstr "Cúbica"
+
+
+msgid "Smoothed high quality interpolation, but slower"
+msgstr "Interpolación suave de alta calidad, pero más lento"
+
+
+msgid "Thickness"
+msgstr "Grosor"
+
+
+msgid "Thickness of smoke drawing in the viewport"
+msgstr "Grosor de dibujo del humo en las vistas"
+
+
+msgid "Dissolve Speed"
+msgstr "Velocidad de disolución"
+
+
+msgid "res"
+msgstr "res"
+
+
+msgid "Smoke Grid Resolution"
+msgstr "Resolución de la cuadrícula del humo"
+
+
+msgid "Flame Grid"
+msgstr "Cuadrícula de llamas"
+
+
+msgid "Smoke flame grid"
+msgstr "Cuadrícula de llamas"
+
+
+msgid "Ignition"
+msgstr "Ignición"
+
+
+msgid "Minimum temperature of flames"
+msgstr "Temperatura mínima de las llamas"
+
+
+msgid "Maximum temperature of flames"
+msgstr "Temperatura máxima de las llamas"
+
+
+msgid "Smoke"
+msgstr "Humo"
+
+
+msgid "Amount of smoke created by burning fuel"
+msgstr "Cantidad de humo creado al quemar combustible"
+
+
+msgid "Smoke Color"
+msgstr "Color del humo"
+
+
+msgid "Color of smoke emitted from burning fuel"
+msgstr "Color del humo emitido desde el combustible ardiente"
+
+
+msgid "Vorticity"
+msgstr "Vorticidad"
+
+
+msgid "Additional vorticity for the flames"
+msgstr "Vorticidad adicional de las llamas"
+
+
+msgid "Fluid Collection"
+msgstr "Colección de fluidos"
+
+
+msgid "Limit fluid objects to this collection"
+msgstr "Limita los objetos fluidos a los de esta colección"
+
+
+msgid "Gravity in X, Y and Z direction"
+msgstr "Gravedad en las direcciones X, Y y Z"
 
 
 msgid "Domain"
 msgstr "Dominio"
 
 
-msgid "Bounding box of this object represents the computational domain of the fluid simulation"
-msgstr "El volumen delimitador de este objeto representa el dominio computacional de la simulación de fluidos"
+msgid "Heat Grid"
+msgstr "Cuadrícula de calor"
 
 
-msgid "Fluid"
-msgstr "Fluido"
+msgid "Smoke heat grid"
+msgstr "Cuadrícula de calor del humo"
 
 
-msgid "Object represents a volume of fluid in the simulation"
-msgstr "El objeto representa un volumen de fluido en la simulación"
+msgid "Emitter"
+msgstr "Emisor"
 
 
-msgid "Object is a fixed obstacle"
-msgstr "El objeto es un obstáculo fijo"
+msgid "Method for sampling the high resolution flow"
+msgstr "Método de muestrear el flujo de alta resolución"
 
 
-msgid "Object adds fluid to the simulation"
-msgstr "El objeto agrega fluido a la simulación"
+msgid "Full Sample"
+msgstr "Muestreo completo"
 
 
-msgid "Outflow"
-msgstr "Sustraer flujo"
+msgid "Nearest"
+msgstr "Más cercano"
 
 
-msgid "Object removes fluid from the simulation"
-msgstr "El objeto remueve fluido de la simulación"
+msgid "Preview"
+msgstr "Previsualización"
 
 
-msgid "Particle"
-msgstr "Partícula"
-
-
-msgid "Object is made a particle system to display particles generated by a fluidsim domain object"
-msgstr "El objeto es hecho un sistema de partículas para mostrar las partículas generadas por un objeto dominante en una simulación de fluidos"
-
-
-msgid "Control"
-msgstr "Control"
-
-
-msgid "Object is made a fluid control mesh, which influences the fluid"
-msgstr "El objeto se ha transformado en una malla de control, que influencia al fluido"
-
-
-msgid "Control Fluid Simulation Settings"
-msgstr "Opciones simulación fluidos del control"
-
-
-msgid "Fluid simulation settings for objects controlling the motion of fluid in the simulation"
-msgstr "Opciones de simulación de fluidos de los objetos que controlan el movimiento del fluido en la simulación"
-
-
-msgid "Attraction Radius"
-msgstr "Radio de atracción"
-
-
-msgid "Force field radius around the control object"
-msgstr "Radio del campo de fuerza alrededor del objeto de control"
-
-
-msgid "Attraction Strength"
-msgstr "Intensidad de atracción"
-
-
-msgid "Force strength for directional attraction towards the control object"
-msgstr "Magnitud de la fuerza de atracción direccional hacia el objeto de control"
-
-
-msgid "End Time"
-msgstr "Tiempo final"
-
-
-msgid "Time when the control particles are deactivated"
-msgstr "Tiempo en el que las partículas de control son desactivadas"
-
-
-msgid "Quality which is used for object sampling (higher = better but slower)"
-msgstr "Calidad usada para el muestreo del objeto (mayor = mejor, pero más lento)"
-
-
-msgid "Start Time"
-msgstr "Tiempo inicial"
-
-
-msgid "Time when the control particles are activated"
-msgstr "Tiempo en el que las partículas de control son activadas"
-
-
-msgid "Object contributes to the fluid simulation"
-msgstr "El objeto contribuye a la simulación de fluidos"
-
-
-msgid "Reverse Frames"
-msgstr "Invertir fotogramas"
-
-
-msgid "Reverse control object movement"
-msgstr "Invierte el movimiento del objeto de control"
-
-
-msgid "Velocity Radius"
-msgstr "Radio velocidad"
-
-
-msgid "Velocity Strength"
-msgstr "Intensidad velocidad"
-
-
-msgid "Force strength of how much of the control object's velocity is influencing the fluid velocity"
-msgstr "Magnitud que define cuánto influencia la velocidad del objeto de control a la del fluido"
-
-
-msgid "Domain Fluid Simulation Settings"
-msgstr "Opciones dominio simulación fluidos"
-
-
-msgid "Fluid simulation settings for the domain of a fluid simulation"
-msgstr "Opciones del dominio de una simulación de fluidos"
-
-
-msgid "Compressibility"
-msgstr "Compresibilidad"
-
-
-msgid "Allowed compressibility due to gravitational force for standing fluid (directly affects simulation step size)"
-msgstr "Compresibilidad permitida debida a la fuerza gravitacional para el fluido (afecta directamente al tamaño del itervalo de simulación)"
-
-
-msgid "Simulation time of the last blender frame (in seconds)"
-msgstr "Tiempo de simulación del último fotograma de Blender (en segundos)"
-
-
-msgid "Directory (and/or filename prefix) to store baked fluid simulation files in"
-msgstr "Directorio (y/o prefijo de los archivos) donde guardar los archivos de simulación de fluido capturados"
+msgid "Radius"
+msgstr "Radio"
 
 
 msgid "Fluid Mesh Vertices"
@@ -11516,204 +11696,236 @@ msgid "Vertices of the fluid mesh generated by simulation"
 msgstr "Vértices de la malla del fluido generado por la simulación"
 
 
-msgid "Cache Offset"
-msgstr "Desplazamiento del caché"
+msgid "Strength of noise"
+msgstr "Intensidad del ruido"
 
 
-msgid "Offset when reading baked cache"
-msgstr "Desplazar al leer desde un caché capturado"
+msgid "Time"
+msgstr "Tiempo"
 
 
-msgid "Generate Particles"
-msgstr "Generar partículas"
+msgid "Noise Method"
+msgstr "Método del ruido"
 
 
-msgid "Amount of particles to generate (0=off, 1=normal, >1=more)"
-msgstr "Cantidad de partículas a generar (0=apagado, 1=normal, >1=más)"
+msgid "Noise method which is used for creating the high resolution"
+msgstr "Método del ruido que será usado para crear la alta resolución"
 
 
-msgid "Gravity in X, Y and Z direction"
-msgstr "Gravedad en las direcciones X, Y y Z"
+msgid "Wavelet"
+msgstr "Óndula"
 
 
-msgid "Grid Levels"
-msgstr "Niveles de cuadrícula"
+msgid "Compression"
+msgstr "Compresión"
 
 
-msgid "Number of coarsened grids to use (-1 for automatic)"
-msgstr "Cantidad de cuadrículas simplificadas a usar (-1 para automático)"
+msgid "Compression method to be used"
+msgstr "Método de compresión a usar"
 
 
-msgid "Memory Estimate"
-msgstr "Memoria estimada"
+msgid "Zip"
+msgstr "Zip"
 
 
-msgid "Estimated amount of memory needed for baking the domain"
-msgstr "Estimación de la cantidad de memoria necesitada para capturar el dominio"
+msgid "Effective but slow compression"
+msgstr "Compresión lenta pero efectiva"
 
 
-msgid "Partial Slip Amount"
-msgstr "Cantidad deslizamiento parcial"
+msgid "Blosc"
+msgstr "Blosc"
 
 
-msgid "Amount of mixing between no- and free-slip, 0 is no slip and 1 is free slip"
-msgstr "Cantidad de mezcla entre ausencia de deslizamiento y deslizamiento libre, 0 es ausencia y 1 libre"
+msgid "Multithreaded compression, similar in size and quality as 'Zip'"
+msgstr "Compresión que usa múltiples hilos, similar en tamaño y calidad a la 'Zip'"
 
 
-msgid "Preview Resolution"
-msgstr "Resolución previsualización"
+msgid "Do not use any compression"
+msgstr "No usar ninguna compresión"
 
 
-msgid "Preview resolution in X,Y and Z direction"
-msgstr "Resolución de previsualización en las direcciones X, Y y Z"
+msgid "Number"
+msgstr "Número"
 
 
-msgid "Render Display Mode"
-msgstr "Modo de visualización al procesar"
+msgid "Randomness"
+msgstr "Aleatoriedad"
 
 
-msgid "How to display the mesh for rendering"
-msgstr "Cómo mostrar la malla durante el procesamiento de imágenes"
+msgid "Cache Compression"
+msgstr "Compresión del caché"
 
 
-msgid "Display geometry"
-msgstr "Mostrar geometría"
+msgid "Lite"
+msgstr "Suave"
 
 
-msgid "Preview"
-msgstr "Previsualización"
+msgid "Fast but not so effective compression"
+msgstr "Compresión rápida pero no tan efectiva"
 
 
-msgid "Display preview quality results"
-msgstr "Mostrar resultados en calidad previsualización"
+msgid "Heavy"
+msgstr "Intensa"
 
 
-msgid "Final"
-msgstr "Final"
+msgid "Max Res"
+msgstr "Res. máx"
 
 
-msgid "Display final quality results"
-msgstr "Mostrar resultados en calidad final"
+msgid "Display Velocity"
+msgstr "Mostrar velocidad"
 
 
-msgid "Domain resolution in X,Y and Z direction"
-msgstr "Resolución del dominio en las direcciones X, Y y Z"
+msgid "Toggle visualization of the velocity field as needles"
+msgstr "Permite alternar la visualización del campo de velocidad en forma de agujas"
 
 
-msgid "Simulation Speed"
-msgstr "Velocidad de la simulación"
+msgid "Adjust slice direction according to the view direction"
+msgstr "Permite ajustar la dirección del rebanado a la dirección de visualización"
 
 
-msgid "Fluid motion rate (0 = stationary, 1 = normal speed)"
-msgstr "Tasa de movimiento del fluido (0 = estático, 1 = velocidad normal)"
+msgid "Slice along the X axis"
+msgstr "Rebanar a lo largo del eje X"
 
 
-msgid "Real World Size"
-msgstr "Tamaño a escala real"
+msgid "Slice along the Y axis"
+msgstr "Rebanar a lo largo del eje Y"
 
 
-msgid "Size of the simulation domain in meters"
-msgstr "Tamaño en metros del dominio de la simulación"
+msgid "Slice along the Z axis"
+msgstr "Rebanar a lo largo del eje Z"
 
 
-msgid "Slip Type"
-msgstr "Tipo de deslizamiento"
+msgid "Position of the slice"
+msgstr "Posición de la rebanada"
 
 
-msgid "No Slip"
-msgstr "Sin deslizamiento"
+msgid "View Method"
+msgstr "Método de visualización"
 
 
-msgid "Obstacle causes zero normal and tangential velocity (=sticky), default for all (only option for moving objects)"
-msgstr "El obstáculo causa una velocidad normal y perpendicular nula (=adherido), es lo predefinido para todos (única opción para objetos en movimiento)"
+msgid "How to slice the volume for viewport rendering"
+msgstr "Define cómo rebanar el volumen para su visualización en las vistas"
 
 
-msgid "Partial Slip"
-msgstr "Deslizamiento parcial"
+msgid "Slice volume parallel to the view plane"
+msgstr "Rebanar el volumen de forma paralela al plano de visualización"
 
 
-msgid "Mix between no-slip and free-slip (non moving objects only!)"
-msgstr "Mezcla entre sin deslizamiento y deslizamiento libre (sólo objetos estáticos!)"
+msgid "Slice volume parallel to the major axis"
+msgstr "Rebanar el volumen de forma paralela al eje principal"
 
 
-msgid "Free Slip"
-msgstr "Deslizamiento libre"
+msgid "Slice Per Voxel"
+msgstr "Rebanadas por vóxel"
 
 
-msgid "Obstacle only causes zero normal velocity (=not sticky, non moving objects only!)"
-msgstr "El obstáculo sólo causa una velocidad normal nula (=no adhesivo, sólo objetos inmóviles!)"
+msgid "How many slices per voxel should be generated"
+msgstr "Cuántas rebanadas por vóxel deberán ser generadas"
 
 
-msgid "Simulation time of the first blender frame (in seconds)"
-msgstr "Tiempo de la simulación del primer fotograma de Blender (en segundos)"
+msgid "Delete"
+msgstr "Borrar"
 
 
-msgid "Surface Smoothing"
-msgstr "Suavizado de superficie"
+msgid "Buoyancy"
+msgstr "Flotabilidad"
 
 
-msgid "Amount of surface smoothing (a value of 0 is off, 1 is normal smoothing and more than 1 is extra smoothing)"
-msgstr "Cantidad de suavizado de superficie (un valor de 0 significa apagado, 1 es un suavizado normal y más de 1 es un suavizado extra)"
+msgid "p0"
+msgstr "p0"
 
 
-msgid "Surface Subdivisions"
-msgstr "Subdivisiones de superficie"
+msgid "Start point"
+msgstr "Punto de inicio"
 
 
-msgid "Number of isosurface subdivisions (this is necessary for the inclusion of particles into the surface generation - WARNING: can lead to longer computation times !)"
-msgstr "Cantidad de subdivisiones de la iso-superficie (es necesario para la inclusión de partículas en la generación de la superficie - ADVERTENCIA: esto puede provocar mayores tiempos de cálculo!)"
+msgid "Tension"
+msgstr "Tensión"
 
 
-msgid "Simulation Threads"
-msgstr "Hilos de la simulación"
+msgid "Temperature Grid"
+msgstr "Cuadrícula de temperatura"
 
 
-msgid "Override number of threads for the simulation, 0 is automatic"
-msgstr "Redefine la cantidad de hilos de la simulación, 0 es automático"
+msgid "Smoke temperature grid, range 0..1 represents 0..1000K"
+msgstr "Cuadrícula de temperatura del humo, el rango de 0 a 1 representa de 0 a 1000K"
 
 
-msgid "Tracer Particles"
-msgstr "Partículas trazadoras"
+msgid "Time Scale"
+msgstr "Escalar tiempo"
 
 
-msgid "Number of tracer particles to generate"
-msgstr "Cantidad de particulas trazadoras a generar"
+msgid "Adjust simulation speed"
+msgstr "Ajusta la velocidad de la simulación"
 
 
-msgid "Reverse fluid frames"
-msgstr "Invierte los fotogramas del fluido"
+msgid "Adaptive Domain"
+msgstr "Dominio adaptativo"
 
 
-msgid "Generate Speed Vectors"
-msgstr "Generar vectores de velocidad"
+msgid "Adapt simulation resolution and size to fluid"
+msgstr "Adapta la resolución y el tamaño de la simulación al fluido"
 
 
-msgid "Generate speed vectors for vector blur"
-msgstr "Genera vectores de velocidad para el desenfoque vectorial"
+msgid "Bottom"
+msgstr "Inferior"
 
 
-msgid "Remove Air Bubbles"
-msgstr "Eliminar burbujas de aire"
+msgid "Top"
+msgstr "Superior"
 
 
-msgid "Removes the air gap between fluid surface and obstacles - WARNING: Can result in a dissolving surface in other areas"
-msgstr "Remueve el vacío de aire entre la superficie del fluido y los obstáculos - ADVERTENCIA: Puede provocar que la superficie se disuelva en otras áreas"
+msgid "Render a simulation field while mapping its voxels values to the colors of a ramp"
+msgstr "Procesa un campo de simulación mapeando los valores de sus vóxeles a colores de una rampa"
 
 
-msgid "Override Time"
-msgstr "Redefinir tiempo"
+msgid "Dissolve Smoke"
+msgstr "Disolver el humo"
 
 
-msgid "Use a custom start and end time (in seconds) instead of the scene's timeline"
-msgstr "Usa un tiempo de inicio y fin personalizado (en segundos), en vez del de la línea de tiempo de la escena"
+msgid "Enable smoke to disappear over time"
+msgstr "Habilita la desaparición del humo con el tiempo"
 
 
-msgid "Viewport Display Mode"
-msgstr "Modo de visualización en vistas"
+msgid "Using 1/x "
+msgstr "Se usará 1/x "
 
 
-msgid "How to display the mesh in the viewport"
-msgstr "Cómo visualizar la malla en la vista"
+msgid "Tracer"
+msgstr "Trazadoras"
+
+
+msgid "Display Type"
+msgstr "Tipo de visualización"
+
+
+msgid "Needle"
+msgstr "Agujas"
+
+
+msgid "Display vectors as needles"
+msgstr "Mostrar los vectores como agujas"
+
+
+msgid "Streamlines"
+msgstr "Líneas de flujo"
+
+
+msgid "Display vectors as streamlines"
+msgstr "Mostrar los vectores como líneas de flujo"
+
+
+msgid "Multiplier for scaling the vectors"
+msgstr "Multiplicador para la escala de los vectores"
+
+
+msgid "Velocity Grid"
+msgstr "Cuadrícula de velocidad"
+
+
+msgid "Smoke velocity grid"
+msgstr "Cuadrícula de velocidad del humo"
 
 
 msgid "Viscosity Base"
@@ -11732,152 +11944,8 @@ msgid "Negative exponent for the viscosity value (to simplify entering small val
 msgstr "Exponente negativo del valor de viscosidad (para simplificar el ingreso de valores pequeños p.ej: 5*10^-6)"
 
 
-msgid "Fluid Fluid Simulation Settings"
-msgstr "Opciones de simulación de fluidos del fluido"
-
-
-msgid "Fluid simulation settings for the fluid in the simulation"
-msgstr "Opciones de simulación de fluidos del fluido de la simulación"
-
-
-msgid "Initial Velocity"
-msgstr "Velocidad inicial"
-
-
-msgid "Initial velocity of fluid"
-msgstr "Velocidad inicial del fluido"
-
-
-msgid "Export Animated Mesh"
-msgstr "Exportar malla animada"
-
-
-msgid "Export this mesh as an animated one (slower and enforces No Slip, only use if really necessary [e.g. armatures or parented objects], animated pos/rot/scale F-Curves do not require it)"
-msgstr "Exporta este objeto de forma animada (es más lento e impone la propiedad No deslizar. Sólo usar si es realmente necesario [p.ej: en esqueletos y objetos en jerarquías], curvas-f de animación de pos/rot/esc no lo requieren)"
-
-
-msgid "Volume Initialization"
-msgstr "Inicialización del volumen"
-
-
-msgid "Volume initialization type (WARNING: complex volumes might require too much memory and break simulation)"
-msgstr "Tipo de inicialización de volumen (ADVERTECIA: volúmenes complejos pueden requerir demasiada memoria y hacer que la simulación deje de funcionar)"
-
-
-msgid "Use only the inner volume of the mesh"
-msgstr "Usa sólo el volumen interno de la malla"
-
-
-msgid "Shell"
-msgstr "Superficie"
-
-
-msgid "Use only the outer shell of the mesh"
-msgstr "Usa sólo la superficie exterior de la malla"
-
-
-msgid "Both"
-msgstr "Ambos"
-
-
-msgid "Use both the inner volume and the outer shell of the mesh"
-msgstr "Usa tanto el volumen interno como la superficie exterior de la malla"
-
-
-msgid "Inflow Fluid Simulation Settings"
-msgstr "Opciones del flujo agregado"
-
-
-msgid "Fluid simulation settings for objects adding fluids in the simulation"
-msgstr "Opciones de simulación de fluidos para los objetos que agregan fluido a la simulación"
-
-
-msgid "Inflow Velocity"
-msgstr "Velocidad del flujo agregado"
-
-
-msgid "Local Coordinates"
-msgstr "Coordenadas locales"
-
-
-msgid "Use local coordinates for inflow (e.g. for rotating objects)"
-msgstr "Usa coordenadas locales para el flujo agregado (ej. para objetos que rotan)"
-
-
-msgid "Obstacle Fluid Simulation Settings"
-msgstr "Opciones de simulación de fluidos para los obstáculos"
-
-
-msgid "Fluid simulation settings for obstacles in the simulation"
-msgstr "Opciones de simulación de fluidos para los obstáculos de la simulación"
-
-
-msgid "Impact Factor"
-msgstr "Factor de impacto"
-
-
-msgid "This is an unphysical value for moving objects - it controls the impact an obstacle has on the fluid, =0 behaves a bit like outflow (deleting fluid), =1 is default, while >1 results in high forces (can be used to tweak total mass)"
-msgstr "Este es un valor no real para objetos en movimiento - controla el impacto que tiene un obstáculo sobre el fluido, =0 se comportará parecido a la sustracción de flujo (eliminando fluido), =1 es el valor predefinido, valores >1 provocan fuerzas intensas (puede ser usado para retocar la masa total)"
-
-
-msgid "Outflow Fluid Simulation Settings"
-msgstr "Opciones de sustracción de flujo"
-
-
-msgid "Fluid simulation settings for objects removing fluids from the simulation"
-msgstr "Opciones de simulación de fluidos para los objetos que quitan fluido de la simulación"
-
-
-msgid "Particle Fluid Simulation Settings"
-msgstr "Opciones de simulación de fluidos de las partículas"
-
-
-msgid "Fluid simulation settings for objects storing fluid particles generated by the simulation"
-msgstr "Opciones de simulación de fluidos para los objetos que contienen particulas de fluido generadas por la simulación"
-
-
-msgid "Alpha Influence"
-msgstr "Influencia alfa"
-
-
-msgid "Amount of particle alpha change, inverse of size influence: 0=off (all same alpha), 1=full (larger particles get lower alphas, smaller ones higher values)"
-msgstr "Cantidad de cambio en el alfa de las partículas, influencia inversa al tamaño: 0=desactivado (siempre el mismo alfa), 1=completo (las partículas de mayor tamaño tendrán un alfa más bajo, las más pequeñas valores más altos)"
-
-
-msgid "Directory (and/or filename prefix) to store and load particles from"
-msgstr "Directorio (y/o prefijo del nombre de archivo) desde donde cargar y guardar las partículas"
-
-
-msgid "Particle Influence"
-msgstr "Influencia partícula"
-
-
-msgid "Amount of particle size scaling: 0=off (all same size), 1=full (range 0.2-2.0), >1=stronger"
-msgstr "Magnitud del redimensionamiento de las partículas: 0=desactivado (todas del mismo tamaño), 1=completo (rango 0.2-2.0), >1=más fuerte"
-
-
-msgid "Tracer"
-msgstr "Trazadoras"
-
-
-msgid "Show tracer particles"
-msgstr "Muestra particulas trazadoras"
-
-
-msgid "Drops"
-msgstr "Gotas"
-
-
-msgid "Show drop particles"
-msgstr "Muestra particulas en forma de gotas"
-
-
-msgid "Floats"
-msgstr "Flotantes"
-
-
-msgid "Show floating foam particles"
-msgstr "Muestra particulas flotantes de espuma"
+msgid "Amount of turbulence/rotation in fluid"
+msgstr "Cantidad de turbulencia o rotación en el fluido"
 
 
 msgid "Fluid Mesh Velocity"
@@ -11886,6 +11954,174 @@ msgstr "Velocidad de malla de fluido"
 
 msgid "Velocity of a simulated fluid mesh"
 msgstr "Velocidad de la malla del fluido simulado"
+
+
+msgid "Smoke collision settings"
+msgstr "Opciones de colisión del humo"
+
+
+msgid "Collision"
+msgstr "Colisión"
+
+
+msgid "Guide"
+msgstr "Guía"
+
+
+msgid "Maximize"
+msgstr "Maximizar"
+
+
+msgid "Override"
+msgstr "Redefinición"
+
+
+msgid "Flow Settings"
+msgstr "Opciones de flujo"
+
+
+msgid "Vertex Group"
+msgstr "Grupo de vértices"
+
+
+msgid "Name of vertex group which determines surface emission rate"
+msgstr "Nombre del grupo de vértices que determina la frecuencia de emisión de la superficie"
+
+
+msgid "Outflow"
+msgstr "Sustraer flujo"
+
+
+msgid "Flow Type"
+msgstr "Tipo de flujo"
+
+
+msgid "Add smoke"
+msgstr "Agrega humo"
+
+
+msgid "Fire + Smoke"
+msgstr "Fuego + Humo"
+
+
+msgid "Add fire and smoke"
+msgstr "Agrega fuego y humo"
+
+
+msgid "Fire"
+msgstr "Fuego"
+
+
+msgid "Add fire"
+msgstr "Agrega fuego"
+
+
+msgid "Flame Rate"
+msgstr "Frecuencia de llamas"
+
+
+msgid "Texture that controls emission strength"
+msgstr "Textura que controla la intensidad de la emisión"
+
+
+msgid "Particle size in simulation cells"
+msgstr "Tamaño de las partículas en celdas de la simulación"
+
+
+msgid "Particle systems emitted from the object"
+msgstr "Sistemas de partículas emitidos desde el objeto"
+
+
+msgid "Color of smoke"
+msgstr "Color del humo"
+
+
+msgid "Subframes"
+msgstr "Subfotogramas"
+
+
+msgid "Number of additional samples to take between frames to improve quality of fast moving flows"
+msgstr "Cantidad de muestras adicionales a tomar entre fotogramas para mejorar la calidad en flujos de movmiento rápido"
+
+
+msgid "Temp. Diff."
+msgstr "Dif. temperatura"
+
+
+msgid "Temperature difference to ambient temperature"
+msgstr "Diferencia de temperatura con la temperatura ambiente"
+
+
+msgid "Mapping"
+msgstr "Mapeo"
+
+
+msgid "Texture mapping type"
+msgstr "Tipo de mapeo de texturas"
+
+
+msgid "Generated"
+msgstr "Generada"
+
+
+msgid "Generated coordinates centered to flow object"
+msgstr "Coordenadas generadas centradas en el objeto del flujo"
+
+
+msgid "Use UV layer for texture coordinates"
+msgstr "Usar capa de UV como coordenadas de texturizado"
+
+
+msgid "Z-offset of texture mapping"
+msgstr "Desplazamiento Z del mapeo de texturas"
+
+
+msgid "Size of texture mapping"
+msgstr "Tamaño de mapeo de texturas"
+
+
+msgid "Absolute Density"
+msgstr "Densidad absoluta"
+
+
+msgid "Initial Velocity"
+msgstr "Velocidad inicial"
+
+
+msgid "Set Size"
+msgstr "Definir tamaño"
+
+
+msgid "Set particle size in simulation cells or use nearest cell"
+msgstr "Define el tamaño de las partículas en celdas de la simulación o usa la celda más cercana"
+
+
+msgid "Use Texture"
+msgstr "Usar en texturas"
+
+
+msgid "Use a texture to control emission strength"
+msgstr "Usar una textura para controlar la intensidad de la emisión"
+
+
+msgid "Initial"
+msgstr "Inicial"
+
+
+msgid "Normal"
+msgstr "Normal"
+
+
+msgid "Amount of normal directional velocity"
+msgstr "Cantidad de velocidad direccional normal"
+
+
+msgid "Amount of random velocity"
+msgstr "Cantidad de velocidad aleatoria"
+
+
+msgid "Factor for smoke emitted from inside the mesh volume"
+msgstr "Factor de humo emitido desde el interior del volumen de la malla"
 
 
 msgid "Freestyle Line Set"
@@ -12096,16 +12332,8 @@ msgid "Line set name"
 msgstr "Nombre del conjunto de líneas"
 
 
-msgid "End"
-msgstr "Fin"
-
-
 msgid "Last QI value of the QI range"
 msgstr "Último valor del rango de IC"
-
-
-msgid "Start"
-msgstr "Inicio"
 
 
 msgid "First QI value of the QI range"
@@ -12524,10 +12752,6 @@ msgid "Quadratic easing"
 msgstr "Relajación cuadrática"
 
 
-msgid "Cubic"
-msgstr "Cúbica"
-
-
 msgid "Cubic easing"
 msgstr "Relajación cúbica"
 
@@ -12796,10 +13020,6 @@ msgid "Draw the points which make up the strokes (for debugging purposes)"
 msgstr "Muestra los puntos que conforman los trazos (para propósitos de depuración)"
 
 
-msgid "Thickness"
-msgstr "Grosor"
-
-
 msgid "Thickness of annotation strokes"
 msgstr "Grosor de los trazos de anotaciones"
 
@@ -12882,10 +13102,6 @@ msgstr "Adiciona el efecto del pincel"
 
 msgid "Subtract effect of brush"
 msgstr "Sustrae el efecto del pincel"
-
-
-msgid "Radius"
-msgstr "Radio"
 
 
 msgid "Radius of the brush in pixels"
@@ -13038,10 +13254,6 @@ msgstr "Propiedades de la herramienta de escultura del lápiz de cera"
 
 msgid "Brush"
 msgstr "Pincel"
-
-
-msgid "Guide"
-msgstr "Guía"
 
 
 msgid "Threshold for stroke intersections"
@@ -13846,10 +14058,6 @@ msgid "Bind vertex groups to armature modifier"
 msgstr "Enlazar los grupos de vértices al modificador Esqueleto"
 
 
-msgid "Vertex Group"
-msgstr "Grupo de vértices"
-
-
 msgid "Name of Vertex Group which determines influence of modifier per point"
 msgstr "Nombre del grupo de vértices que determina la influencia del modificador en cada punto"
 
@@ -14104,6 +14312,10 @@ msgstr "Tono del color"
 
 msgid "Set what colors of the stroke are affected"
 msgstr "Define qué colores del trazo serán afectados"
+
+
+msgid "Both"
+msgstr "Ambos"
 
 
 msgid "Modify fill and stroke colors"
@@ -14748,18 +14960,6 @@ msgid "Red Green Blue"
 msgstr "Rojo Verde Azul"
 
 
-msgid "Red"
-msgstr "Rojo"
-
-
-msgid "Green"
-msgstr "Verde"
-
-
-msgid "Blue"
-msgstr "Azul"
-
-
 msgid "Show Line"
 msgstr "Mostrar línea"
 
@@ -14903,10 +15103,6 @@ msgstr "Datos de animación de este bloque de datos"
 
 msgid "Bones"
 msgstr "Huesos"
-
-
-msgid "Display Type"
-msgstr "Tipo de visualización"
 
 
 msgid "Octahedral"
@@ -15941,10 +16137,6 @@ msgid "When locked keep using the plane origin of surface where stroke was initi
 msgstr "Al estar bloqueado, sigue usando el plano original de la superficie donde se inició el trazo"
 
 
-msgid "Antialasing"
-msgstr "Suavizado de bordes"
-
-
 msgid "Smooths the edges of the strokes"
 msgstr "Suaviza los bordes de los trazos"
 
@@ -15955,10 +16147,6 @@ msgstr "Usar en escultura"
 
 msgid "Use this brush in grease pencil drawing mode"
 msgstr "Usar este pincel en modo de dibujo con lápiz de cera"
-
-
-msgid "Use Texture"
-msgstr "Usar en texturas"
 
 
 msgid "Use this brush in texture paint mode"
@@ -16051,22 +16239,6 @@ msgstr "Superponer textura"
 
 msgid "Show texture in viewport"
 msgstr "Muestra la textura en la vista"
-
-
-msgid "2D Falloff"
-msgstr "Decaimiento 2D"
-
-
-msgid "Apply brush influence in 2D circle instead of a sphere"
-msgstr "Aplica la influencia del pincel dentro de un círculo 2D en vez de una esfera"
-
-
-msgid "Absolute Jitter"
-msgstr "Alteración absoluta"
-
-
-msgid "Jittering happens in screen space, not relative to brush size"
-msgstr "La alteración sucede en espacio de la pantalla, no relativa al tamaño del pincel"
 
 
 msgid "Restore Mesh"
@@ -16921,20 +17093,12 @@ msgid "Align to top but use the base-line of the text"
 msgstr "Alinear el texto hacia arriba, usando la línea de base del texto"
 
 
-msgid "Top"
-msgstr "Superior"
-
-
 msgid "Align text to the top"
 msgstr "Alinear el texto hacia arriba"
 
 
 msgid "Align text to the middle"
 msgstr "Alinear el texto al centro"
-
-
-msgid "Bottom"
-msgstr "Inferior"
 
 
 msgid "Align text to the bottom"
@@ -18237,10 +18401,6 @@ msgid "Generated grid to test UV mappings"
 msgstr "Genera una cuadrícula para comprobar el mapeo UV"
 
 
-msgid "Color Grid"
-msgstr "Cuadrícula de colores"
-
-
 msgid "Generated improved UV grid to test UV mappings"
 msgstr "Genera una cuadrícula mejorada de UV, para comprobar el mapeo UV"
 
@@ -18357,10 +18517,6 @@ msgid "Movie file"
 msgstr "Archivo de película"
 
 
-msgid "Generated"
-msgstr "Generada"
-
-
 msgid "Generated image"
 msgstr "Imagen generada"
 
@@ -18371,6 +18527,10 @@ msgstr "Visor"
 
 msgid "Compositing node viewer"
 msgstr "Visor de nodos de composición"
+
+
+msgid "Tiled"
+msgstr "Repetido"
 
 
 msgid "Stereo 3D Format"
@@ -19011,10 +19171,6 @@ msgid "Type of parallax volume"
 msgstr "Tipo de volumen de paralaje"
 
 
-msgid "Clipping"
-msgstr "Recortar"
-
-
 msgid "Show the clipping distances in the 3D view"
 msgstr "Mostrar las distancias de recorte en la vista 3D"
 
@@ -19281,6 +19437,10 @@ msgstr "Esfera de sombreado"
 
 msgid "Cloth"
 msgstr "Ropa"
+
+
+msgid "Fluid"
+msgstr "Fluido"
 
 
 msgid "Refraction Depth"
@@ -20555,10 +20715,6 @@ msgid "Indices of vertices in case of a vertex parenting relation"
 msgstr "Índices de vértices en caso de relación jerárquica de vértices"
 
 
-msgid "Particle systems emitted from the object"
-msgstr "Sistemas de partículas emitidos desde el objeto"
-
-
 msgid "Index number for the \"Object Index\" render pass"
 msgstr "Nº de índice del objeto en la pasada \"Índice de objetos\""
 
@@ -21081,10 +21237,6 @@ msgid "Maximum length of the particle color vector"
 msgstr "Longitud máxima del vector de color de la partícula"
 
 
-msgid "Number"
-msgstr "Número"
-
-
 msgid "Total number of particles"
 msgstr "Cantidad total de partículas"
 
@@ -21429,10 +21581,6 @@ msgid "Dummy"
 msgstr "Vacio"
 
 
-msgid "Normal"
-msgstr "Normal"
-
-
 msgid "Let the surface normal give the particle a starting velocity"
 msgstr "Velocidad inicial de las partículas, usando la dirección de las normales de la superficie del objeto emisor"
 
@@ -21451,6 +21599,10 @@ msgstr "Velocidad del objeto"
 
 msgid "Let the object give the particle a starting velocity"
 msgstr "Hace que la velocidad del objeto emisor determine la velocidad inicial de las partículas"
+
+
+msgid "Particle"
+msgstr "Partícula"
 
 
 msgid "Let the target particle give the particle a starting velocity"
@@ -21519,10 +21671,6 @@ msgstr "El evento de las partículas objetivo en base al cual reaccionar"
 
 msgid "Death"
 msgstr "Muerte"
-
-
-msgid "Collision"
-msgstr "Colisión"
 
 
 msgid "Reactor"
@@ -21701,10 +21849,6 @@ msgid "Give the particle size a random variation"
 msgstr "Dar al tamaño de las partículas una variación aleatoria"
 
 
-msgid "Subframes"
-msgstr "Subfotogramas"
-
-
 msgid "Subframes to simulate for improved stability and finer granularity simulations (dt = timestep / (subframes + 1))"
 msgstr "Subfotogramas para simulaciones con estabilidad mejorada y granularidad más fina (dt = intervalotiempo / (subfotogramas + 1))"
 
@@ -21763,10 +21907,6 @@ msgstr "Curva que define la torsión"
 
 msgid "Particle Type"
 msgstr "Tipo de partículas"
-
-
-msgid "Emitter"
-msgstr "Emisor"
 
 
 msgid "Absolute Path Time"
@@ -22435,10 +22575,6 @@ msgstr "Reproducción animación"
 
 msgid "Animation playback is active"
 msgstr "La reproducción de animación está activa"
-
-
-msgid "Maximize"
-msgstr "Maximizar"
 
 
 msgid "An area is maximized, filling this screen"
@@ -24067,10 +24203,6 @@ msgid "The solver does not reiterate, not even on first frame (starts from rest 
 msgstr "El método de resolución no es reiterado, ni siquiera en el primer fotograma (comienza desde la pose de reposo)"
 
 
-msgid "Initial"
-msgstr "Inicial"
-
-
 msgid "The solver reiterates (converges) on the first frame but not on subsequent frame"
 msgstr "El método de resolución es reiterado (converge) en el primer fotograma, pero no en el subsiguiente"
 
@@ -24197,10 +24329,6 @@ msgstr "Las imágenes se guardarán con datos de color RVA"
 
 msgid "Images are saved with RGB and Alpha data (if supported)"
 msgstr "Las imágenes se guardarán con datos RVA y alfa (si es soportado)"
-
-
-msgid "Compression"
-msgstr "Compresión"
 
 
 msgid "Amount of time to determine best compression: 0 = no compression with fast file output, 100 = maximum lossless compression with slow file output"
@@ -26399,10 +26527,6 @@ msgid "Invert the fade-out direction of the linear mapping"
 msgstr "Invierte la dirección de desvanecimiento del mapeo lineal"
 
 
-msgid "Mapping"
-msgstr "Mapeo"
-
-
 msgid "Select the mapping type"
 msgstr "Seleccionar el tipo de mapeo"
 
@@ -27710,10 +27834,6 @@ msgid "Marker Settings"
 msgstr "Opciones de marcadores"
 
 
-msgid "Set Handle Type"
-msgstr "Definir tipo de asa"
-
-
 msgid "Pivot Point"
 msgstr "Punto de pivote"
 
@@ -27786,10 +27906,6 @@ msgid "Dope Sheet Context Menu"
 msgstr "Planilla de tiempos - menú contextual"
 
 
-msgid "Delete"
-msgstr "Borrar"
-
-
 msgid "Key"
 msgstr "Clave"
 
@@ -27804,6 +27920,10 @@ msgstr "Especiales de marcadores"
 
 msgid "Files Context Menu"
 msgstr "Archivos - menú contextual"
+
+
+msgid "Fluid Presets"
+msgstr "Ajustes de fluido"
 
 
 msgid "Clean Up"
@@ -29005,32 +29125,64 @@ msgid "Data Transfer"
 msgstr "Transferir datos"
 
 
+msgid "Transfer several types of data (vertex groups, UV maps, vertex colors, custom normals) from one mesh to another"
+msgstr "Permite transferir varios tipos de datos (grupos de vértices, mapas UV, colores de vértices, normales personalizadas) desde una malla a otra"
+
+
 msgid "Mesh Cache"
 msgstr "Caché de malla"
+
+
+msgid "Deform the mesh using an external frame-by-frame vertex transform cache"
+msgstr "Permite deformar la malla usando un caché externo de transformaciones fotograma a fotograma"
 
 
 msgid "Mesh Sequence Cache"
 msgstr "Caché de secuencia de mallas"
 
 
+msgid "Deform the mesh or curve using an external mesh cache in Alembic format"
+msgstr "Permite deformar la malla o curva usando un caché externo de mallas en formato Alembic"
+
+
 msgid "Normal Edit"
 msgstr "Editar normales"
+
+
+msgid "Modify the direction of the surface normals"
+msgstr "Permite modificar la dirección de las normales de la superficie"
 
 
 msgid "Weighted Normal"
 msgstr "Influenciar normales"
 
 
+msgid "Modify the direction of the surface normals using a weighting method"
+msgstr "Permite modificar la dirección de las normales de la superficie usando un método de influencias"
+
+
 msgid "UV Project"
 msgstr "Proyectar UV"
+
+
+msgid "Project the UV map coordinates from the negative Z axis of another object"
+msgstr "Permite proyectar las coordenadas UV desde el eje Z negativo de otro objeto"
 
 
 msgid "UV Warp"
 msgstr "Deformar UV"
 
 
+msgid "Transform the UV map using the the difference between two objects"
+msgstr "Permite transformar el mapa UV usando la diferencia entre dos objetos"
+
+
 msgid "Vertex Weight Edit"
 msgstr "Editar influencias de vértices"
+
+
+msgid "Modify of the weights of a vertex group"
+msgstr "Permite modificar las influencias de un grupo de vértices"
 
 
 msgid "Vertex Weight Mix"
@@ -29038,95 +29190,227 @@ msgstr "Mezclar influencias de vértices"
 
 
 msgid "Mix the weights of two vertex groups"
-msgstr "Mezcla las influencias de dos grupos de vértices"
+msgstr "Permite mezclar las influencias de dos grupos de vértices"
 
 
 msgid "Vertex Weight Proximity"
 msgstr "Influencias de vértices por proximidad"
 
 
+msgid "Set the vertex group weights based on the distance to another target object"
+msgstr "Permite definir las influencias del grupo de vértices basándose en la distancia a otro objeto objetivo"
+
+
+msgid "Create copies of the shape with offsets"
+msgstr "Permite crear copias de la forma con desplazamientos entre ellas"
+
+
 msgid "Bevel"
 msgstr "Biselar"
+
+
+msgid "Generate sloped corners by adding geometry to the mesh's edges or vertices"
+msgstr "Permite generar esquinas en ángulo agregando geometría a los bordes o vértices de la malla"
 
 
 msgid "Boolean"
 msgstr "Booleana"
 
 
+msgid "Use another shape to cut, combine or perform a difference operation"
+msgstr "Permite usar otra forma para cortar, combinar o realizar una operación de sustracción"
+
+
+msgid "Cause the faces of the mesh object to appear or disappear one after the other over time"
+msgstr "Permite hacer que las caras de la malla de un objeto vayan apareciendo gradualmente a lo largo del tiempo"
+
+
 msgid "Decimate"
 msgstr "Diezmar"
+
+
+msgid "Reduce the geometry density"
+msgstr "Permite reducir la densidad de la geometría"
 
 
 msgid "Edge Split"
 msgstr "Dividir bordes"
 
 
+msgid "Split away joined faces at the edges"
+msgstr "Permite separar caras que se encuentran unidas por sus bordes"
+
+
+msgid "Dynamically hide vertices based on a vertex group or armature"
+msgstr "Permite ocultar dinámicamente vértices basándose en un grupo de vértices o esqueleto"
+
+
+msgid "Mirror along the local X, Y and/or Z axes, over the object origin"
+msgstr "Permite simetrizar en torno a los ejes locales X, Y y/o Z, con respecto al origen del objeto"
+
+
 msgid "Multiresolution"
 msgstr "Multi-resolución"
+
+
+msgid "Subdivide the mesh in a way that allows editing the higher subdivision levels"
+msgstr "Permite subdividir la malla de una forma que permita la edición de sus niveles de mayor resolución"
 
 
 msgid "Remesh"
 msgstr "Rehacer malla"
 
 
+msgid "Generate new mesh topology based on the current shape"
+msgstr "Permite generar una nueva topología de malla basándose en la forma actual"
+
+
 msgid "Screw"
 msgstr "Enroscar"
+
+
+msgid "Lathe around an axis, treating the inout mesh as a profile"
+msgstr "Permite tornear alrededor de un eje, usando el objeto base como perfil"
 
 
 msgid "Skin"
 msgstr "Forrar"
 
 
+msgid "Create a solid shape from vertices and edges, using the vertex radius to define the thickness"
+msgstr "Permite crear una forma sólida a partir de vértices y bordes, usando el radio de cada vértice para definir su grosor"
+
+
 msgid "Solidify"
 msgstr "Solidificar"
+
+
+msgid " Make the surface thick"
+msgstr "Permite generar un grosor para la superficie"
 
 
 msgid "Subdivision Surface"
 msgstr "Subdividir superficie"
 
 
+msgid "Split the faces into smaller parts, giving it a smoother appearance"
+msgstr "Permite dividir las caras en partes más pequeñas, otorgándole una apariencia más suave"
+
+
 msgid "Triangulate"
 msgstr "Triangular"
+
+
+msgid "Convert all polygons to triangles"
+msgstr "Permite convertir todas las caras en triángulos"
 
 
 msgid "Wireframe"
 msgstr "Estructura"
 
 
+msgid "Convert faces into thickened edges"
+msgstr "Permite convertir los bordes del objeto en una estructura poligonal con un cierto grosor"
+
+
+msgid "Deform the shape using an armature object"
+msgstr "Permite deformar el objeto usando un esqueleto"
+
+
 msgid "Cast"
 msgstr "Moldear"
+
+
+msgid "Shift the shape towards a predefined primitive"
+msgstr "Permite desplazar la forma del objeto hacia una primitiva predefinida"
+
+
+msgid "Bend the mesh using a curve object"
+msgstr "Permite flexionar la malla usando una curva"
 
 
 msgid "Displace"
 msgstr "Desplazar"
 
 
+msgid "Offset vertices based on a texture"
+msgstr "Permite desplazar vértices basándose en una textura"
+
+
+msgid "Deform specific points using another object"
+msgstr "Permite deformar puntos específicos usando otro objeto"
+
+
 msgid "Laplacian Deform"
 msgstr "Deformación Laplaciana"
+
+
+msgid "Deform based a series of anchor points"
+msgstr "Permite deformar el objeto basándose en una serie de punto de anclaje"
+
+
+msgid "Deform using the shape of a lattice object"
+msgstr "Permite deformar el objeto usando una jaula"
 
 
 msgid "Mesh Deform"
 msgstr "Deformar con malla"
 
 
+msgid "Deform using a different mesh, which acts as a deformation cage"
+msgstr "Permite deformar el objeto usando otra malla, que actuará como jaula de deformación"
+
+
+msgid "Project the shape onto another object"
+msgstr "Permite proyectar la forma del objeto hacia la superficie de otro objeto"
+
+
 msgid "Simple Deform"
 msgstr "Deformación simple"
+
+
+msgid "Deform the shape by twisting, bending, tapering or stretching"
+msgstr "Permite deformar el objeto torsionando, flexionando, afinando o estirándolo"
+
+
+msgid "Smooth the mesh by flattening the angles between adjacent faces"
+msgstr "Permite suavizar la malla disminuyendo los ángulos entre caras adyacentes"
 
 
 msgid "Smooth Corrective"
 msgstr "Suavizado correctivo"
 
 
+msgid "Smooth the mesh while still preserving the volume"
+msgstr "Permite suavizar la malla, preservando su volumen original"
+
+
 msgid "Smooth Laplacian"
 msgstr "Suavizado laplaciano"
+
+
+msgid "Reduce the noise on a mesh surface with minimal changes to its shape"
+msgstr "Permite reducir el ruido de la superficie de la malla, produciendo mínimos cambios en su forma"
 
 
 msgid "Surface Deform"
 msgstr "Deformar superficie"
 
 
+msgid "Transfer motion from another mesh"
+msgstr "Permite transferir movimiento desde otra malla"
+
+
 msgid "Warp"
 msgstr "Deformar"
+
+
+msgid "Warp parts of a mesh to a new location in a very flexible way thanks to 2 specified objects"
+msgstr "Permite deformar partes de una malla hacia una nueva ubicación de una forma muy flexible, gracias a 2 objetos indicados"
+
+
+msgid "Adds a ripple-like motion to an object’s geometry"
+msgstr "Permite agregar un movimiento ondulante a la geometría de un objeto"
 
 
 msgid "Dynamic Paint"
@@ -29137,20 +29421,28 @@ msgid "Explode"
 msgstr "Explotar"
 
 
-msgid "Fluid Simulation"
-msgstr "Simulación de fluidos"
+msgid "Break apart the mesh faces and let them follow particles"
+msgstr "Separa las caras de la malla, permitiéndoles seguir el movimiento de partículas"
 
 
 msgid "Ocean"
 msgstr "Océano"
 
 
+msgid "Generate a moving ocean surface"
+msgstr "Permite generar la superficie de un océano en movimiento"
+
+
 msgid "Particle Instance"
 msgstr "Instancia de partículas"
 
 
-msgid "Smoke"
-msgstr "Humo"
+msgid "Spawn particles from the shape"
+msgstr "Permite generar partículas a partir de una forma"
+
+
+msgid "Fluid Simulation"
+msgstr "Simulación de fluidos"
 
 
 msgid "Soft Body"
@@ -30601,16 +30893,12 @@ msgid "Use particle size for the shrapnel"
 msgstr "Usar el tamaño de la partícula para el despiece"
 
 
-msgid "Fluid Simulation Modifier"
-msgstr "Modificador Simulación de fluidos"
-
-
 msgid "Fluid simulation modifier"
 msgstr "Modificador de simulación de fluidos"
 
 
-msgid "Settings for how this object is used in the fluid simulation"
-msgstr "Opciones de cómo se usará este objeto en la simulación de fluidos"
+msgid "Inflow/Outflow"
+msgstr "Adicionar / Sustraer"
 
 
 msgid "Hook modifier to modify the location of vertices"
@@ -30799,10 +31087,6 @@ msgstr "Método para controlar el tiempo de reproducción"
 
 msgid "Control playback using a frame-number (ignoring time FPS and start frame from the file)"
 msgstr "Controlar la reproducción usando el número de fotograma (ignora los FPS de reproducción y el fotograma inicial del archivo)"
-
-
-msgid "Time"
-msgstr "Tiempo"
 
 
 msgid "Control playback using time in seconds"
@@ -31752,26 +32036,6 @@ msgstr "Evita hacer cuadriláteros no simétricos con respecto al eje Y"
 
 msgid "Avoid making unsymmetrical quads across the Z axis"
 msgstr "Evita hacer cuadriláteros no simétricos con respecto al eje Z"
-
-
-msgid "Smoke Modifier"
-msgstr "Modificador de Humo"
-
-
-msgid "Smoke simulation modifier"
-msgstr "Modificador para la simulación de humo"
-
-
-msgid "Domain Settings"
-msgstr "Opciones dominio"
-
-
-msgid "Flow Settings"
-msgstr "Opciones de flujo"
-
-
-msgid "Inflow/Outflow"
-msgstr "Adicionar / Sustraer"
 
 
 msgid "Soft Body Modifier"
@@ -33773,10 +34037,6 @@ msgid "Interpolation to use for sub-pixel shifts and rotations due to stabilizat
 msgstr "Interpolación a usar para los desplazamientos y rotaciones, a nivel de sub-píxel, debidos a la estabilización"
 
 
-msgid "Nearest"
-msgstr "Más cercano"
-
-
 msgid "No interpolation, use nearest neighbor pixel"
 msgstr "Sin interpolación, usar el píxel cercano más próximo"
 
@@ -34603,10 +34863,6 @@ msgstr "Algoritmo"
 
 msgid "Algorithm to use to limit channel"
 msgstr "Algoritmo a usar para limitar canal"
-
-
-msgid "Single"
-msgstr "Individual"
 
 
 msgid "Limit by single channel"
@@ -35774,6 +36030,14 @@ msgid "A / B"
 msgstr "A / B"
 
 
+msgid "Multiply Add"
+msgstr "Multiplicar Adicionar"
+
+
+msgid "A * B + C"
+msgstr "A * B + C"
+
+
 msgid "A power B"
 msgstr "A elevado a B"
 
@@ -35790,8 +36054,20 @@ msgid "Square root of A"
 msgstr "Raíz cuadrada de A"
 
 
+msgid "Inverse Square Root"
+msgstr "Inverso de raíz cuadrada"
+
+
+msgid "1 / Square root of A"
+msgstr "1 / Raíz cuadrada de A"
+
+
 msgid "Magnitude of A"
 msgstr "Valor absoluto de A"
+
+
+msgid "exp(A)"
+msgstr "exp(A)"
 
 
 msgid "The minimum from A and B"
@@ -35818,8 +36094,36 @@ msgid "1 if A > B else 0"
 msgstr "1 si A > B sino 0"
 
 
+msgid "Sign"
+msgstr "Signo"
+
+
+msgid "Returns the sign of A"
+msgstr "Devuelve el signo de A"
+
+
 msgid "Compare"
 msgstr "Comparar"
+
+
+msgid "1 if (A == B) within tolerance C else 0"
+msgstr "1 si (A == B) dentro de una tolerancia C, sino 0"
+
+
+msgid "Smooth Minimum"
+msgstr "Mínimo suave"
+
+
+msgid "The minimum from A and B with smoothing C"
+msgstr "El mínimo de A y B con un nivel de suavizado C"
+
+
+msgid "Smooth Maximum"
+msgstr "Máximo suave"
+
+
+msgid "The maximum from A and B with smoothing C"
+msgstr "El máximo de A y B con un nivel de suavizado C"
 
 
 msgid "Round A to the nearest integer. Round upward if the fraction part is 0.5"
@@ -35838,6 +36142,10 @@ msgid "The smallest integer greater than or equal A"
 msgstr "El menor entero mayor o igual que A"
 
 
+msgid "trunc(A)"
+msgstr "trunc(A)"
+
+
 msgid "Fraction"
 msgstr "Fracción"
 
@@ -35852,6 +36160,22 @@ msgstr "Resto"
 
 msgid "A mod B"
 msgstr "El resto de dividir A entre B"
+
+
+msgid "Snap to increment, snap(A,B)"
+msgstr "Adhiere a incrementos, snap(A,B)"
+
+
+msgid "Wrap value to range, wrap(A,B)"
+msgstr "Repite el valor dentro de un rango, wrap(A,B)"
+
+
+msgid "Pingpong"
+msgstr "Ping pong"
+
+
+msgid "Wraps a value and reverses every other cycle (A,B)"
+msgstr "Repite el valor dentro de un rango, invirtiendo cada ciclo (A,B) con respecto al anterior"
 
 
 msgid "sin(A)"
@@ -35896,6 +36220,46 @@ msgstr "Arco tangente 2"
 
 msgid "The signed angle arctan(A / B)"
 msgstr "El ángulo de arctan(A / B) con signo"
+
+
+msgid "Hyperbolic Sine"
+msgstr "Seno hiperbólico"
+
+
+msgid "sinh(A)"
+msgstr "sinh(A)"
+
+
+msgid "Hyperbolic Cosine"
+msgstr "Coseno hiperbólico"
+
+
+msgid "cosh(A)"
+msgstr "cosh(A)"
+
+
+msgid "Hyperbolic Tangent"
+msgstr "Tangente hiperbólica"
+
+
+msgid "tanh(A)"
+msgstr "tanh(A)"
+
+
+msgid "To Radians"
+msgstr "A radianes"
+
+
+msgid "Convert from degrees to radians"
+msgstr "Convierte de grados a radianes"
+
+
+msgid "To Degrees"
+msgstr "A grados"
+
+
+msgid "Convert from radians to degrees"
+msgstr "Convierte de radianes a grados"
 
 
 msgid "Include alpha of second input in this operation"
@@ -36491,6 +36855,22 @@ msgid "Camera Data"
 msgstr "Datos de cámara"
 
 
+msgid "Clamp Type"
+msgstr "Tipo de limitación"
+
+
+msgid "Min Max"
+msgstr "Mín. Máx."
+
+
+msgid "Clamp values using Min and Max values"
+msgstr "Limita los valores usando los valores Mín y Máx"
+
+
+msgid "Clamp values between Min and Max range"
+msgstr "Limita los valores dentro del rango de Mín a Máx"
+
+
 msgid "Combine HSV"
 msgstr "Combinar TSV"
 
@@ -36553,6 +36933,38 @@ msgstr "Trayectoria de rayo"
 
 msgid "Clamp the result to the target range [To Min, To Max]"
 msgstr "Limita el resultado al rango objetivo, entre [Hasta mín, Hasta máx]"
+
+
+msgid "Interpolation Type"
+msgstr "Tipo de interpolación"
+
+
+msgid "Linear interpolation between From Min and From Max values"
+msgstr "Interpolación lineal entre los valores Desde mín y Desde máx"
+
+
+msgid "Stepped Linear"
+msgstr "Lineal escalonada"
+
+
+msgid "Stepped linear interpolation between From Min and From Max values"
+msgstr "Interpolación lineal escalonada entre los valores Desde mín y Desde máx"
+
+
+msgid "Smoothstep"
+msgstr "Escalonada suave"
+
+
+msgid "Smooth hermite edge interpolation between From Min and From Max values"
+msgstr "Interpolación Hermite suave entre los valores Desde mín y Desde máx"
+
+
+msgid "Smootherstep"
+msgstr "Escalonada más suave"
+
+
+msgid "Smoother hermite edge interpolation between From Min and From Max values"
+msgstr "Interpolación Hermite más suave entre los valores Desde mín y Desde máx"
 
 
 msgid "Type of vector that the mapping transforms"
@@ -37149,10 +37561,6 @@ msgstr "Calcula la distancia hasta el segundo punto más cercano, así como su p
 
 msgid "Smooth F1"
 msgstr "F1 suavizado"
-
-
-msgid "Smoothed version of F1. Weighted sum of neighbour voronoi cells"
-msgstr "Versión suavizada del método F1. Usa la suma ponderada de las celdas voronoi cercanas"
 
 
 msgid "Distance To Edge"
@@ -41701,10 +42109,6 @@ msgid "Time Slide"
 msgstr "Deslizar tiempo"
 
 
-msgid "Time Scale"
-msgstr "Escalar tiempo"
-
-
 msgid "Time Extend"
 msgstr "Extender tiempo"
 
@@ -42995,6 +43399,14 @@ msgid "EXPERIMENTAL: Export displacement textures. Uses incomplete \"KHR_materia
 msgstr "EXPERIMENTAL: Exportar texturas de desplazamiento. Usa la extensión (aún incompleta) \"KHR_materials_displacement\" del formato glTF"
 
 
+msgid "Generic quantization bits"
+msgstr "Bits cuantizado genéricos"
+
+
+msgid "Quantization bits for generic coordinate values like weights or joints (0 = no quantization)"
+msgstr "Bits de cuantizado para valores genéricos de coordenadas como influencias o articulaciones (0 = sin cuantizado)"
+
+
 msgid "Draco mesh compression"
 msgstr "Comprimir malla con Draco"
 
@@ -43825,15 +44237,6 @@ msgstr "Desempacar bibliotecas de Blender"
 
 msgid "Unpack all used Blender library files from this .blend file"
 msgstr "Desempacar todos los archivos de biblioteca usados en este archivo .blend"
-
-
-msgctxt "Operator"
-msgid "Fluid Simulation Bake"
-msgstr "Capturar simulación de fluidos"
-
-
-msgid "Bake fluid simulation"
-msgstr "Captura la simulación de fluidos"
 
 
 msgctxt "Operator"
@@ -53122,43 +53525,6 @@ msgstr "Velocidad saliente"
 
 
 msgctxt "Operator"
-msgid "Quick Fluid"
-msgstr "Fluido rápido"
-
-
-msgid "Use selected objects in a fluid simulation"
-msgstr "Usa los objetos seleccionados en una simulación de fluidos"
-
-
-msgid "Initial velocity of the fluid"
-msgstr "Velocidad inicial del fluido"
-
-
-msgid "Render Fluid Objects"
-msgstr "Procesar objetos de fluido"
-
-
-msgid "Keep the fluid objects visible during rendering"
-msgstr "Mantener los objetos de fluidos visibles durante el procesamiento"
-
-
-msgid "Start Fluid Bake"
-msgstr "Captura inicial de fluido"
-
-
-msgid "Start baking the fluid immediately after creating the domain object"
-msgstr "Comenzar a capturar el fluido inmediatamente después de crear el objeto de dominio"
-
-
-msgid "Fluid Style"
-msgstr "Estilo de fluido"
-
-
-msgid "Basic"
-msgstr "Básico"
-
-
-msgctxt "Operator"
 msgid "Quick Fur"
 msgstr "Pelaje rápido"
 
@@ -53169,10 +53535,6 @@ msgstr "Agrega pelaje a los objetos seleccionados"
 
 msgid "Fur Density"
 msgstr "Densidad del pelaje"
-
-
-msgid "Heavy"
-msgstr "Intensa"
 
 
 msgid "View %"
@@ -53198,10 +53560,6 @@ msgstr "Mantener los objetos de humo visibles durante el procesamiento"
 
 msgid "Smoke Style"
 msgstr "Estilo del humo"
-
-
-msgid "Fire"
-msgstr "Fuego"
 
 
 msgid "Smoke + Fire"
@@ -57202,10 +57560,6 @@ msgstr "Calcular masa"
 
 msgid "Automatically calculate mass values for Rigid Body Objects based on volume"
 msgstr "Calcula automáticamente valores de masa para los cuerpos rígidos, basado en el volumen"
-
-
-msgid "Density"
-msgstr "Densidad"
 
 
 msgid "Custom density value (kg/m^3) to use instead of material preset"
@@ -64367,6 +64721,14 @@ msgid "Set the tool by name (for keymaps)"
 msgstr "Define la herramienta por su nombre (para mapas de teclado)"
 
 
+msgid "Set Fallback"
+msgstr "Definir retroceso"
+
+
+msgid "Set the fallback tool instead of the primary tool"
+msgstr "Define la herramienta de retroceso, en vez de la herramienta primaria"
+
+
 msgid "Cycle"
 msgstr "Recorrer cíclicamente"
 
@@ -64388,6 +64750,10 @@ msgid "Set the tool by index (for keymaps)"
 msgstr "Define la herramienta por su índice (para mapas de teclado)"
 
 
+msgid "Set the fallback tool instead of the primary"
+msgstr "Definir la herramienta de retroceso, en vez de la primaria"
+
+
 msgid "Include tool sub-groups"
 msgstr "Incluir sub grupos de herramienta"
 
@@ -64399,6 +64765,11 @@ msgstr "Índice en barra de herramientas"
 msgctxt "Operator"
 msgid "Toolbar"
 msgstr "Barra de herramientas"
+
+
+msgctxt "Operator"
+msgid "Fallback Tool Pie Menu"
+msgstr "Herramienta de retroceso Menú circular"
 
 
 msgctxt "Operator"
@@ -65299,10 +65670,6 @@ msgid "Shutter Curve"
 msgstr "Curva de obturación"
 
 
-msgid "Override"
-msgstr "Redefinición"
-
-
 msgid "Passes"
 msgstr "Pasadas"
 
@@ -65461,10 +65828,6 @@ msgstr "Atributos"
 
 msgid "Directory Path"
 msgstr "Ruta de directorio"
-
-
-msgid "Fluid Presets"
-msgstr "Ajustes de fluido"
 
 
 msgid "Active Tool"
@@ -65784,6 +66147,10 @@ msgid "Timing"
 msgstr "Temporización"
 
 
+msgid "Border Collisions"
+msgstr "Colisión con bordes"
+
+
 msgid "Collisions"
 msgstr "Colisiones"
 
@@ -65806,10 +66173,6 @@ msgstr "Colisiones propias"
 
 msgid "Softbody And Cloth"
 msgstr "Cuerpos blandos y ropa"
-
-
-msgid "Viscosity"
-msgstr "Viscosidad"
 
 
 msgid "Falloff Ramp"
@@ -65836,6 +66199,14 @@ msgid "Force Fields"
 msgstr "Campos de fuerza"
 
 
+msgid "Flow Source"
+msgstr "Origen del flujo"
+
+
+msgid "Guides"
+msgstr "Guías"
+
+
 msgid "Surface Response"
 msgstr "Respuesta de superficie"
 
@@ -65850,30 +66221,6 @@ msgstr "Dinámicas"
 
 msgid "Deactivation"
 msgstr "Desactivación"
-
-
-msgid "Adaptive Domain"
-msgstr "Dominio adaptativo"
-
-
-msgid "Behavior"
-msgstr "Comportamiento"
-
-
-msgid "Flames"
-msgstr "Llamas"
-
-
-msgid "High Resolution"
-msgstr "Alta resolución"
-
-
-msgid "Particle Size"
-msgstr "Tamaño de la partícula"
-
-
-msgid "Debug Velocity"
-msgstr "Depurar velocidad"
 
 
 msgid "Self Collision"
@@ -65894,6 +66241,10 @@ msgstr "Diagnósticos"
 
 msgid "Helpers"
 msgstr "Ayudantes"
+
+
+msgid "Debug Velocity"
+msgstr "Depurar velocidad"
 
 
 msgid "Creates a Panel in the Render Layers context of the properties editor"
@@ -66314,10 +66665,6 @@ msgid "Draw Context Menu"
 msgstr "Dibujar - menú contextual"
 
 
-msgid "Guides"
-msgstr "Guías"
-
-
 msgid "Drawing Plane"
 msgstr "Plano de dibujo"
 
@@ -66376,10 +66723,6 @@ msgstr "Analizar"
 
 msgid "Quad View"
 msgstr "Vista cuádruple"
-
-
-msgid "Unified Brush"
-msgstr "Pincel unificado"
 
 
 msgid "Shadow Settings"
@@ -66717,16 +67060,8 @@ msgid "Post-Processing"
 msgstr "Pos procesamiento"
 
 
-msgid "Stabilize"
-msgstr "Estabilizar"
-
-
 msgid "Sculpt Strokes"
 msgstr "Esculpir trazos"
-
-
-msgid "Particle tools"
-msgstr "Herramientas de partículas"
 
 
 msgid "Default tools for particle mode"
@@ -67509,40 +67844,12 @@ msgid "Active point cache for physics simulations"
 msgstr "Caché de puntos activo para simulaciones dinámicas"
 
 
-msgid "Cache Compression"
-msgstr "Compresión del caché"
-
-
-msgid "Compression method to be used"
-msgstr "Método de compresión a usar"
-
-
 msgid "No compression"
 msgstr "Sin compresión"
 
 
-msgid "Lite"
-msgstr "Suave"
-
-
-msgid "Fast but not so effective compression"
-msgstr "Compresión rápida pero no tan efectiva"
-
-
-msgid "Effective but slow compression"
-msgstr "Compresión lenta pero efectiva"
-
-
 msgid "Cache file path"
 msgstr "Ruta a archivo de caché"
-
-
-msgid "Frame on which the simulation stops"
-msgstr "Fotograma en el que finaliza la simulación"
-
-
-msgid "Frame on which the simulation starts"
-msgstr "Fotograma donde comienza la simulación"
 
 
 msgid "Cache Step"
@@ -67961,6 +68268,10 @@ msgid "File Paths"
 msgstr "Rutas de archivo"
 
 
+msgid "Experimental"
+msgstr "Experimental"
+
+
 msgid "Application Template"
 msgstr "Plantilla de aplicación"
 
@@ -67975,10 +68286,6 @@ msgstr "Métodos de edición"
 
 msgid "Settings for interacting with Blender data"
 msgstr "Opciones para interactuar con datos de Blender"
-
-
-msgid "Experimental"
-msgstr "Experimental"
 
 
 msgid "Settings for features that are still early in their development stage"
@@ -68345,12 +68652,12 @@ msgid "Experimental features"
 msgstr "Características experimentales"
 
 
-msgid "All Experimental Features"
-msgstr "Todas las características experimentales"
+msgid "Fallback Tool Support"
+msgstr "Soporte de herramienta de retroceso"
 
 
-msgid "Expose all the experimental features in the user interface"
-msgstr "Expone todas las características experimentales en la interfaz"
+msgid "Allow selection with an active tool"
+msgstr "Permite la selección con una herramienta activa"
 
 
 msgid "Animation Player"
@@ -69381,6 +69688,14 @@ msgid "Enable Edit-Mode edge smoothing, reducing aliasing, requires restart"
 msgstr "Habilita el suavizado de bordes de estructuras en Modo edición, reduciendo defectos de imagen, requiere reiniciar"
 
 
+msgid "Overlay Smooth Wires"
+msgstr "Sobreimprimir estructura suavizada"
+
+
+msgid "Enable overlay smooth wires, reducing aliasing"
+msgstr "Habilita a sobreimprimir una estructura suavizada, para reducir los defectos visuales"
+
+
 msgid "Region Overlap"
 msgstr "Superponer regiones"
 
@@ -70391,14 +70706,6 @@ msgstr "Interpolación volumétrica"
 
 msgid "Interpolation method to use for smoke/fire volumes"
 msgstr "Método de interpolación a usar para volúmenes de humo o fuego"
-
-
-msgid "Good smoothness and speed"
-msgstr "Buena suavidad y velocidad"
-
-
-msgid "Smoothed high quality interpolation, but slower"
-msgstr "Interpolación suave de alta calidad, pero más lento"
 
 
 msgid "Volume Sampling"
@@ -72645,10 +72952,6 @@ msgid "Layers Blending"
 msgstr "Capas de fusión"
 
 
-msgid "Do not display blend layers"
-msgstr "No mostrar capas de fusión"
-
-
 msgid "Simplify Playback"
 msgstr "Simplificar reproducción"
 
@@ -72661,40 +72964,16 @@ msgid "Disable Lines"
 msgstr "Deshabilitar líneas"
 
 
-msgid "Disable external lines of fill strokes"
-msgstr "Deshabilita las líneas externas de los trazos de relleno"
-
-
 msgid "Simplify Shaders"
 msgstr "Simplificar efectos visuales"
-
-
-msgid "Do not apply shader fx"
-msgstr "No aplicar efectos visuales"
 
 
 msgid "Layers Tinting"
 msgstr "Teñido de capas"
 
 
-msgid "Do not display layer tint"
-msgstr "No mostrar el teñido de las capas"
-
-
-msgid "Disable Fill"
-msgstr "Deshabilitar rellenos"
-
-
-msgid "Disable fill strokes in the viewport"
-msgstr "Deshabilita los trazos de relleno en las vistas"
-
-
 msgid "Disable Modifiers"
 msgstr "Deshabilitar modificadores"
-
-
-msgid "Do not apply modifiers in the viewport"
-msgstr "No aplicar los modificadores en las vistas"
 
 
 msgid "Simplify Subdivision"
@@ -72831,10 +73110,6 @@ msgstr "Agrega la extensión del formato de archivo al nombre del archivo proces
 
 msgid "Draw stylized strokes using Freestyle"
 msgstr "Dibuja trazos estilizados usando Freestyle"
-
-
-msgid "Full Sample"
-msgstr "Muestreo completo"
 
 
 msgid "Save for every anti-aliasing sample the entire RenderLayer results (this solves anti-aliasing issues with compositing)"
@@ -73713,10 +73988,6 @@ msgid "Settings for particle fluids physics"
 msgstr "Opciones de dinámicas de fluidos de partículas"
 
 
-msgid "Buoyancy"
-msgstr "Flotabilidad"
-
-
 msgid "Artificial buoyancy force in negative gravity direction based on pressure differences inside the fluid"
 msgstr "Fuerza artificial de flotabilidad en dirección negativa con respecto a la gravedad basado en las diferencias de presión dentro del fluido"
 
@@ -73727,6 +73998,10 @@ msgstr "Radio de interacción"
 
 msgid "Fluid interaction radius"
 msgstr "Radio de interacción del fluido"
+
+
+msgid "Viscosity"
+msgstr "Viscosidad"
 
 
 msgid "Linear viscosity"
@@ -74765,6 +75040,10 @@ msgstr "Convierte la entrada a datos con coma decimal"
 
 msgid "Use a preview proxy and/or timecode index for this strip"
 msgstr "Usar un reemplazo de previsualización y/o un índice de código de tiempo para este clip"
+
+
+msgid "Reverse Frames"
+msgstr "Invertir fotogramas"
 
 
 msgid "Reverse frame order"
@@ -76168,662 +76447,6 @@ msgid "Point in a shape key"
 msgstr "Punto de una Forma clave"
 
 
-msgid "Smoke collision settings"
-msgstr "Opciones de colisión del humo"
-
-
-msgid "Collision Type"
-msgstr "Tipo de colisión"
-
-
-msgid "Collision type"
-msgstr "Tipo de colisión"
-
-
-msgid "Static"
-msgstr "Estático"
-
-
-msgid "Non moving obstacle"
-msgstr "Obstáculo inmóvil"
-
-
-msgid "Rigid"
-msgstr "Rígido"
-
-
-msgid "Rigid obstacle"
-msgstr "Obstáculo rígido"
-
-
-msgid "Animated"
-msgstr "Animado"
-
-
-msgid "Animated obstacle"
-msgstr "Obstáculo animado"
-
-
-msgid "Smoke domain settings"
-msgstr "Opciones de dominio del humo"
-
-
-msgid "Margin added around fluid to minimize boundary interference"
-msgstr "Margen agregado alrededor del fluido para minimizar la interferencia de los límites"
-
-
-msgid "Maximum amount of fluid cell can contain before it is considered empty"
-msgstr "Cantidad máxima de fluido que puede contener la celda antes de ser considerada vacía"
-
-
-msgid "Additional"
-msgstr "Adicionales"
-
-
-msgid "Maximum number of additional cells"
-msgstr "Cantidad máxima de celdas adicionales"
-
-
-msgid "How much density affects smoke motion (higher value results in faster rising smoke)"
-msgstr "Qué tanto afecta la densidad al movimiento del humo (valores mayores logran un humo de ascenso más rápido)"
-
-
-msgid "Amplification"
-msgstr "Amplificación"
-
-
-msgid "Enhance the resolution of smoke by this factor using noise"
-msgstr "Mejora la resolución del humo por este factor usando ruido"
-
-
-msgid "Slice the whole domain object"
-msgstr "Rebanar el objeto de dominio por completo"
-
-
-msgid "Perform a single slice of the domain object"
-msgstr "Rebanar el objeto de dominio una única vez"
-
-
-msgid "Heat"
-msgstr "Calor"
-
-
-msgid "How much heat affects smoke motion (higher value results in faster rising smoke)"
-msgstr "Qué tanto afecta el calor al movimiento del humo (valores mayores logran un humo de ascenso más rápido)"
-
-
-msgid "Speed of the burning reaction (use larger values for smaller flame)"
-msgstr "Velocidad de la reacción combustible (usar valores mayores para una llama más pequeña)"
-
-
-msgid "Select the file format to be used for caching"
-msgstr "Seleccionar el formato de archivo a ser usado para el caché"
-
-
-msgid "Blender specific point cache file format"
-msgstr "Formato de archivo de caché de puntos específico de Blender"
-
-
-msgid "OpenVDB"
-msgstr "OpenVDB"
-
-
-msgid "OpenVDB file format"
-msgstr "Formato de archivo OpenVDB"
-
-
-msgid "Cell Size"
-msgstr "Tamaño de celdas"
-
-
-msgid "Value under which voxels are considered empty space to optimize caching and rendering"
-msgstr "Valor por debajo del cual los vóxeles son considerados como un espacio vacío, para optimizar la generación de cachés y el procesamiento"
-
-
-msgid "Field"
-msgstr "Campo"
-
-
-msgid "Simulation field to color map"
-msgstr "Campo de simulación a mapa de color"
-
-
-msgid "Red component of the color field"
-msgstr "Componente rojo del campo de color"
-
-
-msgid "Green component of the color field"
-msgstr "Componente verde del campo de color"
-
-
-msgid "Blue component of the color field"
-msgstr "Componente azul del campo de color"
-
-
-msgid "Quantity of soot in the fluid"
-msgstr "Cantidad de hollín en el fluido"
-
-
-msgid "Flame"
-msgstr "Llama"
-
-
-msgid "Flame field"
-msgstr "Campo de llamas"
-
-
-msgid "Fuel"
-msgstr "Combustible"
-
-
-msgid "Fuel field"
-msgstr "Campo de combustible"
-
-
-msgid "Temperature of the fluid"
-msgstr "Temperatura del fluido"
-
-
-msgid "X Velocity"
-msgstr "Velocidad en X"
-
-
-msgid "X component of the velocity field"
-msgstr "Componente X del campo de velocidad"
-
-
-msgid "Y Velocity"
-msgstr "Velocidad en Y"
-
-
-msgid "Y component of the velocity field"
-msgstr "Componente Y del campo de velocidad"
-
-
-msgid "Z Velocity"
-msgstr "Velocidad en Z"
-
-
-msgid "Z component of the velocity field"
-msgstr "Componente Z del campo de velocidad"
-
-
-msgid "Limit collisions to this collection"
-msgstr "Limita las colisiones a esta colección"
-
-
-msgid "Border Collisions"
-msgstr "Colisión con bordes"
-
-
-msgid "Select which domain border will be treated as collision object"
-msgstr "Selecciona qué borde de dominio será tratado como objeto de colisión"
-
-
-msgid "Smoke doesn't collide with any border"
-msgstr "El humo no colisiona con ningún borde"
-
-
-msgid "Vertically Open"
-msgstr "Abrir verticalmente"
-
-
-msgid "Smoke doesn't collide with top and bottom sides"
-msgstr "El humo no colisiona con los bordes superior e inferior"
-
-
-msgid "Collide All"
-msgstr "Colisionar con todo"
-
-
-msgid "Smoke collides with every side"
-msgstr "El humo colisiona con todos los bordes"
-
-
-msgid "Smoke color grid"
-msgstr "Cuadrícula de color del humo"
-
-
-msgid "Data Depth"
-msgstr "Profundidad de datos"
-
-
-msgid "Bit depth for writing all scalar (including vector) lower values reduce file size"
-msgstr "Profundidad de bits a ser usada para guardar todos los valores escalares (incluyendo a los vectoriales), valores más bajos reducen el tamaño del archivo"
-
-
-msgid "Float (Half)"
-msgstr "Decimal (mitad)"
-
-
-msgid "Half float (16 bit data)"
-msgstr "Decimal a mitad de resolución (datos de 16 bits)"
-
-
-msgid "Float (Full)"
-msgstr "Decimal (completo)"
-
-
-msgid "Full float (32 bit data)"
-msgstr "Decimal a resolución completa (datos de 32 bits)"
-
-
-msgid "Density Grid"
-msgstr "Cuadrícula de densidad"
-
-
-msgid "Smoke density grid"
-msgstr "Cuadrícula de densidad del humo"
-
-
-msgid "Interpolation method to use for smoke/fire volumes in solid mode"
-msgstr "Método de interpolación a usar para volúmenes de humo o fuego en modo sólido"
-
-
-msgid "Thickness of smoke drawing in the viewport"
-msgstr "Grosor de dibujo del humo en las vistas"
-
-
-msgid "Dissolve Speed"
-msgstr "Velocidad de disolución"
-
-
-msgid "res"
-msgstr "res"
-
-
-msgid "Smoke Grid Resolution"
-msgstr "Resolución de la cuadrícula del humo"
-
-
-msgid "Flame Grid"
-msgstr "Cuadrícula de llamas"
-
-
-msgid "Smoke flame grid"
-msgstr "Cuadrícula de llamas"
-
-
-msgid "Ignition"
-msgstr "Ignición"
-
-
-msgid "Minimum temperature of flames"
-msgstr "Temperatura mínima de las llamas"
-
-
-msgid "Maximum temperature of flames"
-msgstr "Temperatura máxima de las llamas"
-
-
-msgid "Amount of smoke created by burning fuel"
-msgstr "Cantidad de humo creado al quemar combustible"
-
-
-msgid "Smoke Color"
-msgstr "Color del humo"
-
-
-msgid "Color of smoke emitted from burning fuel"
-msgstr "Color del humo emitido desde el combustible ardiente"
-
-
-msgid "Vorticity"
-msgstr "Vorticidad"
-
-
-msgid "Additional vorticity for the flames"
-msgstr "Vorticidad adicional de las llamas"
-
-
-msgid "Fluid Collection"
-msgstr "Colección de fluidos"
-
-
-msgid "Limit fluid objects to this collection"
-msgstr "Limita los objetos fluidos a los de esta colección"
-
-
-msgid "Heat Grid"
-msgstr "Cuadrícula de calor"
-
-
-msgid "Smoke heat grid"
-msgstr "Cuadrícula de calor del humo"
-
-
-msgid "Method for sampling the high resolution flow"
-msgstr "Método de muestrear el flujo de alta resolución"
-
-
-msgid "Noise Method"
-msgstr "Método del ruido"
-
-
-msgid "Noise method which is used for creating the high resolution"
-msgstr "Método del ruido que será usado para crear la alta resolución"
-
-
-msgid "Wavelet"
-msgstr "Óndula"
-
-
-msgid "FFT"
-msgstr "TRF"
-
-
-msgid "Zip"
-msgstr "Zip"
-
-
-msgid "Blosc"
-msgstr "Blosc"
-
-
-msgid "Multithreaded compression, similar in size and quality as 'Zip'"
-msgstr "Compresión que usa múltiples hilos, similar en tamaño y calidad a la 'Zip'"
-
-
-msgid "Do not use any compression"
-msgstr "No usar ninguna compresión"
-
-
-msgid "Max Res"
-msgstr "Res. máx"
-
-
-msgid "Maximal resolution used in the fluid domain"
-msgstr "Resolución máxima uasada en el dominio del fluido"
-
-
-msgid "Show High Resolution"
-msgstr "Mostrar alta resolución"
-
-
-msgid "Show high resolution (using amplification)"
-msgstr "Mostrar alta resolución (usando amplificación)"
-
-
-msgid "Display Velocity"
-msgstr "Mostrar velocidad"
-
-
-msgid "Toggle visualization of the velocity field as needles"
-msgstr "Permite alternar la visualización del campo de velocidad en forma de agujas"
-
-
-msgid "Adjust slice direction according to the view direction"
-msgstr "Permite ajustar la dirección del rebanado a la dirección de visualización"
-
-
-msgid "Slice along the X axis"
-msgstr "Rebanar a lo largo del eje X"
-
-
-msgid "Slice along the Y axis"
-msgstr "Rebanar a lo largo del eje Y"
-
-
-msgid "Slice along the Z axis"
-msgstr "Rebanar a lo largo del eje Z"
-
-
-msgid "Position of the slice"
-msgstr "Posición de la rebanada"
-
-
-msgid "View Method"
-msgstr "Método de visualización"
-
-
-msgid "How to slice the volume for viewport rendering"
-msgstr "Define cómo rebanar el volumen para su visualización en las vistas"
-
-
-msgid "Slice volume parallel to the view plane"
-msgstr "Rebanar el volumen de forma paralela al plano de visualización"
-
-
-msgid "Slice volume parallel to the major axis"
-msgstr "Rebanar el volumen de forma paralela al eje principal"
-
-
-msgid "Slice Per Voxel"
-msgstr "Rebanadas por vóxel"
-
-
-msgid "How many slices per voxel should be generated"
-msgstr "Cuántas rebanadas por vóxel deberán ser generadas"
-
-
-msgid "p0"
-msgstr "p0"
-
-
-msgid "Start point"
-msgstr "Punto de inicio"
-
-
-msgid "Strength of noise"
-msgstr "Intensidad del ruido"
-
-
-msgid "Temperature Grid"
-msgstr "Cuadrícula de temperatura"
-
-
-msgid "Smoke temperature grid, range 0..1 represents 0..1000K"
-msgstr "Cuadrícula de temperatura del humo, el rango de 0 a 1 representa de 0 a 1000K"
-
-
-msgid "Adjust simulation speed"
-msgstr "Ajusta la velocidad de la simulación"
-
-
-msgid "Adapt simulation resolution and size to fluid"
-msgstr "Adapta la resolución y el tamaño de la simulación al fluido"
-
-
-msgid "Render a simulation field while mapping its voxels values to the colors of a ramp"
-msgstr "Procesa un campo de simulación mapeando los valores de sus vóxeles a colores de una rampa"
-
-
-msgid "Dissolve Smoke"
-msgstr "Disolver el humo"
-
-
-msgid "Enable smoke to disappear over time"
-msgstr "Habilita la desaparición del humo con el tiempo"
-
-
-msgid "Logarithmic Dissolve"
-msgstr "Disolución logarítmica"
-
-
-msgid "Using 1/x "
-msgstr "Se usará 1/x "
-
-
-msgid "High Res"
-msgstr "Alta res"
-
-
-msgid "Enable high resolution (using amplification)"
-msgstr "Habilita alta resolución (usando amplificación)"
-
-
-msgid "Needle"
-msgstr "Agujas"
-
-
-msgid "Display vectors as needles"
-msgstr "Mostrar los vectores como agujas"
-
-
-msgid "Streamlines"
-msgstr "Líneas de flujo"
-
-
-msgid "Display vectors as streamlines"
-msgstr "Mostrar los vectores como líneas de flujo"
-
-
-msgid "Multiplier for scaling the vectors"
-msgstr "Multiplicador para la escala de los vectores"
-
-
-msgid "Velocity Grid"
-msgstr "Cuadrícula de velocidad"
-
-
-msgid "Smoke velocity grid"
-msgstr "Cuadrícula de velocidad del humo"
-
-
-msgid "Amount of turbulence/rotation in fluid"
-msgstr "Cantidad de turbulencia o rotación en el fluido"
-
-
-msgid "Smoke flow settings"
-msgstr "Opciones de flujo de humo"
-
-
-msgid "Name of vertex group which determines surface emission rate"
-msgstr "Nombre del grupo de vértices que determina la frecuencia de emisión de la superficie"
-
-
-msgid "Flame Rate"
-msgstr "Frecuencia de llamas"
-
-
-msgid "Texture that controls emission strength"
-msgstr "Textura que controla la intensidad de la emisión"
-
-
-msgid "Particle size in simulation cells"
-msgstr "Tamaño de las partículas en celdas de la simulación"
-
-
-msgid "Color of smoke"
-msgstr "Color del humo"
-
-
-msgid "Change how smoke is emitted"
-msgstr "Cambia como es emitido el humo"
-
-
-msgid "Emit smoke from particles"
-msgstr "Emite humo desde partículas"
-
-
-msgid "Emit smoke from mesh surface or volume"
-msgstr "Emite el humo desde la superficie o el volumen de una malla"
-
-
-msgid "Flow Type"
-msgstr "Tipo de flujo"
-
-
-msgid "Change how flow affects the simulation"
-msgstr "Cambia cómo afecta el flujo a la simulación"
-
-
-msgid "Delete smoke from simulation"
-msgstr "Borra el humo de la simulación"
-
-
-msgid "Add smoke"
-msgstr "Agrega humo"
-
-
-msgid "Fire + Smoke"
-msgstr "Fuego + Humo"
-
-
-msgid "Add fire and smoke"
-msgstr "Agrega fuego y humo"
-
-
-msgid "Add fire"
-msgstr "Agrega fuego"
-
-
-msgid "Number of additional samples to take between frames to improve quality of fast moving flows"
-msgstr "Cantidad de muestras adicionales a tomar entre fotogramas para mejorar la calidad en flujos de movmiento rápido"
-
-
-msgid "Maximum distance from mesh surface to emit smoke"
-msgstr "Distancia máxima desde la superficie de la malla para emitir humo"
-
-
-msgid "Temp. Diff."
-msgstr "Dif. temperatura"
-
-
-msgid "Temperature difference to ambient temperature"
-msgstr "Diferencia de temperatura con la temperatura ambiente"
-
-
-msgid "Texture mapping type"
-msgstr "Tipo de mapeo de texturas"
-
-
-msgid "Generated coordinates centered to flow object"
-msgstr "Coordenadas generadas centradas en el objeto del flujo"
-
-
-msgid "Use UV layer for texture coordinates"
-msgstr "Usar capa de UV como coordenadas de texturizado"
-
-
-msgid "Z-offset of texture mapping"
-msgstr "Desplazamiento Z del mapeo de texturas"
-
-
-msgid "Size of texture mapping"
-msgstr "Tamaño de mapeo de texturas"
-
-
-msgid "Absolute Density"
-msgstr "Densidad absoluta"
-
-
-msgid "Only allow given density value in emitter area"
-msgstr "Sólo permitir el valor de densidad indicado en el área del emisor"
-
-
-msgid "Smoke has some initial velocity when it is emitted"
-msgstr "El humo tiene cierta velocidad inicial al ser emitido"
-
-
-msgid "Set Size"
-msgstr "Definir tamaño"
-
-
-msgid "Set particle size in simulation cells or use nearest cell"
-msgstr "Define el tamaño de las partículas en celdas de la simulación o usa la celda más cercana"
-
-
-msgid "Use a texture to control emission strength"
-msgstr "Usar una textura para controlar la intensidad de la emisión"
-
-
-msgid "Multiplier of source velocity passed to smoke"
-msgstr "Multiplicador de la velocidad original proporcionada al humo"
-
-
-msgid "Amount of normal directional velocity"
-msgstr "Cantidad de velocidad direccional normal"
-
-
-msgid "Amount of random velocity"
-msgstr "Cantidad de velocidad aleatoria"
-
-
-msgid "Factor for smoke emitted from inside the mesh volume"
-msgstr "Factor de humo emitido desde el interior del volumen de la malla"
-
-
 msgid "Soft body simulation settings for an object"
 msgstr "Opciones de simulación de cuerpos blandos del objeto"
 
@@ -76882,6 +76505,10 @@ msgstr "Obstrucción"
 
 msgid "'Viscosity' inside collision target"
 msgstr "'Viscosidad' dentro del objetivo de colisión"
+
+
+msgid "Collision Type"
+msgstr "Tipo de colisión"
 
 
 msgid "Choose Collision Type"
@@ -79758,10 +79385,6 @@ msgid "Has Texture Angle Source"
 msgstr "Tiene origen de ángulo de texturizado"
 
 
-msgid "Tiled"
-msgstr "Repetido"
-
-
 msgid "Stencil"
 msgstr "Esténcil"
 
@@ -80594,8 +80217,16 @@ msgid "Active Vert/Edge/Face"
 msgstr "Vért, borde o cara activos"
 
 
+msgid "Face Orientation Back"
+msgstr "Orientación de cara Trasera"
+
+
 msgid "Face Dot Selected"
 msgstr "Punto cara seleccionado"
+
+
+msgid "Face Orientation Front"
+msgstr "Orientación de cara Frontal"
 
 
 msgid "Face Selected"
@@ -81530,6 +81161,10 @@ msgid "Theme settings for widget state colors"
 msgstr "Opciones de tema para los colores de estado de los controles"
 
 
+msgid "Animated"
+msgstr "Animado"
+
+
 msgid "Animated Selected"
 msgstr "Animado seleccionado"
 
@@ -82249,6 +81884,10 @@ msgstr "Influencia del grupo de vértices"
 
 msgid "Weight to assign in vertex groups"
 msgstr "Influencia a asignar a grupos de vértices"
+
+
+msgid "Action when dragging in the viewport"
+msgstr "Acción al arrastrar en la vista"
 
 
 msgid "Name of the custom transform orientation"
@@ -83023,14 +82662,6 @@ msgid "Opacity for edit vertices"
 msgstr "Opacidad de los vértices al editarlos"
 
 
-msgid "Vertex Paint Opacity"
-msgstr "Opacidad pintura de vértices"
-
-
-msgid "Opacity of the vertex paint mode overlay"
-msgstr "Opacidad del modo de pintura de vértices"
-
-
 msgid "Weight Paint Opacity"
 msgstr "Opacidad pintura de influencias"
 
@@ -83433,6 +83064,10 @@ msgstr "Contiene bloque de datos"
 
 msgid "Tool Mode"
 msgstr "Modo de herramienta"
+
+
+msgid "Fallback"
+msgstr "Retroceso"
 
 
 msgid "Widget"
@@ -84885,10 +84520,6 @@ msgstr "Resultado"
 
 msgid "Select objects to scatter and a target object."
 msgstr "Seleccionar objetos para distribuir y un objeto destino."
-
-
-msgid "Randomness"
-msgstr "Aleatoriedad"
 
 
 msgid "Demo Mode:"
@@ -86374,35 +86005,6 @@ msgid "Delete Frame(s)"
 msgstr "Borrar fotograma(s)"
 
 
-msgid "Edit:"
-msgstr "Editar:"
-
-
-msgctxt "Operator"
-msgid "Arrange Strokes..."
-msgstr "Ordenar trazos..."
-
-
-msgctxt "Operator"
-msgid "Assign Material"
-msgstr "Asignar material"
-
-
-msgctxt "Operator"
-msgid "Adaptive"
-msgstr "Adaptativo"
-
-
-msgctxt "Operator"
-msgid "Trim"
-msgstr "Recortar"
-
-
-msgctxt "Operator"
-msgid "Flip Direction"
-msgstr "Invertir dirección"
-
-
 msgid "Active Layer:      "
 msgstr "Capa activa:      "
 
@@ -86463,44 +86065,6 @@ msgid "Data Source:"
 msgstr "Origen de datos:"
 
 
-msgid "Select:"
-msgstr "Seleccionar:"
-
-
-msgctxt "Operator"
-msgid "Paste by Layer"
-msgstr "Pegar por capa"
-
-
-msgctxt "Operator"
-msgid "Toggle Caps..."
-msgstr "Mayús/minús."
-
-
-msgctxt "Operator"
-msgid "& Copy"
-msgstr "y copiar"
-
-
-msgctxt "Operator"
-msgid "Separate..."
-msgstr "Separar..."
-
-
-msgid "Cleanup:"
-msgstr "Limpiar:"
-
-
-msgctxt "Operator"
-msgid "Reproject Strokes..."
-msgstr "Reproyectar trazos..."
-
-
-msgctxt "Operator"
-msgid "Clean Boundary Strokes..."
-msgstr "Limpiar trazos limítrofes..."
-
-
 msgctxt "Operator"
 msgid "Straight Lines"
 msgstr "Líneas rectas"
@@ -86524,8 +86088,18 @@ msgid "Join Strokes"
 msgstr "Unir trazos"
 
 
+msgctxt "Operator"
+msgid "Flip Direction"
+msgstr "Invertir dirección"
+
+
 msgid "Show Drawing Direction"
 msgstr "Mostrar la dirección de dibujo"
+
+
+msgctxt "Operator"
+msgid "Paste by Layer"
+msgstr "Pegar por capa"
 
 
 msgctxt "Operator"
@@ -86642,12 +86216,14 @@ msgid "Stroke Color"
 msgstr "Color del trazo"
 
 
-msgid "CCW"
-msgstr "Antihorario"
+msgctxt "Operator"
+msgid "Re-key Shape Points"
+msgstr "Recalcular puntos"
 
 
-msgid "CW"
-msgstr "Horario"
+msgctxt "Operator"
+msgid "Reset Feather Animation"
+msgstr "Restablecer animación suavizado"
 
 
 msgid "Parent:"
@@ -86688,11 +86264,6 @@ msgstr "Insertar clave"
 msgctxt "Operator"
 msgid "Clear Key"
 msgstr "Eliminar clave"
-
-
-msgctxt "Operator"
-msgid "Reset Feather Animation"
-msgstr "Restablecer animación suavizado"
 
 
 msgctxt "Operator"
@@ -86819,12 +86390,32 @@ msgid "Pressure Masking"
 msgstr "Máscara de presión"
 
 
-msgid "Gradient Mapping"
-msgstr "Mapeo de gradiente"
+msgid "Front Faces Only"
+msgstr "Sólo caras frontales"
 
 
 msgid "Sample Bias"
 msgstr "Desviación de muestras"
+
+
+msgid "Edge To Edge"
+msgstr "De lado a lado"
+
+
+msgid "Invert to Fill"
+msgstr "Invertir a Rellenar"
+
+
+msgid "Invert to Scrape"
+msgstr "Invertir a Raspar"
+
+
+msgid "Thickness Profile"
+msgstr "Perfil de grosor"
+
+
+msgid "Use Thickness Profile"
+msgstr "Usar perfil de grosor"
 
 
 msgid "Source Clone Slot"
@@ -86839,24 +86430,20 @@ msgid "Source Clone UV Map"
 msgstr "Mapa UV a clonar"
 
 
-msgid "Thickness Profile"
-msgstr "Perfil de grosor"
-
-
-msgid "Use Thickness Profile"
-msgstr "Usar perfil de grosor"
+msgid "Gradient Mapping"
+msgstr "Mapeo de gradiente"
 
 
 msgid "Mask Value"
 msgstr "Valor de máscara"
 
 
-msgid "Fill Options"
-msgstr "Opciones de relleno"
+msgid "CCW"
+msgstr "Antihorario"
 
 
-msgid "Ignore Transparent Strokes"
-msgstr "Ignorar trazos transparentes"
+msgid "CW"
+msgstr "Horario"
 
 
 msgctxt "Operator"
@@ -87068,6 +86655,14 @@ msgid "Air Viscosity"
 msgstr "Viscosidad del aire"
 
 
+msgid "Max Tension"
+msgstr "Tensión máx"
+
+
+msgid "Max Compression"
+msgstr "Compresión máx"
+
+
 msgid "Custom volume"
 msgstr "Volumen personalizado"
 
@@ -87096,14 +86691,6 @@ msgid "Structural Group"
 msgstr "Grupo estructural"
 
 
-msgid "Max Tension"
-msgstr "Tensión máx"
-
-
-msgid "Max Compression"
-msgstr "Compresión máx"
-
-
 msgid "Shear Group"
 msgstr "Grupo inclinación"
 
@@ -87126,10 +86713,6 @@ msgstr "Grupo de contracción"
 
 msgid "Max Shrinking"
 msgstr "Contracción máx"
-
-
-msgid "Tension"
-msgstr "Tensión"
 
 
 msgid "Structural"
@@ -87282,45 +86865,32 @@ msgid "Clumping amount"
 msgstr "Cantidad de mechones"
 
 
-msgctxt "Operator"
-msgid "Bake (Req. Memory: %s)"
-msgstr "Capturar (memoria req.: %s)"
+msgid "Temperature Diff."
+msgstr "Diferencia de temperatura"
 
 
-msgid "Scene Size Meters"
-msgstr "Metros de la escena"
+msgid "Reaction Speed"
+msgstr "Velocidad de reacción"
 
 
-msgid "World Size Meters"
-msgstr "Metros del universo"
+msgid "Temperature Ignition"
+msgstr "Temperatura  Ignición"
 
 
-msgid "Optimization"
-msgstr "Optimización"
+msgid "Add Resolution"
+msgstr "Agregar resolución"
 
 
-msgid "Built without fluids"
-msgstr "Construido sin fluidos"
+msgid "Real World Size"
+msgstr "Tamaño a escala real"
 
 
-msgid "Final Resolution"
-msgstr "Resolución final"
+msgid "Slicing"
+msgstr "Rebanado"
 
 
-msgid "Render Display"
-msgstr "Visible al procesar"
-
-
-msgid "Time Start"
-msgstr "Tiempo inicio"
-
-
-msgid "Bake (Req. Memory: %s)"
-msgstr "Capturar (memoria req.: %s)"
-
-
-msgid "Influence Size"
-msgstr "Tamaño de influencia"
+msgid "Resolution Divisions"
+msgstr "Divisiones de resolución"
 
 
 msgid "Object does not have a Rigid Body"
@@ -87367,32 +86937,8 @@ msgid "Y Lower"
 msgstr "Y Mínimo"
 
 
-msgid "Temperature Diff."
-msgstr "Diferencia de temperatura"
-
-
-msgid "Reaction Speed"
-msgstr "Velocidad de reacción"
-
-
-msgid "Temperature Ignition"
-msgstr "Temperatura  Ignición"
-
-
-msgid "Add Resolution"
-msgstr "Agregar resolución"
-
-
-msgid "Resolution Divisions"
-msgstr "Divisiones de resolución"
-
-
 msgid "Flow Sampling"
 msgstr "Muestreo del flujo"
-
-
-msgid "Slicing"
-msgstr "Rebanado"
 
 
 msgid "Built without Smoke modifier"
@@ -87401,10 +86947,6 @@ msgstr "Construido sin el modificador Humo"
 
 msgid "Empty Space"
 msgstr "Espacio vacío"
-
-
-msgid "Flow Source"
-msgstr "Origen del flujo"
 
 
 msgid "Sampling Subframes"
@@ -87855,11 +87397,6 @@ msgid "Unlock Tracks"
 msgstr "Desbloquear rastros"
 
 
-msgctxt "Operator"
-msgid "Re-key Shape Points"
-msgstr "Recalcular puntos"
-
-
 msgid "Solve error: %.4f"
 msgstr "Error promedio de cálculo: %.4f"
 
@@ -88222,18 +87759,6 @@ msgid "More"
 msgstr "Más"
 
 
-msgid "Unified Size"
-msgstr "Tamaño unificado"
-
-
-msgid "Unified Strength"
-msgstr "Intensidad unificada"
-
-
-msgid "Unified Color"
-msgstr "Color unificado"
-
-
 msgctxt "Operator"
 msgid "New"
 msgstr "Nuevo"
@@ -88256,18 +87781,6 @@ msgstr "Invertir colores de imagen"
 
 msgid "Affect"
 msgstr "Afectar"
-
-
-msgid "Curve Alpha"
-msgstr "Alfa de curva"
-
-
-msgid "Texture Alpha"
-msgstr "Alfa de la textura"
-
-
-msgid "Mask Texture Alpha"
-msgstr "Máscara del alfa de la textura"
 
 
 msgid "Show Same Material"
@@ -88390,10 +87903,6 @@ msgstr "Imagen*"
 
 msgid "Repeat Image"
 msgstr "Repetir imagen"
-
-
-msgid "Edge To Edge"
-msgstr "De lado a lado"
 
 
 msgctxt "Operator"
@@ -89655,26 +89164,6 @@ msgid "Sample Format"
 msgstr "Resolución"
 
 
-msgid "View Name"
-msgstr "Nombre de vista"
-
-
-msgid "Playback FPS"
-msgstr "FPS de reproducción"
-
-
-msgid "3D Viewport Axis"
-msgstr "Ejes de vista 3D"
-
-
-msgid "Grease Pencil Multisampling"
-msgstr "Muestreo múltiple lápiz de cera"
-
-
-msgid "Limit Size"
-msgstr "Limitar tamaño"
-
-
 msgid "Undo Memory Limit"
 msgstr "Límite de memoria deshacer"
 
@@ -89693,6 +89182,26 @@ msgstr "Frecuencia recolección basura"
 
 msgid "Vbo Time Out"
 msgstr "Tiempo de espera VBO"
+
+
+msgid "View Name"
+msgstr "Nombre de vista"
+
+
+msgid "Playback FPS"
+msgstr "FPS de reproducción"
+
+
+msgid "3D Viewport Axis"
+msgstr "Ejes de vista 3D"
+
+
+msgid "Grease Pencil Multisampling"
+msgstr "Muestreo múltiple lápiz de cera"
+
+
+msgid "Limit Size"
+msgstr "Limitar tamaño"
 
 
 msgctxt "Operator"
@@ -89744,6 +89253,22 @@ msgid "Timer (mins)"
 msgstr "Temporizador (min.)"
 
 
+msgid "Double Click Speed"
+msgstr "Velocidad doble clic"
+
+
+msgid "Pan Sensitivity"
+msgstr "Sensibilidad de desplazamiento"
+
+
+msgid "Zoom Method"
+msgstr "Método de zoom"
+
+
+msgid "Invert Wheel Zoom Direction"
+msgstr "Invertir dirección de rueda de ratón"
+
+
 msgid "Pan Options"
 msgstr "Opciones de desplazamiento"
 
@@ -89756,22 +89281,6 @@ msgid "Zoom Options"
 msgstr "Opciones de zoom"
 
 
-msgid "Double Click Speed"
-msgstr "Velocidad doble clic"
-
-
-msgid "Zoom Method"
-msgstr "Método de zoom"
-
-
-msgid "Invert Wheel Zoom Direction"
-msgstr "Invertir dirección de rueda de ratón"
-
-
-msgid "Pan Sensitivity"
-msgstr "Sensibilidad de desplazamiento"
-
-
 msgid "Use Light"
 msgstr "Usar luz"
 
@@ -89779,6 +89288,10 @@ msgstr "Usar luz"
 msgctxt "Operator"
 msgid "Save as Studio light"
 msgstr "Guardar como iluminación de estudio"
+
+
+msgid "Use Tool Fallback"
+msgstr "Usar herramienta de retroceso"
 
 
 msgctxt "Operator"
@@ -89792,6 +89305,14 @@ msgstr "Conjunto de colores d"
 
 msgid "Player"
 msgstr "Reproductor"
+
+
+msgid "Natural Trackpad Direction"
+msgstr "Dirección panel táctil natural"
+
+
+msgid "Invert Mouse Zoom Direction"
+msgstr "Invertir dirección del zoom del ratón"
 
 
 msgid "Orbit Style"
@@ -89808,14 +89329,6 @@ msgstr "Opciones de órbita"
 
 msgid "Fly/Walk Options"
 msgstr "Opciones de volar/transitar"
-
-
-msgid "Natural Trackpad Direction"
-msgstr "Dirección panel táctil natural"
-
-
-msgid "Invert Mouse Zoom Direction"
-msgstr "Invertir dirección del zoom del ratón"
 
 
 msgid "Multiple add-ons with the same name found!"
@@ -90690,6 +90203,16 @@ msgstr "Disolver huesos"
 msgctxt "Operator"
 msgid "Fixed"
 msgstr "Fijo"
+
+
+msgctxt "Operator"
+msgid "Adaptive"
+msgstr "Adaptativo"
+
+
+msgctxt "Operator"
+msgid "Trim"
+msgstr "Recortar"
 
 
 msgctxt "Operator"
@@ -91672,6 +91195,14 @@ msgid "Tile Offset"
 msgstr "Desplazamiento de repeticiones"
 
 
+msgid "Auto Normalize"
+msgstr "Auto normalizar"
+
+
+msgid "Multi-Paint"
+msgstr "Pintura múltiple"
+
+
 msgctxt "Operator"
 msgid "Quick Edit"
 msgstr "Edición rápida"
@@ -91740,24 +91271,8 @@ msgid "Auto-Velocity"
 msgstr "Velocidad automática"
 
 
-msgid "Front Faces Only"
-msgstr "Sólo caras frontales"
-
-
 msgid "No Textures"
 msgstr "Sin texturas"
-
-
-msgid "Magnify"
-msgstr "Aumentar"
-
-
-msgid "Auto Normalize"
-msgstr "Auto normalizar"
-
-
-msgid "Multi-Paint"
-msgstr "Pintura múltiple"
 
 
 msgctxt "Operator"
@@ -91765,12 +91280,8 @@ msgid "Add UVs"
 msgstr "Agregar UV"
 
 
-msgid "Invert to Fill"
-msgstr "Invertir a Rellenar"
-
-
-msgid "Invert to Scrape"
-msgstr "Invertir a Raspar"
+msgid "Ignore Transparent Strokes"
+msgstr "Ignorar trazos transparentes"
 
 
 msgid "Modifier requires original data, bad stack position"
@@ -92121,10 +91632,6 @@ msgstr "No se ha empacado ningún archivo nuevo"
 
 msgid "Unable to pack file, source path '%s' not found"
 msgstr "No es posible empacar el archivo, ruta de origen '%s' no encontrada"
-
-
-msgid "Image '%s' skipped, movies and image sequences not supported"
-msgstr "Imagen '%s' omitida, no se soportan películas ni secuencias de imágenes"
 
 
 msgid "Packed %d file(s)"
@@ -92609,6 +92116,10 @@ msgstr "Composición | Inicializando ejecución"
 
 msgid "Compositing | De-initializing execution"
 msgstr "Composición | Des inicializando ejecución"
+
+
+msgid "Basic"
+msgstr "Básico"
 
 
 msgid "Baking light cache"
@@ -93998,6 +93509,10 @@ msgstr "Menú \"%s\" no encontrado"
 
 msgid "Panel \"%s\" not found"
 msgstr "Panel \"%s\" no encontrado"
+
+
+msgid "Unsupported context"
+msgstr "Contexto no soportado"
 
 
 msgid "Internal error!"
@@ -95664,46 +95179,6 @@ msgid "Copy particle systems to selected: %d done, %d failed"
 msgstr "Copiar los sistemas de partículas al seleccionado: %d hechos, %d fallaron"
 
 
-msgid "There should be only one domain object"
-msgstr "Debería haber sólo un objeto de dominio"
-
-
-msgid "No domain object found"
-msgstr "No se encontró ningún objeto de dominio"
-
-
-msgid "Cannot bake with more than 256 objects"
-msgstr "No es posible capturar con más de 256 objetos"
-
-
-msgid "No fluid input objects in the scene"
-msgstr "Ningún objeto de origen de fluido en la escena"
-
-
-msgid "No frames to export (check your animation range settings)"
-msgstr "No hay fotogramas qué exportar (comprobar las opciones de rango de animación)"
-
-
-msgid "Invalid object matrix"
-msgstr "Matriz de objeto inválida"
-
-
-msgid "Fluidsim: empty cache path, reset to default '%s'"
-msgstr "SimFluidos: ruta de caché vacía, restableciéndola a la predefinida: '%s'"
-
-
-msgid "Fluidsim: could not create cache directory '%s', reset to default '%s'"
-msgstr "SimFluidos: no fue posible crear el directorio de caché '%s', restableciéndolo al predefinido: '%s'"
-
-
-msgid "Fluidsim: cache directory '%s' is not writable, reset to default '%s'"
-msgstr "SimFluidos: el directorio de caché '%s' no es escribible, restableciéndolo al predefinido: '%s'"
-
-
-msgid "Fluidsim: could not use default cache directory '%s', please define a valid cache path manually"
-msgstr "SimFluidos: no fue posible usar el directorio de caché predefinido '%s', por favor definir manualmente una ruta de caché válida"
-
-
 msgid "No Rigid Body World to add Rigid Body Constraint to"
 msgstr "Ningún entorno de cuerpos rígidos donde agregar la restricción de cuerpo rígido"
 
@@ -96205,12 +95680,12 @@ msgid "Packed MultiLayer files cannot be painted: %s"
 msgstr "No es posible pintar los archivos multicapa empacados: %s"
 
 
-msgid "Image requires 4 color channels to paint"
-msgstr "La imagen para pintar requiere 4 canales"
-
-
 msgid "Packed MultiLayer files cannot be painted"
 msgstr "No es posible pintar archivos multicapa empacados"
+
+
+msgid "Image requires 4 color channels to paint"
+msgstr "La imagen para pintar requiere 4 canales"
 
 
 msgid "Untitled"
@@ -99226,6 +98701,22 @@ msgstr "No es posible agregar el clip (la pista no tiene suficiente espacio para
 
 msgid "NLA strip '%s' not found in track '%s'"
 msgstr "Clip de ANL '%s' no encontrado en la pista '%s'"
+
+
+msgid "Functions"
+msgstr "Funciones"
+
+
+msgid "Comparison"
+msgstr "Comparación"
+
+
+msgid "Trigonometric"
+msgstr "Trigonométrica"
+
+
+msgid "Conversion"
+msgstr "Conversión"
 
 
 msgid "Same input/output direction of sockets"
