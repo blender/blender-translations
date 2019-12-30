@@ -1,9 +1,9 @@
 
 msgid ""
 msgstr ""
-"Project-Id-Version: Blender 2.82 (sub 6) (b'708045eb40b9')\n"
+"Project-Id-Version: Blender 2.82 (sub 6) (b'79476a9c0ab9')\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-12-23 12:39:57\n"
+"POT-Creation-Date: 2019-12-30 09:57:37\n"
 "PO-Revision-Date: \n"
 "Last-Translator: Gabriel Gazzan <gabcorreo@gmail.com>\n"
 "Language-Team: Español <gabcorreo@gmail.com>\n"
@@ -4022,6 +4022,30 @@ msgid "Internal Friction"
 msgstr "Fricción interna"
 
 
+msgid "Internal Spring Max Diversion"
+msgstr "Desviación máx. tensor interno"
+
+
+msgid "How much the rays used to connect the internal points can diverge from the vertex normal"
+msgstr "Qué tanto podrán divergir los rayos que conectan los puntos interiores con respecto a la normal del vértice"
+
+
+msgid "Internal Spring Max Length"
+msgstr "Longitud máx. tensor interno"
+
+
+msgid "The maximum length an internal spring can have during creation. If the distance between internal points is greater than this, no internal spring will be created between these points. A length of zero means that there is no length limit"
+msgstr "La longitud máxima que podrán tener los tensores internos al ser creados. Si la distancia entre los puntos interiores fuera mayor a esta, no se crearán tensores entre esos puntos. Una longitud de cero significará la ausencia de límites"
+
+
+msgid "Check Internal Spring Normals"
+msgstr "Comprobar normales tensores internos"
+
+
+msgid "Require the points the internal springs connect to have opposite normal directions"
+msgstr "Requiere que los puntos conectados por tensores internos tengan sus normales apuntando en direcciones opuestas"
+
+
 msgid "Tension Stiffness"
 msgstr "Resistencia al estiramiento"
 
@@ -4162,6 +4186,14 @@ msgid "Make simulation respect deformations in the base mesh"
 msgstr "Permite hacer que la simulación respete la deformación de la malla de base"
 
 
+msgid "Create Internal Springs"
+msgstr "Crear tensores internos"
+
+
+msgid "Simulate an internal volume structure by creating springs connecting the opposite sides of the mesh"
+msgstr "Permite simular la estructura interna de un volumen mediante la creación de tensores que conectarán los lados opuestos de la malla"
+
+
 msgid "Simulate pressure inside a closed cloth mesh"
 msgstr "Simula presión en el interior de una malla cerrada de ropa"
 
@@ -4188,6 +4220,14 @@ msgstr "Grupo vértices resistencia flexión"
 
 msgid "Vertex group for fine control over bending stiffness"
 msgstr "Grupo de vértices para un control fino de la resistencia a la flexión"
+
+
+msgid "Internal Springs Vertex Group"
+msgstr "Grupo vértices tensores internos"
+
+
+msgid "Vertex group for fine control over the internal spring stiffness"
+msgstr "Grupo de vértices para un control fino de la rigidez de los tensores internos"
 
 
 msgid "Mass Vertex Group"
@@ -5211,6 +5251,18 @@ msgid "Minimum value for target channel range"
 msgstr "Valor mínimo del rango del canal del objetivo"
 
 
+msgid "Mix Mode"
+msgstr "Modo de mezcla"
+
+
+msgid "Before Original"
+msgstr "Antes que la original"
+
+
+msgid "After Original"
+msgstr "Después de la original"
+
+
 msgid "Sub-Target"
 msgstr "Sub objetivo"
 
@@ -5623,10 +5675,6 @@ msgid "Invert the Z rotation"
 msgstr "Invierte la rotación Z"
 
 
-msgid "Mix Mode"
-msgstr "Modo de mezcla"
-
-
 msgid "Specify how the copied and existing rotations are combined"
 msgstr "Permite especificar cómo se combinarán las rotaciones copiadas con las existentes"
 
@@ -5639,16 +5687,8 @@ msgid "Add euler component values together"
 msgstr "Adicionar los valores de los componentes Euler entre sí"
 
 
-msgid "Before Original"
-msgstr "Antes que la original"
-
-
 msgid "Apply copied rotation before original, as if the constraint target is a parent"
 msgstr "Aplica la rotación copiada antes que la original, como si el objetivo de la restricción fuera el superior"
-
-
-msgid "After Original"
-msgstr "Después de la original"
 
 
 msgid "Apply copied rotation after original, as if the constraint target is a child"
@@ -11360,6 +11400,10 @@ msgid "Domain Settings"
 msgstr "Opciones dominio"
 
 
+msgid "Fluid domain settings"
+msgstr "Opciones del dominio del fluido"
+
+
 msgid "Margin added around fluid to minimize boundary interference"
 msgstr "Margen agregado alrededor del fluido para minimizar la interferencia de los límites"
 
@@ -11408,6 +11452,18 @@ msgid "Speed of the burning reaction (use larger values for smaller flame)"
 msgstr "Velocidad de la reacción combustible (usar valores mayores para una llama más pequeña)"
 
 
+msgid "Select the file format to be used for caching volumetric data"
+msgstr "Seleccionar el formato de archivo a ser usado para el caché de datos volumétricos"
+
+
+msgid "Cache directory"
+msgstr "Directorio del caché"
+
+
+msgid "Directory that contains fluid cache files"
+msgstr "Directorio que contendrá los archivos de caché de fluidos"
+
+
 msgid "End"
 msgstr "Fin"
 
@@ -11424,12 +11480,56 @@ msgid "Frame on which the simulation starts"
 msgstr "Fotograma donde comienza la simulación"
 
 
+msgid "Select the file format to be used for caching surface data"
+msgstr "Seleccionar el formato de archivo a ser usado para el caché de los datos de superficie"
+
+
+msgid "Select the file format to be used for caching noise data"
+msgstr "Seleccionar el formato de archivo a ser usado para el caché de los datos de ruido"
+
+
+msgid "Select the file format to be used for caching particle data"
+msgstr "Seleccionar el formato de archivo a ser usado para el caché de los datos de partículas"
+
+
+msgid "Change the cache type of the simulation"
+msgstr "Cambia el tipo de caché de la simulación"
+
+
+msgid "Replay"
+msgstr "Reproducción"
+
+
+msgid "Use the timeline to bake the scene. Pausing and resuming possible."
+msgstr "Usa la línea de tiempo para capturar la escena, siendo posible pausar y retomar la captura."
+
+
+msgid "Modular"
+msgstr "Modular"
+
+
+msgid "Bake every stage of the simulation on its own. Can pause and resume bake jobs."
+msgstr "Captura cada paso de la simulación de forma independiente, siendo posible pausar y retomar su captura."
+
+
 msgid "Final"
 msgstr "Final"
 
 
+msgid "Bake the entire simulation at once."
+msgstr "Captura la simulación completa."
+
+
 msgid "Cell Size"
 msgstr "Tamaño de celdas"
+
+
+msgid "CFL"
+msgstr "CFL"
+
+
+msgid "Maximal velocity per cell (higher value results in larger timesteps)"
+msgstr "Velocidad máxima por celda (valores mayores resultarán en intervalos de tiempo mayores)"
 
 
 msgid "Clipping"
@@ -11596,6 +11696,46 @@ msgid "Smoke Grid Resolution"
 msgstr "Resolución de la cuadrícula del humo"
 
 
+msgid "Meters"
+msgstr "Metros"
+
+
+msgid "Domain size in meters (longest domain side)"
+msgstr "Tamaño del dominio en metros (de su lado mayor)"
+
+
+msgid "Domain Type"
+msgstr "Tipo de dominio"
+
+
+msgid "Change domain type of the simulation"
+msgstr "Permite cambiar el tipo de dominio de la simulación"
+
+
+msgid "Gas"
+msgstr "Gas"
+
+
+msgid "Create domain for gases"
+msgstr "Crea un dominio para gases"
+
+
+msgid "Liquid"
+msgstr "Líquido"
+
+
+msgid "Create domain for liquids"
+msgstr "Crea un dominio para líquidos"
+
+
+msgid "Export Fluidflow Script"
+msgstr "Exportar script de Fluidflow"
+
+
+msgid "Generate and export Fluidflow script from current domain settings during bake. This is only needed if you plan to analyse the cache (e.g. view grids, velocity vectors, particles) in Fluidflow directly (outside of Blender) after baking the simulation"
+msgstr "Permite generar y exportar un script de Fluidflow a partir de las opciones del dominio actual, durante su captura. Esto sólo será necesario si se planea analizar el caché (p.ej: ver sus cuadrículas, vectores de velocidad, partículas, etc.) directamente en Fluidflow (aplicación externa a Blender) luego de capturar la simulación"
+
+
 msgid "Flame Grid"
 msgstr "Cuadrícula de llamas"
 
@@ -11640,6 +11780,14 @@ msgid "Additional vorticity for the flames"
 msgstr "Vorticidad adicional de las llamas"
 
 
+msgid "FLIP Ratio"
+msgstr "Tasa de FLIP"
+
+
+msgid "PIC/FLIP Ratio. A value of 1.0 will result in a completely FLIP based simulation. Use a lower value for simulations which should produce smaller splashes"
+msgstr "Tasa de PIC/FLIP. Un valor de 1.0 producirá una simulación completamente basada en FLIP. Usar un valor menor para obtener simulaciones que deberían producir menos salpicaduras"
+
+
 msgid "Fluid Collection"
 msgstr "Colección de fluidos"
 
@@ -11648,12 +11796,64 @@ msgid "Limit fluid objects to this collection"
 msgstr "Limita los objetos fluidos a los de esta colección"
 
 
+msgid "Force Collection"
+msgstr "Colección de fuerzas"
+
+
+msgid "Limit forces to this collection"
+msgstr "Limitar las fuerzas a las de esta colección"
+
+
+msgid "Obstacle-Fluid Threshold "
+msgstr "Umbral obstáculo-fluido"
+
+
+msgid "Determines how much fluid is allowed in an obstacle cell (higher values will tag a boundary cell as an obstacle easier and reduce the boundary smoothening effect)"
+msgstr "Determina la cantidad de fluido permitido en una celda de obstáculo (valores altos permitirán etiquetar más fácilmente a una celda limítrofe como un obstáculo y reducir el efecto de suavizado en los límites del fluido)"
+
+
 msgid "Gravity in X, Y and Z direction"
 msgstr "Gravedad en las direcciones X, Y y Z"
 
 
+msgid "Guiding weight (higher value results in greater lag)"
+msgstr "Influencia de guía (valores más altos producirán un mayor retardo)"
+
+
+msgid "Guiding size (higher value results in larger vortices)"
+msgstr "Tamaño de guía (valores más altos producirán más vórtices)"
+
+
+msgid "Use velocities from this object for the guiding effect (object needs to have fluid modifier and be of type domain))"
+msgstr "Permite usar velocidades de este objeto para el efecto de guía (el objeto deberá contener un modificador de fluido y ser éste de tipo dominio)"
+
+
+msgid "Guiding source"
+msgstr "Origen de guías"
+
+
+msgid "Choose where to get guiding velocities from"
+msgstr "Permite escoger de dónde obtener guías de velocidad"
+
+
 msgid "Domain"
 msgstr "Dominio"
+
+
+msgid "Use a fluid domain for guiding (domain needs to be baked already so that velocities can be extracted but can be of any type)"
+msgstr "Permite usar el dominio de un fluido como guía (el dominio deberá haber sido previamente capturado, de manera que sus velocidades puedan ser extraídas; sin embargo podrá ser de cualquier tipo)"
+
+
+msgid "Effector"
+msgstr "Efector"
+
+
+msgid "Use guiding (effector) objects to create fluid guiding (guiding objects should be animated and baked once set up completely)"
+msgstr "Permite usar objetos (efectores) para crear guías de fluido (los objetos-guía deberían estar animados y capturados una vez completamente definidos)"
+
+
+msgid "Guiding velocity factor (higher value results in bigger guiding velocities)"
+msgstr "Factor de guía de velocidad (valores más altos producirán velocidades de guía mayores)"
 
 
 msgid "Heat Grid"
@@ -11680,12 +11880,60 @@ msgid "Nearest"
 msgstr "Más cercano"
 
 
+msgid "Lower Concavity"
+msgstr "Concavidad baja"
+
+
+msgid "Lower mesh concavity bound (high values tend to smoothen and fill out concave regions)"
+msgstr "Límite inferior de concavidad de la malla (valores más altos tenderán a suavizar y rellenar las regiones cóncavas)"
+
+
+msgid "Upper Concavity"
+msgstr "Concavidad alta"
+
+
+msgid "Upper mesh concavity bound (high values tend to smoothen and fill out concave regions)"
+msgstr "Límite superior de concavidad de la malla (valores más altos tenderán a suavizar y rellenar las regiones cóncavas)"
+
+
+msgid "Mesh generator"
+msgstr "Generador de malla"
+
+
 msgid "Preview"
 msgstr "Previsualización"
 
 
 msgid "Radius"
 msgstr "Radio"
+
+
+msgid "Particle radius factor (higher value results in larger (meshed) particles)"
+msgstr "Factor del radio de las partículas (valores más altos producirán partículas (malladas) más grandes)"
+
+
+msgid "Mesh scale"
+msgstr "Escala de la malla"
+
+
+msgid "Scale underlying mesh grids by this factor. Mesh grids have size factor times base resolution"
+msgstr "Escala las cuadrículas de las mallas subyacentes según este factor. Las cuadrículas de la malla tendrán un tamaño igual a la resolución base multiplicada por este factor"
+
+
+msgid "Smoothen Neg"
+msgstr "Suavizado neg."
+
+
+msgid "Negative mesh smoothening"
+msgstr "Suavizado de malla negativa"
+
+
+msgid "Smoothen Pos"
+msgstr "Suavizado pos."
+
+
+msgid "Positive mesh smoothening"
+msgstr "Suavizado de malla positiva"
 
 
 msgid "Fluid Mesh Vertices"
@@ -11696,12 +11944,28 @@ msgid "Vertices of the fluid mesh generated by simulation"
 msgstr "Vértices de la malla del fluido generado por la simulación"
 
 
+msgid "Scale of noise (higher value results in larger vortices)"
+msgstr "Escala del ruido (valores más altos producirán vórtices más grandes)"
+
+
+msgid "Noise Scale"
+msgstr "Escala del ruido"
+
+
+msgid "Scale underlying noise grids by this factor. Noise grids have size factor times base resolution"
+msgstr "Permite escalar las cuadrículas de ruido subyacentes según este factor. Las cuadrículas de ruido tendrán un tamaño igual a la resolución base multiplicada por este factor"
+
+
 msgid "Strength of noise"
 msgstr "Intensidad del ruido"
 
 
 msgid "Time"
 msgstr "Tiempo"
+
+
+msgid "Animation time of noise"
+msgstr "Tiempo de animación del ruido"
 
 
 msgid "Noise Method"
@@ -11745,11 +12009,27 @@ msgstr "No usar ninguna compresión"
 
 
 msgid "Number"
-msgstr "Número"
+msgstr "Cantidad"
+
+
+msgid "Particle number factor (higher value results in more particles)"
+msgstr "Factor de cantidad de partículas (un valor más alto producirá más partículas)"
+
+
+msgid "Particle radius factor. Use this parameter when the simulation appears to leak volume"
+msgstr "Factor de radio de las partículas. Usar este parámetro cuando la simulación parezca perder volumen"
 
 
 msgid "Randomness"
 msgstr "Aleatoriedad"
+
+
+msgid "Randomness factor for particle sampling"
+msgstr "Factor de aleatoriedad del muestreo de las partículas"
+
+
+msgid "Scale underlying particle grids by this factor. Particle grids have size factor times base resolution"
+msgstr "Escala las cuadrículas subyacentes de partículas según este factor. Las cuadrículas de partículas tendrán un tamaño igual a la resolución base multiplicada por este factor"
 
 
 msgid "Cache Compression"
@@ -11772,12 +12052,28 @@ msgid "Max Res"
 msgstr "Res. máx"
 
 
+msgid "Resolution used for the fluid domain"
+msgstr "Resolución usada para el dominio del fluido"
+
+
 msgid "Display Velocity"
 msgstr "Mostrar velocidad"
 
 
 msgid "Toggle visualization of the velocity field as needles"
 msgstr "Permite alternar la visualización del campo de velocidad en forma de agujas"
+
+
+msgid "Simulation Method"
+msgstr "Método de simulación"
+
+
+msgid "Change the underlying simulation method"
+msgstr "Permite cambiar el método de simulación a ser usado"
+
+
+msgid "Use FLIP as the simulation method"
+msgstr "Usar FLIP como método de simulación"
 
 
 msgid "Adjust slice direction according to the view direction"
@@ -11824,8 +12120,40 @@ msgid "How many slices per voxel should be generated"
 msgstr "Cuántas rebanadas por vóxel deberán ser generadas"
 
 
+msgid "Particles in Boundary"
+msgstr "Partículas en el límite"
+
+
+msgid "How particles that left the domain are treated"
+msgstr "Cómo serán tratadas las partículas que salen fuera del límite"
+
+
 msgid "Delete"
 msgstr "Borrar"
+
+
+msgid "Delete secondary particles that are inside obstacles or left the domain"
+msgstr "Borrar partículas secundarias que se encuentren dentro de obstáculos o hayan dejado el dominio"
+
+
+msgid "Push Out"
+msgstr "Empujar fuera"
+
+
+msgid "Push secondary particles that left the domain back into the domain"
+msgstr "Empujar partículas secundarias que hayan dejado el domino nuevamente dentro del mismo"
+
+
+msgid "Combined Export"
+msgstr "Exportación combinada"
+
+
+msgid "Determines which particle systems are created from secondary particles"
+msgstr "Permite determinar qué sistemas de partículas serán creados a partir de las partículas secundarias"
+
+
+msgid "Create a seperate particle system for every secondary particle type"
+msgstr "Crear un sistema de partículas separado para cada tipo de partículas secundario"
 
 
 msgid "Buoyancy"
@@ -21334,7 +21662,7 @@ msgstr "Rigidez del pelo para los efectores"
 
 
 msgid "Effector Number"
-msgstr "Número de efector"
+msgstr "Cantidad de efectores"
 
 
 msgid "How many particles are effectors (0 is all particles)"
@@ -66155,6 +66483,10 @@ msgid "Collisions"
 msgstr "Colisiones"
 
 
+msgid "Internal Springs"
+msgstr "Tensores internos"
+
+
 msgid "Object Collisions"
 msgstr "Colisiones del objeto"
 
@@ -66527,10 +66859,6 @@ msgstr "Luces de estudio"
 
 msgid "MatCaps"
 msgstr "MatCaps"
-
-
-msgid "LookDev HDRIs"
-msgstr "Imágenes HDR para desarrollo visual"
 
 
 msgid "Cycles Render Devices"
@@ -69938,14 +70266,6 @@ msgstr "Automático (Automatic)"
 
 msgid "Automatically choose system's defined language if available, or fall-back to English"
 msgstr "Elige automáticamente el idioma definido en el sistema, si no estuviera disponible se mostrará en inglés"
-
-
-msgid "Look Dev Spheres Size"
-msgstr "Tamaño esferas desarrollo visual"
-
-
-msgid "Maximum diameter of the look development sphere size"
-msgstr "Diámetro máximo de las esferas del modo Desarrollo visual"
 
 
 msgid "Mini Axes Brightness"
@@ -82458,14 +82778,6 @@ msgid "Display Freestyle face marks, used with the Freestyle renderer"
 msgstr "Muestra las caras marcadas de Freestyle, usadas por el motor de procesamiento Freestyle"
 
 
-msgid "Look Dev Preview"
-msgstr "Previsualizar desarrollo visual"
-
-
-msgid "Show look development spheres"
-msgstr "Mostrar las esferas de desarrollo visual"
-
-
 msgid "Show the Motion Paths Overlay"
 msgstr "Mostrar trayectorias de movimiento"
 
@@ -82672,10 +82984,6 @@ msgstr "Opacidad del modo de pintura de influencias"
 
 msgid "Wireframe Threshold"
 msgstr "Umbral estructura"
-
-
-msgid "Adjust the number of wires displayed (1 for all wires)"
-msgstr "Ajusta la cantidad de bordes mostrados (1 muestra todos)"
 
 
 msgid "Opacity to use for bone selection"
@@ -84062,34 +84370,6 @@ msgstr "Cuentagotas - Mapa punto banda de color"
 
 msgid "DEM data (.hgt) as Mesh and/or Image"
 msgstr "Datos DEM (.hgt) como malla y/o imagen"
-
-
-msgid "Current directory is already an Amber repository, '%s'"
-msgstr "El directorio actual ya es un repositorio de Amber, '%s'"
-
-
-msgid "Current directory is already an Amber repository"
-msgstr "El directorio actual ya es un repositorio de Amber"
-
-
-msgid "No suitable active datablock found to create a new asset"
-msgstr "No se encontró un bloque de datos activo apropiado para crear un nuevo elemento"
-
-
-msgid "Current .blend file not saved on disk, enforcing copying data into local repository storage"
-msgstr "El archivo .blend actual no se encuentra guardado en el disco, se forzará la copia de los datos en el almacenamiento del repositorio local"
-
-
-msgid "No Amber repository found at '%s'"
-msgstr "No se encontró un repositorio de Amber en '%s'"
-
-
-msgid "Active datablock is a linked one, this is not supported currently"
-msgstr "El bloque de datos activo se encuentra vinculado, esto no es soportado actualmente"
-
-
-msgid "Order by:"
-msgstr "Orden por:"
 
 
 msgid "Denoising completed."
@@ -86390,6 +86670,10 @@ msgid "Pressure Masking"
 msgstr "Máscara de presión"
 
 
+msgid "Advanced:"
+msgstr "Avanzado:"
+
+
 msgid "Front Faces Only"
 msgstr "Sólo caras frontales"
 
@@ -86881,6 +87165,10 @@ msgid "Add Resolution"
 msgstr "Agregar resolución"
 
 
+msgid "Viscosity Presets:"
+msgstr "Ajustes de viscosidad:"
+
+
 msgid "Real World Size"
 msgstr "Tamaño a escala real"
 
@@ -86935,26 +87223,6 @@ msgstr "Z Mínimo"
 
 msgid "Y Lower"
 msgstr "Y Mínimo"
-
-
-msgid "Flow Sampling"
-msgstr "Muestreo del flujo"
-
-
-msgid "Built without Smoke modifier"
-msgstr "Construido sin el modificador Humo"
-
-
-msgid "Empty Space"
-msgstr "Espacio vacío"
-
-
-msgid "Sampling Subframes"
-msgstr "Subfotogramas de muestreo"
-
-
-msgid "Built without OpenVDB support"
-msgstr "Compilado sin soporte para OpenVDB"
 
 
 msgid "Collision Edge"
@@ -88793,6 +89061,10 @@ msgstr "Claves automáticos:"
 
 msgid "Layered Recording"
 msgstr "Grabación por capas"
+
+
+msgid "Drag:"
+msgstr "Resistencia:"
 
 
 msgid "Unable to find toolbar group"
