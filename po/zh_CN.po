@@ -1,9 +1,9 @@
 
 msgid ""
 msgstr ""
-"Project-Id-Version: Blender 2.82 (sub 6) (b'79476a9c0ab9')\n"
+"Project-Id-Version: Blender 2.82 (sub 6) (b'948399747226')\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-12-30 09:57:37\n"
+"POT-Creation-Date: 2020-01-06 09:45:33\n"
 "PO-Revision-Date: \n"
 "Last-Translator: DeathBlood\n"
 "Language-Team: \n"
@@ -374,7 +374,7 @@ msgstr "该数据块的活动动作"
 
 
 msgid "Action Blending"
-msgstr "混合动作"
+msgstr "动作混合"
 
 
 msgid "Method used for combining Active Action's result with result of NLA stack"
@@ -422,7 +422,7 @@ msgstr "从累积结果中增加的片段权重结果"
 
 
 msgid "Action Extrapolation"
-msgstr "外推动作"
+msgstr "外插动作"
 
 
 msgid "Action to take for gaps past the Active Action's range (when evaluating with NLA)"
@@ -1026,7 +1026,7 @@ msgstr "在物体空间上烘培法线"
 
 
 msgid "Tangent"
-msgstr "切向"
+msgstr "切向(正切)"
 
 
 msgid "Bake the normals in tangent space"
@@ -5146,6 +5146,10 @@ msgid "Armature"
 msgstr "骨架"
 
 
+msgid "Apply weight-blended transformation from multiple bones like the Armature modifier"
+msgstr "从多个骨骼应用权重-弯曲变换, 类似骨架修改器"
+
+
 msgid "Child Of"
 msgstr "子级"
 
@@ -5222,6 +5226,34 @@ msgid "Mix Mode"
 msgstr "混合模式"
 
 
+msgid "Specify how existing transformations and the action channels are combined"
+msgstr "指定现有变换和动作通道的组合方式"
+
+
+msgid "Before Original"
+msgstr "初始前"
+
+
+msgid "Apply the action channels before the original transformation, as if applied to an imaginary parent with Aligned Inherit Scale"
+msgstr "在初始转换之前应用动作通道，就像应用于具有对齐继承缩放的假想父级一样"
+
+
+msgid "After Original"
+msgstr "初始后"
+
+
+msgid "Apply the action channels after the original transformation, as if applied to an imaginary child with Aligned Inherit Scale"
+msgstr "在初始转换之后应用动作通道，就像应用于具有对齐继承缩放的假想子级一样"
+
+
+msgid "After Original (Full Scale)"
+msgstr "初始后(全比例)"
+
+
+msgid "Apply the action channels after the original transformation, as if applied to an imaginary child with Full Inherit Scale. This mode can create shear and is provided only for backward compatibility"
+msgstr "在初始转换后应用动作通道，就像应用于具有完全继承缩放的假想子级一样。此模式可以创建剪切，并且仅提供向后兼容性"
+
+
 msgid "Sub-Target"
 msgstr "子目标"
 
@@ -5292,6 +5324,10 @@ msgstr "仅限骨骼: 将动作的物体变换通道应用到骨骼的约束上,
 
 msgid "Armature Constraint"
 msgstr "骨架约束"
+
+
+msgid "Applies transformations done by the Armature modifier"
+msgstr "应用由骨架修改器完成的变换"
 
 
 msgid "Targets"
@@ -7007,11 +7043,11 @@ msgstr "Z 轴向目标物体运动范围下限"
 
 
 msgid "Extrapolate Motion"
-msgstr "外推运动"
+msgstr "外插运动"
 
 
 msgid "Extrapolate ranges"
-msgstr "外推范围"
+msgstr "外插范围"
 
 
 msgid "Constraint Target"
@@ -9286,11 +9322,11 @@ msgstr "通道驱动器(仅适用于函数曲线驱动器)"
 
 
 msgid "Extrapolation"
-msgstr "延伸模式"
+msgstr "外插"
 
 
 msgid "Method used for evaluating value of F-Curve outside first and last keyframes"
-msgstr "用于函数曲线首末关键帧区间外侧的求值方法"
+msgstr "用于解算首末关键帧区间外部函数曲线数值的方法"
 
 
 msgid "Hold values of endpoint keyframes"
@@ -10192,15 +10228,15 @@ msgstr "修改器的作用起始帧 (若可用)"
 
 
 msgid "Step Size"
-msgstr "步阶尺寸"
+msgstr "步长尺寸"
 
 
 msgid "Number of frames to hold each value"
-msgstr "持有各值的帧数量"
+msgstr "每个阶梯值保持的帧数"
 
 
 msgid "Use End Frame"
-msgstr "使用最后一帧"
+msgstr "使用结束帧"
 
 
 msgid "Restrict modifier to only act before its 'end' frame"
@@ -10208,7 +10244,7 @@ msgstr "限制修改器仅作用于其'结束'帧"
 
 
 msgid "Use Start Frame"
-msgstr "使用第一帧"
+msgstr "使用开始帧"
 
 
 msgid "Restrict modifier to only act after its 'start' frame"
@@ -32702,11 +32738,11 @@ msgstr "当前追踪数据物体的平面追踪集合"
 
 
 msgid "Active Track"
-msgstr "活动的轨"
+msgstr "活动轨道"
 
 
 msgid "Active track in this tracking data object"
-msgstr "该跟踪数据物体中的活动轨迹"
+msgstr "该跟踪数据物体中的活动轨道"
 
 
 msgid "Movie Tracks"
@@ -37319,15 +37355,15 @@ msgstr "根据模式类型转换变换的项目"
 
 msgctxt "Operator"
 msgid "Set Keyframe Extrapolation"
-msgstr "设置关键帧外推"
+msgstr "设置关键帧外插"
 
 
 msgid "Set extrapolation mode for selected F-Curves"
-msgstr "设置选择函数曲线的外推模式"
+msgstr "设置选择函数曲线的外插模式"
 
 
 msgid "Constant Extrapolation"
-msgstr "常值外推"
+msgstr "常值外插"
 
 
 msgid "Values on endpoint keyframes are held"
@@ -37335,7 +37371,7 @@ msgstr "保持端点的关键帧"
 
 
 msgid "Linear Extrapolation"
-msgstr "线性外推"
+msgstr "线性外插"
 
 
 msgid "Straight-line slope of end segments are extended past the endpoint keyframes"
@@ -37440,11 +37476,11 @@ msgstr "镜像关键帧"
 
 
 msgid "Flip selected keyframes over the selected mirror line"
-msgstr "根据选择的镜像线翻转选择的关键帧"
+msgstr "按照选择的镜像线翻转选择的关键帧"
 
 
 msgid "By Times Over Current Frame"
-msgstr "至超过当前帧时"
+msgstr "按照当前帧的时间"
 
 
 msgid "Flip times of selected keyframes using the current frame as the mirror line"
@@ -37452,7 +37488,7 @@ msgstr "将当前帧作为镜像轴线, 翻转所选关键帧的时间"
 
 
 msgid "By Values Over Value=0"
-msgstr "至值大于 0 时"
+msgstr "按照横轴(Y值=0)"
 
 
 msgid "Flip values of selected keyframes (i.e. negative values become positive, and vice versa)"
@@ -37460,7 +37496,7 @@ msgstr "翻转所选关键帧的值 (例如负值变正值等)"
 
 
 msgid "By Times Over First Selected Marker"
-msgstr "至第一个选择的标记"
+msgstr "按照第一选定标记的时间"
 
 
 msgid "Flip times of selected keyframes using the first selected marker as the reference point"
@@ -37487,6 +37523,10 @@ msgstr "将选择通道缓存中的复制帧粘贴至当前帧"
 
 msgid "Flipped"
 msgstr "翻转"
+
+
+msgid "Paste keyframes from mirrored bones if they exist"
+msgstr "如果存在镜像骨骼中的关键帧，则粘贴它们"
 
 
 msgid "Method of merging pasted keys and existing"
@@ -42340,6 +42380,10 @@ msgid "Export UVs (texture coordinates) with meshes"
 msgstr "导出带网格 UV (纹理坐标)"
 
 
+msgid "Folder to place texture files in. Relative to the .gltf file"
+msgstr "用于放置纹理文件的文件夹。相对于 .gltf 文件"
+
+
 msgid "+Y Up"
 msgstr "+Y 向上"
 
@@ -44922,6 +44966,10 @@ msgid "Only paste F-Modifiers on active F-Curve"
 msgstr "仅在活动函数曲线上粘贴函数曲线修改器"
 
 
+msgid "Replace existing F-Modifiers, instead of just appending to the end of the existing list"
+msgstr "替换现有函数修改器，而不是仅追加到现有列表的末尾"
+
+
 msgid "Place the cursor on the midpoint of selected keyframes"
 msgstr "将光标置于所选多个关键帧的中点处"
 
@@ -44941,12 +44989,16 @@ msgstr "创建残影曲线"
 
 
 msgid "Create snapshot (Ghosts) of selected F-Curves as background aid for active Graph Editor"
-msgstr "在背景上添加 F 残影曲线用于辅助活动曲线编辑"
+msgstr "在背景上添加函数曲线快照(残影)用于辅助活动曲线编辑"
 
 
 msgctxt "Operator"
 msgid "Hide Curves"
 msgstr "隐藏曲线"
+
+
+msgid "Hide selected curves from Graph Editor view"
+msgstr "在曲线编辑器视图隐藏所选曲线"
 
 
 msgid "Hide unselected rather than selected curves"
@@ -44970,19 +45022,11 @@ msgstr "为选中的函数曲线在游标点位置添加一个关键帧"
 
 
 msgid "By Values Over Cursor Value"
-msgstr "根据光标值的值"
-
-
-msgid "Flip values of selected keyframes using the cursor value (Y/Horizontal component) as the mirror line"
-msgstr "根据选择的镜像线翻转选择的关键帧"
+msgstr "按照游标的Y值"
 
 
 msgid "By Times Over Time=0"
-msgstr "根据时间, 超过时间时为0"
-
-
-msgid "Flip times of selected keyframes, effectively reversing the order they appear in"
-msgstr "根据选择的镜像线翻转选择的关键帧"
+msgstr "按照纵轴(时间为0)"
 
 
 msgid "Automatically set Preview Range based on range of keyframes"
@@ -45028,11 +45072,11 @@ msgstr "将选中的关键帧值设置为光标值 (Y/水平分量)"
 
 
 msgid "Flatten Handles"
-msgstr "抚平控制柄"
+msgstr "展平控制柄"
 
 
 msgid "Flatten handles for a smoother transition"
-msgstr "生成柔和噪波 (平滑过渡)"
+msgstr "展平一个平滑过渡的控制柄"
 
 
 msgctxt "Operator"
@@ -45045,11 +45089,11 @@ msgstr "将选择的函数曲线烘焙成一个波形"
 
 
 msgid "Attack time"
-msgstr "攻击时间"
+msgstr "起音时间"
 
 
 msgid "Value for the hull curve calculation that tells how fast the hull curve can rise (the lower the value the steeper it can rise)"
-msgstr "用于计算船体曲线的值, 表示船体曲线的上升速度 (值越低, 其上升曲线越陡)"
+msgstr "用于计算边界曲线的值, 表示边界曲线的上升速度 (值越低, 其上升曲线越陡)"
 
 
 msgid "Highest frequency"
@@ -45069,11 +45113,11 @@ msgstr "用于音频数据的高通滤波器的截止频率"
 
 
 msgid "Release time"
-msgstr "发布时间"
+msgstr "释音时间"
 
 
 msgid "Value for the hull curve calculation that tells how fast the hull curve can fall (the lower the value the steeper it can fall)"
-msgstr "用于计算船体曲线的值, 表示船体曲线下下降速度 (值越低, 其下降曲线越陡)"
+msgstr "用于计算边界曲线的值, 表示边界曲线下降速度 (值越低, 其下降曲线越陡)"
 
 
 msgid "Square Threshold"
@@ -45085,15 +45129,15 @@ msgstr "仅平方: 绝对幅度低于该幅度的所有值结果为0"
 
 
 msgid "Minimum amplitude value needed to influence the hull curve"
-msgstr "影响船体曲线所需的最小幅值"
+msgstr "影响边界曲线所需的最小幅值"
 
 
 msgid "Only the positive differences of the hull curve amplitudes are summarized to produce the output"
-msgstr "只有船体曲线振幅的正向差异可被汇总, 以生成输出结果"
+msgstr "只有边界曲线振幅的正向差异可被汇总, 以生成输出结果"
 
 
 msgid "The amplitudes of the hull curve are summarized (or, when Accumulate is enabled, both positive and negative differences are accumulated)"
-msgstr "船体曲线的振幅已被汇总 (或, 当启用累积时, 正负双向的差异都会被累积)"
+msgstr "边界曲线的振幅已被汇总 (或, 当启用累积时, 正负双向的差异都会被累积)"
 
 
 msgid "The output is a square curve (negative values always result in -1, and positive ones in 1)"
@@ -49460,11 +49504,11 @@ msgstr "将参照动作的长度与片段所使用的长度进行同步"
 
 
 msgid "Active Strip Only"
-msgstr "仅激活片段"
+msgstr "仅活动片段"
 
 
 msgid "Only sync the active length for the active strip"
-msgstr "仅同步激活片段的激活长度区间"
+msgstr "仅同步活动片段的激活长度区间"
 
 
 msgctxt "Operator"
@@ -49615,7 +49659,7 @@ msgstr "在选择的片段中添加新的片段组"
 
 msgctxt "Operator"
 msgid "Remove Meta-Strips"
-msgstr "移除片段组"
+msgstr "移除复合片段"
 
 
 msgid "Separate out the strips held by the selected meta-strips"
@@ -49708,7 +49752,7 @@ msgstr "交换选择片段的通道顺序"
 
 msgctxt "Operator"
 msgid "Add Tracks"
-msgstr "添加新轨"
+msgstr "添加轨道"
 
 
 msgid "Add NLA-Tracks above/after the selected tracks"
@@ -49760,7 +49804,7 @@ msgstr "退出拖拽模式"
 
 
 msgid "Exit tweaking mode for the action referenced by the active strip"
-msgstr "退出以激活片段为参照的动作块拖拽模式"
+msgstr "退出以活动片段为参照的动作块拖拽模式"
 
 
 msgid "Reset viewable area to show full strips range"
@@ -57639,7 +57683,7 @@ msgstr "使用一个场景的输出为源片段到序列编辑器中"
 
 
 msgid "Select a strip (last selected becomes the \"active strip\")"
-msgstr "选择一个片段(最后一个选择将成为\"激活选择\")"
+msgstr "选择一个片段(最后一个选择将成为\"活动片段\")"
 
 
 msgid "Select based on the current frame side the cursor is on"
@@ -57667,7 +57711,7 @@ msgstr "链接的控制柄"
 
 
 msgid "Select handles next to the active strip"
-msgstr "选择激活片段旁边的控制柄"
+msgstr "选择活动片段旁边的控制柄"
 
 
 msgid "Linked Time"
@@ -57924,7 +57968,7 @@ msgstr "交换片段"
 
 
 msgid "Swap active strip with strip to the right or left"
-msgstr "与左或右侧的激活片段实现交换"
+msgstr "与左或右侧的活动片段实现交换"
 
 
 msgid "Side of the strip to swap"
@@ -59394,7 +59438,7 @@ msgstr "尝试\"编译\"po文件到相关的mo文件"
 
 msgctxt "Operator"
 msgid "I18n Load Settings"
-msgstr "i18n加载设置"
+msgstr "I18n加载设置"
 
 
 msgid "Load translations' settings from a persistent JSon file"
@@ -64456,7 +64500,7 @@ msgstr "额外选项"
 
 
 msgid "I18n Update Translation"
-msgstr "i18n更新翻译"
+msgstr "I18n更新翻译"
 
 
 msgid "Add-ons"
@@ -64477,10 +64521,6 @@ msgstr "复制数据"
 
 msgid "New Objects"
 msgstr "新建物体"
-
-
-msgid "User Interface"
-msgstr "用户界面"
 
 
 msgid "Universal Scene Description"
@@ -64589,6 +64629,10 @@ msgid "MatCaps"
 msgstr "快照材质"
 
 
+msgid "HDRIs"
+msgstr "HDR"
+
+
 msgid "Cycles Render Devices"
 msgstr "Cycles 渲染设备"
 
@@ -64695,6 +64739,10 @@ msgstr "视频序列编辑器"
 
 msgid "Text Style"
 msgstr "字体样式"
+
+
+msgid "User Interface"
+msgstr "用户界面"
 
 
 msgid "3D View"
@@ -66032,10 +66080,6 @@ msgid "Relative Mirror"
 msgstr "相对镜像"
 
 
-msgid "Apply relative transformations in X-mirror mode"
-msgstr "在 X 镜像模式下应用相对变换"
-
-
 msgid "Pose Bone"
 msgstr "姿态骨骼"
 
@@ -66700,14 +66744,6 @@ msgid "Experimental features"
 msgstr "实验特性"
 
 
-msgid "Fallback Tool Support"
-msgstr "回退工具支持"
-
-
-msgid "Allow selection with an active tool"
-msgstr "允许使用活动工具进行选择"
-
-
 msgid "USD Exporter"
 msgstr "USD导出"
 
@@ -67045,11 +67081,11 @@ msgstr "保持水平而只移动 3D 鼠标"
 
 
 msgid "Orbit Sensitivity"
-msgstr "轨迹球灵敏度"
+msgstr "视轨灵敏度"
 
 
 msgid "Overall sensitivity of the 3D Mouse for orbiting"
-msgstr "3D 鼠标的整体敏感度"
+msgstr "3D鼠标的整体旋转敏感度"
 
 
 msgid "Y/Z Swap Axis"
@@ -67958,6 +67994,14 @@ msgstr "自动 (自动)"
 
 msgid "Automatically choose system's defined language if available, or fall-back to English"
 msgstr "如可用，选择系统定义的语言，否则回归英语"
+
+
+msgid "HDRI Preview Size"
+msgstr "HDRI 预览大小"
+
+
+msgid "Diameter of the HDRI preview spheres"
+msgstr "HDRI 预览球体的直径"
 
 
 msgid "Mini Axes Brightness"
@@ -73382,11 +73426,11 @@ msgstr "场景数据块的序列编辑数据"
 
 
 msgid "Active Strip"
-msgstr "激活片段"
+msgstr "活动片段"
 
 
 msgid "Sequencer's active strip"
-msgstr "序列中的激活片段"
+msgstr "序列中的活动片段"
 
 
 msgid "Meta Stack"
@@ -74907,7 +74951,7 @@ msgstr "吸附至整数帧"
 
 
 msgid "Second Step"
-msgstr "第二步长"
+msgstr "秒步长"
 
 
 msgid "Snap to 1.0 second intervals"
@@ -75014,6 +75058,10 @@ msgid "Show Handles And Interpolation"
 msgstr "显示控制柄与插值"
 
 
+msgid "Display keyframe handle types and non-bezier interpolation modes"
+msgstr "显示关键帧手柄类型和非贝塞尔插值模式"
+
+
 msgid "Show Markers"
 msgstr "显示标记"
 
@@ -75082,6 +75130,10 @@ msgid "Active Bookmark"
 msgstr "活动书签"
 
 
+msgid "Index of active bookmark (-1 if none)"
+msgstr "活动书签的编号 (若无则为-1)"
+
+
 msgid "Filebrowser Parameter"
 msgstr "文件浏览器参数"
 
@@ -75098,6 +75150,10 @@ msgid "Active Recent Folder"
 msgstr "活动的最近打开的文件夹"
 
 
+msgid "Index of active recent folder (-1 if none)"
+msgstr "活动的最近打开的文件夹的编号 (若无则为 -1)"
+
+
 msgid "System Bookmarks"
 msgstr "系统书签"
 
@@ -75110,12 +75166,24 @@ msgid "Active System Bookmark"
 msgstr "活动系统书签"
 
 
+msgid "Index of active system bookmark (-1 if none)"
+msgstr "活动系统书签的编号 (若无则为-1)"
+
+
 msgid "System Folders"
 msgstr "系统文件夹"
 
 
+msgid "System's folders (usually root, available hard drives, etc)"
+msgstr "系统的文件夹(通常是根目录，可用的硬盘等)"
+
+
 msgid "Active System Folder"
 msgstr "活动系统文件夹"
+
+
+msgid "Index of active system folder (-1 if none)"
+msgstr "活动系统文件夹的编号 (若无则为-1)"
 
 
 msgid "Space Graph Editor"
@@ -75183,7 +75251,11 @@ msgstr "显示贝塞尔曲线的控制点"
 
 
 msgid "Auto Normalization"
-msgstr "自动线性化"
+msgstr "自动规格化"
+
+
+msgid "Automatically recalculate curve normalization on every curve edit"
+msgstr "在每次曲线编辑时, 自动重算曲线归一化"
 
 
 msgid "Use High Quality Display"
@@ -75195,11 +75267,15 @@ msgstr "使用抗锯齿和其他模式来绘制函数曲线(关闭以获得更�
 
 
 msgid "Use Normalization"
-msgstr "使用线性化"
+msgstr "使用规格化"
+
+
+msgid "Display curves in normalized to -1..1 range, for easier editing of multiple curves with different ranges"
+msgstr "显示为 -1..1 范围的曲线(归一化), 以轻松编辑不同范围的多条曲线"
 
 
 msgid "Only Selected Curve Keyframes"
-msgstr "仅选择曲线关键帧"
+msgstr "仅所选曲线关键帧"
 
 
 msgid "Only keyframes of selected F-Curves are visible and editable"
@@ -75207,7 +75283,7 @@ msgstr "仅关键帧和已选择的函数曲线为可见并且允许编辑"
 
 
 msgid "Only Selected Keyframes Handles"
-msgstr "仅选择关键帧的控制柄"
+msgstr "仅所选关键帧的控制柄"
 
 
 msgid "Only show and edit handles of selected keyframes"
@@ -75514,6 +75590,10 @@ msgid "Auto-offset Direction"
 msgstr "自动偏移方向"
 
 
+msgid "Direction to offset nodes on insertion"
+msgstr "插入时偏移节点的方向"
+
+
 msgid "Path from the data-block to the currently edited node tree"
 msgstr "从数据块到当前被编辑的节点树的路径"
 
@@ -75580,6 +75660,10 @@ msgstr "对有 3D 更新的层做重渲染和合成"
 
 msgid "Auto-offset"
 msgstr "自动偏移"
+
+
+msgid "Automatically offset the following or previous nodes in a chain when inserting a new node"
+msgstr "当插入一个新节点时, 自动偏移节点树分支上之后或先前的节点"
 
 
 msgid "Space Outliner"
@@ -79209,7 +79293,7 @@ msgstr "循环感知插帧"
 
 
 msgid "For channels with cyclic extrapolation, keyframe insertion is automatically remapped inside the cycle time range, and keeps ends in sync"
-msgstr "对于具有循环外推的通道,关键帧插入会自动在循环时间范围内重新映射,并保持两端同步"
+msgstr "对于具有循环外插的通道,关键帧插入会自动在循环时间范围内重新映射,并保持两端同步"
 
 
 msgid "Auto Keying"
@@ -79614,6 +79698,10 @@ msgstr "使用名称来排序"
 
 msgid "Lock Order"
 msgstr "锁定排序"
+
+
+msgid "Lock the order of shown items (user cannot change it)"
+msgstr "锁定已显示项目的顺序(用户无法更改)"
 
 
 msgid "Reverse the order of shown items"
@@ -80092,6 +80180,14 @@ msgid "Display Freestyle face marks, used with the Freestyle renderer"
 msgstr "显示 Freestyle 的标记面, 用于 Freestyle 渲染器"
 
 
+msgid "HDRI Preview"
+msgstr "HDRI 预览"
+
+
+msgid "Show HDRI preview spheres"
+msgstr "显示 HDRI 预览球体"
+
+
 msgid "Show the Motion Paths Overlay"
 msgstr "显示运动路径叠加层"
 
@@ -80298,6 +80394,10 @@ msgstr "权重绘制模式下叠加层的不透明度"
 
 msgid "Wireframe Threshold"
 msgstr "线框阈值"
+
+
+msgid "Adjust the angle threshold for displaying edges (1.0 for all)"
+msgstr "调整线框显示的角度阈值(1显示全部线条)"
 
 
 msgid "Opacity to use for bone selection"
@@ -80682,10 +80782,6 @@ msgstr "含有数据块"
 
 msgid "Tool Mode"
 msgstr "工具模式"
-
-
-msgid "Fallback"
-msgstr "回退"
 
 
 msgid "Widget"
@@ -85536,7 +85632,7 @@ msgstr "游标值"
 
 msgctxt "Operator"
 msgid "Flatten Handles"
-msgstr "抚平控制柄"
+msgstr "展平控制柄"
 
 
 msgctxt "Operator"
@@ -85800,17 +85896,17 @@ msgstr "开始调节动作段"
 
 msgctxt "Operator"
 msgid "Add Tracks Above Selected"
-msgstr "在选中项的上方添加新轨"
+msgstr "在选中项上方添加轨道"
 
 
 msgctxt "Operator"
 msgid "Stop Editing Stashed Action"
-msgstr "停止编辑隐藏的动作"
+msgstr "停止编辑暂存的动作"
 
 
 msgctxt "Operator"
 msgid "Start Editing Stashed Action"
-msgstr "开始编辑隐藏的动作"
+msgstr "开始编辑暂存的动作"
 
 
 msgctxt "Operator"
@@ -87096,10 +87192,6 @@ msgstr "使用灯光"
 msgctxt "Operator"
 msgid "Save as Studio light"
 msgstr "保存为棚灯"
-
-
-msgid "Use Tool Fallback"
-msgstr "使用工具回退"
 
 
 msgctxt "Operator"
@@ -88400,11 +88492,6 @@ msgstr "顶点上下文菜单"
 
 
 msgctxt "Operator"
-msgid "Randomize Vertices"
-msgstr "顶点随机化"
-
-
-msgctxt "Operator"
 msgid "Smooth Laplacian"
 msgstr "拉普拉斯平滑"
 
@@ -88764,6 +88851,11 @@ msgstr "按骨骼封套指定"
 msgctxt "Operator"
 msgid "Assign to Group"
 msgstr "指定到组"
+
+
+msgctxt "Operator"
+msgid "Randomize Vertices"
+msgstr "顶点随机化"
 
 
 msgctxt "Operator"
@@ -91479,10 +91571,6 @@ msgid "Toggle Profile Clipping"
 msgstr "切换轮廓钳制"
 
 
-msgid "Set the point's handle type to sharp."
-msgstr "设置点的控制柄类型设置为锐化。"
-
-
 msgid "Double click to rename"
 msgstr "双击以重命名"
 
@@ -93503,11 +93591,11 @@ msgstr "自动打包已经开启, 当保存文件时图像将被一并打包保�
 
 
 msgid "Active F-Curve"
-msgstr "激活的函数曲线"
+msgstr "活动函数曲线"
 
 
 msgid "Active Keyframe"
-msgstr "激活的关键帧"
+msgstr "活动关键帧"
 
 
 msgid "Action must have at least one keyframe or F-Modifier"
@@ -93859,7 +93947,7 @@ msgstr "函数曲线不包含关键帧仅存储采样点"
 
 
 msgid "No active keyframe on F-Curve"
-msgstr "函数曲线中无激活的关键帧"
+msgstr "函数曲线中无活动关键帧"
 
 
 msgid "Prop:"
@@ -94284,7 +94372,7 @@ msgstr "无可供调节模式使用的动画数据块"
 
 
 msgid "No active strip(s) to enter tweak mode on"
-msgstr "无可供调节模式使用的激活片段"
+msgstr "无可供调节模式使用的活动片段"
 
 
 msgid "No AnimData blocks in tweak mode to exit from"
