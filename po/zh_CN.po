@@ -1,9 +1,9 @@
 
 msgid ""
 msgstr ""
-"Project-Id-Version: Blender 2.82 (sub 6) (b'02f6722350d9')\n"
+"Project-Id-Version: Blender 2.82 (sub 6) (b'37889011070f')\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-01-20 09:05:33\n"
+"POT-Creation-Date: 2020-01-27 14:29:14\n"
 "PO-Revision-Date: \n"
 "Last-Translator: DeathBlood\n"
 "Language-Team: \n"
@@ -11399,12 +11399,24 @@ msgid "Replay"
 msgstr "重播"
 
 
+msgid "Use the timeline to bake the scene. Pausing and resuming possible"
+msgstr "使用时间线烘焙场景。可以暂停和恢复烘焙作业"
+
+
 msgid "Modular"
 msgstr "模块化"
 
 
+msgid "Bake every stage of the simulation on its own. Pausing and resuming possible"
+msgstr "自行烘焙模拟的每个阶段。可以暂停和恢复烘焙作业"
+
+
 msgid "Final"
 msgstr "最终"
+
+
+msgid "Bake the entire simulation at once. Only produces the most essential cache files. Pausing and resuming not possible"
+msgstr "一次烘焙整个模拟。仅生成最重要的缓存文件。无法暂停和恢复"
 
 
 msgid "Cell Size"
@@ -16288,6 +16300,14 @@ msgid "If a vertex is further away from offset plane than this, then it is not a
 msgstr "如果某顶点超出偏移面, 将不受影响"
 
 
+msgid "Pose IK Segments"
+msgstr "姿态IK段数"
+
+
+msgid "Number of segments of the inverse kinematics chain that will deform the mesh"
+msgstr "将改变网格形状的反运动学链的段数"
+
+
 msgid "Pose Origin Offset"
 msgstr "姿势原点偏移"
 
@@ -16402,10 +16422,6 @@ msgstr "推移"
 
 msgid "Rotate"
 msgstr "旋转"
-
-
-msgid "Topology"
-msgstr "拓扑"
 
 
 msgid "Secondary Color"
@@ -20558,24 +20574,12 @@ msgid "Lock Location"
 msgstr "锁定位置"
 
 
-msgid "Lock editing of location in the interface"
-msgstr "在界面中锁定位移编辑"
-
-
 msgid "Lock Rotation"
 msgstr "锁定旋转"
 
 
-msgid "Lock editing of rotation in the interface"
-msgstr "在界面中锁定旋转"
-
-
 msgid "Lock Rotation (4D Angle)"
 msgstr "锁定旋转(4D角度)"
-
-
-msgid "Lock editing of 'angle' component of four-component rotations in the interface"
-msgstr "在界面中锁定组件的四个角度编辑"
 
 
 msgid "Lock Rotations (4D)"
@@ -20588,10 +20592,6 @@ msgstr "使用组件锁定四个组件的旋转编辑(而不是使用欧拉计�
 
 msgid "Lock Scale"
 msgstr "锁定缩放"
-
-
-msgid "Lock editing of scale in the interface"
-msgstr "在界面中锁定缩放的编辑"
 
 
 msgid "Material Slots"
@@ -21676,6 +21676,14 @@ msgid "Number of children/parent for rendering"
 msgstr "子 / 父粒子的渲染数量"
 
 
+msgid "Root Diameter"
+msgstr "根直径"
+
+
+msgid "Strand diameter width at the root"
+msgstr "根部的发股直径"
+
+
 msgid "Random Orientation"
 msgstr "随机朝向"
 
@@ -21844,12 +21852,24 @@ msgid "The simulation timestep per frame (seconds per frame)"
 msgstr "每帧的模拟时步 (秒/帧)"
 
 
+msgid "Tip Diameter"
+msgstr "梢直径"
+
+
+msgid "Strand diameter width at the tip"
+msgstr "发梢的发股直径"
+
+
 msgid "Trail Count"
 msgstr "拖尾计数"
 
 
 msgid "Number of trail particles"
 msgstr "拖尾粒子数量"
+
+
+msgid "Number of turns around parent along the strand"
+msgstr "沿着发股围绕父级的圈数"
 
 
 msgid "Twist Curve"
@@ -29659,6 +29679,10 @@ msgstr "边映射"
 
 msgid "Method used to map source edges to destination ones"
 msgstr "映射源连线至目标的方法"
+
+
+msgid "Topology"
+msgstr "拓扑"
 
 
 msgid "Copy from identical topology meshes"
@@ -43422,7 +43446,7 @@ msgstr "删除活动帧"
 
 
 msgid "Delete the active frame for the active Grease Pencil Layer"
-msgstr "为活动的蜡笔层删除活动帧"
+msgstr "删除活动蜡笔层的活动帧"
 
 
 msgctxt "Operator"
@@ -43481,6 +43505,19 @@ msgstr "擦除标注笔迹"
 
 msgid "Wait for first click instead of painting immediately"
 msgstr "等待首次点击, 而不是直接涂色"
+
+
+msgid "Delete the active frame for the active Annotation Layer"
+msgstr "删除活动蜡笔层的活动帧"
+
+
+msgctxt "Operator"
+msgid "Annotation Add New"
+msgstr "新建标注"
+
+
+msgid "Add new Annotation data-block"
+msgstr "添加新的标注数据块"
 
 
 msgctxt "Operator"
@@ -44039,6 +44076,33 @@ msgstr "为活动数据块添加新层或注释"
 
 
 msgctxt "Operator"
+msgid "Add New Annotation Layer"
+msgstr "添加新的标注图层"
+
+
+msgid "Add new Annotation layer or note for the active data-block"
+msgstr "为活动数据块添加新标注层或注释"
+
+
+msgctxt "Operator"
+msgid "Move Annotation Layer"
+msgstr "移动标注图层"
+
+
+msgid "Move the active Annotation layer up/down in the list"
+msgstr "在列表中上/下移动活动标注层"
+
+
+msgctxt "Operator"
+msgid "Remove Annotation Layer"
+msgstr "删除标注图层"
+
+
+msgid "Remove active Annotation layer"
+msgstr "删除活动标注图层"
+
+
+msgctxt "Operator"
 msgid "Change Layer"
 msgstr "更改层"
 
@@ -44072,6 +44136,10 @@ msgstr "目标物体名称"
 msgctxt "Operator"
 msgid "Isolate Layer"
 msgstr "隔离层"
+
+
+msgid "Toggle whether the active layer is the only one that can be edited and/or visible"
+msgstr "切换活动图层是否是唯一可以编辑和/或可见的图层"
 
 
 msgctxt "Operator"
@@ -44115,6 +44183,10 @@ msgid "Disable Unused Layer Colors"
 msgstr "禁用未使用的图层颜色"
 
 
+msgid "Lock and hide any color not used in any layer"
+msgstr "锁定并隐藏未在任何图层用到的任何颜色"
+
+
 msgctxt "Operator"
 msgid "Move Strokes to Layer"
 msgstr "移动笔画到层"
@@ -44136,6 +44208,10 @@ msgstr "进入/退出蜡笔笔画的绘制模式"
 msgctxt "Operator"
 msgid "Paste Strokes"
 msgstr "粘贴笔画"
+
+
+msgid "Paste previously copied strokes to active layer or to original layer"
+msgstr "将以前复制的笔画粘贴到活动图层或原始图层"
 
 
 msgid "Paste to Active"
@@ -64990,11 +65066,6 @@ msgstr "推移"
 
 
 msgctxt "Operator"
-msgid "Topology"
-msgstr "拓扑"
-
-
-msgctxt "Operator"
 msgid "Simplify"
 msgstr "简化"
 
@@ -68825,12 +68896,52 @@ msgid "Neighbor Frames"
 msgstr "邻近帧"
 
 
+msgid "Number of neighboring frames to use for denoising animations (more frames produce smoother results at the cost of performance)"
+msgstr "用于对动画进行去噪的相邻帧数(帧数越多越会以性能为代价产生越平滑的结果)"
+
+
+msgid "Input Passes"
+msgstr "输入通道"
+
+
+msgid "Controls which passes the OptiX AI denoiser should use as input, which can have different effects on the denoised image"
+msgstr "控制OptiX AI 降噪器将哪些通道用作输入，这可能会对去噪图像产生不同的影响"
+
+
+msgid "Use only color as input"
+msgstr "仅使用颜色作为输入"
+
+
+msgid "Color + Albedo"
+msgstr "颜色 + Albedo"
+
+
+msgid "Use color and albedo data as input"
+msgstr "使用颜色和albedo数据作为输入"
+
+
+msgid "Color + Albedo + Normal"
+msgstr "颜色 + Albedo + 法向"
+
+
+msgid "Use color, albedo and normal data as input"
+msgstr "使用颜色、albedo和法线数据作为输入"
+
+
 msgid "Denoising Radius"
 msgstr "降噪半径"
 
 
+msgid "Size of the image area that's used to denoise a pixel (higher values are smoother, but might lose detail and are slower)"
+msgstr "用于对像素进行去噪的图像范围的大小(值越高越平滑，但可能会丢失细节并且速度变慢)"
+
+
 msgid "Relative Filter"
 msgstr "相对过滤"
+
+
+msgid "When removing pixels that don't carry information, use a relative threshold instead of an absolute one (can help to reduce artifacts, but might cause detail loss around edges)"
+msgstr "移除不带信息的像素时, 使用一个相对阈值, 而不是一个绝对值 (能帮助减少失真, 但能引起周边边线的细节丢失)"
 
 
 msgid "Store Denoising Passes"
@@ -68943,6 +69054,14 @@ msgstr "使用降噪"
 
 msgid "Denoise the rendered image"
 msgstr "对渲染图像降噪"
+
+
+msgid "Use OptiX AI Denoising"
+msgstr "使用 OptiX AI降噪"
+
+
+msgid "Denoise the rendered image with the OptiX AI denoiser"
+msgstr "使用 OptiX AI 对渲染图像降噪"
 
 
 msgid "Cryptomatte Asset"
@@ -84214,6 +84333,10 @@ msgid "Strand Shape"
 msgstr "发股形状"
 
 
+msgid "Diameter Root"
+msgstr "根直径"
+
+
 msgid "Lifetime Randomness"
 msgstr "生命周期随机性"
 
@@ -89502,6 +89625,10 @@ msgid "GPencil"
 msgstr "蜡笔"
 
 
+msgid "LightProbe"
+msgstr "光照探头"
+
+
 msgid "No new files have been packed"
 msgstr "没有新的文件被打包"
 
@@ -90770,6 +90897,10 @@ msgid "Annotation operator is already active"
 msgstr "标注操作项已激活"
 
 
+msgid "Failed to find Annotation data to draw into"
+msgstr "未能找到用于绘制的标注数据"
+
+
 msgid "Active region not set"
 msgstr "未设置活动范围"
 
@@ -91894,6 +92025,10 @@ msgstr "导出过短出现错误 (见控制台)"
 
 msgid "Parsing errors in Document (see Blender Console)"
 msgstr "文档中的解析错误 (查看 Blender 控制台)"
+
+
+msgid "Experimental:"
+msgstr "试验特性:"
 
 
 msgctxt "Mesh"
@@ -93864,40 +93999,12 @@ msgid "Cursor Y"
 msgstr "游标 Y"
 
 
-msgid "Display Color:"
-msgstr "显示颜色:"
-
-
-msgid "Auto Handle Smoothing:"
-msgstr "自动平滑手柄:"
-
-
 msgid "Interpolation:"
 msgstr "插值类型:"
 
 
 msgid "None for Enum/Boolean"
 msgstr "枚举/布尔为空"
-
-
-msgid "Key:"
-msgstr "关键帧:"
-
-
-msgid "Frame:"
-msgstr "帧:"
-
-
-msgid "Value:"
-msgstr "值:"
-
-
-msgid "Left Handle:"
-msgstr "左控制柄:"
-
-
-msgid "Right Handle:"
-msgstr "右控制柄:"
 
 
 msgid "F-Curve only has F-Modifiers"
@@ -93930,6 +94037,10 @@ msgstr "表达式:"
 
 msgid "Add Input Variable"
 msgstr "添加输入变量"
+
+
+msgid "Value:"
+msgstr "值:"
 
 
 msgid "Update Dependencies"
@@ -94867,10 +94978,6 @@ msgstr "未找到影片剪辑"
 
 msgid "Mask not found"
 msgstr "未找到遮罩"
-
-
-msgid "Start and end frame are not set"
-msgstr "开始和结束帧未设置"
 
 
 msgid "File '%s' could not be loaded"
@@ -96527,6 +96634,10 @@ msgid "ParticleSystem"
 msgstr "粒子系统"
 
 
+msgid "uv_on_emitter() requires a modifier from an evaluated object"
+msgstr "uv_on_emitter() 需要一个来自被解算物体的修改器"
+
+
 msgid "Mesh has no UV data"
 msgstr "网格没有UV数据"
 
@@ -96542,6 +96653,10 @@ msgstr "网格没有顶点色数据"
 msgctxt "Armature"
 msgid "Group"
 msgstr "群组"
+
+
+msgid "Bone group '%s' not found in this object"
+msgstr "在该物体中未找到骨骼群组 '%s'"
 
 
 msgid "Constraint '%s' not found in pose bone '%s'"
@@ -96666,6 +96781,10 @@ msgstr "注册的菜单类: '%s' 太长, 最大长度为 %d"
 
 msgid "Add-on is no longer valid"
 msgstr "插件已失效"
+
+
+msgid "Excluded path is no longer valid"
+msgstr "已排除路径不再有效"
 
 
 msgid "Registering add-on preferences class: '%s' is too long, maximum length is %d"
