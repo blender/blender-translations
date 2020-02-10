@@ -1,9 +1,9 @@
 
 msgid ""
 msgstr ""
-"Project-Id-Version: Blender 2.83 (sub 2) (b'7c54de4ab381')\n"
+"Project-Id-Version: Blender 2.82 (sub 6) (b'831bb6bc772e')\n"
 "Report-Msgid-Bugs-To: Ivan Paulos Tomé <ivan.paulos.tome@yandex.com>\n"
-"POT-Creation-Date: 2019-11-11 00:00:00\n"
+"POT-Creation-Date: 2020-02-03 10:17:07\n"
 "PO-Revision-Date: 2017-09-08 21:24-0300\n"
 "Last-Translator: Ivan Paulos Tomé <greylica@gmail.com>\n"
 "Language-Team: Ivan Paulos Tomé, Inês Almeida, João Brandão (ULISBOA), Paulo Martins <ivan.paulos.tome@yandex.com>\n"
@@ -2717,8 +2717,12 @@ msgid "Mode"
 msgstr "Modo"
 
 
-msgid "Point"
-msgstr "Pontos"
+msgid "Soft"
+msgstr "Suavizar"
+
+
+msgid "Hard"
+msgstr "Rígido"
 
 
 msgid "Stroke"
@@ -7819,6 +7823,10 @@ msgstr "Amostra de curva-f"
 
 msgid "Sample point for F-Curve"
 msgstr "Ponto de amostra para curva-f."
+
+
+msgid "Point"
+msgstr "Pontos"
 
 
 msgid "Point coordinates"
@@ -17863,16 +17871,8 @@ msgid "Noise Type"
 msgstr "Tipo de ruído"
 
 
-msgid "Soft"
-msgstr "Suavizar"
-
-
 msgid "Generate soft noise (smooth transitions)"
 msgstr "Gera um ruído suave (transições mais suaves)."
-
-
-msgid "Hard"
-msgstr "Rígido"
 
 
 msgid "Generate hard noise (sharp transitions)"
@@ -27382,10 +27382,6 @@ msgid "Modifiers affecting all the F-Curves in the referenced Action"
 msgstr "Modificadores afetando todas as curvas-f dentro da ação referenciada."
 
 
-msgid "Mute"
-msgstr "Mudo"
-
-
 msgid "Number of times to repeat the action range"
 msgstr "Número de vezes para repetir o campo de ação."
 
@@ -27596,6 +27592,10 @@ msgstr "Conexões internas de entrada-para-saída para silenciamento."
 
 msgid "Optional custom node label"
 msgstr "Rótulo personalizado para o nó (opcional)."
+
+
+msgid "Mute"
+msgstr "Mudo"
 
 
 msgid "Unique node identifier"
@@ -31165,6 +31165,15 @@ msgstr "Mostrar tudo"
 
 msgid "Reset viewable area to show full keyframe range"
 msgstr "Redefine a área visível para mostrar o intervalo completo dos fotogramas chave (como definido para início e fim)."
+
+
+msgctxt "Operator"
+msgid "View Frame"
+msgstr "Visualizar fotograma"
+
+
+msgid "Reset viewable area to show range around current frame"
+msgstr "Redefinir a área visível para mostrar a abrangência em torno do fotograma atual."
 
 
 msgctxt "Operator"
@@ -46826,6 +46835,11 @@ msgid "Dynamic topology alters the mesh topology while sculpting"
 msgstr "Topologia dinâmica altera a topologia da malha durante a escultura."
 
 
+msgctxt "Operator"
+msgid "Optimize"
+msgstr "Otimizar"
+
+
 msgid "Recalculate the sculpt BVH to improve performance"
 msgstr "Recalcula a hierarquia de volume circundante da escultura para melhorar a performance."
 
@@ -47648,15 +47662,6 @@ msgstr "Permite a visualização de todas as faixas dentro do editor de sequênc
 
 msgid "Zoom preview to fit in the area"
 msgstr "Previsão de ampliação para se encaixar dentro área."
-
-
-msgctxt "Operator"
-msgid "View Frame"
-msgstr "Visualizar fotograma"
-
-
-msgid "Reset viewable area to show range around current frame"
-msgstr "Redefinir a área visível para mostrar a abrangência em torno do fotograma atual."
 
 
 msgctxt "Operator"
@@ -52368,10 +52373,6 @@ msgid "Geometry Data"
 msgstr "Dados da geometria"
 
 
-msgid "Transparency"
-msgstr "Transparência"
-
-
 msgid "Paragraph"
 msgstr "Parágrafo"
 
@@ -54919,6 +54920,14 @@ msgstr "Respostas das transformações GLSL "
 
 msgid "GLSL Compute"
 msgstr "Computação GLSL"
+
+
+msgid "Prefetch Frames"
+msgstr "Carregar previamente os fotogramas"
+
+
+msgid "Number of frames to render ahead during playback (sequencer only)"
+msgstr "Número de fotogramas a renderizar antecipadamente durante a reprodução de clipes (somente para o editor de sequências)."
 
 
 msgid "Maximum number of lines to store for the console buffer"
@@ -59870,6 +59879,10 @@ msgid "Space data for a screen area"
 msgstr "Espaço de dados para uma área de tela."
 
 
+msgid "Lock Time to Other Windows"
+msgstr "Bloquear o tempo para outras janelas"
+
+
 msgid "Space data type"
 msgstr "Espaço de tipos de dados."
 
@@ -62703,8 +62716,44 @@ msgid "Theme settings for Info"
 msgstr "Definições de tema para a janela de informações."
 
 
+msgid "Debug Background"
+msgstr "Depuração em plano de fundo"
+
+
+msgid "Debug Text"
+msgstr "Texto de depuração"
+
+
+msgid "Error Background"
+msgstr "Erro em plano de fundo"
+
+
+msgid "Error Text"
+msgstr "Texto de erro"
+
+
+msgid "Info Background"
+msgstr "Informações em plano de fundo"
+
+
+msgid "Info Text"
+msgstr "Texto de informação"
+
+
 msgid "Selected Line Background"
 msgstr "Seleção de linha em plano de fundo"
+
+
+msgid "Selected Line Text"
+msgstr "Linha de texto selecionada"
+
+
+msgid "Warning Background"
+msgstr "Aviso em plano de fundo"
+
+
+msgid "Warning Text"
+msgstr "Texto de aviso"
 
 
 msgid "Theme settings for the NLA Editor"
@@ -65161,6 +65210,10 @@ msgid "Eyedropper Modal Map"
 msgstr "Mapa modal para conta-gotas"
 
 
+msgid "DEM data (.hgt) as Mesh and/or Image"
+msgstr "Dados DEM (.hgt) como malha e / ou imagem."
+
+
 msgid "OSL shader compilation succeeded"
 msgstr "Compilação de sombreador OSL realizada com sucesso."
 
@@ -65199,6 +65252,10 @@ msgstr "Oclusão ambiente"
 
 msgid "Mesh Light"
 msgstr "Malha de luz"
+
+
+msgid "Transparency"
+msgstr "Transparência"
 
 
 msgid "Tiles X"
@@ -70256,6 +70313,10 @@ msgid "Not yet implemented"
 msgstr "Ainda não implementado."
 
 
+msgid "No conversion possible"
+msgstr "Nenhuma conversão possível."
+
+
 msgid "Too few selections to merge"
 msgstr "Muito poucas seleções para fusão."
 
@@ -73825,6 +73886,10 @@ msgid "Object as Camera"
 msgstr "Objeto como câmara"
 
 
+msgid "%s (Local)"
+msgstr "%s (local)"
+
+
 msgid "fps: %.2f"
 msgstr "Fotogramas/Seg: %.2f"
 
@@ -75909,8 +75974,16 @@ msgid "Import-Export"
 msgstr "Importar e exportar"
 
 
+msgid "MakeHuman"
+msgstr "MakeHuman"
+
+
 msgid "Rigging"
 msgstr "Arranjo de animação"
+
+
+msgid "Workflow"
+msgstr "Fluxo de produção"
 
 
 msgid "English (English)"

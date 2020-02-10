@@ -1,9 +1,9 @@
 
 msgid ""
 msgstr ""
-"Project-Id-Version: Blender 2.83 (sub 2) (b'7c54de4ab381')\n"
+"Project-Id-Version: Blender 2.82 (sub 6) (b'831bb6bc772e')\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-11-11 00:00:00\n"
+"POT-Creation-Date: 2020-02-03 10:17:07\n"
 "PO-Revision-Date: \n"
 "Last-Translator: DeathBlood\n"
 "Language-Team: \n"
@@ -3037,12 +3037,28 @@ msgid "Eraser Mode"
 msgstr "橡皮擦模式"
 
 
-msgid "Point"
-msgstr "点"
+msgid "Soft"
+msgstr "柔和"
+
+
+msgid "Use soft eraser"
+msgstr "使用软擦除"
+
+
+msgid "Hard"
+msgstr "犀利"
+
+
+msgid "Use hard eraser"
+msgstr "使用硬擦除"
 
 
 msgid "Stroke"
 msgstr "笔画"
+
+
+msgid "Use stroke eraser"
+msgstr "擦除笔画橡皮擦"
 
 
 msgid "Affect Stroke Strength"
@@ -4139,6 +4155,10 @@ msgstr "布料速率与该值相乘"
 
 msgid "Pressure"
 msgstr "压力"
+
+
+msgid "The uniform pressure that is constanty applied to the mesh. Can be negative"
+msgstr "持续施加到网格上的均匀压力。可以是负数"
 
 
 msgid "Dynamic Base Mesh"
@@ -9413,6 +9433,10 @@ msgid "Sample point for F-Curve"
 msgstr "函数曲线的采样点"
 
 
+msgid "Point"
+msgstr "点"
+
+
 msgid "Point coordinates"
 msgstr "控制点的坐标系"
 
@@ -11303,14 +11327,6 @@ msgid "Maximum number of additional cells"
 msgstr "附加单元的最大数量"
 
 
-msgid "Buoyancy Density"
-msgstr "密度浮力"
-
-
-msgid "Buoyant force based on smoke density (higher value results in faster rising smoke)"
-msgstr "基于烟雾密度的浮力(值越高，烟雾上升速度加快)"
-
-
 msgid "Slice the whole domain object"
 msgstr "切割整个场物体"
 
@@ -11321,18 +11337,6 @@ msgstr "单一"
 
 msgid "Perform a single slice of the domain object"
 msgstr "执行域对象的单个切片"
-
-
-msgid "Buoyancy Heat"
-msgstr "热度浮力"
-
-
-msgid "Buoyant force based on smoke heat (higher value results in faster rising smoke)"
-msgstr "热度对于烟雾运动的影响量(值越高, 则升腾速度越快)"
-
-
-msgid "Speed of the burning reaction (higher value results in smaller flames)"
-msgstr "燃烧反应的速度(使用较大值可获得较小的火焰)"
 
 
 msgid "Select the file format to be used for caching volumetric data"
@@ -11391,16 +11395,8 @@ msgid "Modular"
 msgstr "模块化"
 
 
-msgid "Bake every stage of the simulation separately. Pausing and resuming possible"
-msgstr "分开烘焙模拟的每个阶段。可以暂停和恢复烘焙作业"
-
-
 msgid "Final"
 msgstr "最终"
-
-
-msgid "Bake the entire simulation at once. Only generates the most essential cache files. Pausing and resuming not possible"
-msgstr "一次烘焙整个模拟。仅生成最重要的缓存文件。无法暂停和恢复"
 
 
 msgid "Cell Size"
@@ -11409,10 +11405,6 @@ msgstr "气泡尺寸"
 
 msgid "CFL"
 msgstr "CFL"
-
-
-msgid "Maximal velocity per cell (higher value results in greater timesteps)"
-msgstr "每个单元的最大速度(值越高，时间步长越大)"
 
 
 msgid "Clipping"
@@ -11579,10 +11571,6 @@ msgid "Dissolve Speed"
 msgstr "消融速率"
 
 
-msgid "Determine how quickly the smoke dissolves (higher value makes smoke disappear faster)"
-msgstr "决定烟雾溶解的速度(值越高，烟雾消散速度越快)"
-
-
 msgid "res"
 msgstr "精度"
 
@@ -11637,14 +11625,6 @@ msgstr "火焰网格"
 
 msgid "Smoke flame grid"
 msgstr "烟火网格"
-
-
-msgid "Minimum temperature of the flames (higher value results in faster rising flames)"
-msgstr "火焰的最低温度(值越高，火焰上升速度越快)"
-
-
-msgid "Maximum temperature of the flames (higher value results in faster rising flames)"
-msgstr "火焰的最高温度(值越高，火焰上升速度越快)"
 
 
 msgid "Smoke"
@@ -11731,20 +11711,12 @@ msgid "Domain"
 msgstr "域"
 
 
-msgid "Use a fluid domain for guiding (domain needs to be baked already so that velocities can be extracted). Guiding domain can be of any type (i.e. gas or liquid)"
-msgstr "使用流体域进行引导(域需要烘焙，以便可以提取速度)。引导域可以是任意类型的(即气态或固态)"
-
-
 msgid "Effector"
 msgstr "效果器"
 
 
 msgid "Use guiding (effector) objects to create fluid guiding (guiding objects should be animated and baked once set up completely)"
 msgstr "使用引导(效应器)物体创建流体引导(引导物体应在完全设置后进行动画处理和烘焙)"
-
-
-msgid "Guiding velocity factor (higher value results in greater guiding velocities)"
-msgstr "引导速度因子(值越高，引导速度越大)"
 
 
 msgid "Heat Grid"
@@ -11811,16 +11783,8 @@ msgid "Radius"
 msgstr "半径"
 
 
-msgid "Particle radius factor (higher value results in larger (meshed) particles). Needs to be adjusted after changing the mesh scale"
-msgstr "粒子半径因子(值越高，(网格化)粒子越大)。修改网格缩放后需要调整"
-
-
 msgid "Mesh scale"
 msgstr "网格缩放"
-
-
-msgid "The mesh simulation is scaled up by this factor (compared to the base resolution of the domain). For best meshing, it is recommended to adjust the mesh particle radius alongside this value"
-msgstr "网格模拟按此因子缩放(与域的基本分辨率相比)。为获得最佳网格化，建议配合使用该值调整网格粒子半径"
 
 
 msgid "Smoothen Neg"
@@ -11855,12 +11819,8 @@ msgid "Noise Scale"
 msgstr "噪波缩放"
 
 
-msgid "The noise simulation is scaled up by this factor (compared to the base resolution of the domain)"
-msgstr "噪声模拟按此系数缩放(与域的基本分辨率相比)"
-
-
 msgid "Strength of noise"
-msgstr "噪波强度"
+msgstr "噪音强度"
 
 
 msgid "Time"
@@ -11873,10 +11833,6 @@ msgstr "噪波的动画时间"
 
 msgid "Noise Method"
 msgstr "噪波方法"
-
-
-msgid "Noise method which is used during the high-res simulation"
-msgstr "创建高精度烟雾时使用的噪波方法"
 
 
 msgid "Wavelet"
@@ -11931,24 +11887,12 @@ msgid "Particle number factor (higher value results in more particles)"
 msgstr "粒子数因子(值越高，粒子越多)"
 
 
-msgid "Particle radius factor. Increase this value if the simulation appears to leak volume, decrease it if the simulation seems to gain volume"
-msgstr "粒子半径因子。如果模拟出现体积泄漏，则调高该值；如果模拟似乎有体积增加，则调小该值"
-
-
 msgid "Randomness"
 msgstr "随机性"
 
 
 msgid "Randomness factor for particle sampling"
 msgstr "粒子采样的随机性因子"
-
-
-msgid "Particle scale"
-msgstr "粒子缩放"
-
-
-msgid "The particle simulation is scaled up by this factor (compared to the base resolution of the domain)"
-msgstr "粒子模拟按此因子缩放(与域的基本分辨率相比）"
 
 
 msgid "Cache Compression"
@@ -11965,14 +11909,6 @@ msgstr "速度快, 但压缩效率不高"
 
 msgid "Heavy"
 msgstr "重度"
-
-
-msgid "Maximum Resolution"
-msgstr "最高精度"
-
-
-msgid "Resolution used for the fluid domain. Value corresponds to the longest domain side (resolution for other domain sides is calculated automatically)"
-msgstr "用于流体域的分辨率。值对应于最长的域边(自动计算其他域端的分辨率)"
 
 
 msgid "Display Velocity"
@@ -12111,16 +12047,8 @@ msgid "Bubble Buoyancy"
 msgstr "泡泡浮力"
 
 
-msgid "Amount of buoyancy force that rises bubbles (high value results in bubble movement mainly upwards)"
-msgstr "上升气泡的浮力量(调高数值将导致气泡主要向上移动)"
-
-
 msgid "Bubble Drag"
 msgstr "气泡拖动"
-
-
-msgid "Amount of drag force that moves bubbles along with the fluid (high value results in bubble movement mainly along with the fluid)"
-msgstr "气泡随流体一起移动的阻力量(调高数值将导致气泡运动主要跟随流体)"
 
 
 msgid "Trapped Air Sampling"
@@ -12139,16 +12067,8 @@ msgid "Maximum number of particles generated per wave crest cell per frame"
 msgstr "每个波峰单元每帧生成的最大粒子数"
 
 
-msgid "Maximum Lifetime"
-msgstr "最长寿命"
-
-
 msgid "Highest possible particle lifetime"
 msgstr "粒子的最长可能寿命"
-
-
-msgid "Minimum Lifetime"
-msgstr "最短寿命"
 
 
 msgid "Lowest possible particle lifetime"
@@ -12167,48 +12087,12 @@ msgid "tauMax_k"
 msgstr "tauMax_k"
 
 
-msgid "Upper clamping threshold that indicates the fluid speed where cells no longer emit more particles (higher value results in generally less particles)"
-msgstr "钳制阈值上界，指示单元格不再发射更多粒子时的流体速度(值越高，通常粒子越少)"
-
-
-msgid "Maximum Trapped Air Potential"
-msgstr "可能滞留空气最大值"
-
-
-msgid "Upper clamping threshold for marking fluid cells where air is trapped (highe value results in less marked cells)"
-msgstr "用于标记空气滞留的流体单元格的钳制阈值上界(值越高，标记的单元格越少)"
-
-
-msgid "Maximum Wave Crest Potential"
-msgstr "最大可能波峰"
-
-
-msgid "Upper clamping threshold for marking fluid cells as wave crests (higher value results in less marked cells)"
-msgstr "用于将流体单元格标记为波峰的钳制阈值上界(值越高，标记的单元格越少)"
-
-
 msgid "tauMin_k"
 msgstr "tauMin_k"
 
 
 msgid "Lower clamping threshold that indicates the fluid speed where cells start to emit particles (lower values result in generally more particles)"
 msgstr "钳制阈值下界，指示单元格开始发射粒子时的流体速度(值越低，通常粒子越多)"
-
-
-msgid "Minimum Trapped Air Potential"
-msgstr "可能滞留空气最小值"
-
-
-msgid "Lower clamping threshold for marking fluid cells where air is trapped (lower value results in more marked cells)"
-msgstr "用于标记空气滞留的流体单元格的钳制阈值下界(值越低，标记的单元格越多)"
-
-
-msgid "Minimum Wave Crest Potential"
-msgstr "最小可能波峰"
-
-
-msgid "Lower clamping threshold for marking fluid cells as wave crests (lower value results in more marked cells)"
-msgstr "用于将流体单元格标记为波峰的钳制阈值下界(值越低，标记的单元格越多)"
 
 
 msgid "Update Radius"
@@ -12319,24 +12203,8 @@ msgid "Dissolve Smoke"
 msgstr "消散烟雾"
 
 
-msgid "Let smoke disappear over time"
-msgstr "启用烟雾随时间消逝的效果"
-
-
-msgid "Logarithmic Dissolve"
-msgstr "对数式消融"
-
-
-msgid "Dissolve smoke in a logarithmic fashion. Dissolves quickly at first, but lingers longer"
-msgstr "以对数方式消融烟雾。起初消散得很快，但残留时间较长"
-
-
 msgid "FLIP"
 msgstr "FLIP"
-
-
-msgid "Create liquid particle system"
-msgstr "创建气泡粒子系统"
 
 
 msgid "Foam"
@@ -12381,10 +12249,6 @@ msgstr "启用流体噪波(使用放大)"
 
 msgid "Speed Vectors"
 msgstr "速度矢量"
-
-
-msgid "Caches velocities of mesh vertices. These will be used (automatically) when rendering with motion blur enabled"
-msgstr "缓存网格顶点的速度。在启用运动模糊的情况下渲染时，将(自动)使用"
 
 
 msgid "Spray"
@@ -12449,10 +12313,6 @@ msgstr "速率指数"
 
 msgid "Negative exponent for the viscosity value (to simplify entering small values e.g. 5*10^-6)"
 msgstr "速率的负指数值 (用于简化输入较小的值, 如 5*10^-6)"
-
-
-msgid "Amount of turbulence and rotation in smoke"
-msgstr "烟雾中的紊乱度/旋转度"
 
 
 msgid "Fluid Mesh Velocity"
@@ -12655,14 +12515,6 @@ msgid "Number of additional samples to take between frames to improve quality of
 msgstr "增加两帧之间附加采样值，提升快速移动流的模拟质量"
 
 
-msgid "Surface Emission"
-msgstr "表面发射"
-
-
-msgid "Controls fluid emission from the mesh surface (higher value results in emission further away from the mesh surface"
-msgstr "控制从网格表面排出的流体(值越高，发射的离网格表面越远"
-
-
 msgid "Temp. Diff."
 msgstr "温差."
 
@@ -12727,10 +12579,6 @@ msgid "Set particle size in simulation cells or use nearest cell"
 msgstr "在模拟单元格中设置粒子大小或使用最近的单元格"
 
 
-msgid "Treat this object as a planar and unclosed mesh. Fluid will only be emitted from the mesh surface and based on the surface emission value"
-msgstr "将此物体视为平面且非闭合的网格。流体将仅从网格表面发射，并基于表面发射值"
-
-
 msgid "Use Texture"
 msgstr "使用纹理"
 
@@ -12761,14 +12609,6 @@ msgstr "法向定向速度量"
 
 msgid "Amount of random velocity"
 msgstr "随机速度量"
-
-
-msgid "Volume Emission"
-msgstr "体积发射"
-
-
-msgid "Controls fluid emission from within the mesh (higher value results in greater emissions from inside the mesh)"
-msgstr "控制来自网格内的流体发射(值越高，网格内部的发射量越大)"
 
 
 msgid "Freestyle Line Set"
@@ -21652,6 +21492,10 @@ msgid "Keyed"
 msgstr "键控"
 
 
+msgid "Multiplier of radius properties"
+msgstr "半径属性倍增"
+
+
 msgid "React On"
 msgstr "作用目标"
 
@@ -23130,16 +22974,8 @@ msgid "Noise Type"
 msgstr "噪波类型"
 
 
-msgid "Soft"
-msgstr "柔和"
-
-
 msgid "Generate soft noise (smooth transitions)"
 msgstr "生成柔和噪波 (平滑过渡)"
-
-
-msgid "Hard"
-msgstr "犀利"
 
 
 msgid "Generate hard noise (sharp transitions)"
@@ -33501,10 +33337,6 @@ msgid "Modifiers affecting all the F-Curves in the referenced Action"
 msgstr "修改器在参考动作中影响函数曲线"
 
 
-msgid "Mute"
-msgstr "屏蔽"
-
-
 msgid "Disable NLA Strip evaluation"
 msgstr "禁用NLA 片段解算"
 
@@ -33719,6 +33551,10 @@ msgstr "从输入端到输出端的内部连线, 用于禁用模式的显示"
 
 msgid "Optional custom node label"
 msgstr "可选的自定义节点标签"
+
+
+msgid "Mute"
+msgstr "屏蔽"
 
 
 msgid "Unique node identifier"
@@ -37898,6 +37734,11 @@ msgstr "查看全部"
 
 msgid "Reset viewable area to show full keyframe range"
 msgstr "自适应显示全部的帧范围"
+
+
+msgctxt "Operator"
+msgid "View Frame"
+msgstr "查看帧"
 
 
 msgctxt "Operator"
@@ -42335,8 +42176,24 @@ msgid "Output format for images. PNG is lossless and generally preferred, but JP
 msgstr "图像的输出格式. PNG是无损的,通常是首选,但由于文件较小,JPEG可能更适合Web应用"
 
 
+msgid "Determine the image format from the blender image name"
+msgstr "从 Blender 图像名称确定图像格式"
+
+
 msgid "JPEG Format (.jpg)"
 msgstr "JPEG格式 (.jpg)"
+
+
+msgid "Encode and save textures as .jpg files. Be aware of a possible loss in quality"
+msgstr "将纹理编码并保存为 .jpg 文件。注意可能有质量损失"
+
+
+msgid "PNG Format (.png)"
+msgstr "PNG格式(.png)"
+
+
+msgid "Encode and save textures as .png files"
+msgstr "将纹理编码保存为.png文件"
 
 
 msgid "Punctual Lights"
@@ -57100,6 +56957,11 @@ msgid "Relax mesh"
 msgstr "松弛网格"
 
 
+msgctxt "Operator"
+msgid "Optimize"
+msgstr "优化"
+
+
 msgid "Recalculate the sculpt BVH to improve performance"
 msgstr "重新计算雕刻 BVH 以改善性能"
 
@@ -58078,11 +57940,6 @@ msgstr "查看序列中全部片段"
 
 msgid "Zoom preview to fit in the area"
 msgstr "自适应缩放预览"
-
-
-msgctxt "Operator"
-msgid "View Frame"
-msgstr "查看帧"
 
 
 msgctxt "Operator"
@@ -63874,10 +63731,6 @@ msgid "Geometry Data"
 msgstr "几何数据"
 
 
-msgid "Transparency"
-msgstr "透明"
-
-
 msgid "Adjustments"
 msgstr "调整"
 
@@ -67768,6 +67621,14 @@ msgstr "GLSL变换反馈"
 
 msgid "GLSL Compute"
 msgstr "GLSL计算"
+
+
+msgid "Prefetch Frames"
+msgstr "预取帧"
+
+
+msgid "Number of frames to render ahead during playback (sequencer only)"
+msgstr "回放时的预渲染帧数(仅用于序列)"
 
 
 msgid "Maximum number of lines to store for the console buffer"
@@ -74619,6 +74480,10 @@ msgid "Space data for a screen area"
 msgstr "屏幕的数据空间"
 
 
+msgid "Lock Time to Other Windows"
+msgstr "锁定时间到其它窗口"
+
+
 msgid "Space data type"
 msgstr "空间数据类型"
 
@@ -78137,8 +78002,44 @@ msgid "Theme settings for Info"
 msgstr "显示信息的主题设置"
 
 
+msgid "Debug Background"
+msgstr "调试背景"
+
+
+msgid "Debug Text"
+msgstr "调试文字"
+
+
+msgid "Error Background"
+msgstr "错误背景"
+
+
+msgid "Error Text"
+msgstr "错误文字"
+
+
+msgid "Info Background"
+msgstr "信息背景"
+
+
+msgid "Info Text"
+msgstr "信息文字"
+
+
 msgid "Selected Line Background"
 msgstr "选择的线性背景"
+
+
+msgid "Selected Line Text"
+msgstr "选中的文本行"
+
+
+msgid "Warning Background"
+msgstr "警告背景"
+
+
+msgid "Warning Text"
+msgstr "警告文字"
 
 
 msgid "Theme Nonlinear Animation"
@@ -79534,12 +79435,24 @@ msgid "Transform Origins"
 msgstr "变换原点"
 
 
+msgid "Manipulate object data"
+msgstr "操作物体数据"
+
+
 msgid "Only Locations"
 msgstr "仅位置"
 
 
+msgid "Manipulate origins (object, pose and weight paint mode only)"
+msgstr "控制中心点(仅适用物体、姿态和权重绘制模式)"
+
+
 msgid "Transform Parents"
 msgstr "变换父级"
+
+
+msgid "Don't transform children"
+msgstr "不变换子级"
 
 
 msgid "UV Sync Selection"
@@ -81431,11 +81344,6 @@ msgstr "网格"
 
 
 msgctxt "WindowManager"
-msgid "3D View Tool: Shear"
-msgstr "3D视图工具: 切变"
-
-
-msgctxt "WindowManager"
 msgid "Curve"
 msgstr "曲线"
 
@@ -81845,6 +81753,10 @@ msgid "Eyedropper ColorRamp PointSampling Map"
 msgstr "吸管颜色渐变点采样映射"
 
 
+msgid "DEM data (.hgt) as Mesh and/or Image"
+msgstr "DEM 数据 (.hgt) 作为网格物体或者图像"
+
+
 msgid "Denoising completed."
 msgstr "降噪已经完成."
 
@@ -81915,6 +81827,10 @@ msgstr "切分速率渲染"
 
 msgid "Offscreen Scale"
 msgstr "实际缩放"
+
+
+msgid "Transparency"
+msgstr "透明"
 
 
 msgid "Direct Light"
@@ -84445,6 +84361,10 @@ msgid "Max Compression"
 msgstr "最大压缩"
 
 
+msgid "Custom volume"
+msgstr "自定义体积"
+
+
 msgid "Pin Group"
 msgstr "钉固顶点组"
 
@@ -84651,10 +84571,6 @@ msgid "Flame Smoke"
 msgstr "火焰烟雾"
 
 
-msgid "Temperature Maximum"
-msgstr "最高温度"
-
-
 msgid "Flame Color"
 msgstr "火焰颜色"
 
@@ -84687,10 +84603,6 @@ msgid "Add Resolution"
 msgstr "添加分辨率"
 
 
-msgid "Upres Factor"
-msgstr "Upres系数"
-
-
 msgid "Use Speed Vectors"
 msgstr "使用速度矢量"
 
@@ -84704,31 +84616,7 @@ msgstr "气泡"
 
 
 msgid "Wave Crest Potential Maximum"
-msgstr "波峰可能最大值"
-
-
-msgid "Trapped Air Potential Maximum"
-msgstr "滞留空气可能最大值"
-
-
-msgid "Kinetic Energy Potential Maximum"
-msgstr "动能可能最大值"
-
-
-msgid "Particle Update Radius"
-msgstr "粒子更新半径"
-
-
-msgid "Wave Crest Particle Sampling"
-msgstr "波峰粒子采样"
-
-
-msgid "Trapped Air Particle Sampling"
-msgstr "滞留空气粒子采样"
-
-
-msgid "Particle Life Maximum"
-msgstr "粒子寿命最大值"
+msgstr "波峰电势最大值"
 
 
 msgid "Particles in Boundary:"
@@ -84860,6 +84748,11 @@ msgstr "初始温度"
 
 msgid "Guide Mode"
 msgstr "引导模式"
+
+
+msgctxt "Operator"
+msgid "Pause Guides"
+msgstr "使用引导"
 
 
 msgid "Object does not have a Rigid Body"
@@ -90693,6 +90586,10 @@ msgid "Not yet implemented"
 msgstr "还未部署"
 
 
+msgid "No conversion possible"
+msgstr "没有可用的转换"
+
+
 msgid "No points were selected"
 msgstr "无选中点"
 
@@ -93947,34 +93844,6 @@ msgid "Date Modified"
 msgstr "修改日期"
 
 
-msgid "Home"
-msgstr "主目录"
-
-
-msgid "Desktop"
-msgstr "桌面"
-
-
-msgid "Documents"
-msgstr "文档"
-
-
-msgid "Downloads"
-msgstr "下载"
-
-
-msgid "Music"
-msgstr "音乐"
-
-
-msgid "Pictures"
-msgstr "图片"
-
-
-msgid "Videos"
-msgstr "视频"
-
-
 msgid "Cursor from Selection"
 msgstr "所选项的游标"
 
@@ -94081,14 +93950,6 @@ msgstr "拖慢Python 表达式"
 
 msgid "WARNING: Driver expression may not work correctly"
 msgstr "警告: 驱动器表达式可能无法工作"
-
-
-msgid "TIP: Use variables instead of bpy.data paths (see below)"
-msgstr "提示：使用变量而不是 bpy.data 路径(见下方)"
-
-
-msgid "TIP: bpy.context is not safe for renderfarm usage"
-msgstr "提示：bpy.context 对于渲染农场用途是不安全的"
 
 
 msgid "ERROR: Invalid target channel(s)"
@@ -94414,14 +94275,6 @@ msgstr "同步长度"
 
 msgid "Now"
 msgstr "当前时间点"
-
-
-msgid "Playback Scale"
-msgstr "回放比例"
-
-
-msgid "Active Strip Name"
-msgstr "活动片段名称"
 
 
 msgid "No active AnimData block to use (select a data-block expander first or set the appropriate flags on an AnimData block)"
@@ -95390,6 +95243,10 @@ msgstr "用户正交"
 
 msgid "User Perspective"
 msgstr "用户透视"
+
+
+msgid "%s (Local)"
+msgstr "%s (局部)"
 
 
 msgid "fps: %.2f"
@@ -97755,10 +97612,6 @@ msgid "Win"
 msgstr "Win"
 
 
-msgid "OS"
-msgstr "OS"
-
-
 msgid "Bksp"
 msgstr "Bksp"
 
@@ -97931,12 +97784,20 @@ msgid "Import-Export"
 msgstr "导入 - 导出"
 
 
+msgid "MakeHuman"
+msgstr "MakeHuman"
+
+
 msgid "Rigging"
 msgstr "绑定"
 
 
 msgid "Video Tools"
 msgstr "视频工具"
+
+
+msgid "Workflow"
+msgstr "工作流程"
 
 
 msgid "English (English)"
