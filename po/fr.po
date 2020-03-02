@@ -1,7 +1,7 @@
 
 msgid ""
 msgstr ""
-"Project-Id-Version: Blender 2.83 (sub 4) (b'14856e149ff5')\n"
+"Project-Id-Version: Blender 2.83 (sub 5) (b'085a1e246732')\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-11-11 00:00:00\n"
 "PO-Revision-Date: \n"
@@ -11,7 +11,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 2.2.4"
+"X-Generator: Poedit 2.3"
 
 
 msgid "Action F-Curves"
@@ -1074,10 +1074,6 @@ msgid "Transmission"
 msgstr "Transmission"
 
 
-msgid "Subsurface"
-msgstr "Sub-surface"
-
-
 msgid "Save Mode"
 msgstr "Mode d’enregistrement"
 
@@ -1152,10 +1148,6 @@ msgstr "Ajouter la contribution glossy"
 
 msgid "Add indirect lighting contribution"
 msgstr "Ajouter la contribution de l’éclairage indirect"
-
-
-msgid "Add subsurface contribution"
-msgstr "Ajouter la contribution sub-surfacique"
 
 
 msgid "Add transmission contribution"
@@ -2026,6 +2018,10 @@ msgid "How fast velocity's direction is randomized"
 msgstr "À quelle rapidité la direction de la vitesse est rendue aléatoire"
 
 
+msgid "Fear Factor"
+msgstr "Facteur de peur"
+
+
 msgid "Avoid object if danger from it is above this threshold"
 msgstr "Éviter l’objet si le danger en provenant est supérieur à cette limite"
 
@@ -2040,6 +2036,10 @@ msgstr "Prédire"
 
 msgid "Predict target movement"
 msgstr "Prédire le mouvement de la cible"
+
+
+msgid "Look Ahead"
+msgstr "Regarder en avant"
 
 
 msgid "Time to look ahead in seconds"
@@ -2622,6 +2622,10 @@ msgid "Inherit Scale"
 msgstr "Hériter taille"
 
 
+msgid "Specifies how the bone inherits scaling from the parent bone"
+msgstr "Comment l’os hérite de l’échelle (taille) de l’os parent"
+
+
 msgid "Full"
 msgstr "Full"
 
@@ -2670,6 +2674,10 @@ msgid "Length"
 msgstr "Longueur"
 
 
+msgid "Length of the bone"
+msgstr "Longueur de l’os"
+
+
 msgid "Bone Matrix"
 msgstr "Matrice d’os"
 
@@ -2712,6 +2720,10 @@ msgstr "L’os est toujours dessiné en fil de fer, quel que soit le mode d’af
 
 msgid "Tail"
 msgstr "Queue"
+
+
+msgid "Location of tail end of the bone relative to its parent"
+msgstr "Position de la queue de l’os relative à son parent"
 
 
 msgid "Armature-Relative Tail"
@@ -2776,6 +2788,10 @@ msgstr "Hériter rotation"
 
 msgid "Bone inherits rotation or scale from parent bone"
 msgstr "L’os hérite rotation ou taille de son os parent"
+
+
+msgid "DEPRECATED: Bone inherits scaling from parent bone"
+msgstr "OBSOLÈTE : L’os hérite de l’échelle (taille) de l’os parent"
 
 
 msgid "Local Location"
@@ -3010,12 +3026,28 @@ msgid "Eraser Mode"
 msgstr "Mode gomme"
 
 
+msgid "Dissolve"
+msgstr "Dissoudre"
+
+
+msgid "Erase strokes, fading their points strength and thickness"
+msgstr "Effacer les traits, en atténuant les force et épaisseur de leurs points"
+
+
 msgid "Point"
 msgstr "Point"
 
 
+msgid "Erase stroke points"
+msgstr "Effacer points de trait"
+
+
 msgid "Stroke"
 msgstr "Trait"
+
+
+msgid "Erase entire strokes"
+msgstr "Effacer traits complets"
 
 
 msgid "Affect Stroke Strength"
@@ -3982,6 +4014,30 @@ msgid "Internal Friction"
 msgstr "Friction interne"
 
 
+msgid "Internal Spring Max Diversion"
+msgstr "Dispersion max ressort interne"
+
+
+msgid "How much the rays used to connect the internal points can diverge from the vertex normal"
+msgstr "À quel point les rayons issus des points internes peuvent diverger de la normale du vertex"
+
+
+msgid "Internal Spring Max Length"
+msgstr "Longueur max ressort interne"
+
+
+msgid "The maximum length an internal spring can have during creation. If the distance between internal points is greater than this, no internal spring will be created between these points. A length of zero means that there is no length limit"
+msgstr "La longueur maximale qu’un ressort interne peut avoir à sa création. Si la distance entre les points internes est supérieure à cette valeur, aucun ressort interne ne sera créé entre ces points. Une longueur de zéro signifie qu’il n’y a aucune limite de longueur"
+
+
+msgid "Check Internal Spring Normals"
+msgstr "Vérifier normales de ressort interne"
+
+
+msgid "Require the points the internal springs connect to have opposite normal directions"
+msgstr "Nécessite que les points reliés par le ressort aient des normales opposées"
+
+
 msgid "Tension Stiffness"
 msgstr "Raideur de tension"
 
@@ -4012,6 +4068,14 @@ msgstr "Raideur d’épinglage"
 
 msgid "Pin (vertex target position) spring stiffness"
 msgstr "Raideur de ressort de l’épinglage (position cible des vertices)"
+
+
+msgid "Pressure Scale"
+msgstr "Échelle de pression"
+
+
+msgid "Air pressure scaling factor"
+msgstr "Facteur d’échelle de pression d’air"
 
 
 msgid "Quality"
@@ -4078,6 +4142,14 @@ msgid "Factor by which to shrink cloth"
 msgstr "Facteur par lequel contracter le tissu"
 
 
+msgid "Target Volume"
+msgstr "Volume cible"
+
+
+msgid "The mesh volume where the inner/outer pressure will be the same. If set to zero the volume will not contribute to the total pressure"
+msgstr "Le volume du mesh auquel les pressions internes et externes seront les mêmes. Si défini à zéro le volume ne contribuera pas à la pression totale"
+
+
 msgid "Tension Spring Damping"
 msgstr "Amortissement du ressort de tension"
 
@@ -4094,12 +4166,36 @@ msgid "Pressure"
 msgstr "Pression"
 
 
+msgid "The uniform pressure that is constantly applied to the mesh. Can be negative"
+msgstr "La pression uniforme appliquée constamment au mesh. Peut être négative"
+
+
 msgid "Dynamic Base Mesh"
 msgstr "Mesh de base dynamique"
 
 
 msgid "Make simulation respect deformations in the base mesh"
 msgstr "Forcer la simulation à respecter les déformations du mesh de base"
+
+
+msgid "Create Internal Springs"
+msgstr "Créer ressorts internes"
+
+
+msgid "Simulate an internal volume structure by creating springs connecting the opposite sides of the mesh"
+msgstr "Simuler une structure volumique interne en créant des ressorts entre les côtés opposés du mesh"
+
+
+msgid "Simulate pressure inside a closed cloth mesh"
+msgstr "Simuler la pression à l’intérieur d’un mesh tissu clos"
+
+
+msgid "Use Custom Volume"
+msgstr "Utiliser volume personnalisé"
+
+
+msgid "Use the Volume parameter as the initial volume"
+msgstr "Utiliser le paramètre Volume comme volume initial"
 
 
 msgid "Sew Cloth"
@@ -4118,12 +4214,20 @@ msgid "Vertex group for fine control over bending stiffness"
 msgstr "Groupe de vertices pour contrôler précisément la raideur de ploiement"
 
 
+msgid "Internal Springs Vertex Group"
+msgstr "Groupe de vertices de ressorts internes"
+
+
 msgid "Mass Vertex Group"
 msgstr "Groupe de vertices de masse"
 
 
 msgid "Vertex Group for pinning of vertices"
 msgstr "Groupe de vertices pour l’épinglage des vertices"
+
+
+msgid "Vertex Group for where to apply pressure. Zero weight means no pressure while a weight of one means full pressure. Faces with a vertex that has zero weight will be excluded from the volume calculation"
+msgstr "Groupe de vertices contrôlant où la pression est appliquée. Un poids nul signifie aucune pression, et un poids de un signifie pression maximale. Les faces ayant un vertex de poids nul seront exclues du calcul de volume"
 
 
 msgid "Shear Stiffness Vertex Group"
@@ -5135,8 +5239,28 @@ msgid "Mix Mode"
 msgstr "Mode de mélange"
 
 
+msgid "Specify how existing transformations and the action channels are combined"
+msgstr "Comment les transformations existantes et les canaux d’action sont combinés"
+
+
+msgid "Apply the action channels before the original transformation, as if applied to an imaginary parent with Aligned Inherit Scale"
+msgstr "Appliquer les canaux d’action avant la transformation originale, comme si appliqués à un parent imaginaire avec Taille alignée héritée"
+
+
 msgid "After Original"
 msgstr "Après original"
+
+
+msgid "Apply the action channels after the original transformation, as if applied to an imaginary child with Aligned Inherit Scale"
+msgstr "Appliquer les canaux d’action après la transformation originale, comme si appliqués à un enfant imaginaire avec Taille alignée héritée"
+
+
+msgid "After Original (Full Scale)"
+msgstr "Après original (taille totale)"
+
+
+msgid "Apply the action channels after the original transformation, as if applied to an imaginary child with Full Inherit Scale. This mode can create shear and is provided only for backward compatibility"
+msgstr "Appliquer les canaux d’action avant la transformation originale, comme si appliqués à un parent imaginaire avec Taille totale héritée. Ce mode peut créer des cisaillements et n’est proposé que pour la rétrocompatibilité"
 
 
 msgid "Sub-Target"
@@ -8758,10 +8882,6 @@ msgid "Use 5x multisampling to smooth paint edges"
 msgstr "Utiliser un multi-échantillonnage 5× pour adoucir les bords de la peinture"
 
 
-msgid "Dissolve"
-msgstr "Dissoudre"
-
-
 msgid "Enable to make surface changes disappear over time"
 msgstr "Activer pour faire disparaître avec le temps les changements de la surface"
 
@@ -11140,6 +11260,14 @@ msgid "Maximum number of additional cells"
 msgstr "Nombre maximum de cellules supplémentaires"
 
 
+msgid "Buoyancy Density"
+msgstr "Densité de flottabilité"
+
+
+msgid "Buoyant force based on smoke density (higher value results in faster rising smoke)"
+msgstr "Force de flottabilité basée sur la densité de la fumée (de plus fortes valeurs donnent une fumée montant plus rapidement)"
+
+
 msgid "Slice the whole domain object"
 msgstr "Couper l’ensemble de l’objet domaine"
 
@@ -11150,6 +11278,14 @@ msgstr "Unique"
 
 msgid "Perform a single slice of the domain object"
 msgstr "Effectuer une seule coupe de l’objet domaine"
+
+
+msgid "Cache directory"
+msgstr "Dossier de cache"
+
+
+msgid "Directory that contains fluid cache files"
+msgstr "Dossier contenant certains fichiers de cache fluide"
 
 
 msgid "End"
@@ -11168,16 +11304,40 @@ msgid "Frame on which the simulation starts"
 msgstr "Frame à laquelle débute la simulation"
 
 
+msgid "Use the timeline to bake the scene. Pausing and resuming possible"
+msgstr "Utiliser la ligne de temps pour pré-calculer la scène. Mettre en pause et reprendre sont possibles"
+
+
+msgid "Bake every stage of the simulation separately. Pausing and resuming possible"
+msgstr "Pré-calculer chaque étape de la simulation séparément. Mettre en pause et reprendre sont possibles"
+
+
 msgid "Final"
 msgstr "Final"
+
+
+msgid "Bake the entire simulation at once. Only generates the most essential cache files. Pausing and resuming not possible"
+msgstr "Pré-calculer toute la simulation d’un coup. Ne génère que les fichiers de cache les plus essentiels. Mettre en pause et reprendre sont impossibles"
 
 
 msgid "Cell Size"
 msgstr "Taille de cellule"
 
 
+msgid "CFL"
+msgstr "CFL"
+
+
+msgid "Maximal velocity per cell (higher value results in greater timesteps)"
+msgstr "Vitesse maximale par cellule (de plus fortes valeurs donnent de plus grands intervalles de temps)"
+
+
 msgid "Clipping"
 msgstr "Troncature"
+
+
+msgid "Value under which voxels are considered empty space to optimize caching and rendering"
+msgstr "Valeur en-deçà de laquelle les voxels sont considérés comme espace vide, pour optimiser la mise en cache et le rendu"
 
 
 msgid "Field"
@@ -11332,6 +11492,10 @@ msgid "Dissolve Speed"
 msgstr "Vitesse de dissolution"
 
 
+msgid "Determine how quickly the smoke dissolves (higher value makes smoke disappear faster)"
+msgstr "Détermine à quelle vitesse la fumée se dissout (de plus fortes valeurs font disparaître la fumée plus rapidement)"
+
+
 msgid "res"
 msgstr "res"
 
@@ -11340,12 +11504,52 @@ msgid "Smoke Grid Resolution"
 msgstr "Résolution de grille de fumée"
 
 
+msgid "Domain size in meters (longest domain side)"
+msgstr "Taille de domaine en mètres (côté le plus long du domaine)"
+
+
+msgid "Domain Type"
+msgstr "Type de domaine"
+
+
+msgid "Gas"
+msgstr "Gaz"
+
+
+msgid "Create domain for gases"
+msgstr "Créer un domaine pour gaz"
+
+
+msgid "Liquid"
+msgstr "Liquide"
+
+
+msgid "Create domain for liquids"
+msgstr "Créer un domaine pour liquides"
+
+
+msgid "Export Mantaflow Script"
+msgstr "Exporter script Mantaflow"
+
+
+msgid "Generate and export Mantaflow script from current domain settings during bake. This is only needed if you plan to analyze the cache (e.g. view grids, velocity vectors, particles) in Mantaflow directly (outside of Blender) after baking the simulation"
+msgstr "Générer et exporter un script Mantaflow à partir des réglages de domaine courants durant le pré-calcul. Ce n’est nécessaire que si vous voulez analyser le cache (par ex. visualiser les grilles, vecteurs de vélocité, particules) directement dans Mantaflow (en-dehors de Blender) après le pré-calcul de la simulation"
+
+
 msgid "Flame Grid"
 msgstr "Grille de flamme"
 
 
 msgid "Smoke flame grid"
 msgstr "Grille de flamme pour la fumée"
+
+
+msgid "Minimum temperature of the flames (higher value results in faster rising flames)"
+msgstr "Température minimale des flammes (de plus fortes valeurs donnent des flammes montant plus rapidement)"
+
+
+msgid "Maximum temperature of the flames (higher value results in faster rising flames)"
+msgstr "Température maximale des flammes (de plus fortes valeurs donnent des flammes montant plus rapidement)"
 
 
 msgid "Smoke"
@@ -11372,16 +11576,68 @@ msgid "Additional vorticity for the flames"
 msgstr "Vorticité supplémentaire pour les flammes"
 
 
+msgid "FLIP Ratio"
+msgstr "Proportion FLIP"
+
+
+msgid "PIC/FLIP Ratio. A value of 1.0 will result in a completely FLIP based simulation. Use a lower value for simulations which should produce smaller splashes"
+msgstr "Proportion PIC/FLIP. Une valeur de 1.0 donnera une simulation purement FLIP. Utiliser une valeur plus faible pour des simulations qui devraient produire de plus petites éclaboussures"
+
+
+msgid "Fluid Collection"
+msgstr "Collection de fluide"
+
+
+msgid "Obstacle-Fluid Threshold "
+msgstr "Limite obstacle-fluide"
+
+
+msgid "Determines how much fluid is allowed in an obstacle cell (higher values will tag a boundary cell as an obstacle easier and reduce the boundary smoothening effect)"
+msgstr "Détermine de combien le fluide est autorisé à pénétrer dans une cellule d’obstacle (de plus fortes valeurs marqueront plus facilement une cellule limite comme un obstacle, et réduiront l’effet d’adoucissement de limite)"
+
+
 msgid "Gravity in X, Y and Z direction"
 msgstr "Gravité dans les directions X, Y et Z"
+
+
+msgid "Guiding weight (higher value results in greater lag)"
+msgstr "Poids guide (de plus fortes valeurs donnent plus de décalage)"
+
+
+msgid "Guiding size (higher value results in larger vortices)"
+msgstr "Taille guide (de plus fortes valeurs donnent des vortex plus grands)"
+
+
+msgid "Use velocities from this object for the guiding effect (object needs to have fluid modifier and be of type domain))"
+msgstr "Utiliser les vélocités de cet objet pour l’effet de guide (l’objet doit avoir un modificateur fluide, et être de type domaine)"
+
+
+msgid "Guiding source"
+msgstr "Source de guide"
+
+
+msgid "Choose where to get guiding velocities from"
+msgstr "Choisir d’où obtenir les vélocités de guide"
 
 
 msgid "Domain"
 msgstr "Domaine"
 
 
+msgid "Use a fluid domain for guiding (domain needs to be baked already so that velocities can be extracted). Guiding domain can be of any type (i.e. gas or liquid)"
+msgstr "Utiliser un domaine de fluide comme guide (le domaine doit être déjà pré-calculé afin que les volocités puissent être extraites). Le domaine guide peut être de n’importe quel type (gaz ou liquide)"
+
+
+msgid "Use guiding (effector) objects to create fluid guiding (guiding objects should be animated and baked once set up completely)"
+msgstr "Utiliser des objets guide (effecteurs) pour créer le guide de fluide (les objets guide devraient être animés et pré-calculés une fois complètement définis)"
+
+
 msgid "Velocity Factor"
 msgstr "Facteur de vitesse"
+
+
+msgid "Guiding velocity factor (higher value results in greater guiding velocities)"
+msgstr "Facteur de vélocité de guide (de plus fortes valeurs donnent de plus grandes vélocités de guide)"
 
 
 msgid "Heat Grid"
@@ -14929,6 +15185,22 @@ msgid "Clone Offset"
 msgstr "Cloner décalage"
 
 
+msgid "Deformation"
+msgstr "Déformation"
+
+
+msgid "Deformation type that is used in the brush"
+msgstr "Type de déformation utilisée par la brosse"
+
+
+msgid "Inflate"
+msgstr "Agrandir"
+
+
+msgid "Expand"
+msgstr "Déployer"
+
+
 msgid "Use single color or gradient when painting"
 msgstr "Utiliser une couleur unique ou un dégradé lors de la peinture"
 
@@ -14983,14 +15255,6 @@ msgstr "Dure"
 
 msgid "Sharper"
 msgstr "Plus dur"
-
-
-msgid "Deformation"
-msgstr "Déformation"
-
-
-msgid "Deformation type that is used in the brush"
-msgstr "Type de déformation utilisée par la brosse"
 
 
 msgid "Bi-scale Grab"
@@ -15233,10 +15497,6 @@ msgid "Clay Strips"
 msgstr "Bandes d’argile"
 
 
-msgid "Inflate"
-msgstr "Agrandir"
-
-
 msgid "Blob"
 msgstr "Tacher"
 
@@ -15267,6 +15527,10 @@ msgstr "Pousser"
 
 msgid "Rotate"
 msgstr "Tourner"
+
+
+msgid "Cloth"
+msgstr "Tissu"
 
 
 msgid "Secondary Color"
@@ -18805,10 +19069,6 @@ msgstr "Fibres de cheveux"
 
 msgid "Shader Ball"
 msgstr "Balle shader"
-
-
-msgid "Cloth"
-msgstr "Tissu"
 
 
 msgid "Fluid"
@@ -29250,10 +29510,6 @@ msgstr "Lier"
 
 msgid "Whether geometry has been bound to anchors"
 msgstr "Si la géométrie a été liée aux ancres"
-
-
-msgid "Vertex Group for Anchors"
-msgstr "Groupe de vertices pour les ancres"
 
 
 msgid "Name of Vertex Group which determines Anchors"
@@ -46033,10 +46289,6 @@ msgid "Face selection mode"
 msgstr "Mode de sélection face"
 
 
-msgid "Expand"
-msgstr "Déployer"
-
-
 msgid "Select more vertices, edges or faces connected to initial selection"
 msgstr "Sélectionner plus de vertices, arêtes ou faces connectés à la sélection initiale"
 
@@ -58594,6 +58846,10 @@ msgid "URL to open"
 msgstr "URL à ouvrir"
 
 
+msgid "UV Maps"
+msgstr "Cartes UV"
+
+
 msgctxt "Operator"
 msgid "Add Autoexec Path"
 msgstr "Ajouter chemin autoexec"
@@ -59418,10 +59674,6 @@ msgstr "Squelette"
 
 msgid "Text Boxes"
 msgstr "Boîtes de texte"
-
-
-msgid "UV Maps"
-msgstr "Cartes UV"
 
 
 msgid "Filters"
@@ -63009,14 +63261,6 @@ msgid "Use a column layout for toolbox"
 msgstr "Utiliser une disposition en colonnes pour la boîte à outils"
 
 
-msgid "Large Cursors"
-msgstr "Grands curseurs"
-
-
-msgid "Use large mouse cursors when available"
-msgstr "Utiliser les grands curseurs de souris si disponibles"
-
-
 msgid "Display Object Info"
 msgstr "Afficher infos objet"
 
@@ -63643,22 +63887,6 @@ msgstr "Force de débruitage"
 
 msgid "Controls neighbor pixel weighting for the denoising filter (lower values preserve more detail, but aren't as smooth)"
 msgstr "Contrôle l’influence des pixels voisins pour le filtre de débruitage (de plus faibles valeurs préservent plus de détail, mais sont moins douces)"
-
-
-msgid "Subsurface Direct"
-msgstr "Subsurface directe"
-
-
-msgid "Denoise the direct subsurface lighting"
-msgstr "Débruiter l’éclairage sub-surfacique direct"
-
-
-msgid "Subsurface Indirect"
-msgstr "Subsurface indirecte"
-
-
-msgid "Denoise the indirect subsurface lighting"
-msgstr "Débruiter l’éclairage sub-surfacique indirect"
 
 
 msgid "Transmission Direct"
@@ -64533,10 +64761,6 @@ msgid "Transmission Color"
 msgstr "Couleur de transmission"
 
 
-msgid "Subsurface Color"
-msgstr "Couleur de subsurface"
-
-
 msgid "Object visibility for camera rays"
 msgstr "Visibilité de l’objet pour les rayons de la caméra"
 
@@ -64969,12 +65193,24 @@ msgid "Deliver shadow pass"
 msgstr "Délivrer la passe des ombres"
 
 
+msgid "Subsurface Color"
+msgstr "Couleur de subsurface"
+
+
 msgid "Deliver subsurface color pass"
 msgstr "Délivrer la passe de couleur de subsurface"
 
 
+msgid "Subsurface Direct"
+msgstr "Subsurface directe"
+
+
 msgid "Deliver subsurface direct pass"
 msgstr "Délivrer la passe de subsurface directe"
+
+
+msgid "Subsurface Indirect"
+msgstr "Subsurface indirecte"
 
 
 msgid "Deliver subsurface indirect pass"
@@ -73058,16 +73294,6 @@ msgstr "Peinture poids"
 
 
 msgctxt "WindowManager"
-msgid "Weight Paint Vertex Selection"
-msgstr "Peinture poids, sélection vertices"
-
-
-msgctxt "WindowManager"
-msgid "Face Mask"
-msgstr "Masque face"
-
-
-msgctxt "WindowManager"
 msgid "Image Paint"
 msgstr "Peinture images"
 
@@ -73390,6 +73616,10 @@ msgstr "AO"
 
 msgid "Mesh Light"
 msgstr "Lumière mesh"
+
+
+msgid "Subsurface"
+msgstr "Sub-surface"
 
 
 msgid "Offscreen Scale"
@@ -74307,10 +74537,6 @@ msgstr "Coordonnées de texture :"
 
 msgid "Sharp Edges"
 msgstr "Arêtes dures"
-
-
-msgid "Anchors Vertex Group:"
-msgstr "Groupe de vertices des ancres :"
 
 
 msgctxt "Operator"
@@ -84242,6 +84468,10 @@ msgid "Pick"
 msgstr "Choisir"
 
 
+msgid "Albedo"
+msgstr "Albedo"
+
+
 msgid "Image 1"
 msgstr "Image 1"
 
@@ -84460,6 +84690,10 @@ msgstr "Face arrière"
 
 msgid "Pointiness"
 msgstr "Caractère pointu"
+
+
+msgid "Random Per Island"
+msgstr "Aléatoire par île"
 
 
 msgid "Is Strand"
@@ -84786,6 +85020,10 @@ msgid "Allow Execution"
 msgstr "Autoriser exécution"
 
 
+msgid "Don't Save"
+msgstr "Ne pas enregistrer"
+
+
 msgid "unable to open the file"
 msgstr "impossible d’ouvrir le fichier"
 
@@ -84812,6 +85050,10 @@ msgstr "Activer les scripts"
 
 msgid "Continue using file without Python scripts"
 msgstr "Continuer à utiliser le fichier sans les scripts Python"
+
+
+msgid "Save changes to \"%s\" before closing?"
+msgstr "Enregistrer les changements dans “%s” avant de fermer ?"
 
 
 msgid "Path is empty, cannot save"
@@ -84930,6 +85172,10 @@ msgid "Win"
 msgstr "Win"
 
 
+msgid "OS"
+msgstr "OS"
+
+
 msgid "Bksp"
 msgstr "Ret"
 
@@ -85035,6 +85281,41 @@ msgid "%d x %s: %.4f ms, average: %.8f ms"
 msgstr "%d × %s : %.4f ms,  moyenne : %.8f ms"
 
 
+msgctxt "WindowManager"
+msgid "Limited Platform Support"
+msgstr "Support de plateforme limité"
+
+
+msgctxt "WindowManager"
+msgid "Your graphics card or driver has limited support. It may work, but with issues."
+msgstr "Votre carte graphique ou driver a un support limité. Ils peuvent marcher, mais avec des problèmes."
+
+
+msgctxt "WindowManager"
+msgid "Newer graphics drivers may be available to improve Blender support."
+msgstr "De nouveaux drivers graphiques peuvent être disponibles qui amélioreraient le support Blender."
+
+
+msgctxt "WindowManager"
+msgid "Graphics card:"
+msgstr "Carte graphique :"
+
+
+msgctxt "WindowManager"
+msgid "Platform Unsupported"
+msgstr "Plateforme non supportée"
+
+
+msgctxt "WindowManager"
+msgid "Your graphics card or driver is not supported."
+msgstr "Votre carte graphique ou son driver ne sont pas supportés."
+
+
+msgctxt "WindowManager"
+msgid "The program will now close."
+msgstr "Le programme va maintenant fermer."
+
+
 msgid "Failed to create a window without quad-buffer support, you may experience flickering"
 msgstr "Échec de création d’une fenêtre sans support du tampon quad, vous risquez d’avoir une image tremblotante"
 
@@ -85081,6 +85362,10 @@ msgstr "Import-export"
 
 msgid "Rigging"
 msgstr "Armature"
+
+
+msgid "Video Tools"
+msgstr "Outils vidéo"
 
 
 msgid "English (English)"
@@ -85265,6 +85550,10 @@ msgstr "Abkhaz (Аԥсуа бызшәа)"
 
 msgid "Thai (ภาษาไทย)"
 msgstr "Thai (ภาษาไทย)"
+
+
+msgid "Slovak (Slovenčina)"
+msgstr "Slovaque (Slovenčina)"
 
 
 msgid "Complete"

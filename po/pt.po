@@ -1,7 +1,7 @@
 
 msgid ""
 msgstr ""
-"Project-Id-Version: Blender 2.83 (sub 4) (b'14856e149ff5')\n"
+"Project-Id-Version: Blender 2.83 (sub 5) (b'085a1e246732')\n"
 "Report-Msgid-Bugs-To: Ivan Paulos Tomé <ivan.paulos.tome@yandex.com>\n"
 "POT-Creation-Date: 2019-11-11 00:00:00\n"
 "PO-Revision-Date: 2017-09-08 21:24-0300\n"
@@ -997,10 +997,6 @@ msgid "Transmission"
 msgstr "Transmissão"
 
 
-msgid "Subsurface"
-msgstr "Sub-superfície"
-
-
 msgid "Save Mode"
 msgstr "Modo para guardar"
 
@@ -1075,10 +1071,6 @@ msgstr "Adiciona as contribuições dos polimentos."
 
 msgid "Add indirect lighting contribution"
 msgstr "Adiciona as contribuições da iluminações indiretas."
-
-
-msgid "Add subsurface contribution"
-msgstr "Adiciona as contribuições das subdivisões de superfície."
 
 
 msgid "Add transmission contribution"
@@ -2715,6 +2707,10 @@ msgstr "A curva usada para a força."
 
 msgid "Mode"
 msgstr "Modo"
+
+
+msgid "Dissolve"
+msgstr "Dissolver"
 
 
 msgid "Point"
@@ -7305,10 +7301,6 @@ msgid "Use 5x multisampling to smooth paint edges"
 msgstr "Usa a multi-amostragem com cinco amostras (5x) para suavizar a pintura de arestas."
 
 
-msgid "Dissolve"
-msgstr "Dissolver"
-
-
 msgid "Enable to make surface changes disappear over time"
 msgstr "Ative para fazer com que as alterações de superfície desapareçam com o tempo."
 
@@ -11893,6 +11885,18 @@ msgid "Clone Offset"
 msgstr "Deslocamento para clone"
 
 
+msgid "Deformation"
+msgstr "Deformação"
+
+
+msgid "Inflate"
+msgstr "Inflar"
+
+
+msgid "Expand"
+msgstr "Expandir"
+
+
 msgid "Crease Brush Pinch Factor"
 msgstr "Fator de pincel de vinco para pinçar"
 
@@ -11935,10 +11939,6 @@ msgstr "Ressaltar"
 
 msgid "Sharper"
 msgstr "Aguçar"
-
-
-msgid "Deformation"
-msgstr "Deformação"
 
 
 msgid "Paint most on faces pointing towards the view according to this angle"
@@ -12137,10 +12137,6 @@ msgid "Clay Strips"
 msgstr "Faixas de argila"
 
 
-msgid "Inflate"
-msgstr "Inflar"
-
-
 msgid "Blob"
 msgstr "Gotejar"
 
@@ -12171,6 +12167,10 @@ msgstr "Cutucar"
 
 msgid "Rotate"
 msgstr "Rotacionar"
+
+
+msgid "Cloth"
+msgstr "Tecido"
 
 
 msgid "Secondary Color"
@@ -14815,10 +14815,6 @@ msgstr "Cabelo"
 
 msgid "Hair strands"
 msgstr "Vertentes de cabelo."
-
-
-msgid "Cloth"
-msgstr "Tecido"
 
 
 msgid "Fluid"
@@ -24321,10 +24317,6 @@ msgstr "Margens"
 
 msgid "Whether geometry has been bound to anchors"
 msgstr "Caso a geometria esteja muito próxima das âncoras."
-
-
-msgid "Vertex Group for Anchors"
-msgstr "Grupo de vértices para âncoras"
 
 
 msgid "Name of Vertex Group which determines Anchors"
@@ -40005,10 +39997,6 @@ msgid "Face selection mode"
 msgstr "Modo de seleção de face"
 
 
-msgid "Expand"
-msgstr "Expandir"
-
-
 msgid "Select more vertices, edges or faces connected to initial selection"
 msgstr "Seleciona mais vértices, arestas ou faces conectados a seleção inicial."
 
@@ -51654,6 +51642,10 @@ msgid "URL to open"
 msgstr "A localização do tipo \"URL\" a ser aberta"
 
 
+msgid "UV Maps"
+msgstr "Mapas UV"
+
+
 msgctxt "Operator"
 msgid "Add Autoexec Path"
 msgstr "Adicionar caminho de auto-execução"
@@ -52356,10 +52348,6 @@ msgstr "Esqueleto"
 
 msgid "Text Boxes"
 msgstr "Caixas de texto"
-
-
-msgid "UV Maps"
-msgstr "Mapas UV"
 
 
 msgid "Filters"
@@ -55079,14 +55067,6 @@ msgid "Use a column layout for toolbox"
 msgstr "Usa um esquema em colunas para a caixa de ferramentas."
 
 
-msgid "Large Cursors"
-msgstr "Cursores grandes"
-
-
-msgid "Use large mouse cursors when available"
-msgstr "Usa cursores grandes, quando disponíveis pelo sistema operativo."
-
-
 msgid "Display Object Info"
 msgstr "Mostrar informações do objeto"
 
@@ -55653,22 +55633,6 @@ msgstr "Força da redução de ruídos"
 
 msgid "Controls neighbor pixel weighting for the denoising filter (lower values preserve more detail, but aren't as smooth)"
 msgstr "Controla os pesos de influência dos pixeis avizinhados para o filtro de redução de ruídos (valores mais baixos preservam mais detalhes, mas não são tão suavizados)."
-
-
-msgid "Subsurface Direct"
-msgstr "Sub-superfície direta"
-
-
-msgid "Denoise the direct subsurface lighting"
-msgstr "Reduz os ruídos da iluminação direta de subdivisão de superfície."
-
-
-msgid "Subsurface Indirect"
-msgstr "Sub-superfície indireta"
-
-
-msgid "Denoise the indirect subsurface lighting"
-msgstr "Reduz os ruídos da iluminação indireta de subdivisão de superfície."
 
 
 msgid "Transmission Direct"
@@ -56471,10 +56435,6 @@ msgid "Transmission Color"
 msgstr "Cor de transmissão"
 
 
-msgid "Subsurface Color"
-msgstr "Cor para sub-superfície"
-
-
 msgid "Object visibility for camera rays"
 msgstr "Visibilidade de objetos para os raios de câmara."
 
@@ -56895,12 +56855,24 @@ msgid "Deliver shadow pass"
 msgstr "Fornece o passo de sombra."
 
 
+msgid "Subsurface Color"
+msgstr "Cor para sub-superfície"
+
+
 msgid "Deliver subsurface color pass"
 msgstr "Fornece o passo de cor de sub-superfície."
 
 
+msgid "Subsurface Direct"
+msgstr "Sub-superfície direta"
+
+
 msgid "Deliver subsurface direct pass"
 msgstr "Fornece o passo direto de sub-superfície."
+
+
+msgid "Subsurface Indirect"
+msgstr "Sub-superfície indireta"
 
 
 msgid "Deliver subsurface indirect pass"
@@ -64821,16 +64793,6 @@ msgstr "Pintura de pesos de influência"
 
 
 msgctxt "WindowManager"
-msgid "Weight Paint Vertex Selection"
-msgstr "Seleção de vértices para pintura de pesos de influência"
-
-
-msgctxt "WindowManager"
-msgid "Face Mask"
-msgstr "Máscara de face"
-
-
-msgctxt "WindowManager"
 msgid "Image Paint"
 msgstr "Pintura de imagem"
 
@@ -65153,6 +65115,10 @@ msgstr "Oclusão ambiente"
 
 msgid "Mesh Light"
 msgstr "Malha de luz"
+
+
+msgid "Subsurface"
+msgstr "Sub-superfície"
 
 
 msgid "Tiles X"
@@ -66014,10 +65980,6 @@ msgstr "Coordenadas de textura:"
 
 msgid "Sharp Edges"
 msgstr "Arestas ressaltadas"
-
-
-msgid "Anchors Vertex Group:"
-msgstr "Ancorar grupo de vértices:"
 
 
 msgctxt "Operator"

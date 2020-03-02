@@ -1,7 +1,7 @@
 
 msgid ""
 msgstr ""
-"Project-Id-Version: Blender 2.83 (sub 4) (b'14856e149ff5')\n"
+"Project-Id-Version: Blender 2.83 (sub 5) (b'085a1e246732')\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-11-11 00:00:00\n"
 "PO-Revision-Date: \n"
@@ -1077,10 +1077,6 @@ msgid "Transmission"
 msgstr "透射"
 
 
-msgid "Subsurface"
-msgstr "次表面"
-
-
 msgid "Save Mode"
 msgstr "保存模式"
 
@@ -1155,10 +1151,6 @@ msgstr "添加光泽性质"
 
 msgid "Add indirect lighting contribution"
 msgstr "添加间接光性质"
-
-
-msgid "Add subsurface contribution"
-msgstr "添加次表面反射SSS性质"
 
 
 msgid "Add transmission contribution"
@@ -3037,8 +3029,8 @@ msgid "Eraser Mode"
 msgstr "橡皮擦模式"
 
 
-msgid "Dissolve,"
-msgstr "消融,"
+msgid "Dissolve"
+msgstr "消融"
 
 
 msgid "Erase strokes, fading their points strength and thickness"
@@ -3719,6 +3711,10 @@ msgstr "中心"
 
 msgid "Pole Merge Start Angle"
 msgstr "极点合并起始角度"
+
+
+msgid "Angle at which interocular distance starts to fade to 0"
+msgstr "双眼距离开始衰减到0的角度"
 
 
 msgid "Pole Merge End Angle"
@@ -7391,7 +7387,7 @@ msgstr "预设"
 
 
 msgid "Support Loops"
-msgstr "支持循环"
+msgstr "支撑环"
 
 
 msgid "Loops on each side of the profile"
@@ -7399,7 +7395,7 @@ msgstr "轮廓两侧的循环"
 
 
 msgid "Cornice Molding"
-msgstr "角质造型"
+msgstr "檐板造型"
 
 
 msgid "Crown Molding"
@@ -7407,11 +7403,11 @@ msgstr "皇冠造型"
 
 
 msgid "Steps"
-msgstr "步数"
+msgstr "步数(阶梯)"
 
 
 msgid "A number of steps defined by the segments"
-msgstr "由线段定义的多个步骤"
+msgstr "由线段数定义的多段阶梯"
 
 
 msgid "Segments"
@@ -7419,7 +7415,7 @@ msgstr "段数"
 
 
 msgid "Segments sampled from control points"
-msgstr "从控制点采样的线段"
+msgstr "采样自控制点的段数"
 
 
 msgid "Force the path view to fit a defined boundary"
@@ -7979,7 +7975,7 @@ msgstr "按字母顺序排序的数据块 - 主要是场景中的物体 (禁用�
 
 
 msgid "Multi-Word Fuzzy Filter"
-msgstr "多重世界模糊过滤器"
+msgstr "多词模糊过滤"
 
 
 msgid "Perform fuzzy/multi-word matching (WARNING: May be slow)"
@@ -8879,10 +8875,6 @@ msgstr "抗锯齿"
 
 msgid "Use 5x multisampling to smooth paint edges"
 msgstr "使用 5 级多重采样以平滑绘制边缘"
-
-
-msgid "Dissolve"
-msgstr "消融"
 
 
 msgid "Enable to make surface changes disappear over time"
@@ -12171,6 +12163,10 @@ msgid "Lowest possible particle lifetime"
 msgstr "粒子的最短可能寿命"
 
 
+msgid "Maximum Kinetic Energy Potential"
+msgstr "动能可能最大值"
+
+
 msgid "Upper clamping threshold that indicates the fluid speed where cells no longer emit more particles (higher value results in generally less particles)"
 msgstr "钳制阈值上界，指示单元格不再发射更多粒子时的流体速度(值越高，通常粒子越少)"
 
@@ -12179,12 +12175,20 @@ msgid "Maximum Trapped Air Potential"
 msgstr "可能滞留空气最大值"
 
 
+msgid "Upper clamping threshold for marking fluid cells where air is trapped (higher value results in less marked cells)"
+msgstr "用于标记空气滞留的流体单元格的钳制阈值上界(值越高，标记的单元格越少)"
+
+
 msgid "Maximum Wave Crest Potential"
 msgstr "最大可能波峰"
 
 
 msgid "Upper clamping threshold for marking fluid cells as wave crests (higher value results in less marked cells)"
 msgstr "用于将流体单元格标记为波峰的钳制阈值上界(值越高，标记的单元格越少)"
+
+
+msgid "Minimum Kinetic Energy Potential"
+msgstr "动能可能最小值"
 
 
 msgid "Lower clamping threshold that indicates the fluid speed where cells start to emit particles (lower values result in generally more particles)"
@@ -14418,7 +14422,7 @@ msgstr "持续"
 
 
 msgid "Show Modal All"
-msgstr "显示全部模块"
+msgstr "显示全部模态"
 
 
 msgid "Show all while interacting"
@@ -16020,6 +16024,22 @@ msgid "Clone Offset"
 msgstr "克隆位移"
 
 
+msgid "Deformation"
+msgstr "塑性"
+
+
+msgid "Deformation type that is used in the brush"
+msgstr "笔刷中使用的变形类型"
+
+
+msgid "Inflate"
+msgstr "膨胀"
+
+
+msgid "Expand"
+msgstr "扩展"
+
+
 msgid "Color Type"
 msgstr "颜色类型"
 
@@ -16106,14 +16126,6 @@ msgstr "虚线长度"
 
 msgid "Length of a dash cycle measured in stroke samples"
 msgstr "笔画采样中度量一个虚线循环的长度"
-
-
-msgid "Deformation"
-msgstr "塑性"
-
-
-msgid "Deformation type that is used in the brush"
-msgstr "笔刷中使用的变形类型"
 
 
 msgid "Poisson ratio for elastic deformation. Higher values preserve volume more, but also lead to more bulging"
@@ -16432,10 +16444,6 @@ msgid "Clay Thumb"
 msgstr "指推"
 
 
-msgid "Inflate"
-msgstr "膨胀"
-
-
 msgid "Blob"
 msgstr "球体"
 
@@ -16478,6 +16486,10 @@ msgstr "旋转"
 
 msgid "Slide Relax"
 msgstr "滑动松弛(拓扑)"
+
+
+msgid "Cloth"
+msgstr "布料"
 
 
 msgid "Secondary Color"
@@ -16857,7 +16869,7 @@ msgstr "渐变"
 
 
 msgid "Cutoff"
-msgstr "遮断"
+msgstr "截止"
 
 
 msgid "Size Pressure"
@@ -19640,10 +19652,6 @@ msgstr "发股"
 
 msgid "Shader Ball"
 msgstr "着色球"
-
-
-msgid "Cloth"
-msgstr "布料"
 
 
 msgid "Fluid"
@@ -23918,6 +23926,14 @@ msgid "Text Clipboard"
 msgstr "文本剪贴板"
 
 
+msgid "Is Interface Locked"
+msgstr "接口是否锁定"
+
+
+msgid "If true, the interface is currently locked by a running job and data shouldn't be modified from application timers. Otherwise, the running job might conflict with the handler causing unexpected results or even crashes"
+msgstr "如果为真，则接口当前由正在运行的作业锁定，不应从应用程序计时器修改数据。否则，正在运行的作业可能与处理程序冲突，从而导致意外结果甚至崩溃"
+
+
 msgid "Key Configurations"
 msgstr "按键配置"
 
@@ -24567,11 +24583,11 @@ msgstr "拥有者"
 
 
 msgid "Modal Keymap"
-msgstr "模块键位映射表"
+msgstr "模态键位映射表"
 
 
 msgid "Indicates that a keymap is used for translate modal events for an operator"
-msgstr "键位映射表被定义为纪录用于响应促动器的模块事件"
+msgstr "键位映射表被定义为纪录用于响应促动器的模态事件"
 
 
 msgid "Keymap is defined by the user"
@@ -25799,7 +25815,7 @@ msgstr "属性值"
 
 
 msgid "The value this event translates to in a modal keymap"
-msgstr "当前值用于传输键设置"
+msgstr "当前值用于传输一个模态键位映射"
 
 
 msgctxt "WindowManager"
@@ -27964,6 +27980,10 @@ msgstr "骨骼扭转"
 
 msgid "Curve Context Menu"
 msgstr "曲线上下文菜单"
+
+
+msgid "Kerning"
+msgstr "字距"
 
 
 msgid "Interpolate"
@@ -30426,10 +30446,6 @@ msgid "Whether geometry has been bound to anchors"
 msgstr "无论几何体是否已被绑定到控制体上"
 
 
-msgid "Vertex Group for Anchors"
-msgstr "用于锚点的顶点组"
-
-
 msgid "Name of Vertex Group which determines Anchors"
 msgstr "定义锚点的顶点组名称"
 
@@ -31979,7 +31995,7 @@ msgstr "顶点组B的权重对顶点组A权重值的影响方式"
 
 
 msgid "Replace VGroup A's weights by VGroup B's ones"
-msgstr "用顶点组B的的权重替换顶点组A的权重"
+msgstr "用顶点组B的权重替换顶点组A的权重"
 
 
 msgid "Add VGroup B's weights to VGroup A's ones"
@@ -36808,6 +36824,46 @@ msgid "Wave Texture"
 msgstr "波浪纹理"
 
 
+msgid "Bands Direction"
+msgstr "条纹方向"
+
+
+msgid "Bands across X axis"
+msgstr "条纹垂直于X轴"
+
+
+msgid "Bands across Y axis"
+msgstr "条纹垂直于Y轴"
+
+
+msgid "Bands across Z axis"
+msgstr "条纹垂直于Z轴"
+
+
+msgid "Bands across diagonal axis"
+msgstr "对角方向的条纹"
+
+
+msgid "Rings Direction"
+msgstr "环纹方向"
+
+
+msgid "Rings along X axis"
+msgstr "沿 X 轴的环纹"
+
+
+msgid "Rings along Y axis"
+msgstr "沿 Y 轴的环纹"
+
+
+msgid "Rings along Z axis"
+msgstr "沿 Z 轴的环纹"
+
+
+msgid "Rings along spherical distance"
+msgstr "沿球面距离的环"
+
+
 msgid "Wave Profile"
 msgstr "波浪轮廓"
 
@@ -36818,6 +36874,10 @@ msgstr "使用标准正弦波形轮廓"
 
 msgid "Use a sawtooth profile"
 msgstr "使用锯齿波轮廓"
+
+
+msgid "Use a triangle profile"
+msgstr "使用三角波形轮廓"
 
 
 msgid "Use standard wave texture in bands"
@@ -36968,8 +37028,36 @@ msgid "Entry-wise tan(A)"
 msgstr "逐项求正切"
 
 
+msgid "Vector Rotate"
+msgstr "矢量旋转"
+
+
+msgid "Type of rotation"
+msgstr "旋转类型"
+
+
+msgid "Rotate a point using axis angle"
+msgstr "使用轴向与角度旋转单点"
+
+
+msgid "Rotate a point using X axis"
+msgstr "使用 X 轴旋转单点"
+
+
+msgid "Rotate a point using Y axis"
+msgstr "使用 Y 轴旋转单点"
+
+
 msgid "Z Axis"
 msgstr "Z 轴"
+
+
+msgid "Rotate a point using Z axis"
+msgstr "使用 Z 轴旋转单点"
+
+
+msgid "Rotate a point using XYZ order"
+msgstr "使用 XYZ 顺序旋转单点"
 
 
 msgid "Vector Transform"
@@ -48534,6 +48622,10 @@ msgid "Poly Build Face at Cursor"
 msgstr "在光标处的多边形构建面"
 
 
+msgid "Create Quads"
+msgstr "创建四边形"
+
+
 msgid "Automatically split edges in triangles to maintain quad topology"
 msgstr "自动分割三角形中的边以保持四边拓扑"
 
@@ -49184,10 +49276,6 @@ msgstr "边选择模式"
 
 msgid "Face selection mode"
 msgstr "面选择模式"
-
-
-msgid "Expand"
-msgstr "扩展"
 
 
 msgid "Select more vertices, edges or faces connected to initial selection"
@@ -57264,7 +57352,7 @@ msgstr "使用模型的法向和曲率生成遮罩"
 
 msgctxt "Operator"
 msgid "Mask Filter"
-msgstr "遮罩过滤"
+msgstr "遮罩滤镜"
 
 
 msgid "Applies a filter to modify the current mask"
@@ -57280,7 +57368,7 @@ msgstr "根据雕刻的顶点数使用自动迭代次数"
 
 
 msgid "Filter that is going to be applied to the mask"
-msgstr "要应用于遮罩的筛选器"
+msgstr "要应用于遮罩的滤镜"
 
 
 msgid "Smooth Mask"
@@ -57508,6 +57596,18 @@ msgstr "设置轴心为活动物体位置"
 
 msgid "Sets the pivot position to the surface under the cursor"
 msgstr "设置轴心点为游标下方表面"
+
+
+msgid "Mouse Position X"
+msgstr "鼠标位置 X"
+
+
+msgid "Position of the mouse used for \"Surface\" mode"
+msgstr "用于\"Surface\"模式的鼠标的位置"
+
+
+msgid "Mouse Position Y"
+msgstr "鼠标位置 Y"
 
 
 msgid "Symmetrize the topology modifications"
@@ -61054,6 +61154,15 @@ msgstr "移动视图"
 
 
 msgctxt "Operator"
+msgid "View Navigation (Walk/Fly)"
+msgstr "视图导航 (步行/飞行)"
+
+
+msgid "Interactively navigate around the scene (uses the mode (walk/fly) preference)"
+msgstr "以交互方式环绕场景导航 (用于模式 (漫游/飞行) 首选项)"
+
+
+msgctxt "Operator"
 msgid "NDOF Transform View"
 msgstr "NDOF变换视图"
 
@@ -61083,6 +61192,10 @@ msgstr "使用3D鼠标来查看/缩放视图"
 msgctxt "Operator"
 msgid "NDOF Pan View"
 msgstr "NDOF 平移视图"
+
+
+msgid "Pan the view with the 3D mouse"
+msgstr "使用3D鼠标来平移视图"
 
 
 msgctxt "Operator"
@@ -61235,8 +61348,16 @@ msgid "Snap Selection to Active"
 msgstr "选中项 --> 活动项"
 
 
+msgid "Snap selected item(s) to the active item"
+msgstr "将所选项吸附到活动项"
+
+
 msgid "Snap selected item(s) to the 3D cursor"
 msgstr "吸附选中项到3D游标"
+
+
+msgid "If the selection should be snapped as a whole or by each object center"
+msgstr "将选中项作为一个整体吸附或吸附各物体的中心"
 
 
 msgid "Snap selected item(s) to their nearest grid division"
@@ -61255,6 +61376,10 @@ msgstr "翻转快照材质"
 msgctxt "Operator"
 msgid "Toggle Shading Type"
 msgstr "切换着色类型"
+
+
+msgid "Toggle shading type in 3D viewport"
+msgstr "切换3D视图中着色类型"
 
 
 msgid "Shading type to toggle"
@@ -61643,6 +61768,10 @@ msgstr "摊平层级"
 
 msgid "Do not preserve objects' parent/children relationship"
 msgstr "不保留物体之间的父子关系"
+
+
+msgid "Value by which to enlarge or shrink the objects with respect to the world's origin"
+msgstr "指定围绕世界原点放大或缩小物体的数值"
 
 
 msgid "Geometry Samples"
@@ -63126,6 +63255,10 @@ msgid "Remap Relative"
 msgstr "更新相对路径"
 
 
+msgid "Remap relative paths when saving to a different directory"
+msgstr "当保存到不同目录时重新映射相对路径"
+
+
 msgctxt "Operator"
 msgid "Save Startup File"
 msgstr "保存启动文件"
@@ -63171,6 +63304,10 @@ msgid "Set Stereo 3D"
 msgstr "设置立体3D"
 
 
+msgid "Toggle 3D stereo support for current window (or change the display mode)"
+msgstr "切换当前窗口的3D立体声支持(或更改显示模式)"
+
+
 msgid "Anaglyph Type"
 msgstr "立体影片类型"
 
@@ -63191,8 +63328,16 @@ msgid "Anaglyph"
 msgstr "立体影片"
 
 
+msgid "Render views for left and right eyes as two differently filtered colors in a single image (anaglyph glasses are required)"
+msgstr "将左眼和右眼的视图渲染为单张图像中的两种不同滤色的颜色(需要立体眼镜)"
+
+
 msgid "Interlace"
 msgstr "交错"
+
+
+msgid "Render views for left and right eyes interlaced in a single image (3D-ready monitor is required)"
+msgstr "在单个图像中交错的左眼和右眼的渲染视图(需要3D显示器)"
 
 
 msgid "Time Sequential"
@@ -63357,6 +63502,14 @@ msgstr "可选标识符"
 
 msgid "Site"
 msgstr "站点"
+
+
+msgid "UV Maps"
+msgstr "UV 贴图"
+
+
+msgid "Instancing"
+msgstr "实例化"
 
 
 msgctxt "Operator"
@@ -64299,10 +64452,6 @@ msgid "Text Boxes"
 msgstr "文本框"
 
 
-msgid "UV Maps"
-msgstr "UV 贴图"
-
-
 msgid "Filters"
 msgstr "过滤器"
 
@@ -64573,10 +64722,6 @@ msgstr "切断连接"
 
 msgid "Delta Transform"
 msgstr "变换增量"
-
-
-msgid "Instancing"
-msgstr "实例化"
 
 
 msgid "Scale by Face Size"
@@ -65521,7 +65666,7 @@ msgstr "框选隐藏"
 
 msgctxt "Operator"
 msgid "Mesh Filter"
-msgstr "网格过滤"
+msgstr "网格滤镜"
 
 
 msgctxt "Operator"
@@ -68596,14 +68741,6 @@ msgid "Use transform gizmos by default"
 msgstr "默认使用变换Gizmo"
 
 
-msgid "Large Cursors"
-msgstr "大号光标"
-
-
-msgid "Use large mouse cursors when available"
-msgstr "为鼠标开启大光标显示(3D视图)"
-
-
 msgid "Editor Corner Splitting"
 msgstr "编辑器拐角拆分"
 
@@ -69412,22 +69549,6 @@ msgstr "降噪强度"
 
 msgid "Controls neighbor pixel weighting for the denoising filter (lower values preserve more detail, but aren't as smooth)"
 msgstr "控制去噪过滤的相邻像素加权 (更低值保留更多细节, 但没那么光滑)"
-
-
-msgid "Subsurface Direct"
-msgstr "直接 SSS"
-
-
-msgid "Denoise the direct subsurface lighting"
-msgstr "直接次表面光照降噪"
-
-
-msgid "Subsurface Indirect"
-msgstr "间接次表面"
-
-
-msgid "Denoise the indirect subsurface lighting"
-msgstr "间接次表面光降噪"
 
 
 msgid "Transmission Direct"
@@ -70414,22 +70535,6 @@ msgid "Show the Transmission Color render pass"
 msgstr "显示透射颜色渲染通道"
 
 
-msgid "Show the Subsurface Direct render pass"
-msgstr "显示次表面直接光渲染通道"
-
-
-msgid "Show the Subsurface Indirect render pass"
-msgstr "显示次表面间接光渲染通道"
-
-
-msgid "Subsurface Color"
-msgstr "次表面颜色"
-
-
-msgid "Show the Subsurface Color render pass"
-msgstr "显示次表面颜色渲染通道"
-
-
 msgid "Show the Volume Direct render pass"
 msgstr "显示体积直接光渲染通道"
 
@@ -70571,7 +70676,7 @@ msgstr "主干中相关 po 文件的路径"
 
 
 msgid "Language ID"
-msgstr "语言"
+msgstr "语言ID"
 
 
 msgid "ISO code (eg. \"fr_FR\")"
@@ -70603,7 +70708,7 @@ msgstr "更新到分支目录中的语言"
 
 
 msgid "POT File Path"
-msgstr "文件路径"
+msgstr "POT文件路径"
 
 
 msgid "Path to the pot template file"
@@ -70644,6 +70749,10 @@ msgstr "隐藏被渲染条目的名称"
 
 msgid "Python expression to be evaluated as the initial node setting"
 msgstr "作为初始节点设置的待求值的 Python 表达式"
+
+
+msgid "The amount of objects per unit on the line"
+msgstr "单位长度上的物体数量"
 
 
 msgid "Normal Offset"
@@ -71094,12 +71203,24 @@ msgid "Deliver shadow pass"
 msgstr "传递阴影通道"
 
 
+msgid "Subsurface Color"
+msgstr "次表面颜色"
+
+
 msgid "Deliver subsurface color pass"
 msgstr "传递次表面颜色通道"
 
 
+msgid "Subsurface Direct"
+msgstr "直接 SSS"
+
+
 msgid "Deliver subsurface direct pass"
 msgstr "传递直接光泽通道"
+
+
+msgid "Subsurface Indirect"
+msgstr "间接次表面"
 
 
 msgid "Deliver subsurface indirect pass"
@@ -71656,6 +71777,10 @@ msgstr "使用Freestyle绘制样式化笔画"
 
 msgid "Save for every anti-aliasing sample the entire RenderLayer results (this solves anti-aliasing issues with compositing)"
 msgstr "为每一个渲染层保存抗锯齿采样结果(用于解决抗锯齿的合成问题)"
+
+
+msgid "Use high quality tangent space at the cost of lower performance"
+msgstr "以较低的性能为代价使用高质量的切向空间"
 
 
 msgid "Lock Interface"
@@ -77783,10 +77908,6 @@ msgid "Text character formatting settings"
 msgstr "文本字符的格式设置"
 
 
-msgid "Kerning"
-msgstr "字距"
-
-
 msgid "Spacing between characters"
 msgstr "字符间距"
 
@@ -78597,6 +78718,38 @@ msgstr "主题背景颜色"
 
 msgid "Theme settings for background colors and gradient"
 msgstr "使用色彩来显示骨骼"
+
+
+msgid "Background Type"
+msgstr "背景类型"
+
+
+msgid "Type of background in the 3D viewport"
+msgstr "3D 视图中的背景类型"
+
+
+msgid "Single Color"
+msgstr "单色"
+
+
+msgid "Use a solid color as viewport background"
+msgstr "使用纯色作为视图背景"
+
+
+msgid "Linear Gradient"
+msgstr "线性渐变"
+
+
+msgid "Use a screen space vertical linear gradient as viewport background"
+msgstr "使用屏幕空间垂直线性渐变作为视图背景"
+
+
+msgid "Vignette"
+msgstr "径向"
+
+
+msgid "Use a radial gradient as viewport background"
+msgstr "使用径向渐变作为视图背景"
 
 
 msgid "Gradient Low"
@@ -81061,7 +81214,7 @@ msgstr "显示拆分法线"
 
 
 msgid "Display vertex-per-face normals as lines"
-msgstr "将每面顶点法线显示为线条"
+msgstr "显示各面顶点法线为直线"
 
 
 msgid "Stat Vis"
@@ -81085,7 +81238,7 @@ msgstr "显示顶点法线"
 
 
 msgid "Display vertex normals as lines"
-msgstr "将顶点法线显示为线条"
+msgstr "显示顶点法线为直线"
 
 
 msgid "Show Weights"
@@ -81340,6 +81493,22 @@ msgid "Render Pass to show in the viewport"
 msgstr "在视图中显示的渲染通道"
 
 
+msgid "Diffuse Light"
+msgstr "漫射光线"
+
+
+msgid "Specular Light"
+msgstr "高光光线"
+
+
+msgid "Volume Transmittance"
+msgstr "体积透射"
+
+
+msgid "Volume Scattering"
+msgstr "体积散射"
+
+
 msgid "Selected StudioLight"
 msgstr "选中棚灯"
 
@@ -81476,6 +81645,18 @@ msgid "Dependencies in the scene data"
 msgstr "场景数据中的依赖"
 
 
+msgid "EEVEE Settings"
+msgstr "EEVEE设置"
+
+
+msgid "View layer settings for EEVEE"
+msgstr "EEVEE视图层设置"
+
+
+msgid "Root of collections hierarchy of this view layer,its 'collection' pointer property is the same as the scene's master collection"
+msgstr "此视图层的集合层次结构的根级，其\"集合\"指针属性与场景的主集合相同"
+
+
 msgid "Material Override"
 msgstr "材质覆盖"
 
@@ -81506,6 +81687,18 @@ msgstr "启用或禁用渲染该视图层"
 
 msgid "Render stylized strokes in this Layer"
 msgstr "在当前层中渲染样式笔画"
+
+
+msgid "Deliver bloom pass"
+msgstr "传递辉光通道"
+
+
+msgid "Deliver volume scattering pass"
+msgstr "传递体积散射通道"
+
+
+msgid "Deliver volume transmittance pass"
+msgstr "传递体积透射通道"
 
 
 msgid "Walk navigation settings"
@@ -82210,16 +82403,6 @@ msgstr "权重绘制"
 
 
 msgctxt "WindowManager"
-msgid "Weight Paint Vertex Selection"
-msgstr "权重绘制的顶点选区"
-
-
-msgctxt "WindowManager"
-msgid "Face Mask"
-msgstr "面遮罩"
-
-
-msgctxt "WindowManager"
 msgid "Image Paint"
 msgstr "图像绘制"
 
@@ -82641,6 +82824,10 @@ msgstr "AO"
 
 msgid "Mesh Light"
 msgstr "网格灯光"
+
+
+msgid "Subsurface"
+msgstr "次表面"
 
 
 msgid "Dicing Rate Render"
@@ -83921,10 +84108,6 @@ msgstr "纹理坐标:"
 
 msgid "Sharp Edges"
 msgstr "锐边"
-
-
-msgid "Anchors Vertex Group:"
-msgstr "锚点顶点组:"
 
 
 msgctxt "Operator"
@@ -85831,6 +86014,14 @@ msgstr "映至"
 
 msgid "Use for Rendering"
 msgstr "用于渲染"
+
+
+msgid "Transmittance"
+msgstr "透射"
+
+
+msgid "Scatter"
+msgstr "散射"
 
 
 msgid "Unknown add-ons"
@@ -90754,6 +90945,10 @@ msgstr "选择无效"
 
 msgid "Internal mesh error"
 msgstr "内部网格错误"
+
+
+msgid "Convex hull failed"
+msgstr "创建凸壳失败"
 
 
 msgid "Zero normal given"
@@ -95741,7 +95936,7 @@ msgstr "当前文件"
 
 
 msgid "Can't reload with running modal operators"
-msgstr "使用运行模式操作中无法重新加载"
+msgstr "无法使用运行中模态操作重新加载"
 
 
 msgid "Movie clip not found"
