@@ -1,9 +1,9 @@
 
 msgid ""
 msgstr ""
-"Project-Id-Version: Blender 2.83 (sub 13) (b'aa2544793dc2')\n"
+"Project-Id-Version: Blender 2.83 (sub 15) (b'90f01d50484c')\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-04-20 13:27:14\n"
+"POT-Creation-Date: 2020-04-28 10:06:40\n"
 "PO-Revision-Date: \n"
 "Last-Translator: DeathBlood\n"
 "Language-Team: \n"
@@ -5790,6 +5790,14 @@ msgid "Add euler component values together"
 msgstr "一起添加欧拉分量值"
 
 
+msgid "Apply copied rotation before original, as if the constraint target is a parent"
+msgstr "在初始旋转前应用复制旋转，仿佛目标物体为原物体的父级"
+
+
+msgid "Apply copied rotation after original, as if the constraint target is a child"
+msgstr "在初始旋转后应用复制旋转，仿佛目标物体为原物体的子级"
+
+
 msgid "Offset (Legacy)"
 msgstr "偏移(旧版)"
 
@@ -5868,6 +5876,22 @@ msgstr "复制变换约束"
 
 msgid "Copy all the transforms of the target"
 msgstr "复制目标物体的全部变换数据"
+
+
+msgid "Specify how the copied and existing transformations are combined"
+msgstr "指定复制变换和现有变换的组合方式"
+
+
+msgid "Replace the original transformation with copied"
+msgstr "使用复制替换原始变换"
+
+
+msgid "Apply copied transformation before original, as if the constraint target is a parent. Scale is handled specially to avoid creating shear"
+msgstr "在初始变换之前应用复制变换，仿佛约束物体为父级。特殊处理缩放防止出现撕裂"
+
+
+msgid "Apply copied transformation after original, as if the constraint target is a child. Scale is handled specially to avoid creating shear"
+msgstr "在初始变换之后应用复制变换，仿佛约束物体为父级。特殊处理缩放防止出现撕裂"
 
 
 msgid "Damped Track Constraint"
@@ -6358,16 +6382,32 @@ msgid "The free scaling axis of the object"
 msgstr "物体的自由缩放轴向"
 
 
+msgid "The way the constraint treats original non-free axis scaling"
+msgstr "约束对受控轴向上缩放的处理方式"
+
+
 msgid "Strict"
 msgstr "结构"
+
+
+msgid "Volume is strictly preserved, overriding the scaling of non-free axes"
+msgstr "覆写受控制的轴向上的缩放来保持体积严格不变"
 
 
 msgid "Uniform"
 msgstr "均衡"
 
 
+msgid "Volume is preserved when the object is scaled uniformly. Deviations from uniform scale on non-free axes are passed through"
+msgstr "仅当物体按比例缩放时才保持体积不变。忽略受控制轴向在按比例缩放时导致的偏差"
+
+
 msgid "Single Axis"
 msgstr "单一轴向"
+
+
+msgid "Volume is preserved when the object is scaled only on the free axis. Non-free axis scaling is passed through"
+msgstr "只有在当不受控制的轴向上缩放才保持体积不变。忽略受控制轴向上的缩放"
 
 
 msgid "Volume of the bone at rest"
@@ -6674,8 +6714,16 @@ msgid "Outside Surface"
 msgstr "表面外围"
 
 
+msgid "The point is constrained to the surface of the target object, with distance offset always to the outside, towards or away from the original location"
+msgstr "被约束到目标物体的表面的顶点，总是使用相对于外侧的偏移距离，靠近或远离原位置"
+
+
 msgid "Above Surface"
 msgstr "表面上方"
+
+
+msgid "The point is constrained to the surface of the target object, with distance offset applied exactly along the target normal"
+msgstr "被约束到目标物体的表面的顶点，沿目标物体法向使用偏移距离"
 
 
 msgid "Spline IK Constraint"
@@ -7100,6 +7148,14 @@ msgstr "旋转混合模式"
 
 msgid "Specify how to combine the new rotation with original"
 msgstr "指定如何将新旋转与原始旋转相结合"
+
+
+msgid "Apply new rotation before original, as if it was on a parent"
+msgstr "在原始旋转之前应用新的旋转，仿佛目标物体是原物体的父级"
+
+
+msgid "Apply new rotation after original, as if it was on a child"
+msgstr "在原始旋转之后应用新的旋转，仿佛目标物体是原物体的子级"
 
 
 msgid "Scale Mix Mode"
@@ -7760,6 +7816,10 @@ msgstr "几何数据"
 
 msgid "Object geometry is updated"
 msgstr "物体几何体已更新"
+
+
+msgid "Shading"
+msgstr "着色方式"
 
 
 msgid "Transform"
@@ -10962,10 +11022,6 @@ msgstr "显示物体和集合"
 
 msgid "Show scenes"
 msgstr "显示场景"
-
-
-msgid "Shading"
-msgstr "着色方式"
 
 
 msgid "Show materials, nodetrees, textures and Freestyle's linestyles"
@@ -14272,6 +14328,10 @@ msgid "UV Translation"
 msgstr "UV平移"
 
 
+msgid "Translation of default UV position"
+msgstr "默认UV位置的平移"
+
+
 msgid "Vertex Fill Color"
 msgstr "顶点填充颜色"
 
@@ -14896,6 +14956,10 @@ msgstr "随机种"
 
 msgid "Enable offset"
 msgstr "启用偏移"
+
+
+msgid "Enable object offset"
+msgstr "启用物体偏移"
 
 
 msgid "Shift"
@@ -15750,6 +15814,10 @@ msgstr "数据块的基本类型, 定义一个唯一的名称, 链接至其他�
 
 msgid "Embedded Data"
 msgstr "嵌入的数据"
+
+
+msgid "This data-block is not an independent one, but is actually a sub-data of another ID (typical example: root node trees or master collections)"
+msgstr "此数据块不是独立的数据块，而实际上是另一个 ID的子数据(典型例子如：根节点树或主集合)"
 
 
 msgid "Is Evaluated"
@@ -17358,7 +17426,7 @@ msgstr "抓取 UV"
 
 
 msgid "Relax"
-msgstr "放缓姿态"
+msgstr "松弛"
 
 
 msgid "Relax UVs"
@@ -20115,6 +20183,10 @@ msgid "Constant direction parallel ray Light"
 msgstr "定向平行光源"
 
 
+msgid "Angular diameter of the Sun as seen from the Earth"
+msgstr "模拟从地球上看到日光的角直径"
+
+
 msgid "Cascade Count"
 msgstr "层叠数"
 
@@ -20127,16 +20199,56 @@ msgid "Exponential Distribution"
 msgstr "指数分布"
 
 
+msgid "Higher value increase resolution towards the viewpoint"
+msgstr "值越高，视窗中的解析度越高"
+
+
+msgid "How smooth is the transition between each cascade"
+msgstr "每一层叠联阴影的平滑程度"
+
+
+msgid "End distance of the cascaded shadow map (only in perspective view)"
+msgstr "层叠阴影贴图的最大距离(仅用于正交视图)"
+
+
+msgid "Light Probe data-block for lighting capture objects"
+msgstr "光线采集物体的光照探头数据块"
+
+
+msgid "Probe clip end, beyond which objects will not appear in reflections"
+msgstr "探头裁剪终点，超过这个位置的物体将不会出现在反射中"
+
+
+msgid "Probe clip start, below which objects will not appear in reflections"
+msgstr "探头裁剪起点，小于这个位置的物体将不会出现在反射中"
+
+
+msgid "Control how fast the probe influence decreases"
+msgstr "控制光照探头影响衰减的速率"
+
+
 msgid "Resolution X"
 msgstr "分辨率 X"
+
+
+msgid "Number of sample along the x axis of the volume"
+msgstr "体积在x轴向采样的数量"
 
 
 msgid "Resolution Y"
 msgstr "分辨率 Y"
 
 
+msgid "Number of sample along the y axis of the volume"
+msgstr "体积在y轴向采样的数量"
+
+
 msgid "Resolution Z"
 msgstr "分辨率 Z"
+
+
+msgid "Number of sample along the z axis of the volume"
+msgstr "体积在z轴向采样的数量"
 
 
 msgid "Influence Distance"
@@ -20155,6 +20267,10 @@ msgid "Intensity"
 msgstr "强度"
 
 
+msgid "Modify the intensity of the lighting captured by this probe"
+msgstr "修改这个光照探头采集的光照强度"
+
+
 msgid "Invert Collection"
 msgstr "反转集合"
 
@@ -20165,6 +20281,10 @@ msgstr "反转可见性集合"
 
 msgid "Parallax Radius"
 msgstr "视差半径"
+
+
+msgid "Lowest corner of the parallax bounding box"
+msgstr "视差边框的最低处"
 
 
 msgid "Type of parallax volume"
@@ -20179,8 +20299,20 @@ msgid "Show Preview Plane"
 msgstr "显示预览平面"
 
 
+msgid "Show captured lighting data into the 3D view for debugging purpose"
+msgstr "在3D视图中展示采集的光照数据，用于调试"
+
+
+msgid "Show the influence volume in the 3D view"
+msgstr "在3D视图中显示影响体积"
+
+
 msgid "Parallax"
 msgstr "视差"
+
+
+msgid "Show the parallax correction volume in the 3D view"
+msgstr "在3D视图中显示视差修正体积"
 
 
 msgid "Type of light probe"
@@ -20203,8 +20335,16 @@ msgid "Irradiance Volume"
 msgstr "辐射体积"
 
 
+msgid "Volume used for precomputing indirect lighting"
+msgstr "用于预先计算间接光照的体积"
+
+
 msgid "Use Custom Parallax"
 msgstr "使用自定义视差"
+
+
+msgid "Enable custom settings for the parallax correction volume"
+msgstr "启用视差修正体积的自定义设置"
 
 
 msgid "Visibility Bleed Bias"
@@ -20263,6 +20403,10 @@ msgid "Clip Threshold"
 msgstr "钳制阈值"
 
 
+msgid "A pixel is rendered only if its alpha value is above this threshold"
+msgstr "仅当像素的Alpha值高于此阈值时才渲染像素"
+
+
 msgid "Blend Mode for Transparent Faces"
 msgstr "透明面的混合模式"
 
@@ -20271,12 +20415,24 @@ msgid "Opaque"
 msgstr "不透明"
 
 
+msgid "Render surface without transparency"
+msgstr "渲染不带透明的表面"
+
+
 msgid "Alpha Clip"
 msgstr "Alpha钳制"
 
 
+msgid "Use the alpha threshold to clip the visibility (binary visibility)"
+msgstr "使用Alpha阈值决定可见性(二元可见性)"
+
+
 msgid "Alpha Hashed"
 msgstr "Alpha Hashed"
+
+
+msgid "Use noise to dither the binary visibility (works well with multi-samples)"
+msgstr "使用噪波方式丰富二元可见性(高采样量下效果好)"
 
 
 msgid "Alpha Blend"
@@ -20315,12 +20471,24 @@ msgid "Is Grease Pencil"
 msgstr "是否蜡笔"
 
 
+msgid "True if this material has grease pencil data"
+msgstr "当此材质拥有蜡笔的数据时为真"
+
+
 msgid "Line Color"
 msgstr "线条色彩"
 
 
+msgid "Line color used for Freestyle line rendering"
+msgstr "用于Freestyle线条渲染的线条颜色"
+
+
 msgid "Line Priority"
 msgstr "线条优先属性"
+
+
+msgid "The line color of a higher priority is used at material boundaries"
+msgstr "材质边界使用优先级更高的线条颜色"
 
 
 msgid "Metallic"
@@ -20391,6 +20559,10 @@ msgid "Refraction Depth"
 msgstr "折射深度"
 
 
+msgid "Approximate the thickness of the object to compute two refraction event (0 is disabled)"
+msgstr "估算物体的厚度来计算二次折射结果(0为禁用)"
+
+
 msgid "Roughness"
 msgstr "糙度"
 
@@ -20411,8 +20583,20 @@ msgid "Material will cast no shadow"
 msgstr "材质不投射阴影"
 
 
+msgid "Material will cast shadows without transparency"
+msgstr "材质将投射不带透明度的阴影"
+
+
+msgid "Use noise to dither the binary visibility and use filtering to reduce the noise"
+msgstr "使用燥波方式丰富二元可见性并且使用过滤来减少噪点"
+
+
 msgid "Show Backface"
 msgstr "显示背面"
+
+
+msgid "Limit transparency to a single layer (avoids transparency sorting problems)"
+msgstr "将透明效果限制为一层(避免透明层排序问题)"
 
 
 msgid "Specular Color"
@@ -20457,6 +20641,10 @@ msgstr "使用着色器节点渲染材质"
 
 msgid "Preview World"
 msgstr "预览世界"
+
+
+msgid "Use the current world background to light the preview render"
+msgstr "使用当前世界背景给预览渲染作为光照"
 
 
 msgid "Screen Space Refraction"
@@ -22390,7 +22578,7 @@ msgstr "键控循环次数"
 
 
 msgid "Keys Step"
-msgstr "保持步长"
+msgstr "帧步长"
 
 
 msgid "Type of periodic offset on the path"
@@ -22869,8 +23057,16 @@ msgid "Use Clump Curve"
 msgstr "使用簇曲线"
 
 
+msgid "Use a curve to define clump tapering"
+msgstr "使用曲线来定义簇逐渐减少"
+
+
 msgid "Use Clump Noise"
 msgstr "使用簇噪波"
+
+
+msgid "Create random clumps around the parent"
+msgstr "在父级周围创建随机簇"
 
 
 msgid "Use Count"
@@ -22939,6 +23135,10 @@ msgstr "使用插值样条插补毛发"
 
 msgid "Use Modifier Stack"
 msgstr "使用修改器堆栈"
+
+
+msgid "Emit particles from mesh with modifiers applied (must use same subsurf level for viewport and render for correct results)"
+msgstr "使用应用了修改器的网格发射粒子(视图和渲染必须使用相同的细分数才能获得正确的结果)"
 
 
 msgid "Mass from Size"
@@ -29008,6 +29208,10 @@ msgid "Node Color Specials"
 msgstr "指定节点颜色"
 
 
+msgid "Outliner Context Menu"
+msgstr "大纲视图上下文菜单"
+
+
 msgid "Particle Specials"
 msgstr "粒子专用项"
 
@@ -32808,6 +33012,14 @@ msgid "Create a solid skin, compensating for sharp angles"
 msgstr "创建实体外壳, 补偿锐角"
 
 
+msgid "Bevel Convex"
+msgstr "凸壳倒角"
+
+
+msgid "Edge bevel weight to be added to outside edges"
+msgstr "添加至外侧连线的倒角权重"
+
+
 msgid "Inner Crease"
 msgstr "内侧折痕"
 
@@ -32880,6 +33092,10 @@ msgid "Merge Threshold"
 msgstr "合并阈值"
 
 
+msgid "Distance within which degenerated geometry is merged"
+msgstr "被简并几何元素的合并间距"
+
+
 msgid "Thickness Mode"
 msgstr "厚度模式"
 
@@ -32902,6 +33118,10 @@ msgstr "使用约束进行厚度计算，最高级"
 
 msgid "Offset the thickness from the center"
 msgstr "从中心位置开始偏移厚度"
+
+
+msgid "Rim Vertex Group"
+msgstr "Vertex Group顶点组"
 
 
 msgid "Shell Vertex Group"
@@ -32946,6 +33166,10 @@ msgstr "均衡厚度"
 
 msgid "Maintain thickness by adjusting for sharp corners (slow, disable when not needed)"
 msgstr "通过调节锐角来维持厚度 (较慢, 不需要时可禁用)"
+
+
+msgid "Flat Faces"
+msgstr "平直面"
 
 
 msgid "Flip Normals"
@@ -40318,11 +40542,11 @@ msgstr "忽略轴向,使用最短转角进行对齐"
 
 
 msgid "Local +X Tangent"
-msgstr "本地+X切向"
+msgstr "局部+X切向"
 
 
 msgid "Local +Z Tangent"
-msgstr "本地+Z切向"
+msgstr "局部+Z切向"
 
 
 msgid "Global +X Axis"
@@ -40338,11 +40562,11 @@ msgstr "全局+Z坐标"
 
 
 msgid "Local -X Tangent"
-msgstr "本地-X切向"
+msgstr "局部-X切向"
 
 
 msgid "Local -Z Tangent"
-msgstr "本地-Z切向"
+msgstr "局部-Z切向"
 
 
 msgid "Global -X Axis"
@@ -42279,15 +42503,6 @@ msgstr "移除其他选中物体的集合"
 
 
 msgctxt "Operator"
-msgid "Remove from All Unlinked Collections"
-msgstr "从所有未关联集合中移除"
-
-
-msgid "Remove selected objects from all collections not used in a scene"
-msgstr "将选中物体从所有场景中未使用的集合中移除"
-
-
-msgctxt "Operator"
 msgid "Console Autocomplete"
 msgstr "控制台自动补全"
 
@@ -43692,7 +43907,7 @@ msgstr "保存文件为 ASCII 文件格式"
 
 
 msgid "Batch Mode"
-msgstr "分批模式"
+msgstr "批量模式"
 
 
 msgid "All data in one file"
@@ -44045,7 +44260,7 @@ msgstr "导出循环边(作为两点多边形)"
 
 
 msgid "Apply modifiers to mesh objects (except Armature ones) - WARNING: prevents exporting shape keys"
-msgstr "应用修改器到网格物体 (除骨架外) - 警告: 禁止导出形状键"
+msgstr "应用修改器到网格物体 (除骨架外) - 警告: 禁止导出形态键"
 
 
 msgid "Use Modifiers Render Setting"
@@ -46212,6 +46427,10 @@ msgstr "创建调色板"
 
 msgid "Create a new palette with colors"
 msgstr "使用颜色创建新调色板"
+
+
+msgid "Remove Unused Materials"
+msgstr "删除未用到的材质"
 
 
 msgid "Remove any unused material after the conversion"
@@ -59815,6 +60034,10 @@ msgid "Deform in the Z axis"
 msgstr "Z 轴向的形变"
 
 
+msgid "Smooth Ratio"
+msgstr "平滑比率"
+
+
 msgid "Filter Strength"
 msgstr "过滤强度"
 
@@ -65408,6 +65631,10 @@ msgid "Use Soft Limits"
 msgstr "使用软限制"
 
 
+msgid "Limits the Property Value slider to a range, values outside the range must be inputted numerically"
+msgstr "限制属性值滑块限制在一个范围，范围以外的值必须以数字方式输入"
+
+
 msgid "Property value edit"
 msgstr "编辑属性值"
 
@@ -69913,6 +70140,14 @@ msgstr "菜单查找"
 
 msgid "Search actions by menus instead of operators"
 msgstr "按菜单而非操作查找动作"
+
+
+msgid "Undo Legacy"
+msgstr "撤消(旧版)"
+
+
+msgid "Use legacy undo (slower than the new default one, but may be more stable in some cases)"
+msgstr "使用旧版撤销(比默认的新版要慢，但某些情况下会更加稳定)"
 
 
 msgid "Animation Player"
@@ -77454,6 +77689,10 @@ msgstr "选择颜色"
 
 msgid "Color selected to apply glow"
 msgstr "应用于辉光的选定颜色"
+
+
+msgid "Size of the effect"
+msgstr "效果的大小"
 
 
 msgid "Limit to select color for glow effect"
@@ -87519,6 +87758,10 @@ msgid "Crease:"
 msgstr "折痕:"
 
 
+msgid "Bevel:"
+msgstr "倒角:"
+
+
 msgid "Render:"
 msgstr "渲染:"
 
@@ -88709,10 +88952,6 @@ msgstr "全部烘焙 - ESC 暂停"
 
 msgid "Unbaked Guides: Bake Guides or disable them"
 msgstr "未烘焙引导：烘焙或禁用引导"
-
-
-msgid "Use Inflow"
-msgstr "使用流入"
 
 
 msgid "Surface Thickness"
@@ -90015,6 +90254,11 @@ msgid "ID Data"
 msgstr "ID数据"
 
 
+msgctxt "Operator"
+msgid "Paste Data-Blocks"
+msgstr "粘贴数据块"
+
+
 msgid "Sync Selection"
 msgstr "选区同步"
 
@@ -91062,6 +91306,10 @@ msgid "Console Scrollback Lines"
 msgstr "控制台回查行数"
 
 
+msgid "Cache Limit"
+msgstr "缓存限值"
+
+
 msgid "View Name"
 msgstr "视图名称"
 
@@ -91400,11 +91648,6 @@ msgstr "约束目标"
 
 
 msgctxt "Operator"
-msgid "Linked"
-msgstr "关联项"
-
-
-msgctxt "Operator"
 msgid "Roots"
 msgstr "根级"
 
@@ -91447,6 +91690,11 @@ msgstr "下一个活动元素"
 msgctxt "Operator"
 msgid "Previous Active"
 msgstr "上一个活动元素"
+
+
+msgctxt "Operator"
+msgid "Linked"
+msgstr "关联项"
 
 
 msgctxt "Operator"
@@ -94183,20 +94431,12 @@ msgid "NLA Strip Controls"
 msgstr "NLA 片段控件"
 
 
-msgid "F-Curve is visible in Graph Editor for editing"
-msgstr "在曲线编辑器中可见可编辑的函数曲线"
-
-
 msgid "Grease Pencil layer is visible in the viewport"
 msgstr "蜡笔图层在视图中可见"
 
 
 msgid "Channels are visible in Graph Editor for editing"
 msgstr "通道在曲线编辑器中可见, 以进行编辑"
-
-
-msgid "F-Curve modifiers are disabled"
-msgstr "函数曲线仅包含函数修改器"
 
 
 msgid "Make channels grouped under this channel visible"
@@ -95141,6 +95381,10 @@ msgstr "期望当前帧为中断帧"
 
 msgid "Nothing to merge"
 msgstr "没有要合并的"
+
+
+msgid "Merged %d materials of %d"
+msgstr "已合并 %d 材质，总数 %d"
 
 
 msgid "Grease Pencil Erase Session: Hold and drag LMB or RMB to erase | ESC/Enter to end  (or click outside this area)"
@@ -97007,6 +97251,10 @@ msgid "Active object '%s' is not overridable"
 msgstr "活动物体 '%s' 不可重写"
 
 
+msgid "Move the mouse to change the voxel size. LMB: confirm size, ESC/RMB: cancel"
+msgstr "移动鼠标以更改体素大小。LBM：确认大小，ESC/RMB：取消"
+
+
 msgid "Voxel remesher cannot run with a voxel size of 0.0"
 msgstr "不能对大小为 0.0 的体素使用体素网格重构"
 
@@ -97432,7 +97680,7 @@ msgstr "刚体世界环境没有可供导出的关联物理数据"
 
 
 msgid "3D Local View"
-msgstr "3D本地视图"
+msgstr "3D局部视图"
 
 
 msgid "Frame:%d "
@@ -99654,10 +99902,6 @@ msgid "Vertex select - Shift-Click for multiple modes, Ctrl-Click contracts sele
 msgstr "点选择模式 - Shift+单击选择多重模式，Ctrl+单击减选"
 
 
-msgid "Edge select - Shift-Click for multiple modes, Ctrl-Click expands/contracts selection"
-msgstr "边选择模式 - Shift+单击选择多重模式，Ctrl+单击扩展选中项或减选"
-
-
 msgid "Face select - Shift-Click for multiple modes, Ctrl-Click expands selection"
 msgstr "面选择模式 - Shift+单击选择多重模式，Ctrl+单击扩展选中项或减选"
 
@@ -100120,6 +100364,10 @@ msgstr "顶点滑移: "
 
 msgid "Create Orientation's 'use' parameter only valid in a 3DView context"
 msgstr "仅为在 3D 视图上下文中有效的轴向创建 '使用' 参数"
+
+
+msgid "Unable to create orientation"
+msgstr "无法创建坐标系"
 
 
 msgid "custom"
