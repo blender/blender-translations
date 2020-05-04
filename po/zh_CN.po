@@ -1,9 +1,9 @@
 
 msgid ""
 msgstr ""
-"Project-Id-Version: Blender 2.83 (sub 15) (b'90f01d50484c')\n"
+"Project-Id-Version: Blender 2.83 (sub 15) (b'000fdd8a6eae')\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-04-28 10:06:40\n"
+"POT-Creation-Date: 2020-05-04 10:26:18\n"
 "PO-Revision-Date: \n"
 "Last-Translator: DeathBlood\n"
 "Language-Team: \n"
@@ -3839,6 +3839,10 @@ msgstr "给定临界角度后, 衰减眼间距离到 0"
 
 msgid "Spherical Stereo"
 msgstr "球面立体"
+
+
+msgid "Render every pixel rotating the camera around the middle of the interocular distance"
+msgstr "渲染每个像素围绕双眼距离的中间旋转相机"
 
 
 msgid "ChannelDriver Variables"
@@ -7822,6 +7826,10 @@ msgid "Shading"
 msgstr "着色方式"
 
 
+msgid "Object shading is updated"
+msgstr "物体着色已更新"
+
+
 msgid "Transform"
 msgstr "变换"
 
@@ -8451,15 +8459,15 @@ msgstr "变换使用的坐标空间"
 
 
 msgid "Transforms include effects of parenting/restpose and constraints"
-msgstr "变换包含parenting/静置姿态和约束效果"
+msgstr "变换包含父级关联/静置姿态和约束效果"
 
 
 msgid "Transforms don't include parenting/restpose or constraints"
-msgstr "约束未包含的移动"
+msgstr "变换不包含父级关联/静置姿态或约束"
 
 
 msgid "Transforms include effects of constraints but not parenting/restpose"
-msgstr "变换包含约束效果但不影响parenting/静置姿态"
+msgstr "变换包含约束效果但不影响父级关联/静置姿态"
 
 
 msgid "Driver variable type"
@@ -11794,14 +11802,6 @@ msgstr "精度"
 
 msgid "Smoke Grid Resolution"
 msgstr "烟雾的网格精度"
-
-
-msgid "Meters"
-msgstr "米"
-
-
-msgid "Domain size in meters (longest domain side)"
-msgstr "域大小(单位: 米)(最长的域侧)"
 
 
 msgid "Domain Type"
@@ -19290,7 +19290,7 @@ msgstr "Alpha 模式"
 
 
 msgid "Representation of alpha in the image file, to convert to and from when saving and loading the image"
-msgstr "图像文件中的alpha表示，在保存和加载图像时进行转换。"
+msgstr "图像文件中的alpha表示，在保存和加载图像时进行转换"
 
 
 msgid "Straight"
@@ -20203,8 +20203,16 @@ msgid "Higher value increase resolution towards the viewpoint"
 msgstr "值越高，视窗中的解析度越高"
 
 
+msgid "Cascade Fade"
+msgstr "级联淡化"
+
+
 msgid "How smooth is the transition between each cascade"
 msgstr "每一层叠联阴影的平滑程度"
+
+
+msgid "Cascade Max Distance"
+msgstr "级联最大距离"
 
 
 msgid "End distance of the cascaded shadow map (only in perspective view)"
@@ -20669,6 +20677,10 @@ msgstr "定义几何体表面的网格数据块"
 
 msgid "Auto Smooth Angle"
 msgstr "自动光滑角度"
+
+
+msgid "Maximum angle between face normals that will be considered as smooth (unused if custom split normals data are available)"
+msgstr "将被视为平滑的面法向的最大角度(如果有自定义分割法线数据，则不使用)"
 
 
 msgid "Edges"
@@ -21429,6 +21441,10 @@ msgstr "缩放增量"
 
 msgid "Extra scaling added to the scale of the object"
 msgstr "添加到物体原有缩放上的额外缩放数据"
+
+
+msgid "Absolute bounding box dimensions of the object (WARNING: assigning to it or its members multiple consecutive times will not work correctly, as this needs up-to-date evaluated data)"
+msgstr "物体尺寸的边界范围(警告：多次连续赋予此物体或它的成员将不能正确工作，因为它需要最新的数据)"
 
 
 msgid "Object Display"
@@ -22533,6 +22549,10 @@ msgid "Dupli Collection Weights"
 msgstr "副本集合权重"
 
 
+msgid "Weights for all of the objects in the dupli collection"
+msgstr "用于副本组中所有物体的权重"
+
+
 msgid "Integration"
 msgstr "集成"
 
@@ -22615,6 +22635,10 @@ msgstr "随机朝向变量"
 
 msgid "Extra Steps"
 msgstr "额外步数"
+
+
+msgid "Extra steps for resolution of special kink features"
+msgstr "特殊扭结特征解析度的额外步数"
 
 
 msgid "Flatness"
@@ -23369,6 +23393,10 @@ msgid "Active camera, used for rendering the scene"
 msgstr "活动相机, 用于渲染场景"
 
 
+msgid "Scene master collection that objects and other collections in the scene"
+msgstr "场景中物体和其他集合的主集合"
+
+
 msgid "3D Cursor"
 msgstr "3D 游标"
 
@@ -23469,6 +23497,10 @@ msgid "Annotations"
 msgstr "标注"
 
 
+msgid "Grease Pencil data-block used for annotations in the 3D view"
+msgstr "3D视图中用于标注的蜡笔数据块"
+
+
 msgid "NLA TweakMode"
 msgstr "NLA 调节模式"
 
@@ -23495,6 +23527,10 @@ msgstr "所有可用的插帧集 (当前场景中内建及专有的插帧集)"
 
 msgid "Lock Frame Selection"
 msgstr "锁定选中帧"
+
+
+msgid "Don't allow frame to be selected with mouse outside of frame range"
+msgstr "不允许播放帧超过帧范围"
 
 
 msgid "Compositing node tree"
@@ -24061,6 +24097,10 @@ msgstr "木纹"
 
 msgid "Procedural - wave generated bands or rings, with optional noise"
 msgstr "程序类纹理 - 波形生成的条纹或环纹, 可使用噪波"
+
+
+msgid "Set negative texture RGB and intensity values to zero, for some uses like displacement this option can be disabled to get the full range"
+msgstr "将纹理中负的RGB值和强度值设置为0，对于其他使用(比如置换贴图)可以禁用此选项来获得完整数值范围"
 
 
 msgid "Make this a node-based texture"
@@ -24941,6 +24981,10 @@ msgstr "序列播放模式"
 
 msgid "Hide frames outside the specified frame range"
 msgstr "隐藏指定帧范围以外的帧"
+
+
+msgid "Repeat the start frame before, and the end frame after the frame range"
+msgstr "若当前帧在起始帧之前则重复起始帧，在结束帧之后则重复结束帧"
 
 
 msgid "Cycle the frames in the sequence"
@@ -30436,7 +30480,7 @@ msgstr "实体化"
 
 
 msgid " Make the surface thick"
-msgstr "加厚表面"
+msgstr " 加厚表面"
 
 
 msgid "Subdivision Surface"
@@ -31387,20 +31431,40 @@ msgid "Nearest Vertices"
 msgstr "最近的顶点"
 
 
+msgid "Copy from most similar edge (edge which vertices are the closest of destination edge's ones)"
+msgstr "复制最相似的边(顶点最接近目标边上顶点的边)"
+
+
 msgid "Nearest Edge"
 msgstr "最近的边"
+
+
+msgid "Copy from closest edge (using midpoints)"
+msgstr "从最近的边复制(使用中点)"
 
 
 msgid "Nearest Face Edge"
 msgstr "最近的面边"
 
 
+msgid "Copy from closest edge of closest face (using midpoints)"
+msgstr "复制最近的面上最近的边(使用中点)"
+
+
 msgid "Projected Edge Interpolated"
 msgstr "投影边插值"
 
 
+msgid "Interpolate all source edges hit by the projection of destination one along its own normal (from vertices)"
+msgstr "对所有目标边沿法向投影到的源边进行插值"
+
+
 msgid "Islands Handling Refinement"
 msgstr "孤岛处理方式改进"
+
+
+msgid "Factor controlling precision of islands handling (typically, 0.1 should be enough, higher values can make things really slow)"
+msgstr "控制孤岛处理精度的系数(一般0.1就足够了，较高的值会让处理非常缓慢)"
 
 
 msgid "Destination Layers Matching"
@@ -31411,16 +31475,36 @@ msgid "How to match source and destination layers"
 msgstr "如何匹配源层与目标层"
 
 
+msgid "Affect active data layer of all targets"
+msgstr "影响所有目标的激活数据层"
+
+
 msgid "By Name"
 msgstr "按名称"
+
+
+msgid "Match target data layers to affect by name"
+msgstr "按名称匹配受影响的目标数据层"
 
 
 msgid "By Order"
 msgstr "按排序"
 
 
+msgid "Match target data layers to affect by order (indices)"
+msgstr "按顺序（索引）匹配受影响的目标数据层"
+
+
 msgid "Source Layers Selection"
 msgstr "选择来源层"
+
+
+msgid "Which layers to transfer, in case of multi-layers types"
+msgstr "选择需要传递的层，以防多层类型"
+
+
+msgid "Only transfer active data layer"
+msgstr "仅传递激活的数据层"
 
 
 msgid "All Layers"
@@ -31459,24 +31543,56 @@ msgid "Nearest Corner And Best Matching Normal"
 msgstr "最近的拐角和最匹配的法线"
 
 
+msgid "Copy from nearest corner which has the best matching normal"
+msgstr "从最近的拐角中复制法向最匹配的拐角"
+
+
 msgid "Nearest Corner And Best Matching Face Normal"
 msgstr "最近的拐角和最匹配的面法向"
+
+
+msgid "Copy from nearest corner which has the face with the best matching normal to destination corner's face one"
+msgstr "从最近的拐角中复制与目标拐角的面的法向最匹配的拐角"
 
 
 msgid "Nearest Corner Of Nearest Face"
 msgstr "最近面的最近拐角"
 
 
+msgid "Copy from nearest corner of nearest polygon"
+msgstr "从最近的多边形复制最近的拐角"
+
+
 msgid "Nearest Face Interpolated"
 msgstr "最近的面插值"
+
+
+msgid "Copy from interpolated corners of the nearest source polygon"
+msgstr "从最近的源多边形复制插值的拐角"
 
 
 msgid "Projected Face Interpolated"
 msgstr "投影面插值"
 
 
+msgid "Copy from interpolated corners of the source polygon hit by corner normal projection"
+msgstr "从源多边形复制拐角法向投影到的插值的拐角"
+
+
 msgid "Max Distance"
 msgstr "最大距离"
+
+
+msgid "Maximum allowed distance between source and destination element, for non-topology mappings"
+msgstr "来源元素与目标元素允许的最大距离(对非拓扑映射)"
+
+
+msgid "Factor to use when applying data to destination (exact behavior depends on mix mode, multiplied with weights from vertex group when defined)"
+msgstr "将数据应用到目的物体时使用的系数(具体的行为取决于混合模式，若指定顶点组则与顶点组的权重相乘)"
+
+
+msgid "How to affect destination elements with source values"
+msgstr "如何使用来源数值影响目标元素"
 
 
 msgid "Overwrite all elements' data"
@@ -31487,8 +31603,32 @@ msgid "Above Threshold"
 msgstr "高于阈值"
 
 
+msgid "Only replace destination elements where data is above given threshold (exact behavior depends on data type)"
+msgstr "只有当数据高于给定阈值时，才替换目标元素(具体行为取决于数据类型)"
+
+
 msgid "Below Threshold"
 msgstr "低于阈值"
+
+
+msgid "Only replace destination elements where data is below given threshold (exact behavior depends on data type)"
+msgstr "只有当数据低于给定阈值时，才替换目标元素(具体行为取决于数据类型)"
+
+
+msgid "Mix source value into destination one, using given threshold as factor"
+msgstr "用给定的阈值作为系数，将源值与目标物体的值混合"
+
+
+msgid "Add source value to destination one, using given threshold as factor"
+msgstr "用给定的阈值作为系数，将源值与目标物体的值相加"
+
+
+msgid "Subtract source value to destination one, using given threshold as factor"
+msgstr "用给定的阈值作为系数，令源值减去目标物体的值"
+
+
+msgid "Multiply source value to destination one, using given threshold as factor"
+msgstr "用给定的阈值作为系数，将源值与目标物体的值相乘"
 
 
 msgid "Source Object"
@@ -31511,12 +31651,28 @@ msgid "Nearest Face"
 msgstr "最近的面"
 
 
+msgid "Copy from nearest polygon (using center points)"
+msgstr "从最近的多边形复制(使用中心点)"
+
+
 msgid "Best Normal-Matching"
 msgstr "最匹配法向"
 
 
+msgid "Copy from source polygon which normal is the closest to destination one"
+msgstr "从法向最接近目标多边形的源多边形复制"
+
+
+msgid "Interpolate all source polygons intersected by the projection of destination one along its own normal"
+msgstr "沿目标法向与目标物体的投影相交的所有源多边形进行插值"
+
+
 msgid "Ray Radius"
 msgstr "光线半径"
+
+
+msgid "'Width' of rays (especially useful when raycasting against vertices or edges)"
+msgstr "光线的宽度。用于光线投射至顶点或边"
 
 
 msgid "Enable edge data transfer"
@@ -31533,6 +31689,10 @@ msgstr "启用面拐数据传递"
 
 msgid "Only Neighbor Geometry"
 msgstr "仅相邻几何"
+
+
+msgid "Source elements must be closer than given distance from destination one"
+msgstr "来源元素与目标元素之间的距离必须小于指定距离"
 
 
 msgid "Object Transform"
@@ -31583,12 +31743,28 @@ msgid "Nearest Edge Interpolated"
 msgstr "最近边插值"
 
 
+msgid "Copy from interpolated values of vertices from closest point on closest edge"
+msgstr "复制最近边上的最近顶点的插值"
+
+
 msgid "Nearest Face Vertex"
 msgstr "最近的面顶点"
 
 
 msgid "Copy from closest vertex of closest face"
 msgstr "从最近面上的最近顶点复制"
+
+
+msgid "Copy from interpolated values of vertices from closest point on closest face"
+msgstr "复制最近面上的最近顶点的插值"
+
+
+msgid "Copy from interpolated values of vertices from point on closest face hit by normal-projection"
+msgstr "复制用法线投影得到的最接近面上顶点的插值"
+
+
+msgid "Vertex group name for selecting the affected areas"
+msgstr "用于选择受影响区域的顶点组名称"
 
 
 msgid "Decimate Modifier"
@@ -31737,6 +31913,10 @@ msgstr "在顶点法向方向上使用纹理强度值进行置换"
 
 msgid "Custom Normal"
 msgstr "自定义法向"
+
+
+msgid "Use the texture's intensity value to displace along the (averaged) custom normal (falls back to vertex)"
+msgstr "使用贴图的强度值沿(平均)自定义法线进行置换(回落到顶点)"
 
 
 msgid "RGB to XYZ"
@@ -32167,8 +32347,16 @@ msgid "Flip U Offset"
 msgstr "翻转U向依稀"
 
 
+msgid "Amount to offset mirrored UVs flipping point from the 0.5 on the U axis"
+msgstr "从U轴上的0.5点的镜像UV翻转点偏移量"
+
+
 msgid "Flip V Offset"
 msgstr "翻转V向依稀"
+
+
+msgid "Amount to offset mirrored UVs flipping point from the 0.5 point on the V axis"
+msgstr "从V轴上的0.5点的镜像UV翻转点偏移量"
 
 
 msgid "Mirrored UV offset on the U axis"
@@ -32255,6 +32443,10 @@ msgid "Number of subdivisions to use in the viewport"
 msgstr "视图中使用的细分级数"
 
 
+msgid "Accuracy of vertex positions, lower value is faster but less precise"
+msgstr "顶点位置的精度，值越低，速度越快但是精度越低"
+
+
 msgid "Render Levels"
 msgstr "渲染级"
 
@@ -32291,24 +32483,76 @@ msgid "Use Creases"
 msgstr "使用折痕"
 
 
+msgid "Use mesh edge crease information to sharpen edges"
+msgstr "使用折痕信息锐化边"
+
+
 msgid "UV Smooth"
 msgstr "UV平滑"
+
+
+msgid "Controls how smoothing is applied to UVs"
+msgstr "控制应用到UV的平滑程度"
+
+
+msgid "UVs are not smoothed, boundaries are kept sharp"
+msgstr "不平滑UV，边界保持锐利"
 
 
 msgid "Smooth, keep corners"
 msgstr "平滑，保留拐角"
 
 
+msgid "UVs are smoothed, corners on discontinuous boundary are kept sharp"
+msgstr "平滑UV，但拐角和不连续边界保持锐利"
+
+
 msgid "Normal Edit Modifier"
 msgstr "法向编辑修改器"
+
+
+msgid "Modifier affecting/generating custom normals"
+msgstr "修改器会影响/生成自定义法线"
+
+
+msgid "How much of generated normals to mix with exiting ones"
+msgstr "新生成的法线与已有法线的混合程度"
+
+
+msgid "Maximum angle between old and new normals"
+msgstr "旧法线与新法线之间的最大角度"
+
+
+msgid "How to mix generated normals with existing ones"
+msgstr "如何将已有法线与生成的法线混合"
 
 
 msgid "Copy"
 msgstr "复制"
 
 
+msgid "Copy new normals (overwrite existing)"
+msgstr "复制新的法线(覆盖已有法线)"
+
+
+msgid "Copy sum of new and old normals"
+msgstr "复制新法线与已有法线的矢量和"
+
+
+msgid "Copy new normals minus old normals"
+msgstr "复制新法线与已有法线的矢量差"
+
+
+msgid "Copy product of old and new normals (*not* cross product)"
+msgstr "复制新法线与已有法线的点乘积(*非* 叉乘)"
+
+
 msgid "How to affect (generate) normals"
 msgstr "如何影响(生成)生成法线"
+
+
+msgid "From an ellipsoid (shape defined by the boundbox's dimensions, target is optional)"
+msgstr "来自椭圆形(形状由边界范围的尺寸定义，目标是可选的)"
 
 
 msgid "Directional"
@@ -32323,6 +32567,10 @@ msgid "Lock Polygon Normals"
 msgstr "锁定多边形法向"
 
 
+msgid "Do not flip polygons when their normals are not consistent with their newly computed custom vertex normals"
+msgstr "当多边形的法线与新计算的自定义顶点法线不一致时，不翻转多边形"
+
+
 msgid "Offset from object's center"
 msgstr "从物体中心开始偏移"
 
@@ -32333,6 +32581,14 @@ msgstr "用于影响法向的目标物体"
 
 msgid "Parallel Normals"
 msgstr "平行法向"
+
+
+msgid "Use same direction for all normals, from origin to target's center (Directional mode only)"
+msgstr "为所有的法线使用相同的方向，即从原点到目标中心的方向(仅限定向模式)"
+
+
+msgid "Vertex group name for selecting/weighting the affected areas"
+msgstr "用于选择/加权受影响区域的顶点组名称"
 
 
 msgid "Ocean Modifier"
@@ -32479,12 +32735,44 @@ msgid "Size of the simulation domain (in meters), and of the generated geometry 
 msgstr "模拟域尺寸 (单位: 米), 以及所生成几何体的尺寸 (单位: BU)"
 
 
+msgid "Spectrum"
+msgstr "色谱"
+
+
+msgid "Spectrum to use"
+msgstr "色谱及其各自的权重"
+
+
 msgid "Turbulent Ocean"
 msgstr "湍流海洋"
 
 
+msgid "Use for turbulent seas with foam"
+msgstr "用于创建带水沫的湍流海洋"
+
+
+msgid "Established Ocean"
+msgstr "创建大洋(尖海浪)"
+
+
+msgid "Use for a large area, established ocean (Pierson-Moskowitz method)"
+msgstr "用于创建较大规模的大洋(Pierson-Moskowitz算法)"
+
+
+msgid "Established Ocean (Sharp Peaks)"
+msgstr "创建大洋(尖海浪)"
+
+
+msgid "Use for sharp peaks ('JONSWAP', Pierson-Moskowitz method) with peak sharpening"
+msgstr "用于创建带有海浪锐化的尖海浪('JONSWAP', 'TMA' - Texel-Marsen-Arsloe算法)"
+
+
 msgid "Shallow Water"
 msgstr "浅水"
+
+
+msgid "Use for shallow water ('JONSWAP', 'TMA' - Texel-Marsen-Arsloe method)"
+msgstr "用于浅水('JONSWAP', 'TMA' - Texel-Marsen-Arsloe算法)"
 
 
 msgid "Current time of the simulation"
@@ -32581,6 +32869,10 @@ msgstr "用于实体化的粒子数量"
 
 msgid "Particle Offset"
 msgstr "粒子偏移"
+
+
+msgid "Relative offset of particles to use for instancing, to avoid overlap of multiple instances"
+msgstr "用于实例化的粒子的相对偏移，以避免多个实例重叠"
 
 
 msgid "Particle System Number"
@@ -33121,11 +33413,19 @@ msgstr "从中心位置开始偏移厚度"
 
 
 msgid "Rim Vertex Group"
-msgstr "Vertex Group顶点组"
+msgstr "边缘顶点组"
+
+
+msgid "Vertex group that the generated rim geometry will be weighted to"
+msgstr "填充边缘产生的顶点会被指定在此定点组"
 
 
 msgid "Shell Vertex Group"
 msgstr "壳顶点组"
+
+
+msgid "Vertex group that the generated shell geometry will be weighted to"
+msgstr "填充外壳表面产生的顶点会被指定在此定点组"
 
 
 msgid "Selects the used algorithm"
@@ -33170,6 +33470,10 @@ msgstr "通过调节锐角来维持厚度 (较慢, 不需要时可禁用)"
 
 msgid "Flat Faces"
 msgstr "平直面"
+
+
+msgid "Make faces use the minimal vertex weight assigned to their vertices(ensures new faces remain parallel to their original ones, slow, disable when not needed)"
+msgstr "让面使用顶点中最小的顶点权重(保证新的面与已有的面平行，较慢，不需要时可禁用)"
 
 
 msgid "Flip Normals"
@@ -33317,7 +33621,7 @@ msgstr "将矩形面拆分成较为理想的三角面, 此方法较慢"
 
 
 msgid "Split the quads on the first and third vertices"
-msgstr "将矩形面沿第1、3次顶点拆分成三角面 "
+msgstr "将矩形面沿第1、3次顶点拆分成三角面"
 
 
 msgid "Fixed Alternate"
@@ -33325,7 +33629,7 @@ msgstr "固定交替"
 
 
 msgid "Split the quads on the 2nd and 4th vertices"
-msgstr "将矩形面沿第2、4次顶点拆分成三角面 "
+msgstr "将矩形面沿第2、4次顶点拆分成三角面"
 
 
 msgid "Shortest Diagonal"
@@ -33333,7 +33637,7 @@ msgstr "最短对角线"
 
 
 msgid "Split the quads based on the distance between the vertices"
-msgstr "在将矩形面拆分成三角面 "
+msgstr "在将矩形面拆分成三角面"
 
 
 msgid "UV Project Modifier"
@@ -33935,6 +34239,10 @@ msgid "Keep Sharp"
 msgstr "保持锐边"
 
 
+msgid "Keep sharp edges as computed for default split normals, instead of setting a single weighted normal for each vertex"
+msgstr "保留锐利的边缘，与默认的分割法线计算一样，而不是为每个顶点设置一个单一的加权法线"
+
+
 msgid "Weighting Mode"
 msgstr "权重模式"
 
@@ -33959,8 +34267,20 @@ msgid "Face Area And Angle"
 msgstr "面积与角度"
 
 
+msgid "Generated normals weighted by both face area and angle"
+msgstr "生成表面面积与角度共同加权的法向"
+
+
+msgid "Threshold value for different weights to be considered equal"
+msgstr "差别在阈值范围内的权重将被视为相等"
+
+
 msgid "Vertex group name for modifying the selected areas"
 msgstr "用于修改选中区域的顶点组名称"
+
+
+msgid "Corrective factor applied to faces' weights, 50 is neutral, lower values increase weight of weak faces, higher values increase weight of strong faces"
+msgstr "表面权重的修正系数，50代表无修正，更低的值会增加弱表面的权重，更高的值会增加强表面的权重"
 
 
 msgid "Weld Modifier"
@@ -35019,8 +35339,24 @@ msgid "Anchor Frame"
 msgstr "锚定帧"
 
 
+msgid "Reference point to anchor stabilization (other frames will be adjusted relative to this frame's position)"
+msgstr "锚定稳定的参考点：其他帧将相对于该帧的位置，方向和比例进行调整。你可能想选择您的主体是一个最佳的方式精选帧数"
+
+
+msgid "Interpolation to use for sub-pixel shifts and rotations due to stabilization"
+msgstr "用于解决由稳像导致的子像素偏移和旋转的插值方式"
+
+
+msgid "No interpolation, use nearest neighbor pixel"
+msgstr "无插值，使用最近的像素"
+
+
 msgid "Bilinear"
 msgstr "双线性"
+
+
+msgid "Simple interpolation between adjacent pixels"
+msgstr "相邻像素之间的简单插值"
 
 
 msgid "Bicubic"
@@ -35075,16 +35411,32 @@ msgid "Show Tracks"
 msgstr "显示轨迹"
 
 
+msgid "Show UI list of tracks participating in stabilization"
+msgstr "显示参与稳像的轨道UI列表"
+
+
 msgid "Expected Position"
 msgstr "预期位置"
+
+
+msgid "Known relative offset of original shot, will be subtracted (e.g. for panning shot, can be animated)"
+msgstr "已知的相对原始的拍摄偏移，将被减去，例如用于摇摄"
 
 
 msgid "Expected Rotation"
 msgstr "预期旋转"
 
 
+msgid "Rotation present on original shot, will be compensated (e.g. for deliberate tilting)"
+msgstr "存在于原来拍摄的图像旋转，将得到补偿，例如用于故意倾斜"
+
+
 msgid "Expected Scale"
 msgstr "预期缩放"
+
+
+msgid "Explicitly scale resulting frame to compensate zoom of original shot"
+msgstr "显式缩放结果帧以补偿原始镜头的变焦"
 
 
 msgid "Translation Tracks"
@@ -35111,8 +35463,16 @@ msgid "Stabilize Rotation"
 msgstr "稳定旋转"
 
 
+msgid "Stabilize detected rotation around center of frame"
+msgstr "稳定检测到的围绕画幅中心的旋转"
+
+
 msgid "Stabilize Scale"
 msgstr "稳定缩放"
+
+
+msgid "Compensate any scale changes relative to center of rotation"
+msgstr "补偿相对于旋转中心的任何缩放的变化"
 
 
 msgid "Movie tracking track data"
@@ -35651,6 +36011,10 @@ msgid "Extend Bounds"
 msgstr "Extend Bounds(扩展边界)"
 
 
+msgid "Extend bounds of the input image to fully fit blurred image"
+msgstr "扩大输入图像的边界来完全贴合模糊的图像"
+
+
 msgid "Apply filter on gamma corrected values"
 msgstr "将滤镜应用到伽玛校正值"
 
@@ -35887,8 +36251,16 @@ msgid "Correction for Shadows"
 msgstr "暗调校正"
 
 
+msgid "Correction for entire tonal range"
+msgstr "对整个色调范围的修正"
+
+
 msgid "Basis"
 msgstr "基型"
+
+
+msgid "Support negative color by using this as the RGB basis"
+msgstr "将这个数值作为RGB基值来支持负色"
 
 
 msgid "Slope"
@@ -37072,10 +37444,6 @@ msgid "The smallest integer greater than or equal A"
 msgstr "大于或等于 A 的最小整数"
 
 
-msgid "trunc(A)"
-msgstr "trunc(A)"
-
-
 msgid "Fraction"
 msgstr "分数"
 
@@ -37448,6 +37816,10 @@ msgid "Translate"
 msgstr "移动"
 
 
+msgid "Use relative (fraction of input image size) values to define translation"
+msgstr "使用相对(输入图像大小的分数)的值来定义移动"
+
+
 msgid "Wrapping"
 msgstr "包裹"
 
@@ -37564,6 +37936,10 @@ msgid "Anti-Alias Z"
 msgstr "Z 向抗锯齿"
 
 
+msgid "Anti-alias the z-buffer to try to avoid artifacts, mostly useful for Blender renders"
+msgstr "对z向缓存进行抗锯齿来尽量避免错误，对Blender render最有效"
+
+
 msgctxt "NodeTree"
 msgid "Frame"
 msgstr "框"
@@ -37609,8 +37985,20 @@ msgid "Add Shader"
 msgstr "相加着色器"
 
 
+msgid "Trace rays towards the inside of the object"
+msgstr "向物体内部追踪光线"
+
+
 msgid "Only Local"
 msgstr "仅局部"
+
+
+msgid "Only consider the object itself when computing AO"
+msgstr "计算环境光遮蔽(AO)时仅考虑自身物体"
+
+
+msgid "Number of rays to trace per shader evaluation"
+msgstr "每次着色器解释时要跟踪的光线数"
 
 
 msgid "Attribute"
@@ -37645,6 +38033,10 @@ msgid "Multiscatter GGX"
 msgstr "多重散射GGX"
 
 
+msgid "Ashikhmin-Shirley"
+msgstr "不支持贝克曼、Ashikhmin-Shirley和多重散射GGX"
+
+
 msgid "Diffuse BSDF"
 msgstr "漫射 BSDF"
 
@@ -37677,8 +38069,20 @@ msgid "Absorption coefficient"
 msgstr "吸收系数"
 
 
+msgid "Directly set the absorption coefficient sigma_a (this is not the most intuitive way to color hair)"
+msgstr "直接设置吸收系数sigma_a(这不是最直观的给头发上色的方法)"
+
+
+msgid "Define the melanin concentrations below to get the most realistic-looking hair(you can get the concentrations for different types of hair online)"
+msgstr "确定下面的黑色素浓度以获得最逼真的头发(你可以在网上获得不同类型的头发的浓度)"
+
+
 msgid "Direct coloring"
 msgstr "直接着色"
+
+
+msgid "Choose the color of your preference, and the shader will approximate the absorption coefficient to render lookalike hair"
+msgstr "选择你喜欢的颜色，着色器将估计吸收系数来渲染相似的头发"
 
 
 msgid "Principled BSDF"
@@ -37697,8 +38101,16 @@ msgid "Christensen-Burley"
 msgstr "克里斯坦森-伯利"
 
 
+msgid "Approximation to physically based volume scattering"
+msgstr "基于物理学的体积散射的近似值"
+
+
 msgid "Random Walk"
 msgstr "随机游走"
+
+
+msgid "Volumetric approximation to physically based volume scattering"
+msgstr "基于物理学的体积散射的体积近似值"
 
 
 msgid "Refraction BSDF"
@@ -37723,6 +38135,10 @@ msgstr "丝绒 BSDF"
 
 msgid "Bump"
 msgstr "凹凸"
+
+
+msgid "Invert the bump mapping direction to push into the surface instead of out"
+msgstr "反转凹凸映射方向，将其推入表面而不是推出表面"
 
 
 msgid "Camera Data"
@@ -38033,8 +38449,16 @@ msgid "Subsurface Scattering"
 msgstr "次表面散射 (SSS)"
 
 
+msgid "Function to determine how much light nearby points contribute based on their distance to the shading point"
+msgstr "根据光到顶点的距离来确定附近点的光源影响程度的函数"
+
+
 msgid "Simple cubic falloff function"
 msgstr "简单三次衰落函数"
+
+
+msgid "Normal distribution, multiple can be combined to fit more complex profiles"
+msgstr "正态分布，可以组合使用多个节点来适应更复杂的形状"
 
 
 msgid "Axis for radial tangents"
@@ -38185,6 +38609,10 @@ msgid "Internal IES file"
 msgstr "内部IES文件"
 
 
+msgid "Whether the IES file is loaded from disk or from a Text datablock"
+msgstr "IES文件加载自硬盘还是文本数据块"
+
+
 msgid "Use internal text datablock"
 msgstr "使用内部文本数据块"
 
@@ -38203,6 +38631,14 @@ msgstr "使用纹理矢量的X 轴和Y 轴对图像进行平面投射"
 
 msgid "Image is projected using different components for each side of the object space bounding box"
 msgstr "使用不同的组件向物体空间边界框的各个面投射图像"
+
+
+msgid "Image is projected spherically using the Z axis as central"
+msgstr "使用Z轴作为中心对图像进行球形投射"
+
+
+msgid "Image is projected from the tube using the Z axis as central"
+msgstr "使用Z轴作为中心，将图像从圆柱形进行投影"
 
 
 msgid "Projection Blend"
@@ -40758,7 +41194,7 @@ msgstr "父级类型"
 
 
 msgid "Type of parenting"
-msgstr "父级连接的类型"
+msgstr "父级关联的类型"
 
 
 msgid "Keep Offset"
@@ -42503,6 +42939,15 @@ msgstr "移除其他选中物体的集合"
 
 
 msgctxt "Operator"
+msgid "Remove from All Collections"
+msgstr "从所有集合中移除"
+
+
+msgid "Remove selected objects from all collections"
+msgstr "从所有集合中移除所选物体"
+
+
+msgctxt "Operator"
 msgid "Console Autocomplete"
 msgstr "控制台自动补全"
 
@@ -43292,7 +43737,7 @@ msgstr "从活动点中按照指定的元素间隔数量执行弃选"
 
 
 msgid "Number of selected elements in the repetitive sequence"
-msgstr "重复次序中选择的元素数量。"
+msgstr "重复次序中选择的元素数量"
 
 
 msgid "Offset from the starting point"
@@ -43304,7 +43749,7 @@ msgstr "弃选项"
 
 
 msgid "Number of deselected elements in the repetitive sequence"
-msgstr "重复次序中跳过的元素数量。"
+msgstr "重复次序中跳过的元素数量"
 
 
 msgctxt "Operator"
@@ -44425,7 +44870,7 @@ msgstr "glTF二进制(.glb)"
 
 
 msgid "Exports a single file, with all data packed in binary form. Most efficient and portable, but more difficult to edit later"
-msgstr "将全部数据打包为二进制格式.，导出单个文件。高效并便携, 但不方便之后编辑。"
+msgstr "将全部数据打包为二进制格式.，导出单个文件。高效并便携, 但不方便之后编辑"
 
 
 msgid "glTF Embedded (.gltf)"
@@ -44433,7 +44878,7 @@ msgstr "glTF嵌入式(.gltf)"
 
 
 msgid "Exports a single file, with all data packed in JSON. Less efficient than binary, but easier to edit later"
-msgstr "将全部数据打包为JSON格式.，导出单个文件。比二进制低效, 但更易于之后编辑。"
+msgstr "将全部数据打包为JSON格式.，导出单个文件。比二进制低效, 但更易于之后编辑"
 
 
 msgid "glTF Separate (.gltf + .bin + textures)"
@@ -46190,7 +46635,7 @@ msgstr "蜡笔插值"
 
 
 msgid "Interpolate grease pencil strokes between frames"
-msgstr "对关键帧之间的蜡笔笔画进行插值。"
+msgstr "对关键帧之间的蜡笔笔画进行插值"
 
 
 msgctxt "Operator"
@@ -46882,7 +47327,7 @@ msgstr "设置闭合状态"
 
 
 msgid "Close or open the selected stroke adding an edge from last to first point"
-msgstr "通过连接/断开首末端点闭合/打开选中笔画。"
+msgstr "通过连接/断开首末端点闭合/打开选中笔画"
 
 
 msgid "Create Geometry"
@@ -50635,6 +51080,10 @@ msgstr "法向矢量工具"
 
 msgid "Absolute Coordinates"
 msgstr "绝对坐标"
+
+
+msgid "Copy Absolute coordinates or Normal vector"
+msgstr "拷贝绝对坐标或法线向量"
 
 
 msgid "Copy Normal"
@@ -55351,7 +55800,7 @@ msgstr "重置数值"
 
 
 msgid "Clear transform values after transferring to deltas"
-msgstr "在传递至增量变换后清空变换。"
+msgstr "在传递至增量变换后清空变换"
 
 
 msgctxt "Operator"
@@ -58064,10 +58513,6 @@ msgstr "受插帧集影响的全部骨骼"
 msgctxt "Operator"
 msgid "Select Connected"
 msgstr "选择已连接项"
-
-
-msgid "Select bones related to selected ones by parent/child relationships"
-msgstr "选择与所选骨骼关联的父 / 子关系骨骼"
 
 
 msgctxt "Operator"
@@ -66715,7 +67160,7 @@ msgstr "显示遮罩"
 
 
 msgid "Show mask as overlay on object"
-msgstr "将遮罩显示为物体上的叠加层。"
+msgstr "将遮罩显示为物体上的叠加层"
 
 
 msgid "Source and destination for symmetrize operator"
@@ -69643,7 +70088,7 @@ msgstr "应用了约束和驱动之后的 4x4 矩阵结果"
 
 
 msgid "Alternative access to location/scale/rotation relative to the parent and own rest bone"
-msgstr " 相对于父级与自身骨骼的位置/缩放/旋转的选择性入口"
+msgstr "相对于父级与自身骨骼的位置/缩放/旋转的选择性入口"
 
 
 msgid "Channel Matrix"
@@ -70382,12 +70827,24 @@ msgid "Drag Threshold"
 msgstr "拖动阈值"
 
 
+msgid "Number of pixels to drag before a drag event is triggered for keyboard and other non mouse/tablet input (otherwise click events are detected)"
+msgstr "对键盘与其他非鼠标/数位板输入设备，触发拖动事件需要拖动的像素数(否则将触发点击事件)"
+
+
 msgid "Mouse Drag Threshold"
 msgstr "鼠标拖动阈值"
 
 
+msgid "Number of pixels to drag before a tweak/drag event is triggered for mouse/track-pad input (otherwise click events are detected)"
+msgstr "对鼠标/触控板输入设备，触发微调/拖动事件需要拖动的像素数(否则将触发点击事件)"
+
+
 msgid "Tablet Drag Threshold"
 msgstr "数位板拖动阈值"
+
+
+msgid "Number of pixels to drag before a tweak/drag event is triggered for tablet input (otherwise click events are detected)"
+msgstr "对触控板输入设备，触发微调/拖动事件需要拖动的像素数(否则将触发点击事件)"
 
 
 msgid "Invert Zoom Direction"
@@ -70758,8 +71215,16 @@ msgid "Continue"
 msgstr "持续"
 
 
+msgid "Continuous zooming. The zoom direction and speed depends on how far along the set Zoom Axis the mouse has moved"
+msgstr "持续缩放。缩放的方向和速度取决于鼠标沿缩放方向移动的距离"
+
+
 msgid "Dolly"
 msgstr "滑动"
+
+
+msgid "Zoom in and out based on mouse movement along the set Zoom Axis"
+msgstr "基于鼠标沿缩放方向的移动放大和缩小"
 
 
 msgid "Zoom in and out as if you are scaling the view, mouse movements relative to center"
@@ -71150,12 +71615,24 @@ msgid "UI Line Width"
 msgstr "用户界面线宽"
 
 
+msgid "Suggested line thickness and point size in pixels, for add-ons drawing custom user interface elements, based on operating system settings and Blender UI scale"
+msgstr "基于操作系统设置和Blender界面缩放，以像素为单位，对插件自定义界面元素，建议的线宽度和点大小"
+
+
 msgid "UI Scale"
 msgstr "UI缩放"
 
 
+msgid "Size multiplier to use when drawing custom user interface elements, so that they are scaled correctly on screens with different DPI. This value is based on operating system DPI settings and Blender display scale"
+msgstr "自定义界面元素时使用的大小乘数，这样它们在不同的DPI下才能正确缩放显示。数值基于操作系统的DPI设置和Blender显示缩放"
+
+
 msgid "Edit-Mode Smooth Wires"
 msgstr "编辑模式平滑线框"
+
+
+msgid "Enable Edit-Mode edge smoothing, reducing aliasing, requires restart"
+msgstr "启用编辑模式边缘平滑，减少锯齿，需要重启Blender才能生效"
 
 
 msgid "Overlay Smooth Wires"
@@ -71176,6 +71653,10 @@ msgstr "在主区域上方绘制工具栏/属性栏"
 
 msgid "OpenGL Depth Picking"
 msgstr "OpenGL深度拾取"
+
+
+msgid "Use the depth buffer for picking 3D View selection (without this the front most object may not be selected first)"
+msgstr "使用深度缓存区来区别3D视窗中的物体选择(没有深度缓冲区，最靠前的物体可能不会被第一个选择到)"
 
 
 msgid "Use Disk Cache"
@@ -71474,8 +71955,16 @@ msgid "Animation Timeout"
 msgstr "动画超时"
 
 
+msgid "Time needed to fully animate the pie to unfolded state (in 1/100ths of sec)"
+msgstr "饼菜单完全展开的动画所需的时间(以1/100秒为单位)"
+
+
 msgid "Recenter Timeout"
 msgstr "重置中心超时"
+
+
+msgid "Pie menus will use the initial mouse position as center for this amount of time (in 1/100ths of sec)"
+msgstr "在这个时间段内，饼菜单会使用最初的鼠标位置作为中心(以1/100秒为单位)"
 
 
 msgid "Confirm Threshold"
@@ -71507,7 +71996,7 @@ msgstr "保持用户界面"
 
 
 msgid "Images are rendered without changing the user interface"
-msgstr "在不改变用户界面的情况下渲染图像。"
+msgstr "在不改变用户界面的情况下渲染图像"
 
 
 msgid "Images are rendered in a maximized Image Editor"
@@ -71531,7 +72020,7 @@ msgstr "仅已启用插件"
 
 
 msgid "Only show enabled add-ons. Un-check to see all installed add-ons"
-msgstr "仅显示已启用插件。取消勾选查看全部已安装插件。"
+msgstr "仅显示已启用插件。取消勾选查看全部已安装插件"
 
 
 msgid "Toolbox Column Layout"
@@ -72889,7 +73378,7 @@ msgstr "最小透明反弹"
 
 
 msgid "Minimum number of transparent bounces. Setting this higher reduces noise in the first bounces, but can also be less efficient for more complex geometry like hair and volumes"
-msgstr "透明反弹的最小数量。设置较高的数值可降低第一次反弹时的噪波，但对于头发和体积等更复杂的几何形状，效率也会降低。"
+msgstr "透明反弹的最小数量。设置较高的数值可降低第一次反弹时的噪波，但对于头发和体积等更复杂的几何形状，效率也会降低"
 
 
 msgid "Motion Blur Position"
@@ -74297,7 +74786,7 @@ msgstr "用于保存动画的目录名, 使用#来定义存储帧的显示格式
 
 
 msgid "World background is transparent, for compositing the render over another background"
-msgstr "世界背景呈透明，用于将渲染图合成到另一个背景上。"
+msgstr "世界背景呈透明，用于将渲染图合成到另一个背景上"
 
 
 msgid "Width over which the reconstruction filter combines samples"
@@ -74413,7 +74902,7 @@ msgstr "为视图渲染使用的像素尺寸"
 
 
 msgid "Automatic pixel size, depends on the user interface scale"
-msgstr "依照用户界面缩放值自动调整像素尺寸,"
+msgstr "依照用户界面缩放值自动调整像素尺寸"
 
 
 msgid "1x"
@@ -75452,6 +75941,10 @@ msgid "Base mesh"
 msgstr "基础网格"
 
 
+msgid "Deformations (shape keys, deform modifiers)"
+msgstr "形变(形态键，形变修改器)"
+
+
 msgid "All modifiers"
 msgstr "全部修改器"
 
@@ -76126,6 +76619,14 @@ msgstr "体积效果的起始距离"
 
 msgid "Control the quality of the volumetric effects (lower size increase vram usage and quality)"
 msgstr "控制体积效果的质量(数值越小质量越好，显存需求也越高)"
+
+
+msgid "2 px"
+msgstr "2 px"
+
+
+msgid "4 px"
+msgstr "4 px"
 
 
 msgid "Scene Objects"
@@ -82834,7 +83335,7 @@ msgstr "标注笔画放置 (3D 视图)"
 
 
 msgid "How annotation strokes are orientated in 3D space"
-msgstr "指定标注笔画在三维空间如何定位。"
+msgstr "指定标注笔画在三维空间如何定位"
 
 
 msgid "Annotation Stroke Thickness"
@@ -87540,7 +88041,11 @@ msgstr "材质编号偏移:"
 
 
 msgid "Rim"
-msgstr "框"
+msgstr "边缘"
+
+
+msgid "Rim Vertex Group:"
+msgstr "边缘顶点组:"
 
 
 msgid "Aspect X"
@@ -88855,10 +89360,6 @@ msgid "Particles in Boundary:"
 msgstr "边界中的粒子:"
 
 
-msgid "Real World Size"
-msgstr "真实世界尺寸"
-
-
 msgid "Surface Tension"
 msgstr "表面张力"
 
@@ -88952,6 +89453,10 @@ msgstr "全部烘焙 - ESC 暂停"
 
 msgid "Unbaked Guides: Bake Guides or disable them"
 msgstr "未烘焙引导：烘焙或禁用引导"
+
+
+msgid "Use Flow"
+msgstr "使用流"
 
 
 msgid "Surface Thickness"
@@ -91648,6 +92153,11 @@ msgstr "约束目标"
 
 
 msgctxt "Operator"
+msgid "Linked"
+msgstr "关联项"
+
+
+msgctxt "Operator"
 msgid "Roots"
 msgstr "根级"
 
@@ -91690,11 +92200,6 @@ msgstr "下一个活动元素"
 msgctxt "Operator"
 msgid "Previous Active"
 msgstr "上一个活动元素"
-
-
-msgctxt "Operator"
-msgid "Linked"
-msgstr "关联项"
 
 
 msgctxt "Operator"
@@ -94431,12 +94936,20 @@ msgid "NLA Strip Controls"
 msgstr "NLA 片段控件"
 
 
+msgid "F-Curve visibility in Graph Editor"
+msgstr "在曲线编辑器中的函数曲线可见性"
+
+
 msgid "Grease Pencil layer is visible in the viewport"
 msgstr "蜡笔图层在视图中可见"
 
 
 msgid "Channels are visible in Graph Editor for editing"
 msgstr "通道在曲线编辑器中可见, 以进行编辑"
+
+
+msgid "Enable F-Curve modifiers"
+msgstr "启用函数曲线修改器"
 
 
 msgid "Make channels grouped under this channel visible"
@@ -99902,6 +100415,10 @@ msgid "Vertex select - Shift-Click for multiple modes, Ctrl-Click contracts sele
 msgstr "点选择模式 - Shift+单击选择多重模式，Ctrl+单击减选"
 
 
+msgid "Edge select - Shift-Click for multiple modes, Ctrl-Click expands/contracts selection depending on the current mode"
+msgstr "边选择模式 - Shift+单击选择多重模式，Ctrl+单击扩展选中项或减选"
+
+
 msgid "Face select - Shift-Click for multiple modes, Ctrl-Click expands selection"
 msgstr "面选择模式 - Shift+单击选择多重模式，Ctrl+单击扩展选中项或减选"
 
@@ -100400,11 +100917,11 @@ msgstr "无法使用零区域的面"
 
 
 msgid "Checking sanity of current .blend file *BEFORE* undo step"
-msgstr "检查当前 .blend 文件的健全性撤消步骤 *之前* "
+msgstr "检查当前 .blend 文件的健全性撤消步骤 *之前*"
 
 
 msgid "Checking sanity of current .blend file *AFTER* undo step"
-msgstr "检查当前 .blend 文件的完整性撤消步骤 *之后* "
+msgstr "检查当前 .blend 文件的完整性撤消步骤 *之后*"
 
 
 msgid "Undo disabled at startup"
@@ -101353,6 +101870,10 @@ msgid "Registering gizmogroup class: '%s' is too long, maximum length is %d"
 msgstr "注册Gizmo群组类:'%s' 过长,最大长度为 %d"
 
 
+msgid "Gizmo target property '%s.%s' not found"
+msgstr "未找到Gizmo目标属性 '%s.%s'"
+
+
 msgid "Property '%s.%s' not found"
 msgstr "未找到属性 '%s.%s'"
 
@@ -101375,6 +101896,14 @@ msgstr "未找到操作 '%s'!"
 
 msgid "Gizmo group '%s' not found!"
 msgstr "未找到Gizmo组 '%s'!"
+
+
+msgid "The offset is too small, we cannot generate the amount of geometry it would require"
+msgstr "偏移量过小，无法生成所需的几何量"
+
+
+msgid "The amount of copies is too high, we cannot generate the amount of geometry it would require"
+msgstr "副本量过多，无法生成所需的几何量"
 
 
 msgid "Enable 'Auto Smooth' in Object Data Properties"
@@ -101463,10 +101992,6 @@ msgstr "包壳错误"
 
 msgid "No valid root vertex found (you need one per mesh island you want to skin)"
 msgstr "未找到有效的根顶点(每个网格岛需要一个要蒙皮的顶点)"
-
-
-msgid "Faces needed for useful output"
-msgstr "面需要常用的输出"
 
 
 msgid "Internal Error: edges array wrong size: %u instead of %u"
@@ -102071,6 +102596,10 @@ msgstr "未渲染任何帧, 跳过以避免覆写"
 
 msgid "Render error (%s) cannot save: '%s'"
 msgstr "写入错误：(%s)无法保存 '%s'"
+
+
+msgid "Camera \"%s\" is not a multi-view camera"
+msgstr "相机 \"%s\" 不是多视角相机"
 
 
 msgid "No active view found in scene \"%s\""
