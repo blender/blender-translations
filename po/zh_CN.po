@@ -1,9 +1,9 @@
 
 msgid ""
 msgstr ""
-"Project-Id-Version: Blender 2.83 (sub 15) (b'000fdd8a6eae')\n"
+"Project-Id-Version: Blender 2.83 (sub 15) (b'046172755313')\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-05-04 10:26:18\n"
+"POT-Creation-Date: 2020-05-11 07:37:59\n"
 "PO-Revision-Date: \n"
 "Last-Translator: DeathBlood\n"
 "Language-Team: \n"
@@ -5462,8 +5462,16 @@ msgid "Use Envelopes"
 msgstr "使用骨骼封套"
 
 
+msgid "Multiply weights by envelope for all bones, instead of acting like Vertex Group based blending. The specified weights are still used, and only the listed bones are considered"
+msgstr "将所有骨骼的权重乘以骨骼封套，而不使用类似顶点组混合的方式。仍然使用指定的权重，并且只考虑列出的骨骼"
+
+
 msgid "Use Current Location"
 msgstr "使用当前位置"
+
+
+msgid "Use the current bone location for envelopes and choosing B-Bone segments instead of rest position"
+msgstr "给骨骼封套使用当前骨骼位置并选择柔性骨骼而不是静置姿态"
 
 
 msgid "Preserve Volume"
@@ -5672,6 +5680,10 @@ msgstr "反转 Z 的位置"
 
 msgid "Follow B-Bone"
 msgstr "柔性骨段"
+
+
+msgid "Follow shape of B-Bone segments when calculating Head/Tail position"
+msgstr "计算头部/尾部位置时遵循柔性骨骼的形状"
 
 
 msgid "Add original location into copied location"
@@ -7690,12 +7702,20 @@ msgid "Object Instances"
 msgstr "物体实例"
 
 
+msgid "All object instances to display or render (WARNING: only use this as an iterator, never as a sequence, and do not keep any references to its items)"
+msgstr "所有要显示或渲染的对象实例(警告：只能作为迭代器使用，千万不要作为序列使用，也不要保留对其项的任何引用)"
+
+
 msgid "Evaluated objects in the dependency graph"
 msgstr "在依赖关系图中已估算的对象"
 
 
 msgid "Scene"
 msgstr "场景"
+
+
+msgid "Original scene dependency graph is built for"
+msgstr "原有场景依赖图的构建目标"
 
 
 msgid "Updates"
@@ -7710,8 +7730,16 @@ msgid "View Layer"
 msgstr "视图层"
 
 
+msgid "Original view layer dependency graph is built for"
+msgstr "原有视图层依赖图的构建目标"
+
+
 msgid "Dependency Graph Object Instance"
 msgstr "从属关系图物体实例"
+
+
+msgid "Extended information about dependency graph object iterator (WARNING: all data here is *evaluated* one, not original .blend IDs...)"
+msgstr "关于依赖关系图对象迭代器的扩展信息(警告:这里的所有数据都是*计算过的*,而不是原始的.blend ID.....)"
 
 
 msgid "Instance Object"
@@ -25243,6 +25271,10 @@ msgid "Operations"
 msgstr "操作"
 
 
+msgid "List of overriding operations for a property"
+msgstr "属性的重载运算符的列表"
+
+
 msgid "RNA Path"
 msgstr "RNA 路径"
 
@@ -34639,8 +34671,16 @@ msgid "Polynomial"
 msgstr "多项式"
 
 
+msgid "Radial distortion model which fits common cameras"
+msgstr "适合普通相机的径向变形模型"
+
+
 msgid "Divisions"
 msgstr "细分"
+
+
+msgid "Division distortion model which better represents wide-angle cameras"
+msgstr "更能代表广角相机的分部畸变模型"
 
 
 msgid "K1"
@@ -34791,6 +34831,10 @@ msgid "Keyframed"
 msgstr "已插关键帧"
 
 
+msgid "Whether the position of the marker is keyframed or tracked"
+msgstr "标记的位置使用关键帧还是跟踪"
+
+
 msgid "Is marker muted for current frame"
 msgstr "为当前帧禁用的标记"
 
@@ -34915,6 +34959,10 @@ msgid "Corners"
 msgstr "转角"
 
 
+msgid "Array of coordinates which represents UI rectangle corners in frame normalized coordinates"
+msgstr "代表UI矩形角的坐标数组,以框架标准化坐标表示UI矩形角的坐标数组"
+
+
 msgid "Movie Tracking Plane Markers"
 msgstr "影片跟踪平面标记"
 
@@ -34929,6 +34977,10 @@ msgstr "影片跟踪平面轨迹数据"
 
 msgid "Match-moving plane track data for tracking"
 msgstr "用于追踪的镜头追踪轨迹数据"
+
+
+msgid "Image displayed in the track during editing in clip editor"
+msgstr "在剪辑编辑器中编辑时显示在轨道中的图像"
 
 
 msgid "Image Opacity"
@@ -35317,6 +35369,10 @@ msgstr "使用特殊解算器追踪一个固定的相机位置, 如三脚架"
 
 msgid "Movie tracking stabilization data"
 msgstr "影片追踪稳像数据"
+
+
+msgid "2D stabilization based on tracking markers"
+msgstr "基于跟踪标记的二维稳定"
 
 
 msgid "Active Rotation Track Index"
@@ -37442,6 +37498,10 @@ msgstr "向上取整"
 
 msgid "The smallest integer greater than or equal A"
 msgstr "大于或等于 A 的最小整数"
+
+
+msgid "The integer part of A, removing fractional digits"
+msgstr "A 的整数部分，删除小数位"
 
 
 msgid "Fraction"
@@ -44785,10 +44845,6 @@ msgid "Export the scene in the current animation frame"
 msgstr "导出当前动画帧中的场景"
 
 
-msgid "Export Deformation bones only"
-msgstr "仅导出变形骨骼"
-
-
 msgid "Export Deformation bones only (and needed bones for hierarchy)"
 msgstr "仅导出变形骨骼(和层次结构所需的骨骼)"
 
@@ -44951,10 +45007,6 @@ msgstr "形态键切向"
 
 msgid "Export vertex tangents with shape keys (morph targets)"
 msgstr "导出带形态键的顶点切向 (变形目标)"
-
-
-msgid "Export NLA Strip animations"
-msgstr "导出 NLA 片段动画"
 
 
 msgid "Export vertex normals with meshes"
@@ -49065,14 +49117,6 @@ msgstr "骨骼目录"
 
 msgid "Blender (best for re-importing)"
 msgstr "Blender (最适合重新导入)"
-
-
-msgid "Guess original bind pose"
-msgstr "猜测原始绑定姿态"
-
-
-msgid "Pack images"
-msgstr "打包图像"
 
 
 msgid "Pack all images into .blend file"
@@ -58515,6 +58559,10 @@ msgid "Select Connected"
 msgstr "选择已连接项"
 
 
+msgid "Select bones linked by parent/child connections under the mouse cursor"
+msgstr "选择鼠标光标下的以父/子关系关联的骨骼"
+
+
 msgctxt "Operator"
 msgid "Select Parent Bone"
 msgstr "选择父级骨骼"
@@ -66609,6 +66657,14 @@ msgid "Site"
 msgstr "站点"
 
 
+msgid "UV Maps"
+msgstr "UV 贴图"
+
+
+msgid "Instancing"
+msgstr "实例化"
+
+
 msgctxt "Operator"
 msgid "Add Autoexec Path"
 msgstr "添加自动执行路径"
@@ -67606,10 +67662,6 @@ msgid "Text Boxes"
 msgstr "文本框"
 
 
-msgid "UV Maps"
-msgstr "UV 贴图"
-
-
 msgid "OpenVDB File"
 msgstr "OpenVDB文件"
 
@@ -67880,10 +67932,6 @@ msgstr "切断连接"
 
 msgid "Delta Transform"
 msgstr "变换增量"
-
-
-msgid "Instancing"
-msgstr "实例化"
 
 
 msgid "Scale by Face Size"
@@ -72437,16 +72485,32 @@ msgid "Max Latitude"
 msgstr "最大纬度"
 
 
+msgid "Maximum latitude (vertical angle) for the equirectangular lens"
+msgstr "全景镜头的最大纬度(垂直角度)"
+
+
 msgid "Min Latitude"
 msgstr "最小纬度"
+
+
+msgid "Minimum latitude (vertical angle) for the equirectangular lens"
+msgstr "全景镜头的最小纬度(垂直角度)"
 
 
 msgid "Max Longitude"
 msgstr "最大经度"
 
 
+msgid "Maximum longitude (horizontal angle) for the equirectangular lens"
+msgstr "全景镜头的最大经度(水平角度)"
+
+
 msgid "Min Longitude"
 msgstr "最小经度"
+
+
+msgid "Minimum longitude (horizontal angle) for the equirectangular lens"
+msgstr "全景镜头的最小经度(水平角度)"
 
 
 msgid "Panorama Type"
@@ -72633,6 +72697,10 @@ msgid "Transparent Shadows"
 msgstr "透明阴影"
 
 
+msgid "Use transparent shadows for this material if it contains a Transparent BSDF, disabling will render faster but not give accurate shadows"
+msgstr "如果此材质包含透明BSDF就使用透明阴影,禁用会加速渲染但不会有准确的阴影"
+
+
 msgid "Volume Interpolation"
 msgstr "体积插值"
 
@@ -72683,6 +72751,10 @@ msgstr "分块比例"
 
 msgid "Multiplier for scene dicing rate (located in the Subdivision panel)"
 msgstr "场景切开率的乘数 (位于细分面板)"
+
+
+msgid "Render objects as a holdout or matte, creating a hole in the image with zero alpha, to fill out in compositing with real footage or another render"
+msgstr "渲染对象作为阻隔或遮罩，在图像中创建alpha值为零的部分，在合成中用真实镜头或其他渲染来填充"
 
 
 msgid "Shadow Catcher"
@@ -73001,8 +73073,16 @@ msgid "Adaptive Min Samples"
 msgstr "自适应最小采样"
 
 
+msgid "Minimum AA samples for adaptive sampling, to discover noisy features before stopping sampling. Zero for automatic setting based on number of AA samples"
+msgstr "用于自适应采样的最小AA采样数，在停止采样前发现噪点特征。根据AA采样数自动设置为0"
+
+
 msgid "Adaptive Sampling Threshold"
 msgstr "自适应采样阈值"
+
+
+msgid "Noise level step to stop sampling at, lower values reduce noise the cost of render time. Zero for automatic setting based on number of AA samples"
+msgstr "停止采样的噪点级别，更低的值会减少噪点，但会延长渲染时间。根据AA采样数自动设置为0"
 
 
 msgid "AO Bounces"
@@ -73493,6 +73573,10 @@ msgid "Branched Path Tracing"
 msgstr "分路路径追踪"
 
 
+msgid "Path tracing integrator that branches on the first bounce, giving more control over the number of light and material samples"
+msgstr "在第一次反弹时分支的路径跟踪积分器，可以更好地控制灯光和材料采样"
+
+
 msgid "Path Tracing"
 msgstr "路径追踪"
 
@@ -73503,6 +73587,10 @@ msgstr "纯路径追踪积分器"
 
 msgid "Rolling Shutter Duration"
 msgstr "卷帘快门持续时间"
+
+
+msgid "Scanline \"exposure\" time for the rolling shutter effect"
+msgstr "滚动快门效果的扫描线 \"曝光\"时间"
 
 
 msgid "Shutter Type"
@@ -74881,6 +74969,10 @@ msgid "Time taken in frames between shutter open and close"
 msgstr "快门的开关间隔时间"
 
 
+msgid "Curve defining the shutter's openness over time"
+msgstr "定义快门的打开程度的曲线"
+
+
 msgid "Pixel Aspect X"
 msgstr "像素宽高比 X"
 
@@ -75209,6 +75301,10 @@ msgid "Cache Result"
 msgstr "缓存结果"
 
 
+msgid "Save render cache to EXR files (useful for heavy compositing, Note: affects indirectly rendered scenes)"
+msgstr "将渲染缓存保存到EXR文件中(对重度合成非常有用,注意:影响间接渲染的场景)"
+
+
 msgid "Save Buffers"
 msgstr "保存缓冲区"
 
@@ -75383,6 +75479,10 @@ msgstr "将已渲染帧的时间码以 HH:MM:SS.FF 的格式包含到图像元�
 
 msgid "Setup Stereo Mode"
 msgstr "设置立体模式"
+
+
+msgid "Single stereo camera system, adjust the stereo settings in the camera panel"
+msgstr "单立体声相机系统，调整相机面板中的立体声设置"
 
 
 msgid "Multi-View"
@@ -76437,6 +76537,10 @@ msgid "Overscan Size"
 msgstr "过扫描尺寸"
 
 
+msgid "Percentage of render size to add as overscan to the internal render buffers"
+msgstr "作为过扫描而加入到内部渲染缓存的渲染尺寸的百分比"
+
+
 msgid "Directional Shadows Resolution"
 msgstr "定向阴影精度"
 
@@ -76527,6 +76631,10 @@ msgstr "计算主非遮蔽方向对环境进行采样"
 
 msgid "Bounces Approximation"
 msgstr "近似反弹"
+
+
+msgid "An approximation to simulate light bounces giving less occlusion on brighter objects"
+msgstr "模拟光反射的近似值,在较亮的物体上减少光的遮蔽性"
 
 
 msgid "Enable motion blur effect (only in camera view)"
@@ -76649,8 +76757,16 @@ msgid "Camera Suffix"
 msgstr "相机后缀"
 
 
+msgid "Suffix to identify the cameras to use, and added to the render images for this view"
+msgstr "用于识别要使用的摄像机的后缀,并添加到此视图的渲染图像中"
+
+
 msgid "File Suffix"
 msgstr "文件后缀"
+
+
+msgid "Suffix added to the render images for this view"
+msgstr "当前视图中,加到渲染图片上的后缀"
 
 
 msgid "Render view name"
@@ -78732,15 +78848,6 @@ msgid "Clip editor space data"
 msgstr "剪辑编辑器空间数据"
 
 
-msgctxt "MovieClip"
-msgid "Grease Pencil Source"
-msgstr "蜡笔源"
-
-
-msgid "Where the grease pencil comes from"
-msgstr "铅笔来源"
-
-
 msgid "Show annotation data-block which belongs to movie clip"
 msgstr "显示归属于影片剪辑的标注数据块"
 
@@ -79255,6 +79362,10 @@ msgstr "在时间线上显示模拟缓存的帧位置"
 
 msgid "Show Curve Extremes"
 msgstr "显示曲线极点"
+
+
+msgid "Mark keyframes where the key value flow changes direction, based on comparison with adjacent keys"
+msgstr "与相邻键比较,在键值流向改变的关键帧上做标记"
 
 
 msgid "Show Group Colors"
@@ -79911,6 +80022,10 @@ msgstr "数据API"
 
 msgid "Orphan Data"
 msgstr "孤立的数据"
+
+
+msgid "Display data-blocks which are unused and/or will be lost when the file is reloaded"
+msgstr "显示未用到的和/或当文件重新加载后会丢失的数据块"
 
 
 msgctxt "ID"
@@ -80602,6 +80717,10 @@ msgid "Quad View Regions"
 msgstr "四分视图区域"
 
 
+msgid "3D regions (the third one defines quad view settings, the fourth one is same as 'region_3d')"
+msgstr "3D区域(第三个定义了四视图设置,第四个与\"region_3d\"相同)"
+
+
 msgid "Settings for shading in the 3D viewport"
 msgstr "3D视图中着色的设置"
 
@@ -80648,6 +80767,10 @@ msgstr "调节相机镜头和正交尺寸的操纵杆"
 
 msgid "Context Gizmo"
 msgstr "Gizmo上下文"
+
+
+msgid "Context sensitive gizmos for the active item"
+msgstr "活动项目的上下文相关小控件"
 
 
 msgid "Show Empty Force Field"
@@ -80808,6 +80931,10 @@ msgstr "本地集合"
 
 msgid "Display a different set of collections in this viewport"
 msgstr "在此视口中显示一组不同的集合"
+
+
+msgid "Use a region within the frame size for rendered viewport(when not viewing through the camera)"
+msgstr "在窗口尺寸内使用一个区域作为渲染视窗(当不通过相机观看时)"
 
 
 msgid "Get the node tree path as a string"
@@ -83062,6 +83189,10 @@ msgid "Bone Locked Weight"
 msgstr "骨骼锁定权重"
 
 
+msgid "Shade for bones corresponding to a locked weight group during painting"
+msgstr "在涂抹过程中,与锁定的权重组对应骨骼的着色方式"
+
+
 msgid "Bone Pose"
 msgstr "骨骼姿态"
 
@@ -83655,6 +83786,10 @@ msgid "Compact List"
 msgstr "紧凑列表"
 
 
+msgid "Show compact list of color instead of thumbnails"
+msgstr "显示紧凑的颜色列表,而不是缩略图"
+
+
 msgid "Only paint selected stroke points"
 msgstr "仅绘制选定的笔画点"
 
@@ -83699,6 +83834,10 @@ msgid "Automatic keyframe insertion using active Keying Set only"
 msgstr "仅使用帧来自动插入关键帧"
 
 
+msgid "Display bone-deforming groups as if all locked deform groups were deleted, and the remaining ones were re-normalized"
+msgstr "显示骨骼形变组,好像所有被锁定的形变组都被删除,其余的形变组被重新标准化"
+
+
 msgid "Auto Merge Vertices"
 msgstr "自动合并顶点"
 
@@ -83717,6 +83856,10 @@ msgstr "自动拆分边和面"
 
 msgid "WPaint Multi-Paint"
 msgstr "多种绘制的权重绘制"
+
+
+msgid "Paint across the weights of all selected bones, maintaining their relative influence"
+msgstr "对所有选定骨骼的权重进行涂抹,保持其相对影响"
 
 
 msgid "Proportional Editing Actions"
@@ -83761,6 +83904,10 @@ msgstr "衰减编辑动作"
 
 msgid "Projected from View"
 msgstr "从视角投影"
+
+
+msgid "Proportional Editing using screen space locations"
+msgstr "使用屏幕空间位置的衰减编辑"
 
 
 msgid "Layered"
@@ -94684,6 +94831,10 @@ msgid "ID %s has mismatched lib pointer!"
 msgstr "ID %s 的 lib 指针不匹配!"
 
 
+msgid "ID %s not found in library %s anymore!"
+msgstr "ID %s 未在库 %s 中找到!"
+
+
 msgid "insufficient content"
 msgstr "不充分的内容"
 
@@ -102849,6 +103000,14 @@ msgstr "属性须为整型或浮点型"
 
 msgid "Property must be a none, distance, factor, percentage, angle, or pixel"
 msgstr "属性须为空, 距离, 系数, 百分比, 角度或像素"
+
+
+msgid "Registering operator class: '%s', invalid bl_idname '%s', at position %d"
+msgstr "注册操作类: '%s', 无效的bl_idname '%s', 位于 %d"
+
+
+msgid "Registering operator class: '%s', invalid bl_idname '%s', is too long, maximum length is %d"
+msgstr "注册操作类：'%s'，无效的bl_idname ‘%s’，过长，最大长度为 %d"
 
 
 msgid "Registering operator class: '%s', invalid bl_idname '%s', must contain 1 '.' character"

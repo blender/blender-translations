@@ -1,9 +1,9 @@
 
 msgid ""
 msgstr ""
-"Project-Id-Version: Blender 2.83 (sub 15) (b'000fdd8a6eae')\n"
+"Project-Id-Version: Blender 2.83 (sub 15) (b'046172755313')\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-05-04 10:26:18\n"
+"POT-Creation-Date: 2020-05-11 07:37:59\n"
 "PO-Revision-Date: 2016-10-13 03:05+0900\n"
 "Last-Translator: \n"
 "Language-Team: Japanese Translation Team (https://sites.google.com/site/blugjp/blender-translators)\n"
@@ -11603,6 +11603,10 @@ msgid "Margin added around fluid to minimize boundary interference"
 msgstr "衝突境界を最小限に留める、流体の周囲に追加されるマージン"
 
 
+msgid "Minimum amount of fluid a cell can contain before it is considered empty"
+msgstr "セルが空と見なされる前に収容可能な流体の最小量"
+
+
 msgid "Additional"
 msgstr "追加"
 
@@ -16510,11 +16514,11 @@ msgstr "ブラシで使用される変形タイプ"
 
 
 msgid "Pinch Point"
-msgstr "ピンチポイント"
+msgstr "ポイントピンチ"
 
 
 msgid "Pinch Perpendicular"
-msgstr "垂直にピンチ"
+msgstr "垂直ピンチ"
 
 
 msgid "Inflate"
@@ -17104,7 +17108,7 @@ msgstr "クロス"
 
 
 msgid "Draw Face Sets"
-msgstr "面セットドロー"
+msgstr "面セットをドロー"
 
 
 msgid "Secondary Color"
@@ -19929,7 +19933,7 @@ msgstr "浮動小数点のバッファーを生成します"
 
 
 msgid "Half Float Precision"
-msgstr "半精度Float"
+msgstr "半精度浮動小数点数"
 
 
 msgid "Use 16bits per channel to lower the memory usage during rendering"
@@ -30888,7 +30892,7 @@ msgstr ""
 
 
 msgid "Smooth Corrective"
-msgstr "スムーズ（修正）"
+msgstr "スムーズ（補正）"
 
 
 msgid "Smooth the mesh while still preserving the volume"
@@ -33028,8 +33032,12 @@ msgid "Resolution of the generated surface"
 msgstr "生成される海洋面の解像度"
 
 
+msgid "Sharpen peak"
+msgstr "ピークのシャープ化"
+
+
 msgid "Peak sharpening for 'JONSWAP' and 'TMA' models"
-msgstr "「JONSWAP」と「TMA」モデルでのピークのシャープ化"
+msgstr "「JONSWAP」と「TMA」モデル用のピークのシャープ化"
 
 
 msgid "Surface scale factor (does not affect the height of the waves)"
@@ -33069,7 +33077,11 @@ msgstr "大きな領域用の、従来の海洋（Pierson-Moskowitz 法）"
 
 
 msgid "Established Ocean (Sharp Peaks)"
-msgstr "従来の海洋（シャープなピーク）"
+msgstr "従来の海洋（尖ったピーク）"
+
+
+msgid "Use for sharp peaks ('JONSWAP', Pierson-Moskowitz method) with peak sharpening"
+msgstr "ピークのシャープ化による尖ったピーク（「JONSWAP」、Pierson-Moskowitz 法）を使用します"
 
 
 msgid "Shallow Water"
@@ -33777,6 +33789,10 @@ msgstr "鋭い角に調整することにより、厚さを維持します（遅
 
 msgid "Flat Faces"
 msgstr "面をフラットに"
+
+
+msgid "Make faces use the minimal vertex weight assigned to their vertices(ensures new faces remain parallel to their original ones, slow, disable when not needed)"
+msgstr "面の頂点に割り当てられた頂点ウェイトの最小値を使用し、面を作成します（新しい面が元の面と確実に平行になります。低速で、不要なら無効にしてください）。"
 
 
 msgid "Flip Normals"
@@ -37793,6 +37809,10 @@ msgstr "天井"
 
 msgid "The smallest integer greater than or equal A"
 msgstr "A 以上の最小の整数"
+
+
+msgid "The integer part of A, removing fractional digits"
+msgstr "Aの整数部、小数部は削除"
 
 
 msgid "Fraction"
@@ -45205,10 +45225,6 @@ msgid "Export the scene in the current animation frame"
 msgstr "シーンを現在のアニメーションフレームでエクスポートします"
 
 
-msgid "Export Deformation bones only"
-msgstr "変形ボーンのみエクスポート"
-
-
 msgid "Export Deformation bones only (and needed bones for hierarchy)"
 msgstr "変形ボーンのみ（と階層構造で必要なボーンを）エクスポートします"
 
@@ -45381,10 +45397,6 @@ msgstr "シェイプキーのタンジェント"
 
 msgid "Export vertex tangents with shape keys (morph targets)"
 msgstr "頂点のタンジェントをシェイプキー（モーフターゲット）と共にエクスポートします"
-
-
-msgid "Export NLA Strip animations"
-msgstr "NLAストリップアニメをエクスポート"
 
 
 msgid "Export vertex normals with meshes"
@@ -49579,20 +49591,12 @@ msgstr ""
 "非均一なスケールではおかしくなる可能性があるので注意してください"
 
 
-msgid "Guess original bind pose"
-msgstr "元のバインドポーズを推量"
-
-
 msgid ""
 "Try to guess the original bind pose for skinned meshes from the inverse bind matrices.\n"
 "When off, use default/rest pose as bind pose"
 msgstr ""
 "バインドの逆行列から、スキンメッシュの元のバインドポーズの推量を試みます\n"
 "OFF時はデフォルト/レストポーズをバインドポーズとして使用します"
-
-
-msgid "Pack images"
-msgstr "画像をパック"
 
 
 msgid "Pack all images into .blend file"
@@ -59388,6 +59392,10 @@ msgid "Select Connected"
 msgstr "つながりで選択"
 
 
+msgid "Select bones linked by parent/child connections under the mouse cursor"
+msgstr "マウスカーソル下の親子関係でつながるボーンを選択（解除）します"
+
+
 msgctxt "Operator"
 msgid "Select Parent Bone"
 msgstr "親ボーンを選択"
@@ -67654,6 +67662,14 @@ msgid "Site"
 msgstr "サイト"
 
 
+msgid "UV Maps"
+msgstr "UVマップ"
+
+
+msgid "Instancing"
+msgstr "インスタンス化"
+
+
 msgctxt "Operator"
 msgid "Add Autoexec Path"
 msgstr "自動実行パスを追加"
@@ -68693,10 +68709,6 @@ msgid "Text Boxes"
 msgstr "テキストボックス"
 
 
-msgid "UV Maps"
-msgstr "UVマップ"
-
-
 msgid "OpenVDB File"
 msgstr "OpenVDBファイル"
 
@@ -68967,10 +68979,6 @@ msgstr "リンクカット"
 
 msgid "Delta Transform"
 msgstr "デルタトランスフォーム"
-
-
-msgid "Instancing"
-msgstr "インスタンス化"
 
 
 msgid "Scale by Face Size"
@@ -69909,7 +69917,7 @@ msgstr "簡略化"
 
 msgctxt "Operator"
 msgid "Draw Face Sets"
-msgstr "面セットを表示"
+msgstr "面セットをドロー"
 
 
 msgctxt "Operator"
@@ -70008,7 +70016,7 @@ msgstr "選択中のポイントの半径を拡大縮小します"
 
 msgctxt "Operator"
 msgid "Transform Fill"
-msgstr "フィルをトランスフォーム"
+msgstr "フィルトランスフォーム"
 
 
 msgctxt "Operator"
@@ -74174,6 +74182,10 @@ msgstr "各ピクセルをレンダリングするためのアンチエイリア
 
 msgid "Adaptive Min Samples"
 msgstr "最小適応サンプル数"
+
+
+msgid "Minimum AA samples for adaptive sampling, to discover noisy features before stopping sampling. Zero for automatic setting based on number of AA samples"
+msgstr "サンプリング停止までにノイズの多い特徴点を発見する適応サンプリングの最小 AA サンプル数0 で AA サンプル数を元に自動設定します"
 
 
 msgid "Adaptive Sampling Threshold"
@@ -79989,15 +80001,6 @@ msgstr "クリップエディター空間"
 
 msgid "Clip editor space data"
 msgstr "クリップエディター空間データ"
-
-
-msgctxt "MovieClip"
-msgid "Grease Pencil Source"
-msgstr "グリースペンシルソース"
-
-
-msgid "Where the grease pencil comes from"
-msgstr "グリースペンシルの元の場所"
 
 
 msgid "Show annotation data-block which belongs to movie clip"
@@ -86107,7 +86110,7 @@ msgstr "ラインのみ"
 
 
 msgid "Show Edit Lines only in multiframe"
-msgstr "マルチフレーム内の編集ラインのみ表示します"
+msgstr "マルチフレーム内の編集ラインのみ表示"
 
 
 msgid "Stroke Direction"
@@ -86900,6 +86903,10 @@ msgstr "VR ヘッドセットの移動差分を適用する座標"
 
 msgid "Base Pose Object"
 msgstr "ベースポーズオブジェクト"
+
+
+msgid "Object to take the location and rotation to which translation and rotation deltas from the VR headset will be applied to"
+msgstr "VR ヘッドセットからの移動と回転の差分を適用する、位置と回転を利用するオブジェクト"
 
 
 msgid "Base Pose Type"
