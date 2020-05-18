@@ -1,9 +1,9 @@
 
 msgid ""
 msgstr ""
-"Project-Id-Version: Blender 2.83 (sub 15) (b'046172755313')\n"
+"Project-Id-Version: Blender 2.83 (sub 17) (b'008e96494008')\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-05-11 07:37:59\n"
+"POT-Creation-Date: 2020-05-18 09:40:57\n"
 "PO-Revision-Date: 2016-10-13 03:05+0900\n"
 "Last-Translator: \n"
 "Language-Team: Japanese Translation Team (https://sites.google.com/site/blugjp/blender-translators)\n"
@@ -7726,11 +7726,11 @@ msgstr "カーブスプラインの集合"
 
 
 msgid "Active Spline"
-msgstr "アクティブなスプライン"
+msgstr "アクティブスプライン"
 
 
 msgid "Active curve spline"
-msgstr "アクティブカーブスプライン"
+msgstr "アクティブなカーブスプライン"
 
 
 msgid "Dependency Graph"
@@ -13141,10 +13141,6 @@ msgstr "発生の強さをコントロールするのにテクスチャを使用
 
 msgid "Initial"
 msgstr "初期"
-
-
-msgid "Initial velocity in X, Y and Z direction"
-msgstr "X、Y および Z 方向の初期速度"
 
 
 msgid "Multiplier of source velocity passed to fluid (source velocity is non-zero only if object is moving)"
@@ -25321,10 +25317,6 @@ msgid "Newly contributed scripts (excluded from release builds)"
 msgstr "新たに加えられたスクリプト (リリースビルドから除外された)"
 
 
-msgid "Text Clipboard"
-msgstr "テキストクリップボード"
-
-
 msgid "Is Interface Locked"
 msgstr "インターフェイスが固定中か？"
 
@@ -32721,6 +32713,14 @@ msgid "Mirror the U texture coordinate around the flip offset point"
 msgstr "反転オフセット位置を基準にテクスチャの U 座標を対称にします"
 
 
+msgid "Mirror UDIM"
+msgstr "UDIMをミラー"
+
+
+msgid "Mirror the texture coordinate around each tile center"
+msgstr "各タイルの中心を基準にテクスチャ座標を対象にします"
+
+
 msgid "Mirror V"
 msgstr "ミラーV"
 
@@ -32730,7 +32730,7 @@ msgstr "反転オフセット位置を基準にテクスチャの V 座標を対
 
 
 msgid "Mirror Vertex Groups"
-msgstr "頂点グループによるミラー反転"
+msgstr "頂点グループをミラー反転"
 
 
 msgid "Mirror vertex groups (e.g. .R->.L)"
@@ -44296,11 +44296,11 @@ msgstr "グローバルビュー空間の中心"
 
 msgctxt "Operator"
 msgid "Set Spline Type"
-msgstr "スプラインのタイプを設定"
+msgstr "スプラインタイプを設定"
 
 
 msgid "Set type of active spline"
-msgstr "アクティブなスプラインのタイプを設定"
+msgstr "アクティブスプラインのタイプを設定します"
 
 
 msgid "Handles"
@@ -45225,6 +45225,10 @@ msgid "Export the scene in the current animation frame"
 msgstr "シーンを現在のアニメーションフレームでエクスポートします"
 
 
+msgid "Export Deformation Bones Only"
+msgstr "変形ボーンのみエクスポート"
+
+
 msgid "Export Deformation bones only (and needed bones for hierarchy)"
 msgstr "変形ボーンのみ（と階層構造で必要なボーンを）エクスポートします"
 
@@ -45397,6 +45401,20 @@ msgstr "シェイプキーのタンジェント"
 
 msgid "Export vertex tangents with shape keys (morph targets)"
 msgstr "頂点のタンジェントをシェイプキー（モーフターゲット）と共にエクスポートします"
+
+
+msgid "Group by NLA Track"
+msgstr "NLAトラックでグループ化"
+
+
+msgid ""
+"When on, multiple actions become part of the same glTF animation if\n"
+"they're pushed onto NLA tracks with the same name.\n"
+"When off, all the currently assigned actions become one glTF animation"
+msgstr ""
+"有効時、もし複数のアクションが同じ名前の NLA トラック上にストリップ化されていれば\n"
+"同じ glTF アニメーションの一部になります\n"
+"無効時、現在割り当て中の全アクションが一つの glTF アニメーションになります"
 
 
 msgid "Export vertex normals with meshes"
@@ -49591,12 +49609,20 @@ msgstr ""
 "非均一なスケールではおかしくなる可能性があるので注意してください"
 
 
+msgid "Guess Original Bind Pose"
+msgstr "元のバインドポーズを推測"
+
+
 msgid ""
 "Try to guess the original bind pose for skinned meshes from the inverse bind matrices.\n"
 "When off, use default/rest pose as bind pose"
 msgstr ""
-"バインドの逆行列から、スキンメッシュの元のバインドポーズの推量を試みます\n"
-"OFF時はデフォルト/レストポーズをバインドポーズとして使用します"
+"バインドの逆行列から、スキンメッシュの元のバインドポーズを推測します\n"
+"無効時はデフォルト/レストポーズをバインドポーズとして使用します"
+
+
+msgid "Pack Images"
+msgstr "画像をパック"
 
 
 msgid "Pack all images into .blend file"
@@ -67662,12 +67688,75 @@ msgid "Site"
 msgstr "サイト"
 
 
+msgctxt "Operator"
+msgid "Export USD"
+msgstr "USDをエクスポート"
+
+
+msgid "Export current scene in a USD archive"
+msgstr "現在のシーンを USD アーカイブでエクスポートします"
+
+
+msgid "Use Settings for"
+msgstr "使用する設定"
+
+
+msgid "Determines visibility of objects, modifier settings, and other areas where there are different settings for viewport and rendering"
+msgstr ""
+"オブジェクトの可視性やモディファイアー設定などの\n"
+"ビューポートとレンダリング用のどちらの設定を使用するか"
+
+
+msgid "Use Render settings for object visibility, modifier settings, etc"
+msgstr "レンダー用設定をオブジェクトの可視性やモディファイアー設定などに使用します"
+
+
+msgid "Use Viewport settings for object visibility, modifier settings, etc"
+msgstr "ビューポート用設定をオブジェクトの可視性やモディファイアー設定などに使用します"
+
+
+msgid "When checked, the render frame range is exported. When false, only the current frame is exported"
+msgstr ""
+"有効時、レンダーフレーム範囲をエクスポートします\n"
+"無効時は現在のフレームのみエクスポートします"
+
+
+msgid "When checked, hair is exported as USD curves"
+msgstr "有効時、ヘアーを USD カーブとしてエクスポートします"
+
+
+msgid "When checked, the viewport settings of materials are exported as USD preview materials, and material assignments are exported as geometry subsets"
+msgstr ""
+"有効時、マテリアルのビューポート設定を USD プレビューマテリアルとしてエクスポートし\n"
+"マテリアルの割り当てをジオメトリのサブセットとしてエクスポートします"
+
+
+msgid "When checked, normals of exported meshes are included in the export"
+msgstr "有効時、メッシュの法線も含めてエクスポートします"
+
+
 msgid "UV Maps"
 msgstr "UVマップ"
 
 
+msgid "When checked, all UV maps of exported meshes are included in the export"
+msgstr "有効時、エクスポートするメッシュの全 UV マップも含めてエクスポートします"
+
+
+msgid "Only selected objects are exported. Unselected parents of selected objects are exported as empty transform"
+msgstr ""
+"選択中のオブジェクトのみエクスポートします\n"
+"選択オブジェクトの非選択の親は空のトランスフォームとしてエクスポートされます"
+
+
 msgid "Instancing"
 msgstr "インスタンス化"
+
+
+msgid "When checked, instanced objects are exported as references in USD. When unchecked, instanced objects are exported as real objects"
+msgstr ""
+"有効時、オブジェクトのインスタンスを USD 内の参照としてエクスポートします\n"
+"無効時はインスタンスも実際のオブジェクトとしてエクスポートします"
 
 
 msgctxt "Operator"
@@ -80003,6 +80092,15 @@ msgid "Clip editor space data"
 msgstr "クリップエディター空間データ"
 
 
+msgctxt "MovieClip"
+msgid "Annotation Source"
+msgstr "アノテーションソース"
+
+
+msgid "Where the annotation comes from"
+msgstr "どこのアノテーションか"
+
+
 msgid "Show annotation data-block which belongs to movie clip"
 msgstr "動画クリップに属するアノテーションデータブロックを表示します"
 
@@ -86741,10 +86839,6 @@ msgid "Specify volume step size and density in world space"
 msgstr "ボリュームのステップサイズと密度をワールド空間で指定します"
 
 
-msgid "Distance between volume samples. Higher values render more detail at the cost of performance. If set to zero, the step size is automatically determined based on voxel size"
-msgstr "ボリュームサンプル間の距離。大きな値でパフォーマンスを犠牲にしてより細かくレンダリングされます。0の場合、ステップサイズがボクセルサイズを元に自動的に決定されます"
-
-
 msgid "Walk navigation settings"
 msgstr "ウォークナビゲーション設定"
 
@@ -89397,6 +89491,10 @@ msgstr "U軸反転"
 
 msgid "Flip V"
 msgstr "V軸反転"
+
+
+msgid "Flip UDIM"
+msgstr "UDIMを反転"
 
 
 msgctxt "Operator"
@@ -96038,6 +96136,10 @@ msgid "Strips must have the same number of inputs"
 msgstr "ストリップの入力数を同じにしてください"
 
 
+msgid "Recursion detected in video sequencer. Strip %s at frame %d will not be rendered"
+msgstr "ビデオシーケンサー内に再帰を探知、ストリップ「%s」（フレーム %d）はレンダリングしません "
+
+
 msgctxt "MovieClip"
 msgid "Plane Track"
 msgstr "平面トラック"
@@ -96583,18 +96685,6 @@ msgstr "二次係数"
 
 msgid "Add a new control-point to the envelope on the current frame"
 msgstr "現在のフレームのエンベロープに新規制御点を追加します"
-
-
-msgid "Frame that envelope point occurs"
-msgstr "エンベロープ点の発生するフレーム"
-
-
-msgid "Minimum bound of envelope at this point"
-msgstr "この点におけるエンベロープの最小範囲"
-
-
-msgid "Maximum bound of envelope at this point"
-msgstr "この点におけるエンベロープの最大範囲"
 
 
 msgid "Delete envelope control point"
@@ -97371,10 +97461,6 @@ msgstr "フィル：[Esc]/RMB:キャンセル、LMB:フィル、[Shift]:後ろ�
 
 msgid "Fill tool needs active material"
 msgstr "フィルツールはアクティブマテリアルが必要です"
-
-
-msgid "Fill canceled. No edges detected"
-msgstr "フィルをキャンセル。ふちが見つかりません"
 
 
 msgid "Active region not valid for filling operator"
@@ -104287,6 +104373,10 @@ msgid "Cannot save render buffers, check the temp default path"
 msgstr "レンダーバッファが保存できません。デフォルトテンポラリパスをチェックしてください"
 
 
+msgid "Border rendering is not supported by sequencer"
+msgstr "レンダーボーダーはシーケンサーに未対応です"
+
+
 msgid "No node tree in scene"
 msgstr "シーンにノードツリーがありません"
 
@@ -104297,10 +104387,6 @@ msgstr "シーンにレンダー出力ノードがありません"
 
 msgid "Full sample AA not supported without 3D rendering"
 msgstr "3Dレンダリングがない場合フルサンプルAAは使用できません"
-
-
-msgid "Border rendering is not supported by sequencer"
-msgstr "レンダーボーダーはシーケンサーに未対応です"
 
 
 msgid "All render layers are disabled"
