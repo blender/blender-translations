@@ -1,9 +1,9 @@
 
 msgid ""
 msgstr ""
-"Project-Id-Version: Blender 2.83 (sub 17) (b'008e96494008')\n"
+"Project-Id-Version: Blender 2.83 (sub 17) (b'52c356c1998f')\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-05-18 09:40:57\n"
+"POT-Creation-Date: 2020-05-25 15:51:56\n"
 "PO-Revision-Date: \n"
 "Last-Translator: DeathBlood\n"
 "Language-Team: \n"
@@ -7990,8 +7990,8 @@ msgid "Include visualization of Grease Pencil related animation data and frames"
 msgstr "包含与动画数据相关的可视化场景"
 
 
-msgid "Display Hidden"
-msgstr "显示隐藏"
+msgid "Show Hidden"
+msgstr "显示隐藏项"
 
 
 msgid "Include channels from objects/bone that are not visible"
@@ -8078,16 +8078,8 @@ msgid "Include visualization of node related animation data"
 msgstr "包含与动画数据相关的可视化节点"
 
 
-msgid "Show Errors"
-msgstr "显示错误信息"
-
-
 msgid "Only include F-Curves and drivers that are disabled or have errors"
 msgstr "仅包括关闭或出错的函数曲线和驱动"
-
-
-msgid "Only Selected"
-msgstr "仅选中"
 
 
 msgid "Only include channels relating to selected objects and data"
@@ -11360,10 +11352,6 @@ msgid "Draw a column listing the size of each file"
 msgstr "绘制一列，列出每个文件的大小"
 
 
-msgid "Show Hidden"
-msgstr "显示隐藏项"
-
-
 msgid "Show hidden dot files"
 msgstr "显示隐藏的 (.) 文件"
 
@@ -12960,8 +12948,8 @@ msgid "Only allow given density value in emitter area and will not add up"
 msgstr "在发射器区域内, 仅允许指定的密度值"
 
 
-msgid "Control when to apply inflow"
-msgstr "控制何时应用流入"
+msgid "Use Flow"
+msgstr "使用流"
 
 
 msgid "Initial Velocity"
@@ -12994,6 +12982,10 @@ msgstr "使用纹理控制发射强度"
 
 msgid "Initial"
 msgstr "初始"
+
+
+msgid "Initial velocity in X, Y and Z direction in world space"
+msgstr "世界空间中X, Y, Z方向的初始速度"
 
 
 msgid "Multiplier of source velocity passed to fluid (source velocity is non-zero only if object is moving)"
@@ -23523,6 +23515,10 @@ msgstr "标注"
 
 msgid "Grease Pencil data-block used for annotations in the 3D view"
 msgstr "3D视图中用于标注的蜡笔数据块"
+
+
+msgid "Grease Pencil settings for the scene"
+msgstr "场景的蜡笔设置"
 
 
 msgid "NLA TweakMode"
@@ -34771,8 +34767,16 @@ msgid "Match-moving dopesheet data"
 msgstr "运动匹配的动画序列数据"
 
 
+msgid "Display Hidden"
+msgstr "显示隐藏"
+
+
 msgid "Include channels from objects/bone that aren't visible"
 msgstr "包含不可见物体 / 骨头的通道"
+
+
+msgid "Only Selected"
+msgstr "仅选中"
 
 
 msgid "Dopesheet Sort Field"
@@ -35819,6 +35823,10 @@ msgid "Sync Action Length"
 msgstr "同步动作块长度"
 
 
+msgid "Update range of frames referenced from action after tweaking strip and its keyframes"
+msgstr "在调整片段及其关键帧后, 更新动作引用的帧范围"
+
+
 msgid "NLA-Strip F-Curves"
 msgstr "NLA片段函数曲线"
 
@@ -35981,6 +35989,10 @@ msgstr "隐藏状态下的节点宽度"
 
 msgid "Custom Group"
 msgstr "自定义节点组"
+
+
+msgid "Base node type for custom registered node group types"
+msgstr "自定义注册节点组类型的基本节点类型"
 
 
 msgid "Interface"
@@ -41121,6 +41133,10 @@ msgid "Flip Names"
 msgstr "翻转名称"
 
 
+msgid "Try to flip names of the bones, if possible, instead of adding a number extension"
+msgstr "如果可能的话, 尝试翻转骨骼的名字而不追加数字后缀"
+
+
 msgid "Make copies of the selected bones within the same armature and move them"
 msgstr "在同一骨架中复制所选骨骼并移动"
 
@@ -42620,6 +42636,10 @@ msgid "Set Scene Frames"
 msgstr "设置场景帧"
 
 
+msgid "Set scene's start and end frame to match clip's start frame and length"
+msgstr "设置场景的开始和结束帧, 使其与剪辑的开始帧和长度相匹配"
+
+
 msgctxt "Operator"
 msgid "Set Solution Scale"
 msgstr "设置解算比例"
@@ -43326,6 +43346,10 @@ msgstr "从约束面板中删除约束控制器"
 msgctxt "Operator"
 msgid "Disable and Keep Transform"
 msgstr "禁用并保持变换"
+
+
+msgid "Set the influence of this constraint to zero while trying to maintain the object's transformation. Other active constraints can still influence the final transformation"
+msgstr "当尝试维持对象的变换时, 将此约束的影响设置为零。其他活动的约束仍然会影响最终的变换"
 
 
 msgctxt "Operator"
@@ -44518,6 +44542,14 @@ msgstr "'无效' FBX 节点, 与 Blender 的空物体 (默认) 相似"
 
 msgid "'Root' FBX node, supposed to be the root of chains of bones..."
 msgstr "'根' FBX 节点, 支持骨骼链的根…"
+
+
+msgid "LimbNode"
+msgstr "肢体节点"
+
+
+msgid "'LimbNode' FBX node, a regular joint between two bones..."
+msgstr "'肢体节点'为FBX节点, 两根骨骼之间的常规关节..."
 
 
 msgid "Baked Animation"
@@ -46708,14 +46740,26 @@ msgid "Interpolate grease pencil strokes between frames"
 msgstr "对关键帧之间的蜡笔笔画进行插值"
 
 
+msgid "Bias factor for which frame has more influence on the interpolated strokes"
+msgstr "影响哪一帧对内插笔画影响较大的偏向系数"
+
+
 msgctxt "Operator"
 msgid "Remove Breakdowns"
 msgstr "移除所有间断帧"
 
 
+msgid "Remove breakdown frames generated by interpolating between two Grease Pencil frames"
+msgstr "移除由两个蜡笔帧之间的插值产生的分解帧"
+
+
 msgctxt "Operator"
 msgid "Interpolate Sequence"
 msgstr "插值顺序"
+
+
+msgid "Generate 'in-betweens' to smoothly interpolate between Grease Pencil frames"
+msgstr "生成 \"过渡\", 在蜡笔帧之间平滑地插值"
 
 
 msgctxt "Operator"
@@ -47945,6 +47989,10 @@ msgid "Euler Discontinuity Filter"
 msgstr "非连续性欧拉过滤器"
 
 
+msgid "Fix large jumps and flips in the selected Euler Rotation F-Curves arising from rotation values being clipped when baking physics"
+msgstr "修复在烘焙物理学时，选中的欧拉旋转F曲线由于旋转值被剪切而产生的大幅度跳转和翻转"
+
+
 msgctxt "Operator"
 msgid "Add F-Curve Modifier"
 msgstr "添加函数曲线修改器"
@@ -49008,6 +49056,10 @@ msgid "Animation Offset"
 msgstr "动画偏移量"
 
 
+msgid "Offset to apply to animation during import, in frames"
+msgstr "导入时偏移帧来应用动画"
+
+
 msgid "Automatic Bone Orientation"
 msgstr "自动骨骼坐标系"
 
@@ -49108,6 +49160,10 @@ msgid "Manual Orientation"
 msgstr "手动朝向"
 
 
+msgid "Specify orientation and scale, instead of using embedded data in FBX file"
+msgstr "指定方向和比例, 而不是在FBX文件中使用嵌入式数据"
+
+
 msgid "Use Pre/Post Rotation"
 msgstr "使用预/后旋转"
 
@@ -49118,6 +49174,10 @@ msgstr "使用FBX 变换前/后的旋转(在某些情况下可能必须禁用它
 
 msgid "Import Subdivision Surface"
 msgstr "导入表面细分"
+
+
+msgid "Import FBX subdivision information as subdivision surface modifiers"
+msgstr "将FBX的细分信息导入为表面细分修改器"
 
 
 msgctxt "Operator"
@@ -49133,8 +49193,29 @@ msgid "Bone Dir"
 msgstr "骨骼目录"
 
 
+msgid "Heuristic for placing bones. Tries to make bones pretty"
+msgstr "启发式放置骨骼, 尽量使骨骼变得漂亮"
+
+
 msgid "Blender (best for re-importing)"
 msgstr "Blender (最适合重新导入)"
+
+
+msgid ""
+"Good for re-importing glTFs exported from Blender.\n"
+"Bone tips are placed on their local +Y axis (in glTF space)"
+msgstr ""
+"有利于重新导入来自blender的glTFs文件。\n"
+"骨骼头部放置在正向局部Y轴(glTF空间)"
+
+
+msgid ""
+"Decent all-around strategy.\n"
+"A bone with one child has its tip placed on the local axis\n"
+"closest to its child"
+msgstr ""
+"优秀的策略。\n"
+"拥有一个子骨骼的骨骼的头部放置在最接近子骨骼的本地轴向上"
 
 
 msgid "Guess Original Bind Pose"
@@ -51114,8 +51195,16 @@ msgid "Face Normals Strength"
 msgstr "面法向强度"
 
 
+msgid "Set/Get strength of face (used in Weighted Normal modifier)"
+msgstr "设置/获取面权重的强度(用于加权法线修改器)"
+
+
 msgid "Face Strength"
 msgstr "面强度"
+
+
+msgid "Strength to use for assigning or selecting face influence for weighted normal modifier"
+msgstr "用于赋予或选择加权法线修饰器的面影响的强度"
 
 
 msgid "Weak"
@@ -51148,12 +51237,20 @@ msgid "Normals Vector Tools"
 msgstr "法向矢量工具"
 
 
+msgid "Custom normals tools using Normal Vector of UI"
+msgstr "使用UI法向的自定义法线工具"
+
+
 msgid "Absolute Coordinates"
 msgstr "绝对坐标"
 
 
 msgid "Copy Absolute coordinates or Normal vector"
 msgstr "拷贝绝对坐标或法线向量"
+
+
+msgid "Mode of tools taking input from Interface"
+msgstr "工具从接口输入的模式"
 
 
 msgid "Copy Normal"
@@ -51190,6 +51287,10 @@ msgstr "将法向矢量与选中项相乘"
 
 msgid "Reset Normal"
 msgstr "重设法向"
+
+
+msgid "Reset buffer and/or normal of selected element"
+msgstr "重置选中物体的缓存和/或法线"
 
 
 msgctxt "Operator"
@@ -52145,6 +52246,14 @@ msgid "Non Contiguous"
 msgstr "非相邻"
 
 
+msgid "Edges between faces pointing in alternate directions"
+msgstr "面与面之间朝向交替的方向的边"
+
+
+msgid "Vertices connecting multiple face regions"
+msgstr "多个顶点连接多个面区域"
+
+
 msgid "Wire edges"
 msgstr "线框边"
 
@@ -52236,6 +52345,10 @@ msgid "Set Normals From Faces"
 msgstr "从面设置法向"
 
 
+msgid "Set the custom normals from the selected faces ones"
+msgstr "设置为来自选中面的自定义法线"
+
+
 msgid "Keep Sharp Edges"
 msgstr "保持锐边"
 
@@ -52313,6 +52426,14 @@ msgstr "选中两点/边/面之间的最短路径"
 msgctxt "Operator"
 msgid "Smooth Normals Vectors"
 msgstr "平滑法向矢量"
+
+
+msgid "Smooth custom normals based on adjacent vertex normals"
+msgstr "根据邻近顶点的法线平滑自定义法线"
+
+
+msgid "Specifies weight of smooth vs original normal"
+msgstr "指定平滑法线与原法线权重的比例"
 
 
 msgctxt "Operator"
@@ -52405,6 +52526,10 @@ msgid "Auto Merge"
 msgstr "自动合并"
 
 
+msgid "Merge first/last when the angle is a full revolution"
+msgstr "当角度为一整圈时合并第一个/最后一个"
+
+
 msgid "Split off selected geometry from connected unselected geometry"
 msgstr "将选中的几何元素从未选中的连贯几何元素上拆分出来"
 
@@ -52440,6 +52565,10 @@ msgstr "仅沿法线方向应用分形置换"
 
 msgid "Create N-Gons"
 msgstr "创建多边形"
+
+
+msgid "When disabled, newly created faces are limited to 3-4 sided faces"
+msgstr "禁用时, 新创建的面限制为3-4边面"
 
 
 msgid "Quad Corner Type"
@@ -65462,6 +65591,10 @@ msgid "Minimum Chain Length"
 msgstr "最小链长"
 
 
+msgid "When searching Bone Chains disregard chains of length below this value"
+msgstr "搜索骨骼链时, 不考虑长度低于此值的骨骼链"
+
+
 msgctxt "Operator"
 msgid "Context Collection Boolean Set"
 msgstr "上下文集合布尔设置"
@@ -65507,6 +65640,10 @@ msgstr "上下文枚举循环"
 
 msgid "Toggle a context value"
 msgstr "切换上下文值"
+
+
+msgid "Wrap back to the first/last values"
+msgstr "回退到第一次/最后一次的值"
 
 
 msgctxt "Operator"
@@ -66085,6 +66222,10 @@ msgid "Add Property"
 msgstr "添加属性"
 
 
+msgid "Add your own property to the data-block"
+msgstr "向数据块中加入自定义属性"
+
+
 msgid "Property Edit"
 msgstr "编辑属性"
 
@@ -66270,9 +66411,17 @@ msgid "Load Factory Settings"
 msgstr "加载初始设置"
 
 
+msgid "Load factory default startup file and preferences. To make changes permanent, use \"Save Startup File\" and \"Save Preferences\""
+msgstr "还原启动文件和默认偏好设置。使用\"保存启动文件\"和\"保存偏好设置\"来永久保存修改"
+
+
 msgctxt "Operator"
 msgid "Load Factory Preferences"
 msgstr "加载初始设置"
+
+
+msgid "Load factory default preferences. To make changes to preferences permanent, use \"Save Preferences\""
+msgstr "还原默认偏好设置。使用\"保存偏好设置\"来永久保存修改"
 
 
 msgctxt "Operator"
@@ -66521,6 +66670,10 @@ msgstr "在单个图像中交错的左眼和右眼的渲染视图(需要3D显示
 
 msgid "Time Sequential"
 msgstr "时间顺序"
+
+
+msgid "Render alternate eyes (also known as page flip, quad buffer support in the graphic card is required)"
+msgstr "渲染替代视图(也称为页面翻转, 需要显卡支持四重缓存)"
 
 
 msgid "Side-by-Side"
@@ -67256,6 +67409,14 @@ msgstr "手动细节"
 
 msgid "Mesh detail does not change on each stroke, only when using Flood Fill"
 msgstr "网格细节不会在每个描边上更改,仅在使用\"Flood Fill\"时更改"
+
+
+msgid "Amount of gravity after each dab"
+msgstr "每次雕刻施加的重力量"
+
+
+msgid "Object whose Z axis defines orientation of gravity"
+msgstr "z轴定义重力方向的物体"
 
 
 msgid "Lock X"
@@ -76852,6 +77013,22 @@ msgid "4 px"
 msgstr "4 px"
 
 
+msgid "Grease Pencil Render"
+msgstr "蜡笔渲染"
+
+
+msgid "Render settings"
+msgstr "渲染设置"
+
+
+msgid "Anti-Aliasing Threshold"
+msgstr "抗锯齿阈值"
+
+
+msgid "Threshold for edge detection algorithm (higher values might overblur some part of the image)"
+msgstr "边缘检测算法的阈值(调高数值可能会模糊图像的某些部分)"
+
+
 msgid "Scene Objects"
 msgstr "场景物体"
 
@@ -83609,10 +83786,6 @@ msgid "Auto-Keying Mode"
 msgstr "自动插帧模式"
 
 
-msgid "Mode of automatic keyframe insertion for Objects and Bones"
-msgstr "为物体和骨骼开启自动插入关键帧模式"
-
-
 msgid "Add & Replace"
 msgstr "添加&替换"
 
@@ -83952,10 +84125,6 @@ msgstr "对于具有循环外插的通道,关键帧插入会自动在循环时�
 
 msgid "Auto Keying"
 msgstr "自动插帧"
-
-
-msgid "Automatic keyframe insertion for Objects and Bones"
-msgstr "为物体和骨骼自动插入关键帧"
 
 
 msgid "Auto Keyframe Insert Keying Set"
@@ -85674,6 +85843,10 @@ msgid "Specify volume step size and density in world space"
 msgstr "指定世界空间中体积的步长大小和密度"
 
 
+msgid "Distance between volume samples. Lower values render more detail at the cost of performance. If set to zero, the step size is automatically determined based on voxel size"
+msgstr "体积采样之间的距离。调低数值，可以性能为代价呈现更多的细节。如果设置为零，步长大小会根据体素大小自动确定"
+
+
 msgid "Walk navigation settings"
 msgstr "行走漫游设置"
 
@@ -85844,6 +86017,10 @@ msgstr "基本姿势类型"
 
 msgid "Define where the location and rotation for the VR view come from, to which translation and rotation deltas from the VR headset will be applied to"
 msgstr "定义VR视角的位置和旋转的出处, VR头戴设备的平移和旋转的变化量将应用到此出处"
+
+
+msgid "Follow the active scene camera to define the VR view's base pose"
+msgstr "使用场景活动相机定义VR视图基础姿势"
 
 
 msgid "Follow the transformation of an object to define the VR view's base pose"
@@ -89806,10 +89983,6 @@ msgid "Unbaked Guides: Bake Guides or disable them"
 msgstr "未烘焙引导：烘焙或禁用引导"
 
 
-msgid "Use Flow"
-msgstr "使用流"
-
-
 msgid "Surface Thickness"
 msgstr "表面厚度"
 
@@ -92235,10 +92408,6 @@ msgid "Double Click Speed"
 msgstr "双击速度"
 
 
-msgid "Pan Sensitivity"
-msgstr "平移敏感度"
-
-
 msgid "Zoom Method"
 msgstr "视图缩放方法"
 
@@ -92247,16 +92416,8 @@ msgid "Invert Wheel Zoom Direction"
 msgstr "反向滚轮缩放"
 
 
-msgid "Pan Options"
-msgstr "平移选项"
-
-
-msgid "Invert Axis"
-msgstr "反转轴向"
-
-
-msgid "Zoom Options"
-msgstr "缩放选项"
+msgid "Pan Sensitivity"
+msgstr "平移敏感度"
 
 
 msgid "Use Light"
@@ -92287,22 +92448,6 @@ msgstr "触控板的固有方向"
 
 msgid "Invert Mouse Zoom Direction"
 msgstr "反转鼠标缩放方向"
-
-
-msgid "Orbit Style"
-msgstr "轨迹旋转方式"
-
-
-msgid "Navigate"
-msgstr "漫游"
-
-
-msgid "Orbit Options"
-msgstr "旋绕选项"
-
-
-msgid "Fly/Walk Options"
-msgstr "飞行/行走漫游选项"
 
 
 msgid "Multiple add-ons with the same name found!"
@@ -93400,6 +93545,10 @@ msgstr "物体类型可见性"
 
 msgid "Viewport Gizmos"
 msgstr "视图Gizmo"
+
+
+msgid "Navigate"
+msgstr "漫游"
 
 
 msgid "Active Tools"
@@ -97875,6 +98024,14 @@ msgid "Active object contains no collections"
 msgstr "活动物体未包含任何集合"
 
 
+msgid "Could not add the collection because it is overridden."
+msgstr "无法添加集合, 因为其已被覆写."
+
+
+msgid "Could not add the collection because it is linked."
+msgstr "无法添加集合, 因为其已被关联"
+
+
 msgid "Could not add the collection because of dependency cycle detected"
 msgstr "无法添加集合, 因为检测到从属循环"
 
@@ -100326,6 +100483,10 @@ msgid "Cannot edit sequence name"
 msgstr "无法编辑序列的名称"
 
 
+msgid "Cannot edit name of an override data-block"
+msgstr "无法编辑被覆写的数据块的名称"
+
+
 msgid "Cannot edit name of master collection"
 msgstr "无法主集合的名称"
 
@@ -101621,6 +101782,14 @@ msgstr "骨架 '%s' 未包含骨骼 '%s'"
 
 msgid "Background image cannot be removed"
 msgstr "未能移除的背景图"
+
+
+msgid "Could not link the object '%s' because the collection '%s' is overridden."
+msgstr "无法关联对象 '%s'，因为集合'%s'已被覆写."
+
+
+msgid "Could not link the object '%s' because the collection '%s' is linked."
+msgstr "无法关联对象 '%s'，因为集合'%s'已被关联."
 
 
 msgid "Object '%s' already in collection '%s'"
