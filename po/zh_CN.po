@@ -1,7 +1,7 @@
 
 msgid ""
 msgstr ""
-"Project-Id-Version: Blender 2.90.0 Alpha (b'0b07f9b71738')\n"
+"Project-Id-Version: Blender 2.90.0 Alpha (b'976a0ff69104')\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-11-11 00:00:00\n"
 "PO-Revision-Date: \n"
@@ -1309,10 +1309,6 @@ msgid "Softbody goal weight"
 msgstr "软体的目标权重"
 
 
-msgid "Blendfile Data"
-msgstr "Blender 文件数据"
-
-
 msgid "Main data structure representing a .blend file and all its data-blocks"
 msgstr "呈现一个 .blend 文件及其所有数据块的主数据结构"
 
@@ -1619,10 +1615,6 @@ msgstr "纹理"
 
 msgid "Texture data-blocks"
 msgstr "纹理数据块"
-
-
-msgid "Use Autopack"
-msgstr "使用自动打包"
 
 
 msgid "Automatically pack all external data into .blend file"
@@ -6270,12 +6262,24 @@ msgid "Constraint position along Z axis"
 msgstr "沿 Z 轴向的约束"
 
 
+msgid "Lock X Rotation"
+msgstr "锁定 X 轴旋转"
+
+
 msgid "Constraint rotation along X axis"
 msgstr "约束沿 X 轴的转动"
 
 
+msgid "Lock Y Rotation"
+msgstr "锁定 Y 轴旋转"
+
+
 msgid "Constraint rotation along Y axis"
 msgstr "约束沿 Y 轴的转动"
+
+
+msgid "Lock Z Rotation"
+msgstr "锁定 Z 轴旋转"
 
 
 msgid "Constraint rotation along Z axis"
@@ -6570,12 +6574,24 @@ msgid "Use the pivot point in every rotation"
 msgstr "为每个旋转方向使用轴心点"
 
 
+msgid "-X Rotation"
+msgstr "-X 轴旋转"
+
+
 msgid "Use the pivot point in the negative rotation range around the X-axis"
 msgstr "为 X 轴负向旋转幅度使用轴心点"
 
 
+msgid "-Y Rotation"
+msgstr "-Y 轴旋转"
+
+
 msgid "Use the pivot point in the negative rotation range around the Y-axis"
 msgstr "为 Y 轴负向旋转幅度使用轴心点"
+
+
+msgid "-Z Rotation"
+msgstr "-Z 轴旋转"
 
 
 msgid "Use the pivot point in the negative rotation range around the Z-axis"
@@ -11719,8 +11735,20 @@ msgid "End"
 msgstr "结束点"
 
 
+msgid "Frame on which the simulation stops. This is the last frame that will be baked"
+msgstr "模拟停止的帧。这将是烘焙的最后一帧"
+
+
+msgid "Frame offset that is used when loading the simulation from the cache. It is not considered when baking the simulation, only when loading it"
+msgstr "从缓存加载模拟时使用的帧偏移量。烘焙模拟时不考虑该值，仅在加载模拟时考虑"
+
+
 msgid "Start"
 msgstr "起始"
+
+
+msgid "Frame on which the simulation starts. This is the first frame that will be baked"
+msgstr "模拟开始的帧。这将是烘焙的第一帧"
 
 
 msgid "Select the file format to be used for caching surface data"
@@ -16816,6 +16844,14 @@ msgid "Amount of random elements that are going to be affected by the brush"
 msgstr "将受笔刷影响的随机元素的数量"
 
 
+msgid "Max Element Distance"
+msgstr "最大元素距离"
+
+
+msgid "Maximum distance to search for disconnected loose parts in the mesh"
+msgstr "在网格中查找断开的松散元素的最大距离"
+
+
 msgid "Bi-scale Grab"
 msgstr "双比例抓起"
 
@@ -17546,6 +17582,10 @@ msgstr "仅影响与笔刷下与活动顶点相连的顶点"
 
 msgid "Connected Only"
 msgstr "仅相连项"
+
+
+msgid "Affect only topologically connected elements"
+msgstr "仅影响拓扑连接的元素"
 
 
 msgid "Use Cursor Overlay"
@@ -27864,12 +27904,24 @@ msgid "Delta Rotation"
 msgstr "旋转增量"
 
 
+msgid "Insert keyframes for additional scale factor"
+msgstr "为附加的缩放系数插入关键帧"
+
+
 msgid "Insert a keyframe on each of the location and rotation channels"
 msgstr "在各个位置及旋转通道上插入关键帧"
 
 
+msgid "Location & Rotation"
+msgstr "位置 + 旋转"
+
+
 msgid "Insert a keyframe on each of the location and scale channels"
 msgstr "在各个位置及缩放通道上插入关键帧"
+
+
+msgid "Location & Scale"
+msgstr "位置 + 缩放"
 
 
 msgid "Insert a keyframe on each of the rotation and scale channels"
@@ -27877,11 +27929,11 @@ msgstr "在各个旋转及缩放通道上插入关键帧"
 
 
 msgid "Rotation & Scale"
-msgstr "旋转 & 缩放"
+msgstr "旋转 + 缩放"
 
 
 msgid "Insert a keyframe on each of the location channels, taking into account effects of constraints and relationships"
-msgstr "在各个位置通道上插入关键帧, 将约束器的影响计算在内"
+msgstr "在各个位置通道上插入关键帧, 将约束器和关系的影响计算在内"
 
 
 msgid "Visual Location"
@@ -27892,20 +27944,56 @@ msgid "Insert a keyframe on each of the location and rotation channels, taking i
 msgstr "在各个位置及旋转通道上插入关键帧, 将约束器的影响计算在内"
 
 
+msgid "Visual Location & Rotation"
+msgstr "可视位置 + 旋转"
+
+
+msgid "Insert a keyframe on each of the location, rotation and scale channels, taking into account effects of constraints and relationships"
+msgstr "在各个位置、旋转和缩放通道上插入关键帧, 将约束器和关系的影响计算在内"
+
+
+msgid "Visual Location, Rotation & Scale"
+msgstr "可视位置 + 旋转 + 缩放"
+
+
+msgid "Insert a keyframe on each of the location and scale channels, taking into account effects of constraints and relationships"
+msgstr "在各个位置及缩放通道上插入关键帧, 将约束器和关系的影响计算在内"
+
+
+msgid "Visual Location & Scale"
+msgstr "可视位置 + 缩放"
+
+
 msgid "Insert a keyframe on each of the rotation channels, taking into account effects of constraints and relationships"
-msgstr "在各个旋转通道上插入关键帧, 将约束器的影响计算在内"
+msgstr "在各个旋转通道上插入关键帧, 将约束器和关系的影响计算在内"
 
 
 msgid "Visual Rotation"
 msgstr "可视旋转"
 
 
+msgid "Insert a keyframe on each of the rotation and scale channels, taking into account effects of constraints and relationships"
+msgstr "在各个旋转和缩放通道上插入关键帧, 将约束器和关系的影响计算在内"
+
+
+msgid "Visual Rotation & Scale"
+msgstr "可视旋转 + 缩放"
+
+
 msgid "Insert a keyframe on each of the scale channels, taking into account effects of constraints and relationships"
-msgstr "在各个缩放通道上插入关键帧, 将约束器的影响计算在内"
+msgstr "在各个缩放通道上插入关键帧, 将约束器和关系的影响计算在内"
+
+
+msgid "Visual Scale"
+msgstr "可视缩放"
 
 
 msgid "Insert a keyframe on each of the location, rotation, and scale channels"
 msgstr "在各个位置, 旋转及缩放通道上插入关键帧"
+
+
+msgid "Location, Rotation & Scale"
+msgstr "位置 + 旋转 + 缩放"
 
 
 msgid "Insert a keyframe on each of the location channels"
@@ -29571,8 +29659,16 @@ msgid "Mask Context Menu"
 msgstr "遮罩上下文菜单"
 
 
+msgid "Select Linked"
+msgstr "选择相连元素"
+
+
 msgid "UV"
 msgstr "UV"
+
+
+msgid "Align"
+msgstr "对齐"
 
 
 msgid "UV Context Menu"
@@ -29585,10 +29681,6 @@ msgstr "UV 选择模式"
 
 msgid "Show/Hide Faces"
 msgstr "显示 / 隐藏面"
-
-
-msgid "Weld/Align"
-msgstr "焊接 / 对齐"
 
 
 msgid "Info Context Menu"
@@ -29722,10 +29814,6 @@ msgstr "选择通道"
 
 msgid "Select Handle"
 msgstr "选择控制柄"
-
-
-msgid "Select Linked"
-msgstr "选择相连元素"
 
 
 msgid "Strip"
@@ -31626,6 +31714,10 @@ msgid "Size of projection shape (leave as 0 for auto)"
 msgstr "投影形状的大小 (0 = 自动)"
 
 
+msgid "Size from Radius"
+msgstr "以半径为大小"
+
+
 msgid "Use radius as size of projection shape (0 = auto)"
 msgstr "使用半径作为投影形状的大小 (0 = 自动)"
 
@@ -33162,6 +33254,14 @@ msgid "Displace existing geometry according to simulation"
 msgstr "根据模拟结果, 对现有几何体执行位移操作"
 
 
+msgid "Invert Spray"
+msgstr "反转浪花"
+
+
+msgid "Invert the spray direction map"
+msgstr "反转浪花方向贴图"
+
+
 msgid "Ocean is Cached"
 msgstr "海洋面已缓存"
 
@@ -33250,6 +33350,14 @@ msgid "Use for shallow water ('JONSWAP', 'TMA' - Texel-Marsen-Arsloe method)"
 msgstr "用于浅水('JONSWAP', 'TMA' - Texel-Marsen-Arsloe算法)"
 
 
+msgid "Spray Map"
+msgstr "浪花贴图"
+
+
+msgid "Name of the vertex color layer used for the spray direction map"
+msgstr "用于浪花方向贴图的顶点色层名称"
+
+
 msgid "Current time of the simulation"
 msgstr "当前的模拟时间点"
 
@@ -33268,6 +33376,14 @@ msgstr "生成法线"
 
 msgid "Output normals for bump mapping - disabling can speed up performance if its not needed"
 msgstr "为凹凸映射输出法线 - 如果不需要, 禁用此项可提升性能"
+
+
+msgid "Generate Spray Map"
+msgstr "生成浪花贴图"
+
+
+msgid "Generate map of spray direction as a vertex color channel"
+msgstr "以顶点色通道的形式生成浪花方向贴图"
 
 
 msgid "Wave Alignment"
@@ -33549,6 +33665,10 @@ msgstr "沿其轴向偏移精度"
 
 msgid "Merge adjacent vertices (screw offset must be zero)"
 msgstr "合并相邻点 (螺旋偏移必须为 0)"
+
+
+msgid "Calculate Order"
+msgstr "计算顺序"
 
 
 msgid "Calculate the order of edges (needed for meshes, but not curves)"
@@ -39472,10 +39592,6 @@ msgid "Altitude"
 msgstr "海拔"
 
 
-msgid "Altitude height from sea level in meters"
-msgstr "距离海平面的高度(米)"
-
-
 msgid "Dust"
 msgstr "灰尘"
 
@@ -42922,6 +43038,22 @@ msgid "Place markers across the whole frame"
 msgstr "在整帧范围内投放标记"
 
 
+msgid "Inside Annotated Area"
+msgstr "标注区域内部"
+
+
+msgid "Place markers only inside areas outlined with the Annotation tool"
+msgstr "仅在标注工具所圈区域的内侧放置标记"
+
+
+msgid "Outside Annotated Area"
+msgstr "标注区域外部"
+
+
+msgid "Place markers only outside areas outlined with the Annotation tool"
+msgstr "仅在标注工具所圈区域的外侧放置标记"
+
+
 msgid "Threshold level to consider feature good enough for tracking"
 msgstr "阈值级别，以考虑特征是否足以用于跟踪"
 
@@ -44405,10 +44537,6 @@ msgstr "烘培时间"
 
 msgid "Bweight"
 msgstr "倒角权重"
-
-
-msgid "Align"
-msgstr "对齐"
 
 
 msgid "Edge Slide"
@@ -61877,6 +62005,14 @@ msgid "Applies a filter to modify the current sculpt vertex colors"
 msgstr "应用滤镜来修改当前雕刻顶点色"
 
 
+msgid "fill color"
+msgstr "填充颜色"
+
+
+msgid "Fill with a specific color"
+msgstr "填充特定颜色"
+
+
 msgid "Change hue"
 msgstr "更改色调"
 
@@ -62132,6 +62268,35 @@ msgstr "顶点色 -> 雕刻顶点色"
 
 msgid "Copy the active loop color layer to the vertex color"
 msgstr "将活动循环颜色层复制到顶点色"
+
+
+msgctxt "Operator"
+msgid "Mask By Color"
+msgstr "按颜色遮蔽"
+
+
+msgid "Creates a mask based on the sculpt vertex colors"
+msgstr "基于雕刻顶点色创建遮罩"
+
+
+msgid "Contiguous"
+msgstr "连续"
+
+
+msgid "Invert the generated mask"
+msgstr "反转生成的遮罩"
+
+
+msgid "Preserve Previous Mask"
+msgstr "保留上一个遮罩"
+
+
+msgid "Preserve the previous mask and add or substract the new one generated by the colors"
+msgstr "保留上一个遮罩，并添加或替换颜色生成的新遮罩"
+
+
+msgid "How much changes in color affect the mask generation"
+msgstr "颜色变化对遮罩生成的影响"
 
 
 msgctxt "Operator"
@@ -62813,8 +62978,16 @@ msgid "Fade out selected strips"
 msgstr "淡出所选片断"
 
 
+msgid "From Current Frame"
+msgstr "自当前帧"
+
+
 msgid "Fade from the time cursor to the end of overlapping sequences"
 msgstr "从时间轴光标处淡化至重叠序列的末尾"
+
+
+msgid "To Current Frame"
+msgstr "至当前帧"
 
 
 msgid "Fade from the start of sequences under the time cursor to the current frame"
@@ -65514,6 +65687,28 @@ msgstr "重置 UV 投射"
 
 msgid "Reveal all hidden UV vertices"
 msgstr "显示隐藏的 UV 顶点"
+
+
+msgctxt "Operator"
+msgid "UV Rip"
+msgstr "UV断离"
+
+
+msgid "Rip selected vertices or a selected region"
+msgstr "断离选中顶点或区域"
+
+
+msgctxt "Operator"
+msgid "UV Rip Move"
+msgstr "UV断离移动"
+
+
+msgid "unstitch UV's and move the result"
+msgstr "解缝UV并移动结果"
+
+
+msgid "UV Rip"
+msgstr "UV断离"
 
 
 msgctxt "Operator"
@@ -69429,10 +69624,6 @@ msgid "Show the panel on all tabs"
 msgstr "在所有选项卡上显示面板"
 
 
-msgid "Destination"
-msgstr "目的"
-
-
 msgid "Chain Scaling"
 msgstr "链比例"
 
@@ -70971,11 +71162,6 @@ msgstr "简化"
 
 
 msgctxt "Operator"
-msgid "Paint"
-msgstr "绘制"
-
-
-msgctxt "Operator"
 msgid "Draw Face Sets"
 msgstr "绘制面组"
 
@@ -71003,11 +71189,6 @@ msgstr "网格滤镜"
 msgctxt "Operator"
 msgid "Cloth Filter"
 msgstr "布料滤镜"
-
-
-msgctxt "Operator"
-msgid "Color Filter"
-msgstr "色彩滤镜"
 
 
 msgctxt "Operator"
@@ -75054,10 +75235,6 @@ msgid "Store Denoising Passes"
 msgstr "存储降噪通道"
 
 
-msgid "Store the denoising feature passes and the noisy image"
-msgstr "存储去噪特征通道和噪点图像"
-
-
 msgid "Denoising Strength"
 msgstr "降噪强度"
 
@@ -75412,10 +75589,6 @@ msgstr "使用 BVH 空间分裂: 创建时间较长, 但渲染速度较快"
 
 msgid "Denoiser"
 msgstr "降噪器"
-
-
-msgid "Denoise the image with the selected denoiser"
-msgstr "使用选定的降噪器对图像降噪"
 
 
 msgid "Device"
@@ -77248,14 +77421,6 @@ msgstr "仅回放时"
 
 msgid "Simplify Grease Pencil only during animation playback"
 msgstr "仅在动画播放过程中简化蜡笔"
-
-
-msgid "ShadersFX"
-msgstr "着色器FX"
-
-
-msgid "Display Shader FX"
-msgstr "显示着色器FX"
 
 
 msgid "Layers Tinting"
@@ -86224,6 +86389,14 @@ msgid "Move is affected by snapping settings"
 msgstr "移动受吸附设置影响"
 
 
+msgid "Correct Face Attributes"
+msgstr "校正面属性"
+
+
+msgid "Correct data such as UV's and vertex colors when transforming"
+msgstr "变换时修正数据(如UV以及顶点色)"
+
+
 msgid "Transform Origins"
 msgstr "变换原点"
 
@@ -92746,6 +92919,10 @@ msgid "This modifier operation is not allowed from Edit mode"
 msgstr "禁止从编辑模式使用该修改器操作"
 
 
+msgid "Modifiers cannot be applied on override data"
+msgstr "修改器无法应用至重写数据"
+
+
 msgid "OK?"
 msgstr "确定?"
 
@@ -92844,6 +93021,10 @@ msgstr "不能对大小为 0.0 的体素使用体素网格重构"
 
 msgid "Voxel remesher failed to create mesh"
 msgstr "体素网格重构创建网格失败"
+
+
+msgid "The remesher cannot worked on linked or override data"
+msgstr "网格重构器无法作用于已关联或重写数据"
 
 
 msgid "The remesher cannot run from edit mode"
@@ -93929,10 +94110,6 @@ msgstr "至少需要选中4个点轨迹来创建平面"
 
 msgid "Some data failed to reconstruct (see console for details)"
 msgstr "一些数据无法被重构(请参考控制台打印信息)"
-
-
-msgid "Average re-projection error: %.3f"
-msgstr "二次投射的平均误差: %.3f"
 
 
 msgid "File path"
@@ -97114,6 +97291,10 @@ msgid "Offset U"
 msgstr "U向偏移"
 
 
+msgid "Miter Outer"
+msgstr "外斜接"
+
+
 msgid "Intersections"
 msgstr "交集"
 
@@ -97261,6 +97442,10 @@ msgstr "均化半径"
 
 msgid "Rim"
 msgstr "边缘"
+
+
+msgid "Crease Inner"
+msgstr "折痕内侧"
 
 
 msgid "Outer"
