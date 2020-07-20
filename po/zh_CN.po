@@ -1,7 +1,7 @@
 
 msgid ""
 msgstr ""
-"Project-Id-Version: Blender 2.90.0 Alpha (b'976a0ff69104')\n"
+"Project-Id-Version: Blender 2.90.0 Alpha (b'230f7d79ce3e')\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-11-11 00:00:00\n"
 "PO-Revision-Date: \n"
@@ -1309,6 +1309,10 @@ msgid "Softbody goal weight"
 msgstr "软体的目标权重"
 
 
+msgid "Blend-file Data"
+msgstr "Blender 文件数据"
+
+
 msgid "Main data structure representing a .blend file and all its data-blocks"
 msgstr "呈现一个 .blend 文件及其所有数据块的主数据结构"
 
@@ -1615,6 +1619,10 @@ msgstr "纹理"
 
 msgid "Texture data-blocks"
 msgstr "纹理数据块"
+
+
+msgid "Use Auto-pack"
+msgstr "使用自动打包"
 
 
 msgid "Automatically pack all external data into .blend file"
@@ -13667,10 +13675,6 @@ msgid "View Map Cache"
 msgstr "视图映射缓存"
 
 
-msgid "Keep the computed view map and avoid re-calculating it if mesh geometry is unchanged"
-msgstr "如果网格几何不变，保留计算出的视图，避免重新计算"
-
-
 msgid "Grease Pencil Frame"
 msgstr "蜡笔帧"
 
@@ -15529,6 +15533,10 @@ msgstr "修改器的效果强度"
 
 msgid "Mirror Modifier"
 msgstr "镜像修改器"
+
+
+msgid "Create mirroring strokes"
+msgstr "创建镜像笔画"
 
 
 msgid "Object used as center"
@@ -24225,10 +24233,6 @@ msgstr "区域已被最大化, 覆盖整个屏幕范围"
 
 
 msgid "Show Status Bar"
-msgstr "显示状态栏"
-
-
-msgid "Show status bar"
 msgstr "显示状态栏"
 
 
@@ -39592,6 +39596,10 @@ msgid "Altitude"
 msgstr "海拔"
 
 
+msgid "Height from sea level in km"
+msgstr "距离海平面的高度(千米)"
+
+
 msgid "Dust"
 msgstr "灰尘"
 
@@ -39670,6 +39678,14 @@ msgstr "太阳高度"
 
 msgid "Angle between sun and horizon"
 msgstr "太阳光的入射方向和地平面之间的夹角"
+
+
+msgid "Sun Intensity"
+msgstr "太阳强度"
+
+
+msgid "Strength of sun"
+msgstr "太阳的强度"
 
 
 msgid "Sun Rotation"
@@ -44262,6 +44278,14 @@ msgid "Remove constraint from constraint stack"
 msgstr "从约束面板中删除约束控制器"
 
 
+msgid "Report"
+msgstr "报告"
+
+
+msgid "Create a notification after the operation"
+msgstr "操作后创建通知"
+
+
 msgctxt "Operator"
 msgid "Disable and Keep Transform"
 msgstr "禁用并保持变换"
@@ -44597,11 +44621,6 @@ msgstr "匹配纹理空间"
 
 msgid "Match texture space to object's bounding box"
 msgstr "匹配纹理空间到物体的边界框"
-
-
-msgctxt "Operator"
-msgid "Recalc Normals"
-msgstr "重计算法线"
 
 
 msgid "Recalculate the direction of selected handles"
@@ -50540,10 +50559,6 @@ msgid "Extend report selection"
 msgstr "扩展报告选中项"
 
 
-msgid "Report"
-msgstr "报告"
-
-
 msgid "Index of the report"
 msgstr "报告编号"
 
@@ -50867,10 +50882,6 @@ msgstr "新建遮罩"
 
 msgid "Name of new mask"
 msgstr "新遮罩名称"
-
-
-msgid "Re-calculate the direction of selected handles"
-msgstr "重新计算所选控制柄的方向"
 
 
 msgid "Clear the mask's parenting"
@@ -55769,10 +55780,6 @@ msgid "Apply deform-only modifier to a new shape on this object"
 msgstr "在此物体上应用形变修改器为一个新形变"
 
 
-msgid "Create a notification after the operation"
-msgstr "操作后创建通知"
-
-
 msgctxt "Operator"
 msgid "Copy Modifier"
 msgstr "复制修改器"
@@ -56150,14 +56157,6 @@ msgid "Make a local override of this library linked data-block"
 msgstr "将库关联的数据块重写为本地数据块"
 
 
-msgid "Override Object"
-msgstr "覆盖物体"
-
-
-msgid "Name of lib-linked/collection object to make an override from"
-msgstr "重写库链接/集合的物体的原名称"
-
-
 msgid "Make linked data local to each object"
 msgstr "使各物体的关联数据单一化"
 
@@ -56300,6 +56299,23 @@ msgstr "网格模式"
 
 msgid "Add a procedural operation/effect to the active object"
 msgstr "对活动物体添加程序化操作/效果"
+
+
+msgctxt "Operator"
+msgid "Apply Modifier As Shapekey"
+msgstr "应用修改器为形态键"
+
+
+msgid "Apply modifier as a new shapekey and remove from the stack"
+msgstr "应用修改器为新的形态键并从队列中将其移除"
+
+
+msgid "Keep Modifier"
+msgstr "保留修改器"
+
+
+msgid "Do not remove the modifier from stack"
+msgstr "不从队列中删除修改器"
 
 
 msgctxt "Operator"
@@ -62281,6 +62297,10 @@ msgstr "基于雕刻顶点色创建遮罩"
 
 msgid "Contiguous"
 msgstr "连续"
+
+
+msgid "Mask only contiguous color areas"
+msgstr "仅遮蔽连续颜色区域"
 
 
 msgid "Invert the generated mask"
@@ -71192,6 +71212,11 @@ msgstr "布料滤镜"
 
 
 msgctxt "Operator"
+msgid "Color Filter"
+msgstr "色彩滤镜"
+
+
+msgctxt "Operator"
 msgid "Blur"
 msgstr "模糊"
 
@@ -72985,6 +73010,10 @@ msgid "Enable the new particle system in the ui"
 msgstr "在UI中启用新的粒子系统"
 
 
+msgid "Use the new Vertex Painting system"
+msgstr "使用新的顶点绘制系统"
+
+
 msgid "Undo Legacy"
 msgstr "撤消(旧版)"
 
@@ -74481,6 +74510,10 @@ msgid "Display splash screen on startup"
 msgstr "启动时显示欢迎画面"
 
 
+msgid "Show Statistics"
+msgstr "显示统计"
+
+
 msgid "Tooltips"
 msgstr "工具提示"
 
@@ -75191,10 +75224,6 @@ msgid "Input Passes"
 msgstr "输入通道"
 
 
-msgid "Passes handed over to the OptiX denoiser (this can have different effects on the denoised image)"
-msgstr "传递给 OptiX 降噪器的通道(这可能对降噪图像产生不同的影响)"
-
-
 msgid "Use only color as input"
 msgstr "仅使用颜色作为输入"
 
@@ -75233,6 +75262,10 @@ msgstr "移除不带信息的像素时, 使用一个相对阈值, 而不是一�
 
 msgid "Store Denoising Passes"
 msgstr "存储降噪通道"
+
+
+msgid "Store the denoising feature passes and the noisy image. The passes adapt to the denoiser selected for rendering"
+msgstr "存储降噪功能通道和噪点图像。通道适应为渲染选择的降噪器"
 
 
 msgid "Denoising Strength"
@@ -75527,6 +75560,10 @@ msgid "CUDA Streams"
 msgstr "CUDA流"
 
 
+msgid "Native OptiX Curve Primitive"
+msgstr "本机OptiX曲线基本体"
+
+
 msgid "Reset timeout"
 msgstr "重置超时"
 
@@ -75589,6 +75626,10 @@ msgstr "使用 BVH 空间分裂: 创建时间较长, 但渲染速度较快"
 
 msgid "Denoiser"
 msgstr "降噪器"
+
+
+msgid "Denoise the image with the selected denoiser. For denoising the image after rendering, denoising data render passes also adapt to the selected denoiser"
+msgstr "使用所选的降噪器对图像降噪。为了在渲染后对图像进行降噪，降噪数据渲染通道也适应所选的降噪器"
 
 
 msgid "Device"
@@ -77421,6 +77462,14 @@ msgstr "仅回放时"
 
 msgid "Simplify Grease Pencil only during animation playback"
 msgstr "仅在动画播放过程中简化蜡笔"
+
+
+msgid "Shaders Effects"
+msgstr "着色器效果"
+
+
+msgid "Display Shader Effects"
+msgstr "显示着色器效果"
 
 
 msgid "Layers Tinting"
@@ -79511,10 +79560,6 @@ msgstr "转换浮点"
 
 msgid "Convert input to float data"
 msgstr "将输入内容转换为浮点数据"
-
-
-msgid "Use a preview proxy and/or timecode index for this strip"
-msgstr "为此片段使用一个预览代理图像序列和 / 或时间码编号"
 
 
 msgid "Reverse Frames"
@@ -86137,10 +86182,6 @@ msgid "Ensure all bone-deforming vertex groups add up to 1.0 while weight painti
 msgstr "确保全部骨骼封套顶点组在权重绘制时增加至1.0"
 
 
-msgid "Changing edges seam re-calculates UV unwrap"
-msgstr "改变缝合边将重新计算 UV 展开"
-
-
 msgid "Use Additive Drawing"
 msgstr "使用累加绘制"
 
@@ -87239,10 +87280,6 @@ msgstr "显示拆分法线"
 
 msgid "Display vertex-per-face normals as lines"
 msgstr "显示各面顶点法线为直线"
-
-
-msgid "Show Statistics"
-msgstr "显示统计"
 
 
 msgid "Display scene statistics overlay text"
@@ -91607,10 +91644,6 @@ msgid "Direct linked library data-block, click to make local, Shift + Click to c
 msgstr "直接链接的库数据块，单击变成本地，Shift+单击覆盖创建一个库"
 
 
-msgid "Direct linked library data-block, click to make local"
-msgstr "直接关联的数据块, 单击转为本地项"
-
-
 msgid "Library override of linked data-block, click to make fully local"
 msgstr "直接关联的数据块, 单击转为本地项"
 
@@ -93071,6 +93104,10 @@ msgid "Effect '%s' not in object '%s'"
 msgstr "效果 '%s' 未作用于物体 '%s'"
 
 
+msgid "Removed effect: %s"
+msgstr "已移除效果: %s"
+
+
 msgid "Cannot edit shaderfxs coming from library override"
 msgstr "无法编辑来自库覆写的 shaderfx"
 
@@ -94112,6 +94149,10 @@ msgid "Some data failed to reconstruct (see console for details)"
 msgstr "一些数据无法被重构(请参考控制台打印信息)"
 
 
+msgid "Average re-projection error: %.2f px"
+msgstr "二次投射的平均误差: %.2f px"
+
+
 msgid "File path"
 msgstr "文件路径"
 
@@ -94593,12 +94634,20 @@ msgid "Cannot set absolute paths with an unsaved blend file"
 msgstr "无法为尚未保存的 blend 文件设置绝对路径"
 
 
-msgid "Mem: %s"
-msgstr "内存: %s"
+msgid "(Key) "
+msgstr "(键) "
 
 
-msgid " | Free GPU Mem: %s"
-msgstr " | 可用GPU内存: %s"
+msgid "Verts:%s/%s | Edges:%s/%s | Faces:%s/%s | Tris:%s"
+msgstr "点:%s/%s | 边:%s/%s | 面:%s/%s | 三角:%s"
+
+
+msgid "Verts:%s/%s | Bones:%s/%s"
+msgstr "顶点:%s/%s | 骨骼:%s/%s"
+
+
+msgid "Verts:%s/%s"
+msgstr "顶点:%s/%s"
 
 
 msgid "Sync Length"
@@ -96224,6 +96273,10 @@ msgid "Clear Seam"
 msgstr "清除缝合边"
 
 
+msgid "Sync selection doesn't support path select"
+msgstr "同步选中项不支持路径选择"
+
+
 msgid "Select linked only works in face select mode when sync selection is enabled"
 msgstr "同步选择开启时,仅在面选择模式中可以选择连接的部分"
 
@@ -97075,10 +97128,6 @@ msgid "Sequences.new_image: unable to open image file"
 msgstr "Sequences.new_image: 无法打开图像文件"
 
 
-msgid "Sequences.new_movie: unable to open movie file"
-msgstr "Sequences.new_movie: 无法打开视频文件"
-
-
 msgid "Sequences.new_sound: unable to open sound file"
 msgstr "Sequences.new_sound: 无法打开声音文件"
 
@@ -97291,6 +97340,10 @@ msgid "Offset U"
 msgstr "U向偏移"
 
 
+msgid "Cap Start"
+msgstr "封盖起点"
+
+
 msgid "Miter Outer"
 msgstr "外斜接"
 
@@ -97463,6 +97516,11 @@ msgstr "视图层级"
 msgctxt "Operator"
 msgid "Apply As Shapekey"
 msgstr "应用为形态键"
+
+
+msgctxt "Operator"
+msgid "Save As Shapekey"
+msgstr "保存为形态键"
 
 
 msgid "Aspect X"
