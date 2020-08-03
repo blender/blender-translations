@@ -1,7 +1,7 @@
 
 msgid ""
 msgstr ""
-"Project-Id-Version: Blender 2.90.0 Beta (b'd906116eba70')\n"
+"Project-Id-Version: Blender 2.90.0 Beta (b'fe70605a2a0b')\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-01-01 00:00:00\n"
 "PO-Revision-Date: 2016-10-13 03:05+0900\n"
@@ -6332,6 +6332,10 @@ msgid "Constraint position along Z axis"
 msgstr "Z軸に沿ったコンストレイント位置"
 
 
+msgid "Lock X Rotation"
+msgstr "X回転を固定"
+
+
 msgid "Constraint rotation along X axis"
 msgstr "X軸に沿った回転の制約"
 
@@ -11183,6 +11187,10 @@ msgid "Wind Factor"
 msgstr "風の係数"
 
 
+msgid "How much the force is reduced when acting parallel to a surface, e.g. cloth"
+msgstr "サーフェス（クロスなど）に沿って作用する時、どれだけ力が弱まるか"
+
+
 msgid "Z Direction"
 msgstr "Z方向"
 
@@ -11797,6 +11805,12 @@ msgid "End"
 msgstr "終了"
 
 
+msgid "Frame on which the simulation stops. This is the last frame that will be baked"
+msgstr ""
+"シミュレーションが停止するフレーム\n"
+"これがベイクの最終フレームになります"
+
+
 msgid "Frame offset that is used when loading the simulation from the cache. It is not considered when baking the simulation, only when loading it"
 msgstr ""
 "シミュレーションをキャッシュから読み込む時に使用するフレームのオフセット\n"
@@ -12344,6 +12358,10 @@ msgid "Compression"
 msgstr "圧縮"
 
 
+msgid "facession method to be used"
+msgstr "圧縮に使用する方法"
+
+
 msgid "Zip"
 msgstr "Zip"
 
@@ -12742,6 +12760,14 @@ msgstr "引張"
 
 msgid "Surface tension of liquid (higher value results in greater hydrophobic behaviour)"
 msgstr "液体の表面張力（大きな値で疎水性の挙動が大きくなります）"
+
+
+msgid "System Maximum"
+msgstr "システム最大"
+
+
+msgid "Maximum number of fluid particles that are allowed in this simulation"
+msgstr "このシミュレーションで利用可能な流体パーティクルの最大数"
 
 
 msgid "Temperature Grid"
@@ -15052,6 +15078,10 @@ msgid "GizmoGroup has a set of reports (warnings and errors) from last execution
 msgstr "ギズモグループに最後の実行からのレポート（警告とエラー）があるかどうか"
 
 
+msgid "VR Landmark Indicators"
+msgstr "VRランドマークインジケータ"
+
+
 msgid "VR Viewer Pose Indicator"
 msgstr "VRビューアーポーズインジケータ"
 
@@ -15666,6 +15696,10 @@ msgstr "モディファイアー効果の強さ"
 
 msgid "Mirror Modifier"
 msgstr "ミラーモディファイアー"
+
+
+msgid "Create mirroring strokes"
+msgstr "反転コピーしたストロークを生成します"
 
 
 msgid "Object used as center"
@@ -16984,6 +17018,14 @@ msgid "Length of a dash cycle measured in stroke samples"
 msgstr "ストロークサンプル数でのダッシュ一回の長さ"
 
 
+msgid "Amount of random elements that are going to be affected by the brush"
+msgstr "このブラシにより影響を受けるランダム要素の量"
+
+
+msgid "Max Element Distance"
+msgstr "要素の最大距離"
+
+
 msgid "Maximum distance to search for disconnected loose parts in the mesh"
 msgstr "メッシュ内で分離している部分を探す最大距離"
 
@@ -17172,6 +17214,26 @@ msgid "Mask"
 msgstr "マスク"
 
 
+msgid "Invert Pressure for Density"
+msgstr "密度の筆圧を反転"
+
+
+msgid "Invert the modulation of pressure in density"
+msgstr "密度での筆圧による効果を反転します"
+
+
+msgid "Invert the modulation of pressure in flow"
+msgstr "フローでの筆圧による効果を反転します"
+
+
+msgid "Invert Pressure for Hardness"
+msgstr "ハードネスの筆圧を反転"
+
+
+msgid "Invert the modulation of pressure in hardness"
+msgstr "ハードネスでの筆圧による効果を反転します"
+
+
 msgid "Invert to Scrape or Fill"
 msgstr "反転を削り取り・フィルに"
 
@@ -17180,6 +17242,18 @@ msgid "Use Scrape or Fill tool when inverting this brush instead of inverting it
 msgstr ""
 "このブラシの反転時、変形方向を反転する代わりに\n"
 "削り取りやフィルツールを使用します"
+
+
+msgid "Invert Pressure for Wet Mix"
+msgstr "ウェットミックスの筆圧を反転"
+
+
+msgid "Invert the modulation of pressure in wet mix"
+msgstr "ウェットミックスでの筆圧による効果を反転します"
+
+
+msgid "Invert the modulation of pressure in wet persistence"
+msgstr "ウェット持続での筆圧による効果を反転します"
 
 
 msgid "Jitter the position of the brush while painting"
@@ -17749,12 +17823,24 @@ msgid "Set the brush icon from an image file"
 msgstr "画像ファイルからブラシのアイコンを設定します"
 
 
+msgid "Use Pressure for Density"
+msgstr "密度に筆圧を使用"
+
+
+msgid "Use pressure to modulate density"
+msgstr "筆圧を密度の調整に使用します"
+
+
 msgid "Edge-to-edge"
 msgstr "エッジトゥエッジ"
 
 
 msgid "Drag anchor brush from edge-to-edge"
 msgstr "アンカーブラシを端から端までドラッグします"
+
+
+msgid "Use Pressure for Flow"
+msgstr "フローに筆圧を使用"
 
 
 msgid "Use Front-Face"
@@ -17781,8 +17867,12 @@ msgid "Apply the maximum grab strength to the active vertex instead of the curso
 msgstr "カーソル位置ではなく、アクティブ頂点に最大グラブ強度を適用します"
 
 
-msgid "Inverse Smooth Pressure"
-msgstr "筆圧によるスムージングを反転"
+msgid "Use Pressure for Hardness"
+msgstr "ハードネスに筆圧を使用"
+
+
+msgid "Use pressure to modulate hardness"
+msgstr "筆圧をハードネスの調整に使用します"
 
 
 msgid "Lighter pressure causes more smoothing to be applied"
@@ -18005,6 +18095,18 @@ msgstr "自動的に強さを調整し、違う間隔でも同じ結果にしま
 
 msgid "Use this brush in grease pencil vertex color mode"
 msgstr "このブラシをグリースペンシル頂点カラーモードで使用します"
+
+
+msgid "Use Pressure for Wet Mix"
+msgstr "ウェットミックスに筆圧を使用"
+
+
+msgid "Use pressure to modulate wet mix"
+msgstr "筆圧をウェットミックスの調整に使用します"
+
+
+msgid "Use pressure to modulate wet persistence"
+msgstr "筆圧をウェット持続の調整に使用します"
 
 
 msgid "Grab UVs"
@@ -21416,7 +21518,7 @@ msgstr "選択した辺の合計"
 
 
 msgid "Selected edge count in editmode"
-msgstr "編集モードで選択したエッジの数"
+msgstr "編集モードで選択した辺の総数"
 
 
 msgid "Selected Face Total"
@@ -21424,11 +21526,15 @@ msgstr "選択した面の合計"
 
 
 msgid "Selected face count in editmode"
-msgstr "編集モードで選択した面のカウント数"
+msgstr "編集モードで選択した面の総数"
+
+
+msgid "Selected Vertex Total"
+msgstr "選択した頂点の合計"
 
 
 msgid "Selected vertex count in editmode"
-msgstr "編集モードで選択した頂点のカウント数"
+msgstr "編集モードで選択した頂点の総数"
 
 
 msgid "Auto Smooth"
@@ -22052,7 +22158,7 @@ msgstr "オブジェクトデータ"
 
 
 msgid "Delta Location"
-msgstr "位置差"
+msgstr "デルタ位置"
 
 
 msgid "Extra translation added to the location of the object"
@@ -22060,7 +22166,7 @@ msgstr "オブジェクトの位置に付け加える、拡張移動"
 
 
 msgid "Delta Rotation (Euler)"
-msgstr "回転差(オイラー)"
+msgstr "デルタ回転(オイラー)"
 
 
 msgid "Extra rotation added to the rotation of the object (when using Euler rotations)"
@@ -22068,15 +22174,11 @@ msgstr "オブジェクトの回転に加算する追加の回転（オイラー
 
 
 msgid "Delta Rotation (Quaternion)"
-msgstr "回転差(クォータニオン)"
+msgstr "デルタ回転(クォータニオン)"
 
 
 msgid "Extra rotation added to the rotation of the object (when using Quaternion rotations)"
 msgstr "オブジェクトの回転に加算する追加の回転（クォータニオン使用時）"
-
-
-msgid "Delta Scale"
-msgstr "スケール差"
 
 
 msgid "Extra scaling added to the scale of the object"
@@ -24376,6 +24478,10 @@ msgstr "アニメーション再生"
 
 msgid "Animation playback is active"
 msgstr "アニメーションの再生がアクティブ"
+
+
+msgid "User is Scrubbing"
+msgstr "ユーザーがスクラビング中"
 
 
 msgid "An area is maximized, filling this screen"
@@ -28069,6 +28175,10 @@ msgid "Insert keyframes for additional rotation offset"
 msgstr "回転オフセット用のキーフレームを挿入します"
 
 
+msgid "Delta Rotation"
+msgstr "デルタ回転"
+
+
 msgid "Insert a keyframe on each of the location and rotation channels"
 msgstr "位置と回転のチャンネルにキーフレームを挿入します"
 
@@ -30205,6 +30315,10 @@ msgid "Add Image"
 msgstr "画像を追加"
 
 
+msgid "Landmark Controls"
+msgstr "ランドマークコントロール"
+
+
 msgid "Light"
 msgstr "ライト"
 
@@ -31854,15 +31968,19 @@ msgstr "制御オブジェクト: 指定したオブジェクトで効果の中�
 
 
 msgid "Only deform vertices within this distance from the center of the effect (leave as 0 for infinite.)"
-msgstr "効果の中心からの距離がこの距離内であれば変形します（0 のままだと無限）"
+msgstr "効果の中心からの距離がこの距離内であれば変形します（0で無限）"
 
 
 msgid "Size of projection shape (leave as 0 for auto)"
-msgstr "形状のプロジェクションのサイズ (0で自動)"
+msgstr "形状の投影サイズ (0で自動)"
+
+
+msgid "Size from Radius"
+msgstr "サイズに半径を使用"
 
 
 msgid "Use radius as size of projection shape (0 = auto)"
-msgstr "プロジェクションのサイズに半径を使用 (0 = 自動)"
+msgstr "形状の投影サイズに半径を使用します (0で自動)"
 
 
 msgid "Use Transform"
@@ -33189,6 +33307,10 @@ msgid "Use mesh edge crease information to sharpen edges"
 msgstr "辺をシャープにするのに、メッシュの辺のクリース情報を使用します"
 
 
+msgid "Use Custom Normals"
+msgstr "カスタム法線を使用"
+
+
 msgid "UV Smooth"
 msgstr "UVスムーズ"
 
@@ -33397,7 +33519,7 @@ msgstr "霧の方向マップを反転させます"
 
 
 msgid "Ocean is Cached"
-msgstr "海洋はキャッシュ済です"
+msgstr "海洋がキャッシュ済"
 
 
 msgid "Whether the ocean is using cached data or simulating"
@@ -33482,10 +33604,6 @@ msgstr "浅水域"
 
 msgid "Use for shallow water ('JONSWAP', 'TMA' - Texel-Marsen-Arsloe method)"
 msgstr "浅水域を使用します（「JONSWAP」、「TMA」- Texel-Marsen-Arsloe 法）"
-
-
-msgid "Spray Map"
-msgstr "霧マップ"
 
 
 msgid "Current time of the simulation"
@@ -33979,6 +34097,10 @@ msgstr "シミュレーションモディファイアー"
 
 msgid "Identifier of the simulation component that should be accessed"
 msgstr "アクセスされるシミュレーション要素の識別子"
+
+
+msgid "Simulation to access"
+msgstr "アクセスするシミュレーション"
 
 
 msgid "Skin Modifier"
@@ -35520,10 +35642,6 @@ msgstr "非表示を表示"
 
 msgid "Include channels from objects/bone that aren't visible"
 msgstr "非表示オブジェクト/ボーンのチャンネルも含めます"
-
-
-msgid "Only Selected"
-msgstr "選択物のみ"
 
 
 msgid "Dopesheet Sort Field"
@@ -38777,6 +38895,10 @@ msgid "Outputs true only when both inputs are true"
 msgstr "両入力が true の時のみ true を出力します"
 
 
+msgid "Outputs or when at least one of the inputs is true"
+msgstr "入力のうち最低一つが true の場合 true を出力します"
+
+
 msgid "Outputs the opposite of the input"
 msgstr "出力が入力の反対になります"
 
@@ -38811,6 +38933,10 @@ msgstr "両入力が違うと true"
 
 msgid "Group Instance ID"
 msgstr "グループインスタンスID"
+
+
+msgid "Object Transforms"
+msgstr "オブジェクトトランスフォーム"
 
 
 msgid "Data type for inputs and outputs"
@@ -39676,12 +39802,24 @@ msgid "Air"
 msgstr "空気抵抗"
 
 
+msgid "Density of air molecules"
+msgstr "空気分子の密度"
+
+
 msgid "Altitude"
 msgstr "標高"
 
 
+msgid "Height from sea level"
+msgstr "海面からの高さ"
+
+
 msgid "Dust"
 msgstr "ちり"
+
+
+msgid "Density of dust molecules and water droplets"
+msgstr "ちりの分子と水の飛沫の密度"
 
 
 msgid "Ground Albedo"
@@ -39694,6 +39832,10 @@ msgstr "空に微妙に反射される地面の色"
 
 msgid "Ozone"
 msgstr "オゾン"
+
+
+msgid "Density of Ozone layer"
+msgstr "オゾン層の密度"
 
 
 msgid "Sky Type"
@@ -39748,6 +39890,14 @@ msgid "Sun Elevation"
 msgstr "太陽の高度"
 
 
+msgid "Sun angle from horizon"
+msgstr "水平線からの太陽の角度"
+
+
+msgid "Sun Intensity"
+msgstr "太陽光の強さ"
+
+
 msgid "Strength of sun"
 msgstr "太陽光の強さ"
 
@@ -39762,6 +39912,10 @@ msgstr "天頂を中心とした太陽の回転"
 
 msgid "Sun Size"
 msgstr "太陽のサイズ"
+
+
+msgid "Size of sun disc"
+msgstr "太陽の円のサイズ"
 
 
 msgid "Turbidity"
@@ -40170,6 +40324,10 @@ msgstr "パーティクルシミュレーション"
 
 msgid "Particle Time Step Event"
 msgstr "パーティクルタイムステップイベント"
+
+
+msgid "When in each time step is the event triggered"
+msgstr "各タイムステップに入った時にイベント発生"
 
 
 msgid "Begin"
@@ -43106,6 +43264,10 @@ msgid "Place markers across the whole frame"
 msgstr "フレーム全体にマーカーを置きます"
 
 
+msgid "Inside Annotated Area"
+msgstr "アノテート領域内"
+
+
 msgid "Place markers only inside areas outlined with the Annotation tool"
 msgstr "マーカーをアノテーションツールによる輪郭の中にだけに置きます"
 
@@ -44382,6 +44544,11 @@ msgid "Move constraint down in constraint stack"
 msgstr "スタック内のコンストレイントを下に移動します"
 
 
+msgctxt "Operator"
+msgid "Move Constraint To Index"
+msgstr "コンストレイントをインデックスへ"
+
+
 msgid "The index to move the constraint to"
 msgstr "コンストレイントの移動先のインデックス"
 
@@ -45247,6 +45414,10 @@ msgid "Start frame for export"
 msgstr "エクスポートの開始フレーム"
 
 
+msgid "Only Selected"
+msgstr "選択物のみ"
+
+
 msgctxt "Operator"
 msgid "Export BVH"
 msgstr "BVHをエクスポート"
@@ -45391,6 +45562,14 @@ msgstr "-Yが上"
 
 msgid "-Z Up"
 msgstr "-Zが上"
+
+
+msgid "ASCII"
+msgstr "ASCII"
+
+
+msgid "Export using ASCII file format, otherwise use binary"
+msgstr "バイナリの代わりに ASCII ファイルフォーマットでエクスポートします"
 
 
 msgid "Export the active vertex color layer"
@@ -47475,10 +47654,6 @@ msgid "Convert the active Grease Pencil layer to a new Curve Object"
 msgstr "アクティブグリースペンシルレイヤーを新規オブジェクトに変換します"
 
 
-msgid "Bevel_Resolution"
-msgstr "ベベル解像度"
-
-
 msgid "Bevel resolution when depth is non-zero"
 msgstr "ベベル解像度（深度がゼロ以外の時）"
 
@@ -47505,10 +47680,6 @@ msgstr "ギャップのランダムさ"
 
 msgid "Custom Gap mode: Number of frames that gap lengths can vary"
 msgstr "カスタムギャップモード：ギャップのフレーム数を変化します"
-
-
-msgid "Radius Fac"
-msgstr "半径乗数"
 
 
 msgid "Multiplier for the points' radii (set from stroke width)"
@@ -48205,6 +48376,10 @@ msgstr "ストロークを選択解除"
 msgctxt "Operator"
 msgid "Set Material"
 msgstr "マテリアルを設定"
+
+
+msgid "Set active material"
+msgstr "アクティブマテリアルを設定します"
 
 
 msgctxt "Operator"
@@ -51246,6 +51421,18 @@ msgid "Averaging method"
 msgstr "平均化の方法"
 
 
+msgid "Take average of vertex normals"
+msgstr "頂点の法線の平均を取ります"
+
+
+msgid "Set all vertex normals by face area"
+msgstr "全頂点の法線を面積で設定します"
+
+
+msgid "Set all vertex normals by corner angle"
+msgstr "全頂点の法線を隅の角度で設定します"
+
+
 msgid "Weight applied per face"
 msgstr "面毎にウェイトを適用します"
 
@@ -51270,6 +51457,10 @@ msgstr "ベベル"
 
 msgid "Cut into selected items at an angle to create bevel or chamfer"
 msgstr "選択中のアイテムを一定の角度でカットし、斜面や溝を作成します"
+
+
+msgid "Affect Edges or Vertices"
+msgstr "影響する辺または頂点"
 
 
 msgid "Do not allow beveled edges/vertices to overlap each other"
@@ -51701,6 +51892,10 @@ msgid "Dissolve edges, merging faces"
 msgstr "辺を溶解し、面と統合します"
 
 
+msgid "Dissolve Vertices"
+msgstr "頂点を溶解"
+
+
 msgid "Dissolve remaining vertices"
 msgstr "残っている頂点を溶解します"
 
@@ -51717,6 +51912,10 @@ msgstr "面を溶解します"
 msgctxt "Operator"
 msgid "Limited Dissolve"
 msgstr "限定的溶解"
+
+
+msgid "Dissolve selected edges and vertices, limited by the angle of surrounding geometry"
+msgstr "選択中の辺と頂点を、周囲の形状の角度で限定して溶解します"
 
 
 msgid "Delimit dissolve operation"
@@ -51742,6 +51941,10 @@ msgstr "境界の引き裂き"
 
 msgid "Split off face corners instead of merging faces"
 msgstr "面を統合する代わりに面の隅を引き裂きます"
+
+
+msgid "Dissolve vertices, merge edges and faces"
+msgstr "頂点を溶解し、辺や面を統合します"
 
 
 msgctxt "Operator"
@@ -55865,8 +56068,9 @@ msgid "Move modifier down in the stack"
 msgstr "スタック内のモディファイアーを下位に移動します"
 
 
-msgid "Change the modifier's position in the list so it evaluates after the set number of others"
-msgstr "リスト内のモディファイアーの位置を変更し、他のセットの後に評価させます"
+msgctxt "Operator"
+msgid "Move Active Modifier to Index"
+msgstr "アクティブモディファイアーをインデックスへ"
 
 
 msgid "The index to move the modifier to"
@@ -56466,7 +56670,7 @@ msgstr "マルチレゾを分割"
 
 
 msgid "Add a new level of subdivision"
-msgstr "細分化の新しいレベルを追加します"
+msgstr "新しい細分化レベルを追加します"
 
 
 msgid "Rebuild a lower subdivision level of the current base mesh"
@@ -57851,6 +58055,10 @@ msgid "Remove from all groups"
 msgstr "全てのグループから外します"
 
 
+msgid "All Vertices"
+msgstr "全頂点"
+
+
 msgid "Clear the active group"
 msgstr "アクティブグループをクリア"
 
@@ -57949,6 +58157,12 @@ msgstr "アクティブ頂点のウェイトを正規化"
 msgctxt "Operator"
 msgid "Paste Weight to Selected"
 msgstr "ウェイトを選択頂点に貼り付け"
+
+
+msgid "Copy this group's weight to other selected vertices (disabled if vertex group is locked)"
+msgstr ""
+"このグループのウェイトを他の選択中の頂点にコピーします\n"
+"（頂点グループがロック中の場合は無効）"
 
 
 msgctxt "Operator"
@@ -58394,6 +58608,18 @@ msgstr ""
 
 msgid "Add Library Override Hierarchy"
 msgstr "ライブラリオーバーライド階層を追加"
+
+
+msgid "Reset Library Override"
+msgstr "ライブラリオーバーライドをリセット"
+
+
+msgid "Reset this local override to its linked values"
+msgstr "ローカルオーバーライドをリンクの値でリセットします"
+
+
+msgid "Reset Library Override Hierarchy"
+msgstr "ライブラリオーバーライド階層をリセット"
 
 
 msgid "Paste"
@@ -60365,6 +60591,10 @@ msgid "Clear User Transforms"
 msgstr "ユーザーのトランスフォームをクリア"
 
 
+msgid "Reset pose bone transforms to keyframed state"
+msgstr "ポーズボーンのトランスフォームを、キーフレームが打たれた状態にリセットします"
+
+
 msgid "Only visible/selected bones"
 msgstr "表示可/選択中ボーンのみ"
 
@@ -62013,6 +62243,10 @@ msgid "Applies gravity to the simulation"
 msgstr "シミュレーションに重力を適用します"
 
 
+msgid "Inflates the cloth"
+msgstr "クロスをインフレート"
+
+
 msgid "Expands the cloth's dimensions"
 msgstr "クロスの寸法を広げます"
 
@@ -63285,6 +63519,10 @@ msgid "Select other strips at the same time"
 msgstr "同じ時間にある他のストリップを選択します"
 
 
+msgid "Side of Frame"
+msgstr "フレームのサイド"
+
+
 msgid "Select all strips on same side of the current frame as the mouse cursor"
 msgstr "現在のフレームに対しマウスカーソルのある側の全ストリップを選択します"
 
@@ -63414,6 +63652,11 @@ msgstr "選択中のストリップから指定した側にあるストリップ
 
 msgid "The side to which the selection is applied"
 msgstr "どちら側の選択に適用するか"
+
+
+msgctxt "Operator"
+msgid "Select Side of Frame"
+msgstr "フレームのサイドを選択"
 
 
 msgid "Select strips relative to the current frame"
@@ -66048,6 +66291,10 @@ msgid "Pan the view when the mouse is held at an edge"
 msgstr "マウスを端でドラッグ中、ビューを平行移動します"
 
 
+msgid "Outside Padding"
+msgstr "外側のパディング"
+
+
 msgid "Delta X"
 msgstr "デルタX"
 
@@ -66136,6 +66383,10 @@ msgid "Zoom Factor Y"
 msgstr "Y方向をズーム"
 
 
+msgid "Create a new Camera from the selected VR Landmark"
+msgstr "選択中のVRランドマークから、新規カメラを作成します"
+
+
 msgctxt "Operator"
 msgid "Add Background Image"
 msgstr "下絵を追加"
@@ -66167,13 +66418,17 @@ msgid "Set camera view to active view"
 msgstr "現在の視点でカメラ視点を設定します"
 
 
-msgctxt "Operator"
-msgid "Camera Fit Frame to Selected"
-msgstr "カメラ 選択にフレームを合わせる"
-
-
 msgid "Move the camera so selected objects are framed"
 msgstr "選択したオブジェクトがフレームに収まるようにカメラを移動します"
+
+
+msgctxt "Operator"
+msgid "Scene Camera to VR Landmark"
+msgstr "シーンカメラ→VRランドマーク"
+
+
+msgid "Position the scene camera at the selected landmark"
+msgstr "シーンカメラの位置を選択中のランドマークに置きます"
 
 
 msgid "Clear the boundaries of the border render and disable border render"
@@ -66233,6 +66488,15 @@ msgstr "サーフェスに投影"
 
 msgid "Project onto the surface"
 msgstr "サーフェス上に投影します"
+
+
+msgctxt "Operator"
+msgid "Cursor to VR Landmark"
+msgstr "カーソル→VRランドマーク"
+
+
+msgid "Move the 3D Cursor to the selected VR Landmark"
+msgstr "3Dカーソルを選択中の VR ランドマークに移動します"
 
 
 msgctxt "Operator"
@@ -66328,6 +66592,10 @@ msgstr "3Dカーソルビュー"
 
 msgid "Start placement using the mouse cursor projected onto the view plane"
 msgstr "ビュー平面に投影されたマウスカーソルを使用して配置を開始します"
+
+
+msgid "Use the surface normal (the transform orientation as a fallback)"
+msgstr "面の法線を使用（無理な時はトランスフォーム座標系）"
 
 
 msgid "The initial position for placement"
@@ -66659,6 +66927,11 @@ msgid "Set the current transform gizmo"
 msgstr "現在のトランスフォームギズモを設定します"
 
 
+msgctxt "Operator"
+msgid "Update Custom VR Landmark"
+msgstr "カスタムVRランドマークを更新"
+
+
 msgid "View all objects in scene"
 msgstr "シーン内のすべてのオブジェクトを表示します"
 
@@ -66938,6 +67211,16 @@ msgstr "VRランドマークを追加"
 
 msgid "Add a new VR landmark to the list and select it"
 msgstr "新規 VR ランドマークをリストに追加・選択します"
+
+
+msgctxt "Operator"
+msgid "Add VR Landmark from camera"
+msgstr "VRランドマークを追加（カメラ）"
+
+
+msgctxt "Operator"
+msgid "Add VR Landmark from session"
+msgstr "VRランドマークを追加（セッション）"
 
 
 msgctxt "Operator"
@@ -67320,6 +67603,10 @@ msgid "Apply modifiers to exported mesh (non destructive))"
 msgstr "エクスポートするメッシュにモディファイアーを適用します(データ非破壊)"
 
 
+msgid "Deform Bones Only"
+msgstr "デフォームボーンのみ"
+
+
 msgid "Only export deforming bones with armatures"
 msgstr "アーマチュアと変形ボーンのみエクスポートします"
 
@@ -67421,7 +67708,11 @@ msgstr "グローバルの上が －Z 軸になります"
 
 
 msgid "Modifier resolution for export"
-msgstr "エクスポート用のモディファイアー解像度"
+msgstr "エクスポートのモディファイアー解像度"
+
+
+msgid "Apply modifier's viewport settings"
+msgstr "モディファイアーのビューポート設定を適用します"
 
 
 msgid "Apply modifier's render settings"
@@ -67480,6 +67771,10 @@ msgid "Store Bindpose information in custom bone properties for later use during
 msgstr ""
 "バインドポーズ情報をボーンのカスタムプロパティ内に格納し、\n"
 "後で Collada エクスポート中に使用できるようにします"
+
+
+msgid "All Keyed Curves"
+msgstr "全キー付きカーブ"
 
 
 msgid "Export also curves which have only one key or are totally flat"
@@ -75306,6 +75601,12 @@ msgid "Store Denoising Passes"
 msgstr "デノイズパスを格納"
 
 
+msgid "Store the denoising feature passes and the noisy image. The passes adapt to the denoiser selected for rendering"
+msgstr ""
+"デノイズの特徴パスとノイズのある画像を格納します\n"
+"これらのパスはデノイザーに合わせてレンダリング用に選択されます"
+
+
 msgid "Denoising Strength"
 msgstr "デノイズの強さ"
 
@@ -76835,6 +77136,14 @@ msgstr "カスタムカメラ"
 
 msgid "Use an existing camera to define the VR view base location and rotation"
 msgstr "現存するカメラを VR ビューのベース位置と方向に使用します"
+
+
+msgid "Custom Pose"
+msgstr "カスタムポーズ"
+
+
+msgid "Allow a manually definied position and rotation to be used as the VR view base pose"
+msgstr "手動設定した位置と回転を、VR ビューのベースポーズとして利用可能にします"
 
 
 msgid "ID Property"
@@ -84862,6 +85171,10 @@ msgid "Edge Select"
 msgstr "辺選択"
 
 
+msgid "Active Vertex/Edge/Face"
+msgstr "アクティブな頂点・辺・面"
+
+
 msgid "Face Orientation Back"
 msgstr "面の後方向"
 
@@ -87815,6 +88128,10 @@ msgstr "ワールド空間ライティング"
 
 msgid "Make the lighting fixed and not follow the camera"
 msgstr "ライティングを固定しカメラに追従しません"
+
+
+msgid "Show Landmarks"
+msgstr "ランドマークを表示"
 
 
 msgid "Show VR Camera"
@@ -92138,12 +92455,64 @@ msgid "%d items"
 msgstr "%d 個のアイテム"
 
 
+msgid "Manual Transform"
+msgstr "手動トランスフォーム:"
+
+
+msgid "Scene Options"
+msgstr "シーンオプション"
+
+
+msgid "Only"
+msgstr "限定"
+
+
+msgid "Renderable Objects"
+msgstr "レンダリング可能なオブジェクト"
+
+
+msgid "Visible Objects"
+msgstr "可視オブジェクト"
+
+
+msgid "Object Options"
+msgstr "オブジェクトオプション"
+
+
+msgid "Use Schema"
+msgstr "スキーマを使用"
+
+
 msgid "No filename given"
 msgstr "ファイル名なし"
 
 
 msgid "Unable to determine ABC sequence length"
 msgstr "ABCシーケンス長を計測できません"
+
+
+msgid "Texture Options"
+msgstr "テクスチャオプション"
+
+
+msgid "Only Selected Map"
+msgstr "選択中のマップのみ"
+
+
+msgid "Export Data Options"
+msgstr "エクスポートデータオプション"
+
+
+msgid "Armature Options"
+msgstr "アーマチュアオプション:"
+
+
+msgid "Collada Options"
+msgstr "Colladaオプション"
+
+
+msgid "Import Data Options"
+msgstr "インポートデータオプション"
 
 
 msgid "Can't create export file"
@@ -92215,8 +92584,20 @@ msgid "Miter Shape"
 msgstr "留め継ぎ形状"
 
 
+msgid "Seams"
+msgstr "シーム"
+
+
 msgid "Miter Outer"
 msgstr "留め継ぎ外側"
+
+
+msgid "Intersection Type"
+msgstr "交差タイプ"
+
+
+msgid "%s: Confirm, %s: Cancel, %s: Mode (%s), %s: Width (%s), %s: Segments (%d), %s: Profile (%.3f), %s: Clamp Overlap (%s), %s: Affect (%s), %s: Outer Miter (%s), %s: Inner Miter (%s), %s: Harden Normals (%s), %s: Mark Seam (%s), %s: Mark Sharp (%s), %s: Profile Type (%s), %s: Intersection (%s)"
+msgstr "%s: 確定、%s: キャンセル、%s: モード (%s)、%s: 幅 (%s)、%s: セグメント数 (%d)、%s: 断面 (%.3f)、%s: 重複の回避 (%s)、%s: 影響 (%s)、%s: 留め継ぎ外側 (%s)、%s: 留め継ぎ内側 (%s)、%s: 法線のハード化 (%s)、%s: シームをマーク (%s)、%s: シャープをマーク (%s)、%s: 断面タイプ (%s)、%s: 交差 (%s)"
 
 
 msgid "LMB: Click and drag to draw cut line"
@@ -92301,6 +92682,10 @@ msgstr "面の領域が選択されていません"
 
 msgid "No matching face regions found"
 msgstr "マッチする面の領域がありません"
+
+
+msgid "Mesh object(s) have no active vertex/edge/face"
+msgstr "メッシュオブジェクトにアクティブ頂点・辺・面がありません"
 
 
 msgid "Does not work in face selection mode"
@@ -95412,6 +95797,10 @@ msgid "Cannot reassign inputs: strip has no inputs"
 msgstr "入力が再割り当てできません：ストリップに入力がありません"
 
 
+msgid "Cannot reassign inputs: recursion detected."
+msgstr "入力が再割り当てできません：再帰があります"
+
+
 msgid "No valid inputs to swap"
 msgstr "入れ替えに適切な入力ではありません"
 
@@ -96284,6 +96673,10 @@ msgid "Use 'Time_Translate' transform mode instead of 'Translation' mode for tra
 msgstr "ドープシートエディターでのキーフレームの移動に「移動」モードの代わりに「時間移動」トランスフォームモードを使用します"
 
 
+msgid "Vertex Slide: "
+msgstr "頂点スライド: "
+
+
 msgid "Create Orientation's 'use' parameter only valid in a 3DView context"
 msgstr "「座標軸の向きを作成」の「使用」パラメーターは3Dビューコンテクスト内でのみ有効です"
 
@@ -96384,14 +96777,6 @@ msgstr "UV頂点"
 msgctxt "Operator"
 msgid "Clear Seam"
 msgstr "シームをクリア"
-
-
-msgid "Sync selection doesn't support path select"
-msgstr "同期選択は経路選択に未対応です"
-
-
-msgid "Select linked only works in face select mode when sync selection is enabled"
-msgstr "同期選択有効時、リンク選択は面選択モードでのみ動作します"
 
 
 msgid "Cannot split selection when sync selection is enabled"
@@ -97251,6 +97636,10 @@ msgid "Modifier was not found in the stack"
 msgstr "モディファイアーがスタック内にありません"
 
 
+msgid "Recursion detected, can not use this strip"
+msgstr "再帰があるため、このストリップは使用できません"
+
+
 msgid "Sequences.new_image: unable to open image file"
 msgstr "Sequences.new_image: 画像ファイルが開けません"
 
@@ -97525,6 +97914,10 @@ msgstr "二等分"
 
 msgid "Flip UDIM"
 msgstr "UDIMを反転"
+
+
+msgid "Level Viewport"
+msgstr "ビューポートのレベル数"
 
 
 msgid "Delete Higher"
