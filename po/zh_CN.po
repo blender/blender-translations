@@ -1,7 +1,7 @@
 
 msgid ""
 msgstr ""
-"Project-Id-Version: Blender 2.91.0 Alpha (b'1241802abbb3')\n"
+"Project-Id-Version: Blender 2.91.0 Alpha (b'6e7617211b67')\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-01-01 00:00:00\n"
 "PO-Revision-Date: \n"
@@ -3657,6 +3657,14 @@ msgid "Number of times to subdivide newly created strokes, for less jagged strok
 msgstr "对于新建的笔画进行细分操作，减少毛刺笔画"
 
 
+msgid "Pin Mode"
+msgstr "钉固模式"
+
+
+msgid "Pin the mode to the brush"
+msgstr "将模式固定到笔刷"
+
+
 msgid "Hue"
 msgstr "色相"
 
@@ -3723,14 +3731,6 @@ msgstr "当绘制线条时不绘制填充色"
 
 msgid "Factor of Simplify using adaptive algorithm"
 msgstr "使用自适应算法的简化系数"
-
-
-msgid "Trim Stroke Ends"
-msgstr "修剪笔画末端"
-
-
-msgid "Trim intersecting stroke ends"
-msgstr "修建笔画末端"
 
 
 msgid "Default Eraser"
@@ -3855,6 +3855,14 @@ msgstr "笔画随机"
 
 msgid "Use randomness at stroke level"
 msgstr "在笔画层级上使用随机性"
+
+
+msgid "Trim Stroke Ends"
+msgstr "修剪笔画末端"
+
+
+msgid "Trim intersecting stroke ends"
+msgstr "修建笔画末端"
 
 
 msgid "UV Random"
@@ -12007,18 +12015,6 @@ msgid "Buoyant force based on smoke density (higher value results in faster risi
 msgstr "基于烟雾密度的浮力(值越高，烟雾上升速度加快)"
 
 
-msgid "Slice the whole domain object"
-msgstr "切割整个场物体"
-
-
-msgid "Single"
-msgstr "单一"
-
-
-msgid "Perform a single slice of the domain object"
-msgstr "执行域对象的单个切片"
-
-
 msgid "Buoyancy Heat"
 msgstr "热度浮力"
 
@@ -12357,6 +12353,10 @@ msgstr "仅突出显示类型为流出的单元"
 
 msgid "Color Gridlines"
 msgstr "栅格线颜色"
+
+
+msgid "Simulation field to color map onto gridlines"
+msgstr "模拟场到栅格线上的色彩贴图"
 
 
 msgid "Flags"
@@ -13101,6 +13101,10 @@ msgstr "使用噪波"
 
 msgid "Enable fluid noise (using amplification)"
 msgstr "启用流体噪波(使用放大)"
+
+
+msgid "Perform a single slice of the domain object"
+msgstr "执行域对象的单个切片"
 
 
 msgid "Speed Vectors"
@@ -14831,10 +14835,6 @@ msgid "Stroke is in 2D-space (but with special 'image' scaling)"
 msgstr "2D空间中的笔画(但仅开启'图像'缩放)"
 
 
-msgid "Enable cyclic drawing, closing the stroke"
-msgstr "启用闭合绘制，闭合笔画"
-
-
 msgid "End Cap"
 msgstr "末端物体"
 
@@ -14909,6 +14909,10 @@ msgstr "三角形"
 
 msgid "Triangulation data for HQ fill"
 msgstr "高质量填充的三角测量数据"
+
+
+msgid "Enable cyclic drawing, closing the stroke"
+msgstr "启用闭合绘制，闭合笔画"
 
 
 msgid "UV Rotation"
@@ -15917,10 +15921,6 @@ msgstr "物体作为中心"
 
 msgid "Clip points"
 msgstr "剪辑点"
-
-
-msgid "Mirror this axis"
-msgstr "镜像此轴"
 
 
 msgid "Multiply Modifier"
@@ -17222,6 +17222,10 @@ msgstr "全局"
 
 msgid "Simulates the entire mesh"
 msgstr "模拟整个网格"
+
+
+msgid "Dynamic"
+msgstr "动态"
 
 
 msgid "Color Type"
@@ -18992,16 +18996,56 @@ msgid "Bevel Depth"
 msgstr "倒角深度"
 
 
+msgid "Radius of the bevel geometry, not including extrusion"
+msgstr "倒角几何体的半径，不包括挤出"
+
+
+msgid "Geometry End Factor"
+msgstr "几何终点系数"
+
+
+msgid "Define where along the spline the curve geometry ends (0 for the beginning, 1 for the end)"
+msgstr "定义曲线几何体沿样条线结束的位置(起点为 0，末端为1)"
+
+
 msgid "End Mapping Type"
 msgstr "终点映射类型"
+
+
+msgid "Determine how the geometry end factor is mapped to a spline"
+msgstr "决定几何终点系数映射到样条线的方式"
+
+
+msgid "Map the geometry factor to the number of subdivisions of a spline (U resolution)"
+msgstr "将几何系数映射到样条线的细分级数 (U 向解析度)"
+
+
+msgid "Map the geometry factor to the length of a segment and to the number of subdivisions of a segment"
+msgstr "将几何系数映射到段的长度及段细分级数"
 
 
 msgid "Spline"
 msgstr "样条线"
 
 
+msgid "Map the geometry factor to the length of a spline"
+msgstr "将几何系数映射到样条线的长度"
+
+
 msgid "Start Mapping Type"
 msgstr "终点映射类型"
+
+
+msgid "Determine how the geometry start factor is mapped to a spline"
+msgstr "决定几何起点系数映射到样条线的方式"
+
+
+msgid "Geometry Start Factor"
+msgstr "几何起点系数"
+
+
+msgid "Define where along the spline the curve geometry starts (0 for the beginning, 1 for the end)"
+msgstr "定义曲线几何体沿样条线开始的位置(起点为 0，末端为1)"
 
 
 msgid "Bevel Mode"
@@ -19036,6 +19080,10 @@ msgid "Bevel Object"
 msgstr "倒角物体"
 
 
+msgid "The name of the Curve object that defines the bevel shape"
+msgstr "定义倒角形状的曲线物体名称"
+
+
 msgid "Custom Profile Path"
 msgstr "自定义轮廓路径"
 
@@ -19046,6 +19094,10 @@ msgstr "用于自定义轮廓的路径"
 
 msgid "Bevel Resolution"
 msgstr "倒角分辨率"
+
+
+msgid "The number of segments in each quarter-circle of the bevel"
+msgstr "倒角每四分之一圈中的段数"
 
 
 msgid "Cycles Mesh Settings"
@@ -19080,12 +19132,20 @@ msgid "Extrude"
 msgstr "挤出"
 
 
+msgid "Length of the depth added in the local Z direction along the curve, perpendicular to its normals"
+msgstr "沿曲线在局部Z方向中添加的深度长度，垂直于其法线"
+
+
 msgid "Fill Mode"
 msgstr "填充模式"
 
 
 msgid "Mode of filling curve"
 msgstr "曲线填充模式"
+
+
+msgid "Distance to move the curve parallel to its normals"
+msgstr "平行于其法线方向移动曲线的距离"
 
 
 msgid "Path Length"
@@ -19116,8 +19176,16 @@ msgid "Resolution U"
 msgstr "分辨率 U"
 
 
+msgid "Number of computed points in the U direction between every pair of control points"
+msgstr "每对控制点之间 U 方向计算的点数"
+
+
 msgid "Resolution V"
 msgstr "分辨率 V"
+
+
+msgid "The number of computed points in the V direction between every pair of control points"
+msgstr "每对控制点之间 V 方向计算的点数"
 
 
 msgid "Splines"
@@ -24228,10 +24296,6 @@ msgstr "碰撞后消失"
 
 msgid "Particles die when they collide with a deflector object"
 msgstr "粒子与导向物体碰撞时的消逝时间"
-
-
-msgid "Dynamic"
-msgstr "动态"
 
 
 msgid "Particle rotations are affected by collisions and effectors"
@@ -33756,10 +33820,6 @@ msgid "UVs are not smoothed, boundaries are kept sharp"
 msgstr "不平滑UV，边界保持锐利"
 
 
-msgid "Smooth, keep corners"
-msgstr "平滑，保留拐角"
-
-
 msgid "UVs are smoothed, corners on discontinuous boundary are kept sharp"
 msgstr "平滑UV，但拐角和不连续边界保持锐利"
 
@@ -35552,14 +35612,6 @@ msgid "WeightedNormal Modifier"
 msgstr "权重法向修改器"
 
 
-msgid "Face Influence"
-msgstr "面影响"
-
-
-msgid "Use influence of face for weighting"
-msgstr "对权重使用面影响"
-
-
 msgid "Keep Sharp"
 msgstr "保持锐边"
 
@@ -35598,6 +35650,14 @@ msgstr "生成表面面积与角度共同加权的法向"
 
 msgid "Threshold value for different weights to be considered equal"
 msgstr "差别在阈值范围内的权重将被视为相等"
+
+
+msgid "Face Influence"
+msgstr "面影响"
+
+
+msgid "Use influence of face for weighting"
+msgstr "对权重使用面影响"
 
 
 msgid "Vertex group name for modifying the selected areas"
@@ -35940,6 +36000,18 @@ msgid "Match-moving camera data for tracking"
 msgstr "用于追踪的相机运动匹配数据"
 
 
+msgid "K1"
+msgstr "K1"
+
+
+msgid "K2"
+msgstr "K2"
+
+
+msgid "K3"
+msgstr "K3"
+
+
 msgid "Distortion Model"
 msgstr "畸变模型"
 
@@ -35972,16 +36044,8 @@ msgid "Nuke distortion model"
 msgstr "Nuke畸变模型"
 
 
-msgid "K1"
-msgstr "K1"
-
-
 msgid "First coefficient of second order division distortion"
 msgstr "二阶细分畸变的第一项系数"
-
-
-msgid "K2"
-msgstr "K2"
 
 
 msgid "Camera's focal length"
@@ -35994,10 +36058,6 @@ msgstr "三阶多项式径向畸变的第一项系数"
 
 msgid "Second coefficient of third order polynomial radial distortion"
 msgstr "三阶多项式径向畸变的第二项系数"
-
-
-msgid "K3"
-msgstr "K3"
 
 
 msgid "Third coefficient of third order polynomial radial distortion"
@@ -37530,6 +37590,10 @@ msgstr "算法"
 
 msgid "Algorithm to use to limit channel"
 msgstr "用于限定通道的算法"
+
+
+msgid "Single"
+msgstr "单一"
 
 
 msgid "Limit by single channel"
@@ -56234,6 +56298,15 @@ msgstr "点云 -> 网格"
 
 
 msgctxt "Operator"
+msgid "Convert Proxy To Override"
+msgstr "转换代理为覆盖"
+
+
+msgid "Convert a proxy to a local library override"
+msgstr "将代理转换为本地库覆盖"
+
+
+msgctxt "Operator"
 msgid "Corrective Smooth Bind"
 msgstr "矫正平滑绑定"
 
@@ -59266,6 +59339,14 @@ msgid "Add a local override of this linked data-block, and its hierarchy of depe
 msgstr "添加该被关联数据块及其依赖项层级的本地覆盖"
 
 
+msgid "Convert Proxy to Override"
+msgstr "转换代理为覆盖"
+
+
+msgid "Convert a Proxy object to a full library override, including all its dependencies"
+msgstr "将代理对象转换为完整库覆盖，包括所有其依赖项"
+
+
 msgid "Reset Library Override"
 msgstr "重置库覆盖"
 
@@ -59973,6 +60054,15 @@ msgstr "套索遮罩手势"
 
 msgid "Add mask within the lasso as you move the brush"
 msgstr "移动画笔时, 在套索中添加遮罩"
+
+
+msgctxt "Operator"
+msgid "Mask Line Gesture"
+msgstr "线条遮罩手势"
+
+
+msgid "Add mask to the right of a line as you move the brush"
+msgstr "移动笔刷时, 向线条右侧添加遮罩"
 
 
 msgctxt "Operator"
@@ -71136,6 +71226,10 @@ msgid "Transparency"
 msgstr "透明"
 
 
+msgid "Start & End Mapping"
+msgstr "开始 & 结束映射"
+
+
 msgid "Adjustments"
 msgstr "调整"
 
@@ -72396,6 +72490,11 @@ msgstr "套索遮罩"
 msgctxt "Operator"
 msgid "Box Hide"
 msgstr "框选隐藏"
+
+
+msgctxt "Operator"
+msgid "Line Mask"
+msgstr "线条遮罩"
 
 
 msgctxt "Operator"
@@ -74211,10 +74310,6 @@ msgid "Enable Cycles debugging options for developers"
 msgstr "为开发人员启用Cycles调试选项"
 
 
-msgid "Legacy Image Editor Drawing"
-msgstr "旧版图像编辑器绘图"
-
-
 msgid "Use legacy UV/Image editor drawing"
 msgstr "使用旧版UV/图像编辑器绘制"
 
@@ -74237,6 +74332,14 @@ msgstr "在UI中启用新的粒子系统"
 
 msgid "Use the new Vertex Painting system"
 msgstr "使用新的顶点绘制系统"
+
+
+msgid "Switch Object Operator"
+msgstr "切换物体操作"
+
+
+msgid "Enable the operator to switch objects by pressing D"
+msgstr "启用该操作，通过按键D切换物体"
 
 
 msgid "Tools with Missing Icons"
@@ -74701,10 +74804,6 @@ msgstr "被Blender 解读为 100% 的原始输入压力值"
 
 msgid "Tablet API"
 msgstr "数位板API"
-
-
-msgid "Select the tablet API to use for pressure sensitivity"
-msgstr "选择数位板API来用于压感灵敏度"
 
 
 msgid "Automatically choose Wintab or Windows Ink depending on the device"
@@ -81019,14 +81118,6 @@ msgid "Sequence strip to control the speed of other strips"
 msgstr "用于控制其他片段速度的序列片段"
 
 
-msgid "Frame interpolation"
-msgstr "帧插值"
-
-
-msgid "Do crossfade blending between current and next frame"
-msgstr "在当前帧和下一帧之间进行交叉淡入淡出混合"
-
-
 msgid "Multiply Speed"
 msgstr "叠加速度"
 
@@ -81041,6 +81132,14 @@ msgstr "用作速度"
 
 msgid "Interpret the value as speed instead of a frame number"
 msgstr "将此值解释为速度值, 而不是帧数值"
+
+
+msgid "Frame interpolation"
+msgstr "帧插值"
+
+
+msgid "Do crossfade blending between current and next frame"
+msgstr "在当前帧和下一帧之间进行交叉淡入淡出混合"
 
 
 msgid "Scale to Length"
@@ -84782,10 +84881,6 @@ msgid "Sticky Selection Mode"
 msgstr "黏性选择模式"
 
 
-msgid "Automatically select also UVs sharing the same vertex as the ones being selected"
-msgstr "自动选择和被选择区域拥有共用顶点的UV"
-
-
 msgid "Sticky vertex selection disabled"
 msgstr "关闭点的黏性选择模式"
 
@@ -84800,10 +84895,6 @@ msgstr "选择在同一位置上共享网格点的UV"
 
 msgid "Shared Vertex"
 msgstr "共用顶点"
-
-
-msgid "Select UVs that share mesh vertex, irrespective if they are in the same location"
-msgstr "选择共用顶点的UV, 不考虑重复的坐标"
 
 
 msgid "Tile Grid Shape"
@@ -91526,6 +91617,10 @@ msgid "Render U"
 msgstr "U 向渲染"
 
 
+msgid "Factor Start"
+msgstr "起点系数"
+
+
 msgid "Mapping Start"
 msgstr "映射起点"
 
@@ -97933,48 +98028,6 @@ msgid "RenderView"
 msgstr "渲染视图"
 
 
-msgctxt "Sequence"
-msgid "Color Balance"
-msgstr "色彩平衡"
-
-
-msgctxt "Sequence"
-msgid "White Balance"
-msgstr "白平衡"
-
-
-msgctxt "Sequence"
-msgid "Curves"
-msgstr "曲线"
-
-
-msgctxt "Sequence"
-msgid "Hue Correct"
-msgstr "色相校正"
-
-
-msgctxt "Sequence"
-msgid "Bright/Contrast"
-msgstr "亮度 / 对比度"
-
-
-msgctxt "Sequence"
-msgid "Tonemap"
-msgstr "色调映射"
-
-
-msgid "Strips must be the same length"
-msgstr "所有左侧项"
-
-
-msgid "Strips were not compatible"
-msgstr "脚本无法兼容"
-
-
-msgid "Strips must have the same number of inputs"
-msgstr "在两点之间所选中的顶点路径"
-
-
 msgctxt "MovieClip"
 msgid "Plane Track"
 msgstr "平面追踪"
@@ -99438,6 +99491,14 @@ msgstr "播放动画时无法雕刻"
 
 msgid "Select before some Vertex to use as a filter color"
 msgstr "在某个顶点用作过滤颜色之前选择"
+
+
+msgid "Trace"
+msgstr "跟踪"
+
+
+msgid "No image empty selected"
+msgstr "未选中空白图像"
 
 
 msgid "Confirm: Enter/LClick, Cancel: (Esc/RClick) %s"
@@ -103321,10 +103382,6 @@ msgid "More than one collection is selected"
 msgstr "有多个集合被选中"
 
 
-msgid "Can't add a new collection to linked scene/collection"
-msgstr "无法添加新的集合来链接场景/集合"
-
-
 msgid "No active collection"
 msgstr "无活动集合"
 
@@ -103335,10 +103392,6 @@ msgstr "无法复制主要集合"
 
 msgid "Could not find a valid parent collection for the new duplicate, it won't be linked to any view layer"
 msgstr "无法找到一个有效的父级集合来进行复制，此操作将不会关联到任何视图图层"
-
-
-msgid "Cannot add a collection to a linked collection/scene"
-msgstr "无法向关联的集合/场景添加一个集合"
 
 
 msgid "Can't add a color tag to a linked collection"
@@ -106558,6 +106611,48 @@ msgstr "%s: 加载 '%s' 失败"
 
 msgid "Error writing render result, %s (see console)"
 msgstr "写入渲染结果出错, %s (见控制台)"
+
+
+msgctxt "Sequence"
+msgid "Color Balance"
+msgstr "色彩平衡"
+
+
+msgctxt "Sequence"
+msgid "White Balance"
+msgstr "白平衡"
+
+
+msgctxt "Sequence"
+msgid "Curves"
+msgstr "曲线"
+
+
+msgctxt "Sequence"
+msgid "Hue Correct"
+msgstr "色相校正"
+
+
+msgctxt "Sequence"
+msgid "Bright/Contrast"
+msgstr "亮度 / 对比度"
+
+
+msgctxt "Sequence"
+msgid "Tonemap"
+msgstr "色调映射"
+
+
+msgid "Strips must be the same length"
+msgstr "所有左侧项"
+
+
+msgid "Strips were not compatible"
+msgstr "脚本无法兼容"
+
+
+msgid "Strips must have the same number of inputs"
+msgstr "在两点之间所选中的顶点路径"
 
 
 msgid "Blur X"
