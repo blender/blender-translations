@@ -1,7 +1,7 @@
 
 msgid ""
 msgstr ""
-"Project-Id-Version: Blender 2.91.0 Alpha (b'cf778a9e4237')\n"
+"Project-Id-Version: Blender 2.91.0 Alpha (b'f52f51aef212')\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-01-01 00:00:00\n"
 "PO-Revision-Date: \n"
@@ -8610,6 +8610,10 @@ msgid "Alphabetically sorts data-blocks - mainly objects in the scene (disable t
 msgstr "按字母顺序排序的数据块 - 主要是场景中的物体 (禁用以增加视口速度)"
 
 
+msgid "Invert"
+msgstr "反转"
+
+
 msgid "Multi-Word Fuzzy Filter"
 msgstr "多词模糊过滤"
 
@@ -12607,20 +12611,8 @@ msgid "Data Depth"
 msgstr "数据位深"
 
 
-msgid "Bit depth for writing all scalar (including vector) lower values reduce file size"
-msgstr "写入所有标量(包括顶点)的位深, 调低数值可降低文件大小"
-
-
 msgid "Half"
 msgstr "一半"
-
-
-msgid "Half float (16 bit data)"
-msgstr "半浮点数(16位数据)"
-
-
-msgid "Full float (32 bit data)"
-msgstr "整浮点数(32 位数据)"
 
 
 msgid "Particle (narrow) band width (higher value results in thicker band and more particles)"
@@ -13537,10 +13529,6 @@ msgstr "使用纹理控制发射强度"
 
 msgid "Initial"
 msgstr "初始"
-
-
-msgid "Initial velocity in X, Y and Z direction in world space"
-msgstr "世界空间中X, Y, Z方向的初始速度"
 
 
 msgid "Multiplier of source velocity passed to fluid (source velocity is non-zero only if object is moving)"
@@ -14593,10 +14581,6 @@ msgstr "遮罩层列表"
 
 msgid "Set mask Visibility"
 msgstr "设置遮罩的可见性"
-
-
-msgid "Invert"
-msgstr "反转"
 
 
 msgid "Invert mask"
@@ -17154,14 +17138,6 @@ msgstr "克隆工具用图"
 
 msgid "Clone Offset"
 msgstr "克隆位移"
-
-
-msgid "Soft Body Influence"
-msgstr "软体影响"
-
-
-msgid "How much the simulation preserves the original shape, acting as a soft body"
-msgstr "模拟保留原始形状的程度，充当软体"
 
 
 msgid "Cloth Damping"
@@ -28722,6 +28698,10 @@ msgid "Insert a keyframe for all properties that are likely to get animated in a
 msgstr "为角色绑定中所有可能进行动画设置的属性插入关键帧(仅选中骨骼)"
 
 
+msgid "Whole Character (Selected Bones Only)"
+msgstr "完整角色(仅选中骨骼)"
+
+
 msgid "Keying Set Path"
 msgstr "插帧集路径"
 
@@ -30546,6 +30526,10 @@ msgid "Texture Specials"
 msgstr "特殊纹理"
 
 
+msgid "Text to 3D Object"
+msgstr "文本 --> 三维物体"
+
+
 msgid "Templates"
 msgstr "模板"
 
@@ -31870,6 +31854,14 @@ msgstr "由于具有 2 个指定物体，以非常灵活的方式将网格的零
 
 msgid "Adds a ripple-like motion to an object’s geometry"
 msgstr "向物体的几何结构添加类似波纹的运动"
+
+
+msgid "Volume Displace"
+msgstr "体积l置换"
+
+
+msgid "Deform volume based on noise or other vector fields"
+msgstr "基于噪波或其他矢量场改变体积形状"
 
 
 msgid "Dynamic Paint"
@@ -35574,6 +35566,38 @@ msgstr "目标物体"
 
 msgid "Object to calculate vertices distances from"
 msgstr "用于计算顶点间距的参照物体"
+
+
+msgid "Volume Displace Modifier"
+msgstr "体积置换修改器"
+
+
+msgid "Strength of the displacement"
+msgstr "置换强度"
+
+
+msgid "Texture Mapping Mode"
+msgstr "纹理映射模式"
+
+
+msgid "Object to use for texture mapping"
+msgstr "用于纹理映射的物体"
+
+
+msgid "Texture Mid Level"
+msgstr "纹理中间级"
+
+
+msgid "Subtracted from the texture color to get a displacement vector"
+msgstr "从纹理颜色中减去以获得置换矢量"
+
+
+msgid "Texture Sample Radius"
+msgstr "纹理采样半径"
+
+
+msgid "Smaller values result in better performance but might cut off the volume"
+msgstr "值越小，性能越好，但可能会切断体积"
 
 
 msgid "Warp Modifier"
@@ -47984,8 +48008,12 @@ msgid "Insert Text"
 msgstr "插入文本"
 
 
+msgid "Accent Mode"
+msgstr "音调模式"
+
+
 msgid "Next typed character will strike through previous, for special character input"
-msgstr "新输入的字符将与前一字符组合,特别是输入特殊字符"
+msgstr "新输入的字符将与前一字符组合，特别是输入特殊字符"
 
 
 msgctxt "Operator"
@@ -50772,6 +50800,11 @@ msgid "Save a sequence of images"
 msgstr "保存序列中的图像"
 
 
+msgctxt "Operator"
+msgid "Add Tile"
+msgstr "添加分块"
+
+
 msgid "Adds a tile to the image"
 msgstr "向图像添加一个分块"
 
@@ -50799,6 +50832,11 @@ msgstr "填充分块"
 
 msgid "Fill the current tile with a generated image"
 msgstr "使用生成的图像填充当前分块"
+
+
+msgctxt "Operator"
+msgid "Remove Tile"
+msgstr "移除分块"
 
 
 msgid "Removes a tile from the image"
@@ -52295,6 +52333,11 @@ msgid "Fill in the cut"
 msgstr "填充切口"
 
 
+msgctxt "Operator"
+msgid "Blend from Shape"
+msgstr "从形状混合"
+
+
 msgid "Blend in shape from a shape key"
 msgstr "将形态键效果混合到形状中"
 
@@ -53466,6 +53509,14 @@ msgid "Strong"
 msgstr "强"
 
 
+msgid "Set Value"
+msgstr "设置数值"
+
+
+msgid "Set value of faces"
+msgstr "设置面数值"
+
+
 msgctxt "Operator"
 msgid "Recalculate Normals"
 msgstr "重新计算法线"
@@ -54512,6 +54563,10 @@ msgid "Amount of Adjacent Faces"
 msgstr "相邻面数量"
 
 
+msgid "Amount of Connecting Edges"
+msgstr "连接边数量"
+
+
 msgid "Amount of Faces Around an Edge"
 msgstr "一条边周围的面的数量"
 
@@ -54567,6 +54622,11 @@ msgstr "按材质"
 
 msgid "By Loose Parts"
 msgstr "按松散块"
+
+
+msgctxt "Operator"
+msgid "Set Normals from Faces"
+msgstr "从面设置法向"
 
 
 msgid "Set the custom normals from the selected faces ones"
@@ -56392,6 +56452,11 @@ msgid "Copy constraints to other selected objects"
 msgstr "复制所选物体的约束"
 
 
+msgctxt "Operator"
+msgid "Convert To"
+msgstr "转换到"
+
+
 msgid "Convert selected objects to another type"
 msgstr "将所选物体转换为其他类型"
 
@@ -56402,6 +56467,26 @@ msgstr "保留原物体, 而不是替换"
 
 msgid "Type of object to convert to"
 msgstr "要转换的目标物体类型"
+
+
+msgid "Curve from Mesh or Text objects"
+msgstr "网格/文本物体 -> 曲线"
+
+
+msgid "Mesh from Curve, Surface, Metaball, Text, or Pointcloud objects"
+msgstr "从曲线、曲面、融球、文本或点云物体置换为网格"
+
+
+msgid "Grease Pencil from Curve or Mesh objects"
+msgstr "曲线/网格 -> 蜡笔"
+
+
+msgid "Pointcloud"
+msgstr "点云"
+
+
+msgid "Pointcloud from Mesh objects"
+msgstr "网格 -> 点云"
 
 
 msgctxt "Operator"
@@ -56695,6 +56780,11 @@ msgid "Remove a face map from the active object"
 msgstr "器"
 
 
+msgctxt "Operator"
+msgid "Remove from Face Map"
+msgstr "从面映射中移除"
+
+
 msgid "Remove faces from a face map"
 msgstr "从一个面映射中移除面"
 
@@ -56969,8 +57059,13 @@ msgid "Select affected vertices on mesh"
 msgstr "选中网格上的受影响点"
 
 
+msgctxt "Operator"
+msgid "Set Offset from Cursor"
+msgstr "设置相对游标偏移量"
+
+
 msgid "Set offset used for collection instances based on cursor position"
-msgstr "根据光标位置设置用于集合实例的偏移量"
+msgstr "根据游标位置设置用于集合实例的偏移量"
 
 
 msgctxt "Operator"
@@ -59569,6 +59664,10 @@ msgid "Rename the active element"
 msgstr "重命名活动项"
 
 
+msgid "Use Active"
+msgstr "使用活动项"
+
+
 msgctxt "Operator"
 msgid "Keying Set Add Selected"
 msgstr "插帧集选项中添加所选"
@@ -60513,10 +60612,6 @@ msgstr "在各物体的本地空间复制"
 
 msgid "Copy in world space"
 msgstr "在世界空间复制"
-
-
-msgid "Use Active"
-msgstr "使用活动项"
 
 
 msgid "Use the active particle system from the context"
@@ -61809,6 +61904,11 @@ msgstr "烘焙所有的物理运算结果"
 
 msgid "Bake all physics"
 msgstr "烘焙所有的物理运算结果"
+
+
+msgctxt "Operator"
+msgid "Bake from Cache"
+msgstr "从缓存烘焙"
 
 
 msgid "Bake from cache"
@@ -63357,8 +63457,16 @@ msgid "Create a new Face Set"
 msgstr "创建新的面组"
 
 
+msgid "Face Set from Masked"
+msgstr "从被遮蔽面创建面组"
+
+
 msgid "Create a new Face Set from the masked faces"
 msgstr "从被遮蔽面创建新的面组"
+
+
+msgid "Face Set from Visible"
+msgstr "从可见面创建面组"
 
 
 msgid "Create a new Face Set from the visible vertices"
@@ -63371,6 +63479,10 @@ msgstr "全网格面组"
 
 msgid "Create an unique Face Set with all faces in the sculpt"
 msgstr "创建包含雕刻中所有面的独特面组"
+
+
+msgid "Face Set from Edit Mode Selection"
+msgstr "从编辑模式选中项创建面组"
 
 
 msgid "Create an Face Set corresponding to the Edit Mode face selection"
@@ -63386,32 +63498,64 @@ msgid "Initializes all Face Sets in the mesh"
 msgstr "初始化网格中的所有面组"
 
 
+msgid "Face Sets from Loose Parts"
+msgstr "从松散块创建面组"
+
+
 msgid "Create a Face Set per loose part in the mesh"
 msgstr "从网格的松散块创建面组"
+
+
+msgid "Face Sets from Material Slots"
+msgstr "从材质槽创建面组"
 
 
 msgid "Create a Face Set per Material Slot"
 msgstr "为每个材质槽创建一个面组"
 
 
+msgid "Face Sets from Mesh Normals"
+msgstr "从网格法向创建面组"
+
+
 msgid "Create Face Sets for Faces that have similar normal"
 msgstr "为有相似法向的面创建面组"
+
+
+msgid "Face Sets from UV Seams"
+msgstr "从UV缝合边创建面组"
 
 
 msgid "Create Face Sets using UV Seams as boundaries"
 msgstr "以UV缝合边为边界创建面组"
 
 
+msgid "Face Sets from Edge Creases"
+msgstr "从折痕边创建面组"
+
+
 msgid "Create Face Sets using Edge Creases as boundaries"
 msgstr "以折痕边为边界创建面组"
+
+
+msgid "Face Sets from Bevel Weight"
+msgstr "从倒角权重创建面组"
 
 
 msgid "Create Face Sets using Bevel Weights as boundaries"
 msgstr "以倒角权重为边界创建面组"
 
 
+msgid "Face Sets from Sharp Edges"
+msgstr "从锐边创建面组"
+
+
 msgid "Create Face Sets using Sharp Edges as boundaries"
 msgstr "以锐边为边界创建面组"
+
+
+msgid "Face Sets from Face Maps"
+msgstr "从面映射创建面组"
 
 
 msgid "Create a Face Set per Face Map"
@@ -63744,10 +63888,6 @@ msgid "Deletes the displacement of the Multires Modifier"
 msgstr "删除多精度修改器的置换"
 
 
-msgid "Apply the filter only to the Face Mask under the cursor"
-msgstr "仅对光标下方的面遮罩应用滤镜"
-
-
 msgctxt "Operator"
 msgid "Rebuild BVH"
 msgstr "重建BVH"
@@ -63907,6 +64047,18 @@ msgstr "移动画笔时, 在框中修剪网格"
 
 msgid "Trim Mode"
 msgstr "修剪模式"
+
+
+msgid "Use a difference boolean operation"
+msgstr "使用求差布尔操作"
+
+
+msgid "Use a union boolean operation"
+msgstr "使用求和布尔操作"
+
+
+msgid "Join the new mesh as separate geometry, without preforming any boolean operation"
+msgstr "将新网格作为单独的几何体合并，无需执行任何布尔操作"
 
 
 msgctxt "Operator"
@@ -64199,8 +64351,16 @@ msgid "Duration of the fade in seconds"
 msgstr "淡化的持续时间(以秒为单位)"
 
 
+msgid "Fade Type"
+msgstr "淡化类型"
+
+
 msgid "Fade in, out, both in and out, to, or from the current frame. Default is both in and out"
 msgstr "淡入、淡出，同时淡入和淡出、淡入或淡出当前帧。默认是同时进入和退出"
+
+
+msgid "Fade In and Out"
+msgstr "淡入淡出"
 
 
 msgid "Fade selected strips in and out"
@@ -65676,6 +65836,11 @@ msgid "Make the edge loop match the shape of the adjacent edge loop"
 msgstr "使环切边形状匹配相邻循环边"
 
 
+msgctxt "Operator"
+msgid "Transform from Gizmo"
+msgstr "从Gizmo变换"
+
+
 msgid "Mirror selected items around one or more axes"
 msgstr "沿一个或多个坐标轴镜像选中元素"
 
@@ -66878,6 +67043,11 @@ msgid "Clear pinning for the selection instead of setting it"
 msgstr "清除选择的钉住而不是设置"
 
 
+msgctxt "Operator"
+msgid "Project from View"
+msgstr "从视角投影"
+
+
 msgid "Project the UV vertices of the mesh as seen in current 3D view"
 msgstr "将网格的 UV 顶点投射到当前的 3D 视角"
 
@@ -66940,6 +67110,11 @@ msgstr "解缝UV并移动结果"
 
 msgid "UV Rip"
 msgstr "UV断离"
+
+
+msgctxt "Operator"
+msgid "Seams from Islands"
+msgstr "沿孤岛边线生成缝合边"
 
 
 msgid "Set mesh seams according to island setup in the UV editor"
@@ -67920,6 +68095,30 @@ msgstr "对齐到活动物体的轴向"
 
 msgid "Rotate relative to the current orientation"
 msgstr "相对当前坐标系的旋转"
+
+
+msgid "View from the Left"
+msgstr "从左侧查看"
+
+
+msgid "View from the Right"
+msgstr "从右侧查看"
+
+
+msgid "View from the Bottom"
+msgstr "从底部查看"
+
+
+msgid "View from the Top"
+msgstr "从顶部查看"
+
+
+msgid "View from the Front"
+msgstr "从前面查看"
+
+
+msgid "View from the Back"
+msgstr "从后面查看"
 
 
 msgctxt "Operator"
@@ -71324,6 +71523,10 @@ msgid "Overlays"
 msgstr "覆盖内容"
 
 
+msgid "UV Editing"
+msgstr "UV编辑"
+
+
 msgid "Clone from Image/UV Map"
 msgstr "从图像/ UV 贴图克隆"
 
@@ -71881,6 +72084,10 @@ msgstr "特性权重"
 
 msgid "Find & Replace"
 msgstr "查找与替换"
+
+
+msgid "Auto Keyframing"
+msgstr "自动插入关键帧"
 
 
 msgid "Playback"
@@ -83495,6 +83702,10 @@ msgid "Overlay Settings"
 msgstr "叠加设置"
 
 
+msgid "Settings for display of overlays in the UV/Image editor"
+msgstr "UV/图像编辑器叠加层的显示设置"
+
+
 msgid "Rotation/Scaling Pivot"
 msgstr "旋转 / 缩放中心"
 
@@ -84790,6 +85001,10 @@ msgstr "在窗口尺寸内使用一个区域作为渲染视窗(当不通过相�
 
 msgid "Show Overlays"
 msgstr "显示叠加层"
+
+
+msgid "Display overlays like UV Maps and Metadata"
+msgstr "显示叠加，比如UV贴图和元数据"
 
 
 msgid "Get the node tree path as a string"
@@ -86180,6 +86395,10 @@ msgid "Last Selected Point"
 msgstr "最后选择的控制点"
 
 
+msgid "Active Vertex"
+msgstr "活动顶点"
+
+
 msgid "Vertex Bevel"
 msgstr "顶点倒角"
 
@@ -86528,10 +86747,6 @@ msgid "Frame Node"
 msgstr "帧节点"
 
 
-msgid "Grid levels"
-msgstr "栅格级数"
-
-
 msgid "Amount of grid lines displayed in the background"
 msgstr "在背景显示的网格线数量"
 
@@ -86562,10 +86777,6 @@ msgstr "节点背景图像"
 
 msgid "Node Selected"
 msgstr "选定节点"
-
-
-msgid "Noodle curving"
-msgstr "连线曲度"
 
 
 msgid "Curving of the noodle"
@@ -91851,6 +92062,11 @@ msgstr "删除全部组"
 
 
 msgctxt "Operator"
+msgid "New Shape from Mix"
+msgstr "混合后的新形状"
+
+
+msgctxt "Operator"
 msgid "Mirror Shape Key (Topology)"
 msgstr "镜像形态键(拓扑)"
 
@@ -93275,6 +93491,11 @@ msgid "Prefetch"
 msgstr "预读取"
 
 
+msgctxt "Operator"
+msgid "Copy from Active Track"
+msgstr "从激活的轨迹中复制"
+
+
 msgid "Track:"
 msgstr "轨迹:"
 
@@ -93926,6 +94147,10 @@ msgstr "选中项"
 
 msgid "Grid Shape"
 msgstr "栅格形状"
+
+
+msgid "Modified Edges"
+msgstr "修改后的边"
 
 
 msgid "Show Same Material"
@@ -94933,6 +95158,10 @@ msgid "Properties Editor"
 msgstr "属性编辑器"
 
 
+msgid "Only Active Keying Set"
+msgstr "仅活动插帧集"
+
+
 msgid "Layered Recording"
 msgstr "分层记录"
 
@@ -95438,10 +95667,6 @@ msgstr "保存为棚灯"
 
 msgid "Color Set %d"
 msgstr "颜色集 %d"
-
-
-msgid "Color d"
-msgstr "颜色 d"
 
 
 msgid "Player"
@@ -96129,6 +96354,21 @@ msgid "Mask Slice to New Object"
 msgstr "遮蔽切片到新物体"
 
 
+msgctxt "Operator"
+msgid "Face Set from Masked"
+msgstr "从被遮蔽面创建面组"
+
+
+msgctxt "Operator"
+msgid "Face Set from Visible"
+msgstr "从可见面创建面组"
+
+
+msgctxt "Operator"
+msgid "Face Set from Edit Mode Selection"
+msgstr "从编辑模式选中项创建面组"
+
+
 msgid "Init Face Sets"
 msgstr "初始化面组"
 
@@ -96395,6 +96635,11 @@ msgstr "强"
 msgctxt "Operator"
 msgid "Flip"
 msgstr "翻转"
+
+
+msgctxt "Operator"
+msgid "Set from Faces"
+msgstr "从面设置"
 
 
 msgctxt "Operator"
@@ -97222,6 +97467,16 @@ msgstr "多重帧"
 msgctxt "Operator"
 msgid "Frame Selected (Quad View)"
 msgstr "框显所选(四格视图)"
+
+
+msgctxt "Operator"
+msgid "Assign Automatic from Bones"
+msgstr "自动按骨骼指定"
+
+
+msgctxt "Operator"
+msgid "Assign from Bone Envelopes"
+msgstr "按骨骼封套指定"
 
 
 msgctxt "Operator"
