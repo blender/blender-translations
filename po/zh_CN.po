@@ -1,7 +1,7 @@
 
 msgid ""
 msgstr ""
-"Project-Id-Version: Blender 2.91.0 Alpha (b'f52f51aef212')\n"
+"Project-Id-Version: Blender 2.91.0 Beta (b'cf6c0760464f')\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-01-01 00:00:00\n"
 "PO-Revision-Date: \n"
@@ -3207,6 +3207,10 @@ msgstr "具有次级颜色特性"
 
 msgid "Has Strength Pressure"
 msgstr "存在力度压感"
+
+
+msgid "Has Tilt"
+msgstr "具有倾斜"
 
 
 msgid "Has Topology Rake"
@@ -8614,6 +8618,10 @@ msgid "Invert"
 msgstr "反转"
 
 
+msgid "Invert filter search"
+msgstr "反向过滤查找"
+
+
 msgid "Multi-Word Fuzzy Filter"
 msgstr "多词模糊过滤"
 
@@ -12303,10 +12311,6 @@ msgid "Limit forces to this collection"
 msgstr "限制力场至当前集合"
 
 
-msgid "Obstacle-Fluid Threshold"
-msgstr "障碍-流体阈值"
-
-
 msgid "Determines how much fluid is allowed in an obstacle cell (higher values will tag a boundary cell as an obstacle easier and reduce the boundary smoothening effect)"
 msgstr "确定障碍单元中允许的流体量(值越高会更容易将边界单元标记为障碍物并降低边界平滑效果)"
 
@@ -12611,8 +12615,8 @@ msgid "Data Depth"
 msgstr "数据位深"
 
 
-msgid "Half"
-msgstr "一半"
+msgid "Bit depth for fluid particles and grids (lower bit values reduce file size)"
+msgstr "流体粒子和网格的位深(调低位深可减小文件大小）"
 
 
 msgid "Particle (narrow) band width (higher value results in thicker band and more particles)"
@@ -12653,22 +12657,6 @@ msgstr "粒子缩放"
 
 msgid "The particle simulation is scaled up by this factor (compared to the base resolution of the domain)"
 msgstr "粒子模拟按此因子缩放(与域的基本分辨率相比）"
-
-
-msgid "Cache Compression"
-msgstr "压缩缓存"
-
-
-msgid "Lite"
-msgstr "轻度"
-
-
-msgid "Fast but not so effective compression"
-msgstr "速度快, 但压缩效率不高"
-
-
-msgid "Heavy"
-msgstr "重度"
 
 
 msgid "Maximum Resolution"
@@ -13529,6 +13517,10 @@ msgstr "使用纹理控制发射强度"
 
 msgid "Initial"
 msgstr "初始"
+
+
+msgid "Additional initial velocity in X, Y and Z direction (added to source velocity)"
+msgstr "X, Y和 Z方向的额外初始速度(添加到源速度)"
 
 
 msgid "Multiplier of source velocity passed to fluid (source velocity is non-zero only if object is moving)"
@@ -17140,6 +17132,14 @@ msgid "Clone Offset"
 msgstr "克隆位移"
 
 
+msgid "Soft Body Plasticity"
+msgstr "软体可塑性"
+
+
+msgid "How much the cloth preserves the original shape, acting as a soft body"
+msgstr "布料保留原始形状的程度，充当软体"
+
+
 msgid "Cloth Damping"
 msgstr "布料阻尼"
 
@@ -18026,6 +18026,14 @@ msgstr "纹理采样增加值"
 
 msgid "Texture Slot"
 msgstr "纹理槽"
+
+
+msgid "Tilt Strength"
+msgstr "倾斜强度"
+
+
+msgid "How much the tilt of the pen will affect the brush"
+msgstr "笔的倾斜度对笔刷的影响程度"
 
 
 msgid "Tip Roundness"
@@ -19138,6 +19146,10 @@ msgstr "填充模式"
 
 msgid "Mode of filling curve"
 msgstr "曲线填充模式"
+
+
+msgid "Half"
+msgstr "一半"
 
 
 msgid "Distance to move the curve parallel to its normals"
@@ -22228,10 +22240,6 @@ msgstr "检测影片剪辑的帧率，以帧/秒为单位"
 
 msgid "Detected duration of movie clip in frames"
 msgstr "检测到的视频帧区间"
-
-
-msgid "Offset of footage first frame relative to it's file name (affects only how footage is loading, does not change data associated with a clip)"
-msgstr "与文件名对应的镜头首帧偏移 (仅影响镜头的读取方式, 不改变剪辑的关联数据)"
 
 
 msgid "Global scene frame number at which this movie starts playing (affects all data associated with a clip)"
@@ -29831,10 +29839,6 @@ msgid "Parenting settings for masking element"
 msgstr "遮罩元素的默认设置"
 
 
-msgid "ID-block to which masking element would be parented to or to it's property"
-msgstr "遮罩元素的父级或自身属性的 ID 块"
-
-
 msgid "ID Type"
 msgstr "标识类型"
 
@@ -30431,22 +30435,6 @@ msgstr "布局"
 
 msgid "Matte"
 msgstr "蒙版"
-
-
-msgid "Emitters"
-msgstr "发射源"
-
-
-msgid "Events"
-msgstr "事件"
-
-
-msgid "Execute"
-msgstr "执行"
-
-
-msgid "Forces"
-msgstr "力场"
 
 
 msgid "Node Context Menu"
@@ -31680,6 +31668,10 @@ msgid "Mirror along the local X, Y and/or Z axes, over the object origin"
 msgstr "绕物体原点，沿局部 X、Y 和/或 Z 轴镜像"
 
 
+msgid "Mesh to Volume"
+msgstr "网格到体积"
+
+
 msgid "Multiresolution"
 msgstr "多级精度"
 
@@ -31740,20 +31732,12 @@ msgid "Weld"
 msgstr "焊接"
 
 
-msgid "Find groups of vertices closer then dist and merges them together"
-msgstr "查找更靠近的顶点组，然后分解并合并它们"
-
-
 msgid "Wireframe"
 msgstr "线框"
 
 
 msgid "Convert faces into thickened edges"
 msgstr "将面转换为加厚的边"
-
-
-msgid "Mesh to Volume"
-msgstr "网格到体积"
 
 
 msgid "Deform the shape using an armature object"
@@ -34711,14 +34695,6 @@ msgstr "原点与形变坐标系偏移距离"
 
 msgid "Simulation Modifier"
 msgstr "模拟修改器"
-
-
-msgid "Identifier of the simulation component that should be accessed"
-msgstr "应被访问的模拟组件的标识符"
-
-
-msgid "Simulation to access"
-msgstr "将访问的模拟"
 
 
 msgid "Skin Modifier"
@@ -41002,98 +40978,6 @@ msgid "Simulation Node"
 msgstr "模拟节点"
 
 
-msgid "Age Reached Event"
-msgstr "寿命触及事件"
-
-
-msgid "Emit Particles"
-msgstr "发射粒子"
-
-
-msgid "Execute Condition"
-msgstr "执行条件"
-
-
-msgid "Kill Particle"
-msgstr "消除粒子"
-
-
-msgid "Multi Execute"
-msgstr "多重执行"
-
-
-msgid "Particle Attribute"
-msgstr "粒子属性"
-
-
-msgid "Expected type of the attribute. A default value is returned if the type is not correct"
-msgstr "属性的预期类型。如果类型不正确，则返回默认值"
-
-
-msgid "Particle Birth Event"
-msgstr "粒子诞生事件"
-
-
-msgid "Particle Mesh Collision Event"
-msgstr "粒子网格碰撞事件"
-
-
-msgid "Particle Mesh Emitter"
-msgstr "粒子网格发射器"
-
-
-msgid "Particle Simulation"
-msgstr "粒子模拟"
-
-
-msgid "Particle Time Step Event"
-msgstr "粒子时间步进事件"
-
-
-msgid "When in each time step is the event triggered"
-msgstr "在每个时间步进点触发事件时"
-
-
-msgid "Begin"
-msgstr "开始"
-
-
-msgid "Execute for every particle at the beginning of each time step"
-msgstr "在每个时间步进开始时为每个粒子执行"
-
-
-msgid "Execute for every particle at the end of each time step"
-msgstr "在每个时间步进结束时为每个粒子执行"
-
-
-msgid "Set Particle Attribute"
-msgstr "设置粒子属性"
-
-
-msgid "Expected type of the attribute. Nothing is done if the type is not correct"
-msgstr "属性的预期类型。如果类型不正确，则不执行任何操作"
-
-
-msgid "The time to output"
-msgstr "输出的时间"
-
-
-msgid "Simulation Time"
-msgstr "模拟时间"
-
-
-msgid "Time since start of simulation"
-msgstr "模拟开始以来的时间"
-
-
-msgid "Scene Time"
-msgstr "场景时间"
-
-
-msgid "Time shown in the timeline"
-msgstr "时间线上显示的时间"
-
-
 msgid "Texture Node"
 msgstr "纹理节点"
 
@@ -41164,10 +41048,6 @@ msgstr "插槽数量"
 
 msgid "Data type of the socket"
 msgstr "槽位的数据类型"
-
-
-msgid "Control Flow"
-msgstr "控制流"
 
 
 msgid "Link is valid"
@@ -49899,6 +49779,14 @@ msgid "Switch Tint colors"
 msgstr "切换染色"
 
 
+msgid "Black"
+msgstr "黑色"
+
+
+msgid "White"
+msgstr "白色"
+
+
 msgctxt "Operator"
 msgid "Transform Stroke Fill"
 msgstr "变换笔画填充"
@@ -50376,6 +50264,15 @@ msgstr "展平控制柄"
 
 msgid "Flatten handles for a smoother transition"
 msgstr "展平一个平滑过渡的控制柄"
+
+
+msgctxt "Operator"
+msgid "Snap Cursor Value to Selected"
+msgstr "游标 --> 选中项"
+
+
+msgid "Place the cursor value on the average value of selected keyframes"
+msgstr "将光标置于所选关键帧的平均帧值"
 
 
 msgctxt "Operator"
@@ -52058,10 +51955,6 @@ msgstr "优先尝试滑动羽化区, 而非顶点"
 msgctxt "Operator"
 msgid "Slide Spline Curvature"
 msgstr "滑动样条线曲率"
-
-
-msgid "Slide a point on the spline to define it's curvature"
-msgstr "滑动样条线上的点来定义它的曲率"
 
 
 msgctxt "Operator"
@@ -54236,6 +54129,10 @@ msgstr "选择所选面区的边界线"
 
 msgid "Merge vertices based on their proximity"
 msgstr "基于靠近程度合并顶点"
+
+
+msgid "Sharp Edges"
+msgstr "锐边"
 
 
 msgid "Merge selected to other unselected vertices"
@@ -57934,6 +57831,10 @@ msgid "Fur Density"
 msgstr "毛发密度"
 
 
+msgid "Heavy"
+msgstr "重度"
+
+
 msgid "View %"
 msgstr "视图 %"
 
@@ -57949,15 +57850,6 @@ msgstr "渲染液体物体"
 
 msgid "Keep the liquid objects visible during rendering"
 msgstr "在渲染过程中保持液体物体可见"
-
-
-msgctxt "Operator"
-msgid "Quick Particles"
-msgstr "快速粒子"
-
-
-msgid "Use active object as particle emitter"
-msgstr "使用活动物体作为粒子发射器"
 
 
 msgctxt "Operator"
@@ -59666,6 +59558,10 @@ msgstr "重命名活动项"
 
 msgid "Use Active"
 msgstr "使用活动项"
+
+
+msgid "Rename the active item, rather than the one the mouse is over"
+msgstr "重命名活动项，而非鼠标悬停的项目"
 
 
 msgctxt "Operator"
@@ -64057,8 +63953,12 @@ msgid "Use a union boolean operation"
 msgstr "使用求和布尔操作"
 
 
-msgid "Join the new mesh as separate geometry, without preforming any boolean operation"
-msgstr "将新网格作为单独的几何体合并，无需执行任何布尔操作"
+msgid "Use Cursor for Depth"
+msgstr "使用游标作为深度"
+
+
+msgid "Use cursor location and radius for the dimensions and position of the trimming shape"
+msgstr "将游标位置和半径用于修剪形状的尺寸和位置"
 
 
 msgctxt "Operator"
@@ -71427,10 +71327,6 @@ msgid "Geometry Data"
 msgstr "几何数据"
 
 
-msgid "Transparency"
-msgstr "透明"
-
-
 msgid "Start & End Mapping"
 msgstr "开始 & 结束映射"
 
@@ -71835,6 +71731,10 @@ msgstr "弹性"
 
 msgid "Viscoelastic Springs"
 msgstr "粘带弹性"
+
+
+msgid "Forces"
+msgstr "力场"
 
 
 msgid "Timing"
@@ -72697,13 +72597,13 @@ msgstr "套索遮罩"
 
 
 msgctxt "Operator"
-msgid "Box Hide"
-msgstr "框选隐藏"
+msgid "Line Mask"
+msgstr "线条遮罩"
 
 
 msgctxt "Operator"
-msgid "Line Mask"
-msgstr "线条遮罩"
+msgid "Box Hide"
+msgstr "框选隐藏"
 
 
 msgctxt "Operator"
@@ -73668,8 +73568,20 @@ msgid "Active point cache for physics simulations"
 msgstr "用于物理模拟的点缓存"
 
 
+msgid "Cache Compression"
+msgstr "压缩缓存"
+
+
 msgid "No compression"
 msgstr "无压缩"
+
+
+msgid "Lite"
+msgstr "轻度"
+
+
+msgid "Fast but not so effective compression"
+msgstr "速度快, 但压缩效率不高"
 
 
 msgid "Cache file path"
@@ -74524,14 +74436,6 @@ msgid "Enable Cycles debugging options for developers"
 msgstr "为开发人员启用Cycles调试选项"
 
 
-msgid "Image Editor Legacy Drawing"
-msgstr "旧版图像编辑器绘图"
-
-
-msgid "Use legacy UV/Image editor drawing"
-msgstr "使用旧版UV/图像编辑器绘制"
-
-
 msgid "New Hair Type"
 msgstr "新毛发类型"
 
@@ -74540,12 +74444,12 @@ msgid "Enable the new hair type in the ui"
 msgstr "在UI中启用新毛发类型"
 
 
-msgid "New Particle System"
-msgstr "新粒子系统"
+msgid "Sculpt Mode Tilt Support"
+msgstr "雕刻模式倾斜支持"
 
 
-msgid "Enable the new particle system in the ui"
-msgstr "在UI中启用新的粒子系统"
+msgid "Support for pen tablet tilt events in Sculpt Mode"
+msgstr "在雕刻模式下支持数位板倾斜事件"
 
 
 msgid "Use the new Vertex Painting system"
@@ -74558,14 +74462,6 @@ msgstr "切换物体操作"
 
 msgid "Enable the operator to switch objects by pressing D"
 msgstr "启用该操作，通过按键D切换物体"
-
-
-msgid "Tools with Missing Icons"
-msgstr "图标缺失的工具"
-
-
-msgid "Show tools with missing icons"
-msgstr "显示图标缺失的工具"
 
 
 msgid "Undo Legacy"
@@ -78218,6 +78114,10 @@ msgid "Is Stroke Start"
 msgstr "笔画起始"
 
 
+msgid "Mouse Event"
+msgstr "鼠标事件"
+
+
 msgid "Tablet pressure"
 msgstr "数位板压力"
 
@@ -78228,6 +78128,14 @@ msgstr "笔刷大小"
 
 msgid "Brush size in screen space"
 msgstr "屏幕空间中的笔刷尺寸"
+
+
+msgid "Tilt X"
+msgstr "X 向倾斜"
+
+
+msgid "Tilt Y"
+msgstr "Y 向倾斜"
 
 
 msgid "Implements the properties for the SVG exporter"
@@ -80242,10 +80150,6 @@ msgid "Elastic Limit"
 msgstr "弹力极限"
 
 
-msgid "How much the spring has to be stretched/compressed in order to change it's rest length"
-msgstr "改变弹簧的静止长度所需的拉伸/压缩量"
-
-
 msgid "Light Direction"
 msgstr "光照方向"
 
@@ -81709,10 +81613,6 @@ msgid "Sequence Color Balance Data"
 msgstr "序列色彩平衡"
 
 
-msgid "Color balance parameters for a sequence strip and it's modifiers"
-msgstr "序列片段的色彩平衡参数"
-
-
 msgid "Color balance gain (highlights)"
 msgstr "色彩平衡增益值 (亮调)"
 
@@ -82919,16 +82819,8 @@ msgid "Display dashed black-white edges"
 msgstr "绘制混合的黑白边"
 
 
-msgid "Black"
-msgstr "黑色"
-
-
 msgid "Display black edges"
 msgstr "绘制黑色边线"
-
-
-msgid "White"
-msgstr "白色"
 
 
 msgid "Display white edges"
@@ -84335,6 +84227,14 @@ msgid "Visual Effects Properties"
 msgstr "视效属性"
 
 
+msgid "Tab Search Results"
+msgstr "选项卡查找结果"
+
+
+msgid "Whether or not each visible tab has a search result"
+msgstr "每个可见选项卡是否都有一个查找结果"
+
+
 msgid "Pin ID"
 msgstr "钉固ID"
 
@@ -85093,14 +84993,6 @@ msgstr "像素点坐标轴"
 
 msgid "Display UV coordinates in pixels rather than from 0.0 to 1.0"
 msgstr "以像素为单位显示UV坐标，而不是从0.0到1.0"
-
-
-msgid "Display Smooth Edges"
-msgstr "显示平滑边线"
-
-
-msgid "Display UV edges anti-aliased"
-msgstr "使用抗锯齿来绘制 UV 的边"
 
 
 msgid "Display Stretch"
@@ -86747,6 +86639,10 @@ msgid "Frame Node"
 msgstr "帧节点"
 
 
+msgid "Grid Levels"
+msgstr "栅格级数"
+
+
 msgid "Amount of grid lines displayed in the background"
 msgstr "在背景显示的网格线数量"
 
@@ -86777,6 +86673,10 @@ msgstr "节点背景图像"
 
 msgid "Node Selected"
 msgstr "选定节点"
+
+
+msgid "Noodle Curving"
+msgstr "连线曲度"
 
 
 msgid "Curving of the noodle"
@@ -91043,6 +90943,10 @@ msgid "Step Rate Render"
 msgstr "步进速率渲染"
 
 
+msgid "Transparency"
+msgstr "透明"
+
+
 msgid "Direct Light"
 msgstr "直接光"
 
@@ -92339,10 +92243,6 @@ msgstr "游标颜色"
 
 msgid "Lock Frame"
 msgstr "锁定帧"
-
-
-msgid "Inverse Cursor Color"
-msgstr "反向游标颜色"
 
 
 msgid "Unlocked"
@@ -94061,6 +93961,16 @@ msgstr "不连续项(欧拉)过滤器"
 
 
 msgctxt "Operator"
+msgid "Cursor to Selection"
+msgstr "游标 -> 选中项"
+
+
+msgctxt "Operator"
+msgid "Cursor Value to Selection"
+msgstr "游标值 -> 选中项"
+
+
+msgctxt "Operator"
 msgid "Hide Selected Curves"
 msgstr "隐藏选中的曲线"
 
@@ -94078,11 +93988,6 @@ msgstr "精简(比例)"
 msgctxt "Operator"
 msgid "Decimate (Allowed Change)"
 msgstr "精简(受允许修改)"
-
-
-msgctxt "Operator"
-msgid "Cursor Value"
-msgstr "游标值"
 
 
 msgctxt "Operator"
@@ -95667,6 +95572,10 @@ msgstr "保存为棚灯"
 
 msgid "Color Set %d"
 msgstr "颜色集 %d"
+
+
+msgid "Color %d"
+msgstr "颜色 %d"
 
 
 msgid "Player"
@@ -99969,6 +99878,10 @@ msgid "Could not compute a valid data path"
 msgstr "无法计算出一条有效路径"
 
 
+msgid "Failed to create the override operation"
+msgstr "无法创建覆盖操作"
+
+
 msgid "File '%s' cannot be opened"
 msgstr "打不开文件 '%s'"
 
@@ -102902,6 +102815,10 @@ msgstr "游标 X"
 
 msgid "Cursor to Selection"
 msgstr "游标 -> 选中项"
+
+
+msgid "Cursor Value to Selection"
+msgstr "游标值 -> 选中项"
 
 
 msgid "Interpolation:"
@@ -106121,10 +106038,6 @@ msgid "Layer Mapping"
 msgstr "层映射"
 
 
-msgid "Sharp Edges"
-msgstr "锐边"
-
-
 msgid "Refresh"
 msgstr "刷新"
 
@@ -106982,6 +106895,10 @@ msgid "Save changes before closing?"
 msgstr "是否在关闭之前保存更改？"
 
 
+msgid "File Not Found"
+msgstr "文件未找到"
+
+
 msgid "Path is empty, cannot save"
 msgstr "路径为空，无法保存"
 
@@ -107092,6 +107009,10 @@ msgstr "尝试重新加载库 '%s' 自无效路径 '%s'"
 
 msgid "Trying to reload or relocate library '%s' to invalid path '%s'"
 msgstr "尝试重新加载或重新定位库 '%s' 至无效路径 '%s'"
+
+
+msgid "Cannot relocate library '%s' to current blend file '%s'"
+msgstr "无法将库 '%s' 重新定位到当前blend文件 '%s'"
 
 
 msgid "Win"
