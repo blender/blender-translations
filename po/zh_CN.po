@@ -1,7 +1,7 @@
 
 msgid ""
 msgstr ""
-"Project-Id-Version: Blender 2.92.0 Alpha (b'80e720ee4af4')\n"
+"Project-Id-Version: Blender 2.92.0 Alpha (b'd0954110024f')\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-01-01 00:00:00\n"
 "PO-Revision-Date: \n"
@@ -9005,7 +9005,7 @@ msgstr "毛发"
 
 
 msgctxt "ID"
-msgid "PointCloud"
+msgid "Point Cloud"
 msgstr "点云"
 
 
@@ -23577,11 +23577,6 @@ msgstr "表面"
 
 
 msgctxt "ID"
-msgid "Point Cloud"
-msgstr "点云"
-
-
-msgctxt "ID"
 msgid "Empty"
 msgstr "空物体"
 
@@ -24772,6 +24767,10 @@ msgstr "虚拟父级"
 
 msgid "Relative amount of virtual parents"
 msgstr "虚拟父级的相对量"
+
+
+msgid "Point Cloud"
+msgstr "点云"
 
 
 msgid "Point cloud data-block"
@@ -35397,14 +35396,6 @@ msgid "Triangulate only polygons with vertex count greater than or equal to this
 msgstr "仅对顶点数大于或等于该数字的面进行三角化"
 
 
-msgid "Polygon Method"
-msgstr "多边形划分方法"
-
-
-msgid "Method for splitting the polygons into triangles"
-msgstr "拆分多边形为三角面的方式"
-
-
 msgid "Beauty"
 msgstr "布线优化"
 
@@ -42102,6 +42093,14 @@ msgid "Remove all selected keyframes"
 msgstr "删除全部选择关键帧"
 
 
+msgid "Confirm"
+msgstr "确认"
+
+
+msgid "Prompt for confirmation"
+msgstr "确认提示"
+
+
 msgctxt "Operator"
 msgid "Duplicate Keyframes"
 msgstr "复制关键帧"
@@ -47829,14 +47828,6 @@ msgstr "新建文件夹"
 
 msgid "Create a new directory"
 msgstr "创建一个新的文件夹"
-
-
-msgid "Confirm"
-msgstr "确认"
-
-
-msgid "Prompt for confirmation"
-msgstr "确认提示"
 
 
 msgid "Name of new directory"
@@ -56549,10 +56540,6 @@ msgid "Assign New Geometry Node Group"
 msgstr "指定新的几何节点组"
 
 
-msgid "Create a new geometry node group and assign it the the active modifier"
-msgstr "创建新的几何节点组，并为其指定活动修改器"
-
-
 msgctxt "Operator"
 msgid "New Geometry Node Modifier"
 msgstr "新建几何节点修改器"
@@ -57119,20 +57106,8 @@ msgid "Curve from Mesh or Text objects"
 msgstr "网格/文本物体 -> 曲线"
 
 
-msgid "Mesh from Curve, Surface, Metaball, Text, or Pointcloud objects"
-msgstr "从曲线、曲面、融球、文本或点云物体置换为网格"
-
-
 msgid "Grease Pencil from Curve or Mesh objects"
 msgstr "曲线/网格 -> 蜡笔"
-
-
-msgid "Pointcloud"
-msgstr "点云"
-
-
-msgid "Pointcloud from Mesh objects"
-msgstr "网格 -> 点云"
 
 
 msgctxt "Operator"
@@ -57527,6 +57502,15 @@ msgstr "复制修改器"
 
 msgid "Duplicate modifier at the same position in the stack"
 msgstr "在队列中的相同位置上复制修改器"
+
+
+msgctxt "Operator"
+msgid "Copy Modifier to Selected"
+msgstr "复制修改器到选中项"
+
+
+msgid "Copy the modifier from the active object to all selected objects"
+msgstr "从活动物体复制粒子修改器到所选物体"
 
 
 msgctxt "Operator"
@@ -62526,15 +62510,6 @@ msgstr "复制棚灯设置"
 
 msgid "Copy Studio Light settings to the Studio Light editor"
 msgstr "复制棚灯光源设置到棚灯编辑器"
-
-
-msgctxt "Operator"
-msgid "Install Custom Studio Light"
-msgstr "安装自定义棚灯"
-
-
-msgid "Install a user defined studio light"
-msgstr "安装用户自定义棚灯"
 
 
 msgid "MatCap"
@@ -68085,10 +68060,6 @@ msgid "Area Weight"
 msgstr "区域权重"
 
 
-msgid "Weight projections vector by faces with larger areas"
-msgstr "较大面积面的权重投影矢量"
-
-
 msgid "Island Margin"
 msgstr "孤岛边距"
 
@@ -72915,10 +72886,6 @@ msgstr "插入关键帧设置"
 
 msgid "Onion Skin"
 msgstr "洋葱皮"
-
-
-msgid "Proxy & Cache"
-msgstr "代理 & 缓存"
 
 
 msgid "Cache Settings"
@@ -85804,10 +85771,6 @@ msgstr "Gizmo工具"
 
 msgid "Active tool gizmo"
 msgstr "激活Gizmo工具"
-
-
-msgid "Point Cloud"
-msgstr "点云"
 
 
 msgid "Speaker"
@@ -103447,8 +103410,20 @@ msgid "Applied modifier: %s"
 msgstr "已应用修改器: %s"
 
 
+msgid "Source object '%s' is not a grease pencil object"
+msgstr "源物体 '%s' 不是蜡笔物体"
+
+
+msgid "Destination object '%s' is not a grease pencil object"
+msgstr "目标物体 '%s' 不是蜡笔物体"
+
+
 msgid "Cannot edit modifiers coming from linked data in a library override"
 msgstr "无法编辑来自库重写中关联数据的修改器"
+
+
+msgid "No supported objects were selected"
+msgstr "未选择受支持的物体"
 
 
 msgid "Requires selected vertices or active vertex group"
@@ -103555,6 +103530,22 @@ msgid "Modifier is disabled"
 msgstr "已禁用修改器"
 
 
+msgid "Object '%s' does not support %s modifiers"
+msgstr "物体 '%s' 不支持 %s 修改器"
+
+
+msgid "Modifier can only be added once to object '%s'"
+msgstr "仅可为物体 '%s' 添加一次修改器"
+
+
+msgid "Copying modifier '%s' to object '%s' failed"
+msgstr "将修改器 '%s' 复制到物体 '%s' 失败"
+
+
+msgid "Modifier '%s' was not copied to any objects"
+msgstr "修改器 '%s' 未被复制到任何物体"
+
+
 msgid "%d new levels rebuilt"
 msgstr "已重建 %d 新级数"
 
@@ -103569,6 +103560,18 @@ msgstr "禁止从编辑模式使用该修改器操作"
 
 msgid "Modifiers cannot be applied on override data"
 msgstr "修改器无法应用至重写数据"
+
+
+msgid "Not supported for \"Collision\" or \"Hook\" modifiers"
+msgstr "不支持\"碰撞\"或\"钩挂\"修改器"
+
+
+msgid "No selected object is active"
+msgstr "无选中物体处于活动状态"
+
+
+msgid "Object type of source object is not supported"
+msgstr "源物体的物体类型不受支持"
 
 
 msgid "OK?"
@@ -105589,10 +105592,6 @@ msgid "Node tree type %s undefined"
 msgstr "尚未定义节点树类型 %s"
 
 
-msgid "Outputs:"
-msgstr "输出项:"
-
-
 msgid "Sockets"
 msgstr "插口"
 
@@ -107530,10 +107529,6 @@ msgstr "%s '%s' 不在主数据库中, 不能移除"
 
 msgid "%s '%s' must have zero users to be removed, found %d (try with do_unlink=True parameter)"
 msgstr "%s '%s' 必须拥有0个用户才能删除, 查找 %d (尝试使用 do_unlink=True 参数)"
-
-
-msgid "Scene '%s' is the last, cannot be removed"
-msgstr "场景 '%s' 是最后一个场景, 无法被删除"
 
 
 msgid "ID type '%s' is not valid for an object"
