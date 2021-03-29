@@ -1,7 +1,7 @@
 
 msgid ""
 msgstr ""
-"Project-Id-Version: Blender 2.93.0 Alpha (b'14caab725799')\n"
+"Project-Id-Version: Blender 2.93.0 Alpha (b'4e34baddb917')\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-01-01 00:00:00\n"
 "PO-Revision-Date: 2020-01-04 05:04+0900\n"
@@ -975,12 +975,8 @@ msgid "Edge"
 msgstr "에지"
 
 
-msgid "Corner"
-msgstr "코너"
-
-
-msgid "Polygon"
-msgstr "폴리곤"
+msgid "Face"
+msgstr "페이스"
 
 
 msgid "Curve"
@@ -7536,10 +7532,6 @@ msgid "Object Instances"
 msgstr "오브젝트 인스턴스"
 
 
-msgid "All object instances to display or render (WARNING: only use this as an iterator, never as a sequence, and do not keep any references to its items)"
-msgstr "표시하거나 렌더링 할 모든 오브젝트 인스턴스 (경고 : 반복자로만 사용하고, 시퀀스로 사용하지 말고 항목에 대한 참조를 유지하지 마십시오)"
-
-
 msgid "Evaluated objects in the dependency graph"
 msgstr "의존성 그래프에서 평가된 오브젝트"
 
@@ -7566,10 +7558,6 @@ msgstr "다음에 대해 원본 뷰 계층 종속성 그래프는 작성됩니�
 
 msgid "Dependency Graph Object Instance"
 msgstr "종속성 그래프 오브젝트 인스턴스"
-
-
-msgid "Extended information about dependency graph object iterator (WARNING: all data here is *evaluated* one, not original .blend IDs...)"
-msgstr "의존성 그래프 오브젝트 반복자에 대한 확장 정보 (경고: 여기에있는 모든 데이터는 원래의 .blend ID가 아닌 * 평가된* 것입니다.)"
 
 
 msgid "Instance Object"
@@ -7986,10 +7974,6 @@ msgstr "반전"
 
 msgid "Multi-Word Fuzzy Filter"
 msgstr "다중 단어 퍼지 필터"
-
-
-msgid "Perform fuzzy/multi-word matching (WARNING: May be slow)"
-msgstr "퍼지/다중 단어 일치 수행 (경고: 느리게 나타날 수 있음)"
 
 
 msgid "Driver for the value of a setting based on an external value"
@@ -19672,10 +19656,6 @@ msgid "Extra scaling added to the scale of the object"
 msgstr "오브젝트의 축적에 추가된 추가 축적 조정"
 
 
-msgid "Absolute bounding box dimensions of the object (WARNING: assigning to it or its members multiple consecutive times will not work correctly, as this needs up-to-date evaluated data)"
-msgstr "오브젝트의 절대 경계 박스 크기 (경고 : 최신 평가 데이터가 필요하므로 오브젝트 또는 해당 멤버에 여러 번 연속으로 할당하면 올바르게 작동하지 않습니다)"
-
-
 msgid "Object Display"
 msgstr "오브젝트 표시"
 
@@ -19930,10 +19910,6 @@ msgstr "제약 조건 및 부모 지정이 적용되기 전에 위치, 회전 �
 
 msgid "Local Matrix"
 msgstr "로컬 매트릭스"
-
-
-msgid "Parent relative transformation matrix - WARNING: Only takes into account 'Object' parenting, so e.g. in case of bone parenting you get a matrix relative to the Armature object, not to the actual parent bone"
-msgstr "부모 상대 변환 매트릭스 - 경고: '오브젝트'부모 지정만을 고려합니다. 아마튜어 부모 지정의 경우, 실제 부모 본이 아닌, 아마튜어 오브젝트를 기준으로 매트릭스를 얻습니다"
 
 
 msgid "Parent Inverse Matrix"
@@ -27241,10 +27217,6 @@ msgid "Edge Data"
 msgstr "에지 데이터"
 
 
-msgid "Face"
-msgstr "페이스"
-
-
 msgid "Face Data"
 msgstr "페이스 데이터"
 
@@ -27591,6 +27563,10 @@ msgstr "삼각형 노멀"
 
 msgid "Local space unit length normal vector for this triangle"
 msgstr "이 삼각형의 지역 공간 단위 길이 노멀 벡터"
+
+
+msgid "Polygon"
+msgstr "폴리곤"
 
 
 msgid "Index of mesh polygon that the triangle is a part of"
@@ -30964,10 +30940,6 @@ msgstr "메쉬를 삼각분할"
 
 msgid "Keep Normals"
 msgstr "노멀을 유지"
-
-
-msgid "Try to preserve custom normals (WARNING: depending on chosen triangulation method, shading may not be fully preserved, 'Fixed' method usually gives the best result here)"
-msgstr "사용자 정의 노멀을 유지하려고합니다 (경고 : 선택한 삼각 측량 방법에 따라 음영이 온전히 유지되지 않을 수 있습니다. '고정된' 메서드가 일반적으로 여기에서 최상의 결과를 제공합니다)"
 
 
 msgid "Minimum Vertices"
@@ -35086,8 +35058,24 @@ msgid "Equal"
 msgstr "동일한"
 
 
-msgid "Int"
-msgstr "정수"
+msgid "Min Max"
+msgstr "최소 최대"
+
+
+msgid "Interpolation Type"
+msgstr "보간 유형"
+
+
+msgid "Linear interpolation between From Min and From Max values"
+msgstr "From Min과 From Max 값 사이의 선형 보간"
+
+
+msgid "Stepped Linear"
+msgstr "계단형 선형"
+
+
+msgid "Stepped linear interpolation between From Min and From Max values"
+msgstr "From Min과 From Max 값 사이의 단계별 선형 보간"
 
 
 msgid "Cross Product"
@@ -35339,18 +35327,6 @@ msgid "Clamp Type"
 msgstr "클램프 유형"
 
 
-msgid "Min Max"
-msgstr "최소 최대"
-
-
-msgid "Clamp values using Min and Max values"
-msgstr "최소값과 최대 값을 사용한 클램프 값"
-
-
-msgid "Clamp values between Min and Max range"
-msgstr "최소 및 최대 범위 사이의 클램프 값"
-
-
 msgid "Combine HSV"
 msgstr "결합 HSV"
 
@@ -35413,22 +35389,6 @@ msgstr "라이트 경로"
 
 msgid "Clamp the result to the target range [To Min, To Max]"
 msgstr "결과를 대상 범위로 고정 [To Min, To Max]"
-
-
-msgid "Interpolation Type"
-msgstr "보간 유형"
-
-
-msgid "Linear interpolation between From Min and From Max values"
-msgstr "From Min과 From Max 값 사이의 선형 보간"
-
-
-msgid "Stepped Linear"
-msgstr "계단형 선형"
-
-
-msgid "Stepped linear interpolation between From Min and From Max values"
-msgstr "From Min과 From Max 값 사이의 단계별 선형 보간"
 
 
 msgid "Type of vector that the mapping transforms"
@@ -36209,6 +36169,10 @@ msgstr "소켓의 이름"
 
 msgid "Data type of the socket"
 msgstr "소켓의 데이터 유형"
+
+
+msgid "Int"
+msgstr "정수"
 
 
 msgid "From node"
@@ -37760,10 +37724,6 @@ msgid "Update Animated Transform Constraints"
 msgstr "에니메이션화 변형 제약을 업데이트"
 
 
-msgid "Convert fcurves/drivers affecting rotations to radians (Warning: use this only once!)"
-msgstr "라디안으로 회전에 영향을 미치는 드라이버/F 커브를 변환 (경고: 한 번만 사용!)"
-
-
 msgctxt "Operator"
 msgid "Align Bones"
 msgstr "본 정렬"
@@ -37999,10 +37959,6 @@ msgstr "선택한 뼈 이름의 축 접미사를 뒤집고 수정합니다"
 
 msgid "Strip Numbers"
 msgstr "스트립 번호"
-
-
-msgid "Try to remove right-most dot-number from flipped names (WARNING: may result in incoherent naming in some cases)"
-msgstr "대칭된 이름에서 가장 오른쪽의 도트 번호를 제거 (경고 : 경우에 따라 이름이 일관되지 않을 수 있음)"
 
 
 msgctxt "Operator"
@@ -48283,10 +48239,6 @@ msgid "Sort selected elements from nearest to farthest from 3D cursor"
 msgstr "선택한 요소를 3D 커서에서 가까운 곳에서 먼 곳으로 분류"
 
 
-msgid "Move all selected elements in first places, preserving their relative order (WARNING: this will affect unselected elements' indices as well!)"
-msgstr "선택한 모든 요소를 첫 번째 장소로 이동하여 상대적 순서를 유지합니다 (경고: 선택되지 않은 요소의 인덱스에도 영향을 줍니다)."
-
-
 msgid "Randomize order of selected elements"
 msgstr "선택된 요소들의 순서를 랜덤화"
 
@@ -49899,10 +49851,6 @@ msgstr "데이터를 대상에 적용할 때 사용하는 펙터 (정확한 동�
 
 msgid "Auto Transform"
 msgstr "자동 변환"
-
-
-msgid "Automatically compute transformation to get the best possible match between source and destination meshes (WARNING: results will never be as good as manual matching of objects)"
-msgstr "원본 및 대상 메쉬간에 최상의 일치를 얻기 위해 변환을 자동으로 계산합니다 (경고: 결과는 결코 오브젝트의 수동 일치만큼 좋지 않습니다)"
 
 
 msgid "Create Data"
@@ -52585,10 +52533,6 @@ msgstr "아웃라이너 라이브러리 작업"
 
 msgid "Library Operation"
 msgstr "라이브러리 작업"
-
-
-msgid "Delete this library and all its item from Blender - WARNING: no undo"
-msgstr "Blender에서 이 라이브러리 및 모든 항목을 삭제 - 경고: 실행 취소 불가"
 
 
 msgid "Relocate"
@@ -74757,6 +74701,10 @@ msgid "Don't snap to pixels"
 msgstr "픽셀에 스냅하지 마십시오"
 
 
+msgid "Corner"
+msgstr "코너"
+
+
 msgid "Snap to pixel corners"
 msgstr "픽셀 코너에 스냅"
 
@@ -77106,10 +77054,6 @@ msgid "Unified Paint Settings"
 msgstr "통일된 페인트 설정"
 
 
-msgid "WPaint Auto-Normalize"
-msgstr "W페인트 자동-노멀라이즈"
-
-
 msgid "Ensure all bone-deforming vertex groups add up to 1.0 while weight painting"
 msgstr "웨이트 페인팅 중에 모든 본 변형 버텍스 그룹이 최대 1.0에 추가되는지 확인"
 
@@ -77204,10 +77148,6 @@ msgstr "에지 & 페이스를 분할"
 
 msgid "Automatically split edges and faces"
 msgstr "자동으로 에지와 페이스를 분할합니다"
-
-
-msgid "WPaint Multi-Paint"
-msgstr "WPaint 다중 페인트"
 
 
 msgid "Paint across the weights of all selected bones, maintaining their relative influence"
@@ -81294,10 +81234,6 @@ msgstr "노이즈 양"
 
 msgid "Min Distance"
 msgstr "최소 거리"
-
-
-msgid "Enable physics for:"
-msgstr "다음에 대해 피직스를 사용:"
 
 
 msgctxt "Operator"

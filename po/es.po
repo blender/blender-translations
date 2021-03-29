@@ -1,7 +1,7 @@
 
 msgid ""
 msgstr ""
-"Project-Id-Version: Blender 2.93.0 Alpha (b'14caab725799')\n"
+"Project-Id-Version: Blender 2.93.0 Alpha (b'4e34baddb917')\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-01-01 00:00:00\n"
 "PO-Revision-Date: \n"
@@ -1110,20 +1110,8 @@ msgid "Attribute on mesh edge"
 msgstr "Atributo en bordes de una malla"
 
 
-msgid "Corner"
-msgstr "Esquinas"
-
-
-msgid "Attribute on mesh polygon corner"
-msgstr "Atributo en esquinas de los polígonos de una malla"
-
-
-msgid "Polygon"
-msgstr "Polígono"
-
-
-msgid "Attribute on mesh polygons"
-msgstr "Atributo en polígonos de una malla"
+msgid "Face"
+msgstr "Cara"
 
 
 msgid "Curve"
@@ -8199,10 +8187,6 @@ msgid "Object Instances"
 msgstr "Instancias del objeto"
 
 
-msgid "All object instances to display or render (WARNING: only use this as an iterator, never as a sequence, and do not keep any references to its items)"
-msgstr "Todas las instancias del objeto a ser mostradas en el procesamiento (ADVERTENCIA: sólo usar esto como iterador, nunca como una secuencia, y no mantener ninguna referencia a sus elementos)"
-
-
 msgid "Evaluated objects in the dependency graph"
 msgstr "Objetos evaluados en la gráfica de dependencias"
 
@@ -8233,10 +8217,6 @@ msgstr "Capa de visualización original para la cual fue construida la gráfica 
 
 msgid "Dependency Graph Object Instance"
 msgstr "Instancia de objeto en la gráfica de dependencias"
-
-
-msgid "Extended information about dependency graph object iterator (WARNING: all data here is *evaluated* one, not original .blend IDs...)"
-msgstr "Información extendida acerca del iterador de objetos de la gráfica de dependencias (ADVERTENCIA: aquí se *evalúan* todos los datos, no los ID originales del .blend)"
 
 
 msgid "Instance Object"
@@ -8705,10 +8685,6 @@ msgstr "Invierte el filtro de búsqueda"
 
 msgid "Multi-Word Fuzzy Filter"
 msgstr "Filtro difuso de múltiples palabras"
-
-
-msgid "Perform fuzzy/multi-word matching (WARNING: May be slow)"
-msgstr "Permite realizar una coincidencia difusa de múltiples palabras (ADVERTENCIA: puede ser lento)"
 
 
 msgid "Driver for the value of a setting based on an external value"
@@ -22695,10 +22671,6 @@ msgid "Extra scaling added to the scale of the object"
 msgstr "Redimensionamiento extra, adicionado al tamaño actual del objeto"
 
 
-msgid "Absolute bounding box dimensions of the object (WARNING: assigning to it or its members multiple consecutive times will not work correctly, as this needs up-to-date evaluated data)"
-msgstr "Dimensiones absolutas del volumen delimitador del objeto (ADVERTENCIA: asignarlo a él o sus miembros varias veces consecutivas no funcionará correctamente, dado que necesita datos actualizados para evaluar)"
-
-
 msgid "Object Display"
 msgstr "Visualización de objetos"
 
@@ -22973,10 +22945,6 @@ msgstr "Acceso a la matriz de posición, rotación y escala (incluyendo las rela
 
 msgid "Local Matrix"
 msgstr "Matriz local"
-
-
-msgid "Parent relative transformation matrix - WARNING: Only takes into account 'Object' parenting, so e.g. in case of bone parenting you get a matrix relative to the Armature object, not to the actual parent bone"
-msgstr "Matriz de transformaciones relativa al superior - ADVERTENCIA: Sólo toma en consideración la subordinación a 'Objetos', por lo tanto, p.ej: en caso de un hueso subordinado a otro hueso, se obtendrá una matriz relativa al objeto Esqueleto y no al hueso superior"
 
 
 msgid "Parent Inverse Matrix"
@@ -30784,10 +30752,6 @@ msgid "Edge Data"
 msgstr "Bordes"
 
 
-msgid "Face"
-msgstr "Cara"
-
-
 msgid "Face Data"
 msgstr "Caras"
 
@@ -31182,6 +31146,10 @@ msgstr "Normal del triángulo"
 
 msgid "Local space unit length normal vector for this triangle"
 msgstr "Versor normal de este triángulo, en espacio local"
+
+
+msgid "Polygon"
+msgstr "Polígono"
 
 
 msgid "Index of mesh polygon that the triangle is a part of"
@@ -35115,10 +35083,6 @@ msgstr "Triangula la malla"
 
 msgid "Keep Normals"
 msgstr "Mantener normales"
-
-
-msgid "Try to preserve custom normals (WARNING: depending on chosen triangulation method, shading may not be fully preserved, 'Fixed' method usually gives the best result here)"
-msgstr "Intenta preservar las normales personalizadas (ADVERTENCIA: dependiendo del método de triangulación escogido, puede que no sea posible preservar el sombreado, el método 'Fijo' es el que usualmente da los mejores resultados)"
 
 
 msgid "Minimum Vertices"
@@ -39657,10 +39621,6 @@ msgid "Outputs the opposite of the input"
 msgstr "Produce el opuesto del conector de entrada"
 
 
-msgid "Combine Strings"
-msgstr "Combinar cadenas"
-
-
 msgid "Float Compare"
 msgstr "Comparar decimal"
 
@@ -39705,24 +39665,8 @@ msgid "True when both inputs are not approximately equal"
 msgstr "Verdadero cuando ambas entradas no sean aproximadamente iguales"
 
 
-msgid "Group Instance ID"
-msgstr "ID instancia de grupo"
-
-
-msgid "Object Transforms"
-msgstr "Transformaciones del objeto"
-
-
 msgid "Random Float"
 msgstr "Decimal aleatorio"
-
-
-msgid "Data type for inputs and outputs"
-msgstr "Tipo de datos de entradas y salidas"
-
-
-msgid "Int"
-msgstr "Entero"
 
 
 msgid "Geometry Node"
@@ -39757,6 +39701,10 @@ msgid "Input Type Vector"
 msgstr "Entrada de tipo Vector"
 
 
+msgid "Min Max"
+msgstr "Mín. Máx."
+
+
 msgid "Attribute Color Ramp"
 msgstr "Rampa de color (atributo)"
 
@@ -39775,6 +39723,38 @@ msgstr "Entrada de tipo B"
 
 msgid "Attribute Fill"
 msgstr "Valor (atributo)"
+
+
+msgid "Interpolation Type"
+msgstr "Tipo de interpolación"
+
+
+msgid "Linear interpolation between From Min and From Max values"
+msgstr "Interpolación lineal entre los valores Desde mín y Desde máx"
+
+
+msgid "Stepped Linear"
+msgstr "Lineal escalonada"
+
+
+msgid "Stepped linear interpolation between From Min and From Max values"
+msgstr "Interpolación lineal escalonada entre los valores Desde mín y Desde máx"
+
+
+msgid "Smooth Step"
+msgstr "Escalonada suave"
+
+
+msgid "Smooth Hermite edge interpolation between From Min and From Max values"
+msgstr "Interpolación de bordes Hermite suave entre los valores Desde mín y Desde máx"
+
+
+msgid "Smoother Step"
+msgstr "Escalonada más suave"
+
+
+msgid "Smoother Hermite edge interpolation between From Min and From Max values"
+msgstr "Interpolación de bordes Hermite más suave entre los valores Desde mín y Desde máx"
 
 
 msgid "Attribute Math"
@@ -40270,18 +40250,6 @@ msgid "Clamp Type"
 msgstr "Tipo de limitación"
 
 
-msgid "Min Max"
-msgstr "Mín. Máx."
-
-
-msgid "Clamp values using Min and Max values"
-msgstr "Limita los valores usando los valores Mín y Máx"
-
-
-msgid "Clamp values between Min and Max range"
-msgstr "Limita los valores dentro del rango de Mín a Máx"
-
-
 msgid "Combine HSV"
 msgstr "Combinar TSV"
 
@@ -40344,38 +40312,6 @@ msgstr "Trayectoria de rayo"
 
 msgid "Clamp the result to the target range [To Min, To Max]"
 msgstr "Limita el resultado al rango objetivo, entre [Hasta mín, Hasta máx]"
-
-
-msgid "Interpolation Type"
-msgstr "Tipo de interpolación"
-
-
-msgid "Linear interpolation between From Min and From Max values"
-msgstr "Interpolación lineal entre los valores Desde mín y Desde máx"
-
-
-msgid "Stepped Linear"
-msgstr "Lineal escalonada"
-
-
-msgid "Stepped linear interpolation between From Min and From Max values"
-msgstr "Interpolación lineal escalonada entre los valores Desde mín y Desde máx"
-
-
-msgid "Smooth Step"
-msgstr "Escalonada suave"
-
-
-msgid "Smooth Hermite edge interpolation between From Min and From Max values"
-msgstr "Interpolación de bordes Hermite suave entre los valores Desde mín y Desde máx"
-
-
-msgid "Smoother Step"
-msgstr "Escalonada más suave"
-
-
-msgid "Smoother Hermite edge interpolation between From Min and From Max values"
-msgstr "Interpolación de bordes Hermite más suave entre los valores Desde mín y Desde máx"
 
 
 msgid "Type of vector that the mapping transforms"
@@ -41336,6 +41272,10 @@ msgstr "Nombre del conector"
 
 msgid "Data type of the socket"
 msgstr "Tipo de dato del conector"
+
+
+msgid "Int"
+msgstr "Entero"
 
 
 msgid "From node"
@@ -43007,15 +42947,6 @@ msgstr "Define interactivamente el rango de fotogramas usado para la reproducci�
 
 
 msgctxt "Operator"
-msgid "Show Group Colors"
-msgstr "Mostrar colores del grupo"
-
-
-msgid "This option moved to Preferences > Animation"
-msgstr "Esta opción fue movida a Preferencias > Animación"
-
-
-msgctxt "Operator"
 msgid "Set Start Frame"
 msgstr "Definir fot. inicial"
 
@@ -43035,10 +42966,6 @@ msgstr "Actualiza las curvas-f y controladores que tienen efecto sobre restricci
 
 msgid "Convert to Radians"
 msgstr "Convertir a radianes"
-
-
-msgid "Convert fcurves/drivers affecting rotations to radians (Warning: use this only once!)"
-msgstr "Convierte las curvas-f y controladores de rotación a radianes (Advertencia: usar esto sólo una vez!)"
 
 
 msgctxt "Operator"
@@ -43289,10 +43216,6 @@ msgstr "Invierte (y corrije) los sufijos de eje de los nombres de los huesos sel
 
 msgid "Strip Numbers"
 msgstr "Quitar números"
-
-
-msgid "Try to remove right-most dot-number from flipped names (WARNING: may result in incoherent naming in some cases)"
-msgstr "Intenta eliminar la numeración posterior al punto en el extremo derecho de los nombres invertidos (ADVERTENCIA: puede resultar en nombres incoherentes en algunos casos)"
 
 
 msgctxt "Operator"
@@ -55124,10 +55047,6 @@ msgid "Sort selected elements from nearest to farthest from 3D cursor"
 msgstr "Ordena los elementos seleccionados del más cercano al más lejano del cursor 3D"
 
 
-msgid "Move all selected elements in first places, preserving their relative order (WARNING: this will affect unselected elements' indices as well!)"
-msgstr "Mueve todos los elementos seleccionados al primer lugar, preservando su orden relativo (CUIDADO: esto puede afectar también a los identificadores de los elementos no seleccionados)"
-
-
 msgid "Randomize order of selected elements"
 msgstr "Aleatoriza el orden de los elementos seleccionados"
 
@@ -56915,10 +56834,6 @@ msgstr "Factor a ser usado al aplicar los datos al destino (el comportamiento ex
 
 msgid "Auto Transform"
 msgstr "Transformación automática"
-
-
-msgid "Automatically compute transformation to get the best possible match between source and destination meshes (WARNING: results will never be as good as manual matching of objects)"
-msgstr "Permite calcular de forma automática la transformación para obtener la mejor coincidencia posible entre las mallas de origen y destino (ADVERTENCIA: los resultados nunca serán tan buenos como al hacer coincidir manualmente los objetos)"
 
 
 msgid "Create Data"
@@ -60042,10 +59957,6 @@ msgstr "Listado - operación con bibliotecas"
 
 msgid "Library Operation"
 msgstr "Operación de biblioteca"
-
-
-msgid "Delete this library and all its item from Blender - WARNING: no undo"
-msgstr "Borrar esta biblioteca y todos sus elementos de Blender - ADVERTENCIA: no se podrá deshacer"
 
 
 msgid "Relocate"
@@ -75237,10 +75148,6 @@ msgid "Auto Save Temporary Files"
 msgstr "Auto guardar archivos temporales"
 
 
-msgid "Automatic saving of temporary files in temp directory, uses process ID (sculpt and edit mode data won't be saved)"
-msgstr "Guardado automático de archivos temporales en el directorio temp, usa el ID del proceso (no se guardarán datos de los modos Escultura y Edición)"
-
-
 msgid "Compress File"
 msgstr "Comprimir archivo"
 
@@ -85390,6 +85297,10 @@ msgid "Don't snap to pixels"
 msgstr "No adherir a píxeles"
 
 
+msgid "Corner"
+msgstr "Esquinas"
+
+
 msgid "Snap to pixel corners"
 msgstr "Adherir a las esquinas de los píxeles"
 
@@ -88115,10 +88026,6 @@ msgid "Unified Paint Settings"
 msgstr "Opciones unificadas de pintura"
 
 
-msgid "WPaint Auto-Normalize"
-msgstr "Pintar-Infl normalizar autom."
-
-
 msgid "Ensure all bone-deforming vertex groups add up to 1.0 while weight painting"
 msgstr "Asegura que al pintar influencias, todos los grupos de vértices deformados por huesos sumen 1.0"
 
@@ -88227,10 +88134,6 @@ msgid "Automatic keyframe insertion using active Keying Set only"
 msgstr "Inserción automática de fotogramas clave, usando sólo el conjunto de claves activo"
 
 
-msgid "WPaint Lock-Relative"
-msgstr "Pintura infl. bloquear relativos"
-
-
 msgid "Display bone-deforming groups as if all locked deform groups were deleted, and the remaining ones were re-normalized"
 msgstr "Muestra los grupos de huesos deformantes como si todos los grupos de deformación bloqueados hubieran sido borrados, y los restantes se encontraran normalizados"
 
@@ -88249,10 +88152,6 @@ msgstr "Dividir bordes y caras"
 
 msgid "Automatically split edges and faces"
 msgstr "Permite dividir automáticamente bordes y caras"
-
-
-msgid "WPaint Multi-Paint"
-msgstr "Pintar múltiples influencias"
 
 
 msgid "Paint across the weights of all selected bones, maintaining their relative influence"
@@ -93807,10 +93706,6 @@ msgstr "Cantidad de ruido"
 
 msgid "Min Distance"
 msgstr "Distancia mínima"
-
-
-msgid "Enable physics for:"
-msgstr "Habilitar dinámicas para:"
 
 
 msgctxt "Operator"
