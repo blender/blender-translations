@@ -1,7 +1,7 @@
 
 msgid ""
 msgstr ""
-"Project-Id-Version: Blender 2.93.0 Alpha (b'4e34baddb917')\n"
+"Project-Id-Version: Blender 2.93.0 Alpha (b'71cb0bdc4336')\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-01-01 00:00:00\n"
 "PO-Revision-Date: \n"
@@ -1131,6 +1131,18 @@ msgstr "网格边的属性"
 
 msgid "Face"
 msgstr "面"
+
+
+msgid "Attribute on mesh faces"
+msgstr "网格面的属性"
+
+
+msgid "Face Corner"
+msgstr "面拐"
+
+
+msgid "Attribute on mesh face corner"
+msgstr "网格面拐角的属性"
 
 
 msgid "Curve"
@@ -8266,6 +8278,10 @@ msgid "Object Instances"
 msgstr "物体实例"
 
 
+msgid "All object instances to display or render (Warning: Only use this as an iterator, never as a sequence, and do not keep any references to its items)"
+msgstr "所有要显示或渲染的物体实例(警告：只能作为迭代器使用，千万不要作为序列使用，也不要保留对其项的任何引用)"
+
+
 msgid "Evaluated objects in the dependency graph"
 msgstr "在依赖关系图中已估算的对象"
 
@@ -8296,6 +8312,10 @@ msgstr "原有视图层依赖图的构建目标"
 
 msgid "Dependency Graph Object Instance"
 msgstr "从属关系图物体实例"
+
+
+msgid "Extended information about dependency graph object iterator (Warning: All data here is 'evaluated' one, not original .blend IDs)"
+msgstr "关于依赖关系图对象迭代器的扩展信息(警告:这里的所有数据都是*计算过的*,而不是原始的.blend ID)"
 
 
 msgid "Instance Object"
@@ -8768,6 +8788,14 @@ msgstr "反向过滤查找"
 
 msgid "Multi-Word Fuzzy Filter"
 msgstr "多词模糊过滤"
+
+
+msgid ""
+"Perform fuzzy/multi-word matching.\n"
+"Warning: May be slow"
+msgstr ""
+"执行模糊/多字匹配 \n"
+"警告: 可能较慢"
 
 
 msgid "Driver for the value of a setting based on an external value"
@@ -16115,14 +16143,6 @@ msgid "The strength value for the generate strokes"
 msgstr "生成笔画的强度值"
 
 
-msgid "Resample Length"
-msgstr "重新采样长度"
-
-
-msgid "Resample the strokes so that the stroke points have the specified length between them. Zero length disables the resampling"
-msgstr "重新采样笔画，使笔画点之间具有指定的长度。长度为0禁用重新采样"
-
-
 msgid "Source Collection"
 msgstr "源集合"
 
@@ -16285,10 +16305,6 @@ msgstr "移除重叠点"
 
 msgid "Remove doubles from the source geometry before generating stokes"
 msgstr "在生成笔画之前，从源几何中删除重叠点"
-
-
-msgid "Preserve original vertex weight instead of clipping to 0/1"
-msgstr "保留原始顶点权重，而非钳制到 0/1"
 
 
 msgid "Use Transparency"
@@ -17072,7 +17088,7 @@ msgstr ".blend 文件(主数据库) 中生成计算结果的实际数据块"
 
 
 msgid "Library Override"
-msgstr "库重写"
+msgstr "库覆写"
 
 
 msgid "Library override data"
@@ -19722,6 +19738,26 @@ msgstr "锥化物体"
 
 msgid "Curve object name that defines the taper (width)"
 msgstr "用于定义锥化 (宽度) 的曲线物体名称"
+
+
+msgid "Taper Radius"
+msgstr "锥化半径"
+
+
+msgid "Determine how the effective radius of the spline point is computed when a taper object is specified"
+msgstr "确定指定锥化物体时如何计算样条线点的有效半径"
+
+
+msgid "Override the radius of the spline point with the taper radius"
+msgstr "用锥化半径覆盖样条线点的半径"
+
+
+msgid "Multiply the radius of the spline point by the taper radius"
+msgstr "将样条线点的半径乘以锥化半径"
+
+
+msgid "Add the radius of the bevel point to the taper radius"
+msgstr "将倒角点的半径添加到锥化半径"
 
 
 msgid "Texture Space Location"
@@ -22582,12 +22618,8 @@ msgid "Use topology based mirroring (for when both sides of mesh have matching, 
 msgstr "使用基于拓扑的镜像方式 (当网格两侧具有匹配且唯一的拓扑结构时可用)"
 
 
-msgid "Vertex Groups X Symmetry"
-msgstr "顶点组 X 向对称"
-
-
-msgid "Mirror the left/right vertex groups when painting"
-msgstr "绘制时镜像左/右顶点组"
+msgid "Mirror Vertex Groups"
+msgstr "镜像顶点组"
 
 
 msgid "Enable symmetry in the X axis"
@@ -23206,6 +23238,14 @@ msgid "Extra scaling added to the scale of the object"
 msgstr "添加到物体原有缩放上的额外缩放数据"
 
 
+msgid ""
+"Absolute bounding box dimensions of the object.\n"
+"Warning: Assigning to it or its members multiple consecutive times will not work correctly, as this needs up-to-date evaluated data"
+msgstr ""
+"物体尺寸的边界范围。\n"
+"警告：多次连续对该物体或其成员指定将无法正常发挥作用，因为它需要最新的数据"
+
+
 msgid "Object Display"
 msgstr "物体显示"
 
@@ -23484,6 +23524,14 @@ msgstr "在应用约束及父级影响之前, 接入位置、旋转、以及缩�
 
 msgid "Local Matrix"
 msgstr "局部矩阵"
+
+
+msgid ""
+"Parent relative transformation matrix.\n"
+"Warning: Only takes into account object parenting, so e.g. in case of bone parenting you get a matrix relative to the Armature object, not to the actual parent bone"
+msgstr ""
+"父级相对变换矩阵。\n"
+"警告: 只考虑 ‘物体’ 的父级，因此例如在骨骼为父级的情况下，你获得一个相对于骨架物体的矩阵，而非真实的父级骨骼"
 
 
 msgid "Parent Inverse Matrix"
@@ -26991,6 +27039,14 @@ msgid "Linked ID used as reference by this override"
 msgstr "关联ID用作此覆写的引用"
 
 
+msgid "Override Properties"
+msgstr "覆写属性"
+
+
+msgid "Collection of override properties"
+msgstr "覆写属性集合"
+
+
 msgid "ID Library Override Property"
 msgstr "ID 库覆写属性"
 
@@ -27044,7 +27100,7 @@ msgstr "操作"
 
 
 msgid "What override operation is performed"
-msgstr "所执行的覆盖操作"
+msgstr "所执行的覆写操作"
 
 
 msgid "No-Op"
@@ -27052,7 +27108,7 @@ msgstr "无操作"
 
 
 msgid "Does nothing, prevents adding actual overrides (NOT USED)"
-msgstr "不执行任何操作，阻止添加实际重写(未使用)"
+msgstr "不执行任何操作，阻止添加实际覆写(未使用)"
 
 
 msgid "Replace value of reference by overriding one"
@@ -27105,6 +27161,14 @@ msgstr "子条目引用编号"
 
 msgid "Subitem Reference Name"
 msgstr "子条目引用名称"
+
+
+msgid "Override Operations"
+msgstr "覆写操作"
+
+
+msgid "Collection of override operations"
+msgstr "覆写操作的集合"
 
 
 msgid "Base type for IK solver parameters"
@@ -31160,6 +31224,10 @@ msgid "Mesh"
 msgstr "网格"
 
 
+msgid "Mesh Primitives"
+msgstr "网格基本体"
+
+
 msgid "Utilities"
 msgstr "实用工具"
 
@@ -34535,10 +34603,6 @@ msgid "Mirror the V texture coordinate around the flip offset point"
 msgstr "在 0.5 点处镜射 V 向的纹理坐标"
 
 
-msgid "Mirror Vertex Groups"
-msgstr "镜像顶点组"
-
-
 msgid "Mirror vertex groups (e.g. .R->.L)"
 msgstr "镜像顶点组(如: .R->.L)"
 
@@ -35810,6 +35874,14 @@ msgstr "将网格三角化"
 
 msgid "Keep Normals"
 msgstr "保持法向"
+
+
+msgid ""
+"Try to preserve custom normals.\n"
+"Warning: Depending on chosen triangulation method, shading may not be fully preserved, \"Fixed\" method usually gives the best result here"
+msgstr ""
+"尝试保留自定义法线向量。\n"
+"警告：根据已选中的的三角测量方法，阴影可能无法完全保留，'固定'方法通常会在此处给出最佳结果"
 
 
 msgid "Minimum Vertices"
@@ -38335,6 +38407,26 @@ msgid "Convert Premultiplied"
 msgstr "转换预乘"
 
 
+msgid "Contrast Limit"
+msgstr "对比度限制"
+
+
+msgid "How much to eliminate spurious edges to avoid artifacts (the larger value makes less active; the value 2.0, for example, means discard a detected edge if there is a neighboring edge that has 2.0 times bigger contrast than the current one)"
+msgstr "要消除虚假边缘以避免失真(值越大，活动性越低；比如，2.0意味着，如果相邻边缘的对比度是当前边缘的 2.0 倍，则丢弃检测到的边缘)"
+
+
+msgid "Corner Rounding"
+msgstr "拐角圆角"
+
+
+msgid "How much sharp corners will be rounded"
+msgstr "将被圆角化的拐角的尖锐程度"
+
+
+msgid "Threshold to detect edges (smaller threshold makes more sensitive detection)"
+msgstr "检测边缘的阈值(阈值越小，检测更加敏感)"
+
+
 msgid "Bilateral Blur"
 msgstr "双边模糊"
 
@@ -40524,8 +40616,20 @@ msgid "Rotate around the local Z axis"
 msgstr "绕局部 Z轴旋转"
 
 
+msgid "Attribute Clamp"
+msgstr "属性钳制"
+
+
 msgid "Min Max"
 msgstr "最小/最大"
+
+
+msgid "Constrain value between min and max"
+msgstr "最小值和最大值之间的约束值"
+
+
+msgid "Constrain value between min and max, swapping arguments when min > max"
+msgstr "最小值和最大值之间的约束值，当最小>最大值时交换参数"
 
 
 msgid "Attribute Color Ramp"
@@ -40574,6 +40678,10 @@ msgstr "保存结果属性的几何域"
 
 msgid "Attribute Fill"
 msgstr "填充属性"
+
+
+msgid "Attribute Map Range"
+msgstr "属性映射范围"
 
 
 msgid "Interpolation Type"
@@ -40718,6 +40826,22 @@ msgstr "反射"
 
 msgid "Reflect A around the normal B. B doesn't need to be normalized"
 msgstr "沿向量B反射向量A，B不需要归一化"
+
+
+msgid "Refract"
+msgstr "折射"
+
+
+msgid "For a given incident vector A, surface normal B and ratio of indices of refraction, Ior, refract returns the refraction vector, R"
+msgstr "对于给定的入射向量A、表面法向 B 和折射率 Ior，折射返回折射向量R"
+
+
+msgid "Faceforward"
+msgstr "面朝前"
+
+
+msgid "Orients a vector A to point away from a surface B as defined by its normal C. Returns (dot(B, C) < 0) ? A : -A"
+msgstr "Orients a vector A to point away from a surface B as defined by its normal C. 返回 (dot(B, C) < 0) ? A : -A"
 
 
 msgid "Dot Product"
@@ -43105,15 +43229,15 @@ msgstr "替换全部帧"
 
 
 msgid "Overwrite Range"
-msgstr "重写范围"
+msgstr "覆写范围"
 
 
 msgid "Overwrite keys in pasted range"
-msgstr "在粘贴区间内重写帧"
+msgstr "在粘贴区间内覆写帧"
 
 
 msgid "Overwrite Entire Range"
-msgstr "重写全部范围"
+msgstr "覆写全部范围"
 
 
 msgid "Overwrite keys in pasted range, using the range of all copied keys"
@@ -43999,6 +44123,14 @@ msgid "Convert to Radians"
 msgstr "转换为弧度制"
 
 
+msgid ""
+"Convert f-curves/drivers affecting rotations to radians.\n"
+"Warning: Use this only once"
+msgstr ""
+"将函数曲线/驱动器影响旋转转换为弧度制\n"
+"警告: 仅使用一次!"
+
+
 msgctxt "Operator"
 msgid "Align Bones"
 msgstr "对齐骨骼"
@@ -44247,6 +44379,14 @@ msgstr "翻转(并纠正)所选骨骼名称的轴向后缀"
 
 msgid "Strip Numbers"
 msgstr "片段序号"
+
+
+msgid ""
+"Try to remove right-most dot-number from flipped names.\n"
+"Warning: May result in incoherent naming in some cases"
+msgstr ""
+"尝试从翻转的名称中删除最右侧的点数。\n"
+"警告:在某些情况下可能会导致不连贯的命名"
 
 
 msgctxt "Operator"
@@ -51224,107 +51364,6 @@ msgstr "切换染色"
 
 
 msgctxt "Operator"
-msgid "Trace Image to Grease Pencil"
-msgstr "识别图像至蜡笔"
-
-
-msgid "Extract Grease Pencil strokes from image"
-msgstr "从图像提取蜡笔笔画"
-
-
-msgid "Determines if trace simple image or full sequence"
-msgstr "确定是识别简单图像还是完整序列"
-
-
-msgid "Trace the current frame of the image"
-msgstr "识别图像的当前帧"
-
-
-msgid "Trace full sequence"
-msgstr "识别完整序列"
-
-
-msgid "Resolution of the generated curves"
-msgstr "生成的曲线的分辨率"
-
-
-msgid "Distance to sample points, zero to disable"
-msgstr "到采样点的距离，零为禁用"
-
-
-msgid "Scale of the final stroke"
-msgstr "最终笔画的范围"
-
-
-msgid "Color Threshold"
-msgstr "颜色阈值"
-
-
-msgid "Determine the lightness threshold above which strokes are generated"
-msgstr "确定生成笔画上方的光度阈值"
-
-
-msgid "Turn Policy"
-msgstr "转向策略"
-
-
-msgid "Determines how to resolve ambiguities during decomposition of bitmaps into paths"
-msgstr "确定在将位图分解为路径时如何解决分歧"
-
-
-msgid "Black"
-msgstr "黑色"
-
-
-msgid "Prefers to connect black (foreground) components"
-msgstr "首选连接黑色(前景)元素"
-
-
-msgid "White"
-msgstr "白色"
-
-
-msgid "Prefers to connect white (background) components"
-msgstr "首选连接白色(背景)元素"
-
-
-msgid "Always take a left turn"
-msgstr "总是左转"
-
-
-msgid "Always take a right turn"
-msgstr "总是右转"
-
-
-msgid "Minority"
-msgstr "少数"
-
-
-msgid "Prefers to connect the color (black or white) that occurs least frequently in the local neighborhood of the current position"
-msgstr "首选连接当前位置的局部邻域中出现频率较低的颜色(黑色或白色)"
-
-
-msgid "Majority"
-msgstr "多数"
-
-
-msgid "Prefers to connect the color (black or white) that occurs most frequently in the local neighborhood of the current position"
-msgstr "首选连接当前位置的局部邻域中出现频率较高的颜色(黑色或白色)"
-
-
-msgid "Choose pseudo-randomly"
-msgstr "选择伪随机"
-
-
-msgid "Start At Current Frame"
-msgstr "从当前帧开始"
-
-
-msgid "Trace Image starting in current image frame"
-msgstr "从当前图像帧开始跟踪图像"
-
-
-msgctxt "Operator"
 msgid "Transform Stroke Fill"
 msgstr "变换笔画填充"
 
@@ -52330,6 +52369,15 @@ msgstr "写入初始文件(覆盖已存在的)"
 
 msgid "View the entire image"
 msgstr "查看完整图像"
+
+
+msgctxt "Operator"
+msgid "Cursor To Center View"
+msgstr "游标 -> 视图中心"
+
+
+msgid "Set 2D Cursor To Center View location"
+msgstr "设置2D游标至视图中心位置"
 
 
 msgctxt "Operator"
@@ -56222,6 +56270,14 @@ msgid "Sort selected faces from smallest to greatest material index"
 msgstr "按照材质编号号从小到大对选中的面排序"
 
 
+msgid ""
+"Move all selected elements in first places, preserving their relative order.\n"
+"Warning: This will affect unselected elements' indices as well"
+msgstr ""
+"首先移动所有选中的元素, 保持它们的相对次序。\n"
+"警告: 这也将影响到未选中元素的编号"
+
+
 msgid "Randomize order of selected elements"
 msgstr "随机选择元素的顺序"
 
@@ -58023,7 +58079,7 @@ msgstr "转换代理为覆盖"
 
 
 msgid "Convert a proxy to a local library override"
-msgstr "将代理转换为本地库重写"
+msgstr "将代理转换为本地库覆写"
 
 
 msgctxt "Operator"
@@ -58091,6 +58147,14 @@ msgstr "在对目标应用数据时使用的系数(具体行为取决于混合�
 
 msgid "Auto Transform"
 msgstr "自动变换"
+
+
+msgid ""
+"Automatically compute transformation to get the best possible match between source and destination meshes.\n"
+"Warning: Results will never be as good as manual matching of objects"
+msgstr ""
+"自动计算变换，以获得源网格与目标网格之间最可能的匹配。\n"
+"警告: 结果无法手动匹配媲美"
 
 
 msgid "Create Data"
@@ -58897,11 +58961,11 @@ msgstr "选定的物体,数据和材质"
 
 msgctxt "Operator"
 msgid "Make Library Override"
-msgstr "库重写"
+msgstr "库覆写"
 
 
 msgid "Make a local override of this library linked data-block"
-msgstr "将库关联的数据块重写为本地数据块"
+msgstr "将库关联的数据块覆写为本地数据块"
 
 
 msgid "Override Collection"
@@ -61198,15 +61262,15 @@ msgstr "使已选中的数据块的所有用户使用当前(点击的)数据块"
 
 
 msgid "Make Library Override"
-msgstr "创建库重写"
+msgstr "创建库覆写"
 
 
 msgid "Make a local override of this linked data-block"
-msgstr "添加一个此关联数据块的本地重写"
+msgstr "添加一个此关联数据块的本地覆写"
 
 
 msgid "Make Library Override Hierarchy"
-msgstr "创建库重写层级"
+msgstr "创建库覆写层级"
 
 
 msgid "Make a local override of this linked data-block, and its hierarchy of dependencies"
@@ -61218,11 +61282,11 @@ msgstr "转换代理为覆盖"
 
 
 msgid "Convert a Proxy object to a full library override, including all its dependencies"
-msgstr "将代理对象转换为完整库重写，包括所有其依赖项"
+msgstr "将代理对象转换为完整库覆写，包括所有其依赖项"
 
 
 msgid "Reset Library Override"
-msgstr "重置库重写"
+msgstr "重置库覆写"
 
 
 msgid "Reset this local override to its linked values"
@@ -61230,7 +61294,7 @@ msgstr "重置此本地覆盖为其关联数值"
 
 
 msgid "Reset Library Override Hierarchy"
-msgstr "重置库重写层级"
+msgstr "重置库覆写层级"
 
 
 msgid "Reset this local override to its linked values, as well as its hierarchy of dependencies"
@@ -61238,7 +61302,7 @@ msgstr "重置该本地覆盖及其依赖层级为关联数值"
 
 
 msgid "Resync Library Override Hierarchy"
-msgstr "重新同步库重写层级"
+msgstr "重新同步库覆写层级"
 
 
 msgid "Rebuild this local override from its linked reference, as well as its hierarchy of dependencies"
@@ -61246,15 +61310,15 @@ msgstr "重建来自其关联参考的本地覆盖及其依赖层级为关联数
 
 
 msgid "Resync Library Override Hierarchy Enforce"
-msgstr "强制重新同步库重写层级"
+msgstr "强制重新同步库覆写层级"
 
 
 msgid "Rebuild this local override from its linked reference, as well as its hierarchy of dependencies, enforcing that hierarchy to match the linked data (i.e. ignoring exiting overrides on data-blocks pointer properties)"
-msgstr "从其关联引用以及依赖关系的层次结构中重建此本地重写，强制该层次结构匹配关联数据(即忽略数据块指针属性上的退出重写)"
+msgstr "从其关联引用以及依赖关系的层次结构中重建此本地覆写，强制该层次结构匹配关联数据(即忽略数据块指针属性上的退出覆写)"
 
 
 msgid "Delete Library Override Hierarchy"
-msgstr "删除库重写层级"
+msgstr "删除库覆写层级"
 
 
 msgid "Delete this local override (including its hierarchy of override dependencies) and relink its usages to the linked data-blocks"
@@ -61387,6 +61451,14 @@ msgstr "大纲库操作"
 
 msgid "Library Operation"
 msgstr "库操作"
+
+
+msgid ""
+"Delete this library and all its item.\n"
+"Warning: No undo"
+msgstr ""
+"删除此库与其全部条目。\n"
+"警告: 无法撤销"
 
 
 msgid "Relocate"
@@ -69543,6 +69615,11 @@ msgstr "要移除的背景图编号"
 
 
 msgctxt "Operator"
+msgid "Select Menu"
+msgstr "选择菜单"
+
+
+msgctxt "Operator"
 msgid "Align Camera to View"
 msgstr "对齐相机至视图"
 
@@ -69960,11 +70037,6 @@ msgstr "使用刷选方式选择项目"
 
 msgid "Select items using lasso selection"
 msgstr "使用套索方式选择项目"
-
-
-msgctxt "Operator"
-msgid "Select Menu"
-msgstr "选择菜单"
 
 
 msgid "Menu object selection"
@@ -71487,6 +71559,84 @@ msgstr "在网络浏览器中查看在线手册"
 msgctxt "Operator"
 msgid "Handle dropped .blend file"
 msgstr "处理拖放的 .blend 文件"
+
+
+msgctxt "Operator"
+msgid "Export to PDF"
+msgstr "导出到PDF"
+
+
+msgid "Export grease pencil to PDF"
+msgstr "导出蜡笔到PDF"
+
+
+msgid "Which frames to include in the export"
+msgstr "在导出中包括哪些帧"
+
+
+msgid "Include only active frame"
+msgstr "仅包含活动帧"
+
+
+msgid "Include selected frames"
+msgstr "包含选中帧"
+
+
+msgid "Which objects to include in the export"
+msgstr "在导出中包括哪些物体"
+
+
+msgid "Include only the active object"
+msgstr "仅包含活动物体"
+
+
+msgid "Include selected objects"
+msgstr "包含选中的物体"
+
+
+msgid "Include all visible objects"
+msgstr "包含所有可见物体"
+
+
+msgid "Precision of stroke sampling. Low values mean a more precise result, and zero disables sampling"
+msgstr "笔画采样精度。低数值意味着更精确的结果，0禁用采样"
+
+
+msgid "Export strokes with fill enabled"
+msgstr "导出启用填充的笔画"
+
+
+msgid "Export strokes with constant thickness"
+msgstr "导出恒定宽度的笔画"
+
+
+msgctxt "Operator"
+msgid "Export to SVG"
+msgstr "导出到SVG"
+
+
+msgid "Export grease pencil to SVG"
+msgstr "导出蜡笔到SVG"
+
+
+msgid "Clip Camera"
+msgstr "相机裁剪"
+
+
+msgid "Clip drawings to camera size when export in camera view"
+msgstr "在相机视图中导出时裁剪绘图到相机大小"
+
+
+msgid "Import SVG into grease pencil"
+msgstr "导入SVG至蜡笔"
+
+
+msgid "Resolution of the generated strokes"
+msgstr "生成的笔画的分辨率"
+
+
+msgid "Scale of the final strokes"
+msgstr "最终笔画的缩放"
 
 
 msgctxt "Operator"
@@ -73357,10 +73507,6 @@ msgid "Aperture"
 msgstr "光圈"
 
 
-msgid "Spot Shape"
-msgstr "光斑形状"
-
-
 msgid "Ray Visibility"
 msgstr "射线可见性"
 
@@ -73523,6 +73669,10 @@ msgstr "效果"
 
 msgid "Skeleton"
 msgstr "骨架"
+
+
+msgid "Spot Shape"
+msgstr "光斑形状"
 
 
 msgid "Text Boxes"
@@ -76615,11 +76765,11 @@ msgstr "实验特性"
 
 
 msgid "Override Auto Resync"
-msgstr "重写自动重新同步"
+msgstr "覆写自动重新同步"
 
 
 msgid "Enable library overrides automatic resync detection and process on file load. Disable when dealing with older .blend files that need manual Resync (Enforce) handling"
-msgstr "启用文件加载时库重写自动重新同步检测和的处理。处理需要手动重新同步(强制)处理的旧.blend文件时禁用"
+msgstr "启用文件加载时库覆写自动重新同步检测和的处理。处理需要手动重新同步(强制)处理的旧.blend文件时禁用"
 
 
 msgid "Asset Browser"
@@ -76652,6 +76802,14 @@ msgstr "新点云类型"
 
 msgid "Enable the new point cloud type in the ui"
 msgstr "在UI中启用新点云类型"
+
+
+msgid "Override Templates"
+msgstr "覆写模板"
+
+
+msgid "Enable library override template in the python API"
+msgstr "启用python API 中的库覆写模板"
 
 
 msgid "Sculpt Mode Tilt Support"
@@ -76852,6 +77010,14 @@ msgstr "默认纹理查找目录"
 
 msgid "Auto Save Temporary Files"
 msgstr "自动保存临时文件"
+
+
+msgid ""
+"Automatic saving of temporary files in temp directory, uses process ID.\n"
+"Warning: Sculpt and edit mode data won't be saved"
+msgstr ""
+"使用进程编号自动保存临时文件至临时目录。\n"
+"警告: 不保存雕刻和编辑模式下的数据"
 
 
 msgid "Compress File"
@@ -79062,10 +79228,6 @@ msgstr "停止采样的噪点级别，更低的值会减少噪点，但会延长
 
 msgid "AO Bounces"
 msgstr "AO反弹"
-
-
-msgid "Approximate indirect light with background tinted ambient occlusion at the specified bounce, 0 disables this feature"
-msgstr "在指定反弹处具有背景着色环境光遮挡的近似间接光, 0 禁用此特征"
 
 
 msgid "AO Bounces Render"
@@ -81302,10 +81464,6 @@ msgstr "渲染时覆盖现有文件"
 
 msgid "Persistent Data"
 msgstr "持久数据"
-
-
-msgid "Keep render data around for faster re-renders"
-msgstr "保留渲染数据, 便于快速再次渲染"
 
 
 msgid "Placeholders"
@@ -85033,8 +85191,16 @@ msgid "Display dashed black-white edges"
 msgstr "绘制混合的黑白边"
 
 
+msgid "Black"
+msgstr "黑色"
+
+
 msgid "Display black edges"
 msgstr "绘制黑色边线"
+
+
+msgid "White"
+msgstr "白色"
 
 
 msgid "Display white edges"
@@ -86180,6 +86346,10 @@ msgid "Display low level Blender data and its properties"
 msgstr "展示blender的底层数据和属性"
 
 
+msgid "Library Overrides"
+msgstr "库覆写"
+
+
 msgid "Orphan Data"
 msgstr "孤立的数据"
 
@@ -86282,11 +86452,11 @@ msgstr "仅显示一种类型的数据块"
 
 
 msgid "Show Library Overrides"
-msgstr "显示库重写"
+msgstr "显示库覆写"
 
 
 msgid "For libraries with overrides created, show the overridden values"
-msgstr "对于已创建重写的库，显示重写值"
+msgstr "对于已创建覆写的库，显示覆写值"
 
 
 msgid "Filter Objects"
@@ -86745,6 +86915,10 @@ msgid "Part of the geometry to display data from"
 msgstr "要显示数据的部分几何元素"
 
 
+msgid "Mesh component containing point, corner, edge and face data"
+msgstr "包含点、角、边和面数据的网格组件"
+
+
 msgid "Point cloud component containing only point data"
 msgstr "点云组件仅包含点数据"
 
@@ -86906,7 +87080,7 @@ msgstr "搜索对大小写敏感"
 
 
 msgid "Overwrite characters when typing rather than inserting them"
-msgstr "重写而不是插入"
+msgstr "覆写而不是插入"
 
 
 msgid "Visible Lines"
@@ -89750,7 +89924,7 @@ msgstr "已选择的驱动器"
 
 
 msgid "Overridden"
-msgstr "重写"
+msgstr "覆写"
 
 
 msgid "Overridden Selected"
@@ -90066,6 +90240,10 @@ msgid "Unified Paint Settings"
 msgstr "统一绘画设置"
 
 
+msgid "Weight Paint Auto-Normalize"
+msgstr "自动归一化权重绘制"
+
+
 msgid "Ensure all bone-deforming vertex groups add up to 1.0 while weight painting"
 msgstr "确保全部骨骼封套顶点组在权重绘制时增加至1.0"
 
@@ -90174,6 +90352,10 @@ msgid "Automatic keyframe insertion using active Keying Set only"
 msgstr "仅使用帧来自动插入关键帧"
 
 
+msgid "Weight Paint Lock-Relative"
+msgstr "权重绘制锁定相对"
+
+
 msgid "Display bone-deforming groups as if all locked deform groups were deleted, and the remaining ones were re-normalized"
 msgstr "显示骨骼形变组,好像所有被锁定的形变组都被删除,其余的形变组被重新标准化"
 
@@ -90192,6 +90374,10 @@ msgstr "拆分边和面"
 
 msgid "Automatically split edges and faces"
 msgstr "自动拆分边和面"
+
+
+msgid "Weight Paint Multi-Paint"
+msgstr "多种绘制的权重绘制"
 
 
 msgid "Paint across the weights of all selected bones, maintaining their relative influence"
@@ -93398,10 +93584,6 @@ msgid "Tiles X"
 msgstr "X 向拼贴"
 
 
-msgid "Persistent Images"
-msgstr "保持图像不变"
-
-
 msgid "Start Pixels"
 msgstr "起始像素"
 
@@ -94442,6 +94624,10 @@ msgid "Append..."
 msgstr "追加..."
 
 
+msgid "Assign"
+msgstr "指定"
+
+
 msgid "Operator not found: bpy.ops.%s"
 msgstr "未找到操作: bpy.ops.%s"
 
@@ -94621,16 +94807,16 @@ msgid "Protected Layers:"
 msgstr "受保护层:"
 
 
-msgid "Axes"
-msgstr "轴向"
-
-
 msgid "Shapes"
 msgstr "形状"
 
 
 msgid "Group Colors"
 msgstr "组颜色"
+
+
+msgid "Axes"
+msgstr "轴向"
 
 
 msgctxt "Operator"
@@ -95282,10 +95468,6 @@ msgid "Stroke Color"
 msgstr "笔画颜色"
 
 
-msgid "Override Crease"
-msgstr "覆盖折痕"
-
-
 msgctxt "Operator"
 msgid "Re-Key Shape Points"
 msgstr "重置形态顶点"
@@ -95404,6 +95586,10 @@ msgstr "钳制图像"
 
 msgid "Tracking Axis"
 msgstr "跟踪轴"
+
+
+msgid "Override Crease"
+msgstr "覆盖折痕"
 
 
 msgid "All Edges"
@@ -97494,10 +97680,6 @@ msgid "Paste Data-Blocks"
 msgstr "粘贴数据块"
 
 
-msgid "Sync Selection"
-msgstr "选区同步"
-
-
 msgid "Object Contents"
 msgstr "物体内容"
 
@@ -97524,8 +97706,8 @@ msgid "Restriction Toggles"
 msgstr "限制切换"
 
 
-msgid "Library Overrides"
-msgstr "库重写"
+msgid "Sync Selection"
+msgstr "选区同步"
 
 
 msgid "Others"
@@ -98312,6 +98494,11 @@ msgstr "自动保存..."
 
 
 msgctxt "Operator"
+msgid "SVG as Grease Pencil"
+msgstr "SVG为蜡笔"
+
+
+msgctxt "Operator"
 msgid "Render Animation"
 msgstr "渲染动画"
 
@@ -98414,6 +98601,16 @@ msgstr "Alembic(.abc)"
 msgctxt "Operator"
 msgid "Universal Scene Description (.usd, .usdc, .usda)"
 msgstr "通用场景描述 (.usd， .usdc， .usda)"
+
+
+msgctxt "Operator"
+msgid "Grease Pencil as SVG"
+msgstr "蜡笔为SVG"
+
+
+msgctxt "Operator"
+msgid "Grease Pencil as PDF"
+msgstr "蜡笔为PDF"
 
 
 msgctxt "Operator"
@@ -99180,7 +99377,7 @@ msgstr "生成代理..."
 
 msgctxt "Operator"
 msgid "Make Library Override..."
-msgstr "使库重写..."
+msgstr "使库覆写..."
 
 
 msgctxt "Operator"
@@ -100755,10 +100952,6 @@ msgid "Tile Offset"
 msgstr "分块偏移"
 
 
-msgid "Vertex Group X"
-msgstr "顶点组X"
-
-
 msgid "Auto Normalize"
 msgstr "自动规格化"
 
@@ -101118,11 +101311,11 @@ msgstr "AOV"
 
 
 msgid "Data corruption: data-block '%s' is using itself as library override reference"
-msgstr "数据损坏: 数据块 '%s' 正在将自身用作库重写引用"
+msgstr "数据损坏: 数据块 '%s' 正在将自身用作库覆写引用"
 
 
 msgid "Data corruption: data-block '%s' is using another local data-block ('%s') as library override reference"
-msgstr "数据损坏: 数据块 '%s' 正在使用另一个本地数据块 ('%s') 作为库重写引用"
+msgstr "数据损坏: 数据块 '%s' 正在使用另一个本地数据块 ('%s') 作为库覆写引用"
 
 
 msgid "MaskLayer"
@@ -102079,7 +102272,7 @@ msgstr "撤消隐藏只能通过\"显示选择\"来完成"
 
 
 msgid "Cannot edit bone groups for proxies or library overrides"
-msgstr "无法编辑代理或库重写的骨骼组"
+msgstr "无法编辑代理或库覆写的骨骼组"
 
 
 msgid "Add New"
@@ -102916,11 +103109,6 @@ msgstr "将单项重置为默认值"
 
 
 msgctxt "Operator"
-msgid "Unset"
-msgstr "未使用"
-
-
-msgctxt "Operator"
 msgid "Copy All to Selected"
 msgstr "全部复制到选中项"
 
@@ -103243,7 +103431,7 @@ msgstr "直接关联的库数据块，单击变成本地，Shift+单击覆盖创
 
 
 msgid "Library override of linked data-block, click to make fully local"
-msgstr "关联数据块的库重写，单击以使完全本地化"
+msgstr "关联数据块的库覆写，单击以使完全本地化"
 
 
 msgid "Display number of users of this data (click to make a single-user copy)"
@@ -103717,6 +103905,26 @@ msgstr "导出过短出现错误 (见控制台)"
 
 msgid "Parsing errors in Document (see Blender Console)"
 msgstr "文档中的解析错误 (查看 Blender 控制台)"
+
+
+msgid "Export Options"
+msgstr "导出选项"
+
+
+msgid "Unable to find valid 3D View area"
+msgstr "无法找到有效的3D视图区域"
+
+
+msgid "Unable to export SVG"
+msgstr "无法导出SVG"
+
+
+msgid "Unable to export PDF"
+msgstr "无法导出PDF"
+
+
+msgid "Unable to import SVG"
+msgstr "无法导入SVG"
 
 
 msgctxt "Mesh"
@@ -104467,7 +104675,7 @@ msgstr "无法编辑库数据"
 
 
 msgid "Cannot edit constraints coming from linked data in a library override"
-msgstr "无法编辑来自库重写中关联数据的约束"
+msgstr "无法编辑来自库覆写中关联数据的约束"
 
 
 msgid "Operator is frozen, changes to its settings won't take effect until you unfreeze it"
@@ -104559,7 +104767,7 @@ msgstr "目标物体 '%s' 不是蜡笔物体"
 
 
 msgid "Cannot edit modifiers coming from linked data in a library override"
-msgstr "无法编辑来自库重写中关联数据的修改器"
+msgstr "无法编辑来自库覆写中关联数据的修改器"
 
 
 msgid "No supported objects were selected"
@@ -104699,7 +104907,7 @@ msgstr "禁止从编辑模式使用该修改器操作"
 
 
 msgid "Modifiers cannot be applied on override data"
-msgstr "修改器无法应用至重写数据"
+msgstr "修改器无法应用至覆写数据"
 
 
 msgid "Not supported for \"Collision\" or \"Hook\" modifiers"
@@ -104783,7 +104991,7 @@ msgstr "将孤立库对象添加到当前场景以避免丢失"
 
 
 msgid "Can only make library override for a referenced object or collection"
-msgstr "只能为引用的对象或集合进行库重写"
+msgstr "只能为引用的对象或集合进行库覆写"
 
 
 msgid "Incorrect context for running object data unlink"
@@ -104807,7 +105015,7 @@ msgstr "找不到包含物体 '%s' 的可覆盖集合"
 
 
 msgid "Could not create a library override from proxy '%s' (might use already local data?)"
-msgstr "无法从代理 '%s' 创建库重写(可能已使用本地数据?)"
+msgstr "无法从代理 '%s' 创建库覆写(可能已使用本地数据?)"
 
 
 msgid "Move the mouse to change the voxel size. LMB: confirm size, ESC/RMB: cancel"
@@ -104823,7 +105031,7 @@ msgstr "体素网格重构创建网格失败"
 
 
 msgid "The remesher cannot worked on linked or override data"
-msgstr "网格重构器无法作用于已关联或重写数据"
+msgstr "网格重构器无法作用于已关联或覆写数据"
 
 
 msgid "The remesher cannot run from edit mode"
@@ -105059,7 +105267,7 @@ msgstr "流体: 无法使用默认缓存目录 '%s', 请手动指定一个有效
 
 
 msgid "Library override data-blocks only support Disk Cache storage"
-msgstr "库重写数据块仅支持磁盘缓存存储"
+msgstr "库覆写数据块仅支持磁盘缓存存储"
 
 
 msgid "Linked data-blocks do not allow editing caches"
@@ -105067,7 +105275,7 @@ msgstr "关联的数据块不允许编辑缓存"
 
 
 msgid "Linked or library override data-blocks do not allow adding or removing caches"
-msgstr "关联或库重写数据块不允许添加或删除缓存"
+msgstr "关联或库覆写数据块不允许添加或删除缓存"
 
 
 msgid "No Rigid Body World to add Rigid Body Constraint to"
@@ -107154,7 +107362,7 @@ msgstr "混合所选项"
 
 
 msgid "Could not create library override from data-block '%s'"
-msgstr "无法从数据块 '%s'创建库重写"
+msgstr "无法从数据块 '%s'创建库覆写"
 
 
 msgid "Strip None"
@@ -108214,6 +108422,14 @@ msgid "Subdivision Surface modifier needs to be first to work with unwrap"
 msgstr "细分修改器使用前需要首先展开"
 
 
+msgid "Unwrap could not solve any island(s), edge seams may need to be added"
+msgstr "展开无法解算任何孤岛，可能需要添加缝合边"
+
+
+msgid "Unwrap failed to solve %d of %d island(s), edge seams may need to be added"
+msgstr "展开解算 %d / %d 孤岛失败。 可能需要添加缝合边"
+
+
 msgid "Freestyle: Mesh loading"
 msgstr "Freestyle: 网格加载"
 
@@ -108310,6 +108526,26 @@ msgid "the lazy dog"
 msgstr "0123456789 abcdefghijklmnopqrstuvwxyz"
 
 
+msgid "Override template experimental feature is disabled"
+msgstr "已禁用覆写模板实验功能"
+
+
+msgid "Unable to create override template for linked data-blocks"
+msgstr "无法为已关联的数据块创建覆写模板"
+
+
+msgid "Unable to create override template for overridden data-blocks"
+msgstr "无法为覆写的数据块创建覆写模板"
+
+
+msgid "No new override property created, property already exists"
+msgstr "未创建新的覆写属性，属性已存在"
+
+
+msgid "No new override operation created, operation already exists"
+msgstr "未创建新的覆写操作，操作已存在"
+
+
 msgid "Index out of range"
 msgstr "编号超出范围"
 
@@ -108400,6 +108636,10 @@ msgstr "函数曲线无法在动作 '%s' 中找到"
 
 msgid "Timeline marker '%s' not found in action '%s'"
 msgstr "时间线标记 '%s' 未在动作 '%s' 中找到"
+
+
+msgid "Only armature objects are supported"
+msgstr "仅支持骨架物体"
 
 
 msgid "Keying set path could not be added"
@@ -109380,10 +109620,6 @@ msgid "Recenter"
 msgstr "重回中心"
 
 
-msgid "Assign"
-msgstr "指定"
-
-
 msgid "Bisect"
 msgstr "切分"
 
@@ -110163,6 +110399,26 @@ msgstr "脚本无法兼容"
 
 msgid "Strips must have the same number of inputs"
 msgstr "在两点之间所选中的顶点路径"
+
+
+msgid "Can not move strip to non-meta strip"
+msgstr "无法将片段移至非复合片段"
+
+
+msgid "Strip can not be moved into itself"
+msgstr "片段无法向自身移动"
+
+
+msgid "Moved strip is already inside provided meta strip"
+msgstr "被移动的片段已经在提供的复合片段内"
+
+
+msgid "Moved strip is parent of provided meta strip"
+msgstr "被移动片段是提供复合片段的父级"
+
+
+msgid "Can not move strip to different scene"
+msgstr "无法将重做至不同场景"
 
 
 msgid "Blur X"
