@@ -1,7 +1,7 @@
 
 msgid ""
 msgstr ""
-"Project-Id-Version: Blender 3.1.0 Alpha (b'e1e3043a51a6')\n"
+"Project-Id-Version: Blender 3.1.0 Alpha (b'7708a848c969')\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-01-01 00:00:00\n"
 "PO-Revision-Date: 2022-01-03 15:22+0100\n"
@@ -1298,6 +1298,10 @@ msgstr "Okraj"
 
 msgid "Extends the baked result as a post process filter"
 msgstr "Rozšírenie výsledku zapečenia ako filter následného procesu"
+
+
+msgid "Extend"
+msgstr "Rozšírenie"
 
 
 msgid "Max Ray Distance"
@@ -4130,6 +4134,10 @@ msgstr "Hodnota farby v atribúte geometrie"
 
 msgid "RGBA color in scene linear color space"
 msgstr "Farba RGBA v lineárnom farebnom priestore scény"
+
+
+msgid "Active Layer"
+msgstr "Aktívna vrstva"
 
 
 msgid "Object Path"
@@ -8127,10 +8135,6 @@ msgstr "Min pripnutie X"
 
 msgid "Clip Min Y"
 msgstr "Min pripnutie Y"
-
-
-msgid "Extend"
-msgstr "Rozšírenie"
 
 
 msgid "Extrapolate the curve or extend it horizontally"
@@ -17798,10 +17802,6 @@ msgid "Collection of grease pencil layers"
 msgstr "Kolekcia vrstiev pastelky"
 
 
-msgid "Active Layer"
-msgstr "Aktívna vrstva"
-
-
 msgid "Active grease pencil layer"
 msgstr "Aktívna vrstva pastelky"
 
@@ -26154,10 +26154,6 @@ msgstr "Blok údajov scény, pozostávajúci z objektov, definovania času a sú
 
 msgid "Active Movie Clip"
 msgstr "Aktívny filmový klip"
-
-
-msgid "Active movie clip used for constraints and viewport drawing"
-msgstr "Aktívny filmový klip použitý pre vynútenia a vykreslenie záberu"
 
 
 msgid "Distance Model"
@@ -36147,10 +36143,6 @@ msgid "Use Creases"
 msgstr "Použiť záhyby"
 
 
-msgid "Use mesh edge crease information to sharpen edges"
-msgstr "Použije informácie o záhyboch hrán povrchovej siete na ostré hrany"
-
-
 msgid "Use Custom Normals"
 msgstr "Použiť vlastné normály"
 
@@ -42256,6 +42248,10 @@ msgid "Convex Hull"
 msgstr "Vypuklý trup"
 
 
+msgid "Method used to determine radius and placement"
+msgstr "Metóda použitá na určenie dosahu a umiestnenia"
+
+
 msgid "Endpoint Selection"
 msgstr "Výber koncového bodu"
 
@@ -42314,10 +42310,6 @@ msgstr "Začiatok a koniec manipulátora sú posunuté podľa ovládacích bodov
 
 msgid "Curve Circle"
 msgstr "Kruh krivky"
-
-
-msgid "Method used to determine radius and placement"
-msgstr "Metóda použitá na určenie dosahu a umiestnenia"
 
 
 msgid "Define the radius and location with three points"
@@ -47520,6 +47512,10 @@ msgid "Keep the current data-block displayed"
 msgstr "Zachová aktuálne zobrazený blok údajov"
 
 
+msgid "Direction to move the active vertex group towards"
+msgstr "Smer pohybu smerom k aktívnej skupine vrcholov"
+
+
 msgctxt "Operator"
 msgid "Open Cache File"
 msgstr "Otvoriť súbor zásobníka"
@@ -51958,6 +51954,10 @@ msgid "Name of new attribute"
 msgstr "Názov nového atribútu"
 
 
+msgid "Generic"
+msgstr "Všeobecný"
+
+
 msgctxt "Operator"
 msgid "Remove Geometry Attribute"
 msgstr "Odstrániť atribút geometrie"
@@ -53971,6 +53971,107 @@ msgstr "Preklopiť farby"
 
 msgid "Switch tint colors"
 msgstr "Prepínanie odtieňov farieb"
+
+
+msgctxt "Operator"
+msgid "Trace Image to Grease Pencil"
+msgstr "Sledovať obrázok pre pastelku"
+
+
+msgid "Extract Grease Pencil strokes from image"
+msgstr "Vytiahne ťahy Pastelky z obrázku"
+
+
+msgid "Determines if trace simple image or full sequence"
+msgstr "Určuje, či sa má snímať jednoduchý obrázok alebo úplná sekvencia"
+
+
+msgid "Trace the current frame of the image"
+msgstr "Sleduje aktuálnu snímku obrázka"
+
+
+msgid "Trace full sequence"
+msgstr "Sleduje celú sekvenciu"
+
+
+msgid "Resolution of the generated curves"
+msgstr "Rozlíšenie vygenerovaných kriviek"
+
+
+msgid "Distance to sample points, zero to disable"
+msgstr "Vzdialenosť od bodov snímky, nula pre zakázanie"
+
+
+msgid "Scale of the final stroke"
+msgstr "Mierka finálneho ťahu"
+
+
+msgid "Color Threshold"
+msgstr "Prah farby"
+
+
+msgid "Determine the lightness threshold above which strokes are generated"
+msgstr "Určí prah svetlosti, nad ktorým sa generujú ťahy"
+
+
+msgid "Turn Policy"
+msgstr "Politika zvratu"
+
+
+msgid "Determines how to resolve ambiguities during decomposition of bitmaps into paths"
+msgstr "Určuje, ako vyriešiť nejasnosti počas rozkladu bitmáp na cestách"
+
+
+msgid "Black"
+msgstr "Čierne"
+
+
+msgid "Prefers to connect black (foreground) components"
+msgstr "Preferuje prepojenie čiernych (predných) komponentov"
+
+
+msgid "White"
+msgstr "Biele"
+
+
+msgid "Prefers to connect white (background) components"
+msgstr "Preferuje prepojenie bielych (zadných) komponentov"
+
+
+msgid "Always take a left turn"
+msgstr "Vždy odbočiť doľava"
+
+
+msgid "Always take a right turn"
+msgstr "Vždy odbočiť doprava"
+
+
+msgid "Minority"
+msgstr "Menšina"
+
+
+msgid "Prefers to connect the color (black or white) that occurs least frequently in the local neighborhood of the current position"
+msgstr "Preferuje prepojenie farby (čiernej alebo bielej), ktorá sa v lokálnom susedstve aktuálnej pozície vyskytuje najmenej často"
+
+
+msgid "Majority"
+msgstr "Väčšina"
+
+
+msgid "Prefers to connect the color (black or white) that occurs most frequently in the local neighborhood of the current position"
+msgstr "Preferuje pripojenie farby (čiernej alebo bielej), ktorá sa v lokálnom susedstve aktuálnej pozície vyskytuje najčastejšie"
+
+
+msgid "Choose pseudo-randomly"
+msgstr "Pseudonáhodný výber"
+
+
+msgid "Start At Current Frame"
+msgstr "Začať od aktuálnej snímky"
+
+
+msgid "Trace Image starting in current image frame"
+msgstr "Sledovať obrázok začínajúci v aktuálnej snímke"
 
 
 msgctxt "Operator"
@@ -63484,10 +63585,6 @@ msgid "Move the active vertex group up/down in the list"
 msgstr "Presunie aktívne skupiny vrcholov v zozname nahor/nadol"
 
 
-msgid "Direction to move the active vertex group towards"
-msgstr "Smer pohybu smerom k aktívnej skupine vrcholov"
-
-
 msgid "Normalize weights of the active vertex group, so that the highest ones are now 1.0"
 msgstr "Normalizuje váhy aktívnej skupiny vrcholov tak, že tie najvyššie sú teraz 1,0"
 
@@ -66880,10 +66977,6 @@ msgstr "Piestový"
 
 msgid "Restrict rigid body translation and rotation to one axis"
 msgstr "Obmedzí presun a rotáciu pevného telesa na jednu os"
-
-
-msgid "Generic"
-msgstr "Všeobecný"
 
 
 msgid "Restrict translation and rotation to specified axes"
@@ -77126,10 +77219,6 @@ msgstr "Nastavenia filtra"
 
 msgid "Fluid Presets"
 msgstr "Predvoľby kvapalnosti"
-
-
-msgid "Extensions"
-msgstr "Prípony"
 
 
 msgid "Active Tool"
@@ -88929,16 +89018,8 @@ msgid "Display dashed black-white edges"
 msgstr "Zobrazí prerušované čiernobiele okraje"
 
 
-msgid "Black"
-msgstr "Čierne"
-
-
 msgid "Display black edges"
 msgstr "Zobrazí čierne okraje"
-
-
-msgid "White"
-msgstr "Biele"
 
 
 msgid "Display white edges"
@@ -98737,6 +98818,10 @@ msgstr "Štýl riadiaceho"
 
 msgid "Gamepad"
 msgstr "Gamepad"
+
+
+msgid "Extensions"
+msgstr "Prípony"
 
 
 msgid "HP Reverb G2"
@@ -113007,6 +113092,10 @@ msgid "Vertex weight used by Bevel modifier"
 msgstr "Váha vrcholov použitá modifikátorom skosenia"
 
 
+msgid "Weight used by the Subdivision Surface modifier"
+msgstr "Váha použitá modifikátorom delenia povrchu"
+
+
 msgid "X radius used by Skin modifier"
 msgstr "Polomer X použitý modifikátorom Koža"
 
@@ -113017,10 +113106,6 @@ msgstr "Polomer Y použitý modifikátorom Koža"
 
 msgid "Edge weight used by Bevel modifier"
 msgstr "Váha hrany použitá modifikátorom skosenia"
-
-
-msgid "Weight used by the Subdivision Surface modifier"
-msgstr "Váha použitá modifikátorom delenia povrchu"
 
 
 msgid "Weight used for Soft Body Goal"
@@ -115697,6 +115782,22 @@ msgid "Limit Radius"
 msgstr "Limit polomeru"
 
 
+msgid "Position of the first control point"
+msgstr "Pozícia prvého riadiaceho bodu"
+
+
+msgid "Position of the middle control point"
+msgstr "Pozícia stredného riadiaceho bodu"
+
+
+msgid "Position of the last control point"
+msgstr "Pozícia posledného riadiaceho bodu"
+
+
+msgid "Distance of the points from the origin"
+msgstr "Vzdialenosť bodov od počiatku"
+
+
 msgid "The number of evaluated points on the curve"
 msgstr "Počet vyhodnocovaných bodov na krivke"
 
@@ -115737,14 +115838,6 @@ msgid "Point 3"
 msgstr "Bod 3"
 
 
-msgid "Distance of the points from the origin"
-msgstr "Vzdialenosť bodov od počiatku"
-
-
-msgid "Position of the first control point"
-msgstr "Pozícia prvého riadiaceho bodu"
-
-
 msgid "Position of the second control point"
 msgstr "Pozícia druhého riadiaceho bodu"
 
@@ -115759,14 +115852,6 @@ msgstr "Vzdialenosť medzi dvoma bodmi"
 
 msgid "The number of edges on the curve"
 msgstr "Počet hrán na krivke"
-
-
-msgid "Position of the middle control point"
-msgstr "Pozícia stredného riadiaceho bodu"
-
-
-msgid "Position of the last control point"
-msgstr "Pozícia posledného riadiaceho bodu"
 
 
 msgid "Bottom Width"

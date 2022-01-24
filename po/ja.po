@@ -1,7 +1,7 @@
 
 msgid ""
 msgstr ""
-"Project-Id-Version: Blender 3.1.0 Alpha (b'e1e3043a51a6')\n"
+"Project-Id-Version: Blender 3.1.0 Alpha (b'7708a848c969')\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-01-01 00:00:00\n"
 "PO-Revision-Date: 2016-10-13 03:05+0900\n"
@@ -1297,6 +1297,10 @@ msgstr "余白"
 
 msgid "Extends the baked result as a post process filter"
 msgstr "ポストプロセスフィルタとしてベイクされた結果(の端)を延長します"
+
+
+msgid "Extend"
+msgstr "拡張"
 
 
 msgid "Max Ray Distance"
@@ -4146,6 +4150,10 @@ msgstr "ジオメトリ属性のカラー値"
 
 msgid "RGBA color in scene linear color space"
 msgstr "シーンのリニア色空間での RGBA カラー"
+
+
+msgid "Active Layer"
+msgstr "アクティブレイヤー"
 
 
 msgid "Object Path"
@@ -8209,10 +8217,6 @@ msgstr "クリップ最小値X"
 
 msgid "Clip Min Y"
 msgstr "クリップ最小値Y"
-
-
-msgid "Extend"
-msgstr "拡張"
 
 
 msgid "Extrapolate the curve or extend it horizontally"
@@ -18002,10 +18006,6 @@ msgid "Collection of grease pencil layers"
 msgstr "グリースペンシルレイヤーの集合"
 
 
-msgid "Active Layer"
-msgstr "アクティブレイヤー"
-
-
 msgid "Active grease pencil layer"
 msgstr "アクティブグリースペンシルレイヤー"
 
@@ -26440,10 +26440,6 @@ msgstr "シーンデータブロック。オブジェクト群から成り、時
 
 msgid "Active Movie Clip"
 msgstr "アクティブな動画クリップ"
-
-
-msgid "Active movie clip used for constraints and viewport drawing"
-msgstr "コンストレイントとビュー描画に使用するアクティブ動画クリップ"
 
 
 msgid "Distance Model"
@@ -36488,10 +36484,6 @@ msgid "Use Creases"
 msgstr "クリースを使用"
 
 
-msgid "Use mesh edge crease information to sharpen edges"
-msgstr "辺をシャープにするのに、メッシュの辺のクリース情報を使用します"
-
-
 msgid "Use Custom Normals"
 msgstr "カスタム法線を使用"
 
@@ -42621,6 +42613,10 @@ msgid "Convex Hull"
 msgstr "凸包"
 
 
+msgid "Method used to determine radius and placement"
+msgstr "半径と配置を設定する方法"
+
+
 msgid "Endpoint Selection"
 msgstr "端を選択"
 
@@ -42679,10 +42675,6 @@ msgstr "開始と終了ハンドルの位置をスプラインの制御点から
 
 msgid "Curve Circle"
 msgstr "カーブ円"
-
-
-msgid "Method used to determine radius and placement"
-msgstr "半径と配置を設定する方法"
 
 
 msgid "Define the radius and location with three points"
@@ -47898,6 +47890,10 @@ msgid "Keep the current data-block displayed"
 msgstr "現在のデータブロックの表示を維持します"
 
 
+msgid "Direction to move the active vertex group towards"
+msgstr "アクティブ頂点グループの移動方向"
+
+
 msgctxt "Operator"
 msgid "Open Cache File"
 msgstr "キャッシュファイルを開く"
@@ -52400,6 +52396,10 @@ msgid "Name of new attribute"
 msgstr "新しい属性の名前"
 
 
+msgid "Generic"
+msgstr "汎用"
+
+
 msgctxt "Operator"
 msgid "Remove Geometry Attribute"
 msgstr "ジオメトリ属性を削除"
@@ -54427,6 +54427,107 @@ msgstr "カラー切替え"
 
 msgid "Switch tint colors"
 msgstr "チントカラーを切り替えます"
+
+
+msgctxt "Operator"
+msgid "Trace Image to Grease Pencil"
+msgstr "グリースペンシルへ画像をトレース"
+
+
+msgid "Extract Grease Pencil strokes from image"
+msgstr "画像からグリースペンシルのストロークを抽出します"
+
+
+msgid "Determines if trace simple image or full sequence"
+msgstr "単一画像または連番画像全体のどちらをトレースするかを決めます"
+
+
+msgid "Trace the current frame of the image"
+msgstr "画像の現在のフレームをトレースします"
+
+
+msgid "Trace full sequence"
+msgstr "連番画像全体をトレースします"
+
+
+msgid "Resolution of the generated curves"
+msgstr "生成するカーブの解像度"
+
+
+msgid "Distance to sample points, zero to disable"
+msgstr "サンプルポイントへの距離。０で無効"
+
+
+msgid "Scale of the final stroke"
+msgstr "最終ストロークのスケール"
+
+
+msgid "Color Threshold"
+msgstr "色のしきい値"
+
+
+msgid "Determine the lightness threshold above which strokes are generated"
+msgstr "この輝度のしきい値より上の位置のストロークを生成します"
+
+
+msgid "Turn Policy"
+msgstr "ターンポリシー"
+
+
+msgid "Determines how to resolve ambiguities during decomposition of bitmaps into paths"
+msgstr "ビットマップをパスに分解する際のあいまいさを解決する方法を決めます"
+
+
+msgid "Black"
+msgstr "黒"
+
+
+msgid "Prefers to connect black (foreground) components"
+msgstr "黒（前面）成分につなげるようにします"
+
+
+msgid "White"
+msgstr "白"
+
+
+msgid "Prefers to connect white (background) components"
+msgstr "白（背景）成分につなげるようにします"
+
+
+msgid "Always take a left turn"
+msgstr "常に左にターンします"
+
+
+msgid "Always take a right turn"
+msgstr "常に右にターンします"
+
+
+msgid "Minority"
+msgstr "マイノリティ"
+
+
+msgid "Prefers to connect the color (black or white) that occurs least frequently in the local neighborhood of the current position"
+msgstr "現在の位置の近くで最も頻度が少ない色（黒または白）とつなげるようにします"
+
+
+msgid "Majority"
+msgstr "マジョリティ"
+
+
+msgid "Prefers to connect the color (black or white) that occurs most frequently in the local neighborhood of the current position"
+msgstr "現在の位置の近くで最も頻度が多い色（黒または白）とつなげるようにします"
+
+
+msgid "Choose pseudo-randomly"
+msgstr "疑似乱数で選択します"
+
+
+msgid "Start At Current Frame"
+msgstr "現在のフレームから移動"
+
+
+msgid "Trace Image starting in current image frame"
+msgstr "現在のフレームの画像からトレースを開始します"
 
 
 msgctxt "Operator"
@@ -63978,10 +64079,6 @@ msgid "Move the active vertex group up/down in the list"
 msgstr "アクティブな頂点グループをリスト内で上下に移動します"
 
 
-msgid "Direction to move the active vertex group towards"
-msgstr "アクティブ頂点グループの移動方向"
-
-
 msgid "Normalize weights of the active vertex group, so that the highest ones are now 1.0"
 msgstr "アクティブ頂点グループのウェイトを、一番高い物を1.0として正規化します"
 
@@ -67400,10 +67497,6 @@ msgstr "ピストン"
 
 msgid "Restrict rigid body translation and rotation to one axis"
 msgstr "リジッドボディの移動と回転を一軸に制限します"
-
-
-msgid "Generic"
-msgstr "汎用"
 
 
 msgid "Restrict translation and rotation to specified axes"
@@ -77833,10 +77926,6 @@ msgstr "フィルター設定"
 
 msgid "Fluid Presets"
 msgstr "流体のプリセット"
-
-
-msgid "Extensions"
-msgstr "エクステンション"
 
 
 msgid "Active Tool"
@@ -89722,16 +89811,8 @@ msgid "Display dashed black-white edges"
 msgstr "黒と白の点線を表示します"
 
 
-msgid "Black"
-msgstr "黒"
-
-
 msgid "Display black edges"
 msgstr "黒いエッジを表示します"
-
-
-msgid "White"
-msgstr "白"
 
 
 msgid "Display white edges"
@@ -99577,6 +99658,10 @@ msgstr "コントローラースタイル"
 
 msgid "Gamepad"
 msgstr "ゲームパッド"
+
+
+msgid "Extensions"
+msgstr "エクステンション"
 
 
 msgid "HP Reverb G2"
@@ -113870,6 +113955,10 @@ msgid "Vertex weight used by Bevel modifier"
 msgstr "ベベルモディファイアーが使用する頂点ウェイト"
 
 
+msgid "Weight used by the Subdivision Surface modifier"
+msgstr "サブディビジョンサーフェスモディファイアーが使用するウェイト"
+
+
 msgid "X radius used by Skin modifier"
 msgstr "スキンモディファイアーが使用するX半径"
 
@@ -113880,10 +113969,6 @@ msgstr "スキンモディファイアーが使用するY半径"
 
 msgid "Edge weight used by Bevel modifier"
 msgstr "ベベルモディファイアーが使用する辺ウェイト"
-
-
-msgid "Weight used by the Subdivision Surface modifier"
-msgstr "サブディビジョンサーフェスモディファイアーが使用するウェイト"
 
 
 msgid "Weight used for Soft Body Goal"
@@ -116554,6 +116639,22 @@ msgid "Limit Radius"
 msgstr "半径を制限"
 
 
+msgid "Position of the first control point"
+msgstr "最初の制御点の位置"
+
+
+msgid "Position of the middle control point"
+msgstr "中央の制御点の位置"
+
+
+msgid "Position of the last control point"
+msgstr "最後の制御点の位置"
+
+
+msgid "Distance of the points from the origin"
+msgstr "原点からポイントまでの距離"
+
+
 msgid "The number of evaluated points on the curve"
 msgstr "カーブの評価済みのポイントの数"
 
@@ -116590,14 +116691,6 @@ msgid "Point 3"
 msgstr "ポイント 3"
 
 
-msgid "Distance of the points from the origin"
-msgstr "原点からポイントまでの距離"
-
-
-msgid "Position of the first control point"
-msgstr "最初の制御点の位置"
-
-
 msgid "Position of the second control point"
 msgstr "二つめの制御点の位置"
 
@@ -116608,14 +116701,6 @@ msgstr "このラインの進行方向。このベクトルの長さは関係あ
 
 msgid "Distance between the two points"
 msgstr "二つのポイント間の距離"
-
-
-msgid "Position of the middle control point"
-msgstr "中央の制御点の位置"
-
-
-msgid "Position of the last control point"
-msgstr "最後の制御点の位置"
 
 
 msgid "Bottom Width"
