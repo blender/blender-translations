@@ -1,7 +1,7 @@
 
 msgid ""
 msgstr ""
-"Project-Id-Version: Blender 3.3.0 Alpha (b'c5d3846b1026')\n"
+"Project-Id-Version: Blender 3.3.0 Alpha (b'275419f6fd4c')\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-01-01 00:00:00\n"
 "PO-Revision-Date: \n"
@@ -14,7 +14,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "<<<<<< .minX-Generator: Poedit 1.6.9\n"
 "=====X-Generator: Poedit 1.6.9\n"
-"X-Generator: Poedit 3.1"
+"X-Generator: Poedit 3.1.1"
 
 
 msgid "Shader AOV"
@@ -319,6 +319,10 @@ msgstr "MetalRT (试验)"
 
 msgid "MetalRT for ray tracing uses less memory for scenes which use curves extensively, and can give better performance in specific cases. However this support is experimental and some scenes may render incorrectly"
 msgstr "用于光线追踪的MetalRT 对于广泛使用曲线的场景使用较少的内存，并且可以在特定情况下提供更好的性能。但是，此支持是实验性的，某些场景可能会导致渲染偏差"
+
+
+msgid "Displays glTF Settings node in Shader Editor (Menu Add > Output)"
+msgstr "在着色器编辑器中显示 glTF 设置节点（菜单添加>输出）"
 
 
 msgid "Fribidi Library"
@@ -3545,8 +3549,36 @@ msgid "Length of newly added curves when it is not interpolated from other curve
 msgstr "未从其他曲线插值时，新添加的曲线的长度"
 
 
+msgid "Density Add Attempts"
+msgstr "密度添加尝试"
+
+
+msgid "How many times the Density brush tries to add a new curve"
+msgstr "密度笔刷尝试添加新曲线的次数"
+
+
+msgid "Density Mode"
+msgstr "密度模式"
+
+
+msgid "Determines whether the brush adds or removes curves"
+msgstr "确定笔刷是添加还是删除曲线"
+
+
+msgid "Either add or remove curves depending on the minimum distance of the curves under the cursor"
+msgstr "根据光标下曲线的最小距离添加或删除曲线"
+
+
+msgid "Add new curves between existing curves, taking the minimum distance into account"
+msgstr "在现有曲线之间添加新曲线，将最小距离考虑在内"
+
+
 msgid "Remove"
-msgstr "移除"
+msgstr "删除"
+
+
+msgid "Remove curves whose root points are too close"
+msgstr "删除根点过近的曲线"
 
 
 msgid "Interpolate Length"
@@ -3575,6 +3607,10 @@ msgstr "使用曲线的近距离形状"
 
 msgid "Minimum Distance"
 msgstr "最小距离"
+
+
+msgid "Goal distance between curve roots for the Density brush"
+msgstr "密度笔刷的曲线根之间的目标距离"
 
 
 msgid "Minimum Length"
@@ -12611,8 +12647,8 @@ msgid "Small"
 msgstr "小"
 
 
-msgid "Regular"
-msgstr "常规"
+msgid "Medium"
+msgstr "中等"
 
 
 msgid "Large"
@@ -15227,6 +15263,10 @@ msgid "Blend mode"
 msgstr "混合模式"
 
 
+msgid "Regular"
+msgstr "常规"
+
+
 msgid "Hard Light"
 msgstr "硬光"
 
@@ -17139,6 +17179,10 @@ msgid "Crease Threshold"
 msgstr "折痕阈值"
 
 
+msgid "Angles smaller than this will be treated as creases. Crease angle priority: object line art crease override > mesh auto smooth angle > line art default crease"
+msgstr "小于此角度的角度将被视为折痕。折痕角度优先级: 物体线条画折痕重写>网格自动平滑角度>线条画默认折痕"
+
+
 msgid "Invert Vertex Group"
 msgstr "反转顶点组"
 
@@ -17171,6 +17215,14 @@ msgid "Minimum number of occlusions for the generated strokes"
 msgstr "生成的笔画的最小遮挡数量"
 
 
+msgid "Light Object"
+msgstr "灯光物体"
+
+
+msgid "Use this light object to generate light contour"
+msgstr "使用此灯光物体生成灯光轮廓"
+
+
 msgid "The strength value for the generate strokes"
 msgstr "生成笔画的强度值"
 
@@ -17183,8 +17235,56 @@ msgid "A margin to prevent strokes from ending abruptly at the edge of the image
 msgstr "防止笔画在图像边缘突然断开的边距"
 
 
+msgid "Shadow Camera Far"
+msgstr "阴影摄像机远裁"
+
+
+msgid "Far clipping distance of shadow camera"
+msgstr "阴影摄像机的远裁距离"
+
+
+msgid "Shadow Camera Near"
+msgstr "阴影摄像机近裁"
+
+
+msgid "Near clipping distance of shadow camera"
+msgstr "阴影摄像机的近裁距离"
+
+
+msgid "Shadow Camera Size"
+msgstr "阴影摄像机尺寸"
+
+
+msgid "This value represent the \"Orthographic Scale\" of an ortho camera.If the camera is put at the lamps position with this scale, it will represent the coverage of the shadow \"camera\" "
+msgstr "此值表示正交摄像机的“正交缩放”。如果将此缩放值的摄像机放在灯光位置，它将表示阴影“摄像机”的覆盖范围"
+
+
+msgid "Shadow Region Filtering"
+msgstr "阴影区域过滤"
+
+
+msgid "Select feature lines that comes from lit or shaded regions. Will not affect cast shadow and light contour since they are at the border"
+msgstr "选择来自照明或阴影区域的要素线。不会影响投射阴影和光线轮廓，因为它们位于边界"
+
+
+msgid "Lit"
+msgstr "明亮"
+
+
 msgid "Shaded"
 msgstr "着色"
+
+
+msgid "Silhouette Filtering"
+msgstr "剪影过滤"
+
+
+msgid "Select contour or silhouette"
+msgstr "选择轮廓或剪影"
+
+
+msgid "Individual Silhouette"
+msgstr "单个剪影"
 
 
 msgid "Smooth Tolerance"
@@ -17427,6 +17527,22 @@ msgid "Select everything except lines from specified collection"
 msgstr "选择除来自指定集合中行之外的所有内容"
 
 
+msgid "Invert Silhouette Filtering"
+msgstr "反转轮廓过滤"
+
+
+msgid "Select anti-silhouette lines"
+msgstr "选择防剪影线"
+
+
+msgid "Use Light Contour"
+msgstr "使用灯光轮廓"
+
+
+msgid "Generate light/shadow separation lines from a reference light object"
+msgstr "从参考灯光物体生成光/阴影分隔线"
+
+
 msgid "Use Loose"
 msgstr "使用松散"
 
@@ -17517,6 +17633,18 @@ msgstr "重叠边缘类型"
 
 msgid "Allow an edge to have multiple overlapping types. This will create a separate stroke for each overlapping type"
 msgstr "允许边缘具有多个重叠类型。这将为每个重叠类型创建一个单独的笔画"
+
+
+msgid "Use Shadow"
+msgstr "使用阴影"
+
+
+msgid "Shadow Enclosed Shapes"
+msgstr "阴影封闭形状"
+
+
+msgid "Reproject visible lines again to get enclosed shadow shapes"
+msgstr "重新投影可见线以获得封闭的阴影形状"
 
 
 msgid "Vertex group name for selected strokes"
@@ -19178,6 +19306,26 @@ msgstr "生长/收缩曲线"
 
 msgid "Paint Selection"
 msgstr "绘制选择"
+
+
+msgid "Pinch Curves"
+msgstr "夹捏曲线"
+
+
+msgid "Smooth Curves"
+msgstr "平滑曲线"
+
+
+msgid "Puff Curves"
+msgstr "蓬松曲线"
+
+
+msgid "Density Curves"
+msgstr "密度曲线"
+
+
+msgid "Slide Curves"
+msgstr "滑动曲线"
 
 
 msgid "Dash Ratio"
@@ -20920,6 +21068,14 @@ msgid "Intersection generated by this collection will have this mask value"
 msgstr "此集合生成的交叉将具有此遮罩值"
 
 
+msgid "Intersection Priority"
+msgstr "交叉优先级"
+
+
+msgid "The intersection line will be included into the object with the higher intersection priority value"
+msgstr "交叉线将包含在具有较高交叉优先级值的物体中"
+
+
 msgid "Usage"
 msgstr "用法"
 
@@ -20978,6 +21134,14 @@ msgstr "在此集合中使用自定义交叉遮罩进行遮罩"
 
 msgid "Objects that are directly in this collection"
 msgstr "直接位于此集合中的物体"
+
+
+msgid "Use Intersection Priority"
+msgstr "使用交叉优先级"
+
+
+msgid "Assign intersection priority value for this collection"
+msgstr "为此集合分配交叉优先级数值"
 
 
 msgid "Curve data-block storing curves, splines and NURBS"
@@ -24580,10 +24744,6 @@ msgstr "高"
 
 msgid "High quality"
 msgstr "高质量"
-
-
-msgid "Medium"
-msgstr "中等"
 
 
 msgid "Medium quality"
@@ -33093,6 +33253,10 @@ msgid "Faces with this material will behave as if it has set number of layers in
 msgstr "带有此材质的面将表现得好像它已设置遮挡层数"
 
 
+msgid "Override object and collection intersection priority value"
+msgstr "重写物体和集合交叉优先级灵敏值"
+
+
 msgid "Material slot in an object"
 msgstr "物体上的材质槽"
 
@@ -33132,6 +33296,10 @@ msgstr "标记设置"
 
 msgid "Pivot Point"
 msgstr "轴心点"
+
+
+msgid "Plane Track Image Specials"
+msgstr "平面追踪图像专用项"
 
 
 msgid "Proxy"
@@ -43575,6 +43743,10 @@ msgid "Create a point in the point cloud for each selected face corner"
 msgstr "为每个选定面拐在点云中创建点"
 
 
+msgid "Mesh To Volume"
+msgstr "网格 -> 体积"
+
+
 msgid "How the voxel size is specified"
 msgstr "如何指定体素大小"
 
@@ -43951,12 +44123,24 @@ msgid "Pack UV Islands"
 msgstr "拼排UV孤岛"
 
 
+msgid "UV Unwrap"
+msgstr "UV展开"
+
+
 msgid "Angle Based"
 msgstr "基于角度"
 
 
+msgid "This method gives a good 2D representation of a mesh"
+msgstr "该方法提供了不错的网格的二维表达"
+
+
 msgid "Conformal"
 msgstr "共形"
+
+
+msgid "Uses LSCM (Least Squares Conformal Mapping). This usually gives a less accurate UV mapping than Angle Based, but works better for simpler objects"
+msgstr "使用LSCM (Least Squared Conformal Mapping)。UV映射效果通常没有基于角度准确，不过对于简单物体效果更好。"
 
 
 msgid "Volume Cube"
@@ -51682,14 +51866,6 @@ msgstr "导出当前动画帧中的场景"
 
 msgid "Export Deformation Bones Only"
 msgstr "仅导出变形骨骼"
-
-
-msgid "Displacement Textures (EXPERIMENTAL)"
-msgstr "置换纹理(实验)"
-
-
-msgid "EXPERIMENTAL: Export displacement textures. Uses incomplete \"KHR_materials_displacement\" glTF extension"
-msgstr "实验: 导出置换纹理。使用不完全 \"KHR_materials_displacement\" glTF 扩展"
 
 
 msgid "Color quantization bits"
@@ -66027,15 +66203,6 @@ msgstr "选择相连的拾取项"
 
 msgid "Select linked faces under the cursor"
 msgstr "选择光标下的相连面"
-
-
-msgctxt "Operator"
-msgid "Face Select Reveal"
-msgstr "选取面并恢复显示"
-
-
-msgid "Reveal hidden faces"
-msgstr "恢复显示面"
 
 
 msgctxt "Operator"
@@ -82033,14 +82200,6 @@ msgstr "全画幅合成器"
 
 msgid "Enable compositor full frame execution mode option (no tiling, reduces execution time and memory usage)"
 msgstr "启用合成器全画幅执行模式选项(无分块，降低执行时间和内存使用）"
-
-
-msgid "New Curves Type"
-msgstr "新曲线类型"
-
-
-msgid "Enable the new curves data type in the UI"
-msgstr "在 UI 中启用新的曲线数据类型"
 
 
 msgid "New Point Cloud Type"
@@ -105291,11 +105450,6 @@ msgstr "SVG为蜡笔"
 
 
 msgctxt "Operator"
-msgid "Wavefront (.obj) (experimental)"
-msgstr "Wavefront (.obj) (实验性)"
-
-
-msgctxt "Operator"
 msgid "Render Image"
 msgstr "渲染图像"
 
@@ -106005,6 +106159,11 @@ msgstr "NURBS 圆环"
 msgctxt "Operator"
 msgid "Path"
 msgstr "路径曲线"
+
+
+msgctxt "Operator"
+msgid "Empty Hair"
+msgstr "空白毛发"
 
 
 msgctxt "Operator"
@@ -106923,11 +107082,6 @@ msgstr "下一块"
 msgctxt "Operator"
 msgid "Color Attribute"
 msgstr "颜色属性"
-
-
-msgctxt "Operator"
-msgid "Empty Hair"
-msgstr "空白毛发"
 
 
 msgctxt "Operator"
