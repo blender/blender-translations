@@ -3567,15 +3567,15 @@ msgstr "他のヘアーカーブから補間されない時の新規ヘアーカ
 
 
 msgid "Density Add Attempts"
-msgstr "密集追加の試行回数"
+msgstr "密度追加の試行回数"
 
 
 msgid "How many times the Density brush tries to add a new curve"
-msgstr "密集ブラシが新規カーブを追加しようとする回数"
+msgstr "密度ブラシが新規カーブを追加しようとする回数"
 
 
 msgid "Density Mode"
-msgstr "密集モード"
+msgstr "密度モード"
 
 
 msgid "Determines whether the brush adds or removes curves"
@@ -3627,7 +3627,7 @@ msgstr "最小距離"
 
 
 msgid "Goal distance between curve roots for the Density brush"
-msgstr "密集ブラシでの、カーブの根元間の距離の目標"
+msgstr "密度ブラシでの、カーブの根元間の距離の目標"
 
 
 msgid "Minimum Length"
@@ -4566,6 +4566,10 @@ msgstr "画像のレイヤー、パスとフレームのどれが表示される
 
 msgid "Override Background Image"
 msgstr "オーバーライドの下絵"
+
+
+msgid "In a local override camera, whether this background image comes from the linked reference camera, or is local to the override"
+msgstr "ローカルオーバーライドカメラで、この下絵画像がリンク参照カメラ由来か、そのオーバーライドのローカルかのどちらか"
 
 
 msgid "Offset"
@@ -6061,6 +6065,10 @@ msgstr "コンストレイントが最終的に影響を及ぼす量"
 
 msgid "Override Constraint"
 msgstr "オーバーライドコンストレイント"
+
+
+msgid "In a local override object, whether this constraint comes from the linked reference object, or is local to the override"
+msgstr "ローカルオーバーライドオブジェクト内で、このコンストレイントがリンク参照オブジェクト由来か、オーバーライドのローカルかのどちらか"
 
 
 msgid "Constraint has valid settings and can be evaluated"
@@ -16510,6 +16518,10 @@ msgid "Override Modifier"
 msgstr "オーバーライドモディファイアー"
 
 
+msgid "In a local override object, whether this modifier comes from the linked reference object, or is local to the override"
+msgstr "ローカルオーバーライドオブジェクト内で、このモディファイアーがリンク参照オブジェクト由来か、オーバーライドのローカルかのいずれか"
+
+
 msgid "Modifier name"
 msgstr "モディファイアー名"
 
@@ -19587,10 +19599,6 @@ msgstr "カーブをスムージング"
 
 msgid "Puff Curves"
 msgstr "カーブをパフ"
-
-
-msgid "Density Curves"
-msgstr "密集カーブ"
 
 
 msgid "Slide Curves"
@@ -40865,6 +40873,10 @@ msgid "Start Frame (manipulated from UI)"
 msgstr "開始フレーム（UI操作）"
 
 
+msgid "Start frame of the NLA strip. Note: changing this value also updates the value of the strip's end frame. If only the start frame should be changed, see the \"frame_start\" property instead"
+msgstr "NLA ストリップの開始フレーム。注：この値の変更で、ストリップの最終フレームも更新されます。開始フレームのみ変更する場合は、代わりに「frame_start」プロパティを見てください"
+
+
 msgid "Amount the strip contributes to the current result"
 msgstr "現在の結果に寄与するストリップの量"
 
@@ -44417,6 +44429,10 @@ msgstr "メッシュの各辺に関するトポロジー情報を取得します
 
 msgid "Calculate the surface area of a mesh's faces"
 msgstr "メッシュの面の表面積を計算します"
+
+
+msgid "Is Face Planar"
+msgstr "平面判定"
 
 
 msgid "Retrieve whether all triangles in a face are on the same plane, i.e. whether have the same normal"
@@ -65233,6 +65249,12 @@ msgid "Override Collection"
 msgstr "オーバーライドコレクション"
 
 
+msgid "Session UUID of the directly linked collection containing the selected object, to make an override from"
+msgstr ""
+"オーバーライドを作成する元となる、選択中のオブジェクトを含む\n"
+"直接リンクコレクションのセッション UUID"
+
+
 msgid "Make linked data local to each object"
 msgstr "オブジェクト毎にリンクデータをローカル化します"
 
@@ -71663,7 +71685,7 @@ msgstr "最短距離を編集"
 
 
 msgid "Change the minimum distance used by the density brush"
-msgstr "密集ブラシが使用する最短距離を変更します"
+msgstr "密度ブラシが使用する最短距離を変更します"
 
 
 msgctxt "Operator"
@@ -103853,6 +103875,10 @@ msgid "and AMD driver version 22.10 or newer"
 msgstr "。AMD ドライバー Ver.22.10以降も必要です"
 
 
+msgid "and Windows driver version 101.3268 or newer"
+msgstr "。Windows ドライバー Ver.101.3268以降も必要です"
+
+
 msgid "Requires Apple Silicon with macOS 12.2 or newer"
 msgstr "Apple Silicon と macOS 12.2以降が必要です"
 
@@ -112093,6 +112119,10 @@ msgid "Attribute domain not supported by this geometry type"
 msgstr "属性ドメインはこの形状タイプでは未対応です"
 
 
+msgid "The attribute name must not be empty"
+msgstr "属性名は空にできません"
+
+
 msgid "Attribute is required and can't be removed"
 msgstr "属性が必要なので削除できません"
 
@@ -117689,6 +117719,10 @@ msgid "Only available in point selection mode"
 msgstr "ポイント選択モードでないと利用できません"
 
 
+msgid "Curves do not have surface attachment information"
+msgstr "カーブに表面植え付け情報がありません"
+
+
 msgid "UV map or surface attachment is invalid"
 msgstr "UV マップまたは表面への植え付けが無効です"
 
@@ -120854,8 +120888,12 @@ msgid "Freestyle: Mesh loading"
 msgstr "Freestyle: メッシュ読込"
 
 
+msgid "Freestyle: View map creation"
+msgstr "Freestyle: ビューマップ作成"
+
+
 msgid "Freestyle: Stroke rendering"
-msgstr "Freestyle: ビューマップ作成Freestyle: ストロークレンダリング"
+msgstr "Freestyle: ストロークレンダリング"
 
 
 msgid "Cannot open file: %s"
@@ -123919,6 +123957,10 @@ msgstr "ソースメッシュに面が必要です"
 
 msgid "The source geometry must contain a mesh or a point cloud"
 msgstr "ソースジオメトリにメッシュまたはポイントクラウドが必要です"
+
+
+msgid "Volume scale is lower than permitted by OpenVDB"
+msgstr "ボリュームスケールが OpenVDB の許容範囲より小さいです"
 
 
 msgid "Faces to consider when packing islands"
