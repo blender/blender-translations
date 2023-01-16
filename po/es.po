@@ -1,9 +1,9 @@
 
 msgid ""
 msgstr ""
-"Project-Id-Version: Blender 3.5.0 Alpha (b'4887401789ea')\n"
+"Project-Id-Version: Blender 3.5.0 Alpha (b'5cbc8ce3b145')\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-01-09 08:20:55\n"
+"POT-Creation-Date: 2023-01-16 09:42:03\n"
 "PO-Revision-Date: \n"
 "Last-Translator: Gabriel Gazzán <gabcorreo@gmail.com>\n"
 "Language-Team: Español <gabcorreo@gmail.com>\n"
@@ -16647,10 +16647,6 @@ msgid "Time Alignment"
 msgstr "Alineación de tiempo"
 
 
-msgid "When should strokes start to appear/disappear"
-msgstr "Cuándo deberían comenzar a aparecer/desaparecer los trazos"
-
-
 msgid "Align Start"
 msgstr "Alinear inicio"
 
@@ -16703,10 +16699,6 @@ msgid "Maximum number of frames that the build effect can run for (unless anothe
 msgstr "Cantidad máxima de fotogramas durante la cual se producirá el efecto de construcción (a menos que ocurra otro fotograma clave de lápiz de cera antes de que ese tiempo haya transcurrido)"
 
 
-msgid "How many strokes are being animated at a time"
-msgstr "Cuántos trazos se estarán animando al mismo tiempo"
-
-
 msgid "Sequential"
 msgstr "Secuencial"
 
@@ -16735,8 +16727,12 @@ msgid "Defines how much of the stroke is visible"
 msgstr "Define qué extensión del trazo será visible"
 
 
-msgid "Start Delay"
-msgstr "Demora inicial"
+msgid "Speed Factor"
+msgstr "Velocidad"
+
+
+msgid "Delay"
+msgstr "Retardo"
 
 
 msgid "Number of frames after each GP keyframe before the modifier has any effect"
@@ -16745,6 +16741,10 @@ msgstr "Cantidad de fotogramas luego de cada clave de lápiz de cera antes de qu
 
 msgid "Output Vertex group"
 msgstr "Grupo de vértices de salida"
+
+
+msgid "Timing"
+msgstr "Temporización"
 
 
 msgid "Transition"
@@ -33756,8 +33756,12 @@ msgid "Utilities"
 msgstr "Utilitarios"
 
 
-msgid "Mesh Primitives"
-msgstr "Primitivas (mallas)"
+msgid "Math"
+msgstr "Operar"
+
+
+msgid "Primitives"
+msgstr "Primitivas"
 
 
 msgid "Node Context Menu"
@@ -33768,24 +33772,20 @@ msgid "Attribute"
 msgstr "Atributo"
 
 
+msgid "Read"
+msgstr "Leer"
+
+
+msgid "Write"
+msgstr "Escribir"
+
+
 msgid "Instances"
 msgstr "Instancias"
 
 
 msgid "Mesh"
 msgstr "Malla"
-
-
-msgid "Curve Primitives"
-msgstr "Primitivas (curvas)"
-
-
-msgid "Curve Topology"
-msgstr "Topología (curvas)"
-
-
-msgid "Mesh Topology"
-msgstr "Topología (mallas)"
 
 
 msgid "Node"
@@ -34271,10 +34271,6 @@ msgstr "Identificador de este borde"
 
 msgid "Loose"
 msgstr "Suelto"
-
-
-msgid "Sharp edge for the Edge Split modifier"
-msgstr "Borde definido para el modificador Dividir bordes"
 
 
 msgid "Freestyle Edge Mark"
@@ -38022,16 +38018,8 @@ msgid "Stretch U"
 msgstr "Estirar U"
 
 
-msgid "Stretch the U coordinates between 0 and 1 when UV's are present"
-msgstr "Estira la coordenada U entre 0 y 1, si hay UV presentes"
-
-
 msgid "Stretch V"
 msgstr "Estirar V"
-
-
-msgid "Stretch the V coordinates between 0 and 1 when UV's are present"
-msgstr "Estira la coordenada V entre 0 y 1, si hay UV presentes"
 
 
 msgid "SimpleDeform Modifier"
@@ -42477,10 +42465,6 @@ msgid "Use multi-sampled motion blur of the mask"
 msgstr "Usa el desenfoque por movimiento de múltiples muestras de la máscara"
 
 
-msgid "Math"
-msgstr "Operar"
-
-
 msgctxt "NodeTree"
 msgid "Operation"
 msgstr "Operación"
@@ -44078,20 +44062,12 @@ msgid "Retrieve the face each face corner is part of"
 msgstr "Proporciona la cara a la que pertenece cada esquina de cara"
 
 
-msgid "Field at Index"
-msgstr "Campo en identificador"
-
-
 msgid "Retrieve data of other elements in the context's geometry"
 msgstr "Proporciona datos de otros elementos en la geometría del contexto"
 
 
 msgid "Domain the field is evaluated in"
 msgstr "Dominio en el que será evaluado el campo"
-
-
-msgid "Interpolate Domain"
-msgstr "Interpolar dominio"
 
 
 msgid "Retrieve values from a field on a different domain besides the domain from the context"
@@ -51844,6 +51820,10 @@ msgid "Enter/Exit sculpt mode for curves"
 msgstr "Ingresar/Salir del modo de esculpido de curvas"
 
 
+msgid "(De)select all control points"
+msgstr "(De)selecciona todos los puntos de control"
+
+
 msgctxt "Operator"
 msgid "Set Select Mode"
 msgstr "Modo de selección"
@@ -52357,10 +52337,6 @@ msgstr "Define un radio por punto que es usado para afinar el biselado"
 
 msgid "Reveal hidden control points"
 msgstr "Muestra los puntos de control ocultos"
-
-
-msgid "(De)select all control points"
-msgstr "(De)selecciona todos los puntos de control"
 
 
 msgid "Deselect control points at the boundary of each selection region"
@@ -60324,10 +60300,6 @@ msgid "Collapse Edges & Faces"
 msgstr "Colapsar bordes y caras"
 
 
-msgid "Collapse isolated edge and face regions, merging data such as UV's and color attributes. This can collapse edge-rings as well as regions of connected faces into vertices"
-msgstr "Permite colapsar regiones con bordes y caras aisladas, fusionando datos tales como UV y atributos de color. Esto es capaz de colapsar anillos de bordes, así como regiones de caras conectadas, a vértices"
-
-
 msgctxt "Operator"
 msgid "Make Edge/Face"
 msgstr "Crear borde o cara"
@@ -63421,17 +63393,9 @@ msgid "Deactivate selected viewer node in geometry nodes"
 msgstr "Desactiva el nodo Visor seleccionado"
 
 
-msgid "Delete selected nodes"
-msgstr "Borra los nodos seleccionados"
-
-
 msgctxt "Operator"
 msgid "Delete with Reconnect"
 msgstr "Borrar y reconectar"
-
-
-msgid "Delete nodes; will reconnect nodes as if deletion was muted"
-msgstr "Borrar nodos; reconectará nodos como si la eliminación hubiera sido deshabilitada"
 
 
 msgctxt "Operator"
@@ -63620,10 +63584,6 @@ msgid "Use the mouse to create a link between two nodes"
 msgstr "Usar el ratón para crear un vínculo entre dos nodos"
 
 
-msgid "Delay"
-msgstr "Retardo"
-
-
 msgid "Delay in seconds before maximum speed is reached"
 msgstr "Retardo en segundos antes de que la velocidad máxima sea alcanzada"
 
@@ -63751,10 +63711,6 @@ msgid "Toggle Node Mute"
 msgstr "Deshabilitar / Habilitar nodo"
 
 
-msgid "Toggle muting of the nodes"
-msgstr "Alterna el enmudecimiento de nodos"
-
-
 msgctxt "Operator"
 msgid "Assign New Geometry Node Group"
 msgstr "Asignar nuevo grupo de nodos de geometría"
@@ -63833,10 +63789,6 @@ msgstr "Mueve la entrada activa de un nodo de archivo de salida hacia arriba o a
 msgctxt "Operator"
 msgid "Remove File Node Socket"
 msgstr "Eliminar conector de nodo de archivo"
-
-
-msgid "Remove active input from a file output node"
-msgstr "Remueve la entrada activa del nodo de archivo de salida"
 
 
 msgid "Attach selected nodes"
@@ -63996,10 +63948,6 @@ msgid "Add Node Tree Interface Socket"
 msgstr "Agregar conector a árbol de nodos"
 
 
-msgid "Add an input or output socket to the current node tree"
-msgstr "Agrega un conector de entrada o salida al árbol de nodos actual"
-
-
 msgid "Socket Type"
 msgstr "Tipo de conector"
 
@@ -64009,26 +63957,14 @@ msgid "Change Node Tree Interface Socket Type"
 msgstr "Cambiar tipo de conector de árbol de nodos"
 
 
-msgid "Change the type of a socket of the current node tree"
-msgstr "Cambia el tipo de un conector del árbol de nodos actual"
-
-
 msgctxt "Operator"
 msgid "Move Node Tree Socket"
 msgstr "Mover conector árbol de nodos"
 
 
-msgid "Move a socket up or down in the current node tree's sockets stack"
-msgstr "Mueve un conector hacia arriba o abajo en la lista de conectores del árbol de nodos actual"
-
-
 msgctxt "Operator"
 msgid "Remove Node Tree Interface Socket"
 msgstr "Eliminar conector a árbol de nodos"
-
-
-msgid "Remove an input or output socket to the current node tree"
-msgstr "Remueve un conector de entrada o salida del árbol de nodos actual"
 
 
 msgid "Resize view so you can see all nodes"
@@ -64371,10 +64307,6 @@ msgstr "Mantener originales"
 
 msgid "Keep original objects instead of replacing them"
 msgstr "Mantiene los objetos originales, en vez de reemplazarlos"
-
-
-msgid "Merge UV's"
-msgstr "Fusionar UV"
 
 
 msgid "Merge UV coordinates that share a vertex to account for imprecision in some modifiers"
@@ -76003,10 +75935,6 @@ msgid "Lightmap Pack"
 msgstr "Empacar mapa de luz"
 
 
-msgid "Pack each faces UV's into the UV bounds"
-msgstr "Empaca las UV de cada cara dentro de los límites UV"
-
-
 msgid "New Image"
 msgstr "Nueva imagen"
 
@@ -76229,10 +76157,6 @@ msgstr "Arranca los vértices seleccionados o una región seleccionada"
 msgctxt "Operator"
 msgid "UV Rip Move"
 msgstr "Arrancar y mover UV"
-
-
-msgid "Unstitch UV's and move the result"
-msgstr "Arranca las UV y permite mover el resultado"
 
 
 msgid "UV Rip"
@@ -81811,10 +81735,6 @@ msgid "Forces"
 msgstr "Fuerzas"
 
 
-msgid "Timing"
-msgstr "Temporización"
-
-
 msgid "Border Collisions"
 msgstr "Colisión con límites"
 
@@ -82066,10 +81986,6 @@ msgstr "Claves automáticos"
 
 msgid "Playback"
 msgstr "Reproducción"
-
-
-msgid "Primitives"
-msgstr "Primitivas"
 
 
 msgid "Rename Active Item"
@@ -91829,10 +91745,6 @@ msgid "Sequence strip to load one or more images"
 msgstr "Clip de secuencia para cargar una o más imágenes"
 
 
-msgid "Speed Factor"
-msgstr "Velocidad"
-
-
 msgid "Multiply playback speed"
 msgstr "Multiplicar velocidad de reproducción"
 
@@ -98999,10 +98911,6 @@ msgid "Correct Face Attributes"
 msgstr "Corregir atributos de caras"
 
 
-msgid "Correct data such as UV's and color attributes when transforming"
-msgstr "Corregir datos como las UV y atributos de color al transformar"
-
-
 msgid "Keep Connected"
 msgstr "Mantener conectados"
 
@@ -99061,10 +98969,6 @@ msgstr "HC"
 
 msgid "Use HC method for relaxation"
 msgstr "Usa el método HC para la distensión"
-
-
-msgid "Use Geometry (cotangent) relaxation, making UV's follow the underlying 3D geometry"
-msgstr "Usa una distensión de tipo Geometría (cotangente), haciendo que las UV sigan a la geometría 3D subyacente"
 
 
 msgid "UV Sculpt"
@@ -120976,38 +120880,6 @@ msgid "Shrink/Fatten: %3f"
 msgstr "Contraer / Expandir: %3f"
 
 
-msgid "Bevel Weight: +%s %s"
-msgstr "Influencia bisel: +%s %s"
-
-
-msgid "Bevel Weight: %s %s"
-msgstr "Influencia bisel: %s %s"
-
-
-msgid "Bevel Weight: +%.3f %s"
-msgstr "Influencia bisel: +%.3f %s"
-
-
-msgid "Bevel Weight: %.3f %s"
-msgstr "Influencia bisel: %.3f %s"
-
-
-msgid "Crease: +%s %s"
-msgstr "Plegar: +%s %s"
-
-
-msgid "Crease: %s %s"
-msgstr "Plegar: %s %s"
-
-
-msgid "Crease: +%.3f %s"
-msgstr "Plegar: +%.3f %s"
-
-
-msgid "Crease: %.3f %s"
-msgstr "Plegar: %.3f %s"
-
-
 msgid "Sequence Slide: %s%s"
 msgstr "Deslizar secuencia: %s%s"
 
@@ -122242,10 +122114,6 @@ msgid "Error removing face map"
 msgstr "Error al eliminar el mapa de caras"
 
 
-msgid "Texture layer '%s' not found"
-msgstr "Capa de textura '%s' no encontrada"
-
-
 msgid "Number of custom normals is not number of loops (%f / %d)"
 msgstr "La cantidad de normales personalizadas no es igual la cantidad de bucles (%f / %d)"
 
@@ -123101,14 +122969,6 @@ msgstr "Ningún atributo con nombre usado"
 
 msgid "No group output attributes connected"
 msgstr "Ningún atributo de salida del grupo conectado"
-
-
-msgid "Read"
-msgstr "Leer"
-
-
-msgid "Write"
-msgstr "Escribir"
 
 
 msgid "Output Attributes"

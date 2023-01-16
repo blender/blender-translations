@@ -1,9 +1,9 @@
 
 msgid ""
 msgstr ""
-"Project-Id-Version: Blender 3.5.0 Alpha (b'4887401789ea')\n"
+"Project-Id-Version: Blender 3.5.0 Alpha (b'5cbc8ce3b145')\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-01-09 08:20:55\n"
+"POT-Creation-Date: 2023-01-16 09:42:03\n"
 "PO-Revision-Date: \n"
 "Last-Translator: DeathBlood\n"
 "Language-Team: \n"
@@ -16710,10 +16710,6 @@ msgid "Time Alignment"
 msgstr "时间对齐"
 
 
-msgid "When should strokes start to appear/disappear"
-msgstr "何时笔画开始出现/消失"
-
-
 msgid "Align Start"
 msgstr "对齐起点"
 
@@ -16766,10 +16762,6 @@ msgid "Maximum number of frames that the build effect can run for (unless anothe
 msgstr "创建效果可运行的最大帧数(除非在此时间之前已有其它蜡笔关键帧)"
 
 
-msgid "How many strokes are being animated at a time"
-msgstr "一次动画的笔画数量"
-
-
 msgid "Sequential"
 msgstr "顺序"
 
@@ -16798,8 +16790,12 @@ msgid "Defines how much of the stroke is visible"
 msgstr "定义笔画的可见程度"
 
 
-msgid "Start Delay"
-msgstr "起点延迟"
+msgid "Speed Factor"
+msgstr "速度系数"
+
+
+msgid "Delay"
+msgstr "延迟"
 
 
 msgid "Number of frames after each GP keyframe before the modifier has any effect"
@@ -16808,6 +16804,10 @@ msgstr "在修改器拥有任意效果前蜡笔关键帧后的帧数量"
 
 msgid "Output Vertex group"
 msgstr "输出顶点组"
+
+
+msgid "Timing"
+msgstr "时序"
 
 
 msgid "Transition"
@@ -33910,8 +33910,12 @@ msgid "Utilities"
 msgstr "实用工具"
 
 
-msgid "Mesh Primitives"
-msgstr "网格基本体"
+msgid "Math"
+msgstr "运算"
+
+
+msgid "Primitives"
+msgstr "基本体"
 
 
 msgid "Node Context Menu"
@@ -33922,24 +33926,20 @@ msgid "Attribute"
 msgstr "属性"
 
 
+msgid "Read"
+msgstr "读取"
+
+
+msgid "Write"
+msgstr "写入"
+
+
 msgid "Instances"
 msgstr "实例"
 
 
 msgid "Mesh"
 msgstr "网格"
-
-
-msgid "Curve Primitives"
-msgstr "曲线基本体"
-
-
-msgid "Curve Topology"
-msgstr "曲线拓扑"
-
-
-msgid "Mesh Topology"
-msgstr "网格拓扑"
 
 
 msgid "Node"
@@ -34429,10 +34429,6 @@ msgstr "松散"
 
 msgid "Edge is not connected to any faces"
 msgstr "边未与任何面相连"
-
-
-msgid "Sharp edge for the Edge Split modifier"
-msgstr "用于拆边修改器的锐边"
 
 
 msgid "Freestyle Edge Mark"
@@ -38208,16 +38204,8 @@ msgid "Stretch U"
 msgstr "拉伸 U"
 
 
-msgid "Stretch the U coordinates between 0 and 1 when UV's are present"
-msgstr "当显示 UV 时, 在坐标域 0-1 内拉伸 U 向坐标"
-
-
 msgid "Stretch V"
 msgstr "拉伸 V"
-
-
-msgid "Stretch the V coordinates between 0 and 1 when UV's are present"
-msgstr "当显示 UV 时, 在坐标域 0-1 内拉伸 V 向坐标"
 
 
 msgid "SimpleDeform Modifier"
@@ -42695,10 +42683,6 @@ msgid "Use multi-sampled motion blur of the mask"
 msgstr "使用遮罩的多重采样运动模糊"
 
 
-msgid "Math"
-msgstr "运算"
-
-
 msgctxt "NodeTree"
 msgid "Operation"
 msgstr "操作"
@@ -44312,20 +44296,12 @@ msgid "Retrieve the face each face corner is part of"
 msgstr "检索每个面拐所属的面"
 
 
-msgid "Field at Index"
-msgstr "编号上的场"
-
-
 msgid "Retrieve data of other elements in the context's geometry"
 msgstr "在上下文几何体中检索其他元素的数据"
 
 
 msgid "Domain the field is evaluated in"
 msgstr "解算场所在的域"
-
-
-msgid "Interpolate Domain"
-msgstr "插值域"
 
 
 msgid "Retrieve values from a field on a different domain besides the domain from the context"
@@ -52115,6 +52091,10 @@ msgid "Enter/Exit sculpt mode for curves"
 msgstr "进入/退出曲线的雕刻模式"
 
 
+msgid "(De)select all control points"
+msgstr "(不)全选全部控制点"
+
+
 msgctxt "Operator"
 msgid "Set Select Mode"
 msgstr "设置选择模式"
@@ -52628,10 +52608,6 @@ msgstr "设置用作椎状倒角的每点半径"
 
 msgid "Reveal hidden control points"
 msgstr "恢复显示隐藏的控制点"
-
-
-msgid "(De)select all control points"
-msgstr "(不)全选全部控制点"
 
 
 msgid "Deselect control points at the boundary of each selection region"
@@ -60620,10 +60596,6 @@ msgid "Collapse Edges & Faces"
 msgstr "塌陷边线&面"
 
 
-msgid "Collapse isolated edge and face regions, merging data such as UV's and color attributes. This can collapse edge-rings as well as regions of connected faces into vertices"
-msgstr "塌陷隔离的边&面区域，合并UV和颜色属性等数据。这可以将循环边以及相连的面区域塌陷到顶点"
-
-
 msgctxt "Operator"
 msgid "Make Edge/Face"
 msgstr "创建边 / 面"
@@ -63721,17 +63693,9 @@ msgid "Deactivate selected viewer node in geometry nodes"
 msgstr "停用几何节点中选定的查看器节点"
 
 
-msgid "Delete selected nodes"
-msgstr "删除选定的节点"
-
-
 msgctxt "Operator"
 msgid "Delete with Reconnect"
 msgstr "删除并重连"
-
-
-msgid "Delete nodes; will reconnect nodes as if deletion was muted"
-msgstr "删除节点; 将重连两侧的节点, 相当于禁用当前节点时的效果"
 
 
 msgctxt "Operator"
@@ -63920,10 +63884,6 @@ msgid "Use the mouse to create a link between two nodes"
 msgstr "使用鼠标在两节点间创建一个链接"
 
 
-msgid "Delay"
-msgstr "延迟"
-
-
 msgid "Delay in seconds before maximum speed is reached"
 msgstr "在达到最大速度之前的延迟，单位: 秒"
 
@@ -64051,10 +64011,6 @@ msgid "Toggle Node Mute"
 msgstr "禁用 / 启用节点"
 
 
-msgid "Toggle muting of the nodes"
-msgstr "切换节点的静默"
-
-
 msgctxt "Operator"
 msgid "Assign New Geometry Node Group"
 msgstr "指定新的几何节点组"
@@ -64133,10 +64089,6 @@ msgstr "从文件输出节点移除活动输入项"
 msgctxt "Operator"
 msgid "Remove File Node Socket"
 msgstr "移除文件节点接口"
-
-
-msgid "Remove active input from a file output node"
-msgstr "从文件输出节点移除活动输入项"
 
 
 msgid "Attach selected nodes"
@@ -64296,10 +64248,6 @@ msgid "Add Node Tree Interface Socket"
 msgstr "添加节点树界面插口"
 
 
-msgid "Add an input or output socket to the current node tree"
-msgstr "将一个输入或输出节点添加到当前节点树中"
-
-
 msgid "Socket Type"
 msgstr "接口类型"
 
@@ -64309,26 +64257,14 @@ msgid "Change Node Tree Interface Socket Type"
 msgstr "更改节点树界面接口类型"
 
 
-msgid "Change the type of a socket of the current node tree"
-msgstr "更改当前节点树的接口类型"
-
-
 msgctxt "Operator"
 msgid "Move Node Tree Socket"
 msgstr "移动节点树的接口"
 
 
-msgid "Move a socket up or down in the current node tree's sockets stack"
-msgstr "在当前节点树的插口堆栈中上下移动插口"
-
-
 msgctxt "Operator"
 msgid "Remove Node Tree Interface Socket"
 msgstr "移除节点树的接口插糟"
-
-
-msgid "Remove an input or output socket to the current node tree"
-msgstr "移除当前节点树的一个输入或输出插糟"
 
 
 msgid "Resize view so you can see all nodes"
@@ -64671,10 +64607,6 @@ msgstr "保留原有"
 
 msgid "Keep original objects instead of replacing them"
 msgstr "保留原物体, 而不是替换"
-
-
-msgid "Merge UV's"
-msgstr "合并UV"
 
 
 msgid "Merge UV coordinates that share a vertex to account for imprecision in some modifiers"
@@ -76346,10 +76278,6 @@ msgid "Lightmap Pack"
 msgstr "光照贴图拼排"
 
 
-msgid "Pack each faces UV's into the UV bounds"
-msgstr "把每个面UV放入UV边界内"
-
-
 msgid "New Image"
 msgstr "新建图像"
 
@@ -76585,10 +76513,6 @@ msgstr "断离选中顶点或区域"
 msgctxt "Operator"
 msgid "UV Rip Move"
 msgstr "UV断离移动"
-
-
-msgid "Unstitch UV's and move the result"
-msgstr "解缝UV并移动结果"
 
 
 msgid "UV Rip"
@@ -82179,10 +82103,6 @@ msgid "Forces"
 msgstr "力场"
 
 
-msgid "Timing"
-msgstr "时序"
-
-
 msgid "Border Collisions"
 msgstr "边界碰撞"
 
@@ -82434,10 +82354,6 @@ msgstr "自动插入关键帧"
 
 msgid "Playback"
 msgstr "回放"
-
-
-msgid "Primitives"
-msgstr "基本体"
 
 
 msgid "Rename Active Item"
@@ -92291,10 +92207,6 @@ msgid "Sequence strip to load one or more images"
 msgstr "加载一个或多个图像的序列片段"
 
 
-msgid "Speed Factor"
-msgstr "速度系数"
-
-
 msgid "Multiply playback speed"
 msgstr "倍速播放"
 
@@ -99473,10 +99385,6 @@ msgid "Correct Face Attributes"
 msgstr "校正面属性"
 
 
-msgid "Correct data such as UV's and color attributes when transforming"
-msgstr "变换时修正数据(如UV以及颜色属性)"
-
-
 msgid "Keep Connected"
 msgstr "保留已连接项"
 
@@ -99535,10 +99443,6 @@ msgstr "HC"
 
 msgid "Use HC method for relaxation"
 msgstr "使用 HC 松弛法"
-
-
-msgid "Use Geometry (cotangent) relaxation, making UV's follow the underlying 3D geometry"
-msgstr "使用几何(余切)松弛，使 UV 遵循 3D 几何体"
 
 
 msgid "UV Sculpt"
@@ -121616,38 +121520,6 @@ msgid "Shrink/Fatten: %3f"
 msgstr "法向缩放: %3f"
 
 
-msgid "Bevel Weight: +%s %s"
-msgstr "倒角权重: +%s %s"
-
-
-msgid "Bevel Weight: %s %s"
-msgstr "倒角权重: %s %s"
-
-
-msgid "Bevel Weight: +%.3f %s"
-msgstr "倒角权重: +%.3f %s"
-
-
-msgid "Bevel Weight: %.3f %s"
-msgstr "倒角权重: %.3f %s"
-
-
-msgid "Crease: +%s %s"
-msgstr "折痕: +%s %s"
-
-
-msgid "Crease: %s %s"
-msgstr "折痕: %s %s"
-
-
-msgid "Crease: +%.3f %s"
-msgstr "折痕: +%.3f %s"
-
-
-msgid "Crease: %.3f %s"
-msgstr "折痕: %.3f %s"
-
-
 msgid "Sequence Slide: %s%s"
 msgstr "序列滑移: %s%s"
 
@@ -122898,10 +122770,6 @@ msgid "Error removing face map"
 msgstr "移除面映射错误"
 
 
-msgid "Texture layer '%s' not found"
-msgstr "未找到纹理层 '%s'"
-
-
 msgid "Number of custom normals is not number of loops (%f / %d)"
 msgstr "自定义法向数不是循环数 (%f / %d)"
 
@@ -123765,14 +123633,6 @@ msgstr "无被使用的已命名属性"
 
 msgid "No group output attributes connected"
 msgstr "没有连接组输出属性"
-
-
-msgid "Read"
-msgstr "读取"
-
-
-msgid "Write"
-msgstr "写入"
 
 
 msgid "Output Attributes"

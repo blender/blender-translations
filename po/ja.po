@@ -1,9 +1,9 @@
 
 msgid ""
 msgstr ""
-"Project-Id-Version: Blender 3.5.0 Alpha (b'4887401789ea')\n"
+"Project-Id-Version: Blender 3.5.0 Alpha (b'5cbc8ce3b145')\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-01-09 08:20:55\n"
+"POT-Creation-Date: 2023-01-16 09:42:03\n"
 "PO-Revision-Date: 2016-10-13 03:05+0900\n"
 "Last-Translator: \n"
 "Language-Team: Japanese Translation Team (https://sites.google.com/site/blugjp/blender-translators)\n"
@@ -16919,10 +16919,6 @@ msgid "Time Alignment"
 msgstr "時間を揃える"
 
 
-msgid "When should strokes start to appear/disappear"
-msgstr "ストロークの出現・消失の開始時間"
-
-
 msgid "Align Start"
 msgstr "開始を揃える"
 
@@ -16975,10 +16971,6 @@ msgid "Maximum number of frames that the build effect can run for (unless anothe
 msgstr "ビルドエフェクトが実行可能な最大フレーム数（この時間が経過する前に他のGPキーフレームがない場合）"
 
 
-msgid "How many strokes are being animated at a time"
-msgstr "一度にアニメーション可能なストローク数を決める方法"
-
-
 msgid "Sequential"
 msgstr "順次"
 
@@ -17007,8 +16999,12 @@ msgid "Defines how much of the stroke is visible"
 msgstr "ストロークが見える量を決めます"
 
 
-msgid "Start Delay"
-msgstr "開始ディレイ"
+msgid "Speed Factor"
+msgstr "速度係数"
+
+
+msgid "Delay"
+msgstr "ディレイ"
 
 
 msgid "Number of frames after each GP keyframe before the modifier has any effect"
@@ -17019,6 +17015,10 @@ msgstr ""
 
 msgid "Output Vertex group"
 msgstr "出力頂点グループ"
+
+
+msgid "Timing"
+msgstr "タイミング"
 
 
 msgid "Transition"
@@ -34227,8 +34227,12 @@ msgid "Utilities"
 msgstr "ユーティリティ"
 
 
-msgid "Mesh Primitives"
-msgstr "メッシュプリミティブ"
+msgid "Math"
+msgstr "数式"
+
+
+msgid "Primitives"
+msgstr "プリミティブ"
 
 
 msgid "Node Context Menu"
@@ -34239,24 +34243,20 @@ msgid "Attribute"
 msgstr "属性"
 
 
+msgid "Read"
+msgstr "読込"
+
+
+msgid "Write"
+msgstr "書込"
+
+
 msgid "Instances"
 msgstr "インスタンス"
 
 
 msgid "Mesh"
 msgstr "メッシュ"
-
-
-msgid "Curve Primitives"
-msgstr "カーブプリミティブ"
-
-
-msgid "Curve Topology"
-msgstr "カーブトポロジー"
-
-
-msgid "Mesh Topology"
-msgstr "メッシュトポロジー"
 
 
 msgid "Node"
@@ -34746,10 +34746,6 @@ msgstr "ルーズ"
 
 msgid "Edge is not connected to any faces"
 msgstr "どの面ともつながっていない辺"
-
-
-msgid "Sharp edge for the Edge Split modifier"
-msgstr "辺分離モディファイアー用のシャープ辺"
 
 
 msgid "Freestyle Edge Mark"
@@ -38540,16 +38536,8 @@ msgid "Stretch U"
 msgstr "ストレッチ U"
 
 
-msgid "Stretch the U coordinates between 0 and 1 when UV's are present"
-msgstr "U 座標を0から1の範囲で伸縮します（UVがある場合）"
-
-
 msgid "Stretch V"
 msgstr "ストレッチ V"
-
-
-msgid "Stretch the V coordinates between 0 and 1 when UV's are present"
-msgstr "V 座標を0から1の範囲で伸縮します（UVがある場合）"
 
 
 msgid "SimpleDeform Modifier"
@@ -43036,10 +43024,6 @@ msgid "Use multi-sampled motion blur of the mask"
 msgstr "マスクのマルチサンプルモーションブラーを使用します"
 
 
-msgid "Math"
-msgstr "数式"
-
-
 msgctxt "NodeTree"
 msgid "Operation"
 msgstr "処理"
@@ -44653,20 +44637,12 @@ msgid "Retrieve the face each face corner is part of"
 msgstr "各面コーナーの属する面を取得します"
 
 
-msgid "Field at Index"
-msgstr "インデックスからフィールド"
-
-
 msgid "Retrieve data of other elements in the context's geometry"
 msgstr "コンテクストのジオメトリから他の要素のデータを取得します"
 
 
 msgid "Domain the field is evaluated in"
 msgstr "フィールドが評価されるドメイン"
-
-
-msgid "Interpolate Domain"
-msgstr "ドメイン補間"
 
 
 msgid "Retrieve values from a field on a different domain besides the domain from the context"
@@ -52486,6 +52462,10 @@ msgid "Enter/Exit sculpt mode for curves"
 msgstr "カーブ用スカルプトモードを切り替えます"
 
 
+msgid "(De)select all control points"
+msgstr "すべての制御点を(非)選択にします"
+
+
 msgctxt "Operator"
 msgid "Set Select Mode"
 msgstr "選択モードを設定"
@@ -52999,10 +52979,6 @@ msgstr "テーパーベベルに使われるポイント当たりの半径を設
 
 msgid "Reveal hidden control points"
 msgstr "隠した制御点を再表示します"
-
-
-msgid "(De)select all control points"
-msgstr "すべての制御点を(非)選択にします"
 
 
 msgid "Deselect control points at the boundary of each selection region"
@@ -61078,12 +61054,6 @@ msgid "Collapse Edges & Faces"
 msgstr "辺や面を統合"
 
 
-msgid "Collapse isolated edge and face regions, merging data such as UV's and color attributes. This can collapse edge-rings as well as regions of connected faces into vertices"
-msgstr ""
-"孤立した辺や面の領域をまとめ、UVやカラー属性などのデータを統合します\n"
-"つながる面の頂点の統合だけでなく、辺リングも統合できます"
-
-
 msgctxt "Operator"
 msgid "Make Edge/Face"
 msgstr "辺/面作成"
@@ -64184,17 +64154,9 @@ msgid "Deactivate selected viewer node in geometry nodes"
 msgstr "ジオメトリノード内の選択中のビューアーノードを停止します"
 
 
-msgid "Delete selected nodes"
-msgstr "選択中のノードを削除します"
-
-
 msgctxt "Operator"
 msgid "Delete with Reconnect"
 msgstr "削除後再リンク"
-
-
-msgid "Delete nodes; will reconnect nodes as if deletion was muted"
-msgstr "ノード削除。削除禁止の場合はノードを再リンク"
 
 
 msgctxt "Operator"
@@ -64383,10 +64345,6 @@ msgid "Use the mouse to create a link between two nodes"
 msgstr "2つのノード間にリンクを作成するのにマウスを使用します"
 
 
-msgid "Delay"
-msgstr "ディレイ"
-
-
 msgid "Delay in seconds before maximum speed is reached"
 msgstr "最大速度に達するまでの猶予（秒）"
 
@@ -64514,10 +64472,6 @@ msgid "Toggle Node Mute"
 msgstr "ノードのミュート切替え"
 
 
-msgid "Toggle muting of the nodes"
-msgstr "ノードのミュートを切り替えます"
-
-
 msgctxt "Operator"
 msgid "Assign New Geometry Node Group"
 msgstr "新規ジオメトリノードグループを割り当て"
@@ -64596,10 +64550,6 @@ msgstr "ファイル出力ノードのアクティブ入力をリストの上下
 msgctxt "Operator"
 msgid "Remove File Node Socket"
 msgstr "ファイルノードソケットを除去"
-
-
-msgid "Remove active input from a file output node"
-msgstr "アクティブな入力をファイル出力ノードから削除します"
 
 
 msgid "Attach selected nodes"
@@ -64759,10 +64709,6 @@ msgid "Add Node Tree Interface Socket"
 msgstr "ノードツリーインターフェイスソケット追加"
 
 
-msgid "Add an input or output socket to the current node tree"
-msgstr "現在のノードツリーに入/出力ソケットを追加します"
-
-
 msgid "Socket Type"
 msgstr "ソケットタイプ"
 
@@ -64772,26 +64718,14 @@ msgid "Change Node Tree Interface Socket Type"
 msgstr "ノードツリーインターフェイスソケットタイプ変更"
 
 
-msgid "Change the type of a socket of the current node tree"
-msgstr "現在のノードツリーのソケットのタイプを変更します"
-
-
 msgctxt "Operator"
 msgid "Move Node Tree Socket"
 msgstr "ノードツリーソケット移動"
 
 
-msgid "Move a socket up or down in the current node tree's sockets stack"
-msgstr "現在のノードツリースタック内のソケットを上下に移動します"
-
-
 msgctxt "Operator"
 msgid "Remove Node Tree Interface Socket"
 msgstr "ノードツリーインターフェースソケット削除"
-
-
-msgid "Remove an input or output socket to the current node tree"
-msgstr "現在のノードツリーから入/出力ソケットを削除します"
 
 
 msgid "Resize view so you can see all nodes"
@@ -65138,10 +65072,6 @@ msgstr "オリジナルを保持"
 
 msgid "Keep original objects instead of replacing them"
 msgstr "オブジェクトを置き換えず、元のオブジェクトを保持します"
-
-
-msgid "Merge UV's"
-msgstr "UVをマージ"
 
 
 msgid "Merge UV coordinates that share a vertex to account for imprecision in some modifiers"
@@ -76859,10 +76789,6 @@ msgid "Lightmap Pack"
 msgstr "ライトマップパック"
 
 
-msgid "Pack each faces UV's into the UV bounds"
-msgstr "UV 境界内に各面の UV を詰め込みます"
-
-
 msgid "New Image"
 msgstr "新規画像"
 
@@ -77098,10 +77024,6 @@ msgstr "選択中の頂点や領域を引き裂きます"
 msgctxt "Operator"
 msgid "UV Rip Move"
 msgstr "UVリップ移動"
-
-
-msgid "Unstitch UV's and move the result"
-msgstr "UVのスティッチを解除して移動します"
 
 
 msgid "UV Rip"
@@ -82740,10 +82662,6 @@ msgid "Forces"
 msgstr "力"
 
 
-msgid "Timing"
-msgstr "タイミング"
-
-
 msgid "Border Collisions"
 msgstr "ボーダーコリジョン"
 
@@ -82995,10 +82913,6 @@ msgstr "自動キーフレーム"
 
 msgid "Playback"
 msgstr "再生"
-
-
-msgid "Primitives"
-msgstr "プリミティブ"
 
 
 msgid "Rename Active Item"
@@ -92940,10 +92854,6 @@ msgid "Sequence strip to load one or more images"
 msgstr "1枚または多数の画像を読み込むシーケンスストリップ"
 
 
-msgid "Speed Factor"
-msgstr "速度係数"
-
-
 msgid "Multiply playback speed"
 msgstr "再生速度の乗数"
 
@@ -100140,10 +100050,6 @@ msgid "Correct Face Attributes"
 msgstr "面の属性を修正"
 
 
-msgid "Correct data such as UV's and color attributes when transforming"
-msgstr "トランスフォーム時、UV やカラー属性などのデータを修正します"
-
-
 msgid "Keep Connected"
 msgstr "つながりを維持"
 
@@ -100202,10 +100108,6 @@ msgstr "HC"
 
 msgid "Use HC method for relaxation"
 msgstr "リラックスに HC 法を使用します"
-
-
-msgid "Use Geometry (cotangent) relaxation, making UV's follow the underlying 3D geometry"
-msgstr "ジオメトリ（コタンジェント）リラックスを使用し、UV を元の 3D ジオメトリに追従させます"
 
 
 msgid "UV Sculpt"
@@ -122283,38 +122185,6 @@ msgid "Shrink/Fatten: %3f"
 msgstr "収縮/膨張：%3f"
 
 
-msgid "Bevel Weight: +%s %s"
-msgstr "ベベルウェイト: +%s %s"
-
-
-msgid "Bevel Weight: %s %s"
-msgstr "ベベルウェイト: %s %s"
-
-
-msgid "Bevel Weight: +%.3f %s"
-msgstr "ベベルウェイト: +%.3f %s"
-
-
-msgid "Bevel Weight: %.3f %s"
-msgstr "ベベルウェイト: %.3f %s"
-
-
-msgid "Crease: +%s %s"
-msgstr "クリース: +%s %s"
-
-
-msgid "Crease: %s %s"
-msgstr "クリース: %s %s"
-
-
-msgid "Crease: +%.3f %s"
-msgstr "クリース: +%.3f %s"
-
-
-msgid "Crease: %.3f %s"
-msgstr "クリース: %.3f %s"
-
-
 msgid "Sequence Slide: %s%s"
 msgstr "シーケンススライド: %s%s"
 
@@ -123553,10 +123423,6 @@ msgid "Error removing face map"
 msgstr "フェイスマップ削除エラー"
 
 
-msgid "Texture layer '%s' not found"
-msgstr "テクスチャレイヤー「%s」がありません"
-
-
 msgid "Number of custom normals is not number of loops (%f / %d)"
 msgstr "カスタム法線の数がループ数と合いません (%f / %d)"
 
@@ -124416,14 +124282,6 @@ msgstr "名前付き属性は未使用です"
 
 msgid "No group output attributes connected"
 msgstr "つながるグループ出力属性がありません"
-
-
-msgid "Read"
-msgstr "読込"
-
-
-msgid "Write"
-msgstr "書込"
 
 
 msgid "Output Attributes"
