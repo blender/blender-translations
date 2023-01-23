@@ -1,9 +1,9 @@
 
 msgid ""
 msgstr ""
-"Project-Id-Version: Blender 3.5.0 Alpha (b'5cbc8ce3b145')\n"
+"Project-Id-Version: Blender 3.5.0 Alpha (b'59ee5add1283')\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-01-16 09:42:03\n"
+"POT-Creation-Date: 2023-01-23 11:39:38\n"
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -307,19 +307,39 @@ msgstr "Tipus de dispositiu de càlcul"
 
 
 msgid "Device to use for computation (rendering with Cycles)"
-msgstr "Dispositiu per als càlculs (revelatge amb Cycles)"
+msgstr "Dispositiu per als càlculs (revelat amb Cycles)"
+
+
+msgid "Kernel Optimization"
+msgstr "Optimització de matriu"
+
+
+msgid "Kernels can be optimized based on scene content. Optimized kernels are requested at the start of a render. If optimized kernels are not available, rendering will proceed using generic kernels until the optimized set is available in the cache. This can result in additional CPU usage for a brief time (tens of seconds)"
+msgstr "Les matrius de convolució es poden optimitzar sobre la base del contingut de l'escena. Les matrius optimitzades se sol·liciten quan s'engega el revelat. Quan no es troben matrius optimitzades, el revelat es farà en base a matrius genèriques fins que el joc optimitzat estigui disponible en cau. Això pot carregar més la CPU durant un temps breu (desenes de segons)"
 
 
 msgid "Off"
-msgstr "Desactivat"
+msgstr "Desactivada"
+
+
+msgid "Disable kernel optimization. Slowest rendering, no extra background CPU usage"
+msgstr "[Off]: Desactiva l'optimització de la matriu de convolució. Revelat més lent sense ús extra en segon pla de la CPU"
 
 
 msgid "Intersection only"
 msgstr "Només intersecció"
 
 
+msgid "Optimize only intersection kernels. Faster rendering, negligible extra background CPU usage"
+msgstr "[Intersection only]: Optimitza només les matrius de convolució d'interseccions. Revelat més ràpid, amb ús extra negligible de la CPU en segon pla"
+
+
 msgid "Full"
-msgstr "Complet"
+msgstr "Completa"
+
+
+msgid "Optimize all kernels. Fastest rendering, may result in extra background CPU usage"
+msgstr "[Full]: Optimitza totes les matrius de convolució. Revelat al màxim de ràpid i pot provocar un ús extra de la CPU en segon pla"
 
 
 msgid "Distribute memory across devices"
@@ -1247,7 +1267,7 @@ msgstr "Spline"
 
 
 msgid "Attribute on spline"
-msgstr "Atribut de l'spline"
+msgstr "Atribut de spline"
 
 
 msgid "Instance"
@@ -4061,7 +4081,7 @@ msgstr "Bloca"
 
 
 msgid "Marker"
-msgstr "Retolador"
+msgstr "Marcador"
 
 
 msgid "Airbrush"
@@ -6366,7 +6386,7 @@ msgstr "[Locked Track]: Gira entorn d'un eix donat (bloquejat) per apuntar enver
 
 
 msgid "Spline IK"
-msgstr "Spline IK"
+msgstr "Spline CI"
 
 
 msgid "Align chain of bones along a curve (Bones only)"
@@ -6434,7 +6454,7 @@ msgstr "Sobrecobrir"
 
 
 msgid "Restrict movements to surface of target mesh"
-msgstr "[Shrinkwrap]: Restringeix els moviments a la superfície de la malla de destinació"
+msgstr "[Shrinkwrap]: Restringeix els moviments a la superfície de la malla de referència"
 
 
 msgid "Action Constraint"
@@ -6478,7 +6498,7 @@ msgstr "Mínim"
 
 
 msgid "Minimum value for target channel range"
-msgstr "[Minimum]: Valor mínim per a l'interval del canal de destinació"
+msgstr "[Minimum]: Valor mínim per a l'interval del canal de referència"
 
 
 msgid "Mix Mode"
@@ -7914,7 +7934,7 @@ msgstr "El punt queda restringit a l'interior de l'objecte referent"
 
 
 msgid "The point is constrained to be outside the target object"
-msgstr "El punt queda restringit a l'exterior de l'objecte de destinació"
+msgstr "El punt queda restringit a l'exterior de l'objecte de referència"
 
 
 msgid "Outside Surface"
@@ -8382,7 +8402,7 @@ msgstr "Envers l'X màxima"
 
 
 msgid "Top range of X axis destination motion"
-msgstr "[To Maximum X]: Interval superior del moviment de destinació de l'eix X"
+msgstr "[To Maximum X]: Interval superior del moviment de referència de l'eix X"
 
 
 msgid "To Maximum Y"
@@ -8390,7 +8410,7 @@ msgstr "Envers l'Y màxima"
 
 
 msgid "Top range of Y axis destination motion"
-msgstr "[To Maximum Y]: Interval superior del moviment de destinació de l'eix Y"
+msgstr "[To Maximum Y]: Interval superior del moviment de referència de l'eix Y"
 
 
 msgid "To Maximum Z"
@@ -8398,7 +8418,7 @@ msgstr "Envers la Z màxima"
 
 
 msgid "Top range of Z axis destination motion"
-msgstr "Interval superior del moviment de destinació de l'eix Z"
+msgstr "Interval superior del moviment de referència de l'eix Z"
 
 
 msgid "To Minimum X"
@@ -8406,7 +8426,7 @@ msgstr "Envers l'X mínima"
 
 
 msgid "Bottom range of X axis destination motion"
-msgstr "[To Minimum X]: Interval inferior del moviment de destinació de l'eix X"
+msgstr "[To Minimum X]: Interval inferior del moviment de referència de l'eix X"
 
 
 msgid "To Minimum Y"
@@ -8414,11 +8434,11 @@ msgstr "Envers l'Y mínima"
 
 
 msgid "Bottom range of Y axis destination motion"
-msgstr "[To Minimum Y]: Interval inferior del moviment de destinació de l'eix Y"
+msgstr "[To Minimum Y]: Interval inferior del moviment de referència de l'eix Y"
 
 
 msgid "To Minimum Z"
-msgstr "[To Minimum Z]: Interval inferior del moviment de destinació de l'eix Z"
+msgstr "[To Minimum Z]: Interval inferior del moviment de referència de l'eix Z"
 
 
 msgid "Bottom range of Z axis destination motion"
@@ -8758,7 +8778,7 @@ msgstr "Índex d'aquests punts"
 
 
 msgid "Profile Path editor used to build a profile path"
-msgstr "Editor de camins de perfils utilitzat per a construir els camins de perfils"
+msgstr "Editor de camins de perfils utilitzat per a crear un camí de perfil"
 
 
 msgid "Profile control points"
@@ -8992,7 +9012,7 @@ msgstr "Mode de mirador no-revelat"
 
 
 msgid "Render"
-msgstr "Revelatge"
+msgstr "Revelat"
 
 
 msgid "Object Instances"
@@ -16416,11 +16436,11 @@ msgstr "[Array]: Crea una corrua d'instàncies duplicades"
 
 
 msgid "Build"
-msgstr "Muntatge"
+msgstr "Confegir"
 
 
 msgid "Create duplication of strokes"
-msgstr "Crea la duplicació de traços"
+msgstr "[Build]: Crea duplicació de traços"
 
 
 msgid "Dot Dash"
@@ -16700,7 +16720,7 @@ msgstr "[Uniform Scale]: Usa la mateixa llavor aleatòria per a cada eix d'escal
 
 
 msgid "Build Modifier"
-msgstr "Modificador de muntatge"
+msgstr "Modificador confegir"
 
 
 msgid "Animate strokes appearing and disappearing"
@@ -16709,6 +16729,10 @@ msgstr "[Build Modifier]: Animació amb l'aparició i desaparició de traços"
 
 msgid "Time Alignment"
 msgstr "Alineat temporal"
+
+
+msgid "How should strokes start to appear/disappear"
+msgstr "[Time Alignment]: Moment en què els traços comencen a aparèixer/desaparèixer"
 
 
 msgid "Align Start"
@@ -16760,7 +16784,11 @@ msgstr "Fotograma inicial (quan està habilitat l'interval de restricció de fot
 
 
 msgid "Maximum number of frames that the build effect can run for (unless another GP keyframe occurs before this time has elapsed)"
-msgstr "Nombre màxim de fotogrames durant els quals pot executar-se l'efecte de muntatge (a menys que es produeixi una altra fotofita de L-dG abans no hagi transcorregut aquest temps)"
+msgstr "Nombre màxim de fotogrames durant els quals pot executar-se l'efecte confegir (a menys que es produeixi una altra fotofita de L-dG abans no hagi transcorregut aquest temps)"
+
+
+msgid "How strokes are being built"
+msgstr "Com es van confegint els traços"
 
 
 msgid "Sequential"
@@ -16780,23 +16808,75 @@ msgstr "Múltiples traços apareixen/desapareixen alhora"
 
 
 msgid "Builds only new strokes (assuming 'additive' drawing)"
-msgstr "Crea només traços nous (pressuposa dibuix «additiu»)"
+msgstr "Confegeix només traços nous (pressuposa dibuix «additiu»)"
 
 
 msgid "Object used as build starting position"
-msgstr "Objecte utilitzat com a posició inicial d'un muntatge"
+msgstr "Objecte utilitzat com a posició inicial de confegir"
 
 
 msgid "Defines how much of the stroke is visible"
 msgstr "Defineix fins a quin punt el traç és visible"
 
 
+msgid "Speed Factor"
+msgstr "Factor velocitat"
+
+
+msgid "Multiply recorded drawing speed by a factor"
+msgstr "[Speed Factor]: Multiplica la velocitat de dibuix gravada per un factor"
+
+
+msgid "Maximum Gap"
+msgstr "Buit màxim"
+
+
+msgid "The maximum gap between strokes in seconds"
+msgstr "[Maximum Gap]: El buit màxim entre traços en segons"
+
+
+msgid "Delay"
+msgstr "Retard"
+
+
 msgid "Number of frames after each GP keyframe before the modifier has any effect"
-msgstr "[Start Delay]: Nombre de fotogrames després de cada fotofita de L-dG abans que el modificador no tingui cap efecte"
+msgstr "[Delay]: Nombre de fotogrames després de cada fotofita de L-dG abans que el modificador no tingui cap efecte"
 
 
 msgid "Output Vertex group"
 msgstr "Grup de vèrtexs resultant"
+
+
+msgid "Timing"
+msgstr "Període"
+
+
+msgid "Use drawing speed, a number of frames, or a manual factor to build strokes"
+msgstr "[Timing]: Usa la velocitat de dibuix, un nombre de fotogrames, o un factor manual per confegir traços"
+
+
+msgid "Natural Drawing Speed"
+msgstr "Velocitat natural de dibuix"
+
+
+msgid "Use recorded speed multiplied by a factor"
+msgstr "[Natural Drawing Speed]: Usa la velocitat de gravació multiplicada per un factor"
+
+
+msgid "Number of Frames"
+msgstr "Nombre de fotogrames"
+
+
+msgid "Set a fixed number of frames for all build animations"
+msgstr "[Number of Frames]: Consigna un nombre fix de fotogrames per a totes les animacions confegides"
+
+
+msgid "Percentage Factor"
+msgstr "Factor percentatge"
+
+
+msgid "Set a manual percentage to build"
+msgstr "[Percentage Factor]: Consigna un percentatge manual per confegir"
 
 
 msgid "Transition"
@@ -17883,6 +17963,34 @@ msgstr "Modificador separació"
 
 msgid "Offset Stroke modifier"
 msgstr "[Offset Modifier]: Modificador de la separació dels traços"
+
+
+msgid "Randomize stroke offset"
+msgstr "Aleatoritza el desplaçament de traç"
+
+
+msgid "Offset layers by the same factor"
+msgstr "Desplaça capes pel mateix factor"
+
+
+msgid "Offset strokes by the same factor based on stroke draw order"
+msgstr "Desplaça traços pel mateix factor en base a l'ordre de dibuix dels traços"
+
+
+msgid "Offset materials by the same factor"
+msgstr "Desplaça materials pel mateix factor"
+
+
+msgid "Start Offset"
+msgstr "Inici de desplaçament"
+
+
+msgid "Offset starting point"
+msgstr "[Inici de desplaçament]: Punt d'inici del desplaçament"
+
+
+msgid "Number of elements that will be grouped"
+msgstr "Nombre d'elements que s'agruparan"
 
 
 msgid "Opacity Modifier"
@@ -19167,11 +19275,11 @@ msgstr "[Add Alpha]: Afegeix l'alfa mentre es pinta"
 
 
 msgid "Kernel Radius"
-msgstr "Radi nuclear"
+msgstr "Radi de matriu"
 
 
 msgid "Radius of kernel used for soften and sharpen in pixels"
-msgstr "[Kernel Radius]: Radi del nucli utilitzat per suavitzar i contrastar els píxels"
+msgstr "[Kernel Radius]: Radi de la matriu de convolució usada per suavitzar i contrastar els píxels"
 
 
 msgid "Blur Mode"
@@ -21387,7 +21495,7 @@ msgstr "Factor terme de geometria"
 
 
 msgid "Define where along the spline the curve geometry ends (0 for the beginning, 1 for the end)"
-msgstr "[Geometry End Factor]: Defineix on acaba la geometria de la corba al llarg de la spline (0 per al començament, 1 per al final)"
+msgstr "[Geometry End Factor]: Defineix on acaba la geometria de la corba al llarg del spline (0 per al començament, 1 per al final)"
 
 
 msgid "End Mapping Type"
@@ -21395,11 +21503,11 @@ msgstr "Tipus de mapeig de terme"
 
 
 msgid "Determine how the geometry end factor is mapped to a spline"
-msgstr "[End Mapping Type]: Determina com s'assigna el factor del terme de la geometria a un «spline»"
+msgstr "[End Mapping Type]: Determina com s'assigna el factor del terme de la geometria a un spline"
 
 
 msgid "Map the geometry factor to the number of subdivisions of a spline (U resolution)"
-msgstr "Mapeja el factor de geometria sobre el nombre de subdivisions d'una spline (resolució U)"
+msgstr "Mapeja el factor de geometria sobre el nombre de subdivisions d'un spline (resolució U)"
 
 
 msgid "Map the geometry factor to the length of a segment and to the number of subdivisions of a segment"
@@ -21407,7 +21515,7 @@ msgstr "Mapeja el factor de geometria sobre la longitud d'un segment i sobre el 
 
 
 msgid "Map the geometry factor to the length of a spline"
-msgstr "Mapeka el factor de geometria sobre la longitud d'una spline"
+msgstr "Mapeka el factor de geometria sobre la longitud d'un spline"
 
 
 msgid "Start Mapping Type"
@@ -21415,7 +21523,7 @@ msgstr "Tipus de mapejat d'inici"
 
 
 msgid "Determine how the geometry start factor is mapped to a spline"
-msgstr "[Start Mapping Type]: Determina com s'assigna el factor geomètric d'inici a una spline"
+msgstr "[Start Mapping Type]: Determina com s'assigna el factor geomètric d'inici a un spline"
 
 
 msgid "Geometry Start Factor"
@@ -21423,7 +21531,7 @@ msgstr "Factor d'inici geomètric"
 
 
 msgid "Define where along the spline the curve geometry starts (0 for the beginning, 1 for the end)"
-msgstr "[Geometry Start Factor]: Defineix on comença la geometria de la corba al llarg de l'spline (0 per a l'inici, 1 per al final)"
+msgstr "[Geometry Start Factor]: Defineix on comença la geometria de la corba al llarg del spline (0 per a l'inici, 1 per al final)"
 
 
 msgid "Bevel Mode"
@@ -21595,7 +21703,7 @@ msgstr "Sobreseeix el radi del punt spline amb el radi transverser"
 
 
 msgid "Multiply the radius of the spline point by the taper radius"
-msgstr "Multiplica el radi del punt de l'spline pel radi del transverser"
+msgstr "Multiplica el radi del punt del spline pel radi del transverser"
 
 
 msgid "Add the radius of the bevel point to the taper radius"
@@ -21972,6 +22080,10 @@ msgstr "Atributs de color de geometria"
 
 msgid "All curves in the data-block"
 msgstr "Totes les corbes del bloc de dades"
+
+
+msgid "Normals"
+msgstr "Normals"
 
 
 msgid "Control points of all curves"
@@ -22507,7 +22619,7 @@ msgstr "Usar angle màx 2D"
 
 
 msgid "Split chains at points with angles larger than the maximum 2D angle"
-msgstr "[Use Max 2D Angle]: Divideix les cadenes en punts amb angles menors que l'angle 2D màxim "
+msgstr "[Use Max 2D Angle]: Divideix les cadenes en punts amb angles menors que l'angle 2D màxim"
 
 
 msgid "Use Min 2D Angle"
@@ -22515,7 +22627,7 @@ msgstr "Usar angle mín 2D"
 
 
 msgid "Split chains at points with angles smaller than the minimum 2D angle"
-msgstr "Divideix les cadenes en punts amb angles majors que l'angle 2D mínim "
+msgstr "Divideix les cadenes en punts amb angles majors que l'angle 2D mínim"
 
 
 msgid "Use Chain Count"
@@ -24778,7 +24890,7 @@ msgstr "Nom del document de vídeo de la seqüència"
 
 
 msgid "Frame Rate"
-msgstr "Fotogrames per segon"
+msgstr "Fotogrames/segon"
 
 
 msgid "Detected frame rate of the movie clip in frames per second"
@@ -25450,7 +25562,7 @@ msgstr "Aguantar"
 
 
 msgid "Render objects as a holdout or matte, creating a hole in the image with zero alpha, to fill out in compositing with real footage or another render"
-msgstr "[Holdout]: Revela els objectes com a embargats o mats, tot creant un forat a la imatge amb alfa zero, que després amb la conformació es pot omplir amb filmetratge o amb un altre revelat"
+msgstr "[Holdout]: Revela els objectes com a embargats o clapes, tot creant un forat a la imatge amb alfa zero, que després amb la conformació es pot omplir amb filmetratge o amb un altre revelat"
 
 
 msgid "Shadow Catcher"
@@ -27395,7 +27507,7 @@ msgstr "Dades de revekat"
 
 
 msgid "Rigid Body World"
-msgstr "Món del cossos rígid"
+msgstr "Món de cossos rígids"
 
 
 msgid "Sequence Editor"
@@ -28117,15 +28229,15 @@ msgstr "Crea una progressió radial"
 
 
 msgid "Flip Axis"
-msgstr "Capgirar eix"
+msgstr "Invertir eix"
 
 
 msgid "Flip the texture's X and Y axis"
-msgstr "Capgira els eixos X i Y de la textura"
+msgstr "Inverteix els eixos X i Y de la textura"
 
 
 msgid "No flipping"
-msgstr "No capgirar"
+msgstr "No invertir"
 
 
 msgid "Clouds Texture"
@@ -29639,7 +29751,7 @@ msgstr "[Color Management]: Quina configuració de la gestió del color s'ha d'u
 
 
 msgid "Follow Scene"
-msgstr "Segueix escena"
+msgstr "Seguir escena"
 
 
 msgid "Choose BW for saving grayscale images, RGB for saving red, green and blue channels, and RGBA for saving red, green, blue and alpha channels"
@@ -29763,7 +29875,7 @@ msgstr "LZW"
 
 
 msgid "Pack Bits"
-msgstr "Pack Bits"
+msgstr "Empaquetar bits"
 
 
 msgid "Log"
@@ -31226,7 +31338,7 @@ msgstr "NdofRCCW"
 
 msgctxt "UI_Events_KeyMaps"
 msgid "NDOF Spin CW"
-msgstr "NDOF Siniar CW"
+msgstr "NDOF Gir CW"
 
 
 msgid "NdofSCW"
@@ -31235,7 +31347,7 @@ msgstr "NdofSCW"
 
 msgctxt "UI_Events_KeyMaps"
 msgid "NDOF Spin CCW"
-msgstr "NDOF Siniar CCW"
+msgstr "NDOF Gir CCW"
 
 
 msgid "NdofSCCW"
@@ -32163,11 +32275,11 @@ msgstr "[Active Path Index]: Índex del conjunt de fites actual"
 
 
 msgid "Keying Sets"
-msgstr "Conjunts de claus de l'escena"
+msgstr "Conjunts de fites de l'escena"
 
 
 msgid "Scene keying sets"
-msgstr "[Keying Sets]: Conjunts de claus de l'escena"
+msgstr "[Keying Sets]: Conjunts de fites de l'escena"
 
 
 msgid "Active Keying Set Index"
@@ -33272,7 +33384,7 @@ msgstr "Màscara spline"
 
 
 msgid "Single spline used for defining mask shape"
-msgstr "[Mask spline]: Spline única usada per definir la forma de la màscara"
+msgstr "[Mask spline]: Spline únic usat per definir la forma de la màscara"
 
 
 msgid "Feather Offset"
@@ -33300,11 +33412,11 @@ msgstr "Col·lecció de punts"
 
 
 msgid "Make this spline a closed loop"
-msgstr "Fer d'aquesta spline un bucle tancat"
+msgstr "Fer d'aquest spline un bucle tancat"
 
 
 msgid "Make this spline filled"
-msgstr "Fer que la spline estigui emplenada"
+msgstr "Fer que el spline estigui emplenat"
 
 
 msgid "Self Intersection Check"
@@ -33320,7 +33432,7 @@ msgstr "Interpolació d'influència"
 
 
 msgid "The type of weight interpolation for spline"
-msgstr "[Weight Interpolation]: El tipus d’interpolació d'influència per la spline"
+msgstr "[Weight Interpolation]: El tipus d’interpolació d'influència pel spline"
 
 
 msgid "Mask Spline Point"
@@ -33328,7 +33440,7 @@ msgstr "Punt de spline màscara"
 
 
 msgid "Single point in spline used for defining mask"
-msgstr "[Mask Spline Point]: Punt únic de la spline utilitzat per definir la màscara"
+msgstr "[Mask Spline Point]: Punt únic del spline utilitzat per definir la màscara"
 
 
 msgid "Feather Points"
@@ -33384,7 +33496,7 @@ msgstr "[Mask Splines]: Col·lecció de splines de màscara"
 
 
 msgid "Active spline of masking layer"
-msgstr "Spline actiuva de la capa d'emmascarament"
+msgstr "Spline activa de la capa d'emmascarament"
 
 
 msgid "Grease Pencil Color"
@@ -33444,11 +33556,11 @@ msgstr "Emplena l'àrea amb la textura de la imatge"
 
 
 msgid "Flip"
-msgstr "Capgira"
+msgstr "Invertir"
 
 
 msgid "Flip filling colors"
-msgstr "[Flip]: Capgira els colors d'emplenament"
+msgstr "[Flip]: Inverteix els colors d'emplenament"
 
 
 msgid "Show in Ghosts"
@@ -33895,12 +34007,28 @@ msgid "Utilities"
 msgstr "Mitjans"
 
 
+msgid "Math"
+msgstr "Càlcul"
+
+
+msgid "Primitives"
+msgstr "Primitius"
+
+
 msgid "Node Context Menu"
 msgstr "Menú contextual de node"
 
 
 msgid "Attribute"
 msgstr "Atribut"
+
+
+msgid "Read"
+msgstr "Lectura"
+
+
+msgid "Write"
+msgstr "Escriptura"
 
 
 msgid "Instances"
@@ -34172,10 +34300,6 @@ msgid "Face Data"
 msgstr "Dades de cares"
 
 
-msgid "Normals"
-msgstr "Normals"
-
-
 msgid "Select by Face Strength"
 msgstr "Seleccionar segons força de la cara"
 
@@ -34398,6 +34522,10 @@ msgstr "Aïllada"
 
 msgid "Edge is not connected to any faces"
 msgstr "[Loose]: L'aresta no està connectada a cap cara"
+
+
+msgid "Sharp edge for shading"
+msgstr "Cantell agut per aspectar"
 
 
 msgid "Freestyle Edge Mark"
@@ -34862,10 +34990,6 @@ msgstr "Distorsió"
 
 msgid "Mesh UV Layer"
 msgstr "Capa UV de malla"
-
-
-msgid "Layer of UV coordinates in a Mesh data-block"
-msgstr "[Mesh UV Layer]: Capa de coordenades UV en un bloc de dades de malla"
 
 
 msgid "UV Pinned"
@@ -35973,11 +36097,11 @@ msgstr "[Self Intersection]: Permet l'autointersecció als operands"
 
 
 msgid "Build effect modifier"
-msgstr "Modificador efecte construcció"
+msgstr "Modificador efecte construir"
 
 
 msgid "Total time the build effect requires"
-msgstr "[Build effect modifier]: Temps total que requereix l'efecte de construcció"
+msgstr "[Build effect modifier]: Temps total que requereix l'efecte construir"
 
 
 msgid "Start frame of the effect"
@@ -36289,7 +36413,7 @@ msgstr "Mapejat d'arestes"
 
 
 msgid "Method used to map source edges to destination ones"
-msgstr "[Edge Mapping]: Mètode utilitzat per mapejar les arestes d'origen a les de destinació"
+msgstr "[Edge Mapping]: Mètode utilitzat per mapejar les arestes d'origen a les de referència"
 
 
 msgid "Copy from identical topology meshes"
@@ -36301,7 +36425,7 @@ msgstr "Vèrtexs més propers"
 
 
 msgid "Copy from most similar edge (edge which vertices are the closest of destination edge's ones)"
-msgstr "[Nearest Vertices]: Copia des de l'aresta més semblant (l'aresta els vèrtexs de la qual són els més propers als de destinació)"
+msgstr "[Nearest Vertices]: Copia des de l'aresta més semblant (l'aresta els vèrtexs de la qual són els més propers als de referència)"
 
 
 msgid "Nearest Edge"
@@ -36325,7 +36449,7 @@ msgstr "Interpolació d'aresta projectada"
 
 
 msgid "Interpolate all source edges hit by the projection of destination one along its own normal (from vertices)"
-msgstr "[Projected Edge Interpolated]: Interpola totes les arestes d'origen afectades per la projecció de la destinació u al llarg de la seva pròpia normal (des dels vèrtexs)"
+msgstr "[Projected Edge Interpolated]: Interpola totes les arestes d'origen afectades per la projecció de la referència u al llarg de la seva pròpia normal (des dels vèrtexs)"
 
 
 msgid "Islands Precision"
@@ -36337,11 +36461,11 @@ msgstr "[Islands Precision]: El factor que controla la precisió de la gestió d
 
 
 msgid "Destination Layers Matching"
-msgstr "Coincidència de capes de destinació"
+msgstr "Coincidència de capes de referència"
 
 
 msgid "How to match source and destination layers"
-msgstr "[Destination Layers Matching]: Com fer coincidir les capes origen i destinació"
+msgstr "[Destination Layers Matching]: Com fer coincidir les capes origen i referència"
 
 
 msgid "Affect active data layer of all targets"
@@ -36405,7 +36529,7 @@ msgstr "Mapejat de cantells de cares"
 
 
 msgid "Method used to map source faces' corners to destination ones"
-msgstr "[Face Corner Mapping]: Mètode utilitzat per mapejar els cantells de cares d'origen a les de destinació"
+msgstr "[Face Corner Mapping]: Mètode utilitzat per mapejar els cantells de cares d'origen a les de referència"
 
 
 msgid "Nearest Corner and Best Matching Normal"
@@ -36417,11 +36541,11 @@ msgstr "[Nearest Corner and Best Matching Normal]: Copia des del cantell més pr
 
 
 msgid "Nearest Corner and Best Matching Face Normal"
-msgstr "Cantell més proper i normal de cara més coincident "
+msgstr "Cantell més proper i normal de cara més coincident"
 
 
 msgid "Copy from nearest corner which has the face with the best matching normal to destination corner's face one"
-msgstr "[Nearest Corner and Best Matching Face Normal]: Copia des del cantell més proper que té la cara amb la normal més coincident a la cara u de la cantonada de destinació"
+msgstr "[Nearest Corner and Best Matching Face Normal]: Copia des del cantell més proper que té la cara amb la normal més coincident a la cara u de la cantonada de referència"
 
 
 msgid "Nearest Corner of Nearest Face"
@@ -36453,15 +36577,15 @@ msgstr "Distància màx"
 
 
 msgid "Maximum allowed distance between source and destination element, for non-topology mappings"
-msgstr "Distància màxima permesa entre l'element d'origen i destinació, per als mapejats no-topològics"
+msgstr "Distància màxima permesa entre l'element d'origen i referència, per als mapejats no-topològics"
 
 
 msgid "Factor to use when applying data to destination (exact behavior depends on mix mode, multiplied with weights from vertex group when defined)"
-msgstr "Factor a usar quan s'apliquen dades a la destinació (el comportament exacte depèn del mode de combinació, multiplicat per l'afectació dels grups de vèrtexs quan quan estan definits)"
+msgstr "Factor a usar quan s'apliquen dades a la referència (el comportament exacte depèn del mode de combinació, multiplicat per l'afectació dels grups de vèrtexs quan quan estan definits)"
 
 
 msgid "How to affect destination elements with source values"
-msgstr "Com afectar els elements de destinació amb els valors d'origen"
+msgstr "Com afectar els elements de referència amb els valors d'origen"
 
 
 msgid "Overwrite all elements' data"
@@ -36473,7 +36597,7 @@ msgstr "Per sobre del llindar"
 
 
 msgid "Only replace destination elements where data is above given threshold (exact behavior depends on data type)"
-msgstr "[Above Threshold]: Substitueix només els elements de destinació on les dades estiguin per sobre del llindar donat (el comportament exacte depèn del tipus de dades)"
+msgstr "[Above Threshold]: Substitueix només els elements de referència on les dades estiguin per sobre del llindar donat (el comportament exacte depèn del tipus de dades)"
 
 
 msgid "Below Threshold"
@@ -36481,23 +36605,23 @@ msgstr "Sota de llindar"
 
 
 msgid "Only replace destination elements where data is below given threshold (exact behavior depends on data type)"
-msgstr "[Below Threshold]: Substitueix només els elements de destinació on les dades estiguin per sota del llindar donat (el comportament exacte depèn del tipus de dades)"
+msgstr "[Below Threshold]: Substitueix només els elements de referència on les dades estiguin per sota del llindar donat (el comportament exacte depèn del tipus de dades)"
 
 
 msgid "Mix source value into destination one, using given threshold as factor"
-msgstr "Barrejar el valor d'origen amb el de destinació, usant el llindar donat com a factor"
+msgstr "Barrejar el valor d'origen amb el de referència, usant el llindar donat com a factor"
 
 
 msgid "Add source value to destination one, using given threshold as factor"
-msgstr "Afegir el valor d'origen al de destinació, usant el llindar donat com a factor"
+msgstr "Afegir el valor d'origen al de referència, usant el llindar donat com a factor"
 
 
 msgid "Subtract source value to destination one, using given threshold as factor"
-msgstr "Sostreure valor d'origen al de destinació, usant el llindar donat com a factor"
+msgstr "Sostreure valor d'origen al de referència, usant el llindar donat com a factor"
 
 
 msgid "Multiply source value to destination one, using given threshold as factor"
-msgstr "Multiplicar el valor d'origen al de destinació, usant el llindar donat com a factor"
+msgstr "Multiplicar el valor d'origen al de referència, usant el llindar donat com a factor"
 
 
 msgid "Source Object"
@@ -36513,7 +36637,7 @@ msgstr "Mapejat de cares"
 
 
 msgid "Method used to map source faces to destination ones"
-msgstr "[Face Mapping]: Mètode utilitzat per mapejar les cares d'origen sobre les de destinació"
+msgstr "[Face Mapping]: Mètode utilitzat per mapejar les cares d'origen sobre les de referència"
 
 
 msgid "Nearest Face"
@@ -36529,11 +36653,11 @@ msgstr "Millor coincidència de normals"
 
 
 msgid "Copy from source polygon which normal is the closest to destination one"
-msgstr "[Best Normal-Matching]: Copia des del polígon origen la normal que s'acosta més a la de destinació"
+msgstr "[Best Normal-Matching]: Copia des del polígon origen la normal que s'acosta més a la de referència"
 
 
 msgid "Interpolate all source polygons intersected by the projection of destination one along its own normal"
-msgstr "Interpolar tots els polígons d'origen interseccionats per la projecció del de destinació al llarg de la seva pròpia normal"
+msgstr "Interpolar tots els polígons d'origen interseccionats per la projecció del de referència al llarg de la seva pròpia normal"
 
 
 msgid "Ray Radius"
@@ -36565,7 +36689,7 @@ msgstr "Només geometria adjacent"
 
 
 msgid "Source elements must be closer than given distance from destination one"
-msgstr "[Only Neighbor Geometry]: Els elements origen han d'estar més a prop que la distància donada del de la destinació"
+msgstr "[Only Neighbor Geometry]: Els elements origen han d'estar més a prop que la distància donada del de la referència"
 
 
 msgid "Object Transform"
@@ -36573,7 +36697,7 @@ msgstr "Transformació objecte"
 
 
 msgid "Evaluate source and destination meshes in global space"
-msgstr "[Object Transform]: Avalua les malles origen i destinació en l'espai global"
+msgstr "[Object Transform]: Avalua les malles origen i referència en l'espai global"
 
 
 msgid "Enable face data transfer"
@@ -36593,7 +36717,7 @@ msgstr "Mapejat de vèrtexs"
 
 
 msgid "Method used to map source vertices to destination ones"
-msgstr "[Vertex Mapping]: Mètode utilitzat per mapejar els vèrtexs d'origen sobre els de destinació"
+msgstr "[Vertex Mapping]: Mètode utilitzat per mapejar els vèrtexs d'origen sobre els de referència"
 
 
 msgid "Copy from closest vertex"
@@ -36881,7 +37005,7 @@ msgstr "[Split Angle]: Angle per sobre del qual s'han d'escindir les arestes"
 
 
 msgid "Use Edge Angle"
-msgstr "Usar angle de cantell"
+msgstr "Usar angle d'aresta"
 
 
 msgid "Split edges with high angle between faces"
@@ -36973,7 +37097,7 @@ msgstr "Centre del ganxo, usat per a la caiguda i la visualització"
 
 
 msgid "Custom falloff curve"
-msgstr "Corba personalitzada de caiguda "
+msgstr "Corba personalitzada de decaïment"
 
 
 msgid "Vertex Indices"
@@ -37013,7 +37137,7 @@ msgstr "Modificador suavitzat laplacià"
 
 
 msgid "Smoothing effect modifier"
-msgstr "[Laplacian Smooth Modifier]: Modificador d'efecte suavitzador."
+msgstr "[Laplacian Smooth Modifier]: Modificador d'efecte suavitzador"
 
 
 msgid "Lambda Border"
@@ -37313,7 +37437,7 @@ msgstr "[Flip U Offset]: Quantitat a separar del punt emmirallador d'UVs per inv
 
 
 msgid "Flip V Offset"
-msgstr "Inverteix seapració V"
+msgstr "Inverteix separació V"
 
 
 msgid "Amount to offset mirrored UVs flipping point from the 0.5 point on the V axis"
@@ -37345,7 +37469,7 @@ msgstr "[Bisect Axis]: Talla la malla a través del pla del mirall"
 
 
 msgid "Bisect Flip Axis"
-msgstr "Capgira l'eix de bisecció"
+msgstr "Inverteix l'eix de bisecció"
 
 
 msgid "Flips the direction of the slice"
@@ -37509,7 +37633,7 @@ msgstr "Mantenir cantonades, confluències"
 
 
 msgid "UVs are smoothed, corners on discontinuous boundary and junctions of 3 or more regions are kept sharp"
-msgstr "[Keep Corners, Junctions]: Se suavitzen els UVs, mentre que es mantenen escairats els límits discontinus i confluències de 3 o més regions."
+msgstr "[Keep Corners, Junctions]: Se suavitzen els UVs, mentre que es mantenen escairats els límits discontinus i confluències de 3 o més regions"
 
 
 msgid "Keep Corners, Junctions, Concave"
@@ -37605,7 +37729,7 @@ msgstr "Bloquejar normals del polígon"
 
 
 msgid "Do not flip polygons when their normals are not consistent with their newly computed custom vertex normals"
-msgstr "[Lock Polygon Normals]: No capgira els polígons quan les seves normals no quadren amb les seves noves normals de vèrtexs personalitzades"
+msgstr "[Lock Polygon Normals]: No inverteix els polígons quan les seves normals no quadren amb les seves noves normals de vèrtexs personalitzades"
 
 
 msgid "Offset from object's center"
@@ -37821,7 +37945,7 @@ msgstr "Aigua poc profunda"
 
 
 msgid "Use for shallow water ('JONSWAP', 'TMA' - Texel-Marsen-Arsloe method)"
-msgstr "[Shallow Water]: Usar per a aigua poc profunda(mètode 'JONSWAP', 'TMA' - Texel-Marsen-Arsloe)"
+msgstr "[Shallow Water]: Usar per a aigua poc profunda (mètode 'JONSWAP', 'TMA' - Texel-Marsen-Arsloe)"
 
 
 msgid "Spray Map"
@@ -38173,8 +38297,16 @@ msgid "Stretch U"
 msgstr "Estira U"
 
 
+msgid "Stretch the U coordinates between 0 and 1 when UVs are present"
+msgstr "[Stretch U]: Estira les coordenades U entre 0 i 1 quan hi ha UVs presents"
+
+
 msgid "Stretch V"
 msgstr "Estira V"
+
+
+msgid "Stretch the V coordinates between 0 and 1 when UVs are present"
+msgstr "[Stretch V]: Estira les coordenades V entre 0 i 1 quan hi ha UVs presents"
 
 
 msgid "SimpleDeform Modifier"
@@ -38466,7 +38598,7 @@ msgstr "[Flat Faces]: Fa que les cares utilitzin la mínima influència de vèrt
 
 
 msgid "Flip Normals"
-msgstr "Capgirar normals"
+msgstr "Invertir normals"
 
 
 msgid "Invert the face direction"
@@ -38921,7 +39053,7 @@ msgstr "[Group Add]: Afegeix vèrtexs amb influència superior al llindar de gru
 
 
 msgid "Group Remove"
-msgstr "Eliminar grup "
+msgstr "Eliminar grup"
 
 
 msgid "Remove vertices with weight below threshold from vgroup"
@@ -39293,7 +39425,7 @@ msgstr "Habilita el desplaçament al llarg de la normal X"
 
 
 msgid "Y Normal"
-msgstr "Normal Y "
+msgstr "Normal Y"
 
 
 msgid "Enable displacement along the Y normal"
@@ -39301,7 +39433,7 @@ msgstr "Habilita el desplaçament al llarg de la normal Y"
 
 
 msgid "Z Normal"
-msgstr "Normal Z "
+msgstr "Normal Z"
 
 
 msgid "Enable displacement along the Z normal"
@@ -39325,7 +39457,7 @@ msgstr "Distància entre ones"
 
 
 msgid "WeightedNormal Modifier"
-msgstr "Modificador influència normal "
+msgstr "Modificador influència normal"
 
 
 msgid "Keep Sharp"
@@ -39541,19 +39673,19 @@ msgstr "[Movie Clip Proxy]: Paràmetres del clip substitut d'un vídeo"
 
 
 msgid "Build proxy resolution 100% of the original footage dimension"
-msgstr "Posar la resolució del substitut al 100% de la dimensió del metratge original"
+msgstr "Confegir resolució del substitut al 100% de la dimensió del metratge original"
 
 
 msgid "Build proxy resolution 25% of the original footage dimension"
-msgstr "Posar la resolució del substitut al 25% de la dimensió del metratge original"
+msgstr "Confegir resolució del substitut al 25% de la dimensió del metratge original"
 
 
 msgid "Build proxy resolution 50% of the original footage dimension"
-msgstr "Posar la resolució del substitut al 50% de la dimensió del metratge original"
+msgstr "Confegir resolució del substitut al 50% de la dimensió del metratge original"
 
 
 msgid "Build proxy resolution 75% of the original footage dimension"
-msgstr "Posar la resolució del substitut al 75% de la dimensió del metratge original"
+msgstr "Confegir resolució del substitut al 75% de la dimensió del metratge original"
 
 
 msgid "Free Run"
@@ -39581,19 +39713,19 @@ msgstr "[Rec Run]: Crea índex de timecodes de projecció de gravació"
 
 
 msgid "Build proxy resolution 100% of the original undistorted footage dimension"
-msgstr "Posar la resolució del substitut al 100% de la dimensió original del metratge sense distorsió"
+msgstr "Crear la resolució del substitut al 100% de la dimensió original del metratge sense distorsió"
 
 
 msgid "Build proxy resolution 25% of the original undistorted footage dimension"
-msgstr "Posar la resolució del substitut al 25% de la dimensió original del metratge sense distorsió"
+msgstr "Crear la resolució del substitut al 25% de la dimensió original del metratge sense distorsió"
 
 
 msgid "Build proxy resolution 50% of the original undistorted footage dimension"
-msgstr "Posar la resolució del substitut al 50% de la dimensió original del metratge sense distorsió"
+msgstr "Crear la resolució del substitut al 50% de la dimensió original del metratge sense distorsió"
 
 
 msgid "Build proxy resolution 75% of the original undistorted footage dimension"
-msgstr "Posar la resolució del substitut al 75% de la dimensió original del metratge sense distorsió"
+msgstr "Crear la resolució del substitut al 75% de la dimensió original del metratge sense distorsió"
 
 
 msgid "Location to store the proxy files"
@@ -41267,7 +41399,7 @@ msgstr "Difuminat màxim"
 
 
 msgid "Blur limit, maximum CoC radius"
-msgstr "Límit de difuminat, radi CoC màxim "
+msgstr "Límit de difuminat, radi CoC màxim"
 
 
 msgid "Bokeh Image"
@@ -41419,7 +41551,7 @@ msgstr "Canal utilitzat per determinar clapes"
 
 
 msgid "Chroma Key"
-msgstr "Clau de croma"
+msgstr "Croma"
 
 
 msgid "Alpha falloff"
@@ -41431,7 +41563,7 @@ msgstr "Ombres"
 
 
 msgid "Alpha lift"
-msgstr "[Lift]: Ombres alfa"
+msgstr "Ombres alfa"
 
 
 msgid "Shadow Adjust"
@@ -41515,41 +41647,3966 @@ msgstr "Canal verd actiu"
 
 
 msgid "Highlights Contrast"
-msgstr "Contrast de ressaltats"
+msgstr "Ressaltats Contrast"
 
 
 msgid "Highlights contrast"
-msgstr "[Highlights Contrast]: Contrast dels ressaltats"
+msgstr "[Highlights Contrast]: Ressaltats i Contrast"
 
 
 msgid "Highlights Gain"
-msgstr "Resaltat dels ressaltat"
+msgstr "Ressaltats Pendent"
 
 
 msgid "Highlights gain"
-msgstr "[Highlights Gain]: Ressaltat de ressaltats"
+msgstr "[Highlights Gain]: Ressaltats i pendent"
 
 
 msgid "Highlights Gamma"
-msgstr "Migtó de ressaltats"
+msgstr "Ressaltats Potència"
 
 
 msgid "Highlights gamma"
-msgstr "[Highlights Gamma]: Migtó de ressaltats"
+msgstr "[Highlights Gamma]: Ressaltats i potència"
 
 
 msgid "Highlights Lift"
-msgstr "Ombra dels ressaltats"
+msgstr "Ressaltats Decalatge"
 
 
 msgid "Highlights lift"
-msgstr "[Highlights Lift]: Ombra de ressaltats"
+msgstr "[Highlights Lift]: Ressaltats i decalatge"
 
 
 msgid "Highlights Saturation"
-msgstr "Saturació de ressaltats"
+msgstr "Ressaltats Saturació"
 
 
 msgid "Highlights saturation"
-msgstr "[Highlights saturation]: Saturació dels ressaltats"
+msgstr "[Highlights saturation]: Ressaltats i saturació"
+
+
+msgid "Master Contrast"
+msgstr "Mestre Contrast"
+
+
+msgid "Master contrast"
+msgstr "[Master Contrast]: Mestre i contrast"
+
+
+msgid "Master Gain"
+msgstr "Mestre Pendent"
+
+
+msgid "Master gain"
+msgstr "[Master Gain]: Mestre i pendent"
+
+
+msgid "Master Gamma"
+msgstr "Mestre Potència"
+
+
+msgid "Master gamma"
+msgstr "[Master Gamma]: Mestre i potència"
+
+
+msgid "Master Lift"
+msgstr "Mestre Decalatge"
+
+
+msgid "Master lift"
+msgstr "[Master Lift]: Mestre i decalatge"
+
+
+msgid "Master Saturation"
+msgstr "Mestre Saturació"
+
+
+msgid "Master saturation"
+msgstr "[Master Saturation]: Mestre i saturació"
+
+
+msgid "Midtones Contrast"
+msgstr "Migtons Contrast"
+
+
+msgid "Midtones contrast"
+msgstr "[Midtones Contrast]: Mitjos tons i contrast"
+
+
+msgid "Midtones End"
+msgstr "Final Migtons"
+
+
+msgid "End of midtones"
+msgstr "[Midtones End]: Final dels tons mitjans"
+
+
+msgid "Midtones Gain"
+msgstr "Migtons Pendent"
+
+
+msgid "Midtones gain"
+msgstr "[Midtones Gain]: Tons mitjans i pendent"
+
+
+msgid "Midtones Gamma"
+msgstr "Migtons Potència"
+
+
+msgid "Midtones gamma"
+msgstr "[Midtones Gamma]: Tons mitjans i potència"
+
+
+msgid "Midtones Lift"
+msgstr "Migtons Decalatge"
+
+
+msgid "Midtones lift"
+msgstr "[Midtones Lift]: Tons mitjans i decalatge"
+
+
+msgid "Midtones Saturation"
+msgstr "Migtons Saturació"
+
+
+msgid "Midtones saturation"
+msgstr "[Midtones Saturation]: Tons mitjans i saturació"
+
+
+msgid "Midtones Start"
+msgstr "Inici migtons"
+
+
+msgid "Start of midtones"
+msgstr "[Midtones Start]: Inici dels tons mitjans"
+
+
+msgid "Red channel active"
+msgstr "Canal vermell actiu"
+
+
+msgid "Shadows Contrast"
+msgstr "Onbres Contrast"
+
+
+msgid "Shadows contrast"
+msgstr "[Shadows Contrast]: Ombres i contrast"
+
+
+msgid "Shadows Gain"
+msgstr "Ombres Pendent"
+
+
+msgid "Shadows gain"
+msgstr "[Shadows Gain]: Ombres i pendent"
+
+
+msgid "Shadows Gamma"
+msgstr "Ombres Potència"
+
+
+msgid "Shadows gamma"
+msgstr "[Shadows Gamma]: Ombres i potència"
+
+
+msgid "Shadows Lift"
+msgstr "Ombres Decalatge"
+
+
+msgid "Shadows lift"
+msgstr "[Shadows Lift]: Ombres i decalatge"
+
+
+msgid "Shadows Saturation"
+msgstr "Ombres Saturació"
+
+
+msgid "Shadows saturation"
+msgstr "[Shadows Saturation]: Ombres i saturació"
+
+
+msgid "Color Key"
+msgstr "Clapa de color"
+
+
+msgid "H"
+msgstr "H"
+
+
+msgid "Hue tolerance for colors to be considered a keying color"
+msgstr "Tolerància de tonalitat (hue) per incloure colors a la clapa"
+
+
+msgid "S"
+msgstr "S"
+
+
+msgid "Saturation tolerance for the color"
+msgstr "Tolerància de saturació per al color"
+
+
+msgid "Value tolerance for the color"
+msgstr "Tolerància de valor per al color"
+
+
+msgid "Color Spill"
+msgstr "Encongir color"
+
+
+msgid "Red spill suppression"
+msgstr "Encongir vermell"
+
+
+msgid "Green spill suppression"
+msgstr "Encongir verd"
+
+
+msgid "Blue spill suppression"
+msgstr "Encongir blau"
+
+
+msgid "Limit by red"
+msgstr "Limita vermells"
+
+
+msgid "Limit by green"
+msgstr "Limita verds"
+
+
+msgid "Limit by blue"
+msgstr "Límit blaus"
+
+
+msgid "Simple limit algorithm"
+msgstr "Algorisme de limitació simple"
+
+
+msgid "Average limit algorithm"
+msgstr "Algorisme de limitació per mitjana"
+
+
+msgid "Scale limit by value"
+msgstr "Limitació d'escala per valor"
+
+
+msgid "Blue spillmap scale"
+msgstr "Escala del mapa d'encongiment de blau"
+
+
+msgid "Green spillmap scale"
+msgstr "Escala del mapa d'encongiment de verd"
+
+
+msgid "Red spillmap scale"
+msgstr "Escala del mapa d'encongiment de vermell"
+
+
+msgid "Unspill"
+msgstr "No encongit"
+
+
+msgid "Compensate all channels (differently) by hand"
+msgstr "[Unspill]: Compensa tots els canals (diferentment) a mà"
+
+
+msgid "Combine HSVA"
+msgstr "Combinar HSVA"
+
+
+msgid "Combine RGBA"
+msgstr "Combinar RGBA"
+
+
+msgid "Combine YCbCrA"
+msgstr "Combinar YCbCrA"
+
+
+msgid "ITU 601"
+msgstr "ITU 601"
+
+
+msgid "ITU 709"
+msgstr "ITU 709"
+
+
+msgid "Jpeg"
+msgstr "Jpeg"
+
+
+msgid "Combine YUVA"
+msgstr "Combinar YUVA"
+
+
+msgid "Combine Color"
+msgstr "Combina color"
+
+
+msgid "Mode of color processing"
+msgstr "Mode de procés de color"
+
+
+msgid "Use RGB color processing"
+msgstr "Usar procés de color RGB"
+
+
+msgid "Use HSV color processing"
+msgstr "Usar procés de color HSV"
+
+
+msgid "Use HSL color processing"
+msgstr "Usar procés de color HSL"
+
+
+msgid "Use YCbCr color processing"
+msgstr "Usar procés de color YCbCr"
+
+
+msgid "Use YUV color processing"
+msgstr "Usar procés de color YUV"
+
+
+msgid "Color space used for YCbCrA processing"
+msgstr "Espai cromàtic usat per al procés YCbCrA"
+
+
+msgid "Combine XYZ"
+msgstr "Combinar XYZ"
+
+
+msgid "Composite"
+msgstr "Conformar"
+
+
+msgid "Colors are treated alpha premultiplied, or colors output straight (alpha gets set to 1)"
+msgstr "[Composite]: Es tracta els colors amb premultiplicat alfa, o bé els colors surten directament (l'alfa queda com a 1)"
+
+
+msgid "From"
+msgstr "A partir de"
+
+
+msgid "Color space of the input image"
+msgstr "Espai cromàtic de la imatge a incorporar"
+
+
+msgid "To"
+msgstr "Destí"
+
+
+msgid "Color space of the output image"
+msgstr "Espai cromàtic de la imatge resultant"
+
+
+msgid "Corner Pin"
+msgstr "Cantó travat"
+
+
+msgid "X2"
+msgstr "X2"
+
+
+msgid "Y2"
+msgstr "Y2"
+
+
+msgid "X1"
+msgstr "X1"
+
+
+msgid "Y1"
+msgstr "Y1"
+
+
+msgid "Use relative values to crop image"
+msgstr "Usar valors relatius per escapçar la imatge"
+
+
+msgid "Crop Image Size"
+msgstr "Escapça la mida de la imatge"
+
+
+msgid "Whether to crop the size of the input image"
+msgstr "[Crop Image Size]: Si cal escapçar la mida de la imatge incorporada"
+
+
+msgid "Cryptomatte (Legacy)"
+msgstr "Criptoclapa (antic)"
+
+
+msgid "Add object or material to matte, by picking a color from the Pick output"
+msgstr "[Cryptomatte (Legacy)]: Afegeix un objecte o material a la clapa, seleccionant un color del born de tria enfora"
+
+
+msgid "Matte Objects"
+msgstr "Objectes clapa"
+
+
+msgid "List of object and material crypto IDs to include in matte"
+msgstr "[Matte Objects]: Llista d'identificadors de criptoclapes d'objectes i materials a incloure en la clapa"
+
+
+msgid "Remove object or material from matte, by picking a color from the Pick output"
+msgstr "Elimina l'objecte o el material de la clapa, seleccionant un color del born de tria enfora"
+
+
+msgid "Cryptomatte"
+msgstr "Criptoclapa"
+
+
+msgid "Mattes"
+msgstr "[Cryptomatte]: Clapes"
+
+
+msgid "Has Layers"
+msgstr "Té capes"
+
+
+msgid "True if this image has any named layer"
+msgstr "Ver si aquesta imatge té una capa amb nom"
+
+
+msgid "Has View"
+msgstr "Té visualització"
+
+
+msgid "True if this image has multiple views"
+msgstr "Ver si aquesta imatge té múltiples visualitzacions"
+
+
+msgid "Placeholder"
+msgstr "Agafall"
+
+
+msgid "Cryptomatte Layer"
+msgstr "Capa de criptoclapa"
+
+
+msgid "What Cryptomatte layer is used"
+msgstr "[Cryptomatte Layer]: La capa de la criptoclapa en ús"
+
+
+msgid "Use Object layer"
+msgstr "Usar capa d'objecte"
+
+
+msgid "Use Material layer"
+msgstr "Usar capa de material"
+
+
+msgid "Use Asset layer"
+msgstr "Usar capa de recurs"
+
+
+msgid "Where the Cryptomatte passes are loaded from"
+msgstr "D'on es carreguen les passades de la criptoclapa"
+
+
+msgid "Use Cryptomatte passes from a render"
+msgstr "Usas passos de criptoclapa d'un revelat"
+
+
+msgid "Use Cryptomatte passes from an image"
+msgstr "Usas els passos de criptoclapa d'una imatge"
+
+
+msgid "Auto-Refresh"
+msgstr "Autorefrescar"
+
+
+msgid "RGB Curves"
+msgstr "Corbes RGB"
+
+
+msgid "Vector Curves"
+msgstr "Corbes vectorials"
+
+
+msgid "Compositor Custom Group"
+msgstr "Grup personalitzat del conformador"
+
+
+msgid "Custom Compositor Group Node for Python nodes"
+msgstr "[Compositor Custom Group]: Grup de nodes del conformador personalitzat per a nodes Python"
+
+
+msgid "Directional Blur"
+msgstr "Difuminat direccional"
+
+
+msgid "Center X"
+msgstr "Centre X"
+
+
+msgid "Center Y"
+msgstr "Centre Y"
+
+
+msgid "Spin"
+msgstr "Voltar"
+
+
+msgid "Zoom"
+msgstr "Zoom"
+
+
+msgid "Defocus"
+msgstr "Desenfocar"
+
+
+msgid "Bokeh shape rotation offset"
+msgstr "Desplaçament de rotació de forma Bokeh"
+
+
+msgid "Bokeh Type"
+msgstr "Tipus Bokeh"
+
+
+msgid "Octagonal"
+msgstr "Octagonal"
+
+
+msgid "8 sides"
+msgstr "8 costats"
+
+
+msgid "Heptagonal"
+msgstr "Heptagonal"
+
+
+msgid "7 sides"
+msgstr "7 costats"
+
+
+msgid "Hexagonal"
+msgstr "Hexagonal"
+
+
+msgid "6 sides"
+msgstr "6 costats"
+
+
+msgid "Pentagonal"
+msgstr "Pentagonal"
+
+
+msgid "5 sides"
+msgstr "5 costats"
+
+
+msgid "4 sides"
+msgstr "4 costats"
+
+
+msgid "Triangular"
+msgstr "Triangular"
+
+
+msgid "3 sides"
+msgstr "3 costats"
+
+
+msgid "Amount of focal blur, 128 (infinity) is perfect focus, half the value doubles the blur radius"
+msgstr "Quantitat de difuminat focal, 128 (infinit) és el focus perfecte, la meitat del valor duplica el radi de difuminat"
+
+
+msgid "Scene from which to select the active camera (render scene if undefined)"
+msgstr "Escena des de la qual seleccionar la càmera activa (escena de revelat si no està definida)"
+
+
+msgid "CoC radius threshold, prevents background bleed on in-focus midground, 0 is disabled"
+msgstr "Llindar del radi del CoC, evita que el rerefons engruti la mitja distància enfocada, amb 0 està desactivat"
+
+
+msgid "Gamma Correction"
+msgstr "Correcció gamma"
+
+
+msgid "Enable gamma correction before and after main process"
+msgstr "Activa la correcció de gamma abans i després del procés principal"
+
+
+msgid "Enable low quality mode, useful for preview"
+msgstr "Activa mode de baixa qualitat, útil per a previsualització"
+
+
+msgid "Use Z-Buffer"
+msgstr "Usar estalvi-Z"
+
+
+msgid "Disable when using an image as input instead of actual z-buffer (auto enabled if node not image based, eg. time node)"
+msgstr "[Use Z-Buffer]: Desactivar quan s'usi una imatge enlloc de les dades d'estalvi de z (s'autoactiva si el node no és d'imatge, p. ex. el node temps)"
+
+
+msgid "Z-Scale"
+msgstr "Escala-Z"
+
+
+msgid "Scale the Z input when not using a z-buffer, controls maximum blur designated by the color white or input value 1"
+msgstr "[Escala Z]: Escala les dades Z entrants quan no s'usa l'estalvi-Z, controla el difuminat màxim designat pel color blanc o el valor d'entrada 1"
+
+
+msgid "Denoise"
+msgstr "Desempolsegar"
+
+
+msgid "Denoising prefilter"
+msgstr "[Denoise]: Filter de treure la pols"
+
+
+msgid "No prefiltering, use when guiding passes are noise-free"
+msgstr "Sense prefiltrat, usar quan les passades guia no tinguin pols"
+
+
+msgid "Denoise image and guiding passes together. Improves quality when guiding passes are noisy using least amount of extra processing time"
+msgstr "Desempolsegat d'imatges i passades guia alhora. Millora la qualitat quan les passades guia tenen pols tot emprant el mínim temps de processament afegit"
+
+
+msgid "Accurate"
+msgstr "Exacte"
+
+
+msgid "Prefilter noisy guiding passes before denoising image. Improves quality when guiding passes are noisy using extra processing time"
+msgstr "[Accurate]: Prefilta les passades guia polsoses abans de desempolsegar la imatge. Millora la qualitat quan les passades guia tenen pols tot emprant el mínim temps de processament afegit"
+
+
+msgid "HDR"
+msgstr "HDR"
+
+
+msgid "Process HDR images"
+msgstr "Processar imatges HDR"
+
+
+msgid "Despeckle"
+msgstr "Desgranellar"
+
+
+msgid "Threshold for detecting pixels to despeckle"
+msgstr "[Despeckle]: Llindar per a detectar els píxels a desgranejar"
+
+
+msgid "Neighbor"
+msgstr "Veïns"
+
+
+msgid "Threshold for the number of neighbor pixels that must match"
+msgstr "[Neighbor]: Llindar per al nombre de píxels veïns que han de coincidir"
+
+
+msgid "Difference Key"
+msgstr "Cota de diferència"
+
+
+msgid "Color distances below this additional threshold are partially keyed"
+msgstr "[Difference Key]: Les distàncies cromàtiques inferiors a aquest llindar addicional resten parcialment acotades"
+
+
+msgid "Color distances below this threshold are keyed"
+msgstr "Les distàncies cromàtiques inferiors a aquest llindar resten acotades"
+
+
+msgid "Dilate/Erode"
+msgstr "Dilata/Erosiona"
+
+
+msgid "Distance to grow/shrink (number of iterations)"
+msgstr "[Dilate/Erode]: Distància a créixer/encongir (nombre d'iteracions)"
+
+
+msgid "Edge to inset"
+msgstr "Aresta a encloure"
+
+
+msgid "Growing/shrinking mode"
+msgstr "Mode Creixement/encongiment"
+
+
+msgid "Feather"
+msgstr "Ploma"
+
+
+msgid "Distance Key"
+msgstr "Cota de distància"
+
+
+msgid "YCbCr suppression"
+msgstr "Supressió YCbCr"
+
+
+msgid "Double Edge Mask"
+msgstr "Màscara doble aresta"
+
+
+msgid "Buffer Edge Mode"
+msgstr "Mode espai de marge"
+
+
+msgid "Bleed Out"
+msgstr "Sobreeixir"
+
+
+msgid "Allow mask pixels to bleed along edges"
+msgstr "[Bleed Out]: Permet que píxels de la màscara sobreïxin al llarg dels marges"
+
+
+msgid "Keep In"
+msgstr "A ratlla"
+
+
+msgid "Restrict mask pixels from touching edges"
+msgstr "[Keep In]: Fa que els píxels de la màscara no toquin vores"
+
+
+msgid "Inner Edge Mode"
+msgstr "Mode marge interior"
+
+
+msgid "All pixels on inner mask edge are considered during mask calculation"
+msgstr "[Inner Edge Mode]: Tots els píxels de dins el marge de la màscara es prenen en consideració en el càlcul"
+
+
+msgid "Adjacent Only"
+msgstr "Només adjacents"
+
+
+msgid "Only inner mask pixels adjacent to outer mask pixels are considered during mask calculation"
+msgstr "[Adjacent Only]: Només es tenen en compte els píxels de la màscara interna adjacents als píxels externs a la màscara en el càlcul de màscara"
+
+
+msgid "Ellipse Mask"
+msgstr "El·lipse de màscara"
+
+
+msgid "Height of the ellipse"
+msgstr "Alçada de l'el·lipse"
+
+
+msgid "Rotation angle of the ellipse"
+msgstr "Angle de rotació de l'el·lipse"
+
+
+msgid "Width of the ellipse"
+msgstr "Amplada de l'el·lipse"
+
+
+msgid "X position of the middle of the ellipse"
+msgstr "Posició X del centre de l'el·lipse"
+
+
+msgid "Y position of the middle of the ellipse"
+msgstr "Posició Y del centre de l'el·lipse"
+
+
+msgid "Box Sharpen"
+msgstr "Rebaixador de capsa"
+
+
+msgid "An aggressive sharpening filter"
+msgstr "[Box Sharpen]: Un filtre de rebaixat agressiu"
+
+
+msgid "Diamond Sharpen"
+msgstr "Rebaixat amb diamant"
+
+
+msgid "A moderate sharpening filter"
+msgstr "Un filtre de rebaixat moderat"
+
+
+msgid "Laplace"
+msgstr "Laplace"
+
+
+msgid "Sobel"
+msgstr "Sobel"
+
+
+msgid "Prewitt"
+msgstr "Prewitt"
+
+
+msgid "Kirsch"
+msgstr "Kirsch"
+
+
+msgid "Shadow"
+msgstr "Ombra"
+
+
+msgid "Flip X"
+msgstr "Invertir X"
+
+
+msgid "Flip Y"
+msgstr "Invertir Y"
+
+
+msgid "Flip X & Y"
+msgstr "Invertir X i Y"
+
+
+msgid "Glare"
+msgstr "Rellum"
+
+
+msgid "Angle Offset"
+msgstr "Desplaçament d'angle"
+
+
+msgid "Streak angle offset"
+msgstr "[Angle Offset]: Desplaçament d'angle del raig"
+
+
+msgid "Color Modulation"
+msgstr "Modulació de color"
+
+
+msgid "Amount of Color Modulation, modulates colors of streaks and ghosts for a spectral dispersion effect"
+msgstr "Quantitat de modulació de color, modula els colors dels raigs i espectres per a un efecte de dispersió espectral"
+
+
+msgid "Streak fade-out factor"
+msgstr "Factor esvaïment de raig"
+
+
+msgid "Glare Type"
+msgstr "Tipus de rellum"
+
+
+msgid "Ghosts"
+msgstr "Espectres"
+
+
+msgid "Streaks"
+msgstr "Raigs"
+
+
+msgid "Fog Glow"
+msgstr "Boira lluent"
+
+
+msgid "Simple Star"
+msgstr "Estrella simple"
+
+
+msgid "-1 is original image only, 0 is exact 50/50 mix, 1 is processed image only"
+msgstr "-1 és només la imatge original, 0 és la mescla exacta 50/50, 1 només és la imatge processada"
+
+
+msgid "If not set to high quality, the effect will be applied to a low-res copy of the source image"
+msgstr "Si no es posa a alta qualitat, l'efecte s'aplicarà a una còpia de baixa resolució de la imatge d'origen"
+
+
+msgid "Glow/glare size (not actual size; relative to initial size of bright area of pixels)"
+msgstr "Mida de la claror/rellum (no pas mida real; relativa a la mida inicial de l'àrea de píxels brillant)"
+
+
+msgid "Total number of streaks"
+msgstr "Nombre total de raigs"
+
+
+msgid "The glare filter will only be applied to pixels brighter than this value"
+msgstr "El filtre de rellum només s'aplicarà als píxels més brillants que aquest valor"
+
+
+msgid "Rotate 45"
+msgstr "Rotar 45"
+
+
+msgid "Simple star filter: add 45 degree rotation offset"
+msgstr "[Rotate 45]: Filtre estel·lar simple: afegeix un desplaçament de rotació de 45 graus"
+
+
+msgid "Hue Correct"
+msgstr "Correcció tonalitat"
+
+
+msgid "Hue Saturation Value"
+msgstr "Valor saturació de tonalitat"
+
+
+msgid "ID Mask"
+msgstr "ID de Màscara"
+
+
+msgid "Pass index number to convert to alpha"
+msgstr "[ID Mask]: Número d'índex de la passada per convertir a alfa"
+
+
+msgid "Apply an anti-aliasing filter to the mask"
+msgstr "Aplica filtre d'antialiàsing a la màscara"
+
+
+msgid "Straight Alpha Output"
+msgstr "Born de sortida d'alfa directa"
+
+
+msgid "Put node output buffer to straight alpha instead of premultiplied"
+msgstr "[Straight Alpha Output]: Posa el born de sortida a alfa directa enlloc de premultiplicada"
+
+
+msgid "Inpaint"
+msgstr "Empintar"
+
+
+msgid "Distance to inpaint (number of iterations)"
+msgstr "[Inpaint]: Distància a estendre la pintura (nombre d'iteracions)"
+
+
+msgid "Keying"
+msgstr "Croma"
+
+
+msgid "Post Blur"
+msgstr "Postdifuminat"
+
+
+msgid "Matte blur size which applies after clipping and dilate/eroding"
+msgstr "[Post Blur]: Mida de la clapa de difuminat que s'aplica després de retallar i dilatar/erosionar"
+
+
+msgid "Pre Blur"
+msgstr "Predifuminat"
+
+
+msgid "Chroma pre-blur size which applies before running keyer"
+msgstr "Mida de predifuminat del croma que s'aplica abans d'executar el cromador"
+
+
+msgid "Clip Black"
+msgstr "Zona negra"
+
+
+msgid "Value of non-scaled matte pixel which considers as fully background pixel"
+msgstr "[Clip Black]: Valor del píxel no escalat de la clapa considerat com a píxel totalment de fons"
+
+
+msgid "Clip White"
+msgstr "Zona blanca"
+
+
+msgid "Value of non-scaled matte pixel which considers as fully foreground pixel"
+msgstr "[Clip White]: Valor del píxel no escalat de la clapa considerat com a píxel totalment de primer pla"
+
+
+msgid "Despill Balance"
+msgstr "Equilibri de desencongiment"
+
+
+msgid "Balance between non-key colors used to detect amount of key color to be removed"
+msgstr "[Despill Balance]: Equilibri entre els colors que no són croma que s'usa per a detectar la quantitat de croma a eliminar"
+
+
+msgid "Despill Factor"
+msgstr "Factor desencongiment"
+
+
+msgid "Factor of despilling screen color from image"
+msgstr "[Despill Factor]: Factor per desencongir el color de la pantalla des de la imatge"
+
+
+msgid "Matte dilate/erode side"
+msgstr "Clapa costat dilatar/erosionar"
+
+
+msgid "Edge Kernel Radius"
+msgstr "Radi de matriu de vora"
+
+
+msgid "Radius of kernel used to detect whether pixel belongs to edge"
+msgstr "[Edge Kernel Radius]: Radi de la matriu de convolució que s'usa per detectar si el píxel pertany a la vora"
+
+
+msgid "Edge Kernel Tolerance"
+msgstr "Tolerància de matriu de vora"
+
+
+msgid "Tolerance to pixels inside kernel which are treating as belonging to the same plane"
+msgstr "[Edge Kernel Tolerance]: Tolerància als píxels dins la matriu de convolució que es tracten com a pertanyents al mateix pla"
+
+
+msgid "Feather Distance"
+msgstr "Distància de ploma"
+
+
+msgid "Distance to grow/shrink the feather"
+msgstr "[Feather Distance]: Distància per a fer créixer/encongir la ploma"
+
+
+msgctxt "Curve"
+msgid "Feather Falloff"
+msgstr "Decaïment de ploma"
+
+
+msgid "Screen Balance"
+msgstr "Equilibri de pantalla"
+
+
+msgid "Balance between two non-primary channels primary channel is comparing against"
+msgstr "[Screen Balance]: Equilibri entre dos canals no-primaris amb què es compara el canal primari"
+
+
+msgid "Keying Screen"
+msgstr "Pantalla de croma"
+
+
+msgid "Tracking Object"
+msgstr "Objecte a rastrejar"
+
+
+msgid "Lens Distortion"
+msgstr "Distorsió de lent"
+
+
+msgid "For positive distortion factor only: scale image such that black areas are not visible"
+msgstr "[Lens Distortion]: Només per a factor de distorsió positiva: escala la imatge tal que les àrees negres no siguin visibles"
+
+
+msgctxt "NodeTree"
+msgid "Jitter"
+msgstr "Trontoll"
+
+
+msgid "Enable/disable jittering (faster, but also noisier)"
+msgstr "[Jitter]: Activa/desactiva el trontoll (més ràpid, però també més sorollós)"
+
+
+msgid "Projector"
+msgstr "Projector"
+
+
+msgid "Enable/disable projector mode (the effect is applied in horizontal direction only)"
+msgstr "Activa/desactiva el mode projector (només s'aplica l'efecte en direcció horitzontal)"
+
+
+msgid "Combined"
+msgstr "Combinat"
+
+
+msgid "Combined RGB"
+msgstr "RGB combinat"
+
+
+msgid "Red Channel"
+msgstr "Canal vermell"
+
+
+msgid "Green Channel"
+msgstr "Canal verd"
+
+
+msgid "Blue Channel"
+msgstr "Canal blau"
+
+
+msgid "Luminance"
+msgstr "Luminància"
+
+
+msgid "Luminance Channel"
+msgstr "Canal de luminància"
+
+
+msgid "Luminance Key"
+msgstr "Cota de luminància"
+
+
+msgid "Map Range"
+msgstr "Interval de mapa"
+
+
+msgid "Clamp result of the node to 0.0 to 1.0 range"
+msgstr "[Map Range]: Constreny el resultat del node a un interval de 0,0 a 1,0"
+
+
+msgid "Map UV"
+msgstr "Mapa UV"
+
+
+msgid "Map Value"
+msgstr "Valor del mapa"
+
+
+msgid "Use Maximum"
+msgstr "Usar màxim"
+
+
+msgid "Use Minimum"
+msgstr "Usar mínim"
+
+
+msgid "Number of motion blur samples"
+msgstr "Nombre de mostres de difuminat de moviment"
+
+
+msgid "Shutter"
+msgstr "Obturador"
+
+
+msgid "Exposure for motion blur as a factor of FPS"
+msgstr "[Shutter]: Exposició per al desenfocament del moviment com a factor de FPS"
+
+
+msgid "Size Source"
+msgstr "Font de la mida"
+
+
+msgid "Where to get the mask size from for aspect/size information"
+msgstr "[Size Source]: D'on obtenir la mida de la màscara per a la informació d'aspecte/mida"
+
+
+msgid "Scene Size"
+msgstr "Mida d'escena"
+
+
+msgid "Use pixel size for the buffer"
+msgstr "[Scene size]: Usa la mida del píxel per a la memòria intermèdia"
+
+
+msgid "Fixed/Scene"
+msgstr "Fix/Escene"
+
+
+msgid "Pixel size scaled by scene percentage"
+msgstr "[Fix/Scene]: Mida del píxel escalat pel percentatge de l'escena"
+
+
+msgid "Use feather information from the mask"
+msgstr "Usar informació de ploma des de màscara"
+
+
+msgid "Motion Blur"
+msgstr "Difuminat de moviment"
+
+
+msgid "Use multi-sampled motion blur of the mask"
+msgstr "Usa difuminat de moviment multimostra de la màscara"
+
+
+msgctxt "NodeTree"
+msgid "Operation"
+msgstr "Operació"
+
+
+msgctxt "NodeTree"
+msgid "Add"
+msgstr "Sumar"
+
+
+msgid "A + B"
+msgstr "A + B"
+
+
+msgctxt "NodeTree"
+msgid "Subtract"
+msgstr "Restar"
+
+
+msgid "A - B"
+msgstr "A - B"
+
+
+msgctxt "NodeTree"
+msgid "Multiply"
+msgstr "Multiplicar"
+
+
+msgid "A * B"
+msgstr "A * B"
+
+
+msgctxt "NodeTree"
+msgid "Divide"
+msgstr "Dividir"
+
+
+msgid "A / B"
+msgstr "A / B"
+
+
+msgctxt "NodeTree"
+msgid "Multiply Add"
+msgstr "Multiplicaa i sumar"
+
+
+msgid "A * B + C"
+msgstr "A * B + C"
+
+
+msgctxt "NodeTree"
+msgid "Power"
+msgstr "Potència"
+
+
+msgid "A power B"
+msgstr "A elevat a B"
+
+
+msgctxt "NodeTree"
+msgid "Logarithm"
+msgstr "Logaritme"
+
+
+msgid "Logarithm A base B"
+msgstr "Logaritme de A en base B"
+
+
+msgctxt "NodeTree"
+msgid "Square Root"
+msgstr "Arrel quadrada"
+
+
+msgid "Square root of A"
+msgstr "Arrel quadrada d'A"
+
+
+msgctxt "NodeTree"
+msgid "Inverse Square Root"
+msgstr "Arrel quadrada inversa"
+
+
+msgid "1 / Square root of A"
+msgstr "1 / Arrel quadrada d'A"
+
+
+msgctxt "NodeTree"
+msgid "Absolute"
+msgstr "Absolut"
+
+
+msgid "Magnitude of A"
+msgstr "Magnitud d'A"
+
+
+msgctxt "NodeTree"
+msgid "Exponent"
+msgstr "Exponent"
+
+
+msgid "exp(A)"
+msgstr "exp(A)"
+
+
+msgctxt "NodeTree"
+msgid "Minimum"
+msgstr "Mínim"
+
+
+msgid "The minimum from A and B"
+msgstr "El mínim entre A i B"
+
+
+msgctxt "NodeTree"
+msgid "Maximum"
+msgstr "Màxim"
+
+
+msgid "The maximum from A and B"
+msgstr "El màxim entre A i B"
+
+
+msgctxt "NodeTree"
+msgid "Less Than"
+msgstr "Menor que"
+
+
+msgid "1 if A < B else 0"
+msgstr "1 si A < B sino 0"
+
+
+msgctxt "NodeTree"
+msgid "Greater Than"
+msgstr "Major que"
+
+
+msgid "1 if A > B else 0"
+msgstr "1 si A > B sino 0"
+
+
+msgctxt "NodeTree"
+msgid "Sign"
+msgstr "Signe"
+
+
+msgid "Returns the sign of A"
+msgstr "Retorna el signe d'A"
+
+
+msgctxt "NodeTree"
+msgid "Compare"
+msgstr "Compara"
+
+
+msgid "1 if (A == B) within tolerance C else 0"
+msgstr "1 si (A == B) dins de la tolerància C sino 0"
+
+
+msgctxt "NodeTree"
+msgid "Smooth Minimum"
+msgstr "Mínim regularitzat"
+
+
+msgid "The minimum from A and B with smoothing C"
+msgstr "[Smooth Minimum]: El mínim entre A i B amb regularització C"
+
+
+msgctxt "NodeTree"
+msgid "Smooth Maximum"
+msgstr "Màxim regularitzat"
+
+
+msgid "The maximum from A and B with smoothing C"
+msgstr "[Smooth Maximum] El màxim entre A i B amb regularització C"
+
+
+msgctxt "NodeTree"
+msgid "Round"
+msgstr "Arrodoniment"
+
+
+msgid "Round A to the nearest integer. Round upward if the fraction part is 0.5"
+msgstr "[Round]: Arrodoneix A a l'enter més proper. Arrodoneix cap amunt si la fracció és 0,5"
+
+
+msgctxt "NodeTree"
+msgid "Floor"
+msgstr "Sòl"
+
+
+msgid "The largest integer smaller than or equal A"
+msgstr "[Floor]: L'enter més gran més petit o igual a A"
+
+
+msgctxt "NodeTree"
+msgid "Ceil"
+msgstr "Sostre"
+
+
+msgid "The smallest integer greater than or equal A"
+msgstr "[Ceil]: L'enter més petit més gran o igual a A"
+
+
+msgctxt "NodeTree"
+msgid "Truncate"
+msgstr "Truncat"
+
+
+msgid "The integer part of A, removing fractional digits"
+msgstr "La part entera d'A, eliminant dígits fraccionaris"
+
+
+msgctxt "NodeTree"
+msgid "Fraction"
+msgstr "Fracció"
+
+
+msgid "The fraction part of A"
+msgstr "La part fraccionària d'A"
+
+
+msgctxt "NodeTree"
+msgid "Modulo"
+msgstr "Mòdul"
+
+
+msgid "Modulo using fmod(A,B)"
+msgstr "[Modulo]: Operació mòdul usant fmod(A,B)"
+
+
+msgctxt "NodeTree"
+msgid "Wrap"
+msgstr "Confinar"
+
+
+msgid "Wrap value to range, wrap(A,B)"
+msgstr "Confina el valor a l'interval, wrap(A,B)"
+
+
+msgctxt "NodeTree"
+msgid "Snap"
+msgstr "Ajustar"
+
+
+msgid "Snap to increment, snap(A,B)"
+msgstr "Ajusta a l'increment, snap(A,B)"
+
+
+msgctxt "NodeTree"
+msgid "Ping-Pong"
+msgstr "Ping-Pong"
+
+
+msgid "Wraps a value and reverses every other cycle (A,B)"
+msgstr "Confina un valor i inverteix tots els altres cicles (A,B)"
+
+
+msgctxt "NodeTree"
+msgid "Sine"
+msgstr "Sinus"
+
+
+msgid "sin(A)"
+msgstr "sin(A)"
+
+
+msgctxt "NodeTree"
+msgid "Cosine"
+msgstr "Cosinus"
+
+
+msgid "cos(A)"
+msgstr "cos(A)"
+
+
+msgctxt "NodeTree"
+msgid "Tangent"
+msgstr "Tangent"
+
+
+msgid "tan(A)"
+msgstr "tan(A)"
+
+
+msgctxt "NodeTree"
+msgid "Arcsine"
+msgstr "Arcsinus"
+
+
+msgid "arcsin(A)"
+msgstr "arcsin(A)"
+
+
+msgctxt "NodeTree"
+msgid "Arccosine"
+msgstr "Arccosinus"
+
+
+msgid "arccos(A)"
+msgstr "arccos(A)"
+
+
+msgctxt "NodeTree"
+msgid "Arctangent"
+msgstr "Arctangent"
+
+
+msgid "arctan(A)"
+msgstr "arctan(A)"
+
+
+msgctxt "NodeTree"
+msgid "Arctan2"
+msgstr "Arctan2"
+
+
+msgid "The signed angle arctan(A / B)"
+msgstr "L'angle amb signe arctan(A / B)"
+
+
+msgctxt "NodeTree"
+msgid "Hyperbolic Sine"
+msgstr "Sinus hiperbòlic"
+
+
+msgid "sinh(A)"
+msgstr "sinh(A)"
+
+
+msgctxt "NodeTree"
+msgid "Hyperbolic Cosine"
+msgstr "Cosinus hiperbòlic"
+
+
+msgid "cosh(A)"
+msgstr "cosh(A)"
+
+
+msgctxt "NodeTree"
+msgid "Hyperbolic Tangent"
+msgstr "Tangent hiperbòlica"
+
+
+msgid "tanh(A)"
+msgstr "tanh(A)"
+
+
+msgctxt "NodeTree"
+msgid "To Radians"
+msgstr "A radians"
+
+
+msgid "Convert from degrees to radians"
+msgstr "Converteix de graus a radiants"
+
+
+msgctxt "NodeTree"
+msgid "To Degrees"
+msgstr "A graus"
+
+
+msgid "Convert from radians to degrees"
+msgstr "Converteix radiants a graus"
+
+
+msgid "Include alpha of second input in this operation"
+msgstr "Inclou l'alfa de la segona entrada en aquesta operació"
+
+
+msgid "Movie Distortion"
+msgstr "Distorsió de filmació"
+
+
+msgid "Distortion to use to filter image"
+msgstr "[Movie Distortion]: Distorsió a usar per a filtrar la imatge"
+
+
+msgid "File Output"
+msgstr "Document de sortida"
+
+
+msgid "Active Input Index"
+msgstr "[Active Input Index]: Índex d'all introduït o aportat ara actiu de la llista de visualització de detall"
+
+
+msgid "Active input index in details view list"
+msgstr "[Active Input Index]: Índex d'entrada actiu a la llista de detalls"
+
+
+msgid "Base Path"
+msgstr "Camí base"
+
+
+msgid "Base output path for the image"
+msgstr "[Base Path]: Camí base dels resultats per a la imatge"
+
+
+msgid "File Slots"
+msgstr "Epígrafs de documents"
+
+
+msgid "EXR Layer Slots"
+msgstr "[File Slots]: Epígrafs de les capes EXR"
+
+
+msgid "Pixelate"
+msgstr "Pixelar"
+
+
+msgid "Plane Track Deform"
+msgstr "Deformació rastreig de pla"
+
+
+msgid "Posterize"
+msgstr "Posteritzar"
+
+
+msgid "Alpha Convert"
+msgstr "Convertir alfa"
+
+
+msgid "Conversion between premultiplied alpha and key alpha"
+msgstr "[Alpha Convert]: Conversió entre l'alfa premultiplicada i l'alfa directe"
+
+
+msgid "To Premultiplied"
+msgstr "A premultiplicada"
+
+
+msgid "Convert straight to premultiplied"
+msgstr "Converteix directa en premultiplicada"
+
+
+msgid "To Straight"
+msgstr "A directa"
+
+
+msgid "Convert premultiplied to straight"
+msgstr "[To Straight]: Converteix premultiplicada a directa"
+
+
+msgid "RGB to BW"
+msgstr "RGB a BW"
+
+
+msgid "Render Layers"
+msgstr "Capes de revelat"
+
+
+msgid "Method to use to filter rotation"
+msgstr "Mètode a usar per a filtrar la rotació"
+
+
+msgid "Offset image horizontally (factor of image size)"
+msgstr "Desplaçar la imatge horitzontalment (factor de mida d'imatge)"
+
+
+msgid "Offset image vertically (factor of image size)"
+msgstr "Desplaçar la imatge verticalment (factor de mida d'imatge)"
+
+
+msgid "Coordinate space to scale relative to"
+msgstr "Espai de coordenades d'escalat relativa a"
+
+
+msgid "Scene Time"
+msgstr "Duració d'escena"
+
+
+msgid "Separate HSVA"
+msgstr "Separar HSVA"
+
+
+msgid "Separate RGBA"
+msgstr "Separar RGBA"
+
+
+msgid "Separate YCbCrA"
+msgstr "Separar YCbCrA"
+
+
+msgid "Separate YUVA"
+msgstr "Separar YUVA"
+
+
+msgid "Separate Color"
+msgstr "Separar color"
+
+
+msgid "Separate XYZ"
+msgstr "Separar XYZ"
+
+
+msgid "Set Alpha"
+msgstr "Consignar l'alfa"
+
+
+msgid "Apply Mask"
+msgstr "Aplicar màscara"
+
+
+msgid "Multiply the input image's RGBA channels by the alpha input value"
+msgstr "Multiplica els canals RGBA de la imatge d'entrada pel valor d'entrada alfa"
+
+
+msgid "Replace Alpha"
+msgstr "Substituir l'alfa"
+
+
+msgid "Replace the input image's alpha channel by the alpha input value"
+msgstr "Substitueix el canal alfa de la imatge d'entrada pel valor d'entrada alfa"
+
+
+msgid "Split Viewer"
+msgstr "Visor dividit"
+
+
+msgid "Stabilize 2D"
+msgstr "Estabilitzar 2D"
+
+
+msgid "Method to use to filter stabilization"
+msgstr "Mètode a usar per a filtrar l'estabilització"
+
+
+msgid "Invert stabilization to re-introduce motion to the frame"
+msgstr "Inverteix l'estabilització per tornar a introduir el moviment al fotograma"
+
+
+msgid "Sun Beams"
+msgstr "Raigs de sol"
+
+
+msgid "Ray Length"
+msgstr "Longitud de raig"
+
+
+msgid "Length of rays as a factor of the image size"
+msgstr "[Ray Length]: Longitud dels raigs com a factor de la mida de la imatge"
+
+
+msgid "Source point of rays as a factor of the image width and height"
+msgstr "Punt d'origen dels rajos com a factor de l'amplada i l'alçada de la imatge"
+
+
+msgid "Switch"
+msgstr "Commuta"
+
+
+msgid "Off: first socket, On: second socket"
+msgstr "Desactiva el primer circuit, Activa el segon circuit"
+
+
+msgid "Switch View"
+msgstr "Canviar visualització"
+
+
+msgid "Node Output"
+msgstr "Born de sortida"
+
+
+msgid "For node-based textures, which output node to use"
+msgstr "[Node Output]: Per a les textures basades en nodes, indica quin dels borns de sortida cal utilitzar"
+
+
+msgid "Time Curve"
+msgstr "Corba de temps"
+
+
+msgid "Tonemap"
+msgstr "Mapa de tons"
+
+
+msgid "Adaptation"
+msgstr "Adaptació"
+
+
+msgid "If 0, global; if 1, based on pixel intensity"
+msgstr "Si 0, global; si 1, basat en intensitat de píxel"
+
+
+msgid "Set to 0 to use estimate from input image"
+msgstr "Posa a 0 per a usar l'estimació de la imatge aportada"
+
+
+msgid "If 0, same for all channels; if 1, each independent"
+msgstr "Si 0, igual per a tots els canals; si 1, cadascun independent"
+
+
+msgid "If not used, set to 1"
+msgstr "Si no s'utilitza, posar 1"
+
+
+msgid "If less than zero, darkens image; otherwise, makes it brighter"
+msgstr "Si és inferior a zero, enfosqueix la imatge; en cas contrari, la fa més brillant"
+
+
+msgid "The value the average luminance is mapped to"
+msgstr "El valor al qual es mapeja la luminància mitjana"
+
+
+msgid "Normally always 1, but can be used as an extra control to alter the brightness curve"
+msgstr "Normalment sempre 1, però es pot utilitzar com un control extra per alterar la corba de brillantor"
+
+
+msgid "Tonemap Type"
+msgstr "Tipus de mapa de tons"
+
+
+msgid "R/D Photoreceptor"
+msgstr "Fotoreceptor R/D"
+
+
+msgid "Rh Simple"
+msgstr "Rh Simple"
+
+
+msgid "Track Position"
+msgstr "Posició de rastre"
+
+
+msgid "Frame to be used for relative position"
+msgstr "[Track Position]: fotograma a utilitzar per a la ubicació relativa"
+
+
+msgid "Which marker position to use for output"
+msgstr "Quina posició de marcador cal usar per al resultat"
+
+
+msgid "Output absolute position of a marker"
+msgstr "Posició absoluta per al resultat d'un marcador"
+
+
+msgid "Relative Start"
+msgstr "Inici relatiu"
+
+
+msgid "Output position of a marker relative to first marker of a track"
+msgstr "Posició per al resultat d'un marcador en relació amb el primer marcador d'un rastre"
+
+
+msgid "Relative Frame"
+msgstr "Fotograma relatiu"
+
+
+msgid "Output position of a marker relative to marker at given frame number"
+msgstr "Posició per al resultat d'un marcador en relació amb el marcador en un número de fotograma determinat"
+
+
+msgid "Absolute Frame"
+msgstr "Fotograma absolut"
+
+
+msgid "Output absolute position of a marker at given frame number"
+msgstr "Posició absoluta per al resultat d'un marcador en un número de fotograma determinat"
+
+
+msgid "Method to use to filter transform"
+msgstr "Mètode a usar per a la transformació filtre"
+
+
+msgid "Translate"
+msgstr "Translació"
+
+
+msgid "Use relative (fraction of input image size) values to define translation"
+msgstr "[Translate]: Usa valors relatius (fracció de la mida de la imatge d'entrada) per a definir la translació"
+
+
+msgid "Wrapping"
+msgstr "Confinament"
+
+
+msgid "Wrap image on a specific axis"
+msgstr "[Wrapping]: Confina la imatge a un eix específic"
+
+
+msgid "No wrapping on X and Y"
+msgstr "No confinar en X ni Y"
+
+
+msgid "X Axis"
+msgstr "Eix X"
+
+
+msgid "Wrap all pixels on the X axis"
+msgstr "Confina tots els píxels a l'eix X"
+
+
+msgid "Y Axis"
+msgstr "Eix Y"
+
+
+msgid "Wrap all pixels on the Y axis"
+msgstr "Confina tots els píxels a l'eix Y"
+
+
+msgid "Both Axes"
+msgstr "Tots dos eixos"
+
+
+msgid "Wrap all pixels on both axes"
+msgstr "Confina tots els píxels a ambdós eixos"
+
+
+msgid "ColorRamp"
+msgstr "Gradació de color"
+
+
+msgid "Vector Blur"
+msgstr "Difuminat vectorial"
+
+
+msgid "Blur Factor"
+msgstr "Factor difuminat"
+
+
+msgid "Scaling factor for motion vectors (actually, 'shutter speed', in frames)"
+msgstr "[Blur Factor]: Factor d'escalat per als vectors de moviment (de fet, «velocitat d'obturació», en fotogrames)"
+
+
+msgid "Max Speed"
+msgstr "Velocitat màxima"
+
+
+msgid "Maximum speed, or zero for none"
+msgstr "[Max Speed]: Velocitat màxima, o zero si no n'hi ha"
+
+
+msgid "Min Speed"
+msgstr "Velocitat mínima"
+
+
+msgid "Minimum speed for a pixel to be blurred (used to separate background from foreground)"
+msgstr "Velocitat mínima perquè un píxel quedi borrós (utilitzat per separar el fons del primer pla)"
+
+
+msgid "Curved"
+msgstr "Corbat"
+
+
+msgid "Interpolate between frames in a Bezier curve, rather than linearly"
+msgstr "[Corba]: Interpola entre fotogrames en una corba Bézier, en lloc de linealment"
+
+
+msgid "Tile Order"
+msgstr "Ordre de tessel·les"
+
+
+msgid "Tile order"
+msgstr "[Tile Order]: Ordre de les tessel·les"
+
+
+msgid "Expand from center"
+msgstr "Expandir des del centre"
+
+
+msgid "Random tiles"
+msgstr "Tessel·les aleatòries"
+
+
+msgid "Bottom Up"
+msgstr "De baix cap amunt"
+
+
+msgid "Expand from bottom"
+msgstr "Expandir des de baix"
+
+
+msgid "Rule of Thirds"
+msgstr "Regla dels terços"
+
+
+msgid "Expand from 9 places"
+msgstr "Expandir des de 9 llocs"
+
+
+msgid "Z Combine"
+msgstr "Combinat Z"
+
+
+msgid "Take alpha channel into account when doing the Z operation"
+msgstr "[Z Combine]: Té en compte el canal alfa quan fa l'operació Z"
+
+
+msgid "Anti-Alias Z"
+msgstr "Antialiàsing Z"
+
+
+msgid "Anti-alias the z-buffer to try to avoid artifacts, mostly useful for Blender renders"
+msgstr "[Anti-Alias Z]: Fa antialiàsing del regulador z per mirar d'evitar artefactes, útil sobretot per a revelats del Blender"
+
+
+msgid "Function Node"
+msgstr "Node funció"
+
+
+msgid "Align Euler to Vector"
+msgstr "Alinea l'Euler al vector"
+
+
+msgid "Axis to align to the vector"
+msgstr "Eix per a alinear al vector"
+
+
+msgid "Align the X axis with the vector"
+msgstr "Alinea l'eix X amb el vector"
+
+
+msgid "Align the Y axis with the vector"
+msgstr "Alinea l'eix Y amb el vector"
+
+
+msgid "Align the Z axis with the vector"
+msgstr "Alinea l'eix Z amb el vector"
+
+
+msgid "Pivot Axis"
+msgstr "Eix de traslació"
+
+
+msgid "Axis to rotate around"
+msgstr "[Pivot Axis]: Eix al voltant del qual es gira"
+
+
+msgid "Automatically detect the best rotation axis to rotate towards the vector"
+msgstr "Detecta automàticament el millor eix de rotació per rotar cap al vector"
+
+
+msgid "Rotate around the local X axis"
+msgstr "Rotar al voltant de l'eix X local"
+
+
+msgid "Rotate around the local Y axis"
+msgstr "Rotar al voltant de l'eix Y local"
+
+
+msgid "Rotate around the local Z axis"
+msgstr "Rotar al voltant de l'eix Z local"
+
+
+msgid "Boolean Math"
+msgstr "Càlcul booleà"
+
+
+msgid "And"
+msgstr "I"
+
+
+msgid "True when both inputs are true"
+msgstr "Ver quan tots dues entrades són certes"
+
+
+msgid "Or"
+msgstr "O"
+
+
+msgid "True when at least one input is true"
+msgstr "Ver quan almenys una entrada és certa"
+
+
+msgid "Opposite of the input"
+msgstr "Oposat a l'entrada"
+
+
+msgid "Not And"
+msgstr "No I"
+
+
+msgid "True when at least one input is false"
+msgstr "Ver quan almenys una entrada és falsa"
+
+
+msgid "Nor"
+msgstr "Ni"
+
+
+msgid "True when both inputs are false"
+msgstr "Ver quan ambdues entrades són falses"
+
+
+msgid "Equal"
+msgstr "Igual"
+
+
+msgid "True when both inputs are equal (exclusive nor)"
+msgstr "Ver quan ambdues entrades són iguals (ni exclusiu)"
+
+
+msgid "Not Equal"
+msgstr "No igual"
+
+
+msgid "True when both inputs are different (exclusive or)"
+msgstr "Ver quan ambdues entrades són diferents (exclusiu o)"
+
+
+msgid "Imply"
+msgstr "Ergo"
+
+
+msgid "True unless the first input is true and the second is false"
+msgstr "Ver llevat que la primera entrada sigui certa i la segona sigui falsa"
+
+
+msgid "True when the first input is true and the second is false (not imply)"
+msgstr "Ver quan la primera entrada és certa i la segona és falsa (no implica)"
+
+
+msgid "Compare"
+msgstr "Comparar"
+
+
+msgid "Input Type"
+msgstr "Tipus d'entrada"
+
+
+msgid "Element-Wise"
+msgstr "Element-ístic"
+
+
+msgid "Compare each element of the input vectors"
+msgstr "[Element-Wise]: Compara cada element dels vectors d'entrada"
+
+
+msgid "Compare the length of the input vectors"
+msgstr "Compara la longitud dels vectors d'entrada"
+
+
+msgid "Compare the average of the input vectors elements"
+msgstr "Compara la mitjana dels elements dels vectors d'entrada"
+
+
+msgid "Dot Product"
+msgstr "Producte de punts"
+
+
+msgid "Compare the dot products of the input vectors"
+msgstr "[Dot Product]: Compara els productes de punts dels vectors d'entrada"
+
+
+msgid "Compare the direction of the input vectors"
+msgstr "Compara la direcció dels vectors d'entrada"
+
+
+msgid "Less Than"
+msgstr "Menys de"
+
+
+msgid "True when the first input is smaller than second input"
+msgstr "Ver quan la primera entrada és més petita que la segona entrada"
+
+
+msgid "Less Than or Equal"
+msgstr "Menys de o igual"
+
+
+msgid "True when the first input is smaller than the second input or equal"
+msgstr "Ver quan la primera entrada és més petita que la segona entrada o igual"
+
+
+msgid "Greater Than"
+msgstr "Més que"
+
+
+msgid "True when the first input is greater than the second input"
+msgstr "Ver quan la primera entrada és més gran que la segona entrada"
+
+
+msgid "Greater Than or Equal"
+msgstr "Major o igual que"
+
+
+msgid "True when the first input is greater than the second input or equal"
+msgstr "Ver quan la primera entrada és més gran que la segona entrada o igual"
+
+
+msgid "True when both inputs are approximately equal"
+msgstr "Ver quan ambdues entrades són aproximadament iguals"
+
+
+msgid "True when both inputs are not approximately equal"
+msgstr "Ver quan ambdues entrades no són aproximadament iguals"
+
+
+msgid "Brighter"
+msgstr "Més brillant"
+
+
+msgid "True when the first input is brighter"
+msgstr "[Brighter]: Ver quan la primera entrada és més brillant"
+
+
+msgid "Darker"
+msgstr "Més fosc"
+
+
+msgid "True when the first input is darker"
+msgstr "[Darker]: Ver quan la primera entrada és més fosca"
+
+
+msgid "Float to Integer"
+msgstr "Flotació a enter"
+
+
+msgid "Rounding Mode"
+msgstr "Mode d'arrodoniment"
+
+
+msgid "Method used to convert the float to an integer"
+msgstr "Mètode utilitzat per a convertir el número de coma flotant a un enter"
+
+
+msgid "Round the float up or down to the nearest integer"
+msgstr "Arrodoneix el número de flotant per dalt o per baix a l'enter més proper"
+
+
+msgid "Round the float down to the next smallest integer"
+msgstr "Arrodoneix el número flotant per baix a l'enter més pròxim"
+
+
+msgid "Ceiling"
+msgstr "Sostre"
+
+
+msgid "Round the float up to the next largest integer"
+msgstr "[]: Arrodoneix el número flotant per dalt a l'enter més pròxim"
+
+
+msgid "Round the float to the closest integer in the direction of zero (floor if positive; ceiling if negative)"
+msgstr "Arrodoneix el número flotant a l'enter més proper en direcció al zero (sòl si és positiu; sostre si és negatiu)"
+
+
+msgid "Input value used for unconnected socket"
+msgstr "Valor d'entrada usat per al circuit no connectat"
+
+
+msgid "Random Value"
+msgstr "Valor aleatori"
+
+
+msgid "Replace String"
+msgstr "Substituir cadena"
+
+
+msgid "Rotate Euler"
+msgstr "Rotació Euler"
+
+
+msgid "Base orientation for rotation"
+msgstr "Orientació base per a la rotació"
+
+
+msgid "Rotate the input rotation in the local space of the object"
+msgstr "Rotació de la rotació d'entrada dins l'espai local de l'objecte"
+
+
+msgid "Rotate the input rotation in its local space"
+msgstr "Rotació de la rotació d'entrada en el seu espai local"
+
+
+msgid "Method used to describe the rotation"
+msgstr "Mètode utilitzat per descriure la rotació"
+
+
+msgid "Rotate around an axis by an angle"
+msgstr "Rotar al voltant d'un eix en un angle"
+
+
+msgid "Rotate around the X, Y, and Z axes"
+msgstr "Rotar al voltant dels eixos X, Y i Z"
+
+
+msgid "Slice String"
+msgstr "Cadena de fragments"
+
+
+msgid "String Length"
+msgstr "Longitud de cadena"
+
+
+msgid "Value to String"
+msgstr "Valor a cadena"
+
+
+msgid "Geometry Node"
+msgstr "Node geometria"
+
+
+msgid "Accumulate Field"
+msgstr "Camp d'acumulació"
+
+
+msgid "Add the values of an evaluated field together and output the running total for each element"
+msgstr "[Accumulate Field]: Suma els valors d'un camp avaluat i emet el total d'execució per a cada element"
+
+
+msgid "Domain Size"
+msgstr "Mida de domini"
+
+
+msgid "Retrieve the number of elements in a geometry for each attribute domain"
+msgstr "[Domain Size]: Extreu el nombre d'elements d'una geometria per a cada domini d'atribut"
+
+
+msgid "Component"
+msgstr "Component"
+
+
+msgid "Mesh component containing point, corner, edge and face data"
+msgstr "Component de malla que conté dades de punts, cantonades, arestes i cares"
+
+
+msgid "Point cloud component containing only point data"
+msgstr "Component de núvol de punts que conté només dades de punts"
+
+
+msgid "Curve component containing spline and control point data"
+msgstr "Component de corba que conté dades de punts spline i control"
+
+
+msgid "Instances of objects or collections"
+msgstr "Instàncies d'objectes o col·leccions"
+
+
+msgid "Attribute Statistic"
+msgstr "Estadística d'atribut"
+
+
+msgid "Calculate statistics about a data set from a field evaluated on a geometry"
+msgstr "[Attribute Statistic]: Calcula estadístiques sobre un conjunt de dades des d'un camp avaluat en una geometria"
+
+
+msgid "The data type the attribute is converted to before calculating the results"
+msgstr "El tipus de dades al qual es converteix l'atribut abans de calcular els resultats"
+
+
+msgid "Which domain to read the data from"
+msgstr "De quin domini llegir les dades"
+
+
+msgid "Blur Attribute"
+msgstr "Atribut indistint"
+
+
+msgid "Mix attribute values of neighboring elements"
+msgstr "[Blur Attribute]: Mescla els valors dels atributs dels elements veïns"
+
+
+msgid "Calculate the limits of a geometry's positions and generate a box mesh with those dimensions"
+msgstr "Calcula els límits de les posicions d'una geometria i genera una capsa de malla amb aquestes dimensions"
+
+
+msgid "Capture Attribute"
+msgstr "Atribut captura"
+
+
+msgid "Store the result of a field on a geometry and output the data as a node socket. Allows remembering or interpolating data as the geometry changes, such as positions before deformation"
+msgstr "[Capture Attribute]: Guarda el resultat d'un camp en una geometria i emet les dades com un circuit node. Permet recordar o interpolar dades a mesura que canvia la geometria, com ara posicions abans d'una deformació"
+
+
+msgid "Which domain to store the data in"
+msgstr "En quin domini guardar les dades"
+
+
+msgid "Collection Info"
+msgstr "Informació de col·lecció"
+
+
+msgid "Retrieve geometry instances from a collection"
+msgstr "Extreu instàncies de geometria d'una col·lecció"
+
+
+msgid "The transformation of the instances output. Does not affect the internal geometry"
+msgstr "La transformació de les instàncies emeses. No afecta la geometria interna"
+
+
+msgid "Original"
+msgstr "Original"
+
+
+msgid "Output the geometry relative to the collection offset"
+msgstr "Emet la geometria relativa al desplaçament de la col·lecció"
+
+
+msgid "Bring the input collection geometry into the modified object, maintaining the relative position between the objects in the scene"
+msgstr "Porta la geometria de la col·lecció entrada a dins l'objecte modificat, tot mantenint la posició relativa entre els objectes de l'escena"
+
+
+msgid "Convex Hull"
+msgstr "Closca convexa"
+
+
+msgid "Create a mesh that encloses all points in the input geometry with the smallest number of points"
+msgstr "[Convex Hull]: Crea una malla que enclou tots els punts de la geometria introduïda amb el nombre més petit de punts"
+
+
+msgid "Corners of Face"
+msgstr "Cantells de cara"
+
+
+msgid "Retrieve corners that make up a face"
+msgstr "[Corners of Face]: Extreu les cantonades que conformen una cara"
+
+
+msgid "Corners of Vertex"
+msgstr "Cantells de vèrtex"
+
+
+msgid "Retrieve face corners connected to vertices"
+msgstr "[Corners of Vertex]: Extreu els cantells connectats a vèrtexs"
+
+
+msgid "Generate a poly spline arc"
+msgstr "Generar un arc poli-spline"
+
+
+msgid "Method used to determine radius and placement"
+msgstr "Mètode utilitzat per determinar el radi i la ubicació"
+
+
+msgid "Define arc by 3 points on circle. Arc is calculated between start and end points"
+msgstr "Defineix l'arc per 3 punts en cercle. L'arc es calcula entre els punts inicial i final"
+
+
+msgid "Define radius with a float"
+msgstr "Defineix el radi amb un nombre flotant"
+
+
+msgid "Endpoint Selection"
+msgstr "Selecció de punt final"
+
+
+msgid "Provide a selection for an arbitrary number of endpoints in each spline"
+msgstr "Aporta una selecció per a un nombre arbitrari de punts finals en cada spline"
+
+
+msgid "Handle Type Selection"
+msgstr "Selecció de tipus de nansa"
+
+
+msgid "Provide a selection based on the handle types of Bézier control points"
+msgstr "[Handle Type Selection]: Aporta una selecció basada en els tipus de nanses dels punts de control Bézier"
+
+
+msgid "The handle can be moved anywhere, and doesn't influence the point's other handle"
+msgstr "La nansa es pot moure a qualsevol lloc, i no influeix en l'altra nansa del punt"
+
+
+msgid "The location is automatically calculated to be smooth"
+msgstr "La ubicació es calcula automàticament perquè sigui suau"
+
+
+msgid "The location is calculated to point to the next/previous control point"
+msgstr "Es calcula la ubicació perquè apunti al punt de control següent/anterior"
+
+
+msgid "The location is constrained to point in the opposite direction as the other handle"
+msgstr "La ubicació està constrenyida a apuntar en la direcció oposada a l'altra nansa"
+
+
+msgid "Whether to check the type of left and right handles"
+msgstr "Si s'ha de comprovar el tipus de nanses d'esquerra i dreta"
+
+
+msgid "Use the left handles"
+msgstr "Usar nanses d'esquerra"
+
+
+msgid "Use the right handles"
+msgstr "Usar nanses de dreta"
+
+
+msgid "Retrieve the length of all splines added together"
+msgstr "Extreu la longitud de tots els splines sumats"
+
+
+msgid "Curve of Point"
+msgstr "Corba de punt"
+
+
+msgid "Retrieve the curve a control point is part of"
+msgstr "[Curve of Point]: Extreu la corba de la qual forma part un punt de control"
+
+
+msgid "Bezier Segment"
+msgstr "Segment Bézier"
+
+
+msgid "Generate a 2D Bézier spline from the given control points and handles"
+msgstr "[Bezier Segment]: Genera un spline Bézier 2D a partir dels punts de control i les nanses donades"
+
+
+msgid "Method used to determine control handles"
+msgstr "Mètode usat per determinar les nanses de control"
+
+
+msgid "The start and end handles are fixed positions"
+msgstr "Les nanses inicial i final són posicions fixes"
+
+
+msgid "The start and end handles are offsets from the spline's control points"
+msgstr "Les nanses inicial i final estan desplaçades dels punts de control del spline"
+
+
+msgid "Curve Circle"
+msgstr "Cercle de corbes"
+
+
+msgid "Generate a poly spline circle"
+msgstr "[Curve Circle]: Genera un cercle poli-spline"
+
+
+msgid "Define the radius and location with three points"
+msgstr "Defineix el radi i la ubicació amb tres punts"
+
+
+msgid "Define the radius with a float"
+msgstr "Defineix el radi amb un nombre flotant"
+
+
+msgid "Curve Line"
+msgstr "Línia de corba"
+
+
+msgid "Generate a poly spline line with two points"
+msgstr "[Curve Line]: Genera una línia poli-spline amb dos punts"
+
+
+msgid "Define the start and end points of the line"
+msgstr "Defineix els punts d'inici i final de la línia"
+
+
+msgid "Define a line with a start point, direction and length"
+msgstr "Defineix una línia amb un punt d'inici, direcció i longitud"
+
+
+msgid "Quadrilateral"
+msgstr "Quadrilàter"
+
+
+msgid "Generate a polygon with four points"
+msgstr "[Quadrilateral]: Genera un polígon amb quatre punts"
+
+
+msgid "Create a rectangle"
+msgstr "Crear un rectangle"
+
+
+msgid "Parallelogram"
+msgstr "Parallelograma"
+
+
+msgid "Create a parallelogram"
+msgstr "Crea un paral·lelogram"
+
+
+msgid "Trapezoid"
+msgstr "Trapezoide"
+
+
+msgid "Create a trapezoid"
+msgstr "Crea un trapezoide"
+
+
+msgid "Kite"
+msgstr "Estel"
+
+
+msgid "Create a Kite / Dart"
+msgstr "[Kite]: Crea un estel / dard"
+
+
+msgid "Create a quadrilateral from four points"
+msgstr "Crea un quadrilàter a partir de quatre punts"
+
+
+msgid "Quadratic Bezier"
+msgstr "Bézier quadràtic"
+
+
+msgid "Generate a poly spline in a parabola shape with control points positions"
+msgstr "Genera un poli-spline en forma de paràbola amb posicions de punts de control"
+
+
+msgid "Set Handle Type"
+msgstr "Definir tipus de nansa"
+
+
+msgid "Set the handle type for the control points of a Bézier curve"
+msgstr "[Set Handle Type]: Estableix el tipus de nansa per als punts de control d'una corba de Bézier"
+
+
+msgid "Whether to update left and right handles"
+msgstr "Si s'han d'actualitzar les nanses a esquerra i dreta"
+
+
+msgid "Curve Spiral"
+msgstr "Espiral de corba"
+
+
+msgid "Generate a poly spline in a spiral shape"
+msgstr "[Curve Spiral]: Genera un poli-spline en forma espiral"
+
+
+msgid "Set Spline Type"
+msgstr "Definir tipus de spline"
+
+
+msgid "Change the type of curves"
+msgstr "[Set Spline Type]: Canvia el tipus de corbes"
+
+
+msgid "The curve type to change the selected curves to"
+msgstr "Tipus de corba a què es canviaran les corbes seleccionades"
+
+
+msgid "Catmull Rom"
+msgstr "Carmull Rom"
+
+
+msgid "NURBS"
+msgstr "NURBS"
+
+
+msgid "Star"
+msgstr "Estrella"
+
+
+msgid "Generate a poly spline in a star pattern by connecting alternating points of two circles"
+msgstr "[Star]: Genera un poli-spline en patró d'estrella connectant punts alternats de dos cercles"
+
+
+msgid "Curve to Mesh"
+msgstr "Corba a malla"
+
+
+msgid "Convert curves into a mesh, optionally with a custom profile shape defined by curves"
+msgstr "[Curve to Mesh]: Converteix corbes en malles, opcionalment amb una forma de perfil personalitzada definida per corbes"
+
+
+msgid "Curve to Points"
+msgstr "Corba a punts"
+
+
+msgid "Generate a point cloud by sampling positions along curves"
+msgstr "[Curve to Points]: Genera un núvol de punts prenent mostres d'ubicacions al llarg de corbes"
+
+
+msgid "How to generate points from the input curve"
+msgstr "Com generar punts des de la corba aportada"
+
+
+msgid "Evaluated"
+msgstr "Avaluats"
+
+
+msgid "Create points from the curve's evaluated points, based on the resolution attribute for NURBS and Bezier splines"
+msgstr "[Evaluated]: Crea punts a partir dels punts avaluats de la corba, basats en l'atribut de resolució per als NURBS i splines Bezier"
+
+
+msgid "Sample each spline by evenly distributing the specified number of points"
+msgstr "Pren mostres de cada spline en base a distribuir uniformement el nombre especificat de punts"
+
+
+msgid "Sample each spline by splitting it into segments with the specified length"
+msgstr "Pren mostres de cada spline en base a dividir-lo en segments de la longitud especificada"
+
+
+msgid "Geometry Custom Group"
+msgstr "Grup personalitzat de geometria"
+
+
+msgid "Custom Geometry Group Node for Python nodes"
+msgstr "[Geometry Custom Group]: Node de grup de geometria personalitzat per a nodes de Python"
+
+
+msgid "Deform Curves on Surface"
+msgstr "Deformar corbes en superfície"
+
+
+msgid "Translate and rotate curves based on changes between the object's original and evaluated surface mesh"
+msgstr "[Deform Curves on Surface]: Trasllada i rota corbes basant-se en els canvis entre la malla de superfície original i avaluada de l'objecte"
+
+
+msgid "Delete Geometry"
+msgstr "Suprimir geometria"
+
+
+msgid "Remove selected elements of a geometry"
+msgstr "[Delete Geometry]: Elimina els elements seleccionats d'una geometria"
+
+
+msgid "Which domain to delete in"
+msgstr "Domini on es fa l'eliminació"
+
+
+msgid "Which parts of the mesh component to delete"
+msgstr "[Which domain to delete in]: En quines parts del component de malla s'ha de fer supressions"
+
+
+msgid "Only Edges & Faces"
+msgstr "Sols arestes i cares"
+
+
+msgid "Only Faces"
+msgstr "Només cares"
+
+
+msgid "Distribute Points in Volume"
+msgstr "Distribuir punts en volum"
+
+
+msgid "Generate points inside a volume"
+msgstr "[Distribute Points in Volume]: Genera punts dins d'un volum"
+
+
+msgid "Distribution Method"
+msgstr "Mètode de distribució"
+
+
+msgid "Method to use for scattering points"
+msgstr "Mètode a usar per a dispersar punts"
+
+
+msgid "Distribute points randomly inside of the volume"
+msgstr "Distribueix els punts aleatòriament dins del volum"
+
+
+msgid "Distribute the points in a grid pattern inside of the volume"
+msgstr "Distribueix els punts en un patró de quadrícula dins del volum"
+
+
+msgid "Distribute Points on Faces"
+msgstr "Distribueix els punts per les cares"
+
+
+msgid "Generate points spread out on the surface of a mesh"
+msgstr "Genera punts repartits per la superfície d'una malla"
+
+
+msgid "Distribute points randomly on the surface"
+msgstr "Distribueix els punts aleatòriament a la superfície"
+
+
+msgid "Poisson Disk"
+msgstr "Disc Poisson"
+
+
+msgid "Distribute the points randomly on the surface while taking a minimum distance between points into account"
+msgstr "Distribueix els punts aleatòriament a la superfície tot mantenint una distància mínima entre els punts"
+
+
+msgid "Dual Mesh"
+msgstr "Malla dual"
+
+
+msgid "Convert Faces into vertices and vertices into faces"
+msgstr "[Dual Mesh]: Converteix les cares en vèrtexs i els vèrtexs en cares"
+
+
+msgid "Duplicate Elements"
+msgstr "Duplicar elements"
+
+
+msgid "Generate an arbitrary number copies of each selected input element"
+msgstr "Genera un nombre arbitrari de còpies de cadascun dels element seleccionats aportats"
+
+
+msgid "Which domain to duplicate"
+msgstr "Quin domini duplicar"
+
+
+msgid "Edge Paths to Curves"
+msgstr "Camins d'aresta a corbes"
+
+
+msgid "Edge Paths to Selection"
+msgstr "Camins d'aresta a selecció"
+
+
+msgid "Edges of Corner"
+msgstr "Arestes de cantells"
+
+
+msgid "Retrieve the edges on both sides of a face corner"
+msgstr "[Edges of Corner]: Extreu les arestes a banda i banda d'un cantell de cares"
+
+
+msgid "Edges of Vertex"
+msgstr "Arestes de vèrtex"
+
+
+msgid "Retrieve the edges connected to each vertex"
+msgstr "[Edges of Vertex]: Extreu les arestes connectades a cada vèrtex"
+
+
+msgid "Extrude Mesh"
+msgstr "Extrudir malla"
+
+
+msgid "Generate new vertices, edges, or faces from selected elements and move them based on an offset while keeping them connected by their boundary"
+msgstr "[Extrude Mesh]: Genera nous vèrtexs, arestes o cares d'elements seleccionats i els mou basant-se en un desplaçament mentre els manté connectats pel seu límit"
+
+
+msgid "Face of Corner"
+msgstr "Cara de cantell"
+
+
+msgid "Retrieve the face each face corner is part of"
+msgstr "[Face of Corner]: Extreu la cara de cada cantell de què forma part"
+
+
+msgid "Evaluate at Index"
+msgstr "Avaluar a índex"
+
+
+msgid "Retrieve data of other elements in the context's geometry"
+msgstr "[Evaluate at Index]: Extreu dades dades d'altres elements en la geometria del context"
+
+
+msgid "Domain the field is evaluated in"
+msgstr "Domini dins el qual s'avalua el camp"
+
+
+msgid "Evaluate on Domain"
+msgstr "Avaluar en domini"
+
+
+msgid "Retrieve values from a field on a different domain besides the domain from the context"
+msgstr "[Evaluate on Domain]: Extreu els valors d'un camp en un domini diferent a més del domini del context"
+
+
+msgid "Fill Curve"
+msgstr "Emplena corba"
+
+
+msgid "Generate a mesh on the XY plane with faces on the inside of input curves"
+msgstr "[Fill Curve]: Genera una malla al pla XY amb cares a l'interior de les corbes aportades"
+
+
+msgid "N-gons"
+msgstr "N-gons"
+
+
+msgid "Fillet Curve"
+msgstr "Corba de carenat"
+
+
+msgid "Round corners by generating circular arcs on each control point"
+msgstr "[Fillet Curve]: Arrodoneix els cantells tot generant arcs circulars a cada punt de control"
+
+
+msgid "How to choose number of vertices on fillet"
+msgstr "Com triar el nombre de vèrtexs del carenat"
+
+
+msgid "Align Bezier handles to create circular arcs at each control point"
+msgstr "Alinear les nanses de Bézier per a crear arcs circulars a cada punt de control"
+
+
+msgid "Add control points along a circular arc (handle type is vector if Bezier Spline)"
+msgstr "Afegir punts de control al llarg d'un arc circular (el tipus de nansa és un vector si surt d'un spline Bézier)"
+
+
+msgid "Flip Faces"
+msgstr "Inverteix cares"
+
+
+msgid "Reverse the order of the vertices and edges of selected faces, flipping their normal direction"
+msgstr "[Flip Faces]: Capgira l'ordre dels vèrtexs i arestes de les cares seleccionades, invertint-ne la direcció de la normal"
+
+
+msgid "Geometry to Instance"
+msgstr "Geometria a instància"
+
+
+msgid "Convert each input geometry into an instance, which can be much faster than the Join Geometry node when the inputs are large"
+msgstr "[Geometry to Instance]: Converteix cada geometria aportada en una instància, que pot ser molt més ràpid que el node unir geometria quan el que s'aporta és molt gros"
+
+
+msgid "Image Info"
+msgstr "Informació d'imatge"
+
+
+msgid "Retrieve information about an image"
+msgstr "Extreu informació sobre una imatge"
+
+
+msgid "Sample values from an image texture"
+msgstr "Treu mostres dels valors a partir d'una imatge textura"
+
+
+msgctxt "Image"
+msgid "Mirror"
+msgstr "Reflexió"
+
+
+msgid "Repeatedly flip the image horizontally and vertically"
+msgstr "[Mirror]: Inverteix repetidament la imatge horitzontalment i verticalment"
+
+
+msgid "Method for smoothing values between pixels"
+msgstr "Mètode de suavitzar valors entre píxels"
+
+
+msgid "Linear interpolation"
+msgstr "Interpolació lineal"
+
+
+msgid "No interpolation (sample closest texel)"
+msgstr "Sense interpolació (recull el texel més pròxim)"
+
+
+msgid "Cubic interpolation"
+msgstr "Interpolació cúbica"
+
+
+msgid "Curve Handle Positions"
+msgstr "Posicions de nansa de corba"
+
+
+msgid "Retrieve the position of each Bézier control point's handles"
+msgstr "[Curve Handle Positions]: Extreu la posició de cada nansa de cada punt de control de Bézier"
+
+
+msgid "Curve Tilt"
+msgstr "Inclinació de corba"
+
+
+msgid "Retrieve the angle at each control point used to twist the curve's normal around its tangent"
+msgstr "[Curve Tilt]: Extreu l'angle de cada punt de control utilitzat per roscar la normal de la corba al voltant de la seva tangent"
+
+
+msgid "Retrieve a stable random identifier value from the \"id\" attribute on the point domain, or the index if the attribute does not exist"
+msgstr "Extreu un valor estable d'identificador aleatori a partir de l'atribut «id» al domini del punt, o índex si l'atribut no existeix"
+
+
+msgid "Input image"
+msgstr "Imatge aportada"
+
+
+msgid "Retrieve an integer value indicating the position of each element in the list, starting at zero"
+msgstr "[Input image]: Extreu un valor enter que indica la posició de cada element de la llista, començant per zero"
+
+
+msgid "Instance Rotation"
+msgstr "Rotació d'instància"
+
+
+msgid "Retrieve the rotation of each instance in the geometry"
+msgstr "[Instance Rotation]: Extreu la rotació de cada instància en la geometria"
+
+
+msgid "Instance Scale"
+msgstr "Escala d'instància"
+
+
+msgid "Retrieve the scale of each instance in the geometry"
+msgstr "[Instance Scale]: Extreu l'escala de cada instància en la geometria"
+
+
+msgid "Output a single material"
+msgstr "Emet un sol material"
+
+
+msgid "Retrieve the index of the material used for each element in the geometry's list of materials"
+msgstr "[Output a single material]: Extreu l'índex del material utilitzat per a cada element de la llista de materials de la geometria"
+
+
+msgid "Edge Angle"
+msgstr "Angle d'aresta"
+
+
+msgid "Calculate the surface area of each face in a mesh"
+msgstr "[Edge Angle]: Calcular l'àrea de superfície de cada cara en una malla"
+
+
+msgid "Edge Neighbors"
+msgstr "Veïns d'aresta"
+
+
+msgid "Retrieve the number of faces that use each edge as one of their sides"
+msgstr "[Edge Neighbors]: Extreu el nombre de cares que utilitzen cada aresta com un dels seus costats"
+
+
+msgid "Edge Vertices"
+msgstr "Vèrtexs d'arestes"
+
+
+msgid "Retrieve topology information relating to each edge of a mesh"
+msgstr "[Edge Vertices]: Extreu la informació topològica relativa a cada aresta d'una malla"
+
+
+msgid "Calculate the surface area of a mesh's faces"
+msgstr "Calcular l'àrea de superfície de les cares d'una malla"
+
+
+msgid "Is Face Planar"
+msgstr "És cara planar"
+
+
+msgid "Retrieve whether all triangles in a face are on the same plane, i.e. whether have the same normal"
+msgstr "[Is Face Planar]: Extreu si tots els triangles d'una cara estan en el mateix pla, és a dir, si tenen la mateixa normal"
+
+
+msgid "Face Neighbors"
+msgstr "Veïns de cara"
+
+
+msgid "Retrieve topology information relating to each face of a mesh"
+msgstr "[Face Neighbors]: Extreu la informació topològica relativa a cada cara d'una malla"
+
+
+msgid "Mesh Island"
+msgstr "Malles aïllades"
+
+
+msgid "Retrieve information about separate connected regions in a mesh"
+msgstr "[]: Extreu informació sobre les regions connectades separades d'una malla"
+
+
+msgid "Vertex Neighbors"
+msgstr "Veïns de vèrtex"
+
+
+msgid "Retrieve topology information relating to each vertex of a mesh"
+msgstr "[Vertex Neighbors]: Extreu informació de topologia relacionada amb cada vèrtex d'una malla"
+
+
+msgid "Named Attribute"
+msgstr "Atribut amb nom"
+
+
+msgid "Retrieve the data of a specified attribute"
+msgstr "Extreu les dades d'un atribut especificat"
+
+
+msgid "The data type used to read the attribute values"
+msgstr "El tipus de dades utilitzat per llegir els valors de l'atribut"
+
+
+msgid "Retrieve a unit length vector indicating the direction pointing away from the geometry at each element"
+msgstr "Extreu un vector d'unitat de longitud que indica l'orientació en direcció contrària a la geometria a cada element"
+
+
+msgid "Retrieve a vector indicating the location of each element"
+msgstr "Extreu un vector que indica la ubicació de cada element"
+
+
+msgid "Retrieve the radius at each point on curve or point cloud geometry"
+msgstr "Extreu el radi a cada punt en corba o geometria de núvol de punts"
+
+
+msgid "Retrieve the current time in the scene's animation in units of seconds or frames"
+msgstr "Extreu la dada temporal en l'animació de l'escena en unitats de segons o fotogrames"
+
+
+msgid "Is Shade Smooth"
+msgstr "És aspecte suau"
+
+
+msgid "Retrieve whether each face is marked for smooth shading"
+msgstr "[Is Shade Smooth]: Extreu si cada cara està marcada per a aspecte suau"
+
+
+msgid "Shortest Edge Paths"
+msgstr "Camins d'aresta més curts"
+
+
+msgid "Is Spline Cyclic"
+msgstr "És spline cíclic"
+
+
+msgid "Retrieve whether each spline endpoint connects to the beginning"
+msgstr "[Is Spline Cyclic]: Extreu si cada punt final de spline es connecta amb el principi"
+
+
+msgid "Spline Resolution"
+msgstr "Resolució spline"
+
+
+msgid "Retrieve the number of evaluated points that will be generated for every control point on curves"
+msgstr "[Spline Resolution]: Extreu el nombre de punts avaluats que es generaran per a cada punt de control de corbes"
+
+
+msgid "Curve Tangent"
+msgstr "Tangent de corba"
+
+
+msgid "Retrieve the direction of curves at each control point"
+msgstr "Extreu la direcció de les corbes en cada punt de control"
+
+
+msgid "Instance on Points"
+msgstr "Instància en punts"
+
+
+msgid "Generate a reference to geometry at each of the input points, without duplicating its underlying data"
+msgstr "[Instance on Points]: Genera una referència a la geometria en cadascun dels punts aportats, sense duplicar-ne les dades subjacents"
+
+
+msgid "Instances to Points"
+msgstr "Instàncies a punts"
+
+
+msgid ""
+"Generate points at the origins of instances.\n"
+"Note: Nested instances are not affected by this node"
+msgstr ""
+"[Instances to Points]: Genera punts als orígens de les instàncies.\n"
+"Nota: les instàncies niades no es veuen afectades per aquest node"
+
+
+msgid "Is Viewport"
+msgstr "És mirador"
+
+
+msgid "Retrieve whether the nodes are being evaluated for the viewport rather than the final render"
+msgstr "[Is Viewport]: Extreu si els nodes s'estan avaluant per al mirador en lloc de per al revelat final"
+
+
+msgid "Join Geometry"
+msgstr "Unir geometria"
+
+
+msgid "Merge separately generated geometries into a single one"
+msgstr "[Join Geometry]: Fusiona les geometries generades per separat en una de sola"
+
+
+msgid "Material Selection"
+msgstr "Selecció de material"
+
+
+msgid "Provide a selection of faces that use the specified material"
+msgstr "[Material Selection]: Proporciona una selecció de les cares que usen el material especificat"
+
+
+msgid "Merge by Distance"
+msgstr "Fusiona per distància"
+
+
+msgid "Merge vertices or points within a given distance"
+msgstr "[Merge by Distance]: Fusiona vèrtexs o punts dins d'una distància donada"
+
+
+msgid "Merge all close selected points, whether or not they are connected"
+msgstr "Fusiona tots els punts pròxims seleccionats, estiguin o no connectats"
+
+
+msgid "Only merge mesh vertices along existing edges. This method can be much faster"
+msgstr "Fusiona només els vèrtexs de malla de les arestes que hi ha. Aquest mètode pot ser molt més ràpid"
+
+
+msgid "Mesh Boolean"
+msgstr "Malla booleana"
+
+
+msgid "Cut, subtract, or join multiple mesh inputs"
+msgstr "[Mesh Boolean]: Retalla, sostreu o uneix múltiples aportacions de malla"
+
+
+msgid "Mesh Circle"
+msgstr "Malla cercle"
+
+
+msgid "Generate a circular ring of edges"
+msgstr "[Mesh Circle]: Genera un anell circular d'arestes"
+
+
+msgid "Fill Type"
+msgstr "Tipus d'emplenat"
+
+
+msgid "N-Gon"
+msgstr "N-Gon"
+
+
+msgid "Generate a cone mesh"
+msgstr "Genera una malla con"
+
+
+msgid "Generate a cuboid mesh with variable side lengths and subdivisions"
+msgstr "Genera una malla cuboide amb longituds laterals i subdivisions variables"
+
+
+msgid "Generate a cylinder mesh"
+msgstr "Genera una malla cilindre"
+
+
+msgid "Generate a planar mesh on the XY plane"
+msgstr "Genera una malla planar al pla XY"
+
+
+msgid "Ico Sphere"
+msgstr "Esfera Ico"
+
+
+msgid "Generate a spherical mesh that consists of equally sized triangles"
+msgstr "[Ico Sphere]: Genera una malla esfèrica que consisteix en triangles de mida igual"
+
+
+msgid "Mesh Line"
+msgstr "Malla línia"
+
+
+msgid "Generate vertices in a line and connect them with edges"
+msgstr "[Mesh Line]: Genera vèrtexs en una línia i els connecta amb arestes"
+
+
+msgid "Count Mode"
+msgstr "Mode recompte"
+
+
+msgid "Specify the total number of vertices"
+msgstr "[Count Mode]: Especifica el nombre total de vèrtexs"
+
+
+msgid "Specify the distance between vertices"
+msgstr "Especifica la distància entre vèrtexs"
+
+
+msgid "Specify the offset from one vertex to the next"
+msgstr "Especifica la separació d'un vèrtex a un altre"
+
+
+msgid "End Points"
+msgstr "Punts dels caps"
+
+
+msgid "Specify the line's start and end points"
+msgstr "[End Points]: Especifica els punts d'inici i final de la línia"
+
+
+msgid "Mesh to Curve"
+msgstr "Malla a corba"
+
+
+msgid "Generate a curve from a mesh"
+msgstr "[Mesh to Curve]: Genera una corba a partir d'una malla"
+
+
+msgid "Mesh to Points"
+msgstr "Malla a punts"
+
+
+msgid "Generate a point cloud from a mesh's vertices"
+msgstr "[Mesh to Points]: Genera un núvol de punts a partir dels vèrtexs d'una malla"
+
+
+msgid "Create a point in the point cloud for each selected vertex"
+msgstr "Crear un punt al núvol de punts per a cada vèrtex seleccionat"
+
+
+msgid "Create a point in the point cloud for each selected edge"
+msgstr "Crear un punt al núvol de punts per a cada aresta seleccionada"
+
+
+msgid "Create a point in the point cloud for each selected face"
+msgstr "Crear un punt al núvol de punts per a cada cara seleccionada"
+
+
+msgid "Create a point in the point cloud for each selected face corner"
+msgstr "Crear un punt al núvol de punts per a cada cantell de la cara seleccionat"
+
+
+msgid "Create a fog volume with the shape of the input mesh's surface"
+msgstr "Crear un volum de boira amb la forma de la superfície de la malla aportada"
+
+
+msgid "How the voxel size is specified"
+msgstr "Com s'especifica la mida del vòxel"
+
+
+msgid "UV Sphere"
+msgstr "Esfera UV"
+
+
+msgid "Generate a spherical mesh with quads, except for triangles at the top and bottom"
+msgstr "Genera una malla esfèrica amb quads, llevat dels triangles a la part superior i inferior"
+
+
+msgid "Object Info"
+msgstr "Informació d'objecte"
+
+
+msgid "Retrieve information from an object"
+msgstr "Extreu la informació d'un objecte"
+
+
+msgid "The transformation of the vector and geometry outputs"
+msgstr "La transformació dels productes de vectors i geometries"
+
+
+msgid "Output the geometry relative to the input object transform, and the location, rotation and scale relative to the world origin"
+msgstr "Productes de la geometria relatius a la transformació de l'objecte aportat, i la ubicació, rotació i escala relativa a l'origen del món"
+
+
+msgid "Bring the input object geometry, location, rotation and scale into the modified object, maintaining the relative position between the two objects in the scene"
+msgstr "Porta la geometria de l'objecte aportat, la ubicació, la rotació i l'escala a l'objecte modificat, tot mantenint la posició relativa entre els dos objectes de l'escena"
+
+
+msgid "Offset Corner in Face"
+msgstr "Desplaçar cantonada en la cara"
+
+
+msgid "Retrieve corners in the same face as another"
+msgstr "[Offset Corner in Face]: Extreu les cantonades a la mateixa cara que una altra"
+
+
+msgid "Offset Point in Curve"
+msgstr "Punt de desplaçament en corba"
+
+
+msgid "Offset a control point index within its curve"
+msgstr "[Offset Point in Curve]: Desplaça un índex de punts de control dins la corba"
+
+
+msgid "Generate a point cloud with positions and radii defined by fields"
+msgstr "Genera un núvol de punts amb posicions i radis definits per camps"
+
+
+msgid "Points of Curve"
+msgstr "[Points of Curve]: Punts de corba"
+
+
+msgid "Retrieve a point index within a curve"
+msgstr "[Points of Curve]: Extreu un índex de punts dins d'una corba"
+
+
+msgid "Points to Vertices"
+msgstr "Punts a vèrtexs"
+
+
+msgid "Generate a mesh vertex for each point cloud point"
+msgstr "Genera un vèrtex de malla per cada punt del núvol"
+
+
+msgid "Points to Volume"
+msgstr "Punts a volum"
+
+
+msgid "Generate a fog volume sphere around every point"
+msgstr "Genera una esfera de volum de boira al voltant de cada punt"
+
+
+msgid "Specify the approximate number of voxels along the diagonal"
+msgstr "Especifica el nombre aproximat de vòxels al llarg de la diagonal"
+
+
+msgid "Specify the voxel side length"
+msgstr "Especifica la longitud del costat del vòxel"
+
+
+msgid "Geometry Proximity"
+msgstr "Proximitat de geometria"
+
+
+msgid "Compute the closest location on the target geometry"
+msgstr "[Geometry Proximity]: Calcula la ubicació més propera a la geometria de referència"
+
+
+msgid "Target Geometry"
+msgstr "Geometria de referència"
+
+
+msgid "Element of the target geometry to calculate the distance from"
+msgstr "Element de la geometria de referència des del qual es calcula la distància"
+
+
+msgid "Calculate the proximity to the target's points (faster than the other modes)"
+msgstr "Calcula la proximitat als punts de referència (més ràpid que els altres modes)"
+
+
+msgid "Calculate the proximity to the target's edges"
+msgstr "Calcula la proximitat a les arestes del referent"
+
+
+msgid "Calculate the proximity to the target's faces"
+msgstr "Calcula la proximitat a les cares del referent"
+
+
+msgid "Raycast"
+msgstr "Llançaraigs"
+
+
+msgid "Cast rays from the context geometry onto a target geometry, and retrieve information from each hit point"
+msgstr "[Raycast]: Llança raigs de la geometria del context envers una geometria de referència, i extreu informació de cada punt d'impacte"
+
+
+msgid "Mapping from the target geometry to hit points"
+msgstr "Mapejat de la geometria de referència en els punts d'impacte"
+
+
+msgid "Interpolate the attribute from the corners of the hit face"
+msgstr "Interpolar l'atribut des dels cantells de la cara impactada"
+
+
+msgid "Use the attribute value of the closest mesh element"
+msgstr "Usar el valor de l'atribut de l'element de malla més pròxim"
+
+
+msgid "Realize Instances"
+msgstr "Realitzar instàncies"
+
+
+msgid "Change the direction of the curve by swapping each spline's start and end data"
+msgstr "Canviar la direcció de la corba intercanviant les dades d'inici i final de cada spline"
+
+
+msgid "Legacy Behavior"
+msgstr "Comportament antic"
+
+
+msgid "Behave like before instance attributes existed"
+msgstr "[Legacy Behavior]: Comportar-se com abans que existissin els atributs de la instància"
+
+
+msgid "Remove Named Attribute"
+msgstr "Elimina l'atribut amb nom"
+
+
+msgid "Delete an attribute with a specified name from a geometry. Typically used to optimize performance"
+msgstr "[Remove Named Attribute]: Suprimeix d'una geometria un atribut amb un nom especificat. Normalment s'utilitza per optimitzar el rendiment"
+
+
+msgid "Replace Material"
+msgstr "Substituir material"
+
+
+msgid "Swap one material with another"
+msgstr "[Replace Material]: Canvia un material per un altre"
+
+
+msgid "Resample Curve"
+msgstr "Remostrejar corba"
+
+
+msgid "Generate a poly spline for each input spline"
+msgstr "[Resample Curve]: Genera un poli-spline per a cada spline aportat"
+
+
+msgid "How to specify the amount of samples"
+msgstr "Com especificar la quantitat de mostres"
+
+
+msgid "Output the input spline's evaluated points, based on the resolution attribute for NURBS and Bezier splines. Poly splines are unchanged"
+msgstr "Emetre els punts avaluats de l'spline aportada, basats en l'atribut de resolució per als splines NURBS i Bézier. Els splines poligonals no canvien"
+
+
+msgid "Sample the specified number of points along each spline"
+msgstr "Mostrejar el nombre especificat de punts al llarg de cada spline"
+
+
+msgid "Calculate the number of samples by splitting each spline into segments with the specified length"
+msgstr "Calcular el nombre de mostres dividint cada spline en segments amb la longitud especificada"
+
+
+msgid "Reverse Curve"
+msgstr "Corba inversa"
+
+
+msgid "Swap the start and end of splines"
+msgstr "[Reverse Curve]: Intercanvia l'inici i el final dels splines"
+
+
+msgid "Rotate Instances"
+msgstr "Rotar instàncies"
+
+
+msgid "Rotate geometry instances in local or global space"
+msgstr "[Rotate Instances]: Fa rotar les instàncies de geometria en l'espai local o global"
+
+
+msgid "Sample Curve"
+msgstr "Mostrejar corba"
+
+
+msgid "Retrieve data from a point on a curve at a certain distance from its start"
+msgstr "[Sample Curve]: Extreu dades des d'un punt d'una corba a una certa distància des del seu inici"
+
+
+msgid "Method for sampling input"
+msgstr "Mètode per mostrejar allò introduït"
+
+
+msgid "Find sample positions on the curve using a factor of its total length"
+msgstr "Cerca posicions de mostreig a la corba tot usant un factor de la seva longitud total"
+
+
+msgid "Find sample positions on the curve using a distance from its beginning"
+msgstr "Cerca posicions de mostreig a la corba tot usant una distància des del seu inici"
+
+
+msgid "All Curves"
+msgstr "Totes les corbes"
+
+
+msgid "Sample lengths based on the total length of all curves, rather than using a length inside each selected curve"
+msgstr "[All Curves]: Mostreja les longituds basades en la longitud total de totes les corbes, preferiblement a usar una longitud dins de cada corba seleccionada"
+
+
+msgid "Sample Index"
+msgstr "Mostreig d'índex"
+
+
+msgid "Retrieve values from specific geometry elements"
+msgstr "[Sample Index]: Extreu els valors d'elements de geometria específics"
+
+
+msgid "Clamp the indices to the size of the attribute domain instead of outputting a default value for invalid indices"
+msgstr "Constrènyer els índexs a la mida del domini de l'atribut en lloc de generar un valor per defecte per als índexs no vàlids"
+
+
+msgid "Sample Nearest"
+msgstr "Mostreja més pròxims"
+
+
+msgid "Find the element of a geometry closest to a position"
+msgstr "[Sample Nearest]: Troba l'element d'una geometria que està més proper a una posició"
+
+
+msgid "Sample Nearest Surface"
+msgstr "Mostreja superfície més pròxima"
+
+
+msgid "Calculate the interpolated value of a mesh attribute on the closest point of its surface"
+msgstr "[Sample Nearest Surface]: Calcula el valor interpolat d'un atribut de malla sobre el punt més proper de la seva superfície"
+
+
+msgid "Sample UV Surface"
+msgstr "Mostrejar superfície UV"
+
+
+msgid "Calculate the interpolated values of a mesh attribute at a UV coordinate"
+msgstr "[Sample UV Surface]: Calcula els valors interpolats d'un atribut de malla a una coordenada UV"
+
+
+msgid "Scale Elements"
+msgstr "Escalar elements"
+
+
+msgid "Scale groups of connected edges and faces"
+msgstr "[Scale Elements]: Escala els grups d'arestes i cares connectades"
+
+
+msgid "Element type to transform"
+msgstr "Tipus d'element a transformar"
+
+
+msgid "Scale individual faces or neighboring face islands"
+msgstr "[Element type to transform]: Escala cares individuals o illes de cares veïnes"
+
+
+msgid "Scale individual edges or neighboring edge islands"
+msgstr "Escala les arestes individuals o illes adjacents"
+
+
+msgid "Scale Mode"
+msgstr "Mode d'escalat"
+
+
+msgid "Scale elements by the same factor in every direction"
+msgstr "[Scale Mode]: Escalar elements pel mateix factor en cada direcció"
+
+
+msgid "Scale elements in a single direction"
+msgstr "Escalar els elements en una sola direcció"
+
+
+msgid "Scale Instances"
+msgstr "Escalar instàncies"
+
+
+msgid "Scale geometry instances in local or global space"
+msgstr "[Scale Instances]: Escala instàncies de geometria en l'espai local o global"
+
+
+msgid "Self Object"
+msgstr "Objecte propi"
+
+
+msgid "Retrieve the object that contains the geometry nodes modifier currently being executed"
+msgstr "[Self Object]: Extreu l'objecte que conté el modificador de nodes de geometria en execució"
+
+
+msgid "Separate Components"
+msgstr "Separar components"
+
+
+msgid "Split a geometry into a separate output for each type of data in the geometry"
+msgstr "[Separate Components]: Divideix una geometria en un resultat separat per a cada tipus de dada de la geometria"
+
+
+msgid "Separate Geometry"
+msgstr "Separar geometria"
+
+
+msgid "Split a geometry into two geometry outputs based on a selection"
+msgstr "[Separate Geometry]: Divideix una geometria en dos resultats de geometria basats en una selecció"
+
+
+msgid "Which domain to separate on"
+msgstr "En quin domini s'ha de separar"
+
+
+msgid "Set Handle Positions"
+msgstr "Establir posicions de nansa"
+
+
+msgid "Set the positions for the handles of Bézier curves"
+msgstr "[Set Handle Positions]: Estableix les posicions per a les nanses de les corbes de Bézier"
+
+
+msgid "Set Curve Normal"
+msgstr "Establir normal de corba"
+
+
+msgid "Set the evaluation mode for curve normals"
+msgstr "[Set Curve Normal]: Estableix el mode d'avaluació per a les normals de la corba"
+
+
+msgid "Mode for curve normal evaluation"
+msgstr "Mode d'avaluació de normals de corba"
+
+
+msgid "Minimum Twist"
+msgstr "Mínima rosca"
+
+
+msgid "Calculate normals with the smallest twist around the curve tangent across the whole curve"
+msgstr "[Mínima rosca]: Calcula normals amb la rosca mínima entorn de la corba tangent durant tota la corba"
+
+
+msgid "Z Up"
+msgstr "Z amunt"
+
+
+msgid "Calculate normals perpendicular to the Z axis and the curve tangent. If a series of points is vertical, the X axis is used"
+msgstr "[Z Up]: Calcula normals perpendiculars a l'eix Z i la corba tangent. Si una sèrie de punts és vertical, s'utilitza l'eix X"
+
+
+msgid "Set Curve Radius"
+msgstr "Establir radi de corba"
+
+
+msgid "Set the radius of the curve at each control point"
+msgstr "[[Set Curve Radius]: ]: Estableix el radi de la corba a cada punt de control"
+
+
+msgid "Set Curve Tilt"
+msgstr "Establir inclinació de corba"
+
+
+msgid "Set the tilt angle at each curve control point"
+msgstr "[Set Curve Tilt]: Estableix l'angle d'inclinació a cada punt de control de la corba"
+
+
+msgid "Set ID"
+msgstr "Establir ID"
+
+
+msgid "Set the id attribute on the input geometry, mainly used internally for randomizing"
+msgstr "[Set ID]: Estableix l'atribut id a la geometria aportada, usat sobretot internament per a aleatoritzar"
+
+
+msgid "Set Material"
+msgstr "Establir material"
+
+
+msgid "Assign a material to geometry elements"
+msgstr "[Set Material]: Assigna un material a elements de geometria"
+
+
+msgid "Set Material Index"
+msgstr "Establir índex de material"
+
+
+msgid "Set the material index for each selected geometry element"
+msgstr "[Set Material Index]: Estableix l'índex del material per a cada element de geometria seleccionat"
+
+
+msgid "Set Point Radius"
+msgstr "Establir radi de punt"
+
+
+msgid "Set the display size of point cloud points"
+msgstr "[Set Point Radius]: Estableix la mida de visualització dels punts en núvol"
+
+
+msgid "Set Position"
+msgstr "Establir ubicació"
+
+
+msgid "Set the location of each point"
+msgstr "[Set Position]: Estableix la ubicació de cada punt"
+
+
+msgid "Set Shade Smooth"
+msgstr "Estableix aspecte suau"
+
+
+msgid "Control the smoothness of mesh normals around each face by changing the \"shade smooth\" attribute"
+msgstr "[Set Shade Smooth]: Controla la suavitat de les normals de malla al voltant de cada cara amb el canvi de l'atribut «aspecte suau»"
+
+
+msgid "Set Spline Cyclic"
+msgstr "Establir spline cíclic"
+
+
+msgid "Control whether each spline loops back on itself by changing the \"cyclic\" attribute"
+msgstr "[Set Spline Cyclic]: Controla si cada spline fa bucle sobre si mateix amb el canvi de l'atribut «cíclic»"
+
+
+msgid "Set Spline Resolution"
+msgstr "Establir resolució de spline"
+
+
+msgid "Control how many evaluated points should be generated on every curve segment"
+msgstr "[Set Spline Resolution]: Controla quants punts avaluats s'han de generar en cada segment de corba"
+
+
+msgid "Spline Length"
+msgstr "Longitud de spline"
+
+
+msgid "Retrieve the total length of each spline, as a distance or as a number of points"
+msgstr "[Spline Length]: Extreu la longitud total de cada spline, com a distància o com a nombre de punts"
+
+
+msgid "Spline Parameter"
+msgstr "Paràmetre spline"
+
+
+msgid "Retrieve how far along each spline a control point is"
+msgstr "[Spline Parameter]: Extreu com de lluny està el punt de control de cada spline"
+
+
+msgid "Split Edges"
+msgstr "Escindir arestes"
+
+
+msgid "Duplicate mesh edges and break connections with the surrounding faces"
+msgstr "[Split Edges]: Duplica les arestes de malla i trenca les connexions amb les cares circumdants"
+
+
+msgid "Store Named Attribute"
+msgstr "Guardar atribut amb nom"
+
+
+msgid "Store the result of a field on a geometry as an attribute with the specified name"
+msgstr "[Store Named Attribute]: Es guarda com a atribut el resultat d'un camp en una geometria amb el nom especificat"
+
+
+msgid "Join Strings"
+msgstr "Unir cadenes"
+
+
+msgid "Combine any number of input strings"
+msgstr "[Join Strings]: Combina qualsevol nombre de cadenes introduïdes"
+
+
+msgid "String to Curves"
+msgstr "Cadena a corbes"
+
+
+msgid "Generate a paragraph of text with a specific font, using a curve instance to store each character"
+msgstr "[String to Curves]: Genera un paràgraf de text amb una tipografia específica, tot usant una instància de corba per a guardar-se cada caràcter"
+
+
+msgid "Align X"
+msgstr "Alinear X"
+
+
+msgid "Align text to the center"
+msgstr "[Align X]: Alinea el text al centre"
+
+
+msgid "Align text to the left and the right"
+msgstr "Alinear el text a l'esquerra i a la dreta"
+
+
+msgid "Align text to the left and the right, with equal character spacing"
+msgstr "Alinear el text a l'esquerra i a la dreta, amb un espaiat de caràcters igual"
+
+
+msgid "Align Y"
+msgstr "Alinear Y"
+
+
+msgid "Top Baseline"
+msgstr "Línia de base superior"
+
+
+msgid "Align text to the top baseline"
+msgstr "[Top Baseline]: Alinea el text a la línia base de dalt de tot"
+
+
+msgid "Middle"
+msgstr "Central"
+
+
+msgid "Bottom Baseline"
+msgstr "Línia de base inferior"
+
+
+msgid "Align text to the bottom baseline"
+msgstr "[Bottom Baseline]: Alinea el text a la línia de base de baix de tot"
+
+
+msgid "Font of the text. Falls back to the UI font by default"
+msgstr "Tipografia del text. Per defecte retorna a la tipografia de la IU"
+
+
+msgid "Let the text use more space than the specified height"
+msgstr "Permet que el text utilitzi més espai que l'alçada especificada"
+
+
+msgid "Scale To Fit"
+msgstr "Escalar a conforme"
+
+
+msgid "Scale the text size to fit inside the width and height"
+msgstr "[Scale To Fit]: Escala la mida del text perquè s'ajusti dins l'amplada i l'alçada"
+
+
+msgid "Only output curves that fit within the width and height. Output the remainder to the \"Remainder\" output"
+msgstr "Només emet corbes que s'ajustin a l'amplada i l'alçada. Emet la resta al resultat «Romanent»"
+
+
+msgid "Pivot point position relative to character"
+msgstr "Posició de punt pivotal relativa a la lletra"
+
+
+msgid "Top Left"
+msgstr "Superior esquerra"
+
+
+msgid "Top Center"
+msgstr "Superior centre"
+
+
+msgid "Top Right"
+msgstr "Superior dreta"
+
+
+msgid "Bottom Left"
+msgstr "Inferior esquerra"
+
+
+msgid "Bottom Center"
+msgstr "Inferior centre"
+
+
+msgid "Bottom Right"
+msgstr "Inferior dreta"
+
+
+msgid "Subdivide Curve"
+msgstr "Subdividir corba"
+
+
+msgid "Dividing each curve segment into a specified number of pieces"
+msgstr "[Subdivide Curve]: Dividir cada segment de corba en un nombre especificat de peces"
+
+
+msgid "Subdivide Mesh"
+msgstr "Subdividir malla"
+
+
+msgid "Divide mesh faces into smaller ones without changing the shape or volume, using linear interpolation to place the new vertices"
+msgstr "[Subdivide Mesh]: Divideix les cares de malla en cares més petites sense canviar ni forma ni volum, amb l'ús d'interpolació lineal per col·locar els vèrtexs nous"
+
+
+msgid "Divide mesh faces to form a smooth surface, using the Catmull-Clark subdivision method"
+msgstr "Divideix les cares de malla per formar una superfície suau, amb l'ús del mètode de subdivisió Catmull-Clark"
+
+
+msgid "Switch between two inputs"
+msgstr "Alterna entre dues aportacions"
+
+
+msgid "Transform Geometry"
+msgstr "Transformar geometria"
+
+
+msgid "Translate, rotate or scale the geometry"
+msgstr "[Transform Geometry]: Trasllada, gira o escala la geometria"
+
+
+msgid "Translate Instances"
+msgstr "Trasllada instàncies"
+
+
+msgid "Move top-level geometry instances in local or global space"
+msgstr "[Translate Instances]: Mou instàncies de geometria de nivell superior dins l'espai local o global"
+
+
+msgid "Convert all faces in a mesh to triangular faces"
+msgstr "Converteix totes les cares d'una malla en cares triangulars"
+
+
+msgid "Trim Curve"
+msgstr "Retallar corba"
+
+
+msgid "Shorten curves by removing portions at the start or end"
+msgstr "[Trim Curve]: Escurça les corbes eliminant fragments de l'inici o final"
+
+
+msgid "How to find endpoint positions for the trimmed spline"
+msgstr "Com trobar posicions de punt final per al spline retallat"
+
+
+msgid "Find the endpoint positions using a factor of each spline's length"
+msgstr "Trobar les posicions de punt final usant un factor de la longitud de cada spline"
+
+
+msgid "Find the endpoint positions using a length from the start of each spline"
+msgstr "Troba les posicions de punt final usant una longitud des de l'inici de cada spline"
+
+
+msgid "Pack UV Islands"
+msgstr "Empaquetar illes UV"
+
+
+msgid "Scale islands of a UV map and move them so they fill the UV space as much as possible"
+msgstr "[Pack UV Islands]: Escala les illes d'un mapa UV i les mou perquè omplin l'espai UV al màxim possible"
+
+
+msgid "UV Unwrap"
+msgstr "Desplegar UV"
+
+
+msgid "Generate a UV map based on seam edges"
+msgstr "[UV Unwrap]: Genera un mapa UV basat en les costures d'arestes"
+
+
+msgid "Angle Based"
+msgstr "Basat en angle"
+
+
+msgid "This method gives a good 2D representation of a mesh"
+msgstr "[Angle Based]: Aquest mètode dona una bona representació 2D d'una malla"
+
+
+msgid "Conformal"
+msgstr "Conformal"
+
+
+msgid "Uses LSCM (Least Squares Conformal Mapping). This usually gives a less accurate UV mapping than Angle Based, but works better for simpler objects"
+msgstr "Usa LSCM (mapejat conformel de mínims quadrats). Això normalment dóna un mapejat UV menys precís que e d'angle, però rutlla millor en objectes més simples"
+
+
+msgid "Vertex of Corner"
+msgstr "Vèrtex de cantell"
+
+
+msgid "Retrieve the vertex each face corner is attached to"
+msgstr "[Vertex of Corner]: Extreu el vèrtex a què està associat cada cantell de cara"
+
+
+msgid "Display the input data in the Spreadsheet Editor"
+msgstr "Mostra les dades introduïdes en l'editor de fulls de càlcul"
+
+
+msgid "Domain to evaluate the field on"
+msgstr "Domini on avaluar el camp"
+
+
+msgid "Volume Cube"
+msgstr "Cub de volum"
+
+
+msgid "Generate a dense volume with a field that controls the density at each grid voxel based on its position"
+msgstr "[Volume Cube]: Genera un volum dens amb un camp que controla la densitat a cada vòxel de la graella en funció de la seva posició"
+
+
+msgid "Generate a mesh on the \"surface\" of a volume"
+msgstr "Generar una malla a la «superfície» d'un volum"
+
+
+msgctxt "NodeTree"
+msgid "Frame"
+msgstr "Emmarcar"
+
+
+msgid "Collect related nodes together in a common area. Useful for organization when the re-usability of a node group is not required"
+msgstr "[Frame]: Aplega nodes relacionats dins una àrea comuna. Útil per a organitzar-se quan no cal reutilitzar un grup de nodes"
+
+
+msgid "Label Font Size"
+msgstr "Mida tipografia d'etiquetes"
+
+
+msgid "Font size to use for displaying the label"
+msgstr "[Label Font Size]: Mida de la tipografia amb què es mostra l'etiqueta"
+
+
+msgid "Shrink the frame to minimal bounding box"
+msgstr "Encongir l'emmarcament a la capsa contenidora mínima"
+
+
+msgid "Group Input"
+msgstr "Aportació del grup"
+
+
+msgid "Expose connected data from inside a node group as inputs to its interface"
+msgstr "[Group Input]: Exposa les dades connectades des de dins d'un grup de nodes com a aportacions a la pròpia interfície"
+
+
+msgid "Frames Per Second"
+msgstr "Fotogrames/segon"
+
+
+msgid "Frames per second"
+msgstr "Fotogrames/segon"
+
+
+msgid "Auto-offset Direction"
+msgstr "Direcció del desplaçament automàtic"
+
+
+msgid "If the profile spline is cyclic, fill the ends of the generated mesh with N-gons"
+msgstr "Si el spline del perfil és cíclic, ompliu els extrems de la malla generada amb N-gons"
 
