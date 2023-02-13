@@ -1,9 +1,9 @@
 
 msgid ""
 msgstr ""
-"Project-Id-Version: Blender 3.5.0 Alpha (b'a86f657692a1')\n"
+"Project-Id-Version: Blender 3.5.0 Alpha (b'9fecf1f8b81e')\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-02-06 15:36:45\n"
+"POT-Creation-Date: 2023-02-13 13:06:46\n"
 "PO-Revision-Date: 2016-10-13 03:05+0900\n"
 "Last-Translator: \n"
 "Language-Team: Japanese Translation Team (https://sites.google.com/site/blugjp/blender-translators)\n"
@@ -22066,14 +22066,6 @@ msgid "Active Text Box"
 msgstr "アクティブテキストボックス"
 
 
-msgid "Text Horizontal Align"
-msgstr "テキストの行揃え"
-
-
-msgid "Text horizontal align from the object center"
-msgstr "オブジェクト中央からのテキストの水平の整列方向"
-
-
 msgid "Align text to the left"
 msgstr "テキストを左揃えします"
 
@@ -22102,40 +22094,28 @@ msgid "Align to the left and the right, with equal character spacing"
 msgstr "同じ文字間隔で、右と左に揃えます"
 
 
-msgid "Text Vertical Align"
-msgstr "テキストの縦揃え"
+msgid "Align text to the top"
+msgstr "テキストを上揃えします"
 
 
-msgid "Text vertical align from the object center"
-msgstr "オブジェクト中央からのテキストの縦の整列方向"
-
-
-msgid "Top Base-Line"
+msgid "Top Baseline"
 msgstr "上(ベースライン)"
 
 
-msgid "Align to top but use the base-line of the text"
-msgstr "上揃えですが、テキストのベースラインを使用します"
-
-
-msgid "Align text to the top"
-msgstr "テキストを上揃えします"
+msgid "Middle"
+msgstr "中"
 
 
 msgid "Align text to the middle"
 msgstr "テキストを中揃えします"
 
 
-msgid "Align text to the bottom"
-msgstr "テキストを下揃えします"
-
-
-msgid "Bottom Base-Line"
+msgid "Bottom Baseline"
 msgstr "下(ベースライン)"
 
 
-msgid "Align text to the bottom but use the base-line of the text"
-msgstr "下揃えですが、テキストのベースラインを使用します"
+msgid "Align text to the bottom"
+msgstr "テキストを下揃えします"
 
 
 msgid "Body Text"
@@ -45675,10 +45655,6 @@ msgid "Generate a paragraph of text with a specific font, using a curve instance
 msgstr "文字毎にカーブインスタンスを使用し、指定のフォントで文章を生成します"
 
 
-msgid "Align X"
-msgstr "X軸揃え"
-
-
 msgid "Align text to the center"
 msgstr "テキストを左揃えします"
 
@@ -45689,30 +45665,6 @@ msgstr "テキストを左右に揃えます"
 
 msgid "Align text to the left and the right, with equal character spacing"
 msgstr "テキストを左右に等間隔で揃えます"
-
-
-msgid "Align Y"
-msgstr "Y軸揃え"
-
-
-msgid "Top Baseline"
-msgstr "上(ベースライン)"
-
-
-msgid "Align text to the top baseline"
-msgstr "テキストをベースラインで上揃えします"
-
-
-msgid "Middle"
-msgstr "中"
-
-
-msgid "Bottom Baseline"
-msgstr "下(ベースライン)"
-
-
-msgid "Align text to the bottom baseline"
-msgstr "テキストをベースラインで下揃えします"
 
 
 msgid "Font of the text. Falls back to the UI font by default"
@@ -53911,10 +53863,6 @@ msgid "Armature FBXNode Type"
 msgstr "アーマチュアFBXノードタイプ"
 
 
-msgid "FBX type of node (object) used to represent Blender's armatures (use Null one unless you experience issues with other app, other choices may no import back perfectly in Blender...)"
-msgstr "Blender のアーマチュアで表示されるのに使用されるノード（オブジェクト）の FBX タイプ（Null）"
-
-
 msgid "Null"
 msgstr "Null"
 
@@ -53992,12 +53940,6 @@ msgstr ""
 
 msgid "Apply Transform"
 msgstr "トランスフォームを適用"
-
-
-msgid "Bake space transform into object data, avoids getting unwanted rotations to objects when target space is not aligned with Blender's space (WARNING! experimental option, use at own risks, known broken with armatures/animations)"
-msgstr ""
-"空間の変換をオブジェクトデータにベイクし、ターゲットの空間が Blender の空間と合致しない時の、オブジェクトの思わぬ回転を回避します\n"
-"（注意！　実験的オプションであるため、自己責任で使用してください。アーマチュアやアニメーションが壊れる問題があります）"
 
 
 msgid "Active scene to file"
@@ -54533,10 +54475,6 @@ msgstr ""
 "「KHR_lights_punctual」glTF エクステンションを使用します"
 
 
-msgid "Export materials "
-msgstr "マテリアルをエクスポート"
-
-
 msgid "Export all materials used by included objects"
 msgstr "含むオブジェクトで使用中の全マテリアルをエクスポートします"
 
@@ -54601,12 +54539,6 @@ msgstr "頂点の法線をメッシュと共にエクスポートします"
 
 msgid "Optimize Animation Size"
 msgstr "アニメーションサイズを最適化"
-
-
-msgid "Reduce exported file-size by removing duplicate keyframes(can cause problems with stepped animation)"
-msgstr ""
-"重複するキーフレームを削除し、エクスポートのファイルサイズを小さくします\n"
-"（アニメーションがカクカクする可能性があります）"
 
 
 msgid "Export original PBR Specular"
@@ -76649,8 +76581,16 @@ msgid "Automatically choose the axis on which there is most alignment already"
 msgstr "すでに一番整列している軸を自動的に選択します"
 
 
+msgid "Align X"
+msgstr "X軸揃え"
+
+
 msgid "Align UVs on X axis"
 msgstr "X 軸でUVを揃えます"
+
+
+msgid "Align Y"
+msgstr "Y軸揃え"
 
 
 msgid "Align UVs on Y axis"
@@ -82950,12 +82890,12 @@ msgid "Indirect Lighting"
 msgstr "間接照明"
 
 
-msgid "Screen Space Reflections"
-msgstr "スクリーンスペース反射"
-
-
 msgid "Shadows"
 msgstr "影"
+
+
+msgid "Screen Space Reflections"
+msgstr "スクリーンスペース反射"
 
 
 msgid "Volumetrics"
@@ -85959,12 +85899,6 @@ msgstr "マニュアル保存時のバックアップのバージョン数"
 
 msgid "Python Scripts Directory"
 msgstr "Pythonスクリプトディレクトリ"
-
-
-msgid "Alternate script path, matching the default layout with subdirectories: startup, add-ons, modules, and presets (requires restart)"
-msgstr ""
-"サブディレクトリ（startup、add-ons、modules、presets）がデフォルト\n"
-"レイアウト構造と一致する、代替のスクリプトパス（要再起動）"
 
 
 msgid "Show Hidden Files/Data-Blocks"
@@ -105409,36 +105343,8 @@ msgid "(TM)TRADE MARK SIGN(tm)TRADE MARK SIGN(R)REGISTERED SIGN(C)COPYRIGHT SIGN
 msgstr "(TM)登録商標サイン(tm)登録商標サイン(R)登録済みサイン(C)著作権サイン"
 
 
-msgid "Requires NVIDIA GPU with compute capability 3.0"
-msgstr "Compute Capability 3.0の NVIDIA GPU が必要です"
-
-
-msgid "Requires NVIDIA GPU with compute capability 5.0"
-msgstr "Compute Capability 5.0の NVIDIA GPU と"
-
-
-msgid "and NVIDIA driver version 470 or newer"
-msgstr "NVIDIA ドライバー Ver.470以降が必要です"
-
-
-msgid "and AMD Radeon Pro 21.Q4 driver or newer"
-msgstr "AMD Radeon Pro 21.Q4 以降のドライバが必要です"
-
-
-msgid "and AMD driver version 22.10 or newer"
-msgstr "AMD ドライバー Ver.22.10以降が必要です"
-
-
 msgid "Requires Intel GPU with Xe-HPG architecture"
 msgstr "Xe-HPG アーキテクチャの Intel GPU カードと"
-
-
-msgid "Requires Apple Silicon with macOS 12.2 or newer"
-msgstr "Apple Silicon と macOS 12.2以降、"
-
-
-msgid "or AMD with macOS 12.3 or newer"
-msgstr "または AMD と macOS 12.3以降が必要です"
 
 
 msgid "Requires Intel GPU with Xe-HPG architecture and"
@@ -119647,14 +119553,6 @@ msgstr "警告！"
 
 msgid "OK"
 msgstr "OK"
-
-
-msgid "Vertex Data Detected!"
-msgstr "頂点データ発見！"
-
-
-msgid "Dyntopo will not preserve vertex colors, UVs, or other customdata"
-msgstr "Dyntopo（ダイナミックトポロジー）スカルプトは頂点カラーや UV、その他カスタムデータを維持しません"
 
 
 msgid "Generative Modifiers Detected!"
