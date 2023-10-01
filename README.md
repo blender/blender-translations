@@ -52,6 +52,6 @@ Newly translation languages in progress
 * Serbian (Српски):sr_RS
 * Serbian Latin (Srpski latinica):sr_RS@latin*
 * Swedish (Svenska):sv_SE
-* Tamil (தமிழ்)
+* Tamil (தமிழ்):ta
 * Thai (ภาษาไทย):th_TH
 * Turkish (Türkçe):tr_TR
